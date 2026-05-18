@@ -48,6 +48,26 @@ const KEYWORDS = [
   "hantaviral",
 ];
 
+// ── HTML entity decoder ───────────────────────────────────────────────────────
+function decodeHtmlEntities(str) {
+  // Run multiple passes to handle double-encoded entities (e.g. &amp;amp; → &amp; → &)
+  let prev;
+  let s = str;
+  do {
+    prev = s;
+    s = s
+      .replace(/&amp;/g, "&")
+      .replace(/&lt;/g, "<")
+      .replace(/&gt;/g, ">")
+      .replace(/&quot;/g, '"')
+      .replace(/&#39;/g, "'")
+      .replace(/&apos;/g, "'")
+      .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+      .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
+  } while (s !== prev);
+  return s;
+}
+
 // ── Parse RSS XML into items ──────────────────────────────────────────────────
 function parseRSSItems(xml) {
   const items = [];
@@ -70,12 +90,16 @@ function parseRSSItems(xml) {
     const guid =
       raw.match(/<guid[^>]*>(.*?)<\/guid>/s)?.[1] ??
       link;
+    const decodedDescription = decodeHtmlEntities(description);
+    const tagsStripped = decodedDescription.replace(/<[^>]+>/g, " ").replace(/<[^>]*$/, "");
+    const trailingCleanup = tagsStripped.replace(/\s*&[a-zA-Z0-9#]*$/, "").replace(/\s+/g, " ").trim();
+
     items.push({
       guid: guid.trim(),
-      title: title.trim().replace(/<[^>]+>/g, ""),
+      title: decodeHtmlEntities(title.trim()).replace(/<[^>]+>/g, ""),
       link: link.trim(),
       pubDate: pubDate.trim(),
-      description: description.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim().slice(0, 600),
+      description: trailingCleanup.slice(0, 600),
     });
   }
   return items;
