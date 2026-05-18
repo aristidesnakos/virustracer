@@ -35,7 +35,7 @@ Data freshness: the GitHub Actions cron runs every morning at 08:00 UTC, commits
 ## Stack
 
 - [Next.js 16](https://nextjs.org/) (App Router, TypeScript)
-- [MapLibre GL JS](https://maplibre.org/) with [Stadia Maps](https://stadiamaps.com/) dark tiles
+- [MapLibre GL JS](https://maplibre.org/) with [CARTO](https://carto.com/basemaps/) dark-matter tiles (free, no API key)
 - [Recharts](https://recharts.org/)
 - [Tailwind CSS](https://tailwindcss.com/)
 - [OpenRouter](https://openrouter.ai/) — DeepSeek V4 Flash for feed summarization (cheap)
@@ -187,12 +187,6 @@ Without the key it still runs — it just skips LLM summarization and saves raw 
 4. Add `OPENROUTER_API_KEY` as a **GitHub repository secret** (repo Settings → Secrets and variables → Actions → New repository secret)
 
 Vercel redeploys automatically every time GitHub Actions commits updated feed data.
-
-### Optional: Stadia Maps key
-
-The map works without a key on low traffic. For production load:
-1. Get a free key at [stadiamaps.com](https://stadiamaps.com/)
-2. Add `NEXT_PUBLIC_STADIA_API_KEY=your_key` as a Vercel environment variable
 
 ---
 

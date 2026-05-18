@@ -5,7 +5,7 @@ import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
 import { voyageStops, caseLocations } from "@/data/outbreak";
 
-const STADIA_DARK = "https://tiles.stadiamaps.com/styles/alidade_smooth_dark.json";
+const CARTO_DARK = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
 
 function voyageGeoJSON() {
   return {
@@ -67,7 +67,7 @@ export default function OutbreakMap() {
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: STADIA_DARK,
+      style: CARTO_DARK,
       center: [-15, 15],
       zoom: 1.8,
       minZoom: 1,
