@@ -2,25 +2,9 @@ import CasesChart from "@/components/CasesChart";
 import MonitoringTable from "@/components/MonitoringTable";
 import FeedUpdates from "@/components/FeedUpdates";
 import MapLoader from "@/components/MapLoader";
+import StatStrip from "@/components/StatStrip";
 import { summary } from "@/data/outbreak";
 import { getLiveData } from "@/lib/live-data";
-
-function StatCard({
-  value,
-  label,
-  color = "text-white",
-}: {
-  value: string | number;
-  label: string;
-  color?: string;
-}) {
-  return (
-    <div className="bg-white/[0.04] border border-white/[0.08] rounded-xl px-5 py-3.5 flex flex-col gap-1">
-      <div className={`text-2xl font-bold tabular-nums ${color}`}>{value}</div>
-      <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">{label}</div>
-    </div>
-  );
-}
 
 export default function DashboardPage() {
   const liveData = getLiveData();
@@ -74,17 +58,7 @@ export default function DashboardPage() {
       </header>
 
       {/* ── Stat strip ─────────────────────────────────────────── */}
-      <div className="shrink-0 px-5 py-3 flex gap-3 overflow-x-auto">
-        <StatCard value={summary.totalConfirmed} label="Confirmed cases" color="text-orange-400" />
-        <StatCard value={`+${summary.totalSuspected}`} label="Probable" color="text-yellow-400" />
-        <StatCard value={summary.totalDeaths} label="Deaths" color="text-red-400" />
-        <StatCard value={summary.totalMonitored} label="Under monitoring" color="text-yellow-300" />
-        <StatCard value={summary.countriesAffected} label="Countries affected" />
-        <div className="bg-white/[0.04] border border-white/[0.08] rounded-xl px-5 py-3.5 flex flex-col gap-1 min-w-max">
-          <div className="text-sm font-semibold text-blue-300 truncate">{summary.shipStatus}</div>
-          <div className="text-xs text-gray-500 uppercase tracking-wider font-medium">Ship status</div>
-        </div>
-      </div>
+      <StatStrip />
 
       {/* ── Main grid ──────────────────────────────────────────── */}
       <main className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px_320px] gap-3 px-5 pb-5">

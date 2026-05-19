@@ -41,6 +41,8 @@ export interface CaseLocation {
   deaths: number;
   monitored: number;
   type: "origin" | "case" | "monitoring" | "ship";
+  /** ISO date of the most recent verified data for this location. Drives the map recency gradient. */
+  asOf: string;
 }
 
 // ─── Case timeline ───────────────────────────────────────────────────────────
@@ -284,6 +286,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 0,
     monitored: 0,
     type: "origin",
+    asOf: "2026-04-01",
   },
   {
     country: "Netherlands",
@@ -293,6 +296,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 2,
     monitored: 13,
     type: "case",
+    asOf: "2026-05-18",
   },
   {
     country: "Germany",
@@ -302,6 +306,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 1,
     monitored: 5,
     type: "case",
+    asOf: "2026-05-10",
   },
   {
     country: "United Kingdom",
@@ -311,6 +316,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 0,
     monitored: 22,
     type: "case",
+    asOf: "2026-05-15",
   },
   {
     country: "Canada",
@@ -320,6 +326,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 0,
     monitored: 4,
     type: "case",
+    asOf: "2026-05-18",
   },
   {
     country: "United States",
@@ -329,6 +336,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 0,
     monitored: 41,
     type: "monitoring",
+    asOf: "2026-05-15",
   },
   {
     country: "France",
@@ -338,6 +346,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 0,
     monitored: 26,
     type: "monitoring",
+    asOf: "2026-05-14",
   },
   {
     country: "Italy",
@@ -347,6 +356,7 @@ export const caseLocations: CaseLocation[] = [
     deaths: 0,
     monitored: 4,
     type: "monitoring",
+    asOf: "2026-05-13",
   },
 ];
 
