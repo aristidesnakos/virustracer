@@ -1,5 +1,7 @@
 # VirusTracer
 
+[![Update Outbreak Data](https://github.com/aristidesnakos/virustracer/actions/workflows/update-data.yml/badge.svg)](https://github.com/aristidesnakos/virustracer/actions/workflows/update-data.yml)
+
 **A lightweight, self-hosted outbreak surveillance dashboard you can configure and deploy in minutes.**
 
 VirusTracer makes it easy for one person — a journalist, researcher, public health student, or concerned citizen — to stand up an accurate, source-cited tracking dashboard for any viral outbreak. Configure the data file, push to GitHub, and Vercel handles the rest. A daily cron pulls from official health feeds automatically.
