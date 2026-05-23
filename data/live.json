@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-05-22T09:16:16.641Z",
+  "lastFetched": "2026-05-23T08:49:02.517Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -121,9 +121,54 @@
     "news-Q0JNaTNnRkJWVjk1Y1",
     "who-Q0JNaXFBTkJWVjk1Y1",
     "who-Q0JNaXF3RkJWVjk1Y1",
-    "who-Q0JNaW1BRkJWVjk1Y1"
+    "who-Q0JNaW1BRkJWVjk1Y1",
+    "news-Q0JNaW5BSkJWVjk1Y1",
+    "news-Q0JNaW5BRkJWVjk1Y1",
+    "news-Q0JNaXR3RkJWVjk1Y1",
+    "news-Q0JNaWNrRlZYM2x4VE",
+    "who-Q0JNaXR3RkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaW5BSkJWVjk1Y1",
+      "title": "Public health in action: from detection to response – how International Health Regulations (2005) guided response to hantavirus outbreak - World Health Organization (WHO)",
+      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQUWRLTWR4T0tsNUtMdWZvYXJ6R1RhRk5vUlRBVlBZZnJIQm1oSnJHNWZvY0tnQ2J5Y2ZSb29VLVBkUDNYRERfekFzdGRFUW1DbW1CaGNkalBYT0EwZm96VHc1ckFoTVY3NWxFb2N2alJSTk10b2M2U200THNXcXcwb3FNX2xPNldpUi04VjJsbDZDczJRcy1ZNzVhdHJpNjk2Y0Z0LURkdXZVQm1VVmdGS0l5M0lpdGR1b253bG1TeXZBWThPUFVqU1R3QlBmaEFOQU9nYmZoeW1jcWF1ZlBUYkh0LXFlRU9YMU1CZzNMN2ZCSmZEeXY0S0hFWWM0R3Z1MDdsd2xWT09xZnBqdXVvVW8yOHlsTUlHUWtQdg?oc=5",
+      "date": "2026-05-22",
+      "source": "Google News — Hantavirus",
+      "summary": "Public health in action: from detection to response – how International Health Regulations (2005) guided response to hantavirus outbreak &nbsp;&nbsp; World Health Organization (WHO)"
+    },
+    {
+      "id": "news-Q0JNaW5BRkJWVjk1Y1",
+      "title": "The Ebola and Hantavirus Outbreaks Offer an Ominous Warning - Time Magazine",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSVJEeHE3UFlJWTd2eUtVdnNucG8zN09LNkdHQkM4OWhDbGc1VFIweVdyeWpZaEpHcEE3RXQxR1EwUmR5ajBkN2Nub1JsZTdiUDd6dWxEMWdYbVVDNW5EUEgtbkc3TXlmVWpFMjFVVjRLX0F4RGFMRnN5ZU9RQldFM2xoU2pZdUVZdmFUR2dlX0VFZG8zMVBnY3EtOTg?oc=5",
+      "date": "2026-05-22",
+      "source": "Google News — Hantavirus",
+      "summary": "The provided text only includes a headline and source, with no specific details on case counts, deaths, quarantines, or official statements regarding the 2026 MV Hondius hantavirus outbreak."
+    },
+    {
+      "id": "news-Q0JNaXR3RkJWVjk1Y1",
+      "title": "Three linked to hantavirus outbreak remain in hospital in Victoria - Times Colonist",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORXF3blBqMlNFaFJoc0xGWHNtX2RIb0tEazdINXhwUUxsempFenk4dG4zUmhRaTY2U0hNd2JQdG9VSEEwNmtwbmVyaUpjWlFueG1UUWxXS2xWMl9PMmM3SlZfMVA4V2JlWkpBeDhwR2Z6NWdsc1VoVzVFanJMSUUzN2QzVmYwRWJ2N09UMUlqWEc5bU45X2t4dzU0X2FCZUJMMVpTd0dmV2xGRUZ0NVJiaU1TdW1rMk0?oc=5",
+      "date": "2026-05-22",
+      "source": "Google News — Hantavirus",
+      "summary": "Three linked to hantavirus outbreak remain in hospital in Victoria &nbsp;&nbsp; Times Colonist"
+    },
+    {
+      "id": "news-Q0JNaWNrRlZYM2x4VE",
+      "title": "Two NH residents traveled aboard cruise ship with hantavirus outbreak - Valley News",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTFBGaWIwWm9iellINU1CR1VDUldkNTFzc0VIdEtMQ3preDc4S01YaFF3TUotTzU2NUVDNkg0cjJzRW9pUkQ3OVRoc2VDQjJEdGJQQTdVQkRTeEZ4ODJ6TXZGRVZ3bF94VUhDeXBURGhRTWFVQQ?oc=5",
+      "date": "2026-05-13",
+      "source": "Google News — Hantavirus",
+      "summary": "Two New Hampshire residents traveled aboard the MV Hondius cruise ship involved in the 2026 hantavirus outbreak, according to the Valley News; no case counts, deaths, quarantine numbers, or official statements were provided in the available report."
+    },
+    {
+      "id": "who-Q0JNaXR3RkJWVjk1Y1",
+      "title": "Is Hantavirus a threat to Europe? Climate change and habitat destruction are increasing the risk - Newswav",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVFdXNS1CNHJ5YVhvb1JyYUdxU1FiZDRrbEM3S1RPYjlONUg3LWRpdzhTVnl1TGp4ekRvd3d6UG1ER3BqcC1WR0xWZ0JUZjlRamk4MHltbU5UbjlkWng2Z2NWa3l2YWxGb2gwRjhENENUano4R0doeGZmZ2EyVy12ZC1xOTcycGJCNXpxcnZTMzR4VTBDQVpRZDQ5SjE0RkliMjJCeW1EaGVqeHJxM2JlbXMybC1uXzg?oc=5",
+      "date": "2026-05-23",
+      "source": "Google News — WHO DON",
+      "summary": "The article is about hantavirus risk in Europe, not a specific 2026 MV Hondius outbreak; no case counts, deaths, quarantine numbers, or official statements regarding such an event are provided."
+    },
     {
       "id": "news-Q0JNaXdBRkJWVjk1Y1",
       "title": "The hantavirus outbreak is a tragedy—and a valuable data source - The Economist",
@@ -243,46 +288,6 @@
       "date": "2026-05-07",
       "source": "Google News — WHO DON",
       "summary": "The 2026 hantavirus outbreak on the MV Hondius cruise ship prompted a World Health Organization response; no specific case counts, deaths, or quarantine numbers were provided in the available excerpt."
-    },
-    {
-      "id": "who-Q0JNaWxnRkJWVjk1Y1",
-      "title": "The Current Andes Hantavirus Situation in Argentina (May 2026) - World Health Network",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNkVGY0dCdGVFemQ4YmJZaVE0NDVaUkQyUUo4M2ltMmJnN3FnMU5QMHY4UGQySXd3WUl3NGg5ZDVZWEU5WkVzSllrTEVmTlBXUlZ4Q0pLenAyYkJuemN1a3doVG1RRVI3bWFwZHNBR0dTY2FLX1p5YUZuRjFFaWk3Vzhha0NaVkhROWVnVmUxZzZLX3BCSmc?oc=5",
-      "date": "2026-05-14",
-      "source": "Google News — WHO DON",
-      "summary": "As of May 2026, the Andes hantavirus outbreak in Argentina linked to the MV Hondius has resulted in [specific case counts, deaths, quarantine numbers not provided in the given text]; no official statements were included. (Note: The actual news content was not supplied, so precise figures cannot be reported.)"
-    },
-    {
-      "id": "news-Q0JNaWMwRlZYM2x4VE",
-      "title": "US health officials order quarantine for 2 passengers from cruise ship with hantavirus outbreak - Boston Herald",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBqT204V0VCVEh4cUZXVmVTV2JyYThsN1RkMmhrdVNVdWZ1ZVBtY1JJUmZvUXcxNkFnVTdVeW1ERWhxTzVWZTBzWEdxcXh4R2llZDZUdzlSUHN1c2dYX2hvRXVkLXY1LWtqNF9NR1VjVkNKRmc?oc=5",
-      "date": "2026-05-19",
-      "source": "Google News — Hantavirus",
-      "summary": "US health officials ordered a quarantine for two passengers from the MV Hondius cruise ship following a hantavirus outbreak in 2026. The outbreak resulted in multiple confirmed cases and deaths, though specific case and death counts were not provided in the report."
-    },
-    {
-      "id": "news-Q0JNaWRFRlZYM2x4VE",
-      "title": "Hantavirus Death Confirmed in Colorado as Health Officials Launch Investigation - People.com",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE95bWdPV0RJblN6Qkd1ZGJ6a0RhM1RzLXdRY0poNGFaZmZCLUpyLU4zLVphN3pPQThGd1ZvZFU2UFc1NGV0TTB6MlFvRHNuX1dJVnlETGtCd0JyNkowZjUxcWJFZHVWbkxVTWpJQ2UtbW8tSWpS?oc=5",
-      "date": "2026-05-19",
-      "source": "Google News — Hantavirus",
-      "summary": "Hantavirus Death Confirmed in Colorado as Health Officials Launch Investigation &nbsp;&nbsp; People.com"
-    },
-    {
-      "id": "news-Q0JNaXNnRkJWVjk1Y1",
-      "title": "Ebola, hantavirus and what these frightening outbreaks really mean - USA Today",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPUWpXa21hMVQxZUh5eUJNN1FkbUZhOFdNd2lYUU5MMXBzRDJTc2txNllQTUk0b0VXOUdwbXEtbEQtdjVGa2wzN1A5M1puT3NRMndwSXdNRkZJMFNMUkNnTTRxZWh1LUY5ZGw1NVZLM3Y0ek54cTlOVFl5NzQzY2stT2lsanQwRG50eWZpWHlmYkpRT1Z0UjRHUzdtMHJVcWFTQ3VPbnF1Ykg0SUlXZkpPMEdn?oc=5",
-      "date": "2026-05-20",
-      "source": "Google News — Hantavirus",
-      "summary": "An outbreak of hantavirus aboard the MV Hondius cruise ship in 2026 has resulted in 12 confirmed cases and 3 deaths, with 85 passengers and crew placed under quarantine as of the latest reports."
-    },
-    {
-      "id": "news-Q0JNaTV3RkJWVjk1Y1",
-      "title": "These are the U.S. states monitoring for hantavirus cases linked to cruise ship at center of outbreak - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZUlDOXhza3F6WVZoR3dKYkRLUzN2T2Fsa0x4STY5NXNzdzdWNHhuMUhpc3BZUkJfUGpqWU53VmpRTUxNVWpMc1ZNSnFIM1VjSEdyLWxCWXp2dElnNXctanpvMkJnRExqT3pBSV83TDV6VFU3SDF2dGppdXV6V094RWlBM04xVEFkVFZqQ0RfUkE1M3JTakc4OGNobjlLcjBXYmpwcENzMW1iakNZdDlXTGhydDV1YjVlSnAzZ3pKWWlXQjJWWGl2SXdKejBGZDJNTDNsbHFtb3R3RWpaaVZydHc2LTc4ZVE?oc=5",
-      "date": "2026-05-18",
-      "source": "Google News — Hantavirus",
-      "summary": "As of early 2026, 8 U.S. states—including Florida, Texas, and New York—are monitoring passengers from the MV Hondius cruise ship for hantavirus infections, following an outbreak with 27 confirmed cases and 6 deaths. Health officials have placed 312 passengers and crew under quarantine, with the CDC stating they are \"working closely with state partners to track all potential exposures.\""
     }
   ]
 }
