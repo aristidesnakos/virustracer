@@ -16,6 +16,10 @@ import { fileURLToPath } from "url";
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const LIVE_JSON = resolve(ROOT, "data/live.json");
+const CANDIDATES_JSON = resolve(ROOT, "data/candidates.json");
+
+// Cap candidates list to recent signals to avoid carrying stale extractions forever.
+const CANDIDATE_MAX_AGE_DAYS = 30;
 
 // ── Feed sources ──────────────────────────────────────────────────────────────
 const FEEDS = [
@@ -124,6 +128,66 @@ function isoDate(pubDate) {
   }
 }
 
+// ── ISO 3166-1 alpha-2 → flag emoji ───────────────────────────────────────────
+function isoToFlag(iso) {
+  if (!iso || typeof iso !== "string" || iso.length !== 2) return "";
+  const A = 0x1F1E6;
+  const code = iso.toUpperCase();
+  if (!/^[A-Z]{2}$/.test(code)) return "";
+  return (
+    String.fromCodePoint(A + code.charCodeAt(0) - 65) +
+    String.fromCodePoint(A + code.charCodeAt(1) - 65)
+  );
+}
+
+// ── Structured candidate extraction (DeepSeek V4 Flash, JSON mode) ────────────
+async function extractCandidate(client, title, description) {
+  const prompt = `You extract structured signals from news articles about the 2026 MV Hondius hantavirus outbreak.
+
+Read the title and content. If — and only if — the article reports a SPECIFIC COUNTRY with hantavirus cases, deaths, or persons under monitoring RELATED TO THE 2026 MV HONDIUS OUTBREAK (cruise-ship origin, Andes hantavirus, returning passengers/crew), return JSON:
+
+{"country": "<English country name>", "iso": "<ISO 3166-1 alpha-2>", "casesMentioned": <integer or null>, "deathsMentioned": <integer or null>, "monitoredMentioned": <integer or null>, "context": "<one short factual sentence from the article>"}
+
+If the article does NOT mention a specific country, OR the case data is from a different/historical hantavirus outbreak (rodent-borne US Southwest, endemic Argentine cases, unrelated regional outbreaks), return:
+
+{"country": null, "iso": null, "casesMentioned": null, "deathsMentioned": null, "monitoredMentioned": null, "context": null}
+
+Title: ${title}
+Content: ${description}
+
+Respond with JSON only.`;
+
+  try {
+    const response = await client.chat.completions.create({
+      model: "deepseek/deepseek-v4-flash",
+      max_tokens: 250,
+      response_format: { type: "json_object" },
+      messages: [{ role: "user", content: prompt }],
+    });
+    const raw = response.choices[0]?.message?.content?.trim() ?? "";
+    if (!raw) return null;
+    const parsed = JSON.parse(raw);
+    if (!parsed.country || !parsed.iso) return null;
+    return {
+      country: String(parsed.country),
+      iso: String(parsed.iso).toUpperCase(),
+      flag: isoToFlag(parsed.iso),
+      casesMentioned:
+        typeof parsed.casesMentioned === "number" ? parsed.casesMentioned : null,
+      deathsMentioned:
+        typeof parsed.deathsMentioned === "number" ? parsed.deathsMentioned : null,
+      monitoredMentioned:
+        typeof parsed.monitoredMentioned === "number"
+          ? parsed.monitoredMentioned
+          : null,
+      context: parsed.context ? String(parsed.context) : "",
+    };
+  } catch (err) {
+    console.error("Candidate extraction error:", err.message);
+    return null;
+  }
+}
+
 // ── OpenRouter summarization (DeepSeek V4 Flash — cheap, fast) ────────────────
 async function extractSummary(client, title, description) {
   const prompt = `Summarize this news item about the 2026 MV Hondius hantavirus outbreak in 1–2 sentences. Be factual and specific. Include any case counts, deaths, quarantine numbers, or key official statements. No preamble.
@@ -174,8 +238,22 @@ async function main() {
     }
   }
 
+  // Load existing candidates.json
+  let candidatesStore = { lastExtracted: "", candidates: [] };
+  if (existsSync(CANDIDATES_JSON)) {
+    try {
+      candidatesStore = JSON.parse(readFileSync(CANDIDATES_JSON, "utf-8"));
+    } catch (err) {
+      console.error("Failed to parse candidates.json:", err.message);
+    }
+  }
+  const candidateIdSet = new Set(
+    (candidatesStore.candidates ?? []).map((c) => c.id),
+  );
+
   const processedSet = new Set(live.processedIds ?? []);
   const newItems = [];
+  const newCandidates = [];
 
   for (const feed of FEEDS) {
     console.log(`Fetching ${feed.name}…`);
@@ -218,16 +296,66 @@ async function main() {
         ? await extractSummary(client, item.title, item.description)
         : item.description.slice(0, 200);
 
-      newItems.push({
+      const feedItem = {
         id,
         title: item.title,
         url: item.link,
         date: isoDate(item.pubDate),
         source: feed.name,
         summary,
-      });
+      };
+      newItems.push(feedItem);
+
+      // Structured candidate extraction (skips silently if no LLM client)
+      if (client && !candidateIdSet.has(id)) {
+        const candidate = await extractCandidate(
+          client,
+          item.title,
+          item.description,
+        );
+        if (candidate) {
+          newCandidates.push({
+            id,
+            ...candidate,
+            sourceTitle: item.title,
+            sourceUrl: item.link,
+            sourceName: feed.name,
+            date: feedItem.date,
+            extractedAt: new Date().toISOString(),
+          });
+          candidateIdSet.add(id);
+          console.log(
+            `    → candidate: ${candidate.country} (${candidate.casesMentioned ?? "?"} cases)`,
+          );
+        }
+      }
 
       processedSet.add(id);
+    }
+  }
+
+  // Backfill: extract candidates from existing recent items that haven't been processed yet.
+  if (client) {
+    const existingItems = live.recentItems ?? [];
+    for (const item of existingItems) {
+      if (candidateIdSet.has(item.id)) continue;
+      console.log(`  Backfilling candidate for: ${item.title.slice(0, 60)}`);
+      const candidate = await extractCandidate(client, item.title, item.summary);
+      candidateIdSet.add(item.id);
+      if (candidate) {
+        newCandidates.push({
+          id: item.id,
+          ...candidate,
+          sourceTitle: item.title,
+          sourceUrl: item.url,
+          sourceName: item.source,
+          date: item.date,
+          extractedAt: new Date().toISOString(),
+        });
+        console.log(
+          `    → candidate: ${candidate.country} (${candidate.casesMentioned ?? "?"} cases)`,
+        );
+      }
     }
   }
 
@@ -242,6 +370,42 @@ async function main() {
   }
 
   writeFileSync(LIVE_JSON, JSON.stringify(live, null, 2));
+
+  // Merge candidates, prune stale entries, and persist.
+  const allCandidates = [
+    ...newCandidates,
+    ...(candidatesStore.candidates ?? []),
+  ];
+  const cutoffMs =
+    Date.now() - CANDIDATE_MAX_AGE_DAYS * 24 * 60 * 60 * 1000;
+  const fresh = allCandidates.filter((c) => {
+    const t = new Date(c.date || c.extractedAt).getTime();
+    return Number.isFinite(t) && t >= cutoffMs;
+  });
+  // Dedup by id, preferring earliest occurrence (newCandidates first).
+  const seen = new Set();
+  const deduped = [];
+  for (const c of fresh) {
+    if (seen.has(c.id)) continue;
+    seen.add(c.id);
+    deduped.push(c);
+  }
+
+  writeFileSync(
+    CANDIDATES_JSON,
+    JSON.stringify(
+      {
+        lastExtracted: new Date().toISOString(),
+        candidates: deduped,
+      },
+      null,
+      2,
+    ),
+  );
+
+  if (newCandidates.length > 0) {
+    console.log(`Added ${newCandidates.length} new candidate signals.`);
+  }
 }
 
 main().catch((err) => {

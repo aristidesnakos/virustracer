@@ -6,9 +6,11 @@ import SponsorCard from "@/components/SponsorCard";
 import StatStrip from "@/components/StatStrip";
 import { summary } from "@/data/outbreak";
 import { getLiveData } from "@/lib/live-data";
+import { getCandidatesData } from "@/lib/candidates-data";
 
 export default function DashboardPage() {
   const liveData = getLiveData();
+  const candidatesData = getCandidatesData();
 
   return (
     <div className="h-full flex flex-col overflow-hidden bg-gray-950">
@@ -84,7 +86,7 @@ export default function DashboardPage() {
             <CasesChart />
           </div>
           <div className="flex-1 min-h-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden">
-            <MonitoringTable />
+            <MonitoringTable candidates={candidatesData.candidates} />
           </div>
         </div>
 
