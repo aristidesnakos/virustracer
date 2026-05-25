@@ -2,6 +2,7 @@ import CasesChart from "@/components/CasesChart";
 import MonitoringTable from "@/components/MonitoringTable";
 import FeedUpdates from "@/components/FeedUpdates";
 import MapLoader from "@/components/MapLoader";
+import SponsorCard from "@/components/SponsorCard";
 import StatStrip from "@/components/StatStrip";
 import { summary } from "@/data/outbreak";
 import { getLiveData } from "@/lib/live-data";
@@ -78,12 +79,15 @@ export default function DashboardPage() {
           </div>
         </div>
 
-        {/* Right column: feed (xl only, collapses on lg) */}
-        <div className="hidden xl:flex flex-col min-h-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden">
-          <FeedUpdates
-            items={liveData.recentItems}
-            lastFetched={liveData.lastFetched}
-          />
+        {/* Right column: feed + sponsor (xl only, collapses on lg) */}
+        <div className="hidden xl:flex flex-col min-h-0 gap-3">
+          <div className="flex-1 min-h-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden">
+            <FeedUpdates
+              items={liveData.recentItems}
+              lastFetched={liveData.lastFetched}
+            />
+          </div>
+          <SponsorCard />
         </div>
       </main>
 
