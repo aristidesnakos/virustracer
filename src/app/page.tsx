@@ -29,13 +29,22 @@ export default function DashboardPage() {
         </div>
 
         <div className="flex items-center gap-2 shrink-0">
-          <span className="text-xs text-gray-600">Data as of</span>
+          <span className="text-xs text-gray-600">Cases</span>
           <span className="text-xs text-gray-400 font-medium tabular-nums">
             {new Date(summary.lastUpdated).toLocaleDateString("en-GB", {
               day: "numeric",
               month: "short",
-              year: "numeric",
             })}
+          </span>
+          <span className="text-gray-700">·</span>
+          <span className="text-xs text-gray-600">Feed</span>
+          <span className="text-xs text-gray-400 font-medium tabular-nums">
+            {liveData.lastFetched
+              ? new Date(liveData.lastFetched).toLocaleDateString("en-GB", {
+                  day: "numeric",
+                  month: "short",
+                })
+              : "—"}
           </span>
           <span className="mx-1 text-gray-700">·</span>
           <a

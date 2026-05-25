@@ -41,7 +41,7 @@ export default function StatStrip() {
   return (
     <div
       data-testid="stat-strip"
-      className="shrink-0 px-5 py-3 grid grid-flow-col auto-cols-max gap-3 overflow-x-auto"
+      className="shrink-0 px-5 py-3 flex gap-3 overflow-x-auto"
     >
       {TILES.map((tile) => {
         const trend = computeTrend(
@@ -54,7 +54,7 @@ export default function StatStrip() {
           <Card
             key={tile.label}
             size="sm"
-            className="min-w-[180px] bg-white/[0.03] ring-white/[0.06]"
+            className="flex-1 min-w-[180px] bg-white/[0.03] ring-white/[0.06]"
           >
             <CardContent className="flex flex-col gap-1">
               <div className="flex items-center justify-between gap-2">
@@ -79,7 +79,7 @@ export default function StatStrip() {
 
       <Card
         size="sm"
-        className="min-w-[150px] bg-white/[0.03] ring-white/[0.06]"
+        className="flex-1 min-w-[180px] bg-white/[0.03] ring-white/[0.06]"
       >
         <CardContent className="flex flex-col gap-1">
           <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium">
@@ -94,7 +94,7 @@ export default function StatStrip() {
 
       <Card
         size="sm"
-        className="min-w-[200px] bg-white/[0.03] ring-white/[0.06]"
+        className="flex-[1.4] min-w-[240px] bg-white/[0.03] ring-white/[0.06]"
       >
         <CardContent className="flex flex-col gap-1">
           <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium">
