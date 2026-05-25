@@ -7,13 +7,13 @@ export default function SponsorCard() {
       href={MANGOOD_URL}
       target="_blank"
       rel="noopener noreferrer sponsored"
-      className="group shrink-0 block bg-gray-900/40 border border-white/[0.07] rounded-xl px-4 py-3 hover:border-white/[0.14] hover:bg-gray-900/60 transition-colors"
+      className="group shrink-0 block bg-amber-500/[0.06] border border-amber-400/15 rounded-xl px-4 py-3 hover:bg-amber-500/[0.1] hover:border-amber-400/25 transition-colors"
     >
       <div className="flex items-center justify-between mb-1.5">
-        <span className="text-[10px] font-medium uppercase tracking-wider text-gray-600">
-          Sponsored
+        <span className="text-[10px] font-medium uppercase tracking-wider text-amber-200/50">
+          Recommended
         </span>
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-amber-400/80">
+        <span className="text-[10px] font-semibold uppercase tracking-wider text-amber-300/90">
           Mangood
         </span>
       </div>
