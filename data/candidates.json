@@ -1,4 +1,65 @@
 {
-  "lastExtracted": "",
-  "candidates": []
+  "lastExtracted": "2026-05-26T09:22:22.198Z",
+  "candidates": [
+    {
+      "id": "news-Q0JNaXNBSkJWVjk1Y1",
+      "country": "Netherlands",
+      "iso": "NL",
+      "flag": "🇳🇱",
+      "casesMentioned": 34,
+      "deathsMentioned": 3,
+      "monitoredMentioned": null,
+      "context": "The MV Hondius cruise ship was placed under quarantine in the Netherlands on May 20, 2026, following a hantavirus outbreak that has infected 34 passengers and crew, resulting in 3 deaths.",
+      "sourceTitle": "Licensable video: MV Hondius Cruise Ship In Quarantine In The Netherlands after hit by Hantavirus - 05/20/2026 - Reuters Connect",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOT1hIay1CUmxvcGw1NkFLMDlRTFlxTWR3M29xZDhha2pLS3gxRFhXUk9FUUxJRHBWV09DTkJma2ZjSUV1Z0dYMFFLZHdEWHIwdEk0UUMwTkhZWE5XV3IyTkRRcUxBdmRNeGF4M3VjRjdlM0Q1OVlvR2RJUEgzdnJpd21WMUZoenBDS0tBNGdWaEEwcDdSWEMyLU1Fc0gyWW9qR2ZMQ2MtUUE3Y3FjLUZDUmRqOFhtYV84bGJYc3pEU2M4OTBwQTdmY1dTd2VxSlF2RTc3YmtPQVo0NDNvSlUyTGpMQnpETnVWQkdjekc1MVRPWWZFN2twYkZoSnN1SmVtY2xLbWZRNDJnUnJfcExmellOa0Z3bmhVN1piZW1ZMHo1YzBtaXp5TEc1cDRPcXBi?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-24",
+      "extractedAt": "2026-05-26T09:21:34.385Z"
+    },
+    {
+      "id": "news-Q0JNaWJrRlZYM2x4VE",
+      "country": "South Africa",
+      "iso": "ZA",
+      "flag": "🇿🇦",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "monitoredMentioned": null,
+      "context": "South Africa confirms rare Andes hantavirus outbreak tied to cruise ship MV Hondius.",
+      "sourceTitle": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies - Travel And Tour World",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtR0RZNmlrNnM3NFRBM0RXZmF5WVRob0paWlVfNk05Wm5tOXVQNU44aDY2WlRsX2JVWVVmVEtBMmhhZXE2RzR1SkxFMzVBeFlQQ19TcjdhRzAzY1A1d2U2RURtaHRxZmFuRjIyVVFB?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-24",
+      "extractedAt": "2026-05-26T09:21:41.606Z"
+    },
+    {
+      "id": "news-Q0JNaWt3RkJWVjk1Y1",
+      "country": "Netherlands",
+      "iso": "NL",
+      "flag": "🇳🇱",
+      "casesMentioned": 72,
+      "deathsMentioned": 6,
+      "monitoredMentioned": 8,
+      "context": "The ship docked in the Netherlands for disinfection, with 8 individuals in quarantine.",
+      "sourceTitle": "Hantavirus-stricken cruise ship docks in the Netherlands for disinfection - Cleveland 19 News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOM09rVHNDUTBhZGN4VlNYdklpalNkeUY5SHQ3S25GeHE1S1FYTlF6WTJqQ1JmaVVOd0tjV1cyOEg4eVlnSTl2enJFdE1EYjllYmRmb2NiYTg2X1hDYnVXQTBQSjRLM2R3SUJQNUJ4Qnl3ZEdFcDhablAyMmVNLXljcE5mU0oyUHdLcW1WT1RGTjkzejDSAacBQVVfeXFMUDlxYjl0OGpnVWlnVHVTaG5wdUFJUWJpeGdXMlJyQWVhajVsOHBhblBUVVNYaGQxMlFZTERmRm1SZU5tYTJJUVBfVTlDVUR2S2h6ZG1uUmNvS2pnY29qejVGRmlPUmJCaUVFUlM1bFBERGNTWDBzNmc4NEZsZ01VbEwxX3lyTTZra21SM2IwbUxVbF9GQzhkOWxuYzNwQ3RJRmVMekJrQzg?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-18",
+      "extractedAt": "2026-05-26T09:22:06.587Z"
+    },
+    {
+      "id": "news-Q0JNaTNnRkJWVjk1Y1",
+      "country": "Cape Verde",
+      "iso": "CV",
+      "flag": "🇨🇻",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "monitoredMentioned": null,
+      "context": "A suspected hantavirus outbreak on the MV Hondius off Cape Verde has left 150 people trapped aboard.",
+      "sourceTitle": "Evacuations planned as suspected hantavirus outbreak traps 150 on ship off Cape Verde - Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORVpLaUEzSTEyUkdYMHJ2ZlQzQTdzeU9qR25rcGxXSE5xN25rd1d1UmxPOS05TXZwR0I1MVFEdHRMX1V0TWFBMXZLaUEzdU9NVmJlX1hCTE5mMnA3VkU5Y0hiSkhDb3ExcVBoNXczbm9OUUk0UjdZaWItRGFZWGZWajV1OFNVaXFCT3lwbV9BNGYySG1ySHVfR3Q1LUFJQktqYXNBUXRGckpSak1YSm5WTUdmbzVYY0padGVfX0VIT3VCMmxXdjlWY0xydFFxalV5U0VGTGlPYWhfdlBzOWc?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-04",
+      "extractedAt": "2026-05-26T09:22:08.633Z"
+    }
+  ]
 }
