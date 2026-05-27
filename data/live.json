@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-05-26T09:22:22.197Z",
+  "lastFetched": "2026-05-27T09:20:33.375Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -132,9 +132,36 @@
     "who-Q0JNaXZnRkJWVjk1Y1",
     "news-Q0JNaWl3RkJWVjk1Y1",
     "news-Q0JNaXNBSkJWVjk1Y1",
-    "who-Q0JNaW9nSkJWVjk1Y1"
+    "who-Q0JNaW9nSkJWVjk1Y1",
+    "news-Q0JNaTR3RkJWVjk1Y1",
+    "news-Q0JNaXBnRkJWVjk1Y1",
+    "news-Q0JNaWtBSkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaTR3RkJWVjk1Y1",
+      "title": "Passenger Tests Positive For Hantavirus Weeks After Leaving Infected Cruise Ship (Latest Updates) - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNak56bzI3aHNZMERlWnFFeUcxTlYwZzN6cEVaY3NydFB0RV8yLUY2TnJuZld3LWFhdGdFNmtaZU83NHVaaVN3VE8yQWROa3IyX1BVaDdmUHhwWjd5ODlza1Q0U2RtTG90SWRhNVduY21nYlhZeVRlX2xzdURWQm9RRWxSbGhGQkNPdEl5T29lY0Z3ZGFmRFhZeWRRR25PUUloZ043TlJySXJ0R2pZdTNQaVBqQm5uY1lmUXlLLUZ3dFdQOTFWdjBLUng5VXBrbkJzT2RCbmVlalkyV1d0VWxUY3Q3Zw?oc=5",
+      "date": "2026-05-26",
+      "source": "Google News — Hantavirus",
+      "summary": "Passenger Tests Positive For Hantavirus Weeks After Leaving Infected Cruise Ship (Latest Updates) &nbsp;&nbsp; Forbes"
+    },
+    {
+      "id": "news-Q0JNaXBnRkJWVjk1Y1",
+      "title": "Passenger Evacuated from Hantavirus-Hit Cruise Ship Tests Positive for Disease in Spain - People.com",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVERsblJVX3J6Rkc2cGgxQmxIZ2xMNGVaaFlvem5NMzBTYkdkWDlqd2V5cEVORXFlM3FCLWZwWnhuWHJ3d3hSaTVxc1hPLW13ZXFjR3pZOTY5emlreWlYMFlRb2xCMTFkRy1qSTh5OUxqaTV4c1dWazBHZEw0VzJseGVGZkc2ckgyOW5ZNk45VXdCTGozX2dIemhzNWFtNnpKMHdXVnVn?oc=5",
+      "date": "2026-05-26",
+      "source": "Google News — Hantavirus",
+      "summary": "Passenger Evacuated from Hantavirus-Hit Cruise Ship Tests Positive for Disease in Spain &nbsp;&nbsp; People.com"
+    },
+    {
+      "id": "news-Q0JNaWtBSkJWVjk1Y1",
+      "title": "The cruise ship at center of a deadly hantavirus outbreak has to undergo extra cleaning - Rocky Mount Telegram",
+      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPckNFZHdYQ0hxa255Z1NucXhhUWowNy1RNldDUGNNX3VfRXhvMUowM3V0MXpZallZeU5xTkRJbEtJcS01SHJVc0E1czktanAwRGlYcTdyd0VBZldfZDJqbHp1MWs2cDFRYUcyNUluR3puTlg0UXRzbEloZFQySDA4NlNhMXJkXzVaNEpPY1k2MU82VFA0ejFYLXl2NS1QSXgzOGF2ZW5LSHY4c0RVdDdXRFZlX1JwVDBTeFotd2VqRTdFeFNySnlnVWlPQzRFTEJKN05OY25NZTc0NU85a3VqeEVDSTEwNXhteDVldHFhTTZ5bmMyU1FaZ1J2WHRkblc4a0V4OHlVT3lWZWhJWWhEUw?oc=5",
+      "date": "2026-05-26",
+      "source": "Google News — Hantavirus",
+      "summary": "The cruise ship at center of a deadly hantavirus outbreak has to undergo extra cleaning &nbsp;&nbsp; Rocky Mount Telegram"
+    },
     {
       "id": "news-Q0JNaWl3RkJWVjk1Y1",
       "title": "How hantavirus may have spread aboard a cruise ship, according to health experts - CBS News",
@@ -270,30 +297,6 @@
       "date": "2026-05-04",
       "source": "Google News — WHO DON",
       "summary": "Hantavirus: What You Need To Know After Cruise Ship Deaths &nbsp;&nbsp; i24NEWS"
-    },
-    {
-      "id": "who-Q0JNaW1BRkJWVjk1Y1",
-      "title": "Hantavirus Outbreak: Experts Warn of Deadly Rodent-Borne Virus After Cruise Ship Deaths - Ratopati",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSnh1bXB4YkNJcjJsREZLVXJrbnltTmRJWmV0VFd3VHBXQW4yOXJmeWFEZl9OS3F5RnpibU1EWDNiaTBNOGlJZGlWd081OU5VUWpTWllxZFFsSWtrWXNseV9JaDNranB4d3JlY2tON1U0dTJDcHBHYlNWWkpKUDk5X05aa01Qc3FIN3I4UFVpcTcxbVlKVXVCRA?oc=5",
-      "date": "2026-05-09",
-      "source": "Google News — WHO DON",
-      "summary": "The 2026 MV Hondius hantavirus outbreak involved deaths on a cruise ship, prompting expert warnings about the rodent-borne virus; no specific case counts, quarantine numbers, or official statements were provided in the available excerpt."
-    },
-    {
-      "id": "news-Q0JNaXBBRkJWVjk1Y1",
-      "title": "Public Health Alerts: Andes hantavirus on a cruise ship, 2026 - CIDRAP",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT1NEU2laM25sdWRRZFp1QVU5dG9RTXI0ZUUwMURaZlZUOC1WaGRIVERpQ2dwNFJYVDZBeTFxaU82dG4yOEphWWRfVFRHbmN5STF6RWlocUJ1N2tIckFWRWtVbmh4ZFVNejdxeE5hU21EcDdGdzFpMkFCajBVMGZSWlQ4dWJuVDRIRDhwQll6eENhTFRCTS1xX2YzWUxmeEw5Wmk2dw?oc=5",
-      "date": "2026-05-20",
-      "source": "Google News — Hantavirus",
-      "summary": "The 2026 MV Hondius outbreak of Andes hantavirus resulted in 13 confirmed cases and 4 deaths among passengers and crew, leading to the quarantine of 87 individuals aboard the ship; the World Health Organization stated this was the first documented instance of human-to-human transmission of the virus on a cruise vessel."
-    },
-    {
-      "id": "news-Q0JNaXp3RkJWVjk1Y1",
-      "title": "Demand for cruises appears undimmed despite hantavirus and other onboard outbreaks - WUSF",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOb01lazJLRERuMmJ5QUdGanpDQUJES0VIVjR5V1ppSWRISE9taVNJNVVJSXRJb0R3UlhpVGo4MVUxQVZNcnQ2M1hOZzFJVXMydGc5UmwtbDlGRFliMmxELUZPUUJwMHZtb0lwUUhKTWVGYTlMQ1VXdEFHS010X0N0aEVOVkk3a0l6SkU0UUw3eUpvc1hIS2pEcm5hRUY1ZzR3MUM1TUhVNkxUcGpKN3Y0MkZsUE1QcWtfdTNyMzRieVpwaWNzclg1YkxQbUNkLXc?oc=5",
-      "date": "2026-05-19",
-      "source": "Google News — Hantavirus",
-      "summary": "Demand for cruises appears undimmed despite hantavirus and other onboard outbreaks &nbsp;&nbsp; WUSF"
     }
   ]
 }

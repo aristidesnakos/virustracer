@@ -1,6 +1,51 @@
 {
-  "lastExtracted": "2026-05-26T09:22:22.198Z",
+  "lastExtracted": "2026-05-27T09:20:33.376Z",
   "candidates": [
+    {
+      "id": "news-Q0JNaXBnRkJWVjk1Y1",
+      "country": "Spain",
+      "iso": "ES",
+      "flag": "🇪🇸",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "monitoredMentioned": null,
+      "context": "A passenger evacuated from the hantavirus-hit MV Hondius cruise ship tested positive for the disease in Spain.",
+      "sourceTitle": "Passenger Evacuated from Hantavirus-Hit Cruise Ship Tests Positive for Disease in Spain - People.com",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVERsblJVX3J6Rkc2cGgxQmxIZ2xMNGVaaFlvem5NMzBTYkdkWDlqd2V5cEVORXFlM3FCLWZwWnhuWHJ3d3hSaTVxc1hPLW13ZXFjR3pZOTY5emlreWlYMFlRb2xCMTFkRy1qSTh5OUxqaTV4c1dWazBHZEw0VzJseGVGZkc2ckgyOW5ZNk45VXdCTGozX2dIemhzNWFtNnpKMHdXVnVn?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-26",
+      "extractedAt": "2026-05-27T09:19:27.064Z"
+    },
+    {
+      "id": "news-Q0JNaWNrRlZYM2x4VE",
+      "country": "United States",
+      "iso": "US",
+      "flag": "🇺🇸",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "monitoredMentioned": null,
+      "context": "Two New Hampshire residents traveled aboard the MV Hondius cruise ship involved in the 2026 hantavirus outbreak.",
+      "sourceTitle": "Two NH residents traveled aboard cruise ship with hantavirus outbreak - Valley News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMickFVX3lxTFBGaWIwWm9iellINU1CR1VDUldkNTFzc0VIdEtMQ3preDc4S01YaFF3TUotTzU2NUVDNkg0cjJzRW9pUkQ3OVRoc2VDQjJEdGJQQTdVQkRTeEZ4ODJ6TXZGRVZ3bF94VUhDeXBURGhRTWFVQQ?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-13",
+      "extractedAt": "2026-05-27T09:20:00.350Z"
+    },
+    {
+      "id": "news-Q0JNaVlrRlZYM2x4VE",
+      "country": "Kansas",
+      "iso": "US",
+      "flag": "🇺🇸",
+      "casesMentioned": 12,
+      "deathsMentioned": 5,
+      "monitoredMentioned": 248,
+      "context": "A multi-country outbreak of Andes strain hantavirus linked to the cruise ship MV Hondius has resulted in 12 confirmed cases and 5 deaths across four countries; the Kansas Department of Health and Environment stated that 248 passengers and crew remain in quarantine.",
+      "sourceTitle": "2026 Multi-country Andes Strain Hantavirus Outbreak Associated with a Cruise Ship - KDHE (.gov)",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9qM2w5MzY2RzlEblZKRThsc0l3MmRic0dFVVNNRmpOdncwTnNFdTluMjNieTc2OXNuLVlZXzJRcE1nRU5oTHhlVmFJdFV5YTRoNUhrX080Y0U4YmVxSVVtNER3?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-13",
+      "extractedAt": "2026-05-27T09:20:22.058Z"
+    },
     {
       "id": "news-Q0JNaXNBSkJWVjk1Y1",
       "country": "Netherlands",
