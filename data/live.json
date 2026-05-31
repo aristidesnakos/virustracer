@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-05-30T08:56:07.340Z",
+  "lastFetched": "2026-05-31T09:11:17.739Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -143,9 +143,18 @@
     "news-Q0JNaTZBRkJWVjk1Y1",
     "who-Q0JNaVprRlZYM2x4VE",
     "who-Q0JNaWlBRkJWVjk1Y1",
-    "who-Q0JNaW5BRkJWVjk1Y1"
+    "who-Q0JNaW5BRkJWVjk1Y1",
+    "who-Q0JNaWd3RkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaWd3RkJWVjk1Y1",
+      "title": "Hantavirus reported on international cruise ship, MV Hondius - Outbreak News Today",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNTDlnUVNsUW82SFE5QXJjR0FhOS16N3pkcmVsZThRNVU3enJlZHBKdnNFblBNNFF3b3czWV9XM1lqU0pRNk9WXzBHeG5jX0JWTjdUTUhsd3Ywcm1aSE1Mc3BIM1FhdEZjM0MyZUktWTJwc2xuQkNSUGwwb3FwZjB0WUpJcw?oc=5",
+      "date": "2026-05-04",
+      "source": "Google News — WHO DON",
+      "summary": "Hantavirus reported on international cruise ship, MV Hondius &nbsp;&nbsp; Outbreak News Today"
+    },
     {
       "id": "news-Q0JNaS1BRkJWVjk1Y1",
       "title": "Exposed Hantavirus Patients Could Go Home—If They Agree To 24/7 Surveillance (Latest Updates) - Forbes",
@@ -297,14 +306,6 @@
       "date": "2026-05-22",
       "source": "Google News — Hantavirus",
       "summary": "The provided text only includes a headline and source, with no specific details on case counts, deaths, quarantines, or official statements regarding the 2026 MV Hondius hantavirus outbreak."
-    },
-    {
-      "id": "news-Q0JNaXR3RkJWVjk1Y1",
-      "title": "Three linked to hantavirus outbreak remain in hospital in Victoria - Times Colonist",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxORXF3blBqMlNFaFJoc0xGWHNtX2RIb0tEazdINXhwUUxsempFenk4dG4zUmhRaTY2U0hNd2JQdG9VSEEwNmtwbmVyaUpjWlFueG1UUWxXS2xWMl9PMmM3SlZfMVA4V2JlWkpBeDhwR2Z6NWdsc1VoVzVFanJMSUUzN2QzVmYwRWJ2N09UMUlqWEc5bU45X2t4dzU0X2FCZUJMMVpTd0dmV2xGRUZ0NVJiaU1TdW1rMk0?oc=5",
-      "date": "2026-05-22",
-      "source": "Google News — Hantavirus",
-      "summary": "Three linked to hantavirus outbreak remain in hospital in Victoria &nbsp;&nbsp; Times Colonist"
     }
   ]
 }
