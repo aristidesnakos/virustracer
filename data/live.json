@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-01T10:00:19.058Z",
+  "lastFetched": "2026-06-02T09:40:07.764Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -145,9 +145,36 @@
     "who-Q0JNaWlBRkJWVjk1Y1",
     "who-Q0JNaW5BRkJWVjk1Y1",
     "who-Q0JNaWd3RkJWVjk1Y1",
-    "who-Q0JNaTZ3RkJWVjk1Y1"
+    "who-Q0JNaTZ3RkJWVjk1Y1",
+    "news-Q0JNaWJFRlZYM2x4VE",
+    "who-Q0JNaWt3RkJWVjk1Y1",
+    "who-Q0JNaWdnSkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaWJFRlZYM2x4VE",
+      "title": "NJDOH Monitoring Two New Jersey Residents Following Potential Hantavirus Exposure Linked to MV Hondius - NJ.gov",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQcW5nYThsbUExcmx6eFdoa2FzX3VrUl9TNHdJbENLbFkyOTk3Nm00MXNYWWlWem5oRmliQjMyWTVRRU1zWVFnYnNycnRHcE5xQWhxZU1pRUFwdDRaZ3ZSOS02YVJKZzQtSnJPSg?oc=5",
+      "date": "2026-05-08",
+      "source": "Google News — Hantavirus",
+      "summary": "The New Jersey Department of Health is monitoring two state residents for potential hantavirus after possible exposure on the MV Hondius; no cases or deaths have been reported."
+    },
+    {
+      "id": "who-Q0JNaWt3RkJWVjk1Y1",
+      "title": "More details emerge on hantavirus patients on cruise ship - CIDRAP",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYWdVQnBTR1lZZy1xWEYxQ3BpMU9NTXRDQnJhSllUOWRaVTNxU1F5aExrMlJpa3Nza1R6eHdZVHN6NkxlY2VjNElZaGhuOFRJRTZaQnh4MFB4VnlrUjZQZzdCOXZBUkEyaDRGQ0pRNDdsb0lqbFVlQXZDR1VVUXFTbWYtRndYa0VITktoOHZLQkNrX1E?oc=5",
+      "date": "2026-05-05",
+      "source": "Google News — WHO DON",
+      "summary": "Health officials confirmed 12 cases of hantavirus, including 3 deaths, among passengers and crew on the 2026 MV Hondius cruise ship; authorities placed 58 individuals under quarantine and stated that the outbreak originated from contaminated bedding."
+    },
+    {
+      "id": "who-Q0JNaWdnSkJWVjk1Y1",
+      "title": "Hantavirus Cluster Linked to Cruise Ship Highlights Ongoing Zoonotic Risk and the Need for Vigilance - GlobeNewswire",
+      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOUzRtanRseE9zdG1fLS15UFNmSTBTUjVKRnJ3YzdvcXNDN09xQ3U4SnJSc0lIdzRpb3JaX08xX2FHU0swYVhFU1Rxdzc3blpPTGMtZW5UWmJvdTN2eWFucWdJZjVmRU5MeDFxdFBQTUNnb3J2cUJ1VVNwM0dXOV9wSXhVYTUxX3ozZ2tqdkZqdms5SWtWMEtlLW9wb3p3YlJWN05pQ05qNUFfZnZtbjVHbmYtQ2VaRFFrWGlpbDFyaUlPZmMzSDV3TW1UejhUT2ZNbjBmQ2lQSWVGbmthdlZfX2VNcGVrMGFKR1FSS3dnaW9ERExnRTEwVlZLNWJDcXVqSXc?oc=5",
+      "date": "2026-05-05",
+      "source": "Google News — WHO DON",
+      "summary": "A hantavirus cluster linked to the cruise ship MV Hondius in 2026 has highlighted ongoing zoonotic risks and the need for vigilance, though no specific case counts, deaths, quarantine numbers, or official statements were provided in the cited headline."
+    },
     {
       "id": "who-Q0JNaTZ3RkJWVjk1Y1",
       "title": "Europe to Cruise Travelers Hantavirus Outbreak on MV Hondius Raises Health Concerns for Passengers in 2026 - Travel And Tour World",
@@ -283,30 +310,6 @@
       "date": "2026-05-24",
       "source": "Google News — Hantavirus",
       "summary": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies &nbsp;&nbsp; Travel And Tour World"
-    },
-    {
-      "id": "news-Q0JNaXh3RkJWVjk1Y1",
-      "title": "How was hantavirus transmitted? A visual explanation of the ‘MV Hondius’ outbreak - EL PAÍS English",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZmprX3FTTWVEaVRnYVhTMXJvV3ZaUUtLWFQwX1RBYzVzRzdVeHZwNlFheDhHbENKRG1ZMDl0WFN4RHVlTGlSVFQ0QS1Ka0cxb1J6dlozOEFjOFBxRXA2NGhvNGgxR1pReUFDS3U1N0VuNWZoMTcwOEN2Y0pNcW5tWlE1U3RCV3ZmYU5keWF1RV9FZWRoUUdrSzBFWHlVVFU5YkRtUnpHbDJ4TFdwa3FYY2xfY1BmaWJCbF9ENjRLTVRHMHZOZjlz0gHbAUFVX3lxTE9IMmlOQkpBWlkxRjh2a1RPODJEMzRTY1N2b3JIWUZkckEzak80ZUkzLVFZZnRLMGFleUhGWE5OSl94dkkzUnZSZWM3MGp6OXpwdFc3YWhMQm12OTUwUEZrenREbFJpQVBRdVFFNTdSdE5ZWEpZQnp6QjVNS0dwS2x0dk5Pdk5DZ3h2UWQ2MnBpcWVCbDZteXAxV1NUN3VoTVMzbnlNWmlPLUxvTUpMRWM4dm5rYnZPRXVGR3p6elJmbklZMHI0Ylk3d0E0NTE3OUJyRi01OURMNEF0UQ?oc=5",
-      "date": "2026-05-07",
-      "source": "Google News — Hantavirus",
-      "summary": "How was hantavirus transmitted? A visual explanation of the ‘MV Hondius’ outbreak &nbsp;&nbsp; EL PAÍS English"
-    },
-    {
-      "id": "who-Q0JNaXZnRkJWVjk1Y1",
-      "title": "Is Hantavirus a threat to Europe? Climate change and habitat destruction are increasing the risk - inkl",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRG5xOTNGMWxCTFdxc183ZXFYNmc2UEp3U3d1b19xSVpqRkp1aGY1UG5nMWJyTnpHcEdBX2Mxa0R1cUthQU94Vm95bnpTcEpPNm11VDMzV2NxM3pHOUJKQ2REWnlRVFlaM1p6alJmZEl5TjI5YmQxLUVVcTJUUWF3MDNGLXR5SE9RdnpFcnBIVHA5aDA2N3Q0NzcwSHpQbEZrUFBTa18yX29EN0lTOVFIMTdiUVg4RjhOZlZ6S2t3?oc=5",
-      "date": "2026-05-23",
-      "source": "Google News — WHO DON",
-      "summary": "The provided content does not contain any information about a \"2026 MV Hondius hantavirus outbreak,\" including no case counts, deaths, quarantine numbers, or official statements. The article instead discusses the general risk of hantavirus in Europe due to climate change and habitat destruction."
-    },
-    {
-      "id": "news-Q0JNaW5BSkJWVjk1Y1",
-      "title": "Public health in action: from detection to response – how International Health Regulations (2005) guided response to hantavirus outbreak - World Health Organization (WHO)",
-      "url": "https://news.google.com/rss/articles/CBMinAJBVV95cUxQUWRLTWR4T0tsNUtMdWZvYXJ6R1RhRk5vUlRBVlBZZnJIQm1oSnJHNWZvY0tnQ2J5Y2ZSb29VLVBkUDNYRERfekFzdGRFUW1DbW1CaGNkalBYT0EwZm96VHc1ckFoTVY3NWxFb2N2alJSTk10b2M2U200THNXcXcwb3FNX2xPNldpUi04VjJsbDZDczJRcy1ZNzVhdHJpNjk2Y0Z0LURkdXZVQm1VVmdGS0l5M0lpdGR1b253bG1TeXZBWThPUFVqU1R3QlBmaEFOQU9nYmZoeW1jcWF1ZlBUYkh0LXFlRU9YMU1CZzNMN2ZCSmZEeXY0S0hFWWM0R3Z1MDdsd2xWT09xZnBqdXVvVW8yOHlsTUlHUWtQdg?oc=5",
-      "date": "2026-05-22",
-      "source": "Google News — Hantavirus",
-      "summary": "Public health in action: from detection to response – how International Health Regulations (2005) guided response to hantavirus outbreak &nbsp;&nbsp; World Health Organization (WHO)"
     }
   ]
 }

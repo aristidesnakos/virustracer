@@ -1,6 +1,36 @@
 {
-  "lastExtracted": "2026-06-01T10:00:19.059Z",
+  "lastExtracted": "2026-06-02T09:40:07.765Z",
   "candidates": [
+    {
+      "id": "news-Q0JNaWJFRlZYM2x4VE",
+      "country": "United States",
+      "iso": "US",
+      "flag": "🇺🇸",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "monitoredMentioned": 2,
+      "context": "NJDOH is monitoring two New Jersey residents following potential hantavirus exposure linked to the MV Hondius.",
+      "sourceTitle": "NJDOH Monitoring Two New Jersey Residents Following Potential Hantavirus Exposure Linked to MV Hondius - NJ.gov",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQcW5nYThsbUExcmx6eFdoa2FzX3VrUl9TNHdJbENLbFkyOTk3Nm00MXNYWWlWem5oRmliQjMyWTVRRU1zWVFnYnNycnRHcE5xQWhxZU1pRUFwdDRaZ3ZSOS02YVJKZzQtSnJPSg?oc=5",
+      "sourceName": "Google News — Hantavirus",
+      "date": "2026-05-08",
+      "extractedAt": "2026-06-02T09:36:51.786Z"
+    },
+    {
+      "id": "who-Q0JNaTZ3RkJWVjk1Y1",
+      "country": "Netherlands",
+      "iso": "NL",
+      "flag": "🇳🇱",
+      "casesMentioned": 12,
+      "deathsMentioned": 3,
+      "monitoredMentioned": 9,
+      "context": "In 2026, a hantavirus outbreak on the cruise ship MV Hondius infected at least 12 passengers and crew, resulting in 3 deaths, with the remaining nine individuals placed under quarantine, prompting European health officials to issue a travel advisory for cruise passengers.",
+      "sourceTitle": "Europe to Cruise Travelers Hantavirus Outbreak on MV Hondius Raises Health Concerns for Passengers in 2026 - Travel And Tour World",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUDN6T013bFB3UTBwLXdqSkRhcHVtS0NSWlVMQ0pZSDBkMjFYbVJ4YjljOGdFdjdKa0NsZFliNE9rR3g2ajQyX1ZBWElyRXVDc0JjeFJNNmpVZVBKY09HYXc2R0RpN0RlVFBoOGdoZDdtd3V5dUpvYXI0OHZUaVFPckdCMkJEMDVIWDJvX3dCbF93Tl84b0hROEN3ajQ3OXhNNFlKVTdxZldCMGt4RFYwbk1zLUZKTG14cGpGY3dHNkd3bHZySl9nenJ6MzJwN1N5NU1UeWptTElkdmpUVmZSZGt2NC1DSnhRSEZz?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-05-06",
+      "extractedAt": "2026-06-02T09:37:11.422Z"
+    },
     {
       "id": "news-Q0JNaXBnRkJWVjk1Y1",
       "country": "Spain",
