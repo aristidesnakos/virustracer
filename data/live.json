@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-02T09:40:07.764Z",
+  "lastFetched": "2026-06-03T09:47:21.692Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -148,9 +148,27 @@
     "who-Q0JNaTZ3RkJWVjk1Y1",
     "news-Q0JNaWJFRlZYM2x4VE",
     "who-Q0JNaWt3RkJWVjk1Y1",
-    "who-Q0JNaWdnSkJWVjk1Y1"
+    "who-Q0JNaWdnSkJWVjk1Y1",
+    "news-Q0JNaVkwRlZYM2x4VE",
+    "who-Q0JNaWZrRlZYM2x4VE"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaVkwRlZYM2x4VE",
+      "title": "Five US passengers from hantavirus-hit ship return to home states - Forth.News",
+      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pMy1JVnppbE51SVgxLTV5MDMzZDlIV2hIcnZFS1N4Z1ZjcHRmRUI1NzI3SnlsY2hlbFVWWGhwMC1BUVFmTEU3enI3WUlLT2luempFbzViT21sQzR4TVA5ZDE5TQ?oc=5",
+      "date": "2026-06-02",
+      "source": "Google News — Hantavirus",
+      "summary": "Five US passengers from the cruise ship MV Hondius, which experienced a hantavirus outbreak in 2026, have returned to their home states. The outbreak has resulted in at least three deaths and multiple cases, with remaining passengers and crew placed under quarantine."
+    },
+    {
+      "id": "who-Q0JNaWZrRlZYM2x4VE",
+      "title": "Andes virus: What nurses need to know - National Nurses United",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA5SHBQOEU3Ui1WRXZvSm1SNlJqcmpONjdQVDh1RkZHZGFFWXlpa1MzalcxenptYkNfZVAycjVPbGo4UEtEYjEyZGNjSFphX0hqNG1qbU94UWtuXy1lcGlpYXIyVWdOanR3RTEyc1N5bS1NUVh3aF9sc3RVMmNhQQ?oc=5",
+      "date": "2026-05-11",
+      "source": "Google News — WHO DON",
+      "summary": "Andes virus: What nurses need to know &nbsp;&nbsp; National Nurses United"
+    },
     {
       "id": "news-Q0JNaWJFRlZYM2x4VE",
       "title": "NJDOH Monitoring Two New Jersey Residents Following Potential Hantavirus Exposure Linked to MV Hondius - NJ.gov",
@@ -294,22 +312,6 @@
       "date": "2026-05-24",
       "source": "Google News — Hantavirus",
       "summary": "The MV Hondius cruise ship was placed under quarantine in the Netherlands on May 20, 2026, following a hantavirus outbreak that has infected 34 passengers and crew, resulting in 3 deaths."
-    },
-    {
-      "id": "who-Q0JNaW9nSkJWVjk1Y1",
-      "title": "Hantavirus outbreak: WHO calls for active monitoring of all aboard MV Hondius after deaths - MSN",
-      "url": "https://news.google.com/rss/articles/CBMiogJBVV95cUxOUXhNYThFMkl4cWVZblF2d0xFaTF1T1BnYzRaeHB2YkdaWUt6alFUU0dzUi1RaEstaXI1eTc2bFJ5Tm41RThJYXc2Y1JUOFRyODV1Yjg1TkljR2FWa2FzOFBiQVZUZXRrNFQ1VVhsMEVXYUxJdUJSeXQxOWdxY0dhUG9ZOGtjTHJKU0p1cWVDRnIwc2RSWDJCYUJ3bk03MXF2RWxwdk5YdnZUWlN4NDZRMHlITjdYaEQwQ09fZHhCNHhrQTUyODNyWDd2RVoyREY4UHdsa25vUDYyanBjdHlpRmpmUEFrbXJTOUdhTnVCbm9PNmI1bjkxV0ZDdkNMSzE3N1FsUUpZMmtzNEozS2lJd0duTjlta2YwdzVteEZrOHhLZw?oc=5",
-      "date": "2026-05-21",
-      "source": "Google News — WHO DON",
-      "summary": "Hantavirus outbreak: WHO calls for active monitoring of all aboard MV Hondius after deaths &nbsp;&nbsp; MSN"
-    },
-    {
-      "id": "news-Q0JNaWJrRlZYM2x4VE",
-      "title": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies - Travel And Tour World",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtR0RZNmlrNnM3NFRBM0RXZmF5WVRob0paWlVfNk05Wm5tOXVQNU44aDY2WlRsX2JVWVVmVEtBMmhhZXE2RzR1SkxFMzVBeFlQQ19TcjdhRzAzY1A1d2U2RURtaHRxZmFuRjIyVVFB?oc=5",
-      "date": "2026-05-24",
-      "source": "Google News — Hantavirus",
-      "summary": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies &nbsp;&nbsp; Travel And Tour World"
     }
   ]
 }

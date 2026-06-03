@@ -1,6 +1,36 @@
 {
-  "lastExtracted": "2026-06-02T09:40:07.765Z",
+  "lastExtracted": "2026-06-03T09:47:21.693Z",
   "candidates": [
+    {
+      "id": "who-Q0JNaWt3RkJWVjk1Y1",
+      "country": "Netherlands",
+      "iso": "NL",
+      "flag": "🇳🇱",
+      "casesMentioned": 12,
+      "deathsMentioned": 3,
+      "monitoredMentioned": 58,
+      "context": "Health officials confirmed 12 cases of hantavirus, including 3 deaths, among passengers and crew on the 2026 MV Hondius cruise ship.",
+      "sourceTitle": "More details emerge on hantavirus patients on cruise ship - CIDRAP",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOYWdVQnBTR1lZZy1xWEYxQ3BpMU9NTXRDQnJhSllUOWRaVTNxU1F5aExrMlJpa3Nza1R6eHdZVHN6NkxlY2VjNElZaGhuOFRJRTZaQnh4MFB4VnlrUjZQZzdCOXZBUkEyaDRGQ0pRNDdsb0lqbFVlQXZDR1VVUXFTbWYtRndYa0VITktoOHZLQkNrX1E?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-05-05",
+      "extractedAt": "2026-06-03T09:46:32.659Z"
+    },
+    {
+      "id": "who-Q0JNaW5BRkJWVjk1Y1",
+      "country": "Nigeria",
+      "iso": "NG",
+      "flag": "🇳🇬",
+      "casesMentioned": null,
+      "deathsMentioned": 3,
+      "monitoredMentioned": null,
+      "context": "The World Health Organization confirmed a hantavirus outbreak on the MV Hondius cruise ship in the Atlantic, with three deaths reported.",
+      "sourceTitle": "Three dead as WHO confirms Hantavirus outbreak on Atlantic cruise ship - The Guardian Nigeria News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbG9xNXBFWm9rUnd3cG5TNW9GOWVJS2JwOTg3aEkya1U0clhsT05Wb1lPOGoyTHM0MUJhUWRDUlpJWTBvUm54OUtoWENkSUVkc1FzbFhkZ3hoTEl0OVB6Wk5HcDRMRFZkUWRnVk5hRWdXeGlYVlRWdTRPWktJSmh2VkFTazYtUllfYUQyTllqNkRNSWMtd1pFV0dJeEw?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-05-05",
+      "extractedAt": "2026-06-03T09:46:45.368Z"
+    },
     {
       "id": "news-Q0JNaWJFRlZYM2x4VE",
       "country": "United States",
@@ -120,21 +150,6 @@
       "sourceName": "Google News — Hantavirus",
       "date": "2026-05-18",
       "extractedAt": "2026-05-26T09:22:06.587Z"
-    },
-    {
-      "id": "news-Q0JNaTNnRkJWVjk1Y1",
-      "country": "Cape Verde",
-      "iso": "CV",
-      "flag": "🇨🇻",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "monitoredMentioned": null,
-      "context": "A suspected hantavirus outbreak on the MV Hondius off Cape Verde has left 150 people trapped aboard.",
-      "sourceTitle": "Evacuations planned as suspected hantavirus outbreak traps 150 on ship off Cape Verde - Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORVpLaUEzSTEyUkdYMHJ2ZlQzQTdzeU9qR25rcGxXSE5xN25rd1d1UmxPOS05TXZwR0I1MVFEdHRMX1V0TWFBMXZLaUEzdU9NVmJlX1hCTE5mMnA3VkU5Y0hiSkhDb3ExcVBoNXczbm9OUUk0UjdZaWItRGFZWGZWajV1OFNVaXFCT3lwbV9BNGYySG1ySHVfR3Q1LUFJQktqYXNBUXRGckpSak1YSm5WTUdmbzVYY0padGVfX0VIT3VCMmxXdjlWY0xydFFxalV5U0VGTGlPYWhfdlBzOWc?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-05-04",
-      "extractedAt": "2026-05-26T09:22:08.633Z"
     }
   ]
 }
