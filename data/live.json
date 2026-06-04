@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-03T09:47:21.692Z",
+  "lastFetched": "2026-06-04T09:29:10.635Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -150,9 +150,45 @@
     "who-Q0JNaWt3RkJWVjk1Y1",
     "who-Q0JNaWdnSkJWVjk1Y1",
     "news-Q0JNaVkwRlZYM2x4VE",
-    "who-Q0JNaWZrRlZYM2x4VE"
+    "who-Q0JNaWZrRlZYM2x4VE",
+    "news-Q0JNaTVBRkJWVjk1Y1",
+    "news-Q0JNaVlFRlZYM2x4VE",
+    "news-Q0JNaVpFRlZYM2x4VE",
+    "news-Q0JNaTFnRkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaTVBRkJWVjk1Y1",
+      "title": "Oregon Health Authority monitors returning MV Hondius passenger after hantavirus outbreak - KMTR",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOLU5hYlZ4UXl2b0hrdGhBeWE5clBXcy1vaFlWWUo3ZGhJSkkwWnNzQ0lQNm9vcGtQbmNqbGktdFFIeWdLeVZmTFFGelBKQ2dHUnE4RlNYRjZwVm1leE5jUUtLd3Y2T09fazhxRUNCZmM5dHBjU1BxeF9JaWJqaE5Vall2TlY5SzB1UGFUWm1Ccm1OaDlSN3BFUVlzbHlPZFpfNU1UR1JGeEx1bkViX2taQkRZcldGQlhiNDR5SldZV096ZTRQUV94dGtZTXlPMlNta3JVdllETUxvcmdPeGVqUWhiLUg?oc=5",
+      "date": "2026-06-02",
+      "source": "Google News — Hantavirus",
+      "summary": "The Oregon Health Authority is monitoring one returning passenger from the 2026 MV Hondius hantavirus outbreak, with no additional case counts, deaths, or quarantine numbers reported in the headline."
+    },
+    {
+      "id": "news-Q0JNaVlFRlZYM2x4VE",
+      "title": "2026 Multi-country Andes Strain Hantavirus Outbreak Associated with a Cruise Ship - KDHE.ks.gov",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GTER5Q0RUVU9HclFnUmVrMnFNZkxMR2lNS0VXekpyWFU4cFZNUVVIa0RwY2JjbS1jY0JodlFwT2VjeXB6NE0wMHotYVpXXzJROXNkQV9JblVfLW1EbGdTNg?oc=5",
+      "date": "2026-05-13",
+      "source": "Google News — Hantavirus",
+      "summary": "In 2026, a multi-country Andes strain hantavirus outbreak was linked to the cruise ship MV Hondius, as reported by the Kansas Department of Health and Environment (KDHE); however, specific case counts, deaths, quarantine numbers, or official statements were not included in the provided title."
+    },
+    {
+      "id": "news-Q0JNaVpFRlZYM2x4VE",
+      "title": "MV Hondius To Resume Sailing 34 Days After Hantavirus Outbreak Passengers Disembarked - Travel Noire",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5iQS1OdW5JcFc3RmlFT2FaZUR3clV0YUROeVZmRUpIUG84RmhJaExJZFQ2ZVNfMF9EMWFSQjlaamJhVmN6bUwwUTZiSzRDV3dQcGpDVm8xLXVvZ1FNRTlnT0h5RDQ?oc=5",
+      "date": "2026-06-02",
+      "source": "Google News — Hantavirus",
+      "summary": "MV Hondius To Resume Sailing 34 Days After Hantavirus Outbreak Passengers Disembarked &nbsp;&nbsp; Travel Noire"
+    },
+    {
+      "id": "news-Q0JNaTFnRkJWVjk1Y1",
+      "title": "Andes virus on the MV Hondius cruise ship: what we know about this rare and potentially fatal hantavirus - Institut Pasteur",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZmpkNGtLUVBzenZ2aEFOMklIUDBIVmZXV08xRWNnZ1hfNFlrdUFhS0R0RzdaVFhBeGxsMEthM191Mi1zTlVBWjFxY1d3OFRhWExWWFlXQjFHZEtzWHp2U2tkQW5EX3NmRFBsNjNjZ0pjd1ByQjYwM1l4czFRNUZXZFliOXJwcGN6X1JNWXZzb2ZrbTRfZ2VXYXhxdzhCZDRuZWVTNFJqaUt2MEY0U0V4YWdRcktZaENNdG1Ra2FvWTNjRlQzRkJhVmtJSkR6NWZVVS04ZVdB?oc=5",
+      "date": "2026-05-12",
+      "source": "Google News — Hantavirus",
+      "summary": "The Institut Pasteur's report on the 2026 MV Hondius outbreak confirms the presence of the rare and potentially fatal Andes hantavirus, but the provided excerpt does not include specific case counts, deaths, quarantine numbers, or official statements."
+    },
     {
       "id": "news-Q0JNaVkwRlZYM2x4VE",
       "title": "Five US passengers from hantavirus-hit ship return to home states - Forth.News",
@@ -280,38 +316,6 @@
       "date": "2026-05-26",
       "source": "Google News — Hantavirus",
       "summary": "Passenger Tests Positive For Hantavirus Weeks After Leaving Infected Cruise Ship (Latest Updates) &nbsp;&nbsp; Forbes"
-    },
-    {
-      "id": "news-Q0JNaXBnRkJWVjk1Y1",
-      "title": "Passenger Evacuated from Hantavirus-Hit Cruise Ship Tests Positive for Disease in Spain - People.com",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVERsblJVX3J6Rkc2cGgxQmxIZ2xMNGVaaFlvem5NMzBTYkdkWDlqd2V5cEVORXFlM3FCLWZwWnhuWHJ3d3hSaTVxc1hPLW13ZXFjR3pZOTY5emlreWlYMFlRb2xCMTFkRy1qSTh5OUxqaTV4c1dWazBHZEw0VzJseGVGZkc2ckgyOW5ZNk45VXdCTGozX2dIemhzNWFtNnpKMHdXVnVn?oc=5",
-      "date": "2026-05-26",
-      "source": "Google News — Hantavirus",
-      "summary": "Passenger Evacuated from Hantavirus-Hit Cruise Ship Tests Positive for Disease in Spain &nbsp;&nbsp; People.com"
-    },
-    {
-      "id": "news-Q0JNaWtBSkJWVjk1Y1",
-      "title": "The cruise ship at center of a deadly hantavirus outbreak has to undergo extra cleaning - Rocky Mount Telegram",
-      "url": "https://news.google.com/rss/articles/CBMikAJBVV95cUxPckNFZHdYQ0hxa255Z1NucXhhUWowNy1RNldDUGNNX3VfRXhvMUowM3V0MXpZallZeU5xTkRJbEtJcS01SHJVc0E1czktanAwRGlYcTdyd0VBZldfZDJqbHp1MWs2cDFRYUcyNUluR3puTlg0UXRzbEloZFQySDA4NlNhMXJkXzVaNEpPY1k2MU82VFA0ejFYLXl2NS1QSXgzOGF2ZW5LSHY4c0RVdDdXRFZlX1JwVDBTeFotd2VqRTdFeFNySnlnVWlPQzRFTEJKN05OY25NZTc0NU85a3VqeEVDSTEwNXhteDVldHFhTTZ5bmMyU1FaZ1J2WHRkblc4a0V4OHlVT3lWZWhJWWhEUw?oc=5",
-      "date": "2026-05-26",
-      "source": "Google News — Hantavirus",
-      "summary": "The cruise ship at center of a deadly hantavirus outbreak has to undergo extra cleaning &nbsp;&nbsp; Rocky Mount Telegram"
-    },
-    {
-      "id": "news-Q0JNaWl3RkJWVjk1Y1",
-      "title": "How hantavirus may have spread aboard a cruise ship, according to health experts - CBS News",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRkZyb29SYTVyX2Fna1lER2hMaGUtN1AxSHNHdjVhb2FlUS1QMTBUNnFFSzVQNlJ4THo1Z0pneHkwQWY4aV9IZHYzRlc3SEs5Qkc1WG1uQzhfNnBkWTktVVhZMXJkVUtCazlRdlVKMXFDUnZXS3R6UE90TlB0UHNldWFCWDc0WUlmYW440gGQAUFVX3lxTE1OX1pjWjhZcGhLeXZ1MThtZHRMMkxHblVwVUZfTFJTVlhYWmF4eC1iaHZmbEpTX3p0UDdrdGk3elg1SlhMQ09RV3dFUlVaMG9XbnUxS1JOLUlEQXZpS1Roc0RtdUhhQTU5U1JlLVpCWG1td1U0TWdObWUzUnlCZUV0VEFiZHBENXVRVW4xUC1vQQ?oc=5",
-      "date": "2026-05-06",
-      "source": "Google News — Hantavirus",
-      "summary": "The provided text only repeats the article title and does not include any case counts, deaths, quarantine numbers, or official statements from health experts about the 2026 MV Hondius hantavirus outbreak."
-    },
-    {
-      "id": "news-Q0JNaXNBSkJWVjk1Y1",
-      "title": "Licensable video: MV Hondius Cruise Ship In Quarantine In The Netherlands after hit by Hantavirus - 05/20/2026 - Reuters Connect",
-      "url": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOT1hIay1CUmxvcGw1NkFLMDlRTFlxTWR3M29xZDhha2pLS3gxRFhXUk9FUUxJRHBWV09DTkJma2ZjSUV1Z0dYMFFLZHdEWHIwdEk0UUMwTkhZWE5XV3IyTkRRcUxBdmRNeGF4M3VjRjdlM0Q1OVlvR2RJUEgzdnJpd21WMUZoenBDS0tBNGdWaEEwcDdSWEMyLU1Fc0gyWW9qR2ZMQ2MtUUE3Y3FjLUZDUmRqOFhtYV84bGJYc3pEU2M4OTBwQTdmY1dTd2VxSlF2RTc3YmtPQVo0NDNvSlUyTGpMQnpETnVWQkdjekc1MVRPWWZFN2twYkZoSnN1SmVtY2xLbWZRNDJnUnJfcExmellOa0Z3bmhVN1piZW1ZMHo1YzBtaXp5TEc1cDRPcXBi?oc=5",
-      "date": "2026-05-24",
-      "source": "Google News — Hantavirus",
-      "summary": "The MV Hondius cruise ship was placed under quarantine in the Netherlands on May 20, 2026, following a hantavirus outbreak that has infected 34 passengers and crew, resulting in 3 deaths."
     }
   ]
 }
