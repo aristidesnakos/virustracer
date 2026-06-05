@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-04T09:29:10.635Z",
+  "lastFetched": "2026-06-05T09:18:59.170Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -154,9 +154,18 @@
     "news-Q0JNaTVBRkJWVjk1Y1",
     "news-Q0JNaVlFRlZYM2x4VE",
     "news-Q0JNaVpFRlZYM2x4VE",
-    "news-Q0JNaTFnRkJWVjk1Y1"
+    "news-Q0JNaTFnRkJWVjk1Y1",
+    "who-Q0JNaTFnRkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaTFnRkJWVjk1Y1",
+      "title": "Hantavirus Outbreak: Indian Expert Shares WHO Protocols, Response Times For Infectious Disease Outbreaks - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQZEE3WFZxekdtRTN0RHhpOWpZQ2VRanJlV2daMGRtb2Vtc0hlQ3N3QkVPS1hvOFVLNmx2ZG53cG5YUV9fb1Joa0puNHNIajdJalljZjZHZTN5QXcxRmMybmJmRnpYMS1NMlBCX0VELWRJaDU0b3E5WHhzXzNIV0JWZHRZUDNSaVR6cFRya0Z0RkN1bGlzQURNSWRnWDNPZDhiVTVkQnVFamdFbFRxZ0FPOHhxY0lQSDY3WG85aXM1N2I4aEJ4SmZHUnhoWGszM1M1R0s1TTR30gHeAUFVX3lxTE5BZGNhdXhhMmVZY1E5Ry0ybEJjaU1lRTVXaW9mZzZjMGhicWFsX0M3SDlqVGNKZktLVnF2SVNqOEsyTm9kTUNVMEpHd29ER3FwcVpUOWRwTDZKWUZVODZPTHA1MFBqdTJaaEpaZExDQmxmMnpZYy11ck4wS29BNXRzS3BFTV9MSm03UWFhTzJaS21HZ01Yb3JYbWcwNVp0VThPZ0txX3pyR1plR2JsSUVGVmFYYlVOUTZERkVFbkJXSlg3cmhONmRuS2RVRXBTeDFqazJ3eFd4di1vNmpYdw?oc=5",
+      "date": "2026-05-09",
+      "source": "Google News — WHO DON",
+      "summary": "Hantavirus Outbreak: Indian Expert Shares WHO Protocols, Response Times For Infectious Disease Outbreaks &nbsp;&nbsp; NDTV"
+    },
     {
       "id": "news-Q0JNaTVBRkJWVjk1Y1",
       "title": "Oregon Health Authority monitors returning MV Hondius passenger after hantavirus outbreak - KMTR",
@@ -308,14 +317,6 @@
       "date": "2026-05-05",
       "source": "Google News — WHO DON",
       "summary": "A hantavirus outbreak on the MV Hondius cruise ship in 2026 resulted in three deaths, with no additional case counts or quarantine numbers reported in the provided headline."
-    },
-    {
-      "id": "news-Q0JNaTR3RkJWVjk1Y1",
-      "title": "Passenger Tests Positive For Hantavirus Weeks After Leaving Infected Cruise Ship (Latest Updates) - Forbes",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxNak56bzI3aHNZMERlWnFFeUcxTlYwZzN6cEVaY3NydFB0RV8yLUY2TnJuZld3LWFhdGdFNmtaZU83NHVaaVN3VE8yQWROa3IyX1BVaDdmUHhwWjd5ODlza1Q0U2RtTG90SWRhNVduY21nYlhZeVRlX2xzdURWQm9RRWxSbGhGQkNPdEl5T29lY0Z3ZGFmRFhZeWRRR25PUUloZ043TlJySXJ0R2pZdTNQaVBqQm5uY1lmUXlLLUZ3dFdQOTFWdjBLUng5VXBrbkJzT2RCbmVlalkyV1d0VWxUY3Q3Zw?oc=5",
-      "date": "2026-05-26",
-      "source": "Google News — Hantavirus",
-      "summary": "Passenger Tests Positive For Hantavirus Weeks After Leaving Infected Cruise Ship (Latest Updates) &nbsp;&nbsp; Forbes"
     }
   ]
 }
