@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-06T09:01:40.267Z",
+  "lastFetched": "2026-06-07T09:11:35.739Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -158,9 +158,18 @@
     "who-Q0JNaTFnRkJWVjk1Y1",
     "news-Q0JNaW13SkJWVjk1Y1",
     "news-Q0JNaWlBSkJWVjk1Y1",
-    "news-Q0JNaVVrRlZYM2x4VE"
+    "news-Q0JNaVVrRlZYM2x4VE",
+    "news-Q0JNaWpnSkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaWpnSkJWVjk1Y1",
+      "title": "Argentina expands hantavirus probe, sending teams to trap and test rats in Mendoza - Ottumwa Courier",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPRU4tWFJOWDRGMmlzdExYRGhtMEU4UC1ob0hyVUlJMldlcl9CTllIY3VnLUlEMmpXaS1wZjBuVTRielFzamtaZ09Ca3FROXF2cXNLSE5LRWlKVjVOX2psSDJpdHR5SmVGdE9rSm1LLWs4UDUwdDEtNTFudXl6ZzlzTFNjYmg5aE1mUndGV1loS3Bva1RDYkJPcHNJNmlpdFFsbmxNMW5mLVFFd3h4Nk1rNjk3TlRkSkpKYjBOQklOYUlNR3RxZll5SEIxQjVBSnF2WldfZXY1N1czWnN2WTJYNENQZHNBdEVUbmRfZ1BuQUZtZ01UNFdYRExMSkJ2X2FNSnRzNjIycGJHQlB1TEE?oc=5",
+      "date": "2026-06-05",
+      "source": "Google News — Hantavirus",
+      "summary": "Argentina expands hantavirus probe, sending teams to trap and test rats in Mendoza &nbsp;&nbsp; Ottumwa Courier"
+    },
     {
       "id": "news-Q0JNaW13SkJWVjk1Y1",
       "title": "Argentina expands hantavirus probe, sending teams to trap and test rats in Mendoza - Bozeman Daily Chronicle",
@@ -312,14 +321,6 @@
       "date": "2026-05-23",
       "source": "Google News — WHO DON",
       "summary": "A 2026 outbreak of hantavirus aboard the cruise ship MV Hondius resulted in 12 confirmed cases, 3 deaths, and 157 passengers and crew placed under quarantine, with health officials stating the virus was likely introduced by infected rodents in a port of call and warning that climate change and habitat destruction are elevating the risk of such outbreaks in Europe."
-    },
-    {
-      "id": "who-Q0JNaW5BRkJWVjk1Y1",
-      "title": "Three dead as WHO confirms Hantavirus outbreak on Atlantic cruise ship - The Guardian Nigeria News",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNbG9xNXBFWm9rUnd3cG5TNW9GOWVJS2JwOTg3aEkya1U0clhsT05Wb1lPOGoyTHM0MUJhUWRDUlpJWTBvUm54OUtoWENkSUVkc1FzbFhkZ3hoTEl0OVB6Wk5HcDRMRFZkUWRnVk5hRWdXeGlYVlRWdTRPWktJSmh2VkFTazYtUllfYUQyTllqNkRNSWMtd1pFV0dJeEw?oc=5",
-      "date": "2026-05-05",
-      "source": "Google News — WHO DON",
-      "summary": "The World Health Organization confirmed a hantavirus outbreak on the MV Hondius cruise ship in the Atlantic, with three deaths reported."
     }
   ]
 }
