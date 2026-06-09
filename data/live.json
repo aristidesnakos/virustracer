@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-08T09:46:45.175Z",
+  "lastFetched": "2026-06-09T09:18:53.382Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -159,9 +159,27 @@
     "news-Q0JNaW13SkJWVjk1Y1",
     "news-Q0JNaWlBSkJWVjk1Y1",
     "news-Q0JNaVVrRlZYM2x4VE",
-    "news-Q0JNaWpnSkJWVjk1Y1"
+    "news-Q0JNaWpnSkJWVjk1Y1",
+    "news-Q0JNaW5nSkJWVjk1Y1",
+    "who-Q0JNaWJrRlZYM2x4VE"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaW5nSkJWVjk1Y1",
+      "title": "Experts say hantavirus is likely not the next COVID, and the twist is the specific reason it behaves differently even when headlines feel familiar - OkDiario",
+      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNZ1gtN2p4cURNMDRWNmgtSnFwWmJnZll6cVdETDBKOW9FU01VcEkyOElscVNCZ2NqVE9ndnVGYUIyWnA2amxhX2lTRlYxV3hfVWRid1VKYk1rZF9NMmM1SWZhNUc5aXlJWXhmaWtvQXFVei1sZXdfbUQwVkRkRTZHekYzS2duQmdQaDk5cjZ2eVlremVJNkRINUlBX3hxbkIwekxkOXlYOWFScmtZNTdpTTlKai13aTIwZFc4cTRYVVRnak1oRVdGdHUxalRMYjBjbThtVENqdEZtM2lOaEQ2ZTJqenF4V2ZaLVp4VU44YUVrSFh6czB3NjVWZjItVGtMckpWU05ZYkhqTXBDVmRHVmlZVmVZQ1VuQ2twN25B?oc=5",
+      "date": "2026-06-08",
+      "source": "Google News — Hantavirus",
+      "summary": "The provided text only states that experts believe hantavirus is unlikely to become the next COVID-19, but does not include any specific case counts, deaths, quarantine numbers, or official statements about the 2026 MV Hondius outbreak."
+    },
+    {
+      "id": "who-Q0JNaWJrRlZYM2x4VE",
+      "title": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies - Travel And Tour World",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtR0RZNmlrNnM3NFRBM0RXZmF5WVRob0paWlVfNk05Wm5tOXVQNU44aDY2WlRsX2JVWVVmVEtBMmhhZXE2RzR1SkxFMzVBeFlQQ19TcjdhRzAzY1A1d2U2RURtaHRxZmFuRjIyVVFB?oc=5",
+      "date": "2026-05-24",
+      "source": "Google News — WHO DON",
+      "summary": "South Africa confirmed a rare Andes hantavirus outbreak tied to the cruise ship MV Hondius, prompting an intensified global health response; no case counts, deaths, or quarantine numbers were specified in the report."
+    },
     {
       "id": "news-Q0JNaWpnSkJWVjk1Y1",
       "title": "Argentina expands hantavirus probe, sending teams to trap and test rats in Mendoza - Ottumwa Courier",
@@ -305,22 +323,6 @@
       "date": "2026-05-06",
       "source": "Google News — Hantavirus",
       "summary": "The provided text only contains the article title and does not include any case counts, deaths, quarantine numbers, or official statements about the 2026 MV Hondius hantavirus outbreak."
-    },
-    {
-      "id": "who-Q0JNaVprRlZYM2x4VE",
-      "title": "Cruise ship hantavirus outbreak in Atlantic under WHO watch - Nation Thailand",
-      "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE41eThHdHdGZXB5SmU0Vl9PTWZ1Y1FKV20zY2pvZzNpWnlfZmFTSXhhZFB6QTdhMUZJM2hGQWdyT1lUdDUyMXZOY3JaMVpIV0FWNE95X0ZhOFY5M2tfMDVDNkFSX2pHQQ?oc=5",
-      "date": "2026-05-03",
-      "source": "Google News — WHO DON",
-      "summary": "Cruise ship hantavirus outbreak in Atlantic under WHO watch &nbsp;&nbsp; Nation Thailand"
-    },
-    {
-      "id": "who-Q0JNaWlBRkJWVjk1Y1",
-      "title": "Is Hantavirus a threat to Europe? Climate change and habitat destruction are increasing the risk - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOclZZN1hQSXFxWmoyVUdJUHkzTGtVa2hFVG1xRDN6QXJ6YzlfRGF6UTFWN0U4UWhVeWl3U1hKamhwMHFnYUtaTHJRWFA0NlBDZmRhRGF2VWtWQjRnQ0lITGM1VHRXeHVidmV2Tm9tWHR2OHIzOFRleGlCYWYzbUtBVzJjSXdvdlNS?oc=5",
-      "date": "2026-05-23",
-      "source": "Google News — WHO DON",
-      "summary": "A 2026 outbreak of hantavirus aboard the cruise ship MV Hondius resulted in 12 confirmed cases, 3 deaths, and 157 passengers and crew placed under quarantine, with health officials stating the virus was likely introduced by infected rodents in a port of call and warning that climate change and habitat destruction are elevating the risk of such outbreaks in Europe."
     }
   ]
 }

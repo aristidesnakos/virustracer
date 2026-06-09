@@ -1,6 +1,21 @@
 {
-  "lastExtracted": "2026-06-08T09:46:45.175Z",
+  "lastExtracted": "2026-06-09T09:18:53.383Z",
   "candidates": [
+    {
+      "id": "who-Q0JNaWJrRlZYM2x4VE",
+      "country": "South Africa",
+      "iso": "ZA",
+      "flag": "🇿🇦",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "monitoredMentioned": null,
+      "context": "South Africa confirms a rare Andes hantavirus outbreak tied to the cruise ship MV Hondius.",
+      "sourceTitle": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies - Travel And Tour World",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtR0RZNmlrNnM3NFRBM0RXZmF5WVRob0paWlVfNk05Wm5tOXVQNU44aDY2WlRsX2JVWVVmVEtBMmhhZXE2RzR1SkxFMzVBeFlQQ19TcjdhRzAzY1A1d2U2RURtaHRxZmFuRjIyVVFB?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-05-24",
+      "extractedAt": "2026-06-09T09:18:10.927Z"
+    },
     {
       "id": "news-Q0JNaWpnSkJWVjk1Y1",
       "country": "Argentina",
