@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-11T09:40:18.207Z",
+  "lastFetched": "2026-06-12T09:36:25.625Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -161,9 +161,27 @@
     "news-Q0JNaVVrRlZYM2x4VE",
     "news-Q0JNaWpnSkJWVjk1Y1",
     "news-Q0JNaW5nSkJWVjk1Y1",
-    "who-Q0JNaWJrRlZYM2x4VE"
+    "who-Q0JNaWJrRlZYM2x4VE",
+    "news-Q0JNaTRnRkJWVjk1Y1",
+    "news-Q0JNaTNBRkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaTRnRkJWVjk1Y1",
+      "title": "Hantavirus Cruise Passenger Says She’s Being Held ‘Hostage’ In Nebraska Quarantine (Latest Updates) - Forbes",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxONHpJVUFEMTh3d1dubXRXNGhCSjhQVkhUc2lIWTdrU1hQaUlsZWp1Zlpqb19iaXQ2QW42VlVHZEtfZ0V6cVl0UUt4Ykl0TjQ1Z2JtSDdsbXQ4WlNVSVZiV3hGVkVvaFhLdHptOEw1ajhDV25JdlJfMTFJeVRrZjBFSGtMVTgzdWU5RjI5SzZDUi12d0V2Mm56NFNGdGE3X1EzWFM5SzhPbkpEdUVJekxFMDJYVzFSbVMxME1kNVBkdDlXTERMX1I4a09NcExZWFRUZWJRVnNQajZqQ2hCbkRVZk93?oc=5",
+      "date": "2026-06-11",
+      "source": "Google News — Hantavirus",
+      "summary": "A woman quarantined in Nebraska after the 2026 MV Hondius hantavirus outbreak told Forbes she feels “held hostage” by the quarantine; no case counts, deaths, or further official numbers were provided in the article."
+    },
+    {
+      "id": "news-Q0JNaTNBRkJWVjk1Y1",
+      "title": "US puts up $750K to evacuate an American who was aboard hantavirus cruise ship from remote island - WKMG",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQakZQUGpDS1loOWRabEhRUjQyY21ER3NzMGlWcktzYkZlTGNCcE1WQUp1SndEQnM5ZHZUVHdLZW9PTnY1Sm14WnRkZHJfZTFuR0gxVnRBX3lqaUdzWVBXRVRzZXo5bGtmdjV1QU9yRUdoWjgxZFd6Z1lZSVVhdnU4TEFxV3gwLUJFY1l4NXV2amQzNDJkazgxVEU3Q0U3TzFPYXo4cFVyNTFILUlLdGJqUlNSYnhxQ0E5dVVJQWw5cm5ub1dZRFFxZ2lkakRlbU1wQzlDbWZkOHh5M29l?oc=5",
+      "date": "2026-06-11",
+      "source": "Google News — Hantavirus",
+      "summary": "The US allocated $750,000 to evacuate an American from a remote island following a hantavirus outbreak on the MV Hondius cruise ship in 2026; no case counts, deaths, quarantine numbers, or official statements were included in the headline."
+    },
     {
       "id": "news-Q0JNaW5nSkJWVjk1Y1",
       "title": "Experts say hantavirus is likely not the next COVID, and the twist is the specific reason it behaves differently even when headlines feel familiar - OkDiario",
@@ -307,22 +325,6 @@
       "date": "2026-05-04",
       "source": "Google News — WHO DON",
       "summary": "Hantavirus reported on international cruise ship, MV Hondius &nbsp;&nbsp; Outbreak News Today"
-    },
-    {
-      "id": "news-Q0JNaS1BRkJWVjk1Y1",
-      "title": "Exposed Hantavirus Patients Could Go Home—If They Agree To 24/7 Surveillance (Latest Updates) - Forbes",
-      "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQMUJJQ1V1NHdEeFlydkV2X0o5SHk2QW1EYXNHZXRETm9QeHNtWHNKQnVFT2JOLWpYZzYyWTc3bEMtUTdlNGRVczBtelljcHlfanpBUEtZSlF5TjJBLTljWW5RRWpwOUtFMkkyMmhXT0owM2FUaGdydDRySTZiTWNLNmE5ZVd2YUZVTlQ3bENSdThabEd4YXNCSzI3MUg3Ym9uREt5Nm12OEVpX3F3QXdPSnd0UjJOQ3g0M0Z3aDljMi11d3RneXA0eG1KNTR0ZzkxRzdnNE1oaENweTNGNUlzVDBkWGludXFrVS1VUnJoZHJKZndQMHBjTQ?oc=5",
-      "date": "2026-05-29",
-      "source": "Google News — Hantavirus",
-      "summary": "Exposed Hantavirus Patients Could Go Home—If They Agree To 24/7 Surveillance (Latest Updates) &nbsp;&nbsp; Forbes"
-    },
-    {
-      "id": "news-Q0JNaTZBRkJWVjk1Y1",
-      "title": "Logbook of the ‘MV Hondius’: From Ushuaia to the Canary Islands, chronology of a hantavirus outbreak - EL PAÍS English",
-      "url": "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQTUdrU1VRNExzb1FDLXIteUJoYXFmOGtEdHVxTFFWcGRwTEFERW9DcElpcDhwaFR5RzhEQ09Rb1FaZ3JyY0lxNmxDNnpGY1Nyb1dlMzlKWVRkeHZCdmdXS0ZqVFh0Mk9TT21oVVdxQnpOSXMtb0NYU0p5U001ZS1JcjE0Z2ZYQmpaLXpJdFFzRjVQdDBsSHhWdW5iRkhlNzRGNFhiOUpoX3RqWDRkeExRVnkzekhOekJGVHJNWjF4TmlKbEJfYUxtU252UDU3QnlKdDE1R1phdzBjdTZxdDVZcm1NZ2VJRnJ60gH8AUFVX3lxTFBIUFgwTlJSM2tpR2dKMkFnWl80NWQ1S1d0UDlGM0JqSTNPMExLNFd6d21pcmZyaDRfLTRQTHZsQzY1UkphRWJXQTR2a0tzNk9kbnU2V2NEQzNhVFNhM3F3TzR3MEVFSUFFRjhvTWJia2k4NjZjOFVHaktic0g1MlpMalo5R1g2b0xoSG1YWFJ2eHVMYXU3YlRPNTMtV3g0Z0RZTG5tYVdVMWRZVjg3a0N1ZzJ5SF9XMllDLVJISHZNYm5MbTMtZGlPWGVPbFBCaThjR2dIOFhDa2ljNFIzdGxNVm8wbExzcmRYZlBpRUFHYTJzaGVGRHdqbm5qZw?oc=5",
-      "date": "2026-05-06",
-      "source": "Google News — Hantavirus",
-      "summary": "The provided text only contains the article title and does not include any case counts, deaths, quarantine numbers, or official statements about the 2026 MV Hondius hantavirus outbreak."
     }
   ]
 }
