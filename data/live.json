@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-13T13:15:48.063Z",
+  "lastFetched": "2026-06-14T15:25:43.443Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -164,9 +164,18 @@
     "who-Q0JNaWJrRlZYM2x4VE",
     "news-Q0JNaTRnRkJWVjk1Y1",
     "news-Q0JNaTNBRkJWVjk1Y1",
-    "paho-MTAzODIwIGF0IGh0dH"
+    "paho-MTAzODIwIGF0IGh0dH",
+    "who-Q0JNaWFFRlZYM2x4VE"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaWFFRlZYM2x4VE",
+      "title": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - NEJM Evidence",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sSDZ4TTZoZFBiczN1N0poWUNhZnkxYXZUSXNkLXNqdnRWa0N0U083ZGJjcUlPWmhRTk15UFRmOXV6SU1QblZUN1Jqcy1iVmRGc3Z2ZEtzR18xN0ZHM2JEV3hoYnV3eDJD?oc=5",
+      "date": "2026-05-21",
+      "source": "Google News — WHO DON",
+      "summary": "A hantavirus pulmonary syndrome outbreak on the MV Hondius cruise ship in 2026 resulted in 14 confirmed cases of Andes orthohantavirus among passengers and crew, including 5 deaths; the ship was quarantined for 10 days in Ushuaia, Argentina, where local health officials reported no secondary transmission among the 1,200 remaining passengers and crew after the quarantine period."
+    },
     {
       "id": "paho-MTAzODIwIGF0IGh0dH",
       "title": "OPS y socios fortalecen la vigilancia del hantavirus y otras fiebres hemorrágicas en las Américas",
@@ -318,14 +327,6 @@
       "date": "2026-05-05",
       "source": "Google News — WHO DON",
       "summary": "A hantavirus cluster linked to the cruise ship MV Hondius in 2026 has highlighted ongoing zoonotic risks and the need for vigilance, though no specific case counts, deaths, quarantine numbers, or official statements were provided in the cited headline."
-    },
-    {
-      "id": "who-Q0JNaTZ3RkJWVjk1Y1",
-      "title": "Europe to Cruise Travelers Hantavirus Outbreak on MV Hondius Raises Health Concerns for Passengers in 2026 - Travel And Tour World",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxNUDN6T013bFB3UTBwLXdqSkRhcHVtS0NSWlVMQ0pZSDBkMjFYbVJ4YjljOGdFdjdKa0NsZFliNE9rR3g2ajQyX1ZBWElyRXVDc0JjeFJNNmpVZVBKY09HYXc2R0RpN0RlVFBoOGdoZDdtd3V5dUpvYXI0OHZUaVFPckdCMkJEMDVIWDJvX3dCbF93Tl84b0hROEN3ajQ3OXhNNFlKVTdxZldCMGt4RFYwbk1zLUZKTG14cGpGY3dHNkd3bHZySl9nenJ6MzJwN1N5NU1UeWptTElkdmpUVmZSZGt2NC1DSnhRSEZz?oc=5",
-      "date": "2026-05-06",
-      "source": "Google News — WHO DON",
-      "summary": "In 2026, a hantavirus outbreak on the cruise ship MV Hondius infected at least 12 passengers and crew, resulting in 3 deaths, with the remaining nine individuals placed under quarantine, prompting European health officials to issue a travel advisory for cruise passengers."
     }
   ]
 }
