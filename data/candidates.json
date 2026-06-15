@@ -1,6 +1,21 @@
 {
-  "lastExtracted": "2026-06-14T15:25:43.444Z",
+  "lastExtracted": "2026-06-15T20:35:52.327Z",
   "candidates": [
+    {
+      "id": "who-Q0JNaWFFRlZYM2x4VE",
+      "country": "Argentina",
+      "iso": "AR",
+      "flag": "🇦🇷",
+      "casesMentioned": 14,
+      "deathsMentioned": 5,
+      "monitoredMentioned": null,
+      "context": "The ship was quarantined for 10 days in Ushuaia, Argentina, where local health officials reported no secondary transmission among the 1,200 remaining passengers and crew.",
+      "sourceTitle": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - NEJM Evidence",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sSDZ4TTZoZFBiczN1N0poWUNhZnkxYXZUSXNkLXNqdnRWa0N0U083ZGJjcUlPWmhRTk15UFRmOXV6SU1QblZUN1Jqcy1iVmRGc3Z2ZEtzR18xN0ZHM2JEV3hoYnV3eDJD?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-05-21",
+      "extractedAt": "2026-06-15T20:35:04.388Z"
+    },
     {
       "id": "news-Q0JNaTRnRkJWVjk1Y1",
       "country": "United States",

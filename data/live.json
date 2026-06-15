@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-14T15:25:43.443Z",
+  "lastFetched": "2026-06-15T20:35:52.327Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -165,9 +165,18 @@
     "news-Q0JNaTRnRkJWVjk1Y1",
     "news-Q0JNaTNBRkJWVjk1Y1",
     "paho-MTAzODIwIGF0IGh0dH",
-    "who-Q0JNaWFFRlZYM2x4VE"
+    "who-Q0JNaWFFRlZYM2x4VE",
+    "news-Q0JNaWFFRlZYM2x4VE"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaWFFRlZYM2x4VE",
+      "title": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - NEJM Evidence",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sSDZ4TTZoZFBiczN1N0poWUNhZnkxYXZUSXNkLXNqdnRWa0N0U083ZGJjcUlPWmhRTk15UFRmOXV6SU1QblZUN1Jqcy1iVmRGc3Z2ZEtzR18xN0ZHM2JEV3hoYnV3eDJD?oc=5",
+      "date": "2026-05-21",
+      "source": "Google News — Hantavirus",
+      "summary": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 &nbsp;&nbsp; NEJM Evidence"
+    },
     {
       "id": "who-Q0JNaWFFRlZYM2x4VE",
       "title": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - NEJM Evidence",
@@ -319,14 +328,6 @@
       "date": "2026-05-05",
       "source": "Google News — WHO DON",
       "summary": "Health officials confirmed 12 cases of hantavirus, including 3 deaths, among passengers and crew on the 2026 MV Hondius cruise ship; authorities placed 58 individuals under quarantine and stated that the outbreak originated from contaminated bedding."
-    },
-    {
-      "id": "who-Q0JNaWdnSkJWVjk1Y1",
-      "title": "Hantavirus Cluster Linked to Cruise Ship Highlights Ongoing Zoonotic Risk and the Need for Vigilance - GlobeNewswire",
-      "url": "https://news.google.com/rss/articles/CBMiggJBVV95cUxOUzRtanRseE9zdG1fLS15UFNmSTBTUjVKRnJ3YzdvcXNDN09xQ3U4SnJSc0lIdzRpb3JaX08xX2FHU0swYVhFU1Rxdzc3blpPTGMtZW5UWmJvdTN2eWFucWdJZjVmRU5MeDFxdFBQTUNnb3J2cUJ1VVNwM0dXOV9wSXhVYTUxX3ozZ2tqdkZqdms5SWtWMEtlLW9wb3p3YlJWN05pQ05qNUFfZnZtbjVHbmYtQ2VaRFFrWGlpbDFyaUlPZmMzSDV3TW1UejhUT2ZNbjBmQ2lQSWVGbmthdlZfX2VNcGVrMGFKR1FSS3dnaW9ERExnRTEwVlZLNWJDcXVqSXc?oc=5",
-      "date": "2026-05-05",
-      "source": "Google News — WHO DON",
-      "summary": "A hantavirus cluster linked to the cruise ship MV Hondius in 2026 has highlighted ongoing zoonotic risks and the need for vigilance, though no specific case counts, deaths, quarantine numbers, or official statements were provided in the cited headline."
     }
   ]
 }
