@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-06-16T20:01:30.181Z",
+  "lastExtracted": "2026-06-17T18:02:37.131Z",
   "candidates": [
     {
       "id": "who-Q0JNaWFFRlZYM2x4VE",
@@ -165,21 +165,6 @@
       "sourceName": "Google News — Hantavirus",
       "date": "2026-05-24",
       "extractedAt": "2026-05-26T09:21:41.606Z"
-    },
-    {
-      "id": "news-Q0JNaWt3RkJWVjk1Y1",
-      "country": "Netherlands",
-      "iso": "NL",
-      "flag": "🇳🇱",
-      "casesMentioned": 72,
-      "deathsMentioned": 6,
-      "monitoredMentioned": 8,
-      "context": "The ship docked in the Netherlands for disinfection, with 8 individuals in quarantine.",
-      "sourceTitle": "Hantavirus-stricken cruise ship docks in the Netherlands for disinfection - Cleveland 19 News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxOM09rVHNDUTBhZGN4VlNYdklpalNkeUY5SHQ3S25GeHE1S1FYTlF6WTJqQ1JmaVVOd0tjV1cyOEg4eVlnSTl2enJFdE1EYjllYmRmb2NiYTg2X1hDYnVXQTBQSjRLM2R3SUJQNUJ4Qnl3ZEdFcDhablAyMmVNLXljcE5mU0oyUHdLcW1WT1RGTjkzejDSAacBQVVfeXFMUDlxYjl0OGpnVWlnVHVTaG5wdUFJUWJpeGdXMlJyQWVhajVsOHBhblBUVVNYaGQxMlFZTERmRm1SZU5tYTJJUVBfVTlDVUR2S2h6ZG1uUmNvS2pnY29qejVGRmlPUmJCaUVFUlM1bFBERGNTWDBzNmc4NEZsZ01VbEwxX3lyTTZra21SM2IwbUxVbF9GQzhkOWxuYzNwQ3RJRmVMekJrQzg?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-05-18",
-      "extractedAt": "2026-05-26T09:22:06.587Z"
     }
   ]
 }
