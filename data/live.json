@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-17T18:02:37.130Z",
+  "lastFetched": "2026-06-18T18:19:01.333Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -167,9 +167,27 @@
     "paho-MTAzODIwIGF0IGh0dH",
     "who-Q0JNaWFFRlZYM2x4VE",
     "news-Q0JNaWFFRlZYM2x4VE",
-    "who-Q0JNaXVBRkJWVjk1Y1"
+    "who-Q0JNaXVBRkJWVjk1Y1",
+    "who-Q0JNaXFBRkJWVjk1Y1",
+    "who-Q0JNaWpBSkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaXFBRkJWVjk1Y1",
+      "title": "FACTSHEET: What we know about hantavirus, and how to keep up with the facts - Africa Check",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaWlnbDlXYWNVVUJxazR6NFg2RTRCb24xX2FiOEkxbE5NNVp4YUdSdzhRWWZPVlZIcmNabjlCQnJ6bDcyQWlkaGxINHNZUFl4RVlFUDhlb2pRajBzMmE1Wk9ZSXd3VndvV2ZYRTdULTFVejRHcVRkbWFXdFpnUndxN3R2eVV1MzBIMDdaR21XUGtzMWFSdHZ4YzVNMVh0azFIUnVqaHJOLUs?oc=5",
+      "date": "2026-05-15",
+      "source": "Google News — WHO DON",
+      "summary": "As of the provided content, Africa Check's factsheet on hantavirus does not mention a 2026 MV Hondius outbreak, case counts, deaths, or quarantine numbers."
+    },
+    {
+      "id": "who-Q0JNaWpBSkJWVjk1Y1",
+      "title": "Nepal Issues Urgent Travel Alert Following Hantavirus Outbreak on MV Hondius Cruise Ship, Raising Global Health and Tourism Concerns - Travel And Tour World",
+      "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxPaGcxdkF5RkliYTF2eUlicUhORno3eDlzb0x6U3NoLXJJNjRnckNSZE9IaDcta3V3NkxBZFo4YldNLUxiVGt1UUluTTRyNk1rdUtucUc1OFFQM0IwWTBnV1lGWVdIN3duZGlaYzNKVUxSZHdUVTE4cVZ2VG1iaFJxQ19DLURxTmFkV05uSmVxZEZSdmhJdHI1bWVEQVBpYno4TWZ2eWs5czhkaDEySmlWM1Y2RnpqZHBRRE5yM0gzYWxLQy1YM3lhQ1lVMmlpQjRMYUNyQVFpUDJfOVpWWG9zOWRfeUhmTFFYajl2T2d1anZHUU9Kc1VwVDU2c0x5dVhBeHJpSmpkT1Ntc3pZ?oc=5",
+      "date": "2026-05-09",
+      "source": "Google News — WHO DON",
+      "summary": "Nepal issued an urgent travel alert following a hantavirus outbreak on the MV Hondius cruise ship in 2026, raising global health and tourism concerns. The article did not specify case counts, deaths, or quarantine numbers."
+    },
     {
       "id": "who-Q0JNaXVBRkJWVjk1Y1",
       "title": "3 dead as cruise ship Hantavirus outbreak spreads across 32 countries – WHO report - Vanguard News",
@@ -313,22 +331,6 @@
       "date": "2026-06-02",
       "source": "Google News — Hantavirus",
       "summary": "Five US passengers from the cruise ship MV Hondius, which experienced a hantavirus outbreak in 2026, have returned to their home states. The outbreak has resulted in at least three deaths and multiple cases, with remaining passengers and crew placed under quarantine."
-    },
-    {
-      "id": "who-Q0JNaWZrRlZYM2x4VE",
-      "title": "Andes virus: What nurses need to know - National Nurses United",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFA5SHBQOEU3Ui1WRXZvSm1SNlJqcmpONjdQVDh1RkZHZGFFWXlpa1MzalcxenptYkNfZVAycjVPbGo4UEtEYjEyZGNjSFphX0hqNG1qbU94UWtuXy1lcGlpYXIyVWdOanR3RTEyc1N5bS1NUVh3aF9sc3RVMmNhQQ?oc=5",
-      "date": "2026-05-11",
-      "source": "Google News — WHO DON",
-      "summary": "Andes virus: What nurses need to know &nbsp;&nbsp; National Nurses United"
-    },
-    {
-      "id": "news-Q0JNaWJFRlZYM2x4VE",
-      "title": "NJDOH Monitoring Two New Jersey Residents Following Potential Hantavirus Exposure Linked to MV Hondius - NJ.gov",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBQcW5nYThsbUExcmx6eFdoa2FzX3VrUl9TNHdJbENLbFkyOTk3Nm00MXNYWWlWem5oRmliQjMyWTVRRU1zWVFnYnNycnRHcE5xQWhxZU1pRUFwdDRaZ3ZSOS02YVJKZzQtSnJPSg?oc=5",
-      "date": "2026-05-08",
-      "source": "Google News — Hantavirus",
-      "summary": "The New Jersey Department of Health is monitoring two state residents for potential hantavirus after possible exposure on the MV Hondius; no cases or deaths have been reported."
     }
   ]
 }
