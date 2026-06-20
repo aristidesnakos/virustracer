@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-19T17:04:09.527Z",
+  "lastFetched": "2026-06-20T13:18:27.977Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -169,9 +169,27 @@
     "news-Q0JNaWFFRlZYM2x4VE",
     "who-Q0JNaXVBRkJWVjk1Y1",
     "who-Q0JNaXFBRkJWVjk1Y1",
-    "who-Q0JNaWpBSkJWVjk1Y1"
+    "who-Q0JNaWpBSkJWVjk1Y1",
+    "who-Q0JNaVlrRlZYM2x4VE",
+    "who-Q0JNaWRrRlZYM2x4VE"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaVlrRlZYM2x4VE",
+      "title": "WHO calls everyone aboard hantavirus-hit ship \"high-risk\" contacts - Global Times",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5xV3psRUVzem9NUzJBeUFVc0NnUW9Da1ZiZFhkSHFGUlNUREpKeGpxMU5PT1dNaFJlTWVJRlhBenM5VmFpXzNRSENPYjB6ci1HdzRUREJwR0ExYjVvaEszdjZR?oc=5",
+      "date": "2026-05-10",
+      "source": "Google News — WHO DON",
+      "summary": "WHO calls everyone aboard hantavirus-hit ship \"high-risk\" contacts &nbsp;&nbsp; Global Times"
+    },
+    {
+      "id": "who-Q0JNaWRrRlZYM2x4VE",
+      "title": "Real 2022 tweet about hantavirus fuels 'prediction' rumor amid outbreak - Snopes",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5hbW5sSkt3T0UyVExuU0o3bG1odVhsUW9CSzZTRkhJcF9kVmVLTUFOSUljMENjRTZQTUU0Nzk5NzYzb3VnWXJfbjdVV1JndVludjB3YUtWUkU2NFlEcG1KZ0JHNmwyekNiMHctX1hVek1QQmhfckE?oc=5",
+      "date": "2026-05-09",
+      "source": "Google News — WHO DON",
+      "summary": "The provided text from Snopes only indicates that a real 2022 tweet about hantavirus is fueling a \"prediction\" rumor amid an outbreak, but it does not include any specific case counts, deaths, quarantine numbers, or official statements."
+    },
     {
       "id": "who-Q0JNaXFBRkJWVjk1Y1",
       "title": "FACTSHEET: What we know about hantavirus, and how to keep up with the facts - Africa Check",
@@ -315,22 +333,6 @@
       "date": "2026-06-02",
       "source": "Google News — Hantavirus",
       "summary": "MV Hondius To Resume Sailing 34 Days After Hantavirus Outbreak Passengers Disembarked &nbsp;&nbsp; Travel Noire"
-    },
-    {
-      "id": "news-Q0JNaTFnRkJWVjk1Y1",
-      "title": "Andes virus on the MV Hondius cruise ship: what we know about this rare and potentially fatal hantavirus - Institut Pasteur",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZmpkNGtLUVBzenZ2aEFOMklIUDBIVmZXV08xRWNnZ1hfNFlrdUFhS0R0RzdaVFhBeGxsMEthM191Mi1zTlVBWjFxY1d3OFRhWExWWFlXQjFHZEtzWHp2U2tkQW5EX3NmRFBsNjNjZ0pjd1ByQjYwM1l4czFRNUZXZFliOXJwcGN6X1JNWXZzb2ZrbTRfZ2VXYXhxdzhCZDRuZWVTNFJqaUt2MEY0U0V4YWdRcktZaENNdG1Ra2FvWTNjRlQzRkJhVmtJSkR6NWZVVS04ZVdB?oc=5",
-      "date": "2026-05-12",
-      "source": "Google News — Hantavirus",
-      "summary": "The Institut Pasteur's report on the 2026 MV Hondius outbreak confirms the presence of the rare and potentially fatal Andes hantavirus, but the provided excerpt does not include specific case counts, deaths, quarantine numbers, or official statements."
-    },
-    {
-      "id": "news-Q0JNaVkwRlZYM2x4VE",
-      "title": "Five US passengers from hantavirus-hit ship return to home states - Forth.News",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5pMy1JVnppbE51SVgxLTV5MDMzZDlIV2hIcnZFS1N4Z1ZjcHRmRUI1NzI3SnlsY2hlbFVWWGhwMC1BUVFmTEU3enI3WUlLT2luempFbzViT21sQzR4TVA5ZDE5TQ?oc=5",
-      "date": "2026-06-02",
-      "source": "Google News — Hantavirus",
-      "summary": "Five US passengers from the cruise ship MV Hondius, which experienced a hantavirus outbreak in 2026, have returned to their home states. The outbreak has resulted in at least three deaths and multiple cases, with remaining passengers and crew placed under quarantine."
     }
   ]
 }
