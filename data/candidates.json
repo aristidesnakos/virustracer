@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-06-22T19:59:35.911Z",
+  "lastExtracted": "2026-06-23T17:06:46.309Z",
   "candidates": [
     {
       "id": "news-Q0JNaTRnRkJWVjk1Y1",
@@ -30,21 +30,6 @@
       "sourceName": "Google News — Hantavirus",
       "date": "2026-06-11",
       "extractedAt": "2026-06-12T09:34:34.320Z"
-    },
-    {
-      "id": "who-Q0JNaWJrRlZYM2x4VE",
-      "country": "South Africa",
-      "iso": "ZA",
-      "flag": "🇿🇦",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "monitoredMentioned": null,
-      "context": "South Africa confirms a rare Andes hantavirus outbreak tied to the cruise ship MV Hondius.",
-      "sourceTitle": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies - Travel And Tour World",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtR0RZNmlrNnM3NFRBM0RXZmF5WVRob0paWlVfNk05Wm5tOXVQNU44aDY2WlRsX2JVWVVmVEtBMmhhZXE2RzR1SkxFMzVBeFlQQ19TcjdhRzAzY1A1d2U2RURtaHRxZmFuRjIyVVFB?oc=5",
-      "sourceName": "Google News — WHO DON",
-      "date": "2026-05-24",
-      "extractedAt": "2026-06-09T09:18:10.927Z"
     },
     {
       "id": "news-Q0JNaWpnSkJWVjk1Y1",
@@ -120,36 +105,6 @@
       "sourceName": "Google News — Hantavirus",
       "date": "2026-05-26",
       "extractedAt": "2026-05-27T09:19:27.064Z"
-    },
-    {
-      "id": "news-Q0JNaXNBSkJWVjk1Y1",
-      "country": "Netherlands",
-      "iso": "NL",
-      "flag": "🇳🇱",
-      "casesMentioned": 34,
-      "deathsMentioned": 3,
-      "monitoredMentioned": null,
-      "context": "The MV Hondius cruise ship was placed under quarantine in the Netherlands on May 20, 2026, following a hantavirus outbreak that has infected 34 passengers and crew, resulting in 3 deaths.",
-      "sourceTitle": "Licensable video: MV Hondius Cruise Ship In Quarantine In The Netherlands after hit by Hantavirus - 05/20/2026 - Reuters Connect",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMisAJBVV95cUxOT1hIay1CUmxvcGw1NkFLMDlRTFlxTWR3M29xZDhha2pLS3gxRFhXUk9FUUxJRHBWV09DTkJma2ZjSUV1Z0dYMFFLZHdEWHIwdEk0UUMwTkhZWE5XV3IyTkRRcUxBdmRNeGF4M3VjRjdlM0Q1OVlvR2RJUEgzdnJpd21WMUZoenBDS0tBNGdWaEEwcDdSWEMyLU1Fc0gyWW9qR2ZMQ2MtUUE3Y3FjLUZDUmRqOFhtYV84bGJYc3pEU2M4OTBwQTdmY1dTd2VxSlF2RTc3YmtPQVo0NDNvSlUyTGpMQnpETnVWQkdjekc1MVRPWWZFN2twYkZoSnN1SmVtY2xLbWZRNDJnUnJfcExmellOa0Z3bmhVN1piZW1ZMHo1YzBtaXp5TEc1cDRPcXBi?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-05-24",
-      "extractedAt": "2026-05-26T09:21:34.385Z"
-    },
-    {
-      "id": "news-Q0JNaWJrRlZYM2x4VE",
-      "country": "South Africa",
-      "iso": "ZA",
-      "flag": "🇿🇦",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "monitoredMentioned": null,
-      "context": "South Africa confirms rare Andes hantavirus outbreak tied to cruise ship MV Hondius.",
-      "sourceTitle": "South Africa Confirms Rare Andes Hantavirus Outbreak Tied to Cruise Ship MV Hondius: Global Health Response Intensifies - Travel And Tour World",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtR0RZNmlrNnM3NFRBM0RXZmF5WVRob0paWlVfNk05Wm5tOXVQNU44aDY2WlRsX2JVWVVmVEtBMmhhZXE2RzR1SkxFMzVBeFlQQ19TcjdhRzAzY1A1d2U2RURtaHRxZmFuRjIyVVFB?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-05-24",
-      "extractedAt": "2026-05-26T09:21:41.606Z"
     }
   ]
 }
