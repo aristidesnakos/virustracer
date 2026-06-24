@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-23T17:06:46.308Z",
+  "lastFetched": "2026-06-24T16:36:35.042Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -171,9 +171,18 @@
     "who-Q0JNaXFBRkJWVjk1Y1",
     "who-Q0JNaWpBSkJWVjk1Y1",
     "who-Q0JNaVlrRlZYM2x4VE",
-    "who-Q0JNaWRrRlZYM2x4VE"
+    "who-Q0JNaWRrRlZYM2x4VE",
+    "news-Q0JNaVRFRlZYM2x4VE"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaVRFRlZYM2x4VE",
+      "title": "Video Travel blogger documents journey on cruise ship with hantavirus outbreak - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5NMHg0MzFfb0xKU1Z6dUlseEdGWHpObFM1eHdEaGluYzBra01LSDhsNlE4YnU3dFlDdzhIVmotZUl1eDJQUDR5cTZmU2k?oc=5",
+      "date": "2026-06-23",
+      "source": "Google News — Hantavirus",
+      "summary": "Video Travel blogger documents journey on cruise ship with hantavirus outbreak &nbsp;&nbsp; ABC News - Breaking News, Latest News and Videos"
+    },
     {
       "id": "who-Q0JNaVlrRlZYM2x4VE",
       "title": "WHO calls everyone aboard hantavirus-hit ship \"high-risk\" contacts - Global Times",
@@ -325,14 +334,6 @@
       "date": "2026-05-13",
       "source": "Google News — Hantavirus",
       "summary": "In 2026, a multi-country Andes strain hantavirus outbreak was linked to the cruise ship MV Hondius, as reported by the Kansas Department of Health and Environment (KDHE); however, specific case counts, deaths, quarantine numbers, or official statements were not included in the provided title."
-    },
-    {
-      "id": "news-Q0JNaVpFRlZYM2x4VE",
-      "title": "MV Hondius To Resume Sailing 34 Days After Hantavirus Outbreak Passengers Disembarked - Travel Noire",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5iQS1OdW5JcFc3RmlFT2FaZUR3clV0YUROeVZmRUpIUG84RmhJaExJZFQ2ZVNfMF9EMWFSQjlaamJhVmN6bUwwUTZiSzRDV3dQcGpDVm8xLXVvZ1FNRTlnT0h5RDQ?oc=5",
-      "date": "2026-06-02",
-      "source": "Google News — Hantavirus",
-      "summary": "MV Hondius To Resume Sailing 34 Days After Hantavirus Outbreak Passengers Disembarked &nbsp;&nbsp; Travel Noire"
     }
   ]
 }
