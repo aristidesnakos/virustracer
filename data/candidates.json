@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-06-24T16:36:35.043Z",
+  "lastExtracted": "2026-06-25T16:39:50.053Z",
   "candidates": [
     {
       "id": "news-Q0JNaTRnRkJWVjk1Y1",
@@ -90,21 +90,6 @@
       "sourceName": "Google News — Hantavirus",
       "date": "2026-06-02",
       "extractedAt": "2026-06-04T09:28:39.310Z"
-    },
-    {
-      "id": "news-Q0JNaXBnRkJWVjk1Y1",
-      "country": "Spain",
-      "iso": "ES",
-      "flag": "🇪🇸",
-      "casesMentioned": 1,
-      "deathsMentioned": null,
-      "monitoredMentioned": null,
-      "context": "A passenger evacuated from the hantavirus-hit MV Hondius cruise ship tested positive for the disease in Spain.",
-      "sourceTitle": "Passenger Evacuated from Hantavirus-Hit Cruise Ship Tests Positive for Disease in Spain - People.com",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQVERsblJVX3J6Rkc2cGgxQmxIZ2xMNGVaaFlvem5NMzBTYkdkWDlqd2V5cEVORXFlM3FCLWZwWnhuWHJ3d3hSaTVxc1hPLW13ZXFjR3pZOTY5emlreWlYMFlRb2xCMTFkRy1qSTh5OUxqaTV4c1dWazBHZEw0VzJseGVGZkc2ckgyOW5ZNk45VXdCTGozX2dIemhzNWFtNnpKMHdXVnVn?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-05-26",
-      "extractedAt": "2026-05-27T09:19:27.064Z"
     }
   ]
 }
