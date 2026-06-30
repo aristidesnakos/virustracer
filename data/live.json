@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-06-29T17:50:15.661Z",
+  "lastFetched": "2026-06-30T16:34:51.848Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -180,9 +180,18 @@
     "news-Q0JNaXFBSkJWVjk1Y1",
     "news-Q0JNaXh3SkJWVjk1Y1",
     "news-Q0JNaXBBSkJWVjk1Y1",
-    "news-Q0JNaXVnSkJWVjk1Y1"
+    "news-Q0JNaXVnSkJWVjk1Y1",
+    "who-Q0JNaVgwRlZYM2x4VE"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaVgwRlZYM2x4VE",
+      "title": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - The New England Journal of Medicine",
+      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE4xSzJQdm1QOTNvVXFfckdGcGNwU1p1cmFHb1FQR0RzSVFpRVFjTVo5ckI3UkxVWktmTHJTRmEzQVZISV9wa0o5c3ZNMW01MlJPSmVsTHRTUVd0VkRIUU04?oc=5",
+      "date": "2026-05-20",
+      "source": "Google News — WHO DON",
+      "summary": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 &nbsp;&nbsp; The New England Journal of Medicine"
+    },
     {
       "id": "news-Q0JNaXVnSkJWVjk1Y1",
       "title": "WHO Health Emergencies EPI-WIN webinar: Hantavirus in focus IV: Infection prevention and control: from isolation to safe discharge and quarantine - World Health Organization (WHO)",
@@ -334,14 +343,6 @@
       "date": "2026-06-11",
       "source": "Google News — Hantavirus",
       "summary": "The US allocated $750,000 to evacuate an American from a remote island following a hantavirus outbreak on the MV Hondius cruise ship in 2026; no case counts, deaths, quarantine numbers, or official statements were included in the headline."
-    },
-    {
-      "id": "news-Q0JNaW5nSkJWVjk1Y1",
-      "title": "Experts say hantavirus is likely not the next COVID, and the twist is the specific reason it behaves differently even when headlines feel familiar - OkDiario",
-      "url": "https://news.google.com/rss/articles/CBMingJBVV95cUxNZ1gtN2p4cURNMDRWNmgtSnFwWmJnZll6cVdETDBKOW9FU01VcEkyOElscVNCZ2NqVE9ndnVGYUIyWnA2amxhX2lTRlYxV3hfVWRid1VKYk1rZF9NMmM1SWZhNUc5aXlJWXhmaWtvQXFVei1sZXdfbUQwVkRkRTZHekYzS2duQmdQaDk5cjZ2eVlremVJNkRINUlBX3hxbkIwekxkOXlYOWFScmtZNTdpTTlKai13aTIwZFc4cTRYVVRnak1oRVdGdHUxalRMYjBjbThtVENqdEZtM2lOaEQ2ZTJqenF4V2ZaLVp4VU44YUVrSFh6czB3NjVWZjItVGtMckpWU05ZYkhqTXBDVmRHVmlZVmVZQ1VuQ2twN25B?oc=5",
-      "date": "2026-06-08",
-      "source": "Google News — Hantavirus",
-      "summary": "The provided text only states that experts believe hantavirus is unlikely to become the next COVID-19, but does not include any specific case counts, deaths, quarantine numbers, or official statements about the 2026 MV Hondius outbreak."
     }
   ]
 }
