@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-07-01T16:44:46.674Z",
+  "lastFetched": "2026-07-02T15:58:21.464Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -181,9 +181,18 @@
     "news-Q0JNaXh3SkJWVjk1Y1",
     "news-Q0JNaXBBSkJWVjk1Y1",
     "news-Q0JNaXVnSkJWVjk1Y1",
-    "who-Q0JNaVgwRlZYM2x4VE"
+    "who-Q0JNaVgwRlZYM2x4VE",
+    "who-Q0JNaTN3RkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaTN3RkJWVjk1Y1",
+      "title": "Follow-up message by the WHO Director-General to the people of Tenerife regarding the hantavirus response - World Health Organization (WHO)",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOWHUyMWpfWHNpMGdCOV9JemRJNlhmcU9ZY19LTEF5b0ROSzlnY3JpQzlKWjJfVEpPeS1IZ2RSY2xEYVA2OWcyVlJsdU9FeENMUDIyTG8yb2pHRVAwX3hxel9ES3dlaHEzSy03N2NzUUVjR0VHdlFFbmppbUVLYi02TEtRT3lrLWY2NVlJTW9fWER3RjRIcHhSZkhVZndYZC1XaWFhYWNOX25JNWdiMVUzN3lQQk4zak9qSWFza291dVkzbElkdkxWa2Zka0VqcDJGaFBNWF9CQjdVaTF0TDN3?oc=5",
+      "date": "2026-05-14",
+      "source": "Google News — WHO DON",
+      "summary": "The WHO Director-General issued a follow-up message to the people of Tenerife regarding the hantavirus response, but the provided text does not include any case counts, deaths, quarantine numbers, or specific official statements."
+    },
     {
       "id": "who-Q0JNaVgwRlZYM2x4VE",
       "title": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - The New England Journal of Medicine",
@@ -335,14 +344,6 @@
       "date": "2026-06-11",
       "source": "Google News — Hantavirus",
       "summary": "A woman quarantined in Nebraska after the 2026 MV Hondius hantavirus outbreak told Forbes she feels “held hostage” by the quarantine; no case counts, deaths, or further official numbers were provided in the article."
-    },
-    {
-      "id": "news-Q0JNaTNBRkJWVjk1Y1",
-      "title": "US puts up $750K to evacuate an American who was aboard hantavirus cruise ship from remote island - WKMG",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQakZQUGpDS1loOWRabEhRUjQyY21ER3NzMGlWcktzYkZlTGNCcE1WQUp1SndEQnM5ZHZUVHdLZW9PTnY1Sm14WnRkZHJfZTFuR0gxVnRBX3lqaUdzWVBXRVRzZXo5bGtmdjV1QU9yRUdoWjgxZFd6Z1lZSVVhdnU4TEFxV3gwLUJFY1l4NXV2amQzNDJkazgxVEU3Q0U3TzFPYXo4cFVyNTFILUlLdGJqUlNSYnhxQ0E5dVVJQWw5cm5ub1dZRFFxZ2lkakRlbU1wQzlDbWZkOHh5M29l?oc=5",
-      "date": "2026-06-11",
-      "source": "Google News — Hantavirus",
-      "summary": "The US allocated $750,000 to evacuate an American from a remote island following a hantavirus outbreak on the MV Hondius cruise ship in 2026; no case counts, deaths, quarantine numbers, or official statements were included in the headline."
     }
   ]
 }
