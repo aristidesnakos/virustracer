@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-07-04T11:59:34.075Z",
+  "lastExtracted": "2026-07-05T12:52:06.215Z",
   "candidates": [
     {
       "id": "news-Q0JNaTRnRkJWVjk1Y1",
@@ -30,36 +30,6 @@
       "sourceName": "Google News — Hantavirus",
       "date": "2026-06-11",
       "extractedAt": "2026-06-12T09:34:34.320Z"
-    },
-    {
-      "id": "news-Q0JNaWpnSkJWVjk1Y1",
-      "country": "Argentina",
-      "iso": "AR",
-      "flag": "🇦🇷",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "monitoredMentioned": null,
-      "context": "Argentina sends teams to trap and test rats in Mendoza as part of hantavirus probe.",
-      "sourceTitle": "Argentina expands hantavirus probe, sending teams to trap and test rats in Mendoza - Ottumwa Courier",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPRU4tWFJOWDRGMmlzdExYRGhtMEU4UC1ob0hyVUlJMldlcl9CTllIY3VnLUlEMmpXaS1wZjBuVTRielFzamtaZ09Ca3FROXF2cXNLSE5LRWlKVjVOX2psSDJpdHR5SmVGdE9rSm1LLWs4UDUwdDEtNTFudXl6ZzlzTFNjYmg5aE1mUndGV1loS3Bva1RDYkJPcHNJNmlpdFFsbmxNMW5mLVFFd3h4Nk1rNjk3TlRkSkpKYjBOQklOYUlNR3RxZll5SEIxQjVBSnF2WldfZXY1N1czWnN2WTJYNENQZHNBdEVUbmRfZ1BuQUZtZ01UNFdYRExMSkJ2X2FNSnRzNjIycGJHQlB1TEE?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-06-05",
-      "extractedAt": "2026-06-07T09:10:44.531Z"
-    },
-    {
-      "id": "news-Q0JNaWlBSkJWVjk1Y1",
-      "country": "Argentina",
-      "iso": "AR",
-      "flag": "🇦🇷",
-      "casesMentioned": 12,
-      "deathsMentioned": 2,
-      "monitoredMentioned": 43,
-      "context": "Argentina has deployed teams to trap and test rats in Mendoza as part of an expanded investigation into the 2026 MV Hondius hantavirus outbreak.",
-      "sourceTitle": "Argentina expands hantavirus probe, sending teams to trap and test rats in Mendoza - Goshen News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNa2RBN2s3Y09Pb2tuc1VVM1NLUVdHUmxGY0U5OGVYWTZlUUEyV1NCb1Z1NUZUc3RQMW5wZFJMMW1Xbk1GamdPakVqcDdmTkJyQ2pLMktaemU5WF9CN2JyOFZJWVN0RHduc0EtVGgyZ0tyckVrRDM4RTVlV1R4dXpaOHFfYUtDRmtBaVZSRHRPbnFDeURENkpQcTZQem42V3JnQUhRZmw0QlRILU52c2VKQWVwcGtQSkJqYWl0eTFzS1VmNUlGVFpMSFhkd1hCXzdZZkUxRXVfRlBkLUk5TXFUYmlFc0NZRWtnMm5FWmpYNUx0UFlUTUFYcmV3OXptWU85ZEZVSDB3Skg?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-06-05",
-      "extractedAt": "2026-06-07T09:10:59.704Z"
     }
   ]
 }
