@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-07-08T15:56:09.285Z",
+  "lastFetched": "2026-07-09T17:09:36.408Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -184,9 +184,18 @@
     "who-Q0JNaVgwRlZYM2x4VE",
     "who-Q0JNaTN3RkJWVjk1Y1",
     "news-Q0JNaWp3SkJWVjk1Y1",
-    "who-Q0JNaWNFRlZYM2x4VE"
+    "who-Q0JNaWNFRlZYM2x4VE",
+    "who-Q0JNaS1nRkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaS1nRkJWVjk1Y1",
+      "title": "WHO Updates Hantavirus Situation Report as Cruise Ship Outbreak Spreads to France, Spain, and Possibly the United States - Global Biodefense",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNdXFBXzg3cVJkTnVYQ2tIS29PWUJ6WUVsd2dFcnFpV01rLXVRd293b1dwbDM3bjA4cFhxSDRsSGtvZjBHQlRNOS05bTNYcmw1VGwxSU9VTlZGRkNCbThLZHEyYTFaSHd5NFdmdkJnVXpISDBMX2pCaWhxVk5CRzF0S1hvX3lrc1FiYjdGdUE3VHVPb0I1VHpyZ3RQQ0hKeXhsdER6NkFlLWpnQURGQkxydzNzT21YYnBFMUlKbW5WRVNpMERGR0NhTWNmUDE5VlZWQ0hKdWZMcUNfSjF0UVp1UlllLW4ySG9PVG44M2hBd2Fydzh6S1Y5WUVR?oc=5",
+      "date": "2026-05-14",
+      "source": "Google News — WHO DON",
+      "summary": "The provided text is only a title and does not include any specific case counts, deaths, quarantine numbers, or official statements. I cannot summarize the outbreak with the requested factual details without the full article content."
+    },
     {
       "id": "who-Q0JNaWNFRlZYM2x4VE",
       "title": "Hantavirus Outbreak Response unit - ANRS Maladies infectieuses émergentes",
@@ -338,14 +347,6 @@
       "date": "2026-05-21",
       "source": "Google News — Hantavirus",
       "summary": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 &nbsp;&nbsp; NEJM Evidence"
-    },
-    {
-      "id": "who-Q0JNaWFFRlZYM2x4VE",
-      "title": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - NEJM Evidence",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sSDZ4TTZoZFBiczN1N0poWUNhZnkxYXZUSXNkLXNqdnRWa0N0U083ZGJjcUlPWmhRTk15UFRmOXV6SU1QblZUN1Jqcy1iVmRGc3Z2ZEtzR18xN0ZHM2JEV3hoYnV3eDJD?oc=5",
-      "date": "2026-05-21",
-      "source": "Google News — WHO DON",
-      "summary": "A hantavirus pulmonary syndrome outbreak on the MV Hondius cruise ship in 2026 resulted in 14 confirmed cases of Andes orthohantavirus among passengers and crew, including 5 deaths; the ship was quarantined for 10 days in Ushuaia, Argentina, where local health officials reported no secondary transmission among the 1,200 remaining passengers and crew after the quarantine period."
     }
   ]
 }
