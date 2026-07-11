@@ -1,35 +1,4 @@
 {
-  "lastExtracted": "2026-07-10T16:37:11.037Z",
-  "candidates": [
-    {
-      "id": "news-Q0JNaTRnRkJWVjk1Y1",
-      "country": "United States",
-      "iso": "US",
-      "flag": "🇺🇸",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "monitoredMentioned": 1,
-      "context": "A hantavirus cruise passenger is in quarantine in Nebraska.",
-      "sourceTitle": "Hantavirus Cruise Passenger Says She’s Being Held ‘Hostage’ In Nebraska Quarantine (Latest Updates) - Forbes",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxONHpJVUFEMTh3d1dubXRXNGhCSjhQVkhUc2lIWTdrU1hQaUlsZWp1Zlpqb19iaXQ2QW42VlVHZEtfZ0V6cVl0UUt4Ykl0TjQ1Z2JtSDdsbXQ4WlNVSVZiV3hGVkVvaFhLdHptOEw1ajhDV25JdlJfMTFJeVRrZjBFSGtMVTgzdWU5RjI5SzZDUi12d0V2Mm56NFNGdGE3X1EzWFM5SzhPbkpEdUVJekxFMDJYVzFSbVMxME1kNVBkdDlXTERMX1I4a09NcExZWFRUZWJRVnNQajZqQ2hCbkRVZk93?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-06-11",
-      "extractedAt": "2026-06-12T09:34:22.653Z"
-    },
-    {
-      "id": "news-Q0JNaTNBRkJWVjk1Y1",
-      "country": "United States",
-      "iso": "US",
-      "flag": "🇺🇸",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "monitoredMentioned": null,
-      "context": "The US government allocated funds to evacuate an American passenger from the hantavirus-affected cruise ship.",
-      "sourceTitle": "US puts up $750K to evacuate an American who was aboard hantavirus cruise ship from remote island - WKMG",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQakZQUGpDS1loOWRabEhRUjQyY21ER3NzMGlWcktzYkZlTGNCcE1WQUp1SndEQnM5ZHZUVHdLZW9PTnY1Sm14WnRkZHJfZTFuR0gxVnRBX3lqaUdzWVBXRVRzZXo5bGtmdjV1QU9yRUdoWjgxZFd6Z1lZSVVhdnU4TEFxV3gwLUJFY1l4NXV2amQzNDJkazgxVEU3Q0U3TzFPYXo4cFVyNTFILUlLdGJqUlNSYnhxQ0E5dVVJQWw5cm5ub1dZRFFxZ2lkakRlbU1wQzlDbWZkOHh5M29l?oc=5",
-      "sourceName": "Google News — Hantavirus",
-      "date": "2026-06-11",
-      "extractedAt": "2026-06-12T09:34:34.320Z"
-    }
-  ]
+  "lastExtracted": "2026-07-11T11:35:02.683Z",
+  "candidates": []
 }
