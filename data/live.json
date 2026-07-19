@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-07-18T11:33:49.900Z",
+  "lastFetched": "2026-07-19T11:42:44.657Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -185,9 +185,18 @@
     "who-Q0JNaTN3RkJWVjk1Y1",
     "news-Q0JNaWp3SkJWVjk1Y1",
     "who-Q0JNaWNFRlZYM2x4VE",
-    "who-Q0JNaS1nRkJWVjk1Y1"
+    "who-Q0JNaS1nRkJWVjk1Y1",
+    "who-Q0JNaXV3RkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaXV3RkJWVjk1Y1",
+      "title": "3 dead, several ill in suspected hantavirus outbreak on Atlantic cruise ship: WHO - Anadolu Ajansı",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMmpTbThNRWMtWFVpOXR2RnlVLXVMUWRoZlhQSWJsU0x2d052QTdmd3RyQ0pDcDNpWUxXVm5lbWtuTGZkX2RrNUNQQkV3YU5GcExwaG43dWRqU2hUU09wa2lpajNNMm56Z0Z2ZUhhbWNpd2FjVjNCV3Y4WnNRRHJmTk16MFc3Z2xtVkdHejNVM1VzXzV6SVdZdGRTMjZ1S1Bzc25JOFdfLVFqX0JpMW9RcVdycjI1Z01fWGtJ?oc=5",
+      "date": "2026-05-04",
+      "source": "Google News — WHO DON",
+      "summary": "According to the WHO, a suspected hantavirus outbreak on the Atlantic cruise ship MV Hondius has"
+    },
     {
       "id": "who-Q0JNaS1nRkJWVjk1Y1",
       "title": "WHO Updates Hantavirus Situation Report as Cruise Ship Outbreak Spreads to France, Spain, and Possibly the United States - Global Biodefense",
@@ -339,14 +348,6 @@
       "date": "2026-05-28",
       "source": "Google News — WHO DON",
       "summary": "A hantavirus outbreak linked to the 2026 MV Hondius cruise ship has spread across 32 countries, resulting in 3 deaths, according to a WHO report."
-    },
-    {
-      "id": "news-Q0JNaWFFRlZYM2x4VE",
-      "title": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 - NEJM Evidence",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sSDZ4TTZoZFBiczN1N0poWUNhZnkxYXZUSXNkLXNqdnRWa0N0U083ZGJjcUlPWmhRTk15UFRmOXV6SU1QblZUN1Jqcy1iVmRGc3Z2ZEtzR18xN0ZHM2JEV3hoYnV3eDJD?oc=5",
-      "date": "2026-05-21",
-      "source": "Google News — Hantavirus",
-      "summary": "Andes Hantavirus Outbreak on a Cruise Ship, 2026 &nbsp;&nbsp; NEJM Evidence"
     }
   ]
 }
