@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-07-28T15:56:57.696Z",
+  "lastFetched": "2026-07-29T15:36:20.728Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -186,9 +186,18 @@
     "news-Q0JNaWp3SkJWVjk1Y1",
     "who-Q0JNaWNFRlZYM2x4VE",
     "who-Q0JNaS1nRkJWVjk1Y1",
-    "who-Q0JNaXV3RkJWVjk1Y1"
+    "who-Q0JNaXV3RkJWVjk1Y1",
+    "who-Q0JNaXZBRkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "who-Q0JNaXZBRkJWVjk1Y1",
+      "title": "Global Hantavirus Threat Low Following Cruise Ship Outbreak, WHO Says - EMJ",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX1VMcTBBb254SFRPVnVsVjNFM0lsU3dzT0ZSMnNfZm5UbWwtRnloNDZpTzlYU1JSa2Fmd1F6UHFFRkw5MnRQLUZ5ZENUQU5iVHA5cmtGdE81a1V1cVl6dzhXdVRuWUdoWkZ2MWhhcmV6eGpTeDB5b2J4V0gwcWFNa1h1czc4WUlzTC1lZUJUd21sYUdXS0hkc1hmZDhRaDYyMk5wdk9TbWplaUVmRlJuUmVsb3FmYkYxM0RiQg?oc=5",
+      "date": "2026-05-05",
+      "source": "Google News — WHO DON",
+      "summary": "Global Hantavirus Threat Low Following Cruise Ship Outbreak, WHO Says &nbsp;&nbsp; EMJ"
+    },
     {
       "id": "who-Q0JNaXV3RkJWVjk1Y1",
       "title": "3 dead, several ill in suspected hantavirus outbreak on Atlantic cruise ship: WHO - Anadolu Ajansı",
@@ -340,14 +349,6 @@
       "date": "2026-05-09",
       "source": "Google News — WHO DON",
       "summary": "Nepal issued an urgent travel alert following a hantavirus outbreak on the MV Hondius cruise ship in 2026, raising global health and tourism concerns. The article did not specify case counts, deaths, or quarantine numbers."
-    },
-    {
-      "id": "who-Q0JNaXVBRkJWVjk1Y1",
-      "title": "3 dead as cruise ship Hantavirus outbreak spreads across 32 countries – WHO report - Vanguard News",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOc21DcG5GRTh2Ri1iNW9PUDRsSUFwNnBXWmUtYzNJT1daZDQzNERURHMtalFlSUdpMHZzSU9kSm9fQTktdXNWVm84QURfV3ZlNnExNVZhc0JJcFZMMGN0b1pkVVFvWFdsQmttVE1iRzB5UGdDXzJRalkyYUVDa0hCelBUTm9lR0pSMXBsd2EyN0RLd3dyNExqeldPa0Iwa1Fla1h4ZGtXcWE1bnRndUd1SmdGWG9GR2pm0gG-AUFVX3lxTE1Udld0TVhmcHd5UUFfRmw0bGY5aGJNTGZPM2dobU5sUHRTeUpRRERtWWlRRmdPWERJYi04Ym5LWnZGaGJDZU5HSDhzaEVob200SVA1U0FRUUg1LWVXc3htc2w0X0N0blZxRmlFQTRaTUxBU1hsOXRFR2dXQkl4MWFHWWZJamdOUGlvWDRKQVh3c1huS21PdUVndG52ZGdlSWdOUHoycHpxc255aXBRSlBndDFXSEFzcTR3TjFCemc?oc=5",
-      "date": "2026-05-28",
-      "source": "Google News — WHO DON",
-      "summary": "A hantavirus outbreak linked to the 2026 MV Hondius cruise ship has spread across 32 countries, resulting in 3 deaths, according to a WHO report."
     }
   ]
 }
