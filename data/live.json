@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-09-02T08:17:04.550Z",
+  "lastFetched": "2026-09-03T08:17:22.336Z",
   "processedIds": [
     "paho-MTAzNDUwIGF0IGh0dH",
     "paho-MTAzNDExIGF0IGh0dH",
@@ -188,9 +188,27 @@
     "who-Q0JNaS1nRkJWVjk1Y1",
     "who-Q0JNaXV3RkJWVjk1Y1",
     "who-Q0JNaXZBRkJWVjk1Y1",
-    "who-Q0JNaXRnRkJWVjk1Y1"
+    "who-Q0JNaXRnRkJWVjk1Y1",
+    "news-Q0JNaWh3SkJWVjk1Y1",
+    "news-Q0JNaTJ3SkJWVjk1Y1"
   ],
   "recentItems": [
+    {
+      "id": "news-Q0JNaWh3SkJWVjk1Y1",
+      "title": "Initial genetic analysis of the ‘MV Hondius’ hantavirus outbreak confirms it belongs to the Andes strain and rules out mutations - EL PAÍS English",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNRkpsX3BuVUlrYXhkWjhtUVBOQVo3ckpRQTM3bndJbjdoamk2TndFYUNDa3ZJQTBxaWc2ZUJfS09UQ09TLTVncTJITXRoXzN1OHlfYWtlSU9YcFdPaFdpZGREU3pkTGk4ZWxDNjNVcDFBY1VwUXVTbV85bHlXeWE1X2xvU0JBOUdIbWI4U3U3WnRqR0JtS1ZXOW5HRzJ4U1Zrc09ZQ1JyYWtSMncybldJcVRad3gxNmRlMnI5V3VBQ0tSTmRpc19JNTNCSlB6NzlWRU5hQ21PNEFNX2xnRTcydTF4WlotNGk2djR6b0lMclZPVXZ3RkVERFUxM3FLaEhiMVV2UFN6NNIBmwJBVV95cUxOQ0VLR0RrU1luVnJmR29UcFBtVXNUcUxwcUN0Wm9sd0ZXZUpJRl95RTl6SFNQWnB4TW40dUJCRHNoRnpoZDExQUdVVXdUNkJEUnhFNFJlWXR2N1FvU0Q2WUlLRV9HZm5SdTRBSjFKcmFUQ2pCUlR6bExKVndvN2ZMM3FhXzlWVlNSNkRLOFN4Q0RuQW9URkx2YllscGxDZDhPVGtHaUQ1WF9ydWVwSE9TNkRjdGFBUG1YRjdrVUhBdk96UUp1WG9KMHJFdk1YQU41NlVZMlBVNVZ2eGpZYzRvUVBKM1ZHYXdzaTk4VnBQWkp1SGRjbmJKeFowUzI0emU5bWN1ZUZ6QUR6dDZTTmxEbTY5WjE0MmwyWFl3?oc=5",
+      "date": "2026-05-11",
+      "source": "Google News — Hantavirus",
+      "summary": "Initial genetic analysis of the ‘MV Hondius’ hantavirus outbreak confirms it belongs to the Andes strain and rules out mutations &nbsp;&nbsp; EL PAÍS English"
+    },
+    {
+      "id": "news-Q0JNaTJ3SkJWVjk1Y1",
+      "title": "What sparked deadly cruise ship hantavirus outbreak? Experts rule out theories - National Desk",
+      "url": "https://news.google.com/rss/articles/CBMi2wJBVV95cUxNVlRabmFEZzlidlZwaXNWQ0JUUUx1MjQ4OEhHUlhTMGw0LTlRT29ueTlEdlR1RW52TktuamNWTXBKS0htcUN3aWdsbER6NHZPWm8waXRpVGdmMXV6d2xWeXEyMFZFMXVQMndQaXJNdE5WQUgyT0tfaHJTUFZFR0ZZQlo2RTAtb3ZZVEN2eFFzOWNFRHRNeGNPalB5am5SRWNhM2RmVTRZWXBSczd5Z0IwNzJKZzEwSFgtdDV0SXZmZEZvcjNFSWRLRWNEekV3dm5DTlBnRTI3czBwMTZCaVR1d1pVc29RY1luTnRpcFp4ZkZ5TzBoN0I2S3BrZ1BIQ2RER2xKUUtKMGcyaGxZS3R5dmttRjlua0h6aU1kc2VKSF9pVmJ4bWdqNjJVN1JZUTJsSFVjZFJvZWdCaWh6MkU2ZUZKY3o1THBzMDlmenVPaFVsenFhWV94anFOMA?oc=5",
+      "date": "2026-05-13",
+      "source": "Google News — Hantavirus",
+      "summary": "What sparked deadly cruise ship hantavirus outbreak? Experts rule out theories &nbsp;&nbsp; National Desk"
+    },
     {
       "id": "who-Q0JNaXRnRkJWVjk1Y1",
       "title": "3 dead, several ill in suspected hantavirus outbreak on Atlantic cruise ship: WHO - Anadolu Ajansı",
@@ -334,22 +352,6 @@
       "date": "2026-05-10",
       "source": "Google News — WHO DON",
       "summary": "WHO calls everyone aboard hantavirus-hit ship \"high-risk\" contacts &nbsp;&nbsp; Global Times"
-    },
-    {
-      "id": "who-Q0JNaWRrRlZYM2x4VE",
-      "title": "Real 2022 tweet about hantavirus fuels 'prediction' rumor amid outbreak - Snopes",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE5hbW5sSkt3T0UyVExuU0o3bG1odVhsUW9CSzZTRkhJcF9kVmVLTUFOSUljMENjRTZQTUU0Nzk5NzYzb3VnWXJfbjdVV1JndVludjB3YUtWUkU2NFlEcG1KZ0JHNmwyekNiMHctX1hVek1QQmhfckE?oc=5",
-      "date": "2026-05-09",
-      "source": "Google News — WHO DON",
-      "summary": "The provided text from Snopes only indicates that a real 2022 tweet about hantavirus is fueling a \"prediction\" rumor amid an outbreak, but it does not include any specific case counts, deaths, quarantine numbers, or official statements."
-    },
-    {
-      "id": "who-Q0JNaXFBRkJWVjk1Y1",
-      "title": "FACTSHEET: What we know about hantavirus, and how to keep up with the facts - Africa Check",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaWlnbDlXYWNVVUJxazR6NFg2RTRCb24xX2FiOEkxbE5NNVp4YUdSdzhRWWZPVlZIcmNabjlCQnJ6bDcyQWlkaGxINHNZUFl4RVlFUDhlb2pRajBzMmE1Wk9ZSXd3VndvV2ZYRTdULTFVejRHcVRkbWFXdFpnUndxN3R2eVV1MzBIMDdaR21XUGtzMWFSdHZ4YzVNMVh0azFIUnVqaHJOLUs?oc=5",
-      "date": "2026-05-15",
-      "source": "Google News — WHO DON",
-      "summary": "As of the provided content, Africa Check's factsheet on hantavirus does not mention a 2026 MV Hondius outbreak, case counts, deaths, or quarantine numbers."
     }
   ]
 }
