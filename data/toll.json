@@ -1,0 +1,15 @@
+{
+  "lastChecked": "2026-10-02T15:13:57.138Z",
+  "snapshots": [
+    {
+      "date": "2026-10-02",
+      "confirmed": 8245,
+      "suspected": 347,
+      "deaths": 3984,
+      "recovered": 2140,
+      "source": "Wikipedia infobox (cites INSP DRC / WHO)",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1377979097",
+      "revid": 1377979097
+    }
+  ]
+}

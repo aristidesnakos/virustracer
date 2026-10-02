@@ -8,7 +8,6 @@ export interface CandidateSignal {
   flag: string;
   casesMentioned: number | null;
   deathsMentioned: number | null;
-  monitoredMentioned: number | null;
   context: string;
   sourceTitle: string;
   sourceUrl: string;

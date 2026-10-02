@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { voyageStops, caseLocations, summary } from "@/data/outbreak";
+import { spreadStops, caseLocations } from "@/data/outbreak";
 import { daysBetween } from "@/lib/outbreak-trend";
 
 const CARTO_DARK = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
@@ -18,26 +18,39 @@ const RECENCY_STOPS: ReadonlyArray<[number, string]> = [
   [45, "#6b7280"],  // 45+ days — gray-500
 ];
 
-function voyageGeoJSON() {
-  return {
-    type: "FeatureCollection" as const,
-    features: [
-      {
-        type: "Feature" as const,
-        geometry: {
-          type: "LineString" as const,
-          coordinates: voyageStops.map((s) => s.coords),
-        },
-        properties: {},
-      },
-    ],
-  };
+function escapeHtml(value: unknown): string {
+  return String(value)
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;")
+    .replace(/'/g, "&#39;");
 }
+
+const fmt = (n: number) => n.toLocaleString("en-US");
+
+/** Compact label for dots: 2885 -> "2.9k", 931 -> "931", 0 -> "". */
+function compactCount(n: number): string {
+  if (n <= 0) return "";
+  if (n < 1000) return String(n);
+  const k = n / 1000;
+  return `${k >= 100 ? Math.round(k) : k.toFixed(1).replace(/\.0$/, "")}k`;
+}
+
+function clamp(v: number, lo: number, hi: number): number {
+  return Math.max(lo, Math.min(hi, v));
+}
+
+// Reference date for the recency gradient: the freshest data on the map.
+const REFERENCE_ISO = caseLocations.reduce(
+  (max, l) => (l.asOf > max ? l.asOf : max),
+  caseLocations[0]?.asOf ?? new Date().toISOString().slice(0, 10),
+);
 
 function stopsGeoJSON() {
   return {
     type: "FeatureCollection" as const,
-    features: voyageStops.map((stop) => ({
+    features: spreadStops.map((stop) => ({
       type: "Feature" as const,
       geometry: { type: "Point" as const, coordinates: stop.coords },
       properties: {
@@ -54,9 +67,8 @@ function casesGeoJSON(referenceISO: string) {
   return {
     type: "FeatureCollection" as const,
     features: caseLocations.map((loc) => {
-      // Dot size scales primarily with confirmed cases; monitored contributes
-      // softly so countries with only-monitoring activity still register.
-      const weight = loc.confirmed * 3 + loc.monitored * 0.25;
+      // sqrt-scaled so Ituri (thousands) and a 1-case marker both stay legible.
+      const dotRadius = clamp(6 + Math.sqrt(loc.confirmed) * 0.22, 7, 26);
       return {
         type: "Feature" as const,
         geometry: { type: "Point" as const, coordinates: loc.coords },
@@ -65,13 +77,12 @@ function casesGeoJSON(referenceISO: string) {
           flag: loc.flag,
           confirmed: loc.confirmed,
           deaths: loc.deaths,
-          monitored: loc.monitored,
           type: loc.type,
           asOf: loc.asOf,
           daysAgo: Math.max(0, daysBetween(loc.asOf, referenceISO)),
-          dotRadius: Math.max(8, Math.min(20, weight + 7)),
-          haloRadius: Math.max(18, Math.min(46, weight * 1.8 + 16)),
-          label: loc.confirmed > 0 ? String(loc.confirmed) : "",
+          dotRadius,
+          haloRadius: dotRadius * 2.2,
+          label: compactCount(loc.deaths),
         },
       };
     }),
@@ -97,10 +108,10 @@ export default function OutbreakMap() {
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: CARTO_DARK,
-      center: [-15, 15],
-      zoom: 1.8,
+      center: [24, 2],
+      zoom: 3.2,
       minZoom: 1,
-      maxZoom: 8,
+      maxZoom: 9,
       attributionControl: false,
     });
 
@@ -115,26 +126,8 @@ export default function OutbreakMap() {
     );
 
     map.on("load", () => {
-      // ── Voyage route line ──────────────────────────────────────
-      map.addSource("voyage-route", {
-        type: "geojson",
-        data: voyageGeoJSON(),
-      });
-
-      map.addLayer({
-        id: "voyage-line",
-        type: "line",
-        source: "voyage-route",
-        paint: {
-          "line-color": "#60a5fa",
-          "line-width": 1,
-          "line-dasharray": [3, 2],
-          "line-opacity": 0.35,
-        },
-      });
-
-      // ── Voyage stops ───────────────────────────────────────────
-      map.addSource("voyage-stops", {
+      // ── First-detection sites ───────────────────────────────────────────
+      map.addSource("spread-stops", {
         type: "geojson",
         data: stopsGeoJSON(),
       });
@@ -142,7 +135,7 @@ export default function OutbreakMap() {
       map.addLayer({
         id: "stops-circle",
         type: "circle",
-        source: "voyage-stops",
+        source: "spread-stops",
         paint: {
           "circle-radius": 2.5,
           "circle-color": "#60a5fa",
@@ -156,7 +149,7 @@ export default function OutbreakMap() {
       // fresh data is red/orange, stale data fades to blue-gray.
       map.addSource("cases", {
         type: "geojson",
-        data: casesGeoJSON(summary.lastUpdated),
+        data: casesGeoJSON(REFERENCE_ISO),
       });
 
       const recencyColor = recencyColorExpression();
@@ -186,7 +179,7 @@ export default function OutbreakMap() {
         },
       });
 
-      // Inline count label on dots that have confirmed cases. Keeps the data
+      // Inline label shows deaths in compact form. Keeps the data
       // legible without forcing a hover.
       map.addLayer({
         id: "cases-label",
@@ -206,7 +199,7 @@ export default function OutbreakMap() {
         },
       });
 
-      // ── Tooltips — voyage stops ────────────────────────────────
+      // ── Tooltips — first-detection sites ────────────────────────────────
       const stopPopup = new maplibregl.Popup({
         closeButton: false,
         closeOnClick: false,
@@ -224,10 +217,10 @@ export default function OutbreakMap() {
           .setLngLat(geom.coordinates)
           .setHTML(
             `<div class="popup-inner">
-               <div class="popup-title">${p.name}</div>
-               <div class="popup-sub">${p.location}</div>
-               <div class="popup-date">${new Date(p.date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric" })}</div>
-               ${p.event ? `<div class="popup-note">${p.event}</div>` : ""}
+               <div class="popup-title">${escapeHtml(p.name)}</div>
+               <div class="popup-sub">${escapeHtml(p.location)}</div>
+               <div class="popup-date">${new Date(p.date).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })}</div>
+               ${p.event ? `<div class="popup-note">${escapeHtml(p.event)}</div>` : ""}
              </div>`
           )
           .addTo(map);
@@ -252,20 +245,19 @@ export default function OutbreakMap() {
         if (!feat) return;
         const p = feat.properties as {
           country: string; flag: string; confirmed: number;
-          deaths: number; monitored: number; type: string;
+          deaths: number; type: string;
           asOf: string; daysAgo: number;
         };
         const geom = feat.geometry as unknown as { coordinates: [number, number] };
         const lines: string[] = [];
-        if (p.confirmed > 0) lines.push(`<span class="popup-stat orange">${p.confirmed} confirmed</span>`);
-        if (p.deaths > 0) lines.push(`<span class="popup-stat red">${p.deaths} death${p.deaths > 1 ? "s" : ""}</span>`);
-        if (p.monitored > 0) lines.push(`<span class="popup-stat yellow">${p.monitored} monitored</span>`);
+        if (p.confirmed > 0) lines.push(`<span class="popup-stat orange">${fmt(p.confirmed)} confirmed</span>`);
+        if (p.deaths > 0) lines.push(`<span class="popup-stat red">${fmt(p.deaths)} death${p.deaths > 1 ? "s" : ""}</span>`);
         const freshness = p.daysAgo === 0 ? "today" : `${p.daysAgo}d ago`;
         casePopup
           .setLngLat(geom.coordinates)
           .setHTML(
             `<div class="popup-inner">
-               <div class="popup-title">${p.flag} ${p.country}</div>
+               <div class="popup-title">${escapeHtml(p.flag)} ${escapeHtml(p.country)}</div>
                <div class="popup-stats">${lines.join(" · ")}</div>
                <div class="popup-date">updated ${freshness}</div>
              </div>`
@@ -308,11 +300,11 @@ export default function OutbreakMap() {
           </div>
         </div>
         <div className="flex items-center gap-2 pt-1 border-t border-white/[0.06]">
-          <span
-            className="w-3 h-0.5 bg-blue-400 opacity-70 shrink-0"
-            style={{ borderTop: "1.5px dashed" }}
-          />
-          Voyage route
+          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 opacity-70 shrink-0" />
+          First-detected site
+        </div>
+        <div className="text-[10px] text-gray-500 leading-snug">
+          Dot label: deaths · size: confirmed cases
         </div>
       </div>
     </div>

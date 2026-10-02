@@ -2,13 +2,17 @@ name: Update Outbreak Data
 
 on:
   schedule:
-    # Run daily at 08:00 UTC — captures overnight news cycle
-    - cron: "0 8 * * *"
+    # Twice daily (08:00 and 20:00 UTC) — the death toll moves daily
+    - cron: "0 8,20 * * *"
   workflow_dispatch:
     # Allow manual trigger from GitHub Actions UI
 
 permissions:
   contents: write
+
+concurrency:
+  group: update-outbreak-data
+  cancel-in-progress: false
 
 jobs:
   update:
@@ -28,6 +32,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Update death-toll snapshot
+        run: node scripts/update-toll.mjs
+
       - name: Fetch feeds and update live data
         env:
           # OpenRouter key (uses DeepSeek V4 Flash for cheap summarization)
@@ -39,10 +46,32 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/live.json data/candidates.json
+          git add data/live.json data/candidates.json data/toll.json
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "data: update outbreak feed [skip ci]"
+            git pull --rebase --autostash origin ${{ github.ref_name }}
             git push
           fi
+
+      - name: Summarize death toll
+        if: always()
+        run: |
+          node -e '
+            const fs = require("fs");
+            let t = {};
+            try { t = JSON.parse(fs.readFileSync("data/toll.json", "utf8")); } catch {}
+            const l = (Array.isArray(t.snapshots) && t.snapshots[t.snapshots.length - 1]) || t.latest || t;
+            const g = (...k) => { for (const x of k) if (l[x] != null) return l[x]; return "n/a"; };
+            const md = [
+              "## Ebola outbreak — latest death toll",
+              "",
+              "- As of: " + g("date", "asOf", "as_of"),
+              "- Confirmed cases: " + g("confirmed", "confirmedCases"),
+              "- Deaths: " + g("deaths", "deathToll"),
+              "- Source: " + g("source", "sourceName"),
+              ""
+            ].join("\n");
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md);
+          '

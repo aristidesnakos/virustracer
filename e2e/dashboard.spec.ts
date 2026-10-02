@@ -5,23 +5,27 @@ test.describe("dashboard", () => {
     await page.goto("/");
 
     await expect(
-      page.getByRole("heading", { name: /mv hondius hantavirus tracker/i }),
+      page.getByRole("heading", { name: /ebola outbreak tracker/i }),
     ).toBeVisible();
 
     // Stat strip — every tracked metric is on screen.
     const strip = page.getByTestId("stat-strip");
     await expect(strip).toBeVisible();
     for (const label of [
-      "Confirmed cases",
       "Deaths",
-      "Probable",
-      "Under monitoring",
-      "Ship status",
+      "Confirmed cases",
+      "Suspected",
+      "Case fatality",
+      "Contacts followed up",
+      "Spread",
     ]) {
       await expect(strip.getByText(label, { exact: true })).toBeVisible();
     }
 
     // Delta badges are labeled for screen readers.
+    await expect(
+      page.getByLabel(/deaths change in last 7 days/i),
+    ).toBeVisible();
     await expect(
       page.getByLabel(/confirmed cases change in last 7 days/i),
     ).toBeVisible();

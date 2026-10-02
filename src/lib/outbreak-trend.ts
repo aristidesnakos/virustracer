@@ -1,6 +1,6 @@
 import type { CaseDataPoint } from "@/data/outbreak";
 
-export type TrendField = "confirmed" | "suspected" | "deaths";
+export type TrendField = "confirmed" | "suspected" | "deaths" | "recovered";
 
 export interface TrendPoint {
   date: string;
@@ -31,12 +31,51 @@ function valueAtOrBefore(
   field: TrendField,
   cutoffDay: number,
 ): number {
+  // Points that do not report this field (e.g. milestone rows) are skipped, so
+  // the last known value is carried forward.
   let v = 0;
   for (const p of sorted) {
-    if (toUTCDay(p.date) <= cutoffDay) v = p[field];
-    else break;
+    if (toUTCDay(p.date) > cutoffDay) break;
+    const x = p[field];
+    if (x !== undefined) v = x;
   }
   return v;
+}
+
+/**
+ * Value at `cutoffDay`, linearly interpolated between the reading before and the
+ * reading after it. With sparse reporting (e.g. a reading every ~week) the plain
+ * "last value at or before" baseline can be many days stale and overstates a
+ * windowed delta; interpolating gives a fair estimate and converges to the exact
+ * value once readings are daily. Falls back to the carried-forward value when
+ * there is no later reading to interpolate towards.
+ */
+function interpolatedValueAt(
+  sorted: readonly CaseDataPoint[],
+  field: TrendField,
+  cutoffDay: number,
+): number {
+  let before: { day: number; v: number } | null = null;
+  let after: { day: number; v: number } | null = null;
+  for (const p of sorted) {
+    const x = p[field];
+    if (x === undefined) continue;
+    const day = toUTCDay(p.date);
+    if (day <= cutoffDay) before = { day, v: x };
+    else {
+      after = { day, v: x };
+      break;
+    }
+  }
+  if (!before) return 0;
+  if (!after || before.day === cutoffDay) return before.v;
+  const frac = (cutoffDay - before.day) / (after.day - before.day);
+  return before.v + (after.v - before.v) * frac;
+}
+
+export interface TrendOptions {
+  /** Estimate the window-start baseline by interpolating between readings. */
+  interpolateBaseline?: boolean;
 }
 
 export function computeTrend(
@@ -44,6 +83,7 @@ export function computeTrend(
   field: TrendField,
   windowDays: number,
   asOfISO?: string,
+  options: TrendOptions = {},
 ): Trend {
   if (timeline.length === 0) {
     return { current: 0, delta: 0, windowDays, series: [] };
@@ -54,13 +94,19 @@ export function computeTrend(
   const priorDay = asOfDay - windowDays;
 
   const current = valueAtOrBefore(sorted, field, asOfDay);
-  const prior = valueAtOrBefore(sorted, field, priorDay);
+  const prior = options.interpolateBaseline
+    ? interpolatedValueAt(sorted, field, priorDay)
+    : valueAtOrBefore(sorted, field, priorDay);
 
-  const series: TrendPoint[] = sorted
-    .filter((p) => toUTCDay(p.date) <= asOfDay)
-    .map((p) => ({ date: p.date, value: p[field] }));
+  const series: TrendPoint[] = [];
+  for (const p of sorted) {
+    const x = p[field];
+    if (x !== undefined && toUTCDay(p.date) <= asOfDay) {
+      series.push({ date: p.date, value: x });
+    }
+  }
 
-  return { current, delta: current - prior, windowDays, series };
+  return { current, delta: Math.round(current - prior), windowDays, series };
 }
 
 export function daysBetween(fromISO: string, toISO: string): number {

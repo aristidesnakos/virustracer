@@ -54,6 +54,36 @@ describe("computeTrend", () => {
   });
 });
 
+describe("computeTrend with optional fields", () => {
+  const SPARSE: CaseDataPoint[] = [
+    { date: "2026-08-01", label: "Aug 1", confirmed: 3626, deaths: 1589, recovered: 654, source: "x" },
+    { date: "2026-08-07", label: "Aug 7", confirmed: 4000, source: "x" },
+    { date: "2026-08-09", label: "Aug 9", deaths: 2000, source: "x" },
+  ];
+
+  it("carries the last known value over points that omit the field", () => {
+    const t = computeTrend(SPARSE, "confirmed", 7, "2026-08-09");
+    expect(t.current).toBe(4000);
+    expect(t.delta).toBe(4000 - 3626);
+  });
+
+  it("only includes points where the field is defined in the series", () => {
+    const t = computeTrend(SPARSE, "deaths", 7, "2026-08-09");
+    expect(t.series.map((p) => p.value)).toEqual([1589, 2000]);
+    expect(t.current).toBe(2000);
+  });
+
+  it("supports the recovered field and returns 0 when never reported", () => {
+    expect(computeTrend(SPARSE, "recovered", 7).current).toBe(654);
+    expect(computeTrend(SPARSE, "suspected", 7)).toEqual({
+      current: 0,
+      delta: 0,
+      windowDays: 7,
+      series: [],
+    });
+  });
+});
+
 describe("daysBetween", () => {
   it("returns positive integer days for a forward-in-time range", () => {
     expect(daysBetween("2026-05-01", "2026-05-18")).toBe(17);
@@ -65,5 +95,34 @@ describe("daysBetween", () => {
 
   it("returns a negative number when the destination is earlier", () => {
     expect(daysBetween("2026-05-18", "2026-05-01")).toBe(-17);
+  });
+});
+
+describe("computeTrend with interpolateBaseline", () => {
+  const sparse: CaseDataPoint[] = [
+    { date: "2026-09-19", label: "Sep 19", confirmed: 7672, deaths: 3699, source: "x" },
+    { date: "2026-09-26", label: "Sep 26", confirmed: 8067, deaths: 3901, source: "x" },
+    { date: "2026-10-02", label: "Oct 2", confirmed: 8245, deaths: 3984, source: "x" },
+  ];
+
+  it("does not overstate the delta when the nearest prior reading is stale", () => {
+    // 7-day window ending Oct 2 starts Sep 25: 6/7 of the way from Sep 19 to Sep 26.
+    const naive = computeTrend(sparse, "deaths", 7, "2026-10-02");
+    expect(naive.delta).toBe(3984 - 3699);
+    const t = computeTrend(sparse, "deaths", 7, "2026-10-02", { interpolateBaseline: true });
+    expect(t.delta).toBe(Math.round(3984 - (3699 + (6 / 7) * (3901 - 3699))));
+    expect(t.delta).toBeLessThan(naive.delta);
+  });
+
+  it("matches the exact value when a reading lands on the window start", () => {
+    const t = computeTrend(sparse, "deaths", 7, "2026-10-03", { interpolateBaseline: true });
+    expect(t.delta).toBe(3984 - 3901);
+  });
+
+  it("falls back to the carried-forward value when there is no later reading", () => {
+    // Window starts Sep 29, after the last reading (Sep 26), so nothing to interpolate towards.
+    const t = computeTrend(sparse.slice(0, 2), "deaths", 4, "2026-10-03", { interpolateBaseline: true });
+    expect(t.current).toBe(3901);
+    expect(t.delta).toBe(0);
   });
 });

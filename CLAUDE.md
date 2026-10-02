@@ -7,34 +7,45 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 ## Commands
 
 ```bash
-npm run dev      # start dev server (localhost:3000)
-npm run build    # production build
-npm run lint     # ESLint
-node scripts/fetch-feeds.mjs  # manually run feed updater (needs OPENROUTER_API_KEY)
+npm run dev       # start dev server (localhost:3000)
+npm run build     # production build
+npm run lint      # ESLint
+npm test          # unit tests (Vitest, jsdom; tests/**/*.test.{ts,tsx})
+npm run test:e2e  # Playwright e2e (uses the running dev server on PLAYWRIGHT_PORT, default 3000)
+node scripts/update-toll.mjs   # manually refresh data/toll.json (keyless)
+node scripts/fetch-feeds.mjs   # manually run feed updater (OPENROUTER_API_KEY optional)
 ```
-
-No test suite exists yet.
 
 ## Architecture
 
-Single-page outbreak dashboard (Next.js 16 App Router, React 19, Tailwind v4, TypeScript).
+Single-page outbreak dashboard (Next.js 16 App Router, React 19, Tailwind v4, TypeScript). Currently configured for the 2026 Bundibugyo Ebola outbreak (DRC + Uganda) with an automatically tracked death toll.
 
-**Data flow — two layers:**
+**Data flow — three layers:**
 
-1. **Static curated data** — `src/data/outbreak.ts` is the source of truth. All case counts, country monitoring entries, voyage stops, map markers, and summary stats live here as typed TypeScript constants. Edit this file to update outbreak numbers.
+1. **Curated data** — `src/data/outbreak.ts` is the hand-verified source of truth. Exports: `outbreak` (title/subtitle/description/links), `casesTimeline` (milestones; `confirmed`/`suspected`/`deaths`/`recovered` are all optional), `monitoringData` (country table; DRC provinces are sub-rows via `parentIso` and excluded from the total), `spreadStops`, `caseLocations` (map bubbles) and `summary`. Every entry needs a `source`.
 
-2. **Live feed data** — `data/live.json` is written by `scripts/fetch-feeds.mjs` (GitHub Actions cron, daily at 08:00 UTC). The script fetches RSS from PAHO and Google News, filters for hantavirus keywords, summarizes via OpenRouter (DeepSeek V4 Flash), and appends up to 20 items. The Next.js server reads this file at request time via `src/lib/live-data.ts` (`getLiveData()`), which is called in the Server Component `page.tsx` and passed as props to `FeedUpdates`.
+2. **Auto-tracked toll snapshots** — `data/toll.json` (`{ lastChecked, snapshots[] }`) is written by `scripts/update-toll.mjs`, which reads the Wikipedia infobox for "2026 Ebola epidemic" via the MediaWiki API, parses confirmed/suspected/deaths/recovered from the `{{Infobox outbreak}}` in the lead section (page constant `PAGE_TITLE`; parsing and the sanity checks live in the pure helpers in `scripts/lib/toll.mjs`), sanity-checks against the previous snapshot (confirmed/deaths/recovered never decrease, no >25% jump in confirmed/deaths unless the last snapshot is >7 days old, deaths <= confirmed), and writes one snapshot per UTC day with an `?oldid=` permalink to the exact revision. On failure it logs a GitHub Actions warning/error annotation and exits 0. `src/lib/toll.ts` (`getTollData()`) reads the file at request time and `src/lib/timeline.ts` (`mergeTimeline`, `latestDate`) merges the snapshots with the curated `casesTimeline`; curated wins on the same date. `page.tsx` passes the merged `timeline` to `StatStrip` and `CasesChart`.
+
+3. **Live feed data** — `data/live.json` and `data/candidates.json` are written by `scripts/fetch-feeds.mjs`. It fetches WHO news RSS plus three Google News queries, keyword-filters for Ebola, and (if `OPENROUTER_API_KEY` is set) summarizes via OpenRouter DeepSeek and extracts country candidates. The server reads them at request time via `src/lib/live-data.ts` (`getLiveData()`) and `src/lib/candidates-data.ts`, called in the Server Component `page.tsx`. Country candidates extracted from news are shown as Unverified.
+
+**Automation rule:** automation (GitHub Actions) never edits `src/data/outbreak.ts`. Only the headline totals and chart are auto-updated; the province/country table, map bubbles, and `summary` are updated by hand.
+
+**Workflow:** `.github/workflows/update-data.yml` runs at 08:00 and 20:00 UTC (and via `workflow_dispatch`, e.g. `gh workflow run update-data.yml`) in a concurrency group. Steps: `node scripts/update-toll.mjs`, then `node scripts/fetch-feeds.mjs`, then commits `data/live.json data/candidates.json data/toll.json` (pull --rebase, push), then a final `always()` step writes the latest toll to the Actions step summary. Vercel redeploys on the commit. `OPENROUTER_API_KEY` is the only secret and is optional.
 
 **Component breakdown:**
 
-- `src/app/page.tsx` — Server Component; composes the full dashboard layout (stat strip, map, chart, table, feed). Also defines `StatCard` inline.
+- `src/app/page.tsx` — Server Component; composes the dashboard (stat strip, map, chart, table, feed). Builds the merged `timeline` and passes it as a prop to `StatStrip` and `CasesChart`.
+- `src/components/StatStrip.tsx` — headline stats; takes the `timeline` prop (latest merged point for cases/deaths, trends, case fatality) plus figures from `summary`.
 - `src/components/MapLoader.tsx` — thin `"use client"` wrapper that uses `next/dynamic` with `ssr: false` to avoid SSR for MapLibre GL.
-- `src/components/OutbreakMap.tsx` — Client Component; initializes a MapLibre GL map with Stadia dark tiles, renders the ship voyage route as a dashed LineString, voyage stops as circles, and country case/monitoring bubbles with hover popups.
-- `src/components/CasesChart.tsx` — Recharts chart of the case timeline from `casesTimeline`.
-- `src/components/MonitoringTable.tsx` — table of `monitoringData` entries.
+- `src/components/OutbreakMap.tsx` — Client Component; MapLibre GL map with CARTO dark-matter tiles. Renders `spreadStops` (first-detection sites) and `caseLocations` bubbles labelled with confirmed cases and deaths, with hover popups.
+- `src/components/CasesChart.tsx` — Recharts "Cumulative deaths & cases" chart; takes the merged `timeline` prop.
+- `src/components/MonitoringTable.tsx` — region table from `monitoringData`; province rows (`parentIso`) render as sub-rows under their country.
 - `src/components/FeedUpdates.tsx` — renders `recentItems` from `data/live.json`.
+- `src/lib/outbreak-trend.ts` (trend deltas), `src/lib/timeline.ts` (curated + snapshot merge), `src/lib/toll.ts` (reads `data/toll.json`), `src/lib/live-data.ts`, `src/lib/candidates-data.ts`.
 
-**Map:** MapLibre GL JS + Stadia Maps `alidade_smooth_dark` style. No Stadia API key required for development (free tier). `OutbreakMap` must be loaded client-side only — always go through `MapLoader`.
+**Map:** MapLibre GL JS with CARTO dark-matter tiles (free, no API key). `OutbreakMap` must be loaded client-side only — always go through `MapLoader`.
+
+**Tests:** unit tests live in `tests/` (Vitest + Testing Library, `tests/setup.ts`; includes `toll.test.ts` for the scraper helpers and `timeline.test.ts` for the merge); e2e specs in `e2e/` (Playwright, run against the dev server).
 
 **Env vars:**
-- `OPENROUTER_API_KEY` — required only for `scripts/fetch-feeds.mjs` (summarization); the app runs without it.
+- `OPENROUTER_API_KEY` — optional; used only by `scripts/fetch-feeds.mjs` (summaries + country extraction). The app and `scripts/update-toll.mjs` run without it.

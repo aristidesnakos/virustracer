@@ -1,12 +1,20 @@
 // All data is manually curated from official sources.
 // Each entry includes a source citation and date verified.
+//
+// Death-toll history after the last curated point is appended automatically by
+// scripts/update-toll.mjs (see data/toll.json) — never edit that file by hand.
 
 export interface CaseDataPoint {
   date: string;          // ISO 8601
   label: string;         // Display label
-  confirmed: number;     // WHO-confirmed cumulative cases
-  suspected: number;     // Probable/suspected cumulative
-  deaths: number;        // Cumulative deaths
+  /** Cumulative confirmed cases. Omit when the source does not report it. */
+  confirmed?: number;
+  /** Cumulative probable/suspected cases. Omit when the source does not report it. */
+  suspected?: number;
+  /** Cumulative deaths. Omit when the source does not report it. */
+  deaths?: number;
+  /** Cumulative recoveries. Omit when the source does not report it. */
+  recovered?: number;
   note?: string;
   source: string;
 }
@@ -15,17 +23,17 @@ export interface MonitoringEntry {
   country: string;
   flag: string;
   iso: string;
+  /** Set on sub-national rows (e.g. DRC provinces). They are excluded from the table total. */
+  parentIso?: string;
   confirmed: number;
   deaths: number;
-  monitored: number;
-  quarantined: number;
   status: string;
   detail: string;
   source: string;
   asOf: string;
 }
 
-export interface VoyageStop {
+export interface SpreadStop {
   name: string;
   location: string;
   coords: [number, number]; // [lng, lat]
@@ -39,338 +47,429 @@ export interface CaseLocation {
   coords: [number, number];
   confirmed: number;
   deaths: number;
-  monitored: number;
-  type: "origin" | "case" | "monitoring" | "ship";
+  type: "origin" | "case" | "monitoring";
   /** ISO date of the most recent verified data for this location. Drives the map recency gradient. */
   asOf: string;
 }
 
+// ─── Outbreak identity ───────────────────────────────────────────────────────
+// Swap this block (and the data below) to point the dashboard at another outbreak.
+export const outbreak = {
+  title: "Ebola Outbreak Tracker",
+  subtitle: "2026 DR Congo & Uganda · Bundibugyo virus · Unofficial surveillance dashboard",
+  description:
+    "Unofficial surveillance dashboard tracking the 2026 Bundibugyo Ebola outbreak in the Democratic Republic of the Congo and Uganda, with a continuously updated death toll. Data compiled from WHO, DRC's INSP, and news reports.",
+  links: [
+    { label: "WHO DON", href: "https://www.who.int/emergencies/disease-outbreak-news" },
+    { label: "CDC", href: "https://www.cdc.gov/ebola" },
+    { label: "ECDC", href: "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda" },
+  ],
+} as const;
+
 // ─── Case timeline ───────────────────────────────────────────────────────────
-// Only data points with documented source are included.
-// Intermediate counts are estimates based on known events.
+// Only data points with documented source are included. Milestone rows carry only
+// the one figure the source documents (e.g. "1,000th death"), so the other
+// series simply has a gap there rather than an invented value.
 export const casesTimeline: CaseDataPoint[] = [
-  {
-    date: "2026-04-11",
-    label: "Apr 11",
-    confirmed: 1,
-    suspected: 0,
-    deaths: 1,
-    note: "First death — Dutch male passenger (on board)",
-    source: "Oceanwide Expeditions / AP",
-  },
-  {
-    date: "2026-04-26",
-    label: "Apr 26",
-    confirmed: 2,
-    suspected: 0,
-    deaths: 2,
-    note: "Second death — Dutch female (index case, had disembarked St. Helena Apr 21–24)",
-    source: "WHO DON599 / AP",
-  },
-  {
-    date: "2026-04-27",
-    label: "Apr 27",
-    confirmed: 2,
-    suspected: 2,
-    deaths: 2,
-    note: "2 symptomatic passengers medevaced via Ascension Island (British national P003 + American partner PUSPAR01)",
-    source: "Oceanwide Expeditions",
-  },
-  {
-    date: "2026-05-02",
-    label: "May 2",
-    confirmed: 3,
-    suspected: 2,
-    deaths: 3,
-    note: "Third death — German female. WHO formally notified.",
-    source: "WHO DON599",
-  },
-  {
-    date: "2026-05-06",
-    label: "May 6",
-    confirmed: 6,
-    suspected: 3,
-    deaths: 3,
-    note: "3 more evacuated to Netherlands. Ship departs Cape Verde.",
-    source: "AP / WHO",
-  },
-  {
-    date: "2026-05-12",
-    label: "May 12",
-    confirmed: 10,
-    suspected: 0,
-    deaths: 3,
-    note: "WHO Director-General confirms 10 cases. Dr. Tedros: 'More cases may be reported given incubation period.'",
-    source: "WHO / TeleSUR, May 13 2026",
-  },
   {
     date: "2026-05-18",
     label: "May 18",
-    confirmed: 10,
-    suspected: 1,
-    deaths: 3,
-    note: "Canadian case confirmed (BC). 11 total: 10 confirmed + 1 probable. Ship arrives Rotterdam for disinfection.",
-    source: "NBC News / PHAC / ABC7, May 18 2026",
+    confirmed: 33,
+    deaths: 4,
+    note: "Outbreak declared May 15 (Bundibugyo ebolavirus, Ituri). WHO declared a PHEIC on May 16.",
+    source: "WHO / INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-06-20",
+    label: "Jun 20",
+    confirmed: 1000,
+    note: "1,000th confirmed case",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-07-13",
+    label: "Jul 13",
+    confirmed: 2000,
+    note: "2,000th confirmed case",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-07-21",
+    label: "Jul 21",
+    deaths: 1000,
+    note: "1,000th death",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-07-24",
+    label: "Jul 24",
+    confirmed: 3000,
+    note: "3,000th confirmed case",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-08-01",
+    label: "Aug 1",
+    confirmed: 3626,
+    deaths: 1589,
+    recovered: 654,
+    note: "DRC 3,605 / 1,587 deaths; Uganda 20 / 2; France 1 / 0. Weekly peak so far: 567 cases and 296 deaths in epi week 30.",
+    source: "WHO DON614 (1 Aug 2026)",
+  },
+  {
+    date: "2026-08-07",
+    label: "Aug 7",
+    confirmed: 4000,
+    note: "4,000th confirmed case",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-08-09",
+    label: "Aug 9",
+    deaths: 2000,
+    note: "2,000th death. 45 health workers dead, 155 infected.",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-08-17",
+    label: "Aug 17",
+    confirmed: 5000,
+    note: "5,000th confirmed case",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-08-30",
+    label: "Aug 30",
+    confirmed: 6000,
+    note: "6,000th confirmed case",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-08-31",
+    label: "Aug 31",
+    deaths: 3000,
+    note: "3,000th death",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-09-07",
+    label: "Sep 7",
+    confirmed: 6778,
+    deaths: 3269,
+    recovered: 1611,
+    note: "DRC 6,757 / 3,267 deaths; Uganda 20 / 2; France 1 / 0. 61 health zones across 6 provinces. 24,719 contacts under follow-up.",
+    source: "WHO DON617 (10 Sep 2026)",
+  },
+  {
+    date: "2026-09-11",
+    label: "Sep 11",
+    confirmed: 7000,
+    note: "7,000th confirmed case. First case in Sud-Ubangi province (Gwaka).",
+    source: "INSP DRC, via Wikipedia timeline",
+  },
+  {
+    date: "2026-09-19",
+    label: "Sep 19",
+    confirmed: 7672,
+    deaths: 3699,
+    note: "DRC only. 23 deaths that day (13 in the community, 10 in treatment centres).",
+    source: "Outbreak News Today, Sep 19 2026",
+  },
+  {
+    date: "2026-09-26",
+    label: "Sep 26",
+    confirmed: 8067,
+    deaths: 3901,
+    note: "DRC only. Outbreak spans 7 of 26 provinces and 63 health zones; 50 health workers have died.",
+    source: "AP, Sep 28 2026",
+  },
+  {
+    date: "2026-09-27",
+    label: "Sep 27",
+    confirmed: 8116,
+    deaths: 3924,
+    note: "DRC only. 78 new confirmed cases and 49 deaths on Sep 26 (34 never reached a treatment centre). 31,034 contacts under follow-up.",
+    source: "DRC health ministry data via WSWS, Sep 28–Oct 1 2026",
   },
 ];
 
-// ─── Country monitoring table ─────────────────────────────────────────────────
+// ─── Country / region table ───────────────────────────────────────────────────
+// DRC provinces are sub-rows (parentIso) and are excluded from the table total.
+// Figures are as of 29 Sep 2026; the headline death toll is refreshed daily by
+// the GitHub Action, but this breakdown is only updated when edited here.
 export const monitoringData: MonitoringEntry[] = [
   {
-    country: "United States",
-    flag: "🇺🇸",
-    iso: "US",
-    confirmed: 0,
-    deaths: 0,
-    monitored: 41,
-    quarantined: 18,
-    status: "Active monitoring",
-    detail: "16 at UNMC quarantine unit (incl. Dr. Kornfeld, moved from biocontainment after subsequent negative tests) · 2 at Emory (Atlanta) · 7 St. Helena returnees (state monitoring) · 16 Apr 25 Johannesburg flight contacts. 10 states: AZ, CA, GA, KS, MD, MN, NJ, TX, VA, WA.",
-    source: "CDC press conference / Yahoo News",
-    asOf: "2026-05-15",
+    country: "DR Congo",
+    flag: "🇨🇩",
+    iso: "CD",
+    confirmed: 8224,
+    deaths: 3982,
+    status: "Epicentre · active",
+    detail:
+      "7 of 26 provinces and 63 health zones affected. Case fatality ~48%. Ervebo (rVSV-ZEBOV) given to 2,007 health workers; no approved vaccine or treatment for Bundibugyo virus. Insecurity, attacks on health workers and strikes over unpaid wages are hampering the response.",
+    source: "INSP DRC / WHO, via Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Ituri",
+    flag: "🇨🇩",
+    iso: "CD-IT",
+    parentIso: "CD",
+    confirmed: 6250,
+    deaths: 2885,
+    status: "Epicentre",
+    detail: "Origin of the outbreak (first cases around Bunia/Mongbwalu/Rwampara). 28 of 36 health zones affected; 1,114 cases in the 21 days to Sep 7.",
+    source: "WHO DON617 / Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "North Kivu",
+    flag: "🇨🇩",
+    iso: "CD-NK",
+    parentIso: "CD",
+    confirmed: 1570,
+    deaths: 931,
+    status: "High fatality",
+    detail: "Cases in Goma, Butembo and Beni. Highest case fatality of any province (~59%). 16 of 34 health zones affected.",
+    source: "WHO DON617 / Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Haut-Uélé",
+    flag: "🇨🇩",
+    iso: "CD-HU",
+    parentIso: "CD",
+    confirmed: 344,
+    deaths: 144,
+    status: "Spreading",
+    detail: "First cases reported Jun 29.",
+    source: "Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Tshopo",
+    flag: "🇨🇩",
+    iso: "CD-TO",
+    parentIso: "CD",
+    confirmed: 45,
+    deaths: 16,
+    status: "Active",
+    detail: "First cases reported Jun 30 (Kisangani).",
+    source: "Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Bas-Uélé",
+    flag: "🇨🇩",
+    iso: "CD-BU",
+    parentIso: "CD",
+    confirmed: 10,
+    deaths: 4,
+    status: "Active",
+    detail: "3 of 11 health zones affected as of Sep 7.",
+    source: "WHO DON617 / Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "South Kivu",
+    flag: "🇨🇩",
+    iso: "CD-SK",
+    parentIso: "CD",
+    confirmed: 3,
+    deaths: 1,
+    status: "No new cases since May 29",
+    detail: "Early deaths reported in Bukavu on May 21. One health zone affected.",
+    source: "WHO DON617 / Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Sud-Ubangi",
+    flag: "🇨🇩",
+    iso: "CD-SU",
+    parentIso: "CD",
+    confirmed: 2,
+    deaths: 1,
+    status: "Newest province",
+    detail: "First case reported Sep 11 (Gwaka) — the most recent province to be added.",
+    source: "Wikipedia, Sep 29 2026",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Uganda",
+    flag: "🇺🇬",
+    iso: "UG",
+    confirmed: 20,
+    deaths: 2,
+    status: "Outbreak declared over",
+    detail: "Imported case led to a declared outbreak on May 15. 18 of 20 patients recovered. Uganda declared the outbreak over on Jul 28 after 42 days without new cases.",
+    source: "WHO DON614 / Wikipedia",
+    asOf: "2026-07-28",
   },
   {
     country: "France",
     flag: "🇫🇷",
     iso: "FR",
-    confirmed: 0,
-    deaths: 0,
-    monitored: 26,
-    quarantined: 0,
-    status: "All contacts negative",
-    detail: "All 26 close contacts tested negative as of May 14. Contacts tested 3×/week going forward. Authorities will not communicate further unless a positive is detected.",
-    source: "French Health Minister Stéphanie Rist via X/Twitter",
-    asOf: "2026-05-14",
-  },
-  {
-    country: "Italy",
-    flag: "🇮🇹",
-    iso: "IT",
-    confirmed: 0,
-    deaths: 0,
-    monitored: 4,
-    quarantined: 4,
-    status: "1 symptomatic",
-    detail: "4 Italians monitored — KLM flight contacts of deceased Dutch woman. 1 young man (Calabria) developed symptoms May 13; samples sent to Lazzaro Spallanzani National Institute, Rome. 42-day quarantine + daily monitoring. Italian Health Ministry: 'maximum precaution' protocol.",
-    source: "Italian Health Ministry / AP, May 13 2026",
-    asOf: "2026-05-13",
-  },
-  {
-    country: "Canada",
-    flag: "🇨🇦",
-    iso: "CA",
     confirmed: 1,
     deaths: 0,
-    monitored: 4,
-    quarantined: 0,
-    status: "1 confirmed case",
-    detail: "Canadian case confirmed May 18 (British Columbia). 4 Canadian guests were aboard MV Hondius. BC Provincial Health Officer Dr. Bonnie Henry: 'Clearly, this is not what we hoped for, but it is what we planned for.'",
-    source: "PHAC / CBC / BBC, May 16–18 2026",
-    asOf: "2026-05-18",
-  },
-  {
-    country: "Netherlands",
-    flag: "🇳🇱",
-    iso: "NL",
-    confirmed: 4,
-    deaths: 2,
-    monitored: 13,
-    quarantined: 0,
-    status: "Origin / crew monitoring",
-    detail: "Index couple (Dutch). 8 Dutch guests + 5 Dutch crew aboard. 3 evacuated to Netherlands May 6. Dutch male death Apr 11 (on board), Dutch female death Apr 26 (after disembarkation). Ship arrived Rotterdam May 18 for full disinfection.",
-    source: "WHO DON599 / Oceanwide Expeditions / Reuters",
-    asOf: "2026-05-18",
+    status: "Imported case · recovered",
+    detail: "Doctor returning from a humanitarian mission, confirmed Jun 24. Discharged Jul 4 after two negative PCR tests.",
+    source: "WHO DON614",
+    asOf: "2026-07-04",
   },
   {
     country: "Germany",
     flag: "🇩🇪",
     iso: "DE",
-    confirmed: 1,
-    deaths: 1,
-    monitored: 5,
-    quarantined: 0,
-    status: "1 death confirmed",
-    detail: "German female death confirmed May 2 (on board). 5 German guests + 1 German crew aboard. Spanish Air Force A310 transported patients to Madrid's Gómez Ulla Central Defense Hospital at Tenerife disembarkation.",
-    source: "WHO DON599 / AP / Oceanwide Expeditions",
-    asOf: "2026-05-10",
-  },
-  {
-    country: "United Kingdom",
-    flag: "🇬🇧",
-    iso: "GB",
-    confirmed: 1,
+    confirmed: 0,
     deaths: 0,
-    monitored: 22,
-    quarantined: 0,
-    status: "1 symptomatic medevaced",
-    detail: "British national (P003) medevaced with symptoms Apr 27 via Ascension Island. 19 UK guests + 3 UK crew aboard. 7 St. Helena returnees currently state-monitored (via US tracking).",
-    source: "Oceanwide Expeditions / CDC",
-    asOf: "2026-05-15",
+    status: "2 medevac patients",
+    detail: "Two American humanitarian workers diagnosed in DRC were medically evacuated to Germany for treatment. They are counted under DR Congo, so Germany is shown as 0 here.",
+    source: "WHO DON614 / Wikipedia",
+    asOf: "2026-08-01",
   },
 ];
 
-// ─── Ship voyage stops ────────────────────────────────────────────────────────
-export const voyageStops: VoyageStop[] = [
+// ─── Spread: first-detection sites ────────────────────────────────────────────
+export const spreadStops: SpreadStop[] = [
   {
-    name: "Ushuaia",
-    location: "Argentina",
-    coords: [-68.303, -54.802],
-    date: "2026-04-01",
-    event: "Departed. Index couple believed infected here during wildlife excursion.",
+    name: "Bunia",
+    location: "Ituri, DR Congo",
+    coords: [30.252, 1.567],
+    date: "2026-05-14",
+    event: "Outbreak first detected in Ituri; 8 cases confirmed. Classified as Bundibugyo ebolavirus May 15.",
   },
   {
-    name: "South Georgia Island",
-    location: "British Overseas Territory",
-    coords: [-36.5, -54.283],
-    date: "2026-04-04",
-    event: "Stop Apr 4–7",
+    name: "Goma",
+    location: "North Kivu, DR Congo",
+    coords: [29.222, -1.679],
+    date: "2026-05-17",
+    event: "First cases in Goma.",
   },
   {
-    name: "Tristan da Cunha",
-    location: "British Overseas Territory",
-    coords: [-12.278, -37.105],
-    date: "2026-04-13",
-    event: "Stop Apr 13–16. 6 island guests embark.",
-  },
-  {
-    name: "Gough Island",
-    location: "British Overseas Territory",
-    coords: [-9.883, -40.35],
-    date: "2026-04-17",
-    event: "Stop Apr 17",
-  },
-  {
-    name: "St. Helena",
-    location: "British Overseas Territory",
-    coords: [-5.709, -15.965],
-    date: "2026-04-21",
-    event: "Stop Apr 21–24. Dutch index couple (P002/PEDB43) disembark with 32 others.",
-  },
-  {
-    name: "Ascension Island",
-    location: "British Overseas Territory",
-    coords: [-14.356, -7.947],
-    date: "2026-04-27",
-    event: "British national (P003) and American partner medevaced.",
-  },
-  {
-    name: "Praia",
-    location: "Cape Verde",
-    coords: [-23.514, 14.932],
-    date: "2026-05-04",
-    event: "Original voyage end. Ship detained by authorities.",
-  },
-  {
-    name: "Tenerife",
-    location: "Canary Islands, Spain",
-    coords: [-16.629, 28.292],
-    date: "2026-05-10",
-    event: "Docked. Disembarkation underway. French medical charter + Spanish Air Force A310 evacuate patients.",
-  },
-  {
-    name: "Rotterdam",
-    location: "Netherlands",
-    coords: [4.479, 51.923],
+    name: "Butembo",
+    location: "North Kivu, DR Congo",
+    coords: [29.291, 0.12],
     date: "2026-05-18",
-    event: "Ship arrives ~10:30 CET. Full disinfection underway. 26 crew + captain aboard.",
+    event: "First cases in Butembo.",
+  },
+  {
+    name: "Bukavu",
+    location: "South Kivu, DR Congo",
+    coords: [28.861, -2.508],
+    date: "2026-05-21",
+    event: "Deaths reported in Bukavu.",
+  },
+  {
+    name: "Beni",
+    location: "North Kivu, DR Congo",
+    coords: [29.474, 0.491],
+    date: "2026-05-29",
+    event: "Deaths reported in Beni.",
+  },
+  {
+    name: "Kisangani",
+    location: "Tshopo, DR Congo",
+    coords: [25.191, 0.516],
+    date: "2026-06-30",
+    event: "First cases in Tshopo province.",
   },
 ];
 
 // ─── Map markers ──────────────────────────────────────────────────────────────
 export const caseLocations: CaseLocation[] = [
   {
-    country: "Argentina (Origin)",
-    flag: "🇦🇷",
-    coords: [-65.0, -35.0],
-    confirmed: 0,
-    deaths: 0,
-    monitored: 0,
+    country: "Ituri",
+    flag: "🇨🇩",
+    coords: [30.1, 1.6],
+    confirmed: 6250,
+    deaths: 2885,
     type: "origin",
-    asOf: "2026-04-01",
+    asOf: "2026-09-29",
   },
   {
-    country: "Netherlands",
-    flag: "🇳🇱",
-    coords: [4.9, 52.37],
-    confirmed: 4,
-    deaths: 2,
-    monitored: 13,
+    country: "North Kivu",
+    flag: "🇨🇩",
+    coords: [29.0, -0.6],
+    confirmed: 1570,
+    deaths: 931,
     type: "case",
-    asOf: "2026-05-18",
+    asOf: "2026-09-29",
   },
   {
-    country: "Germany",
-    flag: "🇩🇪",
-    coords: [10.45, 51.165],
-    confirmed: 1,
+    country: "Haut-Uélé",
+    flag: "🇨🇩",
+    coords: [27.6, 3.0],
+    confirmed: 344,
+    deaths: 144,
+    type: "case",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Tshopo",
+    flag: "🇨🇩",
+    coords: [25.2, 0.5],
+    confirmed: 45,
+    deaths: 16,
+    type: "case",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "Bas-Uélé",
+    flag: "🇨🇩",
+    coords: [24.0, 3.3],
+    confirmed: 10,
+    deaths: 4,
+    type: "case",
+    asOf: "2026-09-29",
+  },
+  {
+    country: "South Kivu",
+    flag: "🇨🇩",
+    coords: [28.3, -3.0],
+    confirmed: 3,
     deaths: 1,
-    monitored: 5,
     type: "case",
-    asOf: "2026-05-10",
+    asOf: "2026-09-29",
   },
   {
-    country: "United Kingdom",
-    flag: "🇬🇧",
-    coords: [-1.177, 52.374],
-    confirmed: 1,
-    deaths: 0,
-    monitored: 22,
+    country: "Sud-Ubangi",
+    flag: "🇨🇩",
+    coords: [19.3, 3.3],
+    confirmed: 2,
+    deaths: 1,
     type: "case",
-    asOf: "2026-05-15",
+    asOf: "2026-09-29",
   },
   {
-    country: "Canada",
-    flag: "🇨🇦",
-    coords: [-96.0, 56.0],
-    confirmed: 1,
-    deaths: 0,
-    monitored: 4,
+    country: "Uganda",
+    flag: "🇺🇬",
+    coords: [32.3, 1.4],
+    confirmed: 20,
+    deaths: 2,
     type: "case",
-    asOf: "2026-05-18",
-  },
-  {
-    country: "United States",
-    flag: "🇺🇸",
-    coords: [-98.0, 39.0],
-    confirmed: 0,
-    deaths: 0,
-    monitored: 41,
-    type: "monitoring",
-    asOf: "2026-05-15",
+    asOf: "2026-07-28",
   },
   {
     country: "France",
     flag: "🇫🇷",
     coords: [2.352, 48.857],
-    confirmed: 0,
+    confirmed: 1,
     deaths: 0,
-    monitored: 26,
-    type: "monitoring",
-    asOf: "2026-05-14",
-  },
-  {
-    country: "Italy",
-    flag: "🇮🇹",
-    coords: [12.567, 41.872],
-    confirmed: 0,
-    deaths: 0,
-    monitored: 4,
-    type: "monitoring",
-    asOf: "2026-05-13",
+    type: "case",
+    asOf: "2026-07-04",
   },
 ];
 
 // ─── Summary stats ────────────────────────────────────────────────────────────
+// Headline case/death totals are derived from the merged timeline (curated +
+// auto-tracked), not stored here. These are the figures the timeline doesn't carry.
 export const summary = {
-  totalConfirmed: 10,
-  totalSuspected: 1,
-  totalDeaths: 3,
-  totalMonitored: 41 + 26 + 4 + 4 + 13 + 5 + 22, // all country monitoring
-  countriesAffected: 7,
-  vessel: "MV Hondius",
-  operator: "Oceanwide Expeditions",
-  voyage: "HDS2526",
-  shipStatus: "Rotterdam — disinfection underway",
-  lastUpdated: "2026-05-18",
-  source: "WHO DON599 / CDC / NBC News / PHAC / AP",
+  countriesAffected: 3, // DRC, Uganda (over), France (imported)
+  provincesAffected: 7,
+  healthZonesAffected: 63,
+  contactsUnderFollowUp: 31034,
+  healthWorkerDeaths: 50,
+  spreadStatus: "Active · 7 DRC provinces",
+  lastReviewed: "2026-09-29",
+  source: "WHO DON / INSP DRC / Wikipedia / AP",
 };

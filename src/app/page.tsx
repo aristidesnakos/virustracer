@@ -4,12 +4,27 @@ import FeedUpdates from "@/components/FeedUpdates";
 import MapLoader from "@/components/MapLoader";
 import SponsorCard from "@/components/SponsorCard";
 import StatStrip from "@/components/StatStrip";
-import { summary } from "@/data/outbreak";
+import { outbreak, summary, casesTimeline } from "@/data/outbreak";
 import { getLiveData } from "@/lib/live-data";
+import { getTollData } from "@/lib/toll";
+import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { getCandidatesData } from "@/lib/candidates-data";
+
+function shortDate(iso: string | undefined | null): string {
+  if (!iso) return "—";
+  const t = Date.parse(iso);
+  if (Number.isNaN(t)) return "—";
+  return new Date(t).toLocaleDateString("en-GB", {
+    day: "numeric",
+    month: "short",
+    timeZone: "UTC",
+  });
+}
 
 export default function DashboardPage() {
   const liveData = getLiveData();
+  const toll = getTollData();
+  const timeline = mergeTimeline(casesTimeline, toll.snapshots);
   const candidatesData = getCandidatesData();
 
   return (
@@ -22,55 +37,47 @@ export default function DashboardPage() {
           </div>
           <div className="min-w-0">
             <h1 className="text-sm font-semibold text-white leading-none truncate">
-              MV Hondius Hantavirus Tracker
+              {outbreak.title}
             </h1>
-            <p className="text-xs text-gray-500 mt-0.5 leading-none">
-              2026 outbreak · Andes hantavirus · Unofficial surveillance dashboard
+            <p className="text-xs text-gray-500 mt-0.5 leading-none truncate">
+              {outbreak.subtitle}
             </p>
           </div>
         </div>
 
         <div className="flex items-center gap-2 shrink-0">
-          <span className="text-xs text-gray-600">Cases</span>
+          <span className="text-xs text-gray-600">Toll</span>
           <span className="text-xs text-gray-400 font-medium tabular-nums">
-            {new Date(summary.lastUpdated).toLocaleDateString("en-GB", {
-              day: "numeric",
-              month: "short",
-            })}
+            {shortDate(latestDate(timeline))}
+          </span>
+          <span className="text-gray-700">·</span>
+          <span className="text-xs text-gray-600">Checked</span>
+          <span className="text-xs text-gray-400 font-medium tabular-nums">
+            {shortDate(toll.lastChecked)}
           </span>
           <span className="text-gray-700">·</span>
           <span className="text-xs text-gray-600">Feed</span>
           <span className="text-xs text-gray-400 font-medium tabular-nums">
-            {liveData.lastFetched
-              ? new Date(liveData.lastFetched).toLocaleDateString("en-GB", {
-                  day: "numeric",
-                  month: "short",
-                })
-              : "—"}
+            {shortDate(liveData.lastFetched)}
           </span>
-          <span className="mx-1 text-gray-700">·</span>
-          <a
-            href="https://www.who.int/emergencies/disease-outbreak-news"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-blue-400/70 hover:text-blue-400 transition-colors"
-          >
-            WHO DON599
-          </a>
-          <span className="text-gray-700">·</span>
-          <a
-            href="https://www.cdc.gov/hantavirus"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-xs text-blue-400/70 hover:text-blue-400 transition-colors"
-          >
-            CDC
-          </a>
+          {outbreak.links.map((link) => (
+            <span key={link.href} className="flex items-center gap-2">
+              <span className="text-gray-700">·</span>
+              <a
+                href={link.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-xs text-blue-400/70 hover:text-blue-400 transition-colors"
+              >
+                {link.label}
+              </a>
+            </span>
+          ))}
         </div>
       </header>
 
       {/* ── Stat strip ─────────────────────────────────────────── */}
-      <StatStrip />
+      <StatStrip timeline={timeline} />
 
       {/* ── Main grid ──────────────────────────────────────────── */}
       <main className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px_320px] gap-3 px-5 pb-5">
@@ -83,7 +90,7 @@ export default function DashboardPage() {
         {/* Center column: chart + table */}
         <div className="flex flex-col gap-3 min-h-0">
           <div className="h-[220px] lg:h-[230px] shrink-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4">
-            <CasesChart />
+            <CasesChart timeline={timeline} />
           </div>
           <div className="flex-1 min-h-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden">
             <MonitoringTable candidates={candidatesData.candidates} />

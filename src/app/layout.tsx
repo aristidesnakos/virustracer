@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
 import { Geist } from "next/font/google";
 import "./globals.css";
+import { outbreak } from "@/data/outbreak";
 
 const geist = Geist({ variable: "--font-geist-sans", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "MV Hondius Hantavirus Tracker",
-  description:
-    "Unofficial real-time surveillance dashboard tracking the 2026 MV Hondius hantavirus outbreak. Data compiled from WHO, CDC, and regional health authorities.",
+  title: outbreak.title,
+  description: outbreak.description,
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
