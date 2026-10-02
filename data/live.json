@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-02T15:38:45.484Z",
+  "lastFetched": "2026-10-02T20:09:07.528Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -256,9 +256,105 @@
     "who-dabd4642c23ec66a",
     "who-da40a7dbf0296d29",
     "who-890e70645a812f87",
-    "who-a35602258770108e"
+    "who-a35602258770108e",
+    "news-03777dd395e4bff3",
+    "news-9384d04bce68f51d",
+    "news-b9c0788dc8b799e6",
+    "news-8cda6d27759d9943",
+    "news-aa3ee48411701f7e",
+    "news-e1a38469db716b12",
+    "news-53c285646d7945a2",
+    "news-713db0472b9bbd09",
+    "news-5e956431500e2d5d",
+    "news-02e398f6b0bf0924",
+    "news-329490f5b6c0ea8d",
+    "news-f5185498d1360d6b",
+    "news-9477bfbbfec2c2ec",
+    "news-423a2e873402b2c7",
+    "news-9e1ce0c174d632ab",
+    "news-caeeb89a06b805ac",
+    "news-260390559d6d3b5c",
+    "news-83527bd567162cfc",
+    "news-9cea44bf44d3a9d7",
+    "news-26d12278c44a5fb0",
+    "news-19484eb03c195073",
+    "news-3b6dfe413796a82a",
+    "news-dec92b17517ce6cc",
+    "news-966d78bc808d3fbf"
   ],
   "recentItems": [
+    {
+      "id": "news-b9c0788dc8b799e6",
+      "title": "5 questions about Congo’s Ebola outbreak - Washington Times",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRXNGbzZIUnBVUzRaVk5mSU80ZkFYMnBhYkFPUHE4OHNFanV1cHU2VndaZGQ1VE1PMXVMaFNHUWVKeDlxRFJrOVZNZTNCSkJsXzFQdzMwNUI2ZHRvVmhZVjk5QnlTcE9qQnJNMEhuR2o4bVMwV1BYc2NEcE9NNmJGSTg1WjhEc0N4NlE?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "5 questions about Congo’s Ebola outbreak Washington Times"
+    },
+    {
+      "id": "news-8cda6d27759d9943",
+      "title": "Congo Ebola Death Toll Surpasses 4,000 - tovima.com",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4xQ05TLS1WRldzOW5tTmk5WWlESUpEUVBwMnQxRGE3YkcwNVhNdjJrbEtSbjF5TDlCWVlDYWZWenJidEVQUnRYT1EzazBBTVlyV0wyODFoTVhfZWVvajhmTnF2dTdLNGV6aTR0Mm5MMGl1NXZLLWfSAXtBVV95cUxOT05DdjZac0FETWlCSUxMbC1qdUl3T1pXVVZzVHA2Y0VfZ3RYX1gwSGI5TW1RODN0dFlnbk50RVBNdW5nVUpwa0l3ZWxPczFYelFlcTNFMHRLZ0VoZ1FKX3Riem1uMHhaVkRlZFN6SkUwaGRyRGNWaml1eTQ?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of the article’s report, the death toll in the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda surpassed 4,000, with no latest cumulative confirmed case count specified."
+    },
+    {
+      "id": "news-aa3ee48411701f7e",
+      "title": "DR Congo’s Ebola Death Toll Passes 4,000 as Transit Center Burns - colombiaone.com",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUmllUWl3MVQwM1l6Q1dXbUJEYmVGVGFibEpIazh3YXh3Y3RaZy03TF8yajhCRmVCR3RwN1hsNTJzRDNwb1dxd3QxdnZYNDRnY3dQc3dzN201RzhHc0gzVzE1d0hHU3gwTVEtdTQ1OGNMc2NBbWpTYnpCWEVTQXRIWg?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of 2022, the article reports that DR Congo’s cumulative Ebola death toll has surpassed 4,000; it does not address a 2026 Bundibugyo outbreak."
+    },
+    {
+      "id": "news-53c285646d7945a2",
+      "title": "DR Congo Ebola Outbreak Death Toll Surpasses 4,000 - TVC News",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE03MmQ1VFBnd214LTEwMUEwTDUyMVZnelNtUGlqWmxKTm5ZWHlqcUt2WThjUU9jQmV6X2dBVW9tTmk3ZEp3d1I2bEdDUEU1SUd1X1o2enVVUDI1RTdqVE9uQlZTc2hYTmpzaGxnSzhsYjZncjJ2eEticjRsSklsUQ?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "DR Congo Ebola Outbreak Death Toll Surpasses 4,000 TVC News"
+    },
+    {
+      "id": "news-02e398f6b0bf0924",
+      "title": "Ebola treatment centre burned down as Congo death toll passes 4,000 - Herts Advertiser",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdWtZMUhueWxFSERFdkFTQURwNVE3QXdOZVhqRE1vRTRRZzFtcGFJeGpZNDdla0V0VkctVmg4NzF3SGJtb3dCYWpyVTBaWmtxUkhTaFdzR0s1ZnZNRXNhX3ZqczBfdmoyVjdFMkpWMHdoT2U3WWlIMFpsR1Y4andIOWdDWmN0SklPWmNJNl9WekhHTjBOMkhOdEpmTVZfU01HZl9HQzFsck9GZXFiUUFKc0FCYkxEaTA?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola treatment centre burned down as Congo death toll passes 4,000 Herts Advertiser"
+    },
+    {
+      "id": "news-329490f5b6c0ea8d",
+      "title": "More than 4,000 Ebola Deaths in the Congo - bluewin.ch",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOclNuSkdLSG40aW9YUTctUFc0RWdweEFaOWFfYWVEbXRHTG9KVVV2cXNXZXVTT3VlaXhQei1GaHdTdDJ5ZktLZVN6VjFSWDVIQmdNNnVCV09oZnFUSm9hRG4zV1pCTE1QV0J4TU9TRW5wdko5dFItSklaQmhfNGs1WGJOX3RpNFltaVhZ?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "More than 4,000 Ebola Deaths in the Congo bluewin.ch"
+    },
+    {
+      "id": "news-f5185498d1360d6b",
+      "title": "Ebola Deaths Rise To Over 4000 In DR Congo As Government Battles Worsening Outbreak - Sahara Reporters",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZzF3V0tEejRIM1FHOWE3OUhPaGZvZG83R2cyeWFfeDRENXhacnVnUFRCMkF6dkJjTVk5TG5qbGg1cE1FVGNKamxKdUl2Ukx1THFDYldZUENTTmJfR0lBV1pqNVV3djZ1MVdYeDNmTXhFcnVKUGN3bVg0Q1RZMExQZ2JSM0VjcUVrUlFrNzc0RWczdjQ2UWF6OF8zRzZVbUVQeklmMzRKZmhKV2lxdExlTUd6Yw?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of the latest reports, the cumulative death toll in the Democratic Republic of Congo has surpassed 4,000."
+    },
+    {
+      "id": "news-9477bfbbfec2c2ec",
+      "title": "DR Congo Ebola outbreak claims more than 4,000 lives - Sharjah24",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdjNrWGh0NVlKYkZJalU5VWw0UzNjOW1vUjRiNFNOd1hMZ1JqRHJjNmVLMWdVR01XaHRNWEVMc0M2dzVZTS03aGNhSU9yeVVPaER0QVBDQVF2WE85SjFWNHBLTzhKM3BNVGNkWUctbmxLS1ljOHk5SmhhNGQzY2lCdnJHMFB0M2Z4QzlhMWdKU3NEZC1UXzhIZE92SQ?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of the article's date, the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda has resulted in over 4,000 deaths. The article reports that the outbreak has claimed more than 4,000 lives."
+    },
+    {
+      "id": "news-423a2e873402b2c7",
+      "title": "Ebola Outbreak in DR Congo Surpasses 4,000 Deaths as Containment Efforts Struggle - Pragativadi",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcVBVM1RnZks0WHZYSkc4dXhiTDc3MEZnM05oaHdvQmFLTXFaQV9mNS1ZUjAyQkpCSnUzcjZHQWlLcjhxNFBIMzI5WWlJYWZSTUc4NDh5SjlpSW1Ob2N3QXVCQWRSRDJLUENpcnYxU0dfZE8zSUx1Umdjbml2ZEhqUU0tRERFTGRCUUVFY1Z0WmdBYU1iYnJQLTdzbVB6RGpnZVg4Qk9BUjk?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola Outbreak in DR Congo Surpasses 4,000 Deaths as Containment Efforts Struggle Pragativadi"
+    },
     {
       "id": "news-667ec1d7935d8ab4",
       "title": "Ebola death toll in Congo tops 4,000 in fastest-growing outbreak of the disease on record - CBS News",
@@ -346,78 +442,6 @@
       "date": "2026-10-02",
       "source": "Google News — Ebola death toll",
       "summary": "More than 4,000 deaths recorded in DR Congo Ebola outbreak The Irish News"
-    },
-    {
-      "id": "news-fd1942c340b3b8bc",
-      "title": "Ebola outbreak: DRC death toll rises to 4,018 - Vanguard News",
-      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQeXdNaU9CRzdSck54OTBCVHppYnNwTElWbjhGNllqZ0Y3SHFTdk9pVVFaOTBZdkVuUFYzYUNnX0hvV0MxSkk2OE0wSnNsc1dSWS1mM0wtenEyeDFqLXp0VDN4T0pqYTB2XzRyNC0wOXFySEdzQVJsYTJzTG53MThwNmJMRTRYMUXSAYwBQVVfeXFMTUpnZUYtbTM0Um1XejE3WTIxZW5NVTFWNWFiX2wtUXBTc2RqOGp1QkFjVnJyWm9yZEVwVm45aXZ0YVM3UHc2Q2x4a2F6a1p3OTF5anhPbTBZSzFqanIyWnNSdlpzdjJSek9DaGNTSVlMaWljb0VzSE5VU0lNMllhMk9MUlVwUDRrX2NJSjM?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola outbreak: DRC death toll rises to 4,018 Vanguard News"
-    },
-    {
-      "id": "news-5f3f4abd8bb7d613",
-      "title": "Congo Ebola deaths top 4,000 - Breakingthenews.net",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9HdGhaUTdITmRhYkV2NFRPcVJ0YVlCdUdPOFpBOWJSR3hYV09Xdzh0Nk54VGxFZnRWS2VVaFNUREF5RDJQb0xJcWlOSWdQWTd1VHNNcUZBMWpqekdDN05SYXVKVHBpVFRZZ2ozNXp5OHdWZ2c4M0hBY0RjNWU?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo Ebola deaths top 4,000 Breakingthenews.net"
-    },
-    {
-      "id": "news-ab06b4616bb6dd60",
-      "title": "Rebel-held eastern Congo records six new Ebola cases - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQSm5ILVZZVHBXYU0tX08xeVBVS29HSnZPOVJrRDNkSzd2UDJnUHJHcTlsZG56Ty1pcVJKN3VZTTdPbVl2aTFwVGlqaHJWNlo4NWtjck50azBRQ1F2bGZOcUJGVndkeWt3NVR4azJjTllaeWNkOEtsdVF2TFNTMzQ2LVV3?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Rebel-held eastern Congo records six new Ebola cases AOL.com"
-    },
-    {
-      "id": "news-a9a375b575918adc",
-      "title": "Congo Ebola outbreak death toll crosses 4,000 - Pioneer Daily",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFA5LUtjTTBQRTZUd0gwSFpQcnZ3TTYta0x6SUo0S2FZX2E1UTVOdnVaU21rbU1VWUk3NjM4cHBaX2oxYTJZWnctU1ZrTDlTY1g4TGNkbWYwMkJ3dDlfSnRMRXNPeERSaFNmYXBHY3gzQzJNcGg5UzBZMDN5MWJKeWs?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "The cumulative death toll in the Congo Ebola outbreak has crossed 4,000."
-    },
-    {
-      "id": "news-06aadb1caead2ffb",
-      "title": "Congo’s Ebola outbreak records more than 4,000 deaths as authorities struggle to contain the virus - The Boston Globe",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE12LU14M0JlZ2ctY0ozcUQxLXFqaWoyeW9Ib3d0Nlc3SXRxVkJ3QWZnbVRyRjdmQWY4TWtaVE43amRENlNScEhFdUN4TnlfOVJFYms1V0J2UGgta2xtZ3I5N01HbGtXdUk0eUh0cEtUNmlJMm1p?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo’s Ebola outbreak records more than 4,000 deaths as authorities struggle to contain the virus The Boston Globe"
-    },
-    {
-      "id": "news-17b2878b52544df4",
-      "title": "Congo's Ebola Outbreak Records More than 4,000 Deaths as Authorities Struggle to Contain the Virus - ASHARQ AL-AWSAT English",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxOUThUbGozd3MzM0RCcXFualBtYXd4dVdUOXR1ZDRjMW1xVXh4QlNETHFvU3BKbWhCRE53Z3M2Qnh3MGlrb3BXNklad29uUHdZNFBGeTFpR2ZTRDNsRkNmUVFhZTlsY2lnM0VFMDJfMExPRzNfY2RCTFk2dE1hclBUWU01YURQWXB2WWFyVEluVGtnZTdmMHRVM1lIRVNMZVNNQzlraHZzMGdtZUhwV09ub3V2UDN6R0NqaFk3dllaSQ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo's Ebola Outbreak Records More than 4,000 Deaths as Authorities Struggle to Contain the Virus ASHARQ AL-AWSAT English"
-    },
-    {
-      "id": "news-60ef2dd78af8aaee",
-      "title": "Congo's Ebola Outbreak Has Killed Over 4,000 As Authorities Struggle To Contain Virus - HuffPost",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQbC1YYkxxSWh3STRrRW9DOEkzc3B1RUxUOEVMendoRmtqUHQycG9YdGktcmlBX0FHeFUzMzB5QWZYb0tfaUR2bFZraVFnaFFxeHdLcDBLLVZtbGdVOXpUazU3QXg4cTg4azlkUmx5Tk1EU1ZqbE1CQlYwTEpzdWJYR0dKWi1sSVhkZlAyOUFtVjdSZE1rZmpadjJGTUNUZ0h6RVJ1cDJyV3BmZ9IBkwFBVV95cUxOc1d1OE9sZ3YzZS1LVFd3Q1phS3VKYlJmeGdWSEFTeUlvRE1WZDNYOXZEOFk2UThUcTlFbGpidGhHOFpPdFQ0R3BzUzNrMzE1bnB3N0pfaDdYMGQtQ3YyQ09OdUZtdWtSczRZcXEyNlZqak9hd2hBbVBjZDhUdHgxUDg0NGEtZFBzOHhhRGJmTDZZcVE?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo's Ebola Outbreak Has Killed Over 4,000 As Authorities Struggle To Contain Virus HuffPost"
-    },
-    {
-      "id": "news-aeaa548d5293bf44",
-      "title": "Rapid diagnostics and vaccine research strengthen response to outbreak of Ebola's Bundibugyo strain of deadly virus - Labmate Online",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxPQUJPUkUxV0trQThQWDNuQlZzc24yT01YalN5SUJjOVVkNHgxc1R3MXVWaE9BaW1xbmh0UjJwc2NjMWhhbTdWbWs0Sk0xU0lmZVVSQ1NzWHRpVF9NZFplcjlxdVZXRUphMHllZWozX0RFRTZsdlRpeVJGdXM4cXNjcjVMSDVfaWxhNjVaVTQ4VGFtcmRlM0hzMl9WZkhRZHdNcjdOZmRWQWNCeElGSGRNUWt1MDMyMVRSUEVOVmFKcWh2V0w2clJKb3ZuUmpuZ1N2MTFfQUhOTDNTRzQ1SWd5UGpOTkdjckxGTkFFbGNnYzl1UzRvWFJyMkRkeER1ZEFpdGVHNWRLRE16UQ?oc=5",
-      "date": "2026-10-01",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Efforts to counter the Bundibugyo strain of Ebola are being strengthened by rapid diagnostic tools and vaccine research, though the article does not specify any cumulative death toll or confirmed case counts."
-    },
-    {
-      "id": "news-f1c09313f32421d6",
-      "title": "MSF staff member tests positive for Ebola in Congo, aid organisation says - reuters.com",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVl9GR3lNU1BlX0tIQlBhcExURDMzWHF2c29Ca2s2WnRNcmRESU13ekg0Yk5PRWhuemZjV2NvZW5EU25DSVBtMlNObGZXMUN3RnJfcUdPZlVMRW1LWFJCXzBZLVBJUEM2WjVpVTg5eGF4V0dXbHR1ZFJtWWtXVG9WLS1BdG1wVzVNZDloUlBGSFdta0UySm9odkZ3c05tNnJMcFRqV2xXRWdQbUVLRVNJdFE1T3B0NWVCR3pSYm5ISGdSRlpmdTJWQ0FEZGREYzJ3eHJzWGFteHNBWkc2cEE?oc=5",
-      "date": "2026-10-01",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "MSF staff member tests positive for Ebola in Congo, aid organisation says reuters.com"
     }
   ]
 }
