@@ -1,6 +1,6 @@
 "use client";
 
-import { useSyncExternalStore } from "react";
+import { useId, useSyncExternalStore } from "react";
 import { Area, AreaChart, ResponsiveContainer } from "recharts";
 import type { TrendPoint } from "@/lib/outbreak-trend";
 
@@ -15,7 +15,7 @@ const noopSubscribe = () => () => {};
 
 export function SparkArea({
   data,
-  color = "var(--color-chart-1)",
+  color = "var(--chart-1)",
   height = 36,
   ariaLabel,
 }: SparkAreaProps) {
@@ -29,6 +29,8 @@ export function SparkArea({
     () => false,
   );
 
+  const gradientId = `sparkfill-${useId().replace(/:/g, "")}`;
+
   if (data.length < 2 || !isClient) {
     return <div style={{ height }} aria-label={ariaLabel} />;
   }
@@ -41,8 +43,8 @@ export function SparkArea({
           margin={{ top: 2, right: 0, bottom: 2, left: 0 }}
         >
           <defs>
-            <linearGradient id={`sparkfill-${color}`} x1="0" y1="0" x2="0" y2="1">
-              <stop offset="0%" stopColor={color} stopOpacity={0.45} />
+            <linearGradient id={gradientId} x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stopColor={color} stopOpacity={0.16} />
               <stop offset="100%" stopColor={color} stopOpacity={0} />
             </linearGradient>
           </defs>
@@ -50,8 +52,8 @@ export function SparkArea({
             type="monotone"
             dataKey="value"
             stroke={color}
-            strokeWidth={1.5}
-            fill={`url(#sparkfill-${color})`}
+            strokeWidth={2}
+            fill={`url(#${gradientId})`}
             isAnimationActive={false}
           />
         </AreaChart>

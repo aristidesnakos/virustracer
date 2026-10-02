@@ -31,6 +31,12 @@ export interface MonitoringEntry {
   detail: string;
   source: string;
   asOf: string;
+  /**
+   * Date the first case in this country was officially confirmed (YYYY-MM-DD).
+   * Optional; set it only when a source states it. Used to measure how far news
+   * signals led the official confirmation (see src/lib/signals.ts).
+   */
+  firstConfirmed?: string;
 }
 
 export interface SpreadStop {
@@ -315,6 +321,7 @@ export const monitoringData: MonitoringEntry[] = [
     detail: "Doctor returning from a humanitarian mission, confirmed Jun 24. Discharged Jul 4 after two negative PCR tests.",
     source: "WHO DON614",
     asOf: "2026-07-04",
+    firstConfirmed: "2026-06-24",
   },
   {
     country: "Germany",

@@ -13,6 +13,7 @@ import {
   type TooltipContentProps,
 } from "recharts";
 import type { CaseDataPoint } from "@/data/outbreak";
+import PanelHeader from "@/components/PanelHeader";
 
 const PHEIC_DATE = "2026-05-16";
 const PHEIC_T = Date.parse(PHEIC_DATE);
@@ -46,47 +47,84 @@ function makeTooltip(byDate: Map<string, CaseDataPoint>) {
     const entry = byDate.get(row.date);
     const items = payload.filter((p) => typeof p.value === "number");
     return (
-      <div className="bg-gray-900 border border-white/10 rounded-lg px-3 py-2.5 text-xs shadow-xl max-w-[240px] pointer-events-none">
-        <div className="font-semibold text-white mb-1.5">{fmtDay(row.t)}</div>
+      <div className="bg-panel border border-rule-strong rounded-lg px-3 py-2.5 text-[0.8125rem] leading-snug shadow-md max-w-[260px] pointer-events-none">
+        <div className="font-journal font-semibold text-ink mb-1.5">{fmtDay(row.t)}</div>
         {items.map((p) => (
           <div key={String(p.name)} className="flex items-center gap-2 mb-0.5">
             <span
-              className="w-2 h-2 rounded-full shrink-0"
+              className="size-2.5 rounded-full shrink-0"
               style={{ background: p.color }}
             />
-            <span className="text-gray-300">{p.name}:</span>
-            <span className="font-medium text-white tabular-nums">
+            <span className="text-ink-muted">{p.name}:</span>
+            <span className="font-semibold text-ink tabular-nums">
               {fmtNum(p.value as number)}
             </span>
           </div>
         ))}
         {entry?.note && (
-          <div className="mt-2 pt-2 border-t border-white/10 text-gray-400 leading-snug line-clamp-3">
+          <div className="mt-2 pt-2 border-t border-rule text-ink-muted line-clamp-3">
             {entry.note}
           </div>
         )}
         {entry?.source && (
-          <div className="mt-1 text-gray-500 italic line-clamp-2">Source: {entry.source}</div>
+          <div className="mt-1 text-ink-faint italic line-clamp-2">Source: {entry.source}</div>
         )}
       </div>
     );
   };
 }
 
-function LegendKey({ color, label, dashed }: { color: string; label: string; dashed?: boolean }) {
+/** Plain-language read-out of the newest values, for screen readers. */
+function describeLatest(rows: ChartRow[]): string {
+  const latest = (key: "Deaths" | "Confirmed" | "Suspected") => {
+    for (let i = rows.length - 1; i >= 0; i--) {
+      const v = rows[i][key];
+      if (v !== undefined) return `${fmtNum(v)} ${key.toLowerCase()} (${fmtDay(rows[i].t)})`;
+    }
+    return null;
+  };
+  const parts = (["Deaths", "Confirmed", "Suspected"] as const)
+    .map(latest)
+    .filter((p): p is string => p !== null);
+  if (rows.length === 0 || parts.length === 0) return "No data points yet.";
+  return `Line chart of cumulative figures from ${fmtDay(rows[0].t)} to ${fmtDay(
+    rows[rows.length - 1].t,
+  )}. Latest: ${parts.join("; ")}.`;
+}
+
+function LegendKey({
+  color,
+  label,
+  dashed,
+  weight = 2,
+}: {
+  color: string;
+  label: string;
+  dashed?: boolean;
+  weight?: number;
+}) {
   return (
-    <li className="flex items-center gap-1.5">
+    <li className="flex items-center gap-2">
       <span
-        className="w-3.5 h-0 border-t-2"
-        style={{ borderColor: color, borderStyle: dashed ? "dashed" : "solid" }}
+        className="h-0 w-6"
+        style={{
+          borderTop: `${weight}px ${dashed ? "dashed" : "solid"} ${color}`,
+        }}
+        aria-hidden
       />
       {label}
     </li>
   );
 }
 
-export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) {
-  const { data, ticks, tooltip, hasSuspected } = useMemo(() => {
+export default function CasesChart({
+  timeline,
+  headingId,
+}: {
+  timeline: CaseDataPoint[];
+  headingId?: string;
+}) {
+  const { data, ticks, tooltip, hasSuspected, summary } = useMemo(() => {
     const rows: ChartRow[] = timeline
       .map((d) => ({
         t: Date.parse(d.date),
@@ -109,25 +147,30 @@ export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) 
       ticks: tickList,
       tooltip: makeTooltip(new Map(timeline.map((d) => [d.date, d]))),
       hasSuspected: rows.some((r) => r.Suspected !== undefined),
+      summary: describeLatest(rows),
     };
   }, [timeline]);
 
   return (
-    <div className="w-full h-full flex flex-col">
-      <div className="flex items-center justify-between gap-3 mb-2">
-        <h2 className="text-sm font-semibold text-white/90 uppercase tracking-wider">
-          Cumulative deaths &amp; cases
-        </h2>
-        <ul className="flex items-center gap-3 text-[11px] text-gray-400" aria-label="Chart legend">
-          <LegendKey color="#ef4444" label="Deaths" />
-          <LegendKey color="#f97316" label="Confirmed" />
-          {hasSuspected && <LegendKey color="#facc15" label="Suspected" dashed />}
-        </ul>
-      </div>
-      <div className="flex-1 min-h-0">
+    <div className="flex w-full flex-col">
+      <PanelHeader
+        kicker="Fig. 2"
+        id={headingId}
+        title={<>Cumulative deaths &amp; cases</>}
+      />
+      <ul
+        className="mb-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-[0.8125rem] font-medium text-ink-muted"
+        aria-label="Chart legend"
+      >
+        <LegendKey color="var(--death)" label="Deaths" weight={4} />
+        <LegendKey color="var(--confirmed)" label="Confirmed" weight={2.5} />
+        {hasSuspected && <LegendKey color="var(--suspected)" label="Suspected" dashed weight={2} />}
+      </ul>
+      <p className="sr-only">{summary}</p>
+      <div className="h-[16rem] sm:h-[18rem]">
         <ResponsiveContainer width="100%" height="100%">
           <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
+            <CartesianGrid strokeDasharray="3 3" stroke="var(--rule)" />
             <XAxis
               dataKey="t"
               type="number"
@@ -135,34 +178,34 @@ export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) 
               domain={[(dataMin: number) => Math.min(dataMin, PHEIC_T), "dataMax"]}
               ticks={ticks}
               tickFormatter={fmtDay}
-              tick={{ fill: "#9ca3af", fontSize: 11 }}
-              axisLine={{ stroke: "rgba(255,255,255,0.1)" }}
+              tick={{ fill: "var(--ink-muted)", fontSize: 13 }}
+              axisLine={{ stroke: "var(--rule-strong)" }}
               tickLine={false}
             />
             <YAxis
-              tick={{ fill: "#9ca3af", fontSize: 11 }}
+              tick={{ fill: "var(--ink-muted)", fontSize: 13 }}
               axisLine={false}
               tickLine={false}
               allowDecimals={false}
               tickFormatter={fmtNum}
-              width={54}
+              width={58}
             />
             <Tooltip
               content={tooltip}
               isAnimationActive={false}
-              cursor={{ stroke: "rgba(255,255,255,0.25)", strokeDasharray: "3 3" }}
+              cursor={{ stroke: "var(--ink-faint)", strokeDasharray: "3 3" }}
               offset={14}
               allowEscapeViewBox={{ x: false, y: true }}
               wrapperStyle={{ zIndex: 50, pointerEvents: "none" }}
             />
             <ReferenceLine
               x={PHEIC_T}
-              stroke="rgba(255,255,255,0.25)"
+              stroke="var(--ink-faint)"
               strokeDasharray="4 2"
               label={{
                 value: "WHO PHEIC",
-                fill: "#6b7280",
-                fontSize: 10,
+                fill: "var(--ink-muted)",
+                fontSize: 12,
                 position: "insideTopLeft",
                 dx: 4,
                 dy: 2,
@@ -171,31 +214,31 @@ export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) 
             <Line
               type="monotone"
               dataKey="Confirmed"
-              stroke="#f97316"
-              strokeWidth={2}
+              stroke="var(--confirmed)"
+              strokeWidth={2.5}
               connectNulls
-              dot={{ fill: "#f97316", r: 2.5, strokeWidth: 0 }}
+              dot={{ fill: "var(--confirmed)", r: 3, strokeWidth: 0 }}
               activeDot={{ r: 5 }}
             />
             {hasSuspected && (
               <Line
                 type="monotone"
                 dataKey="Suspected"
-                stroke="#facc15"
-                strokeWidth={1.5}
-                strokeDasharray="4 3"
+                stroke="var(--suspected)"
+                strokeWidth={2}
+                strokeDasharray="5 4"
                 connectNulls
-                dot={{ fill: "#facc15", r: 2.5, strokeWidth: 0 }}
+                dot={{ fill: "var(--suspected)", r: 2.5, strokeWidth: 0 }}
                 activeDot={{ r: 5 }}
               />
             )}
             <Line
               type="monotone"
               dataKey="Deaths"
-              stroke="#ef4444"
+              stroke="var(--death)"
               strokeWidth={3.5}
               connectNulls
-              dot={{ fill: "#ef4444", r: 3, strokeWidth: 0 }}
+              dot={{ fill: "var(--death)", r: 3, strokeWidth: 0 }}
               activeDot={{ r: 6 }}
             />
           </LineChart>

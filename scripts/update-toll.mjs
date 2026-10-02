@@ -15,16 +15,9 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseInfobox, validateSnapshot, applySnapshot } from "./lib/toll.mjs";
+import { PAGE_TITLE, USER_AGENT, SNAPSHOT_SOURCE } from "./lib/outbreak-config.mjs";
 
-// ── Outbreak configuration ────────────────────────────────────────────────────
-// To track a different outbreak, change this to the exact title of the English
-// Wikipedia article whose lead section contains an `{{Infobox outbreak}}` with
-// confirmed_cases / deaths fields (e.g. "2018–2020_Kivu_Ebola_epidemic").
-// Redirects are followed automatically.
-const PAGE_TITLE = "2026_Ebola_epidemic";
-
-const USER_AGENT =
-  "virustracer/1.0 (https://github.com/aristidesnakos/virustracer; death-toll tracker)";
+// The tracked Wikipedia article is configured in scripts/lib/outbreak-config.mjs.
 const TIMEOUT_MS = 20_000;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -69,6 +62,35 @@ async function fetchWikitext() {
   return { wikitext, revid: Number.isInteger(revid) ? revid : undefined };
 }
 
+/**
+ * When was this revision saved? Lets the API publish "what the page said, as of
+ * when". Best effort: a failure here must never block the toll update.
+ */
+async function fetchRevisionTimestamp(revid) {
+  if (revid === undefined) return undefined;
+  try {
+    const url =
+      "https://en.wikipedia.org/w/api.php?" +
+      new URLSearchParams({
+        action: "query",
+        prop: "revisions",
+        revids: String(revid),
+        rvprop: "timestamp",
+        format: "json",
+        formatversion: "2",
+      });
+    const res = await fetch(url, {
+      headers: { "User-Agent": USER_AGENT, Accept: "application/json" },
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+    if (!res.ok) return undefined;
+    const ts = (await res.json()).query?.pages?.[0]?.revisions?.[0]?.timestamp;
+    return typeof ts === "string" ? ts : undefined;
+  } catch {
+    return undefined;
+  }
+}
+
 async function main() {
   const now = new Date();
   const nowISO = now.toISOString();
@@ -109,18 +131,21 @@ async function main() {
     `Parsed infobox: confirmed=${parsed.confirmed} suspected=${parsed.suspected ?? "n/a"} deaths=${parsed.deaths} recovered=${parsed.recovered ?? "n/a"}`,
   );
 
+  const revisionTimestamp = await fetchRevisionTimestamp(fetched.revid);
+
   const snapshot = {
     date: today,
     confirmed: parsed.confirmed,
     suspected: parsed.suspected,
     deaths: parsed.deaths,
     recovered: parsed.recovered,
-    source: "Wikipedia infobox (cites INSP DRC / WHO)",
+    source: SNAPSHOT_SOURCE,
     sourceUrl:
       fetched.revid !== undefined
         ? `https://en.wikipedia.org/w/index.php?oldid=${fetched.revid}`
         : `https://en.wikipedia.org/wiki/${PAGE_TITLE}`,
     ...(fetched.revid !== undefined ? { revid: fetched.revid } : {}),
+    ...(revisionTimestamp ? { revisionTimestamp } : {}),
   };
 
   const verdict = validateSnapshot(snapshot, prev, today);

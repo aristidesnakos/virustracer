@@ -14,6 +14,8 @@ export interface TollSnapshot {
   source: string;
   sourceUrl: string;
   revid?: number;
+  /** When that Wikipedia revision was saved (UTC ISO), so readers can see how fresh the reading was. */
+  revisionTimestamp?: string;
 }
 
 export interface TollData {

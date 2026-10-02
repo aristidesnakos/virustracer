@@ -14,6 +14,7 @@ npm test          # unit tests (Vitest, jsdom; tests/**/*.test.{ts,tsx})
 npm run test:e2e  # Playwright e2e (uses the running dev server on PLAYWRIGHT_PORT, default 3000)
 node scripts/update-toll.mjs   # manually refresh data/toll.json (keyless)
 node scripts/fetch-feeds.mjs   # manually run feed updater (OPENROUTER_API_KEY optional)
+node scripts/backfill-toll.mjs [--dry-run]   # one-off: import daily toll history from the Wikipedia article's revisions
 ```
 
 ## Architecture
@@ -28,9 +29,16 @@ Single-page outbreak dashboard (Next.js 16 App Router, React 19, Tailwind v4, Ty
 
 3. **Live feed data** — `data/live.json` and `data/candidates.json` are written by `scripts/fetch-feeds.mjs`. It fetches WHO news RSS plus three Google News queries, keyword-filters for Ebola, and (if `OPENROUTER_API_KEY` is set) summarizes via OpenRouter DeepSeek and extracts country candidates. The server reads them at request time via `src/lib/live-data.ts` (`getLiveData()`) and `src/lib/candidates-data.ts`, called in the Server Component `page.tsx`. Country candidates extracted from news are shown as Unverified.
 
+**Derived metrics and public API:**
+
+- `src/lib/metrics.ts` (`computeMetrics`) turns the daily `toll.snapshots` into weekly incidence, a growth rate with a Poisson 95% range, doubling/halving time, Rt (gamma serial interval, constants in `ASSUMPTIONS`) and three fatality ratios. It fills gaps by interpolation, never lets a cumulative count fall, and ends the 7-day windows on the latest day the total moved (at most `maxReportingLagDays` before the last reading) because the Wikipedia source is updated in batches; measuring to a stale flat day shows a false collapse. It returns `status: "insufficient_data"` rather than guessing when history is thin. Metrics use `toll.snapshots` only, not the merged timeline, to avoid cross-source jumps from curated rows. `src/lib/trend-summary.ts` writes the plain-language verdict; `TrendPanel.tsx` renders it (Fig. 3).
+- Public, keyless, CORS-open JSON/CSV under `/api/v1/` (`toll`, `metrics`, `signals`); helpers (query parsing, CSV, headers) in `src/lib/api.ts`. `/data` documents endpoints and the method; its assumptions are read from `ASSUMPTIONS` so docs cannot drift. Keep `/data` and `src/lib/metrics.ts` in sync.
+- `scripts/backfill-toll.mjs` takes the last Wikipedia revision of each UTC day, parses the infobox with the same parser as the daily updater, drops readings with deaths > confirmed (early revisions counted suspected deaths) and keeps the longest never-decreasing chain (`scripts/lib/backfill.mjs`) so vandalism/typos cannot poison the series. The article title and user agent live in `scripts/lib/outbreak-config.mjs`, shared with `update-toll.mjs`. Snapshots may carry `revisionTimestamp`.
+- Early-signal ledger: `scripts/fetch-feeds.mjs` folds extracted candidates into `data/signals.json` (one row per country, first-seen date, never pruned; `scripts/lib/signals.mjs`). `src/lib/signals.ts` joins it to `monitoringData` at read time: a signal is confirmed once the table lists the country with cases, and `leadDays` needs the optional curated `firstConfirmed` date on that `MonitoringEntry`.
+
 **Automation rule:** automation (GitHub Actions) never edits `src/data/outbreak.ts`. Only the headline totals and chart are auto-updated; the province/country table, map bubbles, and `summary` are updated by hand.
 
-**Workflow:** `.github/workflows/update-data.yml` runs at 08:00 and 20:00 UTC (and via `workflow_dispatch`, e.g. `gh workflow run update-data.yml`) in a concurrency group. Steps: `node scripts/update-toll.mjs`, then `node scripts/fetch-feeds.mjs`, then commits `data/live.json data/candidates.json data/toll.json` (pull --rebase, push), then a final `always()` step writes the latest toll to the Actions step summary. Vercel redeploys on the commit. `OPENROUTER_API_KEY` is the only secret and is optional.
+**Workflow:** `.github/workflows/update-data.yml` runs at 08:00 and 20:00 UTC (and via `workflow_dispatch`, e.g. `gh workflow run update-data.yml`) in a concurrency group. Steps: `node scripts/update-toll.mjs`, then `node scripts/fetch-feeds.mjs`, then commits `data/live.json data/candidates.json data/signals.json data/toll.json` (pull --rebase, push), then a final `always()` step writes the latest toll to the Actions step summary. Vercel redeploys on the commit. `OPENROUTER_API_KEY` is the only secret and is optional.
 
 **Component breakdown:**
 

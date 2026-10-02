@@ -13,11 +13,13 @@ import { readFileSync, writeFileSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { createHash } from "crypto";
 import { fileURLToPath } from "url";
+import { updateSignalLedger } from "./lib/signals.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 const LIVE_JSON = resolve(ROOT, "data/live.json");
 const CANDIDATES_JSON = resolve(ROOT, "data/candidates.json");
+const SIGNALS_JSON = resolve(ROOT, "data/signals.json");
 
 // Cap candidates list to recent signals to avoid carrying stale extractions forever.
 const CANDIDATE_MAX_AGE_DAYS = 30;
@@ -443,6 +445,25 @@ async function main() {
 
   if (newCandidates.length > 0) {
     console.log(`Added ${newCandidates.length} new candidate signals.`);
+  }
+
+  // Long-lived ledger of when the news first mentioned each country. Unlike
+  // candidates.json it is never pruned, so lead times survive.
+  let ledger = { lastUpdated: "", signals: [] };
+  if (existsSync(SIGNALS_JSON)) {
+    try {
+      ledger = JSON.parse(readFileSync(SIGNALS_JSON, "utf-8"));
+    } catch (err) {
+      console.error("Failed to parse signals.json:", err.message);
+    }
+  }
+  const nextLedger = updateSignalLedger(ledger, deduped, new Date().toISOString());
+  const changed =
+    JSON.stringify(nextLedger.signals) !== JSON.stringify(ledger.signals ?? []);
+  // Only rewrite when something changed, so a quiet run does not make a commit.
+  if (changed || !existsSync(SIGNALS_JSON)) {
+    writeFileSync(SIGNALS_JSON, JSON.stringify(nextLedger, null, 2) + "\n");
+    console.log(`Signal ledger: ${nextLedger.signals.length} countr${nextLedger.signals.length === 1 ? "y" : "ies"}.`);
   }
 }
 

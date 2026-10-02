@@ -6,16 +6,19 @@ import "maplibre-gl/dist/maplibre-gl.css";
 import { spreadStops, caseLocations } from "@/data/outbreak";
 import { daysBetween } from "@/lib/outbreak-trend";
 
-const CARTO_DARK = "https://basemaps.cartocdn.com/gl/dark-matter-gl-style/style.json";
+const CARTO_LIGHT = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
 
 // Recency gradient: stops are interpolated by `daysAgo` on the case dots.
-// Fresh data reads hot (red/orange); stale data fades to muted blue-gray.
+// Fresh data reads as deep oxblood; stale data cools to slate. Every stop is
+// >= 4:1 against the pale basemap, and white labels are >= 4.8:1 on each stop.
+// MapLibre cannot parse oklch(), so these are the hex equivalents of the
+// journal palette.
 const RECENCY_STOPS: ReadonlyArray<[number, string]> = [
-  [0, "#ef4444"],   // 0 days — red-500
-  [4, "#fb923c"],   // 4 days — orange-400
-  [10, "#facc15"],  // 10 days — yellow-400
-  [21, "#60a5fa"],  // 21 days — blue-400
-  [45, "#6b7280"],  // 45+ days — gray-500
+  [0, "#8a0314"],   // 0 days — oxblood
+  [4, "#a63c0c"],   // 4 days — burnt sienna
+  [10, "#a46311"],  // 10 days — ochre
+  [21, "#327382"],  // 21 days — teal slate
+  [45, "#5c646f"],  // 45+ days — slate
 ];
 
 function escapeHtml(value: unknown): string {
@@ -107,7 +110,7 @@ export default function OutbreakMap() {
 
     const map = new maplibregl.Map({
       container: containerRef.current,
-      style: CARTO_DARK,
+      style: CARTO_LIGHT,
       center: [24, 2],
       zoom: 3.2,
       minZoom: 1,
@@ -137,16 +140,17 @@ export default function OutbreakMap() {
         type: "circle",
         source: "spread-stops",
         paint: {
-          "circle-radius": 2.5,
-          "circle-color": "#60a5fa",
-          "circle-opacity": 0.55,
-          "circle-stroke-width": 0,
+          "circle-radius": 3.5,
+          "circle-color": "#29579a",
+          "circle-opacity": 0.85,
+          "circle-stroke-color": "#ffffff",
+          "circle-stroke-width": 1,
         },
       });
 
       // ── Case / monitoring bubbles ──────────────────────────────
       // Dot color is interpolated on daysAgo so recency reads at a glance:
-      // fresh data is red/orange, stale data fades to blue-gray.
+      // fresh data is oxblood, stale data fades to slate.
       map.addSource("cases", {
         type: "geojson",
         data: casesGeoJSON(REFERENCE_ISO),
@@ -161,7 +165,7 @@ export default function OutbreakMap() {
         paint: {
           "circle-radius": ["get", "haloRadius"],
           "circle-color": recencyColor,
-          "circle-opacity": 0.18,
+          "circle-opacity": 0.2,
           "circle-stroke-width": 0,
         },
       });
@@ -194,8 +198,8 @@ export default function OutbreakMap() {
         },
         paint: {
           "text-color": "#ffffff",
-          "text-halo-color": "rgba(0,0,0,0.55)",
-          "text-halo-width": 1.2,
+          "text-halo-color": "rgba(21,32,45,0.7)",
+          "text-halo-width": 1.5,
         },
       });
 
@@ -250,8 +254,8 @@ export default function OutbreakMap() {
         };
         const geom = feat.geometry as unknown as { coordinates: [number, number] };
         const lines: string[] = [];
-        if (p.confirmed > 0) lines.push(`<span class="popup-stat orange">${fmt(p.confirmed)} confirmed</span>`);
-        if (p.deaths > 0) lines.push(`<span class="popup-stat red">${fmt(p.deaths)} death${p.deaths > 1 ? "s" : ""}</span>`);
+        if (p.confirmed > 0) lines.push(`<span class="popup-stat confirmed">${fmt(p.confirmed)} confirmed</span>`);
+        if (p.deaths > 0) lines.push(`<span class="popup-stat death">${fmt(p.deaths)} death${p.deaths > 1 ? "s" : ""}</span>`);
         const freshness = p.daysAgo === 0 ? "today" : `${p.daysAgo}d ago`;
         casePopup
           .setLngLat(geom.coordinates)
@@ -279,33 +283,36 @@ export default function OutbreakMap() {
   }, []);
 
   return (
-    <div className="relative w-full h-full">
-      <div ref={containerRef} className="w-full h-full" />
-      {/* Legend */}
-      <div className="absolute bottom-8 left-3 flex flex-col gap-2 bg-gray-950/80 backdrop-blur-sm border border-white/10 rounded-lg px-3 py-2.5 text-xs text-gray-300">
-        <div className="flex flex-col gap-1">
-          <span className="text-[10px] uppercase tracking-wider text-gray-500 font-medium">
-            Data recency
-          </span>
+    <div className="flex h-full w-full flex-col">
+      <div
+        ref={containerRef}
+        role="region"
+        aria-label="Map of reported cases. The same figures are listed in Table 1."
+        className="min-h-0 w-full flex-1"
+      />
+      {/* Legend sits under the map so it never hides data on small screens */}
+      <div className="flex shrink-0 flex-wrap items-center gap-x-6 gap-y-2 border-t border-rule bg-panel px-4 py-3 text-[0.8125rem] text-ink-muted">
+        <div className="flex items-center gap-2">
+          <span className="font-semibold text-ink">Data recency</span>
+          <span className="tabular-nums">today</span>
           <div
-            className="h-1.5 w-32 rounded-full"
+            className="h-2 w-28 rounded-full border border-rule-strong"
             style={{
               background:
-                "linear-gradient(to right, #ef4444 0%, #fb923c 22%, #facc15 47%, #60a5fa 78%, #6b7280 100%)",
+                "linear-gradient(to right, #8a0314 0%, #a63c0c 22%, #a46311 47%, #327382 78%, #5c646f 100%)",
             }}
+            aria-hidden
           />
-          <div className="flex justify-between text-[9px] text-gray-500 tabular-nums">
-            <span>today</span>
-            <span>45d+</span>
-          </div>
+          <span className="tabular-nums">45d+</span>
         </div>
-        <div className="flex items-center gap-2 pt-1 border-t border-white/[0.06]">
-          <span className="w-1.5 h-1.5 rounded-full bg-blue-400 opacity-70 shrink-0" />
+        <div className="flex items-center gap-2">
+          <span
+            className="size-2.5 shrink-0 rounded-full border border-white bg-confirmed"
+            aria-hidden
+          />
           First-detected site
         </div>
-        <div className="text-[10px] text-gray-500 leading-snug">
-          Dot label: deaths · size: confirmed cases
-        </div>
+        <div>Dot label: deaths · size: confirmed cases</div>
       </div>
     </div>
   );

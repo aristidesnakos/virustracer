@@ -2,56 +2,138 @@
 @import "tw-animate-css";
 @import "shadcn/tailwind.css";
 
-@custom-variant dark (&:is(.dark *));
-
 :root {
-  color-scheme: dark;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
+  color-scheme: light;
+
+  /* Journal palette — warm paper, blue-black ink. Every text pairing is
+     checked to WCAG AA or better (see contrast notes beside each token). */
+  --paper: oklch(0.965 0.012 85);          /* page */
+  --panel: oklch(0.985 0.008 85);          /* raised surface */
+  --sunk: oklch(0.935 0.014 85);           /* table header, wells */
+  --ink: oklch(0.24 0.03 255);             /* 15:1 on paper */
+  --ink-muted: oklch(0.4 0.028 255);       /* 8:1 */
+  --ink-faint: oklch(0.48 0.025 255);      /* 5.9:1 — the lightest text we use */
+  --rule: oklch(0.87 0.015 85);            /* decorative hairlines */
+  --rule-strong: oklch(0.62 0.02 85);      /* control borders, 3.5:1 */
+  --accent: oklch(0.42 0.09 200);          /* links, focus — 7:1 */
+  --accent-tint: oklch(0.93 0.035 200);
+
+  /* Data colours: differ in hue AND lightness, and the chart adds line
+     weight/dash so they do not rely on colour alone. */
+  --death: oklch(0.43 0.15 25);
+  --death-tint: oklch(0.93 0.04 25);
+  --confirmed: oklch(0.46 0.12 258);
+  --confirmed-tint: oklch(0.93 0.03 258);
+  --suspected: oklch(0.5 0.1 70);
+  --suspected-text: oklch(0.42 0.09 70);
+  --suspected-tint: oklch(0.94 0.045 85);
+  --good: oklch(0.4 0.09 155);
+  --good-tint: oklch(0.93 0.04 155);
+
+  /* shadcn tokens, mapped onto the journal palette */
+  --background: var(--paper);
+  --foreground: var(--ink);
+  --card: var(--panel);
+  --card-foreground: var(--ink);
+  --popover: var(--panel);
+  --popover-foreground: var(--ink);
+  --primary: var(--accent);
+  --primary-foreground: oklch(0.985 0.008 85);
+  --secondary: var(--sunk);
+  --secondary-foreground: var(--ink);
+  --muted: var(--sunk);
+  --muted-foreground: var(--ink-muted);
+  --accent-foreground: var(--ink);
+  --destructive: var(--death);
+  --border: var(--rule);
+  --input: var(--rule-strong);
+  --ring: var(--accent);
+  --chart-1: var(--death);
+  --chart-2: var(--confirmed);
+  --chart-3: var(--suspected);
+  --chart-4: var(--accent);
+  --chart-5: var(--ink-muted);
+  --radius: 0.5rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html,
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
 body {
-  height: 100%;
   margin: 0;
-  padding: 0;
-  background: #030712;
-  color: #f9fafb;
-  font-family: ui-sans-serif, system-ui, -apple-system, sans-serif;
+  min-height: 100%;
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-body), ui-sans-serif, system-ui, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+/* Visible keyboard focus everywhere (WCAG 2.4.7 / 2.4.11). */
+:focus-visible {
+  outline: 3px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+::selection {
+  background: var(--accent-tint);
+  color: var(--ink);
+}
+
+.skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -4rem;
+  z-index: 100;
+  padding: 0.6rem 1rem;
+  background: var(--ink);
+  color: var(--paper);
+  border-radius: 0.375rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+.skip-link:focus {
+  top: 1rem;
+}
+
+/* Serif numerals and headings: Literata, lining + tabular figures. */
+.font-journal {
+  font-family: var(--font-journal), Georgia, serif;
+  font-variant-numeric: lining-nums tabular-nums;
+}
+
+/* One gentle entrance for the page, skipped for reduced-motion users. */
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+.rise {
+  animation: rise 0.6s cubic-bezier(0.22, 1, 0.36, 1) both;
+  animation-delay: calc(var(--i, 0) * 70ms);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .rise {
+    animation: none;
+  }
+  .live-dot {
+    animation: none !important;
+  }
 }
 
 /* MapLibre popup overrides */
@@ -67,39 +149,39 @@ body {
 }
 
 .popup-inner {
-  background: rgba(3, 7, 18, 0.92);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: var(--panel);
+  border: 1px solid var(--rule-strong);
   border-radius: 8px;
   padding: 10px 12px;
-  font-size: 12px;
-  color: #d1d5db;
-  backdrop-filter: blur(8px);
+  font-size: 13px;
+  line-height: 1.45;
+  color: var(--ink);
   max-width: 260px;
+  box-shadow: 0 2px 10px oklch(0.24 0.03 255 / 0.12);
 }
 
 .popup-title {
-  font-weight: 600;
-  color: #f9fafb;
+  font-weight: 700;
+  color: var(--ink);
   margin-bottom: 3px;
 }
 
 .popup-sub {
-  color: #6b7280;
-  font-size: 11px;
+  color: var(--ink-muted);
+  font-size: 12px;
 }
 
 .popup-date {
-  color: #9ca3af;
-  font-size: 11px;
+  color: var(--ink-muted);
+  font-size: 12px;
   margin-top: 2px;
 }
 
 .popup-note {
-  color: #d1d5db;
+  color: var(--ink);
   margin-top: 8px;
   padding-top: 8px;
-  border-top: 1px solid rgba(255, 255, 255, 0.08);
-  line-height: 1.4;
+  border-top: 1px solid var(--rule);
 }
 
 .popup-stats {
@@ -110,39 +192,57 @@ body {
 }
 
 .popup-stat {
-  font-weight: 500;
+  font-weight: 600;
 }
 
-.popup-stat.orange { color: #fb923c; }
-.popup-stat.red    { color: #f87171; }
-.popup-stat.yellow { color: #facc15; }
+.popup-stat.confirmed { color: var(--confirmed); }
+.popup-stat.death     { color: var(--death); }
+
+/* MapLibre controls: bigger hit areas, on-palette */
+.maplibregl-ctrl-group {
+  border: 1px solid var(--rule-strong) !important;
+  box-shadow: none !important;
+}
+.maplibregl-ctrl-group button {
+  width: 36px !important;
+  height: 36px !important;
+}
 
 /* Scrollbar */
 ::-webkit-scrollbar {
-  width: 4px;
+  width: 8px;
+  height: 8px;
 }
 ::-webkit-scrollbar-track {
   background: transparent;
 }
 ::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 2px;
-}
-::-webkit-scrollbar-thumb:hover {
-  background: rgba(255, 255, 255, 0.2);
+  background: var(--rule-strong);
+  border-radius: 4px;
 }
 
 @theme inline {
-  --font-heading: var(--font-sans);
-  --font-sans: var(--font-sans);
-  --color-sidebar-ring: var(--sidebar-ring);
-  --color-sidebar-border: var(--sidebar-border);
-  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
-  --color-sidebar-accent: var(--sidebar-accent);
-  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
-  --color-sidebar-primary: var(--sidebar-primary);
-  --color-sidebar-foreground: var(--sidebar-foreground);
-  --color-sidebar: var(--sidebar);
+  --font-heading: var(--font-journal);
+  --font-sans: var(--font-body);
+  --font-journal: var(--font-journal);
+  --color-paper: var(--paper);
+  --color-panel: var(--panel);
+  --color-sunk: var(--sunk);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-ink-faint: var(--ink-faint);
+  --color-rule: var(--rule);
+  --color-rule-strong: var(--rule-strong);
+  --color-accent-tint: var(--accent-tint);
+  --color-death: var(--death);
+  --color-death-tint: var(--death-tint);
+  --color-confirmed: var(--confirmed);
+  --color-confirmed-tint: var(--confirmed-tint);
+  --color-suspected: var(--suspected);
+  --color-suspected-text: var(--suspected-text);
+  --color-suspected-tint: var(--suspected-tint);
+  --color-good: var(--good);
+  --color-good-tint: var(--good-tint);
   --color-chart-5: var(--chart-5);
   --color-chart-4: var(--chart-4);
   --color-chart-3: var(--chart-3);
@@ -175,40 +275,6 @@ body {
   --radius-4xl: calc(var(--radius) * 2.6);
 }
 
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
-}
-
 @layer base {
   * {
     @apply border-border outline-ring/50;
@@ -219,4 +285,11 @@ body {
   html {
     @apply font-sans;
   }
+}
+/* Raised surface used for each figure / table / notes block. */
+.panel {
+  background: var(--panel);
+  border: 1px solid var(--rule);
+  border-radius: 0.75rem;
+  padding: clamp(1rem, 2vw, 1.5rem);
 }

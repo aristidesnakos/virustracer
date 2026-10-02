@@ -1,14 +1,18 @@
+import Link from "next/link";
 import CasesChart from "@/components/CasesChart";
 import MonitoringTable from "@/components/MonitoringTable";
 import FeedUpdates from "@/components/FeedUpdates";
 import MapLoader from "@/components/MapLoader";
+import PanelHeader from "@/components/PanelHeader";
 import SponsorCard from "@/components/SponsorCard";
+import TrendPanel from "@/components/TrendPanel";
 import StatStrip from "@/components/StatStrip";
 import { outbreak, summary, casesTimeline } from "@/data/outbreak";
 import { getLiveData } from "@/lib/live-data";
 import { getTollData } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { getCandidatesData } from "@/lib/candidates-data";
+import { computeMetrics } from "@/lib/metrics";
 
 function shortDate(iso: string | undefined | null): string {
   if (!iso) return "—";
@@ -26,102 +30,157 @@ export default function DashboardPage() {
   const toll = getTollData();
   const timeline = mergeTimeline(casesTimeline, toll.snapshots);
   const candidatesData = getCandidatesData();
+  // Rates come from the single-source daily snapshots only: mixing in hand-curated
+  // milestone rows would add small cross-source jumps to the weekly counts.
+  const metrics = computeMetrics(toll.snapshots);
+
+  const dates = [
+    { label: "Toll as of", value: shortDate(latestDate(timeline)) },
+    { label: "Last checked", value: shortDate(toll.lastChecked) },
+    { label: "News feed", value: shortDate(liveData.lastFetched) },
+  ];
 
   return (
-    <div className="h-full flex flex-col overflow-hidden bg-gray-950">
-      {/* ── Header ─────────────────────────────────────────────── */}
-      <header className="shrink-0 border-b border-white/[0.07] px-5 py-3 flex items-center justify-between gap-4">
-        <div className="flex items-center gap-3 min-w-0">
-          <div className="flex flex-col items-center justify-center w-7 h-7 rounded bg-red-500/15 border border-red-500/30 shrink-0">
-            <div className="w-2 h-2 rounded-full bg-red-500 animate-pulse" />
-          </div>
-          <div className="min-w-0">
-            <h1 className="text-sm font-semibold text-white leading-none truncate">
-              {outbreak.title}
-            </h1>
-            <p className="text-xs text-gray-500 mt-0.5 leading-none truncate">
-              {outbreak.subtitle}
-            </p>
-          </div>
-        </div>
+    <>
+      <a href="#main" className="skip-link">
+        Skip to main content
+      </a>
 
-        <div className="flex items-center gap-2 shrink-0">
-          <span className="text-xs text-gray-600">Toll</span>
-          <span className="text-xs text-gray-400 font-medium tabular-nums">
-            {shortDate(latestDate(timeline))}
-          </span>
-          <span className="text-gray-700">·</span>
-          <span className="text-xs text-gray-600">Checked</span>
-          <span className="text-xs text-gray-400 font-medium tabular-nums">
-            {shortDate(toll.lastChecked)}
-          </span>
-          <span className="text-gray-700">·</span>
-          <span className="text-xs text-gray-600">Feed</span>
-          <span className="text-xs text-gray-400 font-medium tabular-nums">
-            {shortDate(liveData.lastFetched)}
-          </span>
-          {outbreak.links.map((link) => (
-            <span key={link.href} className="flex items-center gap-2">
-              <span className="text-gray-700">·</span>
-              <a
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-xs text-blue-400/70 hover:text-blue-400 transition-colors"
+      <div className="mx-auto w-full max-w-[1360px] px-[clamp(1rem,3vw,2.5rem)] pb-10">
+        {/* ── Masthead ───────────────────────────────────────────── */}
+        <header className="rise pt-7 pb-5 border-b-4 border-double border-ink">
+          <div className="flex flex-wrap items-end justify-between gap-x-8 gap-y-5">
+            <div className="min-w-0 max-w-[46rem]">
+              <p className="mb-2 flex items-center gap-2 text-[0.8125rem] font-semibold uppercase tracking-[0.12em] text-death">
+                <span
+                  className="live-dot size-2 rounded-full bg-death animate-pulse"
+                  aria-hidden
+                />
+                Situation journal
+              </p>
+              <h1 className="font-journal text-[clamp(1.875rem,4.2vw,2.875rem)] font-bold leading-[1.1] tracking-[-0.01em] text-ink">
+                {outbreak.title}
+              </h1>
+              <p className="mt-2 text-base text-ink-muted">{outbreak.subtitle}</p>
+            </div>
+
+            <div className="flex flex-col gap-3 sm:items-end">
+              <dl className="flex flex-wrap gap-x-6 gap-y-2">
+                {dates.map((d) => (
+                  <div key={d.label}>
+                    <dt className="text-[0.8125rem] text-ink-faint">{d.label}</dt>
+                    <dd className="font-journal text-base font-semibold tabular-nums text-ink">
+                      {d.value}
+                    </dd>
+                  </div>
+                ))}
+              </dl>
+              <nav aria-label="Official sources" className="flex flex-wrap gap-x-5 gap-y-1">
+                {outbreak.links.map((link) => (
+                  <a
+                    key={link.href}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-[0.9375rem] font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                  >
+                    {link.label}
+                    <span className="sr-only"> (opens in a new tab)</span>
+                  </a>
+                ))}
+              </nav>
+            </div>
+          </div>
+        </header>
+
+        <main id="main" className="pt-6">
+          {/* ── Headline figures ─────────────────────────────────── */}
+          <div className="rise" style={{ "--i": 1 } as React.CSSProperties}>
+            <StatStrip timeline={timeline} />
+          </div>
+
+          {/* ── Figures ──────────────────────────────────────────── */}
+          <div className="mt-6 grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
+            {/* Left column: map + table */}
+            <div className="flex min-w-0 flex-col gap-6 lg:col-span-7">
+              <section
+                aria-labelledby="map-heading"
+                className="panel rise"
+                style={{ "--i": 2 } as React.CSSProperties}
               >
-                {link.label}
-              </a>
-            </span>
-          ))}
-        </div>
-      </header>
+                <PanelHeader
+                  kicker="Fig. 1"
+                  id="map-heading"
+                  title="Where cases are reported"
+                />
+                <div className="h-[26rem] overflow-hidden rounded-lg border border-rule sm:h-[32rem]">
+                  <MapLoader />
+                </div>
+              </section>
 
-      {/* ── Stat strip ─────────────────────────────────────────── */}
-      <StatStrip timeline={timeline} />
+              <section
+                aria-labelledby="table-heading"
+                className="panel rise"
+                style={{ "--i": 4 } as React.CSSProperties}
+              >
+                <MonitoringTable candidates={candidatesData.candidates} headingId="table-heading" />
+              </section>
+            </div>
 
-      {/* ── Main grid ──────────────────────────────────────────── */}
-      <main className="flex-1 min-h-0 grid grid-cols-1 lg:grid-cols-[1fr_380px] xl:grid-cols-[1fr_420px_320px] gap-3 px-5 pb-5">
+            {/* Right column: chart + news + sponsor */}
+            <div className="flex min-w-0 flex-col gap-6 lg:col-span-5">
+              <section
+                aria-labelledby="chart-heading"
+                className="panel rise"
+                style={{ "--i": 3 } as React.CSSProperties}
+              >
+                <CasesChart timeline={timeline} headingId="chart-heading" />
+              </section>
 
-        {/* Map */}
-        <div className="min-h-[340px] lg:min-h-0 bg-gray-900/40 border border-white/[0.07] rounded-xl overflow-hidden relative">
-          <MapLoader />
-        </div>
+              <section
+                aria-labelledby="trend-heading"
+                className="panel rise"
+                style={{ "--i": 3 } as React.CSSProperties}
+              >
+                <TrendPanel metrics={metrics} headingId="trend-heading" />
+              </section>
 
-        {/* Center column: chart + table */}
-        <div className="flex flex-col gap-3 min-h-0">
-          <div className="h-[220px] lg:h-[230px] shrink-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4">
-            <CasesChart timeline={timeline} />
+              <section
+                aria-labelledby="feed-heading"
+                className="panel rise"
+                style={{ "--i": 5 } as React.CSSProperties}
+              >
+                <FeedUpdates
+                  items={liveData.recentItems}
+                  lastFetched={liveData.lastFetched}
+                  headingId="feed-heading"
+                />
+              </section>
+
+              <div className="rise" style={{ "--i": 6 } as React.CSSProperties}>
+                <SponsorCard />
+              </div>
+            </div>
           </div>
-          <div className="flex-1 min-h-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden">
-            <MonitoringTable candidates={candidatesData.candidates} />
-          </div>
-        </div>
+        </main>
 
-        {/* Right column: feed + sponsor (xl only, collapses on lg) */}
-        <div className="hidden xl:flex flex-col min-h-0 gap-3">
-          <div
-            className={`bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden ${
-              liveData.recentItems.length > 0 ? "flex-1 min-h-0" : "shrink-0"
-            }`}
-          >
-            <FeedUpdates
-              items={liveData.recentItems}
-              lastFetched={liveData.lastFetched}
-            />
-          </div>
-          <SponsorCard />
-        </div>
-      </main>
-
-      {/* ── Disclaimer ─────────────────────────────────────────── */}
-      <footer className="shrink-0 border-t border-white/[0.07] px-5 py-2 flex items-center justify-between">
-        <p className="text-xs text-gray-600">
-          Not an official public health resource. Data manually compiled from public sources — verify with official authorities.
-        </p>
-        <p className="text-xs text-gray-700 tabular-nums">
-          Source: {summary.source}
-        </p>
-      </footer>
-    </div>
+        {/* ── Disclaimer ─────────────────────────────────────────── */}
+        <footer className="mt-10 flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 border-t border-rule-strong pt-5">
+          <p className="max-w-[46rem] text-[0.9375rem] text-ink-muted">
+            Not an official public health resource. Data manually compiled from public sources —
+            verify with official authorities.
+          </p>
+          <p className="text-[0.8125rem] tabular-nums text-ink-faint">
+            Source: {summary.source} ·{" "}
+            <Link
+              href="/data"
+              className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+            >
+              Data &amp; API
+            </Link>
+          </p>
+        </footer>
+      </div>
+    </>
   );
 }
