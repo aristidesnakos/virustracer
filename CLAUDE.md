@@ -35,6 +35,7 @@ Single-page outbreak dashboard (Next.js 16 App Router, React 19, Tailwind v4, Ty
 - Public, keyless, CORS-open JSON/CSV under `/api/v1/` (`toll`, `metrics`, `signals`); helpers (query parsing, CSV, headers) in `src/lib/api.ts`. `/data` documents endpoints and the method; its assumptions are read from `ASSUMPTIONS` so docs cannot drift. Keep `/data` and `src/lib/metrics.ts` in sync.
 - `scripts/backfill-toll.mjs` takes the last Wikipedia revision of each UTC day, parses the infobox with the same parser as the daily updater, drops readings with deaths > confirmed (early revisions counted suspected deaths) and keeps the longest never-decreasing chain (`scripts/lib/backfill.mjs`) so vandalism/typos cannot poison the series. The article title and user agent live in `scripts/lib/outbreak-config.mjs`, shared with `update-toll.mjs`. Snapshots may carry `revisionTimestamp`.
 - Early-signal ledger: `scripts/fetch-feeds.mjs` folds extracted candidates into `data/signals.json` (one row per country, first-seen date, never pruned; `scripts/lib/signals.mjs`). `src/lib/signals.ts` joins it to `monitoringData` at read time: a signal is confirmed once the table lists the country with cases, and `leadDays` needs the optional curated `firstConfirmed` date on that `MonitoringEntry`.
+- `AlertsInterestWidget.tsx` (bottom-right pill) is a demand test, not an alert system. It posts to `/api/alert-interest` (`src/lib/alert-interest.ts` holds validation and the option lists). Delivery needs `INTEREST_WEBHOOK_URL` and/or `RESEND_API_KEY` + `ALERT_INTEREST_EMAIL_TO` + `ALERT_INTEREST_EMAIL_FROM`; with none set, production returns 503 on purpose so sign-ups are not silently lost. Opens and sign-up summaries (never emails) are logged as `[alert-interest] ...`.
 
 **Automation rule:** automation (GitHub Actions) never edits `src/data/outbreak.ts`. Only the headline totals and chart are auto-updated; the province/country table, map bubbles, and `summary` are updated by hand.
 
@@ -57,3 +58,4 @@ Single-page outbreak dashboard (Next.js 16 App Router, React 19, Tailwind v4, Ty
 
 **Env vars:**
 - `OPENROUTER_API_KEY` — optional; used only by `scripts/fetch-feeds.mjs` (summaries + country extraction). The app and `scripts/update-toll.mjs` run without it.
+- `INTEREST_WEBHOOK_URL`, `RESEND_API_KEY`, `ALERT_INTEREST_EMAIL_TO`, `ALERT_INTEREST_EMAIL_FROM` — optional; delivery of alerts-interest sign-ups (see above). At least one channel is required in production.

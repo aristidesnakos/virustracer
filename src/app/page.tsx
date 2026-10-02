@@ -6,6 +6,7 @@ import MapLoader from "@/components/MapLoader";
 import PanelHeader from "@/components/PanelHeader";
 import SponsorCard from "@/components/SponsorCard";
 import TrendPanel from "@/components/TrendPanel";
+import AlertsInterestWidget from "@/components/AlertsInterestWidget";
 import StatStrip from "@/components/StatStrip";
 import { outbreak, summary, casesTimeline } from "@/data/outbreak";
 import { getLiveData } from "@/lib/live-data";
@@ -181,6 +182,8 @@ export default function DashboardPage() {
           </p>
         </footer>
       </div>
+
+      <AlertsInterestWidget />
     </>
   );
 }
