@@ -11,9 +11,9 @@ export function deltaTone(delta: number): DeltaTone {
 }
 
 const toneStyles: Record<DeltaTone, string> = {
-  increase: "bg-red-500/10 text-red-300 ring-red-500/30",
-  decrease: "bg-emerald-500/10 text-emerald-300 ring-emerald-500/30",
-  unchanged: "bg-white/[0.04] text-gray-400 ring-white/10",
+  increase: "bg-death-tint text-death ring-death/30",
+  decrease: "bg-good-tint text-good ring-good/30",
+  unchanged: "bg-sunk text-ink-muted ring-rule-strong/60",
 };
 
 const toneIcon: Record<DeltaTone, React.ComponentType<{ className?: string }>> = {
@@ -48,13 +48,13 @@ export function BadgeDelta({
     <span
       data-slot="badge-delta"
       className={cn(
-        "inline-flex items-center gap-1 rounded-full px-1.5 py-0.5 text-[10px] font-medium tabular-nums ring-1 ring-inset",
+        "inline-flex items-center gap-1 rounded-full px-2 py-0.5 text-[0.8125rem] font-semibold tabular-nums ring-1 ring-inset",
         toneStyles[resolvedTone],
         className,
       )}
       {...props}
     >
-      <Icon className="size-2.5" aria-hidden />
+      <Icon className="size-3" aria-hidden />
       {label}
     </span>
   );

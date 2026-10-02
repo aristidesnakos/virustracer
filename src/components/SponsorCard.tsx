@@ -7,25 +7,26 @@ export default function SponsorCard() {
       href={MANGOOD_URL}
       target="_blank"
       rel="noopener noreferrer sponsored"
-      className="group shrink-0 block bg-amber-500/[0.06] border border-amber-400/15 rounded-xl px-4 py-3 hover:bg-amber-500/[0.1] hover:border-amber-400/25 transition-colors"
+      className="group block rounded-xl border border-rule-strong bg-suspected-tint px-5 py-4 transition-colors hover:border-ink-faint"
     >
-      <div className="flex items-center justify-between mb-1.5">
-        <span className="text-[10px] font-medium uppercase tracking-wider text-amber-200/50">
+      <div className="mb-2 flex items-center justify-between">
+        <span className="text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-ink-muted">
           Recommended
         </span>
-        <span className="text-[10px] font-semibold uppercase tracking-wider text-amber-300/90">
+        <span className="text-[0.8125rem] font-bold uppercase tracking-[0.08em] text-suspected-text">
           Mangood
         </span>
       </div>
-      <p className="text-xs font-medium text-white/85 leading-snug mb-1">
+      <p className="mb-1 font-journal text-base font-semibold leading-snug text-ink">
         Know what&rsquo;s actually in your products.
       </p>
-      <p className="text-[11px] text-gray-400 leading-relaxed">
-        Scan grooming &amp; supplement barcodes for endocrine disruptors, parabens, and underdosed formulas.
+      <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
+        Scan grooming &amp; supplement barcodes for endocrine disruptors, parabens, and underdosed
+        formulas.
       </p>
-      <div className="mt-2 text-[11px] text-amber-400/70 group-hover:text-amber-400 transition-colors">
-        Get the app on iOS →
-      </div>
+      <p className="mt-2 text-[0.9375rem] font-semibold text-suspected-text underline decoration-suspected-text/40 underline-offset-4 group-hover:decoration-suspected-text">
+        Get the app on iOS →<span className="sr-only"> (opens in a new tab)</span>
+      </p>
     </a>
   );
 }

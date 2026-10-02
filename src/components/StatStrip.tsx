@@ -1,4 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
 import { Metric } from "@/components/ui/metric";
 import { BadgeDelta } from "@/components/ui/badge-delta";
 import { SparkArea } from "@/components/ui/spark-area";
@@ -16,27 +15,31 @@ interface StatTile {
   accent: string;
   sparkColor: string;
   headline?: boolean;
+  cell: string;
 }
 
 const TILES: StatTile[] = [
   {
     label: "Deaths",
     field: "deaths",
-    accent: "text-red-400",
-    sparkColor: "#f87171",
+    accent: "text-death",
+    sparkColor: "var(--death)",
     headline: true,
+    cell: "col-span-2 lg:col-span-1",
   },
   {
     label: "Confirmed cases",
     field: "confirmed",
-    accent: "text-orange-300",
-    sparkColor: "#fb923c",
+    accent: "text-confirmed",
+    sparkColor: "var(--confirmed)",
+    cell: "",
   },
   {
     label: "Suspected",
     field: "suspected",
-    accent: "text-yellow-200",
-    sparkColor: "#facc15",
+    accent: "text-suspected-text",
+    sparkColor: "var(--suspected)",
+    cell: "",
   },
 ];
 
@@ -52,7 +55,10 @@ function caseFatality(timeline: readonly CaseDataPoint[]): string {
   return "—";
 }
 
-const LABEL_CLASS = "text-[10px] uppercase tracking-wider text-gray-500 font-medium";
+const LABEL_CLASS =
+  "text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-ink-muted";
+const NOTE_CLASS = "text-[0.8125rem] leading-snug text-ink-faint";
+const CELL_CLASS = "flex flex-col justify-between gap-2 bg-panel px-5 py-4";
 
 export default function StatStrip({
   timeline = casesTimeline,
@@ -62,103 +68,75 @@ export default function StatStrip({
   const asOf = timeline.length > 0 ? (latestDate(timeline) ?? undefined) : undefined;
 
   return (
-    <div
+    <section
       data-testid="stat-strip"
-      className="shrink-0 px-5 py-2.5 flex gap-2.5 overflow-x-auto"
+      aria-labelledby="figures-heading"
+      // The 1px gaps over a rule-coloured ground draw the dividing hairlines.
+      className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-rule bg-rule lg:grid-cols-[1.7fr_1.1fr_1fr_0.9fr_1.1fr_1.7fr]"
     >
+      <h2 id="figures-heading" className="sr-only">
+        Headline figures
+      </h2>
+
       {TILES.map((tile) => {
         const trend = computeTrend(timeline, tile.field, WINDOW_DAYS, asOf, {
           interpolateBaseline: true,
         });
         const hasSeries = trend.series.length > 0;
         return (
-          <Card
-            key={tile.label}
-            size="sm"
-            className={
-              tile.headline
-                ? "flex-[1.6] min-w-[240px] bg-red-500/[0.07] ring-red-500/30"
-                : "flex-1 min-w-[170px] bg-white/[0.03] ring-white/[0.06]"
-            }
-          >
-            <CardContent className="flex flex-col gap-0.5">
-              <div className="flex items-center justify-between gap-2">
-                <span
-                  className={
-                    tile.headline
-                      ? "text-xs uppercase tracking-wider text-red-300 font-semibold"
-                      : LABEL_CLASS
-                  }
-                >
-                  {tile.label}
-                </span>
-                {trend.series.length > 1 && (
-                  <BadgeDelta
-                    delta={trend.delta}
-                    format={(d) => (d === 0 ? "0" : `${d > 0 ? "+" : "−"}${fmt(Math.abs(d))}`)}
-                    aria-label={`${tile.label} change in last ${WINDOW_DAYS} days`}
-                  />
-                )}
-              </div>
-              <div className="flex items-end gap-3">
-                <Metric
-                  className={`${tile.accent} ${tile.headline ? "text-4xl leading-none" : "leading-tight"}`}
-                >
-                  {hasSeries ? fmt(trend.current) : "—"}
-                </Metric>
-                {tile.headline && (
-                  <div className="flex-1 min-w-0">
-                    <SparkArea
-                      data={trend.series}
-                      color={tile.sparkColor}
-                      height={34}
-                      ariaLabel={`${tile.label} sparkline`}
-                    />
-                  </div>
-                )}
-              </div>
-              {!tile.headline && (
-                <SparkArea
-                  data={trend.series}
-                  color={tile.sparkColor}
-                  height={22}
-                  ariaLabel={`${tile.label} sparkline`}
+          <div key={tile.label} data-slot="figure" className={`${CELL_CLASS} ${tile.cell}`}>
+            <div className="flex flex-wrap items-center justify-between gap-x-2 gap-y-1.5">
+              <span className={LABEL_CLASS}>{tile.label}</span>
+              {trend.series.length > 1 && (
+                <BadgeDelta
+                  delta={trend.delta}
+                  format={(d) => (d === 0 ? "0" : `${d > 0 ? "+" : "−"}${fmt(Math.abs(d))}`)}
+                  aria-label={`${tile.label} change in last ${WINDOW_DAYS} days`}
                 />
               )}
-            </CardContent>
-          </Card>
+            </div>
+            <Metric
+              className={`font-journal font-bold leading-none ${tile.accent} ${
+                tile.headline ? "text-[clamp(2.5rem,5vw,3.25rem)]" : "text-[2.25rem]"
+              }`}
+            >
+              {hasSeries ? fmt(trend.current) : "—"}
+            </Metric>
+            <SparkArea
+              data={trend.series}
+              color={tile.sparkColor}
+              height={tile.headline ? 36 : 28}
+              ariaLabel={`${tile.label} sparkline`}
+            />
+          </div>
         );
       })}
 
-      <Card size="sm" className="flex-1 min-w-[150px] bg-white/[0.03] ring-white/[0.06]">
-        <CardContent className="flex flex-col gap-0.5">
-          <span className={LABEL_CLASS}>Case fatality</span>
-          <Metric className="text-red-300">{caseFatality(timeline)}</Metric>
-          <span className="text-[10px] text-gray-600">deaths / confirmed</span>
-        </CardContent>
-      </Card>
+      <div data-slot="figure" className={CELL_CLASS}>
+        <span className={LABEL_CLASS}>Case fatality</span>
+        <Metric className="font-journal text-[2.25rem] font-bold leading-none text-death">
+          {caseFatality(timeline)}
+        </Metric>
+        <span className={NOTE_CLASS}>deaths / confirmed</span>
+      </div>
 
-      <Card size="sm" className="flex-1 min-w-[170px] bg-white/[0.03] ring-white/[0.06]">
-        <CardContent className="flex flex-col gap-0.5">
-          <span className={LABEL_CLASS}>Contacts followed up</span>
-          <Metric className="text-yellow-200">
-            {summary.contactsUnderFollowUp.toLocaleString("en-US")}
-          </Metric>
-          <span className="text-[10px] text-gray-600">under follow-up</span>
-        </CardContent>
-      </Card>
+      <div data-slot="figure" className={CELL_CLASS}>
+        <span className={LABEL_CLASS}>Contacts followed up</span>
+        <Metric className="font-journal text-[2.25rem] font-bold leading-none text-ink">
+          {summary.contactsUnderFollowUp.toLocaleString("en-US")}
+        </Metric>
+        <span className={NOTE_CLASS}>under follow-up</span>
+      </div>
 
-      <Card size="sm" className="flex-[1.4] min-w-[240px] bg-white/[0.03] ring-white/[0.06]">
-        <CardContent className="flex flex-col gap-0.5">
-          <span className={LABEL_CLASS}>Spread</span>
-          <div className="text-sm font-semibold text-blue-300 leading-tight">
-            {summary.spreadStatus}
-          </div>
-          <span className="text-[10px] text-gray-600">
-            {`${summary.provincesAffected} provinces · ${summary.healthZonesAffected} health zones · ${summary.countriesAffected} countries`}
-          </span>
-        </CardContent>
-      </Card>
-    </div>
+      <div data-slot="figure" className={`${CELL_CLASS} col-span-2 lg:col-span-1`}>
+        <span className={LABEL_CLASS}>Spread</span>
+        <div className="font-journal text-xl font-semibold leading-tight text-accent">
+          {summary.spreadStatus}
+        </div>
+        <span className={NOTE_CLASS}>
+          {`${summary.provincesAffected} provinces · ${summary.healthZonesAffected} health zones · ${summary.countriesAffected} countries`}
+        </span>
+      </div>
+    </section>
   );
 }
