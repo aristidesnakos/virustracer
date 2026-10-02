@@ -64,6 +64,7 @@ function decodeHtmlEntities(str) {
   do {
     prev = s;
     s = s
+      .replace(/&nbsp;/g, " ")
       .replace(/&amp;/g, "&")
       .replace(/&lt;/g, "<")
       .replace(/&gt;/g, ">")
@@ -235,7 +236,8 @@ async function main() {
         apiKey,
         defaultHeaders: {
           "HTTP-Referer": "https://github.com/aristidesnakos/virustracer",
-          "X-Title": "virustracer — Ebola Outbreak Tracker",
+          // HTTP headers must be ASCII (an em dash here made every OpenRouter call fail).
+          "X-Title": "virustracer - Ebola Outbreak Tracker",
         },
       })
     : null;

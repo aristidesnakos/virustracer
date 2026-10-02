@@ -9,7 +9,6 @@ import {
   YAxis,
   CartesianGrid,
   Tooltip,
-  Legend,
   ReferenceLine,
   type TooltipContentProps,
 } from "recharts";
@@ -47,7 +46,7 @@ function makeTooltip(byDate: Map<string, CaseDataPoint>) {
     const entry = byDate.get(row.date);
     const items = payload.filter((p) => typeof p.value === "number");
     return (
-      <div className="bg-gray-900 border border-white/10 rounded-lg px-3 py-2.5 text-xs shadow-xl max-w-[260px]">
+      <div className="bg-gray-900 border border-white/10 rounded-lg px-3 py-2.5 text-xs shadow-xl max-w-[240px] pointer-events-none">
         <div className="font-semibold text-white mb-1.5">{fmtDay(row.t)}</div>
         {items.map((p) => (
           <div key={String(p.name)} className="flex items-center gap-2 mb-0.5">
@@ -62,16 +61,28 @@ function makeTooltip(byDate: Map<string, CaseDataPoint>) {
           </div>
         ))}
         {entry?.note && (
-          <div className="mt-2 pt-2 border-t border-white/10 text-gray-400 leading-snug">
+          <div className="mt-2 pt-2 border-t border-white/10 text-gray-400 leading-snug line-clamp-3">
             {entry.note}
           </div>
         )}
         {entry?.source && (
-          <div className="mt-1 text-gray-500 italic">Source: {entry.source}</div>
+          <div className="mt-1 text-gray-500 italic line-clamp-2">Source: {entry.source}</div>
         )}
       </div>
     );
   };
+}
+
+function LegendKey({ color, label, dashed }: { color: string; label: string; dashed?: boolean }) {
+  return (
+    <li className="flex items-center gap-1.5">
+      <span
+        className="w-3.5 h-0 border-t-2"
+        style={{ borderColor: color, borderStyle: dashed ? "dashed" : "solid" }}
+      />
+      {label}
+    </li>
+  );
 }
 
 export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) {
@@ -103,15 +114,19 @@ export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) 
 
   return (
     <div className="w-full h-full flex flex-col">
-      <div className="flex items-center justify-between mb-3">
+      <div className="flex items-center justify-between gap-3 mb-2">
         <h2 className="text-sm font-semibold text-white/90 uppercase tracking-wider">
           Cumulative deaths &amp; cases
         </h2>
-        <span className="text-xs text-gray-500">WHO · INSP DRC · daily auto-tracking</span>
+        <ul className="flex items-center gap-3 text-[11px] text-gray-400" aria-label="Chart legend">
+          <LegendKey color="#ef4444" label="Deaths" />
+          <LegendKey color="#f97316" label="Confirmed" />
+          {hasSuspected && <LegendKey color="#facc15" label="Suspected" dashed />}
+        </ul>
       </div>
       <div className="flex-1 min-h-0">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 4, right: 12, left: -8, bottom: 0 }}>
+          <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="rgba(255,255,255,0.06)" />
             <XAxis
               dataKey="t"
@@ -130,11 +145,15 @@ export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) 
               tickLine={false}
               allowDecimals={false}
               tickFormatter={fmtNum}
-              width={48}
+              width={54}
             />
-            <Tooltip content={tooltip} />
-            <Legend
-              wrapperStyle={{ fontSize: "11px", color: "#9ca3af", paddingTop: "8px" }}
+            <Tooltip
+              content={tooltip}
+              isAnimationActive={false}
+              cursor={{ stroke: "rgba(255,255,255,0.25)", strokeDasharray: "3 3" }}
+              offset={14}
+              allowEscapeViewBox={{ x: false, y: true }}
+              wrapperStyle={{ zIndex: 50, pointerEvents: "none" }}
             />
             <ReferenceLine
               x={PHEIC_T}
@@ -144,7 +163,9 @@ export default function CasesChart({ timeline }: { timeline: CaseDataPoint[] }) 
                 value: "WHO PHEIC",
                 fill: "#6b7280",
                 fontSize: 10,
-                position: "insideTopRight",
+                position: "insideTopLeft",
+                dx: 4,
+                dy: 2,
               }}
             />
             <Line

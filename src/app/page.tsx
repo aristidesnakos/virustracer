@@ -99,7 +99,11 @@ export default function DashboardPage() {
 
         {/* Right column: feed + sponsor (xl only, collapses on lg) */}
         <div className="hidden xl:flex flex-col min-h-0 gap-3">
-          <div className="flex-1 min-h-0 bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden">
+          <div
+            className={`bg-gray-900/40 border border-white/[0.07] rounded-xl p-4 overflow-hidden ${
+              liveData.recentItems.length > 0 ? "flex-1 min-h-0" : "shrink-0"
+            }`}
+          >
             <FeedUpdates
               items={liveData.recentItems}
               lastFetched={liveData.lastFetched}

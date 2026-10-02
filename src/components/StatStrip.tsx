@@ -64,7 +64,7 @@ export default function StatStrip({
   return (
     <div
       data-testid="stat-strip"
-      className="shrink-0 px-5 py-3 flex gap-3 overflow-x-auto"
+      className="shrink-0 px-5 py-2.5 flex gap-2.5 overflow-x-auto"
     >
       {TILES.map((tile) => {
         const trend = computeTrend(timeline, tile.field, WINDOW_DAYS, asOf, {
@@ -81,7 +81,7 @@ export default function StatStrip({
                 : "flex-1 min-w-[170px] bg-white/[0.03] ring-white/[0.06]"
             }
           >
-            <CardContent className="flex flex-col gap-1">
+            <CardContent className="flex flex-col gap-0.5">
               <div className="flex items-center justify-between gap-2">
                 <span
                   className={
@@ -100,24 +100,38 @@ export default function StatStrip({
                   />
                 )}
               </div>
-              <Metric
-                className={`${tile.accent} ${tile.headline ? "text-5xl leading-none py-1" : ""}`}
-              >
-                {hasSeries ? fmt(trend.current) : "—"}
-              </Metric>
-              <SparkArea
-                data={trend.series}
-                color={tile.sparkColor}
-                height={tile.headline ? 44 : 36}
-                ariaLabel={`${tile.label} sparkline`}
-              />
+              <div className="flex items-end gap-3">
+                <Metric
+                  className={`${tile.accent} ${tile.headline ? "text-4xl leading-none" : "leading-tight"}`}
+                >
+                  {hasSeries ? fmt(trend.current) : "—"}
+                </Metric>
+                {tile.headline && (
+                  <div className="flex-1 min-w-0">
+                    <SparkArea
+                      data={trend.series}
+                      color={tile.sparkColor}
+                      height={34}
+                      ariaLabel={`${tile.label} sparkline`}
+                    />
+                  </div>
+                )}
+              </div>
+              {!tile.headline && (
+                <SparkArea
+                  data={trend.series}
+                  color={tile.sparkColor}
+                  height={22}
+                  ariaLabel={`${tile.label} sparkline`}
+                />
+              )}
             </CardContent>
           </Card>
         );
       })}
 
       <Card size="sm" className="flex-1 min-w-[150px] bg-white/[0.03] ring-white/[0.06]">
-        <CardContent className="flex flex-col gap-1">
+        <CardContent className="flex flex-col gap-0.5">
           <span className={LABEL_CLASS}>Case fatality</span>
           <Metric className="text-red-300">{caseFatality(timeline)}</Metric>
           <span className="text-[10px] text-gray-600">deaths / confirmed</span>
@@ -125,7 +139,7 @@ export default function StatStrip({
       </Card>
 
       <Card size="sm" className="flex-1 min-w-[170px] bg-white/[0.03] ring-white/[0.06]">
-        <CardContent className="flex flex-col gap-1">
+        <CardContent className="flex flex-col gap-0.5">
           <span className={LABEL_CLASS}>Contacts followed up</span>
           <Metric className="text-yellow-200">
             {summary.contactsUnderFollowUp.toLocaleString("en-US")}
@@ -135,7 +149,7 @@ export default function StatStrip({
       </Card>
 
       <Card size="sm" className="flex-[1.4] min-w-[240px] bg-white/[0.03] ring-white/[0.06]">
-        <CardContent className="flex flex-col gap-1">
+        <CardContent className="flex flex-col gap-0.5">
           <span className={LABEL_CLASS}>Spread</span>
           <div className="text-sm font-semibold text-blue-300 leading-tight">
             {summary.spreadStatus}

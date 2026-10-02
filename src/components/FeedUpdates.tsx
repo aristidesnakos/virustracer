@@ -29,8 +29,13 @@ export default function FeedUpdates({
 }) {
   if (items.length === 0) {
     return (
-      <div className="flex items-center justify-center h-full text-gray-600 text-xs">
-        No feed items yet. Run the data pipeline to populate.
+      <div className="text-xs leading-relaxed">
+        <h2 className="text-sm font-semibold text-white/90 uppercase tracking-wider mb-1.5">
+          News &amp; Official Updates
+        </h2>
+        <p className="text-gray-500">
+          No articles yet. The feed refreshes automatically twice a day (08:00 and 20:00 UTC).
+        </p>
       </div>
     );
   }
@@ -50,7 +55,7 @@ export default function FeedUpdates({
     <div className="flex flex-col h-full">
       <div className="flex items-center justify-between mb-3 shrink-0">
         <h2 className="text-sm font-semibold text-white/90 uppercase tracking-wider">
-          Official Feed Updates
+          News &amp; Official Updates
         </h2>
         {fetchedLabel && (
           <span className="text-xs text-gray-600">Fetched {fetchedLabel}</span>
