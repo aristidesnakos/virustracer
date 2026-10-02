@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import CasesChart from "@/components/CasesChart";
 import MonitoringTable from "@/components/MonitoringTable";
@@ -13,6 +14,30 @@ import { getTollData } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { getCandidatesData } from "@/lib/candidates-data";
 import { computeMetrics } from "@/lib/metrics";
+import { describeFigures, latestFigures } from "@/lib/seo";
+import { DATA_LICENSE, SITE_NAME, absoluteUrl } from "@/lib/site";
+
+// The description carries the current toll, so it is built from the data at
+// build/request time rather than fixed in the layout.
+export function generateMetadata(): Metadata {
+  const toll = getTollData();
+  const figures = latestFigures(mergeTimeline(casesTimeline, toll.snapshots));
+  const description = describeFigures(figures, outbreak.description);
+  return {
+    description,
+    alternates: { canonical: "/" },
+    // Page-level openGraph/twitter replace the layout's wholesale, so repeat the shared fields.
+    openGraph: {
+      type: "website",
+      siteName: SITE_NAME,
+      locale: "en_US",
+      title: outbreak.seoTitle,
+      description,
+      url: "/",
+    },
+    twitter: { card: "summary_large_image", title: outbreak.seoTitle, description },
+  };
+}
 
 function shortDate(iso: string | undefined | null): string {
   if (!iso) return "—";
@@ -40,8 +65,68 @@ export default function DashboardPage() {
     { label: "News feed", value: shortDate(liveData.lastFetched) },
   ];
 
+  const first = toll.snapshots[0]?.date ?? timeline[0]?.date;
+  const last = latestDate(timeline);
+  // Dataset markup makes the figures eligible for Google Dataset Search; the
+  // distribution entries point at the same keyless endpoints /data documents.
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": absoluteUrl("/#website"),
+        url: absoluteUrl("/"),
+        name: SITE_NAME,
+        description: outbreak.description,
+        inLanguage: "en",
+      },
+      {
+        "@type": "WebPage",
+        "@id": absoluteUrl("/#webpage"),
+        url: absoluteUrl("/"),
+        name: outbreak.seoTitle,
+        isPartOf: { "@id": absoluteUrl("/#website") },
+        about: { "@id": absoluteUrl("/#dataset") },
+        inLanguage: "en",
+        ...(last ? { dateModified: last } : {}),
+      },
+      {
+        "@type": "Dataset",
+        "@id": absoluteUrl("/#dataset"),
+        name: "2026 Bundibugyo Ebola outbreak: daily cumulative cases and deaths",
+        description:
+          "Daily cumulative confirmed cases, suspected cases, deaths and recoveries for the 2026 Ebola outbreak in the DR Congo and Uganda, each tied to the source revision it was read from.",
+        url: absoluteUrl("/data"),
+        keywords: [...outbreak.keywords],
+        license: DATA_LICENSE,
+        isAccessibleForFree: true,
+        creator: { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") },
+        isBasedOn: "https://en.wikipedia.org/wiki/2026_Ebola_epidemic",
+        spatialCoverage: ["Democratic Republic of the Congo", "Uganda"],
+        ...(first && last ? { temporalCoverage: `${first}/${last}`, dateModified: last } : {}),
+        distribution: [
+          {
+            "@type": "DataDownload",
+            encodingFormat: "application/json",
+            contentUrl: absoluteUrl("/api/v1/toll"),
+          },
+          {
+            "@type": "DataDownload",
+            encodingFormat: "text/csv",
+            contentUrl: absoluteUrl("/api/v1/toll?format=csv"),
+          },
+        ],
+      },
+    ],
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        // "<" is escaped so no field value can close the script element.
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
+      />
       <a href="#main" className="skip-link">
         Skip to main content
       </a>

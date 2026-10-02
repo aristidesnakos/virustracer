@@ -6,7 +6,19 @@ import { ASSUMPTIONS } from "@/lib/metrics";
 import { getTollData } from "@/lib/toll";
 
 export const metadata: Metadata = {
-  title: `Data & API · ${outbreak.title}`,
+  title: "Data & API",
+  alternates: { canonical: "/data" },
+  openGraph: {
+    type: "website",
+    url: "/data",
+    title: `Data & API · ${outbreak.title}`,
+    images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `Data & API · ${outbreak.title}`,
+    images: ["/opengraph-image"],
+  },
   description:
     "Free, keyless JSON and CSV access to the daily Ebola outbreak figures, with the source revision for every reading, plus how the growth and reproduction estimates are calculated.",
 };

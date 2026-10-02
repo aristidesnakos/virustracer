@@ -62,6 +62,18 @@ export interface CaseLocation {
 // Swap this block (and the data below) to point the dashboard at another outbreak.
 export const outbreak = {
   title: "Ebola Outbreak Tracker",
+  /** <title> for search results: the query words first, then the place. Keep it under ~60 characters. */
+  seoTitle: "Ebola Outbreak 2026: Death Toll, Cases & Map | DRC & Uganda",
+  keywords: [
+    "ebola outbreak 2026",
+    "ebola death toll",
+    "ebola cases",
+    "bundibugyo ebola",
+    "ebola DRC",
+    "ebola Uganda",
+    "ebola outbreak map",
+    "ebola tracker",
+  ],
   subtitle: "2026 DR Congo & Uganda · Bundibugyo virus · Unofficial surveillance dashboard",
   description:
     "Unofficial surveillance dashboard tracking the 2026 Bundibugyo Ebola outbreak in the Democratic Republic of the Congo and Uganda, with a continuously updated death toll. Data compiled from WHO, DRC's INSP, and news reports.",
