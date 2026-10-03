@@ -53,18 +53,30 @@ describe("OutbreakCard", () => {
     render(<OutbreakCard snapshot={snapshot()} />);
     expect(screen.getByTestId("trend-badge")).toHaveTextContent("Plateau");
     expect(screen.getByText(/in the 7 days to 2 Oct/)).toHaveTextContent(
-      "404 new cases and 120 deaths in the 7 days to 2 Oct (−3% vs the week before)",
+      "404 new cases and 120 deaths in the 7 days to 2 Oct (cases −3% vs the week before)",
     );
     expect(screen.getByRole("img", { name: /New confirmed cases per week, 2 weeks to 2 Oct/ })).toBeInTheDocument();
   });
 
   it("links the source revision and says when it was checked", () => {
     render(<OutbreakCard snapshot={snapshot()} />);
-    expect(screen.getByRole("link", { name: "Wikipedia infobox (cites WHO)" })).toHaveAttribute(
-      "href",
-      "https://en.wikipedia.org/w/index.php?oldid=1",
-    );
+    const link = screen.getByRole("link", { name: "Wikipedia infobox" });
+    expect(link).toHaveAttribute("href", "https://en.wikipedia.org/w/index.php?oldid=1");
+    // Who the source cites is methodology detail: kept out of the card, available on hover.
+    expect(link).toHaveAttribute("title", "Wikipedia infobox (cites WHO)");
     expect(screen.getByText(/checked 3 Oct 2026/)).toBeInTheDocument();
+  });
+
+  it("puts the dates and the source on separate lines", () => {
+    render(<OutbreakCard snapshot={snapshot()} />);
+    expect(screen.getByText(/As of 27 Sept 2026/)).toHaveTextContent("As of 27 Sept 2026 · checked 3 Oct 2026");
+    expect(screen.getByText(/^Source:/)).toHaveTextContent("Source: Wikipedia infobox");
+  });
+
+  it("leaves the visible kicker to the places and gives the status to screen readers only", () => {
+    render(<OutbreakCard snapshot={snapshot()} />);
+    expect(screen.getByTestId("outbreak-status")).toHaveClass("sr-only");
+    expect(screen.getByTestId("outbreak-status").parentElement).toHaveTextContent(outbreak.places);
   });
 
   it("shows a curated outbreak's last verified date", () => {
@@ -75,7 +87,8 @@ describe("OutbreakCard", () => {
         })}
       />,
     );
-    expect(screen.getByText(/Curated by hand · last verified 30 Sept 2026/)).toBeInTheDocument();
+    expect(screen.getByText(/last verified 30 Sept 2026/)).toBeInTheDocument();
+    expect(screen.getByText(/^Source: Curated by hand/)).toBeInTheDocument();
   });
 
   it("links to the outbreak dashboard and the data page", () => {

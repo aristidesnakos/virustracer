@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_P } from "@/components/StaticPage";
+import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_P, ProseTable } from "@/components/StaticPage";
 import { CORRECTIONS_URL, REPO_URL } from "@/lib/methodology";
-import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, SITE_TAGLINE, absoluteUrl } from "@/lib/site";
+import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, absoluteUrl } from "@/lib/site";
 
 const OWNER = "Ari Nakos";
 
@@ -51,7 +51,11 @@ export default function AboutPage() {
         // "<" is escaped so no field value can close the script element.
         dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd).replace(/</g, "\\u003c") }}
       />
-      <StaticPage title={`About ${SITE_NAME}`} intro={<p>{SITE_TAGLINE}</p>}>
+      <StaticPage title={`About ${SITE_NAME}`} intro={
+          <p>
+            Who runs {SITE_NAME}, where its data comes from, how to report an error and how to reuse the figures.
+          </p>
+        }>
         <section aria-labelledby="who" className="space-y-3">
           <h2 id="who" className={PROSE_H2}>
             Who runs it
@@ -68,21 +72,27 @@ export default function AboutPage() {
           <h2 id="data" className={PROSE_H2}>
             Where the data comes from
           </h2>
-          <ul className={`list-disc space-y-1.5 pl-5 ${PROSE_P}`}>
-            <li>
-              <strong className="font-semibold text-ink">Headline totals</strong> are read twice a day from each
-              outbreak&rsquo;s Wikipedia infobox, which cites the health ministries and WHO. Every reading links to
-              the exact revision it came from.
-            </li>
-            <li>
-              <strong className="font-semibold text-ink">Milestones, country tables and summaries</strong> are
-              entered by hand from official situation reports, each with its source.
-            </li>
-            <li>
-              <strong className="font-semibold text-ink">News items</strong> come from WHO and news feeds. Where a
-              summary is written automatically, it is a pointer to the original article, not a finding of ours.
-            </li>
-          </ul>
+          <ProseTable
+            caption="The three layers of data on the site and where each comes from"
+            head={["Layer", "Entered", "Source"]}
+            rows={[
+              [
+                "Headline totals",
+                "Automatically, twice a day",
+                "Each outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO. Every reading links to the exact revision it came from.",
+              ],
+              [
+                "Milestones, country tables and summaries",
+                "By hand",
+                "Official situation reports, each with its source.",
+              ],
+              [
+                "News items",
+                "Automatically, from feeds",
+                "WHO and news feeds. Where a summary is written automatically, it is a pointer to the original article, not a finding of ours.",
+              ],
+            ]}
+          />
           <p className={PROSE_P}>
             How each layer is checked, how reporting lag is handled and how outbreaks are ranked is on the{" "}
             <Link href="/methodology" className={PROSE_LINK}>

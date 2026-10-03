@@ -58,11 +58,27 @@ describe("/methodology", () => {
   it("publishes the ranking rule with the status groups in the order the home page uses", () => {
     render(<MethodologyPage />);
     const section = screen.getByRole("heading", { name: "How the home page orders outbreaks" }).parentElement!;
-    const text = section.textContent!;
-    const positions = STATUS_ORDER.map((s) => text.indexOf(`${STATUS_HEADING[s]}:`));
-    expect(positions.every((p) => p >= 0)).toBe(true);
-    expect([...positions].sort((a, b) => a - b)).toEqual(positions);
-    expect(text).toMatch(/most new deaths/);
+    const rows = within(section.querySelector("table")!).getAllByRole("row").slice(1);
+    expect(rows).toHaveLength(STATUS_ORDER.length);
+    STATUS_ORDER.forEach((s, i) => expect(rows[i]).toHaveTextContent(STATUS_HEADING[s]));
+    expect(section.textContent).toMatch(/most new deaths/i);
+  });
+
+  it("lists every section in its contents and each link has a target on the page", () => {
+    const { container } = render(<MethodologyPage />);
+    const nav = screen.getByRole("navigation", { name: "On this page" });
+    const links = within(nav).getAllByRole("link");
+    expect(links.length).toBeGreaterThanOrEqual(6);
+    for (const a of links) {
+      expect(container.querySelector(a.getAttribute("href")!)).toBeInTheDocument();
+    }
+  });
+
+  it("shows every trend badge state the cards can show", () => {
+    render(<MethodologyPage />);
+    const table = screen.getByRole("table", { name: /trend badge states/i });
+    const labels = within(table).getAllByTestId("trend-badge").map((b) => b.textContent);
+    expect(labels).toEqual(["↗Growing", "↘Declining", "→Plateau", "·Unclear", "·Not enough data"]);
   });
 
   it("has its own canonical and repeats the shared Open Graph fields", () => {
@@ -76,6 +92,11 @@ describe("/about", () => {
     render(<AboutPage />);
     expect(screen.getByText(/run by Ari Nakos/)).toHaveTextContent(/not an official public health resource/);
     expect(screen.getByRole("link", { name: "open an issue on GitHub" })).toHaveAttribute("href", CORRECTIONS_URL);
+  });
+
+  it("keeps a space after the bold layer names in the data table", () => {
+    const { container } = render(<AboutPage />);
+    expect(container.innerHTML).not.toMatch(/<\/strong>[A-Za-z]/);
   });
 
   it("has its own canonical and repeats the shared Open Graph fields", () => {

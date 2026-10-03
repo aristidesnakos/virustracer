@@ -124,8 +124,7 @@ export default function HomePage() {
                 Outbreaks we are tracking
               </h2>
               <p className="mt-1 max-w-[46rem] text-[0.9375rem] text-ink-muted">
-                Grouped by status, then ordered by new deaths in the last 7 days. Numbers from
-                different outbreaks are counted differently, so compare trends, not totals.{" "}
+                Grouped by status, then ordered by new deaths in the last 7 days.{" "}
                 <Link
                   href="/methodology#ranking"
                   className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
@@ -143,7 +142,7 @@ export default function HomePage() {
                 >
                   <h3
                     id={`status-${group.status}`}
-                    className="text-[0.8125rem] font-semibold uppercase tracking-[0.1em] text-ink-faint"
+                    className="border-b border-rule pb-1.5 text-[0.8125rem] font-semibold uppercase tracking-[0.1em] text-ink-muted"
                   >
                     {group.heading}{" "}
                     <span className="tabular-nums font-normal">({group.items.length})</span>
@@ -152,19 +151,26 @@ export default function HomePage() {
                     {group.items.map((snapshot) => (
                       <li
                         key={snapshot.outbreak.slug}
-                        className="rise"
+                        className={`rise ${group.items.length === 1 ? "md:col-span-2" : ""}`}
                         style={{ "--i": position.get(snapshot.outbreak.slug) } as React.CSSProperties}
                       >
-                        <OutbreakCard
-                          snapshot={snapshot}
-                          headingId={`outbreak-${snapshot.outbreak.slug}`}
-                          headingLevel={4}
-                        />
+                        <DevFeedback name="Home.OutbreakCard">
+                          <OutbreakCard
+                            snapshot={snapshot}
+                            headingId={`outbreak-${snapshot.outbreak.slug}`}
+                            headingLevel={4}
+                            wide={group.items.length === 1}
+                          />
+                        </DevFeedback>
                       </li>
                     ))}
                   </ul>
                 </section>
               ))}
+
+              <p className="mt-6 max-w-[46rem] text-[0.8125rem] text-ink-muted">
+                Numbers from different outbreaks are counted differently, so compare trends, not totals.
+              </p>
             </section>
           </DevFeedback>
         </main>

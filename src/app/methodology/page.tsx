@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_P } from "@/components/StaticPage";
+import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P, ProseTable } from "@/components/StaticPage";
+import TrendBadge from "@/components/TrendBadge";
 import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
 import { ASSUMPTIONS } from "@/lib/metrics";
 import { SANITY_CHECKS, UPDATE_TIMES_UTC } from "@/lib/methodology";
@@ -40,19 +41,42 @@ const STATUS_MEANING = {
 
 const { windowDays, maxReportingLagDays, minReadingsInTwoWeeks } = ASSUMPTIONS;
 
+/** In-page contents: short labels for the h2 sections below, in page order. */
+const CONTENTS = [
+  ["sources", "Sources"],
+  ["checks", "Checks"],
+  ["lag", "Reporting lag and trend"],
+  ["ranking", "Ranking"],
+  ["comparing", "Comparing outbreaks"],
+  ["not", "What we do not do"],
+] as const;
+
 export default function MethodologyPage() {
   return (
     <StaticPage
       title="Methodology"
       intro={
-        <p>
-          How the figures on {SITE_NAME} are gathered, checked and summarised, how the home page orders
-          outbreaks, and what the site deliberately does not do. The formulas behind each indicator are on the{" "}
-          <Link href="/data#method" className={PROSE_LINK}>
-            Data &amp; API
-          </Link>{" "}
-          page.
-        </p>
+        <>
+          <p>
+            How the figures on {SITE_NAME} are gathered, checked and summarised, how the home page orders
+            outbreaks, and what the site deliberately does not do. The formulas behind each indicator are on the{" "}
+            <Link href="/data#method" className={PROSE_LINK}>
+              Data &amp; API
+            </Link>{" "}
+            page.
+          </p>
+          <nav aria-label="On this page" className="mt-4">
+            <ul className="flex flex-wrap gap-x-5 gap-y-1 text-[0.9375rem]">
+              {CONTENTS.map(([id, label]) => (
+                <li key={id}>
+                  <a href={`#${id}`} className={PROSE_LINK}>
+                    {label}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+        </>
       }
     >
       <section aria-labelledby="sources" className="space-y-3">
@@ -60,30 +84,40 @@ export default function MethodologyPage() {
           Where the figures come from
         </h2>
         <p className={PROSE_P}>Each outbreak has one of two kinds of source, shown on its card.</p>
-        <dl className="space-y-4 text-[0.9375rem] leading-relaxed">
-          <div>
-            <dt className="font-semibold text-ink">Read automatically</dt>
-            <dd className="text-ink-muted">
-              A script reads the outbreak&rsquo;s Wikipedia infobox twice a day ({UPDATE_TIMES_UTC.join(" and ")}{" "}
-              UTC). The infobox in turn cites the health ministries and WHO. Every reading is stored with a link to
-              the exact Wikipedia revision it came from, and the raw infobox text is archived with a SHA-256
-              fingerprint, so any number can be traced and re-checked later. The card says when the source was last
-              checked.
-            </dd>
-          </div>
-          <div>
-            <dt className="font-semibold text-ink">Curated by hand</dt>
-            <dd className="text-ink-muted">
-              Figures entered by us from official situation reports, each with its source. These do not update on
-              their own, so the card shows the date they were last verified instead of looking live.
-            </dd>
-          </div>
-        </dl>
-        <p className={PROSE_P}>
-          Hand-checked milestones from official reports are merged with the automatic readings for the headline
-          totals and the chart; on a day with both, the hand-checked figure wins. Country and province tables,
-          map bubbles and written summaries are always updated by hand. Countries that only the news has linked to
-          an outbreak are labelled <em>Unverified</em> until an official source confirms them.
+        <ProseTable
+          caption="Automatic and hand-curated sources compared"
+          head={["", "Read automatically", "Curated by hand"]}
+          rows={[
+            [
+              "Source",
+              "The outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO.",
+              "Official situation reports, each with its source.",
+            ],
+            [
+              "Covers",
+              "Headline totals and the chart.",
+              "Milestones, country and province tables, map bubbles and written summaries.",
+            ],
+            [
+              "Updated",
+              `Twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC).`,
+              "When we enter a report. It does not update on its own.",
+            ],
+            ["Card shows", "When the source was last checked.", "The date the figures were last verified."],
+            [
+              "How to trace it",
+              "Every reading links to the exact Wikipedia revision. The raw infobox text is archived with a SHA-256 fingerprint, so any number can be re-checked later.",
+              "The official report is linked on each entry.",
+            ],
+          ]}
+        />
+        <p className={PROSE_NOTE}>
+          Hand-checked milestones are merged with the automatic readings for the headline totals and the chart. On
+          a day with both, the hand-checked figure wins.
+        </p>
+        <p className={PROSE_NOTE}>
+          Countries that only the news has linked to an outbreak are labelled <em>Unverified</em> until an official
+          source confirms them.
         </p>
       </section>
 
@@ -91,19 +125,34 @@ export default function MethodologyPage() {
         <h2 id="checks" className={PROSE_H2}>
           Checks before a reading is kept
         </h2>
-        <ul className={`list-disc space-y-1.5 pl-5 ${PROSE_P}`}>
-          <li>Confirmed cases, deaths and recoveries never go down; a reading where they do is rejected.</li>
-          <li>
-            Confirmed cases or deaths may not jump by more than {SANITY_CHECKS.maxJumpPct}% over the previous
-            reading, unless that reading is more than {SANITY_CHECKS.stalePrevDays} days old.
-          </li>
-          <li>Deaths may not exceed confirmed cases.</li>
-          <li>
-            When older history is imported, edits that break these rules (typos, vandalism, edits in progress) are
-            dropped and the longest consistent run of readings is kept.
-          </li>
-        </ul>
-        <p className={PROSE_P}>A rejected reading is logged and the previous figures stay on the page.</p>
+        <ProseTable
+          caption="Sanity checks applied to each new reading"
+          head={["Check", "Rule", "Exception"]}
+          rows={[
+            ["No decreases", "Confirmed cases, deaths and recoveries never go down.", "None."],
+            [
+              "Largest jump",
+              <>
+                Confirmed cases or deaths may not rise by more than{" "}
+                <strong className="font-semibold text-ink">{SANITY_CHECKS.maxJumpPct}%</strong> over the previous
+                reading.
+              </>,
+              <>
+                Not applied when the previous reading is more than{" "}
+                <strong className="font-semibold text-ink">{SANITY_CHECKS.stalePrevDays} days</strong> old.
+              </>,
+            ],
+            ["Deaths and cases", "Deaths may not exceed confirmed cases.", "None."],
+          ]}
+        />
+        <p className={PROSE_NOTE}>
+          A reading that fails a check is rejected and logged, and the previous figures stay on the page.
+        </p>
+        <p className={PROSE_P}>
+          <strong className="font-semibold text-ink">Historical import.</strong> When older history is imported,
+          edits that break these rules (typos, vandalism, edits in progress) are dropped and the longest consistent
+          run of readings is kept.
+        </p>
       </section>
 
       <section aria-labelledby="lag" className="space-y-3">
@@ -113,18 +162,50 @@ export default function MethodologyPage() {
         <p className={PROSE_P}>
           Sources are updated in batches, so the most recent days often show no new cases simply because the
           report has not been entered yet. Measured naively, that looks like a sudden collapse. Every{" "}
-          {windowDays}-day count therefore ends on the latest day the total actually moved, but never more than{" "}
-          {maxReportingLagDays} days before the newest reading, so a real halt in cases still shows up. Days
-          without a reading are filled in a straight line between their neighbours.
+          {windowDays}-day count therefore ends on the latest day the total actually moved, but{" "}
+          <strong className="font-semibold text-ink">
+            never more than {maxReportingLagDays} days before the newest reading
+          </strong>
+          , so a real halt in cases still shows up. Days without a reading are filled in a straight line between
+          their neighbours.
         </p>
         <p className={PROSE_P}>
           The trend badge on each card compares new confirmed cases in the last {windowDays} days with the{" "}
-          {windowDays} days before. It says <em>Growing</em> or <em>Declining</em> only when the whole 95% range of
-          the growth rate is above or below zero; otherwise <em>Plateau</em>. With fewer than{" "}
-          {minReadingsInTwoWeeks} readings in the last two weeks, or less than {2 * windowDays} days of history, it
-          says <em>Not enough data</em> instead of guessing. The small bar chart beside it shows new confirmed cases
-          per {windowDays}-day period, newest on the right. Rates use only the automatic daily readings, never the
-          hand-entered milestones, so a change of source cannot create a false jump.
+          {windowDays} days before. It shows one of five states:
+        </p>
+        <ProseTable
+          caption="Trend badge states and when each is shown"
+          head={["Badge", "When it shows"]}
+          rows={[
+            [
+              <TrendBadge key="g" summary={{ verdict: "growing", label: "Growing" }} />,
+              "The whole 95% range of the growth rate is above zero.",
+            ],
+            [
+              <TrendBadge key="d" summary={{ verdict: "declining", label: "Declining" }} />,
+              "The whole 95% range of the growth rate is below zero.",
+            ],
+            [
+              <TrendBadge key="p" summary={{ verdict: "plateau", label: "Plateau" }} />,
+              "The 95% range of the growth rate includes zero.",
+            ],
+            [
+              <TrendBadge key="u" summary={{ verdict: "unknown", label: "Unclear" }} />,
+              `Too few new cases in the ${windowDays} days to judge a trend.`,
+            ],
+            [
+              <TrendBadge key="n" summary={{ verdict: "unknown", label: "Not enough data" }} />,
+              `Fewer than ${minReadingsInTwoWeeks} readings in the last two weeks, or less than ${2 * windowDays} days of history. Shown instead of guessing.`,
+            ],
+          ]}
+        />
+        <p className={PROSE_P}>
+          The small bar chart beside the badge shows new confirmed cases per {windowDays}-day period, newest on the
+          right.
+        </p>
+        <p className={PROSE_NOTE}>
+          Rates use only the automatic daily readings, never the hand-entered milestones, so a change of source
+          cannot create a false jump.
         </p>
       </section>
 
@@ -134,30 +215,32 @@ export default function MethodologyPage() {
         </h2>
         <p className={PROSE_P}>
           The home page is titled &ldquo;Outbreaks we are tracking&rdquo;, not &ldquo;the worst outbreaks in the
-          world&rdquo;: it covers only the outbreaks we follow. They are ordered by a fixed rule:
+          world&rdquo;: it covers only the outbreaks we follow. They are ordered by a fixed rule. First, by status
+          group, in this order:
         </p>
+        <ProseTable
+          caption="Status groups in the order the home page shows them"
+          head={["Status group", "Meaning"]}
+          rows={STATUS_ORDER.map((status, i) => [
+            <>
+              <span className="mr-2 text-ink-faint">{i + 1}.</span>
+              {STATUS_HEADING[status]}
+            </>,
+            STATUS_MEANING[status],
+          ])}
+        />
+        <p className={PROSE_P}>Then, within each group:</p>
         <ol className={`list-decimal space-y-1.5 pl-5 ${PROSE_P}`}>
           <li>
-            <strong className="font-semibold text-ink">Status group</strong>, in this order:
-            <dl className="mt-2 space-y-1.5">
-              {STATUS_ORDER.map((status) => (
-                <div key={status}>
-                  <dt className="inline font-semibold text-ink">{STATUS_HEADING[status]}: </dt>
-                  <dd className="inline">{STATUS_MEANING[status]}</dd>
-                </div>
-              ))}
-            </dl>
-          </li>
-          <li>
-            Within a group, <strong className="font-semibold text-ink">most new deaths</strong> in the last{" "}
-            {windowDays} days first.
+            <strong className="font-semibold text-ink">Most new deaths</strong> in the last {windowDays} days first.
           </li>
           <li>Ties are broken by most new confirmed cases in the same {windowDays} days, then alphabetically.</li>
           <li>Outbreaks without enough history for a {windowDays}-day count come last in their group.</li>
         </ol>
-        <p className={PROSE_P}>
-          There is no editorial pinning and no combined severity score. We will revisit the rule once more than
-          about six outbreaks are tracked, and any change will be dated on this page.
+        <p className={PROSE_P}>There is no editorial pinning and no combined severity score.</p>
+        <p className={PROSE_NOTE}>
+          We will revisit the rule once more than about six outbreaks are tracked, and any change will be dated on
+          this page.
         </p>
       </section>
 
