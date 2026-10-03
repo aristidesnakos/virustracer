@@ -85,6 +85,16 @@ export function selectOutbreaks(argv = process.argv.slice(2)) {
 }
 
 /**
+ * Outbreaks whose cited links the archiver keeps: the one named by `--outbreak=<slug>`,
+ * otherwise every registered outbreak, including finished ones. Unlike fetching,
+ * archiving matters most for past records, whose sources are the likeliest to rot.
+ * @param {string[]} [argv]
+ */
+export function selectArchivableOutbreaks(argv = process.argv.slice(2)) {
+  return argv.some((a) => a.startsWith("--outbreak=")) ? selectOutbreaks(argv) : [...OUTBREAKS];
+}
+
+/**
  * `selectOutbreaks`, keeping only entries that have `key` ("toll" or "feed").
  * An outbreak named with --outbreak that lacks it (e.g. a hand-curated record) is
  * skipped with a log line rather than an error, so the run still exits cleanly.

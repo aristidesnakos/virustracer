@@ -2,6 +2,7 @@
 /**
  * virustracer: source archiver (link-rot protection).
  * Collects every URL we cite for each outbreak in scripts/lib/outbreak-registry.mjs
+ * (all of them, past records included; --outbreak=<slug> limits it to one)
  * (data/outbreaks/<slug>/live.json items, data/outbreaks/<slug>/toll.json Wikipedia
  * permalinks, literal URLs in src/data/outbreaks/<slug>.ts) plus our own pages,
  * records title/date/source for each in the shared data/archive.json, and archives
@@ -26,7 +27,7 @@ import {
   runArchive,
   serializeLedger,
 } from "./lib/archive.mjs";
-import { USER_AGENT, dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
+import { USER_AGENT, dataFile, selectArchivableOutbreaks } from "./lib/outbreak-registry.mjs";
 import { SITE_PAGES, SITE_URL } from "./lib/site.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
@@ -81,7 +82,7 @@ async function main() {
   const budgetMs = numOption("budget_ms", DEFAULT_BUDGET_MS);
 
   const items = collectSources({
-    outbreaks: selectOutbreaks().map((o) => readOutbreakSources(o.slug)),
+    outbreaks: selectArchivableOutbreaks().map((o) => readOutbreakSources(o.slug)),
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL?.trim() || SITE_URL,
     sitePages: SITE_PAGES,
   });

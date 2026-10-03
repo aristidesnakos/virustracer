@@ -10,6 +10,7 @@ import { outbreakDataPath } from "@/lib/outbreak-data";
 import {
   OUTBREAKS,
   AUTOMATED_STATUSES,
+  selectArchivableOutbreaks,
   selectOutbreaks,
   selectOutbreaksWith,
   dataFile,
@@ -132,6 +133,9 @@ describe("script registry stays in step with the site registry", () => {
       DEFAULT_OUTBREAK_SLUG,
     ]);
     expect(() => selectOutbreaks(["--outbreak=nope"])).toThrow(/Unknown outbreak/);
+    // Link archiving covers finished records too, unless one outbreak is named.
+    expect(selectArchivableOutbreaks([]).map((o: { slug: string }) => o.slug)).toContain(HANTA);
+    expect(selectArchivableOutbreaks([`--outbreak=${HANTA}`]).map((o: { slug: string }) => o.slug)).toEqual([HANTA]);
   });
 
   it("skips a named outbreak that has no toll or feed instead of failing", () => {
