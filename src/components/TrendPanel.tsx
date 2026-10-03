@@ -1,18 +1,11 @@
 import Link from "next/link";
 import PanelHeader from "@/components/PanelHeader";
+import TrendBadge from "@/components/TrendBadge";
 import type { Metrics, WeeklyPeriod } from "@/lib/metrics";
-import { describeTrend, shortDay, type Verdict } from "@/lib/trend-summary";
+import { describeTrend, shortDay } from "@/lib/trend-summary";
 
 const fmt = (n: number) => Math.round(n).toLocaleString("en-US");
 const pct = (f: number | null) => (f === null ? "—" : `${Math.round(f * 100)}%`);
-
-// Colour is never the only cue: each verdict also has a word and an arrow.
-const VERDICT_STYLE: Record<Verdict, { badge: string; arrow: string }> = {
-  growing: { badge: "bg-death-tint text-death ring-death/30", arrow: "↗" },
-  declining: { badge: "bg-good-tint text-good ring-good/30", arrow: "↘" },
-  plateau: { badge: "bg-suspected-tint text-suspected-text ring-suspected/30", arrow: "→" },
-  unknown: { badge: "bg-sunk text-ink-muted ring-rule-strong/60", arrow: "·" },
-};
 
 function signedPct(changePct: number | null): string {
   if (changePct === null) return "—";
@@ -100,7 +93,6 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
 
 export default function TrendPanel({ metrics, headingId }: { metrics: Metrics; headingId: string }) {
   const summary = describeTrend(metrics);
-  const style = VERDICT_STYLE[summary.verdict];
   const ready = metrics.status === "ok" && metrics.incidence && metrics.windowEnd;
 
   return (
@@ -108,12 +100,7 @@ export default function TrendPanel({ metrics, headingId }: { metrics: Metrics; h
       <PanelHeader kicker="Fig. 3" id={headingId} title="Is it still growing?" />
 
       <div className="flex items-start gap-3">
-        <span
-          className={`mt-0.5 inline-flex shrink-0 items-center gap-1 rounded-full px-2.5 py-0.5 text-[0.8125rem] font-semibold ring-1 ring-inset ${style.badge}`}
-        >
-          <span aria-hidden>{style.arrow}</span>
-          {summary.label}
-        </span>
+        <TrendBadge summary={summary} className="mt-0.5" />
         <p className="text-base leading-snug text-ink">{summary.headline}</p>
       </div>
 

@@ -7,4 +7,4 @@ export const SITE_URL = "https://outbreakfiles.com";
 
 // Our own pages the archiver re-captures weekly, so the Internet Archive holds a
 // history of what the site said, not just of what it cites.
-export const SITE_PAGES = ["/", "/data", "/api/v1/toll"];
+export const SITE_PAGES = ["/", "/data", "/methodology", "/about", "/api/v1/toll"];

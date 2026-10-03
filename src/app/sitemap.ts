@@ -21,6 +21,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   return [
     { url: absoluteUrl("/"), lastModified: siteDate, changeFrequency: "daily", priority: 1 },
     { url: absoluteUrl("/data"), lastModified: siteDate, changeFrequency: "weekly", priority: 0.7 },
+    // Text pages change only when edited; no honest lastModified without a content date, so it is left out.
+    { url: absoluteUrl("/methodology"), changeFrequency: "monthly", priority: 0.5 },
+    { url: absoluteUrl("/about"), changeFrequency: "monthly", priority: 0.4 },
     ...outbreaks.map(({ outbreak, dataDate }) => ({
       url: absoluteUrl(outbreakPath(outbreak.slug)),
       lastModified: toDate(dataDate),

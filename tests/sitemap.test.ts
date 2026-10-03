@@ -21,6 +21,12 @@ describe("sitemap", () => {
     expect(byUrl.get(absoluteUrl("/data"))).toMatchObject({ priority: 0.7, changeFrequency: "weekly" });
   });
 
+  it("lists /methodology and /about without a made-up lastModified", () => {
+    expect(byUrl.get(absoluteUrl("/methodology"))).toMatchObject({ changeFrequency: "monthly", priority: 0.5 });
+    expect(byUrl.get(absoluteUrl("/about"))).toMatchObject({ changeFrequency: "monthly", priority: 0.4 });
+    expect(byUrl.get(absoluteUrl("/methodology"))!.lastModified).toBeUndefined();
+  });
+
   it("has exactly one entry per registered outbreak, prioritised by status", () => {
     const outbreakEntries = entries.filter((e) => e.url.includes("/outbreaks/"));
     expect(outbreakEntries).toHaveLength(listOutbreaks().length);

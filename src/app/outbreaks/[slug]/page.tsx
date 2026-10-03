@@ -5,6 +5,7 @@ import MonitoringTable from "@/components/MonitoringTable";
 import FeedUpdates from "@/components/FeedUpdates";
 import MapLoader from "@/components/MapLoader";
 import PanelHeader from "@/components/PanelHeader";
+import { FOOTER_LINKS } from "@/components/SiteFooter";
 import SponsorCard from "@/components/SponsorCard";
 import TrendPanel from "@/components/TrendPanel";
 import StatStrip from "@/components/StatStrip";
@@ -279,13 +280,18 @@ export default async function OutbreakPage({ params }: Props) {
             verify with official authorities.
           </p>
           <p className="text-[0.8125rem] tabular-nums text-ink-faint">
-            Source: {outbreak.summary.source} ·{" "}
-            <Link
-              href="/data"
-              className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
-            >
-              Data &amp; API
-            </Link>
+            Source: {outbreak.summary.source}
+            {FOOTER_LINKS.map((l) => (
+              <span key={l.href}>
+                {" · "}
+                <Link
+                  href={l.href}
+                  className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                >
+                  {l.label}
+                </Link>
+              </span>
+            ))}
           </p>
         </footer>
       </div>

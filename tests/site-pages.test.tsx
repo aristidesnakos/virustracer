@@ -1,0 +1,91 @@
+import { describe, expect, it } from "vitest";
+import { render, screen, within } from "@testing-library/react";
+import { MAX_JUMP_RATIO, STALE_PREV_DAYS } from "../scripts/lib/toll.mjs";
+import { SITE_PAGES } from "../scripts/lib/site.mjs";
+import HomePage, { generateMetadata as homeMetadata } from "@/app/page";
+import MethodologyPage, { metadata as methodologyMetadata } from "@/app/methodology/page";
+import AboutPage, { metadata as aboutMetadata } from "@/app/about/page";
+import { listOutbreaks } from "@/data/outbreaks";
+import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
+import { CORRECTIONS_URL, SANITY_CHECKS } from "@/lib/methodology";
+import { outbreakPath } from "@/lib/outbreak-paths";
+
+describe("home page", () => {
+  it("shows one card per registered outbreak under its status group", () => {
+    render(<HomePage />);
+    for (const o of listOutbreaks()) {
+      const group = screen.getByTestId(`status-group-${o.status}`);
+      expect(within(group).getByRole("heading", { level: 4, name: o.title })).toBeInTheDocument();
+    }
+    expect(screen.getAllByTestId("trend-badge")).toHaveLength(listOutbreaks().length);
+    expect(screen.getByRole("link", { name: "How we rank and count" })).toHaveAttribute(
+      "href",
+      "/methodology#ranking",
+    );
+  });
+
+  it("links the trust pages from the footer", () => {
+    render(<HomePage />);
+    const nav = screen.getByRole("navigation", { name: "Site" });
+    for (const href of ["/methodology", "/about", "/data"]) {
+      expect(within(nav).getAllByRole("link").some((a) => a.getAttribute("href") === href)).toBe(true);
+    }
+  });
+
+  it("lists the outbreaks in its structured data, in ranked order", () => {
+    const { container } = render(<HomePage />);
+    const ld = JSON.parse(container.querySelector('script[type="application/ld+json"]')!.textContent!);
+    const list = ld["@graph"].find((n: { "@type": string }) => n["@type"] === "CollectionPage").mainEntity;
+    expect(list.numberOfItems).toBe(listOutbreaks().length);
+    expect(list.itemListElement[0].url).toMatch(new RegExp(`${outbreakPath("")}`));
+  });
+
+  it("has its own canonical and a description built from the data", () => {
+    const m = homeMetadata();
+    expect(m.alternates?.canonical).toBe("/");
+    expect(m.description).toMatch(/^Live outbreak figures with sources\./);
+    expect((m.description as string).length).toBeLessThanOrEqual(160);
+    expect(m.openGraph).toMatchObject({ siteName: "Outbreak Files", type: "website", url: "/" });
+  });
+});
+
+describe("/methodology", () => {
+  it("quotes the same sanity-check limits the scripts enforce", () => {
+    expect(SANITY_CHECKS.maxJumpPct).toBe(MAX_JUMP_RATIO * 100);
+    expect(SANITY_CHECKS.stalePrevDays).toBe(STALE_PREV_DAYS);
+  });
+
+  it("publishes the ranking rule with the status groups in the order the home page uses", () => {
+    render(<MethodologyPage />);
+    const section = screen.getByRole("heading", { name: "How the home page orders outbreaks" }).parentElement!;
+    const text = section.textContent!;
+    const positions = STATUS_ORDER.map((s) => text.indexOf(`${STATUS_HEADING[s]}:`));
+    expect(positions.every((p) => p >= 0)).toBe(true);
+    expect([...positions].sort((a, b) => a - b)).toEqual(positions);
+    expect(text).toMatch(/most new deaths/);
+  });
+
+  it("has its own canonical and repeats the shared Open Graph fields", () => {
+    expect(methodologyMetadata.alternates?.canonical).toBe("/methodology");
+    expect(methodologyMetadata.openGraph).toMatchObject({ siteName: "Outbreak Files", type: "website" });
+  });
+});
+
+describe("/about", () => {
+  it("names who runs the site, says it is unofficial and links corrections", () => {
+    render(<AboutPage />);
+    expect(screen.getByText(/run by Ari Nakos/)).toHaveTextContent(/not an official public health resource/);
+    expect(screen.getByRole("link", { name: "open an issue on GitHub" })).toHaveAttribute("href", CORRECTIONS_URL);
+  });
+
+  it("has its own canonical and repeats the shared Open Graph fields", () => {
+    expect(aboutMetadata.alternates?.canonical).toBe("/about");
+    expect(aboutMetadata.openGraph).toMatchObject({ siteName: "Outbreak Files", type: "website" });
+  });
+});
+
+describe("archived site pages", () => {
+  it("include the new text pages", () => {
+    expect(SITE_PAGES).toEqual(expect.arrayContaining(["/methodology", "/about"]));
+  });
+});
