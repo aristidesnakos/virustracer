@@ -7,7 +7,7 @@ import type { DailyPoint } from "./metrics";
 export const API_ATTRIBUTION =
   "Ebola Outbreak Tracker (unofficial). Figures come from the Wikipedia article's infobox " +
   "(CC BY-SA 4.0), which cites INSP DRC and WHO; every reading links to the exact revision it was read from. " +
-  "Not an official public health resource.";
+  "Shared under CC BY-SA 4.0. Not an official public health resource.";
 
 /** Everything is read-only and public, so any origin may call it from the browser. */
 export const CORS_HEADERS: Record<string, string> = {

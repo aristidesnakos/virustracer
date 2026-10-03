@@ -1,5 +1,3 @@
-import { outbreak } from "@/data/outbreak";
-
 /**
  * Single source of truth for absolute URLs used in metadata, structured data,
  * the sitemap and robots.txt. Canonical, Open Graph and JSON-LD URLs must all
@@ -17,9 +15,14 @@ function resolveSiteUrl(): string {
 }
 
 export const SITE_URL = resolveSiteUrl();
-export const SITE_NAME = outbreak.title;
+/**
+ * The site's own name, kept separate from any outbreak so the registry can hold
+ * several. Placeholder: still the Ebola tracker's name until a brand is chosen.
+ */
+export const SITE_NAME = "Ebola Outbreak Tracker";
 
 export const absoluteUrl = (path = "/"): string => `${SITE_URL}${path === "/" ? "" : path}`;
 
-/** The Wikipedia infobox is the data source, and it is CC BY-SA 4.0. */
+/** The Wikipedia infobox is the data source (CC BY-SA 4.0), so the data is shared under the same licence. */
 export const DATA_LICENSE = "https://creativecommons.org/licenses/by-sa/4.0/";
+export const DATA_LICENSE_NAME = "CC BY-SA 4.0";

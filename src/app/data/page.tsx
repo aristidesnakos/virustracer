@@ -3,6 +3,7 @@ import Link from "next/link";
 import { outbreak } from "@/data/outbreak";
 import { API_ATTRIBUTION, MAX_LIMIT } from "@/lib/api";
 import { ASSUMPTIONS } from "@/lib/metrics";
+import { DATA_LICENSE, DATA_LICENSE_NAME } from "@/lib/site";
 import { getTollData } from "@/lib/toll";
 
 export const metadata: Metadata = {
@@ -78,8 +79,8 @@ export default function DataPage() {
             Data &amp; API
           </h1>
           <p className="mt-3 max-w-[40rem] text-base text-ink-muted">
-            The numbers on the dashboard are free to use. No account, no key, and any website can call them from the
-            browser. Every figure points back to the source revision it came from, so you can check it.
+            The numbers on the dashboard are free to use under {DATA_LICENSE_NAME}. No account, no key, and any website can
+            call them from the browser. Every figure points back to the source revision it came from, so you can check it.
           </p>
         </header>
 
@@ -230,7 +231,14 @@ console.log(growth.trend, rt.estimate);`}</pre>
                 Revisions that break the rule that totals never fall (typos, vandalism, edits in progress) are removed
                 when history is imported. Some days have no reading because the infobox could not be parsed.
               </li>
-              <li>Please credit &ldquo;{outbreak.title}&rdquo; and link the source revision when you republish figures.</li>
+              <li>
+                Licence:{" "}
+                <a href={DATA_LICENSE} className="underline underline-offset-2" rel="license noopener">
+                  {DATA_LICENSE_NAME}
+                </a>
+                . Credit &ldquo;{outbreak.title}&rdquo; and link the source revision when you republish figures. If you
+                adapt the data, share the result under the same licence.
+              </li>
             </ul>
           </section>
         </main>
