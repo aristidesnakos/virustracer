@@ -88,8 +88,9 @@ describe("home page", () => {
     expect(screen.getByTestId("outbreak-status")).toHaveTextContent("Declared over");
     expect(screen.getByText("12")).toBeInTheDocument();
     expect(screen.getByText("3")).toBeInTheDocument();
-    expect(screen.getByText(/As of 2 Jul 2026 · last verified 3 Oct 2026/)).toBeInTheDocument();
-    expect(screen.getByText("Outbreak over: these are the final figures.")).toBeInTheDocument();
+    expect(screen.getByText(/As of 2 Jul 2026/)).toBeInTheDocument();
+    expect(screen.getByText(/Last verified 3 Oct 2026/)).toBeInTheDocument();
+    expect(screen.getByTestId("final-state")).toHaveTextContent("Outbreak over");
     expect(screen.queryByText(/Not enough data|No readings yet/)).not.toBeInTheDocument();
   });
 });

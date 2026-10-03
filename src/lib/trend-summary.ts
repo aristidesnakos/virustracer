@@ -13,6 +13,31 @@ export interface TrendSummary {
   headline: string;
 }
 
+/**
+ * The plain-language result a home card leads with. The badge labels ("Growing", "Plateau", ...)
+ * stay for the dashboard; the headline below starts with the same words, so they cannot drift.
+ */
+export const TREND_STATEMENT = {
+  growing: "Cases are rising",
+  declining: "Cases are falling",
+  plateau: "No clear rise or fall",
+  unclear: "Too few new cases to judge a trend",
+  noData: "Not enough data for a trend yet",
+} as const;
+
+export function trendStatement(summary: Pick<TrendSummary, "verdict" | "label">): string {
+  switch (summary.verdict) {
+    case "growing":
+      return TREND_STATEMENT.growing;
+    case "declining":
+      return TREND_STATEMENT.declining;
+    case "plateau":
+      return TREND_STATEMENT.plateau;
+    default:
+      return summary.label === "Unclear" ? TREND_STATEMENT.unclear : TREND_STATEMENT.noData;
+  }
+}
+
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 
 /** "2026-10-01" -> "1 Oct" (UTC). */
@@ -45,16 +70,16 @@ export function describeTrend(metrics: Metrics): TrendSummary {
 
   switch (metrics.growth?.trend) {
     case "growing":
-      return { verdict: "growing", label: "Growing", headline: `Cases are rising: ${base}` };
+      return { verdict: "growing", label: "Growing", headline: `${TREND_STATEMENT.growing}: ${base}` };
     case "shrinking":
-      return { verdict: "declining", label: "Declining", headline: `Cases are falling: ${base}` };
+      return { verdict: "declining", label: "Declining", headline: `${TREND_STATEMENT.declining}: ${base}` };
     case "stable":
       return {
         verdict: "plateau",
         label: "Plateau",
-        headline: `No clear rise or fall: ${base}`,
+        headline: `${TREND_STATEMENT.plateau}: ${base}`,
       };
     default:
-      return { verdict: "unknown", label: "Unclear", headline: `Too few new cases to judge a trend: ${base}` };
+      return { verdict: "unknown", label: "Unclear", headline: `${TREND_STATEMENT.unclear}: ${base}` };
   }
 }

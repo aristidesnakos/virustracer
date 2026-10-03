@@ -1,11 +1,11 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P, ProseTable } from "@/components/StaticPage";
-import TrendBadge from "@/components/TrendBadge";
 import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
 import { ASSUMPTIONS } from "@/lib/metrics";
 import { SANITY_CHECKS, UPDATE_TIMES_UTC } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
+import { TREND_STATEMENT } from "@/lib/trend-summary";
 
 const description =
   "How Outbreak Files sources and checks its figures, handles reporting lag, measures 7-day trends and ranks outbreaks on the home page, and what it does not do.";
@@ -170,38 +170,27 @@ export default function MethodologyPage() {
           their neighbours.
         </p>
         <p className={PROSE_P}>
-          The trend badge on each card compares new confirmed cases in the last {windowDays} days with the{" "}
-          {windowDays} days before. It shows one of five states:
+          Each card leads with a plain-language result for the trend: it compares new confirmed cases in the last{" "}
+          {windowDays} days with the {windowDays} days before. There are five possible results:
         </p>
         <ProseTable
-          caption="Trend badge states and when each is shown"
-          head={["Badge", "When it shows"]}
+          caption="Trend results shown on a card and when each is shown"
+          head={["Result on the card", "When it shows"]}
           rows={[
+            [TREND_STATEMENT.growing, "The whole 95% range of the growth rate is above zero."],
+            [TREND_STATEMENT.declining, "The whole 95% range of the growth rate is below zero."],
+            [TREND_STATEMENT.plateau, "The 95% range of the growth rate includes zero."],
+            [TREND_STATEMENT.unclear, `Too few new cases in the ${windowDays} days to judge a trend.`],
             [
-              <TrendBadge key="g" summary={{ verdict: "growing", label: "Growing" }} />,
-              "The whole 95% range of the growth rate is above zero.",
-            ],
-            [
-              <TrendBadge key="d" summary={{ verdict: "declining", label: "Declining" }} />,
-              "The whole 95% range of the growth rate is below zero.",
-            ],
-            [
-              <TrendBadge key="p" summary={{ verdict: "plateau", label: "Plateau" }} />,
-              "The 95% range of the growth rate includes zero.",
-            ],
-            [
-              <TrendBadge key="u" summary={{ verdict: "unknown", label: "Unclear" }} />,
-              `Too few new cases in the ${windowDays} days to judge a trend.`,
-            ],
-            [
-              <TrendBadge key="n" summary={{ verdict: "unknown", label: "Not enough data" }} />,
+              TREND_STATEMENT.noData,
               `Fewer than ${minReadingsInTwoWeeks} readings in the last two weeks, or less than ${2 * windowDays} days of history. Shown instead of guessing.`,
             ],
           ]}
         />
         <p className={PROSE_P}>
-          The small bar chart beside the badge shows new confirmed cases per {windowDays}-day period, newest on the
-          right.
+          On an outbreak&rsquo;s dashboard the same five results appear as a badge: Growing, Declining, Plateau,
+          Unclear or Not enough data. The bar chart on each card shows new confirmed cases per {windowDays}-day
+          period, newest on the right, and the result and counts beneath it describe the newest bar.
         </p>
         <p className={PROSE_NOTE}>
           Rates use only the automatic daily readings, never the hand-entered milestones, so a change of source

@@ -47,5 +47,26 @@
     "resolved": true,
     "timestamp": "2026-10-03T12:08:44.443Z",
     "viewName": "About Outbreak Files.data"
+  },
+  {
+    "comment": "I don't see the purpose of that arrow and plateau pill. Like it doesn't really add any value there. If anything, like also like the bars on the right, they supposedly reflect the most recent data. Like they should take up more space. There's like empty space underneath also the text. And they should actually act almost like as a caption to like the bars. bars. Now, if there's a status of a plateau, because of mathematical like results, because like, you know, the reproductive numbers basically below a certain threshold, then I get that we should be reporting that in a clear manner, using it also the right visual hierarchy that communicates this. And maybe even as like a result, instead of just like as a pill. Think in a smart way, like a smart product designer.",
+    "id": "af3020d7-e21b-44cd-adcf-056c95c8f79e",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:36:13.755Z",
+    "viewName": "Home.OutbreakCard"
+  },
+  {
+    "comment": "I would like for also the footer here of this card to be better designed. We should definitely keep the source on the bottom. That makes sense. But the dates should probably be put on like the top right or at the very top here. And the dashboard and the data API should also be kept in the footer as well. And in actuality, when a month clicks on the card, there and so I was just saying open dashboard, we should just say dashboard for somebody to just click and like view more of the information pertaining to this particular outbreak we're tracking. and the Okay.",
+    "id": "7a05f18e-37d1-4bd0-8cd2-1d55740b6611",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:38:16.035Z",
+    "viewName": "Home.OutbreakCard"
+  },
+  {
+    "comment": "the text here: \"Outbreak over: these are the final figures. \"\n\nis not properly aligned vertically\n\nit should be centered and just summarized as \"Outbreak over\" in bold\n\ncan we establish a sound logic for when that text shows up AND can we ensure the appearance is aesthetically pleasing?",
+    "id": "586d21d5-6745-45fe-823c-9cfd946f4eb2",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:45:28.804Z",
+    "viewName": "Home.OutbreakCard"
   }
 ]
