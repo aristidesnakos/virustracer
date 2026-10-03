@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { getDefaultOutbreak } from "@/data/outbreaks";
-import { API_ATTRIBUTION, MAX_LIMIT } from "@/lib/api";
+import { MAX_LIMIT, attributionFor } from "@/lib/api";
 import { ASSUMPTIONS } from "@/lib/metrics";
+import { OUTBREAKS_API_PATH, legacyApiPath, outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
 import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
 import { getTollData } from "@/lib/toll";
 
@@ -26,34 +27,37 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
   },
   description:
-    "Free, keyless JSON and CSV access to the daily Ebola outbreak figures, with the source revision for every reading, plus how the growth and reproduction estimates are calculated.",
+    "Free, keyless JSON and CSV access to the daily outbreak figures for every outbreak tracked, with the source revision for every reading, plus how the growth and reproduction estimates are calculated.",
 };
 
-const ENDPOINTS = [
+const slugParam = "<slug>";
+
+// Per-outbreak endpoints, shown with a `<slug>` placeholder and a worked example for the default outbreak.
+const OUTBREAK_ENDPOINTS = [
   {
-    path: "/api/v1/toll",
+    path: outbreakApiPath(slugParam, "toll"),
     what: "One row per day of cumulative confirmed, suspected, deaths and recovered, each linked to the exact Wikipedia revision it was read from.",
     params: [
       ["from, to", "Inclusive date range, YYYY-MM-DD."],
       ["limit", `Keep only the most recent N rows (1–${MAX_LIMIT}).`],
       ["format", "json (default) or csv."],
     ],
-    example: "/api/v1/toll?from=2026-09-01&format=csv",
+    example: `${outbreakApiPath(outbreak.slug, "toll")}?from=2026-09-01&format=csv`,
   },
   {
-    path: "/api/v1/metrics",
+    path: outbreakApiPath(slugParam, "metrics"),
     what: "Derived indicators: new cases and deaths per 7 days, growth rate, doubling or halving time, reproduction number (Rt) and three fatality ratios, with their assumptions.",
     params: [
       ["include=daily", "Add the day-by-day series (new cases, 7-day average, interpolated flag)."],
       ["format=csv", "Return the daily series as CSV."],
     ],
-    example: "/api/v1/metrics?include=daily",
+    example: `${outbreakApiPath(outbreak.slug, "metrics")}?include=daily`,
   },
   {
-    path: "/api/v1/signals",
+    path: outbreakApiPath(slugParam, "signals"),
     what: "Countries the news has linked to the outbreak, when each was first mentioned, and, once officially confirmed, how far the news led.",
     params: [],
-    example: "/api/v1/signals",
+    example: outbreakApiPath(outbreak.slug, "signals"),
   },
 ] as const;
 
@@ -76,7 +80,7 @@ export default function DataPage() {
       <div className="mx-auto w-full max-w-[56rem] px-[clamp(1rem,3vw,2.5rem)] pb-16">
         <header className="pt-7 pb-5 border-b-4 border-double border-ink">
           <p className="mb-2 text-[0.8125rem] font-semibold uppercase tracking-[0.12em] text-ink-faint">
-            <Link href="/" className={link}>
+            <Link href={outbreakPath(outbreak.slug)} className={link}>
               ← {outbreak.title}
             </Link>
           </p>
@@ -94,7 +98,25 @@ export default function DataPage() {
             <h2 id="endpoints" className={h2}>
               Endpoints
             </h2>
-            {ENDPOINTS.map((e) => (
+            <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
+              Every outbreak has its own set of endpoints, addressed by its slug. Start from the list to find them.
+              The examples below use the default outbreak, <span className="font-mono">{outbreak.slug}</span>.
+            </p>
+
+            <div className="panel">
+              <h3 className="font-mono text-base font-semibold text-ink">GET {OUTBREAKS_API_PATH}</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-muted">
+                Every outbreak tracked: slug, title, disease, status, places, source, the latest confirmed cases and
+                deaths with their date, and links to its page and its endpoints.
+              </p>
+              <p className="mt-3 text-[0.9375rem]">
+                <a href={OUTBREAKS_API_PATH} className={link}>
+                  Try it: <span className="font-mono">{OUTBREAKS_API_PATH}</span>
+                </a>
+              </p>
+            </div>
+
+            {OUTBREAK_ENDPOINTS.map((e) => (
               <div key={e.path} className="panel">
                 <h3 className="font-mono text-base font-semibold text-ink">GET {e.path}</h3>
                 <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-muted">{e.what}</p>
@@ -116,6 +138,23 @@ export default function DataPage() {
               </div>
             ))}
 
+            <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
+              An unknown slug returns <span className="font-mono">404</span> with a JSON{" "}
+              <span className="font-mono">{"{ \"error\": ... }"}</span> body, like every other error.
+            </p>
+
+            <div className="panel">
+              <h3 className="text-base font-semibold text-ink">Un-prefixed endpoints are permanent aliases</h3>
+              <p className="mt-2 text-[0.9375rem] leading-relaxed text-ink-muted">
+                <span className="font-mono">{legacyApiPath("toll")}</span>,{" "}
+                <span className="font-mono">{legacyApiPath("metrics")}</span> and{" "}
+                <span className="font-mono">{legacyApiPath("signals")}</span> always return the default outbreak
+                (currently <span className="font-mono">{outbreak.slug}</span>), with the same parameters and the same
+                response as its per-outbreak endpoints. They will keep working, so existing scripts need no change.
+                New integrations should use the per-outbreak paths.
+              </p>
+            </div>
+
             {latest && (
               <div>
                 <h3 className="mb-2 text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-ink-muted">
@@ -129,7 +168,7 @@ export default function DataPage() {
               <h3 className="mb-2 text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-ink-muted">
                 From a browser or script
               </h3>
-              <pre className={code}>{`const res = await fetch("/api/v1/metrics");   // or the full https:// address
+              <pre className={code}>{`const res = await fetch("${outbreakApiPath(outbreak.slug, "metrics")}");   // or the full https:// address
 const { growth, rt, incidence } = await res.json();
 console.log(growth.trend, rt.estimate);`}</pre>
             </div>
@@ -217,7 +256,7 @@ console.log(growth.trend, rt.estimate);`}</pre>
             <h2 id="provenance" className={h2}>
               Where the data comes from
             </h2>
-            <p className="text-[0.9375rem] leading-relaxed text-ink-muted">{API_ATTRIBUTION}</p>
+            <p className="text-[0.9375rem] leading-relaxed text-ink-muted">{attributionFor(outbreak)}</p>
             <ul className="list-disc space-y-1.5 pl-5 text-[0.9375rem] leading-relaxed text-ink-muted">
               <li>
                 One reading per UTC day, taken from the last revision of the article that day.

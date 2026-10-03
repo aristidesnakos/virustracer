@@ -1,14 +1,40 @@
 import type { TollSnapshot } from "./toll";
 import type { DailyPoint } from "./metrics";
+import { getDefaultOutbreak } from "@/data/outbreaks";
+import type { OutbreakDefinition } from "@/data/outbreaks";
+import { OUTBREAKS_API_PATH } from "./outbreak-paths";
 import { SITE_NAME, SITE_URL } from "./site";
 
 // Pure helpers shared by the /api/v1 route handlers (no fs, no Next imports),
 // so query parsing and CSV output can be unit-tested.
 
-export const API_ATTRIBUTION =
-  `${SITE_NAME} (${new URL(SITE_URL).host}, unofficial). Figures come from the Wikipedia article's infobox ` +
-  "(CC BY-SA 4.0), which cites INSP DRC and WHO; every reading links to the exact revision it was read from. " +
-  "Shared under CC BY-SA 4.0. Not an official public health resource.";
+/** Who an outbreak's source article cites, by slug. Falls back to a generic phrase for outbreaks not listed. */
+const CITED_BY_SLUG: Record<string, string> = {
+  "ebola-bundibugyo-2026": "INSP DRC and WHO",
+};
+
+/** Credit line returned in every response's `meta.attribution` and shown on /data. */
+export function attributionFor(outbreak: Pick<OutbreakDefinition, "slug" | "source">): string {
+  const who = `${SITE_NAME} (${new URL(SITE_URL).host}, unofficial). `;
+  const tail = "Shared under CC BY-SA 4.0. Not an official public health resource.";
+  if (outbreak.source.kind === "manual") {
+    return (
+      who +
+      `Figures are curated by hand from published reports (${outbreak.source.ref}); each entry names its source and the date it was last verified. ` +
+      tail
+    );
+  }
+  const cited = CITED_BY_SLUG[outbreak.slug] ?? "the official sources it lists";
+  return (
+    who +
+    `Figures come from the Wikipedia article's infobox (CC BY-SA 4.0), which cites ${cited}; ` +
+    "every reading links to the exact revision it was read from. " +
+    tail
+  );
+}
+
+/** Attribution for the default outbreak (kept for callers that predate per-outbreak endpoints). */
+export const API_ATTRIBUTION = attributionFor(getDefaultOutbreak());
 
 /** Everything is read-only and public, so any origin may call it from the browser. */
 export const CORS_HEADERS: Record<string, string> = {
@@ -45,6 +71,12 @@ export function csvResponse(csv: string, filename: string): Response {
 
 export function errorResponse(message: string, status = 400): Response {
   return jsonResponse({ error: message }, status);
+}
+
+/** 404 for a slug that is not in the outbreak registry. Same JSON error shape as every other error. */
+export function unknownOutbreakResponse(slug: string): Response {
+  const shown = slug.length > 64 ? `${slug.slice(0, 64)}…` : slug;
+  return errorResponse(`Unknown outbreak ${JSON.stringify(shown)}. List the available ones at ${OUTBREAKS_API_PATH}.`, 404);
 }
 
 export function optionsResponse(): Response {
