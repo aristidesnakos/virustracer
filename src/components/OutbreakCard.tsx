@@ -107,11 +107,16 @@ export default function OutbreakCard({
       <div
         className={`mt-4 border-t border-rule pt-3 ${wide ? "md:mt-0 md:border-l md:border-t-0 md:pl-10 md:pt-0" : ""}`}
       >
-        <div className="flex items-end justify-between gap-4">
-          <TrendBadge summary={trend} />
-          <WeeklySparkline weeks={weekly} className="shrink-0" />
-        </div>
-        {incidence && windowEnd ? (
+        {outbreak.status === "over" && !(incidence && windowEnd) ? (
+          // A finished outbreak with no daily readings has no trend to show, only its final figures.
+          <p className="text-[0.9375rem] leading-snug text-ink-muted">Outbreak over: these are the final figures.</p>
+        ) : (
+          <div className="flex items-end justify-between gap-4">
+            <TrendBadge summary={trend} />
+            <WeeklySparkline weeks={weekly} className="shrink-0" />
+          </div>
+        )}
+        {outbreak.status === "over" && !(incidence && windowEnd) ? null : incidence && windowEnd ? (
           <p className="mt-2 text-[0.9375rem] leading-snug text-ink">
             <strong className="font-semibold">{fmt(incidence.confirmed.last7)}</strong> new cases and{" "}
             <strong className="font-semibold">{fmt(incidence.deaths.last7)}</strong> deaths in the 7 days

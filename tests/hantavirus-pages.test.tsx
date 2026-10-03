@@ -9,6 +9,8 @@ import { GET as slugMetrics } from "@/app/api/v1/outbreaks/[slug]/metrics/route"
 import { GET as slugSignals } from "@/app/api/v1/outbreaks/[slug]/signals/route";
 import { GET as listGet } from "@/app/api/v1/outbreaks/route";
 import { shareCardFooter } from "@/lib/seo";
+import { buildSnapshot } from "@/lib/home-snapshot";
+import { getTollData } from "@/lib/toll";
 
 // The map is client-only (MapLibre needs WebGL); its loader is not under test here.
 vi.mock("@/components/MapLoader", () => ({ default: () => <div data-testid="map" /> }));
@@ -72,22 +74,23 @@ describe("the Ebola page keeps its live presentation", () => {
 });
 
 describe("home page", () => {
-  it("lists live outbreaks first and the finished one under 'On file'", () => {
+  it("lists the live outbreak first and the finished one under 'Declared over'", () => {
     render(<HomePage />);
-    const live = screen.getByRole("heading", { name: "Outbreaks we are tracking" }).closest("section")!;
-    const past = screen.getByRole("heading", { name: "On file: past outbreaks" }).closest("section")!;
-    expect(within(live).getByRole("heading", { name: ebola.title })).toBeInTheDocument();
-    expect(within(live).queryByRole("heading", { name: hanta.title })).not.toBeInTheDocument();
-    expect(within(past).getByRole("heading", { name: hanta.title })).toBeInTheDocument();
+    const live = screen.getByRole("heading", { name: ebola.title }).closest("section")!;
+    const past = screen.getByRole("heading", { name: hanta.title }).closest("section")!;
+    expect(past).not.toBe(live);
+    expect(within(past).getByRole("heading", { level: 3, name: /Declared over/ })).toBeInTheDocument();
     expect(live.compareDocumentPosition(past) & Node.DOCUMENT_POSITION_FOLLOWING).toBeTruthy();
   });
 
-  it("shows a finished outbreak's card as a record with final figures", () => {
-    render(<OutbreakCard outbreak={hanta} figures={{ date: "2026-07-02", confirmed: 12, deaths: 3 }} />);
+  it("shows the finished outbreak's final figures from its curated timeline, marked last verified", () => {
+    render(<OutbreakCard snapshot={buildSnapshot(hanta, getTollData(SLUG))} />);
     expect(screen.getByTestId("outbreak-status")).toHaveTextContent("Declared over");
-    expect(screen.getByText("Final figures 2 Jul 2026 · last verified 3 Oct 2026")).toBeInTheDocument();
-    expect(screen.queryByText(/^As of/)).not.toBeInTheDocument();
-    expect(screen.getByRole("link", { name: /Open record/ })).toHaveAttribute("href", `/outbreaks/${SLUG}`);
+    expect(screen.getByText("12")).toBeInTheDocument();
+    expect(screen.getByText("3")).toBeInTheDocument();
+    expect(screen.getByText(/As of 2 Jul 2026 · last verified 3 Oct 2026/)).toBeInTheDocument();
+    expect(screen.getByText("Outbreak over: these are the final figures.")).toBeInTheDocument();
+    expect(screen.queryByText(/Not enough data|No readings yet/)).not.toBeInTheDocument();
   });
 });
 

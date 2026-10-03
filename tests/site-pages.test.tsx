@@ -17,7 +17,8 @@ describe("home page", () => {
       const group = screen.getByTestId(`status-group-${o.status}`);
       expect(within(group).getByRole("heading", { level: 4, name: o.title })).toBeInTheDocument();
     }
-    expect(screen.getAllByTestId("trend-badge")).toHaveLength(listOutbreaks().length);
+    // Finished outbreaks with no daily readings show their final figures instead of a trend badge.
+    expect(screen.getAllByTestId("trend-badge")).toHaveLength(listOutbreaks().filter((o) => o.status !== "over").length);
     expect(screen.getByRole("link", { name: "How we rank and count" })).toHaveAttribute(
       "href",
       "/methodology#ranking",
