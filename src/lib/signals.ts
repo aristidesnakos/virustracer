@@ -1,6 +1,6 @@
 import { readFileSync, existsSync } from "fs";
-import { resolve } from "path";
-import type { MonitoringEntry } from "@/data/outbreak";
+import { outbreakDataPath } from "./outbreak-data";
+import type { MonitoringEntry } from "@/data/outbreaks";
 import { daysBetween } from "./outbreak-trend";
 
 // Server-side only (reads the filesystem), except `classifySignals`, which is pure.
@@ -38,12 +38,11 @@ export interface ClassifiedSignal extends LedgerSignal {
   leadDays: number | null;
 }
 
-const SIGNALS_PATH = resolve(process.cwd(), "data/signals.json");
-
-export function getSignalsLedger(): SignalsLedger {
-  if (!existsSync(SIGNALS_PATH)) return { lastUpdated: "", signals: [] };
+export function getSignalsLedger(slug: string): SignalsLedger {
+  const path = outbreakDataPath(slug, "signals");
+  if (!existsSync(path)) return { lastUpdated: "", signals: [] };
   try {
-    const raw = JSON.parse(readFileSync(SIGNALS_PATH, "utf-8")) as Partial<SignalsLedger>;
+    const raw = JSON.parse(readFileSync(path, "utf-8")) as Partial<SignalsLedger>;
     return {
       lastUpdated: typeof raw.lastUpdated === "string" ? raw.lastUpdated : "",
       signals: Array.isArray(raw.signals) ? raw.signals : [],

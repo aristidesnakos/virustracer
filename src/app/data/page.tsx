@@ -1,10 +1,12 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { outbreak } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import { API_ATTRIBUTION, MAX_LIMIT } from "@/lib/api";
 import { ASSUMPTIONS } from "@/lib/metrics";
 import { DATA_LICENSE, DATA_LICENSE_NAME } from "@/lib/site";
 import { getTollData } from "@/lib/toll";
+
+const outbreak = getDefaultOutbreak();
 
 export const metadata: Metadata = {
   title: "Data & API",
@@ -58,7 +60,7 @@ const link =
   "font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent";
 
 export default function DataPage() {
-  const toll = getTollData();
+  const toll = getTollData(outbreak.slug);
   const snapshots = [...toll.snapshots].sort((a, b) => a.date.localeCompare(b.date));
   const latest = snapshots.at(-1) ?? null;
   const first = snapshots[0] ?? null;

@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import type { CaseDataPoint } from "@/data/outbreak";
+import type { CaseDataPoint } from "@/data/outbreaks";
 import { computeTrend, daysBetween } from "@/lib/outbreak-trend";
 
 const FIXTURE: CaseDataPoint[] = [

@@ -1,7 +1,7 @@
 "use client";
 
 import { Fragment, useState } from "react";
-import { monitoringData } from "@/data/outbreak";
+import type { MonitoringEntry } from "@/data/outbreaks";
 import type { CandidateSignal } from "@/lib/candidates-data";
 import PanelHeader from "@/components/PanelHeader";
 
@@ -79,9 +79,11 @@ function RowToggle({
 }
 
 export default function MonitoringTable({
+  monitoringData,
   candidates = [],
   headingId,
 }: {
+  monitoringData: MonitoringEntry[];
   candidates?: CandidateSignal[];
   headingId?: string;
 }) {

@@ -8,7 +8,7 @@ import PanelHeader from "@/components/PanelHeader";
 import SponsorCard from "@/components/SponsorCard";
 import TrendPanel from "@/components/TrendPanel";
 import StatStrip from "@/components/StatStrip";
-import { outbreak, summary, casesTimeline } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import { getLiveData } from "@/lib/live-data";
 import { getTollData } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
@@ -20,9 +20,10 @@ import { DATA_LICENSE, SITE_NAME, absoluteUrl } from "@/lib/site";
 // The description carries the current toll, so it is built from the data at
 // build/request time rather than fixed in the layout.
 export function generateMetadata(): Metadata {
-  const toll = getTollData();
-  const figures = latestFigures(mergeTimeline(casesTimeline, toll.snapshots));
-  const description = describeFigures(figures, outbreak.description);
+  const outbreak = getDefaultOutbreak();
+  const toll = getTollData(outbreak.slug);
+  const figures = latestFigures(mergeTimeline(outbreak.casesTimeline, toll.snapshots));
+  const description = describeFigures(figures, outbreak.description, outbreak);
   return {
     description,
     alternates: { canonical: "/" },
@@ -51,10 +52,11 @@ function shortDate(iso: string | undefined | null): string {
 }
 
 export default function DashboardPage() {
-  const liveData = getLiveData();
-  const toll = getTollData();
-  const timeline = mergeTimeline(casesTimeline, toll.snapshots);
-  const candidatesData = getCandidatesData();
+  const outbreak = getDefaultOutbreak();
+  const liveData = getLiveData(outbreak.slug);
+  const toll = getTollData(outbreak.slug);
+  const timeline = mergeTimeline(outbreak.casesTimeline, toll.snapshots);
+  const candidatesData = getCandidatesData(outbreak.slug);
   // Rates come from the single-source daily snapshots only: mixing in hand-curated
   // milestone rows would add small cross-source jumps to the weekly counts.
   const metrics = computeMetrics(toll.snapshots);
@@ -93,16 +95,15 @@ export default function DashboardPage() {
       {
         "@type": "Dataset",
         "@id": absoluteUrl("/#dataset"),
-        name: "2026 Bundibugyo Ebola outbreak: daily cumulative cases and deaths",
-        description:
-          "Daily cumulative confirmed cases, suspected cases, deaths and recoveries for the 2026 Ebola outbreak in the DR Congo and Uganda, each tied to the source revision it was read from.",
+        name: outbreak.dataset.name,
+        description: outbreak.dataset.description,
         url: absoluteUrl("/data"),
         keywords: [...outbreak.keywords],
         license: DATA_LICENSE,
         isAccessibleForFree: true,
         creator: { "@type": "Organization", name: SITE_NAME, url: absoluteUrl("/") },
-        isBasedOn: "https://en.wikipedia.org/wiki/2026_Ebola_epidemic",
-        spatialCoverage: ["Democratic Republic of the Congo", "Uganda"],
+        isBasedOn: outbreak.dataset.isBasedOn,
+        spatialCoverage: [...outbreak.countries],
         ...(first && last ? { temporalCoverage: `${first}/${last}`, dateModified: last } : {}),
         distribution: [
           {
@@ -181,7 +182,7 @@ export default function DashboardPage() {
         <main id="main" className="pt-6">
           {/* ── Headline figures ─────────────────────────────────── */}
           <div className="rise" style={{ "--i": 1 } as React.CSSProperties}>
-            <StatStrip timeline={timeline} />
+            <StatStrip timeline={timeline} summary={outbreak.summary} />
           </div>
 
           {/* ── Figures ──────────────────────────────────────────── */}
@@ -195,7 +196,7 @@ export default function DashboardPage() {
             >
               <PanelHeader kicker="Fig. 1" id="map-heading" title="Where cases are reported" />
               <div className="h-[26rem] overflow-hidden rounded-lg border border-rule sm:h-[32rem]">
-                <MapLoader />
+                <MapLoader spreadStops={outbreak.spreadStops} caseLocations={outbreak.caseLocations} />
               </div>
             </section>
 
@@ -212,7 +213,11 @@ export default function DashboardPage() {
               className="panel rise min-w-0 lg:col-span-7"
               style={{ "--i": 4 } as React.CSSProperties}
             >
-              <MonitoringTable candidates={candidatesData.candidates} headingId="table-heading" />
+              <MonitoringTable
+                monitoringData={outbreak.monitoringData}
+                candidates={candidatesData.candidates}
+                headingId="table-heading"
+              />
             </section>
 
             <section
@@ -248,7 +253,7 @@ export default function DashboardPage() {
             verify with official authorities.
           </p>
           <p className="text-[0.8125rem] tabular-nums text-ink-faint">
-            Source: {summary.source} ·{" "}
+            Source: {outbreak.summary.source} ·{" "}
             <Link
               href="/data"
               className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"

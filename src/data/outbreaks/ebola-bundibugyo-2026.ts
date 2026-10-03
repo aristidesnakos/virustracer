@@ -1,94 +1,23 @@
+import type {
+  CaseDataPoint,
+  CaseLocation,
+  MonitoringEntry,
+  OutbreakDefinition,
+  OutbreakSummary,
+  SpreadStop,
+} from "./types";
+
 // All data is manually curated from official sources.
 // Each entry includes a source citation and date verified.
 //
 // Death-toll history after the last curated point is appended automatically by
-// scripts/update-toll.mjs (see data/toll.json) — never edit that file by hand.
-
-export interface CaseDataPoint {
-  date: string;          // ISO 8601
-  label: string;         // Display label
-  /** Cumulative confirmed cases. Omit when the source does not report it. */
-  confirmed?: number;
-  /** Cumulative probable/suspected cases. Omit when the source does not report it. */
-  suspected?: number;
-  /** Cumulative deaths. Omit when the source does not report it. */
-  deaths?: number;
-  /** Cumulative recoveries. Omit when the source does not report it. */
-  recovered?: number;
-  note?: string;
-  source: string;
-}
-
-export interface MonitoringEntry {
-  country: string;
-  flag: string;
-  iso: string;
-  /** Set on sub-national rows (e.g. DRC provinces). They are excluded from the table total. */
-  parentIso?: string;
-  confirmed: number;
-  deaths: number;
-  status: string;
-  detail: string;
-  source: string;
-  asOf: string;
-  /**
-   * Date the first case in this country was officially confirmed (YYYY-MM-DD).
-   * Optional; set it only when a source states it. Used to measure how far news
-   * signals led the official confirmation (see src/lib/signals.ts).
-   */
-  firstConfirmed?: string;
-}
-
-export interface SpreadStop {
-  name: string;
-  location: string;
-  coords: [number, number]; // [lng, lat]
-  date: string;
-  event?: string;
-}
-
-export interface CaseLocation {
-  country: string;
-  flag: string;
-  coords: [number, number];
-  confirmed: number;
-  deaths: number;
-  type: "origin" | "case" | "monitoring";
-  /** ISO date of the most recent verified data for this location. Drives the map recency gradient. */
-  asOf: string;
-}
-
-// ─── Outbreak identity ───────────────────────────────────────────────────────
-// Swap this block (and the data below) to point the dashboard at another outbreak.
-export const outbreak = {
-  title: "Ebola Outbreak Tracker",
-  /** <title> for search results: the query words first, then the place. Keep it under ~60 characters. */
-  seoTitle: "Ebola Outbreak 2026: Death Toll, Cases & Map | DRC & Uganda",
-  keywords: [
-    "ebola outbreak 2026",
-    "ebola death toll",
-    "ebola cases",
-    "bundibugyo ebola",
-    "ebola DRC",
-    "ebola Uganda",
-    "ebola outbreak map",
-    "ebola tracker",
-  ],
-  subtitle: "2026 DR Congo & Uganda · Bundibugyo virus · Unofficial surveillance dashboard",
-  description:
-    "Unofficial surveillance dashboard tracking the 2026 Bundibugyo Ebola outbreak in the Democratic Republic of the Congo and Uganda, with a continuously updated death toll. Data compiled from WHO, DRC's INSP, and news reports.",
-  links: [
-    { label: "WHO DON", href: "https://www.who.int/emergencies/disease-outbreak-news" },
-    { label: "CDC", href: "https://www.cdc.gov/ebola" },
-    { label: "ECDC", href: "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda" },
-  ],
-} as const;
+// scripts/update-toll.mjs (see data/outbreaks/ebola-bundibugyo-2026/toll.json) — never edit that file by hand.
 
 // ─── Case timeline ───────────────────────────────────────────────────────────
 // Only data points with documented source are included. Milestone rows carry only
 // the one figure the source documents (e.g. "1,000th death"), so the other
 // series simply has a gap there rather than an invented value.
-export const casesTimeline: CaseDataPoint[] = [
+const casesTimeline: CaseDataPoint[] = [
   {
     date: "2026-05-18",
     label: "May 18",
@@ -215,7 +144,7 @@ export const casesTimeline: CaseDataPoint[] = [
 // DRC provinces are sub-rows (parentIso) and are excluded from the table total.
 // Figures are as of 29 Sep 2026; the headline death toll is refreshed daily by
 // the GitHub Action, but this breakdown is only updated when edited here.
-export const monitoringData: MonitoringEntry[] = [
+const monitoringData: MonitoringEntry[] = [
   {
     country: "DR Congo",
     flag: "🇨🇩",
@@ -349,7 +278,7 @@ export const monitoringData: MonitoringEntry[] = [
 ];
 
 // ─── Spread: first-detection sites ────────────────────────────────────────────
-export const spreadStops: SpreadStop[] = [
+const spreadStops: SpreadStop[] = [
   {
     name: "Bunia",
     location: "Ituri, DR Congo",
@@ -395,7 +324,7 @@ export const spreadStops: SpreadStop[] = [
 ];
 
 // ─── Map markers ──────────────────────────────────────────────────────────────
-export const caseLocations: CaseLocation[] = [
+const caseLocations: CaseLocation[] = [
   {
     country: "Ituri",
     flag: "🇨🇩",
@@ -482,7 +411,7 @@ export const caseLocations: CaseLocation[] = [
 // ─── Summary stats ────────────────────────────────────────────────────────────
 // Headline case/death totals are derived from the merged timeline (curated +
 // auto-tracked), not stored here. These are the figures the timeline doesn't carry.
-export const summary = {
+const summary: OutbreakSummary = {
   countriesAffected: 3, // DRC, Uganda (over), France (imported)
   provincesAffected: 7,
   healthZonesAffected: 63,
@@ -491,4 +420,45 @@ export const summary = {
   spreadStatus: "Active · 7 DRC provinces",
   lastReviewed: "2026-09-29",
   source: "WHO DON / INSP DRC / Wikipedia / AP",
+};
+
+export const ebolaBundibugyo2026: OutbreakDefinition = {
+  slug: "ebola-bundibugyo-2026",
+  disease: "Ebola",
+  status: "active",
+  source: { kind: "wikipedia-infobox", ref: "2026_Ebola_epidemic" },
+  title: "Ebola Outbreak Tracker",
+  seoTitle: "Ebola Outbreak 2026: Death Toll, Cases & Map | DRC & Uganda",
+  keywords: [
+    "ebola outbreak 2026",
+    "ebola death toll",
+    "ebola cases",
+    "bundibugyo ebola",
+    "ebola DRC",
+    "ebola Uganda",
+    "ebola outbreak map",
+    "ebola tracker",
+  ],
+  subtitle: "2026 DR Congo & Uganda · Bundibugyo virus · Unofficial surveillance dashboard",
+  description:
+    "Unofficial surveillance dashboard tracking the 2026 Bundibugyo Ebola outbreak in the Democratic Republic of the Congo and Uganda, with a continuously updated death toll. Data compiled from WHO, DRC's INSP, and news reports.",
+  links: [
+    { label: "WHO DON", href: "https://www.who.int/emergencies/disease-outbreak-news" },
+    { label: "CDC", href: "https://www.cdc.gov/ebola" },
+    { label: "ECDC", href: "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda" },
+  ],
+  shortName: "2026 Ebola outbreak",
+  places: "DR Congo, Uganda",
+  countries: ["Democratic Republic of the Congo", "Uganda"],
+  dataset: {
+    name: "2026 Bundibugyo Ebola outbreak: daily cumulative cases and deaths",
+    description:
+      "Daily cumulative confirmed cases, suspected cases, deaths and recoveries for the 2026 Ebola outbreak in the DR Congo and Uganda, each tied to the source revision it was read from.",
+    isBasedOn: "https://en.wikipedia.org/wiki/2026_Ebola_epidemic",
+  },
+  casesTimeline,
+  monitoringData,
+  spreadStops,
+  caseLocations,
+  summary,
 };

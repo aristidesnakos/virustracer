@@ -1,4 +1,4 @@
-import type { CaseDataPoint } from "@/data/outbreak";
+import type { CaseDataPoint } from "@/data/outbreaks";
 import { latestDate } from "./timeline";
 
 // Pure helpers behind the page metadata and structured data (no fs, no Next).
@@ -45,13 +45,17 @@ function longDate(iso: string): string {
  * description when there is no data. Capped near the ~160 characters search
  * engines show.
  */
-export function describeFigures(figures: LatestFigures | null, fallback: string): string {
+export function describeFigures(
+  figures: LatestFigures | null,
+  fallback: string,
+  label: { shortName: string; places: string },
+): string {
   if (!figures || (figures.deaths === null && figures.confirmed === null)) return fallback;
   const parts: string[] = [];
   if (figures.deaths !== null) parts.push(`${fmt(figures.deaths)} deaths`);
   if (figures.confirmed !== null) parts.push(`${fmt(figures.confirmed)} confirmed cases`);
   return (
-    `2026 Ebola outbreak: ${parts.join(" and ")} as of ${longDate(figures.date)} ` +
-    `(DR Congo, Uganda). Updated daily, with map, trend and free data API.`
+    `${label.shortName}: ${parts.join(" and ")} as of ${longDate(figures.date)} ` +
+    `(${label.places}). Updated daily, with map, trend and free data API.`
   );
 }

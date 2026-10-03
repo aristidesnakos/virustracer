@@ -1,11 +1,13 @@
 import { describe, it, expect } from "vitest";
 import { render, screen, within } from "@testing-library/react";
 import MonitoringTable from "@/components/MonitoringTable";
-import { monitoringData } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
+
+const { monitoringData } = getDefaultOutbreak();
 
 describe("MonitoringTable", () => {
   it("renders the new heading and columns", () => {
-    render(<MonitoringTable />);
+    render(<MonitoringTable monitoringData={monitoringData} />);
     expect(screen.getByText(/by country & province/i)).toBeInTheDocument();
     for (const col of ["Region", "Confirmed", "Deaths", "CFR", "Status"]) {
       expect(screen.getByRole("columnheader", { name: col })).toBeInTheDocument();
@@ -13,7 +15,7 @@ describe("MonitoringTable", () => {
   });
 
   it("renders province rows indented with a marker", () => {
-    render(<MonitoringTable />);
+    render(<MonitoringTable monitoringData={monitoringData} />);
     const provinces = monitoringData.filter((r) => r.parentIso);
     expect(provinces.length).toBeGreaterThan(0);
     for (const p of provinces) {
@@ -27,7 +29,7 @@ describe("MonitoringTable", () => {
   });
 
   it("excludes province rows from the Total", () => {
-    render(<MonitoringTable />);
+    render(<MonitoringTable monitoringData={monitoringData} />);
     const total = screen.getByText("Total").closest("tr")!;
     const cells = within(total).getAllByRole("cell");
     const countries = monitoringData.filter((r) => !r.parentIso);
@@ -41,7 +43,7 @@ describe("MonitoringTable", () => {
   });
 
   it("shows CFR per row and a dash when there are no confirmed cases", () => {
-    render(<MonitoringTable />);
+    render(<MonitoringTable monitoringData={monitoringData} />);
     const drc = screen.getByTestId("row-CD");
     expect(drc.textContent).toContain("48.4%");
     const germany = screen.getByTestId("row-DE");
@@ -51,6 +53,7 @@ describe("MonitoringTable", () => {
   it("does not list a CD candidate as unverified (provinces cover base country)", () => {
     render(
       <MonitoringTable
+        monitoringData={monitoringData}
         candidates={[
           {
             id: "1",

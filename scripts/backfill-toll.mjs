@@ -1,14 +1,15 @@
 #!/usr/bin/env node
 /**
- * One-off history import for data/toll.json (plain `node` 22, no deps).
+ * One-off history import for data/outbreaks/<slug>/toll.json (plain `node` 22, no deps).
  *
  * Walks the tracked Wikipedia article's revision history, takes the last
  * revision of every UTC day, parses the infobox of each (same parser as the
- * daily updater) and merges the results into data/toll.json. Every snapshot
+ * daily updater) and merges the results into the outbreak's toll.json. Every snapshot
  * links to the exact revision it came from.
  *
- *   node scripts/backfill-toll.mjs            # write data/toll.json
- *   node scripts/backfill-toll.mjs --dry-run  # report only
+ *   node scripts/backfill-toll.mjs                          # every automated outbreak
+ *   node scripts/backfill-toll.mjs --outbreak=<slug>        # just one
+ *   node scripts/backfill-toll.mjs --dry-run                # report only, write nothing
  *
  * Existing snapshots are never overwritten: the daily updater's reading for a
  * date wins over the imported one. Vandalised or mid-edit revisions are
@@ -20,7 +21,7 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseInfobox, validateSnapshot, MAX_SNAPSHOTS } from "./lib/toll.mjs";
 import { lastRevisionPerDay, keepLongestMonotoneChain } from "./lib/backfill.mjs";
-import { PAGE_TITLE, USER_AGENT, SNAPSHOT_SOURCE } from "./lib/outbreak-config.mjs";
+import { USER_AGENT, dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const TIMEOUT_MS = 30_000;
@@ -28,7 +29,7 @@ const PAUSE_MS = 400; // be polite to the Wikipedia API
 const CONTENT_BATCH = 50; // API limit for revisions with content
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const TOLL_JSON = resolve(__dirname, "../data/toll.json");
+const ROOT = resolve(__dirname, "..");
 const API = "https://en.wikipedia.org/w/api.php";
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
@@ -47,14 +48,14 @@ async function api(params) {
 }
 
 /** Every revision of the page (id + timestamp), oldest first. */
-async function listRevisions() {
+async function listRevisions(pageTitle) {
   const revisions = [];
   let cont = {};
   do {
     const json = await api({
       action: "query",
       prop: "revisions",
-      titles: PAGE_TITLE,
+      titles: pageTitle,
       redirects: "1",
       rvprop: "ids|timestamp",
       rvlimit: "500",
@@ -62,7 +63,7 @@ async function listRevisions() {
       ...cont,
     });
     const page = json.query?.pages?.[0];
-    if (!page || page.missing) throw new Error(`Page "${PAGE_TITLE}" not found`);
+    if (!page || page.missing) throw new Error(`Page "${pageTitle}" not found`);
     for (const r of page.revisions ?? []) revisions.push({ revid: r.revid, timestamp: r.timestamp });
     cont = json.continue ?? null;
     process.stdout.write(`\r  listed ${revisions.length} revisions`);
@@ -89,20 +90,23 @@ async function fetchLeadSections(revids) {
   return out;
 }
 
-function readStore() {
-  if (!existsSync(TOLL_JSON)) return { lastChecked: "", snapshots: [] };
-  const parsed = JSON.parse(readFileSync(TOLL_JSON, "utf-8"));
+function readStore(tollJson) {
+  if (!existsSync(tollJson)) return { lastChecked: "", snapshots: [] };
+  const parsed = JSON.parse(readFileSync(tollJson, "utf-8"));
   return {
     lastChecked: typeof parsed.lastChecked === "string" ? parsed.lastChecked : "",
     snapshots: Array.isArray(parsed.snapshots) ? parsed.snapshots : [],
   };
 }
 
-async function main() {
-  const store = readStore();
-  console.log(`Backfilling ${PAGE_TITLE} (${store.snapshots.length} snapshot(s) already stored)`);
+async function backfillOutbreak({ slug, toll }) {
+  const PAGE_TITLE = toll.page;
+  const tollJson = dataFile(ROOT, slug, "toll");
+  const tollLabel = `data/outbreaks/${slug}/toll.json`;
+  const store = readStore(tollJson);
+  console.log(`Backfilling ${slug}: ${PAGE_TITLE} (${store.snapshots.length} snapshot(s) already stored)`);
 
-  const revisions = await listRevisions();
+  const revisions = await listRevisions(PAGE_TITLE);
   const days = lastRevisionPerDay(revisions);
   console.log(`  ${revisions.length} revisions across ${days.length} days`);
 
@@ -123,7 +127,7 @@ async function main() {
         suspected: parsed.suspected,
         deaths: parsed.deaths,
         recovered: parsed.recovered,
-        source: SNAPSHOT_SOURCE,
+        source: toll.source,
         sourceUrl: `https://en.wikipedia.org/w/index.php?oldid=${day.revid}`,
         revid: day.revid,
         revisionTimestamp: day.timestamp,
@@ -160,15 +164,21 @@ async function main() {
   );
 
   if (DRY_RUN) {
-    console.log("--dry-run: data/toll.json not written.");
+    console.log(`--dry-run: ${tollLabel} not written.`);
     return;
   }
-  mkdirSync(dirname(TOLL_JSON), { recursive: true });
+  mkdirSync(dirname(tollJson), { recursive: true });
   writeFileSync(
-    TOLL_JSON,
+    tollJson,
     JSON.stringify({ ...store, snapshots: kept.slice(-MAX_SNAPSHOTS) }, null, 2) + "\n",
   );
-  console.log("Wrote data/toll.json");
+  console.log(`Wrote ${tollLabel}`);
+}
+
+async function main() {
+  for (const outbreak of selectOutbreaks().filter((o) => o.toll)) {
+    await backfillOutbreak(outbreak);
+  }
 }
 
 main().catch((err) => {

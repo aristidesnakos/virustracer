@@ -1,5 +1,5 @@
 import type { NextRequest } from "next/server";
-import { outbreak } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import { API_ATTRIBUTION, csvResponse, dailyToCsv, errorResponse, jsonResponse, optionsResponse } from "@/lib/api";
 import { computeMetrics } from "@/lib/metrics";
 import { getTollData } from "@/lib/toll";
@@ -16,10 +16,11 @@ export function GET(request: NextRequest) {
   const include = params.get("include");
   if (include !== null && include !== "daily") return errorResponse("`include` may only be `daily`.");
 
-  const toll = getTollData();
+  const outbreak = getDefaultOutbreak();
+  const toll = getTollData(outbreak.slug);
   const metrics = computeMetrics(toll.snapshots);
 
-  if (format === "csv") return csvResponse(dailyToCsv(metrics.daily), "ebola-daily.csv");
+  if (format === "csv") return csvResponse(dailyToCsv(metrics.daily), `${outbreak.disease.toLowerCase()}-daily.csv`);
 
   const { daily, ...summary } = metrics;
   return jsonResponse({

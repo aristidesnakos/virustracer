@@ -12,7 +12,7 @@ import {
   ReferenceLine,
   type TooltipContentProps,
 } from "recharts";
-import type { CaseDataPoint } from "@/data/outbreak";
+import type { CaseDataPoint } from "@/data/outbreaks";
 import PanelHeader from "@/components/PanelHeader";
 
 const PHEIC_DATE = "2026-05-16";

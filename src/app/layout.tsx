@@ -1,8 +1,11 @@
 import type { Metadata, Viewport } from "next";
 import { Atkinson_Hyperlegible_Next, Literata } from "next/font/google";
 import "./globals.css";
-import { outbreak } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import { SITE_NAME, SITE_URL } from "@/lib/site";
+
+// `/` shows the default outbreak until the home page becomes a multi-outbreak snapshot.
+const outbreak = getDefaultOutbreak();
 
 // Body: Atkinson Hyperlegible, drawn by the Braille Institute for maximum
 // character distinction. Headings and figures: Literata, a reading serif.

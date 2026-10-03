@@ -1,5 +1,5 @@
 import type { MetadataRoute } from "next";
-import { casesTimeline } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import { getTollData } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { absoluteUrl } from "@/lib/site";
@@ -8,8 +8,9 @@ import { absoluteUrl } from "@/lib/site";
 // timestamp that changes on every deploy claims everything changed at once and
 // gets ignored.
 export default function sitemap(): MetadataRoute.Sitemap {
-  const toll = getTollData();
-  const dataDate = latestDate(mergeTimeline(casesTimeline, toll.snapshots));
+  const outbreak = getDefaultOutbreak();
+  const toll = getTollData(outbreak.slug);
+  const dataDate = latestDate(mergeTimeline(outbreak.casesTimeline, toll.snapshots));
   const lastModified = dataDate ? new Date(dataDate) : undefined;
   return [
     { url: absoluteUrl("/"), lastModified, changeFrequency: "daily", priority: 1 },

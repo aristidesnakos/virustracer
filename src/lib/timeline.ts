@@ -1,4 +1,4 @@
-import type { CaseDataPoint } from "@/data/outbreak";
+import type { CaseDataPoint } from "@/data/outbreaks";
 import type { TollSnapshot } from "./toll";
 
 // Pure and client-safe: no fs. `TollSnapshot` is a type-only import so the

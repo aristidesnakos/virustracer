@@ -1,5 +1,5 @@
 import { readFileSync, existsSync } from "fs";
-import { resolve } from "path";
+import { outbreakDataPath } from "./outbreak-data";
 
 export interface CandidateSignal {
   id: string;
@@ -21,15 +21,14 @@ export interface CandidatesData {
   candidates: CandidateSignal[];
 }
 
-const CANDIDATES_PATH = resolve(process.cwd(), "data/candidates.json");
-
-export function getCandidatesData(): CandidatesData {
-  if (!existsSync(CANDIDATES_PATH)) {
+export function getCandidatesData(slug: string): CandidatesData {
+  const path = outbreakDataPath(slug, "candidates");
+  if (!existsSync(path)) {
     return { lastExtracted: "", candidates: [] };
   }
   try {
     return JSON.parse(
-      readFileSync(CANDIDATES_PATH, "utf-8"),
+      readFileSync(path, "utf-8"),
     ) as CandidatesData;
   } catch {
     return { lastExtracted: "", candidates: [] };

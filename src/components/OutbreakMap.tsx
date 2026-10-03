@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import { spreadStops, caseLocations } from "@/data/outbreak";
+import type { CaseLocation, SpreadStop } from "@/data/outbreaks";
 import { daysBetween } from "@/lib/outbreak-trend";
 
 const CARTO_LIGHT = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
@@ -45,12 +45,14 @@ function clamp(v: number, lo: number, hi: number): number {
 }
 
 // Reference date for the recency gradient: the freshest data on the map.
-const REFERENCE_ISO = caseLocations.reduce(
-  (max, l) => (l.asOf > max ? l.asOf : max),
-  caseLocations[0]?.asOf ?? new Date().toISOString().slice(0, 10),
-);
+function referenceISO(caseLocations: readonly CaseLocation[]): string {
+  return caseLocations.reduce(
+    (max, l) => (l.asOf > max ? l.asOf : max),
+    caseLocations[0]?.asOf ?? new Date().toISOString().slice(0, 10),
+  );
+}
 
-function stopsGeoJSON() {
+function stopsGeoJSON(spreadStops: readonly SpreadStop[]) {
   return {
     type: "FeatureCollection" as const,
     features: spreadStops.map((stop) => ({
@@ -66,7 +68,7 @@ function stopsGeoJSON() {
   };
 }
 
-function casesGeoJSON(referenceISO: string) {
+function casesGeoJSON(caseLocations: readonly CaseLocation[], referenceISO: string) {
   return {
     type: "FeatureCollection" as const,
     features: caseLocations.map((loc) => {
@@ -101,7 +103,13 @@ function recencyColorExpression(): maplibregl.ExpressionSpecification {
   ] as maplibregl.ExpressionSpecification;
 }
 
-export default function OutbreakMap() {
+export default function OutbreakMap({
+  spreadStops,
+  caseLocations,
+}: {
+  spreadStops: SpreadStop[];
+  caseLocations: CaseLocation[];
+}) {
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
 
@@ -132,7 +140,7 @@ export default function OutbreakMap() {
       // ── First-detection sites ───────────────────────────────────────────
       map.addSource("spread-stops", {
         type: "geojson",
-        data: stopsGeoJSON(),
+        data: stopsGeoJSON(spreadStops),
       });
 
       map.addLayer({
@@ -153,7 +161,7 @@ export default function OutbreakMap() {
       // fresh data is oxblood, stale data fades to slate.
       map.addSource("cases", {
         type: "geojson",
-        data: casesGeoJSON(REFERENCE_ISO),
+        data: casesGeoJSON(caseLocations, referenceISO(caseLocations)),
       });
 
       const recencyColor = recencyColorExpression();
@@ -280,7 +288,7 @@ export default function OutbreakMap() {
       map.remove();
       mapRef.current = null;
     };
-  }, []);
+  }, [spreadStops, caseLocations]);
 
   return (
     <div className="flex h-full w-full flex-col">

@@ -1,7 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { updateSignalLedger } from "../scripts/lib/signals.mjs";
 import { classifySignals, type LedgerSignal } from "@/lib/signals";
-import type { MonitoringEntry } from "@/data/outbreak";
+import type { MonitoringEntry } from "@/data/outbreaks";
 
 const NOW = "2026-10-02T12:00:00.000Z";
 

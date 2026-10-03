@@ -32,7 +32,7 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Update death-toll snapshot
+      - name: Update death-toll snapshots
         run: node scripts/update-toll.mjs
 
       - name: Fetch feeds and update live data
@@ -46,7 +46,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add data/live.json data/candidates.json data/signals.json data/toll.json
+          git add data/outbreaks
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
@@ -55,23 +55,27 @@ jobs:
             git push
           fi
 
-      - name: Summarize death toll
+      - name: Summarize death tolls
         if: always()
         run: |
           node -e '
             const fs = require("fs");
-            let t = {};
-            try { t = JSON.parse(fs.readFileSync("data/toll.json", "utf8")); } catch {}
-            const l = (Array.isArray(t.snapshots) && t.snapshots[t.snapshots.length - 1]) || t.latest || t;
-            const g = (...k) => { for (const x of k) if (l[x] != null) return l[x]; return "n/a"; };
-            const md = [
-              "## Ebola outbreak — latest death toll",
-              "",
-              "- As of: " + g("date", "asOf", "as_of"),
-              "- Confirmed cases: " + g("confirmed", "confirmedCases"),
-              "- Deaths: " + g("deaths", "deathToll"),
-              "- Source: " + g("source", "sourceName"),
-              ""
-            ].join("\n");
-            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md);
+            const root = "data/outbreaks";
+            const md = ["## Latest death tolls", ""];
+            for (const slug of fs.existsSync(root) ? fs.readdirSync(root).sort() : []) {
+              let t = {};
+              try { t = JSON.parse(fs.readFileSync(root + "/" + slug + "/toll.json", "utf8")); } catch {}
+              const l = (Array.isArray(t.snapshots) && t.snapshots[t.snapshots.length - 1]) || t.latest || t;
+              const g = (...k) => { for (const x of k) if (l[x] != null) return l[x]; return "n/a"; };
+              md.push(
+                "### " + slug,
+                "",
+                "- As of: " + g("date", "asOf", "as_of"),
+                "- Confirmed cases: " + g("confirmed", "confirmedCases"),
+                "- Deaths: " + g("deaths", "deathToll"),
+                "- Source: " + g("source", "sourceName"),
+                ""
+              );
+            }
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md.join("\n"));
           '

@@ -1,4 +1,4 @@
-import type { CaseDataPoint } from "@/data/outbreak";
+import type { CaseDataPoint } from "@/data/outbreaks";
 
 export type TrendField = "confirmed" | "suspected" | "deaths" | "recovered";
 

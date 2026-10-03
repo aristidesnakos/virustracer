@@ -1,5 +1,5 @@
 import { readFileSync, existsSync } from "fs";
-import { resolve } from "path";
+import { outbreakDataPath } from "./outbreak-data";
 
 // Server-side only (reads the filesystem). Client code must import the types
 // with `import type` and receive the data via props.
@@ -25,14 +25,13 @@ export interface TollData {
   snapshots: TollSnapshot[];
 }
 
-const TOLL_PATH = resolve(process.cwd(), "data/toll.json");
-
 const EMPTY: TollData = { lastChecked: "", snapshots: [] };
 
-export function getTollData(): TollData {
-  if (!existsSync(TOLL_PATH)) return { ...EMPTY, snapshots: [] };
+export function getTollData(slug: string): TollData {
+  const path = outbreakDataPath(slug, "toll");
+  if (!existsSync(path)) return { ...EMPTY, snapshots: [] };
   try {
-    const raw = JSON.parse(readFileSync(TOLL_PATH, "utf-8")) as Partial<TollData>;
+    const raw = JSON.parse(readFileSync(path, "utf-8")) as Partial<TollData>;
     return {
       lastChecked: typeof raw.lastChecked === "string" ? raw.lastChecked : "",
       snapshots: Array.isArray(raw.snapshots) ? raw.snapshots : [],

@@ -1,7 +1,7 @@
 import { Metric } from "@/components/ui/metric";
 import { BadgeDelta } from "@/components/ui/badge-delta";
 import { SparkArea } from "@/components/ui/spark-area";
-import { casesTimeline, summary, type CaseDataPoint } from "@/data/outbreak";
+import type { CaseDataPoint, OutbreakSummary } from "@/data/outbreaks";
 import { computeTrend, type TrendField } from "@/lib/outbreak-trend";
 import { latestDate } from "@/lib/timeline";
 
@@ -61,9 +61,11 @@ const NOTE_CLASS = "text-[0.8125rem] leading-snug text-ink-faint";
 const CELL_CLASS = "flex flex-col justify-between gap-2 bg-panel px-5 py-4";
 
 export default function StatStrip({
-  timeline = casesTimeline,
+  timeline,
+  summary,
 }: {
-  timeline?: CaseDataPoint[];
+  timeline: CaseDataPoint[];
+  summary: OutbreakSummary;
 }) {
   const asOf = timeline.length > 0 ? (latestDate(timeline) ?? undefined) : undefined;
 

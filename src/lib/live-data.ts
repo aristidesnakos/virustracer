@@ -1,5 +1,5 @@
 import { readFileSync, existsSync } from "fs";
-import { resolve } from "path";
+import { outbreakDataPath } from "./outbreak-data";
 
 export interface FeedItem {
   id: string;
@@ -16,14 +16,13 @@ export interface LiveData {
   recentItems: FeedItem[];
 }
 
-const LIVE_PATH = resolve(process.cwd(), "data/live.json");
-
-export function getLiveData(): LiveData {
-  if (!existsSync(LIVE_PATH)) {
+export function getLiveData(slug: string): LiveData {
+  const path = outbreakDataPath(slug, "live");
+  if (!existsSync(path)) {
     return { lastFetched: "", processedIds: [], recentItems: [] };
   }
   try {
-    return JSON.parse(readFileSync(LIVE_PATH, "utf-8")) as LiveData;
+    return JSON.parse(readFileSync(path, "utf-8")) as LiveData;
   } catch {
     return { lastFetched: "", processedIds: [], recentItems: [] };
   }

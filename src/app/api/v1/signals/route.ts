@@ -1,4 +1,4 @@
-import { monitoringData, outbreak } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import { API_ATTRIBUTION, jsonResponse, optionsResponse } from "@/lib/api";
 import { classifySignals, getSignalsLedger } from "@/lib/signals";
 
@@ -8,8 +8,9 @@ import { classifySignals, getSignalsLedger } from "@/lib/signals";
 // led the confirmation. Unverified signals are leads, not confirmed cases.
 
 export function GET() {
-  const ledger = getSignalsLedger();
-  const signals = classifySignals(ledger.signals, monitoringData);
+  const outbreak = getDefaultOutbreak();
+  const ledger = getSignalsLedger(outbreak.slug);
+  const signals = classifySignals(ledger.signals, outbreak.monitoringData);
   const lead = signals.filter((s) => s.leadDays !== null).map((s) => s.leadDays as number);
 
   return jsonResponse({

@@ -1,5 +1,5 @@
 import type { NextRequest } from "next/server";
-import { outbreak } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import {
   API_ATTRIBUTION,
   csvResponse,
@@ -20,10 +20,12 @@ export function GET(request: NextRequest) {
   const query = parseTollQuery(request.nextUrl.searchParams);
   if ("error" in query) return errorResponse(query.error);
 
-  const toll = getTollData();
+  // The un-prefixed API serves the default outbreak; per-outbreak URLs come with the route move.
+  const outbreak = getDefaultOutbreak();
+  const toll = getTollData(outbreak.slug);
   const snapshots = selectSnapshots(toll.snapshots, query);
 
-  if (query.format === "csv") return csvResponse(tollToCsv(snapshots), "ebola-toll.csv");
+  if (query.format === "csv") return csvResponse(tollToCsv(snapshots), `${outbreak.disease.toLowerCase()}-toll.csv`);
 
   const latest = toll.snapshots.length
     ? [...toll.snapshots].sort((a, b) => a.date.localeCompare(b.date)).at(-1)!

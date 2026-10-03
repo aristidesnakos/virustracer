@@ -1,62 +1,27 @@
 #!/usr/bin/env node
 /**
- * virustracer — Ebola Outbreak Tracker — Feed Updater
- * Runs on a GitHub Actions cron. Fetches RSS feeds from WHO and Google News,
- * filters for 2026 Bundibugyo Ebola (DR Congo & Uganda) content, summarizes via
- * OpenRouter (DeepSeek), and writes updated data/live.json.
+ * virustracer — Outbreak feed updater
+ * Runs on a GitHub Actions cron. For each automated outbreak in
+ * scripts/lib/outbreak-registry.mjs (or just `--outbreak=<slug>`), fetches the
+ * outbreak's RSS feeds, keyword-filters them, summarizes via OpenRouter (DeepSeek)
+ * and writes data/outbreaks/<slug>/{live,candidates,signals}.json.
  *
- * Required env: OPENROUTER_API_KEY
+ * Optional env: OPENROUTER_API_KEY (without it, raw descriptions are saved)
  */
 
 import OpenAI from "openai";
-import { readFileSync, writeFileSync, existsSync } from "fs";
+import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
 import { createHash } from "crypto";
 import { fileURLToPath } from "url";
 import { updateSignalLedger } from "./lib/signals.mjs";
+import { dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
-const LIVE_JSON = resolve(ROOT, "data/live.json");
-const CANDIDATES_JSON = resolve(ROOT, "data/candidates.json");
-const SIGNALS_JSON = resolve(ROOT, "data/signals.json");
 
 // Cap candidates list to recent signals to avoid carrying stale extractions forever.
 const CANDIDATE_MAX_AGE_DAYS = 30;
-
-// ── Feed sources ──────────────────────────────────────────────────────────────
-const gnews = (q) =>
-  `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
-
-const FEEDS = [
-  {
-    name: "WHO News",
-    // WHO general news RSS — not outbreak-specific, so keyword filtered below
-    url: "https://www.who.int/rss-feeds/news-english.xml",
-    source: "WHO",
-  },
-  {
-    name: "Google News — Ebola death toll",
-    url: gnews("Ebola Congo death toll"),
-    source: "News",
-  },
-  {
-    name: "Google News — Bundibugyo outbreak",
-    url: gnews("Ebola Bundibugyo outbreak"),
-    source: "News",
-  },
-  {
-    name: "Google News — WHO DON",
-    // Specifically tracks WHO disease outbreak news
-    url: gnews('WHO "disease outbreak news" Ebola Bundibugyo'),
-    source: "WHO",
-  },
-];
-
-// ── Keywords that flag an outbreak-related article ────────────────────────────
-// Strong terms match on their own; "ituri" is noisy so it needs outbreak context.
-const STRONG_KEYWORDS = ["ebola", "bundibugyo", "ebola virus disease", "filovirus"];
-const ITURI_CONTEXT = ["outbreak", "virus", "cases", "deaths"];
 
 // ── HTML entity decoder ───────────────────────────────────────────────────────
 function decodeHtmlEntities(str) {
@@ -116,10 +81,14 @@ function parseRSSItems(xml) {
   return items;
 }
 
-function isOutbreakRelated(item) {
+// Strong keywords match alone; a contextual term (a noisy place name, say) also
+// needs one of its context words in the same text.
+function isOutbreakRelated(item, feedConfig) {
   const text = `${item.title} ${item.description}`.toLowerCase();
-  if (STRONG_KEYWORDS.some((kw) => text.includes(kw))) return true;
-  return text.includes("ituri") && ITURI_CONTEXT.some((kw) => text.includes(kw));
+  if (feedConfig.strongKeywords.some((kw) => text.includes(kw))) return true;
+  return (feedConfig.contextualKeywords ?? []).some(
+    ({ term, needsOneOf }) => text.includes(term) && needsOneOf.some((kw) => text.includes(kw)),
+  );
 }
 
 function itemId(feedSource, guid) {
@@ -164,14 +133,14 @@ function isoToFlag(iso) {
 }
 
 // ── Structured candidate extraction (DeepSeek V4 Flash, JSON mode) ────────────
-async function extractCandidate(client, title, description) {
-  const prompt = `You extract structured signals from news articles about the 2026 Bundibugyo Ebola outbreak (DR Congo & Uganda).
+async function extractCandidate(client, feedConfig, title, description) {
+  const prompt = `You extract structured signals from news articles about ${feedConfig.subject}.
 
-Read the title and content. If — and only if — the article reports a SPECIFIC COUNTRY OTHER THAN DR CONGO (which is already curated) with Ebola cases, deaths, suspected cases, or contacts RELATED TO THE 2026 BUNDIBUGYO OUTBREAK (e.g. Uganda, Rwanda, Burundi, South Sudan, Kenya, Tanzania, or an imported/medevac case in Europe or the US), return JSON:
+Read the title and content. ${feedConfig.extraction.scope}
 
 {"country": "<English country name>", "iso": "<ISO 3166-1 alpha-2>", "casesMentioned": <integer or null>, "deathsMentioned": <integer or null>, "context": "<one short factual sentence from the article>"}
 
-If the article is only about DR Congo, OR does not mention a specific country, OR the data is from a historical/different outbreak (2014–16 West Africa, 2018–20 Kivu, 2025 Kasai/Uganda Sudan-virus), OR the country is merely "on alert" or preparing without reported cases/deaths/contacts, return:
+${feedConfig.extraction.exclusions}
 
 {"country": null, "iso": null, "casesMentioned": null, "deathsMentioned": null, "context": null}
 
@@ -208,8 +177,8 @@ Respond with JSON only.`;
 }
 
 // ── OpenRouter summarization (DeepSeek V4 Flash — cheap, fast) ────────────────
-async function extractSummary(client, title, description) {
-  const prompt = `Summarize this news item about the 2026 Bundibugyo Ebola outbreak (DR Congo & Uganda) in 1–2 factual sentences. If the article states the latest cumulative death toll or confirmed case count, LEAD with it (include the as-of date if given). Otherwise include any key figures or official statements. No preamble.
+async function extractSummary(client, feedConfig, title, description) {
+  const prompt = `Summarize this news item about ${feedConfig.subject} in 1–2 factual sentences. If the article states the latest cumulative death toll or confirmed case count, LEAD with it (include the as-of date if given). Otherwise include any key figures or official statements. No preamble.
 
 Title: ${title}
 Content: ${description}`;
@@ -228,7 +197,7 @@ Content: ${description}`;
 }
 
 // ── Main ──────────────────────────────────────────────────────────────────────
-async function main() {
+function createClient() {
   const apiKey = process.env.OPENROUTER_API_KEY;
   const canSummarize = Boolean(apiKey);
 
@@ -239,7 +208,7 @@ async function main() {
         defaultHeaders: {
           "HTTP-Referer": "https://github.com/aristidesnakos/virustracer",
           // HTTP headers must be ASCII (an em dash here made every OpenRouter call fail).
-          "X-Title": "virustracer - Ebola Outbreak Tracker",
+          "X-Title": "virustracer - Outbreak Tracker",
         },
       })
     : null;
@@ -247,6 +216,15 @@ async function main() {
   if (!canSummarize) {
     console.warn("OPENROUTER_API_KEY not set — saving raw descriptions.");
   }
+  return client;
+}
+
+async function updateOutbreakFeeds(outbreak, client) {
+  const { slug, feed: feedConfig } = outbreak;
+  const LIVE_JSON = dataFile(ROOT, slug, "live");
+  const CANDIDATES_JSON = dataFile(ROOT, slug, "candidates");
+  const SIGNALS_JSON = dataFile(ROOT, slug, "signals");
+  mkdirSync(dirname(LIVE_JSON), { recursive: true });
 
   // Load existing live.json
   let live = { lastFetched: "", processedIds: [], recentItems: [] };
@@ -276,13 +254,13 @@ async function main() {
   const newItems = [];
   const newCandidates = [];
 
-  for (const feed of FEEDS) {
+  for (const feed of feedConfig.sources) {
     console.log(`Fetching ${feed.name}…`);
     let xml;
     try {
       const res = await fetch(feed.url, {
         headers: {
-          "User-Agent": "virustracer/1.0 (Ebola outbreak tracker; public health surveillance)",
+          "User-Agent": `virustracer/1.0 (${outbreak.disease} outbreak tracker; public health surveillance)`,
           Accept: "application/rss+xml, application/xml, text/xml",
         },
         signal: AbortSignal.timeout(20_000),
@@ -301,7 +279,7 @@ async function main() {
     const items = parseRSSItems(xml);
     console.log(`  ${items.length} items parsed`);
 
-    const relevant = items.filter(isOutbreakRelated);
+    const relevant = items.filter((item) => isOutbreakRelated(item, feedConfig));
     console.log(`  ${relevant.length} outbreak-related`);
 
     // Newest first, so the per-feed cap keeps the most recent articles.
@@ -331,7 +309,7 @@ async function main() {
       console.log(`  New: ${item.title.slice(0, 80)}`);
 
       const summary = client
-        ? await extractSummary(client, item.title, item.description)
+        ? await extractSummary(client, feedConfig, item.title, item.description)
         : item.description.slice(0, 200);
 
       const feedItem = {
@@ -348,6 +326,7 @@ async function main() {
       if (client && !candidateIdSet.has(id)) {
         const candidate = await extractCandidate(
           client,
+          feedConfig,
           item.title,
           item.description,
         );
@@ -378,7 +357,7 @@ async function main() {
     for (const item of existingItems) {
       if (candidateIdSet.has(item.id)) continue;
       console.log(`  Backfilling candidate for: ${item.title.slice(0, 60)}`);
-      const candidate = await extractCandidate(client, item.title, item.summary);
+      const candidate = await extractCandidate(client, feedConfig, item.title, item.summary);
       candidateIdSet.add(item.id);
       if (candidate) {
         newCandidates.push({
@@ -465,6 +444,24 @@ async function main() {
     writeFileSync(SIGNALS_JSON, JSON.stringify(nextLedger, null, 2) + "\n");
     console.log(`Signal ledger: ${nextLedger.signals.length} countr${nextLedger.signals.length === 1 ? "y" : "ies"}.`);
   }
+}
+
+async function main() {
+  const outbreaks = selectOutbreaks().filter((o) => o.feed);
+  const client = createClient();
+  let failed = 0;
+  for (const outbreak of outbreaks) {
+    console.log(`\n══ ${outbreak.slug} ══`);
+    try {
+      await updateOutbreakFeeds(outbreak, client);
+    } catch (err) {
+      // One outbreak failing must not stop the others; the annotation flags it in the run.
+      failed++;
+      console.log(`::error::Feed update for ${outbreak.slug} failed: ${err instanceof Error ? err.message : err}`);
+    }
+  }
+  // Fail the run only if nothing worked, so one broken source does not block the commit step.
+  if (outbreaks.length > 0 && failed === outbreaks.length) process.exit(1);
 }
 
 main().catch((err) => {

@@ -1,8 +1,10 @@
 import { ImageResponse } from "next/og";
-import { casesTimeline, outbreak } from "@/data/outbreak";
+import { getDefaultOutbreak } from "@/data/outbreaks";
 import { getTollData } from "@/lib/toll";
 import { mergeTimeline } from "@/lib/timeline";
 import { latestFigures } from "@/lib/seo";
+
+const outbreak = getDefaultOutbreak();
 
 export const alt = outbreak.seoTitle;
 export const size = { width: 1200, height: 630 };
@@ -12,8 +14,8 @@ export const contentType = "image/png";
 // feed shows the toll rather than a generic logo. Colours are the site palette
 // as hex (ImageResponse does not read oklch).
 export default function OpengraphImage() {
-  const toll = getTollData();
-  const figures = latestFigures(mergeTimeline(casesTimeline, toll.snapshots));
+  const toll = getTollData(outbreak.slug);
+  const figures = latestFigures(mergeTimeline(outbreak.casesTimeline, toll.snapshots));
   const stat = (label: string, value: number | null, color: string) => (
     <div style={{ display: "flex", flexDirection: "column" }}>
       <div style={{ fontSize: 120, fontWeight: 700, color, lineHeight: 1 }}>

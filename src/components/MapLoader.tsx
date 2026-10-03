@@ -2,6 +2,8 @@
 
 import dynamic from "next/dynamic";
 
+import type { CaseLocation, SpreadStop } from "@/data/outbreaks";
+
 const OutbreakMap = dynamic(() => import("@/components/OutbreakMap"), {
   ssr: false,
   loading: () => (
@@ -15,6 +17,12 @@ const OutbreakMap = dynamic(() => import("@/components/OutbreakMap"), {
   ),
 });
 
-export default function MapLoader() {
-  return <OutbreakMap />;
+export default function MapLoader({
+  spreadStops,
+  caseLocations,
+}: {
+  spreadStops: SpreadStop[];
+  caseLocations: CaseLocation[];
+}) {
+  return <OutbreakMap spreadStops={spreadStops} caseLocations={caseLocations} />;
 }
