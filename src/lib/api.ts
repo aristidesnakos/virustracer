@@ -44,8 +44,17 @@ export const CORS_HEADERS: Record<string, string> = {
   "Access-Control-Max-Age": "86400",
 };
 
+/** Seconds a response may be served from the CDN cache; the fair-use text on `/data` quotes it. */
+export const API_CACHE_SECONDS = 900;
+
+/**
+ * The per-IP limit enforced by the Vercel WAF rule on `/api/*` (a platform setting, not code in this repo).
+ * `/data` quotes it, so change the firewall rule and this constant together.
+ */
+export const API_RATE_LIMIT = { requests: 60, windowSeconds: 60 } as const;
+
 /** Data only changes when a new deployment goes out, which purges the CDN cache. */
-const CACHE_CONTROL = "public, s-maxage=900, stale-while-revalidate=3600";
+const CACHE_CONTROL = `public, s-maxage=${API_CACHE_SECONDS}, stale-while-revalidate=3600`;
 
 export function jsonResponse(body: unknown, status = 200): Response {
   const cacheable = status === 200;

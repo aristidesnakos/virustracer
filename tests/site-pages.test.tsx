@@ -5,6 +5,8 @@ import { SITE_PAGES } from "../scripts/lib/site.mjs";
 import HomePage, { generateMetadata as homeMetadata } from "@/app/page";
 import MethodologyPage, { metadata as methodologyMetadata } from "@/app/methodology/page";
 import AboutPage, { metadata as aboutMetadata } from "@/app/about/page";
+import DataPage from "@/app/data/page";
+import { API_RATE_LIMIT } from "@/lib/api";
 import { listOutbreaks } from "@/data/outbreaks";
 import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
 import { CORRECTIONS_URL, SANITY_CHECKS } from "@/lib/methodology";
@@ -105,6 +107,18 @@ describe("/about", () => {
   it("has its own canonical and repeats the shared Open Graph fields", () => {
     expect(aboutMetadata.alternates?.canonical).toBe("/about");
     expect(aboutMetadata.openGraph).toMatchObject({ siteName: "Outbreak Files", type: "website" });
+  });
+});
+
+describe("data page fair use", () => {
+  it("states the rate limit the firewall enforces and links to report needs", () => {
+    render(<DataPage />);
+    const section = screen.getByRole("heading", { name: "Fair use" }).closest("section")!;
+    expect(section).toHaveTextContent(
+      `${API_RATE_LIMIT.requests} requests per ${API_RATE_LIMIT.windowSeconds} seconds`,
+    );
+    expect(section).toHaveTextContent("429 Too Many Requests");
+    expect(within(section).getByRole("link", { name: "open an issue" })).toHaveAttribute("href", CORRECTIONS_URL);
   });
 });
 
