@@ -17,7 +17,7 @@ import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseInfobox, validateSnapshot, applySnapshot } from "./lib/toll.mjs";
 import { archiveInfobox } from "./lib/raw.mjs";
-import { USER_AGENT, dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
+import { USER_AGENT, dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
 
 const TIMEOUT_MS = 20_000;
 
@@ -188,7 +188,7 @@ async function updateOutbreak(outbreak) {
 
 async function main() {
   // Only outbreaks with an automated toll source are updated here.
-  const outbreaks = selectOutbreaks().filter((o) => o.toll);
+  const outbreaks = selectOutbreaksWith("toll");
   for (const outbreak of outbreaks) {
     console.log(`── ${outbreak.slug} ──`);
     try {

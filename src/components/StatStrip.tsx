@@ -43,16 +43,33 @@ const TILES: StatTile[] = [
   },
 ];
 
-/** Case fatality from the most recent point that reports both deaths and confirmed cases. */
-function caseFatality(timeline: readonly CaseDataPoint[]): string {
+/**
+ * Case fatality from the most recent point that reports both deaths and confirmed
+ * cases; with basis "all-cases" the denominator also counts probable cases.
+ */
+export function caseFatality(
+  timeline: readonly CaseDataPoint[],
+  basis: OutbreakSummary["fatalityBasis"] = "confirmed",
+): string {
   const sorted = [...timeline].sort((a, b) => Date.parse(a.date) - Date.parse(b.date));
   for (let i = sorted.length - 1; i >= 0; i--) {
-    const { deaths, confirmed } = sorted[i];
+    const { deaths, confirmed, suspected } = sorted[i];
     if (deaths !== undefined && confirmed !== undefined && confirmed > 0) {
-      return `${((deaths / confirmed) * 100).toFixed(1)}%`;
+      const cases = basis === "all-cases" ? confirmed + (suspected ?? 0) : confirmed;
+      return `${((deaths / cases) * 100).toFixed(1)}%`;
     }
   }
   return "—";
+}
+
+/** Small print under the spread status: the summary's own note, else the counts it has. */
+function spreadNote(summary: OutbreakSummary): string {
+  if (summary.spreadNote) return summary.spreadNote;
+  const parts: string[] = [];
+  if (summary.provincesAffected !== undefined) parts.push(`${summary.provincesAffected} provinces`);
+  if (summary.healthZonesAffected !== undefined) parts.push(`${summary.healthZonesAffected} health zones`);
+  parts.push(`${summary.countriesAffected} countries`);
+  return parts.join(" · ");
 }
 
 const LABEL_CLASS =
@@ -117,17 +134,19 @@ export default function StatStrip({
       <div data-slot="figure" className={CELL_CLASS}>
         <span className={LABEL_CLASS}>Case fatality</span>
         <Metric className="font-journal text-[2.25rem] font-bold leading-none text-death">
-          {caseFatality(timeline)}
+          {caseFatality(timeline, summary.fatalityBasis)}
         </Metric>
-        <span className={NOTE_CLASS}>deaths / confirmed</span>
+        <span className={NOTE_CLASS}>
+          {summary.fatalityBasis === "all-cases" ? "deaths / all cases (confirmed + probable)" : "deaths / confirmed"}
+        </span>
       </div>
 
       <div data-slot="figure" className={CELL_CLASS}>
-        <span className={LABEL_CLASS}>Contacts followed up</span>
+        <span className={LABEL_CLASS}>{summary.contactsLabel ?? "Contacts followed up"}</span>
         <Metric className="font-journal text-[2.25rem] font-bold leading-none text-ink">
           {summary.contactsUnderFollowUp.toLocaleString("en-US")}
         </Metric>
-        <span className={NOTE_CLASS}>under follow-up</span>
+        <span className={NOTE_CLASS}>{summary.contactsNote ?? "under follow-up"}</span>
       </div>
 
       <div data-slot="figure" className={`${CELL_CLASS} col-span-2 lg:col-span-1`}>
@@ -135,9 +154,7 @@ export default function StatStrip({
         <div className="font-journal text-xl font-semibold leading-tight text-accent">
           {summary.spreadStatus}
         </div>
-        <span className={NOTE_CLASS}>
-          {`${summary.provincesAffected} provinces · ${summary.healthZonesAffected} health zones · ${summary.countriesAffected} countries`}
-        </span>
+        <span className={NOTE_CLASS}>{spreadNote(summary)}</span>
       </div>
     </section>
   );

@@ -15,7 +15,7 @@ import { resolve, dirname } from "path";
 import { createHash } from "crypto";
 import { fileURLToPath } from "url";
 import { updateSignalLedger } from "./lib/signals.mjs";
-import { dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
+import { dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -447,7 +447,7 @@ async function updateOutbreakFeeds(outbreak, client) {
 }
 
 async function main() {
-  const outbreaks = selectOutbreaks().filter((o) => o.feed);
+  const outbreaks = selectOutbreaksWith("feed");
   const client = createClient();
   let failed = 0;
   for (const outbreak of outbreaks) {

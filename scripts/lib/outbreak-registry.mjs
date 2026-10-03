@@ -1,7 +1,8 @@
-// Script-side registry of the outbreaks whose data is fetched automatically. Plain
-// `.mjs` (the scripts run on bare `node`, no TypeScript), so it mirrors the slug,
-// status and source of src/data/outbreaks/*.ts; tests/outbreak-registry.test.ts
-// fails if the two drift apart.
+// Script-side registry of every outbreak in src/data/outbreaks/. Plain `.mjs`
+// (the scripts run on bare `node`, no TypeScript), so it mirrors the slug, status
+// and source of src/data/outbreaks/*.ts; tests/outbreak-registry.test.ts fails if
+// the two drift apart. Only entries with `toll` are read from Wikipedia and only
+// entries with `feed` get a news feed; a hand-curated record has neither.
 
 import { resolve } from "node:path";
 
@@ -53,6 +54,14 @@ export const OUTBREAKS = [
       },
     },
   },
+  {
+    // Archived, hand-curated record (src/data/outbreaks/hantavirus-mv-hondius-2026.ts).
+    // No `toll` and no `feed`: nothing here is fetched, and status "over" keeps it
+    // out of the scheduled runs. Its live.json is a frozen news record.
+    slug: "hantavirus-mv-hondius-2026",
+    status: "over",
+    disease: "Hantavirus",
+  },
 ];
 
 export function getOutbreak(slug) {
@@ -73,6 +82,23 @@ export function selectOutbreaks(argv = process.argv.slice(2)) {
     return [found];
   }
   return OUTBREAKS.filter((o) => AUTOMATED_STATUSES.includes(o.status));
+}
+
+/**
+ * `selectOutbreaks`, keeping only entries that have `key` ("toll" or "feed").
+ * An outbreak named with --outbreak that lacks it (e.g. a hand-curated record) is
+ * skipped with a log line rather than an error, so the run still exits cleanly.
+ * @param {"toll" | "feed"} key
+ * @param {string[]} [argv]
+ * @param {(msg: string) => void} [log]
+ */
+export function selectOutbreaksWith(key, argv = process.argv.slice(2), log = console.log) {
+  const selected = selectOutbreaks(argv);
+  const kept = selected.filter((o) => o[key]);
+  for (const o of selected) {
+    if (!o[key]) log(`Skipping ${o.slug}: it has no ${key} source configured.`);
+  }
+  return kept;
 }
 
 /** data/outbreaks/<slug>/<file>.json under `root` (the repository root). */

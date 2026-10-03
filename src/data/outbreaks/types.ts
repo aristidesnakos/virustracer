@@ -23,6 +23,10 @@ export interface MonitoringEntry {
   parentIso?: string;
   confirmed: number;
   deaths: number;
+  /** People under active monitoring, when the source reports it (e.g. passengers and contacts). */
+  monitored?: number;
+  /** People in quarantine, when the source reports it. */
+  quarantined?: number;
   status: string;
   detail: string;
   source: string;
@@ -49,6 +53,8 @@ export interface CaseLocation {
   coords: [number, number];
   confirmed: number;
   deaths: number;
+  /** People under monitoring at this location, when the source reports it. Shown in the map popup. */
+  monitored?: number;
   type: "origin" | "case" | "monitoring";
   /** ISO date of the most recent verified data for this location. Drives the map recency gradient. */
   asOf: string;
@@ -75,13 +81,38 @@ export interface OutbreakLink {
 /** Figures the timeline does not carry; shown in the stat strip. */
 export interface OutbreakSummary {
   countriesAffected: number;
-  provincesAffected: number;
-  healthZonesAffected: number;
+  /** Sub-national units affected, where the outbreak is tracked that way (Ebola: DRC provinces). */
+  provincesAffected?: number;
+  healthZonesAffected?: number;
   contactsUnderFollowUp: number;
-  healthWorkerDeaths: number;
+  /** Stat-strip label for `contactsUnderFollowUp`. Defaults to "Contacts followed up". */
+  contactsLabel?: string;
+  /** Small print under `contactsUnderFollowUp`. Defaults to "under follow-up". */
+  contactsNote?: string;
+  healthWorkerDeaths?: number;
   spreadStatus: string;
+  /** Small print under `spreadStatus`. Defaults to the provinces/health zones/countries counts. */
+  spreadNote?: string;
+  /**
+   * Denominator of the case-fatality tile. "confirmed" (default) is deaths / confirmed;
+   * "all-cases" is deaths / (confirmed + probable), for when the death count includes
+   * probable cases (as WHO reports it for the MV Hondius outbreak).
+   */
+  fatalityBasis?: "confirmed" | "all-cases";
+  /** Date the curated figures were last checked against their sources (YYYY-MM-DD). */
   lastReviewed: string;
   source: string;
+}
+
+/** How the map frames this outbreak. Without it the map uses the default Central Africa view. */
+export interface OutbreakMapView {
+  /** Fixed view; omit both to fit the map to every stop and case location. */
+  center?: [number, number];
+  zoom?: number;
+  /** Join `spreadStops` in order with a dashed line (e.g. a ship's route). */
+  route?: boolean;
+  /** Legend label for the stop markers. Defaults to "First-detected site". */
+  stopsLabel?: string;
 }
 
 /**
@@ -113,6 +144,15 @@ export interface OutbreakDefinition {
   countries: readonly string[];
   /** schema.org Dataset text for this outbreak's daily series. */
   dataset: { name: string; description: string; isBasedOn: string };
+  /** Where the headline figures come from, in a few words, for the share card (e.g. "figures from WHO and INSP DRC via Wikipedia"). */
+  credit?: string;
+  /** A dated event drawn as a vertical line on the cases chart (e.g. a WHO emergency declaration). */
+  chartReference?: { date: string; label: string };
+  map?: OutbreakMapView;
+  /** Small print beside the region table heading. Defaults to `summary.source`. */
+  tableSources?: string;
+  /** Dated corrections to figures this site published earlier, shown on the outbreak's page. */
+  corrections?: readonly { date: string; note: string }[];
   casesTimeline: CaseDataPoint[];
   monitoringData: MonitoringEntry[];
   spreadStops: SpreadStop[];
