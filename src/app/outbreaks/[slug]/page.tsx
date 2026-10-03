@@ -105,7 +105,7 @@ export default async function OutbreakPage({ params }: Props) {
   const candidatesData = getCandidatesData(slug);
   // Rates come from the single-source daily snapshots only: mixing in hand-curated
   // milestone rows would add small cross-source jumps to the weekly counts.
-  const metrics = computeMetrics(toll.snapshots);
+  const metrics = computeMetrics(toll.snapshots, outbreak.metrics);
 
   // An archived record (over, or curated by hand) shows nothing that looks live:
   // no pulsing dot, no fetch times, no empty trend panel, news as past coverage.

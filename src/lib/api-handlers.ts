@@ -84,7 +84,7 @@ export function metricsResponse(outbreak: OutbreakDefinition, request: Request):
   if (include !== null && include !== "daily") return errorResponse("`include` may only be `daily`.");
 
   const toll = getTollData(outbreak.slug);
-  const metrics = computeMetrics(toll.snapshots);
+  const metrics = computeMetrics(toll.snapshots, outbreak.metrics);
 
   if (format === "csv") return csvResponse(dailyToCsv(metrics.daily), `${outbreak.disease.toLowerCase()}-daily.csv`);
 

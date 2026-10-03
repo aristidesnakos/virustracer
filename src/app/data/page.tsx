@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getDefaultOutbreak } from "@/data/outbreaks";
+import { getDefaultOutbreak, listOutbreaks } from "@/data/outbreaks";
 import { MAX_LIMIT, attributionFor } from "@/lib/api";
 import { ASSUMPTIONS } from "@/lib/metrics";
 import { OUTBREAKS_API_PATH, legacyApiPath, outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
@@ -216,10 +216,9 @@ console.log(growth.trend, rt.estimate);`}</pre>
                 <dd className="text-ink-muted">
                   The average number of people each case infects, implied by the growth rate. With a gamma-distributed
                   serial interval of mean μ and standard deviation σ, R = (1 + r·σ²/μ)^(μ²/σ²) (Wallinga &amp;
-                  Lipsitch, 2007). We use μ = {ASSUMPTIONS.serialIntervalMeanDays} days and σ ={" "}
-                  {ASSUMPTIONS.serialIntervalSdDays} days, measured in the 2014 West Africa epidemic (WHO Ebola
-                  Response Team, NEJM). It has not been measured for this Bundibugyo outbreak, so Rt carries that extra
-                  uncertainty. It describes recent transmission and lags real changes.
+                  Lipsitch, 2007). The serial interval is set per disease, below. Where no source has been verified for
+                  a disease, Rt is left out rather than borrowed from another one. It describes recent transmission and
+                  lags real changes.
                 </dd>
               </div>
               <div>
@@ -227,12 +226,31 @@ console.log(growth.trend, rt.estimate);`}</pre>
                 <dd className="text-ink-muted">
                   <span className="font-mono">naive</span> is deaths ÷ confirmed cases; it is too low while cases are
                   still unresolved. <span className="font-mono">delayAdjusted</span> divides deaths by the cases
-                  confirmed {ASSUMPTIONS.caseToDeathDays} days earlier, which accounts for the lag from confirmation to
-                  death. <span className="font-mono">resolved</span> is deaths ÷ (deaths + recovered); it runs high when
+                  confirmed some days earlier (set per disease, below), which accounts for the lag from confirmation to
+                  death; it is left out where that delay has no verified source. <span className="font-mono">resolved</span> is deaths ÷ (deaths + recovered); it runs high when
                   recoveries are under-reported. The true value is most plausibly within that spread.
                 </dd>
               </div>
             </dl>
+            <h3 className="font-semibold text-ink">Assumptions by outbreak</h3>
+            <ul className="space-y-2 text-[0.9375rem] leading-relaxed text-ink-muted" data-testid="assumptions-by-outbreak">
+              {listOutbreaks().map((o) => (
+                <li key={o.slug}>
+                  <span className="font-semibold text-ink">{o.title}.</span>{" "}
+                  {o.metrics.serialInterval ? (
+                    <>
+                      Serial interval μ = {o.metrics.serialInterval.meanDays} days, σ = {o.metrics.serialInterval.sdDays}{" "}
+                      days ({o.metrics.serialInterval.source}).
+                    </>
+                  ) : (
+                    <>Rt not reported. {o.metrics.rtNote ?? "No serial interval has been verified for this disease."}</>
+                  )}{" "}
+                  {o.metrics.caseToDeathDays !== null
+                    ? `Confirmation-to-death delay ${o.metrics.caseToDeathDays} days.`
+                    : "Delay-adjusted fatality not reported."}
+                </li>
+              ))}
+            </ul>
             <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
               Nothing here is a forecast. These are descriptions of the recent past that depend on how complete
               reporting is. For decisions, rely on official guidance from WHO and the health authorities.

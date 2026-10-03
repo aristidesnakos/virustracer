@@ -413,6 +413,12 @@ export const hantavirusMvHondius2026: OutbreakDefinition = {
       note: "figures shown in May counted a US case later ruled out and missed cases in France, Switzerland and Spain.",
     },
   ],
+  metrics: {
+    // A curated record has no daily readings, so no indicator is derived from it.
+    serialInterval: null,
+    rtNote: "A hand-curated record with no daily readings, so no rates are derived from it.",
+    caseToDeathDays: null,
+  },
   casesTimeline,
   monitoringData,
   spreadStops,

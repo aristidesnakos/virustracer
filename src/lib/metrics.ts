@@ -13,20 +13,10 @@ export interface MetricsPoint {
   recovered?: number | null;
 }
 
-/** Fixed modelling assumptions. Changing one changes every derived number. */
+/** Modelling assumptions that do not depend on the pathogen. Changing one changes every derived number. */
 export const ASSUMPTIONS = {
   /** Window for "recent" incidence and for the growth rate. */
   windowDays: 7,
-  /**
-   * Serial interval (time between symptom onset in a case and in the person they
-   * infected), gamma-distributed. WHO Ebola Response Team, NEJM 2014 (West
-   * Africa, Zaire ebolavirus): mean 15.3 d, SD 9.3 d. Not measured for this
-   * Bundibugyo outbreak, so Rt carries this extra uncertainty.
-   */
-  serialIntervalMeanDays: 15.3,
-  serialIntervalSdDays: 9.3,
-  /** Typical delay from case confirmation to death, used for the delay-adjusted fatality ratio. */
-  caseToDeathDays: 10,
   /** Minimum dated readings in the last 14 days before any rate is reported. */
   minReadingsInTwoWeeks: 5,
   /** Number of 7-day periods returned in `weekly`. */
@@ -39,6 +29,54 @@ export const ASSUMPTIONS = {
    */
   maxReportingLagDays: 3,
 } as const;
+
+/**
+ * Assumptions that belong to one pathogen, declared on each outbreak definition
+ * (`OutbreakDefinition.metrics`). A value that has no verified source is `null`,
+ * and the indicator that needs it is then left out rather than guessed.
+ */
+export interface PathogenAssumptions {
+  /**
+   * Serial interval (time between symptom onset in a case and in the person they
+   * infected), gamma-distributed. `null` when no source is verified for this
+   * pathogen: Rt is then not reported.
+   */
+  serialInterval: { meanDays: number; sdDays: number; source: string } | null;
+  /** Why Rt is not reported, shown on /data. Used when `serialInterval` is null. */
+  rtNote?: string;
+  /**
+   * Typical delay from case confirmation to death, for the delay-adjusted fatality
+   * ratio. `null` leaves that ratio out.
+   */
+  caseToDeathDays: number | null;
+}
+
+/**
+ * The assumptions behind one set of indicators, flat as the API returns them:
+ * the shared ones plus the pathogen's. The serial interval fields keep the names
+ * they had when the assumptions were global, so existing API callers still read them.
+ */
+export interface AppliedAssumptions {
+  windowDays: number;
+  minReadingsInTwoWeeks: number;
+  maxWeeks: number;
+  maxReportingLagDays: number;
+  serialIntervalMeanDays: number | null;
+  serialIntervalSdDays: number | null;
+  serialIntervalSource: string | null;
+  caseToDeathDays: number | null;
+}
+
+export function applyAssumptions(pathogen: PathogenAssumptions): AppliedAssumptions {
+  const si = pathogen.serialInterval;
+  return {
+    ...ASSUMPTIONS,
+    serialIntervalMeanDays: si?.meanDays ?? null,
+    serialIntervalSdDays: si?.sdDays ?? null,
+    serialIntervalSource: si?.source ?? null,
+    caseToDeathDays: pathogen.caseToDeathDays,
+  };
+}
 
 export interface Interval {
   estimate: number;
@@ -104,7 +142,7 @@ export interface Metrics {
   /** Newest period last. */
   weekly: WeeklyPeriod[];
   daily: DailyPoint[];
-  assumptions: typeof ASSUMPTIONS;
+  assumptions: AppliedAssumptions;
 }
 
 const dayNum = (iso: string): number => Math.floor(Date.parse(iso) / MS_PER_DAY);
@@ -166,11 +204,7 @@ function changePct(last: number, prev: number): number | null {
  * R from a growth rate r when the serial interval is gamma(mean, sd):
  * R = (1 + r * sd^2 / mean) ^ (mean^2 / sd^2)   (Wallinga & Lipsitch 2007).
  */
-export function reproductionFromGrowth(
-  r: number,
-  mean: number = ASSUMPTIONS.serialIntervalMeanDays,
-  sd: number = ASSUMPTIONS.serialIntervalSdDays,
-): number {
+export function reproductionFromGrowth(r: number, mean: number, sd: number): number {
   const base = 1 + (r * sd * sd) / mean;
   if (base <= 0) return 0; // decay faster than the serial interval can express
   return Math.pow(base, (mean * mean) / (sd * sd));
@@ -178,7 +212,7 @@ export function reproductionFromGrowth(
 
 const EMPTY_CFR = { naive: null, delayAdjusted: null, resolved: null } as const;
 
-function insufficient(reason: string, asOf: string | null): Metrics {
+function insufficient(reason: string, asOf: string | null, assumptions: AppliedAssumptions): Metrics {
   return {
     status: "insufficient_data",
     reason,
@@ -190,13 +224,18 @@ function insufficient(reason: string, asOf: string | null): Metrics {
     cfr: { ...EMPTY_CFR },
     weekly: [],
     daily: [],
-    assumptions: ASSUMPTIONS,
+    assumptions,
   };
 }
 
-export function computeMetrics(points: readonly MetricsPoint[]): Metrics {
+/**
+ * `pathogen` is required so that every caller states which assumptions it relies on;
+ * there is no default that could put one disease's serial interval on another.
+ */
+export function computeMetrics(points: readonly MetricsPoint[], pathogen: PathogenAssumptions): Metrics {
+  const assumptions = applyAssumptions(pathogen);
   const grid = buildGrid(points);
-  if (grid.length === 0) return insufficient("No readings yet.", null);
+  if (grid.length === 0) return insufficient("No readings yet.", null, assumptions);
 
   const last = grid[grid.length - 1];
   const asOf = isoOf(last.day);
@@ -204,12 +243,13 @@ export function computeMetrics(points: readonly MetricsPoint[]): Metrics {
 
   const readingsInTwoWeeks = grid.filter((g) => g.observed && g.day > last.day - 2 * W).length;
   if (grid[0].day > last.day - 2 * W) {
-    return insufficient(`Need at least ${2 * W} days of history; have ${last.day - grid[0].day}.`, asOf);
+    return insufficient(`Need at least ${2 * W} days of history; have ${last.day - grid[0].day}.`, asOf, assumptions);
   }
   if (readingsInTwoWeeks < ASSUMPTIONS.minReadingsInTwoWeeks) {
     return insufficient(
       `Need at least ${ASSUMPTIONS.minReadingsInTwoWeeks} dated readings in the last 14 days; have ${readingsInTwoWeeks}.`,
       asOf,
+      assumptions,
     );
   }
 
@@ -291,15 +331,18 @@ export function computeMetrics(points: readonly MetricsPoint[]): Metrics {
       doublingTimeDays: r.estimate > 0 ? Math.LN2 / r.estimate : null,
       halvingTimeDays: r.estimate < 0 ? Math.LN2 / -r.estimate : null,
     };
-    rt = {
-      estimate: reproductionFromGrowth(r.estimate),
-      low: reproductionFromGrowth(r.low),
-      high: reproductionFromGrowth(r.high),
-    };
+    const si = pathogen.serialInterval;
+    if (si) {
+      rt = {
+        estimate: reproductionFromGrowth(r.estimate, si.meanDays, si.sdDays),
+        low: reproductionFromGrowth(r.low, si.meanDays, si.sdDays),
+        high: reproductionFromGrowth(r.high, si.meanDays, si.sdDays),
+      };
+    }
   }
 
-  const lag = ASSUMPTIONS.caseToDeathDays;
-  const lagged = last.day - lag >= grid[0].day ? at(last.day - lag).confirmed : null;
+  const lag = pathogen.caseToDeathDays;
+  const lagged = lag !== null && last.day - lag >= grid[0].day ? at(last.day - lag).confirmed : null;
   const recovered = [...points]
     .sort((a, b) => dayNum(a.date) - dayNum(b.date))
     .reverse()
@@ -320,6 +363,6 @@ export function computeMetrics(points: readonly MetricsPoint[]): Metrics {
     },
     weekly,
     daily,
-    assumptions: ASSUMPTIONS,
+    assumptions,
   };
 }

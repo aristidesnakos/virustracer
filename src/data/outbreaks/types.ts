@@ -1,5 +1,7 @@
 // Shapes shared by every outbreak definition. Data lives in one file per outbreak.
 
+import type { PathogenAssumptions } from "@/lib/metrics";
+
 export interface CaseDataPoint {
   date: string;          // ISO 8601
   label: string;         // Display label
@@ -153,6 +155,11 @@ export interface OutbreakDefinition {
   tableSources?: string;
   /** Dated corrections to figures this site published earlier, shown on the outbreak's page. */
   corrections?: readonly { date: string; note: string }[];
+  /**
+   * Assumptions behind the derived indicators (Rt, delay-adjusted fatality). Required, so
+   * adding an outbreak means deciding them; a value without a verified source is `null`.
+   */
+  metrics: PathogenAssumptions;
   casesTimeline: CaseDataPoint[];
   monitoringData: MonitoringEntry[];
   spreadStops: SpreadStop[];

@@ -49,7 +49,7 @@ export interface OutbreakSnapshot {
  * The headline figures use the merged timeline, like the dashboard.
  */
 export function buildSnapshot(outbreak: OutbreakDefinition, toll: TollData): OutbreakSnapshot {
-  const metrics = computeMetrics(toll.snapshots);
+  const metrics = computeMetrics(toll.snapshots, outbreak.metrics);
   const ok = metrics.status === "ok";
   const newest = toll.snapshots.at(-1);
   const automated = outbreak.source.kind !== "manual";

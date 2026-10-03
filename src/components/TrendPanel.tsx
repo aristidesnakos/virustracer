@@ -123,7 +123,9 @@ export default function TrendPanel({ metrics, headingId }: { metrics: Metrics; h
               note={
                 metrics.rt
                   ? `Likely range ${metrics.rt.low.toFixed(2)}–${metrics.rt.high.toFixed(2)}. Below 1 means shrinking.`
-                  : "Needs new cases in both weeks."
+                  : metrics.assumptions.serialIntervalMeanDays === null
+                    ? "Not shown: no verified serial interval for this disease."
+                    : "Needs new cases in both weeks."
               }
             />
             <Stat
@@ -153,8 +155,10 @@ export default function TrendPanel({ metrics, headingId }: { metrics: Metrics; h
 
           <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-muted">
             <span className="font-semibold text-ink">Case fatality is best read as a range:</span>{" "}
-            {pct(metrics.cfr.naive)} of confirmed cases have died, {pct(metrics.cfr.delayAdjusted)} allowing for
-            the delay between confirmation and death
+            {pct(metrics.cfr.naive)} of confirmed cases have died
+            {metrics.cfr.delayAdjusted !== null && (
+              <>, {pct(metrics.cfr.delayAdjusted)} allowing for the delay between confirmation and death</>
+            )}
             {metrics.cfr.resolved !== null && <>, and {pct(metrics.cfr.resolved)} of cases with a known outcome</>}.
           </p>
         </>
