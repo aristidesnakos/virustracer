@@ -1,0 +1,260 @@
+{{Infobox outbreak
+| name            = 2026 measles outbreak in Bangladesh
+| width           = 
+| image           = Measles-Rubella Vaccination Campaign, Tarique Rahman, Bagbari, Gabtali, Bogura, 2026-04-20.jpg
+| image_size      = 
+| image_upright   = 1.3
+| alt             = 
+| caption         = [[Prime Minister of Bangladesh|Prime Minister]] of Bangladesh [[Tarique Rahman]] observing emergency [[MR vaccine|measles-rubella vaccination drive]] in [[Bogura District|Bogura]]'s [[Gabtali Upazila|Gabtali]] in April 2026.
+| map1            = {{Location map+ | Bangladesh
+| AlternativeMap = BD 2026 Measles outbreak district (April May) map.svg
+| caption =
+| float  = center
+| places =
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.54
+    | lon_deg = 90.26
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Sreenagar Upazila }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.34
+    | lon_deg = 90.33
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Zanjira Upazila }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 22.62
+    | lon_deg = 90.27
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Nalchity }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.06
+    | lon_deg = 89.61
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Bera Upazila }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.54
+    | lon_deg = 90.52
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Munshiganj }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.66
+    | lon_deg = 90.16
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Nawabganj Upazila, Dhaka }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 22.54
+    | lon_deg = 90.33
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Bakerganj Upazila}}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.16
+    | lon_deg = 90.19
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Madaripur }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.86
+    | lon_deg = 90.45
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Tarakanda }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.06
+    | lon_deg = 90.63
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Haimchar Upazila}}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 21.45
+    | lon_deg = 92.10
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Ramu Upazila}}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.46
+    | lon_deg = 90.34
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Louhajang Upazila }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.90
+    | lon_deg = 88.20
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Bholahat }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.41
+    | lon_deg = 88.98
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Natore }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.17
+    | lon_deg = 89.21
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Jessore }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.68
+    | lon_deg = 88.16
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Shibganj Upazila, Chapai Nawabganj }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 25.01
+    | lon_deg = 88.49
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Porsha Upazila }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 22.82
+    | lon_deg = 90.52
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Mehendiganj Upazila}}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.47
+    | lon_deg = 88.35
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Godagari Upazila }}
+  {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 22.15
+    | lon_deg = 90.13
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Barguna }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.13
+    | lon_deg = 89.25
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Atghoria Upazila }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.23
+    | lon_deg = 90.66
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Chandpur, Bangladesh }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 21.58
+    | lon_deg = 91.92
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Moheshkhali Upazila}}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 23.99
+    | lon_deg = 90.42
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Gazipur }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.59
+    | lon_deg = 88.27
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Chapai Nawabganj }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.12
+    | lon_deg = 89.06
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Ishwardi }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.85
+    | lon_deg = 90.77
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Atpara }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.75
+    | lon_deg = 90.41
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Mymensingh }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.58
+    | lon_deg = 90.39
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Trishal }}
+ {{Location map~ | Bangladesh
+    | label = 
+    | lat_deg = 24.01
+    | lon_deg = 89.24
+    | mark = Warning icon.svg
+    | marksize = 12
+    | link = Pabna }}
+}}
+| legend1         = {{centre|[[File:Warning icon.svg|18px]] Municipalities and sub-districts designated as outbreak hotspots {{small|(As assessed by the [[Ministry of Health and Family Welfare (Bangladesh)|MoHFW]] till 4 April 2026)}}<br>{{color box|#78383f}} Districts with active hotspots<br>{{color box|#cdb7b6}} Districts with confirmed or suspected cases<br>{{color box|#fdfdf5}} Districts with no reported cases}}
+| map2            = BD Division measles per population 2026.svg
+| legend2         = {{Centre|Cases per 100,000 inhabitants by divisions {{small|(15 March — 12 May 2026)}}}}
+| map3            = 
+| legend3         = 
+| map4            = 
+| legend4         = 
+| map5            = 
+| legend5         = 
+| disease         = [[Measles]]
+| pathogen        = ''[[Measles morbillivirus]]'' (MV)
+| location        = [[Bangladesh]]
+| first_outbreak  = <!-- Indicates first outbreak globally-->
+| first_reported  = <!-- Media or historical report, (evidence of prior circulation) -->
+                  <!-- If first outbreak and first report are the same, choose one!-->| index_case      = <!-- National or international depending on article level -->
+| arrival_date    = <!-- or | dates = -->
+| date            = Late February 2026 – present
+| source          = <!-- Animal or other reservoir -->
+| type            = 
+| confirmed_cases = 14,461
+| active_cases    = 
+| suspected_cases = 117,648
+| severe_cases    = 
+| hospitalized_cases = 87,966
+| critical_cases  = 
+| ventilator_cases = 
+| ecmo_cases      = 
+| recovery_cases  = 96,521
+| deaths          = 788 (693 suspected cases)
+| fatality_rate   = 5.45% {{small|(confirmed cases)}}<br>0.67% {{small|(suspected cases)}}<br>'''3.06% {{small|(all cases)}}'''
+| test_positivity_rate = <!-- Indicates test positivity rate -->
+| territories     = 
+| total_ili       = 
+| website         = 
+| vaccinations    = <!-- A list in here will be shown without bullet points -->
+}}

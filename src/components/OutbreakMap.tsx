@@ -355,6 +355,7 @@ export default function OutbreakMap({
       />
       {/* Legend sits under the map so it never hides data on small screens */}
       <div className="flex shrink-0 flex-wrap items-center gap-x-6 gap-y-2 border-t border-rule bg-panel px-4 py-3 text-[0.8125rem] text-ink-muted">
+        {caseLocations.length > 0 && (
         <div className="flex items-center gap-2">
           <span className="font-semibold text-ink">Data recency</span>
           <span className="tabular-nums">{archived ? "latest" : "today"}</span>
@@ -368,6 +369,7 @@ export default function OutbreakMap({
           />
           <span className="tabular-nums">45d+</span>
         </div>
+        )}
         <div className="flex items-center gap-2">
           <span
             className="size-2.5 shrink-0 rounded-full border border-white bg-confirmed"
@@ -375,7 +377,7 @@ export default function OutbreakMap({
           />
           {stopsLabel}
         </div>
-        <div>Dot label: deaths · size: confirmed cases</div>
+        {caseLocations.length > 0 && <div>Dot label: deaths · size: confirmed cases</div>}
       </div>
     </div>
   );

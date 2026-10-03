@@ -15,7 +15,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseInfobox, validateSnapshot, applySnapshot } from "./lib/toll.mjs";
+import { parseInfobox, validateSnapshot, applySnapshot, withoutIgnored } from "./lib/toll.mjs";
 import { archiveInfobox } from "./lib/raw.mjs";
 import { USER_AGENT, dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
 
@@ -125,7 +125,7 @@ async function updateOutbreak(outbreak) {
     return;
   }
 
-  const parsed = parseInfobox(fetched.wikitext);
+  const parsed = withoutIgnored(parseInfobox(fetched.wikitext), toll.ignoreFields);
   if (!parsed) {
     console.log(
       `::error::Could not parse confirmed_cases/deaths from the Infobox outbreak on ${PAGE_TITLE} (revid ${fetched.revid ?? "?"}). The infobox format may have changed; toll data for ${slug} was NOT updated.`,

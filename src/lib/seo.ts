@@ -45,16 +45,21 @@ function longDate(iso: string): string {
  * description when there is no data. Capped near the ~160 characters search
  * engines show.
  */
+/** " among confirmed cases" (leading space) or "", for text that follows "N deaths". */
+export function deathsSuffix(summary?: { deathsQualifier?: string }): string {
+  return summary?.deathsQualifier ? ` ${summary.deathsQualifier}` : "";
+}
+
 export function describeFigures(
   figures: LatestFigures | null,
   fallback: string,
-  label: { shortName: string; places: string },
+  label: { shortName: string; places: string; summary?: { deathsQualifier?: string } },
   /** A closed, hand-curated record: say so instead of promising daily updates. */
   options: { archived?: boolean } = {},
 ): string {
   if (!figures || (figures.deaths === null && figures.confirmed === null)) return fallback;
   const parts: string[] = [];
-  if (figures.deaths !== null) parts.push(`${fmt(figures.deaths)} deaths`);
+  if (figures.deaths !== null) parts.push(`${fmt(figures.deaths)} deaths${deathsSuffix(label.summary)}`);
   if (figures.confirmed !== null) parts.push(`${fmt(figures.confirmed)} confirmed cases`);
   const tail = options.archived
     ? "Archived record with map, timeline and sources."

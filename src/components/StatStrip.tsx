@@ -97,7 +97,11 @@ export default function StatStrip({
         Headline figures
       </h2>
 
-      {TILES.map((tile) => {
+      {TILES.map((base) => {
+        const tile =
+          base.field === "deaths" && summary.deathsQualifier
+            ? { ...base, label: `Deaths ${summary.deathsQualifier}` }
+            : base;
         const trend = computeTrend(timeline, tile.field, WINDOW_DAYS, asOf, {
           interpolateBaseline: true,
         });

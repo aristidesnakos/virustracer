@@ -1,6 +1,6 @@
 import type { OutbreakDefinition, OutbreakStatus } from "@/data/outbreaks";
 import { computeMetrics, type Metrics, type WeeklyPeriod } from "./metrics";
-import { latestFigures, type LatestFigures } from "./seo";
+import { deathsSuffix, latestFigures, type LatestFigures } from "./seo";
 import { mergeTimeline } from "./timeline";
 import type { TollData } from "./toll";
 import { describeTrend, type TrendSummary } from "./trend-summary";
@@ -121,7 +121,7 @@ export function describeHome(ranked: readonly OutbreakSnapshot[], fallback: stri
     .slice(0, 3)
     .map(({ outbreak, figures }) => {
       const nums = [
-        figures!.deaths !== null ? `${fmt(figures!.deaths)} deaths` : null,
+        figures!.deaths !== null ? `${fmt(figures!.deaths)} deaths${deathsSuffix(outbreak.summary)}` : null,
         figures!.confirmed !== null ? `${fmt(figures!.confirmed)} cases` : null,
       ].filter(Boolean);
       return nums.length ? `${outbreak.shortName}: ${nums.join(", ")}` : outbreak.shortName;

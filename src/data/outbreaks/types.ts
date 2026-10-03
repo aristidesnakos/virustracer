@@ -101,6 +101,12 @@ export interface OutbreakSummary {
    * probable cases (as WHO reports it for the MV Hondius outbreak).
    */
   fatalityBasis?: "confirmed" | "all-cases";
+  /**
+   * What the Deaths figure counts, when it is narrower than all deaths, e.g. "among confirmed
+   * cases". Added after "Deaths" on the stat strip and home card, and after "deaths" in
+   * descriptions, so a headline number never reads as the whole toll.
+   */
+  deathsQualifier?: string;
   /** Date the curated figures were last checked against their sources (YYYY-MM-DD). */
   lastReviewed: string;
   source: string;

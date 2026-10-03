@@ -1,5 +1,6 @@
 import { ebolaBundibugyo2026 } from "./ebola-bundibugyo-2026";
 import { hantavirusMvHondius2026 } from "./hantavirus-mv-hondius-2026";
+import { measlesBangladesh2026 } from "./measles-bangladesh-2026";
 import type { OutbreakDefinition } from "./types";
 
 export type * from "./types";
@@ -9,7 +10,11 @@ export type * from "./types";
  * in this folder and listing it here (and in scripts/lib/outbreak-registry.mjs
  * if its figures are fetched automatically).
  */
-const OUTBREAKS: readonly OutbreakDefinition[] = [ebolaBundibugyo2026, hantavirusMvHondius2026];
+const OUTBREAKS: readonly OutbreakDefinition[] = [
+  ebolaBundibugyo2026,
+  hantavirusMvHondius2026,
+  measlesBangladesh2026,
+];
 
 /** Shown at `/` until the home page becomes a multi-outbreak snapshot. */
 export const DEFAULT_OUTBREAK_SLUG = ebolaBundibugyo2026.slug;

@@ -1,0 +1,45 @@
+{{Infobox outbreak
+| name            = 2026 measles outbreak in Bangladesh
+| width           = 
+| image           = Measles-Rubella Vaccination Campaign, Tareque Rahman, Bagbari, Gabtali, Bogura, 2026-04-20.jpg
+| image_size      = 
+| image_upright   = 
+| alt             = 
+| caption         = [[Prime Minister of Bangladesh|Prime Minister]] [[Tarique Rahman]] observing emergency [[MR vaccine|measles-rubella vaccination drive]] in [[Bogura District|Bogura]]'s [[Gabtali Upazila|Gabtali]] in April 2026.
+| map1            = BD 2026 Measles outbreak district (April May) map.svg
+| legend1         = {{centre|{{color box|#c22335}} Districts with active hotspots {{small|(As assessed by the [[Ministry of Health and Family Welfare (Bangladesh)|MoHFW]] till 4 April 2026)}}<br>{{color box|#e8b0ae}} Districts with confirmed or suspected cases}}
+| map2            = 
+| legend2         = 
+| map3            = 
+| legend3         = 
+| map4            = 
+| legend4         = 
+| map5            = 
+| legend5         = 
+| disease         = [[Measles]]
+| virus_strain    = ''[[Measles morbillivirus]]''
+| location        = [[Bangladesh]]
+| first_outbreak  = <!-- Indicates first outbreak globally-->
+| first_reported  = <!-- Media or historical report, (evidence of prior circulation) -->
+                  <!-- If first outbreak and first report are the same, choose one!-->| index_case      = <!-- National or international depending on article level -->
+| arrival_date    = <!-- or | dates = -->
+| date            = Late February 2026 – present
+| source          = <!-- Animal or other reservoir -->
+| type            = 
+| confirmed_cases = 7,024
+| active_cases    = 
+| suspected_cases = 51,567
+| severe_cases    = 
+| hospitalized_cases = 36,881
+| critical_cases  = 
+| ventilator_cases = 
+| ecmo_cases      = 
+| recovery_cases  = 
+| deaths          = 424 (356 suspected cases)
+| fatality_rate   = 
+| test_positivity_rate = <!-- Indicates test positivity rate -->
+| territories     = 
+| total_ili       = 
+| website         = 
+| vaccinations    = <!-- A list in here will be shown without bullet points -->
+}}

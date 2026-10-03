@@ -11,6 +11,7 @@ import { SITE_NAME, SITE_URL } from "./site";
 /** Who an outbreak's source article cites, by slug. Falls back to a generic phrase for outbreaks not listed. */
 const CITED_BY_SLUG: Record<string, string> = {
   "ebola-bundibugyo-2026": "INSP DRC and WHO",
+  "measles-bangladesh-2026": "DGHS Bangladesh",
 };
 
 /** Credit line returned in every response's `meta.attribution` and shown on /data. */

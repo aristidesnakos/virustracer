@@ -82,7 +82,7 @@ export default function OutbreakCard({
   const Heading = `h${headingLevel}` as const;
   const { outbreak, figures, trend, incidence, windowEnd, weekly, source } = snapshot;
   const stats: { label: string; value: number | null; tone: string }[] = [
-    { label: "Deaths", value: figures?.deaths ?? null, tone: "text-death" },
+    { label: outbreak.summary.deathsQualifier ? `Deaths ${outbreak.summary.deathsQualifier}` : "Deaths", value: figures?.deaths ?? null, tone: "text-death" },
     { label: "Confirmed cases", value: figures?.confirmed ?? null, tone: "text-confirmed" },
   ];
   const change = incidence ? signedPct(incidence.confirmed.changePct) : null;

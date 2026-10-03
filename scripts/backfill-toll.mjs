@@ -19,7 +19,7 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseInfobox, validateSnapshot, MAX_SNAPSHOTS } from "./lib/toll.mjs";
+import { parseInfobox, validateSnapshot, MAX_SNAPSHOTS, withoutIgnored } from "./lib/toll.mjs";
 import { archiveInfobox } from "./lib/raw.mjs";
 import { lastRevisionPerDay, keepLongestMonotoneChain } from "./lib/backfill.mjs";
 import { USER_AGENT, dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
@@ -119,7 +119,9 @@ async function backfillOutbreak({ slug, toll }) {
     const batch = days.slice(i, i + CONTENT_BATCH);
     const sections = await fetchLeadSections(batch.map((d) => d.revid));
     for (const day of batch) {
-      const parsed = sections.has(day.revid) ? parseInfobox(sections.get(day.revid)) : null;
+      const parsed = sections.has(day.revid)
+        ? withoutIgnored(parseInfobox(sections.get(day.revid)), toll.ignoreFields)
+        : null;
       if (!parsed) {
         unparseable++;
         continue;

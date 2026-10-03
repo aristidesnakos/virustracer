@@ -40,7 +40,9 @@ describe("outbreak registry", () => {
       }
       expect(o.keywords.length).toBeGreaterThan(0);
       expect(o.countries.length).toBeGreaterThan(0);
-      expect(o.casesTimeline.length).toBeGreaterThan(0);
+      // Hand-curated milestones are optional for an auto-tracked outbreak: its daily
+      // snapshots supply the series. A manual record has nothing else.
+      if (o.source.kind === "manual") expect(o.casesTimeline.length).toBeGreaterThan(0);
     }
   });
 });
@@ -144,7 +146,9 @@ describe("script registry stays in step with the site registry", () => {
       expect(selectOutbreaksWith(key, [`--outbreak=${HANTA}`], (m: string) => logs.push(m))).toEqual([]);
       expect(logs.join("\n")).toMatch(new RegExp(`Skipping ${HANTA}: it has no ${key} source`));
       const def = selectOutbreaksWith(key, [], () => {});
-      expect(def.map((o: { slug: string }) => o.slug)).toEqual([DEFAULT_OUTBREAK_SLUG]);
+      const slugs = def.map((o: { slug: string }) => o.slug);
+      expect(slugs).toContain(DEFAULT_OUTBREAK_SLUG);
+      expect(slugs).not.toContain(HANTA);
     }
   });
 });

@@ -4,6 +4,7 @@ import {
   extractInfobox,
   validateSnapshot,
   applySnapshot,
+  withoutIgnored,
   MAX_SNAPSHOTS,
 } from "../scripts/lib/toll.mjs";
 
@@ -62,6 +63,89 @@ describe("parseInfobox", () => {
   it("returns null when there is no infobox", () => {
     expect(parseInfobox("Just text, deaths = 5")).toBeNull();
     expect(parseInfobox("")).toBeNull();
+  });
+});
+
+// Trimmed copy of the live "2026 Bangladesh measles outbreak" infobox (revision 1377973650):
+// a nested map template with its own `| link =` fields, and a two-figure deaths field.
+const BD_DEATHS = `100 {{small|(confirmed cases)}}  <br>'''1,009 {{small|(all cases)}}'''`;
+const bangladesh = (deaths: string) => `{{Infobox outbreak
+| name            = 2026 measles outbreak in Bangladesh
+| map1            = {{Location map+ | Bangladesh
+| caption =
+| float  = center
+| places =
+ {{Location map~ | Bangladesh
+    | label =
+    | lat_deg = 23.54
+    | link = Sreenagar Upazila }}
+ {{Location map~ | Bangladesh
+    | label =
+    | lat_deg = 24.01
+    | link = Pabna }}
+}}
+| disease         = [[Measles]]
+| date            = Late February 2026 – present
+| confirmed_cases = 19,933
+| active_cases    =
+| suspected_cases = 168,745
+| hospitalized_cases = 148,555
+| recovery_cases  = 142,888
+| deaths          = ${deaths}
+| fatality_rate   = 5.06% {{small|(confirmed cases)}}<br>'''0.53% {{small|(all cases)}}'''
+}}
+In mid-March 2026, a [[measles]] outbreak started in [[Bangladesh]].`;
+
+describe("parseInfobox with a two-figure deaths field", () => {
+  const expected = { confirmed: 19933, suspected: 168745, deaths: 100, recovered: 142888 };
+
+  it("takes the deaths among confirmed cases from the real Bangladesh infobox", () => {
+    expect(parseInfobox(bangladesh(BD_DEATHS))).toEqual(expected);
+  });
+
+  it("does not take the all-cases figure when the editor reorders the two lines", () => {
+    const reordered = `'''1,009 {{small|(all cases)}}'''<br>100 {{small|(confirmed cases)}}`;
+    expect(parseInfobox(bangladesh(reordered))).toEqual(expected);
+  });
+
+  it("skips an all-cases figure listed first even when the confirmed line carries no label", () => {
+    expect(parseInfobox(bangladesh(`1,009 {{small|(all cases)}}<br>100`))).toEqual(expected);
+    expect(parseInfobox(bangladesh(`'''1,009 (total)'''<br>100`))).toEqual(expected);
+  });
+
+  it("takes the first figure when no label says confirmed", () => {
+    expect(parseInfobox(bangladesh(`100<br>1,009`))).toMatchObject({ deaths: 100 });
+    expect(parseInfobox(bangladesh(`100 {{small|(DGHS)}}<br>'''1,009 {{small|(all cases)}}'''`))).toMatchObject({
+      deaths: 100,
+    });
+  });
+
+  it("copes with <br /> and a refs/comment between the figures", () => {
+    const messy = `100 {{small|(confirmed cases)}}<ref name="x">1,009 died</ref><br /><!-- all --> '''1,009 {{small|(all cases)}}'''`;
+    expect(parseInfobox(bangladesh(messy))).toMatchObject({ deaths: 100 });
+  });
+
+  it("refuses to read the field when every figure is a wider count", () => {
+    expect(parseInfobox(bangladesh(`'''1,009 {{small|(all cases)}}'''<br>1,200 {{small|(total)}}`))).toBeNull();
+  });
+
+  it("reads the older 'total (N suspected cases)' format as deaths among confirmed cases", () => {
+    // Until 2026-09-08 the field was `997 (897 suspected cases)`; 997 - 897 = 100, the figure
+    // the infobox gave as "confirmed cases" two days later.
+    expect(parseInfobox(bangladesh(`997 (897 suspected cases)`))).toMatchObject({ deaths: 100 });
+    expect(parseInfobox(bangladesh(`114 (98 suspected case)`))).toMatchObject({ deaths: 16 });
+    expect(parseInfobox(bangladesh(`594 (504suspected cases)`))).toMatchObject({ deaths: 90 });
+    expect(parseInfobox(bangladesh(`1,009 (909 suspected cases)<ref name="a" />`))).toMatchObject({ deaths: 100 });
+  });
+
+  it("does not subtract from an approximate total or when the bracket exceeds it", () => {
+    expect(parseInfobox(bangladesh(`300+ (98 suspected case)`))).toBeNull();
+    expect(parseInfobox(bangladesh(`50 (98 suspected cases)`))).toBeNull();
+  });
+
+  it("reads a single labelled figure exactly as before", () => {
+    expect(parseInfobox(bangladesh(`100 {{small|(confirmed cases)}}`))).toMatchObject({ deaths: 100 });
+    expect(parseInfobox(bangladesh(`1,009 {{small|(all cases)}}`))).toMatchObject({ deaths: 1009 });
   });
 });
 
@@ -180,5 +264,25 @@ describe("applySnapshot", () => {
     const dates = store.snapshots.map((s) => s.date);
     expect([...dates].sort()).toEqual(dates);
     expect(store.snapshots[store.snapshots.length - 1].deaths).toBe(MAX_SNAPSHOTS + 4);
+  });
+});
+
+describe("withoutIgnored", () => {
+  const parsed = { confirmed: 10, suspected: 5, deaths: 2, recovered: 7 };
+
+  it("blanks only the listed fields", () => {
+    expect(withoutIgnored(parsed, ["recovered"])).toEqual({ ...parsed, recovered: null });
+    expect(withoutIgnored(parsed, [])).toEqual(parsed);
+    expect(withoutIgnored(parsed)).toEqual(parsed);
+  });
+
+  it("never blanks confirmed or deaths, and passes null through", () => {
+    expect(withoutIgnored(parsed, ["confirmed", "deaths"])).toEqual(parsed);
+    expect(withoutIgnored(null, ["recovered"])).toBeNull();
+  });
+
+  it("does not mutate its input", () => {
+    withoutIgnored(parsed, ["recovered"]);
+    expect(parsed.recovered).toBe(7);
   });
 });

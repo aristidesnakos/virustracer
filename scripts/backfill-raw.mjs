@@ -56,7 +56,7 @@ async function fetchLead(revid) {
 }
 
 /** @param {string} slug */
-async function backfillOutbreak(slug) {
+async function backfillOutbreak({ slug, toll }) {
   const tollJson = dataFile(ROOT, slug, "toll");
   const tollLabel = `data/outbreaks/${slug}/toll.json`;
   const store = JSON.parse(readFileSync(tollJson, "utf-8"));
@@ -64,6 +64,7 @@ async function backfillOutbreak(slug) {
   const { store: next, stats } = await backfillRawForStore(store, {
     repoRoot: ROOT,
     fetchLead,
+    ignore: toll.ignoreFields,
     dryRun: DRY_RUN,
     delayMs: PAUSE_MS,
     log: (m) => console.log(`  ${m}`),
@@ -80,10 +81,11 @@ async function backfillOutbreak(slug) {
 async function main() {
   let failed = 0;
   // Only outbreaks with an automated toll source have Wikipedia revisions to archive.
-  for (const { slug } of selectOutbreaksWith("toll")) {
+  for (const outbreak of selectOutbreaksWith("toll")) {
+    const { slug } = outbreak;
     console.log(`── ${slug} ──`);
     try {
-      await backfillOutbreak(slug);
+      await backfillOutbreak(outbreak);
     } catch (err) {
       // One outbreak failing must not stop the others.
       failed++;
