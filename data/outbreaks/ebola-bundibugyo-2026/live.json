@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-03T08:08:24.242Z",
+  "lastFetched": "2026-10-03T12:49:29.727Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -301,9 +301,54 @@
     "news-2976893a43c01882",
     "news-8b7574dd72f76f50",
     "news-9bf8ce383b444617",
-    "news-c3bc100c6600e127"
+    "news-c3bc100c6600e127",
+    "news-1fad5b5dcbb1c2d3",
+    "news-42f1a07c86676ab9",
+    "news-5dcf530c9e0e8fb4",
+    "news-1e13eed2451f8f15",
+    "news-6621f0dfb6d6228d",
+    "news-49e49cf1f1ffce37",
+    "news-2d811ccab37de660",
+    "news-b1f06abed2f01849",
+    "news-56ba1e5bda7c84eb",
+    "news-ab04b8b4c1e74038",
+    "news-ecd240fb9225be99",
+    "news-d33edcb7ee28c74b",
+    "news-d6ce4741cfc04040"
   ],
   "recentItems": [
+    {
+      "id": "news-1fad5b5dcbb1c2d3",
+      "title": "Ebola treatment center burned down as death toll in Congo passes 4,000 - TelegraphHerald.com",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUjN3bnpZM2tHY0tUSHg1Z3JQLWdmZmxMdkhNRExZQVpZOTAwR2w5SFZIMkR6bHFVeEZEQUZydW9OeHoyRzNhZkpPczAzRGtBVW9mbFJvWVdaTE5ZNGhBMUxsSVZjNGhWSFdteTl3UjZUcUdyQXZEMFJwMlFHWW8wb3ctZXVyUDRLcVJwWV9zR3h5eElXWjZOMHZGM1R4ZlU?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola treatment center burned down as death toll in Congo passes 4,000 TelegraphHerald.com"
+    },
+    {
+      "id": "news-5dcf530c9e0e8fb4",
+      "title": "Drug trial seeks to halt DR Congo’s deadliest Ebola outbreak - irishnews.com",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONXV5WUhjbzZ0SDd6cEQwMTNGVFVJaU9fZlFPSzF4cXlTSGJVTGJCNFBvMzBlZ2IySnFEVXVaUWEyNy1PWlcxUjdGSWE4cjNvb2RLRE5HSm1EeEJjbnNPbm5MeFMzbVRrb3ZDaVdGMkN1VFU2Ql9WeVduNVRzekhKT1V0Z0lOYlBSdlRCb0JhdWpCWmRLbG5JVGwyZ1ZxZDFzMEN0ekVpTmp0cGNJZFVHUHl3V3o2aUVoUHV2WGhBa0FYQQ?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "Drug trial seeks to halt DR Congo’s deadliest Ebola outbreak irishnews.com"
+    },
+    {
+      "id": "news-6621f0dfb6d6228d",
+      "title": "DR Congo Begins Trial of Drug to Prevent Ebola - Voice of Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1QTEVEak4wVURCZl8yUDZkdTdCWElLWFd6QzJPQmFieUthbkZLS2c3T1c0dWh0R1lMQ1Z4WW8yS2NDbEw4YmZPMU9DbFFpWWFtTjB2MG1NakRha1VfYzFTWVVzZnJfcF95WU1RakhQV1JIVzAw?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "DR Congo Begins Trial of Drug to Prevent Ebola Voice of Nigeria"
+    },
+    {
+      "id": "news-ecd240fb9225be99",
+      "title": "Ebola drug trial launches in Congo as outbreak kills over 4,000 - Daily Sabah",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ0hxZmtBOF9NbVYtbzJINThVNmVBdEM5VDYxbHRPUVZLRnNUcU5UT2syckpGZ196bzg1eUlXYVcwX0w4V0phTWViR092T1ptaV9HbExfU0JZRmZFQWlaSzktb003NzZmdER5SnFQbnpNajF2dXBqanB5NTFlemh4NUpNc1IzQ283UWNYZU8zZTYxNTMzNFBWMFdqYnlDNzVJaGRBVg?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "An Ebola outbreak in the Democratic Republic of Congo and Uganda has killed over 4,000 people, and a clinical trial of a new Ebola drug has launched in Congo."
+    },
     {
       "id": "news-6eb8f0829e6e15fb",
       "title": "Ebola death toll in DRC passes 4,000, as health workers are fighting to get paid - Le Monde.fr",
@@ -369,6 +414,22 @@
       "summary": "​DR Congo Ebola outbreak deaths surpass 4,000: 5 reasons the deadliest outbreak is still not contained​ The Times of India"
     },
     {
+      "id": "news-49e49cf1f1ffce37",
+      "title": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 - Toronto Star",
+      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxORkNUWmc3ZEdKYWxncTVCbVl3RHByWUFNWkVUUWVNVmluZmNBYXBKdHBjOGJmVVpMbGc0WURFRlJzV1lqVlFiNUJWVTJVUExRdmpiR3pDOFA1RGpQMGh1RmZHMDJvOTRrSnlnVWVRNVNuaUQ0c3VmdW5sVzlrQVI5YnVna2tnR3JfbEhETXlEMnI4YVpWLXpFZEI5cnhHS29EVnFNb2ZrUTd0ZWFmMjBfSS1ucWkzYXpKc1Vvbl8wY0gwZnhweUtJZU9xNUFxWllUNmpJaEp3X05WSGo3MW1rVWVzazFycE53TzhZWklxekFWWEZid0tWWFYwVGdjYWlQQ1daeWp1TnR3cFN3TVd5T2JaSFg0NVdBbGc?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 Toronto Star"
+    },
+    {
+      "id": "news-2d811ccab37de660",
+      "title": "Congo’s Ebola outbreak has killed more than 4,000, government data shows - The Straits Times",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSUlFYmh0NFV4Y1hqbGY5d0FFZHBBVGpzTjlJckNWZ0VUUkJKSEM0ZjJXVjA1TFlhZUt5N3JpVi0zVlJYR0xZZkpnR1BQNWMyQVRQVUdCWUk4dVVtU1ZOUzRNY0xmcHZocE1GV3AzWVl2OGtnZUtvekpaelZjRVFXUkExdG9NX1VoWWw5WkJ6SDZ2ZFlxbXk1VnlnLTV0S0xzRnA3VTg4NA?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "Congo’s Ebola outbreak has killed more than 4,000, government data shows The Straits Times"
+    },
+    {
       "id": "news-81c18e328b7b9abd",
       "title": "DR Congo Ebola Death Toll Passes 4,000 in Second-Deadliest Outbreak Ever - teleSUR English",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1mbHNrZ3hqZlpYdDhXZGQ2bG1oTWJ4NDJqWFl6bEh1SDR4LXdGNGg5eGJlM2gweDUwZnJXS3Z3VXZWR1BfZ3VBNURZLWI0Z0FHUVlua0k5OVVWV0FnSTVJc21RaV8xd0hFWF80dHdLeUhYVEMxSnV1SQ?oc=5",
@@ -415,54 +476,6 @@
       "date": "2026-10-02",
       "source": "Google News — Ebola death toll",
       "summary": "DR Congo Ebola Outbreak Death Toll Surpasses 4,000 TVC News"
-    },
-    {
-      "id": "news-02e398f6b0bf0924",
-      "title": "Ebola treatment centre burned down as Congo death toll passes 4,000 - Herts Advertiser",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNdWtZMUhueWxFSERFdkFTQURwNVE3QXdOZVhqRE1vRTRRZzFtcGFJeGpZNDdla0V0VkctVmg4NzF3SGJtb3dCYWpyVTBaWmtxUkhTaFdzR0s1ZnZNRXNhX3ZqczBfdmoyVjdFMkpWMHdoT2U3WWlIMFpsR1Y4andIOWdDWmN0SklPWmNJNl9WekhHTjBOMkhOdEpmTVZfU01HZl9HQzFsck9GZXFiUUFKc0FCYkxEaTA?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola treatment centre burned down as Congo death toll passes 4,000 Herts Advertiser"
-    },
-    {
-      "id": "news-329490f5b6c0ea8d",
-      "title": "More than 4,000 Ebola Deaths in the Congo - bluewin.ch",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxOclNuSkdLSG40aW9YUTctUFc0RWdweEFaOWFfYWVEbXRHTG9KVVV2cXNXZXVTT3VlaXhQei1GaHdTdDJ5ZktLZVN6VjFSWDVIQmdNNnVCV09oZnFUSm9hRG4zV1pCTE1QV0J4TU9TRW5wdko5dFItSklaQmhfNGs1WGJOX3RpNFltaVhZ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "More than 4,000 Ebola Deaths in the Congo bluewin.ch"
-    },
-    {
-      "id": "news-f5185498d1360d6b",
-      "title": "Ebola Deaths Rise To Over 4000 In DR Congo As Government Battles Worsening Outbreak - Sahara Reporters",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNZzF3V0tEejRIM1FHOWE3OUhPaGZvZG83R2cyeWFfeDRENXhacnVnUFRCMkF6dkJjTVk5TG5qbGg1cE1FVGNKamxKdUl2Ukx1THFDYldZUENTTmJfR0lBV1pqNVV3djZ1MVdYeDNmTXhFcnVKUGN3bVg0Q1RZMExQZ2JSM0VjcUVrUlFrNzc0RWczdjQ2UWF6OF8zRzZVbUVQeklmMzRKZmhKV2lxdExlTUd6Yw?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of the latest reports, the cumulative death toll in the Democratic Republic of Congo has surpassed 4,000."
-    },
-    {
-      "id": "news-9477bfbbfec2c2ec",
-      "title": "DR Congo Ebola outbreak claims more than 4,000 lives - Sharjah24",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNdjNrWGh0NVlKYkZJalU5VWw0UzNjOW1vUjRiNFNOd1hMZ1JqRHJjNmVLMWdVR01XaHRNWEVMc0M2dzVZTS03aGNhSU9yeVVPaER0QVBDQVF2WE85SjFWNHBLTzhKM3BNVGNkWUctbmxLS1ljOHk5SmhhNGQzY2lCdnJHMFB0M2Z4QzlhMWdKU3NEZC1UXzhIZE92SQ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of the article's date, the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda has resulted in over 4,000 deaths. The article reports that the outbreak has claimed more than 4,000 lives."
-    },
-    {
-      "id": "news-423a2e873402b2c7",
-      "title": "Ebola Outbreak in DR Congo Surpasses 4,000 Deaths as Containment Efforts Struggle - Pragativadi",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOcVBVM1RnZks0WHZYSkc4dXhiTDc3MEZnM05oaHdvQmFLTXFaQV9mNS1ZUjAyQkpCSnUzcjZHQWlLcjhxNFBIMzI5WWlJYWZSTUc4NDh5SjlpSW1Ob2N3QXVCQWRSRDJLUENpcnYxU0dfZE8zSUx1Umdjbml2ZEhqUU0tRERFTGRCUUVFY1Z0WmdBYU1iYnJQLTdzbVB6RGpnZVg4Qk9BUjk?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola Outbreak in DR Congo Surpasses 4,000 Deaths as Containment Efforts Struggle Pragativadi"
-    },
-    {
-      "id": "news-667ec1d7935d8ab4",
-      "title": "Ebola death toll in Congo tops 4,000 in fastest-growing outbreak of the disease on record - CBS News",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaUQ5d29xQ3QtcG5LWHl1eTM5aWtKV1p2VjNNOVY2ZlJUUmxkb0lkNlFEbmh6STlTbGdiVTIydnc3cjVxdjBqODNrZTVPaWhrMjhZNXJJblltTkh3Y2VKYVJlcFowVC1uNU52UndoWG9VRHRyNDZNZTI5SmpuUGVqdHY4aGJUUDZJb0U5MHRaNA?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola death toll in Congo tops 4,000 in fastest-growing outbreak of the disease on record CBS News"
     }
   ]
 }
