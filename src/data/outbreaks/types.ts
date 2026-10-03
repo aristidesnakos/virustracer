@@ -93,6 +93,8 @@ export interface OutbreakDefinition {
   /** URL- and folder-safe id: lowercase letters, digits and hyphens. Names data/outbreaks/<slug>/. */
   slug: string;
   disease: string;
+  /** Strain or variant when it matters to readers, e.g. "Bundibugyo virus". */
+  pathogen?: string;
   status: OutbreakStatus;
   source: OutbreakSource;
   /** Heading of the dashboard and share card. */

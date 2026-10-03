@@ -18,9 +18,11 @@ function resolveSiteUrl(): string {
 export const SITE_URL = resolveSiteUrl();
 /**
  * The site's own name, kept separate from any outbreak so the registry can hold
- * several. Placeholder: still the Ebola tracker's name until a brand is chosen.
+ * several. Each outbreak has its own `title`; this names the site that holds them.
  */
-export const SITE_NAME = "Ebola Outbreak Tracker";
+export const SITE_NAME = "Outbreak Files";
+/** One-line description of the site as a whole (not of any single outbreak). */
+export const SITE_TAGLINE = "Live outbreak figures, each tied to its source and kept on file.";
 
 export const absoluteUrl = (path = "/"): string => `${SITE_URL}${path === "/" ? "" : path}`;
 

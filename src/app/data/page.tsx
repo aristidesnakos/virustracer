@@ -3,7 +3,7 @@ import Link from "next/link";
 import { getDefaultOutbreak } from "@/data/outbreaks";
 import { API_ATTRIBUTION, MAX_LIMIT } from "@/lib/api";
 import { ASSUMPTIONS } from "@/lib/metrics";
-import { DATA_LICENSE, DATA_LICENSE_NAME } from "@/lib/site";
+import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
 import { getTollData } from "@/lib/toll";
 
 const outbreak = getDefaultOutbreak();
@@ -11,15 +11,18 @@ const outbreak = getDefaultOutbreak();
 export const metadata: Metadata = {
   title: "Data & API",
   alternates: { canonical: "/data" },
+  // Page-level openGraph/twitter replace the layout's wholesale, so repeat the shared fields.
   openGraph: {
     type: "website",
+    siteName: SITE_NAME,
+    locale: "en_US",
     url: "/data",
-    title: `Data & API · ${outbreak.title}`,
+    title: `Data & API · ${SITE_NAME}`,
     images: [{ url: "/opengraph-image", width: 1200, height: 630 }],
   },
   twitter: {
     card: "summary_large_image",
-    title: `Data & API · ${outbreak.title}`,
+    title: `Data & API · ${SITE_NAME}`,
     images: ["/opengraph-image"],
   },
   description:
@@ -238,7 +241,11 @@ console.log(growth.trend, rt.estimate);`}</pre>
                 <a href={DATA_LICENSE} className="underline underline-offset-2" rel="license noopener">
                   {DATA_LICENSE_NAME}
                 </a>
-                . Credit &ldquo;{outbreak.title}&rdquo; and link the source revision when you republish figures. If you
+                . Credit &ldquo;{SITE_NAME}&rdquo; (
+                <a href={absoluteUrl("/")} className="underline underline-offset-2">
+                  {new URL(SITE_URL).host}
+                </a>
+                ) and link the source revision when you republish figures. If you
                 adapt the data, share the result under the same licence.
               </li>
             </ul>

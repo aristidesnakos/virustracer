@@ -3,6 +3,7 @@ import { getDefaultOutbreak } from "@/data/outbreaks";
 import { getTollData } from "@/lib/toll";
 import { mergeTimeline } from "@/lib/timeline";
 import { latestFigures } from "@/lib/seo";
+import { SITE_NAME } from "@/lib/site";
 
 const outbreak = getDefaultOutbreak();
 
@@ -42,13 +43,13 @@ export default function OpengraphImage() {
       >
         <div style={{ display: "flex", flexDirection: "column" }}>
           <div style={{ fontSize: 30, letterSpacing: 4, color: "#8a2a1f", fontWeight: 700 }}>
-            SITUATION JOURNAL
+            {SITE_NAME.toUpperCase()}
           </div>
           <div style={{ fontSize: 76, fontWeight: 700, marginTop: 16, lineHeight: 1.1 }}>
             {outbreak.title}
           </div>
           <div style={{ fontSize: 34, color: "#4a5568", marginTop: 12 }}>
-            2026 · DR Congo &amp; Uganda · Bundibugyo virus
+            {[outbreak.places, outbreak.pathogen].filter(Boolean).join(" · ")}
           </div>
         </div>
         <div style={{ display: "flex", gap: 96 }}>

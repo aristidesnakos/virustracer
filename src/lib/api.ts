@@ -1,11 +1,12 @@
 import type { TollSnapshot } from "./toll";
 import type { DailyPoint } from "./metrics";
+import { SITE_NAME, SITE_URL } from "./site";
 
 // Pure helpers shared by the /api/v1 route handlers (no fs, no Next imports),
 // so query parsing and CSV output can be unit-tested.
 
 export const API_ATTRIBUTION =
-  "Ebola Outbreak Tracker (unofficial). Figures come from the Wikipedia article's infobox " +
+  `${SITE_NAME} (${new URL(SITE_URL).host}, unofficial). Figures come from the Wikipedia article's infobox ` +
   "(CC BY-SA 4.0), which cites INSP DRC and WHO; every reading links to the exact revision it was read from. " +
   "Shared under CC BY-SA 4.0. Not an official public health resource.";
 

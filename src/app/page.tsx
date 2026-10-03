@@ -15,7 +15,7 @@ import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { getCandidatesData } from "@/lib/candidates-data";
 import { computeMetrics } from "@/lib/metrics";
 import { describeFigures, latestFigures } from "@/lib/seo";
-import { DATA_LICENSE, SITE_NAME, absoluteUrl } from "@/lib/site";
+import { DATA_LICENSE, SITE_NAME, SITE_TAGLINE, absoluteUrl } from "@/lib/site";
 
 // The description carries the current toll, so it is built from the data at
 // build/request time rather than fixed in the layout.
@@ -79,7 +79,7 @@ export default function DashboardPage() {
         "@id": absoluteUrl("/#website"),
         url: absoluteUrl("/"),
         name: SITE_NAME,
-        description: outbreak.description,
+        description: SITE_TAGLINE,
         inLanguage: "en",
       },
       {
@@ -142,7 +142,7 @@ export default function DashboardPage() {
                   className="live-dot size-2 rounded-full bg-death animate-pulse"
                   aria-hidden
                 />
-                Situation journal
+                {SITE_NAME}
               </p>
               <h1 className="font-journal text-[clamp(1.875rem,4.2vw,2.875rem)] font-bold leading-[1.1] tracking-[-0.01em] text-ink">
                 {outbreak.title}

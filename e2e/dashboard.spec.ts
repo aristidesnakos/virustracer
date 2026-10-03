@@ -5,7 +5,7 @@ test.describe("dashboard", () => {
     await page.goto("/");
 
     await expect(
-      page.getByRole("heading", { name: /ebola outbreak tracker/i }),
+      page.getByRole("heading", { name: /ebola outbreak 2026/i }),
     ).toBeVisible();
 
     // Stat strip — every tracked metric is on screen.

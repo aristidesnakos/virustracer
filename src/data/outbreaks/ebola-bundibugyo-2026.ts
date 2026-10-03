@@ -425,9 +425,10 @@ const summary: OutbreakSummary = {
 export const ebolaBundibugyo2026: OutbreakDefinition = {
   slug: "ebola-bundibugyo-2026",
   disease: "Ebola",
+  pathogen: "Bundibugyo virus",
   status: "active",
   source: { kind: "wikipedia-infobox", ref: "2026_Ebola_epidemic" },
-  title: "Ebola Outbreak Tracker",
+  title: "Ebola Outbreak 2026",
   seoTitle: "Ebola Outbreak 2026: Death Toll, Cases & Map | DRC & Uganda",
   keywords: [
     "ebola outbreak 2026",
