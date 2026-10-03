@@ -8,7 +8,7 @@ test("capture dashboard screenshots", async ({ page }) => {
   });
 
   await page.setViewportSize({ width: 1440, height: 900 });
-  await page.goto("/");
+  await page.goto("/outbreaks/ebola-bundibugyo-2026");
   await page.waitForSelector(".maplibregl-canvas", { timeout: 15_000 });
   // give map a moment to finish loading sources
   await page.waitForTimeout(2000);

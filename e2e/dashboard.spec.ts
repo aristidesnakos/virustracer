@@ -2,7 +2,7 @@ import { test, expect } from "@playwright/test";
 
 test.describe("dashboard", () => {
   test("renders stat strip and map", async ({ page }) => {
-    await page.goto("/");
+    await page.goto("/outbreaks/ebola-bundibugyo-2026");
 
     await expect(
       page.getByRole("heading", { name: /ebola outbreak 2026/i }),
