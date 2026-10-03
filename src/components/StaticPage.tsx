@@ -14,7 +14,10 @@ export const PROSE_NOTE = `border-l-2 border-rule-strong pl-3 ${PROSE_P}`;
 
 /**
  * Comparison table for the text pages. The first column is the row header; `caption` is read
- * by screen readers only, the section heading above is the visible title.
+ * by screen readers only, the section heading above is the visible title. Below `sm` each row
+ * stacks into a block and every cell after the first carries its column title, so nothing
+ * has to squeeze into a few words per line. Display is overridden there, which makes some
+ * browsers drop the table semantics, so the roles are stated explicitly.
  */
 export function ProseTable({
   caption,
@@ -22,32 +25,45 @@ export function ProseTable({
   rows,
 }: {
   caption: string;
-  head: React.ReactNode[];
+  head: string[];
   rows: React.ReactNode[][];
 }) {
   return (
     <div className="overflow-x-auto">
-      <table className={`w-full border-collapse text-left ${PROSE_P}`}>
+      <table role="table" className={`w-full border-collapse text-left max-sm:block ${PROSE_P}`}>
         <caption className="sr-only">{caption}</caption>
-        <thead>
-          <tr className="border-b border-rule-strong text-[0.8125rem] uppercase tracking-[0.08em] text-ink-faint">
+        <thead role="rowgroup" className="max-sm:sr-only">
+          <tr
+            role="row"
+            className="border-b border-rule-strong text-[0.8125rem] uppercase tracking-[0.08em] text-ink-faint"
+          >
             {head.map((h, i) => (
-              <th key={i} scope="col" className="py-2 pr-5 font-semibold last:pr-0">
+              <th key={i} role="columnheader" scope="col" className="py-2 pr-5 font-semibold last:pr-0">
                 {h}
               </th>
             ))}
           </tr>
         </thead>
-        <tbody>
+        <tbody role="rowgroup" className="max-sm:block">
           {rows.map((cells, r) => (
-            <tr key={r} className="border-b border-rule align-top">
+            <tr key={r} role="row" className="border-b border-rule align-top max-sm:block max-sm:py-3">
               {cells.map((cell, c) =>
                 c === 0 ? (
-                  <th key={c} scope="row" className="whitespace-nowrap py-3 pr-5 text-left font-semibold text-ink">
+                  <th
+                    key={c}
+                    role="rowheader"
+                    scope="row"
+                    className="whitespace-nowrap py-3 pr-5 text-left font-semibold text-ink max-sm:block max-sm:whitespace-normal max-sm:py-0 max-sm:pb-1"
+                  >
                     {cell}
                   </th>
                 ) : (
-                  <td key={c} className="py-3 pr-5 last:pr-0">
+                  <td
+                    key={c}
+                    role="cell"
+                    data-label={head.length > 2 ? head[c] : undefined}
+                    className="py-3 pr-5 last:pr-0 max-sm:block max-sm:py-1 max-sm:pr-0 max-sm:before:block max-sm:before:text-[0.75rem] max-sm:before:font-semibold max-sm:before:uppercase max-sm:before:tracking-[0.08em] max-sm:before:text-ink-faint max-sm:before:content-[attr(data-label)]"
+                  >
                     {cell}
                   </td>
                 ),
