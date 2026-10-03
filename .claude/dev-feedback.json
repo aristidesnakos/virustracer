@@ -1,0 +1,51 @@
+[
+  {
+    "comment": "Card footer is the weakest part: \"As of 2 Oct 2026 \u00b7 Source: Wikipedia infobox (cites INSP DRC / WHO) \u00b7 checked 3 Oct 2026\" wraps to three ragged lines of small text, and the \"(cites INSP DRC / WHO)\" parenthetical is methodology detail that does not belong on a card. Split into two short lines (As of date / Source link + checked date), or a compact dl with muted labels. Also the kicker \"ACTIVE \u00b7 DR CONGO, UGANDA\" repeats the \"ACTIVE (1)\" group heading directly above it: drop the status word from the kicker when the group already says it, keep only the countries. The \"(-3% vs the week before)\" in the summary sentence does not say -3% of what (cases? deaths?): say \"cases -3% vs the prior week\".",
+    "id": "d7d0d420-e1c7-4bf6-8c20-0909b9cd435d",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:05:07.384Z",
+    "viewName": "Home.OutbreakCard"
+  },
+  {
+    "comment": "Section reads as a spec, not a snapshot. The two-sentence intro (ranking rule + 'numbers counted differently' caveat + link) sits above the first card at the same weight as the heading, so the eye reads a caveat before it sees any data. Shorten to one line under the h2 and move the 'compare trends, not totals' caveat to a small note under the grid, or into the methodology link text. With a single outbreak the 3-column grid leaves two thirds of the viewport empty beside one narrow card: when a group has one item, let the card span wider (two-column internal layout: figures left, trend + sparkline right) so the page does not look unfinished. Group label 'ACTIVE (1)' is very faint small caps (ink-faint, 13px): check contrast against the cream background and give it a rule or slightly heavier weight so it reads as a section divider. Numerals: the body inherits font-variant-numeric: tabular-nums, so dates and counts inside sentences ('2 Oct 2026', '404', '203') render as wide slashed-zero tabular figures and look monospaced next to the proportional text (not a font fallback: same Atkinson family). Tabular figures only matter in columns; use proportional nums in prose and keep tabular-nums for stat figures, the sparkline labels and tables.",
+    "id": "1ac6326b-ffad-4d7b-8fc9-07207288274f",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:05:37.213Z",
+    "viewName": "Home.OutbreaksSection"
+  },
+  {
+    "comment": "This is the section the home page links to ('How we rank and count'), and its layout hides the rule. The four status definitions (Active / Under watch / Waning / Declared over) are loose paragraphs nested inside list item 1, so the ordered list reads 1. Status group, then a block of four sentences, then 2, 3, 4. Make the status order its own small table or definition grid: rank number, status chip styled like the card kicker, one-line meaning. Then the ordering rules (most new deaths, then new cases, then alphabetical, then too-little-history last) as the numbered list, so each numbered step is one line. Also: the h2 sits flush against the top of the viewport when arriving via #ranking (scroll-margin-top is 0, and in dev the jump landed more than 2s after load, so the page lurched while already readable (not checked whether production does the same)). Add scroll-margin-top to PROSE_H2 sections. The three closing paragraphs ('no editorial pinning...', 'Comparing outbreaks') are body text of the same weight and run into the next h2 with little space; the 'We will revisit the rule' sentence is a commitment worth setting apart as a small dated note.",
+    "id": "c8fdc500-78ff-4258-8177-445a06e1a331",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:06:46.106Z",
+    "viewName": "Methodology.ranking"
+  },
+  {
+    "comment": "Two source types are explained as two stacked mini-paragraphs, then a third paragraph of exceptions. 'Read automatically' and 'Curated by hand' are bold labels at body size, so the page's most important distinction (live vs hand-entered) has almost no visual rank. Use a two-column comparison (table or two cards) with the same rows for both: What it covers / How often it updates / What the card shows (checked date vs last verified) / How to trace it (Wikipedia revision + SHA-256 vs official report link). The merge rule ('on a day with both, the hand-checked figure wins') and the Unverified-country rule are separate facts packed into one dense paragraph: give each its own short note. Page level: seven h2 sections of identical weight and no contents list, while #ranking is the section the home page links to. Add a compact on-page contents under the intro so a reader can orient on a long page.",
+    "id": "e79e610c-c17a-4d68-85a5-edebbf968a67",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:07:07.716Z",
+    "viewName": "Methodology.sources"
+  },
+  {
+    "comment": "The sanity checks are three rules plus a fourth item that is not a check at all, all as bullets of unequal length, followed by a detached one-line outcome. Each rule has the same three parts (what is measured / the limit / the exception), which is a table: Check | Rule | Exception (never decrease: none; max jump 25%: unless the previous reading is over 7 days old; deaths <= confirmed: none). Numbers (25%, 7 days) should be visually findable, e.g. bold or in the table's own column, since they are the contract. Move 'When older history is imported, edits that break these rules are dropped...' out of the checks list into a separate 'Historical import' note: it describes backfill behaviour, not a per-reading check. Fold 'A rejected reading is logged and the previous figures stay on the page' into a callout directly under the table so the consequence stays attached to the rules.",
+    "id": "ca1f8f4e-89f6-4c86-a35f-3ebd4fd36b81",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:07:23.797Z",
+    "viewName": "Methodology.checks"
+  },
+  {
+    "comment": "The second paragraph is a 6-line wall that packs the whole trend-badge contract into one sentence chain: Growing / Declining / Plateau / Not enough data, the 95% range rule, the 5-readings and 14-days thresholds, what the sparkline shows, and why milestones are excluded. A reader trying to answer 'what does Plateau mean?' has to parse it all. Turn the four badge states into a small table or definition list: Badge | When it shows (Growing: whole 95% range above zero; Declining: below zero; Plateau: range includes zero; Not enough data: fewer than 5 readings in 14 days or under 14 days of history). Keep a one-line caption for the sparkline and set the 'automatic readings only, never hand-entered milestones' rule apart as a note. The italic badge names (Growing, Declining, Plateau) should be rendered as the actual badge component (TrendBadge) so the page shows what the reader sees on the card. First paragraph is fine but its key number (never more than 3 days before the newest reading) is buried mid-sentence.",
+    "id": "1aecd494-1f6f-4420-9ad9-b8d132c75bdc",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:08:25.582Z",
+    "viewName": "Methodology.lag"
+  },
+  {
+    "comment": "BUG: first bullet renders 'Headline totalsare read twice a day' with no space after the bold text (rendered HTML confirms '</strong>are read'). src/app/about/page.tsx line 73 does contain the space ('</strong> are read'), and the identical pattern in the next bullet renders correctly, so this is not a typo in the source; the first bullet is the only one whose text continues on a later line with an &rsquo; entity. Likely a JSX whitespace/entity quirk in this Next/SWC version; the safe fix is an explicit {' '} after the strong element, then check the production build too. DESIGN: the three bullets are really three data layers (headline totals / milestones, country tables and summaries / news items) each with the same attributes: what it covers, how it is updated, who checks it. That is a three-row table (Layer | Updated | Source), and it repeats /methodology 'Where the figures come from' almost line for line; keep this section to one sentence per layer plus a link, and let the methodology page own the detail. Also the About intro under the h1 is the same sentence as the home page tagline; use it for something About-specific.",
+    "id": "38fc812d-a765-4e42-a32c-7513323e995d",
+    "resolved": true,
+    "timestamp": "2026-10-03T12:08:44.443Z",
+    "viewName": "About Outbreak Files.data"
+  }
+]

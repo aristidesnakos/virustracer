@@ -42,3 +42,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Dev feedback: the comments (.claude/dev-feedback.json) are tracked, the screenshots are not
+.claude/dev-feedback/
