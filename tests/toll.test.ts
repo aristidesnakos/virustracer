@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import {
   parseInfobox,
+  extractInfobox,
   validateSnapshot,
   applySnapshot,
   MAX_SNAPSHOTS,
@@ -61,6 +62,32 @@ describe("parseInfobox", () => {
   it("returns null when there is no infobox", () => {
     expect(parseInfobox("Just text, deaths = 5")).toBeNull();
     expect(parseInfobox("")).toBeNull();
+  });
+});
+
+describe("extractInfobox", () => {
+  it("returns exactly the brace-balanced infobox block, without surrounding text", () => {
+    const block = extractInfobox(INFOBOX)!;
+    expect(block.startsWith("{{Infobox outbreak")).toBe(true);
+    expect(block.endsWith("}}")).toBe(true);
+    expect(INFOBOX).toContain(block);
+    expect(block).not.toContain("Short description");
+    expect(block).not.toContain("is a disease");
+    expect(block).toContain("{{cite web"); // nested templates stay inside
+  });
+
+  it("is consistent with parseInfobox", () => {
+    expect(parseInfobox(extractInfobox(INFOBOX)!)).toEqual(parseInfobox(INFOBOX));
+  });
+
+  it("matches Infobox_outbreak with underscore and any case", () => {
+    expect(extractInfobox("x {{infobox_outbreak\n| deaths = 1\n}} y")).toBe("{{infobox_outbreak\n| deaths = 1\n}}");
+  });
+
+  it("returns null when absent, unbalanced or not a string", () => {
+    expect(extractInfobox("no box here")).toBeNull();
+    expect(extractInfobox("{{Infobox outbreak\n| deaths = 1")).toBeNull();
+    expect(extractInfobox(undefined as unknown as string)).toBeNull();
   });
 });
 

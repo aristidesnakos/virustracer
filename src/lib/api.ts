@@ -103,6 +103,13 @@ export function selectSnapshots(
   return limit ? rows.slice(-limit) : rows;
 }
 
+/** A snapshot as the public API returns it: the internal archive path is dropped, the checksum is kept. */
+export function toPublicSnapshot(snapshot: TollSnapshot): Omit<TollSnapshot, "rawPath"> {
+  const { rawPath: _rawPath, ...rest } = snapshot;
+  void _rawPath;
+  return rest;
+}
+
 function csvCell(value: unknown): string {
   if (value === null || value === undefined) return "";
   const s = String(value);

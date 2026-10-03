@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { parseTollQuery, selectSnapshots, toCsv, tollToCsv } from "@/lib/api";
+import { parseTollQuery, selectSnapshots, toCsv, toPublicSnapshot, tollToCsv } from "@/lib/api";
 import type { TollSnapshot } from "@/lib/toll";
 
 const snap = (date: string, confirmed: number): TollSnapshot => ({
@@ -84,5 +84,17 @@ describe("csv", () => {
     const csv = tollToCsv([snap("2026-09-01", 10)]);
     expect(csv.split("\r\n")[0]).toBe("date,confirmed,suspected,deaths,recovered,revid,revision_timestamp,source_url");
     expect(csv.split("\r\n")[1]).toBe("2026-09-01,10,,5,,,,https://example.org/2026-09-01");
+  });
+});
+
+describe("toPublicSnapshot", () => {
+  it("drops the internal archive path but keeps the checksum", () => {
+    const out = toPublicSnapshot({ ...snap("2026-09-01", 10), rawPath: "data/raw/infobox/1.txt", rawSha256: "abc" });
+    expect(out).not.toHaveProperty("rawPath");
+    expect(out.rawSha256).toBe("abc");
+    expect(out.confirmed).toBe(10);
+  });
+  it("leaves old snapshots unchanged", () => {
+    expect(toPublicSnapshot(snap("2026-09-01", 10))).toEqual(snap("2026-09-01", 10));
   });
 });

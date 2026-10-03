@@ -16,6 +16,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseInfobox, validateSnapshot, applySnapshot } from "./lib/toll.mjs";
+import { archiveInfobox } from "./lib/raw.mjs";
 import { USER_AGENT, dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
 
 const TIMEOUT_MS = 20_000;
@@ -158,12 +159,26 @@ async function updateOutbreak(outbreak) {
     return;
   }
 
-  const next = applySnapshot(store, snapshot, nowISO);
+  let next = applySnapshot(store, snapshot, nowISO);
+  const changed = JSON.stringify(next.snapshots) !== JSON.stringify(store.snapshots);
+
+  // Archive the exact infobox this reading was parsed from (append-only, keyed
+  // by revid; data/raw/infobox/ is shared by every outbreak since revids are
+  // globally unique). Only when the snapshot is actually stored, so unchanged
+  // readings leave no orphan files. A failure here must not block the toll update.
+  if (changed && fetched.revid !== undefined) {
+    const raw = archiveInfobox(ROOT, fetched.revid, fetched.wikitext);
+    if (raw.ok) {
+      console.log(`Raw infobox ${raw.written ? "archived" : "already archived"}: ${raw.rawPath}`);
+      next = applySnapshot(store, { ...snapshot, rawPath: raw.rawPath, rawSha256: raw.rawSha256 }, nowISO);
+    } else {
+      console.log(`::warning::Raw infobox for revid ${fetched.revid} not archived: ${raw.reason}. Snapshot stored without rawPath.`);
+    }
+  }
+
   mkdirSync(dirname(tollJson), { recursive: true });
   writeFileSync(tollJson, JSON.stringify(next, null, 2) + "\n");
 
-  const changed = next.snapshots.length !== store.snapshots.length ||
-    JSON.stringify(next.snapshots) !== JSON.stringify(store.snapshots);
   console.log(
     changed
       ? `Updated ${tollLabel}: ${next.snapshots.length} snapshot(s), latest ${today} deaths=${snapshot.deaths} confirmed=${snapshot.confirmed}.`

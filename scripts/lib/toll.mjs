@@ -19,6 +19,8 @@
  * @property {string} source
  * @property {string} sourceUrl
  * @property {number} [revid]
+ * @property {string} [rawPath]    Repo-relative path of the archived infobox wikitext (data/raw/infobox/<revid>.txt)
+ * @property {string} [rawSha256]  SHA-256 (hex) of that file's bytes
  */
 
 /**
@@ -74,11 +76,15 @@ function parseCount(raw) {
 }
 
 /**
- * Extract the `{{Infobox outbreak ...}}` block (brace-balanced).
+ * Extract the `{{Infobox outbreak ...}}` block (brace-balanced), exactly as it
+ * appears in the wikitext. This is the text the parser consumes and the text
+ * archived under data/raw/infobox/, so parseInfobox(extractInfobox(x)) equals
+ * parseInfobox(x).
  * @param {string} wikitext
  * @returns {string|null}
  */
-function extractInfobox(wikitext) {
+export function extractInfobox(wikitext) {
+  if (typeof wikitext !== "string") return null;
   const start = wikitext.search(/\{\{\s*Infobox[ _]outbreak\b/i);
   if (start === -1) return null;
   let depth = 0;

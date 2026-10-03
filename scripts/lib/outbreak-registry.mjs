@@ -6,7 +6,7 @@
 import { resolve } from "node:path";
 
 export const USER_AGENT =
-  "virustracer/1.0 (https://github.com/aristidesnakos/virustracer; death-toll tracker)";
+  "virustracer/1.0 (https://outbreakfiles.com; https://github.com/aristidesnakos/virustracer; death-toll tracker)";
 
 const gnews = (q) =>
   `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;

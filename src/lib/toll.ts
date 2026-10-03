@@ -16,6 +16,10 @@ export interface TollSnapshot {
   revid?: number;
   /** When that Wikipedia revision was saved (UTC ISO), so readers can see how fresh the reading was. */
   revisionTimestamp?: string;
+  /** Repo-relative path of the archived raw infobox wikitext this reading was parsed from. Internal; not exposed by the API. */
+  rawPath?: string;
+  /** SHA-256 (hex) of that archived file, so the reading can be re-verified independently. */
+  rawSha256?: string;
 }
 
 export interface TollData {

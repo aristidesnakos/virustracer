@@ -8,6 +8,7 @@ import {
   optionsResponse,
   parseTollQuery,
   selectSnapshots,
+  toPublicSnapshot,
   tollToCsv,
 } from "@/lib/api";
 import { getTollData } from "@/lib/toll";
@@ -39,8 +40,8 @@ export function GET(request: NextRequest) {
       attribution: API_ATTRIBUTION,
       docs: "/data",
     },
-    latest,
-    snapshots,
+    latest: latest ? toPublicSnapshot(latest) : null,
+    snapshots: snapshots.map(toPublicSnapshot),
   });
 }
 

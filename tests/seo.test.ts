@@ -1,5 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { describeFigures, latestFigures } from "@/lib/seo";
+import { PRODUCTION_SITE_URL } from "@/lib/site";
+import { SITE_URL as SCRIPT_SITE_URL } from "../scripts/lib/site.mjs";
 import type { CaseDataPoint } from "@/data/outbreaks";
 
 const pt = (date: string, extra: Partial<CaseDataPoint>): CaseDataPoint => ({
@@ -50,5 +52,12 @@ describe("describeFigures", () => {
     expect(d).toContain("2027 Cholera outbreak: ");
     expect(d).toContain("(Yemen)");
     expect(d).not.toMatch(/ebola/i);
+  });
+});
+
+describe("site URL", () => {
+  it("is the same permanent domain for the app and the archiver scripts", () => {
+    expect(PRODUCTION_SITE_URL).toBe("https://outbreakfiles.com");
+    expect(SCRIPT_SITE_URL).toBe(PRODUCTION_SITE_URL);
   });
 });

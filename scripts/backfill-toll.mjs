@@ -20,6 +20,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseInfobox, validateSnapshot, MAX_SNAPSHOTS } from "./lib/toll.mjs";
+import { archiveInfobox } from "./lib/raw.mjs";
 import { lastRevisionPerDay, keepLongestMonotoneChain } from "./lib/backfill.mjs";
 import { USER_AGENT, dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
 
@@ -111,6 +112,8 @@ async function backfillOutbreak({ slug, toll }) {
   console.log(`  ${revisions.length} revisions across ${days.length} days`);
 
   const imported = [];
+  /** revid -> lead-section wikitext; archived only for snapshots that survive filtering. */
+  const leads = new Map();
   let unparseable = 0;
   for (let i = 0; i < days.length; i += CONTENT_BATCH) {
     const batch = days.slice(i, i + CONTENT_BATCH);
@@ -121,6 +124,7 @@ async function backfillOutbreak({ slug, toll }) {
         unparseable++;
         continue;
       }
+      leads.set(day.revid, sections.get(day.revid));
       imported.push({
         date: day.date,
         confirmed: parsed.confirmed,
@@ -167,11 +171,23 @@ async function backfillOutbreak({ slug, toll }) {
     console.log(`--dry-run: ${tollLabel} not written.`);
     return;
   }
+  // Archive the raw infobox of every newly imported snapshot that survived filtering.
+  // (Snapshots that already existed are handled by scripts/backfill-raw.mjs.)
+  let archived = 0;
+  const finalSnaps = kept.slice(-MAX_SNAPSHOTS).map((s) => {
+    if (s.rawPath || !leads.has(s.revid)) return s;
+    const raw = archiveInfobox(ROOT, s.revid, leads.get(s.revid));
+    if (!raw.ok) {
+      console.log(`  warning: ${s.date} (revision ${s.revid}) not archived: ${raw.reason}`);
+      return s;
+    }
+    if (raw.written) archived++;
+    return { ...s, rawPath: raw.rawPath, rawSha256: raw.rawSha256 };
+  });
+  console.log(`Archived ${archived} raw infobox file(s) under data/raw/infobox/`);
+
   mkdirSync(dirname(tollJson), { recursive: true });
-  writeFileSync(
-    tollJson,
-    JSON.stringify({ ...store, snapshots: kept.slice(-MAX_SNAPSHOTS) }, null, 2) + "\n",
-  );
+  writeFileSync(tollJson, JSON.stringify({ ...store, snapshots: finalSnaps }, null, 2) + "\n");
   console.log(`Wrote ${tollLabel}`);
 }
 

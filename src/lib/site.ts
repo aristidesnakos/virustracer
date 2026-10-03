@@ -3,15 +3,16 @@
  * the sitemap and robots.txt. Canonical, Open Graph and JSON-LD URLs must all
  * name the same host, or search engines treat them as separate properties.
  *
- * Set NEXT_PUBLIC_SITE_URL to a custom domain; on Vercel the production domain
- * (VERCEL_PROJECT_PRODUCTION_URL) is picked up automatically.
+ * The permanent domain is a constant, so canonical URLs never depend on a
+ * platform-assigned address (a renamed Vercel project must not change what we
+ * tell search engines, citations and DOIs). NEXT_PUBLIC_SITE_URL overrides it.
  */
+export const PRODUCTION_SITE_URL = "https://outbreakfiles.com";
+
 function resolveSiteUrl(): string {
   const explicit = process.env.NEXT_PUBLIC_SITE_URL?.trim();
   if (explicit) return explicit.replace(/\/+$/, "");
-  const vercel = process.env.VERCEL_PROJECT_PRODUCTION_URL?.trim();
-  if (vercel) return `https://${vercel}`;
-  return "http://localhost:3000";
+  return process.env.NODE_ENV === "production" ? PRODUCTION_SITE_URL : "http://localhost:3000";
 }
 
 export const SITE_URL = resolveSiteUrl();
