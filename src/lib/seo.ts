@@ -1,4 +1,4 @@
-import type { CaseDataPoint } from "@/data/outbreaks";
+import type { CaseDataPoint, OutbreakStatus } from "@/data/outbreaks";
 import { latestDate } from "./timeline";
 
 // Pure helpers behind the page metadata and structured data (no fs, no Next).
@@ -58,4 +58,29 @@ export function describeFigures(
     `${label.shortName}: ${parts.join(" and ")} as of ${longDate(figures.date)} ` +
     `(${label.places}). Updated daily, with map, trend and free data API.`
   );
+}
+
+type ChangeFrequency = "daily" | "monthly";
+
+/** How much an outbreak page matters to crawl: live ones first, dormant watch-list entries last. */
+export const SITEMAP_PRIORITY: Record<OutbreakStatus, number> = {
+  active: 0.9,
+  waning: 0.7,
+  over: 0.5,
+  watch: 0.3,
+};
+
+/** Outbreaks still moving change daily; finished or dormant ones rarely. */
+export function sitemapChangeFrequency(status: OutbreakStatus): ChangeFrequency {
+  return status === "active" || status === "waning" ? "daily" : "monthly";
+}
+
+/** The newest of several ISO dates (undefined entries ignored), or undefined when there are none. */
+export function newestDate(dates: readonly (string | undefined | null)[]): string | undefined {
+  let best: string | undefined;
+  for (const d of dates) {
+    if (!d || Number.isNaN(Date.parse(d))) continue;
+    if (best === undefined || Date.parse(d) > Date.parse(best)) best = d;
+  }
+  return best;
 }

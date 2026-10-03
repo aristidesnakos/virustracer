@@ -1,11 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Atkinson_Hyperlegible_Next, Literata } from "next/font/google";
 import "./globals.css";
-import { getDefaultOutbreak } from "@/data/outbreaks";
-import { SITE_NAME, SITE_URL } from "@/lib/site";
-
-// `/` shows the default outbreak until the home page becomes a multi-outbreak snapshot.
-const outbreak = getDefaultOutbreak();
+import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 
 // Body: Atkinson Hyperlegible, drawn by the Braille Institute for maximum
 // character distinction. Headings and figures: Literata, a reading serif.
@@ -20,13 +16,16 @@ const journal = Literata({
   display: "swap",
 });
 
+// Site-level defaults. Every page sets its own title, description and canonical
+// (so none is set here, or each page would inherit "/"); these cover pages that don't.
+const SITE_TITLE = `${SITE_NAME}: ${SITE_TAGLINE}`;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
-  title: { default: outbreak.seoTitle, template: `%s · ${SITE_NAME}` },
-  description: outbreak.description,
+  title: { default: SITE_TITLE, template: `%s · ${SITE_NAME}` },
+  description: SITE_TAGLINE,
   applicationName: SITE_NAME,
-  keywords: [...outbreak.keywords],
-  alternates: { canonical: "/" },
+  keywords: ["outbreak tracker", "outbreak data", "disease outbreaks", "epidemic data", "outbreak figures"],
   robots: {
     index: true,
     follow: true,
@@ -36,14 +35,13 @@ export const metadata: Metadata = {
     type: "website",
     siteName: SITE_NAME,
     locale: "en_US",
-    title: outbreak.seoTitle,
-    description: outbreak.description,
-    url: "/",
+    title: SITE_TITLE,
+    description: SITE_TAGLINE,
   },
   twitter: {
     card: "summary_large_image",
-    title: outbreak.seoTitle,
-    description: outbreak.description,
+    title: SITE_TITLE,
+    description: SITE_TAGLINE,
   },
 };
 

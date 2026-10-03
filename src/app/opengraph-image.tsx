@@ -1,31 +1,16 @@
 import { ImageResponse } from "next/og";
-import { getDefaultOutbreak } from "@/data/outbreaks";
-import { getTollData } from "@/lib/toll";
-import { mergeTimeline } from "@/lib/timeline";
-import { latestFigures } from "@/lib/seo";
-import { SITE_NAME } from "@/lib/site";
+import { listOutbreaks } from "@/data/outbreaks";
+import { SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
-const outbreak = getDefaultOutbreak();
-
-export const alt = outbreak.seoTitle;
+export const alt = `${SITE_NAME}: ${SITE_TAGLINE}`;
 export const size = { width: 1200, height: 630 };
 export const contentType = "image/png";
 
-// Share card with the current figures baked in, so a link pasted into a chat or
-// feed shows the toll rather than a generic logo. Colours are the site palette
-// as hex (ImageResponse does not read oklch).
+// Site-level share card: the name, what the site is, and how many outbreaks it
+// tracks. No per-outbreak figures (each outbreak page has its own card). Same
+// palette as the outbreak card, as hex because ImageResponse does not read oklch.
 export default function OpengraphImage() {
-  const toll = getTollData(outbreak.slug);
-  const figures = latestFigures(mergeTimeline(outbreak.casesTimeline, toll.snapshots));
-  const stat = (label: string, value: number | null, color: string) => (
-    <div style={{ display: "flex", flexDirection: "column" }}>
-      <div style={{ fontSize: 120, fontWeight: 700, color, lineHeight: 1 }}>
-        {value === null ? "—" : value.toLocaleString("en-US")}
-      </div>
-      <div style={{ fontSize: 34, color: "#4a5568", marginTop: 12 }}>{label}</div>
-    </div>
-  );
-
+  const count = listOutbreaks().length;
   return new ImageResponse(
     (
       <div
@@ -41,25 +26,22 @@ export default function OpengraphImage() {
           borderBottom: "16px solid #8a2a1f",
         }}
       >
+        <div style={{ fontSize: 30, letterSpacing: 4, color: "#8a2a1f", fontWeight: 700 }}>
+          OUTBREAK DATA, ON THE RECORD
+        </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 30, letterSpacing: 4, color: "#8a2a1f", fontWeight: 700 }}>
-            {SITE_NAME.toUpperCase()}
-          </div>
-          <div style={{ fontSize: 76, fontWeight: 700, marginTop: 16, lineHeight: 1.1 }}>
-            {outbreak.title}
-          </div>
-          <div style={{ fontSize: 34, color: "#4a5568", marginTop: 12 }}>
-            {[outbreak.places, outbreak.pathogen].filter(Boolean).join(" · ")}
+          <div style={{ fontSize: 112, fontWeight: 700, lineHeight: 1.05 }}>{SITE_NAME}</div>
+          <div style={{ fontSize: 42, color: "#4a5568", marginTop: 24, lineHeight: 1.3 }}>
+            {SITE_TAGLINE}
           </div>
         </div>
-        <div style={{ display: "flex", gap: 96 }}>
-          {stat("Deaths reported", figures?.deaths ?? null, "#8a2a1f")}
-          {stat("Confirmed cases", figures?.confirmed ?? null, "#1c2433")}
-        </div>
-        <div style={{ fontSize: 26, color: "#4a5568" }}>
-          {`Unofficial dashboard · figures from WHO and INSP DRC via Wikipedia${
-            figures ? ` · as of ${figures.date}` : ""
-          }`}
+        <div style={{ display: "flex", flexDirection: "column" }}>
+          <div style={{ fontSize: 64, fontWeight: 700, color: "#8a2a1f", lineHeight: 1 }}>
+            {`${count} ${count === 1 ? "outbreak" : "outbreaks"} tracked`}
+          </div>
+          <div style={{ fontSize: 26, color: "#4a5568", marginTop: 16 }}>
+            Unofficial dashboard · free data API · sources and archive links on every figure
+          </div>
         </div>
       </div>
     ),
