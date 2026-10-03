@@ -288,6 +288,9 @@ body {
 }
 /* Raised surface used for each figure / table / notes block. */
 .panel {
+  /* Column so a panel stretched to its grid row can hand the spare height to one child. */
+  display: flex;
+  flex-direction: column;
   background: var(--panel);
   border: 1px solid var(--rule);
   border-radius: 0.75rem;

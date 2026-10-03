@@ -110,7 +110,7 @@ export default function MonitoringTable({
         }
       />
 
-      <div className="overflow-x-auto">
+      <div className="relative overflow-x-auto">
         <table className="w-full min-w-[34rem] text-[0.9375rem]">
           <caption className="sr-only">
             Confirmed cases, deaths and case fatality by country and province. Select a region to

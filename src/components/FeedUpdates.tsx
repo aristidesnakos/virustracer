@@ -68,10 +68,12 @@ export default function FeedUpdates({
       <ul
         tabIndex={0}
         aria-label="Recent news and official updates"
-        className="max-h-[38rem] divide-y divide-rule overflow-y-auto border-t border-rule pr-2"
+        // `relative` makes this the containing block for the absolutely positioned
+        // sr-only hints inside; otherwise they escape the scroll clip and stretch the page.
+        className="relative max-h-[38rem] overflow-y-auto border-t border-rule pr-2 lg:grid lg:max-h-[32rem] lg:grid-cols-2 lg:gap-x-10"
       >
         {items.map((item) => (
-          <li key={item.id} className="py-4">
+          <li key={item.id} className="border-b border-rule py-4 last:border-b-0">
             <div className="mb-1.5 flex flex-wrap items-start justify-between gap-x-3 gap-y-1.5">
               <a
                 href={item.url}

@@ -149,7 +149,7 @@ export default function DashboardPage() {
               <p className="mt-2 text-base text-ink-muted">{outbreak.subtitle}</p>
             </div>
 
-            <div className="flex flex-col gap-3 sm:items-end">
+            <div className="flex flex-col gap-3 xl:items-end">
               <dl className="flex flex-wrap gap-x-6 gap-y-2">
                 {dates.map((d) => (
                   <div key={d.label}>
@@ -185,66 +185,58 @@ export default function DashboardPage() {
           </div>
 
           {/* ── Figures ──────────────────────────────────────────── */}
-          <div className="mt-6 grid grid-cols-1 items-start gap-6 lg:grid-cols-12">
-            {/* Left column: map + table */}
-            <div className="flex min-w-0 flex-col gap-6 lg:col-span-7">
-              <section
-                aria-labelledby="map-heading"
-                className="panel rise"
-                style={{ "--i": 2 } as React.CSSProperties}
-              >
-                <PanelHeader
-                  kicker="Fig. 1"
-                  id="map-heading"
-                  title="Where cases are reported"
-                />
-                <div className="h-[26rem] overflow-hidden rounded-lg border border-rule sm:h-[32rem]">
-                  <MapLoader />
-                </div>
-              </section>
-
-              <section
-                aria-labelledby="table-heading"
-                className="panel rise"
-                style={{ "--i": 4 } as React.CSSProperties}
-              >
-                <MonitoringTable candidates={candidatesData.candidates} headingId="table-heading" />
-              </section>
-            </div>
-
-            {/* Right column: chart + news + sponsor */}
-            <div className="flex min-w-0 flex-col gap-6 lg:col-span-5">
-              <section
-                aria-labelledby="chart-heading"
-                className="panel rise"
-                style={{ "--i": 3 } as React.CSSProperties}
-              >
-                <CasesChart timeline={timeline} headingId="chart-heading" />
-              </section>
-
-              <section
-                aria-labelledby="trend-heading"
-                className="panel rise"
-                style={{ "--i": 3 } as React.CSSProperties}
-              >
-                <TrendPanel metrics={metrics} headingId="trend-heading" />
-              </section>
-
-              <section
-                aria-labelledby="feed-heading"
-                className="panel rise"
-                style={{ "--i": 5 } as React.CSSProperties}
-              >
-                <FeedUpdates
-                  items={liveData.recentItems}
-                  lastFetched={liveData.lastFetched}
-                  headingId="feed-heading"
-                />
-              </section>
-
-              <div className="rise" style={{ "--i": 6 } as React.CSSProperties}>
-                <SponsorCard />
+          {/* Panels are paired by row (map|chart, table|trend) so neither column runs
+              long and leaves a blank gap; feed and sponsor then span the full width. */}
+          <div className="mt-6 grid grid-cols-1 gap-6 lg:grid-cols-12">
+            <section
+              aria-labelledby="map-heading"
+              className="panel rise min-w-0 lg:col-span-7"
+              style={{ "--i": 2 } as React.CSSProperties}
+            >
+              <PanelHeader kicker="Fig. 1" id="map-heading" title="Where cases are reported" />
+              <div className="h-[26rem] overflow-hidden rounded-lg border border-rule sm:h-[32rem]">
+                <MapLoader />
               </div>
+            </section>
+
+            <section
+              aria-labelledby="chart-heading"
+              className="panel rise min-w-0 lg:col-span-5"
+              style={{ "--i": 3 } as React.CSSProperties}
+            >
+              <CasesChart timeline={timeline} headingId="chart-heading" />
+            </section>
+
+            <section
+              aria-labelledby="table-heading"
+              className="panel rise min-w-0 lg:col-span-7"
+              style={{ "--i": 4 } as React.CSSProperties}
+            >
+              <MonitoringTable candidates={candidatesData.candidates} headingId="table-heading" />
+            </section>
+
+            <section
+              aria-labelledby="trend-heading"
+              className="panel rise min-w-0 lg:col-span-5"
+              style={{ "--i": 4 } as React.CSSProperties}
+            >
+              <TrendPanel metrics={metrics} headingId="trend-heading" />
+            </section>
+
+            <section
+              aria-labelledby="feed-heading"
+              className="panel rise min-w-0 lg:col-span-12"
+              style={{ "--i": 5 } as React.CSSProperties}
+            >
+              <FeedUpdates
+                items={liveData.recentItems}
+                lastFetched={liveData.lastFetched}
+                headingId="feed-heading"
+              />
+            </section>
+
+            <div className="rise lg:col-span-12" style={{ "--i": 6 } as React.CSSProperties}>
+              <SponsorCard />
             </div>
           </div>
         </main>

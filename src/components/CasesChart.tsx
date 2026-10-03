@@ -152,7 +152,7 @@ export default function CasesChart({
   }, [timeline]);
 
   return (
-    <div className="flex w-full flex-col">
+    <div className="flex w-full flex-1 flex-col">
       <PanelHeader
         kicker="Fig. 2"
         id={headingId}
@@ -167,82 +167,86 @@ export default function CasesChart({
         {hasSuspected && <LegendKey color="var(--suspected)" label="Suspected" dashed weight={2} />}
       </ul>
       <p className="sr-only">{summary}</p>
-      <div className="h-[16rem] sm:h-[18rem]">
-        <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
-            <CartesianGrid strokeDasharray="3 3" stroke="var(--rule)" />
-            <XAxis
-              dataKey="t"
-              type="number"
-              scale="time"
-              domain={[(dataMin: number) => Math.min(dataMin, PHEIC_T), "dataMax"]}
-              ticks={ticks}
-              tickFormatter={fmtDay}
-              tick={{ fill: "var(--ink-muted)", fontSize: 13 }}
-              axisLine={{ stroke: "var(--rule-strong)" }}
-              tickLine={false}
-            />
-            <YAxis
-              tick={{ fill: "var(--ink-muted)", fontSize: 13 }}
-              axisLine={false}
-              tickLine={false}
-              allowDecimals={false}
-              tickFormatter={fmtNum}
-              width={58}
-            />
-            <Tooltip
-              content={tooltip}
-              isAnimationActive={false}
-              cursor={{ stroke: "var(--ink-faint)", strokeDasharray: "3 3" }}
-              offset={14}
-              allowEscapeViewBox={{ x: false, y: true }}
-              wrapperStyle={{ zIndex: 50, pointerEvents: "none" }}
-            />
-            <ReferenceLine
-              x={PHEIC_T}
-              stroke="var(--ink-faint)"
-              strokeDasharray="4 2"
-              label={{
-                value: "WHO PHEIC",
-                fill: "var(--ink-muted)",
-                fontSize: 12,
-                position: "insideTopLeft",
-                dx: 4,
-                dy: 2,
-              }}
-            />
-            <Line
-              type="monotone"
-              dataKey="Confirmed"
-              stroke="var(--confirmed)"
-              strokeWidth={2.5}
-              connectNulls
-              dot={{ fill: "var(--confirmed)", r: 3, strokeWidth: 0 }}
-              activeDot={{ r: 5 }}
-            />
-            {hasSuspected && (
+      {/* Grows with the row (the map beside it is taller); the minimum is the old fixed height. */}
+      <div className="relative min-h-[16rem] flex-1 sm:min-h-[18rem]">
+        {/* Recharts' 100% height needs a definite parent, which a flex-grown box is not. */}
+        <div className="absolute inset-0">
+          <ResponsiveContainer width="100%" height="100%">
+            <LineChart data={data} margin={{ top: 8, right: 12, left: 0, bottom: 0 }}>
+              <CartesianGrid strokeDasharray="3 3" stroke="var(--rule)" />
+              <XAxis
+                dataKey="t"
+                type="number"
+                scale="time"
+                domain={[(dataMin: number) => Math.min(dataMin, PHEIC_T), "dataMax"]}
+                ticks={ticks}
+                tickFormatter={fmtDay}
+                tick={{ fill: "var(--ink-muted)", fontSize: 13 }}
+                axisLine={{ stroke: "var(--rule-strong)" }}
+                tickLine={false}
+              />
+              <YAxis
+                tick={{ fill: "var(--ink-muted)", fontSize: 13 }}
+                axisLine={false}
+                tickLine={false}
+                allowDecimals={false}
+                tickFormatter={fmtNum}
+                width={58}
+              />
+              <Tooltip
+                content={tooltip}
+                isAnimationActive={false}
+                cursor={{ stroke: "var(--ink-faint)", strokeDasharray: "3 3" }}
+                offset={14}
+                allowEscapeViewBox={{ x: false, y: true }}
+                wrapperStyle={{ zIndex: 50, pointerEvents: "none" }}
+              />
+              <ReferenceLine
+                x={PHEIC_T}
+                stroke="var(--ink-faint)"
+                strokeDasharray="4 2"
+                label={{
+                  value: "WHO PHEIC",
+                  fill: "var(--ink-muted)",
+                  fontSize: 12,
+                  position: "insideTopLeft",
+                  dx: 4,
+                  dy: 2,
+                }}
+              />
               <Line
                 type="monotone"
-                dataKey="Suspected"
-                stroke="var(--suspected)"
-                strokeWidth={2}
-                strokeDasharray="5 4"
+                dataKey="Confirmed"
+                stroke="var(--confirmed)"
+                strokeWidth={2.5}
                 connectNulls
-                dot={{ fill: "var(--suspected)", r: 2.5, strokeWidth: 0 }}
+                dot={{ fill: "var(--confirmed)", r: 3, strokeWidth: 0 }}
                 activeDot={{ r: 5 }}
               />
-            )}
-            <Line
-              type="monotone"
-              dataKey="Deaths"
-              stroke="var(--death)"
-              strokeWidth={3.5}
-              connectNulls
-              dot={{ fill: "var(--death)", r: 3, strokeWidth: 0 }}
-              activeDot={{ r: 6 }}
-            />
-          </LineChart>
-        </ResponsiveContainer>
+              {hasSuspected && (
+                <Line
+                  type="monotone"
+                  dataKey="Suspected"
+                  stroke="var(--suspected)"
+                  strokeWidth={2}
+                  strokeDasharray="5 4"
+                  connectNulls
+                  dot={{ fill: "var(--suspected)", r: 2.5, strokeWidth: 0 }}
+                  activeDot={{ r: 5 }}
+                />
+              )}
+              <Line
+                type="monotone"
+                dataKey="Deaths"
+                stroke="var(--death)"
+                strokeWidth={3.5}
+                connectNulls
+                dot={{ fill: "var(--death)", r: 3, strokeWidth: 0 }}
+                activeDot={{ r: 6 }}
+              />
+            </LineChart>
+          </ResponsiveContainer>
+        </div>
       </div>
     </div>
   );
