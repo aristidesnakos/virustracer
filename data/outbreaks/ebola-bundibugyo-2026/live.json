@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-04T15:27:46.277Z",
+  "lastFetched": "2026-10-04T21:28:37.907Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -335,7 +335,10 @@
     "news-146ca55f99e65b86",
     "news-695bca928295bd34",
     "news-3b4b1b167163fb96",
-    "news-7fc0b95d16bd1d3d"
+    "news-7fc0b95d16bd1d3d",
+    "news-44651c7706b63772",
+    "news-a8390220dfa93a02",
+    "who-911b8df7c8192ad5"
   ],
   "recentItems": [
     {
@@ -475,6 +478,14 @@
       "summary": "​DR Congo Ebola outbreak deaths surpass 4,000: 5 reasons the deadliest outbreak is still not contained​ The Times of India"
     },
     {
+      "id": "news-44651c7706b63772",
+      "title": "Congo Ebola Outbreak Death Toll Passes 4000 As Treatment Center Burns - Dr. Axe",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRnlrWThLcnNXSl9LTV9VbVhKVzluMEhwMWFKaVdEYkpSU3haZnNUdEN2bjVWT2NwRVZWQlkzSXIxV2lHTEl3UnNwUF9qV1JlSC05cXFKYXE0eGJKdTBzWjRBY0tnejZDZWZSZHVFc0JGamR2ZVAzcWVLZUdGUFFzNDU4akFxNW9zUTU2MDlrQmhOQzlBVnRFRTdGZVZZN05YLWtobk5FczZWTDd4c3c?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "Congo Ebola Outbreak Death Toll Passes 4000 As Treatment Center Burns Dr. Axe"
+    },
+    {
       "id": "news-a0e8afa70433be9e",
       "title": "Ebola treatment centre burned down as Congo death toll passes 4,000 - chelmsfordcitynews.co.uk",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMFAwVTlXamh6Tzl4dlYxWkRDNXFYZWVHeDdCaEcySWJiUWVIb3hQZTFJMG1MU1ktQ2NmS2R6NlNIeWREc2hvd3pZNWUyVm9xY3hpUy1NdVhzc2xubDk1LW5DTVRJb0tRcURzOUt4Z3VaRnVBN19YZzdMaVFFR1J0ZnNyT2FTRXg4TDVWdnBIb2stMlIzdUFSZWZiajhya25PZGUxSGd0bHAtUWxYZUNrSXBaUVBDMjgyTFBfRQ?oc=5",
@@ -489,14 +500,6 @@
       "date": "2026-10-02",
       "source": "Google News — Ebola death toll",
       "summary": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 Toronto Star"
-    },
-    {
-      "id": "news-2d811ccab37de660",
-      "title": "Congo’s Ebola outbreak has killed more than 4,000, government data shows - The Straits Times",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSUlFYmh0NFV4Y1hqbGY5d0FFZHBBVGpzTjlJckNWZ0VUUkJKSEM0ZjJXVjA1TFlhZUt5N3JpVi0zVlJYR0xZZkpnR1BQNWMyQVRQVUdCWUk4dVVtU1ZOUzRNY0xmcHZocE1GV3AzWVl2OGtnZUtvekpaelZjRVFXUkExdG9NX1VoWWw5WkJ6SDZ2ZFlxbXk1VnlnLTV0S0xzRnA3VTg4NA?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo’s Ebola outbreak has killed more than 4,000, government data shows The Straits Times"
     }
   ]
 }
