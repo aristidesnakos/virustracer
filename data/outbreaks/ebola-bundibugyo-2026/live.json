@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-04T02:38:44.894Z",
+  "lastFetched": "2026-10-04T15:27:46.277Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -325,9 +325,27 @@
     "news-cd7f4ba7cdc60f6c",
     "news-34026168f63f5ee7",
     "who-83c31d62996cd1aa",
-    "who-4b66556f959a30c3"
+    "who-4b66556f959a30c3",
+    "news-5003031cf308adad",
+    "news-8a966e43833b5c4c",
+    "news-3538ec313886d158",
+    "news-a0e8afa70433be9e",
+    "news-f97a402ff2a1a387",
+    "news-bcf7b1a2e8805d37",
+    "news-146ca55f99e65b86",
+    "news-695bca928295bd34",
+    "news-3b4b1b167163fb96",
+    "news-7fc0b95d16bd1d3d"
   ],
   "recentItems": [
+    {
+      "id": "news-8a966e43833b5c4c",
+      "title": "DRC health officials say Ebola outbreak past peak despite death toll surpassing 4,000 - bastillepost.com",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNd1pmYUVodV9oNFFibzNyRmw4MEV6a093SDhCWkozeUxqeHBrU0F6b09qWE0zTUZyT2JSa3prdkJWRS1MRmVXQjgwclBSZDlUcThQYkk0NHlwOTRIeW5wNE9KT20ybGZETm9VQ3dRWGNuRGQ5VlBPdkxjS3RPX1llNDdpRWd4YVVHcFNvaXU2cnR1QXV0S05mUVZjRVlZdFlpSjlaaV90WnRGd2VaR09BdEpTNVJhVk5qbF94RW5jZkg3OVVId2NTTnNzeUhIZkxURUE?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "DRC health officials say Ebola outbreak past peak despite death toll surpassing 4,000 bastillepost.com"
+    },
     {
       "id": "news-eea4df178c5972d6",
       "title": "Ebola outbreak eases in DR Congo though death toll tops 4,000 - news.cgtn.com",
@@ -457,6 +475,14 @@
       "summary": "​DR Congo Ebola outbreak deaths surpass 4,000: 5 reasons the deadliest outbreak is still not contained​ The Times of India"
     },
     {
+      "id": "news-a0e8afa70433be9e",
+      "title": "Ebola treatment centre burned down as Congo death toll passes 4,000 - chelmsfordcitynews.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMFAwVTlXamh6Tzl4dlYxWkRDNXFYZWVHeDdCaEcySWJiUWVIb3hQZTFJMG1MU1ktQ2NmS2R6NlNIeWREc2hvd3pZNWUyVm9xY3hpUy1NdVhzc2xubDk1LW5DTVRJb0tRcURzOUt4Z3VaRnVBN19YZzdMaVFFR1J0ZnNyT2FTRXg4TDVWdnBIb2stMlIzdUFSZWZiajhya25PZGUxSGd0bHAtUWxYZUNrSXBaUVBDMjgyTFBfRQ?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola treatment centre burned down as Congo death toll passes 4,000 chelmsfordcitynews.co.uk"
+    },
+    {
       "id": "news-49e49cf1f1ffce37",
       "title": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 - Toronto Star",
       "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxORkNUWmc3ZEdKYWxncTVCbVl3RHByWUFNWkVUUWVNVmluZmNBYXBKdHBjOGJmVVpMbGc0WURFRlJzV1lqVlFiNUJWVTJVUExRdmpiR3pDOFA1RGpQMGh1RmZHMDJvOTRrSnlnVWVRNVNuaUQ0c3VmdW5sVzlrQVI5YnVna2tnR3JfbEhETXlEMnI4YVpWLXpFZEI5cnhHS29EVnFNb2ZrUTd0ZWFmMjBfSS1ucWkzYXpKc1Vvbl8wY0gwZnhweUtJZU9xNUFxWllUNmpJaEp3X05WSGo3MW1rVWVzazFycE53TzhZWklxekFWWEZid0tWWFYwVGdjYWlQQ1daeWp1TnR3cFN3TVd5T2JaSFg0NVdBbGc?oc=5",
@@ -471,22 +497,6 @@
       "date": "2026-10-02",
       "source": "Google News — Ebola death toll",
       "summary": "Congo’s Ebola outbreak has killed more than 4,000, government data shows The Straits Times"
-    },
-    {
-      "id": "news-81c18e328b7b9abd",
-      "title": "DR Congo Ebola Death Toll Passes 4,000 in Second-Deadliest Outbreak Ever - teleSUR English",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE1mbHNrZ3hqZlpYdDhXZGQ2bG1oTWJ4NDJqWFl6bEh1SDR4LXdGNGg5eGJlM2gweDUwZnJXS3Z3VXZWR1BfZ3VBNURZLWI0Z0FHUVlua0k5OVVWV0FnSTVJc21RaV8xd0hFWF80dHdLeUhYVEMxSnV1SQ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo Ebola Death Toll Passes 4,000 in Second-Deadliest Outbreak Ever teleSUR English"
-    },
-    {
-      "id": "news-a28e48395b1741ed",
-      "title": "Ebola treatment center burns down as death toll in Congo passes 4,000 - WKBN.com",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUlNLR2NxQWFjSVp0LXhqRFRsWWNHM2prSVBaRjQ5UWJveHkzOXdoSDQwODdYTHJidkNtRTFhdjJ6NXhWY0hMenl3WlplSFpFSDNlSkl4di1UN1VqVVBnZmJnMTlMUHpfZHRaaE9vOWVHd3JDZjlkNFJMWnFGOWYyYTJObW44SG03eXJMUVloVW1OekplckJ6NTFmcWcwMGRQR0hqbDFVS050VmR3R1JZUUZmQlpPSDZ5LUFXSERuaTNFTmc3dXdOTUl3Qll0NE80TkJZMFlDYTFzUkFUblHSAd4BQVVfeXFMTVJTS0djcUFhY0ladC14akRUbFljRzNqa0lQWkY0OVFib3h5Mzl3aEg0MDg3WExyYnZDbUUxYXYyejV4VmNITHp5d1paZUhaRUgzZUpJeHYtVDdValVQZ2ZiZzE5TFB6X2R0WmhPbzllR3dyQ2Y5ZDRSTFpxRjlmMmEyTm1uOEhtN3lyTFFZaFVtTnpKZXJCejUxZnFnMDBkUEdIamwxVUtOdFZkd0dSWVFGZkJaT0g2eS1BV0hEbmkzRU5nN3V3Tk1Jd0JZdDRPNE5CWTBZQ2Exc1JBVG5R?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola treatment center burns down as death toll in Congo passes 4,000 WKBN.com"
     }
   ]
 }
