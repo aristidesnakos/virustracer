@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from "next";
 import { Atkinson_Hyperlegible_Next, Literata } from "next/font/google";
 import "./globals.css";
+import AlertsInterestWidget from "@/components/AlertsInterestWidget";
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
 
 // Body: Atkinson Hyperlegible, drawn by the Braille Institute for maximum
@@ -53,7 +54,10 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en" className={`${body.variable} ${journal.variable} antialiased`}>
-      <body>{children}</body>
+      <body>
+        {children}
+        <AlertsInterestWidget />
+      </body>
     </html>
   );
 }
