@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-03T12:49:29.727Z",
+  "lastFetched": "2026-10-04T02:38:44.894Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -314,9 +314,52 @@
     "news-ab04b8b4c1e74038",
     "news-ecd240fb9225be99",
     "news-d33edcb7ee28c74b",
-    "news-d6ce4741cfc04040"
+    "news-d6ce4741cfc04040",
+    "news-eea4df178c5972d6",
+    "news-ce526d0da4d4ce78",
+    "news-fa0efb794a02e9d3",
+    "news-919c2425fb959d45",
+    "news-3fea19c1ae83b493",
+    "news-b5bf5beedc107e0d",
+    "news-048db1b7516172d0",
+    "news-cd7f4ba7cdc60f6c",
+    "news-34026168f63f5ee7",
+    "who-83c31d62996cd1aa",
+    "who-4b66556f959a30c3"
   ],
   "recentItems": [
+    {
+      "id": "news-eea4df178c5972d6",
+      "title": "Ebola outbreak eases in DR Congo though death toll tops 4,000 - news.cgtn.com",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGVKSkJ4NUYtTWhqVk5ZQnloZTFnUWl4b20ycS02ZmJTM0RIQ0pqVllqRlcxZUdJdHVoRTlvaUszemFWZl9vbUV3NmZwOHVEc1hSRFhmUHZzeHh0V2dWRFNUS0ZlS1NlMUxLQ1N1LUs2Rl9faUtOTWlCM0wxbVFSMlFrdlptcmhydnNoYVhraUJraFlnTFlzRlJ1Q0gtYy1UMEo0WlRuWkZQX1lhaUFFbVIyUThsRi15TWVYMGk2UE95ZVlE?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola outbreak eases in DR Congo though death toll tops 4,000 news.cgtn.com"
+    },
+    {
+      "id": "news-ce526d0da4d4ce78",
+      "title": "Ebola outbreak eases in DR Congo though death toll tops 4,000 #worldnow - Modern Ghana",
+      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAyUnE0eU9ydWdyc1JHcTJvZmtqbUJsYjY1UW9OQUN2UFdfaWh3VDB4YjNDMXdFQXBXRVJpcVU5bXdiUUZoM1lycE02ejkxTF9uendlV3BNS3hXOGtlc3dtR9IBXEFVX3lxTE9qcWs3Z0NHcVJ1MnR1S2g2ZTRUMnZyWTdmZTE3bHlRREVZbnljS0NLcHhLbEVTVTk4M3k5ZWZxRXFNV3JTeS1xYXRvdmhja0RFRVlOaHVta2R6eDky?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola outbreak eases in DR Congo though death toll tops 4,000 #worldnow Modern Ghana"
+    },
+    {
+      "id": "news-919c2425fb959d45",
+      "title": "Ebola infections declining in some areas of Congo, death toll surpasses 4,000 - Ekantipur",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUkoyeGFLdU1ZOEJoTG04dUFEaDlGZTFhMmVvZmFaNGpDajQ0U2VlWG1WUG9wX3FIMjFWanlIdG9EWlVvZ0JtX0dTdG00VkFWUDczUVU1UEFFZlI4MDZwVmh6Zkh1cFdQbllsQWpVRmp0cEhhMUNaRHVEYXRIZ0xkMENBUFZRNVI3NlRNY0lLNkxKWjNJUlFvZlNKdFZPb0hjLXdVbkhIMFBQX0o1Z1BydG9KOW9aWTM4WFhabVNpUzk?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola infections declining in some areas of Congo, death toll surpasses 4,000 Ekantipur"
+    },
+    {
+      "id": "news-cd7f4ba7cdc60f6c",
+      "title": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak - record-eagle.com",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQc3hHV1V1OVEwejJBRE9ON2lTNlZQX1lwR3lkcW9yaWJXakxrQUp3Uk9OdGNFZ0xUNGZnTlktVU1jaS01bmQ0elNaQ241RzEtYlAweC1GUFVPYkJ6OV9vakhDLXZhTXA3dzlKWUhHenVnbjMzMU5Jck5kQ2tRUEp4bDdlVWZkVFhqQzBtZGY0bEl4Vy13bzYzTWYxWlVwX0ptajByVlZfTllnakI3YWcwUWU5Z3FLRzVKckxEenhpU2w4alVtczYzZ0I1cldSWUM0TUdIaFoydURfTjIxRk1lSHh4UXBLekVnaUgyRUF0SEI2cTdqZGh5Nnp3?oc=5",
+      "date": "2026-10-03",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak record-eagle.com"
+    },
     {
       "id": "news-1fad5b5dcbb1c2d3",
       "title": "Ebola treatment center burned down as death toll in Congo passes 4,000 - TelegraphHerald.com",
@@ -444,38 +487,6 @@
       "date": "2026-10-02",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola treatment center burns down as death toll in Congo passes 4,000 WKBN.com"
-    },
-    {
-      "id": "news-b9c0788dc8b799e6",
-      "title": "5 questions about Congo’s Ebola outbreak - Washington Times",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxNRXNGbzZIUnBVUzRaVk5mSU80ZkFYMnBhYkFPUHE4OHNFanV1cHU2VndaZGQ1VE1PMXVMaFNHUWVKeDlxRFJrOVZNZTNCSkJsXzFQdzMwNUI2ZHRvVmhZVjk5QnlTcE9qQnJNMEhuR2o4bVMwV1BYc2NEcE9NNmJGSTg1WjhEc0N4NlE?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "5 questions about Congo’s Ebola outbreak Washington Times"
-    },
-    {
-      "id": "news-8cda6d27759d9943",
-      "title": "Congo Ebola Death Toll Surpasses 4,000 - tovima.com",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE4xQ05TLS1WRldzOW5tTmk5WWlESUpEUVBwMnQxRGE3YkcwNVhNdjJrbEtSbjF5TDlCWVlDYWZWenJidEVQUnRYT1EzazBBTVlyV0wyODFoTVhfZWVvajhmTnF2dTdLNGV6aTR0Mm5MMGl1NXZLLWfSAXtBVV95cUxOT05DdjZac0FETWlCSUxMbC1qdUl3T1pXVVZzVHA2Y0VfZ3RYX1gwSGI5TW1RODN0dFlnbk50RVBNdW5nVUpwa0l3ZWxPczFYelFlcTNFMHRLZ0VoZ1FKX3Riem1uMHhaVkRlZFN6SkUwaGRyRGNWaml1eTQ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of the article’s report, the death toll in the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda surpassed 4,000, with no latest cumulative confirmed case count specified."
-    },
-    {
-      "id": "news-aa3ee48411701f7e",
-      "title": "DR Congo’s Ebola Death Toll Passes 4,000 as Transit Center Burns - colombiaone.com",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUmllUWl3MVQwM1l6Q1dXbUJEYmVGVGFibEpIazh3YXh3Y3RaZy03TF8yajhCRmVCR3RwN1hsNTJzRDNwb1dxd3QxdnZYNDRnY3dQc3dzN201RzhHc0gzVzE1d0hHU3gwTVEtdTQ1OGNMc2NBbWpTYnpCWEVTQXRIWg?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of 2022, the article reports that DR Congo’s cumulative Ebola death toll has surpassed 4,000; it does not address a 2026 Bundibugyo outbreak."
-    },
-    {
-      "id": "news-53c285646d7945a2",
-      "title": "DR Congo Ebola Outbreak Death Toll Surpasses 4,000 - TVC News",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE03MmQ1VFBnd214LTEwMUEwTDUyMVZnelNtUGlqWmxKTm5ZWHlqcUt2WThjUU9jQmV6X2dBVW9tTmk3ZEp3d1I2bEdDUEU1SUd1X1o2enVVUDI1RTdqVE9uQlZTc2hYTmpzaGxnSzhsYjZncjJ2eEticjRsSklsUQ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo Ebola Outbreak Death Toll Surpasses 4,000 TVC News"
     }
   ]
 }

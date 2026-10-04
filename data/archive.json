@@ -1,6 +1,292 @@
 {
-  "lastRun": "2026-10-03T12:49:29.796Z",
+  "lastRun": "2026-10-04T02:41:07.791Z",
   "entries": {
+    "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "UN situation report",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/measles-bangladesh-2026.ts)",
+      "kind": "curated",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://dghs.gov.bd": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "DGHS",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/measles-bangladesh-2026.ts)",
+      "kind": "curated",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1347309590": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-04-05: 826 confirmed, 16 deaths",
+      "publishedAt": "2026-04-05T23:25:11Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1350393240": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-04-21: 826 confirmed, 16 deaths",
+      "publishedAt": "2026-04-21T18:05:40Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1350546042": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-04-22: 826 confirmed, 16 deaths",
+      "publishedAt": "2026-04-22T15:01:57Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1353646220": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-11: 6937 confirmed, 65 deaths",
+      "publishedAt": "2026-05-11T14:38:56Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1353880414": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-12: 7024 confirmed, 68 deaths",
+      "publishedAt": "2026-05-12T23:28:59Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1354013590": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-13: 7150 confirmed, 69 deaths",
+      "publishedAt": "2026-05-13T19:32:29Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1354135270": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-14: 7305 confirmed, 70 deaths",
+      "publishedAt": "2026-05-14T14:50:07Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1354304070": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-15: 7416 confirmed, 74 deaths",
+      "publishedAt": "2026-05-15T15:39:15Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1354706564": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-17: 7767 confirmed, 75 deaths",
+      "publishedAt": "2026-05-17T22:05:41Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1354831544": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-18: 7767 confirmed, 75 deaths",
+      "publishedAt": "2026-05-18T13:43:29Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1355030164": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-19: 7856 confirmed, 77 deaths",
+      "publishedAt": "2026-05-19T15:01:57Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1355380580": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-21: 8275 confirmed, 83 deaths",
+      "publishedAt": "2026-05-21T14:23:51Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1355764318": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-23: 8494 confirmed, 86 deaths",
+      "publishedAt": "2026-05-23T20:00:19Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1355933689": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-24: 8622 confirmed, 86 deaths",
+      "publishedAt": "2026-05-24T20:04:47Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1356295084": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-26: 8772 confirmed, 88 deaths",
+      "publishedAt": "2026-05-26T22:37:11Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1356786105": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-29: 8943 confirmed, 90 deaths",
+      "publishedAt": "2026-05-29T20:22:28Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1356921482": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-30: 8996 confirmed, 90 deaths",
+      "publishedAt": "2026-05-30T17:34:46Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1357051014": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-05-31: 9049 confirmed, 90 deaths",
+      "publishedAt": "2026-05-31T13:21:33Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1357233592": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-01: 9094 confirmed, 90 deaths",
+      "publishedAt": "2026-06-01T14:11:50Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1357438152": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-02: 9136 confirmed, 90 deaths",
+      "publishedAt": "2026-06-02T17:21:28Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1357491155": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -12,6 +298,84 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1357962868": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-05: 9503 confirmed, 91 deaths",
+      "publishedAt": "2026-06-05T19:11:43Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1358587061": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-09: 9833 confirmed, 92 deaths",
+      "publishedAt": "2026-06-09T17:34:23Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1359300490": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-14: 9833 confirmed, 92 deaths",
+      "publishedAt": "2026-06-14T13:25:21Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1359976284": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-18: 9833 confirmed, 92 deaths",
+      "publishedAt": "2026-06-18T12:40:08Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1360147837": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-19: 10773 confirmed, 93 deaths",
+      "publishedAt": "2026-06-19T15:05:44Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1360419937": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-21: 10949 confirmed, 93 deaths",
+      "publishedAt": "2026-06-21T11:23:25Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1360490264": {
@@ -38,6 +402,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1360768881": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-06-23: 11011 confirmed, 93 deaths",
+      "publishedAt": "2026-06-23T13:44:59Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1360815881": {
@@ -131,6 +508,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1362626468": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-05: 12526 confirmed, 93 deaths",
+      "publishedAt": "2026-07-05T06:18:01Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1362725664": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -155,6 +545,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1362971267": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-07: 12526 confirmed, 93 deaths",
+      "publishedAt": "2026-07-07T07:40:40Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1363054575": {
@@ -222,6 +625,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1363797590": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-12: 12526 confirmed, 93 deaths",
+      "publishedAt": "2026-07-12T14:12:19Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1363814555": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -248,6 +664,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1364119957": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-14: 13735 confirmed, 95 deaths",
+      "publishedAt": "2026-07-14T16:44:03Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1364164620": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -272,6 +701,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1364401942": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-16: 13735 confirmed, 95 deaths",
+      "publishedAt": "2026-07-16T08:27:54Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1364453661": {
@@ -326,6 +768,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1364966035": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-19: 14461 confirmed, 95 deaths",
+      "publishedAt": "2026-07-19T15:06:35Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1365193618": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -350,6 +805,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1365480190": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-22: 14841 confirmed, 95 deaths",
+      "publishedAt": "2026-07-22T18:35:58Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1365497768": {
@@ -417,6 +885,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1366330354": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-27: 14841 confirmed, 95 deaths",
+      "publishedAt": "2026-07-27T11:33:36Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1366415790": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -441,6 +922,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1366544959": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-28: 15555 confirmed, 95 deaths",
+      "publishedAt": "2026-07-28T17:00:24Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1366714866": {
@@ -469,6 +963,32 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1366905655": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-30: 15739 confirmed, 96 deaths",
+      "publishedAt": "2026-07-30T21:13:10Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1367050260": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-07-31: 15874 confirmed, 96 deaths",
+      "publishedAt": "2026-07-31T17:11:04Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1367091732": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -493,6 +1013,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1367240160": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-08-01: 16180 confirmed, 96 deaths",
+      "publishedAt": "2026-08-01T22:21:46Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1367297214": {
@@ -612,6 +1145,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1368926592": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-08-11: 17115 confirmed, 98 deaths",
+      "publishedAt": "2026-08-11T22:18:39Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1369061155": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -623,6 +1169,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1369111414": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-08-13: 17115 confirmed, 99 deaths",
+      "publishedAt": "2026-08-13T00:20:31Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1369226962": {
@@ -649,6 +1208,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1369542262": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-08-15: 17800 confirmed, 99 deaths",
+      "publishedAt": "2026-08-15T16:28:10Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1369546016": {
@@ -703,6 +1275,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1370221772": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-08-19: 17800 confirmed, 99 deaths",
+      "publishedAt": "2026-08-19T21:02:36Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1370239266": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -727,6 +1312,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1370505475": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-08-21: 18208 confirmed, 99 deaths",
+      "publishedAt": "2026-08-21T14:16:20Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1370569239": {
@@ -794,6 +1392,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1371307580": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-08-25: 18578 confirmed, 99 deaths",
+      "publishedAt": "2026-08-25T20:26:04Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1371499612": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -859,6 +1470,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1372645938": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-09-01: 19312 confirmed, 99 deaths",
+      "publishedAt": "2026-09-01T16:33:44Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1372681976": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -883,6 +1507,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1373017319": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-09-03: 19447 confirmed, 99 deaths",
+      "publishedAt": "2026-09-03T14:49:56Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1373060781": {
@@ -924,6 +1561,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1373716627": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-09-07: 19756 confirmed, 100 deaths",
+      "publishedAt": "2026-09-07T15:00:31Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1373777488": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -935,6 +1585,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1373907030": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-09-08: 19756 confirmed, 100 deaths",
+      "publishedAt": "2026-09-08T17:29:53Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1373938177": {
@@ -961,6 +1624,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1374196103": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-09-10: 19933 confirmed, 100 deaths",
+      "publishedAt": "2026-09-10T12:38:50Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1374266508": {
@@ -1015,6 +1691,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1374818618": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-09-14: 19933 confirmed, 100 deaths",
+      "publishedAt": "2026-09-14T06:55:54Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/w/index.php?oldid=1374940423": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -1065,6 +1754,19 @@
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1375550697": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia toll snapshot 2026-09-18: 19933 confirmed, 100 deaths",
+      "publishedAt": "2026-09-18T13:57:46Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1375606643": {
@@ -1240,8 +1942,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-03T12:49:29.796Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-04T02:41:07.791Z",
       "title": "Wikipedia toll snapshot 2026-10-01: 8245 confirmed, 3984 deaths",
       "publishedAt": "2026-10-01T14:46:23Z",
       "source": "Wikipedia",
@@ -1249,17 +1951,56 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
-    "https://en.wikipedia.org/w/index.php?oldid=1377979097": {
+    "https://en.wikipedia.org/w/index.php?oldid=1377973650": {
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
       "attempts": 1,
-      "lastAttempt": "2026-10-03T12:49:29.796Z",
+      "lastAttempt": "2026-10-04T02:41:07.791Z",
+      "title": "Wikipedia toll snapshot 2026-10-02: 19933 confirmed, 100 deaths",
+      "publishedAt": "2026-10-02T05:09:47Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1377979097": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 2,
+      "lastAttempt": "2026-10-04T02:41:07.791Z",
       "title": "Wikipedia toll snapshot 2026-10-02: 8245 confirmed, 3984 deaths",
       "publishedAt": "2026-10-02",
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1378331395": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-04T02:41:07.791Z",
+      "title": "Wikipedia toll snapshot 2026-10-04: 8397 confirmed, 4044 deaths",
+      "publishedAt": "2026-10-04T00:51:24Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/wiki/2026_Bangladesh_measles_outbreak": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wikipedia",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/measles-bangladesh-2026.ts)",
+      "kind": "curated",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/wiki/2026_Ebola_epidemic": {
@@ -1312,6 +2053,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQc3hHV1V1OVEwejJBRE9ON2lTNlZQX1lwR3lkcW9yaWJXakxrQUp3Uk9OdGNFZ0xUNGZnTlktVU1jaS01bmQ0elNaQ241RzEtYlAweC1GUFVPYkJ6OV9vakhDLXZhTXA3dzlKWUhHenVnbjMzMU5Jck5kQ2tRUEp4bDdlVWZkVFhqQzBtZGY0bEl4Vy13bzYzTWYxWlVwX0ptajByVlZfTllnakI3YWcwUWU5Z3FLRzVKckxEenhpU2w4alVtczYzZ0I1cldSWUM0TUdIaFoydURfTjIxRk1lSHh4UXBLekVnaUgyRUF0SEI2cTdqZGh5Nnp3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak - record-eagle.com",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQcl9yLWdrYmE5Q0FITXdDRVc4ZU9sSUl4WXF4ZFJHdEt2RDdtRmE1Z2F2Q3BkYnlUa1pBQUdwTXExQ2hCLXpWNVFlbVp4ZHFkR2F1V24wOTAzWXNrRHVtVm9oSDZ1UkFHSFpXTzBlMGJvVlY1dy12aFFKSldRa1c2TmdIZ0d3NDJCQTJyMTdBYzZSRllkQU5CV2xLWmVJRVFlTVNWNDgxb2hSc0dTUjd5UlEtZXBRY055S3ctSk1BRDhMQmdjVkZZU0kwNF9yWFQx?oc=5": {
@@ -1691,6 +2445,58 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiSkFVX3lxTE5XZjVnczdGVDRSTEltbGxRa0c2Nkc5dzNHaWtfckN2VU9SbGl3Yzd6QjhEYjRnMHBtc2dtaDRSZ2xUMzh0cVZOREJB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles deaths top 1,100 as 8 more die - Daily Observer",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBBbGhEOGFtR0laU2hLZEVEakhnRzZLeGk0Zk53TEZkV2VEbFhqbUtOYXlmMjJCV2trT3hpYUVub3lla0I3OG84LTVB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh reports four measles symptom deaths in 24 hours - Daily Observer",
+      "publishedAt": "2026-09-30",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5TSVVLLVg1WXppcV9Xam02NkxBdWtmZ1Ixb1pVUG4tbW1KSHZrRU0wVy1ZUFNVdmJ2UDVyZFBfSXlDdkl0ZmVsME9tMXJCOHc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "‘Measles’ deaths surpass 1,100 as five more die in Bangladesh - bdnews24.com",
+      "publishedAt": "2026-09-29",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBIWTl5ZlV3ejV3UG91WjNfeFkzd1FYNmZ3WU02ZUZzUWppLWFhZ3BtT3JxZE9XNk1wREE4aWdKV05UZ1RyeHBEUFlDMnpKNWc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh logs 8 more suspected measles deaths in a day - bdnews24.com",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiTEFVX3lxTE5NMHg0MzFfb0xKU1Z6dUlseEdGWHpObFM1eHdEaGluYzBra01LSDhsNlE4YnU3dFlDdzhIVmotZUl1eDJQUDR5cTZmU2k?oc=5": {
       "archivedUrl": "https://web.archive.org/web/20261003120258/https://abcnews.com/video/134140320/",
       "archivedAt": "2026-10-03T12:02:58Z",
@@ -1715,6 +2521,32 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wRzhTYkNSUVFKZDBlYnJnSXlGVHliZklwTjZYdTY3TUJVZGc3cjVybVVoRl9MS1JxdDIzQ2tvVUVYSTlMX3k3SnRfVG5LbGZSbW9lLWhZdVY0N2M?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh Measles Update: 3 Child Deaths, Total Toll Reaches 1,099 - businesstimes-bd.com",
+      "publishedAt": "2026-09-28",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBIYnBuMjRvT1BkMENUbExiUF9QaWZLcUlPQUJsRjI4UkJuVFd4M3JOdEhDdThsS1owZFlSclU4YmplWlU0c1JranBkV1BNRWRhTXowQWRkLTRQNE0?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles Death Toll in Bangladesh Hits 1,108 with 4 New Deaths - businesstimes-bd.com",
+      "publishedAt": "2026-09-30",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAydEZBSzl3SHdMekNoU1VEdV9BOTlOY1ZSS0YxOVJNTnpjUHpBMHFXejFPOFI2WV9oSWhxdW1lSEVsdjNvaDE4MkJOVElQZzJVZFduRVJHZEU?oc=5": {
@@ -1808,6 +2640,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAyUnE0eU9ydWdyc1JHcTJvZmtqbUJsYjY1UW9OQUN2UFdfaWh3VDB4YjNDMXdFQXBXRVJpcVU5bXdiUUZoM1lycE02ejkxTF9uendlV3BNS3hXOGtlc3dtR9IBXEFVX3lxTE9qcWs3Z0NHcVJ1MnR1S2g2ZTRUMnZyWTdmZTE3bHlRREVZbnljS0NLcHhLbEVTVTk4M3k5ZWZxRXFNV3JTeS1xYXRvdmhja0RFRVlOaHVta2R6eDky?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola outbreak eases in DR Congo though death toll tops 4,000 #worldnow - Modern Ghana",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiYkFVX3lxTE5xV3psRUVzem9NUzJBeUFVc0NnUW9Da1ZiZFhkSHFGUlNUREpKeGpxMU5PT1dNaFJlTWVJRlhBenM5VmFpXzNRSENPYjB6ci1HdzRUREJwR0ExYjVvaEszdjZR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -1834,6 +2679,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE4tVlFTY1NqZ1VKWUZWQWhJTHJST3ZKNENQdTVnWTktdFYyb3FrY1hHYTdtRDNja0lpdkNkQm5hakVrbnhSNXZZT3o0NDNHM3RCWEZITzRWdmFWZ2Vsb1JiUW1MYXQ2dGs?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "8 die with Measles Symptoms in Dhaka, death toll reaches 1,122 - Ajker Patrika",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5iQS1OdW5JcFc3RmlFT2FaZUR3clV0YUROeVZmRUpIUG84RmhJaExJZFQ2ZVNfMF9EMWFSQjlaamJhVmN6bUwwUTZiSzRDV3dQcGpDVm8xLXVvZ1FNRTlnT0h5RDQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -1858,6 +2716,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOLU5CV2d2ZkY1R3h1YXZaZjU5T2xXSEJ5WHVQSXN0TDVaU0FmUlI4ZW5mMFVTLXZBR2VjYUpBVE1EejhjQ2VXX0Fvb19kZTdqU1dfMXR1eTZvdTE5b2pLSTdGWjdlSGlidk9mbldabXdoclJjclBmcXBBTUhKbm5VVVFVZjdmSi1aWEZGUlZ6TnQxRHVBOG1PQzkxa3JvRXBoTXRUejZrWC16YzEzVUk5VUpmbWRyMzQyWndHYzZ2aXE0dDBKTzcyQUQzV0UwY3dhcGF0Y2VNU2YtRUhuNVp2Qkl2UExFQWpnUVpDZVE3OElzWWQ0YWpxNUhVamRIZ1XSAYQCQVVfeXFMTjF4dVZYMW40ajZSTGIwLTgzTllVbm1JTWFyVmdXNFdWbk5qZ3kzbDVDaElSUkNtMHh6b0VlbXJqOVE2eUZ4WUZCWmw4MUxvd0V2ZWIwVHB1M1pYM2RDOWFVMVFFM2RPUVAxUTl0UTdsQW1hZ0JMYzloNUJJSUVKSVEtbnI4OGdYakZzbEVhUE1jQk9fTFVzNG4zZ2tIdWNKRl9Ld0VsMzFxZDFGbXo4VjhkSUVnTEVuRzF5SzRSbzFZODZ2emR6bFZtRG5icGR4QTUyMGZqVlZHWldoMjJTS1NXZDZJMWVFaFNDUzNQcHF6Z2dfdkY2UWlrNlFRc0R4YmUxX1M?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh’s Deadliest Measles Outbreak Claims Over 1,100 Lives: Could Immunity Gaps Leave India Vulnerable - News18",
+      "publishedAt": "2026-09-30",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5sSDZ4TTZoZFBiczN1N0poWUNhZnkxYXZUSXNkLXNqdnRWa0N0U083ZGJjcUlPWmhRTk15UFRmOXV6SU1QblZUN1Jqcy1iVmRGc3Z2ZEtzR18xN0ZHM2JEV3hoYnV3eDJD?oc=5": {
@@ -2328,6 +3199,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTjU4R0hMOTFPQUhocjJ6MkR3Mi0tODNqeE1nN2V3NHZ4cWN4N3l2MTdjZ0ZyZUJsWkRZTEg0SUxHUzRNdUhPT2VZWTZiLVVUZ2Z2S1FpTkN4cVYyX3JxeG4wbVVobTNjNHBvVnpRc1VkbEhjR2JsSEgtdE5QYnV6MldGU2U3OEYwYkxUMHJR?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Death toll from measles, symptoms crosses 1,100 in Bangladesh - asianews.network",
+      "publishedAt": "2026-09-30",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMijgJBVV95cUxPRU4tWFJOWDRGMmlzdExYRGhtMEU4UC1ob0hyVUlJMldlcl9CTllIY3VnLUlEMmpXaS1wZjBuVTRielFzamtaZ09Ca3FROXF2cXNLSE5LRWlKVjVOX2psSDJpdHR5SmVGdE9rSm1LLWs4UDUwdDEtNTFudXl6ZzlzTFNjYmg5aE1mUndGV1loS3Bva1RDYkJPcHNJNmlpdFFsbmxNMW5mLVFFd3h4Nk1rNjk3TlRkSkpKYjBOQklOYUlNR3RxZll5SEIxQjVBSnF2WldfZXY1N1czWnN2WTJYNENQZHNBdEVUbmRfZ1BuQUZtZ01UNFdYRExMSkJ2X2FNSnRzNjIycGJHQlB1TEE?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2471,6 +3355,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYjBoRHdCbnR3a0lUU1FqWUxCMVF5WlpQMm1KSWpYSHY1cG54aUZYeFd4ajg4T21yLXFiVUpTTFRERGxweDJfSzR2MHI2ZjJPZmgtandDVWRoWXlMWVJLeXU3U012elBhXy1id0tMVk5LS0FlZk0zbm42UEI5WEtPWXc5Nlp6ZjlDanRkbTBwTkZORHEwUDFPZg?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles-related death toll crosses 1,100 in Bangladesh - The Financial Express",
+      "publishedAt": "2026-09-29",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxQSnh1bXB4YkNJcjJsREZLVXJrbnltTmRJWmV0VFd3VHBXQW4yOXJmeWFEZl9OS3F5RnpibU1EWDNiaTBNOGlJZGlWd081OU5VUWpTWllxZFFsSWtrWXNseV9JaDNranB4d3JlY2tON1U0dTJDcHBHYlNWWkpKUDk5X05aa01Qc3FIN3I4UFVpcTcxbVlKVXVCRA?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2601,6 +3498,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcWJ0QzhoNkpfcGsySk1wTDNqS3FpSmZLQWxzUmRXMTU2NHNlZmYyMVZoQ1hPbEpFTnVRS1N6T0RaM2Q5TmJOTDFxSzMwdzN4ZzVrdE1HYUdsOFRud2N3aFZUYS1jSUF2aGdsWG1aVk1CRExsZHRjejdTN0lQb3NQTHctM3NnOTJZVjBoTVFQQ3I3OWZidG92eXFGRGlaX3RB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles outbreak kills 9 more, toll nears 1,100 - Tripuratimes",
+      "publishedAt": "2026-09-28",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMmphcFJGY2h1SmRCQzNWemZram45ZXFsdE5GTVFpVFExRThlZ2tIMzk5aDI2SVZjU1FWQ3U1Q2VwLXpzLTByTURCTmVpUEJpV2hKMEJ2XzZIcllrVFhwRENrTXN0YnZmallRaEd3Mnp2bUVoaDNyRkc1Y3J4VU83RTJpejBDOEQwcVg3X2xkXzFZZ19pY2FWanJlWGczOHVE0gG0AUFVX3lxTE1sVTJJMm5WMmhfS0RsX2l1QUJGcXV1bmYwbnNjUkhxSjlpaW1hdXFrLXc0TVZ4UEI2TURnS1ZUdlgyeGlkWnB5RjdIXzlFdjRYWTIxb013MGdzY3FTUHc2MkRPR0s4UFM5QzN1T2JwZTRfWkJFYjJYbVU5UzFzaHRMeFJKUGhOa014UDBMSDBwckdQVGpUS0p5by1aM29rVXF0V1ptVTl5U3dqa2pGZlBfdWJDaQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2614,6 +3524,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxPcjhVRlM4RUNwU01KZ3dBT05YNHlsWnNfN3NvR3U2Z3JKc2x2T0t4b0F5SUQzemJ0RDdKRlFuWUluZW9vSFNUUDdQSGpnZzB4WWlSenMtRWdadVItNlJBajRVM0xGZUlvSFo3aEp2YmxkLUdIR3NrbUVHUDM4S3hYMllZbmsyb3RNc2lna2tRak5aX0RhdTNFR2JXd2htWkp2?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Eight more deaths reported amid Bangladesh measles outbreak - Bangladesh Post",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZmNZejZKdFYtbGQ1b0poNC1wdmo3cUVmZUI5OWoyOWt3RVh4VkNSNWdGa1FyVFE5dDBrcHFQM0c1MjlzS0xxbkREUXkycEZjZ2NhU2w4ejB4LUxqR3Q1V2tCS054cXg1UTVQdk9oSnI0aUtnLVNQNWN2dHFJY3VNNzh6cWsyNEd4ejRQYlFJMFF3MHBEUnpZNGFPLUJGclBNenc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2625,6 +3548,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ0Y4dFA1em8xZWNHVFQycXdoOXR5UkpEZTRFLWVCWEl2emE2ZXd6Y3lzc2VMMzk4ZmNDQnFBYlJBR0twYkN2MS1CeURIeEpUNS1xcko5OE1EbGxmSmRrbU03SnAzTVB6T3Y3TDg5YWxJSDZSTkxLWEZpNW9kcnFVRlAyUnVLT2hsOGN5U19PS1BjbXJRZXpNX2lZS2V4NllqSnfSAaIBQVVfeXFMTkNGOHRQNXpvMWVjR1RUMnF3aDl0eVJKRGU0RS1lQlhJdnphNmV3emN5c3NlTDM5OGZjQ0JxQWJSQUdLcGJDdjEtQnlESHhKVDUtcXJKOThNRGxsZkpka21NN0pwM01Qek92N0w4OWFsSUg2Uk5MS1hGaTVvZHJxVUZQMlJ1S09obDhjeVNfT0tQY21yUWV6TV9pWUtleDZZakp3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles outbreak death toll rises to 1,114 | Tap to know more | Inshorts - Inshorts",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiogJBVV95cUxOUXhNYThFMkl4cWVZblF2d0xFaTF1T1BnYzRaeHB2YkdaWUt6alFUU0dzUi1RaEstaXI1eTc2bFJ5Tm41RThJYXc2Y1JUOFRyODV1Yjg1TkljR2FWa2FzOFBiQVZUZXRrNFQ1VVhsMEVXYUxJdUJSeXQxOWdxY0dhUG9ZOGtjTHJKU0p1cWVDRnIwc2RSWDJCYUJ3bk03MXF2RWxwdk5YdnZUWlN4NDZRMHlITjdYaEQwQ09fZHhCNHhrQTUyODNyWDd2RVoyREY4UHdsa25vUDYyanBjdHlpRmpmUEFrbXJTOUdhTnVCbm9PNmI1bjkxV0ZDdkNMSzE3N1FsUUpZMmtzNEozS2lJd0duTjlta2YwdzVteEZrOHhLZw?oc=5": {
@@ -2664,6 +3600,32 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSTBlcjBJbWVtRTI2c0dfVXFkNm9aZy10cnpQT0dIU0ZrVnhTTlNCYVVmSkwxQnhIbHo2bDByVXVpSjBQWHRKVXhVdXpuemduR2wzZDlpUDhaTHNnd21zRXh6anhYUTBxVmZ0b3ZrcGx6Vld2WkxGcFdjcmF1Y29UZUFHV3dNOFdsTjBPc196R2FON0dmUmlyZldkQ3U4NFpCRXZWUA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles outbreak: Death toll reaches 1,110 as two die in 24 hours - dhakatribune.com",
+      "publishedAt": "2026-10-01",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQMzd2cHF3V3ppcFIwdXJvZ2UxMUdNb3BFVm1qREZWdnJZOHBDR3M4S3Eyd0hhNGkwN3VDTV84VzNjX2xLSHVnbWZFaGluaV9mVWpRSUJTbmdLOENzV3FBN1BVcUd4VHRFV2h6SzBXd2o3dkxPUHZHZ2h0NlN1dDJrTTAxSlJwTVZfQXlCdnJ0M2VvUjBsU25pZUxRMkxCQmliV2x6StIBqgFBVV95cUxNNF83YWtEM0VnMjNsZkRPMTRjbDFjbDVXbGRCTTFhclVnbEZobEVjUm9rc0EwcTNaRHVjRUwyOUx4MjdXMGtwNFJPWUt6OXJQc1FLX1VvbWhoUTBlUnA4RFl4QkdULTBubnRaWXNoS1JPR0NmLV8tdHlWQ0YzNFNaUGxuMjhsVkV1OWtTaWp4OC1YTjlaUVpSSHhiNUlrRThsZ1d1N2pLaG02QQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles death toll rises to 1,096 amid worsening | Tap to know more | Inshorts - Inshorts",
+      "publishedAt": "2026-09-28",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMipAJBVV95cUxQcjUybmVnaW9kWDJJOWhld3hSc0h2aFJ5TmRIanhhTkx0UzlTZE1meEM4Yk9ILWdGdGc0aS00NkVJUnJ4aUxEOXR4WGoyenB2emptLVJLQVpGVnltblJIbG9QZjdZRUpDakVxWVRDMlNwZk5aY2tudWVWZ2ZsblZJb2ZmRWh2bDRFSWdFOFVjcnpxRG02LUZOVTZjNDJ5YTBPa016ZUJKLXo1aWpITHFDUzhWVVY3ZTdtVEVYV1hKcmZpWlJwaGxHZmlpSUJXZFIyd1pYNFlkVWhhYmc0TGtVVmgzeEI2eXBHakhwUmpQRmVpQjhOMDdmdnJLdi1vN3pqZXVEUWNfMFlCYnhUd0pZN2ZNZXN4ejBOVHVzMGJFclJYUjBk?oc=5": {
@@ -2796,6 +3758,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS0EwU2ZGanlISGJqd29WcUwyc285SDd6M0tjMlR1aFhlVHozVTVFOEZBRm85c1diZ2xCWkV2RTFxb2o5TkVITklKUFNoYmdZb245cTRJUnl1VG1VZmpoT2JHdEdhSlpDd1diSHMzYWhCQmpuT0x6SDNoRmlrLVVnNDJfcGtXR3BtX0dfYjVJRXJJdXRsaEtaS1NMazZQaS1tcG93V21pTG9FQQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh Faces Severe Measles Outbreak with High Child Mortality - India News Network",
+      "publishedAt": "2026-09-28",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQeTB6ZHRua2VzMlJEOU5pTWRxQmRyNHh4Qjc1M0ZGaEpidnByWVM2ZnVvc3gwT0ZjNlRjV0ZsZlNjUzJueldqTE4tYjJFZlBuVFdBR0V3TURaeEt3M1hpTEl6MDM5QllBbGxxVFBtcjVXSERPTEdZRFJZNUNfSHdpQlpUdkdUdFZUa2hmUDBRbXV2ZVFqSTF5TTBGOWZBYldyTDJjSTV3T0JSdw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2913,6 +3888,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTWRiUE9ib2RBTFJFTXhmcDkwOGFOSFd5RjJnMVpiUVpkZkRBdDFoYldyYmI4cXBobHBxMGVTRFh3M0g0eHY2V1lVMXY0SDB6b2l0OGFBdThyVjJpb1dfQUs0aE13UElHbDhCSWxockpySVJLWkkyckt6NUNwZTlhRFd6Q3JGeVF0eE1uelpsQ01jczF5T0RNbWo1N3gwLXVucjBTd2x5ZUNXQzJTc3NLN2FRQQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh Measles Outbreak Claims Four More Lives, 1,114 Deaths Reported - NDTV",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN050YU5sU2hVMUowcEFxbVI1ZmZjSUhyR0lJTDU0NzhselBJaWtIT200c0R5MWllTG9tN2gzX2dnbDdZUHFWYi1remZibFRLc2g1VHp1cFNtNFJUUVEyOTlEWWhLTVlRcWx1dWFYZFVfZldhTHlHSmVDazJzam1vU1U5MUpmLTZHRDhDSS1TRURBNGJEdFFBczhKRkZMT3NXOTlON0UwdUVPVVEzOGdHTTExUFA?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2924,6 +3912,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxNWDIyZ3ZuRF9La2hiZ2p5Vy1QaGdVc0tKZnNROGdYdFJ4MVBGbnhxUFIzYS03TVVYNndRU0pnaDdkV1pVTElzby1yLW5zdmdGaTF1SkVPT2xzNGZuN1c2NGtFNnZQLXFwMnNRdUM5TGJ0OXJVYnBUNW5FZDBwWFJnYlZ0Z1doRG1YanAzdlZYdWJkOHdoTi1oR1RWUTFpQVpZcjRBbzl2WWNyR0JFbjV5WnNSZzRMdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "9 more die with measles-like symptoms as Bangladesh's combined toll reaches 1,096 - The Daily Star",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMitgFBVV95cUxPWlRnUVhTRDFoNnFuanRqNXd0SjVJdTdBTExhdk43MlBMaW4xYnJCX2phOGJVOE54RHoyWTBZUnhuWU91cjkyTUg4S1lPMHV3QXVUYU50SjVYZE1HTG1Hd1g3TDNaaEFZZ25HYjR2TDF5ME9NSkJyUzJsd3oxQjl5VHhIUXlLbGpwN0dfMXJzNE9XLVQyYUtSUGlXakNBTlgxdXh2MkV4eUZvdGNISUZjbUkxQVptQQ?oc=5": {
@@ -3017,6 +4018,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc2tvaEE1OXQzNFZZeHVQWDBRZjMtRmZUV0VUVkRla01qNFB0aG1ma3lMWWpvMVF1T2hHNUZWYTJIVkFfSmpsYkxjR1pCXzRyRW80WmduSUc2Y3ZEdTlZaFFVQXNuaXRsakZpMk5sNmtXRnFsbzhSa2xaZjhXVUFxRWc1bEl3UVBIZ0I2OVdJUXZHeXM0ajByVDRUcXg3V1AxTS1pSXFLU0x1dXdnYVNPbUhfYXloZ3dIOHBZ0gG7AUFVX3lxTE5za29oQTU5dDM0Vll4dVBYMFFmMy1GZlRXRVRWRGVrTWo0UHRobWZreUxZam8xUXVPaEc1RlZhMkhWQV9KamxiTGNHWkJfNHJFbzRaZ25JRzZjdkR1OVloUVVBc25pdGxqRmkyTmw2a1dGcWxvOFJrbFpmOFdVQXFFZzVsSXdRUEhnQjY5V0lRdkd5czRqMHJUNFRxeDdXUDFNLWlJcUtTTHV1d2dhU09tSF9heWhnd0g4cFk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles outbreak claims four more lives, death toll climbs to 1,114 - DT Next",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPMmpTbThNRWMtWFVpOXR2RnlVLXVMUWRoZlhQSWJsU0x2d052QTdmd3RyQ0pDcDNpWUxXVm5lbWtuTGZkX2RrNUNQQkV3YU5GcExwaG43dWRqU2hUU09wa2lpajNNMm56Z0Z2ZUhhbWNpd2FjVjNCV3Y4WnNRRHJmTk16MFc3Z2xtVkdHejNVM1VzXzV6SVdZdGRTMjZ1S1Bzc25JOFdfLVFqX0JpMW9RcVdycjI1Z01fWGtJ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3056,6 +4070,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU0d4NVZkdUZQOVBlLVR0OVRrTkxoTXRGdl9LZHhmRUN4bERQSEdtSlZ1UXRMa2IybFBGdlNmTzktWDZVcFM2TktwSzFLa1pKWEdKMDhZLW9jNzhzNVdxSmxfcGhaUmw3bUk2ZDJJak5NZlBWbHplVGhGbF9ON2tIRWQyci10emxtYXRhTktOWGMtQUozOU8tYXRDTWhQX3pkOG5WUHM4cmVTYlptX21WODVmUXQwV3hCWmRDU0NfMA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Two more suspected measles deaths as hospitalisations cross 170,000 in Bangladesh - The Financial Express",
+      "publishedAt": "2026-10-01",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxQLUp1UElUWjE0QVAtQl9rRkRzWWhvSG1LTWpIR1NZc1NETUFYYnVsN2dqQW10ZmV2UW9qN3FsREdFenRfVF94S1hqRFhUc25WVzNfRnJVWjlKeUdVOEVVSkdxWVJ2NG4wS2tYM09TQ285VzY5OVl4dGxmUUxmU1A0YXl3T204ZXdzVnM1WDR3cWFlOTJWa2s3LWlobEI0X1NFdVBubWhqb1pXN0MwQUkzcmxZbEVFaEpyb2lDSU9iaw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3082,6 +4109,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUkoyeGFLdU1ZOEJoTG04dUFEaDlGZTFhMmVvZmFaNGpDajQ0U2VlWG1WUG9wX3FIMjFWanlIdG9EWlVvZ0JtX0dTdG00VkFWUDczUVU1UEFFZlI4MDZwVmh6Zkh1cFdQbllsQWpVRmp0cEhhMUNaRHVEYXRIZ0xkMENBUFZRNVI3NlRNY0lLNkxKWjNJUlFvZlNKdFZPb0hjLXdVbkhIMFBQX0o1Z1BydG9KOW9aWTM4WFhabVNpUzk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola infections declining in some areas of Congo, death toll surpasses 4,000 - Ekantipur",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNc1lGV245ekRYaXZfalRGSTgtbDJ5bkFESG9pakVKYzk5YUtMdWV1RU4wY3hRS0IxVFlxWmFaazJkZzUzcE1mdkFRTkhTRDUzNDhuZGw1U3ZGR2dCdEhQd092ZGZpaGxXWUVaTnJHeDI4VHNIcFJxeUdpbk83aC03cGVWVjROSkJSd04wTFM0MjNKanhDUHVra2pnb3FwRFpRODRKenZzeGJWYjhSZW15dEdySFh6alVZQ1FXQlRGMS1SZw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3102,6 +4142,19 @@
       "attempts": 0,
       "lastAttempt": null,
       "title": "Drug trial seeks to halt DR Congo’s deadliest Ebola outbreak - irishnews.com",
+      "publishedAt": "2026-10-03",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGVKSkJ4NUYtTWhqVk5ZQnloZTFnUWl4b20ycS02ZmJTM0RIQ0pqVllqRlcxZUdJdHVoRTlvaUszemFWZl9vbUV3NmZwOHVEc1hSRFhmUHZzeHh0V2dWRFNUS0ZlS1NlMUxLQ1N1LUs2Rl9faUtOTWlCM0wxbVFSMlFrdlptcmhydnNoYVhraUJraFlnTFlzRlJ1Q0gtYy1UMEo0WlRuWkZQX1lhaUFFbVIyUThsRi15TWVYMGk2UE95ZVlE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola outbreak eases in DR Congo though death toll tops 4,000 - news.cgtn.com",
       "publishedAt": "2026-10-03",
       "source": "Google News — Ebola death toll",
       "kind": "news",
@@ -3212,11 +4265,11 @@
       "resolvedUrl": null
     },
     "https://outbreakfiles.com/about": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 1,
-      "lastAttempt": "2026-10-03T12:49:29.796Z",
+      "archivedUrl": "https://web.archive.org/web/20261004024134/https://outbreakfiles.com/about",
+      "archivedAt": "2026-10-04T02:41:34Z",
+      "status": "archived",
+      "attempts": 0,
+      "lastAttempt": "2026-10-04T02:41:07.791Z",
       "title": "outbreakfiles.com/about",
       "publishedAt": null,
       "source": "Own site",
@@ -3248,15 +4301,28 @@
       "resolvedUrl": null
     },
     "https://outbreakfiles.com/methodology": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 1,
-      "lastAttempt": "2026-10-03T12:49:29.796Z",
+      "archivedUrl": "https://web.archive.org/web/20261004024111/https://outbreakfiles.com/methodology",
+      "archivedAt": "2026-10-04T02:41:11Z",
+      "status": "archived",
+      "attempts": 0,
+      "lastAttempt": "2026-10-04T02:41:07.791Z",
       "title": "outbreakfiles.com/methodology",
       "publishedAt": null,
       "source": "Own site",
       "kind": "site",
+      "resolvedUrl": null
+    },
+    "https://reliefweb.int/disaster/ep-2026-000048-bgd": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "ReliefWeb",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/measles-bangladesh-2026.ts)",
+      "kind": "curated",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://www.cdc.gov/ebola": {
@@ -3363,6 +4429,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://www.unicef.org/bangladesh": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "UNICEF Bangladesh",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/measles-bangladesh-2026.ts)",
+      "kind": "curated",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://www.who.int/emergencies/disease-outbreak-news": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3374,6 +4453,19 @@
       "source": "Curated (src/data/outbreaks/ebola-bundibugyo-2026.ts)",
       "kind": "curated",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON598": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO DON598",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/measles-bangladesh-2026.ts)",
+      "kind": "curated",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON604": {
