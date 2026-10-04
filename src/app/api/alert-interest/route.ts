@@ -74,11 +74,12 @@ async function deliver(p: Extract<InterestPayload, { kind: "submit" }>): Promise
           to: email.to,
           subject: `${SITE_NAME}: someone wants alerts`,
           html: `<pre style="font:14px/1.5 monospace;white-space:pre-wrap">${escapeHtml(text)}</pre>`,
-          ...(p.email ? { reply_to: p.email } : {}),
+          reply_to: p.email,
         }),
         signal: AbortSignal.timeout(8000),
-      }).then((r) => {
-        if (!r.ok) throw new Error(`Resend responded ${r.status}`);
+      }).then(async (r) => {
+        // Resend's body says why (unverified domain, bad key), and holds no visitor data.
+        if (!r.ok) throw new Error(`Resend responded ${r.status}: ${(await r.text().catch(() => "")).slice(0, 300)}`);
       }),
     );
   }
@@ -117,10 +118,8 @@ export async function POST(request: NextRequest) {
 
   if (!submitLimiter.allow(key)) return json({ error: "Too many attempts. Please try again later." }, 429);
 
-  // Log what was asked for but never the email address.
-  console.info(
-    `[alert-interest] submit events=${value.events.join(",")} channel=${value.channel} role=${value.role ?? "-"} email=${value.email ? "yes" : "no"}`,
-  );
+  // Log the page but never the email address.
+  console.info(`[alert-interest] submit page=${value.page ?? "-"}`);
 
   const { webhook, email } = channels();
   if (!webhook && !email) {

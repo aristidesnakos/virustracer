@@ -6,9 +6,8 @@ const calls = () => (globalThis.fetch as unknown as ReturnType<typeof vi.fn>).mo
 const bodyOf = (i: number) => JSON.parse(calls()[i][1].body as string);
 
 const pill = () => screen.getByRole("button", { name: /get alerts/i });
-const send = () => screen.getByRole("button", { name: /^send$/i });
-const emailChannel = () => screen.getByLabelText(/^email$/i, { selector: "input[type=radio]" });
-const emailField = () => screen.getByLabelText(/email \(optional\)/i);
+const send = () => screen.getByRole("button", { name: /notify me/i });
+const emailField = () => screen.getByLabelText(/^email$/i);
 
 beforeEach(() => {
   window.localStorage.clear();
@@ -44,50 +43,30 @@ describe("AlertsInterestWidget", () => {
     expect(pill()).toHaveFocus();
   });
 
-  it("requires an alert type and a channel before sending", () => {
+  it("rejects a missing or malformed email without calling the server", () => {
     render(<AlertsInterestWidget />);
     fireEvent.click(pill());
-
     fireEvent.click(send());
-    expect(screen.getByRole("alert")).toHaveTextContent(/at least one alert/i);
-
-    fireEvent.click(screen.getByLabelText(/new country reports cases/i));
-    fireEvent.click(send());
-    expect(screen.getByRole("alert")).toHaveTextContent(/how you would want to be alerted/i);
-    expect(calls()).toHaveLength(1); // only the open ping
-  });
-
-  it("rejects a malformed email without calling the server", () => {
-    render(<AlertsInterestWidget />);
-    fireEvent.click(pill());
-    fireEvent.click(screen.getByLabelText(/new country reports cases/i));
-    fireEvent.click(emailChannel());
+    expect(screen.getByRole("alert")).toHaveTextContent(/email address/i);
     fireEvent.change(emailField(), { target: { value: "nope" } });
     fireEvent.click(send());
     expect(screen.getByRole("alert")).toHaveTextContent(/email address/i);
-    expect(calls()).toHaveLength(1);
+    expect(calls()).toHaveLength(1); // only the open ping
   });
 
-  it("submits the answers, thanks the visitor and remembers it", async () => {
+  it("submits the email and page, thanks the visitor and remembers it", async () => {
     const { unmount } = render(<AlertsInterestWidget />);
     fireEvent.click(pill());
-    fireEvent.click(screen.getByLabelText(/new country reports cases/i));
-    fireEvent.click(screen.getByLabelText(/death toll passes a milestone/i));
-    fireEvent.click(emailChannel());
-    fireEvent.change(screen.getByLabelText(/i am/i), { target: { value: "journalist" } });
-    fireEvent.change(emailField(), { target: { value: "reader@example.org" } });
+    fireEvent.change(emailField(), { target: { value: " reader@example.org " } });
     fireEvent.click(send());
 
     await waitFor(() => expect(screen.getByText(/thank you/i)).toBeInTheDocument());
-    expect(bodyOf(1)).toMatchObject({
+    expect(bodyOf(1)).toEqual({
       kind: "submit",
-      events: ["new-country", "milestone"],
-      channel: "email",
-      role: "journalist",
       email: "reader@example.org",
+      page: window.location.pathname,
       website: "",
     });
-    expect(screen.getByText(/write to you once/i)).toBeInTheDocument();
 
     // A later visit does not nag.
     unmount();
@@ -104,8 +83,7 @@ describe("AlertsInterestWidget", () => {
       );
     render(<AlertsInterestWidget />);
     fireEvent.click(pill());
-    fireEvent.click(screen.getByLabelText(/new country reports cases/i));
-    fireEvent.click(emailChannel());
+    fireEvent.change(emailField(), { target: { value: "reader@example.org" } });
     fireEvent.click(send());
 
     await waitFor(() => expect(screen.getByRole("alert")).toHaveTextContent(/not available right now/i));

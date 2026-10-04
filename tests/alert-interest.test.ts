@@ -7,30 +7,27 @@ import {
   parseInterest,
 } from "@/lib/alert-interest";
 
-const valid = {
-  kind: "submit",
-  events: ["new-country", "milestone"],
-  channel: "email",
-  role: "journalist",
-  email: "a@b.org",
-  website: "",
-};
+const valid = { kind: "submit", email: "a@b.org", page: "/outbreaks/measles-bangladesh-2026", website: "" };
 
 describe("parseInterest", () => {
   it("accepts an open ping", () => {
     expect(parseInterest({ kind: "open" })).toEqual({ ok: true, value: { kind: "open" } });
   });
 
-  it("accepts a full submission and trims the email", () => {
+  it("accepts a submission and trims the email", () => {
     expect(parseInterest({ ...valid, email: "  a@b.org " })).toEqual({
       ok: true,
-      value: { kind: "submit", events: ["new-country", "milestone"], channel: "email", role: "journalist", email: "a@b.org" },
+      value: { kind: "submit", email: "a@b.org", page: "/outbreaks/measles-bangladesh-2026" },
     });
   });
 
-  it("treats role and email as optional", () => {
-    const out = parseInterest({ ...valid, role: "", email: "" });
-    expect(out).toMatchObject({ ok: true, value: { role: null, email: null } });
+  it.each([
+    ["missing", undefined],
+    ["a full URL", "https://evil.example/x"],
+    ["markup", "/<script>"],
+    ["overlong", `/${"a".repeat(250)}`],
+  ])("keeps the sign-up but drops a page that is %s", (_name, page) => {
+    expect(parseInterest({ ...valid, page })).toMatchObject({ ok: true, value: { page: null } });
   });
 
   it("silently drops a filled honeypot", () => {
@@ -42,22 +39,12 @@ describe("parseInterest", () => {
     ["array", []],
     ["null", null],
     ["unknown kind", { kind: "delete" }],
-    ["no events", { ...valid, events: [] }],
-    ["unknown event", { ...valid, events: ["new-country", "bogus"] }],
-    ["events not an array", { ...valid, events: "new-country" }],
-    ["no channel", { ...valid, channel: undefined }],
-    ["unknown channel", { ...valid, channel: "carrier-pigeon" }],
-    ["unknown role", { ...valid, role: "wizard" }],
+    ["no email", { ...valid, email: "" }],
     ["bad email", { ...valid, email: "not-an-email" }],
     ["email of wrong type", { ...valid, email: 42 }],
     ["overlong email", { ...valid, email: `${"a".repeat(130)}@b.org` }],
   ])("rejects %s", (_name, body) => {
     expect(parseInterest(body).ok).toBe(false);
-  });
-
-  it("de-duplicates repeated events", () => {
-    const out = parseInterest({ ...valid, events: ["milestone", "milestone"] });
-    expect(out).toMatchObject({ ok: true, value: { events: ["milestone"] } });
   });
 });
 
@@ -67,14 +54,10 @@ describe("isPlausibleEmail", () => {
 });
 
 describe("describeSubmission", () => {
-  it("lists what was asked for in readable form", () => {
-    const parsed = parseInterest(valid);
-    if (!parsed.ok || "drop" in parsed || parsed.value.kind !== "submit") throw new Error("setup");
-    const text = describeSubmission(parsed.value);
-    expect(text).toContain("A new country reports cases; The death toll passes a milestone");
-    expect(text).toContain("Via: Email");
-    expect(text).toContain("Role: Journalist");
+  it("names the email and the page", () => {
+    const text = describeSubmission({ kind: "submit", email: "a@b.org", page: null });
     expect(text).toContain("Email: a@b.org");
+    expect(text).toContain("Page: unknown");
   });
 });
 

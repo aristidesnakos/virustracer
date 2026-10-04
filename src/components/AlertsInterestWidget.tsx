@@ -2,18 +2,11 @@
 
 import { useEffect, useId, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
 import { Bell, X } from "lucide-react";
-import {
-  ALERT_CHANNELS,
-  ALERT_EVENTS,
-  ALERT_ROLES,
-  isPlausibleEmail,
-  type AlertChannelId,
-  type AlertEventId,
-} from "@/lib/alert-interest";
+import { MAX_EMAIL_LENGTH, isPlausibleEmail } from "@/lib/alert-interest";
 
 // Demand test for outbreak alerts. Alerts do not exist yet, and the copy says so.
-// A bottom-right pill opens a small non-modal panel; the answers go to
-// /api/alert-interest.
+// A bottom-right pill opens a small non-modal panel with one email field; the
+// address and the page it was left on go to /api/alert-interest.
 
 const STORAGE_KEY = "outbreak-alerts-interest-submitted";
 const STORAGE_EVENT = "alerts-interest-submitted";
@@ -47,16 +40,9 @@ function rememberSubmitted() {
 
 type Status = "idle" | "sending" | "done";
 
-const FIELD =
-  "w-full rounded-lg border border-rule-strong bg-paper px-3 py-2 text-[0.9375rem] text-ink placeholder:text-ink-faint";
-const LEGEND = "mb-1.5 text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-ink-muted";
-
 export default function AlertsInterestWidget() {
   const [open, setOpen] = useState(false);
   const [status, setStatus] = useState<Status>("idle");
-  const [events, setEvents] = useState<AlertEventId[]>([]);
-  const [channel, setChannel] = useState<AlertChannelId | "">("");
-  const [role, setRole] = useState("");
   const [email, setEmail] = useState("");
   const [website, setWebsite] = useState(""); // honeypot
   const [error, setError] = useState("");
@@ -72,7 +58,7 @@ export default function AlertsInterestWidget() {
   useEffect(() => {
     if (!open) return;
     const panel = panelRef.current;
-    (panel?.querySelector<HTMLElement>("input, select") ?? panel?.querySelector<HTMLElement>("button"))?.focus();
+    (panel?.querySelector<HTMLElement>("input") ?? panel?.querySelector<HTMLElement>("button"))?.focus();
   }, [open]);
 
   function openPanel() {
@@ -94,15 +80,9 @@ export default function AlertsInterestWidget() {
     triggerRef.current?.focus();
   }
 
-  function toggleEvent(id: AlertEventId) {
-    setEvents((cur) => (cur.includes(id) ? cur.filter((e) => e !== id) : [...cur, id]));
-  }
-
   async function onSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    if (events.length === 0) return setError("Pick at least one alert you would want.");
-    if (!channel) return setError("Pick how you would want to be alerted.");
-    if (email.trim() && !isPlausibleEmail(email.trim())) return setError("That email address does not look right.");
+    if (!isPlausibleEmail(email.trim())) return setError("That email address does not look right.");
 
     setError("");
     setStatus("sending");
@@ -110,7 +90,7 @@ export default function AlertsInterestWidget() {
       const res = await fetch("/api/alert-interest", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ kind: "submit", events, channel, role, email: email.trim(), website }),
+        body: JSON.stringify({ kind: "submit", email: email.trim(), page: window.location.pathname, website }),
       });
       if (!res.ok) {
         const data = (await res.json().catch(() => ({}))) as { error?: string };
@@ -138,7 +118,7 @@ export default function AlertsInterestWidget() {
           onKeyDown={(e) => {
             if (e.key === "Escape") closePanel();
           }}
-          className="max-h-[min(36rem,calc(100dvh-6rem))] w-[min(23rem,calc(100vw-2rem))] overflow-y-auto rounded-xl border border-rule-strong bg-panel p-5 shadow-[0_8px_30px_oklch(0.24_0.03_255/0.18)]"
+          className="w-[min(22rem,calc(100vw-2rem))] rounded-xl border border-rule-strong bg-panel p-5 shadow-[0_8px_30px_oklch(0.24_0.03_255/0.18)]"
         >
           <div className="flex items-start justify-between gap-3">
             <h2 id={titleId} className="font-journal text-lg font-semibold leading-snug text-ink">
@@ -157,8 +137,7 @@ export default function AlertsInterestWidget() {
           {status === "done" ? (
             <div className="pt-2">
               <p className="text-[0.9375rem] leading-relaxed text-ink">
-                Thank you, that helps decide what to build.
-                {email.trim() ? " We will write to you once, if and when alerts launch." : ""}
+                Thank you. We will email you once, when alerts launch.
               </p>
               <button
                 type="button"
@@ -169,80 +148,27 @@ export default function AlertsInterestWidget() {
               </button>
             </div>
           ) : (
-            <form onSubmit={onSubmit} noValidate className="mt-1 space-y-4">
+            <form onSubmit={onSubmit} noValidate className="mt-1 space-y-3">
               <p id={descId} className="text-[0.9375rem] leading-relaxed text-ink-muted">
-                Alerts are not built yet. Tell us what you would find useful and we will use it to decide whether to
-                build them.
+                Alerts are not built yet. Leave your email and we will write once, when they launch.
               </p>
 
-              <fieldset>
-                <legend className={LEGEND}>Alert me when</legend>
-                <div className="space-y-1.5">
-                  {ALERT_EVENTS.map((ev) => (
-                    <label key={ev.id} className="flex items-start gap-2.5 text-[0.9375rem] text-ink">
-                      <input
-                        type="checkbox"
-                        checked={events.includes(ev.id)}
-                        onChange={() => toggleEvent(ev.id)}
-                        className="mt-1 size-4 accent-[var(--accent)]"
-                      />
-                      <span>{ev.label}</span>
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-
-              <fieldset>
-                <legend className={LEGEND}>Best way to reach me</legend>
-                <div className="grid grid-cols-1 gap-x-3 gap-y-1.5 min-[420px]:grid-cols-2">
-                  {ALERT_CHANNELS.map((c) => (
-                    <label key={c.id} className="flex items-start gap-2.5 text-[0.9375rem] text-ink">
-                      <input
-                        type="radio"
-                        name="alert-channel"
-                        checked={channel === c.id}
-                        onChange={() => setChannel(c.id)}
-                        className="mt-1 size-4 accent-[var(--accent)]"
-                      />
-                      <span>{c.label}</span>
-                    </label>
-                  ))}
-                </div>
-              </fieldset>
-
               <div>
-                <label htmlFor={`${titleId}-role`} className={`${LEGEND} block`}>
-                  I am (optional)
-                </label>
-                <select id={`${titleId}-role`} value={role} onChange={(e) => setRole(e.target.value)} className={FIELD}>
-                  <option value="">Prefer not to say</option>
-                  {ALERT_ROLES.map((r) => (
-                    <option key={r.id} value={r.id}>
-                      {r.label}
-                    </option>
-                  ))}
-                </select>
-              </div>
-
-              <div>
-                <label htmlFor={`${titleId}-email`} className={`${LEGEND} block`}>
-                  Email (optional)
+                <label htmlFor={`${titleId}-email`} className="sr-only">
+                  Email
                 </label>
                 <input
                   id={`${titleId}-email`}
                   type="email"
                   inputMode="email"
                   autoComplete="email"
-                  maxLength={120}
+                  required
+                  maxLength={MAX_EMAIL_LENGTH}
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                   placeholder="you@example.org"
-                  aria-describedby={`${titleId}-email-note`}
-                  className={FIELD}
+                  className="w-full rounded-lg border border-rule-strong bg-paper px-3 py-2 text-[0.9375rem] text-ink placeholder:text-ink-faint"
                 />
-                <p id={`${titleId}-email-note`} className="mt-1 text-[0.8125rem] leading-snug text-ink-faint">
-                  Only used to tell you once if alerts launch. Leave it blank to answer anonymously.
-                </p>
               </div>
 
               {/* Honeypot: hidden from people, tempting to bots. */}
@@ -270,7 +196,7 @@ export default function AlertsInterestWidget() {
                 disabled={status === "sending"}
                 className="w-full rounded-lg bg-accent px-4 py-2.5 text-[0.9375rem] font-semibold text-primary-foreground hover:opacity-90 disabled:opacity-60"
               >
-                {status === "sending" ? "Sending…" : "Send"}
+                {status === "sending" ? "Sending…" : "Notify me"}
               </button>
             </form>
           )}

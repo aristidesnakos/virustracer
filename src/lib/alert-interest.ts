@@ -1,51 +1,17 @@
 // Shared by the alerts-interest widget and its API route. Pure and client-safe.
 //
-// Alerts do not exist yet. The widget is a demand test: it records which alerts
-// people would want, how they want to receive them, and (optionally) an email
-// to tell them if the feature ships. Keep the wording honest about that.
-
-export const ALERT_EVENTS = [
-  { id: "new-country", label: "A new country reports cases" },
-  { id: "new-province", label: "A new region or district within a country is affected" },
-  { id: "trend-change", label: "Cases start rising again, or Rt goes above 1" },
-  { id: "milestone", label: "The death toll passes a milestone" },
-  { id: "summary", label: "A short weekly summary" },
-] as const;
-
-export const ALERT_CHANNELS = [
-  { id: "email", label: "Email" },
-  { id: "whatsapp-sms", label: "WhatsApp or SMS" },
-  { id: "slack-teams", label: "Slack or Teams" },
-  { id: "webhook", label: "A webhook for my own system" },
-  { id: "rss", label: "An RSS feed" },
-] as const;
-
-export const ALERT_ROLES = [
-  { id: "journalist", label: "Journalist" },
-  { id: "health-professional", label: "Health professional" },
-  { id: "researcher", label: "Researcher" },
-  { id: "aid-worker", label: "Aid or NGO worker" },
-  { id: "government", label: "Government or public sector" },
-  { id: "business-travel", label: "Business or travel" },
-  { id: "following", label: "Just following the news" },
-] as const;
-
-export type AlertEventId = (typeof ALERT_EVENTS)[number]["id"];
-export type AlertChannelId = (typeof ALERT_CHANNELS)[number]["id"];
-export type AlertRoleId = (typeof ALERT_ROLES)[number]["id"];
+// Alerts do not exist yet. The widget is a demand test: one email field, so the
+// signal is how many people who open it leave an address. The page they were on
+// is recorded too, to see which outbreak the interest comes from. Keep the
+// wording honest that alerts are not built.
 
 export const MAX_EMAIL_LENGTH = 120;
+export const MAX_PAGE_LENGTH = 200;
 export const MAX_BODY_BYTES = 4096;
 
 export type InterestPayload =
   | { kind: "open" }
-  | {
-      kind: "submit";
-      events: AlertEventId[];
-      channel: AlertChannelId;
-      role: AlertRoleId | null;
-      email: string | null;
-    };
+  | { kind: "submit"; email: string; page: string | null };
 
 export type ParseResult =
   | { ok: true; value: InterestPayload }
@@ -58,7 +24,11 @@ export function isPlausibleEmail(value: string): boolean {
   return value.length <= MAX_EMAIL_LENGTH && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
 }
 
-const ids = <T extends readonly { id: string }[]>(list: T): string[] => list.map((x) => x.id);
+// A same-site path such as "/outbreaks/measles-bangladesh-2026"; anything else is dropped.
+function parsePage(value: unknown): string | null {
+  if (typeof value !== "string" || value.length > MAX_PAGE_LENGTH) return null;
+  return /^\/[\w\-/.]*$/.test(value) ? value : null;
+}
 
 export function parseInterest(body: unknown): ParseResult {
   if (typeof body !== "object" || body === null || Array.isArray(body)) {
@@ -72,49 +42,14 @@ export function parseInterest(body: unknown): ParseResult {
   if (b.kind === "open") return { ok: true, value: { kind: "open" } };
   if (b.kind !== "submit") return { ok: false, error: "Invalid request." };
 
-  if (!Array.isArray(b.events) || b.events.length === 0) {
-    return { ok: false, error: "Pick at least one alert you would want." };
-  }
-  const known = new Set(ids(ALERT_EVENTS));
-  const events = [...new Set(b.events)].filter((e): e is AlertEventId => typeof e === "string" && known.has(e));
-  if (events.length === 0 || events.length !== new Set(b.events).size) {
-    return { ok: false, error: "Unknown alert type." };
-  }
+  const email = typeof b.email === "string" ? b.email.trim() : "";
+  if (!isPlausibleEmail(email)) return { ok: false, error: "That email address does not look right." };
 
-  if (typeof b.channel !== "string" || !ids(ALERT_CHANNELS).includes(b.channel)) {
-    return { ok: false, error: "Pick how you would want to be alerted." };
-  }
-
-  let role: AlertRoleId | null = null;
-  if (b.role !== undefined && b.role !== null && b.role !== "") {
-    if (typeof b.role !== "string" || !ids(ALERT_ROLES).includes(b.role)) {
-      return { ok: false, error: "Unknown role." };
-    }
-    role = b.role as AlertRoleId;
-  }
-
-  let email: string | null = null;
-  if (b.email !== undefined && b.email !== null && b.email !== "") {
-    if (typeof b.email !== "string") return { ok: false, error: "That email address does not look right." };
-    const trimmed = b.email.trim();
-    if (!isPlausibleEmail(trimmed)) return { ok: false, error: "That email address does not look right." };
-    email = trimmed;
-  }
-
-  return { ok: true, value: { kind: "submit", events, channel: b.channel as AlertChannelId, role, email } };
+  return { ok: true, value: { kind: "submit", email, page: parsePage(b.page) } };
 }
 
-const label = (list: readonly { id: string; label: string }[], id: string | null) =>
-  list.find((x) => x.id === id)?.label ?? "—";
-
 export function describeSubmission(p: Extract<InterestPayload, { kind: "submit" }>): string {
-  return [
-    "New interest in outbreak alerts",
-    `Wants: ${p.events.map((e) => label(ALERT_EVENTS, e)).join("; ")}`,
-    `Via: ${label(ALERT_CHANNELS, p.channel)}`,
-    `Role: ${p.role ? label(ALERT_ROLES, p.role) : "not given"}`,
-    `Email: ${p.email ?? "not given"}`,
-  ].join("\n");
+  return ["New interest in outbreak alerts", `Email: ${p.email}`, `Page: ${p.page ?? "unknown"}`].join("\n");
 }
 
 export function escapeHtml(value: string): string {
