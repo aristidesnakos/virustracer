@@ -10,7 +10,9 @@ export const contentType = "image/png";
 // tracks. No per-outbreak figures (each outbreak page has its own card). Same
 // palette as the outbreak card, as hex because ImageResponse does not read oklch.
 export default function OpengraphImage() {
-  const count = listOutbreaks().length;
+  // Outbreaks declared over are records on file, not tracked; they are counted apart.
+  const count = listOutbreaks().filter((o) => o.status !== "over").length;
+  const onFile = listOutbreaks().length - count;
   return new ImageResponse(
     (
       <div
@@ -39,6 +41,11 @@ export default function OpengraphImage() {
           <div style={{ fontSize: 64, fontWeight: 700, color: "#8a2a1f", lineHeight: 1 }}>
             {`${count} ${count === 1 ? "outbreak" : "outbreaks"} tracked`}
           </div>
+          {onFile > 0 && (
+            <div style={{ fontSize: 34, color: "#4a5568", marginTop: 12 }}>
+              {`and ${onFile} past ${onFile === 1 ? "outbreak" : "outbreaks"} on file`}
+            </div>
+          )}
           <div style={{ fontSize: 26, color: "#4a5568", marginTop: 16 }}>
             Unofficial dashboard · free data API · sources and archive links on every figure
           </div>

@@ -1,0 +1,49 @@
+{{Infobox outbreak
+| name          = 2026 measles outbreak in Bangladesh
+| width         =
+| image         =
+| image_size    =
+| image_upright =
+| alt           =
+| caption       =
+| map1          = Bangladesh on the globe (Bangladesh centered).svg
+| legend1 = {{center|Bangladesh centered on the map}}
+| map2          =
+| legend2       =
+| map3          =
+| legend3       =
+| map4          =
+| legend4       =
+| map5          =
+| legend5       =
+| disease       = [[Measles]]
+| virus_strain  = ''[[Measles morbillivirus]]''
+| location      = [[Bangladesh]]
+
+| first_outbreak = <!-- Indicates first outbreak globally-->
+| first_reported = <!-- Media or historical report, (evidence of prior circulation) -->
+                  <!-- If first outbreak and first report are the same, choose one!-->
+
+| index_case     =    <!-- National or international depending on article level -->
+| arrival_date   = <!-- or | dates = -->
+| date           = 15 March 2026 – present
+| source         = <!-- Animal or other reservoir -->
+| type           =
+| confirmed_cases = 6,937
+| active_cases    =
+| suspected_cases = 50,500
+| severe_cases    =
+| hospitalized_cases = <!-- or | hospitalised_cases = -->
+| critical_cases     = 
+| ventilator_cases   =
+| ecmo_cases      =
+| recovery_cases  =
+| deaths          = 415 (350 suspected cases)
+| fatality_rate   =
+| test_positivity_rate = <!-- Indicates test positivity rate -->
+| territories     =
+| total_ili       =
+| website         =
+| vaccinations    = <!-- A list in here will be shown without bullet points -->
+
+}}

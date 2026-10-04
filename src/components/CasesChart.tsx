@@ -15,8 +15,6 @@ import {
 import type { CaseDataPoint } from "@/data/outbreaks";
 import PanelHeader from "@/components/PanelHeader";
 
-const PHEIC_DATE = "2026-05-16";
-const PHEIC_T = Date.parse(PHEIC_DATE);
 const TICK_COUNT = 6;
 
 interface ChartRow {
@@ -120,10 +118,15 @@ function LegendKey({
 export default function CasesChart({
   timeline,
   headingId,
+  reference,
 }: {
   timeline: CaseDataPoint[];
   headingId?: string;
+  /** A dated event drawn as a labelled vertical line, e.g. a WHO emergency declaration. */
+  reference?: { date: string; label: string };
 }) {
+  const refT = reference ? Date.parse(reference.date) : Number.NaN;
+  const hasRef = !Number.isNaN(refT);
   const { data, ticks, tooltip, hasSuspected, summary } = useMemo(() => {
     const rows: ChartRow[] = timeline
       .map((d) => ({
@@ -136,8 +139,10 @@ export default function CasesChart({
       .filter((r) => !Number.isNaN(r.t))
       .sort((a, b) => a.t - b.t);
 
-    const min = Math.min(rows[0]?.t ?? PHEIC_T, PHEIC_T);
-    const max = rows[rows.length - 1]?.t ?? PHEIC_T;
+    // The axis starts early enough to show the reference line.
+    const first = rows[0]?.t ?? (hasRef ? refT : 0);
+    const min = hasRef ? Math.min(first, refT) : first;
+    const max = rows[rows.length - 1]?.t ?? (hasRef ? refT : 0);
     const tickList = Array.from({ length: TICK_COUNT }, (_, i) =>
       Math.round(min + ((max - min) * i) / (TICK_COUNT - 1)),
     );
@@ -149,7 +154,7 @@ export default function CasesChart({
       hasSuspected: rows.some((r) => r.Suspected !== undefined),
       summary: describeLatest(rows),
     };
-  }, [timeline]);
+  }, [timeline, hasRef, refT]);
 
   return (
     <div className="flex w-full flex-1 flex-col">
@@ -178,7 +183,7 @@ export default function CasesChart({
                 dataKey="t"
                 type="number"
                 scale="time"
-                domain={[(dataMin: number) => Math.min(dataMin, PHEIC_T), "dataMax"]}
+                domain={[(dataMin: number) => (hasRef ? Math.min(dataMin, refT) : dataMin), "dataMax"]}
                 ticks={ticks}
                 tickFormatter={fmtDay}
                 tick={{ fill: "var(--ink-muted)", fontSize: 13 }}
@@ -201,19 +206,21 @@ export default function CasesChart({
                 allowEscapeViewBox={{ x: false, y: true }}
                 wrapperStyle={{ zIndex: 50, pointerEvents: "none" }}
               />
-              <ReferenceLine
-                x={PHEIC_T}
-                stroke="var(--ink-faint)"
-                strokeDasharray="4 2"
-                label={{
-                  value: "WHO PHEIC",
-                  fill: "var(--ink-muted)",
-                  fontSize: 12,
-                  position: "insideTopLeft",
-                  dx: 4,
-                  dy: 2,
-                }}
-              />
+              {hasRef && (
+                <ReferenceLine
+                  x={refT}
+                  stroke="var(--ink-faint)"
+                  strokeDasharray="4 2"
+                  label={{
+                    value: reference?.label,
+                    fill: "var(--ink-muted)",
+                    fontSize: 12,
+                    position: "insideTopLeft",
+                    dx: 4,
+                    dy: 2,
+                  }}
+                />
+              )}
               <Line
                 type="monotone"
                 dataKey="Confirmed"

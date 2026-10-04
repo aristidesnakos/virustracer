@@ -12,7 +12,7 @@ test.describe("home", () => {
     const card = page.getByRole("article").filter({ hasText: /ebola outbreak 2026/i });
     await expect(card).toBeVisible();
     await expect(card.getByText("Deaths", { exact: true })).toBeVisible();
-    await expect(card.getByTestId("trend-badge")).toBeVisible();
+    await expect(card.getByTestId("trend-statement")).toBeVisible();
     await expect(page.getByRole("link", { name: "How we rank and count" })).toHaveAttribute(
       "href",
       "/methodology#ranking",

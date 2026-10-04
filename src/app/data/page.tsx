@@ -1,8 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { getDefaultOutbreak } from "@/data/outbreaks";
-import { MAX_LIMIT, attributionFor } from "@/lib/api";
+import { getDefaultOutbreak, listOutbreaks } from "@/data/outbreaks";
+import { API_CACHE_SECONDS, API_RATE_LIMIT, MAX_LIMIT, attributionFor } from "@/lib/api";
 import { ASSUMPTIONS } from "@/lib/metrics";
+import { CORRECTIONS_URL } from "@/lib/methodology";
 import { OUTBREAKS_API_PATH, legacyApiPath, outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
 import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
 import { getTollData } from "@/lib/toll";
@@ -174,6 +175,44 @@ console.log(growth.trend, rt.estimate);`}</pre>
             </div>
           </section>
 
+          <section aria-labelledby="fair-use" id="fair-use" className="space-y-3">
+            <h2 id="fair-use" className={h2}>
+              Fair use
+            </h2>
+            <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
+              The API is free and keyless, and we would like to keep it that way. Please be considerate:
+            </p>
+            <ul className="list-disc space-y-1.5 pl-5 text-[0.9375rem] leading-relaxed text-ink-muted">
+              <li>
+                <strong className="font-semibold text-ink">Cache what you fetch.</strong> The figures are refreshed twice
+                a day and responses are cached for {API_CACHE_SECONDS / 60} minutes, so asking more often than that
+                returns the same numbers. Polling once an hour is plenty.
+              </li>
+              <li>
+                <strong className="font-semibold text-ink">Stay under the limit.</strong> Each IP address may make up to{" "}
+                {API_RATE_LIMIT.requests} requests per {API_RATE_LIMIT.windowSeconds} seconds across{" "}
+                <span className="font-mono">/api/</span>. Beyond that the API answers{" "}
+                <span className="font-mono">429 Too Many Requests</span> until the window passes. Back off and retry
+                later; do not retry in a tight loop.
+              </li>
+              <li>
+                <strong className="font-semibold text-ink">Use the parameters.</strong> Ask for a date range or a{" "}
+                <span className="font-mono">limit</span> instead of downloading everything repeatedly.
+              </li>
+              <li>
+                <strong className="font-semibold text-ink">Need more?</strong> If you run something that needs a higher
+                limit, such as a news site, a dashboard or research, <a href={CORRECTIONS_URL} className={link} rel="noopener">
+                  open an issue
+                </a>{" "}
+                and tell us what you are building.
+                Clients that keep hitting the limit may be blocked.
+              </li>
+            </ul>
+            <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
+              The service is provided as is, with no uptime guarantee, and is not an official public health resource.
+            </p>
+          </section>
+
           <section aria-labelledby="method-heading" id="method" className="space-y-4">
             <h2 id="method-heading" className={h2}>
               How the indicators are calculated
@@ -216,10 +255,9 @@ console.log(growth.trend, rt.estimate);`}</pre>
                 <dd className="text-ink-muted">
                   The average number of people each case infects, implied by the growth rate. With a gamma-distributed
                   serial interval of mean μ and standard deviation σ, R = (1 + r·σ²/μ)^(μ²/σ²) (Wallinga &amp;
-                  Lipsitch, 2007). We use μ = {ASSUMPTIONS.serialIntervalMeanDays} days and σ ={" "}
-                  {ASSUMPTIONS.serialIntervalSdDays} days, measured in the 2014 West Africa epidemic (WHO Ebola
-                  Response Team, NEJM). It has not been measured for this Bundibugyo outbreak, so Rt carries that extra
-                  uncertainty. It describes recent transmission and lags real changes.
+                  Lipsitch, 2007). The serial interval is set per disease, below. Where no source has been verified for
+                  a disease, Rt is left out rather than borrowed from another one. It describes recent transmission and
+                  lags real changes.
                 </dd>
               </div>
               <div>
@@ -227,12 +265,31 @@ console.log(growth.trend, rt.estimate);`}</pre>
                 <dd className="text-ink-muted">
                   <span className="font-mono">naive</span> is deaths ÷ confirmed cases; it is too low while cases are
                   still unresolved. <span className="font-mono">delayAdjusted</span> divides deaths by the cases
-                  confirmed {ASSUMPTIONS.caseToDeathDays} days earlier, which accounts for the lag from confirmation to
-                  death. <span className="font-mono">resolved</span> is deaths ÷ (deaths + recovered); it runs high when
+                  confirmed some days earlier (set per disease, below), which accounts for the lag from confirmation to
+                  death; it is left out where that delay has no verified source. <span className="font-mono">resolved</span> is deaths ÷ (deaths + recovered); it runs high when
                   recoveries are under-reported. The true value is most plausibly within that spread.
                 </dd>
               </div>
             </dl>
+            <h3 className="font-semibold text-ink">Assumptions by outbreak</h3>
+            <ul className="space-y-2 text-[0.9375rem] leading-relaxed text-ink-muted" data-testid="assumptions-by-outbreak">
+              {listOutbreaks().map((o) => (
+                <li key={o.slug}>
+                  <span className="font-semibold text-ink">{o.title}.</span>{" "}
+                  {o.metrics.serialInterval ? (
+                    <>
+                      Serial interval μ = {o.metrics.serialInterval.meanDays} days, σ = {o.metrics.serialInterval.sdDays}{" "}
+                      days ({o.metrics.serialInterval.source}).
+                    </>
+                  ) : (
+                    <>Rt not reported. {o.metrics.rtNote ?? "No serial interval has been verified for this disease."}</>
+                  )}{" "}
+                  {o.metrics.caseToDeathDays !== null
+                    ? `Confirmation-to-death delay ${o.metrics.caseToDeathDays} days.`
+                    : "Delay-adjusted fatality not reported."}
+                </li>
+              ))}
+            </ul>
             <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
               Nothing here is a forecast. These are descriptions of the recent past that depend on how complete
               reporting is. For decisions, rely on official guidance from WHO and the health authorities.

@@ -2,6 +2,7 @@ import { describe, it, expect, beforeEach, afterEach } from "vitest";
 import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSync, mkdirSync } from "node:fs";
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
+import { getOutbreak as getScriptOutbreak } from "../scripts/lib/outbreak-registry.mjs";
 import { archiveInfobox, backfillRawForStore, rawRelPath, sha256, verifyRaw } from "../scripts/lib/raw.mjs";
 
 const BLOCK = `{{Infobox outbreak
@@ -197,7 +198,7 @@ describe("archived files in data/outbreaks/<slug>/toll.json", () => {
         if (!s.rawPath) continue; // older readings are filled in by scripts/backfill-raw.mjs
         expect(s.rawPath).toBe(rawRelPath(s.revid));
         const text = readFileSync(join(repo, s.rawPath), "utf8");
-        expect({ slug, date: s.date, ...verifyRaw(s, text) }).toEqual({ slug, date: s.date, ok: true });
+        expect({ slug, date: s.date, ...verifyRaw(s, text, getScriptOutbreak(slug)?.toll?.ignoreFields) }).toEqual({ slug, date: s.date, ok: true });
       }
     }
   });

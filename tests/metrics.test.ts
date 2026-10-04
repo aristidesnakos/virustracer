@@ -1,5 +1,8 @@
 import { describe, it, expect } from "vitest";
 import { computeMetrics, reproductionFromGrowth, ASSUMPTIONS, type MetricsPoint } from "@/lib/metrics";
+import { ebolaBundibugyo2026 } from "@/data/outbreaks/ebola-bundibugyo-2026";
+
+const EBOLA = ebolaBundibugyo2026.metrics;
 
 const DAY = 24 * 60 * 60 * 1000;
 const START = Date.parse("2026-08-01T00:00:00Z");
@@ -18,21 +21,21 @@ function exponential(days: number, base: number, r: number, cfr = 0.4): MetricsP
 
 describe("reproductionFromGrowth", () => {
   it("is 1 when the outbreak is flat", () => {
-    expect(reproductionFromGrowth(0)).toBeCloseTo(1, 10);
+    expect(reproductionFromGrowth(0, 15.3, 9.3)).toBeCloseTo(1, 10);
   });
   it("rises with growth and falls with decay", () => {
-    expect(reproductionFromGrowth(0.05)).toBeGreaterThan(1);
-    expect(reproductionFromGrowth(-0.05)).toBeLessThan(1);
+    expect(reproductionFromGrowth(0.05, 15.3, 9.3)).toBeGreaterThan(1);
+    expect(reproductionFromGrowth(-0.05, 15.3, 9.3)).toBeLessThan(1);
   });
   it("floors at 0 for decay faster than the interval can express", () => {
-    expect(reproductionFromGrowth(-5)).toBe(0);
+    expect(reproductionFromGrowth(-5, 15.3, 9.3)).toBe(0);
   });
 });
 
 describe("computeMetrics", () => {
   it("reports insufficient data for an empty or single-point series", () => {
-    expect(computeMetrics([]).status).toBe("insufficient_data");
-    const one = computeMetrics([{ date: "2026-10-02", confirmed: 8245, deaths: 3984 }]);
+    expect(computeMetrics([], EBOLA).status).toBe("insufficient_data");
+    const one = computeMetrics([{ date: "2026-10-02", confirmed: 8245, deaths: 3984 }], EBOLA);
     expect(one.status).toBe("insufficient_data");
     expect(one.asOf).toBe("2026-10-02");
     expect(one.growth).toBeNull();
@@ -44,14 +47,14 @@ describe("computeMetrics", () => {
       { date: iso(10), confirmed: 1500, deaths: 600 },
       { date: iso(20), confirmed: 2200, deaths: 880 },
     ];
-    const m = computeMetrics(sparse);
+    const m = computeMetrics(sparse, EBOLA);
     expect(m.status).toBe("insufficient_data");
     expect(m.reason).toMatch(/dated readings/);
   });
 
   it("recovers a known growth rate and doubling time", () => {
     const r = 0.05;
-    const m = computeMetrics(exponential(40, 50, r));
+    const m = computeMetrics(exponential(40, 50, r), EBOLA);
     expect(m.status).toBe("ok");
     expect(m.growth!.ratePerDay.estimate).toBeCloseTo(r, 3);
     expect(m.growth!.doublingTimeDays).toBeCloseTo(Math.LN2 / r, 0);
@@ -63,7 +66,7 @@ describe("computeMetrics", () => {
   });
 
   it("recognises a shrinking outbreak and gives a halving time", () => {
-    const m = computeMetrics(exponential(40, 400, -0.04));
+    const m = computeMetrics(exponential(40, 400, -0.04), EBOLA);
     expect(m.growth!.ratePerDay.estimate).toBeCloseTo(-0.04, 3);
     expect(m.growth!.trend).toBe("shrinking");
     expect(m.growth!.doublingTimeDays).toBeNull();
@@ -72,14 +75,14 @@ describe("computeMetrics", () => {
   });
 
   it("calls a constant weekly rate stable, with R near 1", () => {
-    const m = computeMetrics(exponential(40, 60, 0));
+    const m = computeMetrics(exponential(40, 60, 0), EBOLA);
     expect(m.growth!.trend).toBe("stable");
     expect(m.rt!.estimate).toBeCloseTo(1, 1);
     expect(m.incidence!.confirmed.changePct).toBeCloseTo(0, 5);
   });
 
   it("sums new cases and deaths over the last two 7-day windows", () => {
-    const m = computeMetrics(exponential(30, 100, 0, 0.5));
+    const m = computeMetrics(exponential(30, 100, 0, 0.5), EBOLA);
     expect(m.incidence!.confirmed.last7).toBe(700);
     expect(m.incidence!.confirmed.prev7).toBe(700);
     expect(m.incidence!.deaths.last7).toBe(350);
@@ -96,7 +99,7 @@ describe("computeMetrics", () => {
       { date: iso(30), confirmed: lastDay.confirmed, deaths: lastDay.deaths },
       { date: iso(31), confirmed: lastDay.confirmed, deaths: lastDay.deaths },
     ];
-    const m = computeMetrics(stale);
+    const m = computeMetrics(stale, EBOLA);
     expect(m.asOf).toBe(iso(31));
     expect(m.windowEnd).toBe(iso(29));
     expect(m.incidence!.confirmed.last7).toBe(700);
@@ -111,13 +114,13 @@ describe("computeMetrics", () => {
       confirmed: lastDay.confirmed,
       deaths: lastDay.deaths,
     }));
-    const m = computeMetrics([...pts, ...flat]);
+    const m = computeMetrics([...pts, ...flat], EBOLA);
     expect(m.windowEnd).toBe(m.asOf);
     expect(m.incidence!.confirmed.last7).toBeLessThan(700);
   });
 
   it("returns at most maxWeeks periods, oldest first", () => {
-    const m = computeMetrics(exponential(120, 100, 0));
+    const m = computeMetrics(exponential(120, 100, 0), EBOLA);
     expect(m.weekly).toHaveLength(ASSUMPTIONS.maxWeeks);
     const ends = m.weekly.map((w) => w.periodEnd);
     expect([...ends].sort()).toEqual(ends);
@@ -125,7 +128,7 @@ describe("computeMetrics", () => {
 
   it("computes the three fatality ratios", () => {
     const pts = exponential(30, 100, 0, 0.4).map((p) => ({ ...p, recovered: 500 }));
-    const m = computeMetrics(pts);
+    const m = computeMetrics(pts, EBOLA);
     const last = pts[pts.length - 1];
     expect(m.cfr.naive).toBeCloseTo(last.deaths / last.confirmed, 10);
     expect(m.cfr.resolved).toBeCloseTo(last.deaths / (last.deaths + 500), 10);
@@ -134,12 +137,12 @@ describe("computeMetrics", () => {
   });
 
   it("leaves resolved CFR null when recoveries are not reported", () => {
-    expect(computeMetrics(exponential(30, 100, 0)).cfr.resolved).toBeNull();
+    expect(computeMetrics(exponential(30, 100, 0), EBOLA).cfr.resolved).toBeNull();
   });
 
   it("fills gaps by interpolation and marks those days", () => {
     const pts = exponential(30, 100, 0).filter((_, i) => i !== 20 && i !== 21);
-    const m = computeMetrics(pts);
+    const m = computeMetrics(pts, EBOLA);
     const filled = m.daily.filter((d) => d.interpolated).map((d) => d.date);
     expect(filled).toEqual([iso(20), iso(21)]);
     expect(m.incidence!.confirmed.last7).toBe(700);
@@ -148,7 +151,7 @@ describe("computeMetrics", () => {
   it("never lets a cumulative count fall (a lower later reading is ignored)", () => {
     const pts = exponential(30, 100, 0);
     pts[28] = { ...pts[28], confirmed: 10 };
-    const m = computeMetrics(pts);
+    const m = computeMetrics(pts, EBOLA);
     expect(m.daily.every((d) => d.newConfirmed >= 0)).toBe(true);
   });
 
@@ -158,7 +161,7 @@ describe("computeMetrics", () => {
       confirmed: 500,
       deaths: 200,
     }));
-    const m = computeMetrics(flat);
+    const m = computeMetrics(flat, EBOLA);
     expect(m.status).toBe("ok");
     expect(m.growth).toBeNull();
     expect(m.rt).toBeNull();
@@ -168,7 +171,43 @@ describe("computeMetrics", () => {
   it("does not mutate its input", () => {
     const pts = exponential(30, 100, 0.02);
     const copy = JSON.parse(JSON.stringify(pts));
-    computeMetrics(pts);
+    computeMetrics(pts, EBOLA);
     expect(pts).toEqual(copy);
+  });
+});
+
+describe("per-pathogen assumptions", () => {
+  const NO_SERIAL_INTERVAL = { serialInterval: null, caseToDeathDays: null } as const;
+
+  it("reports no Rt and no delay-adjusted fatality when the pathogen has no verified values", () => {
+    const m = computeMetrics(exponential(40, 400, 0.04), NO_SERIAL_INTERVAL);
+    expect(m.status).toBe("ok");
+    expect(m.growth).not.toBeNull(); // growth does not depend on the pathogen
+    expect(m.rt).toBeNull();
+    expect(m.cfr.delayAdjusted).toBeNull();
+    expect(m.cfr.naive).not.toBeNull();
+    expect(m.assumptions.serialIntervalMeanDays).toBeNull();
+    expect(m.assumptions.caseToDeathDays).toBeNull();
+  });
+
+  it("gives the same growth for any pathogen but a different Rt for a different serial interval", () => {
+    const pts = exponential(40, 400, 0.04);
+    const short = computeMetrics(pts, { serialInterval: { meanDays: 5, sdDays: 2, source: "test" }, caseToDeathDays: 5 });
+    const long = computeMetrics(pts, EBOLA);
+    expect(short.growth!.ratePerDay.estimate).toBeCloseTo(long.growth!.ratePerDay.estimate, 10);
+    expect(short.rt!.estimate).not.toBeCloseTo(long.rt!.estimate, 2);
+  });
+
+  it("keeps the API field names for Ebola's assumptions", () => {
+    const a = computeMetrics(exponential(30, 100, 0), EBOLA).assumptions;
+    expect(a).toMatchObject({
+      windowDays: 7,
+      minReadingsInTwoWeeks: 5,
+      maxWeeks: 8,
+      maxReportingLagDays: 3,
+      serialIntervalMeanDays: 15.3,
+      serialIntervalSdDays: 9.3,
+      caseToDeathDays: 10,
+    });
   });
 });

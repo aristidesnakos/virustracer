@@ -78,14 +78,30 @@ function RowToggle({
   );
 }
 
+/** "41 monitored · 18 in quarantine", from whichever counts the row reports. */
+function monitoringLine(row: MonitoringEntry): string | null {
+  const parts: string[] = [];
+  if (row.monitored !== undefined) parts.push(`${fmt(row.monitored)} monitored`);
+  if (row.quarantined !== undefined) parts.push(`${fmt(row.quarantined)} in quarantine`);
+  return parts.length > 0 ? parts.join(" · ") : null;
+}
+
 export default function MonitoringTable({
   monitoringData,
   candidates = [],
   headingId,
+  title = <>By country &amp; province</>,
+  sources = "WHO · INSP DRC · Regional health authorities",
+  showCfr = true,
 }: {
   monitoringData: MonitoringEntry[];
   candidates?: CandidateSignal[];
   headingId?: string;
+  title?: React.ReactNode;
+  /** Small print beside the heading naming where the rows come from. */
+  sources?: string;
+  /** Hide the CFR column, e.g. when deaths include probable cases the rows don't count. */
+  showCfr?: boolean;
 }) {
   const [expanded, setExpanded] = useState<string | null>(null);
 
@@ -104,18 +120,14 @@ export default function MonitoringTable({
       <PanelHeader
         kicker="Table 1"
         id={headingId}
-        title={<>By country &amp; province</>}
-        aside={
-          <span className="text-[0.8125rem] text-ink-faint">
-            WHO · INSP DRC · Regional health authorities
-          </span>
-        }
+        title={title}
+        aside={<span className="text-[0.8125rem] text-ink-faint">{sources}</span>}
       />
 
       <div className="relative overflow-x-auto">
         <table className="w-full min-w-[34rem] text-[0.9375rem]">
           <caption className="sr-only">
-            Confirmed cases, deaths and case fatality by country and province. Select a region to
+            {showCfr ? "Confirmed cases, deaths and case fatality" : "Confirmed cases and deaths"} by country and province. Select a region to
             read its details.
           </caption>
           <thead>
@@ -129,9 +141,11 @@ export default function MonitoringTable({
               <th scope="col" className="px-2 py-2.5 text-right font-semibold">
                 Deaths
               </th>
-              <th scope="col" className="px-2 py-2.5 text-right font-semibold">
-                CFR
-              </th>
+              {showCfr && (
+                <th scope="col" className="px-2 py-2.5 text-right font-semibold">
+                  CFR
+                </th>
+              )}
               <th scope="col" className="py-2.5 pl-3 pr-3 text-left font-semibold">
                 Status
               </th>
@@ -143,6 +157,7 @@ export default function MonitoringTable({
               const rowCfr = cfr(row.deaths, row.confirmed);
               const isOpen = expanded === row.iso;
               const detailId = `detail-${row.iso}`;
+              const monitoring = monitoringLine(row);
               return (
                 <Fragment key={row.iso}>
                   <tr
@@ -177,18 +192,26 @@ export default function MonitoringTable({
                         <span className="text-ink-faint">—</span>
                       )}
                     </td>
-                    <td className={`${CELL} text-right tabular-nums text-ink-muted`}>
-                      {rowCfr ?? <span className="text-ink-faint">—</span>}
-                    </td>
+                    {showCfr && (
+                      <td className={`${CELL} text-right tabular-nums text-ink-muted`}>
+                        {rowCfr ?? <span className="text-ink-faint">—</span>}
+                      </td>
+                    )}
                     <td className={`${CELL} pl-3 pr-3`}>
                       <StatusChip status={row.status} />
                     </td>
                   </tr>
                   {isOpen && (
                     <tr id={detailId} className={DETAIL_ROW}>
-                      <td colSpan={5} className="px-3 py-4">
+                      <td colSpan={showCfr ? 5 : 4} className="px-3 py-4">
                         <p className="mb-2 max-w-[65ch] leading-relaxed text-ink">{row.detail}</p>
                         <div className="flex flex-wrap items-center gap-x-4 gap-y-1 text-[0.8125rem] text-ink-muted">
+                          {monitoring && (
+                            <>
+                              <span className="font-semibold text-ink">{monitoring}</span>
+                              <span aria-hidden>·</span>
+                            </>
+                          )}
                           <span>Source: {row.source}</span>
                           <span aria-hidden>·</span>
                           <span>
@@ -211,7 +234,7 @@ export default function MonitoringTable({
               <Fragment>
                 <tr>
                   <td
-                    colSpan={5}
+                    colSpan={showCfr ? 5 : 4}
                     className="pb-2 pl-3 pt-6 text-[0.8125rem] font-semibold uppercase tracking-[0.08em] text-ink-muted"
                   >
                     Unconfirmed · extracted from news feed
@@ -244,9 +267,11 @@ export default function MonitoringTable({
                             <span className="text-ink-faint">—</span>
                           )}
                         </td>
-                        <td className={`${CELL} text-right tabular-nums`}>
-                          <span className="text-ink-faint">—</span>
-                        </td>
+                        {showCfr && (
+                          <td className={`${CELL} text-right tabular-nums`}>
+                            <span className="text-ink-faint">—</span>
+                          </td>
+                        )}
                         <td className={`${CELL} pl-3 pr-3`}>
                           <span className="inline-block rounded-md border border-rule-strong bg-sunk px-2 py-0.5 text-[0.8125rem] font-semibold leading-snug text-ink-muted">
                             Unverified
@@ -255,7 +280,7 @@ export default function MonitoringTable({
                       </tr>
                       {isOpen && (
                         <tr id={detailId} className={DETAIL_ROW}>
-                          <td colSpan={5} className="px-3 py-4">
+                          <td colSpan={showCfr ? 5 : 4} className="px-3 py-4">
                             <p className="mb-2 max-w-[65ch] leading-relaxed text-ink">{c.context}</p>
                             <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[0.8125rem] text-ink-muted">
                               <a
@@ -296,9 +321,11 @@ export default function MonitoringTable({
               <td className="px-2 py-3 text-right font-journal text-base font-bold tabular-nums text-death">
                 {fmt(totalDeaths)}
               </td>
-              <td className="px-2 py-3 text-right font-journal text-base font-bold tabular-nums text-ink-muted">
-                {cfr(totalDeaths, totalConfirmed) ?? "—"}
-              </td>
+              {showCfr && (
+                <td className="px-2 py-3 text-right font-journal text-base font-bold tabular-nums text-ink-muted">
+                  {cfr(totalDeaths, totalConfirmed) ?? "—"}
+                </td>
+              )}
               <td />
             </tr>
           </tfoot>

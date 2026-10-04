@@ -1,10 +1,9 @@
 import Link from "next/link";
-import TrendBadge from "@/components/TrendBadge";
 import WeeklySparkline from "@/components/WeeklySparkline";
 import type { OutbreakStatus } from "@/data/outbreaks";
 import type { OutbreakSnapshot } from "@/lib/home-snapshot";
 import { outbreakPath } from "@/lib/outbreak-paths";
-import { shortDay } from "@/lib/trend-summary";
+import { shortDay, trendStatement, type Verdict } from "@/lib/trend-summary";
 
 const STATUS_LABEL: Record<OutbreakStatus, string> = {
   active: "Active",
@@ -34,14 +33,36 @@ function signedPct(changePct: number | null): string | null {
     : `cases ${r > 0 ? "+" : "−"}${Math.abs(r)}% vs the week before`;
 }
 
+export type TrendPanelState = "trend" | "final" | "pending";
+
+/**
+ * What the card's right-hand panel shows:
+ * - "trend": there are daily readings, so show the weekly bars and the trend result, whatever the status;
+ * - "final": no readings and the outbreak is over, so none are due and the figures are final;
+ * - "pending": no readings but the outbreak is not over, so say there is not enough data yet.
+ */
+export function trendPanelState(status: OutbreakStatus, hasReadings: boolean): TrendPanelState {
+  if (hasReadings) return "trend";
+  return status === "over" ? "final" : "pending";
+}
+
+/** The statement leads the trend; colour backs the words up, it is never the only cue. */
+const STATEMENT_TONE: Record<Verdict, string> = {
+  growing: "text-death",
+  declining: "text-good",
+  plateau: "text-ink",
+  unknown: "text-ink",
+};
+
 const LINK = "text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent";
 
 /** The card names the source; who it cites is on /methodology, and the full label stays in the link's title. */
 const sourceName = (label: string) => label.replace(/\s*\(cites[^)]*\)\s*$/i, "");
 
 /**
- * One outbreak on the home page: places, newest figures, the 7-day trend with a
- * weekly sparkline, where the numbers come from and when, and a link to its dashboard.
+ * One outbreak on the home page. Top row: places and the two dates. Then the newest figures
+ * beside the picture of recent weeks: weekly bars, with the plain-language result and the
+ * 7-day counts as their caption. Footer: the source, and the way on to the dashboard.
  * The status is stated by the group heading the card sits under, so the card only
  * announces it to screen readers. `wide` lays the card out in two columns for a group
  * that has room for it (the page passes it when the group holds a single outbreak).
@@ -61,26 +82,39 @@ export default function OutbreakCard({
   const Heading = `h${headingLevel}` as const;
   const { outbreak, figures, trend, incidence, windowEnd, weekly, source } = snapshot;
   const stats: { label: string; value: number | null; tone: string }[] = [
-    { label: "Deaths", value: figures?.deaths ?? null, tone: "text-death" },
+    { label: outbreak.summary.deathsQualifier ? `Deaths ${outbreak.summary.deathsQualifier}` : "Deaths", value: figures?.deaths ?? null, tone: "text-death" },
     { label: "Confirmed cases", value: figures?.confirmed ?? null, tone: "text-confirmed" },
   ];
   const change = incidence ? signedPct(incidence.confirmed.changePct) : null;
+  const hasChart = weekly.length >= 2;
+  const panel = trendPanelState(outbreak.status, Boolean(incidence && windowEnd));
 
   return (
     <article
       className={`panel flex h-full flex-col ${wide ? "md:grid! md:grid-cols-2 md:content-start md:gap-x-10" : ""}`}
       aria-labelledby={headingId}
     >
-      <div>
+      <div className={`flex items-start justify-between gap-4 ${wide ? "md:col-span-2" : ""}`}>
         <p className="text-[0.8125rem] font-semibold uppercase tracking-[0.1em] text-ink-faint">
           <span data-testid="outbreak-status" className="sr-only">
             {STATUS_LABEL[outbreak.status]}.{" "}
           </span>
           {outbreak.places}
         </p>
+        <p className="shrink-0 text-right text-[0.8125rem] leading-snug text-ink-faint">
+          <span className="block">{figures ? `As of ${shortDate(figures.date)}` : "No figures yet"}</span>
+          {source.checked && (
+            <span className="block">
+              {source.automated ? "Checked" : "Last verified"} {shortDate(source.checked)}
+            </span>
+          )}
+        </p>
+      </div>
+
+      <div className={`mt-1 ${wide ? "md:mb-4" : ""}`}>
         <Heading
           id={headingId}
-          className="mt-1 font-journal text-xl font-semibold leading-snug text-ink"
+          className="font-journal text-xl font-semibold leading-snug text-ink"
         >
           <Link
             href={outbreakPath(outbreak.slug)}
@@ -105,48 +139,54 @@ export default function OutbreakCard({
       </div>
 
       <div
-        className={`mt-4 border-t border-rule pt-3 ${wide ? "md:mt-0 md:border-l md:border-t-0 md:pl-10 md:pt-0" : ""}`}
+        className={`mb-4 mt-4 border-t border-rule pt-3 ${wide ? "md:mt-1 md:border-l md:border-t-0 md:pl-10 md:pt-0" : ""} ${panel === "final" ? "flex flex-col items-center justify-center py-3 text-center" : ""}`}
       >
-        <div className="flex items-end justify-between gap-4">
-          <TrendBadge summary={trend} />
-          <WeeklySparkline weeks={weekly} className="shrink-0" />
-        </div>
-        {incidence && windowEnd ? (
-          <p className="mt-2 text-[0.9375rem] leading-snug text-ink">
-            <strong className="font-semibold">{fmt(incidence.confirmed.last7)}</strong> new cases and{" "}
-            <strong className="font-semibold">{fmt(incidence.deaths.last7)}</strong> deaths in the 7 days
-            to {shortDay(windowEnd)}
-            {change && <span className="text-ink-muted"> ({change})</span>}
+        {panel === "final" ? (
+          <p data-testid="final-state" className="text-base font-semibold text-ink">
+            Outbreak over
+            <span className="sr-only">: these are the final figures</span>
           </p>
         ) : (
-          <p className="mt-2 text-[0.9375rem] leading-snug text-ink-muted">{trend.headline}</p>
+          <>
+            {hasChart && <p className="text-[0.8125rem] text-ink-faint">New cases per week</p>}
+            <WeeklySparkline weeks={weekly} fluid className="mt-2" />
+            <p
+              data-testid="trend-statement"
+              className={`${hasChart ? "mt-3" : ""} text-base font-semibold leading-snug ${STATEMENT_TONE[trend.verdict]}`}
+            >
+              {trendStatement(trend)}
+            </p>
+            {incidence && windowEnd ? (
+              <p className="mt-0.5 text-[0.9375rem] leading-snug text-ink-muted">
+                <strong className="font-semibold text-ink">{fmt(incidence.confirmed.last7)}</strong> new cases and{" "}
+                <strong className="font-semibold text-ink">{fmt(incidence.deaths.last7)}</strong> deaths in the 7
+                days to <span className="whitespace-nowrap">{shortDay(windowEnd)}</span>
+                {change && <> ({change})</>}
+              </p>
+            ) : (
+              <p className="mt-0.5 text-[0.9375rem] leading-snug text-ink-muted">{trend.headline}</p>
+            )}
+          </>
         )}
       </div>
 
       <div
-        className={`mt-auto ${wide ? "md:col-span-2 md:mt-4 md:flex md:items-end md:justify-between md:gap-6 md:border-t md:border-rule md:pt-3" : ""}`}
+        className={`mt-auto flex flex-wrap items-end justify-between gap-x-6 gap-y-2 border-t border-rule pt-3 ${wide ? "md:col-span-2" : ""}`}
       >
-        <p className={`mt-3 text-[0.8125rem] leading-relaxed text-ink-faint ${wide ? "md:mt-0" : ""}`}>
-          <span className="block">
-            {figures ? `As of ${shortDate(figures.date)}` : "No figures yet"}
-            {source.checked &&
-              ` · ${source.automated ? "checked" : "last verified"} ${shortDate(source.checked)}`}
-          </span>
-          <span className="block">
-            Source:{" "}
-            {source.url ? (
-              <a href={source.url} className={LINK} rel="noopener" title={source.label}>
-                {sourceName(source.label)}
-              </a>
-            ) : (
-              source.label
-            )}
-          </span>
+        <p className="text-[0.8125rem] leading-relaxed text-ink-faint">
+          Source:{" "}
+          {source.url ? (
+            <a href={source.url} className={LINK} rel="noopener" title={source.label}>
+              {sourceName(source.label)}
+            </a>
+          ) : (
+            source.label
+          )}
         </p>
 
-        <div className="flex flex-wrap gap-x-5 gap-y-1 pt-4 text-[0.9375rem] font-medium md:shrink-0 md:pt-0">
+        <div className="flex flex-wrap gap-x-5 gap-y-1 text-[0.9375rem] font-medium">
           <Link href={outbreakPath(outbreak.slug)} className={LINK}>
-            Open dashboard
+            Dashboard
             <span className="sr-only"> for {outbreak.title}</span>
           </Link>
           <Link href="/data" className={LINK}>

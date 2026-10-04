@@ -3,7 +3,7 @@
 import { useEffect, useRef } from "react";
 import maplibregl from "maplibre-gl";
 import "maplibre-gl/dist/maplibre-gl.css";
-import type { CaseLocation, SpreadStop } from "@/data/outbreaks";
+import type { CaseLocation, OutbreakMapView, SpreadStop } from "@/data/outbreaks";
 import { daysBetween } from "@/lib/outbreak-trend";
 
 const CARTO_LIGHT = "https://basemaps.cartocdn.com/gl/positron-gl-style/style.json";
@@ -52,6 +52,30 @@ function referenceISO(caseLocations: readonly CaseLocation[]): string {
   );
 }
 
+/** The stops in order as one line, e.g. a ship's route. */
+function routeGeoJSON(spreadStops: readonly SpreadStop[]) {
+  return {
+    type: "Feature" as const,
+    geometry: { type: "LineString" as const, coordinates: spreadStops.map((s) => s.coords) },
+    properties: {},
+  };
+}
+
+/** Bounding box of every marker, for maps framed to their data. */
+function dataBounds(
+  spreadStops: readonly SpreadStop[],
+  caseLocations: readonly CaseLocation[],
+): maplibregl.LngLatBoundsLike | undefined {
+  const coords = [...spreadStops.map((s) => s.coords), ...caseLocations.map((l) => l.coords)];
+  if (coords.length === 0) return undefined;
+  const lngs = coords.map((c) => c[0]);
+  const lats = coords.map((c) => c[1]);
+  return [
+    [Math.min(...lngs), Math.min(...lats)],
+    [Math.max(...lngs), Math.max(...lats)],
+  ];
+}
+
 function stopsGeoJSON(spreadStops: readonly SpreadStop[]) {
   return {
     type: "FeatureCollection" as const,
@@ -82,6 +106,7 @@ function casesGeoJSON(caseLocations: readonly CaseLocation[], referenceISO: stri
           flag: loc.flag,
           confirmed: loc.confirmed,
           deaths: loc.deaths,
+          monitored: loc.monitored ?? 0,
           type: loc.type,
           asOf: loc.asOf,
           daysAgo: Math.max(0, daysBetween(loc.asOf, referenceISO)),
@@ -106,21 +131,31 @@ function recencyColorExpression(): maplibregl.ExpressionSpecification {
 export default function OutbreakMap({
   spreadStops,
   caseLocations,
+  view,
+  archived = false,
 }: {
   spreadStops: SpreadStop[];
   caseLocations: CaseLocation[];
+  /** Framing, route line and stop label. Without it: the Central Africa view, no route. */
+  view?: OutbreakMapView;
+  /** A closed record: recency is relative to its latest data, never "today". */
+  archived?: boolean;
 }) {
+  const stopsLabel = view?.stopsLabel ?? "First-detected site";
   const containerRef = useRef<HTMLDivElement>(null);
   const mapRef = useRef<maplibregl.Map | null>(null);
 
   useEffect(() => {
     if (!containerRef.current || mapRef.current) return;
 
+    // A view with no centre is framed to its own markers.
+    const fit = view && !view.center ? dataBounds(spreadStops, caseLocations) : undefined;
     const map = new maplibregl.Map({
       container: containerRef.current,
       style: CARTO_LIGHT,
-      center: [24, 2],
-      zoom: 3.2,
+      ...(fit
+        ? { bounds: fit, fitBoundsOptions: { padding: 40, maxZoom: 5 } }
+        : { center: view?.center ?? [24, 2], zoom: view?.zoom ?? 3.2 }),
       minZoom: 1,
       maxZoom: 9,
       attributionControl: false,
@@ -137,6 +172,23 @@ export default function OutbreakMap({
     );
 
     map.on("load", () => {
+      // ── Route line (e.g. a ship's voyage), under the markers ─────────────
+      if (view?.route && spreadStops.length > 1) {
+        map.addSource("route", { type: "geojson", data: routeGeoJSON(spreadStops) });
+        map.addLayer({
+          id: "route-line",
+          type: "line",
+          source: "route",
+          layout: { "line-join": "round", "line-cap": "round" },
+          paint: {
+            "line-color": "#29579a",
+            "line-width": 1.5,
+            "line-dasharray": [3, 2],
+            "line-opacity": 0.6,
+          },
+        });
+      }
+
       // ── First-detection sites ───────────────────────────────────────────
       map.addSource("spread-stops", {
         type: "geojson",
@@ -257,21 +309,24 @@ export default function OutbreakMap({
         if (!feat) return;
         const p = feat.properties as {
           country: string; flag: string; confirmed: number;
-          deaths: number; type: string;
+          deaths: number; monitored: number; type: string;
           asOf: string; daysAgo: number;
         };
         const geom = feat.geometry as unknown as { coordinates: [number, number] };
         const lines: string[] = [];
         if (p.confirmed > 0) lines.push(`<span class="popup-stat confirmed">${fmt(p.confirmed)} confirmed</span>`);
         if (p.deaths > 0) lines.push(`<span class="popup-stat death">${fmt(p.deaths)} death${p.deaths > 1 ? "s" : ""}</span>`);
-        const freshness = p.daysAgo === 0 ? "today" : `${p.daysAgo}d ago`;
+        if (p.monitored > 0) lines.push(`<span class="popup-stat">${fmt(p.monitored)} monitored</span>`);
+        const freshness = archived
+          ? `as of ${new Date(p.asOf).toLocaleDateString("en-GB", { day: "numeric", month: "short", year: "numeric", timeZone: "UTC" })}`
+          : `updated ${p.daysAgo === 0 ? "today" : `${p.daysAgo}d ago`}`;
         casePopup
           .setLngLat(geom.coordinates)
           .setHTML(
             `<div class="popup-inner">
                <div class="popup-title">${escapeHtml(p.flag)} ${escapeHtml(p.country)}</div>
                <div class="popup-stats">${lines.join(" · ")}</div>
-               <div class="popup-date">updated ${freshness}</div>
+               <div class="popup-date">${escapeHtml(freshness)}</div>
              </div>`
           )
           .addTo(map);
@@ -288,7 +343,7 @@ export default function OutbreakMap({
       map.remove();
       mapRef.current = null;
     };
-  }, [spreadStops, caseLocations]);
+  }, [spreadStops, caseLocations, view, archived]);
 
   return (
     <div className="flex h-full w-full flex-col">
@@ -300,9 +355,10 @@ export default function OutbreakMap({
       />
       {/* Legend sits under the map so it never hides data on small screens */}
       <div className="flex shrink-0 flex-wrap items-center gap-x-6 gap-y-2 border-t border-rule bg-panel px-4 py-3 text-[0.8125rem] text-ink-muted">
+        {caseLocations.length > 0 && (
         <div className="flex items-center gap-2">
           <span className="font-semibold text-ink">Data recency</span>
-          <span className="tabular-nums">today</span>
+          <span className="tabular-nums">{archived ? "latest" : "today"}</span>
           <div
             className="h-2 w-28 rounded-full border border-rule-strong"
             style={{
@@ -313,14 +369,15 @@ export default function OutbreakMap({
           />
           <span className="tabular-nums">45d+</span>
         </div>
+        )}
         <div className="flex items-center gap-2">
           <span
             className="size-2.5 shrink-0 rounded-full border border-white bg-confirmed"
             aria-hidden
           />
-          First-detected site
+          {stopsLabel}
         </div>
-        <div>Dot label: deaths · size: confirmed cases</div>
+        {caseLocations.length > 0 && <div>Dot label: deaths · size: confirmed cases</div>}
       </div>
     </div>
   );

@@ -15,9 +15,9 @@
 import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { parseInfobox, validateSnapshot, applySnapshot } from "./lib/toll.mjs";
+import { parseInfobox, validateSnapshot, applySnapshot, withoutIgnored } from "./lib/toll.mjs";
 import { archiveInfobox } from "./lib/raw.mjs";
-import { USER_AGENT, dataFile, selectOutbreaks } from "./lib/outbreak-registry.mjs";
+import { USER_AGENT, dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
 
 const TIMEOUT_MS = 20_000;
 
@@ -125,7 +125,7 @@ async function updateOutbreak(outbreak) {
     return;
   }
 
-  const parsed = parseInfobox(fetched.wikitext);
+  const parsed = withoutIgnored(parseInfobox(fetched.wikitext), toll.ignoreFields);
   if (!parsed) {
     console.log(
       `::error::Could not parse confirmed_cases/deaths from the Infobox outbreak on ${PAGE_TITLE} (revid ${fetched.revid ?? "?"}). The infobox format may have changed; toll data for ${slug} was NOT updated.`,
@@ -188,7 +188,7 @@ async function updateOutbreak(outbreak) {
 
 async function main() {
   // Only outbreaks with an automated toll source are updated here.
-  const outbreaks = selectOutbreaks().filter((o) => o.toll);
+  const outbreaks = selectOutbreaksWith("toll");
   for (const outbreak of outbreaks) {
     console.log(`── ${outbreak.slug} ──`);
     try {

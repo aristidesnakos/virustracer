@@ -8,7 +8,7 @@
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
-import { extractInfobox, parseInfobox } from "./toll.mjs";
+import { extractInfobox, parseInfobox, withoutIgnored } from "./toll.mjs";
 
 export const RAW_DIR = "data/raw/infobox";
 
@@ -31,14 +31,15 @@ export function rawRelPath(revid) {
  * numbers (and, when the snapshot records one, the stored checksum).
  * @param {{confirmed:number, suspected?:number|null, deaths:number, recovered?:number|null, rawSha256?:string}} snapshot
  * @param {string} rawText
+ * @param {readonly string[]} [ignore]  The outbreak's `toll.ignoreFields`, blanked before comparing.
  * @returns {{ok: true} | {ok: false, reason: string}}
  */
-export function verifyRaw(snapshot, rawText) {
+export function verifyRaw(snapshot, rawText, ignore = []) {
   if (typeof rawText !== "string") return { ok: false, reason: "no raw text" };
   if (snapshot.rawSha256 && sha256(rawText) !== snapshot.rawSha256) {
     return { ok: false, reason: "sha256 of raw text does not match rawSha256" };
   }
-  const parsed = parseInfobox(rawText);
+  const parsed = withoutIgnored(parseInfobox(rawText), ignore);
   if (!parsed) return { ok: false, reason: "raw text does not parse as an Infobox outbreak" };
   for (const k of /** @type {const} */ (["confirmed", "suspected", "deaths", "recovered"])) {
     if ((parsed[k] ?? null) !== (snapshot[k] ?? null)) {
@@ -98,6 +99,7 @@ export function archiveInfobox(repoRoot, revid, wikitext) {
  * @param {{
  *   repoRoot: string,
  *   fetchLead: (revid: number) => Promise<string|null|undefined>,
+ *   ignore?: readonly string[],
  *   dryRun?: boolean,
  *   delayMs?: number,
  *   sleep?: (ms: number) => Promise<void>,
@@ -106,7 +108,7 @@ export function archiveInfobox(repoRoot, revid, wikitext) {
  * @returns {Promise<{store: T, stats: Record<string, number>}>}
  */
 export async function backfillRawForStore(store, opts) {
-  const { repoRoot, fetchLead, dryRun = false, delayMs = 0, log = () => {} } = opts;
+  const { repoRoot, fetchLead, ignore = [], dryRun = false, delayMs = 0, log = () => {} } = opts;
   const sleep = opts.sleep ?? ((ms) => new Promise((r) => setTimeout(r, ms)));
   const stats = { alreadyHave: 0, noRevid: 0, fetchFailed: 0, noInfobox: 0, mismatch: 0, writeFailed: 0, archived: 0, wouldArchive: 0 };
   const snapshots = [];
@@ -142,7 +144,7 @@ export async function backfillRawForStore(store, opts) {
       snapshots.push(snap);
       continue;
     }
-    const check = verifyRaw(snap, block);
+    const check = verifyRaw(snap, block, ignore);
     if (!check.ok) {
       stats.mismatch++;
       log(`MISMATCH ${snap.date} (rev ${snap.revid}): ${check.reason}; not stored, numbers untouched`);

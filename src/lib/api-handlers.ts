@@ -13,7 +13,7 @@ import {
   unknownOutbreakResponse,
 } from "./api";
 import { computeMetrics } from "./metrics";
-import { outbreakApiPath, outbreakPath } from "./outbreak-paths";
+import { OUTBREAKS_API_PATH, outbreakApiPath, outbreakPath } from "./outbreak-paths";
 import { classifySignals, getSignalsLedger } from "./signals";
 import { mergeTimeline } from "./timeline";
 import { getTollData } from "./toll";
@@ -22,6 +22,18 @@ import { getTollData } from "./toll";
 // (/api/v1/outbreaks/<slug>/...) and the permanent un-prefixed aliases
 // (/api/v1/toll, ...) both call these, so the two can never drift apart.
 // Server-side only (reads the data files). Handlers take a plain Request.
+
+/**
+ * A hand-curated outbreak has no daily readings, so its toll is empty and its
+ * metrics insufficient. Say why in `meta`, rather than leave an empty list unexplained.
+ */
+function manualNote(outbreak: OutbreakDefinition): { note?: string } {
+  return outbreak.source.kind === "manual"
+    ? {
+        note: `This outbreak is curated by hand and has no daily readings. Its sourced timeline is on ${outbreakPath(outbreak.slug)}; the latest figures are in ${OUTBREAKS_API_PATH}.`,
+      }
+    : {};
+}
 
 /** Look up `slug` and run `handler`, or answer 404 JSON when no such outbreak is registered. */
 export function forOutbreak(slug: string, handler: (outbreak: OutbreakDefinition) => Response): Response {
@@ -51,6 +63,7 @@ export function tollResponse(outbreak: OutbreakDefinition, request: Request): Re
       description: "Cumulative reported figures, one reading per UTC day.",
       lastChecked: toll.lastChecked || null,
       count: snapshots.length,
+      ...manualNote(outbreak),
       attribution: attributionFor(outbreak),
       docs: "/data",
     },
@@ -71,7 +84,7 @@ export function metricsResponse(outbreak: OutbreakDefinition, request: Request):
   if (include !== null && include !== "daily") return errorResponse("`include` may only be `daily`.");
 
   const toll = getTollData(outbreak.slug);
-  const metrics = computeMetrics(toll.snapshots);
+  const metrics = computeMetrics(toll.snapshots, outbreak.metrics);
 
   if (format === "csv") return csvResponse(dailyToCsv(metrics.daily), `${outbreak.disease.toLowerCase()}-daily.csv`);
 
@@ -82,6 +95,7 @@ export function metricsResponse(outbreak: OutbreakDefinition, request: Request):
       outbreak: outbreak.title,
       description:
         "Indicators derived from the cumulative toll. Estimates, not official statistics: see `assumptions` and /data.",
+      ...manualNote(outbreak),
       attribution: attributionFor(outbreak),
       docs: "/data#method",
     },

@@ -69,6 +69,8 @@ jobs:
             const root = "data/outbreaks";
             const md = ["## Latest death tolls", ""];
             for (const slug of fs.existsSync(root) ? fs.readdirSync(root).sort() : []) {
+              // Hand-curated records (e.g. an archived outbreak) have no toll.json.
+              if (!fs.existsSync(root + "/" + slug + "/toll.json")) continue;
               let t = {};
               try { t = JSON.parse(fs.readFileSync(root + "/" + slug + "/toll.json", "utf8")); } catch {}
               const l = (Array.isArray(t.snapshots) && t.snapshots[t.snapshots.length - 1]) || t.latest || t;

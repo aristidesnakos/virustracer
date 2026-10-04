@@ -2,7 +2,7 @@ import { ImageResponse } from "next/og";
 import { getOutbreak } from "@/data/outbreaks";
 import { getTollData } from "@/lib/toll";
 import { mergeTimeline } from "@/lib/timeline";
-import { latestFigures } from "@/lib/seo";
+import { latestFigures, shareCardFooter } from "@/lib/seo";
 import { SITE_NAME } from "@/lib/site";
 
 // The real alt text names the outbreak, which is only known per request; this is
@@ -62,13 +62,11 @@ export default async function OutbreakOpengraphImage({
           </div>
         </div>
         <div style={{ display: "flex", gap: 96 }}>
-          {stat("Deaths reported", figures?.deaths ?? null, "#8a2a1f")}
+          {stat(outbreak.summary.deathsQualifier ? `Deaths ${outbreak.summary.deathsQualifier}` : "Deaths reported", figures?.deaths ?? null, "#8a2a1f")}
           {stat("Confirmed cases", figures?.confirmed ?? null, "#1c2433")}
         </div>
         <div style={{ fontSize: 26, color: "#4a5568" }}>
-          {`Unofficial dashboard · figures from WHO and INSP DRC via Wikipedia${
-            figures ? ` · as of ${figures.date}` : ""
-          }`}
+          {shareCardFooter(outbreak, figures)}
         </div>
       </div>
     ),

@@ -1,6 +1,6 @@
 import type { OutbreakDefinition, OutbreakStatus } from "@/data/outbreaks";
 import { computeMetrics, type Metrics, type WeeklyPeriod } from "./metrics";
-import { latestFigures, type LatestFigures } from "./seo";
+import { deathsSuffix, latestFigures, type LatestFigures } from "./seo";
 import { mergeTimeline } from "./timeline";
 import type { TollData } from "./toll";
 import { describeTrend, type TrendSummary } from "./trend-summary";
@@ -49,7 +49,7 @@ export interface OutbreakSnapshot {
  * The headline figures use the merged timeline, like the dashboard.
  */
 export function buildSnapshot(outbreak: OutbreakDefinition, toll: TollData): OutbreakSnapshot {
-  const metrics = computeMetrics(toll.snapshots);
+  const metrics = computeMetrics(toll.snapshots, outbreak.metrics);
   const ok = metrics.status === "ok";
   const newest = toll.snapshots.at(-1);
   const automated = outbreak.source.kind !== "manual";
@@ -121,7 +121,7 @@ export function describeHome(ranked: readonly OutbreakSnapshot[], fallback: stri
     .slice(0, 3)
     .map(({ outbreak, figures }) => {
       const nums = [
-        figures!.deaths !== null ? `${fmt(figures!.deaths)} deaths` : null,
+        figures!.deaths !== null ? `${fmt(figures!.deaths)} deaths${deathsSuffix(outbreak.summary)}` : null,
         figures!.confirmed !== null ? `${fmt(figures!.confirmed)} cases` : null,
       ].filter(Boolean);
       return nums.length ? `${outbreak.shortName}: ${nums.join(", ")}` : outbreak.shortName;

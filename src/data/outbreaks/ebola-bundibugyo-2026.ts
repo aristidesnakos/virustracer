@@ -457,6 +457,21 @@ export const ebolaBundibugyo2026: OutbreakDefinition = {
       "Daily cumulative confirmed cases, suspected cases, deaths and recoveries for the 2026 Ebola outbreak in the DR Congo and Uganda, each tied to the source revision it was read from.",
     isBasedOn: "https://en.wikipedia.org/wiki/2026_Ebola_epidemic",
   },
+  credit: "figures from WHO and INSP DRC via Wikipedia",
+  chartReference: { date: "2026-05-16", label: "WHO PHEIC" },
+  tableSources: "WHO · INSP DRC · Regional health authorities",
+  metrics: {
+    // Serial interval from the 2014 West Africa epidemic (Zaire ebolavirus); not measured
+    // for this Bundibugyo outbreak, so Rt carries that extra uncertainty.
+    serialInterval: {
+      meanDays: 15.3,
+      sdDays: 9.3,
+      source:
+        "WHO Ebola Response Team, NEJM 2014 (West Africa, Zaire ebolavirus); not measured for this Bundibugyo outbreak, so Rt carries that extra uncertainty",
+    },
+    // Typical delay from case confirmation to death.
+    caseToDeathDays: 10,
+  },
   casesTimeline,
   monitoringData,
   spreadStops,

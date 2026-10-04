@@ -75,6 +75,56 @@ function parseCount(raw) {
   return Number.isSafeInteger(n) ? n : null;
 }
 
+/** Words that mark a figure as a wider count than "deaths among confirmed cases". */
+const WIDER_LABEL = /\b(all|total|suspected|probable|overall|combined)\b/i;
+
+/**
+ * Parse the `deaths` field. Most infoboxes hold one figure, parsed exactly like any
+ * other count. Some hold two, one per line, e.g. the Bangladesh measles article:
+ * `100 {{small|(confirmed cases)}}<br>'''1,009 {{small|(all cases)}}'''`. The snapshot
+ * definition is "deaths among confirmed cases" (the same as Ebola, so deaths <= confirmed),
+ * so with several figures take the one whose label says "confirmed"; if none does, the
+ * first figure that is not labelled as a wider count (all / total / suspected / ...).
+ * A later bold "all cases" figure is never picked, whatever the order. If every figure is
+ * labelled as wider, return null: the field cannot be read as deaths among confirmed cases.
+ * The older `total (N suspected cases)` form is handled first (see the comment in the body).
+ * @param {string|undefined} raw  field value with refs and comments already removed
+ * @returns {number|null}
+ */
+function parseDeaths(raw) {
+  if (raw === undefined) return null;
+  // Older Bangladesh measles revisions (until 2026-09-08) wrote an all-cases total with
+  // the suspected part in brackets: `997 (897 suspected cases)`. The 100 that followed on
+  // 2026-09-10 (`100 (confirmed cases)`) is exactly 997 - 897, so the bracket means "of
+  // which suspected" and deaths among confirmed cases is the difference.
+  const split = cleanValue(raw)
+    .replace(/,/g, "")
+    .match(/^(\d+)(\+?)\s*\(\s*(\d+)\s*suspected(?:\s+(?:cases?|deaths?))?\s*\)\s*$/i);
+  if (split) {
+    const [, total, approx, suspected] = split;
+    // "300+ (98 suspected)" is a lower bound minus an exact figure: not a reading.
+    if (approx || Number(suspected) > Number(total)) return null;
+    return Number(total) - Number(suspected);
+  }
+  // Lines are separated by <br> (or a real newline, or ";"). Keep {{small|(label)}} text
+  // so the label survives; every other template is dropped by parseCount/cleanValue.
+  const segments = raw
+    .split(/<br\s*\/?>|\n|;/i)
+    .map((seg) => ({
+      count: parseCount(seg),
+      label: seg
+        .replace(/\{\{\s*small\s*\|([^{}]*)\}\}/gi, "$1")
+        .replace(/<[^>]+>/g, "")
+        .toLowerCase(),
+    }))
+    .filter((x) => x.count !== null);
+  if (segments.length <= 1) return parseCount(raw); // the usual single-figure case, unchanged
+  const confirmed = segments.find((x) => /\bconfirmed\b/.test(x.label) && !WIDER_LABEL.test(x.label));
+  if (confirmed) return confirmed.count;
+  const firstNarrow = segments.find((x) => !WIDER_LABEL.test(x.label));
+  return firstNarrow ? firstNarrow.count : null;
+}
+
 /**
  * Extract the `{{Infobox outbreak ...}}` block (brace-balanced), exactly as it
  * appears in the wikitext. This is the text the parser consumes and the text
@@ -136,7 +186,7 @@ export function parseInfobox(wikitext) {
   }
 
   const confirmed = parseCount(fields.confirmed_cases);
-  const deaths = parseCount(fields.deaths);
+  const deaths = parseDeaths(fields.deaths);
   if (confirmed === null || deaths === null) return null;
   return {
     confirmed,
@@ -144,6 +194,24 @@ export function parseInfobox(wikitext) {
     deaths,
     recovered: parseCount(fields.recovery_cases),
   };
+}
+
+/**
+ * Blank the fields an outbreak's registry entry says not to trust (`toll.ignoreFields`),
+ * e.g. an infobox `recovery_cases` that counts hospital discharges rather than recoveries
+ * among confirmed cases. Passes null through. Every reader of an infobox for a snapshot
+ * (daily updater, backfill, raw verification) applies the same list.
+ * @param {ParsedInfobox|null} parsed
+ * @param {readonly string[]} [ignore]
+ * @returns {ParsedInfobox|null}
+ */
+export function withoutIgnored(parsed, ignore = []) {
+  if (!parsed) return parsed;
+  const next = { ...parsed };
+  for (const k of ignore) {
+    if (k === "suspected" || k === "recovered") next[k] = null;
+  }
+  return next;
 }
 
 /** @param {unknown} n */

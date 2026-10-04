@@ -1,7 +1,8 @@
-// Script-side registry of the outbreaks whose data is fetched automatically. Plain
-// `.mjs` (the scripts run on bare `node`, no TypeScript), so it mirrors the slug,
-// status and source of src/data/outbreaks/*.ts; tests/outbreak-registry.test.ts
-// fails if the two drift apart.
+// Script-side registry of every outbreak in src/data/outbreaks/. Plain `.mjs`
+// (the scripts run on bare `node`, no TypeScript), so it mirrors the slug, status
+// and source of src/data/outbreaks/*.ts; tests/outbreak-registry.test.ts fails if
+// the two drift apart. Only entries with `toll` are read from Wikipedia and only
+// entries with `feed` get a news feed; a hand-curated record has neither.
 
 import { resolve } from "node:path";
 
@@ -53,6 +54,66 @@ export const OUTBREAKS = [
       },
     },
   },
+  {
+    slug: "measles-bangladesh-2026",
+    status: "active",
+    disease: "Measles",
+    toll: {
+      // The infobox's `deaths` field holds two figures (deaths among confirmed cases, then
+      // all cases). parseInfobox keeps the confirmed-case one, the same definition as Ebola;
+      // the all-cases figure (confirmed plus suspected) is not stored in snapshots.
+      page: "2026_Bangladesh_measles_outbreak",
+      source: "Wikipedia infobox (cites DGHS Bangladesh)",
+      // `recovery_cases` here is hospital discharges (a count of suspected plus confirmed
+      // patients), not recoveries among confirmed cases, so it would give a meaningless
+      // "resolved" fatality ratio. Left out of the snapshots.
+      ignoreFields: ["recovered"],
+    },
+    feed: {
+      sources: [
+        {
+          name: "WHO News",
+          // WHO general news RSS: not outbreak-specific, so keyword filtered.
+          url: "https://www.who.int/rss-feeds/news-english.xml",
+          source: "WHO",
+        },
+        { name: "Google News — Bangladesh measles outbreak", url: gnews("Bangladesh measles outbreak"), source: "News" },
+        { name: "Google News — Bangladesh measles deaths", url: gnews("Bangladesh measles deaths"), source: "News" },
+        {
+          name: "Google News — measles vaccination Bangladesh",
+          url: gnews("Bangladesh measles vaccination campaign DGHS"),
+          source: "News",
+        },
+      ],
+      // Measles is in the news worldwide (US, Canada, Europe...), so "measles" alone must
+      // not pass. No strong keywords: an item needs Bangladesh context AND the word measles.
+      strongKeywords: [],
+      contextualKeywords: [
+        { term: "bangladesh", needsOneOf: ["measles"] },
+        // Headlines such as "Measles death toll reaches 1,009" omit the country; a Dhaka
+        // outlet or the health directorate (DGHS) named in the item supplies it.
+        { term: "dhaka", needsOneOf: ["measles"] },
+        { term: "dghs", needsOneOf: ["measles"] },
+        { term: "bdnews24", needsOneOf: ["measles"] },
+        { term: "prothom alo", needsOneOf: ["measles"] },
+        { term: "tbsnews", needsOneOf: ["measles"] },
+      ],
+      // Used in the summary and extraction prompts.
+      subject: "the 2026 measles outbreak in Bangladesh",
+      extraction: {
+        scope: `If — and only if — the article reports a SPECIFIC COUNTRY OTHER THAN BANGLADESH (which is already curated) with measles cases, deaths, or suspected cases LINKED TO THE 2026 BANGLADESH OUTBREAK (e.g. a case imported from Bangladesh into India, Myanmar, Nepal, the UK, the Gulf states or elsewhere, or a cluster traced to travellers or Rohingya refugees from Bangladesh), return JSON:`,
+        exclusions: `If the article is only about Bangladesh, OR does not mention a specific country, OR the cases belong to a different measles outbreak (the US, Canada, Mexico, Europe, Afghanistan, Yemen, the DR Congo, or any outbreak with no stated link to Bangladesh), OR the country is merely on alert, vaccinating or preparing without reported linked cases or deaths, return:`,
+      },
+    },
+  },
+  {
+    // Archived, hand-curated record (src/data/outbreaks/hantavirus-mv-hondius-2026.ts).
+    // No `toll` and no `feed`: nothing here is fetched, and status "over" keeps it
+    // out of the scheduled runs. Its live.json is a frozen news record.
+    slug: "hantavirus-mv-hondius-2026",
+    status: "over",
+    disease: "Hantavirus",
+  },
 ];
 
 export function getOutbreak(slug) {
@@ -73,6 +134,33 @@ export function selectOutbreaks(argv = process.argv.slice(2)) {
     return [found];
   }
   return OUTBREAKS.filter((o) => AUTOMATED_STATUSES.includes(o.status));
+}
+
+/**
+ * Outbreaks whose cited links the archiver keeps: the one named by `--outbreak=<slug>`,
+ * otherwise every registered outbreak, including finished ones. Unlike fetching,
+ * archiving matters most for past records, whose sources are the likeliest to rot.
+ * @param {string[]} [argv]
+ */
+export function selectArchivableOutbreaks(argv = process.argv.slice(2)) {
+  return argv.some((a) => a.startsWith("--outbreak=")) ? selectOutbreaks(argv) : [...OUTBREAKS];
+}
+
+/**
+ * `selectOutbreaks`, keeping only entries that have `key` ("toll" or "feed").
+ * An outbreak named with --outbreak that lacks it (e.g. a hand-curated record) is
+ * skipped with a log line rather than an error, so the run still exits cleanly.
+ * @param {"toll" | "feed"} key
+ * @param {string[]} [argv]
+ * @param {(msg: string) => void} [log]
+ */
+export function selectOutbreaksWith(key, argv = process.argv.slice(2), log = console.log) {
+  const selected = selectOutbreaks(argv);
+  const kept = selected.filter((o) => o[key]);
+  for (const o of selected) {
+    if (!o[key]) log(`Skipping ${o.slug}: it has no ${key} source configured.`);
+  }
+  return kept;
 }
 
 /** data/outbreaks/<slug>/<file>.json under `root` (the repository root). */

@@ -20,15 +20,61 @@ function SourceChip({ source }: { source: string }) {
   );
 }
 
+const shortMonth = (iso: string) =>
+  new Date(iso).toLocaleDateString("en-GB", { month: "short", year: "numeric", timeZone: "UTC" });
+
+/** "May – Jun 2026" (or "May 2026"): the months an archived list spans, in any order. */
+export function coverageSpan(items: readonly Pick<FeedItem, "date">[]): string | null {
+  const times = items.map((i) => Date.parse(i.date)).filter((t) => !Number.isNaN(t));
+  if (times.length === 0) return null;
+  const from = new Date(Math.min(...times)).toISOString();
+  const to = new Date(Math.max(...times)).toISOString();
+  const a = shortMonth(from);
+  const b = shortMonth(to);
+  if (a === b) return a;
+  const [aMonth, aYear] = a.split(" ");
+  const [, bYear] = b.split(" ");
+  return aYear === bYear ? `${aMonth} – ${b}` : `${a} – ${b}`;
+}
+
 export default function FeedUpdates({
   items,
   lastFetched,
   headingId,
+  archived = false,
 }: {
   items: FeedItem[];
   lastFetched: string;
   headingId?: string;
+  /**
+   * A closed record: the list is a dated archive of coverage, not the latest news,
+   * so it shows the span it covers instead of a fetch time.
+   */
+  archived?: boolean;
 }) {
+  if (archived) {
+    const span = coverageSpan(items);
+    return (
+      <div className="flex flex-col">
+        <PanelHeader
+          kicker="Archive"
+          id={headingId}
+          title={<>News coverage at the time</>}
+          aside={
+            <span className="text-[0.8125rem] text-ink-faint">
+              {items.length.toLocaleString("en-US")} articles{span ? ` · ${span}` : ""} · newest first
+            </span>
+          }
+        />
+        {items.length === 0 ? (
+          <p className="max-w-[65ch] text-ink-muted">No coverage was recorded for this outbreak.</p>
+        ) : (
+          <FeedList items={items} label="Archived news coverage, newest first" />
+        )}
+      </div>
+    );
+  }
+
   if (items.length === 0) {
     return (
       <div>
@@ -64,10 +110,18 @@ export default function FeedUpdates({
         }
       />
 
+      <FeedList items={items} label="Recent news and official updates" />
+    </div>
+  );
+}
+
+function FeedList({ items, label }: { items: FeedItem[]; label: string }) {
+  return (
+    <>
       {/* Long list: scrolls inside the panel; focusable so keyboard users can scroll it. */}
       <ul
         tabIndex={0}
-        aria-label="Recent news and official updates"
+        aria-label={label}
         // `relative` makes this the containing block for the absolutely positioned
         // sr-only hints inside; otherwise they escape the scroll clip and stretch the page.
         className="relative max-h-[38rem] overflow-y-auto border-t border-rule pr-2 lg:grid lg:max-h-[32rem] lg:grid-cols-2 lg:gap-x-10"
@@ -99,6 +153,6 @@ export default function FeedUpdates({
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }

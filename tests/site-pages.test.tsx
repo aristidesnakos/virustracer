@@ -5,10 +5,13 @@ import { SITE_PAGES } from "../scripts/lib/site.mjs";
 import HomePage, { generateMetadata as homeMetadata } from "@/app/page";
 import MethodologyPage, { metadata as methodologyMetadata } from "@/app/methodology/page";
 import AboutPage, { metadata as aboutMetadata } from "@/app/about/page";
+import DataPage from "@/app/data/page";
+import { API_RATE_LIMIT } from "@/lib/api";
 import { listOutbreaks } from "@/data/outbreaks";
 import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
 import { CORRECTIONS_URL, SANITY_CHECKS } from "@/lib/methodology";
 import { outbreakPath } from "@/lib/outbreak-paths";
+import { TREND_STATEMENT } from "@/lib/trend-summary";
 
 describe("home page", () => {
   it("shows one card per registered outbreak under its status group", () => {
@@ -17,7 +20,8 @@ describe("home page", () => {
       const group = screen.getByTestId(`status-group-${o.status}`);
       expect(within(group).getByRole("heading", { level: 4, name: o.title })).toBeInTheDocument();
     }
-    expect(screen.getAllByTestId("trend-badge")).toHaveLength(listOutbreaks().length);
+    // Finished outbreaks with no daily readings show their final figures instead of a trend statement.
+    expect(screen.getAllByTestId("trend-statement")).toHaveLength(listOutbreaks().filter((o) => o.status !== "over").length);
     expect(screen.getByRole("link", { name: "How we rank and count" })).toHaveAttribute(
       "href",
       "/methodology#ranking",
@@ -74,12 +78,13 @@ describe("/methodology", () => {
     }
   });
 
-  it("shows every trend badge state the cards can show", () => {
+  it("lists every trend result the cards can show, using the cards' own wording", () => {
     render(<MethodologyPage />);
-    const table = screen.getByRole("table", { name: /trend badge states/i });
-    const labels = within(table).getAllByTestId("trend-badge").map((b) => b.textContent);
-    expect(labels).toEqual(["↗Growing", "↘Declining", "→Plateau", "·Unclear", "·Not enough data"]);
+    const table = screen.getByRole("table", { name: /trend results shown on a card/i });
+    const results = within(table).getAllByRole("rowheader").map((h) => h.textContent);
+    expect(results).toEqual(Object.values(TREND_STATEMENT));
   });
+
 
   it("has its own canonical and repeats the shared Open Graph fields", () => {
     expect(methodologyMetadata.alternates?.canonical).toBe("/methodology");
@@ -102,6 +107,18 @@ describe("/about", () => {
   it("has its own canonical and repeats the shared Open Graph fields", () => {
     expect(aboutMetadata.alternates?.canonical).toBe("/about");
     expect(aboutMetadata.openGraph).toMatchObject({ siteName: "Outbreak Files", type: "website" });
+  });
+});
+
+describe("data page fair use", () => {
+  it("states the rate limit the firewall enforces and links to report needs", () => {
+    render(<DataPage />);
+    const section = screen.getByRole("heading", { name: "Fair use" }).closest("section")!;
+    expect(section).toHaveTextContent(
+      `${API_RATE_LIMIT.requests} requests per ${API_RATE_LIMIT.windowSeconds} seconds`,
+    );
+    expect(section).toHaveTextContent("429 Too Many Requests");
+    expect(within(section).getByRole("link", { name: "open an issue" })).toHaveAttribute("href", CORRECTIONS_URL);
   });
 });
 
