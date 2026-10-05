@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-04T21:28:37.907Z",
+  "lastFetched": "2026-10-05T08:10:48.924Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -338,7 +338,10 @@
     "news-7fc0b95d16bd1d3d",
     "news-44651c7706b63772",
     "news-a8390220dfa93a02",
-    "who-911b8df7c8192ad5"
+    "who-911b8df7c8192ad5",
+    "news-8fd2516d23034045",
+    "news-37e1b289fc350965",
+    "who-962d040697e3dfe6"
   ],
   "recentItems": [
     {
@@ -478,6 +481,14 @@
       "summary": "​DR Congo Ebola outbreak deaths surpass 4,000: 5 reasons the deadliest outbreak is still not contained​ The Times of India"
     },
     {
+      "id": "news-37e1b289fc350965",
+      "title": "IOM: Multi-Country Bundibugyo Ebola Virus Disease Outbreak - Situation Report No. 20 (21 - 27 September 2026) - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWTBEUUxrWTYyLS12dkxDSTNTa2g0bVc0MVpRYV83Y0FMSXlyOU5PQjBrOW5EY2czNzNEbjdHNm1JU2xrY24xc3ZHT095MnRqVkEtOE40ZEdzUVlYdkdvZUFVbncwb2hlS0E5TG9qMDVvQkZQSmlnNjhXMlpKWjdaWTRDSVVNUS1NU3NWSFc5MjYyV0szQ1huWE12d0VLM1ItenEtLVl4aVRYU2lWdkkxYVg2dWZZRWhHMWNEQUNmYlYtckNhWlQ1VDhoWm56Rks0azhybV8tN29hengwTUQ1aHhkSldjMXg0YWk5YQ?oc=5",
+      "date": "2026-10-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "IOM: Multi-Country Bundibugyo Ebola Virus Disease Outbreak - Situation Report No. 20 (21 - 27 September 2026) ReliefWeb"
+    },
+    {
       "id": "news-44651c7706b63772",
       "title": "Congo Ebola Outbreak Death Toll Passes 4000 As Treatment Center Burns - Dr. Axe",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRnlrWThLcnNXSl9LTV9VbVhKVzluMEhwMWFKaVdEYkpSU3haZnNUdEN2bjVWT2NwRVZWQlkzSXIxV2lHTEl3UnNwUF9qV1JlSC05cXFKYXE0eGJKdTBzWjRBY0tnejZDZWZSZHVFc0JGamR2ZVAzcWVLZUdGUFFzNDU4akFxNW9zUTU2MDlrQmhOQzlBVnRFRTdGZVZZN05YLWtobk5FczZWTDd4c3c?oc=5",
@@ -492,14 +503,6 @@
       "date": "2026-10-02",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola treatment centre burned down as Congo death toll passes 4,000 chelmsfordcitynews.co.uk"
-    },
-    {
-      "id": "news-49e49cf1f1ffce37",
-      "title": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 - Toronto Star",
-      "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxORkNUWmc3ZEdKYWxncTVCbVl3RHByWUFNWkVUUWVNVmluZmNBYXBKdHBjOGJmVVpMbGc0WURFRlJzV1lqVlFiNUJWVTJVUExRdmpiR3pDOFA1RGpQMGh1RmZHMDJvOTRrSnlnVWVRNVNuaUQ0c3VmdW5sVzlrQVI5YnVna2tnR3JfbEhETXlEMnI4YVpWLXpFZEI5cnhHS29EVnFNb2ZrUTd0ZWFmMjBfSS1ucWkzYXpKc1Vvbl8wY0gwZnhweUtJZU9xNUFxWllUNmpJaEp3X05WSGo3MW1rVWVzazFycE53TzhZWklxekFWWEZid0tWWFYwVGdjYWlQQ1daeWp1TnR3cFN3TVd5T2JaSFg0NVdBbGc?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 Toronto Star"
     }
   ]
 }
