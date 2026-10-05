@@ -18,6 +18,7 @@ import { getCandidatesData } from "@/lib/candidates-data";
 import { computeMetrics } from "@/lib/metrics";
 import { outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
 import { describeFigures, latestFigures } from "@/lib/seo";
+import { BrandMark } from "@/components/BrandMark";
 import { DATA_LICENSE, SITE_NAME, SITE_TAGLINE, absoluteUrl } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -209,8 +210,9 @@ export default async function OutbreakPage({ params }: Props) {
                 )}
                 <Link
                   href="/"
-                  className="underline decoration-death/40 underline-offset-4 hover:decoration-death"
+                  className="flex items-center gap-2 underline decoration-death/40 underline-offset-4 hover:decoration-death"
                 >
+                  <BrandMark size="1.15em" className="shrink-0" />
                   {SITE_NAME}
                 </Link>
               </p>

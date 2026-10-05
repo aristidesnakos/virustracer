@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Outbreak Files</title>
+  <style>
+    .body { fill: #1c2433 }
+    .pip { fill: #e0533a }
+    @media (prefers-color-scheme: dark) {
+      .body { fill: #f7f3eb }
+      .pip { fill: #c23a22 }
+    }
+  </style>
+  <path class="body" d="M6 10H26L32 17H58V58H6Z"/>
+  <circle class="pip" cx="26" cy="40" r="9"/>
+  <circle class="pip" cx="44" cy="33" r="4.5"/>
+  <circle class="pip" cx="46" cy="48" r="3"/>
+</svg>

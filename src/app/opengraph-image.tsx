@@ -1,5 +1,6 @@
 import { ImageResponse } from "next/og";
 import { listOutbreaks } from "@/data/outbreaks";
+import { BrandMark } from "@/components/BrandMark";
 import { SITE_NAME, SITE_TAGLINE } from "@/lib/site";
 
 export const alt = `${SITE_NAME}: ${SITE_TAGLINE}`;
@@ -32,7 +33,10 @@ export default function OpengraphImage() {
           OUTBREAK DATA, ON THE RECORD
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>
-          <div style={{ fontSize: 112, fontWeight: 700, lineHeight: 1.05 }}>{SITE_NAME}</div>
+          <div style={{ display: "flex", alignItems: "center", gap: 32, marginTop: 20, fontSize: 112, fontWeight: 700, lineHeight: 1.05 }}>
+            <BrandMark size={104} />
+            {SITE_NAME}
+          </div>
           <div style={{ fontSize: 42, color: "#4a5568", marginTop: 24, lineHeight: 1.3 }}>
             {SITE_TAGLINE}
           </div>

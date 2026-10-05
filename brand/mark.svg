@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <title>Outbreak Files</title>
+  <!--
+    The Outbreak Files mark. SOURCE OF TRUTH: every other brand asset is
+    generated from this file by scripts/build-brand.mjs. Do not edit the
+    derived files.
+
+    A sharp file folder with one large red dot in it and two smaller ones
+    spreading away from it: an outbreak, kept on file. The silhouette (folder
+    tab, solid body, one big red dot) is the whole idea, so it must still read
+    at 16px; judge any change there, not at 512. The two small dots are an
+    extra and are allowed to disappear at small sizes.
+
+    Palette (read by the build script, which derives the tiles and the OG card
+    from these four values, so this block is the one place to change a colour):
+      light page: ink body, oxblood dot (the site's death red, lifted so it
+                  holds against the ink).
+      dark page:  paper body, soft-red dot (also used on the dark app tile).
+  -->
+  <style>
+    .body { fill: #1c2433 }
+    .pip { fill: #e0533a }
+    @media (prefers-color-scheme: dark) {
+      .body { fill: #f7f3eb }
+      .pip { fill: #c23a22 }
+    }
+  </style>
+  <path class="body" d="M6 10H26L32 17H58V58H6Z"/>
+  <circle class="pip" cx="26" cy="40" r="9"/>
+  <circle class="pip" cx="44" cy="33" r="4.5"/>
+  <circle class="pip" cx="46" cy="48" r="3"/>
+</svg>

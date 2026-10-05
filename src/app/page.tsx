@@ -12,6 +12,7 @@ import {
   type OutbreakSnapshot,
 } from "@/lib/home-snapshot";
 import { outbreakPath } from "@/lib/outbreak-paths";
+import { BrandMark } from "@/components/BrandMark";
 import { SITE_NAME, SITE_TAGLINE, absoluteUrl } from "@/lib/site";
 import { getTollData } from "@/lib/toll";
 
@@ -107,7 +108,8 @@ export default function HomePage() {
       <div className="mx-auto w-full max-w-[1360px] px-[clamp(1rem,3vw,2.5rem)] pb-10">
         <DevFeedback name="Home.Header">
           <header className="rise pt-7 pb-5 border-b-4 border-double border-ink">
-            <h1 className="font-journal text-[clamp(1.875rem,4.2vw,2.875rem)] font-bold leading-[1.1] tracking-[-0.01em] text-ink">
+            <h1 className="flex items-center gap-[0.35em] font-journal text-[clamp(1.875rem,4.2vw,2.875rem)] font-bold leading-[1.1] tracking-[-0.01em] text-ink">
+              <BrandMark size="0.9em" className="shrink-0" />
               {SITE_NAME}
             </h1>
             <p className="mt-2 max-w-[46rem] text-base text-ink-muted">{SITE_TAGLINE}</p>
