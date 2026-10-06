@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-05T08:10:48.924Z",
+  "lastFetched": "2026-10-06T08:10:30.988Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -341,9 +341,36 @@
     "who-911b8df7c8192ad5",
     "news-8fd2516d23034045",
     "news-37e1b289fc350965",
-    "who-962d040697e3dfe6"
+    "who-962d040697e3dfe6",
+    "news-6055c7e28a8785ae",
+    "news-3baf18f9444ddae5",
+    "news-76c31c9c3282b89b",
+    "news-d39d52d738f11547",
+    "news-5aa606f49215b252",
+    "news-48799dc3c4279bd2",
+    "news-925a9bc279c87fe5",
+    "news-62d651df0226351a",
+    "news-77516a8e5de97ea5",
+    "news-af0cd305522bf651",
+    "who-391b9237ebea1488"
   ],
   "recentItems": [
+    {
+      "id": "news-6055c7e28a8785ae",
+      "title": "Can Obeldesivir Prevent Ebola Symptoms After Exposure? Drug Trial Moves Forward As Death Toll Crosses 4,000 - Health and Me",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcl9jTjRYNnJYX0FIdVljMks0ZjJvZGxjUFVaV2owdGUwWmFuZDJIRllMaEM3MEUyOW1ER2lpcUlScThiX2VYbU8wWUU5OXU0NzZOV1dDd0pNVHAtR2xyWDJfX2llS3dERm1NSkx0c3JOaG9ud05XbU9WOFk3c2JrLU5LM3FxNU8wbGtzSUtZdlFWVTdDUy05M2p4MzNfREdMdURlTnBxc0QtTUxFbmR6cUF5X1prSlZZeXFMOHZiZjVqS2FLZkxXWkZ3cmFvd1A4NjREVjRkb1J1X2RPaldsNjJQVHVvbDlCQWc?oc=5",
+      "date": "2026-10-05",
+      "source": "Google News — Ebola death toll",
+      "summary": "Can Obeldesivir Prevent Ebola Symptoms After Exposure? Drug Trial Moves Forward As Death Toll Crosses 4,000 Health and Me"
+    },
+    {
+      "id": "news-925a9bc279c87fe5",
+      "title": "DRC - Concept of Operations - Ebola Virus Disease (EVD) Outbreak, October 2026 - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVmwwSzlaa0FqRkU1Qll5STItdi1kRm85YTZWOWRVYkZXbWZkU005ekhtbC1CdVNkVzd4QkU1aEJYZ2RlcHZuU01xYklPZG9iNjVacGxhNHp5WFRFT1NJUlJsR0JHbnZKT01jR1FQVnl6Z3Q4MjdjVWxkbHExNjNWcmtkM2t5WElRcXNCSnpOLTRMdzllNGo4Nm1veFhfZWxZMml6OGFCallENTY2c0dkWmZJQzZ2c2V6RkZ3MkxrdVk?oc=5",
+      "date": "2026-10-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "DRC - Concept of Operations - Ebola Virus Disease (EVD) Outbreak, October 2026 ReliefWeb"
+    },
     {
       "id": "news-8a966e43833b5c4c",
       "title": "DRC health officials say Ebola outbreak past peak despite death toll surpassing 4,000 - bastillepost.com",
@@ -481,28 +508,12 @@
       "summary": "​DR Congo Ebola outbreak deaths surpass 4,000: 5 reasons the deadliest outbreak is still not contained​ The Times of India"
     },
     {
-      "id": "news-37e1b289fc350965",
-      "title": "IOM: Multi-Country Bundibugyo Ebola Virus Disease Outbreak - Situation Report No. 20 (21 - 27 September 2026) - ReliefWeb",
-      "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWTBEUUxrWTYyLS12dkxDSTNTa2g0bVc0MVpRYV83Y0FMSXlyOU5PQjBrOW5EY2czNzNEbjdHNm1JU2xrY24xc3ZHT095MnRqVkEtOE40ZEdzUVlYdkdvZUFVbncwb2hlS0E5TG9qMDVvQkZQSmlnNjhXMlpKWjdaWTRDSVVNUS1NU3NWSFc5MjYyV0szQ1huWE12d0VLM1ItenEtLVl4aVRYU2lWdkkxYVg2dWZZRWhHMWNEQUNmYlYtckNhWlQ1VDhoWm56Rks0azhybV8tN29hengwTUQ1aHhkSldjMXg0YWk5YQ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "IOM: Multi-Country Bundibugyo Ebola Virus Disease Outbreak - Situation Report No. 20 (21 - 27 September 2026) ReliefWeb"
-    },
-    {
-      "id": "news-44651c7706b63772",
-      "title": "Congo Ebola Outbreak Death Toll Passes 4000 As Treatment Center Burns - Dr. Axe",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRnlrWThLcnNXSl9LTV9VbVhKVzluMEhwMWFKaVdEYkpSU3haZnNUdEN2bjVWT2NwRVZWQlkzSXIxV2lHTEl3UnNwUF9qV1JlSC05cXFKYXE0eGJKdTBzWjRBY0tnejZDZWZSZHVFc0JGamR2ZVAzcWVLZUdGUFFzNDU4akFxNW9zUTU2MDlrQmhOQzlBVnRFRTdGZVZZN05YLWtobk5FczZWTDd4c3c?oc=5",
+      "id": "news-3baf18f9444ddae5",
+      "title": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOVZ1dGRSNVFmTV9NSmphN1JEcHdwNFJXV0dtT2IxRGV0RmNpeHg0SXFHU1lXY3liV255TnBYZlJ2R3lHTFJuX1M4SUR4UVYwbHNHbVgxSl94WlJYYnF1WjVDV3hWZUFjWTBQTjJfT3FISXROdzg3d1ZGWklMYXNreS1JVWMzOEhWVWNXdWdHOEtDS3Z2OHNQQTEyR1hSZnFmRGFkc0dkQXRjeWI3emFN0gG0AUFVX3lxTFBYVUxfMlNvdFhXdWxqUHJDaTgzNHJFNVYxLTFVd0tIN2c5ZkJPYk9GWS1MbnU2WnZhbjMtMTN4a0ZNTlZNR0x4d0Iya0JLVWJLNmtkNjl2SzJXMDdtVU16aFRMM0FpU1NJb3ZTOGpVMWxaMDFBc0drSlZ3RUxDUVotZ3lCSXJvZmI2S0p3Y3dLZVdmb1dCd21nTWxrRzJnVjI0Qkl5LUhGN3FwME1CYnQtQ01YYw?oc=5",
       "date": "2026-10-02",
       "source": "Google News — Ebola death toll",
-      "summary": "Congo Ebola Outbreak Death Toll Passes 4000 As Treatment Center Burns Dr. Axe"
-    },
-    {
-      "id": "news-a0e8afa70433be9e",
-      "title": "Ebola treatment centre burned down as Congo death toll passes 4,000 - chelmsfordcitynews.co.uk",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQMFAwVTlXamh6Tzl4dlYxWkRDNXFYZWVHeDdCaEcySWJiUWVIb3hQZTFJMG1MU1ktQ2NmS2R6NlNIeWREc2hvd3pZNWUyVm9xY3hpUy1NdVhzc2xubDk1LW5DTVRJb0tRcURzOUt4Z3VaRnVBN19YZzdMaVFFR1J0ZnNyT2FTRXg4TDVWdnBIb2stMlIzdUFSZWZiajhya25PZGUxSGd0bHAtUWxYZUNrSXBaUVBDMjgyTFBfRQ?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola treatment centre burned down as Congo death toll passes 4,000 chelmsfordcitynews.co.uk"
+      "summary": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 ABC News - Breaking News, Latest News and Videos"
     }
   ]
 }
