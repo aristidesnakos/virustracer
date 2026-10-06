@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-06T08:10:30.988Z",
+  "lastFetched": "2026-10-06T20:09:52.900Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -352,9 +352,151 @@
     "news-62d651df0226351a",
     "news-77516a8e5de97ea5",
     "news-af0cd305522bf651",
-    "who-391b9237ebea1488"
+    "who-391b9237ebea1488",
+    "news-c3d9b934d3216853",
+    "news-fba5399416f01a08",
+    "news-a295b06162936ac5",
+    "news-d25741ea9d2e8ee0",
+    "news-ed242ac1c70ed11d",
+    "news-84cd03a7f519d08a",
+    "news-6c46587fd2947857",
+    "news-4cde3817d53e7e7d",
+    "news-a18dbf73bab7fe44",
+    "news-18be9a206cf2a4b1",
+    "news-2c2a0d32189d494c",
+    "news-3a9b92708a6028ca",
+    "news-875d1dec0cecd933",
+    "news-d73439c1570bf608",
+    "news-48a231bc183a4754",
+    "news-92a851697e47ed15",
+    "news-a58a9af412faa8f5",
+    "news-1e20d22937b2ce82",
+    "news-2a8f2a13440e3418",
+    "news-14350319750c8ba3",
+    "news-d6993b40d43a61f4",
+    "news-789557be26a8c92d"
   ],
   "recentItems": [
+    {
+      "id": "news-c3d9b934d3216853",
+      "title": "Ebola Death Toll in DRC Tops 4,000; Trump USAID Cuts Fuel Outbreak - Democracy Now!",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IdFFGY2NYWl9CbnlyeWxQbVB3eWp2a1hJTXJINlFFY2ExT2hlSFppaktFTFpXZXRKRF9pM0k4NkcycXhFczNqNlRoSkpVQmQyNEVFeW9OSmJTdnhTV3JTaXdFNnVET05P?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola Death Toll in DRC Tops 4,000; Trump USAID Cuts Fuel Outbreak Democracy Now!"
+    },
+    {
+      "id": "news-fba5399416f01a08",
+      "title": "Kenya confirms first Ebola case as man dies in Nairobi after DRC return - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWU4tT0ladzQycEs3clVzTmFvWG9NOGZ2cHNvU01WVzB5Y3o0aG9kMkxvZVVjdUlaLWRxbHVZLWNXRGk2ZXUyQS1sVndJQlQ4MkNUdnlLTmoySGJLbW5IeXZwSVNHZ1N4QmVLTGRLRGRqLXV0QWpESHlWOURnSFdWdzRwNUFHWTZ3czBjQk05NU9pMVlTQlhUMENCeFhjTGNwNjVHY29XaFdLTnpMNHFhUlJJWWZWV0HSAbwBQVVfeXFMT1pvZDRrM2RuOFRPV3kzOWc5YnpZN3JvRURsZ3kwemZkTDZYeXNUOHJLbWlhYU4yZVkyRTdXWnkyNHZrX1F6RjNLY21tMVhyU0YxaWR2Y3lxejVVUzNGdU51eEhmamktT3VJdXY0cnFUaTRtX0V2Vl9GcHhVc3NCUnB1WWdzSHpWYmxUd01lTHhtaVE4UzRmXzJ3d3NYejdXX1pWT2lhVnBYQ3pPRnNMa0lxaE1lejBLOTB2Wmg?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Kenya confirms first Ebola case as man dies in Nairobi after DRC return Al Jazeera"
+    },
+    {
+      "id": "news-a295b06162936ac5",
+      "title": "Kenya reports first-ever Ebola death after patient returns from DR Congo - France 24",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNTlhQkpOX3FDNE1oWHVaR3JvT1NNb2IzU0kyU092bFNGZmRucHV4cGFJQXpPdnFlVVhNdmhORGk3SGtHZWtDYWE2N0tVTjRrMmQwMHpuRC1sYVpCNWdKTkE3RUc1Yk9uelU3UE92TENCNHNOOFRGYUdOMzlQdmNQRWlRYXc4cWdWZXBFYWg1VGFBY21nREFWNEoybkY3eEREQml2b1MyT3dFOUxUWnR3dlJIcnJsZjQ?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Kenya reports first-ever Ebola death after patient returns from DR Congo France 24"
+    },
+    {
+      "id": "news-d25741ea9d2e8ee0",
+      "title": "Kenya confirms first Ebola case after patient from DR of Congo dies in Nairobi - The Irish News",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVHdGWmFzaUVUdDZ2R3cyZHdpODI0d1lwaXVTSXlWcmRpeVZCbVF0Znh0ZGRadDlTNmlkSW1vX1p0WXFEZUxQOWNIclFxenFvbnpJZkRhWV9kb2xQellIODk2cmZHbzh0QVotV2RlWjFaVkRZRzNzdWJEY2x6aE8xYkFjZE9QLXh2ZjJkU1BNNV9lRmpocGFWcGxoSlR2XzdLdXpYaUtVVUxQU1FfMkpCQU1sNDhQVGxEWEZsRndtOGxnb0Z3cWpMV3RzenRyR081bjdpb2VVOV93Vk0?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Kenya confirms first Ebola case after patient from DR of Congo dies in Nairobi The Irish News"
+    },
+    {
+      "id": "news-ed242ac1c70ed11d",
+      "title": "Kenya Confirms First Ebola Case After Patient Dies In Nairobi - teleSUR English",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jUGMzS0xrQ2JId2xjSmRmQTQ2Q1lDX21aOF9lZW5zWVNVbllaMkpMLXR3SXVjNEJwaTRZTTFYRG5PeEhhRlRvZHFvRnZlU1oxQW5EaEo3Vk9JOGZkb29BeUZ5WGRpMzVtRDhyNlpwbHg?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of a recent announcement, Kenya reported its first confirmed Ebola case after a female patient traveling from Uganda died in Nairobi. The outbreak has spread from the initial epicenter in Bundibugyo, Uganda, with at least one additional death in Uganda and over 10 suspected cases under investigation."
+    },
+    {
+      "id": "news-84cd03a7f519d08a",
+      "title": "Kenya Reports First-Ever Ebola Death - Tempo.co English",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzWGxkWVVULVh3MHlWclZVVXJENTFyamw0YWljX3BDbV9CdHFGcElyMGJSbl9PR2JnWG1ZcXFSSUNKMzQzQ00zSllUMUJJOHhjeURZcTFIVkV4a1R2ektGM1g2VzNnOFQ3QXQ0eVVTbERra0tEaldxQQ?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Kenya Reports First-Ever Ebola Death Tempo.co English"
+    },
+    {
+      "id": "news-6c46587fd2947857",
+      "title": "Ebola Bundibugyo Virus: Kenya Confirms First Death In Case Imported From Congo - Health and Me",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMm1udERTTjJwSTdGMzkyVzdVcnRCUV9ldS1xLTkxczYxQlhXQUx6bmZxQTBkTmJwTG5DRGJHdG82Vjd4VlJEMkdZcnVnR1Fic25LTmtJd0p0R3N2UDV1TXNHU3lRREVvU05GeEw0ZTNxQ080c1RsNHVLeTdWY1BUWkNhbGF1bnpPckdPTHh5dTQxM01KTmRvRnlpendISGs5ZGwxdDNZdExPT0M4T2Q5UmIxcW1ZT1FwYUg5LWUxQ1ZjTm1DOUR6OTl3a1JkYzVn?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Kenya confirmed its first death from Ebola Bundibug"
+    },
+    {
+      "id": "news-3a9b92708a6028ca",
+      "title": "Kenya confirms first case of Ebola Bundibugyo virus - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFB5OWFmZDYwZEhCQ3lyczJMdGFTeUxXbjJWalFURXZqVDJ5VUZlWkotUldJZlE1UVJwUXBkaFFuSjU1U3lDTW5UUlNaa3NBUFNGaXBOQ0ZjZmZiTXc?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya confirms first case of Ebola Bundibugyo virus BBC"
+    },
+    {
+      "id": "news-875d1dec0cecd933",
+      "title": "Ebola in Kenya: Wetin we know as di East African kontri record im first death - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYVll6TUtCYXVTNUh3QzRPTEI0cWRBMGJodDdmZkZRRGpYdzNNN0RYVjVzX1BrVGUteUxIdFdLNFYxTFl1OF9tX0JUVjNGLXJyU3Vaa3k3X1BzcjV2bXfSAWNBVV95cUxQVnlMSjc4NGhPRWJYbWhnV2MyTk42QkxZdTdNN0ZEeExnWnlQU2FfcEU0SDVwblNLdkFmclZFTWIyMzRpU2FpWlNTb3FkWkVlY0RBV1Y5d3VqN3lqV0xQN0h0dUE?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola in Kenya: Wetin we know as di East African kontri record im first death BBC"
+    },
+    {
+      "id": "news-d73439c1570bf608",
+      "title": "Democratic Republic of the Congo, Kenya, Uganda | Ebola Bundibugyo virus disease outbreak and EU response - DG ECHO Daily Map | 06/10/2026 - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMigwJBVV95cUxOTnc3RFhKQ05FTGJtVHhOQ2I3dU9xVmdGZnVSNVl3amtjT2pkaXRYNmV4WHJ0LUZfSzNxVE81OFgwdl9VWmRySHFONUVveWpyUk1LNVNMQ2tIaDI1Zl9xTGJWN2kzTkhpaGR0aVljdTVRVHY1bm52b2xtd3dZNXRhX253SzJUVVVGQVM1RkplYUNTb3d3QjRXRjMxRmVIaXluM0hEMi01eHdXNm1CSjZ3ay1rUE1hcVdWWndTSVVNbXpPMU9YZHBHNWlIMWIyTmRNaWdQMTRtYjR3UzFHUTFJWk9KUjhhYzNwVnQyN1VxVlBFazllcEdwYm1waXdhTVNnYmVJ?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Democratic Republic of the Congo, Kenya, Uganda | Ebola Bundibugyo virus disease outbreak and EU response - DG ECHO Daily Map | 06/10/2026 ReliefWeb"
+    },
+    {
+      "id": "news-92a851697e47ed15",
+      "title": "Uganda launches first Phase I trial of Bundibugyo Ebola vaccine as global outbreak response intensifies - Digital Journal",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNNC1Vd3MyVlVPVzJlWXRwN2JiRDRsLWJPa3RRMnRjdlVGWTdyUXdiTGMwRnJ0cVdBcGR5VGxPM0hYWW1WLWlyUDVMaTlDdV9PUENvdGdrdW9zMURrZklMUFlPVVhNQ2kwenFya0k5ZWtCNzBUTkp5MWRqMFdzckFUVUwxeWg1dHNfeGY3Y3FzRElzWWw0bXJYek5yb0QwQXV4LVFvemxqbUVBOXVHNWY0Q0UzVmRvS1pJUUdKVzhsMU11WnczbHZvQ01yeEN3eWNDay1XemdYeHI1Q0U?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Uganda launches first Phase I trial of Bundibugyo Ebola vaccine as global outbreak response intensifies Digital Journal"
+    },
+    {
+      "id": "news-a58a9af412faa8f5",
+      "title": "Kenya confirms first imported Bundibugyo virus disease case; WHO supports control efforts - WHO | Regional Office for Africa",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQclhiZVNOZWVfX3dyc2ZIb0tzdzY4ekt5dXdpVW1qMFBfcGtFblpNUTRIcEY4czFTc2tNbUJ5QVplWHlkZ1JsSW1PYVZ3a2luTHNkTHdNSk1CbWhLWDNKUDI2UFF3X0I5ejNLQ01Fc3hCMjNSc1hRRUo0b3lUMmhEd1VrWWhYVDR3OGpZX0t2WXFoZ3k5ZGwyQjgxVTczVmhvY0wwUDdfbVVpMU1DQkFKN3g1QjgtUklKYnN6cHFNejJiMVZFbVBKUFpIdFFWcnc?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya"
+    },
+    {
+      "id": "news-1e20d22937b2ce82",
+      "title": "Ebola Outbreak Caused by a Bat-Linked Virus With No Approved Vaccine Passes 4,000 Deaths in Congo - Nature World News",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNeHN5aEFoRmRnRVdMeWItWkdBVml4amFVOXV4TVI1aHBTLXhZM3paU05ZalpYeUpobk9QUXliSUxEVnFXMHZTZVpWOXdmQnlTNDRST3ROSjdFY2JTVkJJT3lMc3puOGRmVzdDY3pHS0lPRjVfQW8xRXhzMWlNZDNFaHVGX0lPdzVkZDBJQ0Nxdzd2SlZ3SGFhU3JaWVFwcnFSWDdGRGlhcGxtUmlSVzZmSW9zZ0kwNF9MeFp5bWJiZEN5eGJ5LUYxcWNHMkVySGR6dUF4R0RzOUtpeXM?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola Outbreak Caused by a Bat-Linked Virus With No Approved Vaccine Passes 4,000 Deaths in Congo Nature World News"
+    },
+    {
+      "id": "news-2a8f2a13440e3418",
+      "title": "Kenya confirms first Ebola death as outbreak spreads - www.itij.com",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdk1FYjUwdUF6cWFVNWdueHhfaGZfVUF2cEg2Q1RaMGxuYi1oNWU0djI3LWpTZF9vZjdFTE5kR21mQ1FJcF9qdkc5LUxQUnhsUlJwaVRnYXE2T0N4WGhlbWRUQUJaUTNQWDUzZTExOGVEUlg5NWdKVFFNMkRoTEdJb1BNek5sNVhULXc?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya confirms first Ebola death as outbreak spreads www.itij.com"
+    },
+    {
+      "id": "news-14350319750c8ba3",
+      "title": "Africa CDC deploys emergency team to Kenya after first Bundibugyo Ebola case - Capital FM Africa",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWldOTnlXaExzT0xmTl9sc2JINVMxaXJmdi1tOU9JQVJReEZFa2tOV3BUS0xESVVsQXg1YlliQ09jZjFaamlsWmpmdUV6aWY5WDIzUllMdmxEZjJkRnR4NG9ISFlJNlIycU94b3N3LVdjZ0F3WVhTeXd6V2N0RFlCUjdDVlZLanVZUTlSdDBGdWVVTXFRd1FpSGNxMFNVNmVNd0N2Rg?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "As of March 19, 2026, Africa CDC has deployed an emergency team to Kenya following the country’s first confirmed case of Bundibugyo Ebola, linked to the ongoing outbreak in Uganda and the Democratic Republic of Congo. No cumulative death toll or total confirmed case count for the outbreak was provided in the article."
+    },
     {
       "id": "news-6055c7e28a8785ae",
       "title": "Can Obeldesivir Prevent Ebola Symptoms After Exposure? Drug Trial Moves Forward As Death Toll Crosses 4,000 - Health and Me",
@@ -394,126 +536,6 @@
       "date": "2026-10-03",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola outbreak eases in DR Congo though death toll tops 4,000 #worldnow Modern Ghana"
-    },
-    {
-      "id": "news-919c2425fb959d45",
-      "title": "Ebola infections declining in some areas of Congo, death toll surpasses 4,000 - Ekantipur",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQUkoyeGFLdU1ZOEJoTG04dUFEaDlGZTFhMmVvZmFaNGpDajQ0U2VlWG1WUG9wX3FIMjFWanlIdG9EWlVvZ0JtX0dTdG00VkFWUDczUVU1UEFFZlI4MDZwVmh6Zkh1cFdQbllsQWpVRmp0cEhhMUNaRHVEYXRIZ0xkMENBUFZRNVI3NlRNY0lLNkxKWjNJUlFvZlNKdFZPb0hjLXdVbkhIMFBQX0o1Z1BydG9KOW9aWTM4WFhabVNpUzk?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola infections declining in some areas of Congo, death toll surpasses 4,000 Ekantipur"
-    },
-    {
-      "id": "news-cd7f4ba7cdc60f6c",
-      "title": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak - record-eagle.com",
-      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxQc3hHV1V1OVEwejJBRE9ON2lTNlZQX1lwR3lkcW9yaWJXakxrQUp3Uk9OdGNFZ0xUNGZnTlktVU1jaS01bmQ0elNaQ241RzEtYlAweC1GUFVPYkJ6OV9vakhDLXZhTXA3dzlKWUhHenVnbjMzMU5Jck5kQ2tRUEp4bDdlVWZkVFhqQzBtZGY0bEl4Vy13bzYzTWYxWlVwX0ptajByVlZfTllnakI3YWcwUWU5Z3FLRzVKckxEenhpU2w4alVtczYzZ0I1cldSWUM0TUdIaFoydURfTjIxRk1lSHh4UXBLekVnaUgyRUF0SEI2cTdqZGh5Nnp3?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak record-eagle.com"
-    },
-    {
-      "id": "news-1fad5b5dcbb1c2d3",
-      "title": "Ebola treatment center burned down as death toll in Congo passes 4,000 - TelegraphHerald.com",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOUjN3bnpZM2tHY0tUSHg1Z3JQLWdmZmxMdkhNRExZQVpZOTAwR2w5SFZIMkR6bHFVeEZEQUZydW9OeHoyRzNhZkpPczAzRGtBVW9mbFJvWVdaTE5ZNGhBMUxsSVZjNGhWSFdteTl3UjZUcUdyQXZEMFJwMlFHWW8wb3ctZXVyUDRLcVJwWV9zR3h5eElXWjZOMHZGM1R4ZlU?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola treatment center burned down as death toll in Congo passes 4,000 TelegraphHerald.com"
-    },
-    {
-      "id": "news-5dcf530c9e0e8fb4",
-      "title": "Drug trial seeks to halt DR Congo’s deadliest Ebola outbreak - irishnews.com",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxONXV5WUhjbzZ0SDd6cEQwMTNGVFVJaU9fZlFPSzF4cXlTSGJVTGJCNFBvMzBlZ2IySnFEVXVaUWEyNy1PWlcxUjdGSWE4cjNvb2RLRE5HSm1EeEJjbnNPbm5MeFMzbVRrb3ZDaVdGMkN1VFU2Ql9WeVduNVRzekhKT1V0Z0lOYlBSdlRCb0JhdWpCWmRLbG5JVGwyZ1ZxZDFzMEN0ekVpTmp0cGNJZFVHUHl3V3o2aUVoUHV2WGhBa0FYQQ?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Drug trial seeks to halt DR Congo’s deadliest Ebola outbreak irishnews.com"
-    },
-    {
-      "id": "news-6621f0dfb6d6228d",
-      "title": "DR Congo Begins Trial of Drug to Prevent Ebola - Voice of Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1QTEVEak4wVURCZl8yUDZkdTdCWElLWFd6QzJPQmFieUthbkZLS2c3T1c0dWh0R1lMQ1Z4WW8yS2NDbEw4YmZPMU9DbFFpWWFtTjB2MG1NakRha1VfYzFTWVVzZnJfcF95WU1RakhQV1JIVzAw?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo Begins Trial of Drug to Prevent Ebola Voice of Nigeria"
-    },
-    {
-      "id": "news-ecd240fb9225be99",
-      "title": "Ebola drug trial launches in Congo as outbreak kills over 4,000 - Daily Sabah",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ0hxZmtBOF9NbVYtbzJINThVNmVBdEM5VDYxbHRPUVZLRnNUcU5UT2syckpGZ196bzg1eUlXYVcwX0w4V0phTWViR092T1ptaV9HbExfU0JZRmZFQWlaSzktb003NzZmdER5SnFQbnpNajF2dXBqanB5NTFlemh4NUpNc1IzQ283UWNYZU8zZTYxNTMzNFBWMFdqYnlDNzVJaGRBVg?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "An Ebola outbreak in the Democratic Republic of Congo and Uganda has killed over 4,000 people, and a clinical trial of a new Ebola drug has launched in Congo."
-    },
-    {
-      "id": "news-6eb8f0829e6e15fb",
-      "title": "Ebola death toll in DRC passes 4,000, as health workers are fighting to get paid - Le Monde.fr",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSUFVM3VUMzhwdGhDeUxaSk5WMDNRYjdaeE0wcC1WaWYzaG5LTjJZMUxoS21QTXMyUUFwTUxJTXFnZVZCNEd3SmlVVjNZNmpTVGZEQ2dsTmh1Qi1XZ1BobjVqcDEwNHZLWXQxMzQxWm85NUp4R1JPU0tmdENQdGFLSXlPeWt6RjI5RFZXUmlJVnRleEk3Q0d0MEFrY0N2WkpwZjZmc09GZEdoNHM2dmlqaDhKdWJiaVJTT1NRQWZYZXhqZlFxSERsS0NhWVpVNFpsTHcyU2d2cjE0LUN3ZUNQVEZvV0s0elVxQlh4b1ZB?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola death toll in DRC passes 4,000, as health workers are fighting to get paid Le Monde.fr"
-    },
-    {
-      "id": "news-ea8b2a678cf555a4",
-      "title": "DR Congo says Ebola outbreak eases in areas despite death toll topping 4,000 - China Daily Global Edition",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxQS0VOdU9pa2d1TExRejJnV0NVMExhMVR0ZkliNW1fakgxdnZZbGFpM3Q3eTNsOGFFdHZwTUV4OXpqdWtGdmZCcTIzMFJOVjllVG1vMk1MVFhJTlNqdFVoRWlYbGlVTzdnZ2NmOTdZTHJCdjVnN0p0MUJxYVBLcllUMzhR?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "The cumulative death toll in the 2026 Bundibugyo Ebola outbreak has topped 4,000, according to DR Congo, which says the outbreak is easing in some areas despite the high toll. No as-of date was provided."
-    },
-    {
-      "id": "news-a38885350160e8fa",
-      "title": "DR Congo records 8,300 confirmed Ebola cases, over 4,000 deaths - 巴士的報",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeXI0dy0tMmlSMWZsTG5xSnRzV2JMcmk3VERuSGtrTmhPeE9PUnpyWTQ1NmxyOGJkQmZBNTF5cmVFNXhCQjZ0c0NjOEJOblJ2WDN3bFN6QjFiQW8wNlRTOFNncXhzeU5zMHhyYXNMUjFjREJVcW96c3RIZVprbGZzQVp4RGhSX3Z0aF9MSy1MZWF3elROckpmV2Y0WjQxRjUxZkxUaGlqN0Z3ZV9CbGVXMWlB?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo records 8,300 confirmed Ebola cases, over 4,000 deaths 巴士的報"
-    },
-    {
-      "id": "news-02c69390c1d95ab8",
-      "title": "Ebola treatment center burns as death toll passes 4K - timesdaily.com",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxNSzM4V3M5d01HM2RzQjcyMUdQVVpqM0pETUcxb1VITTRHYmhNX0lmN0hiQlJlOF9NNkNLYVkweXg0cDdGQmRHRGNaU2JRZkxPRW5YeDJzUmJDNEFDVnE1RmlFTDNmZXBiT3piRHhRaDJsdnlYU2pKUGJQOTY1MnRGdG4wc0t1YklKZGFCV25KYUpzTTl2MnJDa1RpR0stcFBtQTJoY0dRWVZPRXRCTkw3Y0REQnVCQ2ZyeEg1cDRrQmdQazRVUjZxTVRsYUYtenhQaUY1U3psRmU?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola treatment center burns as death toll passes 4K timesdaily.com"
-    },
-    {
-      "id": "news-6c65020c357800eb",
-      "title": "Ebola Outbreak in Congo Shows Signs of Control in Some Areas, Deaths Exceed 4,000 - Ratopati",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNHRDQmRLdHZhQVZOQ2RhbEZkRlFaNDhja0xzenJ5RmhDZUJ5bnF5SkNtcDZvTFA5Y0w5TXdDODVDQ1N6cTJwdDdDeHBwOVNWTG92NDZvWEJUMTNzZk9hQmt1aWlidHdJeVBWSEVvRDJBV1RDNm5RNG9ESmpyeEJyQmM4LXpvUF9BNnFxR01xeHQtNjRtbmpMQWwybGtTWmw4eHhJdkVzYXcwMjNwMkFsVg?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola Outbreak in Congo Shows Signs of Control in Some Areas, Deaths Exceed 4,000 Ratopati"
-    },
-    {
-      "id": "news-c22133542fcf1f5b",
-      "title": "DR Congo says Ebola outbreak eases in areas; death toll tops 4,000 - Tripura Chronicle",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPV3Z5aEJYU01SU0V2ai0tTUhZQWNvWXlYR0ZrVFdxSDJNSjM3bFdxSFJHdXJLRWd0RUVNSmFhd0hZRnNPa1ljbC14d2NFR09RMHdzaWxXRXNROThLLWE5YUFjRHd4NTM0bTl0bmc4TFFSeVB5VzB6NVF1dUlVMFlSNlRnZmZudzd6R09pckxYOTdjV04yeGF4ZW1oSXZSSWZjd3FSNlQxcw?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo says Ebola outbreak eases in areas; death toll tops 4,000 Tripura Chronicle"
-    },
-    {
-      "id": "news-999bfde4c0f92ac5",
-      "title": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak - newsday.com",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNckEtMERtX3d5N1RhZ3Zia3g4a2pVUmJnUHFiYzV0NDBxbExxMmdDLVhOQkw5aUxyMjV3cUhnV21FTjVZZzljTGl0NFNvTkQ2WFJsV0xDMFlGQUxyQ0NyQ2xNZmNVZlRIc19fUlJYa29FUkdzWWZYQVZpN2h1MTBZdzVYQkFlaFNhTVBRcFNUYTZNQQ?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Inside the study for a remedy to fight Congo's deadliest Ebola outbreak newsday.com"
-    },
-    {
-      "id": "news-2976893a43c01882",
-      "title": "​DR Congo Ebola outbreak deaths surpass 4,000: 5 reasons the deadliest outbreak is still not contained​ - The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPUndsYVdzOG84SUsyU043blJ6Vk1GUmtwTDFNR3JiQlIxX3pZS2VhS1FvTnJnSEh5N3dKNF9VSWlLNGU5OWhFSFFrZkU0SUQ4ZFVOWUhEOS14RjRrN0Zqb0VYd3pTN3BFRW44ZmZScTN3dFZRaHdUTHg2YXRQaE1fTTcxZ1ZTcEp6aDl2RGFFaDFiYlZ4Zm5fRFZseTdGanNwV0R4S2t0ZE5uWTlwal9JQzRGX0VRaEtrU2lReXM5WVlpLWpuZkZjMlhJZmJ0R056ZU15aDZ4ZkhxQTI3Rm4tVTh0dTZQaHJURlc0UW1UWnRFZG9WTzJmREM0QnMwRGNKTm82dHMwRdIBjwJBVV95cUxPa1NOeGs2T3lZR2ZFUnVfb3B3RHpZeUFRcmpPZUtBRFdCd3RFeGVkRnc4cjFrTnplZUtIZ216OFFVdk9lQ3FBdDN5UFdnMDZjbGdrUGJsckVnMjRhRm1OU0hFTWgzY1dlRGRnclJENDBXRUN2T3VEOUhDQnVPMGwzaWo0S016Zno1dXUxeVhzM2lEazFfZjlfekpNVWpacURFbmUzbG5oNGs5ajRFVDhSUWNTOEFlM3Z2NjZibTlEenh4X2xFV190ZXJmWXRPVXdiMENnWThhZzZ0R3pTY3J5eWlTSUtyWkxiQUE0UEFhc1puMzZqS0hSaVRCMmVob3JYWDhKak93bl9nWkNkVk5N?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "​DR Congo Ebola outbreak deaths surpass 4,000: 5 reasons the deadliest outbreak is still not contained​ The Times of India"
-    },
-    {
-      "id": "news-3baf18f9444ddae5",
-      "title": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOVZ1dGRSNVFmTV9NSmphN1JEcHdwNFJXV0dtT2IxRGV0RmNpeHg0SXFHU1lXY3liV255TnBYZlJ2R3lHTFJuX1M4SUR4UVYwbHNHbVgxSl94WlJYYnF1WjVDV3hWZUFjWTBQTjJfT3FISXROdzg3d1ZGWklMYXNreS1JVWMzOEhWVWNXdWdHOEtDS3Z2OHNQQTEyR1hSZnFmRGFkc0dkQXRjeWI3emFN0gG0AUFVX3lxTFBYVUxfMlNvdFhXdWxqUHJDaTgzNHJFNVYxLTFVd0tIN2c5ZkJPYk9GWS1MbnU2WnZhbjMtMTN4a0ZNTlZNR0x4d0Iya0JLVWJLNmtkNjl2SzJXMDdtVU16aFRMM0FpU1NJb3ZTOGpVMWxaMDFBc0drSlZ3RUxDUVotZ3lCSXJvZmI2S0p3Y3dLZVdmb1dCd21nTWxrRzJnVjI0Qkl5LUhGN3FwME1CYnQtQ01YYw?oc=5",
-      "date": "2026-10-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "An Ebola treatment center was burned down as the death toll in Congo passes 4,000 ABC News - Breaking News, Latest News and Videos"
     }
   ]
 }
