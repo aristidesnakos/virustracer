@@ -3,7 +3,7 @@ import Link from "next/link";
 import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P, ProseTable } from "@/components/StaticPage";
 import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
 import { ASSUMPTIONS, WEEKLY_MIN_READINGS_IN_TWO_WEEKS } from "@/lib/metrics";
-import { SANITY_CHECKS, UPDATE_TIMES_UTC, WEST_NILE_UPDATE_TIMES_UTC } from "@/lib/methodology";
+import { SANITY_CHECKS, UPDATE_TIMES_UTC } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
 import { TREND_STATEMENT } from "@/lib/trend-summary";
 
@@ -100,7 +100,7 @@ export default function MethodologyPage() {
             ],
             [
               "Updated",
-              `Checked twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC; West Nile virus in Greece at ${WEST_NILE_UPDATE_TIMES_UTC.join(" and ")} UTC). A weekly report is kept once it is published.`,
+              `Checked twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC; West Nile virus in Greece twice a day on its own schedule). A weekly report is kept once it is published.`,
               "When we enter a report. It does not update on its own.",
             ],
             ["Card shows", "When the source was last checked.", "The date the figures were last verified."],

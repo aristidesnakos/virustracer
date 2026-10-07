@@ -9,11 +9,12 @@ name: Update West Nile Greece
 # edits src/data/outbreaks/*.ts) and then disables itself. Re-enable it with
 # `gh workflow enable update-west-nile.yml` if reports resume.
 
+# Not scheduled: EODY answers GitHub's runners with HTTP 403 (it blocks their datacenter
+# addresses; the same request from a home connection gets 200). The scheduled reader runs
+# on the maintainer's Mac instead (scripts/mac/west-nile-updater.sh, a launchd job). Run
+# this by hand (`gh workflow run update-west-nile.yml`) to see whether EODY still blocks
+# GitHub; if a run reads the feed, restore a schedule such as cron "30 5,17 * * *".
 on:
-  schedule:
-    # Twice daily, between the main data runs. Reports usually appear on Wednesday or
-    # Thursday evening, Athens time.
-    - cron: "30 5,17 * * *"
   workflow_dispatch:
 
 # Least privilege: nothing at the top level; each job asks for what it needs. The job that
