@@ -56,7 +56,8 @@ async function deliver(p: Extract<InterestPayload, { kind: "submit" }>): Promise
         method: "POST",
         headers: { "Content-Type": "application/json" },
         // `text` for Slack, `content` for Discord.
-        body: JSON.stringify({ text, content: text, event: "alert-interest", ...p }),
+        // Discord parses @everyone/@here anywhere in `content` unless told not to.
+        body: JSON.stringify({ text, content: text, allowed_mentions: { parse: [] }, event: "alert-interest", ...p }),
         signal: AbortSignal.timeout(8000),
       }).then((r) => {
         if (!r.ok) throw new Error(`Webhook responded ${r.status}`);

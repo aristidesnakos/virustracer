@@ -19,9 +19,14 @@ export type ParseResult =
   | { ok: true; drop: true }
   | { ok: false; error: string };
 
-// Deliberately simple: one @, something either side, a dot in the domain, no spaces.
+// Deliberately simple: one @, a dot in the domain, and only characters a real
+// address uses. The address goes into Resend's `reply_to` and a chat webhook, so
+// quotes, angle brackets, commas, colons, semicolons, backslashes, whitespace and
+// control characters are refused: no display names, address lists or `<!channel>`.
+const EMAIL_PATTERN = /^[\p{L}\p{N}.!#$%&'*+/=?^_`{|}~-]+@[\p{L}\p{N}-]+(?:\.[\p{L}\p{N}-]+)+$/u;
+
 export function isPlausibleEmail(value: string): boolean {
-  return value.length <= MAX_EMAIL_LENGTH && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(value);
+  return value.length <= MAX_EMAIL_LENGTH && EMAIL_PATTERN.test(value);
 }
 
 // A same-site path such as "/outbreaks/measles-bangladesh-2026"; anything else is dropped.

@@ -1,6 +1,6 @@
 # Status and next steps
 
-Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 2026-10-04 after the repo cleanup and the alerts widget launch (da28422). Read this first when resuming. Architecture lives in `CLAUDE.md`; the long-range plan and its reasoning in `docs/multi-outbreak-plan.md` (sections 2, 4, 6, 8).
+Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 2026-10-04 after the repo cleanup and the alerts widget launch (da28422); security section added 2026-10-07 after the API rate limit. Read this first when resuming. Architecture lives in `CLAUDE.md`; the long-range plan and its reasoning in `docs/multi-outbreak-plan.md` (sections 2, 4, 6, 8).
 
 ## Where we stand
 
@@ -49,6 +49,21 @@ Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 
 - Cleaned up 2026-10-04: one checkout only (`~/Documents/virustracer`, on `main`, level with `origin/main`). The `virustracer-brand` and `virustracer-phase4` worktrees and every stale local branch are gone. `feature/alerts-widget` is merged; its remote branch, `origin/design/journal-redesign` (superseded) and `origin/copilot/use-map-libre-or-leaflet` (already merged) can be deleted on GitHub.
 - `.claude/dev-feedback.json` is tracked and shows as modified whenever the dev feedback widget is used; `.claude/dev-feedback/` (screenshots) is ignored. The repo is public.
 - The measles page, card and map were checked only by Vitest render tests, not visually. Open `/` and `/outbreaks/measles-bangladesh-2026` once and look: map with no bubbles, stat strip with "Children vaccinated", chart gap, empty trend panel, the longer "Deaths among confirmed cases" label on the card.
+
+## Security
+
+**Done (2026-10-03/07)**
+- Vercel WAF custom rule "Rate limit public API": path starts with `/api/v1/`, 60 requests per 60 s per IP, over the limit answers 429 (plain text body, not JSON). Published and tested: 90 rapid requests gave 60 x 200 and 30 x 429. Counters are per region, so a spread-out client can briefly exceed 60. The same numbers are `API_RATE_LIMIT` in `src/lib/api.ts` and are quoted in the "Fair use" section of `/data`; change the rule and the constant together (`npx --yes vercel@latest firewall rules edit "Rate limit public API" ...`, then `firewall publish --yes`; the project is linked in `.vercel/`, git-ignored).
+- `/api/v1/*` responses are CDN-cached (`s-maxage=900`), CORS-open, GET-only; `/api/dev-feedback` refuses to run when `NODE_ENV=production`.
+- Vercel firewall otherwise: Bot Protection Off, AI Bots Allow, BotID Basic, no other custom rules (checked 2026-10-03).
+
+**Open, in this order**
+1. `/api/alert-interest` (POST, sends email through Resend) is outside the `/api/v1/` rule; its app limiter (`createRateLimiter`, 4 sign-ups per 10 min) is in memory per instance. 2026-10-07: WAF rule "Rate limit alert sign-ups" (path equals `/api/alert-interest`, POST, 10 per 600 s per IP, then 429) published and tested: 12 rapid POSTs gave 10 x 400 (empty body, no email sent) and 2 x 429. It is 10, not 5, because the widget's `kind: "open"` ping POSTs to the same path once per page load. `isPlausibleEmail` now refuses quotes, angle brackets, commas, colons, semicolons, backslashes, whitespace and control characters (no display names, address lists or Slack `<!channel>` in `reply_to`/webhook text); the webhook body sends `allowed_mentions: { parse: [] }` so Discord ignores `@everyone`. The Resend `html` was already escaped. Done apart from committing the code change.
+2. Security headers: the live site sends only `strict-transport-security`. Add `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `Permissions-Policy`, and clickjacking protection (`frame-ancestors` or `X-Frame-Options`) in `next.config.ts`. A CSP needs to allow MapLibre and the CARTO tiles, inline JSON-LD and Next's inline scripts: ship it as `Content-Security-Policy-Report-Only` first.
+3. Untrusted text: feed titles and URLs from WHO/Google News go into `live.json` (and through OpenRouter) and are rendered on the site. Check `FeedUpdates.tsx` for non-http(s) hrefs (`javascript:`), `rel="noopener noreferrer"`, and that nothing uses `dangerouslySetInnerHTML` on that text. A prompt-injected summary or country candidate must stay "Unverified" and never touch curated data.
+4. Dependencies and secrets (repo is public): `npm audit --omit=dev`, turn on Dependabot alerts and secret scanning, scan git history for keys, confirm no `NEXT_PUBLIC_` variable holds a secret.
+5. GitHub Actions: `update-data.yml` has workflow-level `contents: write`, and uses `actions/checkout@v4` and `actions/setup-node@v4` by tag. Pin by commit SHA, scope write permission to the commit step's job, and check branch protection on `main` (the bot pushes there).
+6. Cost guards: Vercel usage/spend alert; consider turning Bot Protection on (log first, then enforce); make the 429 JSON if clients complain (a WAF rule cannot set a body, so this needs an app-level limiter).
 
 ## Next: Phase 5, the track record
 

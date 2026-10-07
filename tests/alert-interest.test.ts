@@ -51,6 +51,17 @@ describe("parseInterest", () => {
 describe("isPlausibleEmail", () => {
   it.each(["a@b.co", "first.last+tag@sub.example.org"])("accepts %s", (e) => expect(isPlausibleEmail(e)).toBe(true));
   it.each(["a@b", "a b@c.org", "@b.org", "a@@b.org", ""])("rejects %j", (e) => expect(isPlausibleEmail(e)).toBe(false));
+  it.each([
+    "<!channel>a@b.org",
+    "a@b.org>",
+    '"x"@b.org',
+    "a,b@c.org",
+    "a;b@c.org",
+    "a@b.org\r\nBcc: c@d.org",
+    "a\u0000@b.org",
+    "a@b.org.",
+  ])("rejects markup, lists and control characters: %j", (e) => expect(isPlausibleEmail(e)).toBe(false));
+  it("accepts non-ASCII letters", () => expect(isPlausibleEmail("josé@exemplo.pt")).toBe(true));
 });
 
 describe("describeSubmission", () => {
