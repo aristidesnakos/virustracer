@@ -65,13 +65,18 @@ export interface CaseLocation {
 export type OutbreakStatus = "active" | "waning" | "over" | "watch";
 
 /**
- * Where an outbreak's headline figures come from. `wikipedia-infobox` is read by
- * the daily scripts (automation tier "auto"); `manual` is curated by hand and
- * must show its "last verified" date rather than look live.
+ * Where an outbreak's headline figures come from. `wikipedia-infobox` and
+ * `official-report` are read by the scheduled scripts (automation tier "auto"):
+ * the first from a Wikipedia infobox, the second from an official weekly report
+ * (e.g. EODY's West Nile virus report). `manual` is curated by hand and must show
+ * its "last verified" date rather than look live.
  */
 export interface OutbreakSource {
-  kind: "wikipedia-infobox" | "manual";
-  /** Wikipedia article title (underscored) for `wikipedia-infobox`; a free-text pointer otherwise. */
+  kind: "wikipedia-infobox" | "official-report" | "manual";
+  /**
+   * Wikipedia article title (underscored) for `wikipedia-infobox`; the report's name
+   * and publisher for `official-report`; a free-text pointer otherwise.
+   */
   ref: string;
 }
 

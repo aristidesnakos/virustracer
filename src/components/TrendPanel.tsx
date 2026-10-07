@@ -91,7 +91,16 @@ function Stat({ label, value, note }: { label: string; value: string; note?: str
   );
 }
 
-export default function TrendPanel({ metrics, headingId }: { metrics: Metrics; headingId: string }) {
+export default function TrendPanel({
+  metrics,
+  headingId,
+  rtShortNote = "no verified serial interval for this disease",
+}: {
+  metrics: Metrics;
+  headingId: string;
+  /** Why Rt is not shown, when the disease has no serial interval (`PathogenAssumptions.rtShortNote`). */
+  rtShortNote?: string;
+}) {
   const summary = describeTrend(metrics);
   const ready = metrics.status === "ok" && metrics.incidence && metrics.windowEnd;
 
@@ -124,7 +133,7 @@ export default function TrendPanel({ metrics, headingId }: { metrics: Metrics; h
                 metrics.rt
                   ? `Likely range ${metrics.rt.low.toFixed(2)}–${metrics.rt.high.toFixed(2)}. Below 1 means shrinking.`
                   : metrics.assumptions.serialIntervalMeanDays === null
-                    ? "Not shown: no verified serial interval for this disease."
+                    ? `Not shown: ${rtShortNote}.`
                     : "Needs new cases in both weeks."
               }
             />

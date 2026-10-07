@@ -31,6 +31,13 @@ export const ASSUMPTIONS = {
 } as const;
 
 /**
+ * `minReadingsInTwoWeeks` for a source published once a week (an official weekly
+ * report): two reports fall in any 14 days, and the days between them are filled in a
+ * straight line, as for any gap.
+ */
+export const WEEKLY_MIN_READINGS_IN_TWO_WEEKS = 2;
+
+/**
  * Assumptions that belong to one pathogen, declared on each outbreak definition
  * (`OutbreakDefinition.metrics`). A value that has no verified source is `null`,
  * and the indicator that needs it is then left out rather than guessed.
@@ -45,10 +52,21 @@ export interface PathogenAssumptions {
   /** Why Rt is not reported, shown on /data. Used when `serialInterval` is null. */
   rtNote?: string;
   /**
+   * The same reason in a few words, for the dashboard's Rt tile ("Not shown: ...").
+   * Defaults to "no verified serial interval for this disease".
+   */
+  rtShortNote?: string;
+  /**
    * Typical delay from case confirmation to death, for the delay-adjusted fatality
    * ratio. `null` leaves that ratio out.
    */
   caseToDeathDays: number | null;
+  /**
+   * How often the source publishes a reading. "daily" (the default) is a source checked
+   * every day, such as a Wikipedia infobox; "weekly" is an official weekly report, which
+   * needs only WEEKLY_MIN_READINGS_IN_TWO_WEEKS readings in the last 14 days.
+   */
+  reportingCadence?: "daily" | "weekly";
 }
 
 /**
@@ -71,6 +89,7 @@ export function applyAssumptions(pathogen: PathogenAssumptions): AppliedAssumpti
   const si = pathogen.serialInterval;
   return {
     ...ASSUMPTIONS,
+    ...(pathogen.reportingCadence === "weekly" ? { minReadingsInTwoWeeks: WEEKLY_MIN_READINGS_IN_TWO_WEEKS } : {}),
     serialIntervalMeanDays: si?.meanDays ?? null,
     serialIntervalSdDays: si?.sdDays ?? null,
     serialIntervalSource: si?.source ?? null,
@@ -245,9 +264,9 @@ export function computeMetrics(points: readonly MetricsPoint[], pathogen: Pathog
   if (grid[0].day > last.day - 2 * W) {
     return insufficient(`Need at least ${2 * W} days of history; have ${last.day - grid[0].day}.`, asOf, assumptions);
   }
-  if (readingsInTwoWeeks < ASSUMPTIONS.minReadingsInTwoWeeks) {
+  if (readingsInTwoWeeks < assumptions.minReadingsInTwoWeeks) {
     return insufficient(
-      `Need at least ${ASSUMPTIONS.minReadingsInTwoWeeks} dated readings in the last 14 days; have ${readingsInTwoWeeks}.`,
+      `Need at least ${assumptions.minReadingsInTwoWeeks} dated readings in the last 14 days; have ${readingsInTwoWeeks}.`,
       asOf,
       assumptions,
     );

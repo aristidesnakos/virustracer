@@ -21,6 +21,7 @@
  * @property {number} [revid]
  * @property {string} [rawPath]    Repo-relative path of the archived infobox wikitext (data/raw/infobox/<revid>.txt)
  * @property {string} [rawSha256]  SHA-256 (hex) of that file's bytes
+ * @property {string} [sourceSha256] SHA-256 (hex) of the source document itself (an official report's PDF)
  */
 
 /**
@@ -34,6 +35,14 @@ export const MAX_SNAPSHOTS = 400;
 export const MAX_JUMP_RATIO = 0.25;
 /** ...unless the previous snapshot is older than this many days. */
 export const STALE_PREV_DAYS = 7;
+/**
+ * The same threshold for a source published once a week (an official weekly report).
+ * Its readings are about 7 days apart (6 when the report day moves from Thursday back
+ * to Wednesday), and a week of early-season growth can exceed the jump limit, so the
+ * jump check applies only to reports at most 3 days apart (an extra mid-week report).
+ * Such a report is instead cross-checked against itself (text against its table).
+ */
+export const WEEKLY_STALE_PREV_DAYS = 3;
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
@@ -224,9 +233,10 @@ const isCount = (n) => typeof n === "number" && Number.isInteger(n) && n >= 0;
  * @param {Snapshot} next
  * @param {Snapshot|null|undefined} prev
  * @param {string} todayISO  YYYY-MM-DD or full ISO timestamp
+ * @param {{stalePrevDays?: number}} [opts]  `WEEKLY_STALE_PREV_DAYS` for a weekly source
  * @returns {{ok: boolean, reason?: string}}
  */
-export function validateSnapshot(next, prev, todayISO) {
+export function validateSnapshot(next, prev, todayISO, { stalePrevDays = STALE_PREV_DAYS } = {}) {
   if (!next || typeof next !== "object") return { ok: false, reason: "no snapshot" };
   if (!isCount(next.confirmed)) return { ok: false, reason: `confirmed is not a non-negative integer (${next.confirmed})` };
   if (!isCount(next.deaths)) return { ok: false, reason: `deaths is not a non-negative integer (${next.deaths})` };
@@ -249,13 +259,13 @@ export function validateSnapshot(next, prev, todayISO) {
   }
 
   const ageDays = (Date.parse(todayISO.slice(0, 10)) - Date.parse(prev.date)) / MS_PER_DAY;
-  const prevIsStale = Number.isFinite(ageDays) && ageDays > STALE_PREV_DAYS;
+  const prevIsStale = Number.isFinite(ageDays) && ageDays > stalePrevDays;
   if (!prevIsStale) {
     for (const k of /** @type {const} */ (["confirmed", "deaths"])) {
       if (prev[k] > 0 && next[k] > prev[k] * (1 + MAX_JUMP_RATIO)) {
         return {
           ok: false,
-          reason: `${k} jumped ${prev[k]} -> ${next[k]} (>${MAX_JUMP_RATIO * 100}%) within ${STALE_PREV_DAYS} days of the last snapshot (${prev.date})`,
+          reason: `${k} jumped ${prev[k]} -> ${next[k]} (>${MAX_JUMP_RATIO * 100}%) within ${stalePrevDays} days of the last snapshot (${prev.date})`,
         };
       }
     }
@@ -282,16 +292,19 @@ function sameValues(a, b) {
  *  - identical values to the latest snapshot -> nothing else changes
  *  - same date as the latest snapshot -> replace it
  *  - otherwise append; snapshots stay sorted by date and capped.
+ * With `appendUnchanged` (a weekly report), a reading for a new date is stored even when
+ * its values equal the latest: "no new cases in the week to <date>" is itself a reading.
  * @param {TollStore} store
  * @param {Snapshot} snap
  * @param {string} nowISO
+ * @param {{appendUnchanged?: boolean}} [opts]
  * @returns {TollStore}
  */
-export function applySnapshot(store, snap, nowISO) {
+export function applySnapshot(store, snap, nowISO, { appendUnchanged = false } = {}) {
   const existing = [...(store?.snapshots ?? [])].sort((a, b) => a.date.localeCompare(b.date));
   const last = existing[existing.length - 1];
 
-  if (last && sameValues(last, snap)) {
+  if (last && sameValues(last, snap) && !(appendUnchanged && last.date !== snap.date)) {
     return { ...store, lastChecked: nowISO, snapshots: existing };
   }
 

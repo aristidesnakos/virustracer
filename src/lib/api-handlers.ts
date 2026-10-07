@@ -35,6 +35,9 @@ function manualNote(outbreak: OutbreakDefinition): { note?: string } {
     : {};
 }
 
+/** File-name stem for a CSV download: the disease, lowercased, spaces as hyphens ("west-nile-virus"). */
+const csvName = (outbreak: OutbreakDefinition): string => outbreak.disease.toLowerCase().replace(/\s+/g, "-");
+
 /** Look up `slug` and run `handler`, or answer 404 JSON when no such outbreak is registered. */
 export function forOutbreak(slug: string, handler: (outbreak: OutbreakDefinition) => Response): Response {
   const outbreak = getOutbreak(slug);
@@ -51,7 +54,7 @@ export function tollResponse(outbreak: OutbreakDefinition, request: Request): Re
   const toll = getTollData(outbreak.slug);
   const snapshots = selectSnapshots(toll.snapshots, query);
 
-  if (query.format === "csv") return csvResponse(tollToCsv(snapshots), `${outbreak.disease.toLowerCase()}-toll.csv`);
+  if (query.format === "csv") return csvResponse(tollToCsv(snapshots), `${csvName(outbreak)}-toll.csv`);
 
   const latest = toll.snapshots.length
     ? [...toll.snapshots].sort((a, b) => a.date.localeCompare(b.date)).at(-1)!
@@ -60,7 +63,10 @@ export function tollResponse(outbreak: OutbreakDefinition, request: Request): Re
     meta: {
       slug: outbreak.slug,
       outbreak: outbreak.title,
-      description: "Cumulative reported figures, one reading per UTC day.",
+      description:
+        outbreak.metrics.reportingCadence === "weekly"
+          ? "Cumulative reported figures, one reading per weekly report, dated by the day its totals run to."
+          : "Cumulative reported figures, one reading per UTC day.",
       lastChecked: toll.lastChecked || null,
       count: snapshots.length,
       ...manualNote(outbreak),
@@ -86,7 +92,7 @@ export function metricsResponse(outbreak: OutbreakDefinition, request: Request):
   const toll = getTollData(outbreak.slug);
   const metrics = computeMetrics(toll.snapshots, outbreak.metrics);
 
-  if (format === "csv") return csvResponse(dailyToCsv(metrics.daily), `${outbreak.disease.toLowerCase()}-daily.csv`);
+  if (format === "csv") return csvResponse(dailyToCsv(metrics.daily), `${csvName(outbreak)}-daily.csv`);
 
   const { daily, ...summary } = metrics;
   return jsonResponse({

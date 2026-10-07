@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import { getDefaultOutbreak, listOutbreaks } from "@/data/outbreaks";
 import { API_CACHE_SECONDS, API_RATE_LIMIT, MAX_LIMIT, attributionFor } from "@/lib/api";
-import { ASSUMPTIONS } from "@/lib/metrics";
+import { ASSUMPTIONS, WEEKLY_MIN_READINGS_IN_TWO_WEEKS } from "@/lib/metrics";
 import { CORRECTIONS_URL } from "@/lib/methodology";
 import { OUTBREAKS_API_PATH, legacyApiPath, outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
 import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
@@ -28,7 +28,7 @@ export const metadata: Metadata = {
     images: ["/opengraph-image"],
   },
   description:
-    "Free, keyless JSON and CSV access to the daily outbreak figures for every outbreak tracked, with the source revision for every reading, plus how the growth and reproduction estimates are calculated.",
+    "Free, keyless JSON and CSV access to the outbreak figures for every outbreak tracked, with the source revision or report for every reading, plus how the growth and reproduction estimates are calculated.",
 };
 
 const slugParam = "<slug>";
@@ -37,7 +37,7 @@ const slugParam = "<slug>";
 const OUTBREAK_ENDPOINTS = [
   {
     path: outbreakApiPath(slugParam, "toll"),
-    what: "One row per day of cumulative confirmed, suspected, deaths and recovered, each linked to the exact Wikipedia revision it was read from.",
+    what: "One row per day (per weekly report, for an outbreak read from one) of cumulative confirmed, suspected, deaths and recovered, each linked to the exact Wikipedia revision or report it was read from.",
     params: [
       ["from, to", "Inclusive date range, YYYY-MM-DD."],
       ["limit", `Keep only the most recent N rows (1–${MAX_LIMIT}).`],
@@ -287,6 +287,8 @@ console.log(growth.trend, rt.estimate);`}</pre>
                   {o.metrics.caseToDeathDays !== null
                     ? `Confirmation-to-death delay ${o.metrics.caseToDeathDays} days.`
                     : "Delay-adjusted fatality not reported."}
+                  {o.metrics.reportingCadence === "weekly" &&
+                    ` Weekly source: ${WEEKLY_MIN_READINGS_IN_TWO_WEEKS} readings in the last 14 days are enough, and the days between reports are filled in a straight line.`}
                 </li>
               ))}
             </ul>

@@ -14,6 +14,7 @@ import {
   selectOutbreaks,
   selectOutbreaksWith,
   dataFile,
+  tollAdapter,
 } from "../scripts/lib/outbreak-registry.mjs";
 
 const HANTA = "hantavirus-mv-hondius-2026";
@@ -110,11 +111,13 @@ describe("the archived hantavirus record", () => {
 });
 
 describe("script registry stays in step with the site registry", () => {
-  it("lists every site outbreak, with a toll source exactly for the Wikipedia-backed ones", () => {
+  it("lists every site outbreak, with a toll source exactly for the automated ones", () => {
     expect(OUTBREAKS.map((o) => o.slug).sort()).toEqual(listOutbreaks().map((o) => o.slug).sort());
     for (const s of OUTBREAKS) {
       const o = getOutbreak(s.slug)!;
-      expect(Boolean(s.toll), s.slug).toBe(o.source.kind === "wikipedia-infobox");
+      expect(Boolean(s.toll), s.slug).toBe(o.source.kind !== "manual");
+      // The reader matches the declared source: a Wikipedia page or an official report.
+      if (s.toll) expect(tollAdapter(s), s.slug).toBe(o.source.kind === "wikipedia-infobox" ? "wikipedia" : "eody-report");
     }
   });
 
@@ -124,7 +127,16 @@ describe("script registry stays in step with the site registry", () => {
       expect(o, s.slug).toBeDefined();
       expect(s.status).toBe(o!.status);
       expect(s.disease).toBe(o!.disease);
-      if (s.toll) expect(s.toll.page).toBe(o!.source.ref);
+      if (tollAdapter(s) === "wikipedia") expect(s.toll?.page).toBe(o!.source.ref);
+    }
+  });
+
+  it("gives an official-report outbreak everything the weekly reader needs, and a weekly cadence", () => {
+    for (const s of OUTBREAKS.filter((x) => tollAdapter(x) === "eody-report")) {
+      expect(s.toll?.feedUrl, s.slug).toMatch(/^https:\/\/eody\.gov\.gr\//);
+      expect(s.toll?.titleIncludes, s.slug).toBeTruthy();
+      expect(s.toll?.rawPrefix, s.slug).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+      expect(getOutbreak(s.slug)!.metrics.reportingCadence, s.slug).toBe("weekly");
     }
   });
 

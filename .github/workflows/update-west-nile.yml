@@ -1,0 +1,173 @@
+name: Update West Nile Greece
+
+# Reads the weekly West Nile virus report of Greece's National Public Health Organisation
+# (EODY) into data/outbreaks/west-nile-greece-2026/toll.json. EODY publishes one report
+# a week during the transmission season (July to November), so most runs only read the
+# RSS feed and find nothing new. When no new report has appeared for 21 days
+# (SEASON_OVER_AFTER_DAYS in scripts/lib/eody.mjs) the season is over: this workflow
+# opens an issue asking for the outbreak's status to be set by hand (automation never
+# edits src/data/outbreaks/*.ts) and then disables itself. Re-enable it with
+# `gh workflow enable update-west-nile.yml` if reports resume.
+
+on:
+  schedule:
+    # Twice daily, between the main data runs. Reports usually appear on Wednesday or
+    # Thursday evening, Athens time.
+    - cron: "30 5,17 * * *"
+  workflow_dispatch:
+
+# Least privilege: nothing at the top level; each job asks for what it needs. The job that
+# parses the (untrusted) PDF can only read; a separate job commits the data files it hands over.
+permissions: {}
+
+concurrency:
+  # Same group as update-data.yml: both commit to the default branch, one at a time.
+  group: update-outbreak-data
+  cancel-in-progress: false
+
+env:
+  SLUG: west-nile-greece-2026
+
+jobs:
+  update:
+    # Reads the report. No write access and no token: the PDF is untrusted input.
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    permissions:
+      contents: read
+    outputs:
+      season_over: ${{ steps.toll.outputs.season_over }}
+      last_report: ${{ steps.toll.outputs.last_report }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install pdftotext
+        # The report is a PDF; poppler-utils' pdftotext turns it into the text that is parsed.
+        run: |
+          if ! command -v pdftotext >/dev/null; then
+            sudo apt-get update -qq
+            sudo apt-get install -y -qq --no-install-recommends poppler-utils
+          fi
+          pdftotext -v
+
+      - name: Read the newest EODY report
+        id: toll
+        # Never fails the job: on any problem it logs an annotation and exits 0.
+        run: node scripts/update-toll.mjs --outbreak="$SLUG"
+
+      - name: Hand the data files to the commit job
+        uses: actions/upload-artifact@v4
+        with:
+          name: west-nile-data
+          path: |
+            data/outbreaks/west-nile-greece-2026/
+            data/raw/report/
+          if-no-files-found: error
+          retention-days: 3
+
+      - name: Summarize
+        if: always()
+        run: |
+          node -e '
+            const fs = require("fs");
+            const f = `data/outbreaks/${process.env.SLUG}/toll.json`;
+            let l = {};
+            try { l = JSON.parse(fs.readFileSync(f, "utf8")).snapshots.at(-1) ?? {}; } catch {}
+            fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, [
+              `## ${process.env.SLUG}`, "",
+              `- Report up to: ${l.date ?? "n/a"}`,
+              `- Cases: ${l.confirmed ?? "n/a"}`,
+              `- Deaths: ${l.deaths ?? "n/a"}`,
+              `- Source: ${l.sourceUrl ?? "n/a"}`, "",
+            ].join("\n"));
+          '
+
+  commit:
+    # A fresh checkout that never ran the parser: only the data files cross over.
+    needs: update
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Take the data files from the update job
+        uses: actions/download-artifact@v4
+        with:
+          name: west-nile-data
+          path: data
+
+      - name: Check the files before committing them
+        run: |
+          # The toll file must be the expected shape; the raw texts must be plain report files.
+          node -e '
+            const fs = require("fs");
+            const t = JSON.parse(fs.readFileSync(`data/outbreaks/${process.env.SLUG}/toll.json`, "utf8"));
+            if (typeof t.lastChecked !== "string" || !Array.isArray(t.snapshots)) throw new Error("toll.json has an unexpected shape");
+            for (const s of t.snapshots) {
+              if (!/^\d{4}-\d{2}-\d{2}$/.test(s.date) || !Number.isInteger(s.confirmed) || !Number.isInteger(s.deaths)) throw new Error(`bad snapshot ${JSON.stringify(s).slice(0, 200)}`);
+              if (!/^https:\/\/(www\.)?eody\.gov\.gr\//.test(s.sourceUrl)) throw new Error(`unexpected sourceUrl ${s.sourceUrl}`);
+            }
+            for (const f of fs.readdirSync("data/raw/report")) {
+              if (!/^[a-z0-9-]+-\d{4}-\d{2}-\d{2}-[0-9a-f]{12}\.txt$/.test(f)) throw new Error(`unexpected file data/raw/report/${f}`);
+            }
+          '
+          # Nothing outside the two data folders may have changed.
+          if [ -n "$(git status --porcelain -- . ":!data/outbreaks/$SLUG" ":!data/raw/report")" ]; then
+            git status --porcelain
+            echo "::error::Files outside the West Nile data folders changed; not committing."
+            exit 1
+          fi
+
+      - name: Commit updated data
+        env:
+          REF: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -- "data/outbreaks/$SLUG" data/raw/report
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: update West Nile Greece report [skip ci]"
+            git pull --rebase --autostash origin "$REF"
+            git push origin "HEAD:$REF"
+          fi
+
+  close-season:
+    # Runs only when the update job found no new report for more than 21 days.
+    needs: update
+    if: needs.update.outputs.season_over == 'true'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      actions: write # disable this workflow
+      issues: write # say so in an issue
+    steps:
+      - name: Open an issue and disable this workflow
+        env:
+          GH_TOKEN: ${{ github.token }}
+          GH_REPO: ${{ github.repository }}
+          LAST_REPORT: ${{ needs.update.outputs.last_report }}
+        run: |
+          title="West Nile Greece 2026: EODY reports have stopped"
+          if [ -z "$(gh issue list --state open --search "in:title \"$title\"" --json number --jq '.[].number')" ]; then
+            gh issue create --title "$title" --body "The newest EODY weekly West Nile virus report runs to $LAST_REPORT, and no new report has been published for more than 21 days, so the 2026 season looks over.
+
+          The workflow \`update-west-nile.yml\` has disabled itself. To finish:
+          - set \`status\` to \`over\` (or \`waning\`) in \`src/data/outbreaks/west-nile-greece-2026.ts\` and \`scripts/lib/outbreak-registry.mjs\`, and update its summary;
+          - if reports resume, run \`gh workflow enable update-west-nile.yml\`."
+          fi
+          gh workflow disable update-west-nile.yml
+          echo "### West Nile Greece: season over (last report $LAST_REPORT); workflow disabled." >> "$GITHUB_STEP_SUMMARY"

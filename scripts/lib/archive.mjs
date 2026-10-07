@@ -268,6 +268,14 @@ function isPublicHttpsUrl(u) {
 
 /** @param {unknown} v */
 const str = (v) => (typeof v === "string" ? v : "");
+/** Host name of a URL, or "" when it does not parse. */
+const hostOf = (url) => {
+  try {
+    return new URL(url).hostname;
+  } catch {
+    return "";
+  }
+};
 
 /**
  * Gather every URL we cite, across every outbreak. Pure. A URL cited by several
@@ -321,11 +329,13 @@ export function collectSources({ outbreaks, siteUrl, sitePages } = {}) {
     .flatMap((o) => (o.toll?.snapshots ?? []).map((/** @type {any} */ s) => ({ s, slug: o.slug })))
     .sort((a, b) => str(b.s.date).localeCompare(str(a.s.date)));
   for (const { s, slug } of snaps) {
+    const wiki = /(^|\.)wikipedia\.org$/.test(hostOf(str(s.sourceUrl)));
     add({
       url: str(s.sourceUrl),
-      title: `Wikipedia toll snapshot ${str(s.date)}: ${s.confirmed} confirmed, ${s.deaths} deaths`,
+      title: `${wiki ? "Wikipedia toll snapshot" : `${str(s.source) || "Toll"} snapshot`} ${str(s.date)}: ${s.confirmed} confirmed, ${s.deaths} deaths`,
       publishedAt: str(s.revisionTimestamp) || str(s.date) || null,
-      source: "Wikipedia",
+      // An official report (e.g. EODY's weekly PDF) is credited by its own name.
+      source: wiki ? "Wikipedia" : str(s.source) || "Official report",
       kind: "toll",
       outbreak: slug,
     });

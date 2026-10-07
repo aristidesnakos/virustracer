@@ -54,8 +54,8 @@ export function describeFigures(
   figures: LatestFigures | null,
   fallback: string,
   label: { shortName: string; places: string; summary?: { deathsQualifier?: string } },
-  /** A closed, hand-curated record: say so instead of promising daily updates. */
-  options: { archived?: boolean } = {},
+  /** A closed, hand-curated record: say so instead of promising daily updates. A weekly source says weekly. */
+  options: { archived?: boolean; weekly?: boolean } = {},
 ): string {
   if (!figures || (figures.deaths === null && figures.confirmed === null)) return fallback;
   const parts: string[] = [];
@@ -63,7 +63,9 @@ export function describeFigures(
   if (figures.confirmed !== null) parts.push(`${fmt(figures.confirmed)} confirmed cases`);
   const tail = options.archived
     ? "Archived record with map, timeline and sources."
-    : "Updated daily, with map, trend and free data API.";
+    : options.weekly
+      ? "Updated weekly, with map, trend and free data API."
+      : "Updated daily, with map, trend and free data API.";
   return (
     `${label.shortName}: ${parts.join(" and ")} as of ${longDate(figures.date)} ` +
     `(${label.places}). ${tail}`

@@ -33,7 +33,9 @@ jobs:
         run: npm ci
 
       - name: Update death-toll snapshots
-        run: node scripts/update-toll.mjs
+        # Wikipedia-backed outbreaks only. Outbreaks read from an official weekly report
+        # (West Nile virus in Greece) have their own workflow, update-west-nile.yml.
+        run: node scripts/update-toll.mjs --adapter=wikipedia
 
       - name: Fetch feeds and update live data
         env:
@@ -47,6 +49,8 @@ jobs:
         run: node scripts/archive-sources.mjs
 
       - name: Commit updated data
+        env:
+          REF: ${{ github.ref_name }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
@@ -57,7 +61,7 @@ jobs:
             echo "No changes to commit."
           else
             git commit -m "data: update outbreak feed [skip ci]"
-            git pull --rebase --autostash origin ${{ github.ref_name }}
+            git pull --rebase --autostash origin "$REF"
             git push
           fi
 

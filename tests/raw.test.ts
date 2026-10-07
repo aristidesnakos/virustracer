@@ -3,7 +3,15 @@ import { existsSync, mkdtempSync, readFileSync, readdirSync, rmSync, writeFileSy
 import { tmpdir } from "node:os";
 import { join, resolve } from "node:path";
 import { getOutbreak as getScriptOutbreak } from "../scripts/lib/outbreak-registry.mjs";
-import { archiveInfobox, backfillRawForStore, rawRelPath, sha256, verifyRaw } from "../scripts/lib/raw.mjs";
+import {
+  archiveInfobox,
+  backfillRawForStore,
+  rawRelPath,
+  sha256,
+  verifyRaw,
+  verifyReportRaw,
+} from "../scripts/lib/raw.mjs";
+import { reportRawRelPath } from "../scripts/lib/eody.mjs";
 
 const BLOCK = `{{Infobox outbreak
 | name            = 2026 Ebola epidemic
@@ -196,9 +204,16 @@ describe("archived files in data/outbreaks/<slug>/toll.json", () => {
       const store = JSON.parse(readFileSync(tollJson, "utf8"));
       for (const s of store.snapshots) {
         if (!s.rawPath) continue; // older readings are filled in by scripts/backfill-raw.mjs
-        expect(s.rawPath).toBe(rawRelPath(s.revid));
         const text = readFileSync(join(repo, s.rawPath), "utf8");
-        expect({ slug, date: s.date, ...verifyRaw(s, text, getScriptOutbreak(slug)?.toll?.ignoreFields) }).toEqual({ slug, date: s.date, ok: true });
+        const toll = getScriptOutbreak(slug)?.toll;
+        if (toll?.adapter === "eody-report") {
+          // An official report's text, named by source, date and checksum.
+          expect(s.rawPath).toBe(reportRawRelPath(toll.rawPrefix, s.date, sha256(text)));
+          expect({ slug, date: s.date, ...verifyReportRaw(s, text) }).toEqual({ slug, date: s.date, ok: true });
+          continue;
+        }
+        expect(s.rawPath).toBe(rawRelPath(s.revid));
+        expect({ slug, date: s.date, ...verifyRaw(s, text, toll?.ignoreFields) }).toEqual({ slug, date: s.date, ok: true });
       }
     }
   });

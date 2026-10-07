@@ -30,7 +30,7 @@ describe("mergeTimeline", () => {
         suspected: 347,
         deaths: 3984,
         recovered: 2140,
-        note: "Auto-tracked daily by GitHub Action",
+        note: "Auto-tracked from Wikipedia infobox",
         source: "Wikipedia infobox",
       },
     ]);

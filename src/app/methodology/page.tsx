@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P, ProseTable } from "@/components/StaticPage";
 import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
-import { ASSUMPTIONS } from "@/lib/metrics";
-import { SANITY_CHECKS, UPDATE_TIMES_UTC } from "@/lib/methodology";
+import { ASSUMPTIONS, WEEKLY_MIN_READINGS_IN_TWO_WEEKS } from "@/lib/metrics";
+import { SANITY_CHECKS, UPDATE_TIMES_UTC, WEST_NILE_UPDATE_TIMES_UTC } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
 import { TREND_STATEMENT } from "@/lib/trend-summary";
 
@@ -90,7 +90,7 @@ export default function MethodologyPage() {
           rows={[
             [
               "Source",
-              "The outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO.",
+              "The outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO, or, where no infobox exists, the health authority\u2019s own weekly report (West Nile virus in Greece: EODY).",
               "Official situation reports, each with its source.",
             ],
             [
@@ -100,13 +100,13 @@ export default function MethodologyPage() {
             ],
             [
               "Updated",
-              `Twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC).`,
+              `Checked twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC; West Nile virus in Greece at ${WEST_NILE_UPDATE_TIMES_UTC.join(" and ")} UTC). A weekly report is kept once it is published.`,
               "When we enter a report. It does not update on its own.",
             ],
             ["Card shows", "When the source was last checked.", "The date the figures were last verified."],
             [
               "How to trace it",
-              "Every reading links to the exact Wikipedia revision. The raw infobox text is archived with a SHA-256 fingerprint, so any number can be re-checked later.",
+              "Every reading links to the exact Wikipedia revision or report. The raw infobox or report text is archived with a SHA-256 fingerprint, so any number can be re-checked later.",
               "The official report is linked on each entry.",
             ],
           ]}
@@ -146,6 +146,11 @@ export default function MethodologyPage() {
           ]}
         />
         <p className={PROSE_NOTE}>
+          A weekly report is about a week apart from the one before, so the largest-jump check applies only to
+          two reports at most {SANITY_CHECKS.weeklyStalePrevDays} days apart (an extra mid-week report). Instead, a report is kept
+          only when the totals in its text and in its summary table agree, and the table adds up.
+        </p>
+        <p className={PROSE_NOTE}>
           A reading that fails a check is rejected and logged, and the previous figures stay on the page.
         </p>
         <p className={PROSE_P}>
@@ -183,7 +188,7 @@ export default function MethodologyPage() {
             [TREND_STATEMENT.unclear, `Too few new cases in the ${windowDays} days to judge a trend.`],
             [
               TREND_STATEMENT.noData,
-              `Fewer than ${minReadingsInTwoWeeks} readings in the last two weeks, or less than ${2 * windowDays} days of history. Shown instead of guessing.`,
+              `Fewer than ${minReadingsInTwoWeeks} readings in the last two weeks (${WEEKLY_MIN_READINGS_IN_TWO_WEEKS} for a weekly report), or less than ${2 * windowDays} days of history. Shown instead of guessing.`,
             ],
           ]}
         />
@@ -193,7 +198,7 @@ export default function MethodologyPage() {
           period, newest on the right, and the result and counts beneath it describe the newest bar.
         </p>
         <p className={PROSE_NOTE}>
-          Rates use only the automatic daily readings, never the hand-entered milestones, so a change of source
+          Rates use only the automatic readings (daily, or weekly for a weekly report), never the hand-entered milestones, so a change of source
           cannot create a false jump.
         </p>
       </section>

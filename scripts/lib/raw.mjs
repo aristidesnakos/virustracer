@@ -3,12 +3,15 @@
 // infobox format changes. Plain node, no deps. Unit-tested in tests/raw.test.ts.
 //
 // Layout: data/raw/infobox/<revid>.txt  (append-only, immutable, one file per
-// Wikipedia revision, containing exactly the block parseInfobox consumed).
+// Wikipedia revision, containing exactly the block parseInfobox consumed), and
+// data/raw/report/<source>-<date>-<sha>.txt for official reports (the full text the
+// report parser read; see archiveReportText).
 
 import { createHash } from "node:crypto";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { extractInfobox, parseInfobox, withoutIgnored } from "./toll.mjs";
+import { parseReportText, reportRawRelPath } from "./eody.mjs";
 
 export const RAW_DIR = "data/raw/infobox";
 
@@ -50,6 +53,27 @@ export function verifyRaw(snapshot, rawText, ignore = []) {
 }
 
 /**
+ * The same check for an official report's archived text: the checksum matches, and
+ * re-parsing gives the snapshot's date, cases and deaths.
+ * @param {{date: string, confirmed: number, deaths: number, rawSha256?: string}} snapshot
+ * @param {string} rawText
+ * @returns {{ok: true} | {ok: false, reason: string}}
+ */
+export function verifyReportRaw(snapshot, rawText) {
+  if (typeof rawText !== "string") return { ok: false, reason: "no raw text" };
+  if (snapshot.rawSha256 && sha256(rawText) !== snapshot.rawSha256) {
+    return { ok: false, reason: "sha256 of raw text does not match rawSha256" };
+  }
+  const parsed = parseReportText(rawText);
+  if (!parsed.ok) return { ok: false, reason: `raw text does not parse as a report: ${parsed.reason}` };
+  const { asOf, confirmed, deaths } = parsed.report;
+  if (asOf !== snapshot.date) return { ok: false, reason: `date: raw parses to ${asOf}, snapshot has ${snapshot.date}` };
+  if (confirmed !== snapshot.confirmed) return { ok: false, reason: `confirmed: raw parses to ${confirmed}, snapshot has ${snapshot.confirmed}` };
+  if (deaths !== snapshot.deaths) return { ok: false, reason: `deaths: raw parses to ${deaths}, snapshot has ${snapshot.deaths}` };
+  return { ok: true };
+}
+
+/**
  * Write the infobox for `revid` unless its file already exists (never rewrites).
  * `wikitext` may be the whole lead section or the bare infobox; the infobox
  * block is extracted. Returns the fields to put on the snapshot.
@@ -66,27 +90,57 @@ export function archiveInfobox(repoRoot, revid, wikitext) {
   try {
     const block = extractInfobox(wikitext);
     if (!block) return { ok: false, reason: "no Infobox outbreak block to archive" };
-    const rawPath = rawRelPath(revid);
-    const abs = resolve(repoRoot, rawPath);
-    const hash = sha256(block);
-    const existing = () => {
-      if (sha256(readFileSync(abs, "utf8")) !== hash) {
-        return { ok: false, reason: `${rawPath} already exists with different content; left untouched` };
-      }
-      return { ok: true, rawPath, rawSha256: hash, written: false };
-    };
-    if (existsSync(abs)) return existing();
-    mkdirSync(dirname(abs), { recursive: true });
-    try {
-      writeFileSync(abs, block, { encoding: "utf8", flag: "wx" }); // wx: fail rather than overwrite
-    } catch (err) {
-      if (err?.code === "EEXIST") return existing();
-      throw err;
-    }
-    return { ok: true, rawPath, rawSha256: hash, written: true };
+    return writeOnce(repoRoot, rawRelPath(revid), block);
   } catch (err) {
     return { ok: false, reason: err instanceof Error ? err.message : String(err) };
   }
+}
+
+/**
+ * Archive the text an official report was parsed from (`pdftotext` output) under
+ * data/raw/report/, named by source, date and checksum (see `reportRawRelPath`).
+ * Same write-once rules as `archiveInfobox`.
+ * @param {string} repoRoot
+ * @param {string} prefix  e.g. "eody-wnv"
+ * @param {string} asOf    YYYY-MM-DD the report's totals run to
+ * @param {string} text
+ * @returns {{ok: true, rawPath: string, rawSha256: string, written: boolean} | {ok: false, reason: string}}
+ */
+export function archiveReportText(repoRoot, prefix, asOf, text) {
+  try {
+    if (typeof text !== "string" || text === "") return { ok: false, reason: "no report text to archive" };
+    return writeOnce(repoRoot, reportRawRelPath(prefix, asOf, sha256(text)), text);
+  } catch (err) {
+    return { ok: false, reason: err instanceof Error ? err.message : String(err) };
+  }
+}
+
+/**
+ * Write `content` to `rawPath` unless the file exists; an existing file is only
+ * accepted when its bytes are identical, and is never overwritten.
+ * @param {string} repoRoot
+ * @param {string} rawPath  repo-relative
+ * @param {string} content
+ * @returns {{ok: true, rawPath: string, rawSha256: string, written: boolean} | {ok: false, reason: string}}
+ */
+function writeOnce(repoRoot, rawPath, content) {
+  const abs = resolve(repoRoot, rawPath);
+  const hash = sha256(content);
+  const existing = () => {
+    if (sha256(readFileSync(abs, "utf8")) !== hash) {
+      return { ok: false, reason: `${rawPath} already exists with different content; left untouched` };
+    }
+    return { ok: true, rawPath, rawSha256: hash, written: false };
+  };
+  if (existsSync(abs)) return existing();
+  mkdirSync(dirname(abs), { recursive: true });
+  try {
+    writeFileSync(abs, content, { encoding: "utf8", flag: "wx" }); // wx: fail rather than overwrite
+  } catch (err) {
+    if (err?.code === "EEXIST") return existing();
+    throw err;
+  }
+  return { ok: true, rawPath, rawSha256: hash, written: true };
 }
 
 /**

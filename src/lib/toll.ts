@@ -20,6 +20,8 @@ export interface TollSnapshot {
   rawPath?: string;
   /** SHA-256 (hex) of that archived file, so the reading can be re-verified independently. */
   rawSha256?: string;
+  /** SHA-256 (hex) of the source document itself, for an official report (the PDF at `sourceUrl`). */
+  sourceSha256?: string;
 }
 
 export interface TollData {

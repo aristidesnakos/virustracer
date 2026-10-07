@@ -22,7 +22,7 @@ import { fileURLToPath } from "node:url";
 import { parseInfobox, validateSnapshot, MAX_SNAPSHOTS, withoutIgnored } from "./lib/toll.mjs";
 import { archiveInfobox } from "./lib/raw.mjs";
 import { lastRevisionPerDay, keepLongestMonotoneChain } from "./lib/backfill.mjs";
-import { USER_AGENT, dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
+import { USER_AGENT, dataFile, selectOutbreaksWith, tollAdapter } from "./lib/outbreak-registry.mjs";
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const TIMEOUT_MS = 30_000;
@@ -194,7 +194,9 @@ async function backfillOutbreak({ slug, toll }) {
 }
 
 async function main() {
-  for (const outbreak of selectOutbreaksWith("toll")) {
+  // Wikipedia history only; an official-report outbreak is backfilled with
+  // `update-toll.mjs --outbreak=<slug> --report=<pdf-url>` instead.
+  for (const outbreak of selectOutbreaksWith("toll").filter((o) => tollAdapter(o) === "wikipedia")) {
     await backfillOutbreak(outbreak);
   }
 }

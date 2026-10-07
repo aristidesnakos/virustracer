@@ -1,6 +1,7 @@
 import { ebolaBundibugyo2026 } from "./ebola-bundibugyo-2026";
 import { hantavirusMvHondius2026 } from "./hantavirus-mv-hondius-2026";
 import { measlesBangladesh2026 } from "./measles-bangladesh-2026";
+import { westNileGreece2026 } from "./west-nile-greece-2026";
 import type { OutbreakDefinition } from "./types";
 
 export type * from "./types";
@@ -14,6 +15,7 @@ const OUTBREAKS: readonly OutbreakDefinition[] = [
   ebolaBundibugyo2026,
   hantavirusMvHondius2026,
   measlesBangladesh2026,
+  westNileGreece2026,
 ];
 
 /** Shown at `/` until the home page becomes a multi-outbreak snapshot. */

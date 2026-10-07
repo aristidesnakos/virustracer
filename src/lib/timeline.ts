@@ -24,7 +24,7 @@ function snapshotToPoint(s: TollSnapshot): CaseDataPoint {
     label: formatLabel(s.date),
     confirmed: s.confirmed,
     deaths: s.deaths,
-    note: "Auto-tracked daily by GitHub Action",
+    note: `Auto-tracked from ${s.source}`,
     source: s.source,
   };
   if (s.suspected !== null && s.suspected !== undefined) point.suspected = s.suspected;

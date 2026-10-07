@@ -1,5 +1,11 @@
 import { describe, it, expect } from "vitest";
-import { computeMetrics, reproductionFromGrowth, ASSUMPTIONS, type MetricsPoint } from "@/lib/metrics";
+import {
+  computeMetrics,
+  reproductionFromGrowth,
+  ASSUMPTIONS,
+  WEEKLY_MIN_READINGS_IN_TWO_WEEKS,
+  type MetricsPoint,
+} from "@/lib/metrics";
 import { ebolaBundibugyo2026 } from "@/data/outbreaks/ebola-bundibugyo-2026";
 
 const EBOLA = ebolaBundibugyo2026.metrics;
@@ -209,5 +215,25 @@ describe("per-pathogen assumptions", () => {
       serialIntervalSdDays: 9.3,
       caseToDeathDays: 10,
     });
+  });
+
+  it("measures a weekly source from one reading a week, where a daily one would be insufficient", () => {
+    // EODY West Nile reports, Greece 2026 (weekly cumulative cases and deaths).
+    const weeks: MetricsPoint[] = [
+      { date: "2026-09-02", confirmed: 290, deaths: 24 },
+      { date: "2026-09-09", confirmed: 324, deaths: 30 },
+      { date: "2026-09-17", confirmed: 370, deaths: 33 },
+      { date: "2026-09-24", confirmed: 396, deaths: 36 },
+      { date: "2026-10-01", confirmed: 423, deaths: 41 },
+    ];
+    expect(computeMetrics(weeks, NO_SERIAL_INTERVAL).status).toBe("insufficient_data");
+    const m = computeMetrics(weeks, { ...NO_SERIAL_INTERVAL, reportingCadence: "weekly" });
+    expect(m.status).toBe("ok");
+    expect(m.assumptions.minReadingsInTwoWeeks).toBe(WEEKLY_MIN_READINGS_IN_TWO_WEEKS);
+    expect(m.windowEnd).toBe("2026-10-01");
+    // The week to the latest report is exactly that report's increase.
+    expect(m.incidence!.confirmed.last7).toBe(27);
+    expect(m.incidence!.deaths.last7).toBe(5);
+    expect(m.rt).toBeNull();
   });
 });

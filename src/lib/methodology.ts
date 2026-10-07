@@ -7,10 +7,14 @@ export const SANITY_CHECKS = {
   maxJumpPct: 25,
   /** ...unless the previous reading is older than this many days. */
   stalePrevDays: 7,
+  /** The same for a weekly report (WEEKLY_STALE_PREV_DAYS). */
+  weeklyStalePrevDays: 3,
 } as const;
 
 /** The scheduled data run, in UTC (.github/workflows/update-data.yml). */
 export const UPDATE_TIMES_UTC = ["08:00", "20:00"] as const;
+/** The West Nile (EODY report) run, in UTC (.github/workflows/update-west-nile.yml). */
+export const WEST_NILE_UPDATE_TIMES_UTC = ["05:30", "17:30"] as const;
 
 export const REPO_URL = "https://github.com/aristidesnakos/virustracer";
 export const CORRECTIONS_URL = `${REPO_URL}/issues`;

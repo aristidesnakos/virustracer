@@ -1,6 +1,6 @@
 import { describe, expect, it } from "vitest";
 import { render, screen, within } from "@testing-library/react";
-import { MAX_JUMP_RATIO, STALE_PREV_DAYS } from "../scripts/lib/toll.mjs";
+import { MAX_JUMP_RATIO, STALE_PREV_DAYS, WEEKLY_STALE_PREV_DAYS } from "../scripts/lib/toll.mjs";
 import { SITE_PAGES } from "../scripts/lib/site.mjs";
 import HomePage, { generateMetadata as homeMetadata } from "@/app/page";
 import MethodologyPage, { metadata as methodologyMetadata } from "@/app/methodology/page";
@@ -57,6 +57,7 @@ describe("/methodology", () => {
   it("quotes the same sanity-check limits the scripts enforce", () => {
     expect(SANITY_CHECKS.maxJumpPct).toBe(MAX_JUMP_RATIO * 100);
     expect(SANITY_CHECKS.stalePrevDays).toBe(STALE_PREV_DAYS);
+    expect(SANITY_CHECKS.weeklyStalePrevDays).toBe(WEEKLY_STALE_PREV_DAYS);
   });
 
   it("publishes the ranking rule with the status groups in the order the home page uses", () => {

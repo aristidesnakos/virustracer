@@ -25,6 +25,14 @@ export function attributionFor(outbreak: Pick<OutbreakDefinition, "slug" | "sour
       tail
     );
   }
+  if (outbreak.source.kind === "official-report") {
+    return (
+      who +
+      `Figures come from ${outbreak.source.ref}, read automatically each week; ` +
+      "every reading links to the report it was read from, and the report's text is archived with a SHA-256 checksum. " +
+      tail
+    );
+  }
   const cited = CITED_BY_SLUG[outbreak.slug] ?? "the official sources it lists";
   return (
     who +

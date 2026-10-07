@@ -1,0 +1,266 @@
+                                                                                        NPHO, Weekly report 15 July 2026
+
+
+
+
+       Weekly Epidemiological Report for West Nile Virus infection, Greece, 2026
+                                  - 15 July 2026 -
+
+This weekly epidemiological report aims to present an overview of the epidemiological data on West Nile
+virus (WNV) human infection, the reported cases and the public health response to WNV in Greece for
+transmission period 2026.
+
+Data presented in this report are derived from the notifications of laboratory diagnosed human cases of
+WNV infection sent to the Hellenic National Public Health Organization (NPHO) by the treating physicians
+and from the daily communication with diagnostic laboratories: i) the National Reference Centre for
+Arboviruses, Aristotelian University of Thessaloniki, ii) the Hellenic Pasteur Institute, iii) the Department of
+Microbiology, School of Medicine, University of Athens, iv) the Laboratory of Clinical Virology, School of
+Medicine, University of Crete.
+
+The Vector-borne Diseases Department of the Directorate for Epidemiological Surveillance and Prevention
+of Communicable Diseases of the NPHO undertakes a verification procedure and investigates all reported
+cases within 24 hours, through communication with the treating physicians and the patients, in order to
+identify the probable place of exposure, the characteristics of the disease and the risk factors. In addition,
+the health status/ outcome of hospitalized cases is daily updated.
+
+In 2026 period, up to 15/07/2026, seven (7) laboratory diagnosed locally acquired cases of WNV infection
+have been reported to NPHO, six (6) of which presented with neuro-invasive disease (WNND, encephalitis
+and/or meningitis and/or acute flaccid paralysis) and one (1) case with mild symptoms (e.g., febrile
+syndrome) (Table 1). No deaths have been recorded.
+
+Table 1. Number of reported locally acquired cases of WNV disease, with and without central nervous
+system (CNS) manifestations, Greece, period 2026, up to 15/07/2026
+
+                                   Number of WNND cases -               Number of cases
+                                                                                             Total number       Number of
+                                           with                             without
+                                                                                                of cases         deaths
+                                    CNS manifestations [1]             CNS manifestations
+
+ Number of WNV cases
+ and deaths                                       6                               1                 7                0
+
+1.   Refers mainly to encephalitis, aseptic meningitis and meningoencephalitis cases.
+
+
+
+
+                                                                                                                            1
+                                                                                         NPHO, Weekly report 15 July 2026
+
+Figure 1 shows the reported WNND cases by week of symptom onset, in 2026, in the previous three
+transmission periods (2023-2025) and in 2018, when the highest number of cases was recorded. For the
+first diagnosed case of WNV infection for transmission period 2026 (case with WNND), the reported onset
+of symptoms was on 25th June 2026 (week 25/2026).
+
+
+Figure 1. Number of locally acquired reported WNND cases (with central nervous system manifestations)
+by week of symptom onset, Greece 2018, 2023, 2024, 2025 and 2026, up to 15/07/2026 (n=6)1.
+
+
+
+
+1. Lines represent the number of WNND cases in 2018, 2023, 2024 and 2025. Each blue box represents one laboratory diagnosed
+case of WNND reported to NPHO in transmission period 2026.
+
+
+
+The median age of WNND cases is 68 years (range: 62 - 86 years).
+
+Table 2 shows the geographic distribution of the recorded cases with laboratory diagnosed WNV infection
+at the level of probable Municipality of exposure. The patient’s probable place of exposure is a rough
+indicator of WNV circulation areas.
+
+According to a serosurvey conducted in 2010 by the NPHO and the National School of Public Health, at the
+epicentre of the 2010 WNV outbreak in Central Macedonia, it was estimated that WNV neuro-invasive
+disease develops in 1:140 infected persons.
+
+
+
+
+                                                                                                                              2
+                                                                                                 NPHO, Weekly report 15 July 2026
+
+  Table 2. Reported locally acquired cases of WNV infection (with and without central nervous system
+  manifestations/ WNND) by probable Municipality of exposure, Greece, transmission period 2026, up to
+  15/07/2026 (n=7)
+
+
+
+                                                                                  Number of           Incidence of          Number
+               Regional/ Metropolitan           Probable Municipality             cases with           WNND per              of cases
+Region                                                                               CNS
+               Unit                             of exposure                                              100,000             without
+                                                                                manifestations        population(1)            CNS
+                                                                                (WNND cases)                              manifestations
+
+                                                Spata - Artemida                         2                 5,7                      0
+               East Attica
+                                                Markopoulo Mesogaia                      1                 4,6                      0
+Attica
+               North Section of Athens          Agia Paraskevi                           1                 1,6                      0
+               North Section of Athens
+               South Section of Athens          Glyfada                                  1                 1,1                      0
+
+               Larissa                          Larissa                                  1                 0,6                      0
+Thessaly
+               Karditsa                         Palamas                                  0                  0                       1
+
+Total Greece                                                                             6                0,06                      1
+         1.   Calculations based on 2021 census data (Hellenic Statistical Authority).
+
+
+
+
+                                                                                                                                           3
+                                                                               NPHO, Weekly report 15 July 2026
+
+
+
+PUBLIC HEALTH MEASURES SUPPORTED BY THE NATIONAL PUBLIC HEALTH ORGANIZATION, 2026
+
+Aiming at the timely implementation of targeted response and prevention measures, in each transmission
+since 2010, the NPHO continuously implements enhanced epidemiological surveillance of WNV infection,
+immediately investigates the cases, informs health and public health professionals and is in constant
+communication and cooperation with the competent national and local authorities. In March 2024, the
+comprehensive "Action Plan for West Nile virus infection" was published, developed by the Ministry of
+Health (MoH) in collaboration with the NPHO, with the aim of standardized implementation of actions to
+reduce WNV transmission risk, based on a risk assessment. In more detail, the prevention and response
+actions carried out by the NPHO -in collaboration with other stakeholders - include:
+
+I. Enhanced surveillance for WNV infection in humans and communication for health professionals and
+   stakeholders:
+    • Enhanced surveillance for WNV infection in humans - Laboratory investigation of suspected cases
+        - Awareness raising of physicians about the WNV infection: Testing for WNV infection in suspected
+        cases (such as cases with encephalitis, aseptic meningitis, acute flaccid paralysis, fever of
+        undetermined etiology) is recommended. The NPHO provides guidelines for the recognition and
+        diagnosis of WNV disease and the recommended laboratory investigation (mailings and website
+        www.eody.gov.gr). For the 2026 period, an informative letter was sent to all Health Units and
+        Medical Associations of the country for vigilance regarding WNV, in May 2026. In addition,
+        following the recording of cases in an area, local Health Units are urgently informed.
+    • Daily communication and information exchange with laboratories conducting diagnostic testing
+      for WNV (active laboratory-based surveillance).
+    • Enhancing laboratory diagnosis of suspected cases, by supporting the National Reference Centre
+      and other specialised diagnostic laboratories.
+    • Case investigation: The Department of Vector Borne Diseases of NPHO undertakes the
+      investigation of every reported WNV infection case within 24 hours after diagnosis, in order to
+      determine the probable place of exposure, the risk factors and the severity of the disease. Health
+      status of hospitalized cases is daily updated.
+    • Communication - awareness raising of authorities:
+
+    - Immediate update of stakeholders on the diagnosed cases (Ministry of Health, Ministry of Rural
+       Development and Food, Hellenic National Blood Transfusion Center, Regions/ Directorates of
+       Public Health and Social Welfare, Municipalities), and the recommended public health measures.
+    -   Awareness raising before the onset of the 2026 transmission period: Information and guidance on
+         WNV circulation risk assessment, surveillance, vigilance and enhancement of targeted prevention
+         measures was provided to regional/ local authorities, before the onset of 2026 transmission
+         season (in January 2026). In early April 2026, the NPHO informed the relevant regional authorities
+         regarding the classification of all Municipalities in risk levels, based on historical surveillance data
+         and in accordance with the criteria described in the Action Plan. In addition, the NPHO provided
+         historical surveillance data (numbers of cases recorded in the previous years, by locality and year)
+         to the regional authorities, in order to guide risk assessment and enhanced targeted prevention
+         measures at local level, based on the Action Plan.
+   •    Weekly surveillance reports on human WNV infection cases (uploaded on the NPHO website).
+II. Communication and health promotion activities for the public: Informative material for the public
+    regarding WNV infection and the recommended protective measures against mosquito bites is
+                                                                                                                    4
+                                                                             NPHO, Weekly report 15 July 2026
+
+    available in the NPHOs website (https://eody.gov.gr). In 2026, the NPHO:
+    • Published a Press Release (on 28th May 2026) regarding the expected recurrence of cases in the
+      current transmission period, and the recommended prevention measures.
+    • Published a Press Release (on 9th July 2026) regarding the diagnosis of the first case of WNV
+      infection in 2026 and the recommended prevention measures.
+    • Sent informative material (leaflets and posters) for the protection against mosquito bites and for
+      WNV infection to regional public health authorities, in May - June 2026.
+    • Sent -via email- informative material (leaflets) for the protection against mosquito bites and for
+      WNV infection to regional and municipal authorities, in early July 2026.
+    • Sent/ sends informative leaflets for the protection against mosquito bites to local authorities and
+      Healthcare Units, in order to be distributed to the public.
+    • In every affected area, informative leaflets and posters are urgently provided, if needed.
+III. Coordination of an intersectoral “Working Group (WG) on the designation of affected areas by
+     vector borne diseases” - Designation of affected and high-risk areas for implementing targeted blood
+     safety and haemovigilance measures: This WG, under the MoH Committee for the Prevention and
+     Management of Tropical Diseases, considers all available epidemiological and entomological data and
+     decides on the characterization of affected and high-risk areas, assisting the targeted implementation
+     of blood safety measures. In these areas, the Hellenic National Blood Transfusion Center issues
+     guidance on blood safety. The list of affected and high-risk areas is also published on the NPHO’s
+     website and updated regularly.
+IV. Collaboration and exchange of information with the Ministry of Rural Development and Food
+    (MoRD&F), which performs surveillance programme for the WNV infection in equids and wild birds.
+    Following the information provided by the MoRD&F, the NPHO informs the relevant public health
+    regional authorities regarding the WNV infection cases in animals and the recommended prevention
+    and response measures.
+V. Vector surveillance and control activities:
+
+    Vector management programmes are performed under the responsibility of regional and municipal
+    authorities. The MoH publishes an annual Circular on integrated mosquito management, action plan,
+    and communication to the public. The “Action Plan for West Nile virus infection” of the MoH includes
+    analytical guidance on vector management according to the risk level of each area.
+    In addition, the NPHO performs supplementary actions for raising awareness of regional/ local
+    authorities and active mosquito surveillance programmes nationwide:
+    • Raising awareness and guidance to regional and municipal authorities for the timely planning,
+      organization and implementation of integrated vector control programmes. For the 2026
+      transmission period, NPHO sent relevant awareness letters to all relevant regional and municipal
+      authorities, in January 2026 (including key steps to achieve timely implementation of the vector
+      control programmes), and promptly informs local authorities of the affected areas regarding the
+      cases and the recommended preventive and response measures (intensified mosquito control and
+      communication campaigns for the local population).
+    • Entomological surveillance: In the last years, the NPHO performs/ coordinates active mosquito
+      surveillance programmes nationwide, in collaboration with several stakeholders and agencies, by
+      placing mosquito traps in various areas throughout the country and testing of mosquito vectors for
+      the presence of WNV, as an early warning and alert system. The mosquito surveillance data are
+      directly available and accessible to the relevant regional authorities. Following the recording of
+                                                                                                                5
+                                                                              NPHO, Weekly report 15 July 2026
+
+        WNV infected mosquitoes, the NPHO informs the relevant public health regional authorities, in
+        order to implement targeted response measures.
+        For the 2026 period, NPHO organizes an enhanced active mosquito surveillance programme, in
+        collaboration with Universities and public Institutes (University of West Attica, Benaki
+        Phytopathological Institute, Foundation for Research and Technology, MoRD&F’s Organization
+        ELGO-Dimitra, Agricultural University of Athens, Aristotle University of Thessaloniki, University of
+        Thessaly, Democritus University of Thrace, University of Patras), including mosquito samplings,
+        with standardized methodology and representative geographical distribution.
+VI. Communication with international public health stakeholders: Frequent communication and weekly
+    information exchange with ECDC (real-time reporting of the diagnosed cases in EpiPulse).
+
+
+CONCLUSIONS
+
+West Nile virus infection cases are recorded -on an annual basis- in many countries worldwide, including
+many European countries. In 2010-2014 and 2017-2025, cases of West Nile virus infection were recorded in
+various areas of Greece also, while WNV circulation has been recorded in all regions in the past. The
+occurrence of human cases -on an almost annual basis since 2010- suggests that WNV has been established
+in our country, as well as in other European and neighboring countries; thus, its circulation and the
+recurrence of cases was considered likely and expected (in previously affected and in new areas) in the
+2026 period (as in each transmission season). The NPHO informed (in May 2026) health professionals
+nationwide for vigilance and awareness raising for the WNV diagnosis, and the public regarding the
+expected recurrence of cases in the current transmission period and the recommended prevention
+measures.
+In 2026, up to 15/07/2026, human cases of WNV infection have been recorded in Greece, in six (6)
+Municipalities, in five (5) Regional Units (NUTS3 level), in the Regions of Attica and Thessaly: in the Regional
+Units of East Attica, North Section of Athens, South Section of Athens, Larissa, and Karditsa. It is expected
+that more cases will be diagnosed in the country in the immediate future.
+In the EU Member States and EU neighboring countries, in transmission period 2026, up to 08/07/2026,
+human WNV infection cases have been also recorded -besides Greece- in: Italy, North Macedonia, Romania,
+and Spain (source: ECDC, ECDC, Surveillance of West Nile virus infections in humans in Europe, weekly
+report).
+Epidemiological surveillance of the disease, systematic and early implementation of mosquito control
+programs and personal protective measures against mosquito bites are considered the most appropriate
+measures to control WNV infection outbreaks. Since the circulation of WNV and its geographical
+distribution (i.e., the areas with recording of human cases) during each period cannot be predicted,
+personal protective measures against mosquitoes are encouraged, during the period of mosquito
+activity.
+General information regarding personal protection measures against mosquitoes is available at:
+https://eody.gov.gr/images/nosimata/metadotika/mosquito_brochure_2019.pdf.
+National public health authorities conduct a series of preventive and response measures, including
+enhanced surveillance, case investigation, information dissemination and communication activities, and
+collaborate with regional and local authorities, aiming at the timely implementation of targeted response
+measures at local level.
+
+In addition, during the transmission season, weekly surveillance reports are published on the NPHO website
+every Wednesday (available from: https://eody.gov.gr/el/nosimata/metadotika/nosimata-kai-themata-
+ygeias/ios-dytikou-neilou.html?me=m3), in english also, which include updated information.
+                                                                                                                   6
+

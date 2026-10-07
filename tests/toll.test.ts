@@ -6,6 +6,7 @@ import {
   applySnapshot,
   withoutIgnored,
   MAX_SNAPSHOTS,
+  WEEKLY_STALE_PREV_DAYS,
 } from "../scripts/lib/toll.mjs";
 
 const INFOBOX = `{{Short description|Ebola epidemic}}
@@ -218,6 +219,20 @@ describe("validateSnapshot", () => {
     const old = snap({ date: "2026-09-20", confirmed: 7000, deaths: 3000 });
     expect(validateSnapshot(snap(), old, "2026-10-02").ok).toBe(true);
   });
+
+  it("for a weekly report, allows early-season growth a week on but checks a reissue within the week", () => {
+    // EODY West Nile, Greece: 157 -> 232 cases in the week to 26 Aug 2026 (+48%).
+    const week = snap({ date: "2026-08-19", confirmed: 157, deaths: 13, suspected: null, recovered: null });
+    const next = snap({ date: "2026-08-26", confirmed: 232, deaths: 19, suspected: null, recovered: null });
+    const weekly = { stalePrevDays: WEEKLY_STALE_PREV_DAYS };
+    expect(validateSnapshot(next, week, next.date).ok).toBe(false); // the daily rule would block it
+    expect(validateSnapshot(next, week, next.date, weekly)).toEqual({ ok: true });
+    const reissue = snap({ ...next, date: "2026-08-21" });
+    expect(validateSnapshot(reissue, week, reissue.date, weekly).reason).toMatch(/jumped .* within 3 days/);
+    // A report day moving from Thursday back to Wednesday leaves 6 days: still accepted.
+    const early = snap({ ...next, date: "2026-08-25" });
+    expect(validateSnapshot(early, week, early.date, weekly)).toEqual({ ok: true });
+  });
 });
 
 describe("applySnapshot", () => {
@@ -234,6 +249,15 @@ describe("applySnapshot", () => {
     const out = applySnapshot(base, same, "2026-10-02T06:00:00.000Z");
     expect(out.lastChecked).toBe("2026-10-02T06:00:00.000Z");
     expect(out.snapshots).toEqual(base.snapshots);
+  });
+
+  it("with appendUnchanged, records an unchanged reading for a new date (a quiet week)", () => {
+    const same = snap({ date: "2026-10-08", confirmed: 8100, deaths: 3900 });
+    const out = applySnapshot(base, same, "2026-10-08T06:00:00.000Z", { appendUnchanged: true });
+    expect(out.snapshots.map((s) => s.date)).toEqual(["2026-10-01", "2026-10-08"]);
+    // ...but the same report read again changes nothing.
+    const again = applySnapshot(out, same, "2026-10-08T18:00:00.000Z", { appendUnchanged: true });
+    expect(again.snapshots).toEqual(out.snapshots);
   });
 
   it("replaces the last snapshot when the date is the same", () => {

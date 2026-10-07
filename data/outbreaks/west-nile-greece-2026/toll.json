@@ -1,0 +1,137 @@
+{
+  "lastChecked": "2026-10-07T14:58:39.853Z",
+  "snapshots": [
+    {
+      "date": "2026-07-15",
+      "confirmed": 7,
+      "suspected": null,
+      "deaths": 0,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://www.eody.gov.gr/images/WNV_weekly_report_15_07_2026_ENG.pdf",
+      "sourceSha256": "2f67d47dad93793115f6e932fb7b1ae1c1c41efdf057c47474abdbebbfa5ee79",
+      "rawPath": "data/raw/report/eody-wnv-2026-07-15-543305f573da.txt",
+      "rawSha256": "543305f573da7c7ce80ddc267c2d69ff4477bcb4c8dc12a1174376b2750482c1"
+    },
+    {
+      "date": "2026-07-22",
+      "confirmed": 21,
+      "suspected": null,
+      "deaths": 0,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_22_07_2026.pdf",
+      "sourceSha256": "0a77bb8d5064f68a9b90d316f7050e75dcbbb7ec0c0feae9c1ac9af5dcd559ed",
+      "rawPath": "data/raw/report/eody-wnv-2026-07-22-d680d5d5445c.txt",
+      "rawSha256": "d680d5d5445c78ef410abb76667bb4e3c3d3c84282f6cde6abc377097304f646"
+    },
+    {
+      "date": "2026-07-29",
+      "confirmed": 42,
+      "suspected": null,
+      "deaths": 4,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_29_07_2026.pdf",
+      "sourceSha256": "7fdd058c4c3c758b95ae2b5adf0fc78d25af8c485927bb0ec0d685f77cb23aa4",
+      "rawPath": "data/raw/report/eody-wnv-2026-07-29-b9727ed13960.txt",
+      "rawSha256": "b9727ed13960b57750df24bc53ee6c38401d48993d6121945a530b6ceb7af2bd"
+    },
+    {
+      "date": "2026-08-05",
+      "confirmed": 65,
+      "suspected": null,
+      "deaths": 6,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_05_08_2026.pdf",
+      "sourceSha256": "457cd53b79cd13904c119f68de8df060ceeb9b99dc73257816b863304ac63d5d",
+      "rawPath": "data/raw/report/eody-wnv-2026-08-05-1aeec9af5c14.txt",
+      "rawSha256": "1aeec9af5c145033695bd091206b2bb1e96f0ba7028fa32a659b40b4ba04a721"
+    },
+    {
+      "date": "2026-08-19",
+      "confirmed": 157,
+      "suspected": null,
+      "deaths": 13,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_19_08_2026.pdf",
+      "sourceSha256": "27f0ea8685d8b257c142853be01867ff3f7dc183129702a23c4c05adfcb1b719",
+      "rawPath": "data/raw/report/eody-wnv-2026-08-19-ece1d5aa498f.txt",
+      "rawSha256": "ece1d5aa498f5fe31a6ce9ac4f1c284de9aa7b832e80c611a0bc2026a36866f4"
+    },
+    {
+      "date": "2026-08-26",
+      "confirmed": 232,
+      "suspected": null,
+      "deaths": 19,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_26_08_2026.pdf",
+      "sourceSha256": "1c8a7ca6af62a6b45f50ea1555078e6a322c3ec21ec891a467138f518a2c6538",
+      "rawPath": "data/raw/report/eody-wnv-2026-08-26-d6abf079f553.txt",
+      "rawSha256": "d6abf079f5534b09178d239ee18f15a824f070c8f0d31f72fdb4e32bd904c600"
+    },
+    {
+      "date": "2026-09-02",
+      "confirmed": 290,
+      "suspected": null,
+      "deaths": 24,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_02_09_2026.pdf",
+      "sourceSha256": "94ebf43127ee6f2881235ee4cba56e9ce284dcbd49f76dbbc1f79ccc7e5bdb7b",
+      "rawPath": "data/raw/report/eody-wnv-2026-09-02-b730bd585e7c.txt",
+      "rawSha256": "b730bd585e7c3de178f6de4c8b354483baa363e817c24d55bb80fe3ddef8093e"
+    },
+    {
+      "date": "2026-09-09",
+      "confirmed": 324,
+      "suspected": null,
+      "deaths": 30,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_09_09_2026_2_1.pdf",
+      "sourceSha256": "a6e07136a38019f963617df8f777dd053da15e8982f4373db724aa8df0b3399a",
+      "rawPath": "data/raw/report/eody-wnv-2026-09-09-45e30f0e1574.txt",
+      "rawSha256": "45e30f0e157492b978d007b1d9991e71feffb1943a1cd9985f8027f7b0a28d5f"
+    },
+    {
+      "date": "2026-09-17",
+      "confirmed": 370,
+      "suspected": null,
+      "deaths": 33,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_17_09_2026.pdf",
+      "sourceSha256": "376bc2739a85c6397356c19bbd83408cbc0c5a254382d86d9b7ff6d642cc0792",
+      "rawPath": "data/raw/report/eody-wnv-2026-09-17-ec2c7fcd448c.txt",
+      "rawSha256": "ec2c7fcd448c268def2869ad86ab19aa496e23428de758eb1b74934c9c3ccc31"
+    },
+    {
+      "date": "2026-09-24",
+      "confirmed": 396,
+      "suspected": null,
+      "deaths": 36,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_24_09_2026.pdf",
+      "sourceSha256": "03270147a81f9ed282f77f165bba4d049eba8687fd8f88d09b6b29121d0682a7",
+      "rawPath": "data/raw/report/eody-wnv-2026-09-24-7a6a809f234b.txt",
+      "rawSha256": "7a6a809f234b85480478a32b480b2dfb8651fd2a3a25ca0d0080353565f72221"
+    },
+    {
+      "date": "2026-10-01",
+      "confirmed": 423,
+      "suspected": null,
+      "deaths": 41,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_01_10_2026.pdf",
+      "sourceSha256": "82f1197758438cf89683499c6d14fc200eb478cefd286935e887166618ccd954",
+      "rawPath": "data/raw/report/eody-wnv-2026-10-01-61628b03e8b2.txt",
+      "rawSha256": "61628b03e8b2eb545a01c8b4d687a5a0c776bad410d64d24276dd3d5184794c1"
+    }
+  ]
+}

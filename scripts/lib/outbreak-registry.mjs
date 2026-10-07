@@ -1,7 +1,8 @@
 // Script-side registry of every outbreak in src/data/outbreaks/. Plain `.mjs`
 // (the scripts run on bare `node`, no TypeScript), so it mirrors the slug, status
 // and source of src/data/outbreaks/*.ts; tests/outbreak-registry.test.ts fails if
-// the two drift apart. Only entries with `toll` are read from Wikipedia and only
+// the two drift apart. Only entries with `toll` get automatic figures (from a Wikipedia
+// infobox, or from an official weekly report when `toll.adapter` says so) and only
 // entries with `feed` get a news feed; a hand-curated record has neither.
 
 import { resolve } from "node:path";
@@ -107,6 +108,45 @@ export const OUTBREAKS = [
     },
   },
   {
+    slug: "west-nile-greece-2026",
+    status: "active",
+    disease: "West Nile virus",
+    toll: {
+      // No Wikipedia article has an outbreak infobox for this, so the figures come from
+      // EODY's own weekly report (a PDF, Greek most weeks), found through EODY's
+      // announcements RSS feed. Parsed by scripts/lib/eody.mjs; needs `pdftotext`.
+      adapter: "eody-report",
+      feedUrl: "https://eody.gov.gr/el/anakoinoseis.html?format=feed&type=rss",
+      // Every weekly report's RSS title: "Εβδομαδιαία έκθεση επιτήρησης της λοίμωξης από
+      // ιό του Δυτικού Νείλου, 01-10-2026" (weekly surveillance report, West Nile virus).
+      titleIncludes: "Δυτικού Νείλου",
+      rawPrefix: "eody-wnv",
+      source: "EODY weekly West Nile virus report",
+    },
+    feed: {
+      sources: [
+        { name: "Google News — West Nile virus Greece", url: gnews("West Nile virus Greece"), source: "News" },
+        { name: "Google News — West Nile Greece deaths", url: gnews("West Nile Greece deaths EODY"), source: "News" },
+        { name: "Google News — West Nile Attica", url: gnews("West Nile virus Attica"), source: "News" },
+      ],
+      // "West Nile" alone is in the news every summer in the US, Italy and elsewhere, so an
+      // item needs the virus AND a Greek place or the Greek health agency.
+      strongKeywords: [],
+      contextualKeywords: [
+        {
+          term: "west nile",
+          needsOneOf: ["greece", "greek", "athens", "attica", "eody", "npho", "thessaly", "larissa", "thessaloniki", "macedonia"],
+        },
+      ],
+      // Used in the summary and extraction prompts.
+      subject: "the 2026 West Nile virus season in Greece",
+      extraction: {
+        scope: `If — and only if — the article reports a SPECIFIC COUNTRY OTHER THAN GREECE (which is already curated) with West Nile virus cases or deaths ACQUIRED IN GREECE in 2026 (e.g. a traveller infected in Greece and diagnosed in the UK, Germany or elsewhere), return JSON:`,
+        exclusions: `If the article is only about Greece, OR does not mention a specific country, OR the cases were acquired locally in that other country (Italy, Spain, Romania, the US or anywhere else has its own West Nile season), OR the country is merely on alert, return:`,
+      },
+    },
+  },
+  {
     // Archived, hand-curated record (src/data/outbreaks/hantavirus-mv-hondius-2026.ts).
     // No `toll` and no `feed`: nothing here is fetched, and status "over" keeps it
     // out of the scheduled runs. Its live.json is a frozen news record.
@@ -115,6 +155,16 @@ export const OUTBREAKS = [
     disease: "Hantavirus",
   },
 ];
+
+/**
+ * Which reader produces an outbreak's toll: "wikipedia" (the default, `toll.page`) or
+ * "eody-report" (EODY's weekly report PDF). Null when the outbreak has no toll.
+ * @returns {"wikipedia" | "eody-report" | null}
+ */
+export function tollAdapter(outbreak) {
+  if (!outbreak?.toll) return null;
+  return outbreak.toll.adapter ?? "wikipedia";
+}
 
 export function getOutbreak(slug) {
   return OUTBREAKS.find((o) => o.slug === slug);

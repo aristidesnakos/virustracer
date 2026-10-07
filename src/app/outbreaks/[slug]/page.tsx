@@ -40,6 +40,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const figures = latestFigures(mergeTimeline(outbreak.casesTimeline, toll.snapshots));
   const description = describeFigures(figures, outbreak.description, outbreak, {
     archived: isArchivedRecord(outbreak),
+    weekly: outbreak.metrics.reportingCadence === "weekly",
   });
   const path = outbreakPath(slug);
   return {
@@ -340,7 +341,7 @@ export default async function OutbreakPage({ params }: Props) {
                 className="panel rise min-w-0 lg:col-span-5"
                 style={{ "--i": 4 } as React.CSSProperties}
               >
-                <TrendPanel metrics={metrics} headingId="trend-heading" />
+                <TrendPanel metrics={metrics} headingId="trend-heading" rtShortNote={outbreak.metrics.rtShortNote} />
               </section>
             ) : (
               <section

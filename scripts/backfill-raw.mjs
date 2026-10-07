@@ -21,7 +21,7 @@ import { readFileSync, writeFileSync } from "node:fs";
 import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { backfillRawForStore } from "./lib/raw.mjs";
-import { USER_AGENT, dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
+import { USER_AGENT, dataFile, selectOutbreaksWith, tollAdapter } from "./lib/outbreak-registry.mjs";
 
 const DRY_RUN = process.argv.includes("--dry-run");
 const TIMEOUT_MS = 30_000;
@@ -80,8 +80,9 @@ async function backfillOutbreak({ slug, toll }) {
 
 async function main() {
   let failed = 0;
-  // Only outbreaks with an automated toll source have Wikipedia revisions to archive.
-  for (const outbreak of selectOutbreaksWith("toll")) {
+  // Only Wikipedia-backed outbreaks have revisions to archive; an official report's
+  // text is archived by update-toll.mjs when the report is read.
+  for (const outbreak of selectOutbreaksWith("toll").filter((o) => tollAdapter(o) === "wikipedia")) {
     const { slug } = outbreak;
     console.log(`── ${slug} ──`);
     try {
