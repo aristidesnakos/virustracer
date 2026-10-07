@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-06T20:09:52.900Z",
+  "lastFetched": "2026-10-07T08:11:13.005Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -374,9 +374,60 @@
     "news-2a8f2a13440e3418",
     "news-14350319750c8ba3",
     "news-d6993b40d43a61f4",
-    "news-789557be26a8c92d"
+    "news-789557be26a8c92d",
+    "news-6b2c0d5ad346f71a",
+    "news-4962465ffbda5aad",
+    "news-78a14b8ec3816f43",
+    "news-3a69578b37cb13f7",
+    "news-292ddfa2f09d433d",
+    "news-5726fa64da6d870f",
+    "news-f5714a43f99238f5",
+    "news-74ed058846d1a5dd",
+    "news-b1e8ade2b180f78c",
+    "news-7e159f6fd6312baf",
+    "who-3a69578b37cb13f7"
   ],
   "recentItems": [
+    {
+      "id": "news-3a69578b37cb13f7",
+      "title": "Roche Diagnostics delivers laboratory equipment to support Ebola testing in DRC - PR Newswire",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNT3pZOWQxMF9sMmhtSm02TXZQY1hfVWhyQ0dHdG5SZnNVMEQ3TWdxdUdPcnB1MFBUNG4ySGVLeDVCM04tVU9VN2MtM0JfbnJXaXlpUDRibGY1Ql9DMFhzVUJFcTlfcEt5eUtneXM4VVlhYzAzc0lYQXhhNWtSVnUzclJfM0lWdHRxdWh3Ylo4NERVMTVsc0ppbm1jenEwQTJiNm52SVlRMnNlbUNWUGFIRDVGZ2ZRbHZyZHBLR2drbnF5M1Bib0dpOFA4NmVfTGZZ?oc=5",
+      "date": "2026-10-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Roche Diagnostics delivers laboratory equipment to support Ebola testing in DRC PR Newswire"
+    },
+    {
+      "id": "news-292ddfa2f09d433d",
+      "title": "Ebola Outbreak Reaches Kenya: What International Law Requires of States - Diplomacy and Law",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5rQzRLQUlBVU5vMDlZaE5ESVJXYjhOYjZZQ1RxV3VtUkNYZkRMa09PUEtMSVZobWxmN3JtMENTTGJPVmFuZEswcW5EQkZua1FTVHZtUWxmcjY2NlMzSEhjSF9VN2VEeWpibHdjNTB5dFAxXzA?oc=5",
+      "date": "2026-10-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola Outbreak Reaches Kenya: What International Law Requires of States Diplomacy and Law"
+    },
+    {
+      "id": "news-6b2c0d5ad346f71a",
+      "title": "Man living in DR of Congo who returned to Kenya country’s first Ebola death - The Irish News",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTm1ZSmdlZTRQU2xLeFdwbzhIWU9wRHBHU2lscXRWS0I2TTJDdWtSMDM4dmZOTTNpMGExM20wOWhEYnhEaU1rS0dWeFZmdUc3djgwbkRfRTB1UlhWMldveWRDLURxRWJTa3lWUGRKck5iVnNBaWREYm4zQm9fZkdiMWU3dGdhN2pOWnRqMmRIUC1RUktYRXZGRFFGdXE2NVNtQzdtUmRPMmZUTjVxcXRQTXlvTHJ3d0dkeExVSlFVckUwbXk2UVBLbnlBUkxxeEF4NjJqQ2trcGVoMU0?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Man living in DR of Congo who returned to Kenya country’s first Ebola death The Irish News"
+    },
+    {
+      "id": "news-5726fa64da6d870f",
+      "title": "Kenya reports confirmed imported case of Bundibugyo Ebola Virus Disease - Outbreak News Today",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE40MGh0ZVVLUEdiVEg2bkN4UFlKWWkwOXRJUUx1ZkZSem5nUk16R0lFM0pHVW1UdzhQWUh4N2pjN19uQ1BLM0hVQzVTU1RtOFhnVGdCY19MbWpXRjg2dFk5MGxrSDdyaXRWakE1RmxPZVpIVnoxVFgzR2xnTEdmdw?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya reports confirmed imported case of Bundibugyo Ebola Virus Disease Outbreak News Today"
+    },
+    {
+      "id": "news-74ed058846d1a5dd",
+      "title": "Kenya: What Is Bundibugyo Ebola? the Strain Behind Kenya's First Case - allAfrica.com",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVLVhiS1NTUTZSNUU4ZjNIQmhPNVJIeFZ2bEhleGhoZGJ1NWlodHlVTl9iQzRzSlNOTTRPYnlIY0MzSFZRdUZXdTlrZTlPOEZFRFJNNXNhbmxWMFU?oc=5",
+      "date": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "As of February 3, 2026, the ongoing Bundibugyo Ebola outbreak in Uganda and the Democratic Republic of Congo has resulted in 17 confirmed cases and 7 deaths, including Kenya's first confirmed case of the strain. Kenyan health officials have stated that the patient is in stable condition and that they are tracing contacts to contain the spread."
+    },
     {
       "id": "news-c3d9b934d3216853",
       "title": "Ebola Death Toll in DRC Tops 4,000; Trump USAID Cuts Fuel Outbreak - Democracy Now!",
@@ -496,46 +547,6 @@
       "date": "2026-10-06",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "As of March 19, 2026, Africa CDC has deployed an emergency team to Kenya following the country’s first confirmed case of Bundibugyo Ebola, linked to the ongoing outbreak in Uganda and the Democratic Republic of Congo. No cumulative death toll or total confirmed case count for the outbreak was provided in the article."
-    },
-    {
-      "id": "news-6055c7e28a8785ae",
-      "title": "Can Obeldesivir Prevent Ebola Symptoms After Exposure? Drug Trial Moves Forward As Death Toll Crosses 4,000 - Health and Me",
-      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcl9jTjRYNnJYX0FIdVljMks0ZjJvZGxjUFVaV2owdGUwWmFuZDJIRllMaEM3MEUyOW1ER2lpcUlScThiX2VYbU8wWUU5OXU0NzZOV1dDd0pNVHAtR2xyWDJfX2llS3dERm1NSkx0c3JOaG9ud05XbU9WOFk3c2JrLU5LM3FxNU8wbGtzSUtZdlFWVTdDUy05M2p4MzNfREdMdURlTnBxc0QtTUxFbmR6cUF5X1prSlZZeXFMOHZiZjVqS2FLZkxXWkZ3cmFvd1A4NjREVjRkb1J1X2RPaldsNjJQVHVvbDlCQWc?oc=5",
-      "date": "2026-10-05",
-      "source": "Google News — Ebola death toll",
-      "summary": "Can Obeldesivir Prevent Ebola Symptoms After Exposure? Drug Trial Moves Forward As Death Toll Crosses 4,000 Health and Me"
-    },
-    {
-      "id": "news-925a9bc279c87fe5",
-      "title": "DRC - Concept of Operations - Ebola Virus Disease (EVD) Outbreak, October 2026 - ReliefWeb",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVmwwSzlaa0FqRkU1Qll5STItdi1kRm85YTZWOWRVYkZXbWZkU005ekhtbC1CdVNkVzd4QkU1aEJYZ2RlcHZuU01xYklPZG9iNjVacGxhNHp5WFRFT1NJUlJsR0JHbnZKT01jR1FQVnl6Z3Q4MjdjVWxkbHExNjNWcmtkM2t5WElRcXNCSnpOLTRMdzllNGo4Nm1veFhfZWxZMml6OGFCallENTY2c0dkWmZJQzZ2c2V6RkZ3MkxrdVk?oc=5",
-      "date": "2026-10-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "DRC - Concept of Operations - Ebola Virus Disease (EVD) Outbreak, October 2026 ReliefWeb"
-    },
-    {
-      "id": "news-8a966e43833b5c4c",
-      "title": "DRC health officials say Ebola outbreak past peak despite death toll surpassing 4,000 - bastillepost.com",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNd1pmYUVodV9oNFFibzNyRmw4MEV6a093SDhCWkozeUxqeHBrU0F6b09qWE0zTUZyT2JSa3prdkJWRS1MRmVXQjgwclBSZDlUcThQYkk0NHlwOTRIeW5wNE9KT20ybGZETm9VQ3dRWGNuRGQ5VlBPdkxjS3RPX1llNDdpRWd4YVVHcFNvaXU2cnR1QXV0S05mUVZjRVlZdFlpSjlaaV90WnRGd2VaR09BdEpTNVJhVk5qbF94RW5jZkg3OVVId2NTTnNzeUhIZkxURUE?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "DRC health officials say Ebola outbreak past peak despite death toll surpassing 4,000 bastillepost.com"
-    },
-    {
-      "id": "news-eea4df178c5972d6",
-      "title": "Ebola outbreak eases in DR Congo though death toll tops 4,000 - news.cgtn.com",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPTGVKSkJ4NUYtTWhqVk5ZQnloZTFnUWl4b20ycS02ZmJTM0RIQ0pqVllqRlcxZUdJdHVoRTlvaUszemFWZl9vbUV3NmZwOHVEc1hSRFhmUHZzeHh0V2dWRFNUS0ZlS1NlMUxLQ1N1LUs2Rl9faUtOTWlCM0wxbVFSMlFrdlptcmhydnNoYVhraUJraFlnTFlzRlJ1Q0gtYy1UMEo0WlRuWkZQX1lhaUFFbVIyUThsRi15TWVYMGk2UE95ZVlE?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola outbreak eases in DR Congo though death toll tops 4,000 news.cgtn.com"
-    },
-    {
-      "id": "news-ce526d0da4d4ce78",
-      "title": "Ebola outbreak eases in DR Congo though death toll tops 4,000 #worldnow - Modern Ghana",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTFAyUnE0eU9ydWdyc1JHcTJvZmtqbUJsYjY1UW9OQUN2UFdfaWh3VDB4YjNDMXdFQXBXRVJpcVU5bXdiUUZoM1lycE02ejkxTF9uendlV3BNS3hXOGtlc3dtR9IBXEFVX3lxTE9qcWs3Z0NHcVJ1MnR1S2g2ZTRUMnZyWTdmZTE3bHlRREVZbnljS0NLcHhLbEVTVTk4M3k5ZWZxRXFNV3JTeS1xYXRvdmhja0RFRVlOaHVta2R6eDky?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola outbreak eases in DR Congo though death toll tops 4,000 #worldnow Modern Ghana"
     }
   ]
 }
