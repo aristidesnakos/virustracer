@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-07T14:46:36.427Z",
+  "lastFetched": "2026-10-07T20:11:28.739Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -87,7 +87,12 @@
     "news-21ccd4f533542a7d",
     "news-33260549d060716f",
     "news-9e9225b569023cc7",
-    "news-96dceca7bcd5ecc1"
+    "news-96dceca7bcd5ecc1",
+    "news-73056fdc09efe478",
+    "news-f4c24eb605ac4ac4",
+    "news-a7eea64a63b15e04",
+    "news-404847e609926bb8",
+    "news-237061e44bf62596"
   ],
   "recentItems": [
     {
@@ -163,6 +168,14 @@
       "summary": "Greece Second in Europe for West Nile, Seven Dead in Skopje srpske.rs"
     },
     {
+      "id": "news-f4c24eb605ac4ac4",
+      "title": "West Nile Virus Cases Confirmed in Affluent Athens Suburb - Greek City Times",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ182VHJuUEZCblpqXzhMb1IzZkFDbmlTZnkxSGhMZjUxSGluZ01vLU83TEd4ajVBQVZXQjVXRnM2WFNRTEE2WFhsRENCaHZwVFVjdHBCZ2hkdXpuNWx6NWdEODhMSWJxaWFQUGtiUjZZVGxJOGRhTmtvc3k1WFdqc0VKRzdkanFBeTZlMHlzcFNfTDlsRGlwT005c1k?oc=5",
+      "date": "2026-09-03",
+      "source": "Google News — West Nile Attica",
+      "summary": "West Nile Virus Cases Confirmed in Affluent Athens Suburb Greek City Times"
+    },
+    {
       "id": "news-7be8fb5ecd40d591",
       "title": "West Nile Virus Cases Rise to 290 in Greece - tovima.com",
       "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbkVpZHRCSThHVXEzcS1tZkRlMmRsWV9qZmhQNFdDbmJXcDB6b0g4eFEwcVFSRW5hUzZ2bHJXbHNrdWhGXzQ3by1jelZIaV9YaHZHRy1VVnZXZFlDdGlNZ1pkYThicjNpZ0ZXaWhsd0VhVk5nU01tOTE3U2RaYk5JSNIBhgFBVV95cUxOTTdjZTNjZlFBdjNPMnRzeUxIVHFHZHo4R1B6UnpDS2pfemlBOTRyVDgwWUVhekN5c21VbGNwbndnVTFSRFRwVnpWZERaZ2tWdC11YmNuejZVQmhrbjdMdngwZC1tdkRuWTY0ZjRiY3lYNFJwWExCM3Y5SVhpby1yc0QzYjI5dw?oc=5",
@@ -185,6 +198,14 @@
       "date": "2026-09-01",
       "source": "Google News — West Nile virus Greece",
       "summary": "Licensable picture: Mosquito control efforts continue in Athens amid rise in West Nile Virus cases Reuters Connect"
+    },
+    {
+      "id": "news-73056fdc09efe478",
+      "title": "West Nile Virus Triggers Nighttime Spraying in Eastern Attica - tovima.com",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaHl5QmV1VS1sckhaYUcwaDJoRkRHeUhfZnpBbTdEREhoMzFfRHpya3N2SW1pY2Fib0xhel9lUERhT0xuc3llTlVoaXpGZnQ3Z0EwQTlfUFlxU2VMaFVQRzg2SWJRNHVtOWhTOExrU3BBTUF0dXZ0WnR5ZnB4Y0ZqVDF2M0F3NUY2UGs2OWk4aEt5Q3BkQlRqN9IBngFBVV95cUxOMmREYTdpYThUeVdPSGk2b3lvM2F0LU5qX1hEVzhaR1dKQTBDb01wVFdLdXEzenNhYy1UUDhGM2tTMGJoWmdXcV9XaVFkOEFuTDRvdzE4VUhLQTlvT1VCTS0wMF82SVlaaHRCMHlBUWhPYU1MZEY5SEtIaE5yVktEaUJIUXJnUm5tMlRDTlhlOU12N3kxc21CN1N3Vl9Udw?oc=5",
+      "date": "2026-08-31",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "West Nile Virus Triggers Nighttime Spraying in Eastern Attica tovima.com"
     },
     {
       "id": "news-88697cdc8e2f00a5",
@@ -233,22 +254,6 @@
       "date": "2026-08-27",
       "source": "Google News — West Nile Attica",
       "summary": "Attica Launches Emergency Action Plan to Tackle Spread of West Nile Virus tovima.com"
-    },
-    {
-      "id": "news-e3b403218994aa78",
-      "title": "West Nile virus cases and deaths in Greece hit seven-year high - ProtoThema English",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNSHRjTUhlbTh2Z2ZBOVM3RmUtdFRRb3BmOVI2RzI2bnRibjJaWkx2clBSSnBabzZpX3FZWTRsTmxyMGl4LVlZN0MxY0xEbHlkejJGMF84VlFPRTJzcWFGZ3RlUEhoMlhUT3FfMmlvWkdVRWYxUzE3dTk4cXlWdEhjMHZFMUxhbWlPOVJHeUZJVVFEWDlmekpKUW1kZ2hHcm4w?oc=5",
-      "date": "2026-08-24",
-      "source": "Google News — West Nile Greece deaths",
-      "summary": "West Nile virus cases and deaths in Greece hit seven-year high ProtoThema English"
-    },
-    {
-      "id": "news-350e504be5584b0d",
-      "title": "Greece’s West Nile virus cases surge, with eastern Attica hit hardest - ProtoThema English",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPNGY3M3prZmZnbFM2bW1RQ0J2dXM4b01neUlYdF9oNE9QQkhKQnNrYk8wSjYwdXZBT3lMWUZkZnlBMW1MUVpFUHpGUGRmQ0pkLUlLZHBaMlczY1BQTHZ1SzRNdEFTUWpRNG55ODJtNFU3bV9nQ2Q0VDJYd2pLNnU3RzNyb1liOTlwR1Awbi1aVGZadElzbHo1MWQyXzl6TDVRemRobUdabw?oc=5",
-      "date": "2026-08-22",
-      "source": "Google News — West Nile Greece deaths",
-      "summary": "Greece’s West Nile virus cases surge, with eastern Attica hit hardest ProtoThema English"
     }
   ]
 }

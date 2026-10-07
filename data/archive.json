@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-07T08:12:17.614Z",
+  "lastRun": "2026-10-07T20:11:28.815Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": null,
@@ -1133,11 +1133,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1368675295": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261003120215/https://en.wikipedia.org/w/index.php?oldid=1368675295",
+      "archivedAt": "2026-10-03T12:02:15Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
       "title": "Wikipedia toll snapshot 2026-08-10: 4230 confirmed, 1918 deaths",
       "publishedAt": "2026-08-10T12:43:41Z",
       "source": "Wikipedia",
@@ -1148,9 +1148,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1368926592": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
       "title": "Wikipedia toll snapshot 2026-08-11: 17115 confirmed, 98 deaths",
       "publishedAt": "2026-08-11T22:18:39Z",
       "source": "Wikipedia",
@@ -1159,11 +1159,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1369061155": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261003120245/https://en.wikipedia.org/w/index.php?oldid=1369061155",
+      "archivedAt": "2026-10-03T12:02:45Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
       "title": "Wikipedia toll snapshot 2026-08-12: 4470 confirmed, 2063 deaths",
       "publishedAt": "2026-08-12T17:20:00Z",
       "source": "Wikipedia",
@@ -1174,9 +1174,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1369111414": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
       "title": "Wikipedia toll snapshot 2026-08-13: 17115 confirmed, 99 deaths",
       "publishedAt": "2026-08-13T00:20:31Z",
       "source": "Wikipedia",
@@ -1214,8 +1214,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-07T08:12:17.614Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
       "title": "Wikipedia toll snapshot 2026-08-15: 17800 confirmed, 99 deaths",
       "publishedAt": "2026-08-15T16:28:10Z",
       "source": "Wikipedia",
@@ -1276,11 +1276,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1370221772": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 2,
-      "lastAttempt": "2026-10-07T08:12:17.614Z",
+      "archivedUrl": "https://web.archive.org/web/20261007081411/https://en.wikipedia.org/w/index.php?oldid=1370221772",
+      "archivedAt": "2026-10-07T08:14:11Z",
+      "status": "archived",
+      "attempts": 3,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
       "title": "Wikipedia toll snapshot 2026-08-19: 17800 confirmed, 99 deaths",
       "publishedAt": "2026-08-19T21:02:36Z",
       "source": "Wikipedia",
@@ -1318,8 +1318,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 2,
-      "lastAttempt": "2026-10-07T08:12:17.614Z",
+      "attempts": 3,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
       "title": "Wikipedia toll snapshot 2026-08-21: 18208 confirmed, 99 deaths",
       "publishedAt": "2026-08-21T14:16:20Z",
       "source": "Wikipedia",
@@ -2029,6 +2029,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1379030760": {
+      "archivedUrl": "https://web.archive.org/web/20261007201134/https://en.wikipedia.org/w/index.php?oldid=1379030760",
+      "archivedAt": "2026-10-07T20:11:34Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "Wikipedia toll snapshot 2026-10-07: 8687 confirmed, 4181 deaths",
+      "publishedAt": "2026-10-07T13:55:59Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/wiki/2026_Bangladesh_measles_outbreak": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2066,6 +2079,162 @@
       "source": "Curated (src/data/outbreaks/hantavirus-mv-hondius-2026.ts)",
       "kind": "curated",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/el/anakoinoseis/ebdomadiaia-ekthese-epitereses-tes-loimoxes-apo-io-tou-dytikou-neilou-01-10-2030.html": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "EODY weekly report",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/west-nile-greece-2026.ts)",
+      "kind": "curated",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/el/nosimata/metadotika/nosimata-kai-themata-ygeias/ios-dytikou-neilou.html": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "EODY: West Nile virus",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/west-nile-greece-2026.ts)",
+      "kind": "curated",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_01_10_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-10-01: 423 confirmed, 41 deaths",
+      "publishedAt": "2026-10-01",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_02_09_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-09-02: 290 confirmed, 24 deaths",
+      "publishedAt": "2026-09-02",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_05_08_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "EODY weekly West Nile virus report snapshot 2026-08-05: 65 confirmed, 6 deaths",
+      "publishedAt": "2026-08-05",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_09_09_2026_2_1.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-09-09: 324 confirmed, 30 deaths",
+      "publishedAt": "2026-09-09",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_17_09_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-09-17: 370 confirmed, 33 deaths",
+      "publishedAt": "2026-09-17",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_19_08_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-08-19: 157 confirmed, 13 deaths",
+      "publishedAt": "2026-08-19",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_22_07_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "EODY weekly West Nile virus report snapshot 2026-07-22: 21 confirmed, 0 deaths",
+      "publishedAt": "2026-07-22",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_24_09_2026.pdf": {
+      "archivedUrl": "https://web.archive.org/web/20261005085402/https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_24_09_2026.pdf",
+      "archivedAt": "2026-10-05T08:54:02Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-09-24: 396 confirmed, 36 deaths",
+      "publishedAt": "2026-09-24",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_26_08_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-07T20:11:28.815Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-08-26: 232 confirmed, 19 deaths",
+      "publishedAt": "2026-08-26",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_29_07_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "EODY weekly West Nile virus report snapshot 2026-07-29: 42 confirmed, 4 deaths",
+      "publishedAt": "2026-07-29",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi-AFBVV95cUxQMUJJQ1V1NHdEeFlydkV2X0o5SHk2QW1EYXNHZXRETm9QeHNtWHNKQnVFT2JOLWpYZzYyWTc3bEMtUTdlNGRVczBtelljcHlfanpBUEtZSlF5TjJBLTljWW5RRWpwOUtFMkkyMmhXT0owM2FUaGdydDRySTZiTWNLNmE5ZVd2YUZVTlQ3bENSdThabEd4YXNCSzI3MUg3Ym9uREt5Nm12OEVpX3F3QXdPSnd0UjJOQ3g0M0Z3aDljMi11d3RneXA0eG1KNTR0ZzkxRzdnNE1oaENweTNGNUlzVDBkWGludXFrVS1VUnJoZHJKZndQMHBjTQ?oc=5": {
@@ -2246,6 +2415,19 @@
       "title": "Ebola treatment center burns as death toll passes 4K - timesdaily.com",
       "publishedAt": "2026-10-03",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVk1fNktpSDJHTC1uR3dwQWg4dENPMENfdDNHcGEyS0F0aXVZMktkQTlBMmFIa2FYRFlQTGk0MW1sS0pOemo0R2YxR2szMWtXdC1wUUNUUU5OaGFxOGJVS0Z1eTdPdXN1YjBIaVRGRnNnSm43MFZHcGtqNFh1ODVlWW5odVVDbVlnQWpFRF9NS1JwUm5BU2FfZnBUUmhxTHVWOThHNzVRU3p4Q0ZVN0k0SDMzbXEzeUdQM1MzSk4yR29BaXhlN1drNm9TMG10NUpRT01XVk4zYWQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Roche Adds Molecular Testing Capacity in Democratic Republic of Congo Amid Ebola Outbreak - Clinical Lab Products",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -2666,6 +2848,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE90eHJHUHhsSGI4WW82Q2tjNHg5OTJaVjVhU1VObzVlb3NTWXRYNmpxX2FndDhSQlpLT21KWFNCekdJamxaRVp2cWdWRlR1R1U?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "US supports measles-rubella vaccination drive for 3.4m children in Bangladesh - bdnews24.com",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBIWTl5ZlV3ejV3UG91WjNfeFkzd1FYNmZ3WU02ZUZzUWppLWFhZ3BtT3JxZE9XNk1wREE4aWdKV05UZ1RyeHBEUFlDMnpKNWc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2809,6 +3004,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5pNjJMa1dFSWJzRmlZRm1PZTduYktEMm80TnhUUlhheHJGT1JCZWVOcDJXNmZFd1VaTnNTUzFGSWRlYTNSTVZoSFBVOGd3SDNiQzJ3amd0WHg?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece reports record annual West Nile virus cases as death toll hits 30 - TRT World",
+      "publishedAt": "2026-09-11",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiWEFVX3lxTFAydEZBSzl3SHdMekNoU1VEdV9BOTlOY1ZSS0YxOVJNTnpjUHpBMHFXejFPOFI2WV9oSWhxdW1lSEVsdjNvaDE4MkJOVElQZzJVZFduRVJHZEU?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2820,6 +3028,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBNU3p4YXI2bTlyNWkxRmYzZ2p1azVVOGctOExIMGMxcUhZaFZhQ2ZPS0wtSnliajhvTVpwaWFPMGJ2ak41Uk5MNmtLal9NX25WQWREc3ZybzI?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece reports 232 West Nile virus infections and 19 deaths - TRT World",
+      "publishedAt": "2026-08-27",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiWkFVX3lxTE5WX3FzX3VwMlh5aWhGWFhKSWxrN3dlUDctSWpiVVNHeFZJM29qbUtJdWJYcGVJbGRVMGlzLVpUOTIyTTNKVUp2aHBLb2xhUENma0tvTUNLZ0llQQ?oc=5": {
@@ -2991,6 +3212,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi_AFBVV95cUxPeENvUWN6WWpGYWVBNGxDQUxKRXFTSXlDQks3ak5HQllzRlA4a3VpTU1saXRQNTRZTWxseEJMemlxYUVwalZYUDZsQVJORHZ3RFFZSjNvRVNsRFI1akJ0dnhyempDcl9LM2VPZUo3Sy1iTldscml5Q016TFRtQk41LVNvQXQ5WFlfMHIwNUI0Y0JLSm0wcnRxRjdfMUJYNGRkMkhWMmtDZEZNWmw1dkRwNHdqaExGdElkcDhULWtJNm5uTHB1b1FyMlJzSWF4UjdXeUhnWXY5LUY5MDlldjE1QjBkMFNjVTNCYkcxQ0g0dGNzUkZPUzQ2T05VR1Q?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Kenya confirms its first Ebola case and death in a man who traveled from Congo - LancasterOnline",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi_wFBVV95cUxOLU5CV2d2ZkY1R3h1YXZaZjU5T2xXSEJ5WHVQSXN0TDVaU0FmUlI4ZW5mMFVTLXZBR2VjYUpBVE1EejhjQ2VXX0Fvb19kZTdqU1dfMXR1eTZvdTE5b2pLSTdGWjdlSGlidk9mbldabXdoclJjclBmcXBBTUhKbm5VVVFVZjdmSi1aWEZGUlZ6TnQxRHVBOG1PQzkxa3JvRXBoTXRUejZrWC16YzEzVUk5VUpmbWRyMzQyWndHYzZ2aXE0dDBKTzcyQUQzV0UwY3dhcGF0Y2VNU2YtRUhuNVp2Qkl2UExFQWpnUVpDZVE3OElzWWQ0YWpxNUhVamRIZ1XSAYQCQVVfeXFMTjF4dVZYMW40ajZSTGIwLTgzTllVbm1JTWFyVmdXNFdWbk5qZ3kzbDVDaElSUkNtMHh6b0VlbXJqOVE2eUZ4WUZCWmw4MUxvd0V2ZWIwVHB1M1pYM2RDOWFVMVFFM2RPUVAxUTl0UTdsQW1hZ0JMYzloNUJJSUVKSVEtbnI4OGdYakZzbEVhUE1jQk9fTFVzNG4zZ2tIdWNKRl9Ld0VsMzFxZDFGbXo4VjhkSUVnTEVuRzF5SzRSbzFZODZ2emR6bFZtRG5icGR4QTUyMGZqVlZHWldoMjJTS1NXZDZJMWVFaFNDUzNQcHF6Z2dfdkY2UWlrNlFRc0R4YmUxX1M?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3160,6 +3394,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xNGZJeEQ3RUVHZkR4MnQxRllfTlZzR1o3aUtJYzRzUmVIRWZoUEt0Z3JSeW54M21qeDd2bVFQSXVZWG14YzQweElCMENKSWQtOS1PVzQyNV9FaDZfdTZ5LTBtQUgtTGJJc085VEt3WkhYNk5D?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "West Nile virus: 290 cases and 24 deaths in Greece — Cyprus calls for calm - Yahoo News Canada",
+      "publishedAt": "2026-09-03",
+      "source": "Google News — West Nile Greece deaths",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMidEFVX3lxTE1QTEVEak4wVURCZl8yUDZkdTdCWElLWFd6QzJPQmFieUthbkZLS2c3T1c0dWh0R1lMQ1Z4WW8yS2NDbEw4YmZPMU9DbFFpWWFtTjB2MG1NakRha1VfYzFTWVVzZnJfcF95WU1RakhQV1JIVzAw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3303,6 +3550,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMifkFVX3lxTE5FWmN3TG9yZEE0TFZFM0ZKcnZUS01VdVRVc1dzanNZTzE2UXNTaVgzUFhXWUtUUTFKdXkxNWwwcGIwdUxSSWlxcWJZeUxXdGRBakFTWTJFSHhrU2I0UUJiaFdlNEgzUEJjelBTWkQyVmJ5Q1hacE9oN1RUQjZiUdIBgwFBVV95cUxPZ0lwaUFBemxtdUpsUVRnbjRlcmF3SGdqTkNwaW9SMVB1RHYyYnRIWUFsQlpzTW4wc0IyTEZoQjBYMGtScFdYTmM5WlNuaGVUY2lzRzZMM3ZxMGY1Z3U4WnhyTzFXS3N2UnByS2ZXVWhaYVNKSmlrclhtTnFBaDlUYk4yWQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "West Nile Virus Cases Reach 423 in Greece - tovima.com",
+      "publishedAt": "2026-10-02",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE5YNXEyd0NaWGFHOTJiTFhYS2R6Y2w4NFViQmNXR2V5czdMR2VfeVFraHdTQi0xUWdMVVBuVXRxZV9ENWxaemdhME84OFlEcF96UVZUTW9LTHRDTHlGdnhVejZ3bnhyZmlObERJaTEyVTl1dHpNeGxHMkw5cWx0UQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3329,6 +3589,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMifkFVX3lxTFB6TUQ0RmYyekxTeUR2LUFrRmVpbE9IU2pRanpfTnVhdERRbWMzOE0tbkVLLV9Pa25Ycmx1VUI3bE1mdnYxRWJPNFo4dWxkem42NkFFTEhMc1J5MXNSOHJuYl9meWU5THlCQmpiUUJYcE9kbW9sRU9QRzdKOC1Wdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola creates new hot spots in Congo as responders describe ‘chaotic’ response - AOL.com",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMigAFBVV95cUxNUmllUWl3MVQwM1l6Q1dXbUJEYmVGVGFibEpIazh3YXh3Y3RaZy03TF8yajhCRmVCR3RwN1hsNTJzRDNwb1dxd3QxdnZYNDRnY3dQc3dzN201RzhHc0gzVzE1d0hHU3gwTVEtdTQ1OGNMc2NBbWpTYnpCWEVTQXRIWg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3340,6 +3613,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbkVpZHRCSThHVXEzcS1tZkRlMmRsWV9qZmhQNFdDbmJXcDB6b0g4eFEwcVFSRW5hUzZ2bHJXbHNrdWhGXzQ3by1jelZIaV9YaHZHRy1VVnZXZFlDdGlNZ1pkYThicjNpZ0ZXaWhsd0VhVk5nU01tOTE3U2RaYk5JSNIBhgFBVV95cUxOTTdjZTNjZlFBdjNPMnRzeUxIVHFHZHo4R1B6UnpDS2pfemlBOTRyVDgwWUVhekN5c21VbGNwbndnVTFSRFRwVnpWZERaZ2tWdC11YmNuejZVQmhrbjdMdngwZC1tdkRuWTY0ZjRiY3lYNFJwWExCM3Y5SVhpby1yc0QzYjI5dw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "West Nile Virus Cases Rise to 290 in Greece - tovima.com",
+      "publishedAt": "2026-09-03",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMigAJBVV95cUxPRzdpVldoVnFNU05faEI4Wkh4aXY2OFRVckJZU04tZjEydGNPNWtjUjltTEowbnp2TUMyRmZrM01LOXI2TW80OEt5TXZVNzdHbjBfRVBvcUJjcGdMOTVfVGM4THZSRVNyb0ZTZHd0MU00dmlQTVRTZlJ2MGx2S3BKYTdZemNNVmtSbVRxQ2piQmpTbFMtcXVJU1A5Z045VG9qWkRDd01yVG1OLVY4NVp1T01hQzE3aFVxV2VRMy1ibGxTMXhpSTFfTGQ0RElCVENDTGdzTGE5Q1dLdzhfVGZKLVJkWUFGMGNXVzMtMzZxZFJEa3VVZWljVktiaUhUVDBY?oc=5": {
@@ -3407,6 +3693,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYTRKUmpKWlRLZEs3NlktQnQ4TkxtV3JEWHVTQ0NkMmdYSktEcUJpZk9ZTWRDV2s1QktDVGlOcjVycWdjc3ViTEV4eUx2NkQ3bG9OVnlUdHpoclQ3cHp6cTRuM1N1NGlISkN0U2N5YlVZMWJ0c0gwQUV6SExVRWVqeHRLRQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece: West Nile virus cases top 200, 19 deaths - Outbreak News Today",
+      "publishedAt": "2026-08-27",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMigwJBVV95cUxOTnc3RFhKQ05FTGJtVHhOQ2I3dU9xVmdGZnVSNVl3amtjT2pkaXRYNmV4WHJ0LUZfSzNxVE81OFgwdl9VWmRySHFONUVveWpyUk1LNVNMQ2tIaDI1Zl9xTGJWN2kzTkhpaGR0aVljdTVRVHY1bm52b2xtd3dZNXRhX253SzJUVVVGQVM1RkplYUNTb3d3QjRXRjMxRmVIaXluM0hEMi01eHdXNm1CSjZ3ay1rUE1hcVdWWndTSVVNbXpPMU9YZHBHNWlIMWIyTmRNaWdQMTRtYjR3UzFHUTFJWk9KUjhhYzNwVnQyN1VxVlBFazllcEdwYm1waXdhTVNnYmVJ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3433,6 +3732,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFhqZkJBTGJlaHlfNFdpdjBUaldJVGNfZWY0R1o3b3lvaVhPTWJra29vdWdWVTd1MEhWX2FVV25fSFZDaGhYdkhxS3dTWThLYTVlT0cwcm52aHZvb1FsZW9sZDBBZVBMTUs4UWVPOVV3V1JBY1NBY1pZNU1ZUTVjV0lIWW9Hdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Attica sees surge in West Nile virus transmission - eKathimerini.com",
+      "publishedAt": "2026-09-10",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSFVsbVhrMldGRXF6SjBzcVl3TE54SF93NVRFTlV1S09VNDgxN2p5UzNlc3JlUzVJRXlCY2M5czNzOXhpdko5VG5wVTNsUDB0QnZtYWxTd29jVjVBck01SDZ0aWJOV2l3Ym5DblNMcmpESEVnWDdvcjBGSHJtMGRPWHhLOG5mUdIBiwFBVV95cUxPeUdYY2xLdTZDOXV5eWdheXR1RWo2dTdQeF9kb3RLX3M3YkVyenZlYnNPNzhKdzljYnBxLTdXTU10RXNmSDcydGd3VGJaYXhCaXpzanUxdnVCZG5kRjIwVFJCVUFXQVJkcllqeG8wVlplQTBCTWhXZkpnSGNicjJSWjk5Zzl5ZzN3dGNR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3444,6 +3756,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUEdxaGcwcTd2WmtLVUVLaFJWVXJQLUtuZHBxUFpVVm4wLXFSeGRKUDhYOGFqVl9TOGl5cjNMbmlZMGRvYUs5bGFRcG5LUDRsZ0Jad1JhU085TUFCRkgzMEtfVGduM2J5T01mOHJqMHFFRHdGd3Y3aXc1QTVWN3RBMDZwOElwYnB2MC1RV1FkeDl3SGFmZm9KWGp4NjdMaXJ1RDVxOVlVQjYyV0N4WE1UdE9Hb3liVkxac1dnMHhZeG5NOWxUYm1iUHhuZGdfbG9lMHdmRnAxelU2UnVQdzBEWms2UFZkazNWeFJHRWlNQTF0VFJKRGp1NHBHYjhldnppQzJLSnRB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Licensable picture: Mosquito control efforts continue in Athens amid rise in West Nile Virus cases - Reuters Connect",
+      "publishedAt": "2026-09-01",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMihwFBVV95cUxQQVVfZ2paZmExaG96cjBqUlVaTklVMEpWVDgtU0RNalpmdVdIS2lyaGtpaU1iWHE2ZUQ1MW9kdHlpYlY3NmJRVkRoOHd6WWFwOWJ2Sk5FZ05lTGx3a1B6WXo3OFNfQ0NqRXpNenRuM2JjakhsdnZRMklRazBmVG52ZDhWZl9XNzQ?oc=5": {
@@ -3522,6 +3847,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSWkzWlR1UWFaR1dtem5rb3dLanVkMEExT3VXUDFFb3lWYklTa0NvSW9nRlhJbEVra05PMHFBbGM2ZEVHUGwyVllpS0dGR1FOekxuZ1JYY2oyMjVfZF9QUEJQRWEtQi1TZWs5bEVfeG9ra3ZDLVl6UTFYUFRFUU5sbTc4Z3JRQWJsSkHSAY8BQVVfeXFMTVA1SHk5N0pZNFAybEMwSVZwS09xUXU0TzRsU3c3bjJnbW9XMzhGSzdyWUNxX0gweXJYaDI3eGNxYXlPUzc2cDVjd2k4VkM4bk1MZ19RYXdlSmsweUZ3NWd4SkhRMjYwRnpWaU5wOEpnTy1sYkMzaEZ3X0FvQW14d1ZDYW5DTW05TVFfblpyeEk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece Steps Up West Nile Virus Spraying in Attica - tovima.com",
+      "publishedAt": "2026-08-28",
+      "source": "Google News — West Nile Attica",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiigFBVV95cUxQdk1FYjUwdUF6cWFVNWdueHhfaGZfVUF2cEg2Q1RaMGxuYi1oNWU0djI3LWpTZF9vZjdFTE5kR21mQ1FJcF9qdkc5LUxQUnhsUlJwaVRnYXE2T0N4WGhlbWRUQUJaUTNQWDUzZTExOGVEUlg5NWdKVFFNMkRoTEdJb1BNek5sNVhULXc?oc=5": {
@@ -3613,6 +3951,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTWFaZWVxSU9UaWlJbHM4Z2FySlNIaDF6ajQzcElIUTRJbTJROUZoN1UxR2tVbkRRS3JRYWxsLWtyLUt6SzNjR0E5akh0alI4ZW9IQ21fM3cyd0xqMUMxNGE1cHFaRTBUeDM1SllEcXpfeEhNd2wzMDQtT09SUzJmb2pfMGFqTU9MSVBWSWVWOA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "What is Bundibugyo Ebola? The strain behind Kenya’s first case - Capital FM Africa",
+      "publishedAt": "2026-10-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMijwFBVV95cUxOYnNya25ZYzU3YVNCSy15Tnl6UFVOdkRaaGJ3cE1JMjlvRXdFUG1tQzBrSkJUSnJiQ002RDlHRnFnUlJwY3RsU0ViTUdPbHNRRkgwbWxGV1RGeWltWGdQVm1oVFowUjgwakNFdTVHSU9ZOW9nRGRPSzZkS2FnMzgzLWEtM0hjU1R6c011amxGMNIBjwFBVV95cUxQWXpvVW9VeFBFVnU2QkwzMGdINWZCeTVsQndRakkwUmNPQTdhSVNqd0VHT3g4LTFXTWdoUUp4dnVxS2NDTlNmdVdDbmFVOEhkTU9tS1M4X1pDXzluT2Q0cjdlWlYzWlMzVm1VTUxLYlVEdWlEeU5BR1BaWk03NFIyeURBaG55S0JnUGNOYVFvRQ?oc=5": {
@@ -3719,6 +4070,32 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLUJxV2pGVmlacjgtVEVhWGo4Z1d5T2x5N201WEZuellnYXVJYW8tUWItS3dGZTFvRzhJcFB5VWZ1WHRCV0xPdTN3VnZVN2pWNE1fUDU5R1prXzVxTDItbENjLUk0MnVwUjZFcm5XdmVuM1NONUdTRzJxclRnQkY0SnR6Z3RwWngtTlhVdFlHbXhMZUxv?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Kenya Confirms First Imported Case of Bundibugyo Ebola Virus Disease - health.go.ke",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWWh0ZWh1T2plcHZzalkxTVlEeU9DOWpMLTlaZWZPNTlqbEVYWDFjTXpzakdhY1JzQk51Rk1Mam1fUnZieTBUWjhaUzFCTXM2UlZDZ1VqR1hTaVZDaVhUOVRGOG5XYlpFQlRqS21JbkFpVWhDbUlHV0pueDdockFsemJFaWUtODd0cDdDdjFpV08xMlpo?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece reports 232 West Nile virus cases, 19 deaths - Anadolu Ajansı",
+      "publishedAt": "2026-08-27",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNkVGY0dCdGVFemQ4YmJZaVE0NDVaUkQyUUo4M2ltMmJnN3FnMU5QMHY4UGQySXd3WUl3NGg5ZDVZWEU5WkVzSllrTEVmTlBXUlZ4Q0pLenAyYkJuemN1a3doVG1RRVI3bWFwZHNBR0dTY2FLX1p5YUZuRjFFaWk3Vzhha0NaVkhROWVnVmUxZzZLX3BCSmc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3743,6 +4120,32 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ1d0ZVZyMnZYNERvUWxwcERBZGdKTV9fUHpzMU11eGxiVEU4WnFGSkhfd041b0pybFpHV2JITEFGeFBqYU5BSmtiWTZDRkpMVVJjbVZEV1I5TzdCSnNzbVRCQ2hJM1BJT1g1a0NuQU11em5SVFdiTWFXOEt5dVE4eF9uT0lfWmtMLTdaQ3NnSHE4a1ZwLXU4?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece records a record 324 cases of West Nile virus - UA.NEWS",
+      "publishedAt": "2026-09-11",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNVkwRUdVazcyeXRkcUM4blJZbXpqOTg1akdXT04tYjBZdDBkVVluSk1URVNXNUJnWS12WHl4RjlHMmJHMmRBbWVnSTRRMVVHOG5JR0x5UzJYaTlCM3BxN2JfYmtxOUFpZDN3NC1nODlKVW1qZ1NGdGM1YmhETExTdmxFV1RGQUhTbnBtQ1k5MFdpMVUyRjByMA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles: 6 more children die, death toll stands at 1140 - Bangladesh Post",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYjBoRHdCbnR3a0lUU1FqWUxCMVF5WlpQMm1KSWpYSHY1cG54aUZYeFd4ajg4T21yLXFiVUpTTFRERGxweDJfSzR2MHI2ZjJPZmgtandDVWRoWXlMWVJLeXU3U012elBhXy1id0tMVk5LS0FlZk0zbm42UEI5WEtPWXc5Nlp6ZjlDanRkbTBwTkZORHEwUDFPZg?oc=5": {
@@ -3771,6 +4174,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaHl5QmV1VS1sckhaYUcwaDJoRkRHeUhfZnpBbTdEREhoMzFfRHpya3N2SW1pY2Fib0xhel9lUERhT0xuc3llTlVoaXpGZnQ3Z0EwQTlfUFlxU2VMaFVQRzg2SWJRNHVtOWhTOExrU3BBTUF0dXZ0WnR5ZnB4Y0ZqVDF2M0F3NUY2UGs2OWk4aEt5Q3BkQlRqN9IBngFBVV95cUxOMmREYTdpYThUeVdPSGk2b3lvM2F0LU5qX1hEVzhaR1dKQTBDb01wVFdLdXEzenNhYy1UUDhGM2tTMGJoWmdXcV9XaVFkOEFuTDRvdzE4VUhLQTlvT1VCTS0wMF82SVlaaHRCMHlBUWhPYU1MZEY5SEtIaE5yVktEaUJIUXJnUm5tMlRDTlhlOU12N3kxc21CN1N3Vl9Udw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "West Nile Virus Triggers Nighttime Spraying in Eastern Attica - tovima.com",
+      "publishedAt": "2026-08-31",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMimgJBVV95cUxORkNUWmc3ZEdKYWxncTVCbVl3RHByWUFNWkVUUWVNVmluZmNBYXBKdHBjOGJmVVpMbGc0WURFRlJzV1lqVlFiNUJWVTJVUExRdmpiR3pDOFA1RGpQMGh1RmZHMDJvOTRrSnlnVWVRNVNuaUQ0c3VmdW5sVzlrQVI5YnVna2tnR3JfbEhETXlEMnI4YVpWLXpFZEI5cnhHS29EVnFNb2ZrUTd0ZWFmMjBfSS1ucWkzYXpKc1Vvbl8wY0gwZnhweUtJZU9xNUFxWllUNmpJaEp3X05WSGo3MW1rVWVzazFycE53TzhZWklxekFWWEZid0tWWFYwVGdjYWlQQ1daeWp1TnR3cFN3TVd5T2JaSFg0NVdBbGc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3795,6 +4211,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMDdVVUtQWGp0bTItMDVWOFRQTVU4SmJGLVdTNjJxa25EUlhNRTREOWlQV0hxMkJweHJkUWt2YUxIbUhOcm9FSm1DOUo4eVBjUGdMMGhkdms5ZU53ZlI4X1hBSVBzOFdualVFSDZxWDQzbjRWQk1xQzNPRjZVX2ljTEZQbXlkaWl1MnJIdUtzUVlYTlJ1OVZNbDR2WQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece Second in Europe for West Nile, Seven Dead in Skopje - srpske.rs",
+      "publishedAt": "2026-09-06",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMimwJBVV95cUxPYVUtVHBhc0JHUUE3WlNQRlhfQXVqMTd6YVJGMUQ1Q1RodFpPSHFNVjA2QUtRYVRqVVVHTWtZNFQ3dFVaUDRGME93R3J2akhOVW1hZHVETmJ5SUlMWnBPWnM1anlPVGgxcDh0TkZOQ2hwb0JRWUh6NXRwRURDcFY0NGtTVmI0ME80RUtnLXdDVWNYSjRLU3NiWERsaFRUZjAydnBwU2ZESkNZeUdHSVpkTE04c3hITGhoRW1XMFFtbmZ5SE9tbE9FeGx3TzFTRW1jc0o3TkZ5ZjdOWkszc28xR21tMERSNC1LdnFUaFBicUJ0RzNIeVRhSm9WdjhzZDJzSjBVY2FGa3NyeVhxb1Nack9KejV3eFAyTVA0?oc=5": {
@@ -3823,6 +4252,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ182VHJuUEZCblpqXzhMb1IzZkFDbmlTZnkxSGhMZjUxSGluZ01vLU83TEd4ajVBQVZXQjVXRnM2WFNRTEE2WFhsRENCaHZwVFVjdHBCZ2hkdXpuNWx6NWdEODhMSWJxaWFQUGtiUjZZVGxJOGRhTmtvc3k1WFdqc0VKRzdkanFBeTZlMHlzcFNfTDlsRGlwT005c1k?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "West Nile Virus Cases Confirmed in Affluent Athens Suburb - Greek City Times",
+      "publishedAt": "2026-09-03",
+      "source": "Google News — West Nile Attica",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSVJEeHE3UFlJWTd2eUtVdnNucG8zN09LNkdHQkM4OWhDbGc1VFIweVdyeWpZaEpHcEE3RXQxR1EwUmR5ajBkN2Nub1JsZTdiUDd6dWxEMWdYbVVDNW5EUEgtbkc3TXlmVWpFMjFVVjRLX0F4RGFMRnN5ZU9RQldFM2xoU2pZdUVZdmFUR2dlX0VFZG8zMVBnY3EtOTg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3836,6 +4278,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRnRhRUgxRER3LVo5eXJ0VHZoTWh4UmdBOTl3eE5SMnFWUUVUR3Z1RjNoN3R6Z015S21IX1NuZzl1TkpPU3RTZ2poYno3eXRlYmtSYTBLX240VkdJa2xkejRGUXdYX2FGQXBIUmc5aXh3bWJrNWhtVXB1STBLVWtUVU0zTFV0cUV1dF95LUpNdXhBTmdmaTY1dVN6RmU?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Is it safe to travel to Kenya? Ebola cases spark alerts in multiple African countries - The Independent",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMinAJBVV95cUxQUWRLTWR4T0tsNUtMdWZvYXJ6R1RhRk5vUlRBVlBZZnJIQm1oSnJHNWZvY0tnQ2J5Y2ZSb29VLVBkUDNYRERfekFzdGRFUW1DbW1CaGNkalBYT0EwZm96VHc1ckFoTVY3NWxFb2N2alJSTk10b2M2U200THNXcXcwb3FNX2xPNldpUi04VjJsbDZDczJRcy1ZNzVhdHJpNjk2Y0Z0LURkdXZVQm1VVmdGS0l5M0lpdGR1b253bG1TeXZBWThPUFVqU1R3QlBmaEFOQU9nYmZoeW1jcWF1ZlBUYkh0LXFlRU9YMU1CZzNMN2ZCSmZEeXY0S0hFWWM0R3Z1MDdsd2xWT09xZnBqdXVvVW8yOHlsTUlHUWtQdg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3847,6 +4302,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMingFBVV95cUxPcXJMVXlFdTk4UFo5SkhCNDItOWV5aFNFbE9YVEw5T3E4bGIyU2NNTDVGX1dnUG5HV2JCTkVRLWV5ZDlVRDJ2Z3NaaFBOeFBhaVlqZjB6TV9wWnBGT1B3alU2Q2duR09MZlp3T2piS2RIVTJPSV9YWERsRG1za2tBV3VoMW1TbVpaMnRUdjN2dlFDU0lRY0xmZlZsUGVSQQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Experts: Greece Needs Better Early Warning System for West Nile Virus - BGNES",
+      "publishedAt": "2026-09-14",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMingJBVV95cUxNZ1gtN2p4cURNMDRWNmgtSnFwWmJnZll6cVdETDBKOW9FU01VcEkyOElscVNCZ2NqVE9ndnVGYUIyWnA2amxhX2lTRlYxV3hfVWRid1VKYk1rZF9NMmM1SWZhNUc5aXlJWXhmaWtvQXFVei1sZXdfbUQwVkRkRTZHekYzS2duQmdQaDk5cjZ2eVlremVJNkRINUlBX3hxbkIwekxkOXlYOWFScmtZNTdpTTlKai13aTIwZFc4cTRYVVRnak1oRVdGdHUxalRMYjBjbThtVENqdEZtM2lOaEQ2ZTJqenF4V2ZaLVp4VU44YUVrSFh6czB3NjVWZjItVGtMckpWU05ZYkhqTXBDVmRHVmlZVmVZQ1VuQ2twN25B?oc=5": {
@@ -3992,6 +4460,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ2xYYXhURjhXU0JtMnU1VlYtbkFtOUlMakVTakljTFlOcmozc3YtUGVhQ1JoeVBKZ1FyRkhQdkJnN2pUdDVVYktQdkpvbkhoemphbEZ0NDNwMm1KTUJoN2xYSERsdU9Wd3hhcy1FZnFzNDdSWnFXNVZYM1JfRWFfT1h5ZFNZQ1dxMXY0LVl4U0lUV2toYmNHTGE4djNZZkZtaXJfNdIBqgFBVV95cUxNQy0xTGp4MW00MVJRR20zckxrb0F2bFRPSmIzalMwOG0xdElQYkpnOHpCcHZ2YzBOa21acXNaVVp2b1MtSjVnbjVZVmN3Y0VMbGRMUWtsVk1ubkJhczBGSFVIWE5qOFVLWGpaY0Z3SU03bm94ZDU4RDU1cGNTQUxRWlBqcWZ3azhzVHdWNEhVSWVTamcwV0JpVGFDRUprSXlHOFVFMG4tbkt4UQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles outbreak: Death toll reaches 1,140 as six die in 24 hours - Dhaka Tribune",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxPSTBlcjBJbWVtRTI2c0dfVXFkNm9aZy10cnpQT0dIU0ZrVnhTTlNCYVVmSkwxQnhIbHo2bDByVXVpSjBQWHRKVXhVdXpuemduR2wzZDlpUDhaTHNnd21zRXh6anhYUTBxVmZ0b3ZrcGx6Vld2WkxGcFdjcmF1Y29UZUFHV3dNOFdsTjBPc196R2FON0dmUmlyZldkQ3U4NFpCRXZWUA?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4135,6 +4616,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRjByOEN5QWMwTUpWTG1qTmF6WG5hMk8teVNnaWFiYUo1MUdHb1lob1MxN1BYM2Q4Um04YUJybGNHTUlVSU1JX1RwT1FKajVXWG1CcGlLMmFFT1ZrdmwxN0I2QzJjUm90ZnpkRWlwUXdROGFWMkMtNHlTZmRHMm5mc21odG1ac0ZWZnhvSGExbGd1WjNSZVRzYjdKWGRDdllHYmI0UF91U27SAa4BQVVfeXFMTnYwaVMxYTlpMzIzT0tpWDVXWTV4VmZNSHpPVVdKRmo0Ujd0YXJNeHhnOC10ajYzYm9yMlc4dmhFc3ZQTEFzWi14dWpJWExwVnF6VnBFM0kzVTBLR1Rtd3JZdUpqM0otdmpRRWJXWTBxbEN3Zk1ydnoxMzZDZWIyMG1YbWJOWnRXckl5R2hlaEk1Q1hmSUUybk9nUHNGNjYtSHhCTzhFSUkzTXZsaG5B?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Attica Launches Emergency Action Plan to Tackle Spread of West Nile Virus - tovima.com",
+      "publishedAt": "2026-08-27",
+      "source": "Google News — West Nile Attica",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiqAJBVV95cUxNOWdNXzlFRm00ZktKbmY4XzFyeFJRT0UwNWdmem9JQWhzd29SeEU2Mnk5aGZPczhyZGpvR0luS2NUTlF5UVNwWGhSNXNPM1pud0xXOW1Ycnp5RGFNUDR4ZEFLUmljUG9RMzE0b2tzX3EwZi1SRG5ZU09ZWGNWWXFQUWVNUGw0TE91S0prM2J2RmpiZDlDNHRlQVhYVzJJYkxBTV92U2t5dEYxZ3ZfaHlPeU5ndHJDdE10ZlA0R3hnVHNoLU5nLVpxUFl5T0dqRHZhVmNrNlJmN245bDdjY3pHbk5Pc2pPblhTa2Q0aEw0RmlPejNCOE9wbWo0R2p6WVdwNEQzdTNWWFU3V0txaGFxRkxONXJOZnU5ejdTaDZYYzRzVnJGREFnRg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4213,6 +4707,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxOelJCNnlPVkN4dTl5V2J4OE5yNFZ1QXhPVm5KUkg0MW1qWmEwaE1oWm1OMDBKTzA2clhocVoxTGRHTWdOWVlxU3dKZVowZm8ydlVfaUFOZk90aXVqU3diVHhLNlg5V0FfRWIxOEE5Q3hJeWxUUHprME54V3ZsNnZadFo5MGtLZ2s4REk5eWdTWVpOeHl2cmp0WDVadE10YXZuNlladk5DN2RZdjl2Rnc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "West Nile virus cases surge in Greece as health agency urges mosquito precautions - The Press Project",
+      "publishedAt": "2026-09-21",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVUxRR3RfOWhnMFE0TUoyMnItNXUxMEp4MHFFUWNESVpXeFVQTDc0T3JxbUR0ZkcxSGc5WXhaN0NzSlFKeHNXQmdlRzdrN0dIeG1tRTljZWVQSjRlSXNiaWhadlFlc1BmNllTY2pFeFFEUkNadi1XX3RWNGJZWHBFZnJoZ2JsNUpKbUMzaW41akJTQ3ZzbmVTMmZyejRxSGhybnpvVC1KSDJMd2R5S1Fn?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4237,6 +4744,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxObWFhVVFfVGRPZzhRaDJLQkoyYTFIOFdBcldjZjYxZjFpTU11V1g0QXVxRXRGQmFVOW0teVo3a1Z3NTJzeVpMLTJpNGx0YVdGcU1oME50R29QT29aR2FBd2cyTVBrOEF0ZlNpUG93MC1YVWFtYy1FS2J2ejRvQ2dDWl94TURvdWoxZG9sWGVpcmQySmkzZ0xUeEdxY0FIRkpRXzMwOTRwVDVvcUVNaGpr?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece reports record 324 West Nile virus cases, death toll rises to 30 - Anadolu Ajansı",
+      "publishedAt": "2026-09-11",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMisAFBVV95cUxOenhhalJUNGFqekE3NUdVMWl6S1dMcl9VaWladWhxVkU3OEtVNjdIYm1nQnJTRnI2Zi03dU9EZW5JVDZvbGJnbVBZZDJFc2cwdGxmclMxMWJfZksxcVE3b0tHaDZEcVdNai1JVGZlNU1HemZDbUVCaVhJZFJjQnBwS2tKZTR4a2xocXVEYUU2OW5RclI0Q0JJR3VBaVdLTnRVYldkanloSGczT2NtR29qOQ?oc=5": {
@@ -4328,6 +4848,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYktKYWllQ2RjQ2RyX080UW92dGdEREFJSnFyOWo2SlRUR2tUV2RVYUMtNmhaamVnbkFrOTh0NmRPeUdHWGpLNjd6WXFnejd5OHdBUkx0aUI1aV80dlhkLXRGVGl3Z3ZSdS1kT25xWi1NTWxnZWZ1Q3JtaEtoWTd2ZXp3S21YNzF6UWFUbFNiOGh2YjJ5LWp5YUkyRm8ySXdwWHpuZmRSV1B1cHlPUVJDZXNsRQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "West Nile virus: 75 new cases in a week, 232 infections and 19 deaths in Greece - Euronews.com",
+      "publishedAt": "2026-08-27",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxPN050YU5sU2hVMUowcEFxbVI1ZmZjSUhyR0lJTDU0NzhselBJaWtIT200c0R5MWllTG9tN2gzX2dnbDdZUHFWYi1remZibFRLc2g1VHp1cFNtNFJUUVEyOTlEWWhLTVlRcWx1dWFYZFVfZldhTHlHSmVDazJzam1vU1U5MUpmLTZHRDhDSS1TRURBNGJEdFFBczhKRkZMT3NXOTlON0UwdUVPVVEzOGdHTTExUFA?oc=5": {
@@ -4442,6 +4975,19 @@
       "lastAttempt": null,
       "title": "Kenya reports first-ever Ebola death after patient returns from DR Congo - France 24",
       "publishedAt": "2026-10-06",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYk1Ha2JFR2wwRDRkRm1NeTlXNjN4a2pxZHYzSzgxeHBvLW52TXp1X3Njb3V1MWQ2eUo5VDVNVjliSmg3U2lSdUdWQTlvbGstUWJGUV9MWE5YdmxSSEtiRi1jMHRrWTFpX3d3Y0dDR0JxUlpJTERnb1dKWXBPZ1VWZ2xHcG83VHdOeGp1eHBRUHhkZGVJc19CVDZIMXFZalU5aVRFZmtmMVZWUVE2UnQ5NVJVUWtqcEE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Leamington charity is responding to Ebola outbreak in DR Congo - WarwickshireWorld",
+      "publishedAt": "2026-10-07",
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
@@ -4642,6 +5188,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMXJMZUtfRk1sV2xjUEF1Q3FsOGpzV2JPem1UODN0ckNHdWtFcFRjUzQ4WGxvenBlS2dVWDh4WWpwMzF6eTYxQzVEc01ZRXZyT3hSMTF3Q1VqMFo1M0ZKZnV0S2VhNGcwelNUaFZSMEgtdTY3Qk9GbjNVTHhoNENlY2JvVHZMWm9HdWE4RWdta0d2dEJ0WkxIN0hBc2FmU2pNZ3RXejNtOTBpN3RMc1VPQWc5V1ZsdWNXdFVYV2ZMekxiMHhSa280?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece urged to improve early warning system for West Nile virus - eKathimerini.com",
+      "publishedAt": "2026-09-14",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZmprX3FTTWVEaVRnYVhTMXJvV3ZaUUtLWFQwX1RBYzVzRzdVeHZwNlFheDhHbENKRG1ZMDl0WFN4RHVlTGlSVFQ0QS1Ka0cxb1J6dlozOEFjOFBxRXA2NGhvNGgxR1pReUFDS3U1N0VuNWZoMTcwOEN2Y0pNcW5tWlE1U3RCV3ZmYU5keWF1RV9FZWRoUUdrSzBFWHlVVFU5YkRtUnpHbDJ4TFdwa3FYY2xfY1BmaWJCbF9ENjRLTVRHMHZOZjlz0gHbAUFVX3lxTE9IMmlOQkpBWlkxRjh2a1RPODJEMzRTY1N2b3JIWUZkckEzak80ZUkzLVFZZnRLMGFleUhGWE5OSl94dkkzUnZSZWM3MGp6OXpwdFc3YWhMQm12OTUwUEZrenREbFJpQVBRdVFFNTdSdE5ZWEpZQnp6QjVNS0dwS2x0dk5Pdk5DZ3h2UWQ2MnBpcWVCbDZteXAxV1NUN3VoTVMzbnlNWmlPLUxvTUpMRWM4dm5rYnZPRXVGR3p6elJmbklZMHI0Ylk3d0E0NTE3OUJyRi01OURMNEF0UQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4705,6 +5264,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxOMHQya2pmTU41RmlKdTdxUk5tMHplemJEdFRjQ1U3YnBMS2E1QnhXWVFaNXhjY004MzVZRGNHOXdpWEd2UUJJbG1ZOENmU1dQV0J4ekpldmhWUlUwbmtmcUZWM0xXaklpRk4yRDZzMGZpdms2c3NRTXpTeXQ1WDRnVjduU1ZuWWRiRWF5Q2trLVd2NjVlcG9MaDdqZmgzZnVyRVE2Z0hLTDZtQ0VzQ1luVXhHS1BUQkVSVFM2c0hQbUE1X0stM0prTERjcmnSAdMBQVVfeXFMUEhJcFYybHhBSmxMSWlnOGdLbUdkSnRkU2FZdGVyQ0ZTdFRaYkVlaFI5VXZTSlVoWVo4Z3VvY3I2UmRBYVRSTnZCM3BxWlVROElOZlVsVWlKSGpOblBab2NmY1BYc1prZVBSY3l6QVQyZ0pnQWlRM21SdDI2a0ZTbW1JeEp5OGgyVzNaMkRvSGUxc0VzZDBYaV9odkd5dzNYMmhKS25sazU3VEhNNGtqTXBrX3FVSVFlZWhVVGg4YzVncURwa1V1QXRXb0ZPV2stSFFrTQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola death recorded in Kenya after victim travelled from DRC | Explained - The Hindu",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxObzA1UEtpem1vVTQ4OHBXam9aUlZ0Y3FoVm43OFhDZ2plRVRQdGg3N1dZMnQ2ajNUQ2xaUEtQTHoxTjliYnVZNHkwd0ZhZi11M3dtNjV4UHNieWhFdTNaMy03RjZ0U2tDUE1yczNiT1VxNVlmS05PSHcydUh0Yjl4d0tKNlpKMDNVZGhtdkRpRl8wdzJoTFhHWU1UZG9QNzdMdHNVNUlxaldSRzNoLWhHU2xGMjR2c0tPMmppY1M2YlczYjFrU1ZlRFhKNUVjdw?oc=5": {
@@ -4832,6 +5404,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://wnv-weekly.ecdc.europa.eu/": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "ECDC weekly update",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/west-nile-greece-2026.ts)",
+      "kind": "curated",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://www.cdc.gov/ebola": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4869,6 +5454,19 @@
       "source": "Curated (src/data/outbreaks/hantavirus-mv-hondius-2026.ts)",
       "kind": "curated",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://www.eody.gov.gr/images/WNV_weekly_report_15_07_2026_ENG.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "EODY weekly West Nile virus report snapshot 2026-07-15: 7 confirmed, 0 deaths",
+      "publishedAt": "2026-07-15",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
     "https://www.gov.uk/government/news/ukhsa-update-on-the-hantavirus-cruise-ship-outbreak": {
@@ -4999,6 +5597,19 @@
       "source": "Curated (src/data/outbreaks/hantavirus-mv-hondius-2026.ts)",
       "kind": "curated",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://www.who.int/news-room/fact-sheets/detail/west-nile-virus": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO fact sheet",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/west-nile-greece-2026.ts)",
+      "kind": "curated",
+      "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     }
   }
