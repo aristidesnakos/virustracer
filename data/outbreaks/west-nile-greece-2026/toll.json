@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-10-07T14:58:39.853Z",
+  "lastChecked": "2026-10-08T18:30:16.046Z",
   "snapshots": [
     {
       "date": "2026-07-15",
@@ -132,6 +132,18 @@
       "sourceSha256": "82f1197758438cf89683499c6d14fc200eb478cefd286935e887166618ccd954",
       "rawPath": "data/raw/report/eody-wnv-2026-10-01-61628b03e8b2.txt",
       "rawSha256": "61628b03e8b2eb545a01c8b4d687a5a0c776bad410d64d24276dd3d5184794c1"
+    },
+    {
+      "date": "2026-10-08",
+      "confirmed": 443,
+      "suspected": null,
+      "deaths": 47,
+      "recovered": null,
+      "source": "EODY weekly West Nile virus report",
+      "sourceUrl": "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_08_10_2026.pdf",
+      "sourceSha256": "705672446a1535d3211a512ca540c4834b0ea9e93d6f2926b3526659d6e50e1c",
+      "rawPath": "data/raw/report/eody-wnv-2026-10-08-92a122f33d68.txt",
+      "rawSha256": "92a122f33d68bf84841213fcfa1e9ba337162780e03629597cf395d1cf566508"
     }
   ]
 }
