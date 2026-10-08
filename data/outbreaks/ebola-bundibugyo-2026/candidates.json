@@ -1,6 +1,34 @@
 {
-  "lastExtracted": "2026-10-07T20:09:00.672Z",
+  "lastExtracted": "2026-10-08T08:10:42.328Z",
   "candidates": [
+    {
+      "id": "news-08841ed66649e72c",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 1,
+      "deathsMentioned": 1,
+      "context": "Kenya confirms its first Ebola case and death in a man who travelled from Congo.",
+      "sourceTitle": "Kenya confirms its first Ebola case and death in a man who travelled from Congo - CTV News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdVloQUl4enE5OFJqV3REWGZFaEUxeWI0V2lYVUFtUjVCVGcydVFqYXJCemkycnJPMUduVHBsTE9xUEthRnNUSm9zWUZkSEJremUxRE9pc0kyX1JDR0U3cXBQT2ZaaG9VSVRpejB0eFlHNFlCWEtVSjZQUWhOa01ZM3N2MWJVQ19oUGFyUU01ZzU2Nzg0eFFEVXZnb1NXNThMQTRCTGwwanhpZGZSeGtlbDR0UQ?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-10-07",
+      "extractedAt": "2026-10-08T08:09:45.801Z"
+    },
+    {
+      "id": "news-d134bc56b5db7259",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "Wellcome responds to first confirmed Ebola Bundibugyo case in Kenya.",
+      "sourceTitle": "Wellcome responds to first confirmed Ebola Bundibugyo case in Kenya - wellcome.org",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSzEtNHFFTHVBSnNhY3Q2V3UwYmYxSFAwTHNNT3VFU0JNRDUzUTZPMklVTnFhODdKQmhEYnFGdnMyT2xBVUNmV2dWOUlibV9WSWxvTG9vdHJxSmZ0ZXZrTkdkSXlZYzFDQlpWMk84Rmh5al9SWnd3MHhCdEcwbzlhWW5qQVVpVFNfOVBxWXh1UFVqTEJDMnNRUjU5c2Fvc2Z1cHc?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-07",
+      "extractedAt": "2026-10-08T08:10:16.199Z"
+    },
     {
       "id": "news-4fa21b2f7f456094",
       "country": "Kenya",

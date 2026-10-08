@@ -1,0 +1,33 @@
+{{Infobox outbreak
+| name            = 2026 Ebola epidemic
+| width           = 
+| image           = Image1170x530cropped.jpg
+| image_upright   = 
+| alt             = Healthcare workers in protective equipment stand next to a building and around equipment in preparation to bury an infant who died from Ebola
+| caption         = Healthcare workers prepare to bury an infant
+| map1            = Map of the Ituri Province Ebola outbreak.svg
+| legend1         = Map of confirmed cases as of 10 September 2026 (excluding imported cases in France and Kenya)
+| alt1            = Map of the DRC showing 5538 cases in Ituri Province, 1182 in North Kivu, 270 in Haut-Uélé, 24 in Tshopo, 4 in Bas-Uélé, 3 in South Kivu, 1 in Sud-Ubangi and 20 in neighbouring Uganda.
+| disease         = [[Ebola]]
+| pathogen        = [[Bundibugyo virus]] (BDBV)
+| location        = [[Democratic Republic of the Congo]] and [[Uganda]]
+| WHO_status      = [[Public health emergency of international concern]]
+| first_outbreak  = 
+| first_reported  = 14 May 2026<ref>{{Cite web |date=16 May 2026 |title=Le Gouvernement renforce la coordination de la riposte sous l'appui technique de l'INSP |trans-title=Government strengthens response coordination under technical support from INSP |url=https://insp.cd/le-gouvernement-renforce-la-coordination-de-la-riposte-sous-lappui-technique-de-linsp/ |url-status=live |archive-url=https://web.archive.org/web/20260528092232/https://insp.cd/le-gouvernement-renforce-la-coordination-de-la-riposte-sous-lappui-technique-de-linsp/ |archive-date=28 May 2026 |access-date=7 June 2026 |website=Institut National de Sante Publique |language=fr }}</ref><ref name="INSP-SitRep001">{{Citation |title=SitRep MVE N° 001/2026 22 Mai, 2026 Posted by – Rapport de Situation de la Maladie à Virus Ebola/17ème épidémie |date= 22 May 2026 |website=Institut National de Sante Publique |issue=1/2026 |trans-title=Ebola Virus Disease Situation Report/17th Outbreak |url=https://insp.cd/sitrep-mve-n-001-2026/ |access-date= 22 May 2026 |publisher=Centre des Opérations d'Urgence de Santé Publique (COUSP) – RDC |language=fr |archive-date=7 June 2026 |archive-url=https://web.archive.org/web/20260607153244/https://insp.cd/sitrep-mve-n-001-2026/ |url-status=live }}</ref>
+| index_case      = 
+| source          = 
+| confirmed_cases = 8,750<ref name = "INSP-DRC" /><ref>{{cite web |title=Alert and Response |url=https://www.who.int/emergencies/alert-and-response |website=www.who.int |publisher=World Health Organization (WHO) |access-date=18 September 2026 |archive-url=https://web.archive.org/web/20261007134047/https://www.who.int/emergencies/alert-and-response |archive-date=7 October 2026 |date=7 October 2026 |url-status=live}}</ref>
+| active_cases    = 
+| suspected_cases = 494
+| severe_cases    = 
+| hospitalised_cases = 1,066
+| critical_cases  = 
+| ventilator_cases = 
+| ecmo_cases      = 
+| recovery_cases  = 2,288
+| deaths          = 4,208
+| fatality_rate   = 48.2%
+| test_positivity_rate = 
+| territories     = 
+| website         = 
+}}

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-07T20:09:00.671Z",
+  "lastFetched": "2026-10-08T08:10:42.327Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -399,9 +399,48 @@
     "news-133ecaa2927b7382",
     "news-f2819937efc38e5a",
     "news-d1b8f6e0161d4a0a",
-    "news-6fde4b9eb0b77f60"
+    "news-6fde4b9eb0b77f60",
+    "news-02e617328be84727",
+    "news-08841ed66649e72c",
+    "news-095752dad700d401",
+    "news-39a489c6fc9d774f",
+    "news-efd6135881c9ffaa",
+    "news-d134bc56b5db7259",
+    "news-c798fd01ec2f3602"
   ],
   "recentItems": [
+    {
+      "id": "news-efd6135881c9ffaa",
+      "title": "Ebola Outbreak In Congo Escalates With New Hot Spots And Limited Support For Patients And Responders - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPNmtWNUEzRHdHNXZ2YzlEMWsycmRRVlYzeHB5MFl5Zll4bndlNmJScm1Rel82b2VlQUJBbFAxZVVVNjVxNV90ZUNGUm1WeUpmbzIxMUFOYThJNzR1VElnZEZNa3hQZWlpTG5nemRVUDB6Y2tsRnp4ZkNtZXBXQm1XcHRBejdBU3kzcUtIQ1hrNVAzeEFOQnB1RUlvMFZ0eTQwa3EzQllpUDhJQ3dEd1IzZnFhYm9FaE9KV1lhaWpwWHgtVENfSzZVOXVZRVdSQkZaT0ZZ?oc=5",
+      "date": "2026-10-08",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola Outbreak In Congo Escalates With New Hot Spots And Limited Support For Patients And Responders NDTV"
+    },
+    {
+      "id": "news-02e617328be84727",
+      "title": "Gaps in contact tracing leave Congo’s Ebola outbreak out of control, Africa CDC chief says - Yahoo News Canada",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE9IZ3lzelZvUnM4QmRYZ1ZDSlBVODVKTW5BMFUwWHNzVVRTMWMwczlNVDk2RnpHMkZVbzBXMHBLMnlMMXJFdGgzTDdScXRJeVgxcFl1RGQ4X1p5Y1ZNSUxFY0UyaURGRkhzelhjajNQUGhXLUlKUTBYb19XbnBZZw?oc=5",
+      "date": "2026-10-07",
+      "source": "Google News — Ebola death toll",
+      "summary": ""
+    },
+    {
+      "id": "news-08841ed66649e72c",
+      "title": "Kenya confirms its first Ebola case and death in a man who travelled from Congo - CTV News",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQdVloQUl4enE5OFJqV3REWGZFaEUxeWI0V2lYVUFtUjVCVGcydVFqYXJCemkycnJPMUduVHBsTE9xUEthRnNUSm9zWUZkSEJremUxRE9pc0kyX1JDR0U3cXBQT2ZaaG9VSVRpejB0eFlHNFlCWEtVSjZQUWhOa01ZM3N2MWJVQ19oUGFyUU01ZzU2Nzg0eFFEVXZnb1NXNThMQTRCTGwwanhpZGZSeGtlbDR0UQ?oc=5",
+      "date": "2026-10-07",
+      "source": "Google News — Ebola death toll",
+      "summary": "Kenya confirms its first Ebola case and death in a man who travelled from Congo CTV News"
+    },
+    {
+      "id": "news-d134bc56b5db7259",
+      "title": "Wellcome responds to first confirmed Ebola Bundibugyo case in Kenya - wellcome.org",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSzEtNHFFTHVBSnNhY3Q2V3UwYmYxSFAwTHNNT3VFU0JNRDUzUTZPMklVTnFhODdKQmhEYnFGdnMyT2xBVUNmV2dWOUlibV9WSWxvTG9vdHJxSmZ0ZXZrTkdkSXlZYzFDQlpWMk84Rmh5al9SWnd3MHhCdEcwbzlhWW5qQVVpVFNfOVBxWXh1UFVqTEJDMnNRUjU5c2Fvc2Z1cHc?oc=5",
+      "date": "2026-10-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": ""
+    },
     {
       "id": "news-4fa21b2f7f456094",
       "title": "Kenya confirms its first Ebola case and death in a man who traveled from Congo - LancasterOnline",
@@ -529,38 +568,6 @@
       "date": "2026-10-06",
       "source": "Google News — Ebola death toll",
       "summary": "Kenya reports first-ever Ebola death after patient returns from DR Congo France 24"
-    },
-    {
-      "id": "news-d25741ea9d2e8ee0",
-      "title": "Kenya confirms first Ebola case after patient from DR of Congo dies in Nairobi - The Irish News",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQVHdGWmFzaUVUdDZ2R3cyZHdpODI0d1lwaXVTSXlWcmRpeVZCbVF0Znh0ZGRadDlTNmlkSW1vX1p0WXFEZUxQOWNIclFxenFvbnpJZkRhWV9kb2xQellIODk2cmZHbzh0QVotV2RlWjFaVkRZRzNzdWJEY2x6aE8xYkFjZE9QLXh2ZjJkU1BNNV9lRmpocGFWcGxoSlR2XzdLdXpYaUtVVUxQU1FfMkpCQU1sNDhQVGxEWEZsRndtOGxnb0Z3cWpMV3RzenRyR081bjdpb2VVOV93Vk0?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "Kenya confirms first Ebola case after patient from DR of Congo dies in Nairobi The Irish News"
-    },
-    {
-      "id": "news-ed242ac1c70ed11d",
-      "title": "Kenya Confirms First Ebola Case After Patient Dies In Nairobi - teleSUR English",
-      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5jUGMzS0xrQ2JId2xjSmRmQTQ2Q1lDX21aOF9lZW5zWVNVbllaMkpMLXR3SXVjNEJwaTRZTTFYRG5PeEhhRlRvZHFvRnZlU1oxQW5EaEo3Vk9JOGZkb29BeUZ5WGRpMzVtRDhyNlpwbHg?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of a recent announcement, Kenya reported its first confirmed Ebola case after a female patient traveling from Uganda died in Nairobi. The outbreak has spread from the initial epicenter in Bundibugyo, Uganda, with at least one additional death in Uganda and over 10 suspected cases under investigation."
-    },
-    {
-      "id": "news-84cd03a7f519d08a",
-      "title": "Kenya Reports First-Ever Ebola Death - Tempo.co English",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBzWGxkWVVULVh3MHlWclZVVXJENTFyamw0YWljX3BDbV9CdHFGcElyMGJSbl9PR2JnWG1ZcXFSSUNKMzQzQ00zSllUMUJJOHhjeURZcTFIVkV4a1R2ektGM1g2VzNnOFQ3QXQ0eVVTbERra0tEaldxQQ?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "Kenya Reports First-Ever Ebola Death Tempo.co English"
-    },
-    {
-      "id": "news-6c46587fd2947857",
-      "title": "Ebola Bundibugyo Virus: Kenya Confirms First Death In Case Imported From Congo - Health and Me",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNMm1udERTTjJwSTdGMzkyVzdVcnRCUV9ldS1xLTkxczYxQlhXQUx6bmZxQTBkTmJwTG5DRGJHdG82Vjd4VlJEMkdZcnVnR1Fic25LTmtJd0p0R3N2UDV1TXNHU3lRREVvU05GeEw0ZTNxQ080c1RsNHVLeTdWY1BUWkNhbGF1bnpPckdPTHh5dTQxM01KTmRvRnlpendISGs5ZGwxdDNZdExPT0M4T2Q5UmIxcW1ZT1FwYUg5LWUxQ1ZjTm1DOUR6OTl3a1JkYzVn?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "Kenya confirmed its first death from Ebola Bundibug"
     }
   ]
 }
