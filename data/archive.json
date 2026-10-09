@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-08T20:13:01.234Z",
+  "lastRun": "2026-10-09T08:13:04.961Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": null,
@@ -1211,11 +1211,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1369542262": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 4,
-      "lastAttempt": "2026-10-08T20:13:01.234Z",
+      "archivedUrl": "https://web.archive.org/web/20261009081339/https://en.wikipedia.org/w/index.php?oldid=1369542262",
+      "archivedAt": "2026-10-09T08:13:39Z",
+      "status": "archived",
+      "attempts": 5,
+      "lastAttempt": "2026-10-09T08:13:04.961Z",
       "title": "Wikipedia toll snapshot 2026-08-15: 17800 confirmed, 99 deaths",
       "publishedAt": "2026-08-15T16:28:10Z",
       "source": "Wikipedia",
@@ -2163,8 +2163,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-08T20:13:01.234Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-09T08:13:04.961Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-10-08: 443 confirmed, 47 deaths",
       "publishedAt": "2026-10-08",
       "source": "EODY weekly West Nile virus report",
@@ -2176,8 +2176,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 3,
-      "lastAttempt": "2026-10-08T20:13:01.234Z",
+      "attempts": 4,
+      "lastAttempt": "2026-10-09T08:13:04.961Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-09-09: 324 confirmed, 30 deaths",
       "publishedAt": "2026-09-09",
       "source": "EODY weekly West Nile virus report",
@@ -2742,6 +2742,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdTVFZHpITEFWWXo3N0RPeXh2ZlJ5MXZCdWZCc1NBUHk5RDFEWmx1anpmanlZXzNTdUZ4UVNUNFBfMGFfWnNmazhnQXlQTEZWVWs1TWZTNTh5dDE4S2doNDVIdkhGVXBJT21jd2hNNHhLbFJkbEV4U1hZa2FWOEx6TWQ0Y29pOVpVVzl3ejdhQTVtempCSmtPTDlDb3dOaE1ZSll0RTNkVkx4QmU1eGs0VmR5ZTlxV21rNWRWS2szcXdyMzZwNzhLWkhCSmhWbGdfLXZwbzlMekRqNDdiVlpBWmxBVmR5NWM1emM0?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Disease Outbreak News: Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo (8 October 2026) - ReliefWeb",
+      "publishedAt": "2026-10-08",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi7AFBVV95cUxPWTBEUUxrWTYyLS12dkxDSTNTa2g0bVc0MVpRYV83Y0FMSXlyOU5PQjBrOW5EY2czNzNEbjdHNm1JU2xrY24xc3ZHT095MnRqVkEtOE40ZEdzUVlYdkdvZUFVbncwb2hlS0E5TG9qMDVvQkZQSmlnNjhXMlpKWjdaWTRDSVVNUS1NU3NWSFc5MjYyV0szQ1huWE12d0VLM1ItenEtLVl4aVRYU2lWdkkxYVg2dWZZRWhHMWNEQUNmYlYtckNhWlQ1VDhoWm56Rks0azhybV8tN29hengwTUQ1aHhkSldjMXg0YWk5YQ?oc=5": {
@@ -4445,6 +4458,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTG03TnRLY200WThEZHdnaDNGRFJFcG9rT1hlMnVEUDBUR2ZmeXpoNmNPLXNMS2pvQjdDU2p5OW1SaFBwQW9DZnl6Nk1rVnRnWVJPZ3pKamp0VDA1NkgzWktzTng3b0Zmb3l2LW9TcUtvd1YzS3B0VHBzU2ZnVjY3UmRVbWFFSVVlcWVEbW8ycHNwVkNQTjBkY2I3eF85REtt0gGmAUFVX3lxTE5VcXZ5TDdvWUFQOV9JNGZVQXNqSkJXeXRTa0hvc0ZxSlpOdmFHaXBKMnQxajJVa0NDZXg3azZaUmtCeTNNcXZjQTVJRWVTMUJIamtlZ1hwWkFjM0hhdDAxRUt5alFHdEdWNlN3Q013S3FTdDJ2MkxiU2RuX0VYWkliLW01XzZ1QUZoVkYyV1VEd3hTNWRTMmtuenQwUzd6azI4SzNKbnc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Kenyan patient suspected of Ebola infection tests negative - Al Jazeera",
+      "publishedAt": "2026-10-08",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMioAFBVV95cUxPMmphcFJGY2h1SmRCQzNWemZram45ZXFsdE5GTVFpVFExRThlZ2tIMzk5aDI2SVZjU1FWQ3U1Q2VwLXpzLTByTURCTmVpUEJpV2hKMEJ2XzZIcllrVFhwRENrTXN0YnZmallRaEd3Mnp2bUVoaDNyRkc1Y3J4VU83RTJpejBDOEQwcVg3X2xkXzFZZ19pY2FWanJlWGczOHVE0gG0AUFVX3lxTE1sVTJJMm5WMmhfS0RsX2l1QUJGcXV1bmYwbnNjUkhxSjlpaW1hdXFrLXc0TVZ4UEI2TURnS1ZUdlgyeGlkWnB5RjdIXzlFdjRYWTIxb013MGdzY3FTUHc2MkRPR0s4UFM5QzN1T2JwZTRfWkJFYjJYbVU5UzFzaHRMeFJKUGhOa014UDBMSDBwckdQVGpUS0p5by1aM29rVXF0V1ptVTl5U3dqa2pGZlBfdWJDaQ?oc=5": {

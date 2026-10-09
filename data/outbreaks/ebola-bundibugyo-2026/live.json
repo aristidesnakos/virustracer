@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-08T20:10:56.305Z",
+  "lastFetched": "2026-10-09T08:11:11.763Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -414,9 +414,31 @@
     "news-a41f3d5b0eb4f496",
     "news-58ba511ba2b9d6e2",
     "news-3d376f7876462701",
-    "who-a41f3d5b0eb4f496"
+    "who-a41f3d5b0eb4f496",
+    "news-40ab5cbdc86f4ca6",
+    "news-f917e250bd8a51b4",
+    "news-f4087ac60679a4b2",
+    "news-1877b16f21cfd11b",
+    "who-f4087ac60679a4b2",
+    "who-50ff13e37a74a63b"
   ],
   "recentItems": [
+    {
+      "id": "news-40ab5cbdc86f4ca6",
+      "title": "Kenyan patient suspected of Ebola infection tests negative - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTG03TnRLY200WThEZHdnaDNGRFJFcG9rT1hlMnVEUDBUR2ZmeXpoNmNPLXNMS2pvQjdDU2p5OW1SaFBwQW9DZnl6Nk1rVnRnWVJPZ3pKamp0VDA1NkgzWktzTng3b0Zmb3l2LW9TcUtvd1YzS3B0VHBzU2ZnVjY3UmRVbWFFSVVlcWVEbW8ycHNwVkNQTjBkY2I3eF85REtt0gGmAUFVX3lxTE5VcXZ5TDdvWUFQOV9JNGZVQXNqSkJXeXRTa0hvc0ZxSlpOdmFHaXBKMnQxajJVa0NDZXg3azZaUmtCeTNNcXZjQTVJRWVTMUJIamtlZ1hwWkFjM0hhdDAxRUt5alFHdEdWNlN3Q013S3FTdDJ2MkxiU2RuX0VYWkliLW01XzZ1QUZoVkYyV1VEd3hTNWRTMmtuenQwUzd6azI4SzNKbnc?oc=5",
+      "date": "2026-10-08",
+      "source": "Google News — Ebola death toll",
+      "summary": "Kenyan patient suspected of Ebola infection tests negative Al Jazeera"
+    },
+    {
+      "id": "news-f4087ac60679a4b2",
+      "title": "Disease Outbreak News: Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo (8 October 2026) - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxOdTVFZHpITEFWWXo3N0RPeXh2ZlJ5MXZCdWZCc1NBUHk5RDFEWmx1anpmanlZXzNTdUZ4UVNUNFBfMGFfWnNmazhnQXlQTEZWVWs1TWZTNTh5dDE4S2doNDVIdkhGVXBJT21jd2hNNHhLbFJkbEV4U1hZa2FWOEx6TWQ0Y29pOVpVVzl3ejdhQTVtempCSmtPTDlDb3dOaE1ZSll0RTNkVkx4QmU1eGs0VmR5ZTlxV21rNWRWS2szcXdyMzZwNzhLWkhCSmhWbGdfLXZwbzlMekRqNDdiVlpBWmxBVmR5NWM1emM0?oc=5",
+      "date": "2026-10-08",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": ""
+    },
     {
       "id": "news-a41f3d5b0eb4f496",
       "title": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo - World Health Organization (WHO)",
@@ -560,22 +582,6 @@
       "date": "2026-10-06",
       "source": "Google News — Ebola death toll",
       "summary": "Man living in DR of Congo who returned to Kenya country’s first Ebola death The Irish News"
-    },
-    {
-      "id": "news-5726fa64da6d870f",
-      "title": "Kenya reports confirmed imported case of Bundibugyo Ebola Virus Disease - Outbreak News Today",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE40MGh0ZVVLUEdiVEg2bkN4UFlKWWkwOXRJUUx1ZkZSem5nUk16R0lFM0pHVW1UdzhQWUh4N2pjN19uQ1BLM0hVQzVTU1RtOFhnVGdCY19MbWpXRjg2dFk5MGxrSDdyaXRWakE1RmxPZVpIVnoxVFgzR2xnTEdmdw?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Kenya reports confirmed imported case of Bundibugyo Ebola Virus Disease Outbreak News Today"
-    },
-    {
-      "id": "news-74ed058846d1a5dd",
-      "title": "Kenya: What Is Bundibugyo Ebola? the Strain Behind Kenya's First Case - allAfrica.com",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBVLVhiS1NTUTZSNUU4ZjNIQmhPNVJIeFZ2bEhleGhoZGJ1NWlodHlVTl9iQzRzSlNOTTRPYnlIY0MzSFZRdUZXdTlrZTlPOEZFRFJNNXNhbmxWMFU?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "As of February 3, 2026, the ongoing Bundibugyo Ebola outbreak in Uganda and the Democratic Republic of Congo has resulted in 17 confirmed cases and 7 deaths, including Kenya's first confirmed case of the strain. Kenyan health officials have stated that the patient is in stable condition and that they are tracing contacts to contain the spread."
     }
   ]
 }
