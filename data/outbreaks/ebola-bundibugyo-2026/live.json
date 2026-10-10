@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-09T08:11:11.763Z",
+  "lastFetched": "2026-10-10T08:08:05.330Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -420,9 +420,33 @@
     "news-f4087ac60679a4b2",
     "news-1877b16f21cfd11b",
     "who-f4087ac60679a4b2",
-    "who-50ff13e37a74a63b"
+    "who-50ff13e37a74a63b",
+    "news-90ffcce25b7d45da",
+    "news-e81e7bc7656a383e",
+    "news-dd53d3d0e6560b4e",
+    "news-b678d3498fdfa3d8",
+    "news-1d0a1c7e5f80ac78",
+    "news-e26c7796bb16be98",
+    "news-1a8f031ba5a6f94f",
+    "news-75577063c11ed633"
   ],
   "recentItems": [
+    {
+      "id": "news-90ffcce25b7d45da",
+      "title": "Ebola vaccine trials begin in Uganda as DR Congo toll tops 4,200 - Türkiye Today",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxQM0t1NWlfUHlMbWRqaVFFYUQtaGhXMEdwcmRBRDZfRlVoWlNudVNwV0tpVFU4M3lVTzl1SE9xM3c0bE9yQ25iMFVpc1JpNVZqR2RCdU5GMW11RW55TVMzdXBxR0ZWSDFZcjl0d0RIb3hkZURicjlFQXY3SDFiTlM2OFZYMnpPQUs4aW8tVTYtU0J6d2l4UmpBRmZSb2Z5dGNtNXRRRlNiVG9FUQ?oc=5",
+      "date": "2026-10-09",
+      "source": "Google News — Ebola death toll",
+      "summary": "The cumulative death toll in DR Congo has topped 4,200 in the ongoing Bundibugyo Ebola outbreak, while Ebola vaccine trials have begun in Uganda."
+    },
+    {
+      "id": "news-e81e7bc7656a383e",
+      "title": "Why single Ebola death in Kenya has prompted fears of wider African spread - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3p1NkVGcHpESHRXVUdIM2FHT3dDZkdKN21CcVc4a0t4d1pfYmNVSWRaT01KaHRtQkh5LU41V2hFdUJOOU84VzFSdEw2SzVncFhtNjVXQnVIaGx2M1pnM01nYzJRZmE5S2F5Vnh3dmRpQk03Z0IxN1UzenNPeVlSUEpIZ0NUWGpza3F4enREbm03eDF3cDBOMWNPWWtHaWtIVmdxLVRxRlRjMm56VndkV1JQdUPSAboBQVVfeXFMTXJlUWJLb1p5dUNwWm5CNGlXeUp3dFJIbFcyajFGZDZ0Nk4xWElLU0hsLWZkbFBVcTFNTE0ya1pac3lhSld1eWwtLXRKRGFrQ1Vic0pBbmcwcHA1ZkhjbV91MVpmZEEyNmlPa0x2S3JHb1dHdVpvbFlEYVN0V3ZIczNTX3paMGxwS2xDRWFrR2EzVVpzUEY0eWYzVWRzZE0xVC1uNng5U1lNazF3dlVWcm00S2czbk9OQ2xR?oc=5",
+      "date": "2026-10-08",
+      "source": "Google News — Ebola death toll",
+      "summary": "Why single Ebola death in Kenya has prompted fears of wider African spread Al Jazeera"
+    },
     {
       "id": "news-40ab5cbdc86f4ca6",
       "title": "Kenyan patient suspected of Ebola infection tests negative - Al Jazeera",
@@ -566,22 +590,6 @@
       "date": "2026-10-07",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Ebola Outbreak Reaches Kenya: What International Law Requires of States Diplomacy and Law"
-    },
-    {
-      "id": "news-d1b8f6e0161d4a0a",
-      "title": "What is Bundibugyo Ebola? The strain behind Kenya’s first case - Capital FM Africa",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTWFaZWVxSU9UaWlJbHM4Z2FySlNIaDF6ajQzcElIUTRJbTJROUZoN1UxR2tVbkRRS3JRYWxsLWtyLUt6SzNjR0E5akh0alI4ZW9IQ21fM3cyd0xqMUMxNGE1cHFaRTBUeDM1SllEcXpfeEhNd2wzMDQtT09SUzJmb2pfMGFqTU9MSVBWSWVWOA?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "What is Bundibugyo Ebola? The strain behind Kenya’s first case Capital FM Africa"
-    },
-    {
-      "id": "news-6b2c0d5ad346f71a",
-      "title": "Man living in DR of Congo who returned to Kenya country’s first Ebola death - The Irish News",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNTm1ZSmdlZTRQU2xLeFdwbzhIWU9wRHBHU2lscXRWS0I2TTJDdWtSMDM4dmZOTTNpMGExM20wOWhEYnhEaU1rS0dWeFZmdUc3djgwbkRfRTB1UlhWMldveWRDLURxRWJTa3lWUGRKck5iVnNBaWREYm4zQm9fZkdiMWU3dGdhN2pOWnRqMmRIUC1RUktYRXZGRFFGdXE2NVNtQzdtUmRPMmZUTjVxcXRQTXlvTHJ3d0dkeExVSlFVckUwbXk2UVBLbnlBUkxxeEF4NjJqQ2trcGVoMU0?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "Man living in DR of Congo who returned to Kenya country’s first Ebola death The Irish News"
     }
   ]
 }

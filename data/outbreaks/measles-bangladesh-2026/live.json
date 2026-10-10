@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-09T08:12:06.058Z",
+  "lastFetched": "2026-10-10T08:08:56.478Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -217,9 +217,19 @@
     "news-af01e8ebc55ea01b",
     "news-8c70114a33fb03f2",
     "news-42f44cca24e2e14f",
-    "news-587c6d14483c4daf"
+    "news-587c6d14483c4daf",
+    "news-781738b76a4dc091",
+    "news-4ffaae77288cfb7a"
   ],
   "recentItems": [
+    {
+      "id": "news-781738b76a4dc091",
+      "title": "Measles outbreak in Bangladesh born out of state negligence | The Daily Guardian - newspaper - Magzter",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVDVycHJTTTZhWmptY3BtY2h6c3l4ZzBqV1dEODZFU2hFRUo2RWZiTEsxZGltZGROaU1SUXYzLXIybHYtWjk0Um1tUlAwYm5HSmRVMHVTd0VJdXoxVzBkV2dJd1ZqUVVTNzFNakJCakZPNXZIZWYwdzc4OXZ0MkJlVmJ2UXBYRzR6ZjJoOWxzR25LX3hVY0Fmdy1SdS1Od3pCaERFQTl1UTVMZWt5dFFFMXZfZmk1ci1ldzFJQw?oc=5",
+      "date": "2026-10-08",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Measles outbreak in Bangladesh born out of state negligence | The Daily Guardian - newspaper Magzter"
+    },
     {
       "id": "news-4b30e94f581e96f8",
       "title": "Measles outbreak: Death toll reaches 1,144 as four die in 24 hours - Dhaka Tribune",
@@ -371,14 +381,6 @@
       "date": "2026-10-03",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh Measles Outbreak Claims Four More Lives, 1,114 Deaths Reported NDTV"
-    },
-    {
-      "id": "news-6ddff53007b5ec5f",
-      "title": "Bangladesh measles outbreak claims four more lives, death toll climbs to 1,114 - DT Next",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxOc2tvaEE1OXQzNFZZeHVQWDBRZjMtRmZUV0VUVkRla01qNFB0aG1ma3lMWWpvMVF1T2hHNUZWYTJIVkFfSmpsYkxjR1pCXzRyRW80WmduSUc2Y3ZEdTlZaFFVQXNuaXRsakZpMk5sNmtXRnFsbzhSa2xaZjhXVUFxRWc1bEl3UVBIZ0I2OVdJUXZHeXM0ajByVDRUcXg3V1AxTS1pSXFLU0x1dXdnYVNPbUhfYXloZ3dIOHBZ0gG7AUFVX3lxTE5za29oQTU5dDM0Vll4dVBYMFFmMy1GZlRXRVRWRGVrTWo0UHRobWZreUxZam8xUXVPaEc1RlZhMkhWQV9KamxiTGNHWkJfNHJFbzRaZ25JRzZjdkR1OVloUVVBc25pdGxqRmkyTmw2a1dGcWxvOFJrbFpmOFdVQXFFZzVsSXdRUEhnQjY5V0lRdkd5czRqMHJUNFRxeDdXUDFNLWlJcUtTTHV1d2dhU09tSF9heWhnd0g4cFk?oc=5",
-      "date": "2026-10-03",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh measles outbreak claims four more lives, death toll climbs to 1,114 DT Next"
     }
   ]
 }

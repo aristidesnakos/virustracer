@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-09T08:13:04.901Z",
+  "lastFetched": "2026-10-10T08:10:02.450Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -92,7 +92,10 @@
     "news-f4c24eb605ac4ac4",
     "news-a7eea64a63b15e04",
     "news-404847e609926bb8",
-    "news-237061e44bf62596"
+    "news-237061e44bf62596",
+    "news-38d9856246c9de58",
+    "news-398a296482af6a68",
+    "news-10326cf035be76f7"
   ],
   "recentItems": [
     {
@@ -150,6 +153,14 @@
       "date": "2026-09-11",
       "source": "Google News — West Nile virus Greece",
       "summary": "Greece records a record 324 cases of West Nile virus UA.NEWS"
+    },
+    {
+      "id": "news-38d9856246c9de58",
+      "title": "West Nile Virus Death Toll in Greece Rises to 30 as Cases Reach 324 - GreekReporter.com",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44UnN5YUU5Nk8wR0hWTXN1SE14aDRCME5aMlp1WkFSWkF4S19xMm9TWHlJYkxMdnVRVFRWNEFDZ0d1bkFEVW5ybmIwYm5DNUpHSG40ak9xQ2JZRzJ6aEYzRXRfQVJxSlBvUHd1VmkxZXE5aTNo?oc=5",
+      "date": "2026-09-10",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "The West Nile virus death toll in Greece has risen to 30, with 324 confirmed cases, according to GreekReporter."
     },
     {
       "id": "news-a171c331dd0b4543",
@@ -246,14 +257,6 @@
       "date": "2026-08-27",
       "source": "Google News — West Nile virus Greece",
       "summary": "Greece reports 232 West Nile virus infections and 19 deaths TRT World"
-    },
-    {
-      "id": "news-89b1dbbbe531cbed",
-      "title": "Attica Launches Emergency Action Plan to Tackle Spread of West Nile Virus - tovima.com",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQRjByOEN5QWMwTUpWTG1qTmF6WG5hMk8teVNnaWFiYUo1MUdHb1lob1MxN1BYM2Q4Um04YUJybGNHTUlVSU1JX1RwT1FKajVXWG1CcGlLMmFFT1ZrdmwxN0I2QzJjUm90ZnpkRWlwUXdROGFWMkMtNHlTZmRHMm5mc21odG1ac0ZWZnhvSGExbGd1WjNSZVRzYjdKWGRDdllHYmI0UF91U27SAa4BQVVfeXFMTnYwaVMxYTlpMzIzT0tpWDVXWTV4VmZNSHpPVVdKRmo0Ujd0YXJNeHhnOC10ajYzYm9yMlc4dmhFc3ZQTEFzWi14dWpJWExwVnF6VnBFM0kzVTBLR1Rtd3JZdUpqM0otdmpRRWJXWTBxbEN3Zk1ydnoxMzZDZWIyMG1YbWJOWnRXckl5R2hlaEk1Q1hmSUUybk9nUHNGNjYtSHhCTzhFSUkzTXZsaG5B?oc=5",
-      "date": "2026-08-27",
-      "source": "Google News — West Nile Attica",
-      "summary": "Attica Launches Emergency Action Plan to Tackle Spread of West Nile Virus tovima.com"
     }
   ]
 }
