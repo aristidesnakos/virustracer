@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-10T08:08:05.330Z",
+  "lastFetched": "2026-10-10T20:07:09.720Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -428,9 +428,21 @@
     "news-1d0a1c7e5f80ac78",
     "news-e26c7796bb16be98",
     "news-1a8f031ba5a6f94f",
-    "news-75577063c11ed633"
+    "news-75577063c11ed633",
+    "news-db86dec12bd8acc8",
+    "news-a02d6f34bc78e68d",
+    "news-803de38c975b01f0",
+    "news-89ea8fac92e7a939"
   ],
   "recentItems": [
+    {
+      "id": "news-803de38c975b01f0",
+      "title": "Computational Models Warn Ebola Antibody Drugs May Lose Power Against Bundibugyo Virus - Bioengineer.org",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPanJ6emRadnBPVlBRLUROdU12TUZBSFRuZndSWEMtM21SdlotRU9nZFlRc2RMbjc0SnJSdHAzSHM5eDU3aVk3V0NoQWtpdlFRQk4xMTVpUTBxcm1uNmd4R25zRW1CSXVVWF9oUEZ0czVPUEkzR2xqcTdFcThjSjB2b1lkakpqTk1nQjExVUd0NUx3Ymg0d01pXzhON0lnejNqS2RKMlB5V095X1hnbnhJOQ?oc=5",
+      "date": "2026-10-10",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Computational Models Warn Ebola Antibody Drugs May Lose Power Against Bundibugyo Virus Bioengineer.org"
+    },
     {
       "id": "news-90ffcce25b7d45da",
       "title": "Ebola vaccine trials begin in Uganda as DR Congo toll tops 4,200 - Türkiye Today",
@@ -582,14 +594,6 @@
       "date": "2026-10-07",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Roche Diagnostics delivers laboratory equipment to support Ebola testing in DRC PR Newswire"
-    },
-    {
-      "id": "news-292ddfa2f09d433d",
-      "title": "Ebola Outbreak Reaches Kenya: What International Law Requires of States - Diplomacy and Law",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5rQzRLQUlBVU5vMDlZaE5ESVJXYjhOYjZZQ1RxV3VtUkNYZkRMa09PUEtMSVZobWxmN3JtMENTTGJPVmFuZEswcW5EQkZua1FTVHZtUWxmcjY2NlMzSEhjSF9VN2VEeWpibHdjNTB5dFAxXzA?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola Outbreak Reaches Kenya: What International Law Requires of States Diplomacy and Law"
     }
   ]
 }
