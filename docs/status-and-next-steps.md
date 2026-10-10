@@ -1,17 +1,18 @@
 # Status and next steps
 
-Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 2026-10-04 after the repo cleanup and the alerts widget launch (da28422); security section added 2026-10-07 after the API rate limit. Read this first when resuming. Architecture lives in `CLAUDE.md`; the long-range plan and its reasoning in `docs/multi-outbreak-plan.md` (sections 2, 4, 6, 8).
+Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 2026-10-04 after the repo cleanup and the alerts widget launch (da28422); security section added 2026-10-07 after the API rate limit; H5N1 notes added 2026-10-10. Read this first when resuming. Architecture lives in `CLAUDE.md`; the long-range plan and its reasoning in `docs/multi-outbreak-plan.md` (sections 2, 4, 6, 8).
 
 ## Where we stand
 
 **Site:** Outbreak Files, https://outbreakfiles.com. Next.js 16 App Router, data committed to the repo by a twice-daily GitHub Action (08:00 and 20:00 UTC), Vercel deploys on every push to `main`.
 
-**Three outbreaks are live**
+**Four outbreaks are tracked**
 
 | Slug | Status | Source | Notes |
 |---|---|---|---|
 | `ebola-bundibugyo-2026` | active | Wikipedia infobox, daily | Rt shown (serial interval from West Africa 2014). Default outbreak: the un-prefixed `/api/v1/*` aliases serve it and must never be removed. |
 | `measles-bangladesh-2026` | active | Wikipedia infobox, daily | Rt and delay-adjusted fatality are **not** reported (no verified serial-interval SD). Headline Deaths = deaths among confirmed cases (`summary.deathsQualifier`); the 909 further deaths among suspected cases are stated beside it. |
+| `west-nile-greece-2026` | active | EODY weekly report (PDF), read by the Mac launchd job | EODY answers GitHub runners with 403. Latest stored report: up to 2026-10-08, 443 cases, 47 deaths (`toll.json`, checked 2026-10-10). |
 | `hantavirus-mv-hondius-2026` | over | hand-curated | Archived record, no `toll.json`, frozen `live.json`. |
 
 **Phases (from the plan)**
@@ -58,7 +59,7 @@ Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 
 - Vercel firewall otherwise: Bot Protection Off, AI Bots Allow, BotID Basic, no other custom rules (checked 2026-10-03).
 
 **Open, in this order**
-1. `/api/alert-interest` (POST, sends email through Resend) is outside the `/api/v1/` rule; its app limiter (`createRateLimiter`, 4 sign-ups per 10 min) is in memory per instance. 2026-10-07: WAF rule "Rate limit alert sign-ups" (path equals `/api/alert-interest`, POST, 10 per 600 s per IP, then 429) published and tested: 12 rapid POSTs gave 10 x 400 (empty body, no email sent) and 2 x 429. It is 10, not 5, because the widget's `kind: "open"` ping POSTs to the same path once per page load. `isPlausibleEmail` now refuses quotes, angle brackets, commas, colons, semicolons, backslashes, whitespace and control characters (no display names, address lists or Slack `<!channel>` in `reply_to`/webhook text); the webhook body sends `allowed_mentions: { parse: [] }` so Discord ignores `@everyone`. The Resend `html` was already escaped. Done apart from committing the code change.
+1. `/api/alert-interest` (POST, sends email through Resend) is outside the `/api/v1/` rule; its app limiter (`createRateLimiter`, 4 sign-ups per 10 min) is in memory per instance. 2026-10-07: WAF rule "Rate limit alert sign-ups" (path equals `/api/alert-interest`, POST, 10 per 600 s per IP, then 429) published and tested: 12 rapid POSTs gave 10 x 400 (empty body, no email sent) and 2 x 429. It is 10, not 5, because the widget's `kind: "open"` ping POSTs to the same path once per page load. `isPlausibleEmail` now refuses quotes, angle brackets, commas, colons, semicolons, backslashes, whitespace and control characters (no display names, address lists or Slack `<!channel>` in `reply_to`/webhook text); the webhook body sends `allowed_mentions: { parse: [] }` so Discord ignores `@everyone`. The Resend `html` was already escaped. Committed as c81a969.
 2. Security headers: the live site sends only `strict-transport-security`. Add `X-Content-Type-Options: nosniff`, `Referrer-Policy`, `Permissions-Policy`, and clickjacking protection (`frame-ancestors` or `X-Frame-Options`) in `next.config.ts`. A CSP needs to allow MapLibre and the CARTO tiles, inline JSON-LD and Next's inline scripts: ship it as `Content-Security-Policy-Report-Only` first.
 3. Untrusted text: feed titles and URLs from WHO/Google News go into `live.json` (and through OpenRouter) and are rendered on the site. Check `FeedUpdates.tsx` for non-http(s) hrefs (`javascript:`), `rel="noopener noreferrer"`, and that nothing uses `dangerouslySetInnerHTML` on that text. A prompt-injected summary or country candidate must stay "Unverified" and never touch curated data.
 4. Dependencies and secrets (repo is public): `npm audit --omit=dev`, turn on Dependabot alerts and secret scanning, scan git history for keys, confirm no `NEXT_PUBLIC_` variable holds a secret.
@@ -75,8 +76,15 @@ Goal: a visible archive that shows the site keeps records after an outbreak ends
 4. Optional dated situation notes, only if someone will write them (open question 5 in the plan).
 5. Update `sitemap.ts`, home grouping ("Declared over" already exists), `/methodology` and tests as outbreaks are added. Adding an outbreak = definition file in `src/data/outbreaks/`, line in `index.ts`, matching entry in `scripts/lib/outbreak-registry.mjs`; `tests/outbreak-registry.test.ts` fails if the two drift.
 
+## Next outbreak candidate: H5N1 (2026-10-10)
+
+Business validation notes (demand, buyers) live in Ari's private ledger, not in this repo.
+
+**If H5N1 is added to the site:** `StatStrip.tsx` hard-codes "Confirmed cases" and "Case fatality"; animal outbreaks count flocks, herds or premises and animals lost, so labels must come from the outbreak definition, and Rt and fatality are `null` (as for measles). The home ranking sorts by 7-day deaths, so animal and plant outbreaks need their own group and must never rank against human ones (changing the ranking needs Ari's OK). Sources: USDA APHIS flock and livestock detections (updated weekdays), CDC human cases; WOAH monthly ASF situation reports (PDF) for Europe.
+
 ## Questions waiting on Ari
 
+- H5N1: add it as the next outbreak (human cases headline, animal detections second), ahead of Phase 5?
 - Measles source: keep the Wikipedia infobox and accept the lag, or build a direct DGHS adapter?
 - Phase 5 order: backfill past outbreaks first, or `/archive` page first with hantavirus alone?
 - Plan section 8 items still open: audience, editorial capacity (notes or numbers only), regional scope (cholera in one country, dengue in a region?).
