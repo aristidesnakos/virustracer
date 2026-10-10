@@ -27,6 +27,10 @@ describe("sitemap", () => {
     expect(byUrl.get(absoluteUrl("/methodology"))!.lastModified).toBeUndefined();
   });
 
+  it("lists /commercial-data at low priority", () => {
+    expect(byUrl.get(absoluteUrl("/commercial-data"))).toMatchObject({ changeFrequency: "monthly", priority: 0.3 });
+  });
+
   it("has exactly one entry per registered outbreak, prioritised by status", () => {
     const outbreakEntries = entries.filter((e) => e.url.includes("/outbreaks/"));
     expect(outbreakEntries).toHaveLength(listOutbreaks().length);

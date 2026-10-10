@@ -6,8 +6,10 @@ import {
   isPlausibleEmail,
   parseInterest,
 } from "@/lib/alert-interest";
+import { PILOT_PRICE_USD_PER_MONTH } from "@/lib/commercial";
 
 const valid = { kind: "submit", email: "a@b.org", page: "/outbreaks/measles-bangladesh-2026", website: "" };
+const commercial = { kind: "commercial", email: "a@b.org", segment: "egg-poultry-buyer", use: "", website: "" };
 
 describe("parseInterest", () => {
   it("accepts an open ping", () => {
@@ -34,6 +36,31 @@ describe("parseInterest", () => {
     expect(parseInterest({ ...valid, website: "http://spam.example" })).toEqual({ ok: true, drop: true });
   });
 
+  it("accepts a commercial open ping", () => {
+    expect(parseInterest({ kind: "commercial-open" })).toEqual({ ok: true, value: { kind: "commercial-open" } });
+  });
+
+  it("accepts a commercial sign-up with a known segment and cleans the free text", () => {
+    expect(
+      parseInterest({ ...commercial, use: "  forward buying\n<!channel> eggs " }),
+    ).toEqual({
+      ok: true,
+      value: { kind: "commercial", email: "a@b.org", segment: "egg-poultry-buyer", use: "forward buying !channel eggs" },
+    });
+  });
+
+  it.each([
+    ["missing", undefined],
+    ["unknown", "hedge-fund"],
+    ["of the wrong type", 3],
+  ])("rejects a commercial sign-up whose segment is %s", (_name, segment) => {
+    expect(parseInterest({ ...commercial, segment })).toEqual({ ok: false, error: "Please choose what describes you best." });
+  });
+
+  it("drops a filled honeypot on the commercial form too", () => {
+    expect(parseInterest({ ...commercial, website: "x" })).toEqual({ ok: true, drop: true });
+  });
+
   it.each([
     ["non-object", "hello"],
     ["array", []],
@@ -43,6 +70,7 @@ describe("parseInterest", () => {
     ["bad email", { ...valid, email: "not-an-email" }],
     ["email of wrong type", { ...valid, email: 42 }],
     ["overlong email", { ...valid, email: `${"a".repeat(130)}@b.org` }],
+    ["commercial without email", { ...commercial, email: "" }],
   ])("rejects %s", (_name, body) => {
     expect(parseInterest(body).ok).toBe(false);
   });
@@ -69,6 +97,15 @@ describe("describeSubmission", () => {
     const text = describeSubmission({ kind: "submit", email: "a@b.org", page: null });
     expect(text).toContain("Email: a@b.org");
     expect(text).toContain("Page: unknown");
+  });
+
+  it("names the segment, the price shown and the answer for a commercial sign-up", () => {
+    const text = describeSubmission({ kind: "commercial", email: "a@b.org", segment: "insurer", use: null });
+    expect(text).toMatch(/^New interest in commercial H5N1 data/);
+    expect(text).toContain("Email: a@b.org");
+    expect(text).toContain("Describes them: Insurer or reinsurer");
+    expect(text).toContain(`Price shown: $${PILOT_PRICE_USD_PER_MONTH}/month`);
+    expect(text).toContain("Would help them decide: -");
   });
 });
 

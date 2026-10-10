@@ -1,6 +1,9 @@
 import { describe, it, expect, vi, beforeEach, afterEach } from "vitest";
 import { fireEvent, render, screen, waitFor } from "@testing-library/react";
+import { usePathname } from "next/navigation";
 import AlertsInterestWidget from "@/components/AlertsInterestWidget";
+
+vi.mock("next/navigation", () => ({ usePathname: vi.fn(() => "/") }));
 
 const calls = () => (globalThis.fetch as unknown as ReturnType<typeof vi.fn>).mock.calls;
 const bodyOf = (i: number) => JSON.parse(calls()[i][1].body as string);
@@ -27,6 +30,12 @@ describe("AlertsInterestWidget", () => {
     fireEvent.click(pill()); // close
     fireEvent.click(pill()); // reopen
     expect(calls()).toHaveLength(1);
+  });
+
+  it("stays hidden on /commercial-data, which has its own sign-up", () => {
+    vi.mocked(usePathname).mockReturnValueOnce("/commercial-data");
+    const { container } = render(<AlertsInterestWidget />);
+    expect(container).toBeEmptyDOMElement();
   });
 
   it("says plainly that alerts do not exist yet", () => {

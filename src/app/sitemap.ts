@@ -4,6 +4,7 @@ import { getTollData } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { newestDate, SITEMAP_PRIORITY, sitemapChangeFrequency } from "@/lib/seo";
 import { outbreakPath } from "@/lib/outbreak-paths";
+import { COMMERCIAL_PATH } from "@/lib/commercial";
 import { absoluteUrl } from "@/lib/site";
 
 const toDate = (iso: string | null | undefined): Date | undefined => (iso ? new Date(iso) : undefined);
@@ -24,6 +25,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     // Text pages change only when edited; no honest lastModified without a content date, so it is left out.
     { url: absoluteUrl("/methodology"), changeFrequency: "monthly", priority: 0.5 },
     { url: absoluteUrl("/about"), changeFrequency: "monthly", priority: 0.4 },
+    { url: absoluteUrl(COMMERCIAL_PATH), changeFrequency: "monthly", priority: 0.3 },
     ...outbreaks.map(({ outbreak, dataDate }) => ({
       url: absoluteUrl(outbreakPath(outbreak.slug)),
       lastModified: toDate(dataDate),

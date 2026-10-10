@@ -5,13 +5,14 @@ import {
   describeSubmission,
   escapeHtml,
   parseInterest,
-  type InterestPayload,
+  type Submission,
 } from "@/lib/alert-interest";
 import { SITE_NAME } from "@/lib/site";
 
 // POST /api/alert-interest
-// Demand test for outbreak alerts. Alerts are not built: this only records that
-// someone would want them. A sign-up must reach a human, so unless a delivery
+// Demand test for outbreak alerts, and for the paid data feed on /commercial-data
+// (kinds "commercial-open" and "commercial"). Neither is built: this only records
+// that someone would want them. A sign-up must reach a human, so unless a delivery
 // channel is configured the route refuses (503) in production instead of
 // telling people their interest was saved when it was not.
 //
@@ -45,7 +46,7 @@ function channels() {
   };
 }
 
-async function deliver(p: Extract<InterestPayload, { kind: "submit" }>): Promise<void> {
+async function deliver(p: Submission): Promise<void> {
   const { webhook, email } = channels();
   const text = describeSubmission(p);
   const jobs: Promise<void>[] = [];
@@ -57,7 +58,13 @@ async function deliver(p: Extract<InterestPayload, { kind: "submit" }>): Promise
         headers: { "Content-Type": "application/json" },
         // `text` for Slack, `content` for Discord.
         // Discord parses @everyone/@here anywhere in `content` unless told not to.
-        body: JSON.stringify({ text, content: text, allowed_mentions: { parse: [] }, event: "alert-interest", ...p }),
+        body: JSON.stringify({
+          text,
+          content: text,
+          allowed_mentions: { parse: [] },
+          event: p.kind === "commercial" ? "commercial-interest" : "alert-interest",
+          ...p,
+        }),
         signal: AbortSignal.timeout(8000),
       }).then((r) => {
         if (!r.ok) throw new Error(`Webhook responded ${r.status}`);
@@ -73,7 +80,7 @@ async function deliver(p: Extract<InterestPayload, { kind: "submit" }>): Promise
         body: JSON.stringify({
           from: email.from,
           to: email.to,
-          subject: `${SITE_NAME}: someone wants alerts`,
+          subject: p.kind === "commercial" ? `${SITE_NAME}: commercial data interest` : `${SITE_NAME}: someone wants alerts`,
           html: `<pre style="font:14px/1.5 monospace;white-space:pre-wrap">${escapeHtml(text)}</pre>`,
           reply_to: p.email,
         }),
@@ -117,10 +124,19 @@ export async function POST(request: NextRequest) {
     return json({ ok: true });
   }
 
+  if (value.kind === "commercial-open") {
+    if (!openLimiter.allow(key)) return json({ ok: true });
+    // Someone saw the price and clicked to ask for the pilot. Its own prefix, so the
+    // daily demand count does not mistake it for a sign-up. No personal data.
+    console.info("[commercial-interest] open");
+    return json({ ok: true });
+  }
+
   if (!submitLimiter.allow(key)) return json({ error: "Too many attempts. Please try again later." }, 429);
 
-  // Log the page but never the email address.
-  console.info(`[alert-interest] submit page=${value.page ?? "-"}`);
+  // One line per sign-up; never the email address or the free-text answer.
+  if (value.kind === "commercial") console.info(`[alert-interest] commercial segment=${value.segment}`);
+  else console.info(`[alert-interest] submit page=${value.page ?? "-"}`);
 
   const { webhook, email } = channels();
   if (!webhook && !email) {

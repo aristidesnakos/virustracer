@@ -1,8 +1,10 @@
 "use client";
 
 import { useEffect, useId, useRef, useState, useSyncExternalStore, type FormEvent } from "react";
+import { usePathname } from "next/navigation";
 import { Bell, X } from "lucide-react";
 import { MAX_EMAIL_LENGTH, isPlausibleEmail } from "@/lib/alert-interest";
+import { COMMERCIAL_PATH } from "@/lib/commercial";
 
 // Demand test for outbreak alerts. Alerts do not exist yet, and the copy says so.
 // A bottom-right pill opens a small non-modal panel with one email field; the
@@ -48,6 +50,7 @@ export default function AlertsInterestWidget() {
   const [error, setError] = useState("");
 
   const alreadySubmitted = useSyncExternalStore(subscribe, readSubmitted, () => false);
+  const pathname = usePathname();
   const reportedOpen = useRef(false);
   const triggerRef = useRef<HTMLButtonElement>(null);
   const panelRef = useRef<HTMLDivElement>(null);
@@ -106,6 +109,8 @@ export default function AlertsInterestWidget() {
 
   // After signing up, drop the pill on later visits instead of nagging.
   if (alreadySubmitted && status !== "done" && !open) return null;
+  // /commercial-data has its own sign-up; a second one would muddy both tests.
+  if (pathname === COMMERCIAL_PATH) return null;
 
   return (
     <div className="fixed bottom-[max(1rem,env(safe-area-inset-bottom))] right-[max(1rem,env(safe-area-inset-right))] z-40 flex flex-col items-end gap-3">

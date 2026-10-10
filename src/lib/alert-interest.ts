@@ -1,9 +1,13 @@
-// Shared by the alerts-interest widget and its API route. Pure and client-safe.
+// Shared by the alerts-interest widget, the /commercial-data form and their API
+// route. Pure and client-safe.
 //
 // Alerts do not exist yet. The widget is a demand test: one email field, so the
 // signal is how many people who open it leave an address. The page they were on
 // is recorded too, to see which outbreak the interest comes from. Keep the
-// wording honest that alerts are not built.
+// wording honest that alerts are not built. The commercial kinds are the same
+// test for a paid data feed (see src/lib/commercial.ts).
+
+import { PILOT_PRICE_USD_PER_MONTH, parseSegment, parseUse, segmentLabel, type BuyerSegment } from "@/lib/commercial";
 
 export const MAX_EMAIL_LENGTH = 120;
 export const MAX_PAGE_LENGTH = 200;
@@ -11,7 +15,12 @@ export const MAX_BODY_BYTES = 4096;
 
 export type InterestPayload =
   | { kind: "open" }
-  | { kind: "submit"; email: string; page: string | null };
+  | { kind: "submit"; email: string; page: string | null }
+  | { kind: "commercial-open" }
+  | { kind: "commercial"; email: string; segment: BuyerSegment; use: string | null };
+
+/** The kinds that carry an email address and are delivered to a human. */
+export type Submission = Extract<InterestPayload, { kind: "submit" | "commercial" }>;
 
 export type ParseResult =
   | { ok: true; value: InterestPayload }
@@ -45,15 +54,29 @@ export function parseInterest(body: unknown): ParseResult {
   if (typeof b.website === "string" && b.website.trim() !== "") return { ok: true, drop: true };
 
   if (b.kind === "open") return { ok: true, value: { kind: "open" } };
-  if (b.kind !== "submit") return { ok: false, error: "Invalid request." };
+  if (b.kind === "commercial-open") return { ok: true, value: { kind: "commercial-open" } };
+  if (b.kind !== "submit" && b.kind !== "commercial") return { ok: false, error: "Invalid request." };
 
   const email = typeof b.email === "string" ? b.email.trim() : "";
   if (!isPlausibleEmail(email)) return { ok: false, error: "That email address does not look right." };
 
-  return { ok: true, value: { kind: "submit", email, page: parsePage(b.page) } };
+  if (b.kind === "submit") return { ok: true, value: { kind: "submit", email, page: parsePage(b.page) } };
+
+  const segment = parseSegment(b.segment);
+  if (!segment) return { ok: false, error: "Please choose what describes you best." };
+  return { ok: true, value: { kind: "commercial", email, segment, use: parseUse(b.use) } };
 }
 
-export function describeSubmission(p: Extract<InterestPayload, { kind: "submit" }>): string {
+export function describeSubmission(p: Submission): string {
+  if (p.kind === "commercial") {
+    return [
+      "New interest in commercial H5N1 data",
+      `Email: ${p.email}`,
+      `Describes them: ${segmentLabel(p.segment)}`,
+      `Price shown: $${PILOT_PRICE_USD_PER_MONTH}/month`,
+      `Would help them decide: ${p.use ?? "-"}`,
+    ].join("\n");
+  }
   return ["New interest in outbreak alerts", `Email: ${p.email}`, `Page: ${p.page ?? "unknown"}`].join("\n");
 }
 

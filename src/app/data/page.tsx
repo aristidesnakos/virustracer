@@ -3,6 +3,7 @@ import Link from "next/link";
 import { getDefaultOutbreak, listOutbreaks } from "@/data/outbreaks";
 import { API_CACHE_SECONDS, API_RATE_LIMIT, MAX_LIMIT, attributionFor } from "@/lib/api";
 import { ASSUMPTIONS, WEEKLY_MIN_READINGS_IN_TWO_WEEKS } from "@/lib/metrics";
+import { COMMERCIAL_PATH } from "@/lib/commercial";
 import { CORRECTIONS_URL } from "@/lib/methodology";
 import { OUTBREAKS_API_PATH, legacyApiPath, outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
 import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
@@ -205,7 +206,12 @@ console.log(growth.trend, rt.estimate);`}</pre>
                   open an issue
                 </a>{" "}
                 and tell us what you are building.
-                Clients that keep hitting the limit may be blocked.
+                Clients that keep hitting the limit may be blocked. For business use, a paid H5N1 feed with history
+                and alerts is planned: see{" "}
+                <Link href={COMMERCIAL_PATH} className={link}>
+                  commercial data
+                </Link>
+                .
               </li>
             </ul>
             <p className="text-[0.9375rem] leading-relaxed text-ink-muted">
