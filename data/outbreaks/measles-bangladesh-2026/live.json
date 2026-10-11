@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-10T20:08:08.396Z",
+  "lastFetched": "2026-10-11T08:10:40.985Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -223,7 +223,10 @@
     "news-69d2de6e8ad4dd25",
     "news-6dbb9ad8d5c02231",
     "news-b463fa48836bb32b",
-    "news-38e64f428f42d012"
+    "news-38e64f428f42d012",
+    "news-bad710f105fc12c0",
+    "news-7bdc21fe63ccb70e",
+    "news-afc1cc20ba21adde"
   ],
   "recentItems": [
     {
@@ -379,12 +382,12 @@
       "summary": "Bangladesh records 3 more suspected measles deaths as 82 new cases confirmed bdnews24.com"
     },
     {
-      "id": "news-884fbd9da791e044",
-      "title": "Bangladesh measles outbreak death toll rises to 1,114 | Tap to know more | Inshorts - Inshorts",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQ0Y4dFA1em8xZWNHVFQycXdoOXR5UkpEZTRFLWVCWEl2emE2ZXd6Y3lzc2VMMzk4ZmNDQnFBYlJBR0twYkN2MS1CeURIeEpUNS1xcko5OE1EbGxmSmRrbU03SnAzTVB6T3Y3TDg5YWxJSDZSTkxLWEZpNW9kcnFVRlAyUnVLT2hsOGN5U19PS1BjbXJRZXpNX2lZS2V4NllqSnfSAaIBQVVfeXFMTkNGOHRQNXpvMWVjR1RUMnF3aDl0eVJKRGU0RS1lQlhJdnphNmV3emN5c3NlTDM5OGZjQ0JxQWJSQUdLcGJDdjEtQnlESHhKVDUtcXJKOThNRGxsZkpka21NN0pwM01Qek92N0w4OWFsSUg2Uk5MS1hGaTVvZHJxVUZQMlJ1S09obDhjeVNfT0tQY21yUWV6TV9pWUtleDZZakp3?oc=5",
+      "id": "news-afc1cc20ba21adde",
+      "title": "Bangladesh measles outbreak claims four more lives, death toll climbs to 1,114 - DT Next",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQR2l3dDl5MlJvbHU1emJTcGRrSENfZi1EejRocTA0TjBVMUtFMWpkME1iQ2c2LXI1VlN5QW1OZmhIS0t3T0U1TG5PSVE3LW1Dc3d0R1lWTVBJRkhCNzZickdIUFFoMHZiUVhDOEUxSl9STklTU2xSOVlnVFBtRk8xY0RpNkx6ZmV0RnBUMU5iWGtzZEVEMWVSb2xxTkFaeW1NdnJVZWVlSlRYLWNOR3fSAbsBQVVfeXFMTnNrb2hBNTl0MzRWWXh1UFgwUWYzLUZmVFdFVFZEZWtNajRQdGhtZmt5TFlqbzFRdU9oRzVGVmEySFZBX0pqbGJMY0daQl80ckVvNFpnbklHNmN2RHU5WWhRVUFzbml0bGpGaTJObDZrV0ZxbG84UmtsWmY4V1VBcUVnNWxJd1FQSGdCNjlXSVF2R3lzNGowclQ0VHF4N1dQMU0taUlxS1NMdXV3Z2FTT21IX2F5aGd3SDhwWQ?oc=5",
       "date": "2026-10-03",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "The death toll from the 2026 measles outbreak in Bangladesh has risen to 1,114."
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "As of the latest report, the measles outbreak in Bangladesh has claimed four more lives, bringing the cumulative death toll to 1,114."
     }
   ]
 }

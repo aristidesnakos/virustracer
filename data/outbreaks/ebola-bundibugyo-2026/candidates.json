@@ -1,6 +1,20 @@
 {
-  "lastExtracted": "2026-10-10T20:07:09.720Z",
+  "lastExtracted": "2026-10-11T08:09:59.582Z",
   "candidates": [
+    {
+      "id": "news-58ba511ba2b9d6e2",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "Kenya has confirmed its first imported case.",
+      "sourceTitle": "Ebola Deaths Top 4,100 as Kenya Confirms First Imported Bundibugyo Case - Contagion Live",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT1FUMGNHQUlPZkI2T1M2eThzaUFDV1lxeE56NGFXRHNhdXJiUGNaOVRtRXp0WUdmY3I0emxRdml1bGFBdEpkbW9iVVBiOHF5WXozbUJmUjlrbDZKTHM3emotc2NlS0hQbHkxc0QxQXE1d2RoWmRrRWRDaXpQb3psTnNfM3V6bExoTTlMX256aFNnZ082QXQwekw2WVd6NEtYd1o1bXEyMTE0dw?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-08",
+      "extractedAt": "2026-10-11T08:09:35.577Z"
+    },
     {
       "id": "news-08841ed66649e72c",
       "country": "Kenya",

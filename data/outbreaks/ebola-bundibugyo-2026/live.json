@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-10T20:07:09.720Z",
+  "lastFetched": "2026-10-11T08:09:59.581Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -432,9 +432,37 @@
     "news-db86dec12bd8acc8",
     "news-a02d6f34bc78e68d",
     "news-803de38c975b01f0",
-    "news-89ea8fac92e7a939"
+    "news-89ea8fac92e7a939",
+    "news-a7c47a7e11b86ff1",
+    "news-910d7edaf7b1d764",
+    "news-78a0c7aedef3a74a",
+    "news-879f0cc07d3d1497",
+    "news-5239331a5aeb874f",
+    "news-2d3a868fdedd4b72",
+    "news-e1f884735c2a907c",
+    "news-1ecd8e84482837a5",
+    "news-292d24d37ac956f5",
+    "news-d93a1b2c0ec62228",
+    "news-d5c447275c357cec",
+    "news-bc73e0df94cb68b9",
+    "news-eabc630564a72da5",
+    "news-9878498a7f9f04b8",
+    "news-2194a306326310ac",
+    "news-b25c647327768046",
+    "news-d987caddd91d45cc",
+    "news-2141769afe0570e3",
+    "news-301927913076cf4c",
+    "who-f25c08839890d184"
   ],
   "recentItems": [
+    {
+      "id": "news-a7c47a7e11b86ff1",
+      "title": "DR Congo Ebola toll reaches 4,242 amid fears of regional spread - Gulf Today",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZklfal9Na0ZTMDY4aW5ES3ZWd3BaeFY3eG9tYWdIQTBIUHgyYUI1X1pSZ09WMXdmTDBad2pLRlVPUDJSNUl2VlZldmw4YmR2ODlyc3R4LXQwUjIwVERFWTVvcnI0U2p1UmlxRzQtOV9FeWduV05NeXhhZldYbG12OTZXQTczbE5EWVRSOThiYVBMLUZXcFBhcjgwVUlhTDEya0FRTVhR?oc=5",
+      "date": "2026-10-11",
+      "source": "Google News — Ebola death toll",
+      "summary": "The cumulative death toll in the 2026 Bundibugyo Ebola outbreak in the Democratic Republic of Congo has reached 4,242, amid fears of regional spread to Uganda."
+    },
     {
       "id": "news-803de38c975b01f0",
       "title": "Computational Models Warn Ebola Antibody Drugs May Lose Power Against Bundibugyo Virus - Bioengineer.org",
@@ -450,6 +478,14 @@
       "date": "2026-10-09",
       "source": "Google News — Ebola death toll",
       "summary": "The cumulative death toll in DR Congo has topped 4,200 in the ongoing Bundibugyo Ebola outbreak, while Ebola vaccine trials have begun in Uganda."
+    },
+    {
+      "id": "news-78a0c7aedef3a74a",
+      "title": "Bundibugyo virus disease updates - NICD",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE5qSXBiYlVQa0NxQzh5TDc1b01ocU41cjdoN1BPQ3l4clJ1WDBmNG53LWxEWE9LU3JpQjYzbXY4LThMcHNtcE5ndko5M0ZRLWJhZUtJcWVGQmpVUVE1a2kxTTZCcTM1TWM?oc=5",
+      "date": "2026-10-08",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The NICD's update on the 2026 Bundibugyo virus disease outbreak (DR Congo & Uganda) does not provide a cumulative case count or death toll in the available text, but it confirms ongoing official surveillance and response updates from the institute."
     },
     {
       "id": "news-e81e7bc7656a383e",
@@ -578,22 +614,6 @@
       "date": "2026-10-07",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Is it safe to travel to Kenya? Ebola cases spark alerts in multiple African countries The Independent"
-    },
-    {
-      "id": "news-f2819937efc38e5a",
-      "title": "Kenya Confirms First Imported Case of Bundibugyo Ebola Virus Disease - health.go.ke",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPLUJxV2pGVmlacjgtVEVhWGo4Z1d5T2x5N201WEZuellnYXVJYW8tUWItS3dGZTFvRzhJcFB5VWZ1WHRCV0xPdTN3VnZVN2pWNE1fUDU5R1prXzVxTDItbENjLUk0MnVwUjZFcm5XdmVuM1NONUdTRzJxclRnQkY0SnR6Z3RwWngtTlhVdFlHbXhMZUxv?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Kenya Confirms First Imported Case of Bundibugyo Ebola Virus Disease health.go.ke"
-    },
-    {
-      "id": "news-3a69578b37cb13f7",
-      "title": "Roche Diagnostics delivers laboratory equipment to support Ebola testing in DRC - PR Newswire",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxNT3pZOWQxMF9sMmhtSm02TXZQY1hfVWhyQ0dHdG5SZnNVMEQ3TWdxdUdPcnB1MFBUNG4ySGVLeDVCM04tVU9VN2MtM0JfbnJXaXlpUDRibGY1Ql9DMFhzVUJFcTlfcEt5eUtneXM4VVlhYzAzc0lYQXhhNWtSVnUzclJfM0lWdHRxdWh3Ylo4NERVMTVsc0ppbm1jenEwQTJiNm52SVlRMnNlbUNWUGFIRDVGZ2ZRbHZyZHBLR2drbnF5M1Bib0dpOFA4NmVfTGZZ?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Roche Diagnostics delivers laboratory equipment to support Ebola testing in DRC PR Newswire"
     }
   ]
 }
