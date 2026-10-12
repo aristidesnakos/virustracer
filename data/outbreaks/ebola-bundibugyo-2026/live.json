@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-11T08:09:59.581Z",
+  "lastFetched": "2026-10-12T20:10:17.507Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -452,9 +452,44 @@
     "news-d987caddd91d45cc",
     "news-2141769afe0570e3",
     "news-301927913076cf4c",
-    "who-f25c08839890d184"
+    "who-f25c08839890d184",
+    "news-38593695ab6ec81f",
+    "news-04e5f649d863d576",
+    "news-dc391023df7c9b97",
+    "news-da9bfefffe70c8b1",
+    "news-b6e88b1452409181",
+    "news-8be213553de28609",
+    "news-5958eae29b45e238",
+    "news-9369023553a1e0c0",
+    "news-2a519dd7646e0da5",
+    "news-d0dc2bb507ff1133",
+    "who-50827e1e7f8fc2ca"
   ],
   "recentItems": [
+    {
+      "id": "news-9369023553a1e0c0",
+      "title": "Faster Expanding 2026 Ebola Outbreak Is Second Largest on Record - Legis1",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB4Mnd3WmF5N1JRYU5qSWhVMmU5dmtNQXpTajczeWNuNzZ0ZnlGelFSMGhxaGhfTG5CSGhjU1hhUEttQ1BTc01wNU90bTdPaUFnNGdMalFpd1BQbXd1NGMwaVNHNDEtRWszbGV4S1Zsa0R0SFFFdnc3SXlaREp0UQ?oc=5",
+      "date": "2026-10-12",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Faster Expanding 2026 Ebola Outbreak Is Second Largest on Record Legis1"
+    },
+    {
+      "id": "news-38593695ab6ec81f",
+      "title": "Ebola death toll in DR Congo climbs to 4,242 - Qazinform",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVjZjZUxKMkJfcnNuUkRXOF9OTHVOeFZOaXdQdTM1NERwYnRFMDVCOGoyZkY5RGJyd0RRNzlOR0Y4T25oOV9xN2w4OHV5Y1l5d2R0SkJZYlZlMWxCcmUtMXFVa3FWZjFCMWljdC1jcWN1NDF2R29DeERmYlNiYlUxUkRMd9IBgwFBVV95cUxNV1pMQ21uX1VNR2k5QmpobGRiQ0w5YVd3djd5R2pCeXlyTXVreTRWdUFQempPR01xc2xFSkM4MEN5elZ5dm1qbTg0VTB2Zm5uUDRkMkN0RkE1S252UlhXZTJfcDZhSHdpc0NNMjlIMDBBR3VNNDJNc2JTcEYzcDRIMFhuMA?oc=5",
+      "date": "2026-10-11",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola death toll in DR Congo climbs to 4,242 Qazinform"
+    },
+    {
+      "id": "news-2a519dd7646e0da5",
+      "title": "Ebola Update: DRC Outbreak Passes 8,700 Cases and 4,200 Deaths - Contagion Live",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRTUtazFPeWJSUDd3eG9SXzdJYVdfckE5aGRxMlgzZ20wVW9SSXlDSnRFTlBuQlFpQ0xCV1BFTk9PYjdHMlJhZGd4VGNXa0FROUpJeDM5LUU4UktlWDd3RzRfeWZLT0tQR2RyZTd4b2R6V204QlN0NmloRkt6cmp4QWhkNlJvbnpxSzdoRmtfOUhuS25YNnBlUWlzUHk?oc=5",
+      "date": "2026-10-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola Update: DRC Outbreak Passes 8,700 Cases and 4,200 Deaths Contagion Live"
+    },
     {
       "id": "news-a7c47a7e11b86ff1",
       "title": "DR Congo Ebola toll reaches 4,242 amid fears of regional spread - Gulf Today",
@@ -590,30 +625,6 @@
       "date": "2026-10-07",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola creates new hot spots in Congo as responders describe ‘chaotic’ response AOL.com"
-    },
-    {
-      "id": "news-c0cdd4370cb66c3c",
-      "title": "Leamington charity is responding to Ebola outbreak in DR Congo - WarwickshireWorld",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQYk1Ha2JFR2wwRDRkRm1NeTlXNjN4a2pxZHYzSzgxeHBvLW52TXp1X3Njb3V1MWQ2eUo5VDVNVjliSmg3U2lSdUdWQTlvbGstUWJGUV9MWE5YdmxSSEtiRi1jMHRrWTFpX3d3Y0dDR0JxUlpJTERnb1dKWXBPZ1VWZ2xHcG83VHdOeGp1eHBRUHhkZGVJc19CVDZIMXFZalU5aVRFZmtmMVZWUVE2UnQ5NVJVUWtqcEE?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Ebola death toll",
-      "summary": "Leamington charity is responding to Ebola outbreak in DR Congo WarwickshireWorld"
-    },
-    {
-      "id": "news-6333be2cd93345d7",
-      "title": "Roche Adds Molecular Testing Capacity in Democratic Republic of Congo Amid Ebola Outbreak - Clinical Lab Products",
-      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPVk1fNktpSDJHTC1uR3dwQWg4dENPMENfdDNHcGEyS0F0aXVZMktkQTlBMmFIa2FYRFlQTGk0MW1sS0pOemo0R2YxR2szMWtXdC1wUUNUUU5OaGFxOGJVS0Z1eTdPdXN1YjBIaVRGRnNnSm43MFZHcGtqNFh1ODVlWW5odVVDbVlnQWpFRF9NS1JwUm5BU2FfZnBUUmhxTHVWOThHNzVRU3p4Q0ZVN0k0SDMzbXEzeUdQM1MzSk4yR29BaXhlN1drNm9TMG10NUpRT01XVk4zYWQ?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Roche Adds Molecular Testing Capacity in Democratic Republic of Congo Amid Ebola Outbreak Clinical Lab Products"
-    },
-    {
-      "id": "news-133ecaa2927b7382",
-      "title": "Is it safe to travel to Kenya? Ebola cases spark alerts in multiple African countries - The Independent",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRnRhRUgxRER3LVo5eXJ0VHZoTWh4UmdBOTl3eE5SMnFWUUVUR3Z1RjNoN3R6Z015S21IX1NuZzl1TkpPU3RTZ2poYno3eXRlYmtSYTBLX240VkdJa2xkejRGUXdYX2FGQXBIUmc5aXh3bWJrNWhtVXB1STBLVWtUVU0zTFV0cUV1dF95LUpNdXhBTmdmaTY1dVN6RmU?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Is it safe to travel to Kenya? Ebola cases spark alerts in multiple African countries The Independent"
     }
   ]
 }
