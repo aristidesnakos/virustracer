@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-12T20:12:06.169Z",
+  "lastFetched": "2026-10-13T08:12:14.855Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -243,7 +243,10 @@
     "news-679c943994e0c542",
     "news-5a88e8e5191856b9",
     "news-1ed542ee6b120b59",
-    "news-1eef5c6debfdb46b"
+    "news-1eef5c6debfdb46b",
+    "news-60eda69e2610a04f",
+    "news-7c71fdcbdd4754a0",
+    "news-88e56ac04f08ba92"
   ],
   "recentItems": [
     {
@@ -269,6 +272,14 @@
       "date": "2026-10-11",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh reported seven more measles-related deaths, bringing the cumulative death toll to 48 in the 2026 outbreak, according to the latest figures from the Business Times."
+    },
+    {
+      "id": "news-60eda69e2610a04f",
+      "title": "Eight more children die with measles symptoms - Bangladesh Sangbad Sangstha (BSS)",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTFBhRlJYeUdqWU1pbUFaWFR2S09SSURYclpDRVFhd2dvZnBreFdpSkxIdHBVcmRMMDNPY0Q4eVlNM2VxS1plcTd6QkYySQ?oc=5",
+      "date": "2026-10-10",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Eight more children have died with measles symptoms in Bangladesh,"
     },
     {
       "id": "news-69d2de6e8ad4dd25",
@@ -397,14 +408,6 @@
       "date": "2026-10-06",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Six more measles-like deaths were reported in Bangladesh today, according to Banglanews24. The article provides no cumulative case or death toll."
-    },
-    {
-      "id": "news-45cc23f94571dcf6",
-      "title": "Bangladesh measles death toll rises to 1,128 - TheReport.live",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE1fU25lajJ0VHRkX0haeTRWMWY2QWZFUTZhRlFrcEcxU2Y2cUpEX2F5QWxZckVKdjZZNFh3RFZXbFRGQW9zOUNDejZIOUVjTVMtS1VYZjdIQV9VOTI0T3dtSUlWMEphQ2syeXpkNXVB?oc=5",
-      "date": "2026-10-05",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh measles death toll rises to 1,128 TheReport.live"
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-12T20:13:06.617Z",
+  "lastFetched": "2026-10-13T08:13:01.381Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -98,9 +98,19 @@
     "news-10326cf035be76f7",
     "news-38174a00388d83e3",
     "news-59bcd4cd70c09992",
-    "news-830ef44b3144078c"
+    "news-830ef44b3144078c",
+    "news-414d5c863c12c32e",
+    "news-48a0d748e524c642"
   ],
   "recentItems": [
+    {
+      "id": "news-414d5c863c12c32e",
+      "title": "Greece: West Nile virus infections rise to 443 - Outbreak News Today",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MNTQxdGtGcnpkeGQ0dEFYRnlvajdENkxKdmdsNVB0WkdYdFdxc1pwUzh2OUZtMUkycldTZzUxbWQyRWIzUGxMaHQteXBqRGZTdFljQXQtLVIyYnpHZ3dCWW9ZSk1LdUNIUDg1c0pVT3NKbS1ERnpyT01EeDY2VXM?oc=5",
+      "date": "2026-10-12",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "Greece: West Nile virus infections rise to 443 Outbreak News Today"
+    },
     {
       "id": "news-c4223b357637948f",
       "title": "West Nile Virus Cases Reach 423 in Greece - tovima.com",
@@ -252,14 +262,6 @@
       "date": "2026-08-27",
       "source": "Google News — West Nile virus Greece",
       "summary": "Greece: West Nile virus cases top 200, 19 deaths Outbreak News Today"
-    },
-    {
-      "id": "news-41fd0a06a2aaf4ef",
-      "title": "Greece reports 232 West Nile virus infections and 19 deaths - TRT World",
-      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTFBNU3p4YXI2bTlyNWkxRmYzZ2p1azVVOGctOExIMGMxcUhZaFZhQ2ZPS0wtSnliajhvTVpwaWFPMGJ2ak41Uk5MNmtLal9NX25WQWREc3ZybzI?oc=5",
-      "date": "2026-08-27",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "Greece reports 232 West Nile virus infections and 19 deaths TRT World"
     }
   ]
 }

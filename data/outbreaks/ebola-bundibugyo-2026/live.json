@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-12T20:10:17.507Z",
+  "lastFetched": "2026-10-13T08:11:09.461Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -463,9 +463,18 @@
     "news-9369023553a1e0c0",
     "news-2a519dd7646e0da5",
     "news-d0dc2bb507ff1133",
-    "who-50827e1e7f8fc2ca"
+    "who-50827e1e7f8fc2ca",
+    "news-843173febdadb475"
   ],
   "recentItems": [
+    {
+      "id": "news-843173febdadb475",
+      "title": "Kenya finds no new Ebola cases after 293 tests - CNBC Africa",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVTktUHlrMUE0ejhaRnMxZ044UGwxTFNIRmpOUGUwMVNyRDN2eGZXejdETmxYUlVmeE5LQzhNVDJrWDctYndmZ3pSeU1WRUQ4TnMtLWdCd2swVG9tZklodXdjUGc3TW5fT3Bpbkp6TG95ZkJicFE0THpKb3htYVpUVlgyUGQ?oc=5",
+      "date": "2026-10-12",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "After 293 tests, Kenya has found no new Ebola cases, according to the article. The report does not specify a cumulative death toll or confirmed case count for the 202"
+    },
     {
       "id": "news-9369023553a1e0c0",
       "title": "Faster Expanding 2026 Ebola Outbreak Is Second Largest on Record - Legis1",
@@ -617,14 +626,6 @@
       "date": "2026-10-07",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola death recorded in Kenya after victim travelled from DRC | Explained The Hindu"
-    },
-    {
-      "id": "news-7734ce50cb7112c7",
-      "title": "Ebola creates new hot spots in Congo as responders describe ‘chaotic’ response - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB6TUQ0RmYyekxTeUR2LUFrRmVpbE9IU2pRanpfTnVhdERRbWMzOE0tbkVLLV9Pa25Ycmx1VUI3bE1mdnYxRWJPNFo4dWxkem42NkFFTEhMc1J5MXNSOHJuYl9meWU5THlCQmpiUUJYcE9kbW9sRU9QRzdKOC1Wdw?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola creates new hot spots in Congo as responders describe ‘chaotic’ response AOL.com"
     }
   ]
 }
