@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-14T08:24:56.869Z",
+  "lastFetched": "2026-10-14T20:21:48.135Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -487,9 +487,74 @@
     "news-6b8c3515710501ea",
     "news-9a7ed1d65abff7a6",
     "news-e87e15fe1940858d",
-    "news-c473f93eae789e02"
+    "news-c473f93eae789e02",
+    "news-f4bbf76042438cf8",
+    "news-d8854ce0fbe77e3f",
+    "news-1a220351023e006b",
+    "news-9b4efbdb2f9f8528",
+    "news-4720bfb09f1d3c3b",
+    "news-7e5173dac299e976",
+    "news-8239458214d90f4d",
+    "news-16cb5b974ce531d9",
+    "news-4909a3e1eb6ce761"
   ],
   "recentItems": [
+    {
+      "id": "news-d8854ce0fbe77e3f",
+      "title": "Ebola cases exceed 9,000 in Democratic Republic of Congo - ITIJ",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTzRvNnFsQlBpcU1QLWZ0SVg5eC1vb3hmU195QkpJb1V4TGU2Ry0wZ0FWOUVHY1c5dGtRYUU4WERadFAtNFk2c0s3blFTZUZydEcyMWNEVVBjYXNJUEs4SzhWQ1dCMUt2aHNTblNrclh5OVlxSGpiZGp6YVFyUzhlQnNFUW1vTVVQTHc?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola cases exceed 9,000 in Democratic Republic of Congo ITIJ"
+    },
+    {
+      "id": "news-1a220351023e006b",
+      "title": "Ebola cases in DR Congo reach 8,978, deaths exceed 4,336 - İlke Haber Ajansı",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVHdDbTBQOFlaMm9lcUNBaFMzQWZqWFhWVHlEM3RFY0VWd3FXU0o3QlpYeFZkUEpnTzhxcHRuM0tlallmTTJsRWxYNjE5YmRnY0cycVhLWG5CN2NQWS01dGRrUUR5S2lRNk91V0x3c29VMVFNTW0tT3FiaDJjdkxnMHcwQnhoQ3VOS0kzMUQyVEZZOUlZQmVJ?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola cases in DR Congo reach 8,978, deaths exceed 4,336 İlke Haber Ajansı"
+    },
+    {
+      "id": "news-9b4efbdb2f9f8528",
+      "title": "Officials struggle to contain Ebola outbreak as cases in Congo surpass 9,000 - New York Post",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPa1l3Z2JHNEVoZGxYajRBcnNHV2oxWnVndnMxWmRzM0pUM1oxb3RyNXh3NXdTQV81Z1BWVGgyODQxUFBaNjJiUGdHSmhranJpYTkwTEV0VU54SFYyNkhhaElhWVBkTzU4cGV3YmVRdXAtakFDclB6Z19ZcVZMZ1hrNU9IUFROVDBwVHU4eEtUUGR3LW5iX2plc1JyaEsxNjJfTElkcXBNY0ZCNjFXeWlXSw?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Officials struggle to contain Ebola outbreak as cases in Congo surpass 9,000 New York Post"
+    },
+    {
+      "id": "news-4720bfb09f1d3c3b",
+      "title": "Ebola vaccine triggers cross reactive T cells against Bundibugyo ebolavirus - News-Medical",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNS3lCcHFXcE8yaWtWMm9ia0lfV1ljUFQ5TDFoeXFFRFZEUDBjWWt0Z2ZwRkFscWNvbVlZSHF6ZVZucElSb1g3NFlsZW5HbjVKXzhhTzlGOExOQXM0eGt2QUlFSEcyYlN0SXFCNkt1bEhPckNBS2YwUVdWNU9EcXBpUVltRUs0MF8zRlVEc3VoWjVjRUo5UUxUUDB2dW9rTmJ6YmYxbm9VbnpYbzJNUGxSdlJabDlNYk9wVHJ4MVNsV2Y?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "A study reported in the article describes an"
+    },
+    {
+      "id": "news-7e5173dac299e976",
+      "title": "DR Congo Ebola vaccine trial to begin within weeks: WHO - Medical Xpress",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE1BYTRwZFNQcEVhcmdaX2stUC0xM0FwT29FOFFrd0I4bFl6Q2JVOFpNR3JDeVFTUTJUcjBTSDg4UlJTYmdDbEZFcFFDT21NNWQ0ZERrVzlMVjhGZzdJUE5lM0NIaWprUkMzaVcybEk5R0NCOG1LczliaG9WaDc?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "DR Congo Ebola vaccine trial to begin within weeks: WHO Medical Xpress"
+    },
+    {
+      "id": "news-8239458214d90f4d",
+      "title": "Map: Ebola Outbreak With Near 50 Percent Death Rate Spreads to New Country - Newsweek",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVnExbk1TSFk1MDJFaEdpYVhyek5CZ0dXZkxtSGVhTjFwaXMwVG1QUEZSOW5sVDBNQzJWbTdTTjg3S0Iyd1REemw0ZWd3cF90bEtZWFhZU1U1QVNITEFHZmlnWDlGcHc5LXBOR2w0a2JSb0NiT2stMVlNLWc0Y3FhRHl3Y29ES0ZPU09Nc05teVJvR2IxWHQtNEJqb3pYVTlxdVFUYkNPQWsyRGc?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Map: Ebola Outbreak With Near 50 Percent Death Rate Spreads to New Country Newsweek"
+    },
+    {
+      "id": "news-16cb5b974ce531d9",
+      "title": "DR Congo Ebola outbreak passes 9 000 cases as vaccine trial set to begin - https://novanews.co.za/",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeXhLcm5KVTRRWm1YWFM2YnFEcFZoRnY1bkMwek9zMVg5WVpZb1lBeG14TURhSkxGcldvV2phUjhWVEhuX2ZJaG1KLTd6ZGZFSXBHdFRNY2phV3MtelE5dlNZd3ZXUGM2V2dtdTJaazE0R3gtUThKTW5QTWJHMTYyYUplMFZFUXdWaEVGYnY1YUN3b0hGUzMxQkZ6RHc?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "As of the latest reporting, the ongoing Bundibugyo Ebola outbreak in DR Congo and Uganda has surpassed 9,000 cumulative cases, with no specific death toll or as-of date provided in the article. A vaccine trial is set to begin in response to the outbreak."
+    },
     {
       "id": "news-fa9346285b8ddd67",
       "title": "DR Congo's Ebola cases top 9,000 as vaccine trial nears launch - Global Times",
@@ -593,62 +658,6 @@
       "date": "2026-10-13",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Congo's Ebola infections surpass 9,000, government report shows The Detroit News"
-    },
-    {
-      "id": "news-6b8c3515710501ea",
-      "title": "Vaccine trial starts as Bundibugyo virus outbreak intensifies in DRC - BioWorld News",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOeW4yZjBGWXZRR05haHJ0SlpQal8zOUw3NVh6SXVqR1ZpLWJ2V2hYTTNYWmtfLU82TWZEcHFITTk2b2NIdnRxZHN1VWlJanFfVGlyY2U3WEtnamxXZzVuemFIUkFYQWVMOWV6OExCckl4MnEtN0VTX3JLOFRJak8wSlhSRkJlUEtJaUc1dXpMWDVfbFZ6djAyUUpTUWtIbHFVbHI0RlR4NnFjcjA0MWc?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Vaccine trial starts as Bundibugyo virus outbreak intensifies in DRC BioWorld News"
-    },
-    {
-      "id": "news-9a7ed1d65abff7a6",
-      "title": "Final preparations underway for pivotal Phase 2/3 Bundibugyo vaccine trial - CEPI",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObmI0WFNzano5X1FOSU1YdG80ZkVuQ0pyWTFrSTNjMkF4WVE5ekhvUWVFTWtKVDBHYjRrZDNvRHRMYXNjQlRpdWlzNWQxd2J0VHNkbDM4SmVzRjhJdU5fWUxhclVDQWQ4eHo4N1RJUXZlcklMREFTZ2NHMFhLaUdPX0w0YWVJbDFqVUd2Y1A0bw?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "As of the latest reports, no cumulative death toll or confirmed case count for the 2026 Bundibugyo Ebola outbreak in DR Congo & Uganda has been provided in this update. Instead, the article states that final preparations are underway for a pivotal Phase 2/3 vaccine trial specifically targeting the Bundibugyo strain, as announced by CEPI."
-    },
-    {
-      "id": "news-e87e15fe1940858d",
-      "title": "Kenya’s Imported Ebola Case Raises Questions About Screening and IPC Readiness - Infection Control Today",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQNWJvNmZFTno5Q0hMeDJQN2F3THZQa29Hd1lrdkZTaV9JTTRTb012UVN2cGlkLVlFS2t5bzlSejNFX1Q4QUVGTzlyVExMZTlsZzBhMnh1Mk90dVhOS2p4YkhmUm1jdDRVWXpON1E1UGpOejNZTWtxSmY5NnREb3hkaTBvazR4bnNMWWxKZVB6UUYxbW45SU5RdnQweXBWOFdoWmZUaEl3OGNTOFY3SkR0Zw?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Kenya’s Imported Ebola Case Raises Questions About Screening and IPC Readiness Infection Control Today"
-    },
-    {
-      "id": "news-c473f93eae789e02",
-      "title": "Kenya gazettes new Ebola screening and quarantine rules - China Daily Global Edition",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNUGx3am0yY0NGbnUwX0w4a0Q1cU1RaDlacnVpaWdIdHVLMTAxV2lacGc1aC03RHZQbWRBZ2pjMzNLVWpORlJlQWlJSks3Um44MnhQMmxVWDRJMGQteG9rbXpkZ1F6MXZ5Tjl5WnRvWkhyeXJPZ3hTQTJjRHpYbGxzY1RR?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Kenya gazettes new Ebola screening and quarantine rules China Daily Global Edition"
-    },
-    {
-      "id": "news-843173febdadb475",
-      "title": "Kenya finds no new Ebola cases after 293 tests - CNBC Africa",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxOVTktUHlrMUE0ejhaRnMxZ044UGwxTFNIRmpOUGUwMVNyRDN2eGZXejdETmxYUlVmeE5LQzhNVDJrWDctYndmZ3pSeU1WRUQ4TnMtLWdCd2swVG9tZklodXdjUGc3TW5fT3Bpbkp6TG95ZkJicFE0THpKb3htYVpUVlgyUGQ?oc=5",
-      "date": "2026-10-12",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "After 293 tests, Kenya has found no new Ebola cases, according to the article. The report does not specify a cumulative death toll or confirmed case count for the 202"
-    },
-    {
-      "id": "news-9369023553a1e0c0",
-      "title": "Faster Expanding 2026 Ebola Outbreak Is Second Largest on Record - Legis1",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFB4Mnd3WmF5N1JRYU5qSWhVMmU5dmtNQXpTajczeWNuNzZ0ZnlGelFSMGhxaGhfTG5CSGhjU1hhUEttQ1BTc01wNU90bTdPaUFnNGdMalFpd1BQbXd1NGMwaVNHNDEtRWszbGV4S1Zsa0R0SFFFdnc3SXlaREp0UQ?oc=5",
-      "date": "2026-10-12",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Faster Expanding 2026 Ebola Outbreak Is Second Largest on Record Legis1"
-    },
-    {
-      "id": "news-38593695ab6ec81f",
-      "title": "Ebola death toll in DR Congo climbs to 4,242 - Qazinform",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOVjZjZUxKMkJfcnNuUkRXOF9OTHVOeFZOaXdQdTM1NERwYnRFMDVCOGoyZkY5RGJyd0RRNzlOR0Y4T25oOV9xN2w4OHV5Y1l5d2R0SkJZYlZlMWxCcmUtMXFVa3FWZjFCMWljdC1jcWN1NDF2R29DeERmYlNiYlUxUkRMd9IBgwFBVV95cUxNV1pMQ21uX1VNR2k5QmpobGRiQ0w5YVd3djd5R2pCeXlyTXVreTRWdUFQempPR01xc2xFSkM4MEN5elZ5dm1qbTg0VTB2Zm5uUDRkMkN0RkE1S252UlhXZTJfcDZhSHdpc0NNMjlIMDBBR3VNNDJNc2JTcEYzcDRIMFhuMA?oc=5",
-      "date": "2026-10-11",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola death toll in DR Congo climbs to 4,242 Qazinform"
     }
   ]
 }

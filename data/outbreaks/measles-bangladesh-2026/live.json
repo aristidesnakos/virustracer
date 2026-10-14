@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-14T08:25:51.305Z",
+  "lastFetched": "2026-10-14T20:23:04.476Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -250,9 +250,26 @@
     "news-0f28343897c2f858",
     "news-c480e48de3c46e44",
     "news-f1fa8f5dfd306b2c",
-    "news-099d222dac115999"
+    "news-099d222dac115999",
+    "news-4ed9d00fd4107323",
+    "news-7c9e2a7cc05cf86d",
+    "news-5572dc67d249fa94",
+    "news-9315be2116cda405",
+    "news-6521189bfb2aa532",
+    "news-2dc807ad0bbc20e1",
+    "news-e71d6838b936e904",
+    "news-4eb4e60c88f51a33",
+    "news-a051b624a2a24b68"
   ],
   "recentItems": [
+    {
+      "id": "news-e71d6838b936e904",
+      "title": "Bangladesh records 7 more suspected measles deaths as 1,199 enter hospitals - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5CQldpQlpRajNaQkt4RlFQLU5paVUta3RZZGVZRUtWTTVJQzZQUUI1UG9xZURCckktM2ctSFVxdkNPd21iendmVVhLVU4tNFE?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh records 7 more suspected measles deaths as 1,199 enter hospitals bdnews24.com"
+    },
     {
       "id": "news-f4d6d8553afc9061",
       "title": "Bangladesh measles 2026 - Outbreak News Today",
@@ -404,14 +421,6 @@
       "date": "2026-10-06",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh logs six more suspected measles deaths in a day bdnews24.com"
-    },
-    {
-      "id": "news-3ee39dcc7424ddf2",
-      "title": "Six more measles-like deaths reported in Bangladesh today - Banglanews24",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE93RzF2ZkI1Zl85bkdCSHM2cmZMQ0U2RW9UVEVfQVkxRmp4MEJwSzBCZHlUUVdLS1RJZTc3aE1Xd21BTktnVzdueUhrdllCZlQ0WC1ocjhnZXhiMmxubG1aNDNucUFPUHFV?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Six more measles-like deaths were reported in Bangladesh today, according to Banglanews24. The article provides no cumulative case or death toll."
     }
   ]
 }
