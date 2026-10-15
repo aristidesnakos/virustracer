@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-14T20:23:04.476Z",
+  "lastFetched": "2026-10-15T20:23:06.772Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -259,9 +259,22 @@
     "news-2dc807ad0bbc20e1",
     "news-e71d6838b936e904",
     "news-4eb4e60c88f51a33",
-    "news-a051b624a2a24b68"
+    "news-a051b624a2a24b68",
+    "news-c529c10a9d004984",
+    "news-16cd90fbb677d9f3",
+    "news-2b7bc9e9be3c979d",
+    "news-a12ef7267b26c4ef",
+    "news-b43e09c7f37658d4"
   ],
   "recentItems": [
+    {
+      "id": "news-c529c10a9d004984",
+      "title": "Bangladesh measles toll hits 1,181 as 4 more die of symptoms - Daily Observer",
+      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBJZHpUSklzWEtZUWVMZDVPUVdPOU42VlR2dVBaOE5jUGJkS3FQSlZXQ3lNbDUzYTNJRGRibWJFcVRCVEtCR19rYVp3?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh measles toll hits 1,181 as 4 more die of symptoms Daily Observer"
+    },
     {
       "id": "news-e71d6838b936e904",
       "title": "Bangladesh records 7 more suspected measles deaths as 1,199 enter hospitals - bdnews24.com",
@@ -269,6 +282,14 @@
       "date": "2026-10-14",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh records 7 more suspected measles deaths as 1,199 enter hospitals bdnews24.com"
+    },
+    {
+      "id": "news-16cd90fbb677d9f3",
+      "title": "Bangladesh accumulates 205,028 cases of measles and 1,058 deaths since March - Atlas Global de Riesgo",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWkpteVJIUVk4SXhXM2hXNFJhZTgtR1hKbUtSTnJYUjF5WlRKSjVWdVBlQ2FtNEdXZWJpbjJwWGpzal9lUVFmR01lZXVsTVFVeWxDSnpHSXJYSWQxQkxIR0VNdTNKV0FWbzI3Y1hBbVFNdWlDZXQzOVk0Y1VqTkJvR1FlMGZfcy1HX0RXaHQyUWJFWVBCUklPdzlIQTd3eG1BVm1ZTmdqX1ZRdw?oc=5",
+      "date": "2026-10-13",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "As of the latest report, Bangladesh has recorded 205,028 measles cases and 1,058 deaths since March 2026."
     },
     {
       "id": "news-f4d6d8553afc9061",
@@ -405,22 +426,6 @@
       "date": "2026-10-06",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh measles outbreak claims 900 lives – and serves as warning for why vaccination matters Scroll.in"
-    },
-    {
-      "id": "news-9ae32e6426a86755",
-      "title": "6 More Children Die of Measles Symptomsm, Bangladesh Death Toll Reaches 1134 - RTV News",
-      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE93ZkxIdWdPX2gzWXBZU20xUy13S0FweVZQUzZmbzBCU2Nzbm1fM0ZrZlNHWnVPZW1SdDgtbDZqVDFYNkZqamp2RkROYWxCQmhoNFQxWDF3?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "The cumulative death toll from the 2026 measles outbreak in Bangladesh has reached 1,134, with six more children reported dead from measles symptoms."
-    },
-    {
-      "id": "news-f7693b1a5739d2c1",
-      "title": "Bangladesh logs six more suspected measles deaths in a day - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CVzE0RXpEYzVYTlVNNHE5Y2NObFlGUk0zUGVPZ1M3d3hGRktqdGt1eVV2a1ZISzdNTlpSZXQ1bFVwWUVZSVpKWjVLSExZUUk?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh logs six more suspected measles deaths in a day bdnews24.com"
     }
   ]
 }

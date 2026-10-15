@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-14T20:21:48.135Z",
+  "lastFetched": "2026-10-15T20:22:06.546Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -496,9 +496,120 @@
     "news-7e5173dac299e976",
     "news-8239458214d90f4d",
     "news-16cb5b974ce531d9",
-    "news-4909a3e1eb6ce761"
+    "news-4909a3e1eb6ce761",
+    "who-668d9fa07e9484ea",
+    "who-fbeaf2945206adc1",
+    "who-9dbf487687c9d07e",
+    "who-b2de7ceb8e598806",
+    "who-f9ecfa92f908f216",
+    "who-e168b4b77af217c4",
+    "who-18f808cb4e06b322",
+    "who-fbce8fcf093a7a69",
+    "who-6d9348bc3220a920",
+    "who-bed32bdada97c69a",
+    "who-d01cb7ec70b8ecc5",
+    "who-3dbd38a05496db3e",
+    "news-04d48dd4dcf847a8",
+    "news-d8773829901bdf88",
+    "news-e215f93525ed5436",
+    "news-f7881d41e1f570d1",
+    "news-11e57280acab5c19",
+    "news-be80153b00ef8bc4",
+    "news-9bad79abd6c57a00",
+    "news-149b55cb15bf7abf",
+    "news-5749f261be96989f",
+    "news-8d3bd5d7703b30b0",
+    "news-1e6dc5efdb84c185",
+    "news-33f719afef6d7eac",
+    "news-2616dbf1cbe4502b",
+    "news-59fc9d6be9c3c715",
+    "news-4b77713456d196c2",
+    "news-2552ba60eb411be4",
+    "news-9767fc7fc510d822",
+    "news-58e7456bd1dfcc13",
+    "who-522fb6c96956f907"
   ],
   "recentItems": [
+    {
+      "id": "news-04d48dd4dcf847a8",
+      "title": "Ebola death toll in Congo passes 4,400, with cases on the rise - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXNmR2hUOEotV09TdHVZUk9DSjI5dERCbXhBekh6RUJRZnpJbE45VkptMGpHYWMtSGxMVXp0Nm5NbGJIS3pNWjBlendydDVGUzJUVV9XUzJtb3FzdFhJYzF1QW1KeXdoLXp0RE5QNnFmQjNENjFFVVo2bkl6aW9EMmVhYU1uWlM4dURV?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola death toll in Congo passes 4,400, with cases on the rise CBS News"
+    },
+    {
+      "id": "news-e215f93525ed5436",
+      "title": "DR Congo Ebola death toll passes 4,400 in record-breaking outbreak - Dubai Eye 103.8",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVndkUjJEbEdFVC1vTk41c1ljd0d1QkJKVDFnRVhsZzJTdGNQWDFORkVoc29LcVRpMFQ0aTRTRG81Q2ZfMFVVNUhCVngza0ZZd3NYdHllemxTX0FsLWlPSk90TFJQXzJHRTl5QnItdFkxazdLUWFmSXpWTmRKX0hHbi1JeTlRZ2JRUmliak5XRnJBalUyUzdac3VSVXRjM1RQZUN1OTUtbXA0U1B1OHdGRUoyWEtOSU5KbTliUkx2aXp1QQ?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "DR Congo Ebola death toll passes 4,400 in record-breaking outbreak Dubai Eye 103.8"
+    },
+    {
+      "id": "news-f7881d41e1f570d1",
+      "title": "WHO Warns of Undetected Ebola Cases As Death Toll Rises - Voice of Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVUlNRFZJOW8yUW5HQmxIVG5Gczk5N0lJODVKbWVCTDUxSUlROTNoWlQxdWh2VlppRFhsUW41VjRZWW04OXZVSEF4dEx6aXpPSGdnMEtJQnliMzNZZVlHQUtvSXo3ZnNKYW5mbGlYT1Z6cTNrUXBiYUhFeDR2dnVLZQ?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "WHO Warns of Undetected Ebola Cases As Death Toll Rises Voice of Nigeria"
+    },
+    {
+      "id": "news-9bad79abd6c57a00",
+      "title": "WHO urges vigilance after Kenya confirms second Ebola case - UN News",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB1TkJzTHlpdzdVQjJXOFlLNl9EVlVJbmJNMUdDSk9mLVdpVGhWYUdPZlpPbl8wRTR5YlJnUlF0NjFlWjVlX01uZlpYNF9XZlNFOGlDZVY2bw?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "WHO urges vigilance after Kenya confirms second Ebola case UN News"
+    },
+    {
+      "id": "news-149b55cb15bf7abf",
+      "title": "Ebola vaccine induces T cell cross-reactivity against Bundibugyo virus in humans - LMU Klinikum",
+      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQWDQxZTZpT1ZDcUlUNUhEQ0VPY2JoRjJXeFYxQ0IxTEpQTEZ6OTktOExkZmdxby1aNHNwLW82YXZSRWFNN2VKSDRYLTA2NHNsZmgzYXNVNGpsQnRjcl93QUtWVWJzWUx0TWxOcXhhZkZpZUNGUURMSWd0ckxsMjUwSnhoM3dLUWllc1ZHZl9pLUU4c3BNX3BKT3RqV1JDaDVfbWNZTmYwVVo1aWdycG1mVWU5REEzU21Va05rSW1FNHhhX3Jma3lLaHh3Qi1BN1Rlc0F4OENxU0Y5UDY0WkRUaDFhTkt5cEpuSmR1X1I0akxWaF9TZTBucG9SMkI3a1k?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola vaccine induces T cell cross-reactivity against Bundibugyo virus in humans LMU Klinikum"
+    },
+    {
+      "id": "news-5749f261be96989f",
+      "title": "Ebola outbreak in DR Congo spreads to eighth province — TimesLIVE - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSXJKWndSc01FYUk5SjhoLV9Ma1VuU3VmLWZYdTVJeWw4a0VKQ0lzaHExYi1Fa3FOZHA2M3J2QlVIaEx3UGR6MTJjRDlNUDVOZDJnUk9ZZ1ZGSUZ1QmlJVjNGZlZvOUtIN0J1dW00cmJCT01ZRnk4OVZBVWtUcjJ1RjVwd0o4cFRZWDJyUFNwaEVhMGx5empj?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola outbreak in DR Congo spreads to eighth province — TimesLIVE UA.NEWS"
+    },
+    {
+      "id": "news-8d3bd5d7703b30b0",
+      "title": "Congo Ebola outbreak spreads to province bordering Central African Republic - Sowetan",
+      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUIzU2cxLVE1enp6dGpsd1Z5MzY0TkdibGo3U1dkNGtyM25OSGtIODg2bnNqcEUya1R2RHF1eF9GSk1aeFRtcGtxM1RGdm1OSEM4UzU1eE05ekpYc3I3QnRaSHpHVDQ0QXFwUnBia3l1WVFGa25vVTdCcXNiYjhqaXFYVFBOR0VNclJoaFJpSXFRX0RicGRaX0ZwNk54RDBFZ00xVmd2Uk1lMUNDTDJOSVQzcnN0bFQzWnk2eExuLUViWUE?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Congo Ebola outbreak spreads to province bordering Central African Republic Sowetan"
+    },
+    {
+      "id": "news-1e6dc5efdb84c185",
+      "title": "Oxford University launches Ebola vaccine trial in Uganda - Cherwell",
+      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jX21OWlNEVlVWTUh5eW9aY1FGTWVUdTNPRDFNX2VvM0E2cTNhbU0zVTF3eW9heXphY3cxQ2RSVnJOMVpfaGZrS1RCZVBmNFNITjh0Wjk4ZmkwMW95SldtS280c3o4S01XUm9oaTFMWEtPdw?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Oxford University launches Ebola vaccine trial in Uganda Cherwell"
+    },
+    {
+      "id": "news-33f719afef6d7eac",
+      "title": "DR Congo Ebola outbreak fastest-growing on record; deaths reach 4,410 - Qazinform",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUFOa1ZWRXRMRXZkdHdLQzMyZmNNV3ZOTFZwZ0NycThLT1ItbkhVdVZrencwQkRVbVRCdkNaM0pONm9OUW9RWFA5dWljTERka1JEM3FDdGRnRGpwSWhLWVZvbWpXSUNzYl9obFRaeGpsbWpOOUk5RHQtRnhSbGw3R1VraUFpTWRCYk9ZV3ZkWjNWNlM5S09iMGR3NE5FekpPamxV0gGjAUFVX3lxTFA0LVdONkNJVWFLRk10NWRqUEUzSFd4UDVaV1ZfOWlpY2FiUTRQRGkwaXJianN5b09nWE42N3FKNmZ2bW1INExLTmlvcGZyakVhMW1ZbHdnTXBxclU3M0puSTVGQ1VGd3FVQVJPeFZNTGZuSVJWS2g1NGMxYmswZUhyUEVBMXlwV3FpWjJEX29IVVpTOHpBN1hLbzNXTmZIdWh1LUU?oc=5",
+      "date": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "DR Congo Ebola outbreak fastest-growing on record; deaths reach 4,410 Qazinform"
+    },
+    {
+      "id": "news-59fc9d6be9c3c715",
+      "title": "Congo Ebola Outbreak Reaches 9,000 Confirmed Cases as U.S. Keeps 21-Day Entry Rules and Low Risk Rating - Medical Daily",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdEF5QlIxdUpsa0dLQlRINXJlTFAwT0RWUTFXRXJnMnhqWThLQlRKaUZpaVJBYS1RR044dG1LVFRGejBuVy1USUNDUmJjV0t4dlpvZUhldmZIRmVkU1lMRTNOdHhqNGFDTWpkUG52YXA0bkdXeGwwMTV1UEppQjktTlgyN1c?oc=5",
+      "date": "2026-10-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Congo Ebola Outbreak Reaches 9,000 Confirmed Cases as U.S. Keeps 21-Day Entry Rules and Low Risk Rating Medical Daily"
+    },
     {
       "id": "news-d8854ce0fbe77e3f",
       "title": "Ebola cases exceed 9,000 in Democratic Republic of Congo - ITIJ",
@@ -572,92 +683,12 @@
       "summary": "Congo's Ebola Death Toll Tops 4,300, Cases Cross 9,000; Kenya Reports No New Cases After 293 Tests Health and Me"
     },
     {
-      "id": "news-5460d1e6173e6162",
-      "title": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOTV3dnlyQklZSXdDb0YzSElvV2QzckF0d3E3emVvSy0xbzhlcEJHTUJTeWJwNWctQWRZajNYbFNzcVJJQlUyNi1zd0NaU3M3V2Q1M1FQQnQ3dEk1bmYzNnFMRVVCX0xudmFsMUx5dERoOUV6ZldVVS1pdEZLeERpNG96dkM1LXNJV2dPS0hvUlcyc0M3eWxNNGRETEk0a2pLSmpGUWIxNnR6ZEnSAbABQVVfeXFMTUEtT0FYZmdsU1VUNEN3VGNMY0RGMXA2YmQ3NTdYU1FTLWpfa0RhQ0JSc1k0RjVPbVM4VXctM0lLQTUtR1JJVU92ekh1T0R4OUt5THIzS3Rfc25ER1ZfWHhNa28wX3c4c1lYTGRvOWVHTE4zNGRrdkVRSjVIak9GdExlX2E5R2QtZXM3QXhPVWU2Wll1UFFyZUl0akpkamFvUzZJRWlNS19xWm5HWXNuQVI?oc=5",
+      "id": "news-be80153b00ef8bc4",
+      "title": "Roundup: DR Congo's Ebola cases top 9,000 as vaccine trial nears launch - Xinhua",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9VMURZOVdBVnQzUEZMT1BTVWVXMURJOHByU3JnYjJIY0ZDdmhYUXF1cThscEpWenhzcFduOVBLV1k5Q083SW5QTzJJZ3UzdjZvLTZ0TlNYN0hrNzZaaVFKa1JtZnloRV9XY3F1MzVQc2xla3RYSkM3cmpxMW0?oc=5",
       "date": "2026-10-13",
       "source": "Google News — Ebola death toll",
-      "summary": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter ABC News - Breaking News, Latest News and Videos"
-    },
-    {
-      "id": "news-bee44659aae23f31",
-      "title": "DR Congo Ebola cases pass 9,000 as efforts to curb transmission falter - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQWkNjc1VDSC03X0c0MzZyUm9XQjZZN09QZi1oT2ZOSHZ2U3J4VVFmcVFxUllhN0IzbVBiZnFuQy1haUlMcnd2R3hQMTJOcHBKeWh2bTBPYTZpY2pkTWlzU3hmc0tNdk5wMS04azZtVzFQZjh6bEx6bU1tYTBibkZ1OTM5SFJ1VGVFUjUxR250T3lVX3puWmc0MmpRZi1mTVhOeDhQWGs5SGZYbndaTnRvcNIBtgFBVV95cUxNWFJiSi1ybDlmb2RZQzVEMjRSNHJMZnpFd2JIVnpBdkxhcHZKejhXd1hhVU01TE9JVTBMR2tibkhIbUZZTGJLX0dJVE14a2FYMW1WSVB3U0pUWmZzNjNYYkJHdVBkc2FmNFJpb0Y5TUEtVEtWMWRCR1ZzaGZvZkRTRk8yN2VaQnBxZ0tKM0pFVWxvLWZHMFczQnJOcVNua0VEdUlSOWhtYWZyTC1JRmlQNnJxTTVpUQ?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo Ebola cases pass 9,000 as efforts to curb transmission falter Al Jazeera"
-    },
-    {
-      "id": "news-8de85e67b8df486b",
-      "title": "DR Congo's Ebola cases surpass 9,000 - Anadolu Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNeURuQlV2Zmo2TUZuY2xremVLQ3p0MVJJQ0tRVVFGVTc0SkZqb2ZHV2dTRWNFTUNqWFF2LTcwd0xab1ZIeUs1Y241TmlURGtsT3pURWRIeUJsNVR5cW8tZjlGSjZ4T2I4UzR4WWppaGdZRklOaHJubXEzQ1c1SHRWZWZR?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of the latest report, DR Congo's Ebola cases have surpassed 9,000 in the ongoing 2026 Bund"
-    },
-    {
-      "id": "news-e4dbd8ea05eebdce",
-      "title": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter - WSB-TV",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQQXBDVWJYdjU0VEJzdDRwa0NkNWRjWVdMZVVMMzJvUzgzeEwzNXhtSUxMQzRPNTMxTGVjTHlEU3FJcVVyVElsei1XZmJselgwOXV1a2J2WURDYzRSVnZjQU50R2F1SktiT1gxTXpCMzRiN2NSVjJvcmRBa0JQb3B4LWdTR2fSAZgBQVVfeXFMT3RwNnFFNW1XYmJMYVN6TXpsOWhZR21nVWhwVlE4ME52dEt0RGU0UEZ0aWItdVg0TlNGUldNTXlhd0kxakxnbDVPRFIzRDlpY214MmZUcE1SR243NWE1ZkFzUmNadFljRTg5TVVaNEphWDV3dG1heUtma0FKRTVyamU0QVJRekhWY1k3ektOOEhTN2I2Q05qTWg?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter WSB-TV"
-    },
-    {
-      "id": "news-6ee75cd5fcffd94e",
-      "title": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter - The Killeen Daily Herald",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNR0hnUDdCZEZmQmRTVF9FRnBYVjhnY2dhT0dFajJVR0FrejZnbjI2VmRrMXBlTVNiTlZ0SnVjOE43ZWpuem4wSnpwVTU0V1gxTmtOQjdVQkZfOTNlOFhHQWZ0ejlPZlZQYThKcHJ4UEJqZXNEMmlKbDdVS0V1c0NyX1VycEJsT3JyR0tTcEpYWXdyYVdaaVQ5LWVIWnFnODN5LTluZl9LMW5FM1ZFd3lDNWRodk9jZEhOeDgwQ1BQaUQxOEpfODQ3VzVYOS1jZHlHVmtQcUhsMXNnRXlLd0x6SXExY0pLRjg?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter The Killeen Daily Herald"
-    },
-    {
-      "id": "news-ba9259d004432a33",
-      "title": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter - Traverse City Record-Eagle",
-      "url": "https://news.google.com/rss/articles/CBMi-wFBVV95cUxPS0ZxNmVuYmRtTTJId3JmMmM2X0RxWG5ReEk3c191SFZ1b0VpZG5WM0o1cld2SHBBNUhGc0hQWURxMWxhYUdnU3ZBVmpfRHB0MGRSUXJVbXE1Z0RVZlhPdTBUdDVzSEVjdjlKTktYTzFja05Ud1ZYc0lqREcyV0NFZDk1cTBEU0VOdWVQQ1p2RjFMaGUwOUswXzNPaEY1RGthRWRiSW9iOGVOXzFFZG40ZEVUODRVb29NOTVSVENmckRvbW5Ta3hiOGRGQU1rZ1pDSWhEWUFXWWVOdGNscUlCZFYxaWEycnljZ3BQUGM3T01PUElYWmc1VTFsdw?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo's confirmed Ebola cases exceed 9,000 as containment efforts falter Traverse City Record-Eagle"
-    },
-    {
-      "id": "news-984b02d21b65dcdb",
-      "title": "DR Congo’s Ebola cases surpass 9,000 as deaths reach 4,381 - Latest news from Azerbaijan",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQSHlGenpXVWIxd3hocUN6RmtILU1CX1FPeVhEb2tYdEM2Um92TmUxcGRtR2pycU1xa2dpNWo5dkJqRlNOZ1drSURWZHZwdGxTRG5uMFFaQkJTdDd5czFTa2U2RGplYUhGYUVXVFUyS3RQcXJZNVNSQ3VmM0dzVWZkVnRNUkQ?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo’s Ebola cases surpass 9,000 as deaths reach 4,381 Latest news from Azerbaijan"
-    },
-    {
-      "id": "news-fb7ca61f541e402b",
-      "title": "Congo’s Ebola cases surpass 9,000 as efforts to contain outbreak falter - United News of Bangladesh",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOZnVKVndTdVpqTXFHRVVkLWdiOWprQ3VHWmFEMUlWMGR3TkIxVmZWOWY2cV9rWUhVcDJkcGV1TmlNeFhkTUV2NDBHeEtMVmxfYzRwd0gwQ2xWeFNZSlNQOVg0SGRMUUx1WlA1WDFJOTdfWDE5QTlNLTA0LVpNOHdlQmJLdUxaUUU2ZnJXSTAzMm9KVDVrUmtuWUVZWUhOWUY1SWZaeU9iYnM3UzFkeWVZ?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo’s Ebola cases surpass 9,000 as efforts to contain outbreak falter United News of Bangladesh"
-    },
-    {
-      "id": "news-cc66e5a7fdd6b144",
-      "title": "DRC: Ebola outbreak surpasses 9,000 cases and 4,300 deaths - Bénin Web TV",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNeGR3SDhTdnNHd2RZSmJTd1Axdzlna2xGTVBhSk16VHRUS05GRGQyT3dCVjZWT0pOcFFpXy0zeUtrVjN5LURnbUc3SnVFemxSRUZvdk9Fakp0VDVXMlMyM3FnY1I2NWRpRE9helNHeFhobFgyUDZVcWVtcWRZOTg2ODNMVkZKSFpR?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "DRC: Ebola outbreak surpasses 9,000 cases and 4,300 deaths Bénin Web TV"
-    },
-    {
-      "id": "news-f07a7ee441ba83ba",
-      "title": "Ebola deaths in Congo reach 4,315 as outbreak spreads - Operativ Məlumat Mərkəzi",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNanVlYjl3d09yQ0VFOHlIOHI5RnJCd1dycnp1V3dkSWp5MURSa3dkM0dGVTNRc1E2VWpxVFJ1aHZpYUt3V1dtM3ZmSC1wcDJjNnROWHc5TjM3UVVpOGJRZ1A2SEliWERRZ1dXX3VRSVJnRGxCZVFOZk04MmZVT3pKXzJFWDk5THBzcGJVVXk5Nll1UQ?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "The cumulative death toll from the Ebola outbreak has reached 4,315 in Congo, with the disease continuing to spread."
-    },
-    {
-      "id": "news-9c8d2f5286983da5",
-      "title": "Congo's Ebola infections surpass 9,000, government report shows - The Detroit News",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRkdtbmE5LUdFYVhIMDRvRW1YUkZIUVp4QlJwQWtxMEtKLWljbWFiYjh6X2NEWjhHWWhnbGpPUzJscm1GazNfbnU1ZXk5TEdKbi1HTzJMR2k0b0FkM21sT3pvUks5ZEpMM1A5Q0l0ZHZ6R185NTN6NVdvU3FnYlFiS21zVHBoWEcxUERZaFB3cEdUSEJlNUljTkFsZnFVbHlKdzJ0RjRSRG90UzJYUWppUE1jUzhnNTJjLVk5Y3lPNm5Cb1liWFZjOA?oc=5",
-      "date": "2026-10-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo's Ebola infections surpass 9,000, government report shows The Detroit News"
+      "summary": "Roundup: DR Congo's Ebola cases top 9,000 as vaccine trial nears launch Xinhua"
     }
   ]
 }

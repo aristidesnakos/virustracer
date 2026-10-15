@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-14T20:23:42.857Z",
+  "lastRun": "2026-10-15T20:23:47.579Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": null,
@@ -197,11 +197,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1355933689": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201205/https://en.wikipedia.org/w/index.php?oldid=1355933689",
+      "archivedAt": "2026-10-11T20:12:05Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-05-24: 8622 confirmed, 86 deaths",
       "publishedAt": "2026-05-24T20:04:47Z",
       "source": "Wikipedia",
@@ -210,11 +210,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1356295084": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201205/https://en.wikipedia.org/w/index.php?oldid=1356295084",
+      "archivedAt": "2026-10-11T20:12:05Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-05-26: 8772 confirmed, 88 deaths",
       "publishedAt": "2026-05-26T22:37:11Z",
       "source": "Wikipedia",
@@ -223,11 +223,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1356786105": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201206/https://en.wikipedia.org/w/index.php?oldid=1356786105",
+      "archivedAt": "2026-10-11T20:12:06Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-05-29: 8943 confirmed, 90 deaths",
       "publishedAt": "2026-05-29T20:22:28Z",
       "source": "Wikipedia",
@@ -238,9 +238,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1356921482": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-05-30: 8996 confirmed, 90 deaths",
       "publishedAt": "2026-05-30T17:34:46Z",
       "source": "Wikipedia",
@@ -251,9 +251,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1357051014": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-05-31: 9049 confirmed, 90 deaths",
       "publishedAt": "2026-05-31T13:21:33Z",
       "source": "Wikipedia",
@@ -262,11 +262,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1357233592": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201207/https://en.wikipedia.org/w/index.php?oldid=1357233592",
+      "archivedAt": "2026-10-11T20:12:07Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-01: 9094 confirmed, 90 deaths",
       "publishedAt": "2026-06-01T14:11:50Z",
       "source": "Wikipedia",
@@ -277,9 +277,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1357438152": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-02: 9136 confirmed, 90 deaths",
       "publishedAt": "2026-06-02T17:21:28Z",
       "source": "Wikipedia",
@@ -288,11 +288,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1357491155": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-14T20:23:42.857Z",
+      "archivedUrl": "https://web.archive.org/web/20261003120132/https://en.wikipedia.org/w/index.php?oldid=1357491155",
+      "archivedAt": "2026-10-03T12:01:32Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-02: 330 confirmed, 49 deaths",
       "publishedAt": "2026-06-02T23:32:22Z",
       "source": "Wikipedia",
@@ -301,11 +301,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1357962868": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-14T20:23:42.857Z",
+      "archivedUrl": "https://web.archive.org/web/20261011201209/https://en.wikipedia.org/w/index.php?oldid=1357962868",
+      "archivedAt": "2026-10-11T20:12:09Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-05: 9503 confirmed, 91 deaths",
       "publishedAt": "2026-06-05T19:11:43Z",
       "source": "Wikipedia",
@@ -314,11 +314,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1358587061": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-14T20:23:42.857Z",
+      "archivedUrl": "https://web.archive.org/web/20261015083008/https://en.wikipedia.org/w/index.php?oldid=1358587061",
+      "archivedAt": "2026-10-15T08:30:08Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-09: 9833 confirmed, 92 deaths",
       "publishedAt": "2026-06-09T17:34:23Z",
       "source": "Wikipedia",
@@ -327,11 +327,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1359300490": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-14T20:23:42.857Z",
+      "archivedUrl": "https://web.archive.org/web/20261011201210/https://en.wikipedia.org/w/index.php?oldid=1359300490",
+      "archivedAt": "2026-10-11T20:12:10Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-14: 9833 confirmed, 92 deaths",
       "publishedAt": "2026-06-14T13:25:21Z",
       "source": "Wikipedia",
@@ -395,8 +395,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-14T20:23:42.857Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-22: 1023 confirmed, 256 deaths",
       "publishedAt": "2026-06-22T21:26:23Z",
       "source": "Wikipedia",
@@ -405,11 +405,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1360768881": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-14T20:23:42.857Z",
+      "archivedUrl": "https://web.archive.org/web/20261015082900/https://en.wikipedia.org/w/index.php?oldid=1360768881",
+      "archivedAt": "2026-10-15T08:29:00Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-23: 11011 confirmed, 93 deaths",
       "publishedAt": "2026-06-23T13:44:59Z",
       "source": "Wikipedia",
@@ -418,11 +418,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1360815881": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-14T20:23:42.857Z",
+      "archivedUrl": "https://web.archive.org/web/20261015082830/https://en.wikipedia.org/w/index.php?oldid=1360815881",
+      "archivedAt": "2026-10-15T08:28:30Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
       "title": "Wikipedia toll snapshot 2026-06-23: 1023 confirmed, 256 deaths",
       "publishedAt": "2026-06-23T19:56:30Z",
       "source": "Wikipedia",
@@ -2237,6 +2237,19 @@
       "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_15_10_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-15T20:23:47.579Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-10-15: 452 confirmed, 49 deaths",
+      "publishedAt": "2026-10-15",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_17_09_2026.pdf": {
       "archivedUrl": "https://web.archive.org/web/20260921221439/https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_17_09_2026.pdf",
       "archivedAt": "2026-09-21T22:14:39Z",
@@ -2978,6 +2991,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBJZHpUSklzWEtZUWVMZDVPUVdPOU42VlR2dVBaOE5jUGJkS3FQSlZXQ3lNbDUzYTNJRGRibWJFcVRCVEtCR19rYVp3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles toll hits 1,181 as 4 more die of symptoms - Daily Observer",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1CVzE0RXpEYzVYTlVNNHE5Y2NObFlGUk0zUGVPZ1M3d3hGRktqdGt1eVV2a1ZISzdNTlpSZXQ1bFVwWUVZSVpKWjVLSExZUUk?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3093,6 +3119,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiV0FVX3lxTFB1TkJzTHlpdzdVQjJXOFlLNl9EVlVJbmJNMUdDSk9mLVdpVGhWYUdPZlpPbl8wRTR5YlJnUlF0NjFlWjVlX01uZlpYNF9XZlNFOGlDZVY2bw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO urges vigilance after Kenya confirms second Ebola case - UN News",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiVEFVX3lxTFBlZ0QxSlBhRDhfaVVWV0FEa0g4c1cwZl9ISWlVNFBDQW1lcVRMYmlKRVQxbVV2dUlsaEJnc2ZZeGJHOVBzeXdZQ21Lc0JFbDlLeDJBdA?oc=5": {
@@ -3472,6 +3511,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQWDQxZTZpT1ZDcUlUNUhEQ0VPY2JoRjJXeFYxQ0IxTEpQTEZ6OTktOExkZmdxby1aNHNwLW82YXZSRWFNN2VKSDRYLTA2NHNsZmgzYXNVNGpsQnRjcl93QUtWVWJzWUx0TWxOcXhhZkZpZUNGUURMSWd0ckxsMjUwSnhoM3dLUWllc1ZHZl9pLUU4c3BNX3BKT3RqV1JDaDVfbWNZTmYwVVo1aWdycG1mVWU5REEzU21Va05rSW1FNHhhX3Jma3lLaHh3Qi1BN1Rlc0F4OENxU0Y5UDY0WkRUaDFhTkt5cEpuSmR1X1I0akxWaF9TZTBucG9SMkI3a1k?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola vaccine induces T cell cross-reactivity against Bundibugyo virus in humans - LMU Klinikum",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IdFFGY2NYWl9CbnlyeWxQbVB3eWp2a1hJTXJINlFFY2ExT2hlSFppaktFTFpXZXRKRF9pM0k4NkcycXhFczNqNlRoSkpVQmQyNEVFeW9OSmJTdnhTV3JTaXdFNnVET05P?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3611,6 +3663,19 @@
       "title": "Kenya Confirms First Ebola Case After Patient Dies In Nairobi - teleSUR English",
       "publishedAt": "2026-10-06",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMickFVX3lxTE5jX21OWlNEVlVWTUh5eW9aY1FGTWVUdTNPRDFNX2VvM0E2cTNhbU0zVTF3eW9heXphY3cxQ2RSVnJOMVpfaGZrS1RCZVBmNFNITjh0Wjk4ZmkwMW95SldtS280c3o4S01XUm9oaTFMWEtPdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Oxford University launches Ebola vaccine trial in Uganda - Cherwell",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -3823,6 +3888,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMifEFVX3lxTE9VMURZOVdBVnQzUEZMT1BTVWVXMURJOHByU3JnYjJIY0ZDdmhYUXF1cThscEpWenhzcFduOVBLV1k5Q083SW5QTzJJZ3UzdjZvLTZ0TlNYN0hrNzZaaVFKa1JtZnloRV9XY3F1MzVQc2xla3RYSkM3cmpxMW0?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Roundup: DR Congo's Ebola cases top 9,000 as vaccine trial nears launch - Xinhua",
+      "publishedAt": "2026-10-13",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE03MmQ1VFBnd214LTEwMUEwTDUyMVZnelNtUGlqWmxKTm5ZWHlqcUt2WThjUU9jQmV6X2dBVW9tTmk3ZEp3d1I2bEdDUEU1SUd1X1o2enVVUDI1RTdqVE9uQlZTc2hYTmpzaGxnSzhsYjZncjJ2eEticjRsSklsUQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3935,6 +4013,19 @@
       "lastAttempt": null,
       "title": "DR Congo’s Ebola Death Toll Passes 4,000 as Transit Center Burns - colombiaone.com",
       "publishedAt": "2026-10-02",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMigAFBVV95cUxQVUlNRFZJOW8yUW5HQmxIVG5Gczk5N0lJODVKbWVCTDUxSUlROTNoWlQxdWh2VlppRFhsUW41VjRZWW04OXZVSEF4dEx6aXpPSGdnMEtJQnliMzNZZVlHQUtvSXo3ZnNKYW5mbGlYT1Z6cTNrUXBiYUhFeDR2dnVLZQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO Warns of Undetected Ebola Cases As Death Toll Rises - Voice of Nigeria",
+      "publishedAt": "2026-10-15",
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
@@ -4148,6 +4239,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdEF5QlIxdUpsa0dLQlRINXJlTFAwT0RWUTFXRXJnMnhqWThLQlRKaUZpaVJBYS1RR044dG1LVFRGejBuVy1USUNDUmJjV0t4dlpvZUhldmZIRmVkU1lMRTNOdHhqNGFDTWpkUG52YXA0bkdXeGwwMTV1UEppQjktTlgyN1c?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Congo Ebola Outbreak Reaches 9,000 Confirmed Cases as U.S. Keeps 21-Day Entry Rules and Low Risk Rating - Medical Daily",
+      "publishedAt": "2026-10-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFhqZkJBTGJlaHlfNFdpdjBUaldJVGNfZWY0R1o3b3lvaVhPTWJra29vdWdWVTd1MEhWX2FVV25fSFZDaGhYdkhxS3dTWThLYTVlT0cwcm52aHZvb1FsZW9sZDBBZVBMTUs4UWVPOVV3V1JBY1NBY1pZNU1ZUTVjV0lIWW9Hdw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4328,6 +4432,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNSXNmR2hUOEotV09TdHVZUk9DSjI5dERCbXhBekh6RUJRZnpJbE45VkptMGpHYWMtSGxMVXp0Nm5NbGJIS3pNWjBlendydDVGUzJUVV9XUzJtb3FzdFhJYzF1QW1KeXdoLXp0RE5QNnFmQjNENjFFVVo2bkl6aW9EMmVhYU1uWlM4dURV?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola death toll in Congo passes 4,400, with cases on the rise - CBS News",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQRkZyb29SYTVyX2Fna1lER2hMaGUtN1AxSHNHdjVhb2FlUS1QMTBUNnFFSzVQNlJ4THo1Z0pneHkwQWY4aV9IZHYzRlc3SEs5Qkc1WG1uQzhfNnBkWTktVVhZMXJkVUtCazlRdlVKMXFDUnZXS3R6UE90TlB0UHNldWFCWDc0WUlmYW440gGQAUFVX3lxTE1OX1pjWjhZcGhLeXZ1MThtZHRMMkxHblVwVUZfTFJTVlhYWmF4eC1iaHZmbEpTX3p0UDdrdGk3elg1SlhMQ09RV3dFUlVaMG9XbnUxS1JOLUlEQXZpS1Roc0RtdUhhQTU5U1JlLVpCWG1td1U0TWdObWUzUnlCZUV0VEFiZHBENXVRVW4xUC1vQQ?oc=5": {
@@ -4588,6 +4705,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSXJKWndSc01FYUk5SjhoLV9Ma1VuU3VmLWZYdTVJeWw4a0VKQ0lzaHExYi1Fa3FOZHA2M3J2QlVIaEx3UGR6MTJjRDlNUDVOZDJnUk9ZZ1ZGSUZ1QmlJVjNGZlZvOUtIN0J1dW00cmJCT01ZRnk4OVZBVWtUcjJ1RjVwd0o4cFRZWDJyUFNwaEVhMGx5empj?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola outbreak in DR Congo spreads to eighth province — TimesLIVE - UA.NEWS",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilwFBVV95cUxPUWlsaXp5QzZRaW9IQ3BucFNFWTh0eEIyQkhlZUxHSjFaYmRFTlpZWEhtVlEtbjA1QjktZjZzSUlGLTRjdjZMclQ2bFQtM09lc0JpekJrZ1F0WDJUREZmWFlfY0xaUU4wYzFRUUNWWnZLMDRkOVFXWXBmUjNyZHpZRGthd29ldUp4ejE1U0ZmVDV6TUpzdGRn?oc=5": {
@@ -4980,6 +5110,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUFOa1ZWRXRMRXZkdHdLQzMyZmNNV3ZOTFZwZ0NycThLT1ItbkhVdVZrencwQkRVbVRCdkNaM0pONm9OUW9RWFA5dWljTERka1JEM3FDdGRnRGpwSWhLWVZvbWpXSUNzYl9obFRaeGpsbWpOOUk5RHQtRnhSbGw3R1VraUFpTWRCYk9ZV3ZkWjNWNlM5S09iMGR3NE5FekpPamxV0gGjAUFVX3lxTFA0LVdONkNJVWFLRk10NWRqUEUzSFd4UDVaV1ZfOWlpY2FiUTRQRGkwaXJianN5b09nWE42N3FKNmZ2bW1INExLTmlvcGZyakVhMW1ZbHdnTXBxclU3M0puSTVGQ1VGd3FVQVJPeFZNTGZuSVJWS2g1NGMxYmswZUhyUEVBMXlwV3FpWjJEX29IVVpTOHpBN1hLbzNXTmZIdWh1LUU?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "DR Congo Ebola outbreak fastest-growing on record; deaths reach 4,410 - Qazinform",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT1NEU2laM25sdWRRZFp1QVU5dG9RTXI0ZUUwMURaZlZUOC1WaGRIVERpQ2dwNFJYVDZBeTFxaU82dG4yOEphWWRfVFRHbmN5STF6RWlocUJ1N2tIckFWRWtVbmh4ZFVNejdxeE5hU21EcDdGdzFpMkFCajBVMGZSWlQ4dWJuVDRIRDhwQll6eENhTFRCTS1xX2YzWUxmeEw5Wmk2dw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5262,6 +5405,19 @@
       "title": "Bangladesh Faces Severe Measles Outbreak with High Child Mortality - India News Network",
       "publishedAt": "2026-09-28",
       "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWkpteVJIUVk4SXhXM2hXNFJhZTgtR1hKbUtSTnJYUjF5WlRKSjVWdVBlQ2FtNEdXZWJpbjJwWGpzal9lUVFmR01lZXVsTVFVeWxDSnpHSXJYSWQxQkxIR0VNdTNKV0FWbzI3Y1hBbVFNdWlDZXQzOVk0Y1VqTkJvR1FlMGZfcy1HX0RXaHQyUWJFWVBCUklPdzlIQTd3eG1BVm1ZTmdqX1ZRdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh accumulates 205,028 cases of measles and 1,058 deaths since March - Atlas Global de Riesgo",
+      "publishedAt": "2026-10-13",
+      "source": "Google News — Bangladesh measles deaths",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
@@ -6003,6 +6159,32 @@
       "title": "Drug trial seeks to halt DR Congo’s deadliest Ebola outbreak - irishnews.com",
       "publishedAt": "2026-10-03",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVndkUjJEbEdFVC1vTk41c1ljd0d1QkJKVDFnRVhsZzJTdGNQWDFORkVoc29LcVRpMFQ0aTRTRG81Q2ZfMFVVNUhCVngza0ZZd3NYdHllemxTX0FsLWlPSk90TFJQXzJHRTl5QnItdFkxazdLUWFmSXpWTmRKX0hHbi1JeTlRZ2JRUmliak5XRnJBalUyUzdac3VSVXRjM1RQZUN1OTUtbXA0U1B1OHdGRUoyWEtOSU5KbTliUkx2aXp1QQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "DR Congo Ebola death toll passes 4,400 in record-breaking outbreak - Dubai Eye 103.8",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUIzU2cxLVE1enp6dGpsd1Z5MzY0TkdibGo3U1dkNGtyM25OSGtIODg2bnNqcEUya1R2RHF1eF9GSk1aeFRtcGtxM1RGdm1OSEM4UzU1eE05ekpYc3I3QnRaSHpHVDQ0QXFwUnBia3l1WVFGa25vVTdCcXNiYjhqaXFYVFBOR0VNclJoaFJpSXFRX0RicGRaX0ZwNk54RDBFZ00xVmd2Uk1lMUNDTDJOSVQzcnN0bFQzWnk2eExuLUViWUE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Congo Ebola outbreak spreads to province bordering Central African Republic - Sowetan",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
