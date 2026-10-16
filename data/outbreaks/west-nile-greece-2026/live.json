@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-16T08:24:18.771Z",
+  "lastFetched": "2026-10-16T20:18:36.639Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -102,7 +102,8 @@
     "news-414d5c863c12c32e",
     "news-48a0d748e524c642",
     "news-85abe0941fe18a61",
-    "news-69b46dff7535f2be"
+    "news-69b46dff7535f2be",
+    "news-adc8b8fcaa199cc9"
   ],
   "recentItems": [
     {
@@ -128,6 +129,14 @@
       "date": "2026-10-02",
       "source": "Google News — West Nile virus Greece",
       "summary": "West Nile Virus Cases Reach 423 in Greece tovima.com"
+    },
+    {
+      "id": "news-adc8b8fcaa199cc9",
+      "title": "Greece steps up mosquito control as West Nile virus cases rise sharply - İlke Haber Ajansı",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSnhmSEFvdHkzZEs5UnZzdnJ3ZjkwdXNsSEpaUUU1TW5ONnVlUXBxVTVfWktfWTNCVXFDYjU4b3hxZllyeFlQRmxKRHhFd3BUU0p5RzR1UkQwaEZRRkZSYlVxNHF6anhONDlkTkxtNGI4aUh6cG8yY0RnbmpQcHdhcXE1MkNmVWZVdHpkQk9yVTRSdkFTWWotV2FfX09QOGtxeTM0dl91bWJvZ0tKNl9vaGJoTFd5QQ?oc=5",
+      "date": "2026-09-21",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "Greece steps up mosquito control as West Nile virus cases rise sharply İlke Haber Ajansı"
     },
     {
       "id": "news-accd175b841b3a3b",
@@ -256,14 +265,6 @@
       "date": "2026-08-27",
       "source": "Google News — West Nile virus Greece",
       "summary": "West Nile virus: 75 new cases in a week, 232 infections and 19 deaths in Greece Euronews.com"
-    },
-    {
-      "id": "news-b4b00aa9b91a0923",
-      "title": "Greece reports 232 West Nile virus cases, 19 deaths - Anadolu Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWWh0ZWh1T2plcHZzalkxTVlEeU9DOWpMLTlaZWZPNTlqbEVYWDFjTXpzakdhY1JzQk51Rk1Mam1fUnZieTBUWjhaUzFCTXM2UlZDZ1VqR1hTaVZDaVhUOVRGOG5XYlpFQlRqS21JbkFpVWhDbUlHV0pueDdockFsemJFaWUtODd0cDdDdjFpV08xMlpo?oc=5",
-      "date": "2026-08-27",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "Greece reports 232 West Nile virus cases, 19 deaths Anadolu Ajansı"
     }
   ]
 }

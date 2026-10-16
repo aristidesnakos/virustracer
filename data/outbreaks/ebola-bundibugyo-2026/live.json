@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-16T08:21:54.273Z",
+  "lastFetched": "2026-10-16T20:16:52.588Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -542,9 +542,38 @@
     "who-8239458214d90f4d",
     "who-0951b8cd2f4431d3",
     "who-59e4f95e16ab31f2",
-    "who-bee44659aae23f31"
+    "who-bee44659aae23f31",
+    "news-1ae4f86d3cdc84a1",
+    "news-0137b2360d01fb07",
+    "news-ba539e3dc4af6b2c",
+    "who-292ddfa2f09d433d",
+    "who-70fe5ae6a5932ed0"
   ],
   "recentItems": [
+    {
+      "id": "news-1ae4f86d3cdc84a1",
+      "title": "Ebola disease outbreak in the Democratic Republic of the Congo - European Centre for Disease Prevention and Control (ECDC)",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPcjUwMFo1WUtEN0t1RFpuaUh5N0c5UGFOSW1oVGZZbDZFLXYzbUI2MFJmdS0wM294ZDliYXo5dEU1Nk9rOHpOMlJITWpBQmRRV2pJczFTSVg2SmRyNU8tTVZrMGlhcFZuTXhpNW82ZHlzVjZ6SGlCRFpVNmdkdnotUU83dDU0S0pq?oc=5",
+      "date": "2026-10-16",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola disease outbreak in the Democratic Republic of the Congo European Centre for Disease Prevention and Control (ECDC)"
+    },
+    {
+      "id": "news-0137b2360d01fb07",
+      "title": "3rd person in Kenya tests positive for Ebola as DR Congo outbreak spreads to 8th province - CIDRAP",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQRlJfLU1Fc3pVT3pSWXhiWUc4ekNXUmRWNkg1QndSTmNxSW51cFZFLTI4MlVHSm5Sd0pYSkdGZWxTR1QwR0hBQ2FwMDNxUWE1ck9YN2FaZEdCYXF5OUdkTXVwZHprTEd5WC11dC1GendVdWEzbkRENDliSGJmMVFCbzBrUEk0UDlVQ3ZKblJncjUtYWxDVHM5N3ZRb2xsZW5JZ1NVN2R5UHozVjBRb2c?oc=5",
+      "date": "2026-10-16",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "3rd person in Kenya tests positive for Ebola as DR Congo outbreak spreads to 8th province CIDRAP"
+    },
+    {
+      "id": "news-ba539e3dc4af6b2c",
+      "title": "Kenya records third Ebola case, linked to first patient who died - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXYzakJ3Vl9FWkRadk9COHQtUWNvVDU1bkR1elRQOVcyMmRQdHFwZlBQSGFUMF9YX2RTNGNCLTJsdlk3N1dLQW13NWdTX0ZvcS0zUUFHRXRjYW9GZ19NTXhEV29BcUhIcG5HV3RsXzIweDduSzFyLWtXU3ZXa1ZNUGwzSUNaank3S0p2cGppV1ZFU2Yt0gGaAUFVX3lxTFBTdldkV3haVjBlc3pxNWlmaklueExmOEZ3U1c3U0ZtWjM3VzBHT1dETF82ZDFjLWl2WnlwVEFNcUxidjZTTXN6aW55N2FndEtCaFd0bkZxQjlydGtRN1BoRnlxRFRmcnozNGV5eVVUMU40bEhpQnlZdVR6ZUpfY3hMYktEYXQ5aEVITVVHSVhRUm1yOTh1SnMzb2c?oc=5",
+      "date": "2026-10-16",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya records third Ebola case, linked to first patient who died Al Jazeera"
+    },
     {
       "id": "news-ce6406f5096d538a",
       "title": "Bundibugyo Virus Disease Spreads: Why Is It Hard to Contain? - Medscape",
@@ -680,30 +709,6 @@
       "date": "2026-10-14",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Congo Ebola Outbreak Reaches 9,000 Confirmed Cases as U.S. Keeps 21-Day Entry Rules and Low Risk Rating Medical Daily"
-    },
-    {
-      "id": "news-d8854ce0fbe77e3f",
-      "title": "Ebola cases exceed 9,000 in Democratic Republic of Congo - ITIJ",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQTzRvNnFsQlBpcU1QLWZ0SVg5eC1vb3hmU195QkpJb1V4TGU2Ry0wZ0FWOUVHY1c5dGtRYUU4WERadFAtNFk2c0s3blFTZUZydEcyMWNEVVBjYXNJUEs4SzhWQ1dCMUt2aHNTblNrclh5OVlxSGpiZGp6YVFyUzhlQnNFUW1vTVVQTHc?oc=5",
-      "date": "2026-10-14",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases exceed 9,000 in Democratic Republic of Congo ITIJ"
-    },
-    {
-      "id": "news-1a220351023e006b",
-      "title": "Ebola cases in DR Congo reach 8,978, deaths exceed 4,336 - İlke Haber Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPVHdDbTBQOFlaMm9lcUNBaFMzQWZqWFhWVHlEM3RFY0VWd3FXU0o3QlpYeFZkUEpnTzhxcHRuM0tlallmTTJsRWxYNjE5YmRnY0cycVhLWG5CN2NQWS01dGRrUUR5S2lRNk91V0x3c29VMVFNTW0tT3FiaDJjdkxnMHcwQnhoQ3VOS0kzMUQyVEZZOUlZQmVJ?oc=5",
-      "date": "2026-10-14",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases in DR Congo reach 8,978, deaths exceed 4,336 İlke Haber Ajansı"
-    },
-    {
-      "id": "news-9b4efbdb2f9f8528",
-      "title": "Officials struggle to contain Ebola outbreak as cases in Congo surpass 9,000 - New York Post",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPa1l3Z2JHNEVoZGxYajRBcnNHV2oxWnVndnMxWmRzM0pUM1oxb3RyNXh3NXdTQV81Z1BWVGgyODQxUFBaNjJiUGdHSmhranJpYTkwTEV0VU54SFYyNkhhaElhWVBkTzU4cGV3YmVRdXAtakFDclB6Z19ZcVZMZ1hrNU9IUFROVDBwVHU4eEtUUGR3LW5iX2plc1JyaEsxNjJfTElkcXBNY0ZCNjFXeWlXSw?oc=5",
-      "date": "2026-10-14",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Officials struggle to contain Ebola outbreak as cases in Congo surpass 9,000 New York Post"
     }
   ]
 }

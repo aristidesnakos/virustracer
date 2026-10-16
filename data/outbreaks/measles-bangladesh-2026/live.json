@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-16T08:23:15.275Z",
+  "lastFetched": "2026-10-16T20:17:36.112Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -272,9 +272,18 @@
     "news-f5b11a964c6d3eab",
     "news-4480f13f20854258",
     "news-50628344ec20e228",
-    "news-6c4527b6c42d1929"
+    "news-6c4527b6c42d1929",
+    "news-3a37d1093c28be0f"
   ],
   "recentItems": [
+    {
+      "id": "news-3a37d1093c28be0f",
+      "title": "Measles outbreak: Death toll reaches 1,186 as five die in 24 hours - Dhaka Tribune",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNeEtFN0pVU2gwX1A4ejBDYldjdDhJZHp0Wm9Lck53dW16WDBnWk0zZ2JvY0NrYjJLTmtzd2FUZDEwTWhrZDVhUDV3SF93SkhKZ1hNcUIxRl9DZ1otUmhQUkxNdmVodjBVVk9XT3RBWkFhZE1URk1NUnRfNFhZVjVzUFBBR0xpN3dhRnd4aUNPV3BKSWVnd3FNWTY1RkE4SEhxWlU4ZXFn0gGrAUFVX3lxTE5IdHFUbWJzdTBibXE3MkdSVVJCaUZKQXlmbURtVjh5N0gtckV1MW1OZ0hTTDczdUVrem9JbGJVRkk0Z0JWTEJEYWlCMDB1bmdlOHJlSUh5Z1FUOE5VbjVWUXQzeUZuMXVUSmV5dVRkWElzOFVTN0VQRmt6OGJtbFMzcml0SEM0U2R6SVhMWGlfd296eEd3X2F1elpjNXdhSF9VWnNTemZFOThxaw?oc=5",
+      "date": "2026-10-16",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "As of the latest report, the death toll from the 2026 measles outbreak in Bangladesh has reached 1,186, with five additional deaths recorded in the past 24 hours."
+    },
     {
       "id": "news-9de8021dc4ffe1fa",
       "title": "BGD: Epidemic - 10-2026 - Measles in Bangladesh #3 (2026-10-15) - ReliefWeb",
@@ -426,14 +435,6 @@
       "date": "2026-10-07",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "US reaffirms support for Bangladesh’s fight against measles outbreak www.daily-sun.com"
-    },
-    {
-      "id": "news-50ea40b429076fcb",
-      "title": "Measles outbreak: Death toll reaches 1,140 as six die in 24 hours - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOZ2xYYXhURjhXU0JtMnU1VlYtbkFtOUlMakVTakljTFlOcmozc3YtUGVhQ1JoeVBKZ1FyRkhQdkJnN2pUdDVVYktQdkpvbkhoemphbEZ0NDNwMm1KTUJoN2xYSERsdU9Wd3hhcy1FZnFzNDdSWnFXNVZYM1JfRWFfT1h5ZFNZQ1dxMXY0LVl4U0lUV2toYmNHTGE4djNZZkZtaXJfNdIBqgFBVV95cUxNQy0xTGp4MW00MVJRR20zckxrb0F2bFRPSmIzalMwOG0xdElQYkpnOHpCcHZ2YzBOa21acXNaVVp2b1MtSjVnbjVZVmN3Y0VMbGRMUWtsVk1ubkJhczBGSFVIWE5qOFVLWGpaY0Z3SU03bm94ZDU4RDU1cGNTQUxRWlBqcWZ3azhzVHdWNEhVSWVTamcwV0JpVGFDRUprSXlHOFVFMG4tbkt4UQ?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "The measles outbreak in Bangladesh has killed at least 1,140 people, including six deaths reported in the last 24 hours."
     }
   ]
 }
