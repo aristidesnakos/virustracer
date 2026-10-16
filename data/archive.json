@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-15T20:23:47.579Z",
+  "lastRun": "2026-10-16T08:24:18.837Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": null,
@@ -82,9 +82,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1353880414": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-12: 7024 confirmed, 68 deaths",
       "publishedAt": "2026-05-12T23:28:59Z",
       "source": "Wikipedia",
@@ -93,11 +93,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1354013590": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201159/https://en.wikipedia.org/w/index.php?oldid=1354013590",
+      "archivedAt": "2026-10-11T20:11:59Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-13: 7150 confirmed, 69 deaths",
       "publishedAt": "2026-05-13T19:32:29Z",
       "source": "Wikipedia",
@@ -106,11 +106,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1354135270": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201159/https://en.wikipedia.org/w/index.php?oldid=1354135270",
+      "archivedAt": "2026-10-11T20:11:59Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-14: 7305 confirmed, 70 deaths",
       "publishedAt": "2026-05-14T14:50:07Z",
       "source": "Wikipedia",
@@ -121,9 +121,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1354304070": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-15: 7416 confirmed, 74 deaths",
       "publishedAt": "2026-05-15T15:39:15Z",
       "source": "Wikipedia",
@@ -132,11 +132,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1354706564": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201202/https://en.wikipedia.org/w/index.php?oldid=1354706564",
+      "archivedAt": "2026-10-11T20:12:02Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-17: 7767 confirmed, 75 deaths",
       "publishedAt": "2026-05-17T22:05:41Z",
       "source": "Wikipedia",
@@ -145,11 +145,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1354831544": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201204/https://en.wikipedia.org/w/index.php?oldid=1354831544",
+      "archivedAt": "2026-10-11T20:12:04Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-18: 7767 confirmed, 75 deaths",
       "publishedAt": "2026-05-18T13:43:29Z",
       "source": "Wikipedia",
@@ -160,9 +160,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1355030164": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-19: 7856 confirmed, 77 deaths",
       "publishedAt": "2026-05-19T15:01:57Z",
       "source": "Wikipedia",
@@ -173,9 +173,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1355380580": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-21: 8275 confirmed, 83 deaths",
       "publishedAt": "2026-05-21T14:23:51Z",
       "source": "Wikipedia",
@@ -184,11 +184,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1355764318": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "archivedUrl": "https://web.archive.org/web/20261011201204/https://en.wikipedia.org/w/index.php?oldid=1355764318",
+      "archivedAt": "2026-10-11T20:12:04Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-23: 8494 confirmed, 86 deaths",
       "publishedAt": "2026-05-23T20:00:19Z",
       "source": "Wikipedia",
@@ -236,11 +236,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1356921482": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-15T20:23:47.579Z",
+      "archivedUrl": "https://web.archive.org/web/20261011201207/https://en.wikipedia.org/w/index.php?oldid=1356921482",
+      "archivedAt": "2026-10-11T20:12:07Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-30: 8996 confirmed, 90 deaths",
       "publishedAt": "2026-05-30T17:34:46Z",
       "source": "Wikipedia",
@@ -252,8 +252,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-15T20:23:47.579Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-05-31: 9049 confirmed, 90 deaths",
       "publishedAt": "2026-05-31T13:21:33Z",
       "source": "Wikipedia",
@@ -275,11 +275,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1357438152": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-15T20:23:47.579Z",
+      "archivedUrl": "https://web.archive.org/web/20261015083038/https://en.wikipedia.org/w/index.php?oldid=1357438152",
+      "archivedAt": "2026-10-15T08:30:38Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-06-02: 9136 confirmed, 90 deaths",
       "publishedAt": "2026-06-02T17:21:28Z",
       "source": "Wikipedia",
@@ -392,11 +392,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1360664920": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 2,
-      "lastAttempt": "2026-10-15T20:23:47.579Z",
+      "archivedUrl": "https://web.archive.org/web/20261015202508/https://en.wikipedia.org/w/index.php?oldid=1360664920",
+      "archivedAt": "2026-10-15T20:25:08Z",
+      "status": "archived",
+      "attempts": 3,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "Wikipedia toll snapshot 2026-06-22: 1023 confirmed, 256 deaths",
       "publishedAt": "2026-06-22T21:26:23Z",
       "source": "Wikipedia",
@@ -2107,6 +2107,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1380498266": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
+      "title": "Wikipedia toll snapshot 2026-10-16: 9235 confirmed, 4444 deaths",
+      "publishedAt": "2026-10-16T02:29:03Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/wiki/2026_Bangladesh_measles_outbreak": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2241,8 +2254,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-15T20:23:47.579Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-16T08:24:18.837Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-10-15: 452 confirmed, 49 deaths",
       "publishedAt": "2026-10-15",
       "source": "EODY weekly West Nile virus report",
@@ -2913,6 +2926,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNWlBuTjdhenhyaHVIdzd1dzVHN1VYd1o2QjZXdWgtY1FoV2syYTRaTlFJTzBJT0hvc28taEV6dWdGRDNlQ3NjaWxWd2NvV1VzMkwxbm9nbk02d2pBS0gwbWoyTVVmMUdISm5aeWh6OEVoWmw2dkd2Q0hvNVNQZVEyMXp5VGZBclZDRlRCMk1tYjdFcGVFa2I0VDBjcERVZkVxNWVKZkZQR1Z4S0dxQmx0TFlfQ3d3cXI4UV9nWDV0X3V4cHpqYkRwTi1RWkJZN2R0WGdfUVhITEZia3NCaDFIdWRHdUFQVnRvZWhjZzVmTGE3ZzRj?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Licensable video: Bangladesh grapples with deadliest measles outbreak in decades - Reuters Connect",
+      "publishedAt": "2026-10-08",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOSGRMYjJhZWc5bkdrM3BObEY5cml3SExUajRyeDNaR0wzNEozb1d0aHhMd3dvVFJiME5UM010YnBfa3hGeHlveGt1SWVnY0RmRGZ4ZDdQQVN3UnQ2MU13ei1fMTQ0RFB3SjZiajRXVTJjRGhBMkZLUkIxamFkLVVNWDBzRU1fUDRydjI5d2dPZVNMQ0p3bGIxbk1kcDl4YkxCX0VKY1p6NUFOd3ZQQkpZdkxXLWxfcVhFV2ZrUUxCWXFFaXJDc1BRN2JONjNrV1ZpNFhPdlZRWl92bVVOdGdiZ0pDVDZyMTZzbVNNNnZjMVR6aDdJ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3197,6 +3223,19 @@
       "source": "Google News — Bangladesh measles deaths",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8taXhHUjlOcVJ2Q2ZkVXF2NUs3Rk9jRjZKTUlMZkJzZ1Vad293eFBfR3JMenhubnludFpaQ2FEcVhIa05XbEtvdzRuM19DeFhkRGpjUlduS0EwUDg?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Kenya confirms second Ebola case - a relative of the first victim - BBC",
+      "publishedAt": "2026-10-14",
+      "source": "Google News — WHO DON",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1aFRvN1FkWHRCbEVKajdKWHp4VEgxdE1lLUFpSm9FSFQwakEtZm9QZ0czaDRzZWJwbTBPbk5iajRxdmlFNFh4aTRXdFBJNGNIRGlBak03MkJ1ejg?oc=5": {
@@ -3819,6 +3858,19 @@
       "title": "Kenya Reports First-Ever Ebola Death - Tempo.co English",
       "publishedAt": "2026-10-06",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4aE5jUDZwT196U2xfUVotZkxmVG81SU10WmpHYkRYblhCZUpZdndUZUZQLVNhZlhqcW9zdFo2UEdsTHhneHFjcnA0VVZ1NDdXUERPRHVJOUtTUTRSeVE5ZmhDTjRHYmV4ZVNCY2o1WElBRUlVQ1F5akZR?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Second Ebola patient identified in Kenya - CIDRAP",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -4486,6 +4538,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxNZW9pRUNLSDJqQlQwVGZoRVMzbkJsT3ZtejJ2aGF1eExMd0Zqd3RRdDBmbWhPY3gxTWZXTEFGWGV6MWFNSVROaEw3LUFRbTYwT2NFRWRWZG9oQ3Z5TFZCNWlWUmVPN0tKclJRWVl0bE9RWmljSUJySVdPV3VWVDNubHJHSzIwb3EyazhNaWF3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Licensed Ebola Vaccine Ervebo Triggered T Cells Against Bundibugyo in 13 of 20 Recipients, but Protection Remains Unproven - Medical Daily",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTjU4R0hMOTFPQUhocjJ6MkR3Mi0tODNqeE1nN2V3NHZ4cWN4N3l2MTdjZ0ZyZUJsWkRZTEg0SUxHUzRNdUhPT2VZWTZiLVVUZ2Z2S1FpTkN4cVYyX3JxeG4wbVVobTNjNHBvVnpRc1VkbEhjR2JsSEgtdE5QYnV6MldGU2U3OEYwYkxUMHJR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4705,6 +4770,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilwFBVV95cUxOR3FyU2ZfRWRrb3RBUGNpeWplTXNULU84YVgwNFY5TU1wSi0tZDZ3MUNnUk9WZHVNc3ZHZmNSQWI5anNLMklTS25GWW1XdUFBQkhJOEtCZG9XajZJLTlDZTE0X29WQVZ4VTB3YS02U3ZMbkpFak5TM2RSYW9wY1ExQlJ3WS11VEM2d1E2VUhuTS1vVG12YVRN?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "BGD: Epidemic - 10-2026 - Measles in Bangladesh #3 (2026-10-15) - ReliefWeb",
+      "publishedAt": "2026-10-16",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSXJKWndSc01FYUk5SjhoLV9Ma1VuU3VmLWZYdTVJeWw4a0VKQ0lzaHExYi1Fa3FOZHA2M3J2QlVIaEx3UGR6MTJjRDlNUDVOZDJnUk9ZZ1ZGSUZ1QmlJVjNGZlZvOUtIN0J1dW00cmJCT01ZRnk4OVZBVWtUcjJ1RjVwd0o4cFRZWDJyUFNwaEVhMGx5empj?oc=5": {
@@ -5123,6 +5201,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQjNrdTk2RWFxYUg2UDdSY1pfelEtQXRxSnptV0JVTkhsOVZmd1BaR1B4NWdtZFZ2WGdSMDgwYkQtYWwtcWRmTmtabGpvYzNGWmphRjN1VVlaQ19sRzFKSVlhVWFEMEl6eEQ2bXpoNm9CLV9vRWtEcWpvNjF5VU1WZGNOWEdLdTdJRzR6aVB4c0hmWEFGcXdIVXNyb1Vod1lEa014TA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Greece adds 443 autochthonous West Nile virus infections and 47 deaths - Atlas Global de Riesgo",
+      "publishedAt": "2026-10-13",
+      "source": "Google News — West Nile virus Greece",
+      "kind": "news",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxOT1NEU2laM25sdWRRZFp1QVU5dG9RTXI0ZUUwMURaZlZUOC1WaGRIVERpQ2dwNFJYVDZBeTFxaU82dG4yOEphWWRfVFRHbmN5STF6RWlocUJ1N2tIckFWRWtVbmh4ZFVNejdxeE5hU21EcDdGdzFpMkFCajBVMGZSWlQ4dWJuVDRIRDhwQll6eENhTFRCTS1xX2YzWUxmeEw5Wmk2dw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5186,6 +5277,19 @@
       "source": "Google News — Bangladesh measles deaths",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWEJYOVE4NC0xVVBBWDlsLWRFcDVYQzBBU2tOWVB4N19pM2x4ejBhMXdqS0Jnb2xkMlFkWXpqVDQ2aF81NGotOHN6dlZNYnNxbWZmdW9ROXVGcFpZNUhiSkdlTHBhemdJVUNHc01ENWNqWTVZVVB4RGtMVkFpUDZ0aUhxWEVSeHdaVWhmczZ4UjBiWU9EYnRtYU44enNTWVF2NmtWMw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bundibugyo Virus Disease Spreads: Why Is It Hard to Contain? - Medscape",
+      "publishedAt": "2026-10-16",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxQWldOTnlXaExzT0xmTl9sc2JINVMxaXJmdi1tOU9JQVJReEZFa2tOV3BUS0xESVVsQXg1YlliQ09jZjFaamlsWmpmdUV6aWY5WDIzUllMdmxEZjJkRnR4NG9ISFlJNlIycU94b3N3LVdjZ0F3WVhTeXd6V2N0RFlCUjdDVlZLanVZUTlSdDBGdWVVTXFRd1FpSGNxMFNVNmVNd0N2Rg?oc=5": {
@@ -5394,6 +5498,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORlJCNkhreW9oYXVpcEVRX3Z2eHE3NExWWmpVMGdxNzJYelVrNl9sbjdkU0V2MnNrcXl5aEQ4cERrWV9jR2RGN1pHTTBCNXdzUGFCd25qOFU3dWhEZUJQMHFkZUc3U3laWnpoTFlQRlB1X1Z3RFZqd2pEVl95TVFkTHNoYlc2RDhZNFhoSko4em1oemo3S3ktQzBZdVN2dXdqN3FKNjllbjZ0UQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO alarmed that many Ebola deaths in DR Congo occur in communities - Africanews English",
+      "publishedAt": "2026-10-14",
+      "source": "Google News — WHO DON",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOS0EwU2ZGanlISGJqd29WcUwyc285SDd6M0tjMlR1aFhlVHozVTVFOEZBRm85c1diZ2xCWkV2RTFxb2o5TkVITklKUFNoYmdZb245cTRJUnl1VG1VZmpoT2JHdEdhSlpDd1diSHMzYWhCQmpuT0x6SDNoRmlrLVVnNDJfcGtXR3BtX0dfYjVJRXJJdXRsaEtaS1NMazZQaS1tcG93V21pTG9FQQ?oc=5": {
@@ -6033,6 +6150,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQkNiUlNXdnRrOERCOFFKUF9WYzd5d2F5UVdLeHpUWWhyMHVkZmJXb3dydnVYNW1Ja0NUWG5TclBNc09GLVVuLVFZcDFLbGF4S2xjN2ZGVHJjUF80NkxtV1VCSTctS1Bmal94OVh3ZktsZ1VkWkRDLTJiQkFneDVGRjh1UlJ5M01ubmRyUVI0M3IySlJ4VV9GUkdmYUFIZnpySTVubUhzMmZXVkltT2dQM3M0Y2VCb0FtejFrVzdB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Congo Ebola outbreak spreads to new province bordering Central African Republic - Reuters",
+      "publishedAt": "2026-10-15",
+      "source": "Google News — WHO DON",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMivgFBVV95cUxQRG5xOTNGMWxCTFdxc183ZXFYNmc2UEp3U3d1b19xSVpqRkp1aGY1UG5nMWJyTnpHcEdBX2Mxa0R1cUthQU94Vm95bnpTcEpPNm11VDMzV2NxM3pHOUJKQ2REWnlRVFlaM1p6alJmZEl5TjI5YmQxLUVVcTJUUWF3MDNGLXR5SE9RdnpFcnBIVHA5aDA2N3Q0NzcwSHpQbEZrUFBTa18yX29EN0lTOVFIMTdiUVg4RjhOZlZ6S2t3?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6252,6 +6382,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUGRWZEZpRGdVNjkzRWs5VnNCMExnYXE2WmdHU21WUEJaeEVjWGVMZ0w3dFBLb3ZnY2dObzEybEtuOFFXZzltcUVKV2JSMElqY0dMX0cwb1lRN3pJYXdJRnRseDlMT1NzcHhGX1NLeVJmVm1SZjVSSm5iaWdZQmNrUHh3T1lOU1dIWmlqMm95QXA5c1FxMXZOYkFzM3B3Y2tzYXRoNVV4UkRkbUFCZWZoSUl4LXlpZV9KWkdjcnc2UHV6TzlzdHlwdQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles Outbreak In Bangladesh - Reuters Connect",
+      "publishedAt": "2026-10-07",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiyAFBVV95cUxQRkdtbmE5LUdFYVhIMDRvRW1YUkZIUVp4QlJwQWtxMEtKLWljbWFiYjh6X2NEWjhHWWhnbGpPUzJscm1GazNfbnU1ZXk5TEdKbi1HTzJMR2k0b0FkM21sT3pvUks5ZEpMM1A5Q0l0ZHZ6R185NTN6NVdvU3FnYlFiS21zVHBoWEcxUERZaFB3cEdUSEJlNUljTkFsZnFVbHlKdzJ0RjRSRG90UzJYUWppUE1jUzhnNTJjLVk5Y3lPNm5Cb1liWFZjOA?oc=5": {

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-15T20:23:06.772Z",
+  "lastFetched": "2026-10-16T08:23:15.275Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -264,9 +264,25 @@
     "news-16cd90fbb677d9f3",
     "news-2b7bc9e9be3c979d",
     "news-a12ef7267b26c4ef",
-    "news-b43e09c7f37658d4"
+    "news-b43e09c7f37658d4",
+    "news-9de8021dc4ffe1fa",
+    "news-204e91d869be7584",
+    "news-415539ce09c8d923",
+    "news-e4b606b90e7164b7",
+    "news-f5b11a964c6d3eab",
+    "news-4480f13f20854258",
+    "news-50628344ec20e228",
+    "news-6c4527b6c42d1929"
   ],
   "recentItems": [
+    {
+      "id": "news-9de8021dc4ffe1fa",
+      "title": "BGD: Epidemic - 10-2026 - Measles in Bangladesh #3 (2026-10-15) - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOR3FyU2ZfRWRrb3RBUGNpeWplTXNULU84YVgwNFY5TU1wSi0tZDZ3MUNnUk9WZHVNc3ZHZmNSQWI5anNLMklTS25GWW1XdUFBQkhJOEtCZG9XajZJLTlDZTE0X29WQVZ4VTB3YS02U3ZMbkpFak5TM2RSYW9wY1ExQlJ3WS11VEM2d1E2VUhuTS1vVG12YVRN?oc=5",
+      "date": "2026-10-16",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "BGD: Epidemic - 10-2026 - Measles in Bangladesh #3 (2026-10-15) ReliefWeb"
+    },
     {
       "id": "news-c529c10a9d004984",
       "title": "Bangladesh measles toll hits 1,181 as 4 more die of symptoms - Daily Observer",
@@ -356,6 +372,14 @@
       "summary": "A measles outbreak in Bangladesh has killed more than 1,000 children."
     },
     {
+      "id": "news-204e91d869be7584",
+      "title": "Licensable video: Bangladesh grapples with deadliest measles outbreak in decades - Reuters Connect",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNWlBuTjdhenhyaHVIdzd1dzVHN1VYd1o2QjZXdWgtY1FoV2syYTRaTlFJTzBJT0hvc28taEV6dWdGRDNlQ3NjaWxWd2NvV1VzMkwxbm9nbk02d2pBS0gwbWoyTVVmMUdISm5aeWh6OEVoWmw2dkd2Q0hvNVNQZVEyMXp5VGZBclZDRlRCMk1tYjdFcGVFa2I0VDBjcERVZkVxNWVKZkZQR1Z4S0dxQmx0TFlfQ3d3cXI4UV9nWDV0X3V4cHpqYkRwTi1RWkJZN2R0WGdfUVhITEZia3NCaDFIdWRHdUFQVnRvZWhjZzVmTGE3ZzRj?oc=5",
+      "date": "2026-10-08",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh is facing its deadliest measles outbreak in decades, according to the report, though no specific cumulative death toll or confirmed case count is provided."
+    },
+    {
       "id": "news-781738b76a4dc091",
       "title": "Measles outbreak in Bangladesh born out of state negligence | The Daily Guardian - newspaper - Magzter",
       "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVDVycHJTTTZhWmptY3BtY2h6c3l4ZzBqV1dEODZFU2hFRUo2RWZiTEsxZGltZGROaU1SUXYzLXIybHYtWjk0Um1tUlAwYm5HSmRVMHVTd0VJdXoxVzBkV2dJd1ZqUVVTNzFNakJCakZPNXZIZWYwdzc4OXZ0MkJlVmJ2UXBYRzR6ZjJoOWxzR25LX3hVY0Fmdy1SdS1Od3pCaERFQTl1UTVMZWt5dFFFMXZfZmk1ci1ldzFJQw?oc=5",
@@ -388,6 +412,14 @@
       "summary": ""
     },
     {
+      "id": "news-415539ce09c8d923",
+      "title": "Measles Outbreak In Bangladesh - Reuters Connect",
+      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUGRWZEZpRGdVNjkzRWs5VnNCMExnYXE2WmdHU21WUEJaeEVjWGVMZ0w3dFBLb3ZnY2dObzEybEtuOFFXZzltcUVKV2JSMElqY0dMX0cwb1lRN3pJYXdJRnRseDlMT1NzcHhGX1NLeVJmVm1SZjVSSm5iaWdZQmNrUHh3T1lOU1dIWmlqMm95QXA5c1FxMXZOYkFzM3B3Y2tzYXRoNVV4UkRkbUFCZWZoSUl4LXlpZV9KWkdjcnc2UHV6TzlzdHlwdQ?oc=5",
+      "date": "2026-10-07",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Measles Outbreak In Bangladesh Reuters Connect"
+    },
+    {
       "id": "news-a6a525a6135734a1",
       "title": "US reaffirms support for Bangladesh’s fight against measles outbreak - www.daily-sun.com",
       "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa2trc0NhNHdYZlB1SzJDdGR1SExOenNWSTNHMkFSNmtrU21BdjlKYXZuLXBUckR1Y3l2Uk0zS1V3VTdaOHVXOU1KWHgzZXVjT3paTEx3NDhKNUNJNlFmVm9wV2hXYkhUWU1GdDg0WERwQU5NaWJpZzhmVUFIV3doaDRVUzgwbmlsVEUzVmhVS2JuaXFmZDFDeEI4REVxaUNOR0pYRnZPcGtRNkktTkJ6bw?oc=5",
@@ -402,30 +434,6 @@
       "date": "2026-10-07",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "The measles outbreak in Bangladesh has killed at least 1,140 people, including six deaths reported in the last 24 hours."
-    },
-    {
-      "id": "news-08211d55cebd968c",
-      "title": "US supports measles-rubella vaccination drive for 3.4m children in Bangladesh - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE90eHJHUHhsSGI4WW82Q2tjNHg5OTJaVjVhU1VObzVlb3NTWXRYNmpxX2FndDhSQlpLT21KWFNCekdJamxaRVp2cWdWRlR1R1U?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "The US is supporting a measles-rubella vaccination drive targeting 3.4 million children in Bangladesh."
-    },
-    {
-      "id": "news-9cd3ac3056958e8c",
-      "title": "Measles: 6 more children die, death toll stands at 1140 - Bangladesh Post",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNVkwRUdVazcyeXRkcUM4blJZbXpqOTg1akdXT04tYjBZdDBkVVluSk1URVNXNUJnWS12WHl4RjlHMmJHMmRBbWVnSTRRMVVHOG5JR0x5UzJYaTlCM3BxN2JfYmtxOUFpZDN3NC1nODlKVW1qZ1NGdGM1YmhETExTdmxFV1RGQUhTbnBtQ1k5MFdpMVUyRjByMA?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "As of the latest report, the measles outbreak in Bangladesh has killed 1,140 people, with six more children reported dead."
-    },
-    {
-      "id": "news-5252da45d06388ac",
-      "title": "Bangladesh measles outbreak claims 900 lives – and serves as warning for why vaccination matters - Scroll.in",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNXzFIdUJqUFQyOWxKcE9YVWJlMzAtTzF4LVNiaVc0bHIxdWlDcXpvVi1ib3N3LVVWUzVCNmRsUkhrYnpEZnVBQWF6dldyRVNHa2RqZkVjVnZmaTlJcGVuSnhOUmhxUmNseUUzNWRQa2hDdXpOeDdPXzYtZkUwSWZkX2RfX1U2VmNHYWxFZWhSLUoxcGR0bEktVWNSUzdSZklYb1VSY2ZaM2Y2RFdTNC1qVkV6QjVLZ09qaGNqUkt2VjNBNXQxbEhheE5KOG7SAcwBQVVfeXFMTV8xSHVCalBUMjlsSnBPWFViZTMwLU8xeC1TYmlXNGxyMXVpQ3F6b1YtYm9zdy1VVlM1QjZkbFJIa2J6RGZ1QUFhenZXckVTR2tkamZFY1Z2Zmk5SXBlbkp4TlJocVJjbHlFMzVkUGtoQ3V6Tng3T182LWZFMElmZF9kX19VNlZjR2FsRWVoUi1KMXBkdGxJLVVjUlM3UmZJWG9VUmNmWjNmNkRXUzQtalZFekI1S2dPamhjalJLdlYzQTV0MWxIYXhOSjhu?oc=5",
-      "date": "2026-10-06",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh measles outbreak claims 900 lives – and serves as warning for why vaccination matters Scroll.in"
     }
   ]
 }

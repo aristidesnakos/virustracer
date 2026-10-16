@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-15T20:23:47.517Z",
+  "lastFetched": "2026-10-16T08:24:18.771Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -101,9 +101,18 @@
     "news-830ef44b3144078c",
     "news-414d5c863c12c32e",
     "news-48a0d748e524c642",
-    "news-85abe0941fe18a61"
+    "news-85abe0941fe18a61",
+    "news-69b46dff7535f2be"
   ],
   "recentItems": [
+    {
+      "id": "news-69b46dff7535f2be",
+      "title": "Greece adds 443 autochthonous West Nile virus infections and 47 deaths - Atlas Global de Riesgo",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQjNrdTk2RWFxYUg2UDdSY1pfelEtQXRxSnptV0JVTkhsOVZmd1BaR1B4NWdtZFZ2WGdSMDgwYkQtYWwtcWRmTmtabGpvYzNGWmphRjN1VVlaQ19sRzFKSVlhVWFEMEl6eEQ2bXpoNm9CLV9vRWtEcWpvNjF5VU1WZGNOWEdLdTdJRzR6aVB4c0hmWEFGcXdIVXNyb1Vod1lEa014TA?oc=5",
+      "date": "2026-10-13",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "As of the article's publication, Greece reported 443 autochthonous West Nile virus infections and 47 deaths during the 2026 season."
+    },
     {
       "id": "news-414d5c863c12c32e",
       "title": "Greece: West Nile virus infections rise to 443 - Outbreak News Today",
@@ -255,14 +264,6 @@
       "date": "2026-08-27",
       "source": "Google News — West Nile virus Greece",
       "summary": "Greece reports 232 West Nile virus cases, 19 deaths Anadolu Ajansı"
-    },
-    {
-      "id": "news-cea4463bbe9e2616",
-      "title": "Greece: West Nile virus cases top 200, 19 deaths - Outbreak News Today",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNYTRKUmpKWlRLZEs3NlktQnQ4TkxtV3JEWHVTQ0NkMmdYSktEcUJpZk9ZTWRDV2s1QktDVGlOcjVycWdjc3ViTEV4eUx2NkQ3bG9OVnlUdHpoclQ3cHp6cTRuM1N1NGlISkN0U2N5YlVZMWJ0c0gwQUV6SExVRWVqeHRLRQ?oc=5",
-      "date": "2026-08-27",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "Greece: West Nile virus cases top 200, 19 deaths Outbreak News Today"
     }
   ]
 }
