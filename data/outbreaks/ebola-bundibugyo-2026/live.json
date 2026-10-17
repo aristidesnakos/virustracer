@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-16T20:16:52.588Z",
+  "lastFetched": "2026-10-17T08:16:37.434Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -547,9 +547,22 @@
     "news-0137b2360d01fb07",
     "news-ba539e3dc4af6b2c",
     "who-292ddfa2f09d433d",
-    "who-70fe5ae6a5932ed0"
+    "who-70fe5ae6a5932ed0",
+    "news-8199e767a87a0c6b",
+    "news-5bb7750dbdac053d",
+    "news-98686ae3d0b02d14",
+    "news-50ff13e37a74a63b",
+    "who-299b2f72046c62a4"
   ],
   "recentItems": [
+    {
+      "id": "news-98686ae3d0b02d14",
+      "title": "Ebola outbreak update through October 14 - Outbreak News Today",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQeDN6MmlmS1pYTEwwZ1hOa0dGQVVzQ29fZURTa0FXQnRwTU8tUllvLXJUc1FsX253U2VrVnFQZW54NDJnLVdFbzg5cS1CandJOTEyQW5wUThwR3hPSktRNTJQX1pCdmZ5OURFZVl3ZUI1eEdxVWVhRkcyUktvVEFubWFTSGY?oc=5",
+      "date": "2026-10-16",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola outbreak update through October 14 Outbreak News Today"
+    },
     {
       "id": "news-1ae4f86d3cdc84a1",
       "title": "Ebola disease outbreak in the Democratic Republic of the Congo - European Centre for Disease Prevention and Control (ECDC)",
@@ -701,14 +714,6 @@
       "date": "2026-10-14",
       "source": "Google News — WHO DON",
       "summary": "The WHO expressed alarm that many Ebola deaths in the 2026 Bundibugyo outbreak in DR Congo are occurring in communities. No cumulative death toll or confirmed case count was provided in the article."
-    },
-    {
-      "id": "news-59fc9d6be9c3c715",
-      "title": "Congo Ebola Outbreak Reaches 9,000 Confirmed Cases as U.S. Keeps 21-Day Entry Rules and Low Risk Rating - Medical Daily",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQdEF5QlIxdUpsa0dLQlRINXJlTFAwT0RWUTFXRXJnMnhqWThLQlRKaUZpaVJBYS1RR044dG1LVFRGejBuVy1USUNDUmJjV0t4dlpvZUhldmZIRmVkU1lMRTNOdHhqNGFDTWpkUG52YXA0bkdXeGwwMTV1UEppQjktTlgyN1c?oc=5",
-      "date": "2026-10-14",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo Ebola Outbreak Reaches 9,000 Confirmed Cases as U.S. Keeps 21-Day Entry Rules and Low Risk Rating Medical Daily"
     }
   ]
 }

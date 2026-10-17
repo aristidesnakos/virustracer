@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-16T20:17:36.112Z",
+  "lastFetched": "2026-10-17T08:17:48.746Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -273,9 +273,85 @@
     "news-4480f13f20854258",
     "news-50628344ec20e228",
     "news-6c4527b6c42d1929",
-    "news-3a37d1093c28be0f"
+    "news-3a37d1093c28be0f",
+    "news-4cd4fcfaca3586ac",
+    "news-5cb7f4b700602756",
+    "news-62fba24924d74a53",
+    "news-baac0e2756518f31",
+    "news-4ad851e7f40dbec7",
+    "news-1dae5cab928c7193",
+    "news-9c579993684cda42",
+    "news-6892749e9322ae5d",
+    "news-31f356f00b609a74",
+    "news-8589033a36dfdf9a",
+    "news-2a848491193f1b64",
+    "news-c6f284c0859cfb3b"
   ],
   "recentItems": [
+    {
+      "id": "news-4cd4fcfaca3586ac",
+      "title": "Bangladesh is battling measles. It's a 'real warning' to other nations - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOLVdDQ0N6V1RSeHlVS2lLcmJqbjVyUlJ1ZFJFYWFlWFo0MUtWT3hmUW1MSzRxaXI5SGJza2N1dzdFUG1venFSTnpUSGlPUVpIUHRIZGV0TTBCVVc0Qk5valRHWlUwRjdDbVp6MUdRSmFiUm5MaTU0dC1mOHY0Si1kb1lqdUp2NXpDMmZaVTQzUWlMcTJUZ01JUFNUTWt4UTdqYlFlbU1R?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh is battling measles. It's a 'real warning' to other nations Reuters"
+    },
+    {
+      "id": "news-5cb7f4b700602756",
+      "title": "202,000 cases, 1,147 deaths: Bangladesh battles deadly measles outbreak amid warning to other nations - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNdWdTYTBFdjVGZExBM2QycUY2OFVuVVYwNEZaZG1qM2Jrc0xvSXFkUU9ReGo1azNQX2hpQVZGVloyYV9SemJaeTNaV2VudzJtUGxveTN5TVFRX0VKbjdRNlRYT256eFpuVDRsWUI4RFlwSW1KNHN1QUtEVWdNSlNQOW5UbXdFODhBT3ZhcFJwMU80cWU3YnExTGs5MEhxcFlRb0tNcEdaTHBlc0lDbVFIZXVzcW5SUUkyMDdVdi1WQVFNc0RzTGVzd3hOME1OTDZpWmQzZldmaHZoNmhuajBVaWY2dEtET1JUUEhuekVzVDNHT1pyRnY5VXpOTEQ4SEstNk8zVlhvUdIBjAJBVV95cUxOYUdFSS1Ub1A4dlhlM2E4bnJ3anBkNktVLUppZGhJV2VtbHhxSWJPZzN4NjZUcnpZRGwxSW5YN3NnOWdTeXBxR3R5WUVxekRfaU9DNHhSS1o4ZWJQckVIZmZ1V01XbHNrSVJpVWI5SnZXM2pEMXpCY2RaaGJRb2xSTUQtSTB0LXdSY0s2SEpjbFdNM2F2Q29ISnF6OTVSbU1tQzRVUWo4emUzdFItNkd0ZlhCNVhRLW1KX1pwYlJCdlV0bU9RYnhYTElWYlJuRS1FYTBPTGZ0Vnl6X1hVNGo0Rl9iZXJlZXVNY0dPOGw4THctQ1RxcmpVbF9qb3E3UWk0dWpSVFIxVTVwdkJv?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "202,000 cases, 1,147 deaths: Bangladesh battles deadly measles outbreak amid warning to other nations The Times of India"
+    },
+    {
+      "id": "news-62fba24924d74a53",
+      "title": "1,147 people died of measles in Bangladesh, most were children under five — Dawn - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQaElUMFJ4dlQ3eTQ0VmYteE5KZWQ0emNqWnd5dTdaN3FDTWw5dHNSUjdmU0h3UnVpTEZ2d2xyRWpEMm9XUWFoOE5jbUczdVlkNHo1YnJtaHROcEVVWDBJb1NySWxZY0ExV0w2Wm05bTdtVWdIR1hkT01vTGtsTnlERVYxaFJibWU5cmlsd3lOZXdVWkZYcFJ0ZTJXOEFRSm9KVHF3?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "1,147 people died of measles in Bangladesh, most were children under five — Dawn UA.NEWS"
+    },
+    {
+      "id": "news-baac0e2756518f31",
+      "title": "Measles outbreak killing hundreds in Bangladesh - The Lufkin Daily News",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQNG9qM1AzdWVVaER3bGREUzlwS29BMnpJanJ1cThIZVVtT2VINVowcGllNkN3ZzIxenRodV9zU0tYdkFnSEE2Q1haVloxdTBxWWJtX0dsWXlUdkRHVDlZaFVkNC1nc2NmVlZyVnV4dnFUckxCWVhydThON2dUSm5xUDJxNFZ0akRQWjZQa2NiZnREc0xONS1JMlpMLTBDSzdEOF81TEVGNDdKMkY1dlM2YlBMNllUVnJadGNCQmFpV1lTRmZVdld4RGJWVndYUWZEVm5pT3pIbW5qaGVjaWc?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Measles outbreak killing hundreds in Bangladesh The Lufkin Daily News"
+    },
+    {
+      "id": "news-1dae5cab928c7193",
+      "title": "INSIGHT-Bangladesh is battling measles. It's a 'real warning' to other nations - Devdiscourse",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOOVhfVWJTY1ZPemRQY0lNcURXSnlyUHRKQTJhU3Brd25SRmdtMGdHX3Q5OGVHajc3YzdFTUQ3aHdrTloxZnZPMDBheXBBUW92YXJXOUFDaGRlMVZNYTFrcWJhNmpFb3VTaUlRd1NIbzdkTEl1ZGJfc1c3QVNtRWhXTXFDNTNPc2UyT0VTUHoxVFNQSFRyVEdOSDdral8xZlNuMjNtVG42eDlCZWQ5YlpLa05mM3NfODdIekpDZnN4eXlGLVNmZzlYNi1WQ09heC1OcERr0gHTAUFVX3lxTE45WF9VYlNjVk96ZFBjSU1xRFdKeXJQdEpBMmFTcGt3blJGZ20wZ0dfdDk4ZUdqNzdjN0VNRDdod2tOWjFmdk8wMGF5cEFRb3Zhclc5QUNoZGUxVk1hMWtxYmE2akVvdVNpSVF3U0hvN2RMSXVkYl9zVzdBU21FaFdNcUM1M09zZTJPRVNQejFUU1BIVHJUR05IN2tqXzFmU24yM21UbjZ4OUJlZDliWktrTmYzc184N0h6SkNmc3h5eUYtU2ZnOVg2LVZDT2F4LU5wRGs?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "INSIGHT-Bangladesh is battling measles. It's a 'real warning' to other nations Devdiscourse"
+    },
+    {
+      "id": "news-31f356f00b609a74",
+      "title": "Bangladesh Measles Crisis: 1,100 Dead Amid Vaccination Gaps - https://www.businesstimes-bd.com/",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9MdTF5LXJhajdzNVhBRFZOS2tFS25Yek1UUm14bDV1YlZFTDVfZDlOUDFKOEY3clFaT0Q1aWhmV3pYOHVUWk91dERLbGJvU2cxR1NOb2RRbjJsTmc?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh Measles Crisis: 1,100 Dead Amid Vaccination Gaps https://www.businesstimes-bd.com/"
+    },
+    {
+      "id": "news-8589033a36dfdf9a",
+      "title": "Measles kills 1,147 in Bangladesh as vaccination gaps persist - Banglanews24",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5fdGlYQVNtNGk4TVJxZkdUeU10ck1KTDBGTTBPUnBWcDVuVWtHckE4LUlCcG9lekZXZzlBNUFUR2FPM2JnbzZqMng3T0Y1TmxMZ2Rpa3FOcUN1ZTloa1gtSFlFX0Y2c3Vq?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Measles kills 1,147 in Bangladesh as vaccination gaps persist Banglanews24"
+    },
+    {
+      "id": "news-c6f284c0859cfb3b",
+      "title": "Bangladesh’s battle to contain measles outbreak a ‘real warning’ to other nations, experts say - The Straits Times",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQRGtnZGotSTRKVjVSdnJJMk9uX0JoR1VCeFhwLUpYTG5fZVZrUGxKVENjNnNsUTBibVgtQXVYQ29SODduNW9WVHlFWExsa2oxQUNNTG01bTZKWE9yLVFXSnZEaXMweFd5eUdKVXMwTWFoUFpnMXI1cFNTd0o4RHhDNUxRLXlsdWVIdi1PcGtYZ1hiYzFrV3k1aFlNQlZmNENRcFNTdURQYVZCRC10blR2NQ?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh’s battle to contain measles outbreak a ‘real warning’ to other nations, experts say The Straits Times"
+    },
     {
       "id": "news-3a37d1093c28be0f",
       "title": "Measles outbreak: Death toll reaches 1,186 as five die in 24 hours - Dhaka Tribune",
@@ -371,70 +447,6 @@
       "date": "2026-10-10",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "8 More Children Die with Measles Symptoms in Bangladesh https://www.businesstimes-bd.com/"
-    },
-    {
-      "id": "news-796b3c87648b689a",
-      "title": "Measles outbreak kills more than 1,000 children in Bangladesh - Qatar Tribune",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPSDdwNHBER3Q5Uy1naE53dWFFRF82N3B6MFJiSEVmNXZuZmVfYS1oVnhYTEdpSFZCQTFkb1ZEaXZ5SzhyNDNzeVJLU0poVlBITnlmTHlBQk1oUDF2Q1UwMFJFeUt3NTdYY1Bkb3liamVXT1Z2ZFBMdzZ0UjVEOXNld0h2WE44Z0Nzcm1RbWNLUUdGQzk0M0k0QU5vU3haeGhXdU85Tl9QVFRPR0NNVmpyNNIBtgFBVV95cUxQaG40bDhlbUJEQ2RBajVaR3Q3V2F3b1dpeGpzdGtGWk1OMnRDOUNvM181T3hvVmVSWDNTNU1OeENrVnktbXQySjlORG1FOUlCcXZSWUJpNjFobFlES2RTS01oUzlNR2VTZEowRXdPUUxUWEdZNFhSbER6VXdmVDFnLVdSM21BSE1RdUJJUmlnWW5jZjZqczl1MWcxMEtKcVMzWjVVZjYwZ0daMTAza2VUWmR3YmxUQQ?oc=5",
-      "date": "2026-10-09",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "A measles outbreak in Bangladesh has killed more than 1,000 children."
-    },
-    {
-      "id": "news-204e91d869be7584",
-      "title": "Licensable video: Bangladesh grapples with deadliest measles outbreak in decades - Reuters Connect",
-      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxNWlBuTjdhenhyaHVIdzd1dzVHN1VYd1o2QjZXdWgtY1FoV2syYTRaTlFJTzBJT0hvc28taEV6dWdGRDNlQ3NjaWxWd2NvV1VzMkwxbm9nbk02d2pBS0gwbWoyTVVmMUdISm5aeWh6OEVoWmw2dkd2Q0hvNVNQZVEyMXp5VGZBclZDRlRCMk1tYjdFcGVFa2I0VDBjcERVZkVxNWVKZkZQR1Z4S0dxQmx0TFlfQ3d3cXI4UV9nWDV0X3V4cHpqYkRwTi1RWkJZN2R0WGdfUVhITEZia3NCaDFIdWRHdUFQVnRvZWhjZzVmTGE3ZzRj?oc=5",
-      "date": "2026-10-08",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh is facing its deadliest measles outbreak in decades, according to the report, though no specific cumulative death toll or confirmed case count is provided."
-    },
-    {
-      "id": "news-781738b76a4dc091",
-      "title": "Measles outbreak in Bangladesh born out of state negligence | The Daily Guardian - newspaper - Magzter",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPVDVycHJTTTZhWmptY3BtY2h6c3l4ZzBqV1dEODZFU2hFRUo2RWZiTEsxZGltZGROaU1SUXYzLXIybHYtWjk0Um1tUlAwYm5HSmRVMHVTd0VJdXoxVzBkV2dJd1ZqUVVTNzFNakJCakZPNXZIZWYwdzc4OXZ0MkJlVmJ2UXBYRzR6ZjJoOWxzR25LX3hVY0Fmdy1SdS1Od3pCaERFQTl1UTVMZWt5dFFFMXZfZmk1ci1ldzFJQw?oc=5",
-      "date": "2026-10-08",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Measles outbreak in Bangladesh born out of state negligence | The Daily Guardian - newspaper Magzter"
-    },
-    {
-      "id": "news-4b30e94f581e96f8",
-      "title": "Measles outbreak: Death toll reaches 1,144 as four die in 24 hours - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNV1FaMHF2d3dQN005RkVWU3dGMWhONGc4ZEllcXhTQklPYnRUdzBPU3V4eUFiVVpEVnlUYU41ZnVvcWF2UzR2NUFMZ2ZYS3dSeEtKQ2JpZjRkWTRHaTV0ZkhEWjZ0b0tpUVd5ZVoyaTNPelptcHRnVE12VWtBWmprT1F2Ni1nMHN6NUtOQ1NwNHJzT09xTjR0RV9waWxnRFNmcS1WZ0ZR0gGrAUFVX3lxTE1fOVhLcDBFclQ0RGQ3X1NDR29jZ0xOQ05ZZzdfRnprT2ZtMVVfS2dhZS1ta0NsRXAyTEZUWllmaGVYN0FlWXFDY1hlelJfS2EyMG81Tlk1NW5mWktKNXpUU2dYZW5IZ1pnVzcxejZZSGpabGtyYVh3Y2pmblI1QWZFdUdDNXJqR0Z4Y2w2cklQWVZ0Q210SlpPdWtOMVdUTkhFVlFQcDlENmFzRQ?oc=5",
-      "date": "2026-10-08",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Measles outbreak: Death toll reaches 1,144 as four die in 24 hours Dhaka Tribune"
-    },
-    {
-      "id": "news-f0c8e2e8e66ff324",
-      "title": "Bangladesh records 4 more suspected measles deaths as fatalities reach 1,144 - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5KaVFUVjdZeUZtWmxHUVlkbzFVRDQ1cXdTTEFJVzhTSTdGbzRZbmk5RDRuaWV5ZnVtZlowVGlVQ0ZfUFI3RzRaQUFZQnNYWE0?oc=5",
-      "date": "2026-10-08",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh records 4 more suspected measles deaths as fatalities reach 1,144 bdnews24.com"
-    },
-    {
-      "id": "news-427a31fc503d5f23",
-      "title": "Measles outbreak in Bangladesh born out of state negligence | The Business Guardian - newspaper - Magzter",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcERWTWZKQ2ZXMDlIQkhFVzV4U1ppbFU5OXo4U292bDAzLWxaNElBb013aTRqbzBZQXZxUHRvZFZEaWFxSUxBNzZYbjlaZkg3M2Z2aHQyVk5VZzd3R2podGxlT2NSZ0Q3d1VvaVVldGxuNGMtbWhXUkxBVktSSmswTmNpdkhUV2M4Q1RMWmdWNzRhdnh5WWZOMjRuODdUWnlqaXdjU2NpVGZmVVluVFJyZkZqLVVnWW1kb0tnNjVlYkQ?oc=5",
-      "date": "2026-10-08",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": ""
-    },
-    {
-      "id": "news-415539ce09c8d923",
-      "title": "Measles Outbreak In Bangladesh - Reuters Connect",
-      "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxOUGRWZEZpRGdVNjkzRWs5VnNCMExnYXE2WmdHU21WUEJaeEVjWGVMZ0w3dFBLb3ZnY2dObzEybEtuOFFXZzltcUVKV2JSMElqY0dMX0cwb1lRN3pJYXdJRnRseDlMT1NzcHhGX1NLeVJmVm1SZjVSSm5iaWdZQmNrUHh3T1lOU1dIWmlqMm95QXA5c1FxMXZOYkFzM3B3Y2tzYXRoNVV4UkRkbUFCZWZoSUl4LXlpZV9KWkdjcnc2UHV6TzlzdHlwdQ?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Measles Outbreak In Bangladesh Reuters Connect"
-    },
-    {
-      "id": "news-a6a525a6135734a1",
-      "title": "US reaffirms support for Bangladesh’s fight against measles outbreak - www.daily-sun.com",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOa2trc0NhNHdYZlB1SzJDdGR1SExOenNWSTNHMkFSNmtrU21BdjlKYXZuLXBUckR1Y3l2Uk0zS1V3VTdaOHVXOU1KWHgzZXVjT3paTEx3NDhKNUNJNlFmVm9wV2hXYkhUWU1GdDg0WERwQU5NaWJpZzhmVUFIV3doaDRVUzgwbmlsVEUzVmhVS2JuaXFmZDFDeEI4REVxaUNOR0pYRnZPcGtRNkktTkJ6bw?oc=5",
-      "date": "2026-10-07",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "US reaffirms support for Bangladesh’s fight against measles outbreak www.daily-sun.com"
     }
   ]
 }
