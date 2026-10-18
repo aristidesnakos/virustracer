@@ -1,6 +1,48 @@
 {
-  "lastExtracted": "2026-10-18T08:16:30.982Z",
+  "lastExtracted": "2026-10-18T20:11:52.528Z",
   "candidates": [
+    {
+      "id": "news-f5371d0960757947",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 7,
+      "deathsMentioned": null,
+      "context": "Kenya’s Ebola cases rise to 7 after 4 more test positive.",
+      "sourceTitle": "Kenya’s Ebola cases rise to 7 after 4 more test positive - Türkiye Today",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYzJtQXhnSjNzWm5ia0wwMVNXd1E0WUxiV1JWbUxCbVlJVVBIU3NqRjFXNS1NNUo5TFF3VDAxUkU3Y1RlS0g1ZV9kakpLWDAxV19MbzVNME1LaWJfak15S2VKNDNZYXIzNlhnZ0Q3QjRmZVBscGFZX29GNWx4Q0FfMm96R2hQeDlXMEdpNGdxcDRTN0RZRFNhNThFZkNCelE?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-18",
+      "extractedAt": "2026-10-18T20:11:03.413Z"
+    },
+    {
+      "id": "news-813b44bf84e1c7e7",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 7,
+      "deathsMentioned": null,
+      "context": "Kenya confirms four new Ebola cases, bringing total number to seven.",
+      "sourceTitle": "Kenya confirms four new Ebola cases, bringing total number to seven - Reuters",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUTZzMGJpaXBieHFQeHRDYkRPM1BGLUtyVWRUd1UxVDE1TF92ZDZHMXF6WjB0YmhLNlpuZkhhVTN4TGc5MVBCaS1SSmNzTnk1YXhhYTE4NWlmLXU0ejhDUTFtOG9ROTF5Qkl3LUw2bkRnT1p3VlJWbEdfRVZlSGF2dC1RRk9semdrMWtBTEZiUE1kSkFqV2M2R3ByWmZEVHRyOHZiU1FYTW1ZbEdBTWtJZzhhQ19RTmt6XzFaWDBLTE9tZHRrUW5Mb21WMDByaXJm?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-17",
+      "extractedAt": "2026-10-18T20:11:06.051Z"
+    },
+    {
+      "id": "who-597dbebd762d3efe",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 2,
+      "deathsMentioned": null,
+      "context": "Second Ebola patient identified in Kenya.",
+      "sourceTitle": "Second Ebola patient identified in Kenya - CIDRAP",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4aE5jUDZwT196U2xfUVotZkxmVG81SU10WmpHYkRYblhCZUpZdndUZUZQLVNhZlhqcW9zdFo2UEdsTHhneHFjcnA0VVZ1NDdXUERPRHVJOUtTUTRSeVE5ZmhDTjRHYmV4ZVNCY2o1WElBRUlVQ1F5akZR?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-10-15",
+      "extractedAt": "2026-10-18T20:11:31.855Z"
+    },
     {
       "id": "news-58ba511ba2b9d6e2",
       "country": "Kenya",

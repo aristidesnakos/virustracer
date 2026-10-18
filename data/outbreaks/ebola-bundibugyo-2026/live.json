@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-18T08:16:30.982Z",
+  "lastFetched": "2026-10-18T20:11:52.527Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -558,9 +558,50 @@
     "news-6930cc62185ff764",
     "news-d51329b290ab3c83",
     "news-548d30876995251c",
-    "who-6959f8118e643930"
+    "who-6959f8118e643930",
+    "news-8fa6ef3a8ca3a92e",
+    "news-118be821606e73ab",
+    "news-026e33da121df31d",
+    "news-a271deacbbffdd14",
+    "news-b2351410400ced08",
+    "news-e815115f9bda4099",
+    "news-93f2cab5478341f0",
+    "news-92584e26070c63b0",
+    "news-3a5bc3840e676d07"
   ],
   "recentItems": [
+    {
+      "id": "news-8fa6ef3a8ca3a92e",
+      "title": "Ebola outbreak spreads to eighth province in DR Congo, death toll tops 4,500 - Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxPVVpXOWtOWGREcDYwbGs5MHdQS21Lem9EMVpkYWcwckRMTmJNWHVGMjN4WG04UnU2ZUdkWTZMVGFUc2t6QkJwQjNZcW81YVlheFZIU1dfQnhfdVZNYl90SFVvWGk4Q1BOMVlFb1NXUmhxUUNwcmc0amI3NkltYlBZVjhtZVBWZFNxSV8wUnlIRDJ0ZFFoYi1JWkJ5R054ZlBLUWFkU2ZKd3BhaVd6dkFRQ2NPcHZ3dUkwSFQxVEh3T3NibGFBVEJGZGJVRkZuaUpRRTBNUDFsd3FHZkpSUWc?oc=5",
+      "date": "2026-10-18",
+      "source": "Google News — Ebola death toll",
+      "summary": "The Ebola outbreak in DR Congo has spread to an eighth province, with the cumulative death toll exceeding 4,500."
+    },
+    {
+      "id": "news-e815115f9bda4099",
+      "title": "Congo’s fast-moving Ebola outbreak spreads to eighth province - WPLG Local 10",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPUE12Ykt4UklQZzRrV1JnOUVSV2FhWHpTOG5raTVVdDh4S0dmMUdJb2U2WHZ3QUxrQnBIbksxUmN6T3cxQzRzbjAyQi1meVowSVRXa29qRE54U1lhU2hXcEVsaVVYdTJjSVpXLTlna1ZRNnRkeTdoU0tfbDczVDE3MEZrRzdmc1dxWVMwZnJhZDVRaGl0Rm1wakRDTnFRS1c3UmN1NUtB?oc=5",
+      "date": "2026-10-18",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Congo’s fast-moving Ebola outbreak spreads to eighth province WPLG Local 10"
+    },
+    {
+      "id": "news-93f2cab5478341f0",
+      "title": "Fast-moving Ebola outbreak spreads to another Congo province - Yahoo News UK",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPSDRyTjA5aE1jemJkQVR6MHRuMWtnNGczUVRHWGJITGZpbEloOFZHS1lsSEs0ODd3N09YWEZqc3o2SlR6MWJHX2tlSVA3WGdsSFhSVVlMNkNSOGY5VHVCXzlyREZLYnZTcXE4R2RyM2ZRS2U5VjJSbldsbjB0Yi1VTA?oc=5",
+      "date": "2026-10-18",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Fast-moving Ebola outbreak spreads to another Congo province Yahoo News UK"
+    },
+    {
+      "id": "news-92584e26070c63b0",
+      "title": "Ebola vaccine trials 'reason for hope' in DR Congo and beyond - Modern Ghana",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNU0lIaTlsZGRDLTg2TDNtUUstRVhZMHVveDNDQVNhbVhlNkdWTERIWWlmTWtub0wtY2RfYzJyb3g4TXVnaWFGeXZZZGoxRTg1X0o0NHFPY3VjTzBMVi15Uy1aNjVwWC1xcFFoU1F1eDJONmlhWFlWOHljelB1THZLdHZkM2xCNHJLZ243Rk16RV84cHRWS1VNVzRR0gGYAUFVX3lxTE5vNDhuUC1KMzRjMTJBQ3JWWFRRejVOWVEzMGM1d2FXNExTMU5LbUFWZXU5bVlFOTlXNnFmT1RVN2tSdVptNWc0SWVHSlBuRUZRNDlCMEFMMHFSaktWYmxCUUY5YU9YRlhLbjlFck9GYWdseWJJUnNtYXY1RkdsbVV1VFBmMDVPUW5jTWY1M3h3Q0pqdVVibzF2?oc=5",
+      "date": "2026-10-18",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola vaccine trials 'reason for hope' in DR Congo and beyond Modern Ghana"
+    },
     {
       "id": "news-f5371d0960757947",
       "title": "Kenya’s Ebola cases rise to 7 after 4 more test positive - Türkiye Today",
@@ -688,38 +729,6 @@
       "date": "2026-10-15",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "WHO urges vigilance after Kenya confirms second Ebola case UN News"
-    },
-    {
-      "id": "news-149b55cb15bf7abf",
-      "title": "Ebola vaccine induces T cell cross-reactivity against Bundibugyo virus in humans - LMU Klinikum",
-      "url": "https://news.google.com/rss/articles/CBMi_wFBVV95cUxQWDQxZTZpT1ZDcUlUNUhEQ0VPY2JoRjJXeFYxQ0IxTEpQTEZ6OTktOExkZmdxby1aNHNwLW82YXZSRWFNN2VKSDRYLTA2NHNsZmgzYXNVNGpsQnRjcl93QUtWVWJzWUx0TWxOcXhhZkZpZUNGUURMSWd0ckxsMjUwSnhoM3dLUWllc1ZHZl9pLUU4c3BNX3BKT3RqV1JDaDVfbWNZTmYwVVo1aWdycG1mVWU5REEzU21Va05rSW1FNHhhX3Jma3lLaHh3Qi1BN1Rlc0F4OENxU0Y5UDY0WkRUaDFhTkt5cEpuSmR1X1I0akxWaF9TZTBucG9SMkI3a1k?oc=5",
-      "date": "2026-10-15",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola vaccine induces T cell cross-reactivity against Bundibugyo virus in humans LMU Klinikum"
-    },
-    {
-      "id": "news-5749f261be96989f",
-      "title": "Ebola outbreak in DR Congo spreads to eighth province — TimesLIVE - UA.NEWS",
-      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOSXJKWndSc01FYUk5SjhoLV9Ma1VuU3VmLWZYdTVJeWw4a0VKQ0lzaHExYi1Fa3FOZHA2M3J2QlVIaEx3UGR6MTJjRDlNUDVOZDJnUk9ZZ1ZGSUZ1QmlJVjNGZlZvOUtIN0J1dW00cmJCT01ZRnk4OVZBVWtUcjJ1RjVwd0o4cFRZWDJyUFNwaEVhMGx5empj?oc=5",
-      "date": "2026-10-15",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola outbreak in DR Congo spreads to eighth province — TimesLIVE UA.NEWS"
-    },
-    {
-      "id": "news-8d3bd5d7703b30b0",
-      "title": "Congo Ebola outbreak spreads to province bordering Central African Republic - Sowetan",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUIzU2cxLVE1enp6dGpsd1Z5MzY0TkdibGo3U1dkNGtyM25OSGtIODg2bnNqcEUya1R2RHF1eF9GSk1aeFRtcGtxM1RGdm1OSEM4UzU1eE05ekpYc3I3QnRaSHpHVDQ0QXFwUnBia3l1WVFGa25vVTdCcXNiYjhqaXFYVFBOR0VNclJoaFJpSXFRX0RicGRaX0ZwNk54RDBFZ00xVmd2Uk1lMUNDTDJOSVQzcnN0bFQzWnk2eExuLUViWUE?oc=5",
-      "date": "2026-10-15",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo Ebola outbreak spreads to province bordering Central African Republic Sowetan"
-    },
-    {
-      "id": "news-1e6dc5efdb84c185",
-      "title": "Oxford University launches Ebola vaccine trial in Uganda - Cherwell",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5jX21OWlNEVlVWTUh5eW9aY1FGTWVUdTNPRDFNX2VvM0E2cTNhbU0zVTF3eW9heXphY3cxQ2RSVnJOMVpfaGZrS1RCZVBmNFNITjh0Wjk4ZmkwMW95SldtS280c3o4S01XUm9oaTFMWEtPdw?oc=5",
-      "date": "2026-10-15",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Oxford University launches Ebola vaccine trial in Uganda Cherwell"
     }
   ]
 }

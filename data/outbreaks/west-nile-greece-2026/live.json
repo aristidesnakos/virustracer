@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-18T08:19:13.526Z",
+  "lastFetched": "2026-10-18T20:14:48.101Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -104,7 +104,8 @@
     "news-85abe0941fe18a61",
     "news-69b46dff7535f2be",
     "news-adc8b8fcaa199cc9",
-    "news-bd8e401b7b6ad8c1"
+    "news-bd8e401b7b6ad8c1",
+    "news-e007f3af60b2549d"
   ],
   "recentItems": [
     {
@@ -244,6 +245,14 @@
       "summary": "West Nile virus: 290 cases and 24 deaths in Greece — Cyprus calls for calm Yahoo News Canada"
     },
     {
+      "id": "news-e007f3af60b2549d",
+      "title": "Mosquito spraying continues in Athens to combat West Nile virus - Reuters Connect",
+      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQS1JzTW9jZ21aR2NOeVNJb0VKSW9iWFdJbUF3Q1dHbF9hX3Fka2tuTS1wN1VnRmRhWXE4dFctRU5rZWxUY2lRZ1JkQXZhVFR5Q2Q4UDJlUGtwRzBnRjFEdzdjWEk0bXVtdHRGVXRTbmROYzg3VXRrc3IwRVpmMmExcFRqMjJjMEF4Tm9YczBXLTh5ZGFENmp5amMxbVBVRDM2YzZ3Vm14SGxXT3I4OTdIMVRBNmZvMHo3YjJmdmNES2NCTGtYRkZsRGJweGs2d3J5aUtUYnM3bkpJUFVnQkllZHBIWmE3Vno3VTJIOWZVU2pFZlpYUTZacnJnQ1QxZEZoblB5dmo0MVBCOXMxTllDSDNFU1dJOVV6RXl6WFpDSVlLSmNqOFFYZHJ5ckVTWmpaU2RNd0hEdE16TDF4bTdwNnZlTExFazMyVUh0eGI5N0h4Z1RCblFFWGNJVkVOV0sw?oc=5",
+      "date": "2026-09-01",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "Mosquito spraying continues in Athens to combat West Nile virus Reuters Connect"
+    },
+    {
       "id": "news-905317788bfc6766",
       "title": "Licensable picture: Mosquito control efforts continue in Athens amid rise in West Nile Virus cases - Reuters Connect",
       "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUEdxaGcwcTd2WmtLVUVLaFJWVXJQLUtuZHBxUFpVVm4wLXFSeGRKUDhYOGFqVl9TOGl5cjNMbmlZMGRvYUs5bGFRcG5LUDRsZ0Jad1JhU085TUFCRkgzMEtfVGduM2J5T01mOHJqMHFFRHdGd3Y3aXc1QTVWN3RBMDZwOElwYnB2MC1RV1FkeDl3SGFmZm9KWGp4NjdMaXJ1RDVxOVlVQjYyV0N4WE1UdE9Hb3liVkxac1dnMHhZeG5NOWxUYm1iUHhuZGdfbG9lMHdmRnAxelU2UnVQdzBEWms2UFZkazNWeFJHRWlNQTF0VFJKRGp1NHBHYjhldnppQzJLSnRB?oc=5",
@@ -258,14 +267,6 @@
       "date": "2026-08-31",
       "source": "Google News — West Nile virus Greece",
       "summary": "West Nile Virus Triggers Nighttime Spraying in Eastern Attica tovima.com"
-    },
-    {
-      "id": "news-88697cdc8e2f00a5",
-      "title": "Greece Steps Up West Nile Virus Spraying in Attica - tovima.com",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxQSWkzWlR1UWFaR1dtem5rb3dLanVkMEExT3VXUDFFb3lWYklTa0NvSW9nRlhJbEVra05PMHFBbGM2ZEVHUGwyVllpS0dGR1FOekxuZ1JYY2oyMjVfZF9QUEJQRWEtQi1TZWs5bEVfeG9ra3ZDLVl6UTFYUFRFUU5sbTc4Z3JRQWJsSkHSAY8BQVVfeXFMTVA1SHk5N0pZNFAybEMwSVZwS09xUXU0TzRsU3c3bjJnbW9XMzhGSzdyWUNxX0gweXJYaDI3eGNxYXlPUzc2cDVjd2k4VkM4bk1MZ19RYXdlSmsweUZ3NWd4SkhRMjYwRnpWaU5wOEpnTy1sYkMzaEZ3X0FvQW14d1ZDYW5DTW05TVFfblpyeEk?oc=5",
-      "date": "2026-08-28",
-      "source": "Google News — West Nile Attica",
-      "summary": "Greece Steps Up West Nile Virus Spraying in Attica tovima.com"
     }
   ]
 }
