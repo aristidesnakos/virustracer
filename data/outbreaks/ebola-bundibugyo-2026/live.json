@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-17T08:16:37.434Z",
+  "lastFetched": "2026-10-18T08:16:30.982Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -552,9 +552,47 @@
     "news-5bb7750dbdac053d",
     "news-98686ae3d0b02d14",
     "news-50ff13e37a74a63b",
-    "who-299b2f72046c62a4"
+    "who-299b2f72046c62a4",
+    "news-f5371d0960757947",
+    "news-813b44bf84e1c7e7",
+    "news-6930cc62185ff764",
+    "news-d51329b290ab3c83",
+    "news-548d30876995251c",
+    "who-6959f8118e643930"
   ],
   "recentItems": [
+    {
+      "id": "news-f5371d0960757947",
+      "title": "Kenya’s Ebola cases rise to 7 after 4 more test positive - Türkiye Today",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYzJtQXhnSjNzWm5ia0wwMVNXd1E0WUxiV1JWbUxCbVlJVVBIU3NqRjFXNS1NNUo5TFF3VDAxUkU3Y1RlS0g1ZV9kakpLWDAxV19MbzVNME1LaWJfak15S2VKNDNZYXIzNlhnZ0Q3QjRmZVBscGFZX29GNWx4Q0FfMm96R2hQeDlXMEdpNGdxcDRTN0RZRFNhNThFZkNCelE?oc=5",
+      "date": "2026-10-18",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya’s Ebola cases rise to 7 after 4 more test positive Türkiye Today"
+    },
+    {
+      "id": "news-813b44bf84e1c7e7",
+      "title": "Kenya confirms four new Ebola cases, bringing total number to seven - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUTZzMGJpaXBieHFQeHRDYkRPM1BGLUtyVWRUd1UxVDE1TF92ZDZHMXF6WjB0YmhLNlpuZkhhVTN4TGc5MVBCaS1SSmNzTnk1YXhhYTE4NWlmLXU0ejhDUTFtOG9ROTF5Qkl3LUw2bkRnT1p3VlJWbEdfRVZlSGF2dC1RRk9semdrMWtBTEZiUE1kSkFqV2M2R3ByWmZEVHRyOHZiU1FYTW1ZbEdBTWtJZzhhQ19RTmt6XzFaWDBLTE9tZHRrUW5Mb21WMDByaXJm?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya confirms four new Ebola cases, bringing total number to seven Reuters"
+    },
+    {
+      "id": "news-6930cc62185ff764",
+      "title": "FAQ: Ebola Prevention, Treatment and the Chances of a US Outbreak - Contagion Live",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPcmllT1o2OS1CZTRiSmtRWjFteC1rVjY3VzBKcWh2aG9oSDJ2MEJCQlFJMFFDYUt4OUdOQUxXcThVdklqajZvUi04UHR1LXZhNzFYSFpQT21tcFN4SWQ3OXQ1SlptekJNMjgxZkljbkVtRUg1a3ROUWVlRjNjM1RROW9yYkY4eVZwbXJYXzJTLXhyYmhOcFNHVXJfdHJpYTg?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "FAQ: Ebola Prevention, Treatment and the Chances of a US Outbreak Contagion Live"
+    },
+    {
+      "id": "news-d51329b290ab3c83",
+      "title": "Ebola Outbreak in DRC Tops 9235 Confirmed Cases, CDC Reports - Contagion Live",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPYXRqZmh5NUV2MEhWME9SWUNkTXYwamhMU2Q0dTN1eEFxQnd0T2RrRFVNY3RRS0xLQlV6anJxTHduU1VfVkdFUVI1THVMTk5uaENIUERBQTlQUld0VnU4ZnlqY3NVR3ZNZWdhTXY4Z3ZhN09CU19uQ3FBTjkwRUhxenJBYkFyNHFmRS05dU0waFpOVlNzNFU4SEJn?oc=5",
+      "date": "2026-10-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola Outbreak in DRC Tops 9235 Confirmed Cases, CDC Reports Contagion Live"
+    },
     {
       "id": "news-98686ae3d0b02d14",
       "title": "Ebola outbreak update through October 14 - Outbreak News Today",
@@ -682,38 +720,6 @@
       "date": "2026-10-15",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Oxford University launches Ebola vaccine trial in Uganda Cherwell"
-    },
-    {
-      "id": "news-33f719afef6d7eac",
-      "title": "DR Congo Ebola outbreak fastest-growing on record; deaths reach 4,410 - Qazinform",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUFOa1ZWRXRMRXZkdHdLQzMyZmNNV3ZOTFZwZ0NycThLT1ItbkhVdVZrencwQkRVbVRCdkNaM0pONm9OUW9RWFA5dWljTERka1JEM3FDdGRnRGpwSWhLWVZvbWpXSUNzYl9obFRaeGpsbWpOOUk5RHQtRnhSbGw3R1VraUFpTWRCYk9ZV3ZkWjNWNlM5S09iMGR3NE5FekpPamxV0gGjAUFVX3lxTFA0LVdONkNJVWFLRk10NWRqUEUzSFd4UDVaV1ZfOWlpY2FiUTRQRGkwaXJianN5b09nWE42N3FKNmZ2bW1INExLTmlvcGZyakVhMW1ZbHdnTXBxclU3M0puSTVGQ1VGd3FVQVJPeFZNTGZuSVJWS2g1NGMxYmswZUhyUEVBMXlwV3FpWjJEX29IVVpTOHpBN1hLbzNXTmZIdWh1LUU?oc=5",
-      "date": "2026-10-15",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "DR Congo Ebola outbreak fastest-growing on record; deaths reach 4,410 Qazinform"
-    },
-    {
-      "id": "who-8718d5fd738f3362",
-      "title": "Kenya confirms second Ebola case - a relative of the first victim - BBC",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE8taXhHUjlOcVJ2Q2ZkVXF2NUs3Rk9jRjZKTUlMZkJzZ1Vad293eFBfR3JMenhubnludFpaQ2FEcVhIa05XbEtvdzRuM19DeFhkRGpjUlduS0EwUDg?oc=5",
-      "date": "2026-10-14",
-      "source": "Google News — WHO DON",
-      "summary": "Kenya confirms second Ebola case - a relative of the first victim BBC"
-    },
-    {
-      "id": "who-8239458214d90f4d",
-      "title": "Ebola outbreak spreads across borders as death rate nears 50% - Newsweek",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQVnExbk1TSFk1MDJFaEdpYVhyek5CZ0dXZkxtSGVhTjFwaXMwVG1QUEZSOW5sVDBNQzJWbTdTTjg3S0Iyd1REemw0ZWd3cF90bEtZWFhZU1U1QVNITEFHZmlnWDlGcHc5LXBOR2w0a2JSb0NiT2stMVlNLWc0Y3FhRHl3Y29ES0ZPU09Nc05teVJvR2IxWHQtNEJqb3pYVTlxdVFUYkNPQWsyRGc?oc=5",
-      "date": "2026-10-14",
-      "source": "Google News — WHO DON",
-      "summary": "Ebola outbreak spreads across borders as death rate nears 50% Newsweek"
-    },
-    {
-      "id": "who-0951b8cd2f4431d3",
-      "title": "WHO alarmed that many Ebola deaths in DR Congo occur in communities - Africanews English",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxORlJCNkhreW9oYXVpcEVRX3Z2eHE3NExWWmpVMGdxNzJYelVrNl9sbjdkU0V2MnNrcXl5aEQ4cERrWV9jR2RGN1pHTTBCNXdzUGFCd25qOFU3dWhEZUJQMHFkZUc3U3laWnpoTFlQRlB1X1Z3RFZqd2pEVl95TVFkTHNoYlc2RDhZNFhoSko4em1oemo3S3ktQzBZdVN2dXdqN3FKNjllbjZ0UQ?oc=5",
-      "date": "2026-10-14",
-      "source": "Google News — WHO DON",
-      "summary": "The WHO expressed alarm that many Ebola deaths in the 2026 Bundibugyo outbreak in DR Congo are occurring in communities. No cumulative death toll or confirmed case count was provided in the article."
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-17T08:18:51.658Z",
+  "lastFetched": "2026-10-18T08:19:13.526Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -103,7 +103,8 @@
     "news-48a0d748e524c642",
     "news-85abe0941fe18a61",
     "news-69b46dff7535f2be",
-    "news-adc8b8fcaa199cc9"
+    "news-adc8b8fcaa199cc9",
+    "news-bd8e401b7b6ad8c1"
   ],
   "recentItems": [
     {
@@ -211,6 +212,14 @@
       "summary": "Greece Second in Europe for West Nile, Seven Dead in Skopje srpske.rs"
     },
     {
+      "id": "news-bd8e401b7b6ad8c1",
+      "title": "West Nile Virus Update in Greece and Cyprus - Atlas Global de Riesgo",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPb0tyZ1Q4Nlc3NmdmdnFMcERjcDBpSmxEbUd0RjdYT28yZnpSeUNoS0JBVE5BX3ZBTWR0VUpWZHlMSnM0cDl3ZzVVUEVpQWg3OGtLRlRWeFJWeXIzU25qUVZsV0hacTJBLWVEbmlXMTRYWFNjMkpGRFA2alotdlZveQ?oc=5",
+      "date": "2026-09-04",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "West Nile Virus Update in Greece and Cyprus Atlas Global de Riesgo"
+    },
+    {
       "id": "news-f4c24eb605ac4ac4",
       "title": "West Nile Virus Cases Confirmed in Affluent Athens Suburb - Greek City Times",
       "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ182VHJuUEZCblpqXzhMb1IzZkFDbmlTZnkxSGhMZjUxSGluZ01vLU83TEd4ajVBQVZXQjVXRnM2WFNRTEE2WFhsRENCaHZwVFVjdHBCZ2hkdXpuNWx6NWdEODhMSWJxaWFQUGtiUjZZVGxJOGRhTmtvc3k1WFdqc0VKRzdkanFBeTZlMHlzcFNfTDlsRGlwT005c1k?oc=5",
@@ -257,14 +266,6 @@
       "date": "2026-08-28",
       "source": "Google News — West Nile Attica",
       "summary": "Greece Steps Up West Nile Virus Spraying in Attica tovima.com"
-    },
-    {
-      "id": "news-af99a7ce4a77f395",
-      "title": "West Nile virus: 75 new cases in a week, 232 infections and 19 deaths in Greece - Euronews.com",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQYktKYWllQ2RjQ2RyX080UW92dGdEREFJSnFyOWo2SlRUR2tUV2RVYUMtNmhaamVnbkFrOTh0NmRPeUdHWGpLNjd6WXFnejd5OHdBUkx0aUI1aV80dlhkLXRGVGl3Z3ZSdS1kT25xWi1NTWxnZWZ1Q3JtaEtoWTd2ZXp3S21YNzF6UWFUbFNiOGh2YjJ5LWp5YUkyRm8ySXdwWHpuZmRSV1B1cHlPUVJDZXNsRQ?oc=5",
-      "date": "2026-08-27",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile virus: 75 new cases in a week, 232 infections and 19 deaths in Greece Euronews.com"
     }
   ]
 }
