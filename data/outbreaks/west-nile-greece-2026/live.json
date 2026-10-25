@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-18T20:14:48.101Z",
+  "lastFetched": "2026-10-25T20:18:04.445Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -105,9 +105,29 @@
     "news-69b46dff7535f2be",
     "news-adc8b8fcaa199cc9",
     "news-bd8e401b7b6ad8c1",
-    "news-e007f3af60b2549d"
+    "news-e007f3af60b2549d",
+    "news-8bea76c3b75fe321",
+    "news-fc8275d95f2706c0",
+    "news-aebc753d2d24871e",
+    "news-c2260636315178d7"
   ],
   "recentItems": [
+    {
+      "id": "news-8bea76c3b75fe321",
+      "title": "West Nile virus death toll in Greece rises to 51 as cases reach 453 - Türkiye Today",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdlNSRV9RWTExNk9SSzNBd2w4MVMyU2JwWVNOQno4RThlOHdmMnNEbTN0bTFUR29vM1Q5WFMyYTJWZVBZLVVEdHVLOUQteVo3UTZfV0NseDF3U0tSNkd4ZGJSRVVjYmg2b093X0E0ZkxvS1FXZ0dCNjF0Z21uU0cwU2tka0ltbGpTMUw5MGFvWnJtQ2tIdUNEamwtVHQycXFMUEhXbVZQaUI5TG9ZNnBkcE9KcUk?oc=5",
+      "date": "2026-10-24",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "West Nile virus death toll in Greece rises to 51 as cases reach 453 Türkiye Today"
+    },
+    {
+      "id": "news-fc8275d95f2706c0",
+      "title": "West Nile Virus in Greece: a maximum of 455 indigenous cases in 2026 - Atlas Global de Riesgo",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQNEtJeVBOM2lsOWlJVnBtYWtyc3llV044OVBkb01XdjNvZzltTDZfYWxrNjJKQWozOWVTOWE4OTIxM1YyVEZENVVFd0dFMHRVam93SEZPM0U4SGdwOFdCZUNReEFud2NIblFsTzVxb005WDJleGM2QVBwWGFMV0JhOEVSSXlUajRoQkZzV3pxMHlUNnlBNXZ0VTE4TGlOay1I?oc=5",
+      "date": "2026-10-18",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "A maximum of 455 indigenous cases of West Nile virus were reported in Greece in 2026, according to the Atlas Global de Riesgo. No cumulative death"
+    },
     {
       "id": "news-69b46dff7535f2be",
       "title": "Greece adds 443 autochthonous West Nile virus infections and 47 deaths - Atlas Global de Riesgo",
@@ -251,22 +271,6 @@
       "date": "2026-09-01",
       "source": "Google News — West Nile virus Greece",
       "summary": "Mosquito spraying continues in Athens to combat West Nile virus Reuters Connect"
-    },
-    {
-      "id": "news-905317788bfc6766",
-      "title": "Licensable picture: Mosquito control efforts continue in Athens amid rise in West Nile Virus cases - Reuters Connect",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxQUEdxaGcwcTd2WmtLVUVLaFJWVXJQLUtuZHBxUFpVVm4wLXFSeGRKUDhYOGFqVl9TOGl5cjNMbmlZMGRvYUs5bGFRcG5LUDRsZ0Jad1JhU085TUFCRkgzMEtfVGduM2J5T01mOHJqMHFFRHdGd3Y3aXc1QTVWN3RBMDZwOElwYnB2MC1RV1FkeDl3SGFmZm9KWGp4NjdMaXJ1RDVxOVlVQjYyV0N4WE1UdE9Hb3liVkxac1dnMHhZeG5NOWxUYm1iUHhuZGdfbG9lMHdmRnAxelU2UnVQdzBEWms2UFZkazNWeFJHRWlNQTF0VFJKRGp1NHBHYjhldnppQzJLSnRB?oc=5",
-      "date": "2026-09-01",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "Licensable picture: Mosquito control efforts continue in Athens amid rise in West Nile Virus cases Reuters Connect"
-    },
-    {
-      "id": "news-73056fdc09efe478",
-      "title": "West Nile Virus Triggers Nighttime Spraying in Eastern Attica - tovima.com",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQaHl5QmV1VS1sckhaYUcwaDJoRkRHeUhfZnpBbTdEREhoMzFfRHpya3N2SW1pY2Fib0xhel9lUERhT0xuc3llTlVoaXpGZnQ3Z0EwQTlfUFlxU2VMaFVQRzg2SWJRNHVtOWhTOExrU3BBTUF0dXZ0WnR5ZnB4Y0ZqVDF2M0F3NUY2UGs2OWk4aEt5Q3BkQlRqN9IBngFBVV95cUxOMmREYTdpYThUeVdPSGk2b3lvM2F0LU5qX1hEVzhaR1dKQTBDb01wVFdLdXEzenNhYy1UUDhGM2tTMGJoWmdXcV9XaVFkOEFuTDRvdzE4VUhLQTlvT1VCTS0wMF82SVlaaHRCMHlBUWhPYU1MZEY5SEtIaE5yVktEaUJIUXJnUm5tMlRDTlhlOU12N3kxc21CN1N3Vl9Udw?oc=5",
-      "date": "2026-08-31",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile Virus Triggers Nighttime Spraying in Eastern Attica tovima.com"
     }
   ]
 }

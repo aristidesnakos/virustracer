@@ -1,6 +1,20 @@
 {
-  "lastExtracted": "2026-10-18T20:11:52.528Z",
+  "lastExtracted": "2026-10-25T20:14:34.733Z",
   "candidates": [
+    {
+      "id": "news-2d14ab2cd9f4e6a8",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 8,
+      "deathsMentioned": null,
+      "context": "Ebola cases in Kenya rise to eight.",
+      "sourceTitle": "Ebola death toll in DR Congo reaches 4,561 as cases in Kenya rise to eight - Qazinform",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdWhIZmhIN0k1bUhMbW51YjZMZk5oQUItZFc1UDU0SkpJbUVCbFJsbDlDZ19iODdYTDktdW1GeHFrV0pCZzM1NENwUHFabkY2dVBYajJpMjlyMEhBNnUxT2FBRk85MWhMcmlLN1lfMnhwei1nelZpZmp3UzJwMjE3NDUzS1lJVDk1N2RRZFNOYzFfOFIyZHdmajliZHlxMmhEUVVWb1BSbHdTbWPSAasBQVVfeXFMTmFuVzRLVDZLZDltallKY05zUXBWUjlOLUdwY1pKUFNEMlMwNnpvUktkUGdLZ0ZuVWZlZzFrWXduWEFNc1VYZUpyaktLd0RocUY2akNCb0NjcUZsaFV6NHlkRHNwaWJmQW03bVZTUDM2UENpN2EwLVV1OWJnaEs0RVpQWVZzekxSb3l2Y0pfUnd4R0lFTDhJWGFYckVEU21hNHg4WFhoREFzSkY4?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-10-20",
+      "extractedAt": "2026-10-25T20:11:57.519Z"
+    },
     {
       "id": "news-f5371d0960757947",
       "country": "Kenya",
