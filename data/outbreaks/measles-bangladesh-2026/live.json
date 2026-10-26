@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-25T20:17:14.167Z",
+  "lastFetched": "2026-10-26T20:23:46.390Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -352,9 +352,53 @@
     "news-b85f9f2d794b8b75",
     "news-1652ebbd8dd4ad8e",
     "news-f68bb16c3907199c",
-    "news-c58b3b63eb4187d8"
+    "news-c58b3b63eb4187d8",
+    "news-88c63cb17c6aaa4a",
+    "news-dc8389b90ab8909c",
+    "news-5afbcdc0d54fb364",
+    "news-56192ec35746df23",
+    "news-30e39e8ec7b2c810",
+    "news-d832178a8330cc04",
+    "news-221279d49abc47ea",
+    "news-0d0d674346d050db",
+    "news-5653373ec0431017",
+    "news-b28ae2c9102f2777",
+    "news-669c213d04fe9f73",
+    "news-94948f7e7b79d3f6"
   ],
   "recentItems": [
+    {
+      "id": "news-88c63cb17c6aaa4a",
+      "title": "Bangladesh measles crisis 'warning sign' of other outbreaks: report - AFP.com",
+      "url": "https://news.google.com/rss/articles/CBMiS0FVX3lxTE52WlNTanE5RjRLS1ZiQmtGNE4tVFJiSnFYbXlRc2hOMnlmVTdFLWROQWVvRDFkNHk0YUxKdXI3S1AxbTBnMmxmbGhtVQ?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh measles crisis 'warning sign' of other outbreaks: report AFP.com"
+    },
+    {
+      "id": "news-0d0d674346d050db",
+      "title": "Bangladesh measles crisis 'warning sign' of other deadly outbreaks, experts warn - Khaleej Times",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOTk5FS1hnd3M0NW5oTHdrOEc5ZmNST2hCUlAwakdTRUpJZmlKcGFQcFZOUlI2WHFtdXpocTFQdF93dTB2ZEhHbjM5Sl8yMjB0SnpXeWZxRFNNbHFVUVItOXY5Zk8yLWJjTWFCQXRPRlJpLVQwRHN1alpjZzFRajhUMXBZejZydEdXSXpZc3BGancwR3RRVFkzMGhB0gGiAUFVX3lxTFBNVDcyR2hkMDB4Q2o3ejZxOUJkWEo3ckl2blVWZGtLUnE5b0txeGFjVWI1UDhrNHFpTWdCMTA4LTBRR3FPQUhnX1NPcTRuV1M0cEtIdVZJMndLUXdkZnFOSmFKcXp2TVE4bzM0bzZhZEFHY0l1N05JVHZZaHJkQU9xbzFtcW56X3lPOFozclNTZTVLWVhIRjdUMTdDYzNfNkppQQ?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh measles crisis 'warning sign' of other deadly outbreaks, experts warn Khaleej Times"
+    },
+    {
+      "id": "news-5653373ec0431017",
+      "title": "Six more die of measles symptoms across Bangladesh - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1RRnF1SnU0OVp6RG96TldKR2RmUEZNLUNxRWtKNXVtOEF1cUFROFFLZ1dKNWw0cjdtWVdnLTZiZEg0ZEdnM3k4bVJFSjFtQlU?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Six more people have died from measles symptoms across Bangladesh, according to bdnews24.com."
+    },
+    {
+      "id": "news-669c213d04fe9f73",
+      "title": "Bangladesh measles outbreak claims six more lives, death toll reaches 1,233 - IANS LIVE",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPNkwxajhlTURPMkdISzM2OURCUEpBc1VZTGljMEhGdFBCOGRfZUZQdGtZZHJxNjlRd2hYSEhtVU5pdEMzRjJmU0RRUzFBUUJPSDFMZnBBeXpWX3lsWmJ6TUs5dHBQOEE2VGh0WTBLYmcxOVlnRkRRY3Rpc296MUx3M1dOX2FSMWNjSVV2MXNUNGRiTkZZSHRCalhQclJKS2oxVGMybG5hVkRYWTBxVGc?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — measles vaccination Bangladesh",
+      "summary": "Bangladesh measles outbreak claims six more lives, death toll reaches 1,233 IANS LIVE"
+    },
     {
       "id": "news-1c3325b828ff4bd7",
       "title": "Bangladesh Reports Over 1,100 Measles Deaths Amid Worst Global Outbreak This Year - News On AIR",
@@ -404,6 +448,14 @@
       "summary": "Bangladesh has reported two additional deaths with measles symptoms, according to bdnews24.com; no cumulative death toll or case count was provided in the article."
     },
     {
+      "id": "news-dc8389b90ab8909c",
+      "title": "Bangladesh Sees 1,147 Deaths From Measles Over Weak Immunisation - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUWViTjZuR2lBWFJSX2JiNXY5SWZkTTJua3lLY0tWNXhjTDJ5bGI3cmFMWHN3anROUFVEWjQxM2ktSTVfeWxFLXI0SWNKeEJQakJaVnVlQVRVdFNac21MSTB1S1F4dW5ZOTlpYndobHJhLVZrZk5lYXRWZmxPMHhvUTlNdGtCOXRSdXRhRWRxT3kwVmlNTG50dzNkQU4yd1V3bUI0?oc=5",
+      "date": "2026-10-21",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh Sees 1,147 Deaths From Measles Over Weak Immunisation NDTV"
+    },
+    {
       "id": "news-bfc137a7a11a9399",
       "title": "Bangladesh measles outbreak crosses 215,000 suspected cases, 1,204 deaths - Maktoob",
       "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQkRlLUpCemMzcUhFVjFQM3VGTHdZQzNKaFJkTmN2U0p0aVhadDY3aUl3OXpSMTJ1NnA0em5yaDZlRzA4RjJkYjh2RXI1aEhOeWZFWkFZZXo0YmotbXVkRFZHdzBxTmNSNUhTVThLTGNKSGd0STU5TjBWeXhGUklfeUJrWkN4VnQ2anplVlU1LVJ5Y1M1X0xPZDhOaGtOSDYwRHI3SWh1cWoyUnIwSlh1b1A0VXRwcTI4UTFJTmRlMjMtWk1fN0ZtWldiMnk?oc=5",
@@ -418,6 +470,14 @@
       "date": "2026-10-21",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Opinion | Not Measles, Bangladesh Is Dealing With A Procession Of Child Deaths Born Of State Negligence News18"
+    },
+    {
+      "id": "news-b28ae2c9102f2777",
+      "title": "Bangladesh battle against measles a ‘real warning’ to other nations - The Japan Times",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNMHNTZEhOT0hXME8yQjcwb2JhTHJmVGoxeUExeVBoeXdadTFfNHgwOUswNVdqTG5sVmp1eUVvNUJ5SHR5MTFuS0w2TmxITXlKZHRqTXpncHdtZE9wOFpBUmRLdFU0VFBMd3lRMDZkdTdMTHFrdEtpQ2xMa0hXZWJreVZfSU1ydkZZTlNXcFFBZDZ1dHFDS2QwdEtrNk1FYmVxUG9r?oc=5",
+      "date": "2026-10-20",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh battle against measles a ‘real warning’ to other nations The Japan Times"
     },
     {
       "id": "news-4a2422798a701c0a",
@@ -466,54 +526,6 @@
       "date": "2026-10-19",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "As of the latest report, the measles outbreak in Bangladesh has claimed 1,196 lives, with seven additional deaths recorded."
-    },
-    {
-      "id": "news-e837413d9bb1607a",
-      "title": "Suspected measles cases kill 1,201 children as Bangladesh struggles to contain outbreak - İlke Haber Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWTBjN2lISm83cGtJY1JaWVlMVnR6MnRLOHE2NWFzZ2R5NUZyT2pJaUdfUnhkajV3Sy13MzRNSXlOREhudUFfT2cwS3dxQ29qcEtsekZGc1RRWTZEcTk4aUlCWFlQWWFWbkdjOUhmQkxVd2dnMW5BUGp2N3AwS0wwS2JVQnF5RndGTGVOa0h0YTlYTXAxWEVNOFBZYXdrN2ZhWEROZ3pENGNCNEFmWEtRYlhaNFhlY01Gd0xpQmN4dzJYTHM?oc=5",
-      "date": "2026-10-19",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Suspected measles cases have killed 1,201 children as Bangladesh struggles to contain the outbreak."
-    },
-    {
-      "id": "news-cfcaa9e41c919054",
-      "title": "Child deaths linked to measles cross 1,200 in Bangladesh as 5 more die - Anadolu Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQS2ZPTmRJZ2tBUktUUXVIR05UUXVpeW9Ia1B6a2Rnclp3aWVqN0M1NjJ1SFlBNWdtMUpQWFRTTTQ4bHM5Yk5aQUxDZXVCV1FlVW1hTjVBVnZSdzY2MG0xTHhNdUNQZDE5cVVfSXNyLTR5X3VGN1o4bGJOc0VnbUNaa3JiMWdleVpwd3ozQ202UE5sUFF3cGZYR3RYRUoyRHJpb0tFd0tmSjViNVZVYzVoV2stdm5Rdkk?oc=5",
-      "date": "2026-10-19",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Child deaths linked to measles cross 1,200 in Bangladesh as 5 more die Anadolu Ajansı"
-    },
-    {
-      "id": "news-e2397643a676baee",
-      "title": "Bangladesh Measles Crisis: Child Deaths Cross 1,200 - Arab Times Kuwait News",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxPNnQ2UHVCOWVkc1NiRnl2ZGY1aVpXMzZlcHhnamhkV2dHQ01vM2swLVJjWHh4aWotRXZUX0ZaNVNrMlpFUnhmMFpDbnFpQnA4SUlfMmJ3YTVtRGxVQVktU3RmUUdSU0p6RjA0dUk3eFF6d2JzOTVtdmxENGduZXJwM0hFTG4tMHkxUlkyZndjNXg?oc=5",
-      "date": "2026-10-19",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "More than 1,200 children have died in Bangladesh's measles outbreak, according to the article."
-    },
-    {
-      "id": "news-fb14cb74d80fed9f",
-      "title": "Measles: Combined death toll crosses 1,200 - United News of Bangladesh",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPQ2k0b2NMQVV1RzZSZ3RTSVVLS0M0ZnRaX2R1VjkyeWRvbWJRRFh6ZGM1LXdXTnhWeFUzTUdiT2U0RDRESk1hWkxObzRDTXQ4bmJMVzYzWUdIcmZKQXFzZE42dkVMd1MzMGo2a29oMTdYTHVsaFJqMlRLZzRMMU1FejU5Uk9YSFFjZlhTLVJwWQ?oc=5",
-      "date": "2026-10-19",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Measles: Combined death toll crosses 1,200 United News of Bangladesh"
-    },
-    {
-      "id": "news-5ab57e51cdf80ebb",
-      "title": "Measles-linked child deaths surpass 1,200 in Bangladesh - Operativ Məlumat Mərkəzi",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaTdvU1lnMTBfTXBIbUtEQVhncXp2LUFoNHdpeHJWZFhuQ29LRkR3REowdXpyZTVNOGpfNWx6QjExUTdrZEc1OWU5NUJjMy1SeXpmLVVOSGRvSTNpRFEzVHYwa1J1TzBVdlBMQ0I3SFU2MXREOU4zM3NqWi11cU8yTVZiN1ZQNmpUeUR6TDQ2QXFyeVNZ?oc=5",
-      "date": "2026-10-19",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Over 1,200 measles-linked child deaths have been reported in Bangladesh during the 2026 outbreak, according to Operativ Məlumat Mərkəzi. No as-of date or confirmed case count was provided."
-    },
-    {
-      "id": "news-7e5a8557f2eb7a89",
-      "title": "Bangladesh battles massive outbreaks of dengue and measles - Outbreak News Today",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOS0s0a1hmTEd3MWpDWjJtQ0xmbTNNU2VBczN4WkhXZk5nRTc1MzRPVV9LS0NTdHBXU0FpQUVnTmhQVkFiWEVyaEJsYXNUay1ZTWRTR3h3X0hwODhPTzQ1U1Q2cTNLWW1HelNUSjhaQWtOc0RPLThDUUtyNmEwcnZPOVhJQQ?oc=5",
-      "date": "2026-10-18",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh battles massive outbreaks of dengue and measles Outbreak News Today"
     }
   ]
 }

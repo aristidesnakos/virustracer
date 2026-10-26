@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-25T20:14:34.732Z",
+  "lastFetched": "2026-10-26T20:22:25.195Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -631,9 +631,71 @@
     "who-63a1f38d890ca033",
     "who-551163aafc5941d0",
     "who-829548d22f6c7e26",
-    "who-043b03ac00dcc223"
+    "who-043b03ac00dcc223",
+    "news-823f35ef04448973",
+    "news-4ae6172828de8c59",
+    "news-7e8572f6b7866012",
+    "news-5d9f820c0c391f4d",
+    "news-35a6c874637eeadb",
+    "news-fe20f820b69462cc",
+    "news-4fc9d9f6957df155",
+    "news-f8c856bb3811e5d2",
+    "news-fd9fa7bbbcb6ec01",
+    "news-f87f3bb83427ee45",
+    "news-b1172ca66bb60109",
+    "news-5cd5f2e7aa8faab4",
+    "who-b1172ca66bb60109",
+    "who-77e4e6799ed1d537"
   ],
   "recentItems": [
+    {
+      "id": "news-823f35ef04448973",
+      "title": "Nurse accused of spreading Ebola is murdered by angry mob in DR Congo - AOL.co.uk",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNM2JqaTRQbUlmTWJJQlQwTWRyaWQ2NmhRNWE3ZDNITml6bGNJRXZockxZZW8xZ0RndG4xSERGb3FnNDRIWkNFai1MNkdUaHFKbEQ1a1pOQU5nMTREQ2RLZ193eTJ3WFNZd01JX3ZpaldlaTM3RGRMYnoxOFI5NGdrVm9GakstZGM5RTdYUQ?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Ebola death toll",
+      "summary": "Nurse accused of spreading Ebola is murdered by angry mob in DR Congo AOL.co.uk"
+    },
+    {
+      "id": "news-fe20f820b69462cc",
+      "title": "Amid war and Ebola, Congo's sisters struggle to protect patients without adequate equipment - Global Sisters Report",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNSVo0R3VqN0RTbExlbFNZNTVVV0k3OEhuX240eDMwUVh1akpNRlBWWWJGMUpfN0JoN3NsMzJnc1Rwb19xb2g2cVUyYlZRQmgwRUwyaUFncmN1NkJLcHBHc0VWTVRPWHJmY3Fnd2hud19lSXJaelNqSm15LW1PcDd5Vmd4c3U2bnpfc0ZqNGZnaXFSQmhGbzFLaEtHd0FCcnZBWnBVdjFDZ0k4SUlmdGx2NXlIcWltc2hDU1F4cDdrZw?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Amid war and Ebola, Congo's sisters struggle to protect patients without adequate equipment Global Sisters Report"
+    },
+    {
+      "id": "news-4fc9d9f6957df155",
+      "title": "Ebola scientists to probe Nigeria case origin, Africa CDC says - WTVB",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPWmZDcDBSdmZJY2RGYzgtMnl1cXVZb0lMT3RhYTdVYWVaRDR2UEF6UUdpalI3S191MVU4VFB5MG93YmlZLWFvaUR0NWJxUDRtTGxuUmJVeEh5SU9Vck5ZVUhDZi1rMml3TjhUOU0xak9qTGQ5N0JGeHdNZDlscTlaRWRWTnhEb3BNZFp3SlpMWUYtaTZ2M3dR?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola scientists to probe Nigeria case origin, Africa CDC says WTVB"
+    },
+    {
+      "id": "news-f8c856bb3811e5d2",
+      "title": "Nigeria Tracks 53 Ebola Contacts As Health Authorities Intensify Outbreak Response - Forbes Africa",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVjBsMmQtODR0Z3ZJZEhrQUc1ZGtTSGpscExYSWRVb0hJQnpfSjBTaVB6LW1WUVBUbUJSVFZhWVRMMnpyY05FQlRMNVA2WFRXRzRqdkk5Qm41TGVhdXMyZVJ0M0RieXV3U2xMYktqWUhPQXRKOHUzdHp6NHlfVTZMc3RmdTl0dlItX2wweU1HQ0FUcmROX2dKenc3N3JMcTVBVlhmaE9KY092WlRPRzJaekRYYnVfRWVPdHZBeWUyUTQ4c2Rkc3owMllDR3ZmVHZWaXhfZGNR?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Nigeria Tracks 53 Ebola Contacts As Health Authorities Intensify Outbreak Response Forbes Africa"
+    },
+    {
+      "id": "news-fd9fa7bbbcb6ec01",
+      "title": "Ebola outbreak: Africa, Europe push for faster Bundibugyo vaccine trials - Realnews Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORUdvdllzUDR1a1V0U3dGRXB1WGlHNk5mT05WOXRuUmQ1SmV4YlNlNkEyeGFpei1ZdlVEZEROYVBtRXVFQ1B5bGNzRVRBaFN4TWNGbm51eUdnVHhzMlBSVEp5dy1DazMzZ1RjWTgzYWN4TG8xc2lpTU51NXR1eXNPVXZzVXlSY0pEUmRscDU3RXFhTHN3WTQwQ2FHNUhlUU9jdVE?oc=5",
+      "date": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola outbreak: Africa, Europe push for faster Bundibugyo vaccine trials Realnews Magazine"
+    },
+    {
+      "id": "news-f87f3bb83427ee45",
+      "title": "DR Congo begins pivotal Ebola vaccine trial as outbreak kills nearly 4,700 - South China Morning Post",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQUw0NHZhamRaWTdvaVhpb256eGZMdnRkT2lCamlzTzRWMi1odmxjWl9sWDA5Q0ZrZk10b3VBRUcwMjNNdUhIZm10cnhSQWQyaW1MOFJoTjlGam5OU3o4OXBPZkZRWjVoYWtsUlMtU0kyUTdfVV9XdzRxdXk0RXRVbEQ2SUhVYjczNGFpd3VLdl9Penlid1dwUHpQU2E2dmFsUUpJZnVYRldGODNtTmsyVDd4Z9IBswFBVV95cUxQRVZfMHFNNFpoMk1Qd3hKcGtaeVc4akZiTjRFUEJTNzlad0FuMzVKbDNKSkJqN3RiOWNKVUZYVnRGVzl3aWJNeTZNWExIRWZFaUtjMlVNU1pEeW9vR2lxRXZpY1lSNXp4YW5hbWtTa1hkUTZQUzlLSGlYVk8zaV94dGh0ci1PenNWa3gwVmxhRGhJdGlDUXNidVBFbnh1UkUwMFJ5NkR5Z0gtSG5SZVVRTDd6WQ?oc=5",
+      "date": "2026-10-25",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "DR Congo begins pivotal Ebola vaccine trial as outbreak kills nearly 4,700 South China Morning Post"
+    },
     {
       "id": "news-f21dd502cbc65935",
       "title": "Uganda tightens Ebola border controls and requires returnees from Congo to pay for quarantine - News4JAX",
@@ -657,6 +719,14 @@
       "date": "2026-10-25",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Ebola Update: DRC Outbreak Reaches 9735 Cases, Second Largest on Record Contagion Live"
+    },
+    {
+      "id": "news-b1172ca66bb60109",
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria - World Health Organization (WHO)",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFBlUm1hZ2VRNHNaODBRZU5qWmNDaDJZWWx0TVNQelN4M20zTldsd0VGc2NVWDFZaTQ2OG1RQXQzZ3ZhYlpaRGlxeU9PUUlpQ2VwTm8xZWtjOFFXQ1d4Z3A1V2dyWXpTMnljaTVkeVBuR3BGMmxBTHBDZzZn?oc=5",
+      "date": "2026-10-24",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria World Health Organization (WHO)"
     },
     {
       "id": "news-1eab60df3f2dc248",
@@ -737,62 +807,6 @@
       "date": "2026-10-23",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Multi-Country Ebola Bundibugyo Outbreak Update n°23 ReliefWeb"
-    },
-    {
-      "id": "news-2224216a05395548",
-      "title": "WHO warns Africa faces ‘complex’ Ebola outbreak as virus reaches Nigeria - South China Morning Post",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxNNkszeEl0LVYxT3dqOUUyc2pra1ZsOTZOdDBfOHlEV21kWDZfMFZYT2dqTVZTUTlROG1CajJHOUZLMExwVWFJUG0zajRreDktb0lpb1J5TVZEYkhkVWhWTG9vcWNVT1RyM0k2VWUtZ0o0c0UtdHZKcFZPMHdPaG5mUFVyTjVoQndXM0lTTlZaZkk3eDJsWGdUUW9KZFBEak0tb3p4dEVmcWtya3puNERpb1RyQzZrRC1oczRTZ3h6RdIBvwFBVV95cUxQTnlQN2xocjlhdXRSTUlrRl85ODJIT3p4dFItaHU5ZmxRS3dMQWpZYXVoU1l1NUdySjhJd2phNFpZcm0tMmxzRzNTLWZyMWFsWHFhVGNqRElJYW0ycUJPeU9FQjh3b3dyX2tMZkVXMWRJaEpxRUVKV2x5aWxsSzJIME9MY1VTOTBDVUpVRFhSTkwyVWw3dmVEekw3RTJfNUotM3pVTzlUTHJabHJJMmF5QXpkaWJwOVNZVmNtcXNEQQ?oc=5",
-      "date": "2026-10-23",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "As of the reported date, the 2026 Bundibugyo Ebola outbreak has spread to Nigeria, prompting a WHO warning of a “complex” outbreak across DR Congo and Uganda, though the article does not provide a cumulative death toll or confirmed case count."
-    },
-    {
-      "id": "news-faa902cb05d4d923",
-      "title": "What to know about Ebola outbreak that has spread from Congo to multiple African countries - AP News",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxONGo2ZUwtTmpadFFZSXh2NmlOVzZLVk50RkNQZVV3emhpMXFlc2M0Y2Z4OGlIeG9aRVVLNTQ3QU92TTQzZk5rczZuT2xnNmsyUjZmUlB3MW5DX0VTTFdYdkEzS0NxQUN3UGkxV215WkVGMVM3SF9zZl9WZnBLdkh6bWNVVHR4WU0tYThZZHBwUHRBbl9QQU05QQ?oc=5",
-      "date": "2026-10-22",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "What to know about Ebola outbreak that has spread from Congo to multiple African countries AP News"
-    },
-    {
-      "id": "news-065e7c4e4b2b12fc",
-      "title": "First participant vaccinated in pivotal Phase 2/3 Bundibugyo vaccine trial in DRC - CEPI",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOMGZpN3MyZm5fQWtGYjV0Znc3MlhGdC1EckNKVlVvbmVPYVB0SXM2bWZodEdFR0dCVTRTWF9UUVlpUTNHSHBReG5NU1JrSlNNLTYtTXVYeDR2cVdVVFl2MXZiTWxlampmSl8tYUFxakhaS01CVXRDTUU1X1dUUXBIMGEwSWo3XzRZaFBWX0NFWHdMaW56YXc?oc=5",
-      "date": "2026-10-22",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "First participant vaccinated in pivotal Phase 2/3 Bundibugyo vaccine trial in DRC CEPI"
-    },
-    {
-      "id": "news-ff5dfcb01ebbceb0",
-      "title": "DR Congo: Ebola responders under pressure as outbreak expands - UN News",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5XU0ZtbkZyVkNBOG5qcFhvTTgydEUyeDJ1ZWpNTVNqQkFnOS1Ed3MwUlF2UzRyT0tjNDhCNHA4RDU4R01acGhFQmN5X3N5SEx2Zm9ucF9uUQ?oc=5",
-      "date": "2026-10-22",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "DR Congo: Ebola responders under pressure as outbreak expands UN News"
-    },
-    {
-      "id": "news-5f2b200676410582",
-      "title": "Nigeria Ebola case matches DR Congo strain - Medical Xpress",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9ab185WjdIZFRaVElxZnNidVlsSWlOOVVjN0pLRjRNY3REZlU0Zm9icUhTZHFMbmJxVWJISzc1ZGJiZkZ1MDU2M25XT0xNMXBLWUlXWVQ1UDk4UWplVGN5M2ZRYVdSR0ItUkFORUZCS2FLYU83OTZ2NmN5SQ?oc=5",
-      "date": "2026-10-22",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Nigeria Ebola case matches DR Congo strain Medical Xpress"
-    },
-    {
-      "id": "news-535cabe532b5ec3a",
-      "title": "Ebola death toll mounts as outbreak spreads further across DR Congo - www.christiantoday.com",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPYWVXbmNaNG5zaFpYcFZ3aXlGRzE0QmVpWGY2NDloT1JxeWYwdDhFLXp4ZF9OeWV0dnhsNmpOc0hBME8zcGVPbGlWZ24xUUdCOWQxaHpqV2ZuemJGSFhhWjI1dDdNdnBlOE1lTzJxWlBRZkNOejBpbHE4dkFmRFo1VXd0ZFIzSnNWZ3ZOUHlvZ0MxdGhlekZfZUVsaXExakpYUVlfMDlB?oc=5",
-      "date": "2026-10-21",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola death toll mounts as outbreak spreads further across DR Congo www.christiantoday.com"
-    },
-    {
-      "id": "news-8256ac21db21d1d4",
-      "title": "As Ebola spreads in Congo, grieving families face a growing mental health toll - Orlando Sentinel",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBxck03eE8xa1lURFVCN2k2Yi1XN2haQVMxeC1VQnBzNU9oZ0VudDJTZlg2NnBzeGY5anp0OXJ1NEhxakJRdVd5WFFLc0F2ejZTYzlzQkRWMXlyNWpSMFkxdmxmUXl3SDRaNDR1M3lhVHRFZE03Q2c?oc=5",
-      "date": "2026-10-21",
-      "source": "Google News — Ebola death toll",
-      "summary": "As Ebola spreads in Congo, grieving families face a growing mental health toll Orlando Sentinel"
     }
   ]
 }
