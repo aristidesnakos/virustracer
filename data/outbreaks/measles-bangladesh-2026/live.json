@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-26T20:23:46.390Z",
+  "lastFetched": "2026-10-27T08:33:15.497Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -364,9 +364,26 @@
     "news-5653373ec0431017",
     "news-b28ae2c9102f2777",
     "news-669c213d04fe9f73",
-    "news-94948f7e7b79d3f6"
+    "news-94948f7e7b79d3f6",
+    "news-6885acdea28431e3",
+    "news-7704bf12dbe06cf0",
+    "news-d6b05354992fad7b",
+    "news-a6f602139eb4e359",
+    "news-9c9c403907be2e52",
+    "news-34db8709e7e25f15",
+    "news-ec1cebc83df86310",
+    "news-d18865437b80eb39",
+    "news-4ae75e50406ec848"
   ],
   "recentItems": [
+    {
+      "id": "news-d18865437b80eb39",
+      "title": "Measles vaccine not working effectively - Prothom Alo English",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lblAtTnd5eGphWlFZaXdldnp4Y29YdDNsNmJ2WUJPdkFlU3FSTndXeWxJTjF3dWFLb1N6bWh6VVcyMjlrUHJYUloxX2VkYTFzUElVdVNsOUlYRTTSAWhBVV95cUxOOUVWUVAzUXA3T0VsOHNLN05XWXp1M0dpYTVmQ1dBeE9rTmJNVzZEZFRpa21XM25sZ05sVjN4bU85VlBxdGVuUkNQMDRrcUYxcU9ZT2FOUmlFRURNN3pkT18waUQ2cnBHNQ?oc=5",
+      "date": "2026-10-27",
+      "source": "Google News — measles vaccination Bangladesh",
+      "summary": "As of February 2023, Bangladesh reported over 2,200 confirmed measles cases and 11 deaths. The article states that the measles vaccine is not working effectively, with health officials attributing the outbreak to a combination of missed vaccinations during the pandemic and waning immunity."
+    },
     {
       "id": "news-88c63cb17c6aaa4a",
       "title": "Bangladesh measles crisis 'warning sign' of other outbreaks: report - AFP.com",
@@ -512,20 +529,12 @@
       "summary": "Three more deaths with measles symptoms have been reported in Bangladesh, according to the latest update from bdnews24.com."
     },
     {
-      "id": "news-e171a3bf3d97c297",
-      "title": "Measles outbreak in Bangladesh is a ‘real warning’ to other countries, experts say - NBC News",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTVNyUU54SFdWUUpkbGxTRjRsQ0JNcU5RVXFNU3BkSDhuX2dtcy1QTGlQcFZWSDBfYXk0VHp6VlgzQnRJdmVYckdvMVJHb3VhNDVmYTJQOE5rR05YU3h3R0wwbFVha2prUFQwWDRWaktBaHdfcnRid0h3QUx1allLWjQ4bzlRdklxV1l2bmdqMXFUQlZyOFJtV1E2MDNaNEJfM3c?oc=5",
+      "id": "news-34db8709e7e25f15",
+      "title": "Disease frontlines: Bangladesh is battling measles. It’s a “real warning” to other nations - Sight Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQU3JpMi13VU5FVm1XWEkyX1VMZl9BUlYta2lwekpFVEVWbThObmtvUDhONUMycm9fMkRUUXYwczJVeHhFYzdxT0RBbEs4SDE1LVNlb0duUDU4aXAzR2NxTk5FaUs1SEhPUnc1ZTE0WW9zMGVLdjg2NmY4a3pxNERDendPMER1X1dVald1VjdMMHM0a2d3aGhYdVZCei1tYUJ2UGczQlhUNWNpVFZXcnRfUkwyZHFOS2dJODJ4YlIyMW81dw?oc=5",
       "date": "2026-10-19",
       "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Measles outbreak in Bangladesh is a ‘real warning’ to other countries, experts say NBC News"
-    },
-    {
-      "id": "news-befe3d6bf15239fc",
-      "title": "Measles Outbreak In Bangladesh Claims Seven More Lives, Death Count Rises To 1,196 - NDTV",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUHJHcEpYcndwZmRpT1F5T2hmVGJhd2I5UG40bVhQRWF5VFU1Y0JhNDRwckcwemxjOFBCU05EaVd4QkVxcE5DSTRCMmp4a1g1aldlcGZiX0xRc25OY1FvdUFSMGNIZHdTaS1ldXRydU9BcFFrRndkT0x4bTRHeEk5dmpRZ3l0ajE4ZlRZbmhoLTZQb2NJV2huQ2RHcnYzdW4yYTFmMkp2ZnpleFJlZ1JjcjM3UHNwQllNeUE?oc=5",
-      "date": "2026-10-19",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "As of the latest report, the measles outbreak in Bangladesh has claimed 1,196 lives, with seven additional deaths recorded."
+      "summary": "As of January 18, 2026, the outbreak has caused at least 47 deaths and over 4,700 confirmed cases, prompting the World Health Organization to call it a \"real warning\" to other nations about the risks of declining vaccination coverage."
     }
   ]
 }

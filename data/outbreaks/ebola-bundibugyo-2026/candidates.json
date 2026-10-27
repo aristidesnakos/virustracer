@@ -1,6 +1,34 @@
 {
-  "lastExtracted": "2026-10-26T20:22:25.195Z",
+  "lastExtracted": "2026-10-27T08:32:47.421Z",
   "candidates": [
+    {
+      "id": "news-057991d8873cd61f",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 9,
+      "deathsMentioned": null,
+      "context": "WHO reports nine linked Bundibugyo Ebola cases in Kenya.",
+      "sourceTitle": "WHO reports nine linked Bundibugyo Ebola cases in Kenya; no wider spread seen - https://streamlinefeed.co.ke/",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYXYtR3dqTko2eU1yMklHcGFJVFNkSWd0WVBrWmV3cktDakE1NFZfal9KRnUxUVQ2aW1GM2hvNUhCc2tJY2tJRU9oNFU3Umg3U1FCSHN3RlVUMTZSZ2RmQm5RUzJHRk9pR0lZZ0QtSDRrUzJ4bkRlSXhRUS1RQlh4ZnZTMFdfdkNQMGEzUTJyTElVdVRRbHpEZW5LdzhTRnJkLTR2b25YanlpZlgtQ09qQkdOVQ?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-26",
+      "extractedAt": "2026-10-27T08:31:00.098Z"
+    },
+    {
+      "id": "news-4d52b74ab3b4a533",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 9,
+      "deathsMentioned": 2,
+      "context": "Kenya recorded a second Ebola death as confirmed cases rose to nine.",
+      "sourceTitle": "𝐊𝐞𝐧𝐲𝐚 𝐫𝐞𝐜𝐨𝐫𝐝𝐬 𝐬𝐞𝐜𝐨𝐧𝐝 𝐄𝐛𝐨𝐥𝐚 𝐝𝐞𝐚𝐭𝐡 𝐚𝐬 𝐜𝐨𝐧𝐟𝐢𝐫𝐦𝐞𝐝 𝐜𝐚𝐬𝐞𝐬 𝐫𝐢𝐬𝐞 𝐭𝐨 𝐧𝐢𝐧𝐞 Kenya has recorded a second death from Ebola (Bundibugyo virus disease), following the death of a 65-year-old woman who was receiving treatment after contrac - Facebook",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi9gdBVV95cUxOU0RBdWh1V0VjSFZDakZxcy1WdUNrS29waGZnZ21aME1yZE0td3pXOWlJMlpYNDQ4RUVEbk9lQWJhYXJRQ2VFUnhiTUJKTjlFR1k4WTRDQzhwcDY2aXhicmhqc2tTVUp0N1ZYQVd1Znd5VjZRWWFvb3hQbkNzYnR0TW56SjkyWFZMLUhELXk4bEJuOERtVkV0cVlPdG5BSXA2b3hidTJBclFPR2JUdHNLOFNNWVJySkhzVkR1ZEpySHlGSTJMVEJOdEtyaWhCS1ZQcmdwUE44MEI0Znc1VzlYbFdzdTdQWnF1bzZIbTR3M1g4cEk3OW95a1JRcDU4MzNvNm5kUlZzSEJiVXZxTWk3REI4RFJOSUlmSkNsOEJYbEliZFlfTEpNMTFvUnBXZFJTVEtoSDFwM2NVVUgtRW9mRnRZRnpZLUFSZ3N4Qnk0QTJsSzhScW9VRm1UTDF2QmxvUkR3UEdvWFNHWHV1V3BWSnJFQVhWNmFzUVBJejNmWTVBSzl6ME9oVzRrWXAtTklqNXpCTmgzZUFMUHo1eGhPUG0tRmFFa1RPeVltV0NYaFVBNmtGS2g1a3BFdEM2WEdQbVJQbEUyQVRZYVVmVUUwN0xBVVhuVGdCYlpLR29IRU83NnJ3Tk9KakphRDV2YXg2TnZLOXVWYmw2RnFMenctRS1DN1FLemZlOG1ubmZQdUktS1h6QmotQm9ZWXdoNzM3alYtNUttbGYtZnhtY0gzY0lybWNOdzFLQ25qalpYZG9NbTBqQzBvVkpYbjVkS3JIaTFVdEtJaWI1NlZVbjdtY1JNclBSRlZwZ2pxb0NadXBBUl9oXzZablhidDVHbDZVUG1ZNVZJRmVkRjNrZFRZdFBJcEU3ZmUxZEpyaG13QmhPSG0xXzlfOXJIQXV4SDNYS0pjRUczTjZJaVUzclVVVmVheU5sZmdBeDNoUTZMTjU3dnlndi1wZmQtS0dHZFkxYlc5TkdwTDZEdWhzdXN3QlNlTEZZOWtod3ptMTd3andwbGJmN3Q5cTB3SXpQLV9kVzE1d1pQaGhvNzZUMVFOSWJGdWJHREtuWlJMRDNkclN6RGNLbW5lNEVESzZ0eVdhVTRGc0p1YjFZRXc0eW8yY0x4ZGRDVkRpQzctLUlGV2FVcy1VMm1BcndtLU05SnRZaEhQR3RBUDRNUWU4QmF6ZTh2dHQxNDkzZ1BRTlY3d0ctMWd1UUh4MVFoX0FnN21TOURManphTzI5NUVQcHZzSHJmZzBDNzJwNDJHSlE1TlFaMFdwemJrMm1CVFVvTnAzckVyNVVEeTFJZDlZUXFHenZNZXhRdzg3VUlldkViZVctODAyWXc?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-24",
+      "extractedAt": "2026-10-27T08:31:45.987Z"
+    },
     {
       "id": "news-2d14ab2cd9f4e6a8",
       "country": "Kenya",

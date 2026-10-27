@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-10-26T20:24:57.292Z",
+  "lastRun": "2026-10-27T08:33:45.826Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -2215,8 +2215,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 3,
-      "lastAttempt": "2026-10-26T20:24:57.292Z",
+      "attempts": 4,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
       "title": "EODY weekly report",
       "publishedAt": null,
       "source": "Curated (src/data/outbreaks/west-nile-greece-2026.ts)",
@@ -2358,8 +2358,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-26T20:24:57.292Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-10-22: 453 confirmed, 51 deaths",
       "publishedAt": "2026-10-22",
       "source": "EODY weekly West Nile virus report",
@@ -3017,6 +3017,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi6AFBVV95cUxQWkU3dlZZVmNGOWN4ak1nN2JLS3hpN0cxVzRSUkpodHlSS1lLdldmQjlIaXc1b2lObG01X2g1eGppX2VPYmdicmhKTkdoYTk2OXNJXzl4OVBQaGNTUWZ5M1NrekRIaTFjak9qbkNVa2M1ZXlrbUFXc2Y3dW1oRVhsWkgzWVN2LUdJUE1FbHBPcmo0TzJmM1VlYVFGNi1IZ0hQN0ZydVd2MnBwaXBPU3lzb0xlelcyZzhQWTd2M2g1al8wekhZSFZVazlUdXE5WGJKOE9sTW9fRkJxRll6R3NXZ1FjRjJZb0xr?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Bundibugyo Ebola Cases Near 10,000 as Congo Starts First Vaccine Trial and U.S. Adds a Travel Attestation - Nature World News",
+      "publishedAt": "2026-10-27",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcl9jTjRYNnJYX0FIdVljMks0ZjJvZGxjUFVaV2owdGUwWmFuZDJIRllMaEM3MEUyOW1ER2lpcUlScThiX2VYbU8wWUU5OXU0NzZOV1dDd0pNVHAtR2xyWDJfX2llS3dERm1NSkx0c3JOaG9ud05XbU9WOFk3c2JrLU5LM3FxNU8wbGtzSUtZdlFWVTdDUy05M2p4MzNfREdMdURlTnBxc0QtTUxFbmR6cUF5X1prSlZZeXFMOHZiZjVqS2FLZkxXWkZ3cmFvd1A4NjREVjRkb1J1X2RPaldsNjJQVHVvbDlCQWc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3572,6 +3585,19 @@
       "title": "Bangladesh Measles Update: 3 Child Deaths, Total Toll Reaches 1,099 - businesstimes-bd.com",
       "publishedAt": "2026-09-28",
       "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5lblAtTnd5eGphWlFZaXdldnp4Y29YdDNsNmJ2WUJPdkFlU3FSTndXeWxJTjF3dWFLb1N6bWh6VVcyMjlrUHJYUloxX2VkYTFzUElVdVNsOUlYRTTSAWhBVV95cUxOOUVWUVAzUXA3T0VsOHNLN05XWXp1M0dpYTVmQ1dBeE9rTmJNVzZEZFRpa21XM25sZ05sVjN4bU85VlBxdGVuUkNQMDRrcUYxcU9ZT2FOUmlFRURNN3pkT18waUQ2cnBHNQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Measles vaccine not working effectively - Prothom Alo English",
+      "publishedAt": "2026-10-27",
+      "source": "Google News — measles vaccination Bangladesh",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
@@ -4447,6 +4473,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMifkFVX3lxTE1sTXlGRnlTdmNJRUdxZFhTdUdXMTZrZm1BREpSN3R3SzNWZWVPc1BHRHN4VV85MG9Ra04zVXR4bl96NndWbk5qNU5oZ0pIVjd4Tk82UkZ1WjYtbnN1akM0Q1FNMDhOVTlJb0t6bWZJcWROMU80c1FFSDRQY1l5Zw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "No Vaccines Against Bundibugyo Ebola, Expert Warns - The Whistler Newspaper",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMifkFVX3lxTE40MGh0ZVVLUEdiVEg2bkN4UFlKWWkwOXRJUUx1ZkZSem5nUk16R0lFM0pHVW1UdzhQWUh4N2pjN19uQ1BLM0hVQzVTU1RtOFhnVGdCY19MbWpXRjg2dFk5MGxrSDdyaXRWakE1RmxPZVpIVnoxVFgzR2xnTEdmdw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4624,6 +4663,19 @@
       "lastAttempt": null,
       "title": "Kenya gazettes new Ebola screening and quarantine rules - China Daily Global Edition",
       "publishedAt": "2026-10-13",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiggFBVV95cUxNa05VOGdMa3lkRTExUW9MclFPalJLeFJ6Yk9PaTRLbkU4dGVGZ3VDRnNWTDVyLTFnaXJXT0lkejJrM2dRZ2E5TVZvTEtKRmVYNG5ZbGZTbl9TbXlvVGk3RkZ4R1MzbXlTQzl0a3VYM3NFTXNzNUpnVFo4QUhOVWNmUjh3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Nigeria’s Ebola Case: Whose Story Is It? - The Pointer",
+      "publishedAt": "2026-10-26",
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
@@ -5114,8 +5166,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-26T20:24:57.292Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
       "title": "Nurse accused of spreading Ebola is murdered by angry mob in DR Congo - AOL.co.uk",
       "publishedAt": "2026-10-26",
       "source": "Google News — Ebola death toll",
@@ -5368,6 +5420,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxNdVc2eTNGYm1tMGlRODB3ZDYyaTdJVHdjWGprS24zN3czQXRmcDVYWmh0emRlVEZwZDhla1JJUVVaUk11akdCdkpYd0NwdmZGMV96RkpuRV9LeHRxdTZJY3dTY0gwZnhXcW1DQXJXb2xyRGEzYnpGY0VsMGo1VlRpcUhIaWd1a2ItQVktYURfTXNCN05m0gGTAUFVX3lxTE5LdGVSMXVrYURQN0FRaWs3eEp4UXd4WXlkUkEtZzBzQ2w4bUFwZ0xlQUI1TDVqU2RFUDBkbkVhcEd3TTZ2Z21TTExQYkJCcDR1TC1Ic1preHY5VE43UERONTJnaG82YlRtM0lka0ptS3Y3Ri1FV3lKakp2MXhEbkRuRllnS3Y4aTlWS0ZFX2hOb2N1VQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "After Covid-19, Before Ebola: Why Are We Still Without the Small Laws? - Modern Ghana",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXYzakJ3Vl9FWkRadk9COHQtUWNvVDU1bkR1elRQOVcyMmRQdHFwZlBQSGFUMF9YX2RTNGNCLTJsdlk3N1dLQW13NWdTX0ZvcS0zUUFHRXRjYW9GZ19NTXhEV29BcUhIcG5HV3RsXzIweDduSzFyLWtXU3ZXa1ZNUGwzSUNaank3S0p2cGppV1ZFU2Yt0gGaAUFVX3lxTFBTdldkV3haVjBlc3pxNWlmaklueExmOEZ3U1c3U0ZtWjM3VzBHT1dETF82ZDFjLWl2WnlwVEFNcUxidjZTTXN6aW55N2FndEtCaFd0bkZxQjlydGtRN1BoRnlxRFRmcnozNGV5eVVUMU40bEhpQnlZdVR6ZUpfY3hMYktEYXQ5aEVITVVHSVhRUm1yOTh1SnMzb2c?oc=5": {
@@ -5760,6 +5825,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxPSXRxcUt1cC0tT2tMUU1HbVJIVjZGSm9qbjd5YXBRX3Rady1PQ0Y3VERaNUNlNlpzRzgwZXBVVTVsaVJFeFp5cmthYjNEbUZpblR6bHJjdEJYakEzQmlCTHNHTW9QeXRMUG9jTHhuY2VyZWxRMGpqbVhPdzJhM2Q5Q0ZEbUgzc1RIR2hvaFVFMFB4S2loaXA4YlQ2RzY?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Nigeria’s Ebola patient on medical evacuation flight to Switzerland, condition stable - The Straits Times",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRTUtazFPeWJSUDd3eG9SXzdJYVdfckE5aGRxMlgzZ20wVW9SSXlDSnRFTlBuQlFpQ0xCV1BFTk9PYjdHMlJhZGd4VGNXa0FROUpJeDM5LUU4UktlWDd3RzRfeWZLT0tQR2RyZTd4b2R6V204QlN0NmloRkt6cmp4QWhkNlJvbnpxSzdoRmtfOUhuS25YNnBlUWlzUHk?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5899,6 +5977,19 @@
       "title": "FAQ: Ebola Prevention, Treatment and the Chances of a US Outbreak - Contagion Live",
       "publishedAt": "2026-10-17",
       "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVWZmYUwzX1k2b3JTWXc0UTRIVHM4LXlKRVZMQVJUcGk4SFNTcXpHVWN0aHE4ZWJGSnJsRndNdVJuVUpPTjJGaXNreloteEFGem1SY0VzTFZVNFA5SUJzQ3RFd0dnQ3BtMm1jRFE0d3Z2X19MMXZGLU9zd1d3WXFmSk40Szd0ZHByanFLU19Ld2dzVVdZbDJRd0tjbGpBYms?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Ebola Spreads Beyond Congo as Death Toll Tops 4,800 - Seoul Economic Daily",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -6631,6 +6722,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNWxfM2p2MUl3X2ZkeGJZNFBJUGtqVjNYdG5aa0Q1ZWVIaU1xaUdGN3A4RnhWaFBKbXR3bWhwYXVMMXEwclVSM2lfMUsxTmprODNrM0Z6R1NtWU9UMjBjSms2cUtGZmtnb0kyZUZuV3dldzhBY3M5WEN3bTFleVAzeE1RRkRsZktXRmlLUVBaNGpEdVFOUC01T1I4NUJRR0hMYTR3clVMeFdJMVE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Duale Warns Against 'Ebola Billionaires' Amid New Bundibugyo Virus Outbreak - https://streamlinefeed.co.ke/",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZE5LVDh4LVNlbTM4WVBLZ1dQdWxpYkh3ZHg2LXlzTDAxWFBjVldsMVBlQVlVbjFfZHhKcnplZ1Y5T1d4U2ttR2NUNE4zODRnS01Ybkx6dG5oQ1ZadHdIU3JtYkplQk93YWhiMjVRRDBUeXdlNnFqV1FWY21iZTRTMFBsUVZpMVhtWS1sak5KX19LMkVCbnh0T2llblJnMS1ZaWR1bWJKYWtfMVk?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7047,6 +7151,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPYXYtR3dqTko2eU1yMklHcGFJVFNkSWd0WVBrWmV3cktDakE1NFZfal9KRnUxUVQ2aW1GM2hvNUhCc2tJY2tJRU9oNFU3Umg3U1FCSHN3RlVUMTZSZ2RmQm5RUzJHRk9pR0lZZ0QtSDRrUzJ4bkRlSXhRUS1RQlh4ZnZTMFdfdkNQMGEzUTJyTElVdVRRbHpEZW5LdzhTRnJkLTR2b25YanlpZlgtQ09qQkdOVQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "WHO reports nine linked Bundibugyo Ebola cases in Kenya; no wider spread seen - https://streamlinefeed.co.ke/",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiswFBVV95cUxQQUw0NHZhamRaWTdvaVhpb256eGZMdnRkT2lCamlzTzRWMi1odmxjWl9sWDA5Q0ZrZk10b3VBRUcwMjNNdUhIZm10cnhSQWQyaW1MOFJoTjlGam5OU3o4OXBPZkZRWjVoYWtsUlMtU0kyUTdfVV9XdzRxdXk0RXRVbEQ2SUhVYjczNGFpd3VLdl9Penlid1dwUHpQU2E2dmFsUUpJZnVYRldGODNtTmsyVDd4Z9IBswFBVV95cUxQRVZfMHFNNFpoMk1Qd3hKcGtaeVc4akZiTjRFUEJTNzlad0FuMzVKbDNKSkJqN3RiOWNKVUZYVnRGVzl3aWJNeTZNWExIRWZFaUtjMlVNU1pEeW9vR2lxRXZpY1lSNXp4YW5hbWtTa1hkUTZQUzlLSGlYVk8zaV94dGh0ci1PenNWa3gwVmxhRGhJdGlDUXNidVBFbnh1UkUwMFJ5NkR5Z0gtSG5SZVVRTDd6WQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7441,8 +7558,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-10-26T20:24:57.292Z",
+      "attempts": 2,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
       "title": "Amid war and Ebola, Congo's sisters struggle to protect patients without adequate equipment - Global Sisters Report",
       "publishedAt": "2026-10-26",
       "source": "Google News — Bundibugyo outbreak",
@@ -7580,6 +7697,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQU3JpMi13VU5FVm1XWEkyX1VMZl9BUlYta2lwekpFVEVWbThObmtvUDhONUMycm9fMkRUUXYwczJVeHhFYzdxT0RBbEs4SDE1LVNlb0duUDU4aXAzR2NxTk5FaUs1SEhPUnc1ZTE0WW9zMGVLdjg2NmY4a3pxNERDendPMER1X1dVald1VjdMMHM0a2d3aGhYdVZCei1tYUJ2UGczQlhUNWNpVFZXcnRfUkwyZHFOS2dJODJ4YlIyMW81dw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Disease frontlines: Bangladesh is battling measles. It’s a “real warning” to other nations - Sight Magazine",
+      "publishedAt": "2026-10-19",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiwwFBVV95cUxNWTBjN2lISm83cGtJY1JaWVlMVnR6MnRLOHE2NWFzZ2R5NUZyT2pJaUdfUnhkajV3Sy13MzRNSXlOREhudUFfT2cwS3dxQ29qcEtsekZGc1RRWTZEcTk4aUlCWFlQWWFWbkdjOUhmQkxVd2dnMW5BUGp2N3AwS0wwS2JVQnF5RndGTGVOa0h0YTlYTXAxWEVNOFBZYXdrN2ZhWEROZ3pENGNCNEFmWEtRYlhaNFhlY01Gd0xpQmN4dzJYTHM?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7591,6 +7721,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeXh6T2Y4bXFfLVhLUFpUeHdtNmczY243dmxSU1lDOGpBY0c5TGNxTlNySDB2WkxDWnZjZTAyTElmODlVVEQ1U3h0QUFrdnhxbFRrUl9VSkZFSEpHZDY5OGNFTi0zd3E4c3pvSWRiOXFIa0pSclBERTFrZEpMOEgzZHY2RzRsT0hGcFhQdjFkWFU2V2NSR09DdkZQaDA5NGN3UVAwdTQtaU9xTE1DVUQxMWdwMDA5ZENtUENUaWYwU24xZzQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Nigeria Confirms First Bundibugyo Ebola Case as Health Agencies Activate Emergency Response - https://streamlinefeed.co.ke/",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQYUIzU2cxLVE1enp6dGpsd1Z5MzY0TkdibGo3U1dkNGtyM25OSGtIODg2bnNqcEUya1R2RHF1eF9GSk1aeFRtcGtxM1RGdm1OSEM4UzU1eE05ekpYc3I3QnRaSHpHVDQ0QXFwUnBia3l1WVFGa25vVTdCcXNiYjhqaXFYVFBOR0VNclJoaFJpSXFRX0RicGRaX0ZwNk54RDBFZ00xVmd2Uk1lMUNDTDJOSVQzcnN0bFQzWnk2eExuLUViWUE?oc=5": {
@@ -7710,6 +7853,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSlI3c2RWYXZONUM5UFZQVlZnNEJZWXdLeTF3eG50SnRhQmJyVWNZcjZjbGNCTDhlVnppekttd3Z5bzZWTHJtdHg0bmVTc2xMOFYyVGU0Zkc3T2lYRzNiRUVvVGo2VTBkZkkzMXl6Wl9HN01JQXE5LTk4YzBiNFhFQjlPenR1enNZQWlveldMM1Y3a1k3ZUVaVmJqSk9EX2s2Y2dmUzJpRk9PaWNSeXJ0OGtVdTY3MmtlUThiMEU1UDlTbWtneGxsSFNzRQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-10-27T08:33:45.826Z",
+      "title": "Health Minister Updates Public on Progress in National Ebola Preparedness and Response Efforts - Uganda Media Centre",
+      "publishedAt": "2026-10-26",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxNQkRlLUpCemMzcUhFVjFQM3VGTHdZQzNKaFJkTmN2U0p0aVhadDY3aUl3OXpSMTJ1NnA0em5yaDZlRzA4RjJkYjh2RXI1aEhOeWZFWkFZZXo0YmotbXVkRFZHdzBxTmNSNUhTVThLTGNKSGd0STU5TjBWeXhGUklfeUJrWkN4VnQ2anplVlU1LVJ5Y1M1X0xPZDhOaGtOSDYwRHI3SWh1cWoyUnIwSlh1b1A0VXRwcTI4UTFJTmRlMjMtWk1fN0ZtWldiMnk?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7773,6 +7929,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMizwFBVV95cUxOM0FIbk94Qi1sUjlNU2ItMzdVNUtFdGVBUlllYk1UVW1MMk9PSDNRSk10bGxVd3B3Rl9IRnA1bnBScDAxY09IQ0ZtUEM5eU1aMzFObWQ5TmthN2hEVUdnUThiT0NoeHV2alB6aXdqU3lrWGNCaHZ1UWRISC05T1Y0d0NtT3hkcVBiLVJJTXpWUDJfOFNfU01KNUlqbThTRUN5NlQyMm5weFc5b3RGeTJMMHhGaDJKVFBTa013TmZzSjBPbXY1WEZkRWloZ0dvZHc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Uganda imposes mandatory 21-day DRC quarantine as regional Ebola threat expands - Daily Monitor",
+      "publishedAt": "2026-10-25",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMizwFBVV95cUxOb01lazJLRERuMmJ5QUdGanpDQUJES0VIVjR5V1ppSWRISE9taVNJNVVJSXRJb0R3UlhpVGo4MVUxQVZNcnQ2M1hOZzFJVXMydGc5UmwtbDlGRFliMmxELUZPUUJwMHZtb0lwUUhKTWVGYTlMQ1VXdEFHS010X0N0aEVOVkk3a0l6SkU0UUw3eUpvc1hIS2pEcm5hRUY1ZzR3MUM1TUhVNkxUcGpKN3Y0MkZsUE1QcWtfdTNyMzRieVpwaWNzclg1YkxQbUNkLXc?oc=5": {
