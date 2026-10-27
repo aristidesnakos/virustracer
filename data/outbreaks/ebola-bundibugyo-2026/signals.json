@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-10-27T08:32:47.421Z",
+  "lastUpdated": "2026-10-27T20:27:18.270Z",
   "signals": [
     {
       "iso": "KE",
       "country": "Kenya",
       "flag": "🇰🇪",
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-27",
       "firstSourceTitle": "Kenya confirms first Ebola case as man dies in Nairobi after DRC return - Al Jazeera",
       "firstSourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWU4tT0ladzQycEs3clVzTmFvWG9NOGZ2cHNvU01WVzB5Y3o0aG9kMkxvZVVjdUlaLWRxbHVZLWNXRGk2ZXUyQS1sVndJQlQ4MkNUdnlLTmoySGJLbW5IeXZwSVNHZ1N4QmVLTGRLRGRqLXV0QWpESHlWOURnSFdWdzRwNUFHWTZ3czBjQk05NU9pMVlTQlhUMENCeFhjTGNwNjVHY29XaFdLTnpMNHFhUlJJWWZWV0HSAbwBQVVfeXFMT1pvZDRrM2RuOFRPV3kzOWc5YnpZN3JvRURsZ3kwemZkTDZYeXNUOHJLbWlhYU4yZVkyRTdXWnkyNHZrX1F6RjNLY21tMVhyU0YxaWR2Y3lxejVVUzNGdU51eEhmamktT3VJdXY0cnFUaTRtX0V2Vl9GcHhVc3NCUnB1WWdzSHpWYmxUd01lTHhtaVE4UzRmXzJ3d3NYejdXX1pWT2lhVnBYQ3pPRnNMa0lxaE1lejBLOTB2Wmg?oc=5",
       "firstSourceName": "Google News — Ebola death toll",
-      "mentions": 22,
+      "mentions": 23,
       "maxCasesMentioned": 9,
       "maxDeathsMentioned": 2,
       "seenIds": [
@@ -35,7 +35,41 @@
         "who-597dbebd762d3efe",
         "news-2d14ab2cd9f4e6a8",
         "news-057991d8873cd61f",
-        "news-4d52b74ab3b4a533"
+        "news-4d52b74ab3b4a533",
+        "news-b10a717fa35cd3b3"
+      ]
+    },
+    {
+      "iso": "NG",
+      "country": "Nigeria",
+      "flag": "🇳🇬",
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "firstSourceTitle": "Nigeria Confirms First Bundibugyo Ebola Case as Health Agencies Activate Emergency Response - https://streamlinefeed.co.ke/",
+      "firstSourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeXh6T2Y4bXFfLVhLUFpUeHdtNmczY243dmxSU1lDOGpBY0c5TGNxTlNySDB2WkxDWnZjZTAyTElmODlVVEQ1U3h0QUFrdnhxbFRrUl9VSkZFSEpHZDY5OGNFTi0zd3E4c3pvSWRiOXFIa0pSclBERTFrZEpMOEgzZHY2RzRsT0hGcFhQdjFkWFU2V2NSR09DdkZQaDA5NGN3UVAwdTQtaU9xTE1DVUQxMWdwMDA5ZENtUENUaWYwU24xZzQ?oc=5",
+      "firstSourceName": "Google News — Bundibugyo outbreak",
+      "mentions": 2,
+      "maxCasesMentioned": null,
+      "maxDeathsMentioned": null,
+      "seenIds": [
+        "news-5223244101f4db69",
+        "news-f8c856bb3811e5d2"
+      ]
+    },
+    {
+      "iso": "UG",
+      "country": "Uganda",
+      "flag": "🇺🇬",
+      "firstSeen": "2026-10-26",
+      "lastSeen": "2026-10-26",
+      "firstSourceTitle": "Ebola Spreads Beyond Congo as Death Toll Tops 4,800 - Seoul Economic Daily",
+      "firstSourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVWZmYUwzX1k2b3JTWXc0UTRIVHM4LXlKRVZMQVJUcGk4SFNTcXpHVWN0aHE4ZWJGSnJsRndNdVJuVUpPTjJGaXNreloteEFGem1SY0VzTFZVNFA5SUJzQ3RFd0dnQ3BtMm1jRFE0d3Z2X19MMXZGLU9zd1d3WXFmSk40Szd0ZHByanFLU19Ld2dzVVdZbDJRd0tjbGpBYms?oc=5",
+      "firstSourceName": "Google News — Ebola death toll",
+      "mentions": 1,
+      "maxCasesMentioned": null,
+      "maxDeathsMentioned": null,
+      "seenIds": [
+        "news-3300deca1a12b9d8"
       ]
     }
   ]

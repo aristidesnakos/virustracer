@@ -1,6 +1,62 @@
 {
-  "lastExtracted": "2026-10-27T08:32:47.421Z",
+  "lastExtracted": "2026-10-27T20:27:18.270Z",
   "candidates": [
+    {
+      "id": "news-b10a717fa35cd3b3",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "20 contacts released from quarantine in Kenya.",
+      "sourceTitle": "Ebola: 20 contacts released from quarantine in Kenya, amid vaccine ‘hope’ in DR Congo - UN News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBwODZQUkJKblN2QXN5cmNCSWxnX0JNTHhjVWhiY3k2cDFMWXc2QTQzU2lybm9EVjhrbTZxYzdLYkxhS2xqOWZVYlZta3FKcWNYYTlGLVpvNA?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-27",
+      "extractedAt": "2026-10-27T20:26:46.613Z"
+    },
+    {
+      "id": "news-3300deca1a12b9d8",
+      "country": "Uganda",
+      "iso": "UG",
+      "flag": "🇺🇬",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "The virus spreading beyond the DR Congo into Uganda.",
+      "sourceTitle": "Ebola Spreads Beyond Congo as Death Toll Tops 4,800 - Seoul Economic Daily",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVWZmYUwzX1k2b3JTWXc0UTRIVHM4LXlKRVZMQVJUcGk4SFNTcXpHVWN0aHE4ZWJGSnJsRndNdVJuVUpPTjJGaXNreloteEFGem1SY0VzTFZVNFA5SUJzQ3RFd0dnQ3BtMm1jRFE0d3Z2X19MMXZGLU9zd1d3WXFmSk40Szd0ZHByanFLU19Ld2dzVVdZbDJRd0tjbGpBYms?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-10-26",
+      "extractedAt": "2026-10-27T20:27:10.100Z"
+    },
+    {
+      "id": "news-5223244101f4db69",
+      "country": "Nigeria",
+      "iso": "NG",
+      "flag": "🇳🇬",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "Nigeria confirmed its first case of Bundibugyo Ebola as health agencies activated an emergency response.",
+      "sourceTitle": "Nigeria Confirms First Bundibugyo Ebola Case as Health Agencies Activate Emergency Response - https://streamlinefeed.co.ke/",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeXh6T2Y4bXFfLVhLUFpUeHdtNmczY243dmxSU1lDOGpBY0c5TGNxTlNySDB2WkxDWnZjZTAyTElmODlVVEQ1U3h0QUFrdnhxbFRrUl9VSkZFSEpHZDY5OGNFTi0zd3E4c3pvSWRiOXFIa0pSclBERTFrZEpMOEgzZHY2RzRsT0hGcFhQdjFkWFU2V2NSR09DdkZQaDA5NGN3UVAwdTQtaU9xTE1DVUQxMWdwMDA5ZENtUENUaWYwU24xZzQ?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-26",
+      "extractedAt": "2026-10-27T20:27:13.706Z"
+    },
+    {
+      "id": "news-f8c856bb3811e5d2",
+      "country": "Nigeria",
+      "iso": "NG",
+      "flag": "🇳🇬",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "Nigeria tracks 53 Ebola contacts as health authorities intensify outbreak response.",
+      "sourceTitle": "Nigeria Tracks 53 Ebola Contacts As Health Authorities Intensify Outbreak Response - Forbes Africa",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPVjBsMmQtODR0Z3ZJZEhrQUc1ZGtTSGpscExYSWRVb0hJQnpfSjBTaVB6LW1WUVBUbUJSVFZhWVRMMnpyY05FQlRMNVA2WFRXRzRqdkk5Qm41TGVhdXMyZVJ0M0RieXV3U2xMYktqWUhPQXRKOHUzdHp6NHlfVTZMc3RmdTl0dlItX2wweU1HQ0FUcmROX2dKenc3N3JMcTVBVlhmaE9KY092WlRPRzJaekRYYnVfRWVPdHZBeWUyUTQ4c2Rkc3owMllDR3ZmVHZWaXhfZGNR?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-26",
+      "extractedAt": "2026-10-27T20:27:16.408Z"
+    },
     {
       "id": "news-057991d8873cd61f",
       "country": "Kenya",

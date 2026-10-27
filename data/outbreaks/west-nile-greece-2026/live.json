@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-27T08:33:45.765Z",
+  "lastFetched": "2026-10-27T20:30:18.059Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -114,9 +114,18 @@
     "news-e648f941da96bd16",
     "news-b421f8874f6a4936",
     "news-df6015a766660b01",
-    "news-ad8c8287d99e14c3"
+    "news-ad8c8287d99e14c3",
+    "news-1b0fbad1cd8ac031"
   ],
   "recentItems": [
+    {
+      "id": "news-1b0fbad1cd8ac031",
+      "title": "Greece West Nile virus cases top 450 - Outbreak News Today",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNX0Q1RkZjZjk5bFRWUUYzTVNrckxCWVV6dmUwUm80VnJySnU1akpQR2pEbTRoN1VyMDNuRWt4cjY3WURrUVhxeGZlWXdOTTNIMGZNbnRHaGoyN3c5ZXExajNBSzhfSTcyaXBvaXpnWlo5cnlxNkdCMlk1dUV6SkhZcHFkdw?oc=5",
+      "date": "2026-10-27",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "Greece has reported over 450 West Nile virus cases in the 2026 season, according to Outbreak News Today."
+    },
     {
       "id": "news-8bea76c3b75fe321",
       "title": "West Nile virus death toll in Greece rises to 51 as cases reach 453 - Türkiye Today",
@@ -268,14 +277,6 @@
       "date": "2026-09-03",
       "source": "Google News — West Nile Greece deaths",
       "summary": "West Nile virus: 290 cases and 24 deaths in Greece — Cyprus calls for calm Yahoo News Canada"
-    },
-    {
-      "id": "news-e007f3af60b2549d",
-      "title": "Mosquito spraying continues in Athens to combat West Nile virus - Reuters Connect",
-      "url": "https://news.google.com/rss/articles/CBMi4AJBVV95cUxQS1JzTW9jZ21aR2NOeVNJb0VKSW9iWFdJbUF3Q1dHbF9hX3Fka2tuTS1wN1VnRmRhWXE4dFctRU5rZWxUY2lRZ1JkQXZhVFR5Q2Q4UDJlUGtwRzBnRjFEdzdjWEk0bXVtdHRGVXRTbmROYzg3VXRrc3IwRVpmMmExcFRqMjJjMEF4Tm9YczBXLTh5ZGFENmp5amMxbVBVRDM2YzZ3Vm14SGxXT3I4OTdIMVRBNmZvMHo3YjJmdmNES2NCTGtYRkZsRGJweGs2d3J5aUtUYnM3bkpJUFVnQkllZHBIWmE3Vno3VTJIOWZVU2pFZlpYUTZacnJnQ1QxZEZoblB5dmo0MVBCOXMxTllDSDNFU1dJOVV6RXl6WFpDSVlLSmNqOFFYZHJ5ckVTWmpaU2RNd0hEdE16TDF4bTdwNnZlTExFazMyVUh0eGI5N0h4Z1RCblFFWGNJVkVOV0sw?oc=5",
-      "date": "2026-09-01",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "Mosquito spraying continues in Athens to combat West Nile virus Reuters Connect"
     }
   ]
 }
