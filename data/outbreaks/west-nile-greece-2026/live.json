@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-27T20:30:18.059Z",
+  "lastFetched": "2026-10-28T08:41:35.325Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -115,7 +115,8 @@
     "news-b421f8874f6a4936",
     "news-df6015a766660b01",
     "news-ad8c8287d99e14c3",
-    "news-1b0fbad1cd8ac031"
+    "news-1b0fbad1cd8ac031",
+    "news-bb05835878cc16a3"
   ],
   "recentItems": [
     {
@@ -223,6 +224,14 @@
       "summary": "Greece records a record 324 cases of West Nile virus UA.NEWS"
     },
     {
+      "id": "news-bb05835878cc16a3",
+      "title": "Sharp rise in West Nile virus cases in Greece - BGNES",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13c0lwU0pWMjY4eU5VczhkRlFSdVpmR1ZhQWlsUkJKYktXZkN5al9GZktaTHdWMlpfU2hWZ3J2QXVTNDhidjNSX2FudDRvWWJlcXUtQjVER2hCcDAwdmRTNlBQTnBYdUVGUGFtLWxXanltcVNpeUY5a2RiLXdwMmM?oc=5",
+      "date": "2026-09-10",
+      "source": "Google News — West Nile Attica",
+      "summary": "As of July 30, 2026, Greece has reported 40 confirmed cases and 7 deaths from West Nile virus, reflecting a sharp increase compared to the same period in 2025. Health authorities have urged the public to take personal protection measures against mosquitoes, emphasizing that the virus is now circulating in multiple regions."
+    },
+    {
       "id": "news-38d9856246c9de58",
       "title": "West Nile Virus Death Toll in Greece Rises to 30 as Cases Reach 324 - GreekReporter.com",
       "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE44UnN5YUU5Nk8wR0hWTXN1SE14aDRCME5aMlp1WkFSWkF4S19xMm9TWHlJYkxMdnVRVFRWNEFDZ0d1bkFEVW5ybmIwYm5DNUpHSG40ak9xQ2JZRzJ6aEYzRXRfQVJxSlBvUHd1VmkxZXE5aTNo?oc=5",
@@ -269,14 +278,6 @@
       "date": "2026-09-03",
       "source": "Google News — West Nile virus Greece",
       "summary": "West Nile Virus Cases Rise to 290 in Greece tovima.com"
-    },
-    {
-      "id": "news-9d082ff823d17158",
-      "title": "West Nile virus: 290 cases and 24 deaths in Greece — Cyprus calls for calm - Yahoo News Canada",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xNGZJeEQ3RUVHZkR4MnQxRllfTlZzR1o3aUtJYzRzUmVIRWZoUEt0Z3JSeW54M21qeDd2bVFQSXVZWG14YzQweElCMENKSWQtOS1PVzQyNV9FaDZfdTZ5LTBtQUgtTGJJc085VEt3WkhYNk5D?oc=5",
-      "date": "2026-09-03",
-      "source": "Google News — West Nile Greece deaths",
-      "summary": "West Nile virus: 290 cases and 24 deaths in Greece — Cyprus calls for calm Yahoo News Canada"
     }
   ]
 }
