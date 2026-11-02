@@ -79,7 +79,7 @@ export default function AboutPage() {
               [
                 "Headline totals",
                 "Automatically, twice a day",
-                "Each outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO, or the health authority\u2019s weekly report where there is no infobox (West Nile virus in Greece: EODY). Every reading links to the exact revision or report it came from.",
+                "Each outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO, or the health authority\u2019s weekly report where there is no infobox (West Nile virus in Greece: EODY; measles in the United States: the CDC). Every reading links to the exact revision, report or page it came from.",
               ],
               [
                 "Milestones, country tables and summaries",

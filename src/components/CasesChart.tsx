@@ -14,6 +14,7 @@ import {
 } from "recharts";
 import type { CaseDataPoint } from "@/data/outbreaks";
 import PanelHeader from "@/components/PanelHeader";
+import { evenTicks } from "@/lib/chart-ticks";
 
 const TICK_COUNT = 6;
 
@@ -143,9 +144,7 @@ export default function CasesChart({
     const first = rows[0]?.t ?? (hasRef ? refT : 0);
     const min = hasRef ? Math.min(first, refT) : first;
     const max = rows[rows.length - 1]?.t ?? (hasRef ? refT : 0);
-    const tickList = Array.from({ length: TICK_COUNT }, (_, i) =>
-      Math.round(min + ((max - min) * i) / (TICK_COUNT - 1)),
-    );
+    const tickList = evenTicks(min, max, TICK_COUNT);
 
     return {
       data: rows,

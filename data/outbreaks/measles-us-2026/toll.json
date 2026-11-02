@@ -1,0 +1,16 @@
+{
+  "lastChecked": "2026-11-02T21:09:51.522Z",
+  "snapshots": [
+    {
+      "date": "2026-10-29",
+      "confirmed": 4852,
+      "suspected": null,
+      "deaths": 3,
+      "recovered": null,
+      "source": "CDC measles cases and outbreaks page",
+      "sourceUrl": "https://www.cdc.gov/measles/data-research/index.html",
+      "rawPath": "data/raw/report/cdc-measles-us-2026-10-29-f6e6f9913ce1.txt",
+      "rawSha256": "f6e6f9913ce148bc75beb029406714380274bf9e557c3305a6366d8872e1ef04"
+    }
+  ]
+}

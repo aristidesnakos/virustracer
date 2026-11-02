@@ -3,13 +3,16 @@
  * Death-toll updater. Runs in GitHub Actions (plain `node` 22, no deps).
  *
  * Reads the headline numbers from the outbreak's source, sanity-checks them against
- * the last stored snapshot and appends to data/outbreaks/<slug>/toll.json. Two readers:
+ * the last stored snapshot and appends to data/outbreaks/<slug>/toll.json. Three readers:
  *  - "wikipedia": the article's `{{Infobox outbreak}}` (which cites INSP DRC / WHO, ...)
  *  - "eody-report": the weekly report PDF of Greece's EODY, found via its RSS feed and
  *    read with `pdftotext -layout` (poppler-utils), parsed by scripts/lib/eody.mjs.
+ *  - "cdc-measles": the CDC's national measles page plus the two JSON files behind it,
+ *    which must agree (scripts/lib/cdc.mjs). Updated weekly; the snapshot is dated by the
+ *    Thursday its counts run to.
  * Runs for every automated outbreak in scripts/lib/outbreak-registry.mjs, or:
  *   --outbreak=<slug>          just one
- *   --adapter=<wikipedia|eody-report>  only outbreaks read that way
+ *   --adapter=<wikipedia|eody-report|cdc-measles>  only outbreaks read that way
  *   --report=<pdf-url>         (eody-report, repeatable) read these reports instead of
  *                              the newest one in the feed: backfill or repair
  * For an eody-report outbreak it writes `season_over=true|false` to $GITHUB_OUTPUT
@@ -35,10 +38,13 @@ import {
 } from "./lib/toll.mjs";
 import { archiveInfobox, archiveReportText, sha256 } from "./lib/raw.mjs";
 import { inspectReportFeed, isEodyUrl, normalizeUrl, parseReportText, seasonIsOver } from "./lib/eody.mjs";
+import { buildReading, extractPageExcerpt, isCdcUrl, parseCdcReading, serializeReading, snapshotFromReading } from "./lib/cdc.mjs";
 import { USER_AGENT, dataFile, selectOutbreaksWith, tollAdapter } from "./lib/outbreak-registry.mjs";
 
 const TIMEOUT_MS = 20_000;
 const PDF_MAX_BYTES = 20 * 1024 * 1024;
+/** The CDC page is about 100 KB and each data file under 30 KB; anything near this is not them. */
+const CDC_MAX_BYTES = 3 * 1024 * 1024;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -417,6 +423,129 @@ async function updateFromEodyReport(outbreak, reportUrls) {
   );
 }
 
+/** Fetch text from the CDC's host only, without following a redirect elsewhere; stops past CDC_MAX_BYTES. */
+async function fetchCdcText(url, accept) {
+  if (!isCdcUrl(url)) throw new Error(`refusing to fetch ${oneLine(url)}: not an https www.cdc.gov URL`);
+  const res = await fetch(url, {
+    headers: { "User-Agent": USER_AGENT, Accept: accept },
+    signal: AbortSignal.timeout(TIMEOUT_MS),
+  });
+  if (!isCdcUrl(res.url)) throw new Error(`${oneLine(url)} redirected off the CDC to ${oneLine(res.url)}`);
+  if (!res.ok) throw new Error(`${oneLine(url)} responded HTTP ${res.status}`);
+  const declared = Number(res.headers.get("content-length"));
+  if (declared > CDC_MAX_BYTES) throw new Error(`${oneLine(url)} is ${declared} bytes, over the ${CDC_MAX_BYTES} limit`);
+  const chunks = [];
+  let size = 0;
+  for await (const chunk of res.body ?? []) {
+    size += chunk.length;
+    if (size > CDC_MAX_BYTES) throw new Error(`${oneLine(url)} is over the ${CDC_MAX_BYTES}-byte limit`);
+    chunks.push(chunk);
+  }
+  return Buffer.concat(chunks).toString("utf8");
+}
+
+/**
+ * Read the CDC's national measles page into one snapshot, dated by the day its counts
+ * run to. The page has no archive of earlier weeks, so each run reads the current one:
+ * a week already stored is left alone, a new week is added, and a corrected figure for
+ * the same week replaces it. A page that is half-way through its weekly update, or whose
+ * layout changed, fails the cross-checks in scripts/lib/cdc.mjs and stores nothing.
+ */
+async function updateFromCdcMeasles(outbreak) {
+  const { slug, toll } = outbreak;
+  const tollJson = dataFile(ROOT, slug, "toll");
+  const tollLabel = `data/outbreaks/${slug}/toll.json`;
+  const nowISO = new Date().toISOString();
+
+  let store;
+  try {
+    store = readStore(tollJson);
+  } catch (err) {
+    console.log(`::warning::Toll update for ${slug} skipped: ${err.message}`);
+    return;
+  }
+  const last = store.snapshots.at(-1) ?? null;
+  console.log(last ? `Last stored reading: ${last.date} confirmed=${last.confirmed} deaths=${last.deaths}` : "No stored readings yet.");
+
+  let html, hospText, mapText;
+  try {
+    console.log(`Fetching ${toll.pageUrl} and the data files behind it...`);
+    html = await fetchCdcText(toll.pageUrl, "text/html");
+    hospText = await fetchCdcText(toll.hospUrl, "application/json");
+    mapText = await fetchCdcText(toll.mapUrl, "application/json");
+  } catch (err) {
+    console.log(`::warning::Toll update for ${slug} skipped, could not fetch the CDC page: ${oneLine(err instanceof Error ? err.message : err)}`);
+    return;
+  }
+
+  const excerpt = extractPageExcerpt(html);
+  if (!excerpt.ok) {
+    console.log(`::error::Could not read the CDC measles page for ${slug}: ${oneLine(excerpt.reason)}. The page layout may have changed; ${tollLabel} NOT updated.`);
+    return;
+  }
+  let hosp, map;
+  try {
+    hosp = JSON.parse(hospText);
+    map = JSON.parse(mapText);
+  } catch (err) {
+    console.log(`::error::A CDC measles data file for ${slug} is not JSON (${oneLine(err instanceof Error ? err.message : err)}); ${tollLabel} NOT updated.`);
+    return;
+  }
+
+  const doc = buildReading({ page: excerpt.page, hosp, map, year: toll.year });
+  const parsed = parseCdcReading(doc, { nowISO });
+  if (!parsed.ok) {
+    if (parsed.code === "other-year") {
+      console.log(
+        `::notice::The CDC measles page for ${slug} now reports a different year (${oneLine(parsed.reason)}). Nothing stored; the outbreak's status and toll.year need a decision by hand.`,
+      );
+    } else {
+      console.log(`::error::The CDC measles page for ${slug} failed its cross-checks: ${oneLine(parsed.reason)}. ${tollLabel} NOT updated.`);
+    }
+    return;
+  }
+  // A disagreement between the page and its own data file is worth a human's eye, not a stop.
+  for (const note of parsed.notes) console.log(`::warning::${slug}: ${oneLine(note)}`);
+  const { reading } = parsed;
+  console.log(
+    `Parsed CDC page: as of ${reading.asOf} confirmed=${reading.confirmed} deaths=${reading.deaths}` +
+      (reading.deathsDataFile !== null ? ` (data file: ${reading.deathsDataFile})` : "") +
+      ` in ${reading.jurisdictions} jurisdictions, ${reading.visitors} among international visitors.`,
+  );
+
+  const snapshot = snapshotFromReading(reading, toll);
+  const prev = store.snapshots.filter((s) => s.date < snapshot.date).at(-1) ?? null;
+  const later = store.snapshots.find(
+    (s) => s.date > snapshot.date && (s.confirmed < snapshot.confirmed || s.deaths < snapshot.deaths),
+  );
+  const verdict = later
+    ? { ok: false, reason: `a later reading (${later.date}) has lower totals` }
+    : validateSnapshot(snapshot, prev, snapshot.date, { stalePrevDays: WEEKLY_STALE_PREV_DAYS });
+  if (!verdict.ok) {
+    console.log(`::warning::Reading to ${snapshot.date} for ${slug} rejected by sanity check: ${verdict.reason}. Needs manual review; ${tollLabel} unchanged.`);
+    return;
+  }
+
+  // Archive only a reading that changes the store, so a repeat leaves no orphan file.
+  let next = store;
+  const trial = applySnapshot(store, snapshot, nowISO, { appendUnchanged: true });
+  if (JSON.stringify(trial.snapshots) === JSON.stringify(store.snapshots)) {
+    console.log(`The CDC figures to ${snapshot.date} are already stored; refreshed lastChecked only (${nowISO}).`);
+    next = { ...store, lastChecked: nowISO };
+  } else {
+    const raw = archiveReportText(ROOT, toll.rawPrefix, snapshot.date, serializeReading(doc));
+    if (!raw.ok) console.log(`::warning::CDC reading for ${snapshot.date} not archived: ${raw.reason}. Snapshot stored without rawPath.`);
+    else console.log(`CDC reading ${raw.written ? "archived" : "already archived"}: ${raw.rawPath}`);
+    const full = raw.ok ? { ...snapshot, rawPath: raw.rawPath, rawSha256: raw.rawSha256 } : snapshot;
+    next = applySnapshot(store, full, nowISO, { appendUnchanged: true });
+    console.log(`Stored the reading to ${snapshot.date}: confirmed=${snapshot.confirmed} deaths=${snapshot.deaths}.`);
+  }
+
+  mkdirSync(dirname(tollJson), { recursive: true });
+  writeFileSync(tollJson, JSON.stringify(next, null, 2) + "\n");
+  console.log(`${tollLabel}: ${next.snapshots.length} snapshot(s), latest ${next.snapshots.at(-1)?.date ?? "none"}.`);
+}
+
 function flagValues(name, argv = process.argv.slice(2)) {
   return argv.filter((a) => a.startsWith(`--${name}=`)).map((a) => a.slice(name.length + 3));
 }
@@ -427,7 +556,7 @@ async function main() {
   const reportUrls = flagValues("report");
   const outbreaks = selectOutbreaksWith("toll").filter((o) => !adapter || tollAdapter(o) === adapter);
   if (adapter && outbreaks.length === 0) {
-    console.log(`::warning::No automated outbreak is read with --adapter=${oneLine(adapter)} (wikipedia or eody-report); nothing done.`);
+    console.log(`::warning::No automated outbreak is read with --adapter=${oneLine(adapter)} (wikipedia, eody-report or cdc-measles); nothing done.`);
   }
   if (reportUrls.length && !(outbreaks.length === 1 && tollAdapter(outbreaks[0]) === "eody-report")) {
     console.log("::warning::--report needs --outbreak=<slug> naming one eody-report outbreak; nothing done.");
@@ -436,7 +565,9 @@ async function main() {
   for (const outbreak of outbreaks) {
     console.log(`── ${outbreak.slug} ──`);
     try {
-      if (tollAdapter(outbreak) === "eody-report") await updateFromEodyReport(outbreak, reportUrls);
+      const adapterName = tollAdapter(outbreak);
+      if (adapterName === "eody-report") await updateFromEodyReport(outbreak, reportUrls);
+      else if (adapterName === "cdc-measles") await updateFromCdcMeasles(outbreak);
       else await updateFromWikipedia(outbreak);
     } catch (err) {
       // One outbreak failing must not stop the others.

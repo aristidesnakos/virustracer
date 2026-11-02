@@ -90,7 +90,7 @@ export default function MethodologyPage() {
           rows={[
             [
               "Source",
-              "The outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO, or, where no infobox exists, the health authority\u2019s own weekly report (West Nile virus in Greece: EODY).",
+              "The outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO, or, where no infobox exists, the health authority\u2019s own weekly report (West Nile virus in Greece: EODY; measles in the United States: the CDC).",
               "Official situation reports, each with its source.",
             ],
             [
@@ -100,7 +100,7 @@ export default function MethodologyPage() {
             ],
             [
               "Updated",
-              `Checked twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC; West Nile virus in Greece twice a day on its own schedule). A weekly report is kept once it is published.`,
+              `Checked twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC; West Nile virus in Greece twice a day on its own schedule). An official weekly source (EODY\u2019s report, the CDC\u2019s measles page) adds a reading when a new week is published.`,
               "When we enter a report. It does not update on its own.",
             ],
             ["Card shows", "When the source was last checked.", "The date the figures were last verified."],

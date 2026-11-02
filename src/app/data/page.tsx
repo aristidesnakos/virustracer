@@ -38,7 +38,7 @@ const slugParam = "<slug>";
 const OUTBREAK_ENDPOINTS = [
   {
     path: outbreakApiPath(slugParam, "toll"),
-    what: "One row per day (per weekly report, for an outbreak read from one) of cumulative confirmed, suspected, deaths and recovered, each linked to the exact Wikipedia revision or report it was read from.",
+    what: "One row per day (per weekly report, for an outbreak read from one) of cumulative confirmed, suspected, deaths and recovered, each linked to the exact Wikipedia revision, or to the report or page, it was read from.",
     params: [
       ["from, to", "Inclusive date range, YYYY-MM-DD."],
       ["limit", `Keep only the most recent N rows (1–${MAX_LIMIT}).`],

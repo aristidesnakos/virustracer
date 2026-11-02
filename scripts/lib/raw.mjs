@@ -12,6 +12,7 @@ import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { extractInfobox, parseInfobox, withoutIgnored } from "./toll.mjs";
 import { parseReportText, reportRawRelPath } from "./eody.mjs";
+import { parseCdcReading } from "./cdc.mjs";
 
 export const RAW_DIR = "data/raw/infobox";
 
@@ -67,6 +68,34 @@ export function verifyReportRaw(snapshot, rawText) {
   const parsed = parseReportText(rawText);
   if (!parsed.ok) return { ok: false, reason: `raw text does not parse as a report: ${parsed.reason}` };
   const { asOf, confirmed, deaths } = parsed.report;
+  if (asOf !== snapshot.date) return { ok: false, reason: `date: raw parses to ${asOf}, snapshot has ${snapshot.date}` };
+  if (confirmed !== snapshot.confirmed) return { ok: false, reason: `confirmed: raw parses to ${confirmed}, snapshot has ${snapshot.confirmed}` };
+  if (deaths !== snapshot.deaths) return { ok: false, reason: `deaths: raw parses to ${deaths}, snapshot has ${snapshot.deaths}` };
+  return { ok: true };
+}
+
+/**
+ * The same check for a CDC measles reading's archived document (scripts/lib/cdc.mjs
+ * `serializeReading`): the checksum matches, and re-parsing it, with the same
+ * cross-checks as when it was fetched, gives the snapshot's date, cases and deaths.
+ * @param {{date: string, confirmed: number, deaths: number, rawSha256?: string}} snapshot
+ * @param {string} rawText
+ * @returns {{ok: true} | {ok: false, reason: string}}
+ */
+export function verifyCdcRaw(snapshot, rawText) {
+  if (typeof rawText !== "string") return { ok: false, reason: "no raw text" };
+  if (snapshot.rawSha256 && sha256(rawText) !== snapshot.rawSha256) {
+    return { ok: false, reason: "sha256 of raw text does not match rawSha256" };
+  }
+  let doc;
+  try {
+    doc = JSON.parse(rawText);
+  } catch {
+    return { ok: false, reason: "raw text is not the archived CDC reading (not JSON)" };
+  }
+  const parsed = parseCdcReading(doc);
+  if (!parsed.ok) return { ok: false, reason: `raw text does not parse as a CDC reading: ${parsed.reason}` };
+  const { asOf, confirmed, deaths } = parsed.reading;
   if (asOf !== snapshot.date) return { ok: false, reason: `date: raw parses to ${asOf}, snapshot has ${snapshot.date}` };
   if (confirmed !== snapshot.confirmed) return { ok: false, reason: `confirmed: raw parses to ${confirmed}, snapshot has ${snapshot.confirmed}` };
   if (deaths !== snapshot.deaths) return { ok: false, reason: `deaths: raw parses to ${deaths}, snapshot has ${snapshot.deaths}` };

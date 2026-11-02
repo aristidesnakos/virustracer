@@ -2,7 +2,7 @@
 // (the scripts run on bare `node`, no TypeScript), so it mirrors the slug, status
 // and source of src/data/outbreaks/*.ts; tests/outbreak-registry.test.ts fails if
 // the two drift apart. Only entries with `toll` get automatic figures (from a Wikipedia
-// infobox, or from an official weekly report when `toll.adapter` says so) and only
+// infobox, or from an official weekly source when `toll.adapter` says so) and only
 // entries with `feed` get a news feed; a hand-curated record has neither.
 
 import { resolve } from "node:path";
@@ -108,6 +108,67 @@ export const OUTBREAKS = [
     },
   },
   {
+    slug: "measles-us-2026",
+    status: "active",
+    disease: "Measles",
+    toll: {
+      // No Wikipedia article has an outbreak infobox for the national picture (checked
+      // 2026-11-02), so the figures come from the CDC's own page, which it updates weekly
+      // (confirmed cases reported as of noon on Thursday). Parsed by scripts/lib/cdc.mjs
+      // from three documents that must agree: the page, the data file behind its summary
+      // table and the per-jurisdiction map data.
+      adapter: "cdc-measles",
+      // The year the CDC counts cases by (rash onset). When the page moves on to the next
+      // year the reader stops with a notice instead of storing a different year's totals.
+      year: 2026,
+      pageUrl: "https://www.cdc.gov/measles/data-research/index.html",
+      hospUrl: "https://www.cdc.gov/wcms/vizdata/measles/measles_hosp.json",
+      mapUrl: "https://www.cdc.gov/wcms/vizdata/measles/MeaslesCasesMap.json",
+      rawPrefix: "cdc-measles-us",
+      source: "CDC measles cases and outbreaks page",
+    },
+    feed: {
+      sources: [
+        { name: "Google News — US measles cases", url: gnews("US measles cases CDC"), source: "News" },
+        { name: "Google News — Pennsylvania measles outbreak", url: gnews("Pennsylvania measles outbreak"), source: "News" },
+        { name: "Google News — measles outbreak United States", url: gnews("measles outbreak United States 2026"), source: "News" },
+      ],
+      // Measles is in the news worldwide, so "measles" alone must not pass: an item needs a
+      // US marker too. "cdc" is on the list because the usual headline is "CDC reports N
+      // measles cases". Bangladesh's own feed needs Bangladesh context, so the two do not
+      // collect each other's stories.
+      strongKeywords: [],
+      contextualKeywords: [
+        {
+          term: "measles",
+          needsOneOf: [
+            "cdc",
+            "united states",
+            "u.s.",
+            "us measles",
+            "pennsylvania",
+            "south carolina",
+            "utah",
+            "texas",
+            "wisconsin",
+            "kentucky",
+            "ohio",
+            "virginia",
+            "new york",
+            "florida",
+            "arizona",
+          ],
+        },
+      ],
+      // Used in the summary and extraction prompts.
+      subject: "the 2026 measles outbreaks in the United States",
+      extraction: {
+        scope: `If — and only if — the article reports a SPECIFIC COUNTRY OTHER THAN THE UNITED STATES (which is already curated) with measles cases, deaths, or suspected cases LINKED TO THE 2026 US OUTBREAKS (e.g. a case in Canada or Mexico traced to a US outbreak, or an exported case after travel from an affected US state), return JSON:`,
+        exclusions: `If the article is only about the United States, OR does not mention a specific country, OR the cases belong to a different measles outbreak (Canada's, Mexico's, Bangladesh's, Europe's, or any outbreak with no stated link to the US), OR the country is merely on alert, vaccinating or preparing without reported linked cases or deaths, return:`,
+      },
+    },
+  },
+  {
     slug: "west-nile-greece-2026",
     status: "active",
     disease: "West Nile virus",
@@ -157,9 +218,10 @@ export const OUTBREAKS = [
 ];
 
 /**
- * Which reader produces an outbreak's toll: "wikipedia" (the default, `toll.page`) or
- * "eody-report" (EODY's weekly report PDF). Null when the outbreak has no toll.
- * @returns {"wikipedia" | "eody-report" | null}
+ * Which reader produces an outbreak's toll: "wikipedia" (the default, `toll.page`),
+ * "eody-report" (EODY's weekly report PDF) or "cdc-measles" (the CDC's national measles
+ * page and its two data files). Null when the outbreak has no toll.
+ * @returns {"wikipedia" | "eody-report" | "cdc-measles" | null}
  */
 export function tollAdapter(outbreak) {
   if (!outbreak?.toll) return null;

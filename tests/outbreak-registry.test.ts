@@ -116,8 +116,10 @@ describe("script registry stays in step with the site registry", () => {
     for (const s of OUTBREAKS) {
       const o = getOutbreak(s.slug)!;
       expect(Boolean(s.toll), s.slug).toBe(o.source.kind !== "manual");
-      // The reader matches the declared source: a Wikipedia page or an official report.
-      if (s.toll) expect(tollAdapter(s), s.slug).toBe(o.source.kind === "wikipedia-infobox" ? "wikipedia" : "eody-report");
+      // The reader matches the declared source: a Wikipedia page or an official report
+      // (EODY's weekly PDF, or the CDC's measles page).
+      if (s.toll && o.source.kind === "wikipedia-infobox") expect(tollAdapter(s), s.slug).toBe("wikipedia");
+      if (s.toll && o.source.kind === "official-report") expect(["eody-report", "cdc-measles"], s.slug).toContain(tollAdapter(s));
     }
   });
 
@@ -138,6 +140,41 @@ describe("script registry stays in step with the site registry", () => {
       expect(s.toll?.rawPrefix, s.slug).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
       expect(getOutbreak(s.slug)!.metrics.reportingCadence, s.slug).toBe("weekly");
     }
+  });
+
+  it("gives a CDC measles outbreak every URL its reader fetches, all on www.cdc.gov, and a weekly cadence", () => {
+    const cdc = OUTBREAKS.filter((x) => tollAdapter(x) === "cdc-measles");
+    expect(cdc.map((s: { slug: string }) => s.slug)).toEqual(["measles-us-2026"]);
+    for (const s of cdc) {
+      for (const key of ["pageUrl", "hospUrl", "mapUrl"] as const) {
+        expect(s.toll?.[key], `${s.slug}.${key}`).toMatch(/^https:\/\/www\.cdc\.gov\//);
+      }
+      expect(s.toll?.year, s.slug).toBe(2026);
+      expect(s.toll?.rawPrefix, s.slug).toMatch(/^[a-z0-9]+(?:-[a-z0-9]+)*$/);
+      expect(getOutbreak(s.slug)!.metrics.reportingCadence, s.slug).toBe("weekly");
+      expect(getOutbreak(s.slug)!.source.kind, s.slug).toBe("official-report");
+    }
+  });
+
+  it("keeps the two measles news feeds from collecting each other's stories", () => {
+    const text = (title: string) => title.toLowerCase();
+    const matches = (slug: string, title: string) => {
+      const f = OUTBREAKS.find((o: { slug: string }) => o.slug === slug)?.feed;
+      if (!f) throw new Error(`${slug} has no feed`);
+      const t = text(title);
+      return (
+        f.strongKeywords.some((k: string) => t.includes(k)) ||
+        f.contextualKeywords.some((c: { term: string; needsOneOf: string[] }) => t.includes(c.term) && c.needsOneOf.some((k) => t.includes(k)))
+      );
+    };
+    const us = "CDC reports 4,852 measles cases as the Pennsylvania outbreak grows";
+    const bd = "Bangladesh measles death toll reaches 1,009 as DGHS reports new cases";
+    expect(matches("measles-us-2026", us)).toBe(true);
+    expect(matches("measles-bangladesh-2026", us)).toBe(false);
+    expect(matches("measles-bangladesh-2026", bd)).toBe(true);
+    expect(matches("measles-us-2026", bd)).toBe(false);
+    // Measles news from elsewhere belongs to neither.
+    expect(matches("measles-us-2026", "Measles outbreak in Mongolia prompts vaccination drive")).toBe(false);
   });
 
   it("selects automated outbreaks by default and one by flag", () => {

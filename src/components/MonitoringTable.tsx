@@ -154,7 +154,7 @@ export default function MonitoringTable({
           <tbody>
             {monitoringData.map((row) => {
               const isProvince = Boolean(row.parentIso);
-              const rowCfr = cfr(row.deaths, row.confirmed);
+              const rowCfr = row.deathsUnreported ? null : cfr(row.deaths, row.confirmed);
               const isOpen = expanded === row.iso;
               const detailId = `detail-${row.iso}`;
               const monitoring = monitoringLine(row);

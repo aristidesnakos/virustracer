@@ -6,12 +6,13 @@ Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 
 
 **Site:** Outbreak Files, https://outbreakfiles.com. Next.js 16 App Router, data committed to the repo by a twice-daily GitHub Action (08:00 and 20:00 UTC), Vercel deploys on every push to `main`.
 
-**Four outbreaks are tracked**
+**Five outbreaks are tracked**
 
 | Slug | Status | Source | Notes |
 |---|---|---|---|
 | `ebola-bundibugyo-2026` | active | Wikipedia infobox, daily | Rt shown (serial interval from West Africa 2014). Default outbreak: the un-prefixed `/api/v1/*` aliases serve it and must never be removed. |
 | `measles-bangladesh-2026` | active | Wikipedia infobox, daily | Rt and delay-adjusted fatality are **not** reported (no verified serial-interval SD). Headline Deaths = deaths among confirmed cases (`summary.deathsQualifier`); the 909 further deaths among suspected cases are stated beside it. |
+| `measles-us-2026` | active | CDC national measles page + two JSON files behind it, weekly (`update-data.yml`, step "Update CDC measles figures") | Added 2026-11-02. First reading: 29 Oct 2026, 4,852 cases, 3 deaths. History starts there (the CDC page has no archive), so Fig. 3 says "not enough data" until about 14 days of weekly readings exist. **Open decision:** the headline Deaths is the 3 the CDC page displays, but its own data file lists 5 (and Pennsylvania reports at least five); every run logs a warning while they differ. Re-check `measles_hosp.json` `total_deaths` against the page weekly and decide whether the headline should move. The state table and map markers are hand-copied from the CDC's per-jurisdiction data and need a weekly refresh (each row shows its `asOf`). Not yet checked: that the CDC answers GitHub's runners (EODY does not); if the step logs a warning, run `node scripts/update-toll.mjs --outbreak=measles-us-2026` from a laptop. News feed files appear after the first scheduled run (Google News is unreachable from the sandbox that built this). |
 | `west-nile-greece-2026` | active | EODY weekly report (PDF), read by the Mac launchd job | EODY answers GitHub runners with 403. Latest stored report: up to 2026-10-08, 443 cases, 47 deaths (`toll.json`, checked 2026-10-10). |
 | `hantavirus-mv-hondius-2026` | over | hand-curated | Archived record, no `toll.json`, frozen `live.json`. |
 

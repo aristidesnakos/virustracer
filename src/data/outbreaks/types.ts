@@ -25,6 +25,11 @@ export interface MonitoringEntry {
   parentIso?: string;
   confirmed: number;
   deaths: number;
+  /**
+   * True when the source publishes no deaths for this row (e.g. US states: the CDC reports deaths
+   * nationally only). The table then shows "—" for its case fatality instead of a misleading 0.0%.
+   */
+  deathsUnreported?: boolean;
   /** People under active monitoring, when the source reports it (e.g. passengers and contacts). */
   monitored?: number;
   /** People in quarantine, when the source reports it. */

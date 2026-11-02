@@ -37,6 +37,14 @@ jobs:
         # (West Nile virus in Greece) have their own workflow, update-west-nile.yml.
         run: node scripts/update-toll.mjs --adapter=wikipedia
 
+      - name: Update CDC measles figures
+        # US measles: the CDC's national page and the two JSON files behind it, updated once a
+        # week (counts as of Thursday noon). Most runs find the week already stored and only
+        # refresh lastChecked. Plain HTTPS GETs; if the CDC ever refuses GitHub's runners (as
+        # EODY does), this logs a warning and exits 0 like every other reader, so the steps
+        # below still run.
+        run: node scripts/update-toll.mjs --adapter=cdc-measles
+
       - name: Fetch feeds and update live data
         env:
           # OpenRouter key (uses DeepSeek V4 Flash for cheap summarization)

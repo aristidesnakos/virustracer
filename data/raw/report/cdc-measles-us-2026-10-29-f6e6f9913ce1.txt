@@ -1,0 +1,148 @@
+{
+  "version": 1,
+  "year": 2026,
+  "page": {
+    "headline": "As of October 29, 2026, 4,852 confirmed* measles cases were reported in the United States in 2026. Among these, 4,834 measles cases were reported by 47 jurisdictions: Alabama, Alaska, Arizona, California, Colorado, Connecticut, Delaware, District of Columbia, Florida, Georgia, Idaho, Illinois, Indiana, Iowa, Kansas, Kentucky, Louisiana, Maine, Maryland, Massachusetts, Michigan, Minnesota, Missouri, Montana, Nebraska, New Jersey, New Mexico, New York City, New York State, North Carolina, North Dakota, Ohio, Oklahoma, Oregon, Pennsylvania, Rhode Island, South Carolina, South Dakota, Tennessee, Texas, Utah, Vermont, Virginia, Washington, West Virginia, Wisconsin, and Wyoming. A total of 18 measles cases were reported among international visitors to the United States. There have been 43 new outbreaks** reported in 2026, and 96% of confirmed cases (4,666 of 4,852) are outbreak-associated (3,282 from outbreaks starting in 2026 and 1,384 from outbreaks that started in 2025).",
+    "updated": "October 30, 2026",
+    "deaths": {
+      "header": [
+        "",
+        "2026",
+        "2025"
+      ],
+      "row": [
+        "Total Deaths",
+        "3*",
+        ""
+      ]
+    }
+  },
+  "hosp": {
+    "lastUpdated": "October 29, 2026",
+    "data": {
+      "total_cases": [
+        "4,852"
+      ],
+      "case_age_under_5": [
+        "812 (17%)"
+      ],
+      "case_age_5_to_19": [
+        "2,010 (41%)"
+      ],
+      "case_age_20_up": [
+        "1,996 (41%)"
+      ],
+      "case_age_unknown": [
+        "34 (1%)"
+      ],
+      "case_unvax_unknown": [
+        "96%"
+      ],
+      "case_one_mmr": [
+        "2%"
+      ],
+      "case_two_mmr": [
+        "2%"
+      ],
+      "pct_hospitalized": [
+        "11%"
+      ],
+      "hospitalized_sentence": [
+        "(511 of 4,852 cases)"
+      ],
+      "hospitalized_sentence_esp": [
+        "(511 de 4,852 casos)"
+      ],
+      "hosp_age_under_5": [
+        "16% (130 of 812)"
+      ],
+      "hosp_age_under_5_esp": [
+        "16% (130 de 812)"
+      ],
+      "hosp_age_5_to_19": [
+        "5% (92 of 2,010)"
+      ],
+      "hosp_age_5_to_19_esp": [
+        "5% (92 de 2,010)"
+      ],
+      "hosp_age_20_up": [
+        "14% (288 of 1,996)"
+      ],
+      "hosp_age_20_up_esp": [
+        "14% (288 de 1,996)"
+      ],
+      "hosp_age_unknown": [
+        "3% (1 of 34)"
+      ],
+      "hosp_age_unknown_esp": [
+        "3% (1 de 34)"
+      ],
+      "total_deaths": [
+        "5"
+      ],
+      "deaths_sentence": [
+        "There have been 5 confirmed deaths from measles in 2026."
+      ],
+      "deaths_sentence_esp": [
+        "Ha habido 5 muertes confirmadas por sarampión en 2026."
+      ]
+    }
+  },
+  "map": {
+    "lastUpdated": "October 29, 2026",
+    "cases": {
+      "Alabama": "2",
+      "Alaska": "1",
+      "Arizona": "110",
+      "Arkansas": "0",
+      "California": "55",
+      "Colorado": "25",
+      "Connecticut": "3",
+      "Delaware": "25",
+      "District of Columbia": "1",
+      "Florida": "148",
+      "Georgia": "21",
+      "Hawaii": "0",
+      "Idaho": "4",
+      "Illinois": "24",
+      "Indiana": "68",
+      "Iowa": "40",
+      "Kansas": "5",
+      "Kentucky": "200",
+      "Louisiana": "1",
+      "Maine": "6",
+      "Maryland": "66",
+      "Massachusetts": "2",
+      "Michigan": "19",
+      "Minnesota": "80",
+      "Mississippi": "0",
+      "Missouri": "18",
+      "Montana": "6",
+      "Nebraska": "1",
+      "Nevada": "0",
+      "New Hampshire": "0",
+      "New Jersey": "2",
+      "New Mexico": "19",
+      "New York": "168",
+      "New York City": "7",
+      "North Carolina": "22",
+      "North Dakota": "38",
+      "Ohio": "195",
+      "Oklahoma": "1",
+      "Oregon": "57",
+      "Pennsylvania": "1411",
+      "Rhode Island": "1",
+      "South Carolina": "670",
+      "South Dakota": "11",
+      "Tennessee": "9",
+      "Texas": "192",
+      "Utah": "535",
+      "Vermont": "1",
+      "Virginia": "179",
+      "Washington": "58",
+      "West Virginia": "2",
+      "Wisconsin": "323",
+      "Wyoming": "2"
+    }
+  }
+}

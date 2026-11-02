@@ -28,7 +28,7 @@ export const absoluteUrl = (path = "/"): string => `${SITE_URL}${path === "/" ? 
 
 /**
  * The site's licence for its data. Most outbreaks are read from a Wikipedia infobox (CC BY-SA 4.0),
- * so the data is shared under the same licence; figures from official reports (e.g. EODY) are facts
+ * so the data is shared under the same licence; figures from official reports (e.g. EODY, the CDC) are facts
  * shared under it too, with the report credited.
  */
 export const DATA_LICENSE = "https://creativecommons.org/licenses/by-sa/4.0/";

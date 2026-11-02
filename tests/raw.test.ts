@@ -8,6 +8,7 @@ import {
   backfillRawForStore,
   rawRelPath,
   sha256,
+  verifyCdcRaw,
   verifyRaw,
   verifyReportRaw,
 } from "../scripts/lib/raw.mjs";
@@ -210,6 +211,12 @@ describe("archived files in data/outbreaks/<slug>/toll.json", () => {
           // An official report's text, named by source, date and checksum.
           expect(s.rawPath).toBe(reportRawRelPath(toll.rawPrefix, s.date, sha256(text)));
           expect({ slug, date: s.date, ...verifyReportRaw(s, text) }).toEqual({ slug, date: s.date, ok: true });
+          continue;
+        }
+        if (toll?.adapter === "cdc-measles") {
+          // The CDC reading's archived document, named like an official report's text.
+          expect(s.rawPath).toBe(reportRawRelPath(toll.rawPrefix, s.date, sha256(text)));
+          expect({ slug, date: s.date, ...verifyCdcRaw(s, text) }).toEqual({ slug, date: s.date, ok: true });
           continue;
         }
         expect(s.rawPath).toBe(rawRelPath(s.revid));
