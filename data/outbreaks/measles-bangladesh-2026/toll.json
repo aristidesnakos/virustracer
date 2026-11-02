@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-10-28T08:37:39.270Z",
+  "lastChecked": "2026-11-02T08:51:09.568Z",
   "snapshots": [
     {
       "date": "2026-04-05",
@@ -689,6 +689,19 @@
       "revisionTimestamp": "2026-10-02T05:09:47Z",
       "rawPath": "data/raw/infobox/1377973650.txt",
       "rawSha256": "8bcfa81ae4ee0d08e8472a8f1cfc8716bcc75070778ca4be253641f1fd16549e"
+    },
+    {
+      "date": "2026-11-02",
+      "confirmed": 23478,
+      "suspected": 222552,
+      "deaths": 104,
+      "recovered": null,
+      "source": "Wikipedia infobox (cites DGHS Bangladesh)",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1382600424",
+      "revid": 1382600424,
+      "revisionTimestamp": "2026-10-29T12:15:10Z",
+      "rawPath": "data/raw/infobox/1382600424.txt",
+      "rawSha256": "b95830d73c8fd08779f131bfdd3ac201533b130695b2a39792115899d7921351"
     }
   ]
 }

@@ -1,6 +1,20 @@
 {
-  "lastExtracted": "2026-10-28T08:39:39.172Z",
+  "lastExtracted": "2026-11-02T08:52:36.717Z",
   "candidates": [
+    {
+      "id": "news-34621cdfa299451c",
+      "country": "Uganda",
+      "iso": "UG",
+      "flag": "🇺🇬",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "The outbreak also affects neighboring Uganda, though the article does not provide a specific cumulative death toll for this strain.",
+      "sourceTitle": "Congo's Ebola infections surpass 10,000, government says - GMA Network",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQkx0WnZMWjhBaXNJenRkWktsTGVzLWhwcEtRT2lkWVBYNWxHRTVYUk5YNDlnZlA4bnV5c25OalY3bGZlTk9XX3VvYjh3Wk1RdXRqRUZIWUR3UzQ2c1piekdJUjl2Y21FZTI5VG54Y2ZTUGdZSUxaZ091OFVlaE55YVhyZW5EMjRnRWpiWGZSUmZ6Qk1LaUJrOFdrdXliVVlFdVhwMDh6U3hOVWYxUWk3OXNnTU5sQWZfemdz0gHAAUFVX3lxTE8yMVVpZV9FdDZRUktncXJ6Nk85cUFmeEQ4TFJZcVdIMGxEWDZwVTFrdnY5NGdlWFNiVG1VXzlIcjVPX2JGX2pOOGFWMm9SNHZWNS02TW1kV1Q0TnhyUWlpOHJRSFVOemlTUDd6elZCZnBTLWlDa2ZLRXRiRzhYUDlqTTlUdW5OeFZLS3lROGRVNUtSVTlJNldnLWlSWjVmckFFTEN6YWhlMllrVkV6S1Z6Sk00azUxR0k2VEI4TnFlRg?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-10-28",
+      "extractedAt": "2026-11-02T08:52:30.901Z"
+    },
     {
       "id": "news-b10a717fa35cd3b3",
       "country": "Kenya",

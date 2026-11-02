@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-10-28T08:41:35.325Z",
+  "lastFetched": "2026-11-02T08:54:11.859Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -116,7 +116,8 @@
     "news-df6015a766660b01",
     "news-ad8c8287d99e14c3",
     "news-1b0fbad1cd8ac031",
-    "news-bb05835878cc16a3"
+    "news-bb05835878cc16a3",
+    "news-7ca00be8cded9046"
   ],
   "recentItems": [
     {
@@ -224,6 +225,14 @@
       "summary": "Greece records a record 324 cases of West Nile virus UA.NEWS"
     },
     {
+      "id": "news-7ca00be8cded9046",
+      "title": "West Nile Virus Cases Rise to 324 in Greece - Argophilia Travel News",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9nTU9aQXJkODM2c1hrRHFfMmk1aFNqcDQ4WVFXMkVQMHhRZ2pEb2FybVBBOXFyQnk4cUhmWHc0RE1ya2p1WUN4RHo1dEtBR0VZaFYyNHA0Uk9WOGtXRktCRXNFbEJzYVJ6ODVVUGNEUEsxb1R6MDE0VDF30gF_QVVfeXFMUG1XaGN4TE1DdVo3cEtzTjJrXzRNbmFTWjljMWpaNkMteTZwMjdFS21ia0lJd0EzbVg3TnAzYWlVVEp0dzdxRVV0c2IycHFET2tSX0RDRFFfMm9QLUlLLXFvVmJveXdDa2VsXzlJMzBvQmVCcnU2cHlyZGNGODNBVQ?oc=5",
+      "date": "2026-09-10",
+      "source": "Google News — West Nile Greece deaths",
+      "summary": "As of early October 2026, Greece has reported 324 confirmed West Nile virus cases, including 34 deaths."
+    },
+    {
       "id": "news-bb05835878cc16a3",
       "title": "Sharp rise in West Nile virus cases in Greece - BGNES",
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13c0lwU0pWMjY4eU5VczhkRlFSdVpmR1ZhQWlsUkJKYktXZkN5al9GZktaTHdWMlpfU2hWZ3J2QXVTNDhidjNSX2FudDRvWWJlcXUtQjVER2hCcDAwdmRTNlBQTnBYdUVGUGFtLWxXanltcVNpeUY5a2RiLXdwMmM?oc=5",
@@ -270,14 +279,6 @@
       "date": "2026-09-03",
       "source": "Google News — West Nile Attica",
       "summary": "West Nile Virus Cases Confirmed in Affluent Athens Suburb Greek City Times"
-    },
-    {
-      "id": "news-7be8fb5ecd40d591",
-      "title": "West Nile Virus Cases Rise to 290 in Greece - tovima.com",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQbkVpZHRCSThHVXEzcS1tZkRlMmRsWV9qZmhQNFdDbmJXcDB6b0g4eFEwcVFSRW5hUzZ2bHJXbHNrdWhGXzQ3by1jelZIaV9YaHZHRy1VVnZXZFlDdGlNZ1pkYThicjNpZ0ZXaWhsd0VhVk5nU01tOTE3U2RaYk5JSNIBhgFBVV95cUxOTTdjZTNjZlFBdjNPMnRzeUxIVHFHZHo4R1B6UnpDS2pfemlBOTRyVDgwWUVhekN5c21VbGNwbndnVTFSRFRwVnpWZERaZ2tWdC11YmNuejZVQmhrbjdMdngwZC1tdkRuWTY0ZjRiY3lYNFJwWExCM3Y5SVhpby1yc0QzYjI5dw?oc=5",
-      "date": "2026-09-03",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile Virus Cases Rise to 290 in Greece tovima.com"
     }
   ]
 }

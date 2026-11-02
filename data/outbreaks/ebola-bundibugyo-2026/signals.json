@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-10-27T20:27:18.270Z",
+  "lastUpdated": "2026-11-02T08:52:36.718Z",
   "signals": [
     {
       "iso": "KE",
@@ -61,15 +61,16 @@
       "country": "Uganda",
       "flag": "🇺🇬",
       "firstSeen": "2026-10-26",
-      "lastSeen": "2026-10-26",
+      "lastSeen": "2026-10-28",
       "firstSourceTitle": "Ebola Spreads Beyond Congo as Death Toll Tops 4,800 - Seoul Economic Daily",
       "firstSourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVWZmYUwzX1k2b3JTWXc0UTRIVHM4LXlKRVZMQVJUcGk4SFNTcXpHVWN0aHE4ZWJGSnJsRndNdVJuVUpPTjJGaXNreloteEFGem1SY0VzTFZVNFA5SUJzQ3RFd0dnQ3BtMm1jRFE0d3Z2X19MMXZGLU9zd1d3WXFmSk40Szd0ZHByanFLU19Ld2dzVVdZbDJRd0tjbGpBYms?oc=5",
       "firstSourceName": "Google News — Ebola death toll",
-      "mentions": 1,
+      "mentions": 2,
       "maxCasesMentioned": null,
       "maxDeathsMentioned": null,
       "seenIds": [
-        "news-3300deca1a12b9d8"
+        "news-3300deca1a12b9d8",
+        "news-34621cdfa299451c"
       ]
     }
   ]
