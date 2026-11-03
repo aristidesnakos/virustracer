@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-02T08:54:11.859Z",
+  "lastFetched": "2026-11-03T08:53:31.100Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -117,9 +117,28 @@
     "news-ad8c8287d99e14c3",
     "news-1b0fbad1cd8ac031",
     "news-bb05835878cc16a3",
-    "news-7ca00be8cded9046"
+    "news-7ca00be8cded9046",
+    "news-07d319bdf05b848c",
+    "news-d99579a00da1b683",
+    "news-f04441854a75f4e6"
   ],
   "recentItems": [
+    {
+      "id": "news-07d319bdf05b848c",
+      "title": "Increase in West Nile Virus cases and deaths in Greece - Atlas Global de Riesgo",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc2ZHaTRpQW1VUHp4RjltVVdBSWtjX0pFUXYxYVV1dDEzeWhZMnFKTEg1aURGZjU4bU02NjJ6dFdERHNaYnN5aE1tNDZzRnJISzhZOXlGVDhUTXktdWNrdnhWNXFJYi1OXzNLNURQaHY5eFhrU3VIZTN6ZDZyYXZKUlV4YW13eHpSc2tVRi1mWQ?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "Increase in West Nile Virus cases and deaths in Greece Atlas Global de Riesgo"
+    },
+    {
+      "id": "news-d99579a00da1b683",
+      "title": "West Nile virus death toll in Greece reaches 51 - İlke Haber Ajansı",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZlktclducWdWTzZPZGtmejdQUUlVMzg1bFdvM0ZWVkJKOVFlOWlpWlZaQWhoNDJMQWF0dE5nQUw0SU1RT0ZrX09nUGRYRXZ6S0NvMEd4T1NkQWZmLV81Mmw0T3RfUXFVTzVpbXhFQ243aGRLTUtoX3VhQVV4b0hUeDA3ek1GTFFCZk1pZ3ZoMA?oc=5",
+      "date": "2026-10-30",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "West Nile virus death toll in Greece reaches 51 İlke Haber Ajansı"
+    },
     {
       "id": "news-1b0fbad1cd8ac031",
       "title": "Greece West Nile virus cases top 450 - Outbreak News Today",
@@ -263,22 +282,6 @@
       "date": "2026-09-06",
       "source": "Google News — West Nile virus Greece",
       "summary": "Greece Second in Europe for West Nile, Seven Dead in Skopje srpske.rs"
-    },
-    {
-      "id": "news-bd8e401b7b6ad8c1",
-      "title": "West Nile Virus Update in Greece and Cyprus - Atlas Global de Riesgo",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPb0tyZ1Q4Nlc3NmdmdnFMcERjcDBpSmxEbUd0RjdYT28yZnpSeUNoS0JBVE5BX3ZBTWR0VUpWZHlMSnM0cDl3ZzVVUEVpQWg3OGtLRlRWeFJWeXIzU25qUVZsV0hacTJBLWVEbmlXMTRYWFNjMkpGRFA2alotdlZveQ?oc=5",
-      "date": "2026-09-04",
-      "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile Virus Update in Greece and Cyprus Atlas Global de Riesgo"
-    },
-    {
-      "id": "news-f4c24eb605ac4ac4",
-      "title": "West Nile Virus Cases Confirmed in Affluent Athens Suburb - Greek City Times",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ182VHJuUEZCblpqXzhMb1IzZkFDbmlTZnkxSGhMZjUxSGluZ01vLU83TEd4ajVBQVZXQjVXRnM2WFNRTEE2WFhsRENCaHZwVFVjdHBCZ2hkdXpuNWx6NWdEODhMSWJxaWFQUGtiUjZZVGxJOGRhTmtvc3k1WFdqc0VKRzdkanFBeTZlMHlzcFNfTDlsRGlwT005c1k?oc=5",
-      "date": "2026-09-03",
-      "source": "Google News — West Nile Attica",
-      "summary": "West Nile Virus Cases Confirmed in Affluent Athens Suburb Greek City Times"
     }
   ]
 }

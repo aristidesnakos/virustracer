@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-02T08:52:36.717Z",
+  "lastFetched": "2026-11-03T08:50:36.308Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -812,9 +812,197 @@
     "news-7b9e548c228ea3a4",
     "news-25fc9cb80c73d5dd",
     "news-75dfd8a3be1e6377",
-    "news-98b1fe819bff130a"
+    "news-98b1fe819bff130a",
+    "news-cd4eb4ac587ab444",
+    "news-77720cc2e0cda2bc",
+    "news-b6b3d468be15d81b",
+    "news-b87bfb96723d6002",
+    "news-6f720ddbcaadc58d",
+    "news-a00d12bda41d0a11",
+    "news-dd4484f1b55ad063",
+    "news-de7e806d47704edf",
+    "news-6a76a949544b141b",
+    "news-cc1238ccc9f94fa5",
+    "news-b07b333846fc6d35",
+    "news-1608b3e438de7832",
+    "news-a7fa3f5670102beb",
+    "news-0c23c3a7c1f21d8d",
+    "news-2096f39b3725929f",
+    "news-854db548d6238efc",
+    "news-1e47dc2879717f72",
+    "news-4c4720ad0f298766",
+    "news-86656f6079b2fd4e",
+    "news-998cfb1229058fa6",
+    "news-bb72317761695c80",
+    "news-20f73e33656820a0",
+    "news-527447322e7fffb0",
+    "news-e6fc7647362872b3",
+    "news-23d2b90686ac5976",
+    "news-23b91e3add371417",
+    "news-92da2b95c931ae9f",
+    "news-351d77a76bcaa72f",
+    "news-7bcca74a43a595dc",
+    "news-6e580e17623b5d8e",
+    "news-27419f442a343334",
+    "news-91e00d9654164074",
+    "news-f6ffd60fd1cd63dc",
+    "news-aef78f0b6380190b",
+    "news-b5d74ef921177927",
+    "news-72a904214dd3eb79",
+    "news-6b9417d2da5491b3",
+    "who-cd4eb4ac587ab444",
+    "who-86656f6079b2fd4e",
+    "who-092f242a083c42fe",
+    "who-10e0ddbbdb1769ea",
+    "who-6566d77a05305994",
+    "who-9e395ad397081d9a",
+    "who-e4b1160e1b0bd52b"
   ],
   "recentItems": [
+    {
+      "id": "news-cd4eb4ac587ab444",
+      "title": "Ebola outbreak kills more than 5,300 people in DR Congo - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOTVhWLTZvSFA4aXdHbWhBVzNXTGNlYmVMdnI0MlJidUxrTjVnUWFLcXdueGlSVEhSd3JHQ2FoTGJEV2pycWtHX3JYcTEzWHAtZzhMRHBMMkhjR242QUFWempLdVZBeVhjMW5xQ0NCTHVmM0ZSaHlWYVJMU3NkRkhFekFrTGFSVW1xdDBUcnFjYm5OeVB1czdJRUJ3WdIBoAFBVV95cUxOZ3loT0ZaYUxPdjF3Uk53ZS16R0RnVnVtOEJXMEl2X2t1VmNiRGZIQjFkOHZIVWlKNGNXRTVzTjh6cUdKcHpsT2dGd19BQXJ4ZUQyUTdvN1hPVHF6c3RaRmVlZEtJcU9ZeTk4dmgwNVlPYW5aTmtRbjNzREhHWG1DSDZ3LUVzMmRrbi1jZk5qSlg0b0tpWnkzNU1PMjBXZmUw?oc=5",
+      "date": "2026-11-03",
+      "source": "Google News — Ebola death toll",
+      "summary": "Over 5,300 people have died in the Democratic Republic of Congo from a new Ebola outbreak that has also spread to Uganda, according to Al Jazeera."
+    },
+    {
+      "id": "news-1e47dc2879717f72",
+      "title": "Bundibugyo Ebola outbreak crosses borders as DRC fatalities top 5,000 and vaccine trials begin - Latin Times",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQYmstdkJKcm9IU2RBMnJNUlduVnlhTlc3TEtUbUJCYlB1aS1jZmh4NWdibXlJejdGdktqUE90R2RIOE5VOGJZOVpabnh5cDVpTEJtN2E1QUphbFdZWkJhQ1VWVWlWcHZselg5ZUkwMndscGt3ME9GS2RKMkozWXZackdhaU1Ib01XVzlxVQ?oc=5",
+      "date": "2026-11-03",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Bundibugyo Ebola outbreak crosses borders as DRC fatalities top 5,000 and vaccine trials begin Latin Times"
+    },
+    {
+      "id": "news-77720cc2e0cda2bc",
+      "title": "Ebola fatality rate in DR Congo tops 50% as death toll reaches 5,372 - Africanews",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOMm14XzVtTnlnY1dnUnhxdXFSRkI5YWl1T0ptZS1yTU83YS1wVEVRSkE2SmJYQ1hCYU1wTHRYLTVRSC1ta3VJX2JpQ3pneWM2dkVKUjgxU3FRMUlFbmg3UHU0ajdQSjcwV0lBcGxtQ0tjeW9JTTF5eG9IaGZqdlhuY3NxU0VnRndRdllqWnhsLTg3RnczQW9zckxlMFFmM2NMZzd3M3d6MzfSAa4BQVVfeXFMTVo3Ul9GSkJQbHVvWmMxMm0yUG9sQmhPaWhaemFYVVFlVkZEYk1EbXFXUHp6d3lqdFdYaVRDRy1IRHlnR2RBZU5WSlpoaWxhWlBxeVk3WlNReXlfUUxzU1BnM1otY2l3Vmc4dFY5cnZmX0hWMDc4dzNJZlV4TmpWcjZEQVAteEdld2JtWVM0T3ZWUTNpRXdGejdOM3RKdTc0LUxBSHduSGxPMXc4VWtR?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of the article’s report, the 2026 Bundibugyo Ebola outbreak has reached a death toll of 5,372 in DR Congo, with a fatality rate exceeding 50%."
+    },
+    {
+      "id": "news-b6b3d468be15d81b",
+      "title": "Congo Ebola Deaths Top 5,000 as 80% of New Cases Emerge Outside Tracked Contacts - Medical Daily",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOWGlwMlRiRkZZeUN5QnVEUmRLZmZmUEJuOXViakxHLXJuVzBwRU5NZmoySmJrSTFLOXMzNFNlMkE1LXpTeVE3YWlfWUZpRUJaWVlDckNrSTV3MEtGWElnZ3NEQzE3OGVIR0R3NFNNZDhMX0lNQnZKUnFwUVhwX21PQ0FCeURqVUdwS0t0UGdfdw?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "Congo Ebola Deaths Top 5,000 as 80% of New Cases Emerge Outside Tracked Contacts Medical Daily"
+    },
+    {
+      "id": "news-b87bfb96723d6002",
+      "title": "Two-thirds of pledged Ebola response funds remain undisbursed in Africa: Africa CDC - Anadolu Ajansı",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPZWxwRHQ3VnZmcWVuX3dyVzZLUzVtVXRoWktqbzlFbFpQdDRIVzNsMS0tdndDOGRUNU5OU0pjQ3U1SlRUd2p2QUxIVk1GaTlLVEtlaFdRRElUc1BmazFMNnJKZnFpWE5VaDhvbEdZUk12SkVGQTJMbXExbFNwUmNZMHBETm9TcVZ5M3NfYzRhUTViNnFRUWtVMG8wdDA0c3hpQWc4UzBNcXJ3REhNa3FYUmVYdUJWZy1LZ2p3UTBxMA?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of January 28, 2026, Africa CDC reported that only one-third of the $55 million pledged for the Ebola outbreak in Uganda and the Democratic Republic of Congo has been disbursed, warning that the funding gap severely hampers the response."
+    },
+    {
+      "id": "news-6f720ddbcaadc58d",
+      "title": "Ebola Death Toll Reaches 5,372 in DR Congo - TOLOnews",
+      "url": "https://news.google.com/rss/articles/CBMiTkFVX3lxTFBnNUZMckZ0RXNtQ2s1QnliMVE3XzR4cnI2bnJFQ3NITFh5N0ttVUtnYkJGdjN2SEpQMzZGYVRzSUt4WXE5ZVM1N1JjYzA1Zw?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola Death Toll Reaches 5,372 in DR Congo TOLOnews"
+    },
+    {
+      "id": "news-4c4720ad0f298766",
+      "title": "Vaccines for the 2026 Bundibugyo Ebola disease outbreak: access gaps and recommendations - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQZ1FvLVdrTThISzNGUVIwemktUS1VbV9lelBtaEZ6WnlQVnh5cmxNcFhqMlFkRHN6MTNfNFFxMFFCbmhjSzh3bW9CLXhlZjJBRG9VWVFJVmxVbHl6SXo2UFoycmQ0NUxBMHU0eHdjR3dyeDNkN3JlakJHWVBXNjJaTUhxekdIRFplSE9NbUw3eEd6cC1kaXBEYzN6ZzRMSlF3REh2Y182NHQzcGdYUnp4eGZIU0w3THpUMzV6ZXhlSmd0Z0d2R1hCMkhvQl95OFk?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Vaccines for the 2026 Bundibugyo Ebola disease outbreak: access gaps and recommendations ReliefWeb"
+    },
+    {
+      "id": "news-86656f6079b2fd4e",
+      "title": "Ebola kills over 5,300 in fastest-growing outbreak on record - Euronews.com",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWk5GRF9kMDZoTGU2eFlEUHpjV3Z5MjJ1cnhuSDFCMTh6YWVtbG9sTzU2Z1FDWGU2T1hTQ29FTGNLU00yQTY0M3J4WjFyc1pZTmNHNDVQemhUaklSQnZiOHhqOWJUZkJlLTVRY2pLMEdaLVo0TUVlMVZ5aEhoZlQ4YloweF9Fc1Jfa0tjMXN0bVM5NVE2b2VwNE1YOA?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola kills over 5,300 in fastest-growing outbreak on record Euronews.com"
+    },
+    {
+      "id": "news-998cfb1229058fa6",
+      "title": "Video. Ebola kills over 5,300 in fastest-growing outbreak on record - Euronews.com",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUEZZR3ZSYmNQY1o5bU1HRFBhX093dEdtWVBZTkN5T1p6SmpvaHd0YVBwT2VDdHVidm5qSzd5dUxvdnBnYmZWWWhuSnBkQ2NBazkyNzNCV0FPcEpNSlFsNkNMZ1VLbngzSzE3bFFFM0E0dWt2R3Q4dGg3bVVpM1NNTXY1dGgtSFA4eE5Fb1kzRmRoOWs4LVdkLURhMWhQUDEyeGs0?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Video. Ebola kills over 5,300 in fastest-growing outbreak on record Euronews.com"
+    },
+    {
+      "id": "news-bb72317761695c80",
+      "title": "Colombia's Ebola alert ends with four malaria diagnoses—one traveler died and another remains isolated in Cali - Latin Times",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTzNJVGt1YTFrM2w0U2F5MWdkN0R6SnMtaWUtdU5IaXM2WGYteDV2eEdQUk5WcXcxMlV4RWwyRVZwVVVXOGFJclVzNl9TemRmZ1hSOFU0WEUxd3FNYlpLbFhQMWdpTTFELUNOazJFUEhDTEwtbS1TZktlUWs0eXhIRTBXVGhHcl9F?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Colombia's Ebola alert ends with four malaria diagnoses—one traveler died and another remains isolated in Cali Latin Times"
+    },
+    {
+      "id": "news-20f73e33656820a0",
+      "title": "Fighting diseases: Ebola claims the lives of more than 5,300 people in Africa - صوت الإمارات",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNdWVmc0x4YjF5MGYyTl9kNHQ2VjhlTDZDSHlpQU9odGwzVnVUUDRYbkotOTdNSWJ2MzBWYTN4Qlk0aDhGaGhuX0NMNzNCZU5tMmNzYl92NnpIZ0o4NU5nYTMzd1h1VlNFdlZIZmZ6T1FQbzRyZXN2cTJMZk1hUXgyZkRLaFdjanBVRmdHOFFEdmNCTy1SbVRDMFBnR0wwRlZ2ZURmZm4tdnpFTXpPX20yUlJPb1VCZGpGYWFibTRDLThrSDZfUEE?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Fighting diseases: Ebola claims the lives of more than 5,300 people in Africa صوت الإمارات"
+    },
+    {
+      "id": "news-527447322e7fffb0",
+      "title": "Bundibugyo Ebola Virus Outbreak: Symptoms & Treatment – UPSC - INSIGHTS IAS",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxPa2xGajJDWDJwNzNoWUYzWDlBVzRvelpQcTBUOVZvbmw2NE5MeF9aOW45LUVpRF8wdUJkWDlpSzFiUlQ4TWJiN24xS19BNWlmazZpdFIyLUh6ZzRUUkdrYUtvb0tLZ185dUV3WGZraW8ya3hvSUFzVTVtcHdoSm5Zaw?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Bundibugyo Ebola Virus Outbreak: Symptoms & Treatment – UPSC INSIGHTS IAS"
+    },
+    {
+      "id": "news-e6fc7647362872b3",
+      "title": "DR Congo Ebola Toll Tops 5,000 as Cases Spread - Kıbrıs Postası",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdElrM1JXNmxMTTA4SWJldWZzOWpJX1dmSV80U0F4UUhhb0FTbjlQYWhhV00wQWsxc3RVcGlZRE0yZVExVVZYajRIZVI0Vl9PV0ZYY3g2Y1B6eUlhWFZ5ak03Q29WaXRHYnVVaUNuVzU4dVdEcjZsZVlqM3RYemFnS09QeFBFd1dDMTVPTkZCSnNYR3M2ZlEwRV94MkNMZmhC?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "As of the article's publication date, the cumulative death toll from the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda has surpassed 5,000, with cases continuing to spread across the region."
+    },
+    {
+      "id": "news-23d2b90686ac5976",
+      "title": "CDC Ebola Attestation Takes Effect Tonight: 130 Million Passengers, 25,000 at Risk - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNbVNtWXVEV1B4a3JieGNPOTM5VjU4bFF2Z3ZQSkwwYmpZMEpZOWI5NnVUQ0FUVnFFNkc0c1UwOXc4TERyaWJ4N2VMdHBjVHpPTWtaT0V5XzhCb2pNdnhpR0JnYVRSZ1p3Q2FzWkJaNjVlcmxzRHNkNjByMUt1S09paU5sWTZiWUp6ZjZOTHJjQVUzb3lMOUlLcG1DRk10NzlfZllQUnpEOHpTdjJ1VXptWU42b1I0b19xNXhYYkZuX3d6bFVyNlhIelhfcw?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The article does not provide a death toll or confirmed case count for the 2026 Bundibugyo Ebola outbreak; instead, it reports that a CDC Ebola attestation takes effect tonight, stating that 130 million passengers and 25,000 individuals are at risk. No specific details about the outbreak in DR Congo or Uganda are given beyond this U.S. travel health measure."
+    },
+    {
+      "id": "news-23b91e3add371417",
+      "title": "Ebola Outbreak in DR Congo Exceeds 10,000 Cases, Raising Concerns Over Cross-Border Spread - Voice of Healthcare",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMXYtbUJkSjdZWTFvc0t5SU15dU42NVFGaHlLUVRXRk9QQ1NZNFZLUU5iaERzdUt4NVJlamVwOWtHUUkxdURUbGptWVl6NmVtVGtxTlczdnRTX2VfZjBfaDR4Z3NVMjBWVWRfZ0lqYzBRYnFTcDNfcVdhVGhSVEVjLWJxREU4ZWZsYzhvVDByNEVIdi0tLWdQS2dDVnZfcjhUOFY2aWNBYS1jR0VqNWpnTlhoc3pZWC1GN05JZnJHMXJadw?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Ebola outbreak in DR Congo has exceeded 10,000 cases, raising concerns over cross-border spread into Uganda. No as-of date for the count was specified in the article."
+    },
+    {
+      "id": "news-92da2b95c931ae9f",
+      "title": "Ebola spreads to Nigeria after killing over 5,000 people in DR Congo as officials race to stop the virus - Pulse Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaTVYQlVrakE3alhnWHFBWWk1MWNBSGRlZ0gyUGtCdVoyTU11cFNsNWRZN01TNG9GdzJJZFROdmtLZHhWa0xJelVKYXU2SjJod3A3ODFwV1pEOXZ6bVE2cXpHRC1TY3A4LTg1YUwtb0RpT0FuM2hnZG5zbE9rekdxRHo2RGhxZi1uOW5zajZCOA?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola spreads to Nigeria after killing over 5,000 people in DR Congo as officials race to stop the virus Pulse Nigeria"
+    },
+    {
+      "id": "news-351d77a76bcaa72f",
+      "title": "Nigeria Ebola Outbreak: 62 Contacts Monitored Until November 13 - Head Topics",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQU3g0c0pJdVRPeDRleGlGS0cyS1AtSkRaMGVzTUVCemEzbUpNTmthcmF1T0ZscXo3dlo0MVFCSWc0Slp2QXZjeVN2SGFNRGVnMUhwSVQ5V0xOUjJLeFdUSG90akVJbE9fdmw4Nzc2VGJRWEhhMzNydlFzdmhnMy1aUkkxRGs3OXhNbzRtTkd4Z2M2eFk2?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Nigeria Ebola Outbreak: 62 Contacts Monitored Until November 13 Head Topics"
+    },
+    {
+      "id": "who-092f242a083c42fe",
+      "title": "WHO chief: Ebola outbreak shows urgent need for pandemic treaty - Euronews.com",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNE5fNmV4VjgtWFoteDRqQzFZU1cyU09pUHRILVdhdXFtNm9UT0JYa01lOWpNcXhzbEp5VXZheThpY2tRUkVCTVV1UnA4ZFR1cEZ0amJGWGs5SmFBbnFCQjV0VWtKTXZRN2FBY1R2T0hIblpRY0x5MEVOZ2pJT3BxTXZpS3ZVNWl1UmIybnNnYjk0SFIyb3hoV0VaN2hIdXc5MGRWb0kyRkVXUVpwczlJRzlKZ0wzS01YZnc?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — WHO DON",
+      "summary": "As of February 2026, the Ebola outbreak in Uganda and the Democratic Republic of Congo has resulted in 11 confirmed cases and two deaths, according to the WHO, whose chief stated the outbreak underscores the urgent need for a global pandemic treaty."
+    },
     {
       "id": "news-ea7165d81e41e479",
       "title": "Ebola fatality rate in DR Congo tops 50 percent as death toll reaches 5,372 - 巴士的報",
@@ -830,150 +1018,6 @@
       "date": "2026-11-02",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola fatality rate tops 50% after hundreds of deaths added to Congo toll The Straits Times"
-    },
-    {
-      "id": "news-6885159a24561181",
-      "title": "Ebola death rate exceeds 50% in DR Congo as US tightens travel restrictions - Nairametrics",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTFBGYk94c2M2NVlGRjV1V0Jrc3FaZV9EdlMtRWg4YUVTMFpHSHJWU3IzdGhoVGV2QWRNM1lEV2czRFhNYzlCbDU3T2Jn?oc=5",
-      "date": "2026-11-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola death rate exceeds 50% in DR Congo as US tightens travel restrictions Nairametrics"
-    },
-    {
-      "id": "news-50f02115e4ea1450",
-      "title": "Congo’s Ebola death toll crosses 5,000 - News Today",
-      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5Cb0tzbGg0d01GZ2Ztbm5kUkZHMTFVcnFEVGx6eTJ6LUZGVVZYWDhGU1AxUU00NHJCek93SG9DbDBwQWU5OFdlc29GWWcwN3REQnNrUHpUTDVpcjAyd29EVl95NFRXa3dxblp0aXZTWndQNlJaUlJYVjRPcDNnZw?oc=5",
-      "date": "2026-11-02",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of the article, the cumulative death toll from the Ebola outbreak in the Democratic Republic of Congo has surpassed 5,000."
-    },
-    {
-      "id": "news-bef6dbb44fcdf354",
-      "title": "Ebola outbreak tops 10,000 cases as global health concerns grow - Türkiye Today",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbzRQWlFTdDBfcVZNWm5KMFJZS2FaRUhmS3ZwMUZXcThodkpGZkZlUTMzQnVWU2RWQnY5ME8wbXp1TGFFMWl3VGI3ZG96RU5VNFBPVFlDenkycFZYRHdUM3RmRDc0TS1mSGNmZVJ6ZDFKLTIxZXlLSENaRXQ3OUIzaHYyQUtwOW1tYTVfVUNmSS1qdHB5c2d4MHdSdFhuQVFvazJQcU5YaWVSUlZIMVE?oc=5",
-      "date": "2026-11-02",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda has surpassed 10,000 total cases, according to a report from Türkiye Today, which notes growing global health concerns. The article does not specify a cumulative death toll or as-of date for this case count."
-    },
-    {
-      "id": "news-e5a5ad95686fca55",
-      "title": "WHO hopes DRC vaccine trials will help tackle Bundibugyo Ebola outbreak - Channel Africa",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTEZLeXMyLXFPbXlUenliOUpzUVdoQUxIYWpNYUlQcFpSUUNURmlpRzV6MVBuRUJvVlR3Z1V3eC13dUlsOUpJVUk4MVluLVREQkZTZFZ2VUVtTE02bEYwQVpoamlsSXQ4NVd0X2dneERWeG03VURaLWRhbFk4dTVpTDBvOWZCN2pKd0J0VGUwcHE5MFkyakp0VTlwclFwc25jOTJFaldvb3JaTWxvWDB4dDIwTzBDaUZmanJLUEtlU3I?oc=5",
-      "date": "2026-11-02",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "WHO hopes DRC vaccine trials will help tackle Bundibugyo Ebola outbreak Channel Africa"
-    },
-    {
-      "id": "news-f18b697882e87a06",
-      "title": "Ebola death toll tops 5,000 in DR Congo - 巴士的報",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORlE5VFROVEd4OEFVdzdOOGV3M0NwWGVfODdfOElieEc1dFNFRjNNOXlFVjdzR2tBM1hPeGVSZFdELXdkY0l0NnUzQmVCZEh1dTRsUWEzN2l2MXJ6NEM5WmQzaEtEUE9PMS0tU3NValFMMGpsSS05M3Vyb1p0bThVUFY5UnIwT2VrZWZvQnBmNVdnSUtp?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of the article's publication, the cumulative death toll from the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda has topped 5,000."
-    },
-    {
-      "id": "news-320d8d384b119ba2",
-      "title": "Ebola death toll in DR Congo rises to 5,340 | Gulf Times - Gulf Times",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOcDZETk5KaFBjMG44YzZIaXhVVWViY3dGVXlHNFJHSTRUUkgycmkxTFVwM2w0ZGR4cHZ2cnQ3dHRLd2RGazNaZV9tZFRabC1pbkxFNVFhdmRoX0ZvZVFaQUpPRlRicmRrbXRMUVo4djV3V1dPbDZHMW1OT19yeFVOcVhMTEJMWTNnOFRsOWwtMEgzQWlIdkh6SWppVVFTSnfSAaQBQVVfeXFMT0x5Sjk5UTl1SkNwSGtRNmNqSkQyWjNJR1JQb2NUTC11dE8tS2tSeHAza01hTnNIT0lEaDNuTk5OVjI4VFBaUHRwYWhyMHdBUHJ2V2dVUnJVejJqWXZOUDVkQmIwX1FkMXZGcGlVNHhDdHFCQW1ER280S2VZemIza2ktMlEyMlZ6QVFpYnUxQmY5dENIcFZiOFZzckxMNWtNX1hGblU?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola death toll in DR Congo rises to 5,340 | Gulf Times Gulf Times"
-    },
-    {
-      "id": "news-5ab07e7624c59605",
-      "title": "Ebola death toll in DR Congo rises to 5,340 - Gulf Today",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxQVXgzLUdhUWRVNW40R0FPeTJYWnM3c1Y5UklLTzk1OF9Xb1JjQXJ3UWpJQjdjSnRQWlYyNFMwMlpfZXFUamluRmJNZDA2eWU1V0U1d3J2WklMTEhNU0pIT0xmdjBtSklDTGZGcUx4dndwUE55R0dDcFE2dWRjS1luOWlST2ZfbFpub2J3?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola death toll in DR Congo rises to 5,340 Gulf Today"
-    },
-    {
-      "id": "news-5fe548edb08e5128",
-      "title": "Ebola Treatment Center Attacked in Eastern DRC - teleSUR English",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQ293VnB3bldsQWNWS3pJTXZZYVVKV1FoamdtUlRZVXZGbll1Nzg0b2pyVHZxSXF5dnJza1VxamhDcnByQmZra1pIZ1lvVE16LTFaeTZ4eEp5MXhlcnl6Q1pQQTd1bHJXM2sxa2RURzlwQ2dhMS1kU2N0VmU4eVRGVDFKZkQ?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola Treatment Center Attacked in Eastern DRC teleSUR English"
-    },
-    {
-      "id": "news-66e698980275a2cb",
-      "title": "Ebola outbreak death toll rises to record high as experts issue 'severe' warning - UNILAD",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOZ2M4RXNRdTRPaXpIZzNDbWw0QlY0Z3hwZDlsSHZEU0dvdFlWS0UxOFNKekEwSUZQOUxDRE1Ba2V1dVJkYURkOGdDVVFVRVRaUmpMWk5jdjRyZWNxN2FSWjFkX3FMNVRsYmEzWXBzVWk3RTNxY1V0Z2Z0eVVrRVhxM3V0M0xHTkdVbDRockVHa2lSUQ?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola outbreak death toll rises to record high as experts issue 'severe' warning UNILAD"
-    },
-    {
-      "id": "news-f822f8175dfa4d0b",
-      "title": "\"No signs of slowing\": Ebola kills 5,026 in DRC as Saudi halts Kenya travel - Tuko News",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNNzF3SmNJdE93UkVHZ1FsODRyTnN4WkExcnc0aWtGejFhd2VYLUFVSmV0elNUbGdIZVNBVnRrLWdRdGt4MUhpZHVoN0pyakprNUVhRDZYVGt0cFZKTlY0M21mTVNlMHlmS0NqODZmSjlUM0h3R1hkQ2JneVZrV1cxYTlfNjNwUDRNMW9WNmI0TjRLVTZHYUV5Z3Zsc3NPN3dnVXVGWDl5cnZiSjJwOUtQWmROaTQ?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of the latest report, the 2026 Bundibugyo Ebola outbreak has killed 5,026 people in the DRC, with no signs of slowing, prompting Saudi Arabia to halt travel from Kenya."
-    },
-    {
-      "id": "news-7fff8f30ada75b98",
-      "title": "Congo Ebola outbreak death toll passes 5,000 with no vaccine for the Bundibugyo virus - Attack of the Fanboy",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOMEVILVBNajZKeTZQZWJ1Q0Z5aEpFSE5EOFpQOXdSYkkzVWhwZE8zcXF3WXNvSkhhbThCWkpFZEo0V2FsQnpwYnQ1c1hoWGFYVXhodEtvYzJaYzZuRHBabWY1V1JJZkFjd0UtbHFrenNyUnh3andWUW0zcjVvTXhBMzJBdmljM0NCNVlvRjNXVjRzSS16dm5WOHhjNlFTUkYwOVVScWVNdW1wcXRaQkdZNGtabVA3R0xFQmVvRzdXRnlIRmYxV0VnSmtBendmM2FnM29odjlCaEhzdzZvMmVfdGJWUko4QQ?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo Ebola outbreak death toll passes 5,000 with no vaccine for the Bundibugyo virus Attack of the Fanboy"
-    },
-    {
-      "id": "news-43d7b7eeb03f2c3f",
-      "title": "Ebola death toll in DR Congo passes 5,000 - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNXBJTU9WNnBSZnVFT29jdU1MU1RjT1pCTklOMWRHQ1U2V0lVMXlnSHJBUXExMEQ4TURHWHhHdkRoU3BHY0t6dE16MjRCRE10M0RkMGJvMVpZSHdKRWJfYmF5dTFwZEF1LUZzUF9zNGhzX0k0Qmt0SFJ6d2x6Z0lNNFMwYUdBNkQ4NHfSAY8BQVVfeXFMTXhhS3ZPYnI2bE1TY1ZwaUkxOHc2TTNrWkN1RHUwM0FEN2stT1dfUWNXcXBpeTBTT1lUdUtkUTZUY3RJekF1YXBLQlNSbzZYZTJJUG5uV0JsVndyN2MtVmtnSThPYm05QVU4MnFuR3VTNDRvMG1pSDk2Y2F1OHVtMmJvS1hTQ0NCWF81VEY2QlU?oc=5",
-      "date": "2026-10-31",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of November 2026, the cumulative Ebola death toll in the Democratic Republic of the Congo has surpassed 5,000, with the outbreak also spreading to Uganda."
-    },
-    {
-      "id": "news-f09d9c575643df3b",
-      "title": "Congo’s Ebola death toll surpasses 5,000 as virus continues to spread - The Spokesman-Review",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQT0xLRFF3VWExRS1SY0tGeWhtT0RXX3VfQTBXcW9GMEFmU0lFSG1TeTU4UFA0OXNRcFhfVHFjWnN2STBfM2dHc2JSQ0RKckt2UVZYcmNkakRwaGl2UTBBQlJhRGZlYmhGaEhfanBqOXBfRWp0aVU4bVQwYXE3VVp1eGJCLWVXZUlfYWtDdlVHVVlwa0tCZFFJS05OX0ZmQQ?oc=5",
-      "date": "2026-10-31",
-      "source": "Google News — Ebola death toll",
-      "summary": "As of December 2022, the Democratic Republic of Congo’s Ebola death toll surpassed 5,000, with the virus continuing to spread in the country’s east amidst ongoing conflict and community mistrust."
-    },
-    {
-      "id": "news-376919990a98d6a9",
-      "title": "Death toll from Ebola outbreak in DR Congo surpasses 5,000 - Anadolu Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNN09IREJhdnl4NERzalo1RTdwc1FHY09qMFY0TTFMMVJudm12alh5TTRJNkkxaG9jMlJPa0tfLUVBOVJqNkhlZW5WdHh6YVVOemFpZmxGRlRMVDloZVdodXh1ZkJvWFloWUN3Qk1pV1N3YVl2bnZ6cW13SGNiN2ZWaV9CME56ZFlNek5CM21mSC1fWHE5MVVEaFg4b0FnZ3M?oc=5",
-      "date": "2026-10-31",
-      "source": "Google News — Ebola death toll",
-      "summary": "Death toll from Ebola outbreak in DR Congo surpasses 5,000 Anadolu Ajansı"
-    },
-    {
-      "id": "news-c9b9373023010458",
-      "title": "Ebola Death Toll in DR Congo Exceeds 5,000 - 8AM Media",
-      "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE5CbV9OS1pPVk5kbFhmYlFtTTFvSVJ4Uk5rUF9zZHV5ZXp4NGd1aTBSNHVGYlNVc1ZUSmZ6SjMxMjZxal9HaGdMY3k4Yjl1YkQ4aUhyN0p5RlREM09iM3B3Y1UxcmV0aUJrVThfTmZtZDAzQQ?oc=5",
-      "date": "2026-10-31",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola Death Toll in DR Congo Exceeds 5,000 8AM Media"
-    },
-    {
-      "id": "news-f3b213369d207bff",
-      "title": "Ebola Outbreak Tops 10,000 Cases as CDC Cites Spread to Kenya, Nigeria - Contagion Live",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNRURwbFZhVnh3dnlWSjdpYURUMnNNaDB2NWIwRW96bVJoQjdWSzFMOWVpTC1zUzZQM2lMQjdoUmxWNUc0REVVd0N1S01DdHdOcWtzS1hyWk1UMTZwN0dSTVZNT1F2eXI2UTNodW9yamlRU2Q0b01MbmRGMHBwdExiLXVsMUNxWmYzVE5vU003R050WVlvaWdfS1hKbDdCRTdSdVlkVXluOA?oc=5",
-      "date": "2026-10-31",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The 2026 Bundibugyo Ebola outbreak has surpassed 10,000 cases, with the U.S. CDC reporting the virus has spread to Kenya and Nigeria."
-    },
-    {
-      "id": "news-10e0ddbbdb1769ea",
-      "title": "DRC Ebola outbreak kills over 5,000, raises fears of wider spread | Daily Sabah - Daily Sabah",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQV25fdE9BNTM4MG8tMUh4WkxxMFlfV3RFRm0wOTlWLTFDY3B3TWdRMGpTcVVoYUdWb1pLNEVMN2p4c3FnQzloZkY4M1ZzSlJuWHRJTVB0WXpoVmM5V2NxTnJhRXY0RjF4ZExKQUJKLVNVb1M2QTBKOExvblBfTFl0RUc2Qmt2el84TGxld3puWHRnY0xrUUlZSk8xemE3OENZZmZfZzh30gGrAUFVX3lxTE0teEhON0VmdXVlRlJoLXZKNHA3X0hwb2V3WnNJRVRrTERZNGhNLU5tWklCNElfdzRROG5qWU9jRnVKZ0pPMFEwSFplVC1DXzZZYnZiMkZveVdRNzFwNkcyNUQzV2F2RTJHTWFNSGFLRkxKWExZWExlVERWdkZEbkxROEgzbVJ6dFdqeF9mWlh5LUlrRWxZcWVrMXdyUVNldGtOWHZqMzlHQUQ3dw?oc=5",
-      "date": "2026-10-31",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "DRC Ebola outbreak kills over 5,000, raises fears of wider spread | Daily Sabah Daily Sabah"
-    },
-    {
-      "id": "news-e2d72f3164e662da",
-      "title": "Multi-Country Ebola Bundibugyo Outbreak Update n°24 - ReliefWeb",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSmQtS0p5VlNuOW5pRTdxdlhvVTFjSlhFdHRiWWdzUXpaY2t2dE1nbVdFNTdocFU0TjAtSEEtdVdJcXgxU0RMdmZIZDVEV2tLMWFCWTU1Q3ZNeHh1eHZpdUdEZDFBUW1HbHUxMUt0V2M0QU1fRkVVXzc2VHRETXBRYkU2SDdRVWF5UFdyZ1BmajVJZlRwcFg1WDVRcEF4SEdKRk1rYjB1NUpnTzRI?oc=5",
-      "date": "2026-10-30",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "As of 29 September 2026, no new confirmed cases or deaths have been reported since 11 June 2026, leaving the outbreak’s totals at 20 confirmed cases, 13 probable cases, and 9 confirmed deaths; the World Health Organization assesses the regional risk as moderate and advises continued vigilance despite the end of the active transmission chain."
     }
   ]
 }

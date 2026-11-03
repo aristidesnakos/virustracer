@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-02T08:53:45.509Z",
+  "lastFetched": "2026-11-03T08:50:59.539Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -418,9 +418,19 @@
     "news-3c8b4eb1dd1ed98a",
     "news-77cdf627e8de26d6",
     "news-d7c542b1a9148c30",
-    "news-932b1d1130b0e952"
+    "news-932b1d1130b0e952",
+    "news-60fa3b85ebb06afb",
+    "news-be98073b6a92da98"
   ],
   "recentItems": [
+    {
+      "id": "news-60fa3b85ebb06afb",
+      "title": "Bangladesh reports 3 deaths of measles symptoms in a day - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hUzZwYkd2STVlTFZGM3hGRS1MWjVxYzBrMEE5a0YwclFSZm5sYWtxNkhrYXVhcDZCV09GMjBqZlZHemRmdlhHdkRzX05tOW8?oc=5",
+      "date": "2026-11-02",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh reports 3 deaths of measles symptoms in a day bdnews24.com"
+    },
     {
       "id": "news-2afee60502dab8b6",
       "title": "Dengue And Measles Outbreak Bangladesh | Plan better to prevent recurring outbreaks - The Daily Star",
@@ -572,14 +582,6 @@
       "date": "2026-10-24",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh Reports Over 1,100 Measles Deaths Amid Worst Global Outbreak This Year News On AIR"
-    },
-    {
-      "id": "news-eb94dfbcbd0644a3",
-      "title": "Bangladesh measles outbreak - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkaWc3cXoxNHpfTnBjUG1yWXZxWGFrVG9FUFplQjdIOEhnaEZ3Q3h6emUycC10Q0RBNlFDSWdqMnpYckdJN1NLd3FYWE9IdlNsaHpvQVdmYmZkcmtDNDA0b29uOW1CTUdUdExadHpR?oc=5",
-      "date": "2026-10-24",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh measles outbreak The Daily Star"
     }
   ]
 }

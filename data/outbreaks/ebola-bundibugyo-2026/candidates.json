@@ -1,6 +1,20 @@
 {
-  "lastExtracted": "2026-11-02T08:52:36.717Z",
+  "lastExtracted": "2026-11-03T08:50:36.309Z",
   "candidates": [
+    {
+      "id": "news-92da2b95c931ae9f",
+      "country": "Nigeria",
+      "iso": "NG",
+      "flag": "🇳🇬",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "Ebola spreads to Nigeria after killing over 5,000 people in DR Congo as officials race to stop the virus.",
+      "sourceTitle": "Ebola spreads to Nigeria after killing over 5,000 people in DR Congo as officials race to stop the virus - Pulse Nigeria",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQaTVYQlVrakE3alhnWHFBWWk1MWNBSGRlZ0gyUGtCdVoyTU11cFNsNWRZN01TNG9GdzJJZFROdmtLZHhWa0xJelVKYXU2SjJod3A3ODFwV1pEOXZ6bVE2cXpHRC1TY3A4LTg1YUwtb0RpT0FuM2hnZG5zbE9rekdxRHo2RGhxZi1uOW5zajZCOA?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-02",
+      "extractedAt": "2026-11-03T08:49:33.336Z"
+    },
     {
       "id": "news-34621cdfa299451c",
       "country": "Uganda",
