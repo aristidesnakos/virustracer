@@ -32,7 +32,9 @@ jobs:
           cache: "npm"
 
       - name: Install dependencies
-        run: npm ci
+        # --omit=dev: every script run below imports only node built-ins and `openai` (a runtime
+        # dependency); the dev tools (Playwright, Vitest, Tailwind, ...) are not needed here.
+        run: npm ci --omit=dev
 
       - name: Update death-toll snapshots
         # Wikipedia-backed outbreaks only. Outbreaks read from an official weekly report
@@ -61,6 +63,15 @@ jobs:
         run: node scripts/update-nursing-homes.mjs
 
       - name: Fetch feeds and update live data
+        id: feeds
+        # Own 12-minute cap (estimated, not yet measured: steady state 1-2 minutes, a cold start with every feed full
+        # 4-5): a slow or hung feed step is stopped by this timer, not by the job's 22
+        # minutes, so the archive and commit steps below still get their time. The script saves
+        # its progress after every item, so what it finished is committed.
+        # continue-on-error keeps the job going after a failure or a timeout (the commit step
+        # must run); the last step, "Fail the run if feeds failed", turns it into a red run.
+        timeout-minutes: 12
+        continue-on-error: true
         env:
           # OpenRouter key (uses DeepSeek V4 Flash for cheap summarization)
           # Set this in GitHub repo Settings → Secrets → OPENROUTER_API_KEY
@@ -117,3 +128,13 @@ jobs:
             }
             fs.appendFileSync(process.env.GITHUB_STEP_SUMMARY, md.join("\n"));
           '
+
+      - name: Fail the run if feeds failed
+        # Last step, after the commit. With continue-on-error the feed step's failure is hidden
+        # (the job would end green), so say it here: red run, GitHub's failure email goes out.
+        # outcome is "failure" for an error and for the step timeout; "cancelled" is included in
+        # case GitHub reports a timeout that way.
+        if: always() && (steps.feeds.outcome == 'failure' || steps.feeds.outcome == 'cancelled')
+        run: |
+          echo "::error::The feed step ${{ steps.feeds.outcome }}. Data that was finished was committed; see that step's log."
+          exit 1

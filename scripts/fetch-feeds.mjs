@@ -6,444 +6,80 @@
  * outbreak's RSS feeds, keyword-filters them, summarizes via OpenRouter (DeepSeek)
  * and writes data/outbreaks/<slug>/{live,candidates,signals}.json.
  *
+ * The work lives in scripts/lib/feed-run.mjs (pure and injectable, tested); this file wires
+ * the real HTTP, OpenRouter client and files. Progress is saved after every finished item,
+ * atomically, so a run killed by the step timeout keeps what it did.
+ *
  * Optional env: OPENROUTER_API_KEY (without it, raw descriptions are saved)
+ * Exit code: 1 if any outbreak failed (the workflow's commit step still runs, see update-data.yml).
  */
 
 import OpenAI from "openai";
-import { readFileSync, writeFileSync, existsSync, mkdirSync } from "fs";
+import { readFileSync, existsSync, mkdirSync } from "fs";
 import { resolve, dirname } from "path";
-import { createHash } from "crypto";
 import { fileURLToPath } from "url";
-import { updateSignalLedger } from "./lib/signals.mjs";
 import { dataFile, selectOutbreaksWith } from "./lib/outbreak-registry.mjs";
+import { runOutbreakFeeds } from "./lib/feed-run.mjs";
+import { writeFileAtomic, removeStaleTemps } from "./lib/atomic.mjs";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
 
-// Cap candidates list to recent signals to avoid carrying stale extractions forever.
-const CANDIDATE_MAX_AGE_DAYS = 30;
-
-// ── HTML entity decoder ───────────────────────────────────────────────────────
-function decodeHtmlEntities(str) {
-  // Run multiple passes to handle double-encoded entities (e.g. &amp;amp; → &amp; → &)
-  let prev;
-  let s = str;
-  do {
-    prev = s;
-    s = s
-      .replace(/&nbsp;/g, " ")
-      .replace(/&amp;/g, "&")
-      .replace(/&lt;/g, "<")
-      .replace(/&gt;/g, ">")
-      .replace(/&quot;/g, '"')
-      .replace(/&#39;/g, "'")
-      .replace(/&apos;/g, "'")
-      .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
-      .replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => String.fromCharCode(parseInt(hex, 16)));
-  } while (s !== prev);
-  return s;
-}
-
-// ── Parse RSS XML into items ──────────────────────────────────────────────────
-function parseRSSItems(xml) {
-  const items = [];
-  const blocks = xml.matchAll(/<item>([\s\S]*?)<\/item>/gi);
-  for (const block of blocks) {
-    const raw = block[1];
-    const title =
-      raw.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/s)?.[1] ??
-      raw.match(/<title>(.*?)<\/title>/s)?.[1] ??
-      "";
-    const link =
-      raw.match(/<link>(.*?)<\/link>/s)?.[1] ??
-      raw.match(/<guid>(.*?)<\/guid>/s)?.[1] ??
-      "";
-    const pubDate = raw.match(/<pubDate>(.*?)<\/pubDate>/s)?.[1] ?? "";
-    const description =
-      raw.match(/<description><!\[CDATA\[([\s\S]*?)\]\]><\/description>/s)?.[1] ??
-      raw.match(/<description>([\s\S]*?)<\/description>/s)?.[1] ??
-      "";
-    const guid =
-      raw.match(/<guid[^>]*>(.*?)<\/guid>/s)?.[1] ??
-      link;
-    const decodedDescription = decodeHtmlEntities(description);
-    const tagsStripped = decodedDescription.replace(/<[^>]+>/g, " ").replace(/<[^>]*$/, "");
-    const trailingCleanup = tagsStripped.replace(/\s*&[a-zA-Z0-9#]*$/, "").replace(/\s+/g, " ").trim();
-
-    items.push({
-      guid: guid.trim(),
-      title: decodeHtmlEntities(title.trim()).replace(/<[^>]+>/g, ""),
-      link: link.trim(),
-      pubDate: pubDate.trim(),
-      description: trailingCleanup.slice(0, 600),
-    });
-  }
-  return items;
-}
-
-// Strong keywords match alone; a contextual term (a noisy place name, say) also
-// needs one of its context words in the same text.
-function isOutbreakRelated(item, feedConfig) {
-  const text = `${item.title} ${item.description}`.toLowerCase();
-  if (feedConfig.strongKeywords.some((kw) => text.includes(kw))) return true;
-  return (feedConfig.contextualKeywords ?? []).some(
-    ({ term, needsOneOf }) => text.includes(term) && needsOneOf.some((kw) => text.includes(kw)),
-  );
-}
-
-function itemId(feedSource, guid) {
-  // Hash the full guid — Google News guids share long common prefixes, so a
-  // truncated base64 would collide and silently drop distinct articles.
-  const hash = createHash("sha1").update(guid).digest("hex").slice(0, 16);
-  return `${feedSource.toLowerCase().replace(/\s+/g, "-")}-${hash}`;
-}
-
-// Normalize a headline for cross-publisher dedupe (strip " - Publisher", punctuation).
-function titleKey(title) {
-  return title
-    .replace(/\s+[-–—|]\s+[^-–—|]{2,60}$/, "")
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, " ")
-    .trim();
-}
-
-// Max new items summarized per feed per run (the stored list is capped at 20 anyway).
-const MAX_NEW_PER_FEED = 15;
-
-function isoDate(pubDate) {
-  try {
-    const d = new Date(pubDate);
-    if (isNaN(d.getTime())) return new Date().toISOString().slice(0, 10);
-    return d.toISOString().slice(0, 10);
-  } catch {
-    return new Date().toISOString().slice(0, 10);
-  }
-}
-
-// ── ISO 3166-1 alpha-2 → flag emoji ───────────────────────────────────────────
-function isoToFlag(iso) {
-  if (!iso || typeof iso !== "string" || iso.length !== 2) return "";
-  const A = 0x1F1E6;
-  const code = iso.toUpperCase();
-  if (!/^[A-Z]{2}$/.test(code)) return "";
-  return (
-    String.fromCodePoint(A + code.charCodeAt(0) - 65) +
-    String.fromCodePoint(A + code.charCodeAt(1) - 65)
-  );
-}
-
-// ── Structured candidate extraction (DeepSeek V4 Flash, JSON mode) ────────────
-async function extractCandidate(client, feedConfig, title, description) {
-  const prompt = `You extract structured signals from news articles about ${feedConfig.subject}.
-
-Read the title and content. ${feedConfig.extraction.scope}
-
-{"country": "<English country name>", "iso": "<ISO 3166-1 alpha-2>", "casesMentioned": <integer or null>, "deathsMentioned": <integer or null>, "context": "<one short factual sentence from the article>"}
-
-${feedConfig.extraction.exclusions}
-
-{"country": null, "iso": null, "casesMentioned": null, "deathsMentioned": null, "context": null}
-
-Title: ${title}
-Content: ${description}
-
-Respond with JSON only.`;
-
-  try {
-    const response = await client.chat.completions.create({
-      model: "deepseek/deepseek-v4-flash",
-      max_tokens: 250,
-      response_format: { type: "json_object" },
-      messages: [{ role: "user", content: prompt }],
-    });
-    const raw = response.choices[0]?.message?.content?.trim() ?? "";
-    if (!raw) return null;
-    const parsed = JSON.parse(raw);
-    if (!parsed.country || !parsed.iso) return null;
-    return {
-      country: String(parsed.country),
-      iso: String(parsed.iso).toUpperCase(),
-      flag: isoToFlag(parsed.iso),
-      casesMentioned:
-        typeof parsed.casesMentioned === "number" ? parsed.casesMentioned : null,
-      deathsMentioned:
-        typeof parsed.deathsMentioned === "number" ? parsed.deathsMentioned : null,
-      context: parsed.context ? String(parsed.context) : "",
-    };
-  } catch (err) {
-    console.error("Candidate extraction error:", err.message);
-    return null;
-  }
-}
-
-// ── OpenRouter summarization (DeepSeek V4 Flash — cheap, fast) ────────────────
-async function extractSummary(client, feedConfig, title, description) {
-  const prompt = `Summarize this news item about ${feedConfig.subject} in 1–2 factual sentences. If the article states the latest cumulative death toll or confirmed case count, LEAD with it (include the as-of date if given). Otherwise include any key figures or official statements. No preamble.
-
-Title: ${title}
-Content: ${description}`;
-
-  try {
-    const response = await client.chat.completions.create({
-      model: "deepseek/deepseek-v4-flash",
-      max_tokens: 150,
-      messages: [{ role: "user", content: prompt }],
-    });
-    return response.choices[0]?.message?.content?.trim() ?? description.slice(0, 200);
-  } catch (err) {
-    console.error("OpenRouter error:", err.message);
-    return description.slice(0, 200);
-  }
-}
-
-// ── Main ──────────────────────────────────────────────────────────────────────
 function createClient() {
   const apiKey = process.env.OPENROUTER_API_KEY;
-  const canSummarize = Boolean(apiKey);
-
-  const client = canSummarize
-    ? new OpenAI({
-        baseURL: "https://openrouter.ai/api/v1",
-        apiKey,
-        defaultHeaders: {
-          "HTTP-Referer": "https://github.com/aristidesnakos/virustracer",
-          // HTTP headers must be ASCII (an em dash here made every OpenRouter call fail).
-          "X-Title": "virustracer - Outbreak Tracker",
-        },
-      })
-    : null;
-
-  if (!canSummarize) {
+  if (!apiKey) {
     console.warn("OPENROUTER_API_KEY not set — saving raw descriptions.");
+    return null;
   }
-  return client;
+  return new OpenAI({
+    baseURL: "https://openrouter.ai/api/v1",
+    apiKey,
+    // Retries (429/5xx/network, with backoff) are done in scripts/lib/pool.mjs `retry`, not twice.
+    maxRetries: 0,
+    timeout: 60_000,
+    defaultHeaders: {
+      "HTTP-Referer": "https://github.com/aristidesnakos/virustracer",
+      // HTTP headers must be ASCII (an em dash here made every OpenRouter call fail).
+      "X-Title": "virustracer - Outbreak Tracker",
+    },
+  });
 }
 
-async function updateOutbreakFeeds(outbreak, client) {
-  const { slug, feed: feedConfig } = outbreak;
-  const LIVE_JSON = dataFile(ROOT, slug, "live");
-  const CANDIDATES_JSON = dataFile(ROOT, slug, "candidates");
-  const SIGNALS_JSON = dataFile(ROOT, slug, "signals");
-  mkdirSync(dirname(LIVE_JSON), { recursive: true });
-
-  // Load existing live.json
-  let live = { lastFetched: "", processedIds: [], recentItems: [] };
-  if (existsSync(LIVE_JSON)) {
-    try {
-      live = JSON.parse(readFileSync(LIVE_JSON, "utf-8"));
-    } catch (err) {
-      console.error("Failed to parse live.json:", err.message);
-    }
-  }
-
-  // Load existing candidates.json
-  let candidatesStore = { lastExtracted: "", candidates: [] };
-  if (existsSync(CANDIDATES_JSON)) {
-    try {
-      candidatesStore = JSON.parse(readFileSync(CANDIDATES_JSON, "utf-8"));
-    } catch (err) {
-      console.error("Failed to parse candidates.json:", err.message);
-    }
-  }
-  const candidateIdSet = new Set(
-    (candidatesStore.candidates ?? []).map((c) => c.id),
-  );
-
-  const processedSet = new Set(live.processedIds ?? []);
-  const seenTitles = new Set((live.recentItems ?? []).map((i) => titleKey(i.title)));
-  const newItems = [];
-  const newCandidates = [];
-
-  for (const feed of feedConfig.sources) {
-    console.log(`Fetching ${feed.name}…`);
-    let xml;
-    try {
-      const res = await fetch(feed.url, {
-        headers: {
-          "User-Agent": `virustracer/1.0 (${outbreak.disease} outbreak tracker; public health surveillance)`,
-          Accept: "application/rss+xml, application/xml, text/xml",
-        },
-        signal: AbortSignal.timeout(20_000),
-        redirect: "follow",
-      });
-      if (!res.ok) {
-        console.warn(`  ${feed.name}: HTTP ${res.status}`);
-        continue;
-      }
-      xml = await res.text();
-    } catch (err) {
-      console.warn(`  ${feed.name} fetch failed: ${err.message}`);
-      continue;
-    }
-
-    const items = parseRSSItems(xml);
-    console.log(`  ${items.length} items parsed`);
-
-    const relevant = items.filter((item) => isOutbreakRelated(item, feedConfig));
-    console.log(`  ${relevant.length} outbreak-related`);
-
-    // Newest first, so the per-feed cap keeps the most recent articles.
-    relevant.sort((a, b) => isoDate(b.pubDate).localeCompare(isoDate(a.pubDate)));
-
-    let addedFromFeed = 0;
-    for (const item of relevant) {
-      const id = itemId(feed.source, item.guid);
-      if (addedFromFeed >= MAX_NEW_PER_FEED) {
-        // Older backlog beyond the cap: mark seen so it isn't re-summarized next run.
-        processedSet.add(id);
-        continue;
-      }
-      if (processedSet.has(id)) {
-        console.log(`  Already processed: ${item.title.slice(0, 60)}`);
-        continue;
-      }
-      const tKey = titleKey(item.title);
-      if (seenTitles.has(tKey)) {
-        processedSet.add(id);
-        console.log(`  Duplicate headline: ${item.title.slice(0, 60)}`);
-        continue;
-      }
-      seenTitles.add(tKey);
-      addedFromFeed++;
-
-      console.log(`  New: ${item.title.slice(0, 80)}`);
-
-      const summary = client
-        ? await extractSummary(client, feedConfig, item.title, item.description)
-        : item.description.slice(0, 200);
-
-      const feedItem = {
-        id,
-        title: item.title,
-        url: item.link,
-        date: isoDate(item.pubDate),
-        source: feed.name,
-        summary,
-      };
-      newItems.push(feedItem);
-
-      // Structured candidate extraction (skips silently if no LLM client)
-      if (client && !candidateIdSet.has(id)) {
-        const candidate = await extractCandidate(
-          client,
-          feedConfig,
-          item.title,
-          item.description,
-        );
-        if (candidate) {
-          newCandidates.push({
-            id,
-            ...candidate,
-            sourceTitle: item.title,
-            sourceUrl: item.link,
-            sourceName: feed.name,
-            date: feedItem.date,
-            extractedAt: new Date().toISOString(),
-          });
-          candidateIdSet.add(id);
-          console.log(
-            `    → candidate: ${candidate.country} (${candidate.casesMentioned ?? "?"} cases)`,
-          );
-        }
-      }
-
-      processedSet.add(id);
-    }
-  }
-
-  // Backfill: extract candidates from existing recent items that haven't been processed yet.
-  if (client) {
-    const existingItems = live.recentItems ?? [];
-    for (const item of existingItems) {
-      if (candidateIdSet.has(item.id)) continue;
-      console.log(`  Backfilling candidate for: ${item.title.slice(0, 60)}`);
-      const candidate = await extractCandidate(client, feedConfig, item.title, item.summary);
-      candidateIdSet.add(item.id);
-      if (candidate) {
-        newCandidates.push({
-          id: item.id,
-          ...candidate,
-          sourceTitle: item.title,
-          sourceUrl: item.url,
-          sourceName: item.source,
-          date: item.date,
-          extractedAt: new Date().toISOString(),
-        });
-        console.log(
-          `    → candidate: ${candidate.country} (${candidate.casesMentioned ?? "?"} cases)`,
-        );
-      }
-    }
-  }
-
-  live.lastFetched = new Date().toISOString();
-  live.processedIds = [...processedSet].slice(-1000);
-
-  if (newItems.length > 0) {
-    live.recentItems = [...newItems, ...(live.recentItems ?? [])]
-      .sort((a, b) => String(b.date).localeCompare(String(a.date)))
-      .slice(0, 20);
-    console.log(`Added ${newItems.length} new items.`);
-  } else {
-    console.log("No new outbreak items found.");
-  }
-
-  writeFileSync(LIVE_JSON, JSON.stringify(live, null, 2));
-
-  // Merge candidates, prune stale entries, and persist.
-  const allCandidates = [
-    ...newCandidates,
-    ...(candidatesStore.candidates ?? []),
-  ];
-  const cutoffMs =
-    Date.now() - CANDIDATE_MAX_AGE_DAYS * 24 * 60 * 60 * 1000;
-  const fresh = allCandidates.filter((c) => {
-    const t = new Date(c.date || c.extractedAt).getTime();
-    return Number.isFinite(t) && t >= cutoffMs;
+async function fetchText(url, { userAgent }) {
+  const res = await fetch(url, {
+    headers: { "User-Agent": userAgent, Accept: "application/rss+xml, application/xml, text/xml" },
+    signal: AbortSignal.timeout(20_000),
+    redirect: "follow",
   });
-  // Dedup by id, preferring earliest occurrence (newCandidates first).
-  const seen = new Set();
-  const deduped = [];
-  for (const c of fresh) {
-    if (seen.has(c.id)) continue;
-    seen.add(c.id);
-    deduped.push(c);
-  }
+  if (!res.ok) throw new Error(`HTTP ${res.status}`);
+  return res.text();
+}
 
-  writeFileSync(
-    CANDIDATES_JSON,
-    JSON.stringify(
-      {
-        lastExtracted: new Date().toISOString(),
-        candidates: deduped,
-      },
-      null,
-      2,
-    ),
-  );
+function readJson(path, fallback) {
+  if (!existsSync(path)) return fallback;
+  try {
+    return JSON.parse(readFileSync(path, "utf-8"));
+  } catch (err) {
+    console.error(`Failed to parse ${path}:`, err.message);
+    return fallback;
+  }
+}
 
-  if (newCandidates.length > 0) {
-    console.log(`Added ${newCandidates.length} new candidate signals.`);
-  }
-
-  // Long-lived ledger of when the news first mentioned each country. Unlike
-  // candidates.json it is never pruned, so lead times survive.
-  let ledger = { lastUpdated: "", signals: [] };
-  if (existsSync(SIGNALS_JSON)) {
-    try {
-      ledger = JSON.parse(readFileSync(SIGNALS_JSON, "utf-8"));
-    } catch (err) {
-      console.error("Failed to parse signals.json:", err.message);
-    }
-  }
-  const nextLedger = updateSignalLedger(ledger, deduped, new Date().toISOString());
-  const changed =
-    JSON.stringify(nextLedger.signals) !== JSON.stringify(ledger.signals ?? []);
-  // Only rewrite when something changed, so a quiet run does not make a commit.
-  if (changed || !existsSync(SIGNALS_JSON)) {
-    writeFileSync(SIGNALS_JSON, JSON.stringify(nextLedger, null, 2) + "\n");
-    console.log(`Signal ledger: ${nextLedger.signals.length} countr${nextLedger.signals.length === 1 ? "y" : "ies"}.`);
-  }
+function fileStore(slug) {
+  const live = dataFile(ROOT, slug, "live");
+  const candidates = dataFile(ROOT, slug, "candidates");
+  const signals = dataFile(ROOT, slug, "signals");
+  mkdirSync(dirname(live), { recursive: true });
+  const removed = removeStaleTemps(dirname(live));
+  if (removed.length) console.warn(`Removed stale temp files: ${removed.join(", ")}`);
+  return {
+    readLive: () => readJson(live, null),
+    readCandidates: () => readJson(candidates, null),
+    readLedger: () => readJson(signals, null),
+    writeLive: (v) => writeFileAtomic(live, JSON.stringify(v, null, 2)),
+    writeCandidates: (v) => writeFileAtomic(candidates, JSON.stringify(v, null, 2)),
+    writeLedger: (v) => writeFileAtomic(signals, JSON.stringify(v, null, 2) + "\n"),
+  };
 }
 
 async function main() {
@@ -453,15 +89,26 @@ async function main() {
   for (const outbreak of outbreaks) {
     console.log(`\n══ ${outbreak.slug} ══`);
     try {
-      await updateOutbreakFeeds(outbreak, client);
+      await runOutbreakFeeds({
+        outbreak,
+        client,
+        fetchText,
+        store: fileStore(outbreak.slug),
+        retryOptions: {
+          retries: 3,
+          onRetry: (e, attempt, ms) => console.warn(`  model call retry ${attempt} in ${Math.round(ms)} ms: ${e?.status ?? e?.message}`),
+        },
+      });
     } catch (err) {
       // One outbreak failing must not stop the others; the annotation flags it in the run.
       failed++;
       console.log(`::error::Feed update for ${outbreak.slug} failed: ${err instanceof Error ? err.message : err}`);
     }
   }
-  // Fail the run only if nothing worked, so one broken source does not block the commit step.
-  if (outbreaks.length > 0 && failed === outbreaks.length) process.exit(1);
+  // Any failed outbreak fails the step. That is safe because update-data.yml marks this step
+  // continue-on-error, so the commit step still runs and saves everything that did work, and a
+  // final guard step turns the failure into a red run (which GitHub emails).
+  if (failed > 0) process.exit(1);
 }
 
 main().catch((err) => {
