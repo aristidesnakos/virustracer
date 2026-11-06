@@ -86,3 +86,5 @@ Single-page outbreak dashboard (Next.js 16 App Router, React 19, Tailwind v4, Ty
 **Env vars:**
 - `OPENROUTER_API_KEY` — optional; used only by `scripts/fetch-feeds.mjs` (summaries + country extraction). The app and `scripts/update-toll.mjs` run without it.
 - `INTEREST_WEBHOOK_URL`, `RESEND_API_KEY`, `ALERT_INTEREST_EMAIL_TO`, `ALERT_INTEREST_EMAIL_FROM` — optional; delivery of alerts-interest sign-ups (see above). At least one channel is required in production.
+
+**Research notes:** `docs/public-data-sources.md` records which public datasets were checked (US first; other countries as leads), what they contain, how fresh they were and whether we built on them. Read it before adding a data source; update it (and its "Last checked" dates) whenever a source is re-checked, ruled out or built on.
