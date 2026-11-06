@@ -208,6 +208,42 @@ export const OUTBREAKS = [
     },
   },
   {
+    slug: "candida-auris-us-2026",
+    status: "active",
+    disease: "Candida auris",
+    toll: {
+      // No Wikipedia infobox and no CDC page with a running national total, so the figures
+      // come from CDC's weekly notifiable-disease table (NNDSS Weekly Data, x9gk-5huc on
+      // data.cdc.gov), parsed by scripts/lib/nndss.mjs. One week's rows must add up (states
+      // to regions, regions to U.S. Residents, the parts to Total) before anything is stored.
+      adapter: "cdc-nndss",
+      // The MMWR year the cumulative counts belong to. When the table moves on to the next
+      // year the reader logs a notice; the status and this year are then set by hand.
+      year: 2026,
+      labels: { clinical: "Candida auris, clinical", screening: "Candida auris, screening" },
+      datasetUrl: "https://data.cdc.gov/NNDSS/NNDSS-Weekly-Data/x9gk-5huc",
+      rawPrefix: "cdc-nndss-auris",
+      source: "CDC NNDSS weekly table (Candida auris, clinical)",
+    },
+    feed: {
+      sources: [
+        { name: "Google News — Candida auris cases", url: gnews('"Candida auris" cases'), source: "News" },
+        { name: "Google News — C. auris outbreak", url: gnews('"C. auris" outbreak'), source: "News" },
+        { name: "Google News — Candida auris nursing home", url: gnews('"Candida auris" nursing home OR hospital'), source: "News" },
+      ],
+      // "auris" is specific enough on its own; "fungus" needs a drug-resistance or
+      // healthcare context so generic fungus stories (crops, mushrooms) do not pass.
+      strongKeywords: ["candida auris", "c. auris", "candidozyma auris"],
+      contextualKeywords: [{ term: "fungus", needsOneOf: ["drug-resistant", "superbug", "hospital", "nursing home", "cdc"] }],
+      // Used in the summary and extraction prompts.
+      subject: "Candida auris (C. auris) infections in the United States in 2026",
+      extraction: {
+        scope: `If — and only if — the article reports a SPECIFIC COUNTRY OTHER THAN THE UNITED STATES (which is already curated) with Candida auris cases LINKED TO US CASES IN 2026 (e.g. a patient transferred from a US hospital, or a cluster traced to a US facility), return JSON:`,
+        exclusions: `If the article is only about the United States, OR does not mention a specific country, OR the cases have no stated link to the US (C. auris circulates in many countries on its own), OR it is research or a general explainer without reported cases, return:`,
+      },
+    },
+  },
+  {
     // Archived, hand-curated record (src/data/outbreaks/hantavirus-mv-hondius-2026.ts).
     // No `toll` and no `feed`: nothing here is fetched, and status "over" keeps it
     // out of the scheduled runs. Its live.json is a frozen news record.
@@ -219,9 +255,10 @@ export const OUTBREAKS = [
 
 /**
  * Which reader produces an outbreak's toll: "wikipedia" (the default, `toll.page`),
- * "eody-report" (EODY's weekly report PDF) or "cdc-measles" (the CDC's national measles
- * page and its two data files). Null when the outbreak has no toll.
- * @returns {"wikipedia" | "eody-report" | "cdc-measles" | null}
+ * "eody-report" (EODY's weekly report PDF), "cdc-measles" (the CDC's national measles
+ * page and its two data files) or "cdc-nndss" (CDC's weekly notifiable-disease table on
+ * data.cdc.gov). Null when the outbreak has no toll.
+ * @returns {"wikipedia" | "eody-report" | "cdc-measles" | "cdc-nndss" | null}
  */
 export function tollAdapter(outbreak) {
   if (!outbreak?.toll) return null;

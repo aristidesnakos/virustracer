@@ -44,7 +44,7 @@ describe("buildSnapshot", () => {
   it("measures the last 7 days from the daily readings and links the newest revision", () => {
     const s = snap("a", "active", toll(30, 10, 2));
     expect(s.incidence?.confirmed.last7).toBe(70);
-    expect(s.incidence?.deaths.last7).toBe(14);
+    expect(s.incidence?.deaths?.last7).toBe(14);
     expect(s.windowEnd).toBe("2026-10-02");
     expect(s.weekly.length).toBeGreaterThanOrEqual(2);
     expect(s.trend.verdict).toBe("plateau");

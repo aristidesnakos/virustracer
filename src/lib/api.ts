@@ -174,19 +174,20 @@ export function toCsv(header: readonly string[], rows: readonly (readonly unknow
   return [header, ...rows].map((r) => r.map(csvCell).join(",")).join("\r\n") + "\r\n";
 }
 
+/**
+ * The toll as CSV. The columns every outbreak has come first and never change; an outbreak
+ * whose source counts screening (colonisation) cases apart (NNDSS C. auris) gets
+ * `screening`, `mmwr_year` and `mmwr_week` appended after them.
+ */
 export function tollToCsv(snapshots: readonly TollSnapshot[]): string {
+  const base = ["date", "confirmed", "suspected", "deaths", "recovered", "revid", "revision_timestamp", "source_url"];
+  const withScreening = snapshots.some((s) => s.screening !== undefined);
   return toCsv(
-    ["date", "confirmed", "suspected", "deaths", "recovered", "revid", "revision_timestamp", "source_url"],
-    snapshots.map((s) => [
-      s.date,
-      s.confirmed,
-      s.suspected,
-      s.deaths,
-      s.recovered,
-      s.revid,
-      s.revisionTimestamp,
-      s.sourceUrl,
-    ]),
+    withScreening ? [...base, "screening", "mmwr_year", "mmwr_week"] : base,
+    snapshots.map((s) => {
+      const row: unknown[] = [s.date, s.confirmed, s.suspected, s.deaths, s.recovered, s.revid, s.revisionTimestamp, s.sourceUrl];
+      return withScreening ? [...row, s.screening, s.mmwrYear, s.mmwrWeek] : row;
+    }),
   );
 }
 

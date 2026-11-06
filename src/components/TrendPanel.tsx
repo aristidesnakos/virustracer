@@ -51,7 +51,7 @@ function WeeklyBars({ weeks }: { weeks: WeeklyPeriod[] }) {
                 className="fill-confirmed"
                 fillOpacity={isLatest ? 1 : 0.55}
               >
-                <title>{`7 days to ${shortDay(w.periodEnd)}: ${fmt(w.newConfirmed)} new confirmed cases, ${fmt(w.newDeaths)} deaths`}</title>
+                <title>{`7 days to ${shortDay(w.periodEnd)}: ${fmt(w.newConfirmed)} new confirmed cases${w.newDeaths === null ? "" : `, ${fmt(w.newDeaths)} deaths`}`}</title>
               </rect>
               <text
                 x={x + barW / 2}
@@ -123,8 +123,12 @@ export default function TrendPanel({
             />
             <Stat
               label="New deaths, 7 days"
-              value={fmt(metrics.incidence.deaths.last7)}
-              note={`${signedPct(metrics.incidence.deaths.changePct)} vs the 7 days before`}
+              value={metrics.incidence.deaths ? fmt(metrics.incidence.deaths.last7) : "—"}
+              note={
+                metrics.incidence.deaths
+                  ? `${signedPct(metrics.incidence.deaths.changePct)} vs the 7 days before`
+                  : "Not shown: the source reports no deaths."
+              }
             />
             <Stat
               label="Reproduction number"
@@ -162,6 +166,7 @@ export default function TrendPanel({
 
           <WeeklyBars weeks={metrics.weekly} />
 
+          {metrics.deathsReported && (
           <p className="mt-4 text-[0.9375rem] leading-relaxed text-ink-muted">
             <span className="font-semibold text-ink">Case fatality is best read as a range:</span>{" "}
             {pct(metrics.cfr.naive)} of confirmed cases have died
@@ -170,6 +175,7 @@ export default function TrendPanel({
             )}
             {metrics.cfr.resolved !== null && <>, and {pct(metrics.cfr.resolved)} of cases with a known outcome</>}.
           </p>
+          )}
         </>
       )}
 

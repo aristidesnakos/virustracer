@@ -13,6 +13,11 @@ export interface CaseDataPoint {
   deaths?: number;
   /** Cumulative recoveries. Omit when the source does not report it. */
   recovered?: number;
+  /**
+   * Cumulative screening (colonisation) cases, for a source that counts them apart from
+   * clinical cases (NNDSS Candida auris). Never added to `confirmed` or `suspected`.
+   */
+  screening?: number;
   note?: string;
   source: string;
 }
@@ -117,6 +122,16 @@ export interface OutbreakSummary {
    * descriptions, so a headline number never reads as the whole toll.
    */
   deathsQualifier?: string;
+  /**
+   * Set when the source collects no deaths at all (CDC's NNDSS table): a few words on why,
+   * e.g. "NNDSS does not collect deaths". The stat strip, home card and share card then say
+   * deaths are not reported instead of showing a number, and no fatality ratio is shown.
+   */
+  deathsNotReported?: string;
+  /** Label for the confirmed count where "Confirmed cases" would mislead, e.g. "Clinical cases". */
+  casesLabel?: string;
+  /** Label for the timeline's `screening` series, shown as a stat tile in place of Suspected. */
+  screeningLabel?: string;
   /** Date the curated figures were last checked against their sources (YYYY-MM-DD). */
   lastReviewed: string;
   source: string;

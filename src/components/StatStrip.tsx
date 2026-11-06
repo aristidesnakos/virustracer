@@ -44,6 +44,24 @@ const TILES: StatTile[] = [
 ];
 
 /**
+ * The three tiles with a trend line. Normally Deaths (the headline), Confirmed, Suspected.
+ * For a source that collects no deaths (`summary.deathsNotReported`) the cases become the
+ * headline, a timeline with a `screening` series shows it in place of Suspected, and
+ * deaths get a plain "not reported" tile instead (see the render below).
+ */
+export function tilesFor(timeline: readonly CaseDataPoint[], summary: OutbreakSummary): StatTile[] {
+  const [deaths, confirmed, suspected] = TILES;
+  const cases = summary.casesLabel ? { ...confirmed, label: summary.casesLabel } : confirmed;
+  const third = timeline.some((p) => p.screening !== undefined)
+    ? { ...suspected, label: summary.screeningLabel ?? "Screening cases", field: "screening" as const }
+    : suspected;
+  if (summary.deathsNotReported) {
+    return [{ ...cases, headline: true, cell: deaths.cell }, third];
+  }
+  return [summary.deathsQualifier ? { ...deaths, label: `Deaths ${summary.deathsQualifier}` } : deaths, cases, third];
+}
+
+/**
  * Case fatality from the most recent point that reports both deaths and confirmed
  * cases; with basis "all-cases" the denominator also counts probable cases.
  */
@@ -97,11 +115,7 @@ export default function StatStrip({
         Headline figures
       </h2>
 
-      {TILES.map((base) => {
-        const tile =
-          base.field === "deaths" && summary.deathsQualifier
-            ? { ...base, label: `Deaths ${summary.deathsQualifier}` }
-            : base;
+      {tilesFor(timeline, summary).map((tile) => {
         const trend = computeTrend(timeline, tile.field, WINDOW_DAYS, asOf, {
           interpolateBaseline: true,
         });
@@ -135,13 +149,25 @@ export default function StatStrip({
         );
       })}
 
+      {summary.deathsNotReported && (
+        <div data-slot="figure" data-testid="deaths-not-reported" className={CELL_CLASS}>
+          <span className={LABEL_CLASS}>Deaths</span>
+          <div className="font-journal text-xl font-semibold leading-tight text-ink">Not reported</div>
+          <span className={NOTE_CLASS}>{summary.deathsNotReported}</span>
+        </div>
+      )}
+
       <div data-slot="figure" className={CELL_CLASS}>
         <span className={LABEL_CLASS}>Case fatality</span>
         <Metric className="font-journal text-[2.25rem] font-bold leading-none text-death">
-          {caseFatality(timeline, summary.fatalityBasis)}
+          {summary.deathsNotReported ? "—" : caseFatality(timeline, summary.fatalityBasis)}
         </Metric>
         <span className={NOTE_CLASS}>
-          {summary.fatalityBasis === "all-cases" ? "deaths / all cases (confirmed + probable)" : "deaths / confirmed"}
+          {summary.deathsNotReported
+            ? "needs deaths, which the source does not report"
+            : summary.fatalityBasis === "all-cases"
+              ? "deaths / all cases (confirmed + probable)"
+              : "deaths / confirmed"}
         </span>
       </div>
 

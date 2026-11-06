@@ -38,7 +38,7 @@ const slugParam = "<slug>";
 const OUTBREAK_ENDPOINTS = [
   {
     path: outbreakApiPath(slugParam, "toll"),
-    what: "One row per day (per weekly report, for an outbreak read from one) of cumulative confirmed, suspected, deaths and recovered, each linked to the exact Wikipedia revision, or to the report or page, it was read from.",
+    what: "One row per day (per weekly report, for an outbreak read from one) of cumulative confirmed, suspected, deaths and recovered, each linked to the exact Wikipedia revision, or to the report or page, it was read from. A field the source does not report is null: Candida auris (CDC’s NNDSS table) has no deaths, its `confirmed` is clinical cases, and its rows add `screening` (people found to carry the fungus on a screening swab, never counted as cases or suspected cases) with `mmwrYear` and `mmwrWeek`.",
     params: [
       ["from, to", "Inclusive date range, YYYY-MM-DD."],
       ["limit", `Keep only the most recent N rows (1–${MAX_LIMIT}).`],
@@ -293,6 +293,8 @@ console.log(growth.trend, rt.estimate);`}</pre>
                   {o.metrics.caseToDeathDays !== null
                     ? `Confirmation-to-death delay ${o.metrics.caseToDeathDays} days.`
                     : "Delay-adjusted fatality not reported."}
+                  {o.summary.deathsNotReported &&
+                    ` No deaths in the source (${o.summary.deathsNotReported}), so the deaths, new-deaths and fatality fields are null.`}
                   {o.metrics.reportingCadence === "weekly" &&
                     ` Weekly source: ${WEEKLY_MIN_READINGS_IN_TWO_WEEKS} readings in the last 14 days are enough, and the days between reports are filled in a straight line.`}
                 </li>

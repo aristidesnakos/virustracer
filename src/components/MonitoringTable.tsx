@@ -93,6 +93,7 @@ export default function MonitoringTable({
   title = <>By country &amp; province</>,
   sources = "WHO · INSP DRC · Regional health authorities",
   showCfr = true,
+  casesLabel = "Confirmed",
 }: {
   monitoringData: MonitoringEntry[];
   candidates?: CandidateSignal[];
@@ -102,6 +103,8 @@ export default function MonitoringTable({
   sources?: string;
   /** Hide the CFR column, e.g. when deaths include probable cases the rows don't count. */
   showCfr?: boolean;
+  /** Heading of the cases column where "Confirmed" would mislead (e.g. "Clinical"). */
+  casesLabel?: string;
 }) {
   const [expanded, setExpanded] = useState<string | null>(null);
 
@@ -113,6 +116,8 @@ export default function MonitoringTable({
   const countryRows = monitoringData.filter((r) => !r.parentIso);
   const totalConfirmed = countryRows.reduce((sum, r) => sum + r.confirmed, 0);
   const totalDeaths = countryRows.reduce((sum, r) => sum + r.deaths, 0);
+  // When no country row has a death count (a source that collects none), the total is unknown, not 0.
+  const deathsKnown = countryRows.some((r) => !r.deathsUnreported);
   const unconfirmed = dedupeCandidates(candidates, curatedIsos);
 
   return (
@@ -127,7 +132,7 @@ export default function MonitoringTable({
       <div className="relative overflow-x-auto">
         <table className="w-full min-w-[34rem] text-[0.9375rem]">
           <caption className="sr-only">
-            {showCfr ? "Confirmed cases, deaths and case fatality" : "Confirmed cases and deaths"} by country and province. Select a region to
+            {showCfr ? `${casesLabel} cases, deaths and case fatality` : `${casesLabel} cases and deaths`} by country and province. Select a region to
             read its details.
           </caption>
           <thead>
@@ -136,7 +141,7 @@ export default function MonitoringTable({
                 Region
               </th>
               <th scope="col" className="px-2 py-2.5 text-right font-semibold">
-                Confirmed
+                {casesLabel}
               </th>
               <th scope="col" className="px-2 py-2.5 text-right font-semibold">
                 Deaths
@@ -319,11 +324,11 @@ export default function MonitoringTable({
                 {fmt(totalConfirmed)}
               </td>
               <td className="px-2 py-3 text-right font-journal text-base font-bold tabular-nums text-death">
-                {fmt(totalDeaths)}
+                {deathsKnown ? fmt(totalDeaths) : "—"}
               </td>
               {showCfr && (
                 <td className="px-2 py-3 text-right font-journal text-base font-bold tabular-nums text-ink-muted">
-                  {cfr(totalDeaths, totalConfirmed) ?? "—"}
+                  {(deathsKnown && cfr(totalDeaths, totalConfirmed)) || "—"}
                 </td>
               )}
               <td />

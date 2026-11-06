@@ -24,6 +24,7 @@ interface ChartRow {
   Deaths?: number;
   Confirmed?: number;
   Suspected?: number;
+  Screening?: number;
 }
 
 const fmtNum = (n: number) => n.toLocaleString("en-US");
@@ -74,15 +75,15 @@ function makeTooltip(byDate: Map<string, CaseDataPoint>) {
 }
 
 /** Plain-language read-out of the newest values, for screen readers. */
-function describeLatest(rows: ChartRow[]): string {
-  const latest = (key: "Deaths" | "Confirmed" | "Suspected") => {
+function describeLatest(rows: ChartRow[], names: Record<SeriesKey, string>): string {
+  const latest = (key: SeriesKey) => {
     for (let i = rows.length - 1; i >= 0; i--) {
       const v = rows[i][key];
-      if (v !== undefined) return `${fmtNum(v)} ${key.toLowerCase()} (${fmtDay(rows[i].t)})`;
+      if (v !== undefined) return `${fmtNum(v)} ${names[key].toLowerCase()} (${fmtDay(rows[i].t)})`;
     }
     return null;
   };
-  const parts = (["Deaths", "Confirmed", "Suspected"] as const)
+  const parts = (["Deaths", "Confirmed", "Suspected", "Screening"] as const)
     .map(latest)
     .filter((p): p is string => p !== null);
   if (rows.length === 0 || parts.length === 0) return "No data points yet.";
@@ -90,6 +91,8 @@ function describeLatest(rows: ChartRow[]): string {
     rows[rows.length - 1].t,
   )}. Latest: ${parts.join("; ")}.`;
 }
+
+type SeriesKey = "Deaths" | "Confirmed" | "Suspected" | "Screening";
 
 function LegendKey({
   color,
@@ -120,15 +123,21 @@ export default function CasesChart({
   timeline,
   headingId,
   reference,
+  casesLabel = "Confirmed",
+  screeningLabel = "Screening",
 }: {
   timeline: CaseDataPoint[];
   headingId?: string;
   /** A dated event drawn as a labelled vertical line, e.g. a WHO emergency declaration. */
   reference?: { date: string; label: string };
+  /** Name of the confirmed series where "Confirmed" would mislead (e.g. "Clinical cases"). */
+  casesLabel?: string;
+  /** Name of the `screening` series, drawn only when the timeline has one. */
+  screeningLabel?: string;
 }) {
   const refT = reference ? Date.parse(reference.date) : Number.NaN;
   const hasRef = !Number.isNaN(refT);
-  const { data, ticks, tooltip, hasSuspected, summary } = useMemo(() => {
+  const { data, ticks, tooltip, hasSuspected, hasScreening, hasDeaths, summary } = useMemo(() => {
     const rows: ChartRow[] = timeline
       .map((d) => ({
         t: Date.parse(d.date),
@@ -136,6 +145,7 @@ export default function CasesChart({
         Deaths: d.deaths,
         Confirmed: d.confirmed,
         Suspected: d.suspected,
+        Screening: d.screening,
       }))
       .filter((r) => !Number.isNaN(r.t))
       .sort((a, b) => a.t - b.t);
@@ -151,24 +161,28 @@ export default function CasesChart({
       ticks: tickList,
       tooltip: makeTooltip(new Map(timeline.map((d) => [d.date, d]))),
       hasSuspected: rows.some((r) => r.Suspected !== undefined),
-      summary: describeLatest(rows),
+      hasScreening: rows.some((r) => r.Screening !== undefined),
+      // A source with no deaths at all (NNDSS) draws no deaths line and says so in the title.
+      hasDeaths: rows.length === 0 || rows.some((r) => r.Deaths !== undefined),
+      summary: describeLatest(rows, { Deaths: "Deaths", Confirmed: casesLabel, Suspected: "Suspected", Screening: screeningLabel }),
     };
-  }, [timeline, hasRef, refT]);
+  }, [timeline, hasRef, refT, casesLabel, screeningLabel]);
 
   return (
     <div className="flex w-full flex-1 flex-col">
       <PanelHeader
         kicker="Fig. 2"
         id={headingId}
-        title={<>Cumulative deaths &amp; cases</>}
+        title={hasDeaths ? <>Cumulative deaths &amp; cases</> : <>Cumulative cases</>}
       />
       <ul
         className="mb-3 flex flex-wrap items-center gap-x-5 gap-y-1 text-[0.8125rem] font-medium text-ink-muted"
         aria-label="Chart legend"
       >
-        <LegendKey color="var(--death)" label="Deaths" weight={4} />
-        <LegendKey color="var(--confirmed)" label="Confirmed" weight={2.5} />
+        {hasDeaths && <LegendKey color="var(--death)" label="Deaths" weight={4} />}
+        <LegendKey color="var(--confirmed)" label={casesLabel} weight={2.5} />
         {hasSuspected && <LegendKey color="var(--suspected)" label="Suspected" dashed weight={2} />}
+        {hasScreening && <LegendKey color="var(--suspected)" label={screeningLabel} dashed weight={2} />}
       </ul>
       <p className="sr-only">{summary}</p>
       {/* Grows with the row (the map beside it is taller); the minimum is the old fixed height. */}
@@ -223,6 +237,7 @@ export default function CasesChart({
               <Line
                 type="monotone"
                 dataKey="Confirmed"
+                name={casesLabel}
                 stroke="var(--confirmed)"
                 strokeWidth={2.5}
                 connectNulls
@@ -233,6 +248,19 @@ export default function CasesChart({
                 <Line
                   type="monotone"
                   dataKey="Suspected"
+                  stroke="var(--suspected)"
+                  strokeWidth={2}
+                  strokeDasharray="5 4"
+                  connectNulls
+                  dot={{ fill: "var(--suspected)", r: 2.5, strokeWidth: 0 }}
+                  activeDot={{ r: 5 }}
+                />
+              )}
+              {hasScreening && (
+                <Line
+                  type="monotone"
+                  dataKey="Screening"
+                  name={screeningLabel}
                   stroke="var(--suspected)"
                   strokeWidth={2}
                   strokeDasharray="5 4"

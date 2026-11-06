@@ -76,9 +76,12 @@ export function buildSnapshot(outbreak: OutbreakDefinition, toll: TollData): Out
   };
 }
 
-/** Outbreaks without enough history sort after every outbreak with a measured week. */
+/**
+ * Outbreaks without enough history sort after every outbreak with a measured week. A source
+ * that reports no deaths counts as zero new deaths, so it is then ranked by new cases.
+ */
 const last7 = (s: OutbreakSnapshot, field: "deaths" | "confirmed"): number =>
-  s.incidence?.[field].last7 ?? -1;
+  s.incidence ? (s.incidence[field]?.last7 ?? 0) : -1;
 
 /**
  * The published ranking rule: status group first (STATUS_ORDER), then most new

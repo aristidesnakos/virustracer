@@ -1,6 +1,6 @@
 import type { CaseDataPoint } from "@/data/outbreaks";
 
-export type TrendField = "confirmed" | "suspected" | "deaths" | "recovered";
+export type TrendField = "confirmed" | "suspected" | "deaths" | "recovered" | "screening";
 
 export interface TrendPoint {
   date: string;
