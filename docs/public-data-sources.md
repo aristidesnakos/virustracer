@@ -34,8 +34,9 @@ respiratory infections weekly by state, F880 citations per facility), and all th
 | Source | Host / id | Level | Cadence | Status | Built |
 |---|---|---|---|---|---|
 | CDC NNDSS weekly tables (C. auris clinical and screening) | `data.cdc.gov` `x9gk-5huc` | state, region, national | weekly | Verified 2026-11-06 | `candida-auris-us-2026` |
-| CDC NHSN nursing-home respiratory pathogens (COVID-19, flu, RSV) | `data.cdc.gov` `tscn-ryh9` | state, national | weekly (but stale, see below) | Verified 2026-11-06 | nursing-home layer |
-| CMS Health Deficiencies (F880 infection control) | `data.cms.gov` `r5ix-sfxw` | **facility (named, CCN)** | about monthly | Verified 2026-11-06 | nursing-home layer |
+| CDC NHSN nursing-home respiratory pathogens, counts (COVID-19, flu, RSV) | `data.cdc.gov` `tscn-ryh9` | state, region, national | weekly in name; stale (to 2026-03-29) | Verified 2026-11-06 | `/nursing-homes/respiratory` |
+| CDC NHSN nursing-home dashboard data file, rates only | `www.cdc.gov` `/nhsn/modules/case-rates-covid-flu-rsv.json` | state, national | weekly (Thursdays) | Verified 2026-11-06 | `/nursing-homes/respiratory` |
+| CMS Health Deficiencies (F880 infection control) | `data.cms.gov` `r5ix-sfxw` | **facility (named, CCN)** | about monthly | Verified 2026-11-06 | `/nursing-homes/infection-control` |
 | CMS Healthcare Associated Infections – Hospital | `data.cms.gov` `77hc-ibv8` | facility (hospital) | about quarterly, months behind | Reported | no |
 | CMS COVID-19 Nursing Home Data | `data.cms.gov` | facility (CCN) | weekly (historically) | Reported; 2026 status unknown | no |
 | CDC AR & Patient Safety Portal (NHSN antimicrobial use and resistance) | `arpsp.cdc.gov` | state, region, national | yearly | Reported | no |
@@ -74,8 +75,8 @@ respiratory infections weekly by state, F880 citations per facility), and all th
 
 ### CDC NHSN nursing-home respiratory pathogens
 
-- **Last checked:** 2026-11-06. **Status:** Verified. **Built:** nursing-home layer
-  (respiratory panel).
+- **Last checked:** 2026-11-06. **Status:** Verified. **Built:** `/nursing-homes/respiratory`
+  and `/api/v1/nursing-homes/respiratory` (reader `scripts/update-nursing-homes.mjs`).
 - **Where:** Socrata "Weekly Respiratory Pathogens and Vaccination (RPV) Metrics for Nursing Home
   Residents by Jurisdiction", `https://data.cdc.gov/resource/tscn-ryh9.json`. Human-facing
   dashboard: `https://www.cdc.gov/nhsn/ltc/ltc-report-overview.html` (about 15,000 nursing homes,
@@ -88,13 +89,30 @@ respiratory infections weekly by state, F880 citations per facility), and all th
 - **Rules:** flu and RSV reporting became required on 2025-01-01; earlier weeks follow different
   definitions.
 - **Freshness problem:** on 2026-11-06 the dataset's latest week was **2026-03-29** (rows updated
-  2026-08-24), while the dashboard page said "Updated November 5, 2026". Re-check whether CDC
-  publishes a fresher machine-readable file.
+  2026-08-24), while the dashboard page said "Updated November 5, 2026". No fresher dataset exists
+  on data.cdc.gov.
+- **Fresher source found:** the dashboard's own data file,
+  `https://www.cdc.gov/nhsn/modules/case-rates-covid-flu-rsv.json`, ran to the week ending
+  2026-11-01 and is updated on Thursdays. It has **rates per 100,000 residents only** (no counts,
+  no facility numbers), and its rates are close to but not equal to rates computed from the
+  dataset's counts, so the site keeps the two sources apart, labels each and never checks one
+  against the other. At last check: COVID-19 210.1, influenza 43.6, RSV 2.6 new cases per 100,000
+  residents (week ending 2026-11-01). The file repeats each rate up to three times; every copy
+  agrees.
+- **Cross-checks that hold (counts dataset):** in all 78 weeks the states add up exactly to the
+  national row for every count column, and so do the 10 HHS regions; subsets never exceed totals;
+  CDC's percentages equal numerator ÷ `numres`, which confirms `numres` (residents) as the
+  denominator; weeks end on Sundays.
+- **Data caveats:** the dataset's last two weeks are thin (6,743 reporting homes against about
+  12,600 usually), so the newest full week is 2026-03-15; weeks under 90% of the usual count are
+  flagged. Flu and RSV start with the week ending 2025-01-12. CDC marks 13 weeks
+  (October–December 2025) "Dotted" without saying why; the site keeps it as `marked`.
 
 ### CMS Health Deficiencies — F880 infection prevention and control
 
-- **Last checked:** 2026-11-06. **Status:** Verified. **Built:** nursing-home layer
-  (infection-control citations).
+- **Last checked:** 2026-11-06. **Status:** Verified. **Built:** `/nursing-homes/infection-control`
+  (with one page per state and a searchable list of cited homes) and
+  `/api/v1/nursing-homes/infection-control-citations` (reader `scripts/update-nursing-homes.mjs`).
 - **Where:** CMS Provider Data Catalog, dataset `r5ix-sfxw`. Metadata:
   `https://data.cms.gov/provider-data/api/1/metastore/schemas/dataset/items/r5ix-sfxw`. Query:
   `https://data.cms.gov/provider-data/api/1/datastore/query/r5ix-sfxw/0` with a condition on
@@ -107,13 +125,24 @@ respiratory infections weekly by state, F880 citations per facility), and all th
   inspection_cycle, standard_deficiency, complaint_deficiency,
   infection_control_inspection_deficiency, citation_under_idr, citation_under_iidr,
   processing_date`.
-- **Figures at last check:** 24,413 F880 rows; file modified 2026-10-01, released 2026-10-28.
+- **Figures at last check:** 24,413 F880 citations at 12,011 homes in 53 states (all inspection
+  cycles in the file; processed 2026-10-01, released 2026-10-28). Surveys in the last 12 months
+  (2025-10-02 to 2026-10-01): 5,884 citations at 5,241 homes, 0.8% (49) at actual harm or worse
+  (severity G–L). CMS expected the next release on 2026-12-02.
 - **Behaviour:** holds roughly the last three inspection cycles, not a full history, so history
-  only builds up if we keep each release.
+  only builds up if we keep each release. The site stores compact per-state files for the latest
+  release and a gzipped, write-once raw copy of each release (about 0.7 MB each) in
+  `data/raw/nursing-homes/`.
+- **Cross-checks:** rows received equal the count the API reports; every row has tag 0880 and the
+  release's processing date, valid codes, no duplicates; the release must not change while being
+  read.
+- **Care Compare links:** the site links each home as
+  `https://www.medicare.gov/care-compare/details/nursing-home/<CCN>?state=<ST>`. medicare.gov is
+  blocked from the cloud sandbox, so the link form is unverified.
 - **Wording rule:** a citation is an inspection finding, may have been corrected and can be
   disputed. Never call it an outbreak.
-- **Access note:** a Python `urllib` request with a custom user agent got HTTP 403 while `curl`
-  worked.
+- **Access note:** once, a Python `urllib` request with a custom user agent got HTTP 403 while
+  `curl` worked. It could not be reproduced later the same day (Python and Node both got 200).
 
 ### CMS Healthcare Associated Infections – Hospital
 
@@ -166,7 +195,7 @@ respiratory infections weekly by state, F880 citations per facility), and all th
 
 - `www.cdc.gov` was allowed from the start. `data.cdc.gov` and `data.cms.gov` were added on
   2026-11-06 in the personal cloud environment "virustracer". `stacks.cdc.gov`,
-  `catalog.data.gov` and `wonder.cdc.gov` were still blocked from the sandbox.
+  `catalog.data.gov`, `wonder.cdc.gov` and `www.medicare.gov` were still blocked from the sandbox.
 - Whether GitHub's Actions runners can reach `data.cdc.gov` and `data.cms.gov` was unconfirmed at
   the time of writing. EODY (Greece) refuses them; CDC might too. Readers log a warning and exit 0
   if refused.
