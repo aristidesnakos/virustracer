@@ -194,6 +194,9 @@ describe("/outbreaks/measles-us-2026", () => {
   it("builds metadata with the latest toll in the description", async () => {
     const meta = await generateMetadata(params(SLUG));
     expect(meta.title).toEqual({ absolute: us.seoTitle });
-    expect(meta.description as string).toMatch(/4,852/);
+    // The description carries the newest stored toll. The updater adds a reading every week, so
+    // read the expected figure from toll.json instead of hard-coding one that goes stale.
+    const latest = getTollData(SLUG).snapshots.at(-1)!;
+    expect(meta.description as string).toContain(latest.confirmed!.toLocaleString("en-US"));
   });
 });
