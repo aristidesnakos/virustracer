@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-03T08:53:31.158Z",
+  "lastRun": "2026-11-06T20:37:53.389Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -12,6 +12,552 @@
       "source": "Curated (src/data/outbreaks/measles-bangladesh-2026.ts)",
       "kind": "curated",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/NNDSS/NNDSS-Weekly-Data/x9gk-5huc": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "NNDSS Weekly Data (data.cdc.gov)",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/candida-auris-us-2026.ts)",
+      "kind": "curated",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%271%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-01-10: 32 confirmed, null deaths",
+      "publishedAt": "2026-01-10",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2710%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-03-14: 854 confirmed, null deaths",
+      "publishedAt": "2026-03-14",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2711%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-03-21: 980 confirmed, null deaths",
+      "publishedAt": "2026-03-21",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2712%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-03-28: 1031 confirmed, null deaths",
+      "publishedAt": "2026-03-28",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2713%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-04-04: 1204 confirmed, null deaths",
+      "publishedAt": "2026-04-04",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2714%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-04-11: 1297 confirmed, null deaths",
+      "publishedAt": "2026-04-11",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2715%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-04-18: 1889 confirmed, null deaths",
+      "publishedAt": "2026-04-18",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2716%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-04-25: 2022 confirmed, null deaths",
+      "publishedAt": "2026-04-25",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2719%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-05-16: 2052 confirmed, null deaths",
+      "publishedAt": "2026-05-16",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%272%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-01-17: 89 confirmed, null deaths",
+      "publishedAt": "2026-01-17",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2720%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-05-23: 2118 confirmed, null deaths",
+      "publishedAt": "2026-05-23",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2721%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-05-30: 2230 confirmed, null deaths",
+      "publishedAt": "2026-05-30",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2722%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-06-06: 2373 confirmed, null deaths",
+      "publishedAt": "2026-06-06",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2723%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-06-13: 2548 confirmed, null deaths",
+      "publishedAt": "2026-06-13",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2724%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-06-20: 2643 confirmed, null deaths",
+      "publishedAt": "2026-06-20",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2725%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-06-27: 2713 confirmed, null deaths",
+      "publishedAt": "2026-06-27",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2726%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-07-04: 2824 confirmed, null deaths",
+      "publishedAt": "2026-07-04",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2727%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-07-11: 2942 confirmed, null deaths",
+      "publishedAt": "2026-07-11",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2728%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-07-18: 3302 confirmed, null deaths",
+      "publishedAt": "2026-07-18",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2729%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-07-25: 3437 confirmed, null deaths",
+      "publishedAt": "2026-07-25",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%273%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-01-24: 170 confirmed, null deaths",
+      "publishedAt": "2026-01-24",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2730%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-08-01: 3544 confirmed, null deaths",
+      "publishedAt": "2026-08-01",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2731%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-08-08: 4368 confirmed, null deaths",
+      "publishedAt": "2026-08-08",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2732%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-08-15: 4511 confirmed, null deaths",
+      "publishedAt": "2026-08-15",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2733%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-08-22: 4802 confirmed, null deaths",
+      "publishedAt": "2026-08-22",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2734%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-08-29: 4938 confirmed, null deaths",
+      "publishedAt": "2026-08-29",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2735%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-09-05: 5099 confirmed, null deaths",
+      "publishedAt": "2026-09-05",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2736%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-09-12: 5307 confirmed, null deaths",
+      "publishedAt": "2026-09-12",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2737%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-09-19: 5484 confirmed, null deaths",
+      "publishedAt": "2026-09-19",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2738%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-09-26: 5661 confirmed, null deaths",
+      "publishedAt": "2026-09-26",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2739%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-10-03: 5853 confirmed, null deaths",
+      "publishedAt": "2026-10-03",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%274%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-01-31: 233 confirmed, null deaths",
+      "publishedAt": "2026-01-31",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2740%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-10-10: 5962 confirmed, null deaths",
+      "publishedAt": "2026-10-10",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2741%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-10-17: 6211 confirmed, null deaths",
+      "publishedAt": "2026-10-17",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2742%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-10-24: 6379 confirmed, null deaths",
+      "publishedAt": "2026-10-24",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2743%27&%24order=label%2C+sort_order": {
+      "archivedUrl": "https://web.archive.org/web/20261106203823/https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2743%27&%24order=label%2C+sort_order",
+      "archivedAt": "2026-11-06T20:38:23Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-06T20:37:53.389Z",
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-10-31: 6572 confirmed, null deaths",
+      "publishedAt": "2026-10-31",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%275%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-02-07: 333 confirmed, null deaths",
+      "publishedAt": "2026-02-07",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%276%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-02-14: 420 confirmed, null deaths",
+      "publishedAt": "2026-02-14",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%277%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-02-21: 482 confirmed, null deaths",
+      "publishedAt": "2026-02-21",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%278%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-02-28: 599 confirmed, null deaths",
+      "publishedAt": "2026-02-28",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%279%27&%24order=label%2C+sort_order": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC NNDSS weekly table (Candida auris, clinical) snapshot 2026-03-07: 761 confirmed, null deaths",
+      "publishedAt": "2026-03-07",
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "kind": "toll",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://dghs.gov.bd": {
@@ -2224,6 +2770,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://en.wikipedia.org/w/index.php?oldid=1383958782": {
+      "archivedUrl": "https://web.archive.org/web/20261106085317/https://en.wikipedia.org/w/index.php?oldid=1383958782",
+      "archivedAt": "2026-11-06T08:53:17Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-06T20:37:53.389Z",
+      "title": "Wikipedia toll snapshot 2026-11-06: 24219 confirmed, 105 deaths",
+      "publishedAt": "2026-11-05T20:53:05Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://en.wikipedia.org/wiki/2026_Bangladesh_measles_outbreak": {
       "archivedUrl": "https://web.archive.org/web/20261017202025/https://en.wikipedia.org/wiki/2026_Bangladesh_measles_outbreak",
       "archivedAt": "2026-10-17T20:20:25Z",
@@ -2349,6 +2908,19 @@
       "lastAttempt": "2026-10-08T20:13:01.234Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-08-05: 65 confirmed, 6 deaths",
       "publishedAt": "2026-08-05",
+      "source": "EODY weekly West Nile virus report",
+      "kind": "toll",
+      "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://eody.gov.gr/images/%CE%95%CE%B2%CE%B4_%CE%B5%CE%BA%CE%B8_%CE%99%CE%94%CE%9D_05_11_2026.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-06T20:37:53.389Z",
+      "title": "EODY weekly West Nile virus report snapshot 2026-11-05: 462 confirmed, 53 deaths",
+      "publishedAt": "2026-11-05",
       "source": "EODY weekly West Nile virus report",
       "kind": "toll",
       "outbreak": "west-nile-greece-2026",
@@ -2488,8 +3060,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-03T08:53:31.158Z",
+      "attempts": 2,
+      "lastAttempt": "2026-11-06T20:37:53.389Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-10-29: 457 confirmed, 51 deaths",
       "publishedAt": "2026-10-29",
       "source": "EODY weekly West Nile virus report",
@@ -2614,6 +3186,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQXF2bzk3a1lWSV9hQW9WVTJGQVRTS3hZSWdfVk5FTHFlbkxSVS1GUi1xOTdBRDJNaDRzMHl3U3JMRkJMTzJISXo3Q0FOYWhwT2NtVk1yM0Y1NVJUXzNTWjVQQVg0THd2SU41NkZ5Zk9OLTBEQ1pod18wOFVJTTFEQ0ZmQnAxTWdyVGJjdW9HRFlsSjJMZURLa0RuUEJwWTl4SE96UkV0U2I0eE96YnhmdHRqOU04bmlRQVlEdERYMkoxY2ZOaVpTTFBUQVVEaENS0gHWAUFVX3lxTE1kZ0diOTRJLUczY0p0NnFONElMT1FpMGFOMjI2VDltRTUzSXppeVdNQm9EZy02TGd1THFRbS0xdzk2ejJwVmFlUnF0bDJWM05jXzNoT25tOFRPMGtHeEprOWpNZk9lY0pEdVhZS2l6YVlVRGtQTXBWTHRqempVNWFYMEtZNjNVYXB4QkQzeXN0MlF4VDVOV1FCaGh4S2NzODJjNmlPYmFmN3hKZGhyZ2V5NjZvZ291UzNsZ0lhcEdqRFMtM2N2aXp5YWtXalVtc1V6d2hRVEE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wisconsin reports first infant death linked to measles outbreak since 1990 - Firstpost",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQZlVveVgxSmljMmhFWFMtTjEweU82SG05aFBtY3FOcDk0bHdac1daZHRXbHlBZkJTcVBYZkNNZTJYTUtETDljTGNvdFZub0tIUU1PN0JQbTBQLThrYThVcWdGdzdlLWdDaUE3Vk1PcGk0N1A3UXpwQ2RpRVpYTEJMRHVpNExmYmdOaHZ5T0REQ3FkNWF1aWhFd0dqY2dEWEhWT1FDQXNONTVZNEVvdDdtYTFmMzZLYUVwTjY0VHpIdGdLSGJHM1lqMjdqSGdrbE5U?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2692,6 +3277,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWXJkTHJZeVg1MTNaU2dPLVBKVFNUaWdQVHMxaE5PMVJQYWI5SnpGaVpWdkN0LVV5T1gwb05jb2RiaG9rVTR0bUpXc25tYnQ0OFZiMXlDZDhrdi1zUldpclpPQ0toeGFMa2VmUDZ4WlJXajNERmREZkNYY1QwYjU4Vk1zVkV3WWktbFBzMnY2ODR3TE5oSzJvODVzdU9sVzYyNGw0dmFOLUxZallhcm1tTDVNTDJzbDVwNXRHc2xOT0lhdTNHZ3dOVy1FWktnd3RZNW5n0gHYAUFVX3lxTE5aOEo5MUgwSlhja0U5LXU1eFJZS1hVUVY0UDQxa3VLbUN6NkJXZkQxUTQyRG5YZ2M5aEJqbWRhTFhaSWNscUFrQ0ZzQXNxWkJqOGdmcDBUSHpPQzFlNzU1YTl2M29aTXFhYTR4LWN4QUVkR0FPUU11WVZRN2dpdXRZTlVRdHd6YU9nc0JuNk5MTEIxRjlYVlN0Y19oTTlHdEdmQ1FiaTlHVW9QSDhFeHJsZmlnR2ZvdTJmUlI0Ri1rbE1XV1cwaHV5aWdnaV8ybU82eExoQlNQbw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh was a public health success story. Why it’s now in throes of world’s largest measles outbreak - ThePrint",
+      "publishedAt": "2026-11-04",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPMnc4NG1LRFpxdXV3d2pOajJwVU9kWmdYdWlJeHpVZTZJYmlBaTNINHo1RDlpNS1nZ19Nai1KTFc4Y1k2bDRWZGFRVS1FUXN5Q3RkS05OX3g2VU96QzRtYWdMN2pMRjQxa0xoU2xaQVdrdXYwXzU0N09NMUdYNXJxVnpfdXR3UXZ3SkVhSzN3cEFCQkRFZEZoUWJPdEJNSTZKTUtQZFlQVDhTejFQNFhyZFZhb21MMW1waUEtcUczV2M0VUNZOWlyWGZSU285NUZnMDRv?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -2742,6 +3340,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTUhmNDRUdnBjb2NiNlh1a19xVTNRUXpwSnprNUtyY1ppR3ZQcE03LVkzZlEtOW9IWXBfNkV0ZkVhekZSdjZtTEZ3WUQ0Sm9kYks2N0NZcnpURm5jc1FJc2RyNW9HaF94dldESDE4ejBYS2c4Rml5aEY5Qmthc1I4Q0N0WncwNU93eklQUzJMbjZsd3FMLWpGZ3J1YkUzSkNscVNlWnJ3bzNzdnVfNk5qQWF5bGJiWlVZN3hOV1lZZFI4OGpBdl9nQ2hTWFBIUVNvT0UtRQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola Cases Top 10,000 in Congo as Africa CDC Toll Shows More Than Half of Patients Have Died - Nature World News",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZmpkNGtLUVBzenZ2aEFOMklIUDBIVmZXV08xRWNnZ1hfNFlrdUFhS0R0RzdaVFhBeGxsMEthM191Mi1zTlVBWjFxY1d3OFRhWExWWFlXQjFHZEtzWHp2U2tkQW5EX3NmRFBsNjNjZ0pjd1ByQjYwM1l4czFRNUZXZFliOXJwcGN6X1JNWXZzb2ZrbTRfZ2VXYXhxdzhCZDRuZWVTNFJqaUt2MEY0U0V4YWdRcktZaENNdG1Ra2FvWTNjRlQzRkJhVmtJSkR6NWZVVS04ZVdB?oc=5": {
@@ -2926,6 +3537,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNRHp5WVVoOS05aTRsdDkxWHI0MTgxRk8wT1E2MTB6c0hnSC1fVmdJWFRrQ1NUYTNsV3pkVHBuTE1oX2ZhOE1SZy16dFNlOVlsdkdGYjhfRjdZN1I5aEE1MEhOYjZROVVUX2xBeTljdTAyR0JpMl83WV9IUlZNRmhta1hVclRuR05wdUFhV3lubjV1U1R6UTZBUW41ekdaUjRnMXU0LXFGa1VKWkdfT0RXN3VmNkNVQ2RHT3NFVjAwWHRabG1fNXRaS0J0OTJhSHZnNl9mRGNBdXAtRHRKSmc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles cases race past 5,000 nationwide: CDC - Washington Examiner",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNUlNLR2NxQWFjSVp0LXhqRFRsWWNHM2prSVBaRjQ5UWJveHkzOXdoSDQwODdYTHJidkNtRTFhdjJ6NXhWY0hMenl3WlplSFpFSDNlSkl4di1UN1VqVVBnZmJnMTlMUHpfZHRaaE9vOWVHd3JDZjlkNFJMWnFGOWYyYTJObW44SG03eXJMUVloVW1OekplckJ6NTFmcWcwMGRQR0hqbDFVS050VmR3R1JZUUZmQlpPSDZ5LUFXSERuaTNFTmc3dXdOTUl3Qll0NE80TkJZMFlDYTFzUkFUblHSAd4BQVVfeXFMTVJTS0djcUFhY0ladC14akRUbFljRzNqa0lQWkY0OVFib3h5Mzl3aEg0MDg3WExyYnZDbUUxYXYyejV4VmNITHp5d1paZUhaRUgzZUpJeHYtVDdValVQZ2ZiZzE5TFB6X2R0WmhPbzllR3dyQ2Y5ZDRSTFpxRjlmMmEyTm1uOEhtN3lyTFFZaFVtTnpKZXJCejUxZnFnMDBkUEdIamwxVUtOdFZkd0dSWVFGZkJaT0g2eS1BV0hEbmkzRU5nN3V3Tk1Jd0JZdDRPNE5CWTBZQ2Exc1JBVG5R?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3056,6 +3680,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZEthQ0Y4aXR5LUpYMDdPZ2dsMzFUTnhmeVljZFRTTGVUZm91OHNmbkc1d2ZtYjFua3F0dTBSVlY1MjhBMmdtWFZOWHRLWDlicEF5VXVOVDZpS2Y4Zk1ZSV91UHdXQ2lrSzZQMTFHcHM2dHpKNXBEVm5ZY1U5RnRJVGo2ODJkWmFObXAzSlZHX2JhUE5MWUZjeXRLRURYLWxGa2JzV2ZEOGFadWN6ZW1KSEZrR2dxZGg3RGtMZVV6dlNybU1RZ0FyZ2liRkhIalFHcWxnRkU2enMzcjk0T3hBQUxITQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO recommends two new Ebola vaccines for clinical trials as DRC battles Bundibugyo outbreak - Premium Times Nigeria",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOa2w3Q1BCUXlxNlNNWjMydGhFVXphblhYT2ZHaEMxZ3hqeU1aNUxlVzFBbVpYUFBrQy1TMXpCWkNuVGxLcjNnbVkydWNpbVdUbTdTRUZnRTl4MERwTDlqYzJfM0lfU09lS1IxcVJrUjBoWjFQQ1FaQ29LOUNUeTJPd3dLbU40N1J2OGMxSnM2bm9lSGZJZjBLMmVad0pSejdUNHY1azJyRk92STNYd0ZOOExhRGxYdzlGUUZqckFZU2h0N09JWmxqaWd1OGl2bnJMQWhmbU9DeFdCWG0zUTk3ZkJvTQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3067,6 +3704,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQeHF2S1FHNlNodnljSE1hSE5yc3AxeTNmYWdJMVVzZUJ1OWY0aUtYM3ZfdVhnVDk4bjNkN1IwdDYxSzV2dW9XbGwyZExIelNZUUgzNUVFXzJNRDJocmZNZURaZnVWQkdPc0hHUGw0dHhkeXNacE1Lc21IdVo5TXduZXVJOW1LSENfYXgxNG1iZkVQTzg3N1NXVWtHSFZpYWFwWDlzSGowclZrVHJCWjI4OGpvSFN4NWlkTjNhZUV6UUpjU1RuVFpjRGt2d09ZQlF0dzVfVTVCUWlsWVhydUhuRGpyOA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "First Bundibugyo Ebola Vaccines Enter Active-Outbreak Efficacy Trial: WHO Clears Moderna, Oxford - Tech Times",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNcVRHR25QYmpnQ3VxMHZsVHNOOEIzNE5IbjgwcVVCWV9YNGpBMEhEVlU0em85NGpwUnhzWGFFbDBNVEhiZGZYMlp2SUVlVXJET2llOUh3enlyelZyWWdhVmE5VzkwUUJVVkRlOUlvWEdvM0U0RThKMHROZndWYjdzMWFnalRjQXlxU1E0WEg5UHdoc3d3U0dYdFA1U2NQVTNzQzBvemFUdmpaNUlFWXZsLUROM1pqbGtmQk5taHhSZXZuX05pWGVKVUVobkxMaFVteVVYZHgyajloWEhUSkFKSnhMZFjSAeoBQVVfeXFMUE1KU1VCeW9OU3BESWJmYzQ3cUFMZXVxd1oxTnVEZ2dIYk1fcFZhUTBnNW90V0ZUcUZ0Rm1ZNG9aUHZaNmxGaDlHLUpVeXA1amphRmdyb0VhbjJEN0lPMkpXMHZLb1RjakVPc0puYTd0UmFZZGN6S0gxMUNZR05OMldRTDR6Wjg3Mi1OaTZFYkpXVlNGbTFWd2QzLU9MdlMyaVlIYkJpb1ptLUc5QjhTWFNmUk1GUjdoTTNlSGZybjB3aGFPNG9zcGd1N3NFTzA1bnprZVVaT2ZvNGNrUk1DdmNqRkhuR19LMUZn?oc=5": {
@@ -3145,6 +3795,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUjZ3OS1oLVQ1RklPSmJtbDdWY3Awb0hMb185SldjNnc3aWc2T2VZVnhYN1BmZzdMXzdpdjNWY2NSeldDc2l6OWVaQlQ3RU9hOWpfZ0VHMDZoZl90aTVBUS1DOGlWR0ItT0NtVTlmOWlrdDF6eHQwRUNtcU1PSkZMTUdGRV82Nm9JQnFaSUV1OWo1ejRXZ3VucmxybG55RHlBSW9QY0RLSklfQkdmdnk4cnhnbUIzUF9Tc0cyNzdmVm5HeGljc1RYXzVxU2JaSjh2emlFVktQLTZPZjNIV1V5ZmxpaUs1VEE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh to probe failures in procurement and distribution of measles vaccine under Yunus govt - The Hans India",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi5wFBVV95cUxPZUlDOXhza3F6WVZoR3dKYkRLUzN2T2Fsa0x4STY5NXNzdzdWNHhuMUhpc3BZUkJfUGpqWU53VmpRTUxNVWpMc1ZNSnFIM1VjSEdyLWxCWXp2dElnNXctanpvMkJnRExqT3pBSV83TDV6VFU3SDF2dGppdXV6V094RWlBM04xVEFkVFZqQ0RfUkE1M3JTakc4OGNobjlLcjBXYmpwcENzMW1iakNZdDlXTGhydDV1YjVlSnAzZ3pKWWlXQjJWWGl2SXdKejBGZDJNTDNsbHFtb3R3RWpaaVZydHc2LTc4ZVE?oc=5": {
@@ -3459,6 +4122,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE56MjE1bTcyUVJCeEo3LXR2X0djWXpmT292d2J6WXdLbmZyZ0lEV0NHMjBtVWlEekdCMUZoX2J5YUw1ZDFOM1pJWlQ0Y3UwcTQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh records six more deaths with measles symptoms as toll reaches 1,269 - bdnews24.com",
+      "publishedAt": "2026-11-04",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5CQldpQlpRajNaQkt4RlFQLU5paVUta3RZZGVZRUtWTTVJQzZQUUI1UG9xZURCckktM2ctSFVxdkNPd21iendmVVhLVU4tNFE?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3467,6 +4143,19 @@
       "lastAttempt": null,
       "title": "Bangladesh records 7 more suspected measles deaths as 1,199 enter hospitals - bdnews24.com",
       "publishedAt": "2026-10-14",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EOW1KTUZUQjFBbHI4czhpdDVoUjlvdnZaMXJmNjlZWTZRQ1o0Y0MyWmNHN3BDLUh6cDEtSEl1aTNENXhTY3h4VmlOOHdOenc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "6 die of measles symptoms in a day in Bangladesh - bdnews24.com",
+      "publishedAt": "2026-11-03",
       "source": "Google News — Bangladesh measles deaths",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
@@ -3537,6 +4226,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NU1F5bXF0T19UYUJuc0F0NWx4ZzZzZTQxcXBpQnhEMFlZWFV1NGNuS2hScjZTSHdKY00yTEFXOFZVdGxCMi1pSzUwVWJweXc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh records four more deaths with measles symptoms - bdnews24.com",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9TQWoxa09jQXhGbVZEQm9Cb3lWN0ptdUoySmd4eWdDa2lRVk1LUjlaQjVtTnAzN2VTYkVNZ3ltamxHN09xREFXV3B5bldCX1U?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3558,6 +4260,19 @@
       "lastAttempt": null,
       "title": "Bangladesh reports 3 deaths of measles symptoms in a day - bdnews24.com",
       "publishedAt": "2026-11-02",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxYlA1eUVlaHR5QzRfUWtCeHlFVm9qZTNLV0JSSDQ3Q1dRLV9sU3c5OXV4bzlvUk03THh0VF9pYktJY0FCb2gxZWd5VnNxODA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh records 3 more deaths with measles symptoms as toll reaches 1,272 - bdnews24.com",
+      "publishedAt": "2026-11-05",
       "source": "Google News — Bangladesh measles deaths",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
@@ -3901,6 +4616,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Vb2FGMy1xNmZEdGpQUFR3WXVJeDgtZ3VuWkktck1zY1M0dUp2azlsUDc5NFB2eFJaSzlON3NDUlUzOTlMR3ZMb1NMRWhSRFMtU08zSGZSdV91bDA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Africa: Why an Ebola Outbreak in Africa Doesn't Mean an Epidemic in Britain - allAfrica.com",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiW0FVX3lxTFA1aFRvN1FkWHRCbEVKajdKWHp4VEgxdE1lLUFpSm9FSFQwakEtZm9QZ0czaDRzZWJwbTBPbk5iajRxdmlFNFh4aTRXdFBJNGNIRGlBak03MkJ1ejg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4018,6 +4746,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mZ2lheER2Mms0WlRCa2d0bkhwdWJyLW82UlBzdkFDdnBfX2l0bnl6U2YxV0c0dlVrVHJ0VC1SVDV4TEVfaWZPWk1XWGtQRW55Ums4TVhUaGJ5WElpZ0Q0?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Analysis of Candida auris resistance and associated risk factors in hospitalized patients at a tertiary care hospital in China - Nature",
+      "publishedAt": "2025-12-29",
+      "source": "Google News — Candida auris nursing home",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiX0FVX3lxTFBIQnNKQnRfWHRIZkhNQ0ZFWEVkZXJRb1pfQmFzdlkwSTFsSTRGSi1ZMzBqUGd4bDBxZ1J4UGhVcTVpTjBxUV9sMnZfM1d5YzE5ZlRRUzJfTUZnUThKZzVJ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4044,6 +4785,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiXkFVX3lxTE42SUlKU1ItZE5sbFNPanhDX2NLUTRDNkhPU1lPX2FlVEZJdVpCQXZFSElSMnZRWWI4bGxBSFV6RlRjTUN1QmxnWW5hOHFEcWFIZWQ1SW9paW1WLThGb2c?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Detecting healthcare-associated transmission and antifungal resistance in Candida auris via whole genome sequencing | Journal of Clinical Microbiology - ASM Journals",
+      "publishedAt": "2026-03-29",
+      "source": "Google News — C. auris outbreak",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBYVll6TUtCYXVTNUh3QzRPTEI0cWRBMGJodDdmZkZRRGpYdzNNN0RYVjVzX1BrVGUteUxIdFdLNFYxTFl1OF9tX0JUVjNGLXJyU3Vaa3k3X1BzcjV2bXfSAWNBVV95cUxQVnlMSjc4NGhPRWJYbWhnV2MyTk42QkxZdTdNN0ZEeExnWnlQU2FfcEU0SDVwblNLdkFmclZFTWIyMzRpU2FpWlNTb3FkWkVlY0RBV1Y5d3VqN3lqV0xQN0h0dUE?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4068,6 +4822,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55eHpHSmVnNmo0OE1DcDBaLTVRSnBtcThxdmlzS0E4Y2dhOWh4RUU2WHVPUmE0SjlxRkxyUlptbmprdHhaWF9pa294T2FBeVZZTFFzQ3RBblZwN0JySnpDUw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Increased Candidozyma auris Activity in Kansas – Prevention and Response Guidance - KDHE.ks.gov",
+      "publishedAt": "2025-09-25",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5GTER5Q0RUVU9HclFnUmVrMnFNZkxMR2lNS0VXekpyWFU4cFZNUVVIa0RwY2JjbS1jY0JodlFwT2VjeXB6NE0wMHotYVpXXzJROXNkQV9JblVfLW1EbGdTNg?oc=5": {
@@ -4343,6 +5110,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMibkFVX3lxTFBiUDktOGU4ZlJVWThmV21KbjdBQUNTVmFLN1JsTVVlcmlrSHhrZ0VHc0VPWlNNMGhmUkQtTlBXZ3FrQ0lNeFZRbndoWlZUYjFTaGlDVUVsU0pqT2dSNmhaQWtVVkhMZjJiMmNMS1ZR?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Tracking C. auris | Candida auris (C. auris) - Centers for Disease Control and Prevention | CDC (.gov)",
+      "publishedAt": "2026-10-02",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMibkFVX3lxTFBkaWc3cXoxNHpfTnBjUG1yWXZxWGFrVG9FUFplQjdIOEhnaEZ3Q3h6emUycC10Q0RBNlFDSWdqMnpYckdJN1NLd3FYWE9IdlNsaHpvQVdmYmZkcmtDNDA0b29uOW1CTUdUdExadHpR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4354,6 +5134,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMibkFVX3lxTFBlLVRFWE05N2FDSVVLb0hnSzFsUXFYNFoxcVlmZEUwU0p0ZVg3WWIwQURXMjlaaDRqbFNrd0hLYVJYcjdwWWRLczZPdjhKTVhmLUdNeVB2cm9BeUF6dGFySFNLVlFjQTRlWjE2SG13?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "What to know about Candida auris, a fungus contaminating healthcare spaces - CNN",
+      "publishedAt": "2026-08-07",
+      "source": "Google News — Candida auris nursing home",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMibkFVX3lxTFBtR0RZNmlrNnM3NFRBM0RXZmF5WVRob0paWlVfNk05Wm5tOXVQNU44aDY2WlRsX2JVWVVmVEtBMmhhZXE2RzR1SkxFMzVBeFlQQ19TcjdhRzAzY1A1d2U2RURtaHRxZmFuRjIyVVFB?oc=5": {
@@ -4551,6 +5344,19 @@
       "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTE90WUU2emxZYlN6ZlFhc0xaZXloVmpyS2FxaDRwQzItWmpjSFZwMExCQ09jUUVUQlc0QkYzd3RCOFRlZndyMG81aXZneC1XRE5WNHI0ei1VQkhkeFBVZGE2bTVmcWlKZ0dGLXUwZEtheDZ6Sm5r?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "InvestigateTV+: Measles outbreaks in the U.S. - WABI",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMidEFVX3lxTE95bWdPV0RJblN6Qkd1ZGJ6a0RhM1RzLXdRY0poNGFaZmZCLUpyLU4zLVphN3pPQThGd1ZvZFU2UFc1NGV0TTB6MlFvRHNuX1dJVnlETGtCd0JyNkowZjUxcWJFZHVWbkxVTWpJQ2UtbW8tSWpS?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4655,6 +5461,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiekFVX3lxTE5lc294U3dJY1l3RE44TnVfUkJxMG1OeW9uWFViR3kxUnRLTUZlcVRydlpsaDZuTjRrNWE3VC01TXAtLU1kUl9faFB2WUt5LU5EMDdWVmFuczFrVnBuTzhhWnNHQ1paakNsdm5oWC1jV3RCUkkwR0pXZkx3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "US measles cases surpass 5,000 with infections confirmed in 45 states, CDC says - AOL.com",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiekFVX3lxTE9nTU9aQXJkODM2c1hrRHFfMmk1aFNqcDQ4WVFXMkVQMHhRZ2pEb2FybVBBOXFyQnk4cUhmWHc0RE1ya2p1WUN4RHo1dEtBR0VZaFYyNHA0Uk9WOGtXRktCRXNFbEJzYVJ6ODVVUGNEUEsxb1R6MDE0VDF30gF_QVVfeXFMUG1XaGN4TE1DdVo3cEtzTjJrXzRNbmFTWjljMWpaNkMteTZwMjdFS21ia0lJd0EzbVg3TnAzYWlVVEp0dzdxRVV0c2IycHFET2tSX0RDRFFfMm9QLUlLLXFvVmJveXdDa2VsXzlJMzBvQmVCcnU2cHlyZGNGODNBVQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4744,6 +5563,19 @@
       "source": "Google News — West Nile virus Greece",
       "kind": "news",
       "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvWVcyamY3QnU0azk2TmVvMmJTb0EtcjMzTE5uOTM2ZXlkOWdDSUtYZjZ6aklENE5VbUdSbmNKYVlhTzFNN1B4SFl4azhaVWE0TVpBSzJRUkVtMndqQkRsei1OUXBUQi12S2FPUk9XMXVvQkRrSllyZmdfcy1ET1k?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "US measles cases pass 5,000 for the first time since 1991 as deaths reach eight - astig.ph",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMifEFVX3lxTE1BYTRwZFNQcEVhcmdaX2stUC0xM0FwT29FOFFrd0I4bFl6Q2JVOFpNR3JDeVFTUTJUcjBTSDg4UlJTYmdDbEZFcFFDT21NNWQ0ZERrVzlMVjhGZzdJUE5lM0NIaWprUkMzaVcybEk5R0NCOG1LczliaG9WaDc?oc=5": {
@@ -5175,6 +6007,19 @@
       "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMigwFBVV95cUxOMzcyWW5QcE5EZ0dUWWlWbmt1ZEZNRVQ4TkNvNXlxZmN2Tm8zRW83OXZWT0sxbnVSbDFoT2Y4cklMUXowSy1CNk5YNkc3YWo1bDBnUEFMMWxNLVplV3JndVVfUGV5Q1dnakM1S3Q2ckZrVmZxV19YdzM4eURvN0lSOVRlZw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. Measles Elimination Status Faces PAHO Review Next Week as Confirmed Cases Climb to 4,852 This Year - Medical Daily",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMigwFBVV95cUxOS0s0a1hmTEd3MWpDWjJtQ0xmbTNNU2VBczN4WkhXZk5nRTc1MzRPVV9LS0NTdHBXU0FpQUVnTmhQVkFiWEVyaEJsYXNUay1ZTWRTR3h3X0hwODhPTzQ1U1Q2cTNLWW1HelNUSjhaQWtOc0RPLThDUUtyNmEwcnZPOVhJQQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5357,6 +6202,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdXJSNjBISE9pbEdaQ09NTkZKU0p5d2RFNXBYVUoyVFJBTnMxMjZjZ2t6ZkFWSEtfZmtlTk1SZVUxX3p2MkNYZFkwR0VxVkhaWWczWXpnMWprMDhzaFdoZGJXTFFNY01iRlloWk9NSWx5YzREaFhzZ3dlOWR6Rzl4cDcwVFp4QQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola Bundibugyo - IFPMA",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMihgFBVV95cUxQSFVsbVhrMldGRXF6SjBzcVl3TE54SF93NVRFTlV1S09VNDgxN2p5UzNlc3JlUzVJRXlCY2M5czNzOXhpdko5VG5wVTNsUDB0QnZtYWxTd29jVjVBck01SDZ0aWJOV2l3Ym5DblNMcmpESEVnWDdvcjBGSHJtMGRPWHhLOG5mUdIBiwFBVV95cUxPeUdYY2xLdTZDOXV5eWdheXR1RWo2dTdQeF9kb3RLX3M3YkVyenZlYnNPNzhKdzljYnBxLTdXTU10RXNmSDcydGd3VGJaYXhCaXpzanUxdnVCZG5kRjIwVFJCVUFXQVJkcllqeG8wVlplQTBCTWhXZkpnSGNicjJSWjk5Zzl5ZzN3dGNR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5485,6 +6343,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQdEVlSG1nQlR5VnZQdDh0b3IwQ3lsWE9KdW1yNmY2aVduM3BfUTlJUURxTzhpYWNwbTR5cDR0RVR6MDUyUEx4OEFOdEczckpuZWFaYUtMSDgwTTZPMW1NZ0hjZTFMUWlrYlVaQ1hMR3A1cG9UNzhMQllrS050Q0JKblN3bFZUelpj?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania deals with measles outbreaks - alleghenycampus.com",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiiAJBVV95cUxNa2RBN2s3Y09Pb2tuc1VVM1NLUVdHUmxGY0U5OGVYWTZlUUEyV1NCb1Z1NUZUc3RQMW5wZFJMMW1Xbk1GamdPakVqcDdmTkJyQ2pLMktaemU5WF9CN2JyOFZJWVN0RHduc0EtVGgyZ0tyckVrRDM4RTVlV1R4dXpaOHFfYUtDRmtBaVZSRHRPbnFDeURENkpQcTZQem42V3JnQUhRZmw0QlRILU52c2VKQWVwcGtQSkJqYWl0eTFzS1VmNUlGVFpMSFhkd1hCXzdZZkUxRXVfRlBkLUk5TXFUYmlFc0NZRWtnMm5FWmpYNUx0UFlUTUFYcmV3OXptWU85ZEZVSDB3Skg?oc=5": {
@@ -5695,6 +6566,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0prYURTUVh0RzVkazItTUh3LUx1TndZVXZWYmx1NkU1NWR3QmxwUjQ2alFoTk5RZTZNUmxKRjRZNTI1TjFhY1MtdXE3RE1fSjUtMXZDUTgwVGhHWGFrbXdSSFFvWGQ4VW12T2Y5cHhNUlBhai1xTi1FZ3VrYjBwM3Bwb2psVnNjbFBOdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "For the first time, Bundibugyo-specific Ebola vaccines will be tested during an active outbreak - Latin Times",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMijAFBVV95cUxNQ2ZTVHNBc05FZjJMRmRRSE5HMk5LTGV5WlgzS2pxXzFSSWIxdFgzQWV4eDd5ajhLRXY3M2tWUThJTHZsdTZ3cWo1M0JEWHJsTUdsTTM4ZkIzX2xXWEpvb1NmUHZiek1hUklWM3V1MWczbGREeHJGSzBfR3NhWXNTdy1wSHBmZHRkWk9ISNIBoAFBVV95cUxPNFo3bWllZ3V5ZUprZ2otTUlmbndSeFpxNTFZbzBrSEhkeHpRSmlDSXNVOTFMSUV1SnhTWTlrZVZGMlVsY2VRQlhxZnlIMHhnbHFpOGJYSHROLUtLQ2diYzVMTF80cllaOGZvQTl0TS04dUE3NDUwTS12RWNLUE9PTy1xeWdKS2QxSV9QWGJJaXJQcXFqNFhvLVllNVhzRzVo?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5758,6 +6642,19 @@
       "source": "Google News — Pennsylvania measles outbreak",
       "kind": "news",
       "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFF2WHRLSk9KWXRYTXhrUWJGUExGb2pTNjN5WGFLblBlWWdEd0pIS3hyY1Vka2U5cGlCMVJROWZEdDhnZ21SWS05MTNQX0VvR2RhS3dkZmdWZWtZTm5pbDg1TjZpdThuM3d6YWxEVUxyd0pOVDN1ZVg5SEVIMWpBT0NERVN1bEtleEdSMVlR?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "The WHO is to trial two new Ebola vaccines in the Congo - UkrMedia News",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMijgFBVV95cUxQTjU4R0hMOTFPQUhocjJ6MkR3Mi0tODNqeE1nN2V3NHZ4cWN4N3l2MTdjZ0ZyZUJsWkRZTEg0SUxHUzRNdUhPT2VZWTZiLVVUZ2Z2S1FpTkN4cVYyX3JxeG4wbVVobTNjNHBvVnpRc1VkbEhjR2JsSEgtdE5QYnV6MldGU2U3OEYwYkxUMHJR?oc=5": {
@@ -5864,6 +6761,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZWsyaDZYUjR2U2hBc1VEa0Rwc3NEMngwckxJTDJDUHJNZ1lURW1BbndwRUpMc3pSNEJsc3RsZGE2WmNMYlZzbjNGQnZ4WE5VWE5ab1dvRmVDYVlHTVpRcDVkQXR4aV9CQ2pBZVlZYzBLekZZQ0MtNEJHamZDSXVibUZlMnFDd25CdklyY0xPOA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Candida auris Cases More Than Doubled in Two Years - The Scientist",
+      "publishedAt": "2026-09-05",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZlktclducWdWTzZPZGtmejdQUUlVMzg1bFdvM0ZWVkJKOVFlOWlpWlZaQWhoNDJMQWF0dE5nQUw0SU1RT0ZrX09nUGRYRXZ6S0NvMEd4T1NkQWZmLV81Mmw0T3RfUXFVTzVpbXhFQ243aGRLTUtoX3VhQVV4b0hUeDA3ek1GTFFCZk1pZ3ZoMA?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5927,6 +6837,19 @@
       "source": "Google News — Bangladesh measles deaths",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMF9uUG1jZHZZNEd3SXp3eWw1WmNOTDZPWWprT2xGV3BMRkFaczVXaTZoTXl5UHhnaGRveGFtbGVweFhWSlNmbG9CMmhTdVpVcnhpZ19rTEhVd0dpcndzOTE1a2RGejljZ0FmbUJqQUhIazE4SmFzdWtfTVR0Sk9iaS1MdTVRcVhRZ2k4QmhCSEU?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "How measles outbreaks are impacting people across the U.S. - WTHI-TV",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMikAFBVV95cUxQc3NlNWU1Y1hVMFVPSHRnV2NwZldRVUdJYXlTUGRGS3pJcWZwU3dET1hsdDdScGhLaGE2Ny1FT0xHaXBHWmQwZmF5bjFQRklSWnRDQ2N4MHF4SzVRTFp2Rko0bUJnS2ZJQXZoQ1ZfRDNmSDlfR2dlUUhFUmU0YkxrUkxud0N6QXNaLVpoMVRQaDQ?oc=5": {
@@ -6007,6 +6930,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxQN1FLcjNlcGFJS0k5ZEg5UTdlOTNELVZUM0FkbmE3TU1ldE5mbGZTdWV6VHRGc3Z6Z2JOaEpDVE9WeGllTE9waVJoTlFwVk9Gb2h4U0c5cnVwOUJQaEVwSlRIZGVNV2JINGVYT01zajFrZ1NqU0hIUTRDSnhlYkdpVWh5a2ZGTk90Um1USEl0SmRNQQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "US measles cases climb above 5,000 for first time since 1991 - Reuters",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMikwFBVV95cUxOM09rVHNDUTBhZGN4VlNYdklpalNkeUY5SHQ3S25GeHE1S1FYTlF6WTJqQ1JmaVVOd0tjV1cyOEg4eVlnSTl2enJFdE1EYjllYmRmb2NiYTg2X1hDYnVXQTBQSjRLM2R3SUJQNUJ4Qnl3ZEdFcDhablAyMmVNLXljcE5mU0oyUHdLcW1WT1RGTjkzejDSAacBQVVfeXFMUDlxYjl0OGpnVWlnVHVTaG5wdUFJUWJpeGdXMlJyQWVhajVsOHBhblBUVVNYaGQxMlFZTERmRm1SZU5tYTJJUVBfVTlDVUR2S2h6ZG1uUmNvS2pnY29qejVGRmlPUmJCaUVFUlM1bFBERGNTWDBzNmc4NEZsZ01VbEwxX3lyTTZra21SM2IwbUxVbF9GQzhkOWxuYzNwQ3RJRmVMekJrQzg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6033,6 +6969,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxPRWFxcEJCV1ZoRVhDNlVWb3NjcHItWUN6TXp5bkNXRVhWX01wWjhzclNCcThFdGgtLVpnOFVlOEwzME1Ka3Y4N3JWa0VzNzJUc3lvbWNENDF1Y1BabkwtVGp0cmZUTmVXMnJqTkpLR2N3QkFNbEkyNUt6ZzVXR2F2X3JFanlrOXhqYktnQWZWRmUyUE0?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bundibugyo Ebola: Public Health Must Lead When Vaccines Fall Short - Independent Newspaper Nigeria",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNFlGcHJNYzA2TmNVMlEweW5JLVIwQUFiWi13R01GWlNWc0ltLTNmWHpNa1Z1YjZYTmRSODg4MFZxaDAxbDd6OElTU2l6RzBCSHAzYzd6eFdlaTBPYjVHQ1ZhdlNfalk5VnBtaUFOU25wV0t5VGM3cEpuX2l3U0ZXbWNRa3Fya3RCdGxTMXltSExhU2vSAZgBQVVfeXFMT3ZTd0V2a0NjbW1DM0g1ZTVaZ05zZ2ZUNFhBX0NDNWlxMjNwWGpHRWFNQlBWeW8zMWt5NWRsbF9vT1VUMDFqLUYxbl9aT09MTUhZeFVkSGFEdGtOOENoUlBqVGhOdVN1UmJtOXFGR2JMRlA0T25YT1ZyYVd6S3pWRnRRRFA1Q0NadU1QVXl5S3F0STd5LVVkclc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6044,6 +6993,19 @@
       "source": "Google News — measles outbreak United States",
       "kind": "news",
       "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNkNyWXhEd1ZFMVNTWDktZDNGLTk4djJhYlRoTHV3UjRSUnc2VnVIdDBYRi1IbHVTZWxxaUdhYUtpalhHMjgxdFdiaHF5bUZZdEF1RGRGWmkwTVNJaTNpakdzbUwyemRsWlpHZk1wbXIyTG84OWJUSXcwNjdIOURPUFlKdFNIR2Z3em5UREZRYUM5cHc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "British doctor infected with Ebola in Congo being treated in London hospital - London Evening Standard",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxNcmhUWGd0dC1DeUVuSkpOamdRbE1PU3IzbkREOFZobjMtWGkwT3Z3Yl9RVFZ3eGcyWnA3M2ZLZTh3X2tZUDBQMFU2VXlFT3NPOEZiRHNYdjNVN1lXdmIzT2ZwbGU5a3g5RksyTzhqY2RSZmVzd3UyQ3lkTzZkVXZ4Ri1rUWJoOXJKZktrZG04QWQ2TXYt?oc=5": {
@@ -6083,6 +7045,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTkxKa2dWczV6X1lZWXNhVTZBaGY3cGM5S0JCMDJ4V0V5QTB0NWN1cXo1ZDgwYnh2V1pkOEVuTFpBYVVHNUJobG5OTkZ1QmFsMGpPSjBESi1EQWRzR0dKUTZVaGpSOXY2VkdvOEFzYmZwZW56QnRMaHBtYWVNWlB6dEFYMTZXRjY1Sk1felg3anBZQTM1?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "The rising challenge of Candida auris: insights into its transmission, drug resistance, and infection control strategies - Frontiers",
+      "publishedAt": "2025-11-10",
+      "source": "Google News — C. auris outbreak",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxOUXYzakJ3Vl9FWkRadk9COHQtUWNvVDU1bkR1elRQOVcyMmRQdHFwZlBQSGFUMF9YX2RTNGNCLTJsdlk3N1dLQW13NWdTX0ZvcS0zUUFHRXRjYW9GZ19NTXhEV29BcUhIcG5HV3RsXzIweDduSzFyLWtXU3ZXa1ZNUGwzSUNaank3S0p2cGppV1ZFU2Yt0gGaAUFVX3lxTFBTdldkV3haVjBlc3pxNWlmaklueExmOEZ3U1c3U0ZtWjM3VzBHT1dETF82ZDFjLWl2WnlwVEFNcUxidjZTTXN6aW55N2FndEtCaFd0bkZxQjlydGtRN1BoRnlxRFRmcnozNGV5eVVUMU40bEhpQnlZdVR6ZUpfY3hMYktEYXQ5aEVITVVHSVhRUm1yOTh1SnMzb2c?oc=5": {
@@ -6135,6 +7110,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxPNTNvaVdfelVQQVpNSnlXMW5JZnllUFRxeWJXMWJONmlwSmVnMlhMa3NGVWJuSkNhRGVyWXJVbDFmZTFldklaSW1TS2dIU2FObVo5OV9oeFNvN2dMYWMtWUZMNTA5aXduVHdsNjV0NGxsSWd6LWhKTUxfTVAwXzFjcENXMXBNckZmVzhQLXhKblFyTktT?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. Hits Awful Measles Record as RFK Jr.’s CDC Hides Death Totals - The New Republic",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxPaTdvU1lnMTBfTXBIbUtEQVhncXp2LUFoNHdpeHJWZFhuQ29LRkR3REowdXpyZTVNOGpfNWx6QjExUTdrZEc1OWU5NUJjMy1SeXpmLVVOSGRvSTNpRFEzVHYwa1J1TzBVdlBMQ0I3SFU2MXREOU4zM3NqWi11cU8yTVZiN1ZQNmpUeUR6TDQ2QXFyeVNZ?oc=5": {
@@ -6226,6 +7214,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTmotZlVkMEF0MFJ5a1doOFpjQVJrdVJ4aEdFU3FhU291VEdua19uMnlFMDN3VndqdDZ0WHp3cVVUX0M5Ry02QzlKeVRrY3VFNS1qN2lYdDVBNkFqeUxGR2NoT2NaUlZuZkk5Wm5XOUpsTVh5SjVBVWdITml5c1NYQy1UUG9VNl9sMjJjdGctal8zdnZqZVE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "‘Superbug’ fungus has spread to half the US. Should you be concerned? - KTTC | Rochester, MN",
+      "publishedAt": "2026-08-06",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxPNkVGY0dCdGVFemQ4YmJZaVE0NDVaUkQyUUo4M2ltMmJnN3FnMU5QMHY4UGQySXd3WUl3NGg5ZDVZWEU5WkVzSllrTEVmTlBXUlZ4Q0pLenAyYkJuemN1a3doVG1RRVI3bWFwZHNBR0dTY2FLX1p5YUZuRjFFaWk3Vzhha0NaVkhROWVnVmUxZzZLX3BCSmc?oc=5": {
@@ -6358,6 +7359,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWkhqVWFZTjNpSXQxQTVCUUtUdm1jREtteFNhNW5rYmF3bmF2eUx4Z0tkRW9LX214YUlwbm4yRTMtQXhMaU41bXFoYVM3d0NkVjNHS1psSFlZZkdzbmRKTTN1NDE0bDkwMHItR3htZ3NwcG5wWWpFM29uLW02c0FsdEFGVFp0ZGJkVDBOR2diU1ppVG5zNXh5RA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Drug-resistant ‘superbug’ fungus spreads to 23 states. What you should know - WBAL-TV",
+      "publishedAt": "2026-08-05",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMimAFBVV95cUxOYjBoRHdCbnR3a0lUU1FqWUxCMVF5WlpQMm1KSWpYSHY1cG54aUZYeFd4ajg4T21yLXFiVUpTTFRERGxweDJfSzR2MHI2ZjJPZmgtandDVWRoWXlMWVJLeXU3U012elBhXy1id0tMVk5LS0FlZk0zbm42UEI5WEtPWXc5Nlp6ZjlDanRkbTBwTkZORHEwUDFPZg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6449,6 +7463,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMimgFBVV95cUxPcFhseWtkTUg5MkdqeWZ5YVhoMHBDOFhxNXY3T3YwXzZ2aV9XYmw3aXVVMDFxYlI2ZjdfeU5QcHoyY2RJamRUek5KMG9RY1ZZS2ZfYWNLVmZiYTNpV1FVZXFCOVlLNmpYcVVObkRZelRkN3ZwbE1rb2JzUU1Qa3JyaGxyT3BKSEU2YU9ERnpqVW9NdFhFLTFUVFVB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Two New Ebola Vaccines To Join DR Congo Clinical Trial - Eurasia Review",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMimgJBVV95cUxORkNUWmc3ZEdKYWxncTVCbVl3RHByWUFNWkVUUWVNVmluZmNBYXBKdHBjOGJmVVpMbGc0WURFRlJzV1lqVlFiNUJWVTJVUExRdmpiR3pDOFA1RGpQMGh1RmZHMDJvOTRrSnlnVWVRNVNuaUQ0c3VmdW5sVzlrQVI5YnVna2tnR3JfbEhETXlEMnI4YVpWLXpFZEI5cnhHS29EVnFNb2ZrUTd0ZWFmMjBfSS1ucWkzYXpKc1Vvbl8wY0gwZnhweUtJZU9xNUFxWllUNmpJaEp3X05WSGo3MW1rVWVzazFycE53TzhZWklxekFWWEZid0tWWFYwVGdjYWlQQ1daeWp1TnR3cFN3TVd5T2JaSFg0NVdBbGc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6475,6 +7502,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxNa1VEX1BrdGNhWEcwZUs0WFVycmVTaDV5MGprRnV6VnAtS1ZVMnhoczdzTXR3VmtiVXdyekJ2aWo2azJKanB3TnNDWkpHaHNlRmUwYl9RWWRNTHdPOExmRDNTNUNsc3RPbzlNa01leWFmYWNPWHdjUjZ3UmNjMGRUS2xYNlJtWXROUkxzQWVaTjE4aUZmbVRELWFfNA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Intensive screening, infection control can contain C. auris - UW Medicine | Newsroom",
+      "publishedAt": "2026-08-20",
+      "source": "Google News — C. auris outbreak",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMDdVVUtQWGp0bTItMDVWOFRQTVU4SmJGLVdTNjJxa25EUlhNRTREOWlQV0hxMkJweHJkUWt2YUxIbUhOcm9FSm1DOUo4eVBjUGdMMGhkdms5ZU53ZlI4X1hBSVBzOFdualVFSDZxWDQzbjRWQk1xQzNPRjZVX2ljTEZQbXlkaWl1MnJIdUtzUVlYTlJ1OVZNbDR2WQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6499,6 +7539,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWENFRnUydTZfalNXd0NnZHc0NHBhZDNQdXJWZFZkeFpOa0tsaDJzcV9Pa0kwWDJRTzM0Mm9GMnlNeW9YNVlYUk1FQjl5SU9OOWZ1ME83ai1nSnFNLTFqbnN3WnppdzVWU2FpTkF2Z20yRlZLY2YyRHVCZi1xcGplcWcxTHB6bnBmVm9iVi1nNXV4ZEttMU5RQThPYw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh investigates measles vaccine delays - The Peninsula Qatar",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMimwFBVV95cUxPWk5GRF9kMDZoTGU2eFlEUHpjV3Z5MjJ1cnhuSDFCMTh6YWVtbG9sTzU2Z1FDWGU2T1hTQ29FTGNLU00yQTY0M3J4WjFyc1pZTmNHNDVQemhUaklSQnZiOHhqOWJUZkJlLTVRY2pLMEdaLVo0TUVlMVZ5aEhoZlQ4YloweF9Fc1Jfa0tjMXN0bVM5NVE2b2VwNE1YOA?oc=5": {
@@ -6540,6 +7593,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTk9YcXoyOFZGbnh2TjRiTExERVQ4S3VLeTkxRmJ2bWxZUXZhTHBVdDk4cTRmV3BXcEwzdDRUWmY0dkZCMERJd05uMVdwbGtvRjljd1NzXzlLejdwdE0yZkxhRzlGYnp5eUZtcjZGbURjcVk4ejNRb2lVNXRIS0lMdFhvSEUtSVEzcjF5aTdEVXZJbUlhTzZIR193VTk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO adds two Bundibugyo vaccines to Ebola trial in the DRC - Managed Healthcare Executive",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMinAFBVV95cUxOZ182VHJuUEZCblpqXzhMb1IzZkFDbmlTZnkxSGhMZjUxSGluZ01vLU83TEd4ajVBQVZXQjVXRnM2WFNRTEE2WFhsRENCaHZwVFVjdHBCZ2hkdXpuNWx6NWdEODhMSWJxaWFQUGtiUjZZVGxJOGRhTmtvc3k1WFdqc0VKRzdkanFBeTZlMHlzcFNfTDlsRGlwT005c1k?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6551,6 +7617,32 @@
       "source": "Google News — West Nile Attica",
       "kind": "news",
       "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxObVQxX0pwMHFxVzZwMDR4eC1FdF9Jc3lRSF80Tks2RVg4NDBhdHYzVFZCQzVaeWpLUDFSb3dPQ0ZxYTZXQXh3NUg3amNoLWxONGZkSU43QnVuZWdMT1hxWDhyeFZkemlEY0pSNEIxb3hkR0FOMVoyRjR2QUZHSWVOYUVTTFBPb3hxVkdyZHJZZ2VPUktuTjgyeHNCRkw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "British Ebola case 'concerning, but not entirely unexpected', expert says - Sky News",
+      "publishedAt": "2026-11-04",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxOdWN2YU5JRXoxTkNQVGR1ZDlQM1RkUzlWSDg5MHBkN3NmOGFxU1lPM0lwVlZuY2pzY0lUdHFhdVlhZG9EYUNjVVpoTjJtVENyTUh3clhIWHpRRVphQ2dBTE5wYUpFRlpiX212M0JuZXRVeDJoRDZ2WnRYOGxRZjF3bmtiZGtuZXlzQXdaTlBSVTROWTB3X3Z5WGNyRV8?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles-like symptoms claim 3 more child lives in Bangladesh - TheReport.live",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMinAFBVV95cUxOeXhLcm5KVTRRWm1YWFM2YnFEcFZoRnY1bkMwek9zMVg5WVpZb1lBeG14TURhSkxGcldvV2phUjhWVEhuX2ZJaG1KLTd6ZGZFSXBHdFRNY2phV3MtelE5dlNZd3ZXUGM2V2dtdTJaazE0R3gtUThKTW5QTWJHMTYyYUplMFZFUXdWaEVGYnY1YUN3b0hGUzMxQkZ6RHc?oc=5": {
@@ -6891,6 +7983,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQWlmTlZiUllZSkoxazBCeUQ4ZVdndzJNRk1WVFJWZE14bFZlZVJfLTJLNnAwQ0tJVmhDOXlqWEJZenNOVzBYLVh0Q0VNbktUSGJPbGM5M2ZnNFd6SFdxU29PZWZlb29KSlFZUDRJb0JVM20wX2ctdDNaZDhMUjZNelBDX0wwSGZrMUNWU1NDSHlmN1dIVFNGVGloZXRVQzDSAaQBQVVfeXFMUDUwTzI5TjlBdEhWa2V4VjBueWhNV2hxUlBvcFY3Z2xyZ1RNRl9IeldmTERJaDFYVGtEWXQyb0dxRkJYY1J1WWVGd25SR0VuWEZ2MkNUSzh6RWRjRHQ5bXpIRjJieUpWeGliUGhIWkJuMlRCRnJkMjU1dVhQNFZqcDlkV1Q5d05QencyTFcyZHppRmk1WDhDbEgzdnJheWpBb3B1ZGY?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles outbreak: Death toll reaches 1,272 as three die in 24 hours - Dhaka Tribune",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMinwFBVV95cUxQVWZmYUwzX1k2b3JTWXc0UTRIVHM4LXlKRVZMQVJUcGk4SFNTcXpHVWN0aHE4ZWJGSnJsRndNdVJuVUpPTjJGaXNreloteEFGem1SY0VzTFZVNFA5SUJzQ3RFd0dnQ3BtMm1jRFE0d3Z2X19MMXZGLU9zd1d3WXFmSk40Szd0ZHByanFLU19Ld2dzVVdZbDJRd0tjbGpBYms?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6943,6 +8048,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxNam04U195WmFPM0xEajVHdWRqVkMxclhhN3NRcjdxdm9iNWhiVFlYeHU4YzJiazFONE5TcE9hbzJXZjlucjJSazRkeG5YbnRFRHhfSFNIZE1XeXYwUlVXTVJhNmFfS1JHakszV250ZWN4YlZlQS1wMTJZeGpnR29naHJPMWNjNDJrRV9Hb056RUhHdlJsWF80bFVKelNwT2Y40gGmAUFVX3lxTE9ILTMybEowTF8wSGFSLVg0cmcwLUFrWUtGcnlMVWdNQVhxUjVzU0YyVWI2azZkSmJJTXFfVHVYc2Y0VGpxMGlDNXlMNDZodTdTc1NXcjQ2UjViUmQ2WEZhVnFKUGNSQ2dhcmRhWGc3ZkU2MDdLYlRYVzVFb3NMQ0l3U240dHRaaU5ZaGZGUWVvQ0F2RjVVYkppUlBneXlfOUpoYldtc0E?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles cases surpass 5,000 in the US with infections confirmed in 45 states: CDC - ABC News - Breaking News, Latest News and Videos",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMioAFBVV95cUxNcWJ0QzhoNkpfcGsySk1wTDNqS3FpSmZLQWxzUmRXMTU2NHNlZmYyMVZoQ1hPbEpFTnVRS1N6T0RaM2Q5TmJOTDFxSzMwdzN4ZzVrdE1HYUdsOFRud2N3aFZUYS1jSUF2aGdsWG1aVk1CRExsZHRjejdTN0lQb3NQTHctM3NnOTJZVjBoTVFQQ3I3OWZidG92eXFGRGlaX3RB?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6980,6 +8098,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTmNtcTllMGNnVDlyOFBybUk0dW5ueFpVWVVnYWhTVEhPb0s3czcwZWNYWjBkZ05iWHl0cFF4MWNYRS1aNVNZTjducXpxS2RrMk56ZHRINXQwQ05MZGgzQ0p0QjY3ZDJDd0ZhT1d3dnA5bmRyWlgyeUxSX01JTzR6VnFzNmRTc1FpV00tank5OFlRdUYzUlJ5YUJ6TkxPSktP0gGmAUFVX3lxTE94T2NSbFFHVkJpOUpEODlZRy0yOGFQakprM0hTMlI1aU40UjVvYl9Oekd5c19UOTh6QzRBS0NsR0ZGM3F4dHd5aGd2WExTRWhVV3paWGRUTHNmSDJTS25aUUhwOEVaMHYxVzNfOE5KV25IUDZrR3Rpcl9yLTlubGxJVGJ3MjluU2hJbHBNSG94TllhU1pRcXF1Ti1WeVlsTHJ0clV2bEE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Dangerous drug-resistant fungus spreads across US, reaching 27 states - Fox News",
+      "publishedAt": "2026-08-11",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMioAFBVV95cUxOdk9YS3c1c2Z2S2MwWFhOTEY2aVQwbi1PaWVTVGtWSUZfT1h4c21sX1NZWGR3dkYtb2ZicG5mWjlIdThBSmtTMjhFMzJZd2JEbXpXLVVmcGs5dXA4SmdCSDZ3NFd4RWVfUGJ4VmFQbVlxdmVRUERwTHFNNmJCYjVvTDEyVUNURmZvUlVMVWJUMTVfQ215TXVzeWtkckFiQnZ3?oc=5": {
@@ -7071,6 +8202,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTVctN0RWWlNqeHZSd0t1OE1mcDZfWDFaU290eVdmQTItd2pxTTdqUC1JUmxwUmx3dVJjNUdXOEoteXJZTDlWcVBhZEFaMXg3bFhUUGxCYW9GNXpfeW1ETWR3cGlxM2hhdmNvLU1tdjZHYy1rLXBfOE5iWVV4dmtmdVBYLTRMZ1dvYUpsckFZelM1UFZkVUZoUkVlQWlERWhzZFHSAacBQVVfeXFMUFlyLUlTRFQ4TXhaTHZpU1NRejNOdGR4S09ReGVKVW5fQVQ0dndjdVlidGNBR0tQQTlZSmFod2NGRjhmM0hTNFJta1hRMHNWZ3pjRTFaRHlrT2NKQnlpeXVMN1VaYVBWeFliZG5ncHZEQXAyMFFCdDF5djFaRG5sYUV5V1JYaUhRSkFjU1c1YmFZOWJkM2liRElLckx4NlViU2ZtNHNiMU0?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Cases of potentially deadly fungus detected in 27 states, CDC data shows. What to know - ABC News - Breaking News, Latest News and Videos",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZmNZejZKdFYtbGQ1b0poNC1wdmo3cUVmZUI5OWoyOWt3RVh4VkNSNWdGa1FyVFE5dDBrcHFQM0c1MjlzS0xxbkREUXkycEZjZ2NhU2w4ejB4LUxqR3Q1V2tCS054cXg1UTVQdk9oSnI0aUtnLVNQNWN2dHFJY3VNNzh6cWsyNEd4ejRQYlFJMFF3MHBEUnpZNGFPLUJGclBNenc?oc=5": {
@@ -7203,6 +8347,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbFBUc3pDeHE3X1otb3liOXU3QWJjT2JfeXlxVUduMWZTX1dGeXZFRU1fNnNrVnpQaXVHdHlDTmIzc2dKTUxlbjhwaFlRcXBmSmhSRUg2ZHh3Z1JDd2pISE9lQ2tPZGF5Zjc2TnFZM1hHMzlOMWJIUlhYVmxHeld5TndSR0djZG9rWllsNVN1OERRb2hBWjZhMm95U1hqVm1rZVNN0gGoAUFVX3lxTE11eDZfcVViM2hVS2NBRlprYjlXVmxtaS1SbVJRcVZWZE02bmRmdVBUZ3RHZUplXzZjZ0dEeFlEc2pVVnp2UWxIdTlQOGctTDdIWkVvZ2Y0T05OX1o3TDdCN3NwckxhUVhxVlpSUmlld21WYlNPUjF1VHQ1Y2t3WS1zbVFkdE9iYjQtRFgwVDdlaWFNT2dwZTFOOFhIbkxSbnhjY1htNjhfUA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wisconsin reports infant death linked to measles outbreak - The Korea Times",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiowFBVV95cUxPbUFOa1ZWRXRMRXZkdHdLQzMyZmNNV3ZOTFZwZ0NycThLT1ItbkhVdVZrencwQkRVbVRCdkNaM0pONm9OUW9RWFA5dWljTERka1JEM3FDdGRnRGpwSWhLWVZvbWpXSUNzYl9obFRaeGpsbWpOOUk5RHQtRnhSbGw3R1VraUFpTWRCYk9ZV3ZkWjNWNlM5S09iMGR3NE5FekpPamxV0gGjAUFVX3lxTFA0LVdONkNJVWFLRk10NWRqUEUzSFd4UDVaV1ZfOWlpY2FiUTRQRGkwaXJianN5b09nWE42N3FKNmZ2bW1INExLTmlvcGZyakVhMW1ZbHdnTXBxclU3M0puSTVGQ1VGd3FVQVJPeFZNTGZuSVJWS2g1NGMxYmswZUhyUEVBMXlwV3FpWjJEX29IVVpTOHpBN1hLbzNXTmZIdWh1LUU?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7240,6 +8397,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeWN5WVNFei1VN1BXUG93TGc3MXUyMjZYaFpidXZGVE5LZG45d2E3WGhaWUFmWUt0dExHaVRtSVF6VGJXNkNQekdleGttWDhZaV9RRUY0OGRtdnAtekxYaGhCYzZqaE1tRzNGdHNQaDY4dW1XejJCYkxFU2VYZldsV3FCTXkza2JiMEpkNmFNZjBuc2Rfd0x4U2poR3lCYnNMYmln?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Texas leads nation in Candida auris cases as the drug-resistant fungus spreads - Houston Chronicle",
+      "publishedAt": "2026-08-07",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxOQjNrdTk2RWFxYUg2UDdSY1pfelEtQXRxSnptV0JVTkhsOVZmd1BaR1B4NWdtZFZ2WGdSMDgwYkQtYWwtcWRmTmtabGpvYzNGWmphRjN1VVlaQ19sRzFKSVlhVWFEMEl6eEQ2bXpoNm9CLV9vRWtEcWpvNjF5VU1WZGNOWEdLdTdJRzR6aVB4c0hmWEFGcXdIVXNyb1Vod1lEa014TA?oc=5": {
@@ -7463,6 +8633,32 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTWdmZ3BvNlZzX01OMmhLZ05vYWZOVmpTZzJNT0psVXh1UmMxRHBmdlpMZmRGY3dyckFPMXMyVktrNFhsY3dOM2ZfaTVUQjFfTDhwOTl3OUNWbGlScFVRMWlDa3lNQjF6TVFGejIzUnBRelFhWHRlNjctLTlteGZVZmlXZUtwb05yajJxMTFfa3dLTmowVE5tTEd6allHV2F2azFUWERn?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Armed men kill at least 33 in village in Ebola-hit eastern DRC - Al Jazeera",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipgFBVV95cUxOUnYzMGtSQ0w3SFhieS1QSVJmUFlIc0lxQXczX1pieHFiZTVuVGFUanJVbGt0dGNoUXRYRFdGcFI5dFZJZVpKejNaN29vNXEyOXlwZ1hLeC1aTHZyZmV5YTJ6ZDZrQzJSVGZMX1JyMk9DcnhZX3NGdHJtNk9Fd0E3NjZCbTNBdUdzcF9OWEFQRy1INm9DU0kyLWEwTENYelFlY2RuaWxB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ohio measles cases up nearly 600% this year, 25 counties have 2026 cases - The Columbus Dispatch",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipgFBVV95cUxOZklfal9Na0ZTMDY4aW5ES3ZWd3BaeFY3eG9tYWdIQTBIUHgyYUI1X1pSZ09WMXdmTDBad2pLRlVPUDJSNUl2VlZldmw4YmR2ODlyc3R4LXQwUjIwVERFWTVvcnI0U2p1UmlxRzQtOV9FeWduV05NeXhhZldYbG12OTZXQTczbE5EWVRSOThiYVBMLUZXcFBhcjgwVUlhTDEya0FRTVhR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7632,6 +8828,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxPckpPSzhrXzdSTkZ1WVBrakpLOXlvWGJsZzlHMXFrQlNnNWp1LVp5d2d5c0lIVVpYTDdDWkl3MlVLYTlJT3k1NUoyV3dILUN5OXJoTEdhMnR0cUpBWHBNdFlzU3FCWlB5U19jN1h5QXFpUXZIT0ZFT1FDTllTcUFKVWZqYzY0cnZ2dXJrV0UxMURGazJFUF9oNkdUMmxBTl9lZEEwQ2R5RQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Race against time: Two new vaccines enter DRC Ebola fight - thenational.co.za",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipwFBVV95cUxQemIwNWJnTm9rZG1jMzRWdzE0cW4zQUdwQTUtNTNGZDFTZEl0NzVvOHdoNEtnVW5TQlpFZGVvdnhpMHhQdU1NX0pRWmJoOGFPeUpjV2dZZER5bFZQOVVEQzhzZmw5cjRUVFBfblpnQ05sWjRmRGllOGNZVXkxbXpoNHJNT3VPd0hZbTlCTE5Ud2w2SGhQc09SRVBGQnFYbWR0LVloekdWMA?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7669,6 +8878,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUGRBYkFIYlg2clhyY1BBaV9xVjFUZGZQdVp1NHhwbWxvSFVfS0IycU54cXNvVURsQzdxZlMyZEVzVkVLTmlhVW9kdXVrS29INDlaQmFZODUtOGlzelR3UkF5SUw2NHpzZEw1ZnQxYU5oRVpmTGhnMmM0enEzeTJkSmFrY1Z6TjN2aG1hTkVMQlhyQmowOHdCWll1c2pTVURzOWlpVjlCSkQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Cases reach 1,487 in 45 counties in Pennsylvania measles outbreak - The River Reporter",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNaWlnbDlXYWNVVUJxazR6NFg2RTRCb24xX2FiOEkxbE5NNVp4YUdSdzhRWWZPVlZIcmNabjlCQnJ6bDcyQWlkaGxINHNZUFl4RVlFUDhlb2pRajBzMmE1Wk9ZSXd3VndvV2ZYRTdULTFVejRHcVRkbWFXdFpnUndxN3R2eVV1MzBIMDdaR21XUGtzMWFSdHZ4YzVNMVh0azFIUnVqaHJOLUs?oc=5": {
@@ -7905,6 +9127,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVnIyNVlHUWJrUUhZa1g5NjRWWWNibGc0YTN2aDA3eVBiS1A1Vl9PbUJ0bVpSMEVXZVJGa0JGMENRUXI0RFZWR3h3Y25YQXhISS1lWWtHUWh0LXkwN0p2eFFKaVFTenNiSmhPOHRud0NvektoemNsUFJzVldpaDdPQ2RwSVQ0cDdra1QyVEd3SmVlWG1IQnJlVGNTQUVYemxRTkVBeGlYTzFtLVk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania measles cases increase as state reports 6th confirmed death - Scripps News",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZE5LVDh4LVNlbTM4WVBLZ1dQdWxpYkh3ZHg2LXlzTDAxWFBjVldsMVBlQVlVbjFfZHhKcnplZ1Y5T1d4U2ttR2NUNE4zODRnS01Ybkx6dG5oQ1ZadHdIU3JtYkplQk93YWhiMjVRRDBUeXdlNnFqV1FWY21iZTRTMFBsUVZpMVhtWS1sak5KX19LMkVCbnh0T2llblJnMS1ZaWR1bWJKYWtfMVk?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7957,6 +9192,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdWRGX3ZqdjNyWTFhSVRCUGc5QlNrQ1JSSldtSGVsaGc4WERIeUlEVGpnNHoyOFJKQlBrNHZRQnlNdWdhaUJySzFKOGYzZnVYTC1XQ1puUjg3eW9PbF8wY0xjZ0s0QjNFNHlLVk10MHNFZUdiQmFRenRNSnJvTFNYOHNMY3FwWFp5cFVvQWRxeHc2QXU0cXFpMjRvMzVjcktiZzYzVkIzV0oyaUk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Delayed international support has hampered efforts to contain and treat Ebola in the DRC - The Star, Kenya",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZi01SVJBVTZ2THBITjhCWTFvcVBSRjJrSG5wTF96MkdpblU5WkZlNmc1bGlNM1UtRWJTMV9sSFJ6dzFXWGRiQlRmckp0MWxSQVFZT3dMQzNtRGM1RWE2ZEhiNVVDS1prMWhlRjRGYnJsVnV0NTB2Z3VMbzRYeWJtM28yN2htaFdOeV9zZWx3WVZfbFkwaGxiUV9WYmtNVmZFQVhfUV9CMXNzR1F0?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7981,6 +9229,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxPdlEwTlVRcXBpb3kxUGpfVklNSUhNTHM5bHRhcU1GbjJGOGdiNHJab3NIM3JtemNMOWdsYUVIQjh0UEVqaTJuV1IyeklNLWhpMS0wUjQtdUVfd2JJUFk3Wm1rdzkzVkxOVEtMVjZMTTZUc3EtZ3gzT0w2dzhxbzlPY1VrSlE4YU83SVlLUDU2eC1kS2dhT0pGYmk3cHZ1QXg5aUhReGhENjM3cEhu?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "US measles cases surpass 5,000, reaching highest level since 1991 - İlke Haber Ajansı",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMirgFBVV95cUxNRnlrWThLcnNXSl9LTV9VbVhKVzluMEhwMWFKaVdEYkpSU3haZnNUdEN2bjVWT2NwRVZWQlkzSXIxV2lHTEl3UnNwUF9qV1JlSC05cXFKYXE0eGJKdTBzWjRBY0tnejZDZWZSZHVFc0JGamR2ZVAzcWVLZUdGUFFzNDU4akFxNW9zUTU2MDlrQmhOQzlBVnRFRTdGZVZZN05YLWtobk5FczZWTDd4c3c?oc=5": {
@@ -8074,6 +9335,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZHEyQzJObThONUxuUDlmWFF6U0F5eURVRlpHV2dMd0ZsNFdMWE1MaHoyS1lvb2s3VWktN2tua0lOekVCNXJmOVZ3T0NCOFREUWVKXzZMN3gwQ3BlZHF1bExRX0x5VjI5M1ZldFM0aUtpbGNfLUt5cnA5ZFNsVm1BSnFMbzN3VlM5RUpDVEFDU29nWS0tSlc5R1Jub3FVMzkyWWdVRkRKenR2WFotc1E?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC study highlights substantial antifungal resistance in Candida auris - CIDRAP",
+      "publishedAt": "2026-02-10",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMirwFBVV95cUxNVUxRR3RfOWhnMFE0TUoyMnItNXUxMEp4MHFFUWNESVpXeFVQTDc0T3JxbUR0ZkcxSGc5WXhaN0NzSlFKeHNXQmdlRzdrN0dIeG1tRTljZWVQSjRlSXNiaWhadlFlc1BmNllTY2pFeFFEUkNadi1XX3RWNGJZWHBFZnJoZ2JsNUpKbUMzaW41akJTQ3ZzbmVTMmZyejRxSGhybnpvVC1KSDJMd2R5S1Fn?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -8150,6 +9424,32 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYWFlWTdCZW5PMUc0VUhXcy1ReWs2R0o1Ui1mbG1GaTJaNlltVGM5UklpZ0dscGhDaXRxdkprVWhHNXJob0ptZWF3aFBBaElFbFBQWWQ1YXNsYy1SenNQMGNsaWZkbnpwNXVPdDZCeDBqMmNSMUNub3oyLXRwQjRVeWtWMFVSX3cwYUNVdEV0aXlFZk1sR1gwUEQ4bW5KSEhaTUtaeHR5dHJTUFJva1Fj?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Drug-resistant fungus Candida auris detected in 23 states so far this year - KDNL",
+      "publishedAt": "2026-08-05",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdU9Vbm5zSFB3TTg4ekxyOGVGQ1JiX0p1cHBtNzFRcVlNVm8tRzRLQWVINnE5ZWFSNk9xUEJoTGF0NHJ1WTBZRGhvVmM0b05EM0VTMTdIWG96aTFWQ2hrYkxEUzhLOHdmYXF0ZHJkZzZ4cmRfTTY1LWM5UEdIZVk4UXVYaC04bk1VODBXY3pzS0hDUW9mM1JWYkhDMUhqZnZQb3hIRnZVeFVKRTZEbExV?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Wisconsin reports measles death of a baby, first death in over 35 years - Ars Technica",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMisAFBVV95cUxNWWZnWjVwU3ZKQ19SWkFOWTVrb2FIMUhadkN5bHBIc0JxUWV1c09mTDBiVElxRFE1WEhITHRVZWNqZlFxM2Rxb2FoWGFZeTk2Q0lKT1Q2dDYxdkREVGR3Tmk3d3Vzd0lWWER0M2FSSGxDVWNmRW41WHdEajBycklPSjhRMUl5dEhEc0tTc1RTTVVtdy1lODhMdEgyZm12SXJoeFNBYXI1RF9xX3hPQnZfWtIBtgFBVV95cUxQWWpCTk1xMHhwU2JrQVVmNGlod1R6cmVIdTd0ZzlMVUIyT2hGUmE4RXF1UllUS1FfQ0RxYlppUEk0MTVidmdQQ2J2LVZJMG9mUTJ2YlR5dEM0Z0xiQkxYTTdSVGE4Q2R6VjZ3dDQzSFBQT0RMblBfZVd0bXhkNVlzWG41LS1fdWRPY290STN3MWpDNzhWa3NpcUVSMGNfeWVXRGpNNElyTC1tZTJnX0c5Q3hhUGdYdw?oc=5": {
@@ -8360,6 +9660,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeWRRY0Jxb3ZrNHFBVXdDZERWZ0U0RTc0X3o4c3lsNlhwOGdKZjQzRVVxaGhFZjdzRkU3Z1BReEk3c19tdFhNbGZWb1A3ZWRBVU9YM0M3eFA0THUxSVM3eGxYNmdxTXd5U1NQUjZJOFN0UEVqQ2tCa19Ka3oyVjdyM0ZtQXdFS1htY2VUXzlmdkJqcXlxNjVxWmloSVg0dDV3c1pVR3RSZEZOTFV4Ti1ZWmZ3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "US Measles Cases Top 5,000 for the First Time Since the 1990s - Bloomberg.com",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMisgFBVV95cUxQeXI0dy0tMmlSMWZsTG5xSnRzV2JMcmk3VERuSGtrTmhPeE9PUnpyWTQ1NmxyOGJkQmZBNTF5cmVFNXhCQjZ0c0NjOEJOblJ2WDN3bFN6QjFiQW8wNlRTOFNncXhzeU5zMHhyYXNMUjFjREJVcW96c3RIZVprbGZzQVp4RGhSX3Z0aF9MSy1MZWF3elROckpmV2Y0WjQxRjUxZkxUaGlqN0Z3ZV9CbGVXMWlB?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -8371,6 +9684,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVUE3T05rdFd6cHJ1Y2ZZNWk5bkJaRlRzay1HY0ktb0ZRcnctTW0zUXZqbzBaQ3A2X1gxTTdVeUV2S2hOSTRQQzB0azcxUFFxbE81TWdVaG9KelpMc1VqSDIyc1ZXU3JRZ1pPT1NCbzlLX2I2dHBLTm1Pb1p2YUVTeW4xWHNkcmlLRHdtTEFBUUFxbk80cmhBOHdkdmNTOEJMZ2RJMGszWGlXaU9rQ1Npa21hQQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Candida auris: a review of global epidemiology, multidrug resistance, and infection control in healthcare-associated outbreaks - Frontiers",
+      "publishedAt": "2026-06-29",
+      "source": "Google News — C. auris outbreak",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiswFBVV95cUxNajBkbjIwXzNuLS1wTml6ZGEwbjlKa09GOXdpUmlxOHJJR1o2ZERoMjdxdW5xMGlOQzlodUtXSnY2a0Y3R2xnSDJVN3R2Q3VrdHp5TUdPTTQ0bTB0TUpyc3hzR1J2QUhBZ09ZaG9PMHo3M1RMY29BZ0xUYy1MVEFFY0MxMVltOW9mSFVWNldoYWlrSHJXektsTWZ6M1pBWXJLRHlSbXRKWFdTTGhCY09Kd3pKSdIBxwFBVV95cUxOSGhWaUJGZW1OVEZxSVpRWXBkcWxEUEJPSklPNXJaalpnamxPend3NUc1MmVBcXZ3OWRqMmc0ekdGU3N4ZVZSQUsyYVZoc1QwemZDSDZvdXVHb3pmb055b2lWcXUwOU90MkJHRDJZMDFMZk4xRDl2Q0R6WGw1TzdTYlBCSGNHaFM1Y1Y1bWF0LS1JeDVLU3gwbC1faE1LXy1scG0zRnZ1UmxqNGp2dWdacGkyd0k5c3AyOGdPYVFpaUJhX2RiaC04?oc=5": {
@@ -8488,6 +9814,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWGhiOXFrOU9KTVBjeEdwT1hLZjItR3dKNFNVeER2Q1Qyc1ZLTmNmelNfcTVGWHFnR0plcS1ib0M4VHFwb3RwUGxTNmh3VzhoUjJNY256MU1NcDFnbHBoaFpDZWFXV05DRjdzRWNsUUUzakx2c0NmN0JDNUxuaWd5VVdlTjQ4eDVRaV9YUDlrUUtuM3pKS1JkSGtneGZuTmJCOVJhSUZPV2dKMkdpRk0xUVRXUnk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "As Ebola cases near 10,700, WHO recommends adding 2 Bundibugyo vaccines to clinical trial - CIDRAP",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdlNSRV9RWTExNk9SSzNBd2w4MVMyU2JwWVNOQno4RThlOHdmMnNEbTN0bTFUR29vM1Q5WFMyYTJWZVBZLVVEdHVLOUQteVo3UTZfV0NseDF3U0tSNkd4ZGJSRVVjYmg2b093X0E0ZkxvS1FXZ0dCNjF0Z21uU0cwU2tka0ltbGpTMUw5MGFvWnJtQ2tIdUNEamwtVHQycXFMUEhXbVZQaUI5TG9ZNnBkcE9KcUk?oc=5": {
@@ -8633,6 +9972,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxOemxTM25RX0ZBQUo5UlRGQWlCV19EQ2VoaHczbzBCbUhOYlM3TXA4X2pwTTI1QVdKbVVBVVRTMm1oWGk4WHEyZzZtTzNRRlpVN0NLYkdpRjB6ZWppbVd1Y1hqcjRNWG5uZzBUMk1BT2dySG9scHJaZDJuZGVQXzF2QzEwTmVPWThKQVdQa3Fkck1qOUFIQ3BfZkw2d25tN1lsNUx5SVFIUmk3T0ZhQldVMEhHR0VPRWs?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "‘Quite unusual’: Adults make up two-thirds of measles cases in Pennsylvania, presenting unique challenges - CIDRAP",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMitwFBVV95cUxPVFdXNS1CNHJ5YVhvb1JyYUdxU1FiZDRrbEM3S1RPYjlONUg3LWRpdzhTVnl1TGp4ekRvd3d6UG1ER3BqcC1WR0xWZ0JUZjlRamk4MHltbU5UbjlkWng2Z2NWa3l2YWxGb2gwRjhENENUano4R0doeGZmZ2EyVy12ZC1xOTcycGJCNXpxcnZTMzR4VTBDQVpRZDQ5SjE0RkliMjJCeW1EaGVqeHJxM2JlbXMybC1uXzg?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -8644,6 +9996,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeGRoZ3d1ZndVNHFxT29tRndZSzJMRmEwU1Y2cXZaUE1GVkRXN2hEbjNlMWh5Zjk3ZzRVdk14RGJ0VnVnNVJfSW9xSTlJSzcxMHp1MWZIZ3B1aG9hVlRiNlA2RWFoWHBseWxXSHFHOF90aXZxd3FZMlZ0NWNLNHkyYm5PZzU1ajIyZHN6YUZSQmR1SG1ENVFVdl8taGJaUXVxZDB2MEFvMWk1bVpDWmxwTFF5aG9nWkE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Two New Ebola Vaccine Candidates Recommended Amidst DRC Outbreak - EMJ",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMitwFBVV95cUxQNTlhQkpOX3FDNE1oWHVaR3JvT1NNb2IzU0kyU092bFNGZmRucHV4cGFJQXpPdnFlVVhNdmhORGk3SGtHZWtDYWE2N0tVTjRrMmQwMHpuRC1sYVpCNWdKTkE3RUc1Yk9uelU3UE92TENCNHNOOFRGYUdOMzlQdmNQRWlRYXc4cWdWZXBFYWg1VGFBY21nREFWNEoybkY3eEREQml2b1MyT3dFOUxUWnR3dlJIcnJsZjQ?oc=5": {
@@ -8724,6 +10089,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxNajgxMmhDVFhROUE5Y0F0cmI2MWFCUkRIOUVwUFJpOVFfYXg4UTU0QTNYNGhpeEtvUjZESFhaYlBUUVpzaWNVYXFNeThoNUI0WXhWLUREbFFqLWZWZUxiNUNsWXp4eEZwa3FxdHU1b1VrWi1yQnpJSWtfY1BSMF9aZEkxbU8tRWJBdWVydGdrNFpiNmN0MldHV0ZDSVJmR1Z5blBCWEx1N2VnUURCdFRfek80VVp6SDVRSkE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Two new candidate vaccines to join Ebola trial as treatment research advances - World Health Organization (WHO)",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxOUHJHcEpYcndwZmRpT1F5T2hmVGJhd2I5UG40bVhQRWF5VFU1Y0JhNDRwckcwemxjOFBCU05EaVd4QkVxcE5DSTRCMmp4a1g1aldlcGZiX0xRc25OY1FvdUFSMGNIZHdTaS1ldXRydU9BcFFrRndkT0x4bTRHeEk5dmpRZ3l0ajE4ZlRZbmhoLTZQb2NJV2huQ2RHcnYzdW4yYTFmMkp2ZnpleFJlZ1JjcjM3UHNwQllNeUE?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -8789,6 +10167,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWnBtcnZwYWFNTDJSRlRnZm50QmRHU2FveUZmdGxzX25obV9ja1VXbDh4aGMtS054N1VxVDY1NGRZdFFNd1ItTDhWcEZFbnJ6bnB2c3Qta3U4VUhaUlBMM3RaVDVUQmRiYWtRV2t5LWpLQXUwV05kUXhXdzNhazNJM3hhekZ6SXJ3MmlSSmEyUTJIU2NFeHgxYXNCQ3hrLUZYbHNvMVFmbFpPUXEzNzNnSDZaZGU5cFktV3JN?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Video: Fighting a Candida auris outbreak - healthcare workers leading the change - European Centre for Disease Prevention and Control (ECDC)",
+      "publishedAt": "2025-11-18",
+      "source": "Google News — C. auris outbreak",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQkx0WnZMWjhBaXNJenRkWktsTGVzLWhwcEtRT2lkWVBYNWxHRTVYUk5YNDlnZlA4bnV5c25OalY3bGZlTk9XX3VvYjh3Wk1RdXRqRUZIWUR3UzQ2c1piekdJUjl2Y21FZTI5VG54Y2ZTUGdZSUxaZ091OFVlaE55YVhyZW5EMjRnRWpiWGZSUmZ6Qk1LaUJrOFdrdXliVVlFdVhwMDh6U3hOVWYxUWk3OXNnTU5sQWZfemdz0gHAAUFVX3lxTE8yMVVpZV9FdDZRUktncXJ6Nk85cUFmeEQ4TFJZcVdIMGxEWDZwVTFrdnY5NGdlWFNiVG1VXzlIcjVPX2JGX2pOOGFWMm9SNHZWNS02TW1kV1Q0TnhyUWlpOHJRSFVOemlTUDd6elZCZnBTLWlDa2ZLRXRiRzhYUDlqTTlUdW5OeFZLS3lROGRVNUtSVTlJNldnLWlSWjVmckFFTEN6YWhlMllrVkV6S1Z6Sk00azUxR0k2VEI4TnFlRg?oc=5": {
       "archivedUrl": "https://web.archive.org/web/20261028084204/https://www.gmanetwork.com/news/topstories/world/1007417/congo-s-ebola-infections-surpass-10-000-government-says/story/",
       "archivedAt": "2026-10-28T08:42:04Z",
@@ -8798,6 +10189,19 @@
       "title": "Congo's Ebola infections surpass 10,000, government says - GMA Network",
       "publishedAt": "2026-10-28",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOHF4TXJtUGZtQkdoRlpYeDVDaVpadHpVZ2J1Y0d4Y3lUYTB1T18xcnUwWDVCZnJYT0JVUWd3LVFSaXNjS3VXaTVpT0xNaEEzM1RZOGNhaDRCaUFhQzFZN3doN25namhfRGJGYzlXZEhtQ0N0aUVFNWxaZ25yY0Uzb0V2MER1OWkxX3BPWk5oRkVOWHIyaFdWTnVaRzN1NVJReFZHaUFtQW5aelJndVJnSGNHbHlYVU82d1EtLQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Oxford vaccine moves towards pivotal trial against deadly Bundibugyo Ebola virus - Digital Journal",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -8904,6 +10308,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMivwFBVV95cUxOQWlXcm1kcFQtcmp0M2I3U3BON0Q4R0NPNHVMcG92Zk4xdS12RndrNnk4bko5U3FCSWI3bFpaeU16ZkZMX3h4X2FIdWhNeklWUmh3X0RvVVFhZUNuWmRuYjgxOWdJV3JuOXVsdTU0ZFJscVRhM3BCd0ozOVM4ZEd4YlV0N0FKekltVU5RTUo5VnZuTkhOXzJZcXlhMjR2LWdUVVY1RS1GSGVUVVgza3BzdXNLdGtaOGd5WXNmbUdzZ9IBvwFBVV95cUxOQWlXcm1kcFQtcmp0M2I3U3BON0Q4R0NPNHVMcG92Zk4xdS12RndrNnk4bko5U3FCSWI3bFpaeU16ZkZMX3h4X2FIdWhNeklWUmh3X0RvVVFhZUNuWmRuYjgxOWdJV3JuOXVsdTU0ZFJscVRhM3BCd0ozOVM4ZEd4YlV0N0FKekltVU5RTUo5VnZuTkhOXzJZcXlhMjR2LWdUVVY1RS1GSGVUVVgza3BzdXNLdGtaOGd5WXNmbUdzZw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles outbreak in Bangladesh claims six more lives, 2026 death toll climbs to 1269 - Social News XYZ",
+      "publishedAt": "2026-11-05",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMivwFBVV95cUxOU0d4NVZkdUZQOVBlLVR0OVRrTkxoTXRGdl9LZHhmRUN4bERQSEdtSlZ1UXRMa2IybFBGdlNmTzktWDZVcFM2TktwSzFLa1pKWEdKMDhZLW9jNzhzNVdxSmxfcGhaUmw3bUk2ZDJJak5NZlBWbHplVGhGbF9ON2tIRWQyci10emxtYXRhTktOWGMtQUozOU8tYXRDTWhQX3pkOG5WUHM4cmVTYlptX21WODVmUXQwV3hCWmRDU0NfMA?oc=5": {
@@ -9062,6 +10479,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVE10SFpiQXk5ZXhfdnlOMS1GZlpGejM3aldHTUkyNndlRjdQT01yUFg5aW9tZGFhZElwcWNJeVFqYmZnSjNkZnNUWUpPNmVUNmFXeFZJV0ROUTR1NUlpUUdoLW9NNjNiNDMtMmdGLWZrWGtZak9ucjJOTkQ4dDlNdmN0dDhxSGpySk1wTHRwQ29VWlk5OGlYbTNhVFdmWGZGWDFUUnZqZUljaDhEVzBJMnR6VWM4TDdzRzBWWU5HV2Vrdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "What Is Candida Auris and Where Is the Deadly Fungus Spreading? | National News | U.S. News - U.S. News & World Report",
+      "publishedAt": "2026-08-06",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVndkUjJEbEdFVC1vTk41c1ljd0d1QkJKVDFnRVhsZzJTdGNQWDFORkVoc29LcVRpMFQ0aTRTRG81Q2ZfMFVVNUhCVngza0ZZd3NYdHllemxTX0FsLWlPSk90TFJQXzJHRTl5QnItdFkxazdLUWFmSXpWTmRKX0hHbi1JeTlRZ2JRUmliak5XRnJBalUyUzdac3VSVXRjM1RQZUN1OTUtbXA0U1B1OHdGRUoyWEtOSU5KbTliUkx2aXp1QQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -9073,6 +10503,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPelVvSGhXWXBpT1VoMkdCNzNrVnhraHpjVGpRbEVRSGlZblYwZEdLTUlOT3BWN0lFV1lwbjZ5RGdEUEJQeW52TnpVR0pHWXpuOUdydEg5V1Ntdm5CX1k4S1YxR2gyVXhidDBFazd2andmbXd4VEhRSm5sZ1lIbkdJN1pMd0dqUlFicjh3ZGtjWUJTVGtqV0Z5SzdXMHZjYjVYQ1h4czZCeHVGbkVrblZUNFU1QkJTRFVHeUkxejl5MVFuQQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Candida Auris Cases Are on the Rise. How Can Infection Prevention Respond? - ECRI",
+      "publishedAt": "2026-09-17",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQMXYtbUJkSjdZWTFvc0t5SU15dU42NVFGaHlLUVRXRk9QQ1NZNFZLUU5iaERzdUt4NVJlamVwOWtHUUkxdURUbGptWVl6NmVtVGtxTlczdnRTX2VfZjBfaDR4Z3NVMjBWVWRfZ0lqYzBRYnFTcDNfcVdhVGhSVEVjLWJxREU4ZWZsYzhvVDByNEVIdi0tLWdQS2dDVnZfcjhUOFY2aWNBYS1jR0VqNWpnTlhoc3pZWC1GN05JZnJHMXJadw?oc=5": {
@@ -9322,6 +10765,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbHpFLU93RmlwRWxLN1ZWYkxQeE5sc1poSUxPNnNnU0NJdnJKWEhHUDNjVHZEYkUwb2h4Z1B1V1JpQUp4YmI5M0M2S2w3MXBGRVAwMDYySVVzc25FWHRfWDlMdEJHd2NVUXFMN2hwNTVxd0RGOEhKR2czWm9WVTBXQzNTWXJkazhhdDdwQ0k3SGxrem5HWmRfRFBaSlY4Y1hrYjk0cy1FVjhlOGR4RnlNSXlwRlBOa20yQ1ZkdDZKem9KTVVjWWotYWxB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles Death Gap Widens as Pennsylvania and New York Confirm Seven Deaths, but the CDC Counts Only Three - inkl",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiywFBVV95cUxNSlI3c2RWYXZONUM5UFZQVlZnNEJZWXdLeTF3eG50SnRhQmJyVWNZcjZjbGNCTDhlVnppekttd3Z5bzZWTHJtdHg0bmVTc2xMOFYyVGU0Zkc3T2lYRzNiRUVvVGo2VTBkZkkzMXl6Wl9HN01JQXE5LTk4YzBiNFhFQjlPenR1enNZQWlveldMM1Y3a1k3ZUVaVmJqSk9EX2s2Y2dmUzJpRk9PaWNSeXJ0OGtVdTY3MmtlUThiMEU1UDlTbWtneGxsSFNzRQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -9400,6 +10856,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdGlGaHNTOFhwbmdPREhyQkVSNDNTQkF6QVdwa1lfRnU4VE5hckItQWF5QXBkbnRkM2NTdlNvQkF3TXh2dWVoc1phUGxROWQ0SDhDY0RXVlJENURxSWhrZzF3Z2pvM3A1YkZSaGRCX2h0Y0FPaVZPQlk4cldFMWpZNVJUVzM5OFNUY1laa1dBVC1aMUhfZjNqZmNydGtBckctVHVaTGZMVFR6YzQ2UU9wanFHdWF4TVpWWG1CSjkxMEt6SF9JRVNYX3ZIRXNPUQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "As Candida auris spreads, UT Health San Antonio scientist highlights growing threat of antifungal resistance - UT Health San Antonio",
+      "publishedAt": "2026-08-11",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxPRnozaTZoRG5xMnVBWVFhb3BxTWVIbGlqZ2l2ZVFTZjlBUjByRmVSLU9VSHhkd2xQZzRLR3ctZ09vWnplQ2Z5Q3hVcUpIdkdyeUxBLWFSTmYwMnlzekM2eEhiSDFPVmxsRmZsNV9RZlVmbmhDTmd6dDRScmM0VmZaUmJrWmVPSENZTmJMdzduRkpEM1gzeXJZdlRkQVo1aDduQlF1LWE3VnVsZmJTY0taN25RM1AzRDJZTzYyRlF4Nm9DbGN0Q2s0ZWZoTWxZZw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -9411,6 +10880,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdHUwWkJfSXlqVUs0WDF2WkoxaFNqSmRUYXpfUkhpQ0hUSjRfcURiY0dYWjB5QXRycUpoRnBfUkhqMm9aVWlEV0U4S0lhSnE2NGRuUC1mY1BvWG5hTW9BanJiQTY2OUx0cjhwOFBKRi1oV2dxLVdyMzliWnctWTVqcjdwNnhnUFd6cGktd1BQMmwxTGFsNTFQYko4clpnZ3UwTm1IYkk0OUJKZUpuWmJxdFl4Ql9XMHRFN3RkdUt2VjAzRnJUV0NwSy1UcU9JZw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "British health care worker with Ebola evacuated from DR Congo to UK: World Health Organization - Anadolu Ajansı",
+      "publishedAt": "2026-11-06",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMizgFBVV95cUxQbjRseGQ5SklkeHE3WXRBR3pOX0RmVUdLNzkzckZPNjJJT0FGc0hDYlZjVU1XUXRycTViSUlvTzZoNWVtTW5lQVg5OEYwOE9qNVh4N25qc2wySEhoUzh0Q0N0eWJ4cThZdVM5c2NrQUxwUVoySF8xLUN4aGlGaWlqUjd0V19YMldiVUpIMlR0UGR6akY4RWNlVWs3NWV5b2FJYmNwanBndHhlcVlOR0hGVnhuM3dnZ0cwLUdnYkpIUXpxWGxHUDdncTFEdlBCQQ?oc=5": {
@@ -9504,11 +10986,11 @@
       "resolvedUrl": null
     },
     "https://outbreakfiles.com/about": {
-      "archivedUrl": "https://web.archive.org/web/20261025201924/https://outbreakfiles.com/about",
-      "archivedAt": "2026-10-25T20:19:24Z",
+      "archivedUrl": "https://web.archive.org/web/20261106085253/https://outbreakfiles.com/about",
+      "archivedAt": "2026-11-06T08:52:53Z",
       "status": "archived",
-      "attempts": 2,
-      "lastAttempt": "2026-11-03T08:53:31.158Z",
+      "attempts": 0,
+      "lastAttempt": "2026-11-06T20:37:53.389Z",
       "title": "outbreakfiles.com/about",
       "publishedAt": null,
       "source": "Own site",
@@ -9577,6 +11059,58 @@
       "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
+    "https://www.cdc.gov/candida-auris/about/index.html": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC about C. auris",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/candida-auris-us-2026.ts)",
+      "kind": "curated",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://www.cdc.gov/candida-auris/hcp/screening-hcp/index.html": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC colonization screening",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/candida-auris-us-2026.ts)",
+      "kind": "curated",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://www.cdc.gov/candida-auris/index.html": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC C. auris",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/candida-auris-us-2026.ts)",
+      "kind": "curated",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://www.cdc.gov/candida-auris/tracking-c-auris/index.html": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC tracking C. auris",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/candida-auris-us-2026.ts)",
+      "kind": "curated",
+      "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
     "https://www.cdc.gov/ebola": {
       "archivedUrl": "https://web.archive.org/web/20261017082155/https://www.cdc.gov/ebola/",
       "archivedAt": "2026-10-17T08:21:55Z",
@@ -9640,6 +11174,19 @@
       "source": "Curated (src/data/outbreaks/measles-us-2026.ts)",
       "kind": "curated",
       "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://www.cdc.gov/nndss/docs/Readers-Guide-WONDER-Tables-20210421-508.pdf": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "NNDSS reader’s guide",
+      "publishedAt": null,
+      "source": "Curated (src/data/outbreaks/candida-auris-us-2026.ts)",
+      "kind": "curated",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://www.ecdc.europa.eu/en/ebola-outbreak-democratic-republic-congo-and-uganda": {

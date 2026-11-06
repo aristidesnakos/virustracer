@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-03T08:50:36.309Z",
+  "lastUpdated": "2026-11-06T20:35:59.642Z",
   "signals": [
     {
       "iso": "KE",
@@ -72,6 +72,22 @@
       "seenIds": [
         "news-3300deca1a12b9d8",
         "news-34621cdfa299451c"
+      ]
+    },
+    {
+      "iso": "GB",
+      "country": "United Kingdom",
+      "flag": "🇬🇧",
+      "firstSeen": "2026-11-06",
+      "lastSeen": "2026-11-06",
+      "firstSourceTitle": "British health care worker with Ebola evacuated from DR Congo to UK: World Health Organization - Anadolu Ajansı",
+      "firstSourceUrl": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdHUwWkJfSXlqVUs0WDF2WkoxaFNqSmRUYXpfUkhpQ0hUSjRfcURiY0dYWjB5QXRycUpoRnBfUkhqMm9aVWlEV0U4S0lhSnE2NGRuUC1mY1BvWG5hTW9BanJiQTY2OUx0cjhwOFBKRi1oV2dxLVdyMzliWnctWTVqcjdwNnhnUFd6cGktd1BQMmwxTGFsNTFQYko4clpnZ3UwTm1IYkk0OUJKZUpuWmJxdFl4Ql9XMHRFN3RkdUt2VjAzRnJUV0NwSy1UcU9JZw?oc=5",
+      "firstSourceName": "Google News — Ebola death toll",
+      "mentions": 1,
+      "maxCasesMentioned": null,
+      "maxDeathsMentioned": null,
+      "seenIds": [
+        "news-11a703f8544b1d23"
       ]
     }
   ]
