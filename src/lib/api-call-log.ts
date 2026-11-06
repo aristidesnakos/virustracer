@@ -4,7 +4,7 @@
 // host and country. No IP address is logged. Pure (no Next imports) for testing.
 
 /** Query parameters the API accepts; anything else is left out of the log. */
-const LOGGED_PARAMS = ["format", "include", "from", "to", "limit"] as const;
+const LOGGED_PARAMS = ["format", "include", "from", "to", "limit", "series", "state", "ccn", "min_severity"] as const;
 
 const MAX_PATH = 120;
 const MAX_PARAM = 20;

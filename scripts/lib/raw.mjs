@@ -8,6 +8,7 @@
 // report parser read; see archiveReportText).
 
 import { createHash } from "node:crypto";
+import { gunzipSync, gzipSync } from "node:zlib";
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, resolve } from "node:path";
 import { extractInfobox, parseInfobox, withoutIgnored } from "./toll.mjs";
@@ -286,4 +287,52 @@ export async function backfillRawForStore(store, opts) {
     snapshots.push({ ...snap, rawPath: res.rawPath, rawSha256: res.rawSha256 });
   }
   return { store: { ...store, snapshots }, stats };
+}
+
+// ---------------------------------------------------------------------------------------
+// Nursing-home data layer (scripts/update-nursing-homes.mjs): each fetch's canonical CSV,
+// gzip-compressed, under data/raw/nursing-homes/<prefix>-<date>-<sha12>.csv.gz. The
+// checksum (in the name and on the record) is of the UNCOMPRESSED CSV, so it does not
+// depend on the gzip implementation. Same write-once rule as the files above.
+
+export const NURSING_HOME_RAW_DIR = "data/raw/nursing-homes";
+
+/**
+ * @param {string} prefix  e.g. "nhsn-tscn-ryh9", "cms-f880"
+ * @param {string} date    YYYY-MM-DD (newest week, or CMS processing date)
+ * @param {string} sha     sha256 hex of the uncompressed CSV
+ */
+export function nursingHomeRawRelPath(prefix, date, sha) {
+  if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(prefix)) throw new Error(`invalid prefix: ${prefix}`);
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(date)) throw new Error(`invalid date: ${date}`);
+  if (!/^[0-9a-f]{64}$/.test(sha)) throw new Error("invalid sha256");
+  return `${NURSING_HOME_RAW_DIR}/${prefix}-${date}-${sha.slice(0, 12)}.csv.gz`;
+}
+
+/** Decompress an archived nursing-home file to its CSV text. */
+export function readGzipText(repoRoot, rawPath) {
+  return gunzipSync(readFileSync(resolve(repoRoot, rawPath))).toString("utf8");
+}
+
+/**
+ * Archive `text` gzip-compressed, unless a file with that name exists (then it must hold the same text).
+ * @returns {{ok: true, rawPath: string, rawSha256: string, written: boolean} | {ok: false, reason: string}}
+ */
+export function archiveGzipText(repoRoot, prefix, date, text) {
+  try {
+    if (typeof text !== "string" || text === "") return { ok: false, reason: "nothing to archive" };
+    const hash = sha256(text);
+    const rawPath = nursingHomeRawRelPath(prefix, date, hash);
+    const abs = resolve(repoRoot, rawPath);
+    if (existsSync(abs)) {
+      return sha256(readGzipText(repoRoot, rawPath)) === hash
+        ? { ok: true, rawPath, rawSha256: hash, written: false }
+        : { ok: false, reason: `${rawPath} already exists with different content; left untouched` };
+    }
+    mkdirSync(dirname(abs), { recursive: true });
+    writeFileSync(abs, gzipSync(Buffer.from(text, "utf8"), { level: 9 }), { flag: "wx" });
+    return { ok: true, rawPath, rawSha256: hash, written: true };
+  } catch (err) {
+    return { ok: false, reason: err instanceof Error ? err.message : String(err) };
+  }
 }

@@ -3,6 +3,7 @@ import Link from "next/link";
 import OutbreakCard from "@/components/OutbreakCard";
 import { DevFeedback } from "@/components/dev/DevFeedback";
 import SiteFooter from "@/components/SiteFooter";
+import { NursingHomesHomeLink } from "@/components/NursingHomesDocs";
 import { listOutbreaks } from "@/data/outbreaks";
 import {
   buildSnapshot,
@@ -175,6 +176,7 @@ export default function HomePage() {
               </p>
             </section>
           </DevFeedback>
+          <NursingHomesHomeLink />
         </main>
 
         <DevFeedback name="Home.Footer">

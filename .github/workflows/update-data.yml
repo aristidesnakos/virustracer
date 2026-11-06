@@ -51,6 +51,13 @@ jobs:
         # lastChecked. If data.cdc.gov refuses GitHub's runners, this logs a warning and exits 0.
         run: node scripts/update-toll.mjs --adapter=cdc-nndss
 
+      - name: Update nursing-home data
+        # Not an outbreak: CDC NHSN respiratory figures for nursing-home residents (data.cdc.gov
+        # and www.cdc.gov) and CMS F880 infection-control citations (data.cms.gov). Metadata is
+        # checked first; CMS's rows are fetched only when it publishes a new release (about
+        # monthly). Warns and exits 0 on any failure, including a host refusing GitHub's runners.
+        run: node scripts/update-nursing-homes.mjs
+
       - name: Fetch feeds and update live data
         env:
           # OpenRouter key (uses DeepSeek V4 Flash for cheap summarization)
@@ -68,7 +75,7 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for p in data/outbreaks data/archive.json data/raw; do
+          for p in data/outbreaks data/nursing-homes data/archive.json data/raw; do
             if [ -e "$p" ]; then git add "$p"; fi
           done
           if git diff --staged --quiet; then
