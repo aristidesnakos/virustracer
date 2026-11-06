@@ -311,6 +311,8 @@ export default async function OutbreakPage({ params }: Props) {
                 timeline={timeline}
                 headingId="chart-heading"
                 reference={outbreak.chartReference}
+                casesLabel={outbreak.summary.casesLabel}
+                screeningLabel={outbreak.summary.screeningLabel}
               />
             </section>
 
@@ -331,7 +333,8 @@ export default async function OutbreakPage({ params }: Props) {
                   )
                 }
                 sources={outbreak.tableSources ?? outbreak.summary.source}
-                showCfr={outbreak.summary.fatalityBasis !== "all-cases"}
+                showCfr={outbreak.summary.fatalityBasis !== "all-cases" && !outbreak.summary.deathsNotReported}
+                casesLabel={outbreak.summary.casesLabel?.replace(/ cases$/i, "")}
               />
             </section>
 

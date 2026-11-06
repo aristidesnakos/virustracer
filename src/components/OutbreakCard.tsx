@@ -82,8 +82,10 @@ export default function OutbreakCard({
   const Heading = `h${headingLevel}` as const;
   const { outbreak, figures, trend, incidence, windowEnd, weekly, source } = snapshot;
   const stats: { label: string; value: number | null; tone: string }[] = [
-    { label: outbreak.summary.deathsQualifier ? `Deaths ${outbreak.summary.deathsQualifier}` : "Deaths", value: figures?.deaths ?? null, tone: "text-death" },
-    { label: "Confirmed cases", value: figures?.confirmed ?? null, tone: "text-confirmed" },
+    ...(outbreak.summary.deathsNotReported
+      ? []
+      : [{ label: outbreak.summary.deathsQualifier ? `Deaths ${outbreak.summary.deathsQualifier}` : "Deaths", value: figures?.deaths ?? null, tone: "text-death" }]),
+    { label: outbreak.summary.casesLabel ?? "Confirmed cases", value: figures?.confirmed ?? null, tone: "text-confirmed" },
   ];
   const change = incidence ? signedPct(incidence.confirmed.changePct) : null;
   const hasChart = weekly.length >= 2;
@@ -158,9 +160,13 @@ export default function OutbreakCard({
             </p>
             {incidence && windowEnd ? (
               <p className="mt-0.5 text-[0.9375rem] leading-snug text-ink-muted">
-                <strong className="font-semibold text-ink">{fmt(incidence.confirmed.last7)}</strong> new cases and{" "}
-                <strong className="font-semibold text-ink">{fmt(incidence.deaths.last7)}</strong> deaths in the 7
-                days to <span className="whitespace-nowrap">{shortDay(windowEnd)}</span>
+                <strong className="font-semibold text-ink">{fmt(incidence.confirmed.last7)}</strong> new cases
+                {incidence.deaths && (
+                  <>
+                    {" "}and <strong className="font-semibold text-ink">{fmt(incidence.deaths.last7)}</strong> deaths
+                  </>
+                )}{" "}
+                in the 7 days to <span className="whitespace-nowrap">{shortDay(windowEnd)}</span>
                 {change && <> ({change})</>}
               </p>
             ) : (

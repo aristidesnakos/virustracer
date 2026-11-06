@@ -90,7 +90,7 @@ export default function MethodologyPage() {
           rows={[
             [
               "Source",
-              "The outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO, or, where no infobox exists, the health authority\u2019s own weekly report (West Nile virus in Greece: EODY; measles in the United States: the CDC).",
+              "The outbreak\u2019s Wikipedia infobox, which cites the health ministries and WHO, or, where no infobox exists, the health authority\u2019s own weekly report (West Nile virus in Greece: EODY; measles in the United States: the CDC; Candida auris in the United States: the CDC\u2019s weekly notifiable-disease table).",
               "Official situation reports, each with its source.",
             ],
             [
@@ -100,7 +100,7 @@ export default function MethodologyPage() {
             ],
             [
               "Updated",
-              `Checked twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC; West Nile virus in Greece twice a day on its own schedule). An official weekly source (EODY\u2019s report, the CDC\u2019s measles page) adds a reading when a new week is published.`,
+              `Checked twice a day (${UPDATE_TIMES_UTC.join(" and ")} UTC; West Nile virus in Greece twice a day on its own schedule). An official weekly source (EODY\u2019s report, the CDC\u2019s measles page or its notifiable-disease table) adds a reading when a new week is published.`,
               "When we enter a report. It does not update on its own.",
             ],
             ["Card shows", "When the source was last checked.", "The date the figures were last verified."],
@@ -148,7 +148,11 @@ export default function MethodologyPage() {
         <p className={PROSE_NOTE}>
           A weekly report is about a week apart from the one before, so the largest-jump check applies only to
           two reports at most {SANITY_CHECKS.weeklyStalePrevDays} days apart (an extra mid-week report). Instead, a report is kept
-          only when the totals in its text and in its summary table agree, and the table adds up.
+          only when the totals in its text and in its summary table agree, and the table adds up. A week of the
+          CDC’s notifiable-disease table is kept only when its states add up to their regions, the regions to
+          the national row and the parts to the total. Those counts are provisional and the CDC says a cumulative
+          count can go down as states reconcile their data; such a week is not stored, it is logged for a person
+          to review.
         </p>
         <p className={PROSE_NOTE}>
           A reading that fails a check is rejected and logged, and the previous figures stay on the page.
@@ -229,6 +233,7 @@ export default function MethodologyPage() {
             <strong className="font-semibold text-ink">Most new deaths</strong> in the last {windowDays} days first.
           </li>
           <li>Ties are broken by most new confirmed cases in the same {windowDays} days, then alphabetically.</li>
+          <li>An outbreak whose source collects no deaths (Candida auris) counts as zero new deaths here.</li>
           <li>Outbreaks without enough history for a {windowDays}-day count come last in their group.</li>
         </ol>
         <p className={PROSE_P}>There is no editorial pinning and no combined severity score.</p>

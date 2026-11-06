@@ -13,6 +13,7 @@ import { dirname, resolve } from "node:path";
 import { extractInfobox, parseInfobox, withoutIgnored } from "./toll.mjs";
 import { parseReportText, reportRawRelPath } from "./eody.mjs";
 import { parseCdcReading } from "./cdc.mjs";
+import { parseNndssReading } from "./nndss.mjs";
 
 export const RAW_DIR = "data/raw/infobox";
 
@@ -99,6 +100,39 @@ export function verifyCdcRaw(snapshot, rawText) {
   if (asOf !== snapshot.date) return { ok: false, reason: `date: raw parses to ${asOf}, snapshot has ${snapshot.date}` };
   if (confirmed !== snapshot.confirmed) return { ok: false, reason: `confirmed: raw parses to ${confirmed}, snapshot has ${snapshot.confirmed}` };
   if (deaths !== snapshot.deaths) return { ok: false, reason: `deaths: raw parses to ${deaths}, snapshot has ${snapshot.deaths}` };
+  return { ok: true };
+}
+
+/**
+ * The same check for an NNDSS week's archived rows (scripts/lib/nndss.mjs
+ * `serializeNndssReading`): the checksum matches, and re-parsing them, with every sum
+ * checked again, gives the snapshot's date, clinical and screening cases, and no deaths.
+ * @param {{date: string, confirmed: number, deaths: number|null, screening?: number|null, rawSha256?: string}} snapshot
+ * @param {string} rawText
+ * @returns {{ok: true} | {ok: false, reason: string}}
+ */
+export function verifyNndssRaw(snapshot, rawText) {
+  if (typeof rawText !== "string") return { ok: false, reason: "no raw text" };
+  if (snapshot.rawSha256 && sha256(rawText) !== snapshot.rawSha256) {
+    return { ok: false, reason: "sha256 of raw text does not match rawSha256" };
+  }
+  let doc;
+  try {
+    doc = JSON.parse(rawText);
+  } catch {
+    return { ok: false, reason: "raw text is not the archived NNDSS reading (not JSON)" };
+  }
+  const parsed = parseNndssReading(doc);
+  if (!parsed.ok) return { ok: false, reason: `raw text does not parse as an NNDSS reading: ${parsed.reason}` };
+  const { weekEnding, clinical, screening } = parsed.reading;
+  if (weekEnding !== snapshot.date) return { ok: false, reason: `date: raw parses to ${weekEnding}, snapshot has ${snapshot.date}` };
+  if (clinical.cumulative !== snapshot.confirmed) {
+    return { ok: false, reason: `confirmed: raw parses to ${clinical.cumulative}, snapshot has ${snapshot.confirmed}` };
+  }
+  if (screening.cumulative !== (snapshot.screening ?? null)) {
+    return { ok: false, reason: `screening: raw parses to ${screening.cumulative}, snapshot has ${snapshot.screening ?? null}` };
+  }
+  if (snapshot.deaths !== null) return { ok: false, reason: `deaths: NNDSS has none, snapshot has ${snapshot.deaths}` };
   return { ok: true };
 }
 

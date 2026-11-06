@@ -64,8 +64,12 @@ export default async function OutbreakOpengraphImage({
           </div>
         </div>
         <div style={{ display: "flex", gap: 96 }}>
-          {stat(outbreak.summary.deathsQualifier ? `Deaths ${outbreak.summary.deathsQualifier}` : "Deaths reported", figures?.deaths ?? null, "#8a2a1f")}
-          {stat("Confirmed cases", figures?.confirmed ?? null, "#1c2433")}
+          {outbreak.summary.deathsNotReported
+            ? stat(outbreak.summary.casesLabel ?? "Confirmed cases", figures?.confirmed ?? null, "#8a2a1f")
+            : stat(outbreak.summary.deathsQualifier ? `Deaths ${outbreak.summary.deathsQualifier}` : "Deaths reported", figures?.deaths ?? null, "#8a2a1f")}
+          {outbreak.summary.deathsNotReported
+            ? stat(outbreak.summary.screeningLabel ?? "Screening cases", figures?.screening ?? null, "#1c2433")
+            : stat("Confirmed cases", figures?.confirmed ?? null, "#1c2433")}
         </div>
         <div style={{ fontSize: 26, color: "#4a5568" }}>
           {shareCardFooter(outbreak, figures)}

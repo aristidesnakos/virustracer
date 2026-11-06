@@ -8,6 +8,8 @@ export interface LatestFigures {
   date: string;
   confirmed: number | null;
   deaths: number | null;
+  /** Screening (colonisation) cases, for an outbreak whose source counts them apart (absent otherwise). */
+  screening?: number;
 }
 
 /**
@@ -17,7 +19,7 @@ export interface LatestFigures {
 export function latestFigures(timeline: readonly CaseDataPoint[]): LatestFigures | null {
   const date = latestDate(timeline);
   if (!date) return null;
-  const newest = (field: "confirmed" | "deaths"): number | null => {
+  const newest = (field: "confirmed" | "deaths" | "screening"): number | null => {
     let best: CaseDataPoint | null = null;
     for (const p of timeline) {
       if (p[field] === undefined) continue;
@@ -25,7 +27,8 @@ export function latestFigures(timeline: readonly CaseDataPoint[]): LatestFigures
     }
     return best?.[field] ?? null;
   };
-  return { date, confirmed: newest("confirmed"), deaths: newest("deaths") };
+  const screening = newest("screening");
+  return { date, confirmed: newest("confirmed"), deaths: newest("deaths"), ...(screening !== null ? { screening } : {}) };
 }
 
 const fmt = (n: number) => n.toLocaleString("en-US");
@@ -53,14 +56,16 @@ export function deathsSuffix(summary?: { deathsQualifier?: string }): string {
 export function describeFigures(
   figures: LatestFigures | null,
   fallback: string,
-  label: { shortName: string; places: string; summary?: { deathsQualifier?: string } },
+  label: { shortName: string; places: string; summary?: { deathsQualifier?: string; casesLabel?: string } },
   /** A closed, hand-curated record: say so instead of promising daily updates. A weekly source says weekly. */
   options: { archived?: boolean; weekly?: boolean } = {},
 ): string {
   if (!figures || (figures.deaths === null && figures.confirmed === null)) return fallback;
   const parts: string[] = [];
   if (figures.deaths !== null) parts.push(`${fmt(figures.deaths)} deaths${deathsSuffix(label.summary)}`);
-  if (figures.confirmed !== null) parts.push(`${fmt(figures.confirmed)} confirmed cases`);
+  if (figures.confirmed !== null) {
+    parts.push(`${fmt(figures.confirmed)} ${(label.summary?.casesLabel ?? "confirmed cases").toLowerCase()}`);
+  }
   const tail = options.archived
     ? "Archived record with map, timeline and sources."
     : options.weekly

@@ -185,7 +185,7 @@ describe("GET /api/v1/outbreaks", () => {
 
   it("latest matches the newest point the toll endpoint reports or the curated timeline", async () => {
     const list = JSON.parse(await outbreaksListResponse().text());
-    const latest = list.outbreaks[0].latest;
+    const latest = list.outbreaks.find((o: { slug: string }) => o.slug === outbreak.slug).latest;
     const toll = JSON.parse(await tollResponse(outbreak, req("/x")).text());
     const curatedLast = outbreak.casesTimeline.map((p) => p.date.slice(0, 10)).sort().at(-1) ?? "";
     expect(latest.date >= (toll.latest?.date ?? "")).toBe(true);

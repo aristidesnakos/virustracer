@@ -45,6 +45,12 @@ jobs:
         # below still run.
         run: node scripts/update-toll.mjs --adapter=cdc-measles
 
+      - name: Update CDC NNDSS figures
+        # Candida auris in the US: CDC's weekly notifiable-disease table on data.cdc.gov (one
+        # JSON query), published once a week; most runs find no new week and only refresh
+        # lastChecked. If data.cdc.gov refuses GitHub's runners, this logs a warning and exits 0.
+        run: node scripts/update-toll.mjs --adapter=cdc-nndss
+
       - name: Fetch feeds and update live data
         env:
           # OpenRouter key (uses DeepSeek V4 Flash for cheap summarization)

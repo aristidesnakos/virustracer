@@ -9,8 +9,17 @@ export interface TollSnapshot {
   date: string;
   confirmed: number;
   suspected: number | null;
-  deaths: number;
+  /** Null for a source that collects no deaths at all (CDC's NNDSS table), never a stand-in 0. */
+  deaths: number | null;
   recovered: number | null;
+  /**
+   * Screening (colonisation) cases, for a source that counts them apart from clinical cases
+   * (NNDSS Candida auris). Never part of `confirmed` or `suspected`.
+   */
+  screening?: number | null;
+  /** MMWR year and week of a reading from CDC's weekly NNDSS table. */
+  mmwrYear?: number;
+  mmwrWeek?: number;
   source: string;
   sourceUrl: string;
   revid?: number;

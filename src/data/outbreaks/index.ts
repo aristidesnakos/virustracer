@@ -1,3 +1,4 @@
+import { candidaAurisUs2026 } from "./candida-auris-us-2026";
 import { ebolaBundibugyo2026 } from "./ebola-bundibugyo-2026";
 import { hantavirusMvHondius2026 } from "./hantavirus-mv-hondius-2026";
 import { measlesBangladesh2026 } from "./measles-bangladesh-2026";
@@ -13,6 +14,7 @@ export type * from "./types";
  * if its figures are fetched automatically).
  */
 const OUTBREAKS: readonly OutbreakDefinition[] = [
+  candidaAurisUs2026,
   ebolaBundibugyo2026,
   hantavirusMvHondius2026,
   measlesBangladesh2026,

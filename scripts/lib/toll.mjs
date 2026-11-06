@@ -14,8 +14,9 @@
  * @property {string} date        UTC date, YYYY-MM-DD
  * @property {number} confirmed
  * @property {number|null} suspected
- * @property {number} deaths
+ * @property {number|null} deaths   null only for a source that collects no deaths (see validateSnapshot's allowNullDeaths)
  * @property {number|null} recovered
+ * @property {number|null} [screening] Screening (colonisation) cases, for a source that reports them apart from clinical cases (NNDSS C. auris)
  * @property {string} source
  * @property {string} sourceUrl
  * @property {number} [revid]
@@ -233,24 +234,28 @@ const isCount = (n) => typeof n === "number" && Number.isInteger(n) && n >= 0;
  * @param {Snapshot} next
  * @param {Snapshot|null|undefined} prev
  * @param {string} todayISO  YYYY-MM-DD or full ISO timestamp
- * @param {{stalePrevDays?: number}} [opts]  `WEEKLY_STALE_PREV_DAYS` for a weekly source
+ * @param {{stalePrevDays?: number, allowNullDeaths?: boolean}} [opts]  `WEEKLY_STALE_PREV_DAYS` for a weekly
+ *   source; `allowNullDeaths` for a source that collects no deaths at all (NNDSS), whose
+ *   snapshots carry `deaths: null` rather than a misleading 0.
  * @returns {{ok: boolean, reason?: string}}
  */
-export function validateSnapshot(next, prev, todayISO, { stalePrevDays = STALE_PREV_DAYS } = {}) {
+export function validateSnapshot(next, prev, todayISO, { stalePrevDays = STALE_PREV_DAYS, allowNullDeaths = false } = {}) {
   if (!next || typeof next !== "object") return { ok: false, reason: "no snapshot" };
   if (!isCount(next.confirmed)) return { ok: false, reason: `confirmed is not a non-negative integer (${next.confirmed})` };
-  if (!isCount(next.deaths)) return { ok: false, reason: `deaths is not a non-negative integer (${next.deaths})` };
-  for (const k of /** @type {const} */ (["suspected", "recovered"])) {
+  if (!(allowNullDeaths && next.deaths === null) && !isCount(next.deaths)) {
+    return { ok: false, reason: `deaths is not a non-negative integer (${next.deaths})` };
+  }
+  for (const k of /** @type {const} */ (["suspected", "recovered", "screening"])) {
     if (next[k] !== null && next[k] !== undefined && !isCount(next[k])) {
       return { ok: false, reason: `${k} is not a non-negative integer (${next[k]})` };
     }
   }
-  if (next.deaths > next.confirmed) {
+  if (next.deaths !== null && next.deaths > next.confirmed) {
     return { ok: false, reason: `deaths (${next.deaths}) exceed confirmed (${next.confirmed})` };
   }
   if (!prev) return { ok: true };
 
-  for (const k of /** @type {const} */ (["confirmed", "deaths", "recovered"])) {
+  for (const k of /** @type {const} */ (["confirmed", "deaths", "recovered", "screening"])) {
     const a = next[k];
     const b = prev[k];
     if (a !== null && a !== undefined && b !== null && b !== undefined && a < b) {
@@ -262,6 +267,7 @@ export function validateSnapshot(next, prev, todayISO, { stalePrevDays = STALE_P
   const prevIsStale = Number.isFinite(ageDays) && ageDays > stalePrevDays;
   if (!prevIsStale) {
     for (const k of /** @type {const} */ (["confirmed", "deaths"])) {
+      if (next[k] === null || prev[k] === null) continue;
       if (prev[k] > 0 && next[k] > prev[k] * (1 + MAX_JUMP_RATIO)) {
         return {
           ok: false,
@@ -282,7 +288,8 @@ function sameValues(a, b) {
     a.confirmed === b.confirmed &&
     a.deaths === b.deaths &&
     (a.suspected ?? null) === (b.suspected ?? null) &&
-    (a.recovered ?? null) === (b.recovered ?? null)
+    (a.recovered ?? null) === (b.recovered ?? null) &&
+    (a.screening ?? null) === (b.screening ?? null)
   );
 }
 

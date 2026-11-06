@@ -117,9 +117,9 @@ describe("script registry stays in step with the site registry", () => {
       const o = getOutbreak(s.slug)!;
       expect(Boolean(s.toll), s.slug).toBe(o.source.kind !== "manual");
       // The reader matches the declared source: a Wikipedia page or an official report
-      // (EODY's weekly PDF, or the CDC's measles page).
+      // (EODY's weekly PDF, the CDC's measles page, or CDC's weekly NNDSS table).
       if (s.toll && o.source.kind === "wikipedia-infobox") expect(tollAdapter(s), s.slug).toBe("wikipedia");
-      if (s.toll && o.source.kind === "official-report") expect(["eody-report", "cdc-measles"], s.slug).toContain(tollAdapter(s));
+      if (s.toll && o.source.kind === "official-report") expect(["eody-report", "cdc-measles", "cdc-nndss"], s.slug).toContain(tollAdapter(s));
     }
   });
 

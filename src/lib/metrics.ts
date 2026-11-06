@@ -4,12 +4,15 @@
 
 const MS_PER_DAY = 24 * 60 * 60 * 1000;
 
-/** One cumulative reading. `recovered` is optional because not every source reports it. */
+/**
+ * One cumulative reading. `recovered` is optional because not every source reports it;
+ * `deaths` is null for a source that collects no deaths at all (CDC's NNDSS table).
+ */
 export interface MetricsPoint {
   /** ISO date (YYYY-MM-DD or full timestamp), interpreted in UTC. */
   date: string;
   confirmed: number;
-  deaths: number;
+  deaths: number | null;
   recovered?: number | null;
 }
 
@@ -107,15 +110,17 @@ export interface WeeklyPeriod {
   /** Last day (UTC) of the 7-day period. */
   periodEnd: string;
   newConfirmed: number;
-  newDeaths: number;
+  /** Null when the source reports no deaths (`Metrics.deathsReported` false). */
+  newDeaths: number | null;
 }
 
 export interface DailyPoint {
   date: string;
   confirmed: number;
-  deaths: number;
+  /** Null when the source reports no deaths. */
+  deaths: number | null;
   newConfirmed: number;
-  newDeaths: number;
+  newDeaths: number | null;
   /** Mean of `newConfirmed` over the 7 days up to and including this date (null for the first 6). */
   newConfirmed7dAvg: number | null;
   /** True when the cumulative values were filled in between two dated readings. */
@@ -132,10 +137,15 @@ export interface Metrics {
   asOf: string | null;
   /** Last day of the windows used for incidence and growth (see `maxReportingLagDays`). */
   windowEnd: string | null;
-  /** New confirmed cases / deaths in the last 7 days vs the 7 before. */
+  /**
+   * False when any reading has `deaths: null` (a source that collects no deaths): every
+   * death-based figure (deaths incidence, fatality ratios, daily deaths) is then null.
+   */
+  deathsReported: boolean;
+  /** New confirmed cases / deaths in the last 7 days vs the 7 before; `deaths` null when not reported. */
   incidence: {
     confirmed: { last7: number; prev7: number; changePct: number | null };
-    deaths: { last7: number; prev7: number; changePct: number | null };
+    deaths: { last7: number; prev7: number; changePct: number | null } | null;
   } | null;
   /**
    * Exponential growth rate of weekly confirmed cases, per day, with a 95% range
@@ -180,11 +190,13 @@ interface GridRow {
  * flagged, which spreads a multi-day jump evenly instead of dumping it on one day.
  */
 function buildGrid(points: readonly MetricsPoint[]): GridRow[] {
-  const byDay = new Map<number, MetricsPoint>();
+  const byDay = new Map<number, { confirmed: number; deaths: number }>();
   for (const p of points) {
     const d = dayNum(p.date);
-    if (Number.isNaN(d) || !Number.isFinite(p.confirmed) || !Number.isFinite(p.deaths)) continue;
-    byDay.set(d, p); // last reading of a day wins
+    // No deaths reported: carried as 0 internally; computeMetrics then nulls every death figure.
+    const deaths = p.deaths === null ? 0 : p.deaths;
+    if (Number.isNaN(d) || !Number.isFinite(p.confirmed) || !Number.isFinite(deaths)) continue;
+    byDay.set(d, { confirmed: p.confirmed, deaths }); // last reading of a day wins
   }
   const days = [...byDay.keys()].sort((a, b) => a - b);
   const obs: { day: number; confirmed: number; deaths: number }[] = [];
@@ -231,12 +243,18 @@ export function reproductionFromGrowth(r: number, mean: number, sd: number): num
 
 const EMPTY_CFR = { naive: null, delayAdjusted: null, resolved: null } as const;
 
-function insufficient(reason: string, asOf: string | null, assumptions: AppliedAssumptions): Metrics {
+function insufficient(
+  reason: string,
+  asOf: string | null,
+  assumptions: AppliedAssumptions,
+  deathsReported: boolean,
+): Metrics {
   return {
     status: "insufficient_data",
     reason,
     asOf,
     windowEnd: null,
+    deathsReported,
     incidence: null,
     growth: null,
     rt: null,
@@ -253,8 +271,9 @@ function insufficient(reason: string, asOf: string | null, assumptions: AppliedA
  */
 export function computeMetrics(points: readonly MetricsPoint[], pathogen: PathogenAssumptions): Metrics {
   const assumptions = applyAssumptions(pathogen);
+  const deathsReported = !points.some((p) => p.deaths === null);
   const grid = buildGrid(points);
-  if (grid.length === 0) return insufficient("No readings yet.", null, assumptions);
+  if (grid.length === 0) return insufficient("No readings yet.", null, assumptions, deathsReported);
 
   const last = grid[grid.length - 1];
   const asOf = isoOf(last.day);
@@ -262,13 +281,14 @@ export function computeMetrics(points: readonly MetricsPoint[], pathogen: Pathog
 
   const readingsInTwoWeeks = grid.filter((g) => g.observed && g.day > last.day - 2 * W).length;
   if (grid[0].day > last.day - 2 * W) {
-    return insufficient(`Need at least ${2 * W} days of history; have ${last.day - grid[0].day}.`, asOf, assumptions);
+    return insufficient(`Need at least ${2 * W} days of history; have ${last.day - grid[0].day}.`, asOf, assumptions, deathsReported);
   }
   if (readingsInTwoWeeks < assumptions.minReadingsInTwoWeeks) {
     return insufficient(
       `Need at least ${assumptions.minReadingsInTwoWeeks} dated readings in the last 14 days; have ${readingsInTwoWeeks}.`,
       asOf,
       assumptions,
+      deathsReported,
     );
   }
 
@@ -296,9 +316,9 @@ export function computeMetrics(points: readonly MetricsPoint[], pathogen: Pathog
     daily.push({
       date: isoOf(g.day),
       confirmed: Math.round(g.confirmed),
-      deaths: Math.round(g.deaths),
+      deaths: deathsReported ? Math.round(g.deaths) : null,
       newConfirmed: Math.round(newConfirmed * 10) / 10,
-      newDeaths: Math.round(newDeaths * 10) / 10,
+      newDeaths: deathsReported ? Math.round(newDeaths * 10) / 10 : null,
       newConfirmed7dAvg: avg === null ? null : Math.round(avg * 10) / 10,
       interpolated: !g.observed,
     });
@@ -313,7 +333,7 @@ export function computeMetrics(points: readonly MetricsPoint[], pathogen: Pathog
     weekly.unshift({
       periodEnd: isoOf(end),
       newConfirmed: Math.round(at(end).confirmed - at(start).confirmed),
-      newDeaths: Math.round(at(end).deaths - at(start).deaths),
+      newDeaths: deathsReported ? Math.round(at(end).deaths - at(start).deaths) : null,
     });
   }
 
@@ -325,11 +345,10 @@ export function computeMetrics(points: readonly MetricsPoint[], pathogen: Pathog
       prev7: prv.newConfirmed,
       changePct: changePct(cur.newConfirmed, prv.newConfirmed),
     },
-    deaths: {
-      last7: cur.newDeaths,
-      prev7: prv.newDeaths,
-      changePct: changePct(cur.newDeaths, prv.newDeaths),
-    },
+    deaths:
+      cur.newDeaths !== null && prv.newDeaths !== null
+        ? { last7: cur.newDeaths, prev7: prv.newDeaths, changePct: changePct(cur.newDeaths, prv.newDeaths) }
+        : null,
   };
 
   let growth: Metrics["growth"] = null;
@@ -372,10 +391,11 @@ export function computeMetrics(points: readonly MetricsPoint[], pathogen: Pathog
     status: "ok",
     asOf,
     windowEnd: isoOf(windowEnd),
+    deathsReported,
     incidence,
     growth,
     rt,
-    cfr: {
+    cfr: !deathsReported ? { ...EMPTY_CFR } : {
       naive: last.confirmed > 0 ? last.deaths / last.confirmed : null,
       delayAdjusted: lagged !== null && lagged > 0 ? last.deaths / lagged : null,
       resolved: resolvedDenominator > 0 ? last.deaths / resolvedDenominator : null,

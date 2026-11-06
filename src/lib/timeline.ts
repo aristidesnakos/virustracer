@@ -23,11 +23,12 @@ function snapshotToPoint(s: TollSnapshot): CaseDataPoint {
     date: s.date,
     label: formatLabel(s.date),
     confirmed: s.confirmed,
-    deaths: s.deaths,
     note: `Auto-tracked from ${s.source}`,
     source: s.source,
   };
+  if (s.deaths !== null && s.deaths !== undefined) point.deaths = s.deaths;
   if (s.suspected !== null && s.suspected !== undefined) point.suspected = s.suspected;
+  if (s.screening !== null && s.screening !== undefined) point.screening = s.screening;
   if (s.recovered !== null && s.recovered !== undefined) point.recovered = s.recovered;
   return point;
 }

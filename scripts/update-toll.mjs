@@ -10,9 +10,12 @@
  *  - "cdc-measles": the CDC's national measles page plus the two JSON files behind it,
  *    which must agree (scripts/lib/cdc.mjs). Updated weekly; the snapshot is dated by the
  *    Thursday its counts run to.
+ *  - "cdc-nndss": CDC's weekly notifiable-disease table on data.cdc.gov (NNDSS Weekly
+ *    Data), whose rows must add up (scripts/lib/nndss.mjs). One snapshot per MMWR week,
+ *    dated by the Saturday ending it; every week after the newest stored one is read.
  * Runs for every automated outbreak in scripts/lib/outbreak-registry.mjs, or:
  *   --outbreak=<slug>          just one
- *   --adapter=<wikipedia|eody-report|cdc-measles>  only outbreaks read that way
+ *   --adapter=<wikipedia|eody-report|cdc-measles|cdc-nndss>  only outbreaks read that way
  *   --report=<pdf-url>         (eody-report, repeatable) read these reports instead of
  *                              the newest one in the feed: backfill or repair
  * For an eody-report outbreak it writes `season_over=true|false` to $GITHUB_OUTPUT
@@ -39,12 +42,25 @@ import {
 import { archiveInfobox, archiveReportText, sha256 } from "./lib/raw.mjs";
 import { inspectReportFeed, isEodyUrl, normalizeUrl, parseReportText, seasonIsOver } from "./lib/eody.mjs";
 import { buildReading, extractPageExcerpt, isCdcUrl, parseCdcReading, serializeReading, snapshotFromReading } from "./lib/cdc.mjs";
+import {
+  buildNndssReading,
+  groupWeeks,
+  isNndssUrl,
+  nndssQueryUrl,
+  parseNndssReading,
+  serializeNndssReading,
+  snapshotFromNndssReading,
+} from "./lib/nndss.mjs";
 import { USER_AGENT, dataFile, selectOutbreaksWith, tollAdapter } from "./lib/outbreak-registry.mjs";
 
 const TIMEOUT_MS = 20_000;
 const PDF_MAX_BYTES = 20 * 1024 * 1024;
 /** The CDC page is about 100 KB and each data file under 30 KB; anything near this is not them. */
 const CDC_MAX_BYTES = 3 * 1024 * 1024;
+/** A full year of both C. auris labels is about 1.6 MB of JSON (53 weeks x 140 rows). */
+const NNDSS_MAX_BYTES = 12 * 1024 * 1024;
+/** Rows asked for in one query; a full answer of exactly this many means it was cut short. */
+const NNDSS_ROW_LIMIT = 50_000;
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = resolve(__dirname, "..");
@@ -546,6 +562,128 @@ async function updateFromCdcMeasles(outbreak) {
   console.log(`${tollLabel}: ${next.snapshots.length} snapshot(s), latest ${next.snapshots.at(-1)?.date ?? "none"}.`);
 }
 
+/** Fetch JSON from data.cdc.gov only, without following a redirect elsewhere; stops past NNDSS_MAX_BYTES. */
+async function fetchNndssJson(url) {
+  if (!isNndssUrl(url)) throw new Error(`refusing to fetch ${oneLine(url)}: not an https data.cdc.gov URL`);
+  const res = await fetch(url, {
+    headers: { "User-Agent": USER_AGENT, Accept: "application/json" },
+    signal: AbortSignal.timeout(TIMEOUT_MS * 3),
+    redirect: "manual",
+  });
+  if (res.status >= 300 && res.status < 400) {
+    throw new Error(`data.cdc.gov redirected to ${oneLine(res.headers.get("location") ?? "?")}; not followed`);
+  }
+  if (!res.ok) throw new Error(`data.cdc.gov responded HTTP ${res.status}`);
+  const declared = Number(res.headers.get("content-length"));
+  if (declared > NNDSS_MAX_BYTES) throw new Error(`the answer is ${declared} bytes, over the ${NNDSS_MAX_BYTES} limit`);
+  const chunks = [];
+  let size = 0;
+  for await (const chunk of res.body ?? []) {
+    size += chunk.length;
+    if (size > NNDSS_MAX_BYTES) throw new Error(`the answer is over the ${NNDSS_MAX_BYTES}-byte limit`);
+    chunks.push(chunk);
+  }
+  return JSON.parse(Buffer.concat(chunks).toString("utf8"));
+}
+
+/**
+ * Read CDC's weekly NNDSS table into one snapshot per MMWR week. The table keeps every
+ * week of the year as it was published, so an empty store is filled from week 1 (the
+ * backfill), and later runs read only the weeks after the newest stored one. A week whose
+ * rows do not add up stops the run there (it is retried next time); a week whose
+ * cumulative count is lower than the last stored one (states reconciling provisional
+ * counts) is logged for manual review and skipped, never stored.
+ */
+async function updateFromCdcNndss(outbreak) {
+  const { slug, toll } = outbreak;
+  const tollJson = dataFile(ROOT, slug, "toll");
+  const tollLabel = `data/outbreaks/${slug}/toll.json`;
+  const nowISO = new Date().toISOString();
+  const labels = toll.labels;
+
+  let store;
+  try {
+    store = readStore(tollJson);
+  } catch (err) {
+    console.log(`::warning::Toll update for ${slug} skipped: ${err.message}`);
+    return;
+  }
+  const last = store.snapshots.at(-1) ?? null;
+  console.log(last ? `Last stored week: ${last.date} clinical=${last.confirmed} screening=${last.screening ?? "n/a"}` : "No stored weeks yet: reading the whole year.");
+
+  let rows;
+  try {
+    const url = nndssQueryUrl({ year: toll.year, labels: [labels.clinical, labels.screening], limit: NNDSS_ROW_LIMIT });
+    console.log(`Fetching the NNDSS weekly table (${toll.year} on) from data.cdc.gov...`);
+    rows = await fetchNndssJson(url);
+  } catch (err) {
+    console.log(`::warning::Toll update for ${slug} skipped, could not fetch the NNDSS table: ${oneLine(err instanceof Error ? err.message : err)}`);
+    return;
+  }
+  if (!Array.isArray(rows)) {
+    console.log(`::error::The NNDSS answer for ${slug} is not a list of rows (an error object?); ${tollLabel} NOT updated.`);
+    return;
+  }
+  if (rows.length >= NNDSS_ROW_LIMIT) {
+    console.log(`::error::The NNDSS answer for ${slug} hit the ${NNDSS_ROW_LIMIT}-row limit, so it may be cut short; ${tollLabel} NOT updated.`);
+    return;
+  }
+
+  const { weeks, laterYears } = groupWeeks(rows, { year: toll.year, labels: [labels.clinical, labels.screening] });
+  if (laterYears.length) {
+    console.log(
+      `::notice::The NNDSS table for ${slug} now has ${laterYears.join(", ")} data. ${toll.year} weeks are still read; the outbreak's status and toll.year need a decision by hand.`,
+    );
+  }
+  if (weeks.length === 0) {
+    console.log(`::warning::The NNDSS table has no ${toll.year} rows for ${slug}; nothing read.`);
+    return;
+  }
+
+  let next = store;
+  let stored = 0;
+  for (const w of weeks) {
+    const doc = buildNndssReading({ ...w, labels });
+    const parsed = parseNndssReading(doc, { nowISO });
+    if (!parsed.ok) {
+      console.log(
+        `::error::NNDSS week ${w.week} of ${w.year} for ${slug} failed its cross-checks: ${oneLine(parsed.reason)}. Nothing stored from it or later weeks; retried next run.`,
+      );
+      break;
+    }
+    const snapshot = snapshotFromNndssReading(parsed.reading, toll);
+    const newest = next.snapshots.at(-1) ?? null;
+    if (newest && snapshot.date < newest.date) continue; // already past this week
+    if (newest && snapshot.date === newest.date) {
+      if (newest.confirmed !== snapshot.confirmed || (newest.screening ?? null) !== snapshot.screening) {
+        console.log(
+          `::warning::${slug}: CDC's table now shows clinical=${snapshot.confirmed} screening=${snapshot.screening} for the week to ${snapshot.date}; ${tollLabel} has clinical=${newest.confirmed} screening=${newest.screening ?? "n/a"}. Left as stored; needs manual review.`,
+        );
+      }
+      continue;
+    }
+    const verdict = validateSnapshot(snapshot, newest, snapshot.date, { stalePrevDays: WEEKLY_STALE_PREV_DAYS, allowNullDeaths: true });
+    if (!verdict.ok) {
+      console.log(
+        `::warning::NNDSS week ${w.week} of ${w.year} (to ${snapshot.date}) for ${slug} not stored: ${verdict.reason}. NNDSS counts are provisional and a cumulative count can fall when states reconcile their data; this week needs manual review.`,
+      );
+      continue;
+    }
+    const raw = archiveReportText(ROOT, toll.rawPrefix, snapshot.date, serializeNndssReading(doc));
+    if (!raw.ok) console.log(`::warning::NNDSS rows for ${snapshot.date} not archived: ${raw.reason}. Snapshot stored without rawPath.`);
+    const full = raw.ok ? { ...snapshot, rawPath: raw.rawPath, rawSha256: raw.rawSha256 } : snapshot;
+    next = applySnapshot(next, full, nowISO, { appendUnchanged: true });
+    stored++;
+    console.log(`Stored week ${w.week} (to ${snapshot.date}): clinical=${snapshot.confirmed} screening=${snapshot.screening}.`);
+  }
+  next = { ...next, lastChecked: nowISO };
+
+  mkdirSync(dirname(tollJson), { recursive: true });
+  writeFileSync(tollJson, JSON.stringify(next, null, 2) + "\n");
+  const latest = next.snapshots.at(-1);
+  console.log(`${tollLabel}: ${stored} week(s) stored, ${next.snapshots.length} snapshot(s), latest ${latest?.date ?? "none"}.`);
+}
+
 function flagValues(name, argv = process.argv.slice(2)) {
   return argv.filter((a) => a.startsWith(`--${name}=`)).map((a) => a.slice(name.length + 3));
 }
@@ -556,7 +694,7 @@ async function main() {
   const reportUrls = flagValues("report");
   const outbreaks = selectOutbreaksWith("toll").filter((o) => !adapter || tollAdapter(o) === adapter);
   if (adapter && outbreaks.length === 0) {
-    console.log(`::warning::No automated outbreak is read with --adapter=${oneLine(adapter)} (wikipedia, eody-report or cdc-measles); nothing done.`);
+    console.log(`::warning::No automated outbreak is read with --adapter=${oneLine(adapter)} (wikipedia, eody-report, cdc-measles or cdc-nndss); nothing done.`);
   }
   if (reportUrls.length && !(outbreaks.length === 1 && tollAdapter(outbreaks[0]) === "eody-report")) {
     console.log("::warning::--report needs --outbreak=<slug> naming one eody-report outbreak; nothing done.");
@@ -568,6 +706,7 @@ async function main() {
       const adapterName = tollAdapter(outbreak);
       if (adapterName === "eody-report") await updateFromEodyReport(outbreak, reportUrls);
       else if (adapterName === "cdc-measles") await updateFromCdcMeasles(outbreak);
+      else if (adapterName === "cdc-nndss") await updateFromCdcNndss(outbreak);
       else await updateFromWikipedia(outbreak);
     } catch (err) {
       // One outbreak failing must not stop the others.

@@ -91,7 +91,7 @@ describe("computeMetrics", () => {
     const m = computeMetrics(exponential(30, 100, 0, 0.5), EBOLA);
     expect(m.incidence!.confirmed.last7).toBe(700);
     expect(m.incidence!.confirmed.prev7).toBe(700);
-    expect(m.incidence!.deaths.last7).toBe(350);
+    expect(m.incidence!.deaths!.last7).toBe(350);
     const last = m.weekly[m.weekly.length - 1];
     expect(last.periodEnd).toBe(m.windowEnd);
     expect(last.newConfirmed).toBe(700);
@@ -136,8 +136,8 @@ describe("computeMetrics", () => {
     const pts = exponential(30, 100, 0, 0.4).map((p) => ({ ...p, recovered: 500 }));
     const m = computeMetrics(pts, EBOLA);
     const last = pts[pts.length - 1];
-    expect(m.cfr.naive).toBeCloseTo(last.deaths / last.confirmed, 10);
-    expect(m.cfr.resolved).toBeCloseTo(last.deaths / (last.deaths + 500), 10);
+    expect(m.cfr.naive).toBeCloseTo(last.deaths! / last.confirmed, 10);
+    expect(m.cfr.resolved).toBeCloseTo(last.deaths! / (last.deaths! + 500), 10);
     // With steady incidence, the delay-adjusted ratio divides by a smaller, earlier case count.
     expect(m.cfr.delayAdjusted!).toBeGreaterThan(m.cfr.naive!);
   });
@@ -233,7 +233,7 @@ describe("per-pathogen assumptions", () => {
     expect(m.windowEnd).toBe("2026-10-01");
     // The week to the latest report is exactly that report's increase.
     expect(m.incidence!.confirmed.last7).toBe(27);
-    expect(m.incidence!.deaths.last7).toBe(5);
+    expect(m.incidence!.deaths!.last7).toBe(5);
     expect(m.rt).toBeNull();
   });
 });
