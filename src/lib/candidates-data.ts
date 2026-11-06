@@ -19,6 +19,12 @@ export interface CandidateSignal {
 export interface CandidatesData {
   lastExtracted: string;
   candidates: CandidateSignal[];
+  /**
+   * Ids of articles the model has already read (including ones that named no country), so
+   * the updater does not ask again. Written by scripts/fetch-feeds.mjs; absent in old files.
+   * Not used for display or in any API output.
+   */
+  checkedIds?: string[];
 }
 
 export function getCandidatesData(slug: string): CandidatesData {
