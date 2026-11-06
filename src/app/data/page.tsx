@@ -4,6 +4,7 @@ import { getDefaultOutbreak, listOutbreaks } from "@/data/outbreaks";
 import { API_CACHE_SECONDS, API_RATE_LIMIT, MAX_LIMIT, attributionFor } from "@/lib/api";
 import { ASSUMPTIONS, WEEKLY_MIN_READINGS_IN_TWO_WEEKS } from "@/lib/metrics";
 import { COMMERCIAL_PATH } from "@/lib/commercial";
+import { NursingHomesDataSection } from "@/components/NursingHomesDocs";
 import { CORRECTIONS_URL } from "@/lib/methodology";
 import { OUTBREAKS_API_PATH, legacyApiPath, outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
 import { DATA_LICENSE, DATA_LICENSE_NAME, SITE_NAME, SITE_URL, absoluteUrl } from "@/lib/site";
@@ -316,6 +317,8 @@ console.log(growth.trend, rt.estimate);`}</pre>
               and the false alarms are few, and the ledger exists to find out.
             </p>
           </section>
+
+          <NursingHomesDataSection />
 
           <section aria-labelledby="provenance" className="space-y-3">
             <h2 id="provenance" className={h2}>

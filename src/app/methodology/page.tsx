@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P, ProseTable } from "@/components/StaticPage";
 import { STATUS_HEADING, STATUS_ORDER } from "@/lib/home-snapshot";
+import { NursingHomesMethodSection } from "@/components/NursingHomesDocs";
 import { ASSUMPTIONS, WEEKLY_MIN_READINGS_IN_TWO_WEEKS } from "@/lib/metrics";
 import { SANITY_CHECKS, UPDATE_TIMES_UTC } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
@@ -249,6 +250,8 @@ export default function MethodologyPage() {
           the direction of each trend rather than the size of the numbers.
         </p>
       </section>
+
+      <NursingHomesMethodSection />
 
       <section aria-labelledby="not" className="space-y-3">
         <h2 id="not" className={PROSE_H2}>

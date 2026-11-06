@@ -6,6 +6,7 @@ import { newestDate, SITEMAP_PRIORITY, sitemapChangeFrequency } from "@/lib/seo"
 import { outbreakPath } from "@/lib/outbreak-paths";
 import { COMMERCIAL_PATH } from "@/lib/commercial";
 import { absoluteUrl } from "@/lib/site";
+import { nursingHomeSitemapEntries } from "@/lib/nursing-homes-sitemap";
 
 const toDate = (iso: string | null | undefined): Date | undefined => (iso ? new Date(iso) : undefined);
 
@@ -32,5 +33,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: sitemapChangeFrequency(outbreak.status),
       priority: SITEMAP_PRIORITY[outbreak.status],
     })),
+    ...nursingHomeSitemapEntries(),
   ];
 }
