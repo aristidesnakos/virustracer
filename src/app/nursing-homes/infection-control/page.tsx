@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P, ProseTable } from "@/components/StaticPage";
+import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P } from "@/components/StaticPage";
+import NumberTable from "@/components/NumberTable";
 import SeverityGrid from "@/components/SeverityGrid";
 import {
   CITATIONS_API_PATH,
@@ -106,7 +107,7 @@ export default function InfectionControlPage() {
           &ldquo;Last 12 months&rdquo; counts surveys dated {national ? `${longDate(national.since)} to ${longDate(national.release)}` : "in the year before the release"}.
           CMS adds surveys weeks after they happen, so the latest months are usually incomplete. Pick a state to search its homes.
         </p>
-        <ProseTable
+        <NumberTable
           caption="F880 citations by state"
           head={["State", "Citations, last 12 months", "Homes cited, last 12 months", "G or above", "Citations in CMS file"]}
           rows={sorted.map((s) => [

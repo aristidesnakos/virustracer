@@ -3,7 +3,6 @@
 import { useMemo, useState } from "react";
 import {
   CartesianGrid,
-  LabelList,
   Line,
   LineChart,
   ResponsiveContainer,
@@ -26,8 +25,8 @@ export interface RatePoint {
 }
 
 // Categorical slots 1-3 of the dataviz reference palette, validated against the page
-// surface (CVD and normal-vision separation pass; aqua is under 3:1, so the series are
-// also labelled at the line end and the same figures are in the table below the chart).
+// surface (CVD and normal-vision separation pass; aqua is under 3:1, so the legend names
+// each series with its latest value and the same figures are in the tables below).
 const SERIES = [
   { key: "covid", label: "COVID-19", color: "#2a78d6" },
   { key: "flu", label: "Influenza", color: "#eb6834" },
@@ -73,19 +72,10 @@ export default function NursingHomeRatesChart({ points }: { points: RatePoint[] 
       ? `Line chart of weekly ${words} per 100,000 nursing-home residents nationally, ${fmtWeek(rows[0].t)} to ${fmtWeek(last.t)}. Latest week: ` +
         SERIES.map((s) => `${s.label} ${last[s.label] === null ? "no data" : fmtRate(last[s.label] as number)}`).join(", ") + "."
       : "No data yet.";
-    return { data: rows, ticks: rows.length ? evenTicks(rows[0].t, last!.t, 6) : [], summary: text };
+    return { data: rows, ticks: rows.length ? evenTicks(rows[0].t, last!.t, 5) : [], summary: text };
   }, [points, measure]);
 
-  const lastIndex = data.length - 1;
-  const endLabel = (name: string) =>
-    function EndLabel(props: { x?: number | string; y?: number | string; index?: number }) {
-      if (props.index !== lastIndex || props.x === undefined || props.y === undefined) return null;
-      return (
-        <text x={Number(props.x) + 6} y={Number(props.y)} dy={4} fontSize={12} fill="var(--ink-muted)">
-          {name}
-        </text>
-      );
-    };
+  const last = data.at(-1);
 
   return (
     <figure className="space-y-3" aria-labelledby="rates-chart-title">
@@ -107,18 +97,23 @@ export default function NursingHomeRatesChart({ points }: { points: RatePoint[] 
           ))}
         </div>
       </div>
-      <ul className="flex flex-wrap gap-x-5 gap-y-1 text-[0.8125rem] font-medium text-ink-muted" aria-label="Chart legend">
+      <ul className="flex flex-wrap gap-x-5 gap-y-1 text-[0.8125rem] font-medium text-ink-muted" aria-label="Chart legend, with the latest week's values">
         {SERIES.map((s) => (
           <li key={s.key} className="flex items-center gap-2">
             <span className="h-0 w-6" style={{ borderTop: `2px solid ${s.color}` }} aria-hidden />
             {s.label}
+            {last && (
+              <span className="tabular-nums text-ink">
+                {last[s.label] === null ? "no data" : fmtRate(last[s.label] as number)}
+              </span>
+            )}
           </li>
         ))}
       </ul>
       <p className="sr-only">{summary}</p>
       <div className="h-[18rem] sm:h-[20rem]">
         <ResponsiveContainer width="100%" height="100%">
-          <LineChart data={data} margin={{ top: 8, right: 64, left: 0, bottom: 0 }}>
+          <LineChart data={data} margin={{ top: 8, right: 16, left: 0, bottom: 0 }}>
             <CartesianGrid strokeDasharray="3 3" stroke="var(--rule)" vertical={false} />
             <XAxis
               dataKey="t"
@@ -144,9 +139,7 @@ export default function NursingHomeRatesChart({ points }: { points: RatePoint[] 
                 activeDot={{ r: 4, stroke: "var(--panel)", strokeWidth: 2 }}
                 connectNulls={false}
                 isAnimationActive={false}
-              >
-                <LabelList dataKey={s.label} content={endLabel(s.label)} />
-              </Line>
+              />
             ))}
           </LineChart>
         </ResponsiveContainer>

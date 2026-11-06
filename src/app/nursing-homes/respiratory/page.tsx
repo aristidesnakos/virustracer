@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P, ProseTable } from "@/components/StaticPage";
+import StaticPage, { PROSE_H2, PROSE_LINK, PROSE_NOTE, PROSE_P } from "@/components/StaticPage";
+import NumberTable from "@/components/NumberTable";
 import NursingHomeRatesChart, { type RatePoint } from "@/components/NursingHomeRatesChart";
 import {
   NATIONAL,
@@ -124,7 +125,7 @@ export default function RespiratoryPage() {
           By state, week ending {longDate(rates?.latestWeek)}
         </h2>
         <p className={PROSE_P}>Weekly rates per 100,000 residents. &ldquo;No data&rdquo; is missing data, not zero.</p>
-        <ProseTable
+        <NumberTable
           caption={`Nursing-home resident rates per 100,000 by state, week ending ${rates?.latestWeek}`}
           head={["State", "COVID-19 cases", "COVID-19 hosp.", "Flu cases", "Flu hosp.", "RSV cases", "RSV hosp."]}
           rows={latestRates.map((r) => [
@@ -154,7 +155,7 @@ export default function RespiratoryPage() {
             counts are not comparable; they are in the API, flagged <code className="font-mono">thinReporting</code>.
           </p>
         )}
-        <ProseTable
+        <NumberTable
           caption={`Nursing-home resident counts by state, week ending ${fullWeek}`}
           head={["State", "Homes reporting", "Residents", "COVID-19 cases", "COVID-19 hosp.", "Flu cases", "RSV cases"]}
           rows={weekCounts.map((r) => [
