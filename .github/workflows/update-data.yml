@@ -17,7 +17,9 @@ concurrency:
 jobs:
   update:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    # 22, not 10: the feed step alone takes about 7.5 minutes, and at 10 the job was cancelled before
+    # the commit step in 12 of the 14 runs up to 2026-11-06, so no data was saved.
+    timeout-minutes: 22
 
     steps:
       - name: Checkout repository
@@ -66,7 +68,10 @@ jobs:
         run: node scripts/fetch-feeds.mjs
 
       - name: Archive sources (Internet Archive)
-        # Best-effort and rate-limited; never fails the job (exits 0 on error).
+        # Best-effort and rate-limited; never fails the job (exits 0 on error). The 5-minute cap and
+        # continue-on-error mean a slow Internet Archive can never skip the commit step below.
+        timeout-minutes: 5
+        continue-on-error: true
         run: node scripts/archive-sources.mjs
 
       - name: Commit updated data
