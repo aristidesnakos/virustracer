@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-06T20:36:27.727Z",
+  "lastExtracted": "2026-11-07T08:39:24.828Z",
   "candidates": [
     {
       "id": "news-11a703f8544b1d23",
@@ -14,6 +14,62 @@
       "sourceName": "Google News — Ebola death toll",
       "date": "2026-11-06",
       "extractedAt": "2026-11-06T20:35:59.641Z"
+    },
+    {
+      "id": "news-fa44ccc9badd8149",
+      "country": "United Kingdom",
+      "iso": "GB",
+      "flag": "🇬🇧",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "A British doctor infected with Ebola during the 2026 Bundibugyo outbreak is being treated at a London hospital.",
+      "sourceTitle": "British doctor infected with Ebola in Congo being treated in London hospital - London Evening Standard",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNkNyWXhEd1ZFMVNTWDktZDNGLTk4djJhYlRoTHV3UjRSUnc2VnVIdDBYRi1IbHVTZWxxaUdhYUtpalhHMjgxdFdiaHF5bUZZdEF1RGRGWmkwTVNJaTNpakdzbUwyemRsWlpHZk1wbXIyTG84OWJUSXcwNjdIOURPUFlKdFNIR2Z3em5UREZRYUM5cHc?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-11-05",
+      "extractedAt": "2026-11-07T08:39:24.826Z"
+    },
+    {
+      "id": "news-0fcfb1d38104bc3c",
+      "country": "United Kingdom",
+      "iso": "GB",
+      "flag": "🇬🇧",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "An expert described the British Ebola case linked to the 2026 Bundibugyo outbreak in DR Congo and Uganda as concerning.",
+      "sourceTitle": "British Ebola case 'concerning, but not entirely unexpected', expert says - Sky News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObVQxX0pwMHFxVzZwMDR4eC1FdF9Jc3lRSF80Tks2RVg4NDBhdHYzVFZCQzVaeWpLUDFSb3dPQ0ZxYTZXQXh3NUg3amNoLWxONGZkSU43QnVuZWdMT1hxWDhyeFZkemlEY0pSNEIxb3hkR0FOMVoyRjR2QUZHSWVOYUVTTFBPb3hxVkdyZHJZZ2VPUktuTjgyeHNCRkw?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-11-04",
+      "extractedAt": "2026-11-07T08:39:24.433Z"
+    },
+    {
+      "id": "news-261caf7237b8a4bb",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 5,
+      "deathsMentioned": null,
+      "context": "Kenya discharges five Ebola patients as response continues.",
+      "sourceTitle": "Kenya Discharges Five Ebola Patients as Response Continues - Voice of Nigeria",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNemZ3WGtBWXpJb1hMc0NuLVZZb215QjJQNmlsem1sN0RGU0dJaHNzNFJtbnFJdk9FZ0l1cTZjOW12QTgwM0hNS1EtdzhpOGRwYVJfeDVJajJyOU44NkIwTnlCVkpQNEpTNjhmQmlqVkFLSExoY2puY2Vuc1VURDYzbG5oLWI?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-11-04",
+      "extractedAt": "2026-11-07T08:39:17.102Z"
+    },
+    {
+      "id": "news-6edfa467465e5370",
+      "country": "United Kingdom",
+      "iso": "GB",
+      "flag": "🇬🇧",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "A British man infected with Ebola is to be flown back to the UK.",
+      "sourceTitle": "British man infected with Ebola to be flown back to the UK - The Irish News",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOc0dpUDBfeE80ejJqejhNZGRBNWI1d3JvZFpQNUhTS0hMM2JoZUpiQzAzZm90aVljSXBxbDZGU1pHUGI2RkRLbkpTemhfN3VnZk8yN1ZwTzNRQjgzZ1JoU1MySTh3UnBuZWVfSUdiNDVPR2NEZUQ3LUJ1RTVZQkVuQ1hYbnVnMDZvNEZhOUZKWGtCeXRxTUw4b3ljZDdCRThMUnBacjNKeldpZ0JoNFpJSVVWWHVFWG5KQ2hkNQ?oc=5",
+      "sourceName": "Google News — Ebola death toll",
+      "date": "2026-11-04",
+      "extractedAt": "2026-11-07T08:39:17.114Z"
     },
     {
       "id": "news-92da2b95c931ae9f",
@@ -182,20 +238,6 @@
       "sourceName": "Google News — WHO DON",
       "date": "2026-10-15",
       "extractedAt": "2026-10-18T20:11:31.855Z"
-    },
-    {
-      "id": "news-58ba511ba2b9d6e2",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": 1,
-      "deathsMentioned": null,
-      "context": "Kenya has confirmed its first imported case.",
-      "sourceTitle": "Ebola Deaths Top 4,100 as Kenya Confirms First Imported Bundibugyo Case - Contagion Live",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNT1FUMGNHQUlPZkI2T1M2eThzaUFDV1lxeE56NGFXRHNhdXJiUGNaOVRtRXp0WUdmY3I0emxRdml1bGFBdEpkbW9iVVBiOHF5WXozbUJmUjlrbDZKTHM3emotc2NlS0hQbHkxc0QxQXE1d2RoWmRrRWRDaXpQb3psTnNfM3V6bExoTTlMX256aFNnZ082QXQwekw2WVd6NEtYd1o1bXEyMTE0dw?oc=5",
-      "sourceName": "Google News — Bundibugyo outbreak",
-      "date": "2026-10-08",
-      "extractedAt": "2026-10-11T08:09:35.577Z"
     }
   ],
   "checkedIds": [
@@ -234,6 +276,18 @@
     "news-20f73e33656820a0",
     "news-527447322e7fffb0",
     "news-23d2b90686ac5976",
-    "news-7db43f620cd7a2fe"
+    "news-7db43f620cd7a2fe",
+    "news-fb10a7861bad6658",
+    "news-addc29fe4a521e8e",
+    "news-6edfa467465e5370",
+    "news-261caf7237b8a4bb",
+    "news-4f438ef16f01cecb",
+    "news-5a809fe1dd4af128",
+    "news-70773080e50d1c4d",
+    "news-058b857b20b273bf",
+    "news-8e6322859e723233",
+    "news-07c846168a686105",
+    "news-fa44ccc9badd8149",
+    "news-0fcfb1d38104bc3c"
   ]
 }

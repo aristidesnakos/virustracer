@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-06T20:36:47.381Z",
+  "lastFetched": "2026-11-07T08:39:25.779Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -263,9 +263,68 @@
     "news-c84c41cd6c55c511",
     "news-0d7a5e09c65812f6",
     "news-cfb2a2183220c841",
-    "news-6ada6a26ff3a1a5f"
+    "news-6ada6a26ff3a1a5f",
+    "news-e1ae66ee7a1f1a7e",
+    "news-79987e4ec4c2de69",
+    "news-7db9ac048e04a864",
+    "news-d9e116c687d0b90b",
+    "news-6e62858638e51e33",
+    "news-de33c69d4388f403",
+    "news-bb1a3683f8f545cb",
+    "news-02604618d9bf9c6e",
+    "news-dcd6eaab9af4e0c6",
+    "news-af39b74fc143ecf1",
+    "news-ef8e6634b14c198f",
+    "news-f1ed1f59881bca30",
+    "news-f3d3bd805acfe00b",
+    "news-9cd3ee98a0eae34a",
+    "news-7974cce18e43ce17",
+    "news-a67ed3b45dd93062",
+    "news-977e7767ffb727ba",
+    "news-6b2eca24c17e32e1",
+    "news-2218fd150ba8b3b4"
   ],
   "recentItems": [
+    {
+      "id": "news-02604618d9bf9c6e",
+      "title": "How many people have died of measles in the US this year? States report eight, the CDC counts fewer - Nacionale",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRjBjd2VsMWtpbTdmSEJTU2NmcFl0cEJxZUJwaWF3OTk3ZFRKdVY4a0daLUlTVTdOUGgwR0NWdmpkQnF5ZUpfMGZSVFo3X0JrdU1vWTVOU2hGREZVVUFOVG5nRHJSVzRnbDV5NFVVMkpyRmdLVnJPcU53SllOc1Z6Nm5jSzNTNzZUdnBFQ21ZT0J0dkMwYmZ6VEZsM0xNT2swSHd6VFozU0k2Y2kwQXlzN2QzWjh5LVIwT1E?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — US measles cases",
+      "summary": "States report eight measles deaths in the US this year, though the CDC's official count is lower."
+    },
+    {
+      "id": "news-79987e4ec4c2de69",
+      "title": "CDC reports more than 5,000 measles cases, highest number in 35 years - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNbGdTMVVFUlVIN1hESU1ieUlPUUR0ajlnUHN1RnhDT2NZRWJYQ1JmVkxyc1NYWEZPSndQeV84QUlYZ2U2X2puLVhtbENfbzZocjQtZ0JubGdueHI5X2lRcVJ3cF9zZzQwcEpHM0RmUVZBclNfNVpNQXdTUUxYclh5cGluZUNzTkpGZndjRm0wb0haMm1fTGQ3WEMwRHU2MFR2aGNZTWRQTGs4czhU0gGyAUFVX3lxTE0yVnJOd3ZFNjlVX1oybGp6c2x1by1aa2ZkT2MtMHFhMjFtclBsWUFSaktjT2tJVk1hbnpSb0FlNzRDbnRFakJjYWxsLTdnWjJSNllpQW40TXNMRzkzbHk0amhsTi0zUTNrdEZrcjE5aGpBekd4aGZqY3dIZ2Z6bm84TUo4ZmJMV01ONzdqeUZWYVI3SWtoVUNUWXJaWWxXaW41Q0prS3ZUSGpaUWFjbzJPSnc?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — US measles cases",
+      "summary": "More than"
+    },
+    {
+      "id": "news-7db9ac048e04a864",
+      "title": "US Measles Cases Cross 5,000 For First Time Since 1991; Country Risks Losing Elimination Status - Health and Me",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQnd6SzFrNnBsYTJWWE16M2x5cnJrT1pHbW9nVkdndHFSSUxxYzJWNjkwNHgwaHJCN08xWGxQRkFaZ21NOUxFX2tSc1pmbEdfX3BZNGRUUzNIQzVSbzNFRmJvalFqQVhxZ19OcHVhdjVjeldCdmNjTUVfblhlY2FLR0w5TG5YXzlVSmZsMk14T01tNUNIQmlBS0tnejZodGo0MHkyc2xDeWtRR0hidGV3dC16ZW5VMnJ1dTJXX1B5VXVGUFNRb3RrRFU3QXh1MllFbjBvVUc1YnQtOXRwS3I3Mk4tQ1VrQQ?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — US measles cases",
+      "summary": "US Measles Cases Cross 5,000 For First Time Since 1991; Country Risks Losing Elimination Status Health and Me"
+    },
+    {
+      "id": "news-bb1a3683f8f545cb",
+      "title": "COVID fallout partly to blame for measles resurgence: Ex-CDC director - NewsNation",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE8tM0hpSVNSQjd6amNhUl8yc05YamtsZ19HVUNyQW9hc2luLTB2WTRsc1VzdkNuNWNleFhFOWZGRC1qWW8xZlNsYXRjX2ZvVFBTR2VkdEY1MTg5cUhZMk1ZQTM5dGhmakZjTC1aNWZJbU95SzdNVjVoV1F2UkPSAYIBQVVfeXFMTUh2R3p5cjl0a3BleDRqWkNPNWpPX2JMSHNWRlVCUUEtem5TVlpxS215OVYtZENIazA1ZGpGWW1SWC1WTGxyUk9la000aGhycG1YUUs2dGxFQnlJMURYMzZ2LUxpaVJUMDFwdjc5c1VfWWFHRmtTVVdKQmsyUklNU0FTZw?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — US measles cases",
+      "summary": "As of March 14, 2026, two U.S. deaths from measles have been confirmed in the current outbreak, which has surged to over 300 cases across 17 states, with former CDC Director Dr. Robert Redfield attributing the resurgence partly to COVID-era disruptions in routine childhood vaccinations."
+    },
+    {
+      "id": "news-e1ae66ee7a1f1a7e",
+      "title": "US Measles Outbreak: CDC Reports 5,182 Cases & 8 Deaths Across the US From Measles Cases Hit 35-Year High - The Sunday Guardian",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeE8zNVpCWWF3VjBUOER2R2FuN0xuZlJwVlgzUlVTVWFFY2lVaTl1VUdlWE9JQUFoMXRyZ3BreVBXYzlOa1JLamh6SHdhTWdHRkdPZlZTWENhMDZEWFNoUE0zYkp0ZnpVMWk2VjlvVjNwekw1d05lSXFnMUhLOUVOcV9BTDJnODVldi0ySk5JMUFzcEEyMVlQS3gwZ1RHWXU0UlE0cTNNSjllbExzOFd4U0ZVVlgxQnN4TUVUT1Q5bkJQODJMTXV1cXNlT3ZRRnZ3aEh3SUlXZVI0ek5rT2040gHkAUFVX3lxTE5tdnBqcWdneEsyeXFVQjRUR0VGZ2xUWDZfaVhzNHlpaGJwazltZlJqcmlSQThFUzFNYmdzOFZsZFhzN25vZ1BCeks0LTg0WGpvcWZXbG5oR0dSd2tYM0d1Zk1UMFdqV1RFSXVWQS1nSXhiZ09HREplQzVTbF8xYzBhQm5XMDhoSVZCQWtsZmhXM2hDQXQ2WHFnaFFma2ZhZTBUMjE2a1Vhel9Qbnp3V3dBWXlwdnVHRzhUSThKdEJSbGhDal9ldGQ3cVZuLTA4cTBNalJxWkFkTWF3ZXAzZFBYUS1WMA?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — US measles cases",
+      "summary": "US Measles Outbreak: CDC Reports 5,182 Cases & 8 Deaths Across the US From Measles Cases Hit 35-Year High The Sunday Guardian"
+    },
     {
       "id": "news-0d9f0f075b52b7f6",
       "title": "US measles cases surpass 5,000 with infections confirmed in 45 states, CDC says - AOL.com",
@@ -273,6 +332,14 @@
       "date": "2026-11-06",
       "source": "Google News — US measles cases",
       "summary": "US measles cases surpass 5,000 with infections confirmed in 45 states, CDC says AOL.com"
+    },
+    {
+      "id": "news-2218fd150ba8b3b4",
+      "title": "Wisconsin infant dies in measles outbreak near Iowa border - The Gazette",
+      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOS0RoQTdQamlnd1JWZW0yaHFMbmZQeDl5c3NtZXFQZzhPX0tWMWlLZGpFYlRNbWRUbHlmbjBYX3dSVnRKUHkyeTBJOHRwSU92WkVYb19zczljdzlKOFJucXQ3ZFM4cTlFbjkzZHJjVnpZbzR5WWlvLTRMWlF2SWFScXI1UDBxNXU5Y3c3bWc0SVNJdGJDdGlHZXVyUTNTX3l3Q2lNV0l5NWxITUlpdFQzSmFvWjdhZnVXMGtzQ3ZRUURPcXFXYWlBdl93YWlkU3hFSjAyWnlvMVJqdFZiOFVLNDVweGh2UQ?oc=5",
+      "date": "2026-11-06",
+      "source": "Google News — measles outbreak United States",
+      "summary": "An infant has died in a measles outbreak near the Iowa border in Wisconsin. No cumulative"
     },
     {
       "id": "news-2b98a7732ba0987b",
@@ -347,6 +414,14 @@
       "summary": "As of the report, the CDC confirmed that measles cases in the United States have surpassed 5,000, with infections reported in 45 states."
     },
     {
+      "id": "news-7974cce18e43ce17",
+      "title": "Pennsylvania reaches 1,487 reported measles cases in Friday update - AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQMThONWRMOVFReUJOaVFabi03aEtrSWZpUE43TmVDNjN4SFRTdzRBbllSdWd4Q1JNYTNkaUZTWmdzNWJWNlRXNnlZc3lBZVJiNFR6V3EzdG5OQk1aVUJORzZOUGIzcmw2enJ6U0JTdUJ0S2FlZnkzZ0hPU214a1AxUXB0blRjZw?oc=5",
+      "date": "2026-11-06",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "In the 2026 measles outbreak, Pennsylvania has reached 1,487 reported measles cases as of a Friday update."
+    },
+    {
       "id": "news-8f1181b44d18440a",
       "title": "‘Quite unusual’: Adults make up two-thirds of measles cases in Pennsylvania, presenting unique challenges - CIDRAP",
       "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOemxTM25RX0ZBQUo5UlRGQWlCV19EQ2VoaHczbzBCbUhOYlM3TXA4X2pwTTI1QVdKbVVBVVRTMm1oWGk4WHEyZzZtTzNRRlpVN0NLYkdpRjB6ZWppbVd1Y1hqcjRNWG5uZzBUMk1BT2dySG9scHJaZDJuZGVQXzF2QzEwTmVPWThKQVdQa3Fkck1qOUFIQ3BfZkw2d25tN1lsNUx5SVFIUmk3T0ZhQldVMEhHR0VPRWs?oc=5",
@@ -363,68 +438,12 @@
       "summary": "Pennsylvania deals with measles outbreaks alleghenycampus.com"
     },
     {
-      "id": "news-a507900881f3cb30",
-      "title": "Pennsylvania measles cases increase as state reports 6th confirmed death - Scripps News",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOVnIyNVlHUWJrUUhZa1g5NjRWWWNibGc0YTN2aDA3eVBiS1A1Vl9PbUJ0bVpSMEVXZVJGa0JGMENRUXI0RFZWR3h3Y25YQXhISS1lWWtHUWh0LXkwN0p2eFFKaVFTenNiSmhPOHRud0NvektoemNsUFJzVldpaDdPQ2RwSVQ0cDdra1QyVEd3SmVlWG1IQnJlVGNTQUVYemxRTkVBeGlYTzFtLVk?oc=5",
+      "id": "news-9cd3ee98a0eae34a",
+      "title": "Wisconsin Infant Marks Third U.S. Measles-Related Death This Week: ‘Tragedy’ - People.com",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOcklYTTNsWF9Pa2FuUUh6ZWdnUUJSSXNiamlNd0EyQ1B1RUFTc3dFcnd2d1laMjNNdVFaUGtFUDBSU0J4SW0tRFVMd2JYeFJJbDFPTDF0NkViVG1fSnFTYzZEaGVnYmR6aDhPQ3lEOS02NmNHUjF2OENwM2duSWpsZEhlUkFfNUFpVmVpNmdxQ290Zw?oc=5",
       "date": "2026-11-06",
       "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania measles cases increase as state reports 6th confirmed death Scripps News"
-    },
-    {
-      "id": "news-a61f86c5b9f55741",
-      "title": "US measles cases pass 5,000 for the first time since 1991 as deaths reach eight - astig.ph",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBvWVcyamY3QnU0azk2TmVvMmJTb0EtcjMzTE5uOTM2ZXlkOWdDSUtYZjZ6aklENE5VbUdSbmNKYVlhTzFNN1B4SFl4azhaVWE0TVpBSzJRUkVtMndqQkRsei1OUXBUQi12S2FPUk9XMXVvQkRrSllyZmdfcy1ET1k?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases pass 5,000 for the first time since 1991 as deaths reach eight astig.ph"
-    },
-    {
-      "id": "news-bcc574dfd7bf2b9e",
-      "title": "Measles Death Gap Widens as Pennsylvania and New York Confirm Seven Deaths, but the CDC Counts Only Three - inkl",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxQbHpFLU93RmlwRWxLN1ZWYkxQeE5sc1poSUxPNnNnU0NJdnJKWEhHUDNjVHZEYkUwb2h4Z1B1V1JpQUp4YmI5M0M2S2w3MXBGRVAwMDYySVVzc25FWHRfWDlMdEJHd2NVUXFMN2hwNTVxd0RGOEhKR2czWm9WVTBXQzNTWXJkazhhdDdwQ0k3SGxrem5HWmRfRFBaSlY4Y1hrYjk0cy1FVjhlOGR4RnlNSXlwRlBOa20yQ1ZkdDZKem9KTVVjWWotYWxB?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — US measles cases",
-      "summary": "Measles Death Gap Widens as Pennsylvania and New York Confirm Seven Deaths, but the CDC Counts Only Three inkl"
-    },
-    {
-      "id": "news-bfc04eebd9df2ac7",
-      "title": "Wisconsin reports first infant death linked to measles outbreak since 1990 - Firstpost",
-      "url": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxQQXF2bzk3a1lWSV9hQW9WVTJGQVRTS3hZSWdfVk5FTHFlbkxSVS1GUi1xOTdBRDJNaDRzMHl3U3JMRkJMTzJISXo3Q0FOYWhwT2NtVk1yM0Y1NVJUXzNTWjVQQVg0THd2SU41NkZ5Zk9OLTBEQ1pod18wOFVJTTFEQ0ZmQnAxTWdyVGJjdW9HRFlsSjJMZURLa0RuUEJwWTl4SE96UkV0U2I0eE96YnhmdHRqOU04bmlRQVlEdERYMkoxY2ZOaVpTTFBUQVVEaENS0gHWAUFVX3lxTE1kZ0diOTRJLUczY0p0NnFONElMT1FpMGFOMjI2VDltRTUzSXppeVdNQm9EZy02TGd1THFRbS0xdzk2ejJwVmFlUnF0bDJWM05jXzNoT25tOFRPMGtHeEprOWpNZk9lY0pEdVhZS2l6YVlVRGtQTXBWTHRqempVNWFYMEtZNjNVYXB4QkQzeXN0MlF4VDVOV1FCaGh4S2NzODJjNmlPYmFmN3hKZGhyZ2V5NjZvZ291UzNsZ0lhcEdqRFMtM2N2aXp5YWtXalVtc1V6d2hRVEE?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Wisconsin reports first infant death linked to measles outbreak since 1990 Firstpost"
-    },
-    {
-      "id": "news-c2075c747d6ac2f9",
-      "title": "How measles outbreaks are impacting people across the U.S. - WTHI-TV",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQMF9uUG1jZHZZNEd3SXp3eWw1WmNOTDZPWWprT2xGV3BMRkFaczVXaTZoTXl5UHhnaGRveGFtbGVweFhWSlNmbG9CMmhTdVpVcnhpZ19rTEhVd0dpcndzOTE1a2RGejljZ0FmbUJqQUhIazE4SmFzdWtfTVR0Sk9iaS1MdTVRcVhRZ2k4QmhCSEU?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — US measles cases",
-      "summary": "How measles outbreaks are impacting people across the U.S. WTHI-TV"
-    },
-    {
-      "id": "news-ce8c5003f87edd82",
-      "title": "InvestigateTV+: Measles outbreaks in the U.S. - WABI",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE90WUU2emxZYlN6ZlFhc0xaZXloVmpyS2FxaDRwQzItWmpjSFZwMExCQ09jUUVUQlc0QkYzd3RCOFRlZndyMG81aXZneC1XRE5WNHI0ei1VQkhkeFBVZGE2bTVmcWlKZ0dGLXUwZEtheDZ6Sm5r?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — measles outbreak United States",
-      "summary": "InvestigateTV+: Measles outbreaks in the U.S. WABI"
-    },
-    {
-      "id": "news-dee8f7d36bd28485",
-      "title": "Cases reach 1,487 in 45 counties in Pennsylvania measles outbreak - The River Reporter",
-      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUGRBYkFIYlg2clhyY1BBaV9xVjFUZGZQdVp1NHhwbWxvSFVfS0IycU54cXNvVURsQzdxZlMyZEVzVkVLTmlhVW9kdXVrS29INDlaQmFZODUtOGlzelR3UkF5SUw2NHpzZEw1ZnQxYU5oRVpmTGhnMmM0enEzeTJkSmFrY1Z6TjN2aG1hTkVMQlhyQmowOHdCWll1c2pTVURzOWlpVjlCSkQ?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "As of the report, the Pennsylvania measles outbreak has reached 1,487 confirmed cases across 45 counties."
-    },
-    {
-      "id": "news-e3702897f26e5aac",
-      "title": "Wisconsin reports measles death of a baby, first death in over 35 years - Ars Technica",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQdU9Vbm5zSFB3TTg4ekxyOGVGQ1JiX0p1cHBtNzFRcVlNVm8tRzRLQWVINnE5ZWFSNk9xUEJoTGF0NHJ1WTBZRGhvVmM0b05EM0VTMTdIWG96aTFWQ2hrYkxEUzhLOHdmYXF0ZHJkZzZ4cmRfTTY1LWM5UEdIZVk4UXVYaC04bk1VODBXY3pzS0hDUW9mM1JWYkhDMUhqZnZQb3hIRnZVeFVKRTZEbExV?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Wisconsin has reported a baby's death from measles, marking the first measles death in the U.S. in over 35 years, according to Ars Technica."
+      "summary": "Wisconsin Infant Marks Third U.S. Measles-Related Death This Week: ‘Tragedy’ People.com"
     }
   ]
 }

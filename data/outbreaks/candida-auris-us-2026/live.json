@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-06T20:37:30.355Z",
+  "lastFetched": "2026-11-07T08:40:27.483Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -51,7 +51,8 @@
     "news-c03cf110ea5fe73e",
     "news-e25a422c3486a138",
     "news-7b4580df2a8c2295",
-    "news-69fac154df83babe"
+    "news-69fac154df83babe",
+    "news-26c0c889a46f8d28"
   ],
   "recentItems": [
     {
@@ -143,6 +144,14 @@
       "summary": "‘Superbug’ fungus has spread to half the US. Should you be concerned? KTTC | Rochester, MN"
     },
     {
+      "id": "news-26c0c889a46f8d28",
+      "title": "Cases of potentially deadly fungus detected in 23 states, CDC data shows. What to know - ABC7 Bay Area",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTjdpemkxcmZEZlAxOHpUcUNnWlprOURZelV6QTV2dmluR3FuRnZmNnktMkMyenFLdE1Xc0FHWW5PUlM5TlVvRnBXVzlWZ05IcFJVc0pPU1UxbVhob210LUVTM1BLeV9PRDBJWEp6Q3p5WkVLNjJEOVJIYklYelRrbHlMaUFHWWk2NW40UGc5ZF9URG9LZkp6ajdnWk5YeVNLUF9xd1MySmMwTkdLWUh2NnZn?oc=5",
+      "date": "2026-08-05",
+      "source": "Google News — Candida auris cases",
+      "summary": "Cases of potentially deadly fungus detected in 23 states, CDC data shows. What to know ABC7 Bay Area"
+    },
+    {
       "id": "news-9da1f343f3654eb5",
       "title": "Drug-resistant ‘superbug’ fungus spreads to 23 states. What you should know - WBAL-TV",
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWkhqVWFZTjNpSXQxQTVCUUtUdm1jREtteFNhNW5rYmF3bmF2eUx4Z0tkRW9LX214YUlwbm4yRTMtQXhMaU41bXFoYVM3d0NkVjNHS1psSFlZZkdzbmRKTTN1NDE0bDkwMHItR3htZ3NwcG5wWWpFM29uLW02c0FsdEFGVFp0ZGJkVDBOR2diU1ppVG5zNXh5RA?oc=5",
@@ -205,14 +214,6 @@
       "date": "2025-11-10",
       "source": "Google News — C. auris outbreak",
       "summary": "The rising challenge of Candida auris: insights into its transmission, drug resistance, and infection control strategies Frontiers"
-    },
-    {
-      "id": "news-b7e932909ceed098",
-      "title": "Increased Candidozyma auris Activity in Kansas – Prevention and Response Guidance - KDHE.ks.gov",
-      "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE55eHpHSmVnNmo0OE1DcDBaLTVRSnBtcThxdmlzS0E4Y2dhOWh4RUU2WHVPUmE0SjlxRkxyUlptbmprdHhaWF9pa294T2FBeVZZTFFzQ3RBblZwN0JySnpDUw?oc=5",
-      "date": "2025-09-25",
-      "source": "Google News — Candida auris cases",
-      "summary": "Increased Candidozyma auris Activity in Kansas – Prevention and Response Guidance KDHE.ks.gov"
     }
   ]
 }

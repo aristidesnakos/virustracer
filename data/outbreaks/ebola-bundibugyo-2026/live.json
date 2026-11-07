@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-06T20:35:56.329Z",
+  "lastFetched": "2026-11-07T08:39:15.774Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -899,9 +899,46 @@
     "news-96786897d8905fc2",
     "news-6978eaefa77a14fb",
     "news-aae8a6042a3dc9e9",
-    "news-19de2b6b691d406a"
+    "news-19de2b6b691d406a",
+    "news-3a02f5e78de2b72d",
+    "news-1e0a70fd88a3ba47",
+    "news-fb10a7861bad6658",
+    "news-addc29fe4a521e8e",
+    "news-6edfa467465e5370",
+    "news-261caf7237b8a4bb",
+    "news-4f438ef16f01cecb",
+    "news-5a809fe1dd4af128",
+    "news-80cd60f145e42af6",
+    "news-963d63f61b67027b",
+    "news-70773080e50d1c4d",
+    "news-058b857b20b273bf",
+    "news-8e6322859e723233"
   ],
   "recentItems": [
+    {
+      "id": "news-5a809fe1dd4af128",
+      "title": "Center for Disease Control Announces State of Alert: No Ebola Cases in Libya, Warnings Issued for Travelers as Outbreak Spreads - libyaupdate.com",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNM2NWSHZxc2l1dTNFZkszR1dvRUVJUl9XUjlfQjZ5b0FIeFEtcEJlM1hoQ0h3ak5oNFhHTzQ3V1ZXWXlBeXVJeGU3OUJxcVBVTkZxTUlxSzlfdHJaMm1KTUUzVVZwOGhWdHY2X1Vab0xVcXdKbllSeWpWeFNfOFozOFpZV194WVlNZ2NrR014MXYtTk5tb25NYW9XSVpSalBMTEFEVUM0Q3BXQXJ5eDJncU5jOUFRS1dRZzRpMEtva1JGY3ljX2tKRXBvWTJLRm9QZ1duLTFpUDZrTER4R2FXc3hfZ0U?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Center for Disease Control Announces State of Alert: No Ebola Cases in Libya, Warnings Issued for Travelers as Outbreak Spreads libyaupdate.com"
+    },
+    {
+      "id": "news-addc29fe4a521e8e",
+      "title": "DR Congo Ebola Deaths Rise To 5,198, Cases To 10,668 - UrduPoint",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNby1yb1hfTjRmRm8tcFpTdWZDQkE1akJDZi14SlRsVDB3a3EzTGdxOFVnQXBBNzZGakl2SktycjhCUndZTnFlR0NBOGtKeWc1WTJ0aXhCUnZHYTh3Vkk0WjdOX0ltTGhYa0t5ODlSQkRWVTVsS211Wi10UTdlYjRBTFBDaWFSWXlJYXBZaG5NeXNQVHc4eWNmdkdjeFMxZw?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Ebola death toll",
+      "summary": "DR Congo's Ebola death toll has risen to 5,198, with total cases reaching 10,668."
+    },
+    {
+      "id": "news-fb10a7861bad6658",
+      "title": "DR Congo Ebola cases rise to 10,668, death toll nears 5,200 - Qazinform",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbzJkX3FBMlBNYmV5eEluMTNPdVN1Y240RGV4RDZKa3c0UGhQN29NNEZnT05PR2hPQmx6SGp3SnAtNUpkV0o5aFFXX1hqTENiSVJvMk5iWTdUeUpqMEhXdk02RkhtcGpnQXZVNEFVUWljdGNTVGQySVZ1ZFVfcElMNFd2ZDhFeE9zakVoZFF4eERfR1o40gGUAUFVX3lxTE5ISHpocUR2NDcyOGNuRmxXV3FHR3hkUWllZVlGeTlraDJfRmw5UDVRc2VpcDJBbG1rbWl3MGFwTGhSUkdfRFhtZE05NlRORVlxSVZHVmgwTE12eVhfSzVBVkNPY1ZyQ0JrelRwSHYxZWFoVmxCZUd2LXk0OE5rTUszM2lmWThUVlR0MFpFSHFfQ2ZXbmM?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Ebola death toll",
+      "summary": "As of the article’s date, the cumulative death toll nears 5,200, with confirmed cases rising to 10,668 in the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda."
+    },
     {
       "id": "news-07c846168a686105",
       "title": "Ebola Cases Top 10,000 in Congo as Africa CDC Toll Shows More Than Half of Patients Have Died - Nature World News",
@@ -949,6 +986,14 @@
       "date": "2026-11-06",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "WHO recommends two new Ebola vaccines for clinical trials as DRC battles Bundibugyo outbreak Premium Times Nigeria"
+    },
+    {
+      "id": "news-80cd60f145e42af6",
+      "title": "Ministry Reveals When Kenya Will Be Declared Ebola-Free as 6th Patient Recovers - Kenyans.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbEJJTExscEtBRmpBa1FFelhESjE5TTItWW9hOWgyUUhqZDYxbkU0SUZJTDVQdk95dmthaHFXRWdhdlk4N09iaXlTa3JjRVNTQkxpbm9memJ5Uzg3YVVHM2V3STZGc2N6eW5IMFktcTN3U2xrbDY2bFBWNkZjNGZvak95cWdFT256QXh1ZGtkN1BkRWdsbThCWDBhb1RfazVlT1BmQVFYMnpWd0o0bm56RmtGMXA5Zk8yR3M1bGd3?oc=5",
+      "date": "2026-11-06",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Kenyan Ministry of Health revealed when the country will be declared Ebola-free, following the recovery of the sixth Ebola patient, though the article provides no cumulative death toll or total case count for the outbreak."
     },
     {
       "id": "news-83bc7b652cb5a835",
@@ -1023,44 +1068,12 @@
       "summary": "Two New Ebola Vaccine Candidates Recommended Amidst DRC Outbreak EMJ"
     },
     {
-      "id": "news-96786897d8905fc2",
-      "title": "Oxford vaccine moves towards pivotal trial against deadly Bundibugyo Ebola virus - Digital Journal",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPOHF4TXJtUGZtQkdoRlpYeDVDaVpadHpVZ2J1Y0d4Y3lUYTB1T18xcnUwWDVCZnJYT0JVUWd3LVFSaXNjS3VXaTVpT0xNaEEzM1RZOGNhaDRCaUFhQzFZN3doN25namhfRGJGYzlXZEhtQ0N0aUVFNWxaZ25yY0Uzb0V2MER1OWkxX3BPWk5oRkVOWHIyaFdWTnVaRzN1NVJReFZHaUFtQW5aelJndVJnSGNHbHlYVU82d1EtLQ?oc=5",
+      "id": "news-963d63f61b67027b",
+      "title": "UK confirms first British Ebola case linked to DR Congo outbreak - Pharmacy Business",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBKVGJwMWdwTENKbnBYQ0p5aEpkU1cxUzRXQVBCTlpfQi1jRnNpSmhZbmJuMTBUbUJ3UFhkRnJhSnlibm4zWHdxZlJ4OFhfR0RBQ0RlM0Y5UUIwVWFhZmp4TDEwRDkyaURKQ0Nqam5CQkllVERQZDZRT1prVQ?oc=5",
       "date": "2026-11-05",
       "source": "Google News — Bundibugyo outbreak",
-      "summary": "Oxford vaccine moves towards pivotal trial against deadly Bundibugyo Ebola virus Digital Journal"
-    },
-    {
-      "id": "news-9b910dd1aab5854d",
-      "title": "Ebola Bundibugyo - IFPMA",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPdXJSNjBISE9pbEdaQ09NTkZKU0p5d2RFNXBYVUoyVFJBTnMxMjZjZ2t6ZkFWSEtfZmtlTk1SZVUxX3p2MkNYZFkwR0VxVkhaWWczWXpnMWprMDhzaFdoZGJXTFFNY01iRlloWk9NSWx5YzREaFhzZ3dlOWR6Rzl4cDcwVFp4QQ?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The IFPMA article about the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda provides no specific death toll, confirmed case count, or official statements."
-    },
-    {
-      "id": "news-aae8a6042a3dc9e9",
-      "title": "Africa: Why an Ebola Outbreak in Africa Doesn't Mean an Epidemic in Britain - allAfrica.com",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9Vb2FGMy1xNmZEdGpQUFR3WXVJeDgtZ3VuWkktck1zY1M0dUp2azlsUDc5NFB2eFJaSzlON3NDUlUzOTlMR3ZMb1NMRWhSRFMtU08zSGZSdV91bDA?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The article does not provide a cumulative death toll or confirmed case count for the 2026 Bundibugyo Ebola outbreak. Instead, it argues that an Ebola outbreak in Africa does not automatically lead to an epidemic in Britain, emphasizing strong U.K. public health preparedness and surveillance systems."
-    },
-    {
-      "id": "news-fa44ccc9badd8149",
-      "title": "British doctor infected with Ebola in Congo being treated in London hospital - London Evening Standard",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQNkNyWXhEd1ZFMVNTWDktZDNGLTk4djJhYlRoTHV3UjRSUnc2VnVIdDBYRi1IbHVTZWxxaUdhYUtpalhHMjgxdFdiaHF5bUZZdEF1RGRGWmkwTVNJaTNpakdzbUwyemRsWlpHZk1wbXIyTG84OWJUSXcwNjdIOURPUFlKdFNIR2Z3em5UREZRYUM5cHc?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Ebola death toll",
-      "summary": "A British doctor infected with Ebola during the 2026 Bundibugyo outbreak in DR Congo/Uganda is being treated at a London hospital; the article provides no cumulative death toll or confirmed case count."
-    },
-    {
-      "id": "news-0fcfb1d38104bc3c",
-      "title": "British Ebola case 'concerning, but not entirely unexpected', expert says - Sky News",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxObVQxX0pwMHFxVzZwMDR4eC1FdF9Jc3lRSF80Tks2RVg4NDBhdHYzVFZCQzVaeWpLUDFSb3dPQ0ZxYTZXQXh3NUg3amNoLWxONGZkSU43QnVuZWdMT1hxWDhyeFZkemlEY0pSNEIxb3hkR0FOMVoyRjR2QUZHSWVOYUVTTFBPb3hxVkdyZHJZZ2VPUktuTjgyeHNCRkw?oc=5",
-      "date": "2026-11-04",
-      "source": "Google News — Ebola death toll",
-      "summary": "An expert described the British Ebola case linked to the 2026 Bundibugyo outbreak in DR Congo and Uganda as “concerning, but not entirely unexpected.”"
+      "summary": "As of the article, no cumulative death toll or confirmed case count for the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda is provided. The UK has confirmed its first British Ebola case linked to the outbreak."
     }
   ]
 }
