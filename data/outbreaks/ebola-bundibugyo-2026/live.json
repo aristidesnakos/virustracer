@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-07T08:39:15.774Z",
+  "lastFetched": "2026-11-07T20:24:25.190Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -912,9 +912,47 @@
     "news-963d63f61b67027b",
     "news-70773080e50d1c4d",
     "news-058b857b20b273bf",
-    "news-8e6322859e723233"
+    "news-8e6322859e723233",
+    "who-45d93a3beed87e80",
+    "who-0153ab883883a59c",
+    "who-dc410c07755f60b7",
+    "news-df094e6777951ba9",
+    "news-5ae54f47ed0cba50",
+    "news-10ae2a4df7a0e68d",
+    "news-45d93a3beed87e80",
+    "news-2ebf6b9ed9c9301f",
+    "news-3f5f107b9b0191f8",
+    "news-a8b7d02d21c6eb7a",
+    "news-dabd4642c23ec66a",
+    "who-72495e973455984f",
+    "who-97313e0c4338fac9",
+    "who-8d97a0a3e5344c76"
   ],
   "recentItems": [
+    {
+      "id": "news-2ebf6b9ed9c9301f",
+      "title": "Ebola outbreak in DR Congo becomes largest in country’s history – WHO - Premium Times Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdkJaU2FqYnBvZkhsWHliSHRGd2drckFHc1l0NzBZbkhqWmdNVHZ3M2h5d0JtdzNWY2JsbGlqTUl0eS1yQ0hJekFlb2t3eGNLZ2lkdjgzczF5UFZud3FLeDFxZjlfNkRYUVA1cDVWLXRmbGVzRG1uYjZ5QURaWlY4UXBmNlNOdTF4OVJOYVlpY1hpYkdBVW9KdTM2UG5mUV90c25rQ0gzQmFPcG9EYVdjWHhyRG94X1VhZXRzTTNLZURiUQ?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola outbreak in DR Congo becomes largest in country’s history – WHO Premium Times Nigeria"
+    },
+    {
+      "id": "news-3f5f107b9b0191f8",
+      "title": "Kenya wins praise over its Ebola response strategy - The Star, Kenya",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWlrWmhXU09VOEJBQk1pcTZsZjBMMEtTVXZ0b1lvUUJyaHdyaGtRSjQzVWpiT0JleDJwUHBTUHNpYjl1Z2JYTkFoNmNIbDVsV1RQZVVTMU1WY21kdGZ1MzVaMHQ1VUctQzZiN2ZPTTVRTTN2bkNWTHFwdTRERmlXU3lURjJXUzNlNmZnOTZUV1o5TUVSZVNmNA?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya’s Ebola response strategy received praise from the World Health Organization. The article does not provide a cumulative death toll or confirmed case count for the 2026 Bundibugyo outbreak in DR Congo and Uganda."
+    },
+    {
+      "id": "news-45d93a3beed87e80",
+      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria - World Health Organization (WHO)",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5lN1QxTk02RzdObUw5dHZoZ0plaVY0Yi1sRU93MGl1d1E5MWh5TENmVzlGbVVLRHR2MU5OVjktajRaelkxOXFKMEFpSGNvN3ZIcGlUSTI0eFdpc0dWdENIcjd5MlFJNGV6WWY3aDdVN1NYZlRIOEE4ODJn?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria World Health Organization (WHO)"
+    },
     {
       "id": "news-5a809fe1dd4af128",
       "title": "Center for Disease Control Announces State of Alert: No Ebola Cases in Libya, Warnings Issued for Travelers as Outbreak Spreads - libyaupdate.com",
@@ -924,12 +962,36 @@
       "summary": "Center for Disease Control Announces State of Alert: No Ebola Cases in Libya, Warnings Issued for Travelers as Outbreak Spreads libyaupdate.com"
     },
     {
+      "id": "news-5ae54f47ed0cba50",
+      "title": "Militant Attack on Ebola Clinic in Congo Claims 44 Lives, Forces Evacuations - The Chenab Times",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPLV9xYW5xT2kyRGhNbHpjY0h6VVNjN1lTdkJmeDA1MnA0eGxXV3hia0gzSkFRRHUxcXZEZHEzcjJST3FNU2dXRWxZMHRfanB6OVIxNktLd0Joa3dSSGJpb2ZINzFudUZuWjJvckRnUUNINEQ3VnNzMjgyLXM1Y0hncE50Uks2SWwxOHZkWjM2dzY5SXJNQXBjekJjYm1TaUcyZERSemJSUUJMbXRoay1RQ3QtSU8?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Ebola death toll",
+      "summary": "Militant Attack on Ebola Clinic in Congo Claims 44 Lives, Forces Evacuations The Chenab Times"
+    },
+    {
+      "id": "news-a8b7d02d21c6eb7a",
+      "title": "Ebola outbreak in DR Congo becomes largest in country's history - Head Topics",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYWMxMnZmTm1WczBnRGNyZlJTbTQzeXlfUk5nQWVvdEoxYm9YaDlNNXBEbmF1MjFJR1lIUzAyb0QtWS1yNTBXcHA4blhpOFpZS3Nva1FhOE9HcThGVnUxMlVnYUtaY2E1Ui1GSDEzdVNjMzV0WU55UUhBNkhtN2taaUpVLWNlVzgyN2dSbjJfa3ZselJoWDMtWWdfaw?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola outbreak in DR Congo becomes largest in country's history Head Topics"
+    },
+    {
       "id": "news-addc29fe4a521e8e",
       "title": "DR Congo Ebola Deaths Rise To 5,198, Cases To 10,668 - UrduPoint",
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNby1yb1hfTjRmRm8tcFpTdWZDQkE1akJDZi14SlRsVDB3a3EzTGdxOFVnQXBBNzZGakl2SktycjhCUndZTnFlR0NBOGtKeWc1WTJ0aXhCUnZHYTh3Vkk0WjdOX0ltTGhYa0t5ODlSQkRWVTVsS211Wi10UTdlYjRBTFBDaWFSWXlJYXBZaG5NeXNQVHc4eWNmdkdjeFMxZw?oc=5",
       "date": "2026-11-07",
       "source": "Google News — Ebola death toll",
       "summary": "DR Congo's Ebola death toll has risen to 5,198, with total cases reaching 10,668."
+    },
+    {
+      "id": "news-df094e6777951ba9",
+      "title": "DR Congo Ebola Outbreak Death Toll Reaches 5,198 As Cases Climb To 10,668 - UrduPoint",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVHk4VnVLOGIxX3dicDc5RzM4R2tZb0xwd3hzSHpuejBNRGdzNmo0QW9ta1lvTzZOMTlhRUMyQTJPbUJjTkJzdjFlajZGcEV4TDBYcXY4dEtWNGF4Q0VvY1pETzNjRF9ubkpFb3F2Z3c4NG5Zd3U2UGRYQlo5R3VIYU9YV19KaTZWT1pITXJkd19hWWlEOFE?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Ebola death toll",
+      "summary": "DR Congo Ebola Outbreak Death Toll Reaches 5,198 As Cases Climb To 10,668 UrduPoint"
     },
     {
       "id": "news-fb10a7861bad6658",
@@ -946,6 +1008,14 @@
       "date": "2026-11-06",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola Cases Top 10,000 in Congo as Africa CDC Toll Shows More Than Half of Patients Have Died Nature World News"
+    },
+    {
+      "id": "news-10ae2a4df7a0e68d",
+      "title": "Islamist militants force Ebola patients to flee in deadly Congo raid - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUjdvMzhsUExDa2lhS3Z4VmpOVlhEWldzTUN2SFhBZFpfVXEtZ0RnNW9mRGFfTnVMTnhKUEdGMGpSR1MyS3lGTTBINE92Zkl0S1AtSHdFaUFIQVZNTXczZW05LWtaUm5CUkZCRTFLbTF2WGZhbDRNYy1uOERxekdIOC1RSDBodVBDdlRIdnlubHN3d0pzMC1WbmU4MHV1aXF3Nm8tX1NCMUUtaUluNnRQUQ?oc=5",
+      "date": "2026-11-06",
+      "source": "Google News — Ebola death toll",
+      "summary": "Islamist militants force Ebola patients to flee in deadly Congo raid Reuters"
     },
     {
       "id": "news-11a703f8544b1d23",
@@ -1018,62 +1088,6 @@
       "date": "2026-11-06",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Bundibugyo Ebola: Public Health Must Lead When Vaccines Fall Short Independent Newspaper Nigeria"
-    },
-    {
-      "id": "news-0153ab883883a59c",
-      "title": "As Ebola cases near 10,700, WHO recommends adding 2 Bundibugyo vaccines to clinical trial - CIDRAP",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPWGhiOXFrOU9KTVBjeEdwT1hLZjItR3dKNFNVeER2Q1Qyc1ZLTmNmelNfcTVGWHFnR0plcS1ib0M4VHFwb3RwUGxTNmh3VzhoUjJNY256MU1NcDFnbHBoaFpDZWFXV05DRjdzRWNsUUUzakx2c0NmN0JDNUxuaWd5VVdlTjQ4eDVRaV9YUDlrUUtuM3pKS1JkSGtneGZuTmJCOVJhSUZPV2dKMkdpRk0xUVRXUnk?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "As Ebola cases near 10,700, WHO recommends adding 2 Bundibugyo vaccines to clinical trial CIDRAP"
-    },
-    {
-      "id": "news-19de2b6b691d406a",
-      "title": "The WHO is to trial two new Ebola vaccines in the Congo - UkrMedia News",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPRFF2WHRLSk9KWXRYTXhrUWJGUExGb2pTNjN5WGFLblBlWWdEd0pIS3hyY1Vka2U5cGlCMVJROWZEdDhnZ21SWS05MTNQX0VvR2RhS3dkZmdWZWtZTm5pbDg1TjZpdThuM3d6YWxEVUxyd0pOVDN1ZVg5SEVIMWpBT0NERVN1bEtleEdSMVlR?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The WHO is to trial two new Ebola vaccines in the Congo UkrMedia News"
-    },
-    {
-      "id": "news-2d2ec5e2eeed7e9d",
-      "title": "WHO adds two Bundibugyo vaccines to Ebola trial in the DRC - Managed Healthcare Executive",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOTk9YcXoyOFZGbnh2TjRiTExERVQ4S3VLeTkxRmJ2bWxZUXZhTHBVdDk4cTRmV3BXcEwzdDRUWmY0dkZCMERJd05uMVdwbGtvRjljd1NzXzlLejdwdE0yZkxhRzlGYnp5eUZtcjZGbURjcVk4ejNRb2lVNXRIS0lMdFhvSEUtSVEzcjF5aTdEVXZJbUlhTzZIR193VTk?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The WHO has added two Bundibugyo vaccines to an Ebola trial in the Democratic Republic of the Congo. No death toll or confirmed case count was provided in the article."
-    },
-    {
-      "id": "news-6978eaefa77a14fb",
-      "title": "For the first time, Bundibugyo-specific Ebola vaccines will be tested during an active outbreak - Latin Times",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN0prYURTUVh0RzVkazItTUh3LUx1TndZVXZWYmx1NkU1NWR3QmxwUjQ2alFoTk5RZTZNUmxKRjRZNTI1TjFhY1MtdXE3RE1fSjUtMXZDUTgwVGhHWGFrbXdSSFFvWGQ4VW12T2Y5cHhNUlBhai1xTi1FZ3VrYjBwM3Bwb2psVnNjbFBOdw?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "For the first time, Bundibugyo-specific Ebola vaccines will be tested during an active outbreak Latin Times"
-    },
-    {
-      "id": "news-8cff939c244438da",
-      "title": "Two new candidate vaccines to join Ebola trial as treatment research advances - World Health Organization (WHO)",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxNajgxMmhDVFhROUE5Y0F0cmI2MWFCUkRIOUVwUFJpOVFfYXg4UTU0QTNYNGhpeEtvUjZESFhaYlBUUVpzaWNVYXFNeThoNUI0WXhWLUREbFFqLWZWZUxiNUNsWXp4eEZwa3FxdHU1b1VrWi1yQnpJSWtfY1BSMF9aZEkxbU8tRWJBdWVydGdrNFpiNmN0MldHV0ZDSVJmR1Z5blBCWEx1N2VnUURCdFRfek80VVp6SDVRSkE?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Two new candidate vaccines to join Ebola trial as treatment research advances World Health Organization (WHO)"
-    },
-    {
-      "id": "news-95dcdd46cc4a5c8b",
-      "title": "Two New Ebola Vaccine Candidates Recommended Amidst DRC Outbreak - EMJ",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPeGRoZ3d1ZndVNHFxT29tRndZSzJMRmEwU1Y2cXZaUE1GVkRXN2hEbjNlMWh5Zjk3ZzRVdk14RGJ0VnVnNVJfSW9xSTlJSzcxMHp1MWZIZ3B1aG9hVlRiNlA2RWFoWHBseWxXSHFHOF90aXZxd3FZMlZ0NWNLNHkyYm5PZzU1ajIyZHN6YUZSQmR1SG1ENVFVdl8taGJaUXVxZDB2MEFvMWk1bVpDWmxwTFF5aG9nWkE?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Two New Ebola Vaccine Candidates Recommended Amidst DRC Outbreak EMJ"
-    },
-    {
-      "id": "news-963d63f61b67027b",
-      "title": "UK confirms first British Ebola case linked to DR Congo outbreak - Pharmacy Business",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBKVGJwMWdwTENKbnBYQ0p5aEpkU1cxUzRXQVBCTlpfQi1jRnNpSmhZbmJuMTBUbUJ3UFhkRnJhSnlibm4zWHdxZlJ4OFhfR0RBQ0RlM0Y5UUIwVWFhZmp4TDEwRDkyaURKQ0Nqam5CQkllVERQZDZRT1prVQ?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "As of the article, no cumulative death toll or confirmed case count for the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda is provided. The UK has confirmed its first British Ebola case linked to the outbreak."
     }
   ]
 }

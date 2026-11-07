@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-07T08:39:24.828Z",
+  "lastExtracted": "2026-11-07T20:24:36.813Z",
   "candidates": [
     {
       "id": "news-11a703f8544b1d23",
@@ -16,6 +16,20 @@
       "extractedAt": "2026-11-06T20:35:59.641Z"
     },
     {
+      "id": "news-963d63f61b67027b",
+      "country": "United Kingdom",
+      "iso": "GB",
+      "flag": "🇬🇧",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "The UK has confirmed its first British Ebola case linked to the outbreak.",
+      "sourceTitle": "UK confirms first British Ebola case linked to DR Congo outbreak - Pharmacy Business",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMie0FVX3lxTFBKVGJwMWdwTENKbnBYQ0p5aEpkU1cxUzRXQVBCTlpfQi1jRnNpSmhZbmJuMTBUbUJ3UFhkRnJhSnlibm4zWHdxZlJ4OFhfR0RBQ0RlM0Y5UUIwVWFhZmp4TDEwRDkyaURKQ0Nqam5CQkllVERQZDZRT1prVQ?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-05",
+      "extractedAt": "2026-11-07T20:24:36.812Z"
+    },
+    {
       "id": "news-fa44ccc9badd8149",
       "country": "United Kingdom",
       "iso": "GB",
@@ -28,6 +42,20 @@
       "sourceName": "Google News — Ebola death toll",
       "date": "2026-11-05",
       "extractedAt": "2026-11-07T08:39:24.826Z"
+    },
+    {
+      "id": "who-72495e973455984f",
+      "country": "United Kingdom",
+      "iso": "GB",
+      "flag": "🇬🇧",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "British doctor infected with Ebola while working on outbreak evacuated to U.K.",
+      "sourceTitle": "British Doctor Infected With Ebola While Working on Outbreak Evacuated to U.K. - The New York Times",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMihwFBVV95cUxPYlpta1UycTV3ZWpqWmdycGxvVWZleFQ1T0lFN0NxMDlJRlIzNm5wR0hxNVFrV2hCY1Y1UXZrXzJHOHRwb3dROUpoV3pZMll1M1JxbV82XzF4UkJxVmFoQmtXdWJqdFBkdjUzZXlnNjZlRnNvUGVpS2QxSDd3MW53ZmdFUTdRcE0?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-11-05",
+      "extractedAt": "2026-11-07T20:24:32.833Z"
     },
     {
       "id": "news-0fcfb1d38104bc3c",
@@ -288,6 +316,16 @@
     "news-8e6322859e723233",
     "news-07c846168a686105",
     "news-fa44ccc9badd8149",
-    "news-0fcfb1d38104bc3c"
+    "news-0fcfb1d38104bc3c",
+    "news-df094e6777951ba9",
+    "news-10ae2a4df7a0e68d",
+    "news-2ebf6b9ed9c9301f",
+    "news-3f5f107b9b0191f8",
+    "news-a8b7d02d21c6eb7a",
+    "news-dabd4642c23ec66a",
+    "who-72495e973455984f",
+    "who-97313e0c4338fac9",
+    "who-8d97a0a3e5344c76",
+    "news-963d63f61b67027b"
   ]
 }

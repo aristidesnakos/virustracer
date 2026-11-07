@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-07T08:40:27.483Z",
+  "lastFetched": "2026-11-07T20:24:51.138Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -52,9 +52,19 @@
     "news-e25a422c3486a138",
     "news-7b4580df2a8c2295",
     "news-69fac154df83babe",
-    "news-26c0c889a46f8d28"
+    "news-26c0c889a46f8d28",
+    "news-231026325ead71e6",
+    "news-ce158e19b94dc53d"
   ],
   "recentItems": [
+    {
+      "id": "news-231026325ead71e6",
+      "title": "Candida Auris Fungus Spreads in North Carolina in 2026 - Hoodline",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcUtfNGxsXzJ6czh2RHpBM1VfODBkTXhycVVSTGZGSmFTLVZYbXJRd3h4UkJPRFluclprTmJSZkpmc1V1QmVlQmZIdDU5QzcyQUF5T3lyZEEyaWVEeF9HQlVCaHdLUDlLU1BQVnJlTUFEN0RPYXJfdXhxSEtOVHZ0YkgtWEp0S3gxRGFtRkRlaXJYYk1nMnRpa1hDQmgxRlBRbkg4cA?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Candida auris cases",
+      "summary": "Candida Auris Fungus Spreads in North Carolina in 2026 Hoodline"
+    },
     {
       "id": "news-7bb06b9e3d0a2f5d",
       "title": "Cases of potentially deadly fungus detected in 27 states, CDC data shows. What to know - ABC News - Breaking News, Latest News and Videos",
@@ -144,6 +154,14 @@
       "summary": "‘Superbug’ fungus has spread to half the US. Should you be concerned? KTTC | Rochester, MN"
     },
     {
+      "id": "news-ce158e19b94dc53d",
+      "title": "‘Superbug’ fungus has spread to half the US. Should you be concerned? - AZ Family",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRXlLVm9pbC15eU5FWVFhb1JBd3Q5M0d1QmNwYkV6WGJKdGx5c3kzbGdiWE5UYTN5UzdubXJBS1ZjRVkzcVk4WHRBVDZzMDF6bThPSUNSQXgwWHRxUFkzZkVrc1g4NEl6YnZtZkhlaDVIaUVDcmxhTkpjODRxSkoxeUFFZHcxN3Y2b2hUV2NMWjFoZ0NORG9NQmtsRQ?oc=5",
+      "date": "2026-08-06",
+      "source": "Google News — C. auris outbreak",
+      "summary": "‘Superbug’ fungus has spread to half the US. Should you be concerned? AZ Family"
+    },
+    {
       "id": "news-26c0c889a46f8d28",
       "title": "Cases of potentially deadly fungus detected in 23 states, CDC data shows. What to know - ABC7 Bay Area",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTjdpemkxcmZEZlAxOHpUcUNnWlprOURZelV6QTV2dmluR3FuRnZmNnktMkMyenFLdE1Xc0FHWW5PUlM5TlVvRnBXVzlWZ05IcFJVc0pPU1UxbVhob210LUVTM1BLeV9PRDBJWEp6Q3p5WkVLNjJEOVJIYklYelRrbHlMaUFHWWk2NW40UGc5ZF9URG9LZkp6ajdnWk5YeVNLUF9xd1MySmMwTkdLWUh2NnZn?oc=5",
@@ -198,22 +216,6 @@
       "date": "2025-12-29",
       "source": "Google News — Candida auris nursing home",
       "summary": "Analysis of Candida auris resistance and associated risk factors in hospitalized patients at a tertiary care hospital in China Nature"
-    },
-    {
-      "id": "news-f333e929ef84fcf9",
-      "title": "Video: Fighting a Candida auris outbreak - healthcare workers leading the change - European Centre for Disease Prevention and Control (ECDC)",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPWnBtcnZwYWFNTDJSRlRnZm50QmRHU2FveUZmdGxzX25obV9ja1VXbDh4aGMtS054N1VxVDY1NGRZdFFNd1ItTDhWcEZFbnJ6bnB2c3Qta3U4VUhaUlBMM3RaVDVUQmRiYWtRV2t5LWpLQXUwV05kUXhXdzNhazNJM3hhekZ6SXJ3MmlSSmEyUTJIU2NFeHgxYXNCQ3hrLUZYbHNvMVFmbFpPUXEzNzNnSDZaZGU5cFktV3JN?oc=5",
-      "date": "2025-11-18",
-      "source": "Google News — C. auris outbreak",
-      "summary": "Video: Fighting a Candida auris outbreak - healthcare workers leading the change European Centre for Disease Prevention and Control (ECDC)"
-    },
-    {
-      "id": "news-fb533ae3d004d229",
-      "title": "The rising challenge of Candida auris: insights into its transmission, drug resistance, and infection control strategies - Frontiers",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxOTkxKa2dWczV6X1lZWXNhVTZBaGY3cGM5S0JCMDJ4V0V5QTB0NWN1cXo1ZDgwYnh2V1pkOEVuTFpBYVVHNUJobG5OTkZ1QmFsMGpPSjBESi1EQWRzR0dKUTZVaGpSOXY2VkdvOEFzYmZwZW56QnRMaHBtYWVNWlB6dEFYMTZXRjY1Sk1felg3anBZQTM1?oc=5",
-      "date": "2025-11-10",
-      "source": "Google News — C. auris outbreak",
-      "summary": "The rising challenge of Candida auris: insights into its transmission, drug resistance, and infection control strategies Frontiers"
     }
   ]
 }
