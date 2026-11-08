@@ -3,7 +3,8 @@ name: Diagnose feed model
 # Probes the news-feed model calls (scripts/diagnose-model.mjs): public model metadata, the
 # production code path, a comparison with other models, and whether article links can be read.
 # Manual only (Actions > Diagnose feed model > Run workflow), so the OPENROUTER_API_KEY secret is
-# read only when someone starts it. A run makes at most 450 model calls (hard cap in the script).
+# read only when someone starts it. A run makes at most 450 model calls (hard cap in the script);
+# the two runs below cost $0.0077 and $0.0108.
 # Runs on 2026-11-08: 42482944426 (matrix: root cause) and 42483895720 (verify).
 on:
   workflow_dispatch:
