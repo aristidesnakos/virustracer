@@ -1,6 +1,34 @@
 # Status and next steps
 
-Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 2026-10-04 after the repo cleanup and the alerts widget launch (da28422); security section added 2026-10-07 after the API rate limit; H5N1 notes added 2026-10-10. Read this first when resuming. Architecture lives in `CLAUDE.md`; the long-range plan and its reasoning in `docs/multi-outbreak-plan.md` (sections 2, 4, 6, 8).
+Written 2026-10-03, after Phase 4 landed on `main` (3b318d6, deployed); updated 2026-10-04 after the repo cleanup and the alerts widget launch (da28422); security section added 2026-10-07 after the API rate limit; H5N1 notes added 2026-10-10; updated 2026-11-08 (see "Update 2026-11-08" below, which supersedes older statements). The forward-looking plan is `docs/roadmap.md`, the data research is `docs/public-data-sources.md`. Read this first when resuming. Architecture lives in `CLAUDE.md`; the long-range plan and its reasoning in `docs/multi-outbreak-plan.md` (sections 2, 4, 6, 8).
+
+## Update 2026-11-08 (read this before the older sections)
+
+Written after the round that added the Candida auris tracker, the nursing-home layer and the feed-pipeline fixes. Everything below is on `main` (5bb9f4f when written). Plan and open decisions: `docs/roadmap.md`.
+
+**What changed**
+- **Six outbreaks plus a non-outbreak layer.** New: `candida-auris-us-2026` (CDC NNDSS weekly table, adapter `cdc-nndss`, 41 readings, no deaths: shared code now accepts `deaths: null` and the site says "Not reported"; screening cases are a separate series, never "suspected"). New layer: `/nursing-homes` (NHSN respiratory rates and counts by state, CMS F880 infection-control citations for named homes) with its own API, kept apart from the outbreak registry. Architecture is in `CLAUDE.md` (2d and "Nursing-home data layer").
+- **The scheduled update works again.** 12 of 14 runs up to 6 Nov were cancelled at a 10-minute job limit before the commit step, and each cancelled run redid the same work (nothing was saved). Limits are now: job 22 minutes, feed step 12 minutes (run turns red if it fails, commit still runs), archive step 5 minutes. Runs 210-213 succeeded (about 3 to 6 minutes each). GitHub's runners reach `data.cdc.gov`, `www.cdc.gov` and `data.cms.gov` (unlike EODY).
+- **Feed pipeline rewritten** (`scripts/lib/feed-run.mjs` and helpers): concurrent, saves after every item, remembers which items the model already read, repairs raw-text summaries. The ~23% empty model answers were caused by OpenRouter routing to providers that reason by default; reasoning is now off and the token budget larger. Article-text sources were added (WHO Disease Outbreak News, CIDRAP, ECDC, Daily Star, Greek Reporter). **Not yet seen in production:** the first scheduled run with it is 20:00 UTC on 2026-11-08.
+- **Research note** `docs/public-data-sources.md`: what US federal sources actually publish for nursing homes and hospitals, with levels, cadence, freshness and leads for other countries.
+
+**Superseded statements in the older sections**
+- "Five outbreaks are tracked": there are six now (table above plus C. auris).
+- `measles-us-2026` row: the CDC does answer GitHub's runners; the feed files exist; there are two readings so far (29 Oct: 4,852 and 3 deaths; 5 Nov: 5,182 and 4 deaths), so the trend panel needs the next weekly readings. The deaths gap widened: page 4, data file 7 (it was 3 and 5).
+- `west-nile-greece-2026` row: latest stored report 5 Nov, 462 cases, 53 deaths.
+- "Known problems", item 1 (Bangladesh source stale): the infobox has moved since (24,219 confirmed, 105 deaths on 6 Nov); the lag was not re-assessed.
+- "Do not run `next build`" was about a nearly full disk on one machine; the build runs in the cloud sandbox and passes.
+
+**Still open from this round (details in the roadmap)**
+- Read the 20:00 UTC run on 8 Nov (model failures should be near zero, summaries repaired, WHO items kept, data committed).
+- Ebola has been frozen since 2 Nov: Wikipedia's deaths (5,234) fell below ours (5,376) and the sanity check waits for a person.
+- Merged remote branches to delete in GitHub: `feat/candida-auris-us-2026`, `nursing-homes-data-layer`, `perf/feed-pipeline`, `fix/feed-model-empty-responses` (cloud sessions cannot delete branches). `claude/laughing-volta-s6q08l` (2 Nov) is older and not from this round.
+
+**New rules that bit us**
+- Cloud sessions cannot start workflows (403), delete branches or delete sessions. Ari starts workflows from the Actions tab.
+- The OpenRouter key exists only as a GitHub Actions secret and the cloud sandbox cannot reach openrouter.ai or news sites: experiments with the model run in a workflow using that secret ("Diagnose feed model", manual only). Do not add a second key.
+- A test that hard-coded the US measles total failed on the next weekly update. Read expected figures from the stored data.
+- The update job has a 22-minute budget. A new step that takes minutes needs its own `timeout-minutes` and must not be able to skip the commit step.
 
 ## Where we stand
 
