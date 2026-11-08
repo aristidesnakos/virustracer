@@ -5,9 +5,6 @@ name: Probe feed sources
 # no model calls. Manual only (Actions > Probe feed sources > Run workflow): the build sandbox
 # cannot reach these hosts, the runners can. Run 42487722439 (2026-11-08) chose the current sources.
 on:
-  push: # TEMPORARY: one pipeline check from this branch; removed in the next commit
-    branches: [fix/feed-model-empty-responses]
-    paths: [.github/workflows/probe-feeds.yml]
   workflow_dispatch:
     inputs:
       only:
@@ -43,4 +40,4 @@ jobs:
           else node scripts/probe-feeds.mjs ${ONLY:+--only="$ONLY"}; fi
         env:
           ONLY: ${{ inputs.only }}
-          PIPELINE: ${{ github.event_name == 'push' || inputs.pipeline }}
+          PIPELINE: ${{ inputs.pipeline }}
