@@ -161,3 +161,25 @@ describe("titleKeys", () => {
     expect(titleKeys("Ebola disease - Uganda - WHO", g).some((k) => who.includes(k))).toBe(true);
   });
 });
+
+describe("classifyFeedItems with datedTitles (WHO DON updates share one title)", () => {
+  const don = (g: string, day: number) => ({
+    guid: g,
+    title: "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo",
+    link: `https://www.who.int/x/${g}`,
+    pubDate: new Date(Date.UTC(2026, 9, day)).toUTCString(),
+    description: "text",
+  });
+  it("keeps every dated update and still drops a later Google News copy of the title", () => {
+    const seen = new Set<string>();
+    const processed = new Set<string>();
+    const r = classifyFeedItems([don("a", 23), don("b", 8), don("c", 1)], { feedSource: "WHO", processed, seenTitles: seen, datedTitles: true });
+    expect(r.fresh).toHaveLength(3);
+    const googleCopy = { guid: "g", title: "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo - WHO", link: "https://news.google.com/a", pubDate: don("a", 23).pubDate, description: "" };
+    expect(classifyFeedItems([googleCopy], { feedSource: "News", processed, seenTitles: seen }).duplicates).toBe(1);
+  });
+  it("without the flag the same updates collapse into one (the old behaviour)", () => {
+    const r = classifyFeedItems([don("a", 23), don("b", 8)], { feedSource: "WHO", processed: new Set(), seenTitles: new Set() });
+    expect(r.fresh).toHaveLength(1);
+  });
+});

@@ -18,13 +18,17 @@ const gnews = (q) =>
 // (workflow run 42487722439) and recorded in docs/public-data-sources.md. In each `sources` list
 // they come BEFORE the Google News queries: duplicate headlines are dropped in feed order, so the
 // copy that carries text must be read first. A source may set `format` ("who-don-api" for JSON)
-// and `match` (lower-case terms that replace the outbreak's keyword filter for that source).
+// `match` (lower-case terms that replace the outbreak's keyword filter for that source) and
+// `titlesRepeat` (successive reports share one title, so dedupe by title and date).
 const WHO_DON = {
   name: "WHO Disease Outbreak News",
   // JSON (OData), not RSS: parsed by whoDonItems in scripts/lib/feed-items.mjs.
   url: "https://www.who.int/api/news/diseaseoutbreaknews?$orderby=PublicationDateAndTime%20desc&$top=30",
   format: "who-don-api",
   source: "WHO",
+  // Every update of a running outbreak has the same title: tell them apart by date too
+  // (probe run 42488165786 kept 2 of 15 Ebola DONs before this).
+  titlesRepeat: true,
 };
 const CIDRAP_ALL = { name: "CIDRAP", url: "https://www.cidrap.umn.edu/news/all/rss", source: "CIDRAP" };
 const ECDC_THREATS = {

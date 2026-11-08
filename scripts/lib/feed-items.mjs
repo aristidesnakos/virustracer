@@ -235,10 +235,12 @@ export function titleKeys(title, link = "") {
  * marked processed without work; an id already processed is skipped. `seenTitles` is shared
  * across feeds and is mutated.
  * @param {Array<{guid: string, title: string, link: string, pubDate: string, description: string}>} relevant
- * @param {{feedSource: string, processed: Set<string>, seenTitles: Set<string>, maxNew?: number}} o
+ * `datedTitles` is for a source that reuses one title for successive reports (WHO DON updates):
+ * its items are told apart by title AND date, and still block later copies of the plain title.
+ * @param {{feedSource: string, processed: Set<string>, seenTitles: Set<string>, maxNew?: number, datedTitles?: boolean}} o
  * @returns {{fresh: Array<{id: string, item: object, date: string}>, markProcessed: string[], skippedProcessed: number, duplicates: number}}
  */
-export function classifyFeedItems(relevant, { feedSource, processed, seenTitles, maxNew = MAX_NEW_PER_FEED }) {
+export function classifyFeedItems(relevant, { feedSource, processed, seenTitles, maxNew = MAX_NEW_PER_FEED, datedTitles = false }) {
   const fresh = [];
   const markProcessed = [];
   let skippedProcessed = 0;
@@ -253,13 +255,14 @@ export function classifyFeedItems(relevant, { feedSource, processed, seenTitles,
       skippedProcessed++;
       continue;
     }
-    const keys = titleKeys(item.title, item.link);
+    const plain = titleKeys(item.title, item.link);
+    const keys = datedTitles ? plain.map((k) => `${k}|${isoDate(item.pubDate)}`) : plain;
     if (keys.some((k) => seenTitles.has(k))) {
       markProcessed.push(id);
       duplicates++;
       continue;
     }
-    for (const k of keys) seenTitles.add(k);
+    for (const k of [...keys, ...plain]) seenTitles.add(k);
     fresh.push({ id, item, date: isoDate(item.pubDate) });
   }
   return { fresh, markProcessed, skippedProcessed, duplicates };

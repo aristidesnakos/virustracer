@@ -118,7 +118,13 @@ export async function runOutbreakFeeds(o) {
       log.warn(`  ${feed.name} fetch failed: ${reason}`);
       return;
     }
-    const c = classifyFeedItems(r.value, { feedSource: feed.source, processed: processedSet, seenTitles, maxNew: maxNewPerFeed });
+    const c = classifyFeedItems(r.value, {
+      feedSource: feed.source,
+      processed: processedSet,
+      seenTitles,
+      maxNew: maxNewPerFeed,
+      datedTitles: Boolean(feed.titlesRepeat),
+    });
     backlog.push(...c.markProcessed);
     for (const f of c.fresh) {
       tasks.push({
