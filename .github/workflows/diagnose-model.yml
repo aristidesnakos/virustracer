@@ -9,6 +9,12 @@ on:
       - scripts/diagnose-model.mjs
       - .github/workflows/diagnose-model.yml
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "verify (production path, model comparison, article links) or matrix (the original probe matrix)"
+        default: verify
+        type: choice
+        options: [verify, matrix]
 
 permissions:
   contents: read
@@ -29,6 +35,7 @@ jobs:
           cache: "npm"
       - run: npm ci --omit=dev
       - name: Run the probe matrix
-        run: node scripts/diagnose-model.mjs
+        run: node scripts/diagnose-model.mjs --mode="${MODE}"
         env:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
+          MODE: ${{ inputs.mode || 'verify' }}

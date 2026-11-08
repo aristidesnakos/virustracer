@@ -1,6 +1,7 @@
 /* eslint-disable @typescript-eslint/no-explicit-any -- fake stores and model clients in this test are loosely typed on purpose */
 import { describe, it, expect } from "vitest";
 import { runOutbreakFeeds } from "../scripts/lib/feed-run.mjs";
+import { ModelResponseError } from "../scripts/lib/feed-model.mjs";
 
 const quiet = { log: () => {}, warn: () => {} };
 const noSleep = { sleep: async () => {}, random: () => 0 };
@@ -225,6 +226,92 @@ describe("runOutbreakFeeds", () => {
     const f = fetchFor({ "https://feed/who": rss([{ g: "a", day: 2 }]), "https://feed/news": rss([]) });
     await run({ client: null, fetchText: f, store });
     expect(s.live.recentItems[0].summary).toBe("Ebola a body");
+    expect(s.live.recentItems[0].summaryFallback).toBe(true);
     expect(s.cands).toBeNull();
+  });
+
+  it("counts failures by cause and flags the fallback summary; the failed candidate is not checked", async () => {
+    const f = fetchFor({ "https://feed/who": rss([{ g: "a", day: 2 }, { g: "b", day: 3 }]), "https://feed/news": rss([]) });
+    const { s, store } = memStore();
+    const cutOff = () =>
+      new ModelResponseError("length_reasoning", { finishReason: "length", provider: "Baidu", reasoningTokens: 150, usedReasoning: true, completionTokens: 150 });
+    // Item "b" (newest, so first) fails both calls (each call is tried twice: the one retry for an unusable answer).
+    const m = fakeModel({ fail: (_kind, n) => (n <= 2 ? cutOff() : null), delay: () => 0 });
+    const warns: string[] = [];
+    const out = await run({ client: m.client, fetchText: f, store, concurrency: 1, log: { log: () => {}, warn: (x: string) => warns.push(x) } });
+    expect(out.stats.failureCauses).toEqual({ length_reasoning: 2 });
+    expect(warns.join("\n")).toMatch(/\[summary, length_reasoning\].*provider=Baidu/);
+    const byId = Object.fromEntries(s.live.recentItems.map((it: any) => [it.title, it]));
+    expect(byId["Ebola update b"].summaryFallback).toBe(true);
+    expect(byId["Ebola update a"]).toMatchObject({ summary: "Summary of Ebola update a", summaryFallback: false });
+    expect(s.cands.checkedIds).toHaveLength(1);
+  });
+});
+
+describe("summary repair", () => {
+  const item = (g: string, day: number, summary: string, extra: any = {}) => ({
+    id: `news-${g}`,
+    title: `Outbreak headline number ${g} - Publisher`,
+    url: `https://x/${g}`,
+    date: `2026-11-0${day}`,
+    source: "News",
+    summary,
+    ...extra,
+  });
+  const stored = () => [
+    // Legacy fallback (no flag): the summary starts with the headline, as a Google News description does.
+    item("a", 5, "Outbreak headline number a  Publisher"),
+    // Flagged fallback from a run after the change.
+    item("b", 4, "some raw description", { summaryFallback: true }),
+    // Model summaries: never touched, even one that happens to start with its headline.
+    item("c", 3, "Officials reported 12 deaths."),
+    item("d", 2, "Outbreak headline number d was confirmed by officials.", { summaryFallback: false }),
+    // Gave up after three failed re-requests.
+    item("e", 1, "raw", { summaryFallback: true, summaryRepairAttempts: 3 }),
+  ];
+  const empty = fetchFor({ "https://feed/who": rss([]), "https://feed/news": rss([]) });
+  const checkedStore = () =>
+    memStore({
+      live: { lastFetched: "", processedIds: [], recentItems: stored() },
+      cands: { lastExtracted: "", candidates: [], checkedIds: ["news-a", "news-b", "news-c", "news-d", "news-e"] },
+    });
+
+  it("re-requests summaries only for displayed fallbacks, and records success", async () => {
+    const { s, store } = checkedStore();
+    const m = fakeModel();
+    const out = await run({ client: m.client, fetchText: empty, store });
+    expect(m.log.summary).toBe(2);
+    expect(m.log.candidate).toBe(0);
+    expect(out.stats.summariesRepaired).toBe(2);
+    const byId = Object.fromEntries(s.live.recentItems.map((it: any) => [it.id, it]));
+    expect(byId["news-a"]).toMatchObject({ summary: "Summary of Outbreak headline number a - Publisher", summaryFallback: false });
+    expect(byId["news-b"].summaryFallback).toBe(false);
+    expect(byId["news-c"]).toEqual(stored()[2]);
+    expect(byId["news-d"]).toEqual(stored()[3]);
+    expect(byId["news-e"]).toEqual(stored()[4]);
+    // A rerun has nothing left to repair.
+    const again = fakeModel();
+    await run({ client: again.client, fetchText: empty, store });
+    expect(again.log.summary).toBe(0);
+  });
+
+  it("a failed repair keeps the text, counts the attempt and stops after three", async () => {
+    const { s, store } = checkedStore();
+    const down = fakeModel({ fail: () => Object.assign(new Error("bad request"), { status: 400 }) });
+    for (let i = 0; i < 4; i++) await run({ client: down.client, fetchText: empty, store }).catch(() => {});
+    expect(down.log.summary).toBe(6); // 2 items x 3 attempts, then left alone
+    const a = s.live.recentItems.find((it: any) => it.id === "news-a");
+    expect(a).toMatchObject({ summary: "Outbreak headline number a  Publisher", summaryFallback: true, summaryRepairAttempts: 3 });
+  });
+
+  it("repairs at most 20 per run", async () => {
+    const many = Array.from({ length: 25 }, (_, i) => item(`x${i}`, 1 + (i % 9), `Outbreak headline number x${i}  Publisher`));
+    const { store } = memStore({
+      live: { lastFetched: "", processedIds: [], recentItems: many },
+      cands: { lastExtracted: "", candidates: [], checkedIds: many.map((m) => m.id) },
+    });
+    const m = fakeModel();
+    await run({ client: m.client, fetchText: empty, store });
+    expect(m.log.summary).toBe(20);
   });
 });

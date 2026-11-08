@@ -3,7 +3,17 @@
 // network errors with backoff and THROW when the call finally fails: "the model answered that
 // there is nothing here" (null) is different from "the call failed", and only the first may be
 // remembered as checked. Unit-tested in tests/feed-model.test.ts.
-import { retry } from "./pool.mjs";
+//
+// Why reasoning is off (diagnosed 2026-11-08 with scripts/diagnose-model.mjs, workflow run
+// 42482944426): OpenRouter spreads this model over many providers, and some of them (Baidu,
+// Parasail, SiliconFlow, GMICloud, Venice) run it with reasoning ON by default while others
+// (Wafer, DeepInfra) do not. Reasoning tokens count against max_tokens, so on a reasoning
+// provider a 150-token summary budget was used up by reasoning (finish_reason "length",
+// content null): 18 of 60 production-setting summaries failed that way, every one with
+// reasoning tokens, none without. With `reasoning: {enabled: false}` 60/60 succeeded on the
+// same items. max_tokens is generous (billed per token produced, not per token allowed) so a
+// provider that ignored the flag would still have room to answer.
+import { retry, isTransientError } from "./pool.mjs";
 
 export const MODEL = "deepseek/deepseek-v4-flash";
 
@@ -19,8 +29,92 @@ export function isoToFlag(iso) {
   );
 }
 
-export const SUMMARY_PARAMS = { max_tokens: 150 };
-export const CANDIDATE_PARAMS = { max_tokens: 250, response_format: { type: "json_object" } };
+// Visible answers in the diagnostic were at most 77 (summary) and 35 (candidate) tokens.
+export const SUMMARY_PARAMS = { max_tokens: 1000, reasoning: { enabled: false } };
+export const CANDIDATE_PARAMS = { max_tokens: 1000, reasoning: { enabled: false }, response_format: { type: "json_object" } };
+
+/** What a chat completion says about itself, for error messages and logs. */
+export function describeResponse(response) {
+  const choice = response?.choices?.[0];
+  const msg = choice?.message ?? {};
+  const content = typeof msg.content === "string" ? msg.content.trim() : "";
+  const reasoningTokens = response?.usage?.completion_tokens_details?.reasoning_tokens ?? 0;
+  const reasoningText = typeof msg.reasoning === "string" ? msg.reasoning.length : 0;
+  return {
+    content,
+    finishReason: choice?.finish_reason ?? null,
+    provider: response?.provider ?? null,
+    completionTokens: response?.usage?.completion_tokens ?? null,
+    reasoningTokens,
+    usedReasoning: reasoningTokens > 0 || reasoningText > 0,
+  };
+}
+
+/**
+ * A call that came back but is unusable. `cause` is a short code counted in the run summary:
+ * "length_reasoning" (budget used up by reasoning), "length" (answer cut off), "empty" (no text,
+ * finished normally), "invalid_json" (candidate answer is not JSON).
+ */
+export class ModelResponseError extends Error {
+  constructor(cause, info) {
+    const parts = [`finish_reason=${info.finishReason ?? "none"}`, `provider=${info.provider ?? "unknown"}`];
+    parts.push(`reasoning_tokens=${info.reasoningTokens}${info.usedReasoning ? "" : " (no reasoning)"}`);
+    if (info.completionTokens != null) parts.push(`completion_tokens=${info.completionTokens}`);
+    super(`${cause === "invalid_json" ? "invalid JSON from model" : "empty model response"}: ${cause} (${parts.join(", ")})`);
+    this.name = "ModelResponseError";
+    this.cause_code = cause;
+    this.info = info;
+  }
+}
+
+function classify(info) {
+  if (info.finishReason === "length") return info.usedReasoning ? "length_reasoning" : "length";
+  return "empty";
+}
+
+/** Short cause code for any error from a model call: the run summary counts these. */
+export function failureCause(err) {
+  if (err instanceof ModelResponseError) return err.cause_code;
+  const status = /** @type {any} */ (err)?.status;
+  if (typeof status === "number") return `http_${status}`;
+  const name = String(/** @type {any} */ (err)?.name ?? "");
+  if (/Timeout|Abort/i.test(name)) return "timeout";
+  if (/Connection/i.test(name) || /** @type {any} */ (err)?.code) return "network";
+  return "error";
+}
+
+// One extra try for an unusable answer (a different provider may be picked); transient
+// HTTP/network errors keep the normal retry budget.
+function withEmptyRetry(retryOpts) {
+  let emptyRetries = 0;
+  const base = retryOpts.isRetryable ?? isTransientError;
+  return {
+    ...retryOpts,
+    isRetryable: (e) => {
+      if (e instanceof ModelResponseError) return emptyRetries++ < 1;
+      return base(e);
+    },
+  };
+}
+
+/** Call the model and return the answer text, or throw ModelResponseError. `parse` may throw it too. */
+async function callModel(client, params, prompt, retryOpts, parse = (t) => t) {
+  return retry(async () => {
+    const response = await client.chat.completions.create({
+      model: MODEL,
+      ...params,
+      messages: [{ role: "user", content: prompt }],
+    });
+    const info = describeResponse(response);
+    // A cut-off answer is unusable even when some text came back.
+    if (!info.content || info.finishReason === "length") throw new ModelResponseError(classify(info), info);
+    try {
+      return parse(info.content);
+    } catch {
+      throw new ModelResponseError("invalid_json", info);
+    }
+  }, withEmptyRetry(retryOpts));
+}
 
 export function candidatePrompt(feedConfig, title, description) {
   return `You extract structured signals from news articles about ${feedConfig.subject}.
@@ -52,18 +146,11 @@ Content: ${description}`;
 export async function extractCandidate(client, feedConfig, title, description, retryOpts = {}) {
   const prompt = candidatePrompt(feedConfig, title, description);
 
-  const raw = await retry(async () => {
-    const response = await client.chat.completions.create({
-      model: MODEL,
-      max_tokens: 250,
-      response_format: { type: "json_object" },
-      messages: [{ role: "user", content: prompt }],
-    });
-    return response.choices?.[0]?.message?.content?.trim() ?? "";
-  }, retryOpts);
-  if (!raw) throw new Error("empty model response");
-  const parsed = JSON.parse(raw); // a malformed answer throws: not remembered as checked
-  if (!parsed.country || !parsed.iso) return null;
+  // Not JSON: throws, never remembered as checked. A ```json fence (some models add one) is accepted.
+  const parsed = await callModel(client, CANDIDATE_PARAMS, prompt, retryOpts, (t) =>
+    JSON.parse(t.replace(/^```(?:json)?\s*/i, "").replace(/\s*```$/, "")),
+  );
+  if (!parsed || typeof parsed !== "object" || !parsed.country || !parsed.iso) return null;
   return {
     country: String(parsed.country),
     iso: String(parsed.iso).toUpperCase(),
@@ -78,14 +165,6 @@ export async function extractCandidate(client, feedConfig, title, description, r
 export async function extractSummary(client, feedConfig, title, description, retryOpts = {}) {
   const prompt = summaryPrompt(feedConfig, title, description);
 
-  const text = await retry(async () => {
-    const response = await client.chat.completions.create({
-      model: MODEL,
-      max_tokens: 150,
-      messages: [{ role: "user", content: prompt }],
-    });
-    return response.choices?.[0]?.message?.content?.trim() ?? "";
-  }, retryOpts);
-  if (!text) throw new Error("empty model response");
+  const text = await callModel(client, SUMMARY_PARAMS, prompt, retryOpts);
   return text;
 }

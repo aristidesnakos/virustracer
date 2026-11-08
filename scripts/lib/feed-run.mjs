@@ -21,8 +21,15 @@ import {
   PROCESSED_IDS_KEEP,
   CHECKED_IDS_KEEP,
   RECENT_ITEMS_KEEP,
+  MAX_SUMMARY_REPAIRS_PER_RUN,
+  needsSummaryRepair,
+  isHeadlineOnly,
 } from "./feed-items.mjs";
-import { extractCandidate as defaultExtractCandidate, extractSummary as defaultExtractSummary } from "./feed-model.mjs";
+import {
+  extractCandidate as defaultExtractCandidate,
+  extractSummary as defaultExtractSummary,
+  failureCause,
+} from "./feed-model.mjs";
 import { mapPool } from "./pool.mjs";
 import { updateSignalLedger } from "./signals.mjs";
 
@@ -99,11 +106,16 @@ export async function runOutbreakFeeds(o) {
   /** @type {Array<{kind: "new"|"backfill", id: string, title: string, description: string, url: string, source: string, date: string}>} */
   const tasks = [];
   let feedsFailed = 0;
+  /** @type {string[]} */
+  const feedErrors = [];
   feedConfig.sources.forEach((feed, idx) => {
     const r = fetched[idx];
     if (r.status === "rejected") {
       feedsFailed++;
-      log.warn(`  ${feed.name} fetch failed: ${r.reason instanceof Error ? r.reason.message : r.reason}`);
+      // The reason names the HTTP status (e.g. "HTTP 403": a bot blocker) or the network error.
+      const reason = r.reason instanceof Error ? r.reason.message : String(r.reason);
+      feedErrors.push(`${feed.name}: ${reason}`);
+      log.warn(`  ${feed.name} fetch failed: ${reason}`);
       return;
     }
     const c = classifyFeedItems(r.value, { feedSource: feed.source, processed: processedSet, seenTitles, maxNew: maxNewPerFeed });
@@ -130,13 +142,25 @@ export async function runOutbreakFeeds(o) {
   // Only new items that will survive in the newest-20 list are worth a summary.
   const summaryIds = pickSummaryIds(tasks, baseRecent, RECENT_ITEMS_KEEP);
 
-  // Stored items the model never looked at (the backfill). Each is asked once, ever.
+  // What the model is given: Google News descriptions are only "<headline> <publisher>".
+  const headlineOnly = tasks.filter((t) => isHeadlineOnly(t.title, t.description)).length;
+  if (tasks.length) log.log(`  inputs: ${tasks.length} new items, ${headlineOnly} with a headline-only description`);
+
+  // Stored items the model never looked at (the backfill; each is asked once, ever), and
+  // displayed items still showing a raw-text fallback summary (the repair, bounded per run).
   if (client) {
     const newIds = new Set(tasks.map((t) => t.id));
+    let repairs = 0;
     for (const it of baseRecent) {
-      if (checkedSet.has(it.id) || newIds.has(it.id)) continue;
+      if (newIds.has(it.id)) continue;
+      const backfill = !checkedSet.has(it.id);
+      const repair = repairs < MAX_SUMMARY_REPAIRS_PER_RUN && needsSummaryRepair(it);
+      if (!backfill && !repair) continue;
+      if (repair) repairs++;
       tasks.push({
-        kind: "backfill",
+        kind: backfill ? "backfill" : "repair",
+        repair,
+        repairAttempts: it.summaryRepairAttempts ?? 0,
         id: it.id,
         title: it.title,
         description: it.summary ?? "",
@@ -149,7 +173,21 @@ export async function runOutbreakFeeds(o) {
 
   // 3. Persistence: rebuilt from `done` (plan order) after every finished task.
   const done = new Array(tasks.length).fill(null);
-  const stats = { newItems: 0, summaries: 0, candidatesChecked: 0, newCandidates: 0, modelCalls: 0, modelFailures: 0, feedsFailed };
+  const stats = {
+    newItems: 0,
+    summaries: 0,
+    summariesRepaired: 0,
+    summaryRepairsFailed: 0,
+    candidatesChecked: 0,
+    newCandidates: 0,
+    modelCalls: 0,
+    modelFailures: 0,
+    /** @type {Record<string, number>} failures by cause (see failureCause in feed-model.mjs) */
+    failureCauses: {},
+    feedsFailed,
+    feedErrors,
+    headlineOnly,
+  };
   const byKind = { summary: { calls: 0, failures: 0 }, candidate: { calls: 0, failures: 0 } };
   let lastBody = JSON.stringify({ c: candStore.candidates ?? [], k: baseChecked });
   const fetchedAt = now().toISOString();
@@ -160,12 +198,14 @@ export async function runOutbreakFeeds(o) {
     const newCandidates = completed.filter((d) => d.candidate).map((d) => d.candidate);
     const checkedNow = completed.filter((d) => d.checked).map((d) => d.id);
     const processedNow = completed.filter((d) => d.task.kind === "new" && d.markProcessed).map((d) => d.id);
+    const patches = new Map(completed.filter((d) => d.patch).map((d) => [d.id, d.patch]));
+    const patchedRecent = patches.size ? baseRecent.map((it) => (patches.has(it.id) ? patches.get(it.id)(it) : it)) : baseRecent;
 
     store.writeLive({
       ...live,
       lastFetched: fetchedAt,
       processedIds: mergeIdList(baseProcessed, [...backlog, ...processedNow], PROCESSED_IDS_KEEP),
-      recentItems: mergeRecentItems(newItems, baseRecent, RECENT_ITEMS_KEEP),
+      recentItems: mergeRecentItems(newItems, patchedRecent, RECENT_ITEMS_KEEP),
     });
 
     const candidates = mergeCandidates(newCandidates, baseCandidates, now().getTime());
@@ -187,43 +227,62 @@ export async function runOutbreakFeeds(o) {
     return { candidates, newCandidates, newItems };
   }
 
-  function modelCall(kind, fn) {
+  function modelCall(kind, title, fn) {
     stats.modelCalls++;
     byKind[kind].calls++;
     return fn().catch((err) => {
       stats.modelFailures++;
       byKind[kind].failures++;
-      log.warn(`  model call failed: ${err instanceof Error ? err.message : err}`);
+      const cause = failureCause(err);
+      stats.failureCauses[cause] = (stats.failureCauses[cause] ?? 0) + 1;
+      // The message names finish_reason, provider and reasoning tokens, or the HTTP status.
+      log.warn(`  model call failed [${kind}, ${cause}]: ${err instanceof Error ? err.message : err} | ${String(title).slice(0, 60)}`);
       throw err;
     });
   }
 
   // 4. Run the tasks, a few at a time, the two calls of an item in parallel.
   const settled = await mapPool(tasks, concurrency, async (task, i) => {
-    const needSummary = task.kind === "new" && summaryIds.has(task.id);
+    const needSummary = (task.kind === "new" && summaryIds.has(task.id)) || Boolean(task.repair);
     const needCandidate = Boolean(client) && !checkedSet.has(task.id);
     const [sum, cand] = await Promise.allSettled([
       needSummary && client
-        ? modelCall("summary", () => models.extractSummary(client, feedConfig, task.title, task.description, retryOptions))
+        ? modelCall("summary", task.title, () => models.extractSummary(client, feedConfig, task.title, task.description, retryOptions))
         : Promise.resolve(null),
       needCandidate
-        ? modelCall("candidate", () => models.extractCandidate(client, feedConfig, task.title, task.description, retryOptions))
+        ? modelCall("candidate", task.title, () => models.extractCandidate(client, feedConfig, task.title, task.description, retryOptions))
         : Promise.resolve(null),
     ]);
     const candidateOk = !needCandidate || cand.status === "fulfilled";
-    const summary = needSummary
-      ? sum.status === "fulfilled" && sum.value
-        ? sum.value
-        : task.description.slice(0, 200)
-      : null;
-    if (needSummary && client && sum.status === "fulfilled") stats.summaries++;
+    const summaryOk = Boolean(client) && sum.status === "fulfilled" && Boolean(sum.value);
+    const isNew = task.kind === "new";
+    const summary = needSummary && isNew ? (summaryOk ? sum.value : task.description.slice(0, 200)) : null;
+    if (needSummary && isNew && summaryOk) stats.summaries++;
+    /** @type {null | ((it: any) => any)} */
+    let patch = null;
+    if (task.repair) {
+      if (summaryOk) {
+        stats.summariesRepaired++;
+        patch = (it) => {
+          const next = { ...it, summary: sum.value, summaryFallback: false };
+          delete next.summaryRepairAttempts;
+          return next;
+        };
+      } else {
+        stats.summaryRepairsFailed++;
+        patch = (it) => ({ ...it, summaryFallback: true, summaryRepairAttempts: task.repairAttempts + 1 });
+      }
+    }
     const found = cand.status === "fulfilled" ? cand.value : null;
     const entry = {
       id: task.id,
       task,
-      item: needSummary
-        ? { id: task.id, title: task.title, url: task.url, date: task.date, source: task.source, summary }
-        : null,
+      // summaryFallback marks a raw-text summary, so a later run repairs it (needsSummaryRepair).
+      item:
+        needSummary && isNew
+          ? { id: task.id, title: task.title, url: task.url, date: task.date, source: task.source, summary, summaryFallback: !summaryOk }
+          : null,
+      patch,
       candidate: found
         ? {
             id: task.id,
@@ -241,7 +300,7 @@ export async function runOutbreakFeeds(o) {
       markProcessed: candidateOk || needSummary,
     };
     done[i] = entry;
-    if (task.kind === "new") stats.newItems++;
+    if (isNew) stats.newItems++;
     if (needCandidate && candidateOk) stats.candidatesChecked++;
     if (found) {
       stats.newCandidates++;
@@ -254,10 +313,16 @@ export async function runOutbreakFeeds(o) {
   // Model errors are handled inside the task; a rejection here is a real bug or a failed write.
   const crashed = settled.find((r) => r.status === "rejected");
   if (crashed) throw crashed.reason;
+  const causes = Object.entries(stats.failureCauses)
+    .sort((a, b) => b[1] - a[1])
+    .map(([c, n]) => `${c}=${n}`)
+    .join(", ");
   log.log(
-    `${outbreak.slug}: ${stats.newItems} new items (${stats.summaries} summarised), ` +
+    `${outbreak.slug}: ${stats.newItems} new items (${stats.summaries} summarised, ${stats.headlineOnly} headline-only inputs), ` +
+      `${stats.summariesRepaired} fallback summaries repaired (${stats.summaryRepairsFailed} failed), ` +
       `${stats.candidatesChecked} checked for candidates, ${stats.newCandidates} new candidate signals, ` +
-      `${stats.modelFailures}/${stats.modelCalls} model calls failed.`,
+      `${stats.modelFailures}/${stats.modelCalls} model calls failed${causes ? ` (${causes})` : ""}` +
+      `${feedErrors.length ? `; feeds failed: ${feedErrors.join("; ")}` : ""}.`,
   );
   // A kind of call that failed every single time is an outage (or a bad key), not flakiness.
   for (const [kind, k] of Object.entries(byKind)) {

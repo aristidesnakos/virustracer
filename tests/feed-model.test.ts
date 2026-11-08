@@ -1,10 +1,19 @@
 import { describe, it, expect } from "vitest";
-import { extractCandidate, extractSummary, isoToFlag } from "../scripts/lib/feed-model.mjs";
+import {
+  extractCandidate,
+  extractSummary,
+  isoToFlag,
+  failureCause,
+  ModelResponseError,
+  SUMMARY_PARAMS,
+  CANDIDATE_PARAMS,
+} from "../scripts/lib/feed-model.mjs";
 
 const cfg = { subject: "Ebola", extraction: { scope: "Return the country.", exclusions: "Else return nulls." } };
 const noSleep = { sleep: async () => {}, random: () => 0 };
 
-function fakeClient(responses: Array<string | Error>) {
+type Fake = string | Error | { choices: unknown[]; provider?: string; usage?: unknown };
+function fakeClient(responses: Fake[]) {
   const calls: unknown[] = [];
   return {
     calls,
@@ -14,7 +23,8 @@ function fakeClient(responses: Array<string | Error>) {
           calls.push(req);
           const r = responses.shift();
           if (r instanceof Error) throw r;
-          return { choices: [{ message: { content: r } }] };
+          if (typeof r === "object" && r) return r;
+          return { choices: [{ message: { content: r }, finish_reason: "stop" }] };
         },
       },
     },
@@ -52,5 +62,75 @@ describe("extractSummary", () => {
   it("returns the model text and throws on failure", async () => {
     expect(await extractSummary(fakeClient([" Two deaths. "]), cfg, "t", "d", noSleep)).toBe("Two deaths.");
     await expect(extractSummary(fakeClient([Object.assign(new Error("bad"), { status: 400 })]), cfg, "t", "d", noSleep)).rejects.toThrow("bad");
+  });
+});
+
+/** What a reasoning provider returned in the diagnostic: the whole budget spent on reasoning. */
+const reasoningCutOff = {
+  provider: "Baidu",
+  choices: [{ message: { content: null, reasoning: "Let me think..." }, finish_reason: "length" }],
+  usage: { completion_tokens: 150, completion_tokens_details: { reasoning_tokens: 150 } },
+};
+
+describe("empty and cut-off answers", () => {
+  it("asks for reasoning off and a generous token budget on both calls", async () => {
+    const c = fakeClient(["A summary.", JSON.stringify({ country: null, iso: null })]);
+    await extractSummary(c, cfg, "t", "d", noSleep);
+    await extractCandidate(c, cfg, "t", "d", noSleep);
+    const [sumReq, candReq] = c.calls as Array<Record<string, unknown>>;
+    expect(sumReq).toMatchObject({ reasoning: { enabled: false }, max_tokens: SUMMARY_PARAMS.max_tokens });
+    expect(candReq).toMatchObject({ reasoning: { enabled: false }, response_format: { type: "json_object" }, max_tokens: CANDIDATE_PARAMS.max_tokens });
+    expect(SUMMARY_PARAMS.max_tokens).toBeGreaterThanOrEqual(500);
+  });
+
+  it("retries an empty answer once, then succeeds", async () => {
+    const c = fakeClient([reasoningCutOff, "Two deaths."]);
+    expect(await extractSummary(c, cfg, "t", "d", noSleep)).toBe("Two deaths.");
+    expect(c.calls).toHaveLength(2);
+  });
+
+  it("names the cause after the one retry: finish_reason length used up by reasoning", async () => {
+    const c = fakeClient([reasoningCutOff, reasoningCutOff, "never reached"]);
+    const err = await extractSummary(c, cfg, "t", "d", noSleep).catch((e) => e);
+    expect(err).toBeInstanceOf(ModelResponseError);
+    expect(failureCause(err)).toBe("length_reasoning");
+    expect(err.message).toMatch(/finish_reason=length/);
+    expect(err.message).toMatch(/provider=Baidu/);
+    expect(err.message).toMatch(/reasoning_tokens=150/);
+    expect(c.calls).toHaveLength(2);
+  });
+
+  it("treats a cut-off answer without reasoning as 'length', even if some text came back", async () => {
+    const cut = { provider: "Wafer", choices: [{ message: { content: "The outbreak has" }, finish_reason: "length" }], usage: { completion_tokens: 1000 } };
+    const err = await extractSummary(fakeClient([cut, cut]), cfg, "t", "d", noSleep).catch((e) => e);
+    expect(failureCause(err)).toBe("length");
+    expect(err.message).toMatch(/no reasoning/);
+  });
+
+  it("an empty answer that finished normally is 'empty'; an empty string never becomes a summary", async () => {
+    const err = await extractSummary(fakeClient(["", ""]), cfg, "t", "d", noSleep).catch((e) => e);
+    expect(failureCause(err)).toBe("empty");
+  });
+
+  it("a truncated candidate JSON is retried once and then reported as invalid_json, never returned", async () => {
+    const c = fakeClient(['{"country": "Uga', '{"country": "Uga']);
+    const err = await extractCandidate(c, cfg, "t", "d", noSleep).catch((e) => e);
+    expect(failureCause(err)).toBe("invalid_json");
+    expect(c.calls).toHaveLength(2);
+  });
+
+  it("accepts a JSON answer wrapped in a code fence", async () => {
+    const out = await extractCandidate(fakeClient(['```json\n{"country": "Kenya", "iso": "KE"}\n```']), cfg, "t", "d", noSleep);
+    expect(out?.iso).toBe("KE");
+  });
+
+  it("a JSON null answer means no country", async () => {
+    expect(await extractCandidate(fakeClient(["null"]), cfg, "t", "d", noSleep)).toBeNull();
+  });
+
+  it("HTTP and network errors keep their own cause codes", () => {
+    expect(failureCause(Object.assign(new Error("x"), { status: 429 }))).toBe("http_429");
+    expect(failureCause(Object.assign(new Error("x"), { name: "APIConnectionTimeoutError" }))).toBe("timeout");
+    expect(failureCause(Object.assign(new Error("x"), { code: "ECONNRESET" }))).toBe("network");
   });
 });

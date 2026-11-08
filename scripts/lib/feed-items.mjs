@@ -200,3 +200,39 @@ export function mergeCandidates(newCandidates, existing, nowMs, maxAgeDays = CAN
   }
   return out.sort(compareItems);
 }
+
+// ── Summary repair and input quality ──────────────────────────────────────────
+// Re-requests per item, at most, before a fallback summary is left as it is.
+export const MAX_SUMMARY_REPAIR_ATTEMPTS = 3;
+export const MAX_SUMMARY_REPAIRS_PER_RUN = 20;
+
+const normText = (s) => String(s ?? "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu, " ").trim();
+/** A headline without its trailing " - Publisher" (Google News titles carry one). */
+const headlineCore = (title) => String(title ?? "").replace(/\s+[-–—|]\s+[^-–—|]{2,60}$/, "");
+
+/**
+ * True when a stored item still shows a raw-text fallback instead of a model summary.
+ * New items carry `summaryFallback` (true/false). Items stored before that flag existed are
+ * judged by one rule: the summary starts with the item's headline (minus " - Publisher"),
+ * which is what a Google News description looks like ("<headline> <publisher>"); a model
+ * summary does not repeat the headline verbatim. A WHO description fallback is not caught by
+ * the rule and is left alone. Gives up after MAX_SUMMARY_REPAIR_ATTEMPTS failed re-requests.
+ */
+export function needsSummaryRepair(item) {
+  if ((item.summaryRepairAttempts ?? 0) >= MAX_SUMMARY_REPAIR_ATTEMPTS) return false;
+  if (item.summaryFallback === true) return true;
+  if (item.summaryFallback === false) return false;
+  const core = normText(headlineCore(item.title));
+  return core.length >= 15 && normText(item.summary).startsWith(core);
+}
+
+/**
+ * True when an item's description adds next to nothing to its headline (Google News RSS gives
+ * only "<headline> <publisher>"), so the model summarises a headline, not an article.
+ */
+export function isHeadlineOnly(title, description) {
+  const core = normText(headlineCore(title));
+  const desc = normText(description);
+  if (!desc) return true;
+  return desc.startsWith(core) && desc.length - core.length < 40;
+}
