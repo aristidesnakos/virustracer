@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-07T20:24:37.315Z",
+  "lastFetched": "2026-11-08T08:39:19.923Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -435,7 +435,8 @@
     "news-7b946bde07d95a02",
     "news-d943f2d6626ca7d3",
     "news-edfa42265355b4c4",
-    "news-bda323c0eb1b5986"
+    "news-bda323c0eb1b5986",
+    "news-83fa1f9d4395921b"
   ],
   "recentItems": [
     {
@@ -453,6 +454,14 @@
       "date": "2026-11-07",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Four more people died from measles in Bangladesh, according to United News of Bangladesh"
+    },
+    {
+      "id": "news-83fa1f9d4395921b",
+      "title": "Bangladesh Launches Investigation Into Measles Vaccine Delays Amid Deadly Outbreak - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOG44ZDZ4OXJBdXFDR3VDRExFVTNROWV1NnQ3U3diMkRzNURnYThnRWkwOHRWemVWZW9BWktTTW5ROFlqQU9TdFctcjdMSktENElISG1Cak53R0pyM0FPS2o1STl3SFBXeEhRbmhodXZ1eTVsTzJ3VUZvZEh6bkRpSkhNVG1jQ3A5S3RKWHVQTXVSWEpjeGhhTzFWcmFDaXdyT3dmQnpFUTlWZGlmTmp3S0pKTjM1OUlUTnNN?oc=5",
+      "date": "2026-11-06",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh Launches Investigation Into Measles Vaccine Delays Amid Deadly Outbreak NDTV"
     },
     {
       "id": "news-dcaab65d8a939028",
@@ -589,14 +598,6 @@
       "date": "2026-10-28",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "As of late April 2026, the outbreak has resulted in 187 confirmed cases and one death, with health officials warning that surging malnutrition and falling vaccination rates threaten to fuel a much larger crisis."
-    },
-    {
-      "id": "news-c129d3ae303b47e2",
-      "title": "Measles outbreak: Death toll reaches 1,242 as two die in 24 hours - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOUmpnVC1Ecko2dm9WQkxGejVEbThINFU3bFZJbVNfeHg1NWZBS3hSaXRad1BVV3NLOGJNdU1QaEFicm9xaXBPYUJFTTVieG9WOERmaHZmVkNEekIyb2Z0UTlqaGZWU1JKbEVYS2hOYzlxU2ExUmVoSWZEMDhjY09mRzMyX05sVmFjTnFNR2NwOEdYV25INUNWMnZtS3F5MmpZWG9GS9IBqgFBVV95cUxOdlVzVEN2dkZVOW03d1VnTXFNSWM1R0JRTWJ0amdKeVpIZnJYYlNjX1RjYnNSRF8xckRENGdnbXVUWmE5N0sxRktaVUFMNU1qUVFjZkRfZkpoU0pIOFNfUUtkM2xNY1IzLVhJM2pCSGVLTGQ2aWdpUkdyVExhN0kxTWViX2p0Z1BGcmNwcWtxeDhOams3TEVmZk83bWpXZHBKQnlwSlNYa3M5QQ?oc=5",
-      "date": "2026-10-28",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "As of the latest report, the death toll from the 2026 Bangladesh measles outbreak has reached 1,242, with two deaths reported in the past 24 hours."
     }
   ]
 }
