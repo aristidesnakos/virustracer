@@ -1,13 +1,11 @@
 name: Diagnose feed model
 
-# Probes why the news-feed model calls come back empty (scripts/diagnose-model.mjs). Temporary
-# push trigger so the branch can be tested; the final version is workflow_dispatch only.
+# Probes the news-feed model calls (scripts/diagnose-model.mjs): public model metadata, the
+# production code path, a comparison with other models, and whether article links can be read.
+# Manual only (Actions > Diagnose feed model > Run workflow), so the OPENROUTER_API_KEY secret is
+# read only when someone starts it. A run makes at most 450 model calls (hard cap in the script).
+# Runs on 2026-11-08: 42482944426 (matrix: root cause) and 42483895720 (verify).
 on:
-  push:
-    branches: [fix/feed-model-empty-responses]
-    paths:
-      - scripts/diagnose-model.mjs
-      - .github/workflows/diagnose-model.yml
   workflow_dispatch:
     inputs:
       mode:

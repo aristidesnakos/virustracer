@@ -8,6 +8,10 @@ export interface FeedItem {
   date: string;
   source: string;
   summary: string;
+  /** True when `summary` is the raw feed text because the model call failed (repaired by a later run). */
+  summaryFallback?: boolean;
+  /** Failed summary re-requests so far (scripts/lib/feed-items.mjs `needsSummaryRepair`). */
+  summaryRepairAttempts?: number;
 }
 
 export interface LiveData {
