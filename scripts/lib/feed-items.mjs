@@ -68,6 +68,67 @@ export function parseRSSItems(xml) {
   return items;
 }
 
+// Text handed to the model per item. Article-text feeds (content:encoded, Atom content) are
+// longer than a Google News description, which is only "<headline> <publisher>".
+export const MAX_ITEM_TEXT = 1500;
+
+/** HTML or entity-encoded feed text → plain text on one line. */
+export function feedText(raw) {
+  const unwrapped = String(raw ?? "").replace(/^\s*<!\[CDATA\[([\s\S]*?)\]\]>\s*$/, "$1");
+  return decodeHtmlEntities(unwrapped)
+    .replace(/<(script|style)[\s\S]*?<\/\1>/gi, " ")
+    .replace(/<[^>]+>/g, " ")
+    .replace(/<[^>]*$/, "")
+    .replace(/\s*&[a-zA-Z0-9#]*$/, "")
+    .replace(/\s+/g, " ")
+    .trim();
+}
+
+function tag(block, name) {
+  const m = block.match(new RegExp(`<${name}(?:\\s[^>]*)?>([\\s\\S]*?)<\\/${name}>`, "i"));
+  return m ? m[1] : "";
+}
+
+/**
+ * RSS 2.0/RDF `<item>`s and Atom `<entry>`s → items. `description` is the longer of the summary
+ * and the full content (`content:encoded`, Atom `<content>`), as plain text capped at
+ * MAX_ITEM_TEXT; `contentLength` is the uncapped length of that text (for the source probe).
+ */
+export function parseFeedItems(xml, maxText = MAX_ITEM_TEXT) {
+  const items = [];
+  for (const m of String(xml).matchAll(/<item[\s>]([\s\S]*?)<\/item>/gi)) {
+    const raw = m[1];
+    const link = feedText(tag(raw, "link")) || feedText(tag(raw, "guid"));
+    const text = [feedText(tag(raw, "description")), feedText(tag(raw, "content:encoded"))].sort((a, b) => b.length - a.length)[0];
+    items.push({
+      guid: feedText(tag(raw, "guid")) || link,
+      title: feedText(tag(raw, "title")),
+      link,
+      pubDate: feedText(tag(raw, "pubDate")) || feedText(tag(raw, "dc:date")),
+      description: text.slice(0, maxText),
+      contentLength: text.length,
+    });
+  }
+  for (const m of String(xml).matchAll(/<entry[\s>]([\s\S]*?)<\/entry>/gi)) {
+    const raw = m[1];
+    const href =
+      raw.match(/<link[^>]*rel=["']alternate["'][^>]*href=["']([^"']+)["']/i)?.[1] ??
+      raw.match(/<link[^>]*href=["']([^"']+)["']/i)?.[1] ??
+      "";
+    const text = [feedText(tag(raw, "summary")), feedText(tag(raw, "content"))].sort((a, b) => b.length - a.length)[0];
+    const link = decodeHtmlEntities(href);
+    items.push({
+      guid: feedText(tag(raw, "id")) || link,
+      title: feedText(tag(raw, "title")),
+      link,
+      pubDate: feedText(tag(raw, "published")) || feedText(tag(raw, "updated")),
+      description: text.slice(0, maxText),
+      contentLength: text.length,
+    });
+  }
+  return items;
+}
+
 export function isOutbreakRelated(item, feedConfig) {
   const text = `${item.title} ${item.description}`.toLowerCase();
   if (feedConfig.strongKeywords.some((kw) => text.includes(kw))) return true;

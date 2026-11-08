@@ -1,0 +1,40 @@
+name: Probe feed sources
+
+# Keyless check of candidate news sources for the outbreak feeds (scripts/probe-feeds.mjs): status,
+# format, how much article text each item carries, and keyword matches per outbreak. No secrets,
+# no model calls. Temporary push trigger while sources are being chosen; then workflow_dispatch only.
+on:
+  push:
+    branches: [fix/feed-model-empty-responses]
+    paths:
+      - scripts/probe-feeds.mjs
+      - .github/workflows/probe-feeds.yml
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Probe only candidates whose name or URL contains this text (empty: all)"
+        default: ""
+        type: string
+
+permissions:
+  contents: read
+
+concurrency:
+  group: probe-feeds
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Probe candidate sources
+        run: node scripts/probe-feeds.mjs ${ONLY:+--only="$ONLY"}
+        env:
+          ONLY: ${{ inputs.only }}
