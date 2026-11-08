@@ -156,6 +156,26 @@ describe("script registry stays in step with the site registry", () => {
     }
   });
 
+  it("declares every feed source well-formed, with article-text sources before Google News", () => {
+    for (const o of OUTBREAKS.filter((x: { feed?: unknown }) => x.feed)) {
+      const sources = o.feed.sources as Array<{ name: string; url: string; source: string; format?: string; match?: string[] }>;
+      for (const src of sources) {
+        expect(src.url, `${o.slug}: ${src.name}`).toMatch(/^https:\/\//);
+        expect(src.name && src.source, `${o.slug}: ${src.name}`).toBeTruthy();
+        expect([undefined, "who-don-api"], `${o.slug}: ${src.name}`).toContain(src.format);
+        if (src.match) {
+          expect(src.match.length, `${o.slug}: ${src.name}`).toBeGreaterThan(0);
+          for (const kw of src.match) expect(kw, `${o.slug}: ${src.name}`).toBe(kw.toLowerCase());
+        }
+      }
+      // Duplicate headlines are dropped in feed order: the copy with text must be read first.
+      const isGoogle = sources.map((x) => x.url.startsWith("https://news.google.com/"));
+      const firstGoogle = isGoogle.indexOf(true);
+      if (firstGoogle >= 0) expect(isGoogle.slice(firstGoogle).every(Boolean), o.slug).toBe(true);
+      expect(isGoogle.includes(false), `${o.slug} has an article-text source`).toBe(true);
+    }
+  });
+
   it("keeps the two measles news feeds from collecting each other's stories", () => {
     const text = (title: string) => title.toLowerCase();
     const matches = (slug: string, title: string) => {

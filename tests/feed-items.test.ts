@@ -7,6 +7,12 @@ import {
   mergeIdList,
   mergeCandidates,
   itemId,
+  parseFeedItems,
+  isHeadlineOnly,
+  needsSummaryRepair,
+  MAX_ITEM_TEXT,
+  whoDonItems,
+  titleKeys,
 } from "../scripts/lib/feed-items.mjs";
 
 const rss = (items: Array<{ t: string; g: string; d?: string }>) =>
@@ -86,5 +92,72 @@ describe("merge helpers", () => {
     );
     expect(out.map((c: { id: string }) => c.id)).toEqual(["n", "z", "dup"]);
     expect((out[2] as { v: string }).v).toBe("new");
+  });
+});
+
+describe("parseFeedItems", () => {
+  it("keeps the article body from content:encoded when it is longer than the description", () => {
+    const xml = `<rss><channel><item><title>Ebola &amp; more</title><link>https://a/1</link><guid isPermaLink="false">g1</guid>
+      <pubDate>Fri, 06 Nov 2026 10:00:00 GMT</pubDate><description><![CDATA[<p>Short teaser</p>]]></description>
+      <content:encoded><![CDATA[<p>Long body with <b>14 deaths</b> reported.</p><script>track()</script>]]></content:encoded></item></channel></rss>`;
+    expect(parseFeedItems(xml)).toEqual([
+      { guid: "g1", title: "Ebola & more", link: "https://a/1", pubDate: "Fri, 06 Nov 2026 10:00:00 GMT", description: "Long body with 14 deaths reported.", contentLength: 34 },
+    ]);
+  });
+
+  it("reads Atom entries (alternate link, published date, content over summary)", () => {
+    const xml = `<feed><entry><title>Measles update</title><link rel="alternate" href="https://b/2?x=1&amp;y=2"/><id>tag:b,2</id>
+      <published>2026-11-05T00:00:00Z</published><summary>sum</summary><content type="html">&lt;p&gt;Full text here&lt;/p&gt;</content></entry></feed>`;
+    expect(parseFeedItems(xml)[0]).toMatchObject({ guid: "tag:b,2", link: "https://b/2?x=1&y=2", pubDate: "2026-11-05T00:00:00Z", description: "Full text here" });
+  });
+
+  it("caps the text handed to the model and gives Google News items the same text as parseRSSItems", () => {
+    const long = "word ".repeat(1000);
+    expect(parseFeedItems(`<item><title>t</title><guid>g</guid><description>${long}</description></item>`)[0].description).toHaveLength(MAX_ITEM_TEXT);
+    const gn = `<item><title>X - Pub</title><link>https://news.google.com/a</link><guid>g</guid><description>&lt;a href=&quot;u&quot;&gt;X&lt;/a&gt;&amp;nbsp;&lt;font&gt;Pub&lt;/font&gt;</description></item>`;
+    expect(parseFeedItems(gn)[0].description).toBe(parseRSSItems(gn)[0].description);
+  });
+});
+
+describe("isHeadlineOnly and needsSummaryRepair", () => {
+  it("spots a Google News description and passes real article text", () => {
+    expect(isHeadlineOnly("Ebola toll rises to 5,198 in Congo - Reuters", "Ebola toll rises to 5,198 in Congo Reuters")).toBe(true);
+    expect(isHeadlineOnly("Ebola toll rises", "The health ministry said on Friday that 14 more people had died, bringing the total to 5,198.")).toBe(false);
+  });
+
+  it("repairs flagged and legacy fallbacks only", () => {
+    const base = { title: "Ebola toll rises to 5,198 in Congo - Reuters" };
+    expect(needsSummaryRepair({ ...base, summary: "Ebola toll rises to 5,198 in Congo  Reuters" })).toBe(true);
+    expect(needsSummaryRepair({ ...base, summary: "Officials reported 5,198 deaths." })).toBe(false);
+    expect(needsSummaryRepair({ ...base, summary: "Ebola toll rises to 5,198 in Congo, officials said.", summaryFallback: false })).toBe(false);
+    expect(needsSummaryRepair({ ...base, summary: "x", summaryFallback: true, summaryRepairAttempts: 3 })).toBe(false);
+  });
+});
+
+describe("whoDonItems", () => {
+  it("maps the WHO DON API to feed items with the report text and the public DON link", () => {
+    const items = whoDonItems({
+      value: [
+        { Id: "a", Title: "Ebola disease - DRC", UseOverrideTitle: false, OverrideTitle: "x", UrlName: "2026-DON590", PublicationDateAndTime: "2026-10-23T12:00:00Z", Summary: "<p>Since 8 October, <b>412</b> new cases.</p>", Overview: "<p>Overview.</p>", Epidemiology: "" },
+        { Id: "b", Title: "", UrlName: "2026-DON591" },
+      ],
+    });
+    expect(items).toEqual([
+      { guid: "a", title: "Ebola disease - DRC", link: "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON590", pubDate: "2026-10-23T12:00:00Z", description: "Since 8 October, 412 new cases. Overview.", contentLength: 41 },
+    ]);
+    expect(whoDonItems({})).toEqual([]);
+  });
+});
+
+describe("titleKeys", () => {
+  const g = "https://news.google.com/rss/articles/x";
+  it("strips the publisher only from Google News headlines", () => {
+    expect(titleKeys("Ebola toll rises - Reuters", g)).toEqual(["ebola toll rises reuters", "ebola toll rises"]);
+    expect(titleKeys("Ebola disease - Uganda", "https://www.who.int/x")).toEqual(["ebola disease uganda"]);
+  });
+  it("keeps two WHO reports apart but matches a Google copy to the source's own headline", () => {
+    const who = titleKeys("Ebola disease - Uganda", "https://www.who.int/a");
+    expect(who.some((k) => titleKeys("Ebola disease - DRC", "https://www.who.int/b").includes(k))).toBe(false);
+    expect(titleKeys("Ebola disease - Uganda - WHO", g).some((k) => who.includes(k))).toBe(true);
   });
 });

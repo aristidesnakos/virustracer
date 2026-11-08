@@ -129,6 +129,48 @@ export function parseFeedItems(xml, maxText = MAX_ITEM_TEXT) {
   return items;
 }
 
+/**
+ * WHO Disease Outbreak News API (https://www.who.int/api/news/diseaseoutbreaknews, JSON, OData)
+ * → feed items. The text is Summary + Overview + Epidemiology as plain text, capped like any
+ * feed item; the link is the public DON page built from `UrlName` (e.g. 2026-DON590).
+ */
+export function whoDonItems(json, maxText = MAX_ITEM_TEXT) {
+  const rows = Array.isArray(json?.value) ? json.value : [];
+  return rows
+    .map((r) => {
+      const text = [r.Summary, r.Overview, r.Epidemiology].map(feedText).filter(Boolean).join(" ");
+      const title = feedText(r.UseOverrideTitle && r.OverrideTitle ? r.OverrideTitle : r.Title);
+      return {
+        guid: String(r.Id ?? r.DonId ?? r.UrlName ?? title),
+        title,
+        link: r.UrlName ? `https://www.who.int/emergencies/disease-outbreak-news/item/${encodeURIComponent(r.UrlName)}` : "",
+        pubDate: String(r.PublicationDateAndTime ?? r.PublicationDate ?? ""),
+        description: text.slice(0, maxText),
+        contentLength: text.length,
+      };
+    })
+    .filter((it) => it.title && it.link);
+}
+
+/** Feed body → items, by the source's `format` ("rss" default: RSS or Atom; "who-don-api": JSON). */
+export function parseSourceItems(body, source = {}) {
+  if (source.format === "who-don-api") return whoDonItems(JSON.parse(body));
+  return parseFeedItems(body);
+}
+
+/**
+ * Does an item belong to this outbreak? A source may set `match` (lower-case terms, any one
+ * suffices) to replace the outbreak's keyword filter: a local paper's health section never says
+ * "Bangladesh", so the outbreak filter would drop its measles stories.
+ */
+export function itemMatches(item, feedConfig, source = {}) {
+  if (Array.isArray(source.match) && source.match.length) {
+    const text = `${item.title} ${item.description}`.toLowerCase();
+    return source.match.some((kw) => text.includes(kw));
+  }
+  return isOutbreakRelated(item, feedConfig);
+}
+
 export function isOutbreakRelated(item, feedConfig) {
   const text = `${item.title} ${item.description}`.toLowerCase();
   if (feedConfig.strongKeywords.some((kw) => text.includes(kw))) return true;
@@ -168,6 +210,25 @@ export function compareItems(a, b) {
   return String(b.date).localeCompare(String(a.date)) || String(a.id).localeCompare(String(b.id));
 }
 
+const normKey = (title) => title.toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+
+/**
+ * Dedupe keys for a headline. Always the whole title; for a Google News item also the title
+ * without its trailing " - Publisher" (titleKey), which is what lets "Headline - Reuters" match
+ * "Headline - AP" and the source's own "Headline". Other sources' titles keep their dashes:
+ * WHO's "Ebola disease - Uganda" and "Ebola disease - DRC" are different reports.
+ * @param {string} title
+ * @param {string} [link]
+ */
+export function titleKeys(title, link = "") {
+  const keys = [normKey(title)];
+  if (/^https?:\/\/news\.google\.com\//.test(link)) {
+    const stripped = titleKey(title);
+    if (stripped && stripped !== keys[0]) keys.push(stripped);
+  }
+  return keys.filter(Boolean);
+}
+
 /**
  * Split one feed's outbreak-related items (newest first) into the ones to work on and the
  * backlog. Mirrors the original loop: a backlog beyond `maxNew` and a repeated headline are
@@ -192,13 +253,13 @@ export function classifyFeedItems(relevant, { feedSource, processed, seenTitles,
       skippedProcessed++;
       continue;
     }
-    const key = titleKey(item.title);
-    if (seenTitles.has(key)) {
+    const keys = titleKeys(item.title, item.link);
+    if (keys.some((k) => seenTitles.has(k))) {
       markProcessed.push(id);
       duplicates++;
       continue;
     }
-    seenTitles.add(key);
+    for (const k of keys) seenTitles.add(k);
     fresh.push({ id, item, date: isoDate(item.pubDate) });
   }
   return { fresh, markProcessed, skippedProcessed, duplicates };

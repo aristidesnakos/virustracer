@@ -8,15 +8,15 @@
 // in flight. Stored output is sorted (date, then id) and written in plan order, never in
 // completion order, so a rerun on the same input writes the same bytes.
 import {
-  parseRSSItems,
-  isOutbreakRelated,
+  parseSourceItems,
+  itemMatches,
   isoDate,
   classifyFeedItems,
   pickSummaryIds,
   mergeRecentItems,
   mergeIdList,
   mergeCandidates,
-  titleKey as titleKeyOf,
+  titleKeys,
   MAX_NEW_PER_FEED,
   PROCESSED_IDS_KEEP,
   CHECKED_IDS_KEEP,
@@ -91,8 +91,8 @@ export async function runOutbreakFeeds(o) {
   const fetched = await mapPool(feedConfig.sources, feedConcurrency, async (feed) => {
     log.log(`Fetching ${feed.name}…`);
     const xml = await fetchText(feed.url, { userAgent });
-    const items = parseRSSItems(xml);
-    const relevant = items.filter((it) => isOutbreakRelated(it, feedConfig));
+    const items = parseSourceItems(xml, feed);
+    const relevant = items.filter((it) => itemMatches(it, feedConfig, feed));
     // Newest first, so the per-feed cap keeps the most recent articles.
     relevant.sort((a, b) => isoDate(b.pubDate).localeCompare(isoDate(a.pubDate)));
     log.log(`  ${feed.name}: ${items.length} items parsed, ${relevant.length} outbreak-related`);
@@ -101,7 +101,7 @@ export async function runOutbreakFeeds(o) {
 
   // 2. Decide what is new (sequential: the headline dedupe is shared across feeds, in feed order).
   const processedSet = new Set(baseProcessed);
-  const seenTitles = new Set(baseRecent.map((i) => titleKeyOf(i.title)));
+  const seenTitles = new Set(baseRecent.flatMap((i) => titleKeys(i.title, i.url)));
   const backlog = [];
   /** @type {Array<{kind: "new"|"backfill", id: string, title: string, description: string, url: string, source: string, date: string}>} */
   const tasks = [];

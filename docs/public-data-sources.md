@@ -200,6 +200,38 @@ respiratory infections weekly by state, F880 citations per facility), and all th
   the time of writing. EODY (Greece) refuses them; CDC might too. Readers log a warning and exit 0
   if refused.
 
+## News feeds (article text for the outbreak feeds)
+
+**Last checked:** 2026-11-08, from a GitHub Actions runner (`scripts/probe-feeds.mjs`, workflow
+"Probe feed sources", run 42487722439; re-run it with workflow_dispatch before adding a source).
+**Why:** Google News RSS descriptions are only "<headline> <publisher>" (45 of 50 sampled items),
+and 45 of 50 Google News links stay on news.google.com when fetched (hidden redirect, no 403), so
+the model was summarising headlines. These sources carry real text. Format: status, text per
+item, items matching each outbreak's keyword filter in the feed at the time.
+
+| Source | URL | Result | Built |
+|---|---|---|---|
+| WHO Disease Outbreak News API | `https://www.who.int/api/news/diseaseoutbreaknews` (JSON, OData; fields include Summary, Overview, Epidemiology, Assessment, Advice, UrlName, PublicationDateAndTime) | Verified: 200, full reports (avg 7,654 chars), 15 Ebola, 1 Bangladesh measles, 1 US measles of the newest 30 | Ebola, Bangladesh measles (`format: "who-don-api"`) |
+| CIDRAP all news | `https://www.cidrap.umn.edu/news/all/rss` | Verified: 200, one-sentence lead per item (~113 chars), never headline-only; 20 items (~2 days) | Ebola, C. auris |
+| CIDRAP measles topic | `https://www.cidrap.umn.edu/news/78/rss` | Verified: 200, 12 of 20 items US measles | US measles |
+| ECDC Communicable Disease Threats | `https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed` | Verified: 200, ~200 chars per item, Ebola multi-country item | Ebola, West Nile (seasonal WNV updates) |
+| ECDC news | `https://www.ecdc.europa.eu/en/taxonomy/term/1307/feed` | Verified: 200, ~260 chars, 3 Ebola items | Ebola |
+| The Daily Star (Bangladesh) health | `https://www.thedailystar.net/health/rss.xml` | Verified: 200, ~170 chars; measles items never say "Bangladesh", so the source has `match: ["measles"]` | Bangladesh measles |
+| Greek Reporter | `https://greekreporter.com/feed/` | Verified: 200, ~320 chars; no West Nile items on 2026-11-08 (season ending) | West Nile Greece |
+| Outbreak News Today | `https://outbreaknewstoday.com/feed/` (also feedburner) | 200, full text, but newest item 2026-07-30: stale | No |
+| Outbreak News Today (Substack) | `https://outbreaknewstoday.substack.com/feed` | 403 | No |
+| CDC newsroom | `https://tools.cdc.gov/api/v2/resources/media/132608.rss` | 200, 1,844 items back to 2014, newest 2026-09-22: would flood the feed with old items | No |
+| CDC HAN | `https://tools.cdc.gov/api/v2/resources/media/413690.rss` | 200, 0 items | No |
+| ReliefWeb RSS | `https://reliefweb.int/updates/rss.xml?search=...` | 406 / 202 (refuses automated clients); the API needs an approved `appname` | No |
+| STAT News, BNO News | `statnews.com/feed/`, `bnonews.com/index.php/feed/` | 200, full text, no matching items | No (candidates if coverage grows) |
+| The Business Standard (BD), Keep Talking Greece | `tbsnews.net/top-news/rss.xml`, `keeptalkinggreece.com/feed/` | 200, no matching items | No |
+| Dhaka Tribune, eKathimerini | `dhakatribune.com/feed`, `ekathimerini.com/rss` | 403 | No |
+| Contagion Live, Africa CDC, bdnews24 | | empty titles / 0 items / HTML | No |
+
+ECDC's feed index (`https://www.ecdc.europa.eu/en/rss-feeds`) lists 18 taxonomy feeds (terms
+323, 2942, 2794, 197, 1310, 1505, 1295, 1244, 1253, 1502, 1301, 1307, 1319, 1382, 1250, 1376,
+1379); only 1307 and 1310 were probed.
+
 ## Other countries
 
 Not researched yet. These are **leads only, none verified**; check each before relying on it and

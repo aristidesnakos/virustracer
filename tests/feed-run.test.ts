@@ -315,3 +315,41 @@ describe("summary repair", () => {
     expect(m.log.summary).toBe(20);
   });
 });
+
+describe("article-text sources", () => {
+  const cfg = {
+    subject: "Ebola",
+    strongKeywords: ["ebola"],
+    sources: [
+      { name: "WHO DON", source: "WHO", url: "https://who/don", format: "who-don-api" },
+      { name: "Local paper", source: "News", url: "https://paper/rss", match: ["measles"] },
+      { name: "Google", source: "News", url: "https://news.google.com/rss/x" },
+    ],
+    extraction: { scope: "Return the country.", exclusions: "Else nulls." },
+  };
+  const don = JSON.stringify({
+    value: [
+      { Id: "d1", Title: "Ebola disease - Uganda", UrlName: "2026-DON1", PublicationDateAndTime: "2026-11-05T10:00:00Z", Summary: "<p>Uganda reported 3 confirmed cases.</p>" },
+      { Id: "d2", Title: "Cholera - Somewhere", UrlName: "2026-DON2", PublicationDateAndTime: "2026-11-04T10:00:00Z", Summary: "<p>Not ours.</p>" },
+    ],
+  });
+  const paper = `<rss><channel><item><title>Measles vaccine inquiry formed</title><link>https://paper/1</link><guid>p1</guid>
+    <pubDate>Thu, 05 Nov 2026 10:00:00 GMT</pubDate><description>A three-member commission will look into delays.</description></item></channel></rss>`;
+  const google = `<rss><channel><item><title>Ebola disease - Uganda - WHO</title><link>https://news.google.com/a</link><guid>g1</guid>
+    <pubDate>Thu, 05 Nov 2026 10:00:00 GMT</pubDate><description>Ebola disease - Uganda WHO</description></item></channel></rss>`;
+
+  it("reads the WHO JSON API and a source-level keyword filter; the text copy of a story wins the dedupe", async () => {
+    const { s, store } = memStore();
+    const f = fetchFor({ "https://who/don": don, "https://paper/rss": paper, "https://news.google.com/rss/x": google });
+    const m = fakeModel();
+    await runOutbreakFeeds({ outbreak: { slug: "t", disease: "Ebola", feed: cfg }, client: m.client, fetchText: f, store, now: () => NOW, retryOptions: noSleep, log: quiet });
+    const titles = s.live.recentItems.map((it: any) => `${it.source}: ${it.title}`).sort();
+    // The cholera DON fails the Ebola filter; the paper's measles story passes its own `match`
+    // (no "ebola" in it); the Google copy of the DON headline is a duplicate and is dropped.
+    expect(titles).toEqual(["Local paper: Measles vaccine inquiry formed", "WHO DON: Ebola disease - Uganda"]);
+    const donItem = s.live.recentItems.find((it: any) => it.source === "WHO DON");
+    expect(donItem.url).toBe("https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON1");
+    // The model was given the report's text, not just the headline.
+    expect(m.log.titles).toContain("summary:Ebola disease - Uganda");
+  });
+});

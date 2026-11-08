@@ -47,7 +47,7 @@ function createClient() {
 
 async function fetchText(url, { userAgent }) {
   const res = await fetch(url, {
-    headers: { "User-Agent": userAgent, Accept: "application/rss+xml, application/xml, text/xml" },
+    headers: { "User-Agent": userAgent, Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, application/json" },
     signal: AbortSignal.timeout(20_000),
     redirect: "follow",
   });

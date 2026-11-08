@@ -10,10 +10,20 @@
  * filter (isOutbreakRelated with the registry's feed config) and how many of those carry text.
  * Index pages (`kind: "index"`) are scanned for feed links, printed as `DISCOVERED` lines.
  * No model calls, no secrets. Usage: node scripts/probe-feeds.mjs [--only=<substring>]
+ *
+ * `--pipeline`: instead, run the real feed pipeline (runOutbreakFeeds in scripts/lib/feed-run.mjs)
+ * for every automated outbreak on the live feeds, with no model client and an in-memory copy of
+ * the stored live/candidates/signals files (nothing is written), and print the items it would keep
+ * (`KEPT` lines: source, date, text length, headline-only or not).
  */
 import { OUTBREAKS, USER_AGENT } from "./lib/outbreak-registry.mjs";
-import { parseFeedItems, isOutbreakRelated, isHeadlineOnly, isoDate } from "./lib/feed-items.mjs";
+import { parseFeedItems, isOutbreakRelated, isHeadlineOnly, isoDate, whoDonItems } from "./lib/feed-items.mjs";
 import { mapPool } from "./lib/pool.mjs";
+import { runOutbreakFeeds } from "./lib/feed-run.mjs";
+import { dataFile } from "./lib/outbreak-registry.mjs";
+import { readFileSync, existsSync } from "node:fs";
+import { resolve, dirname } from "node:path";
+import { fileURLToPath } from "node:url";
 
 const gnews = (q) => `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
 
@@ -72,23 +82,6 @@ async function get(url) {
   return { status: res.status, finalHost: new URL(res.url).host, type: res.headers.get("content-type") ?? "", text };
 }
 
-/** WHO DON API rows → feed-item shape (title, link, pubDate, description). */
-export function whoDonItems(json) {
-  const rows = Array.isArray(json?.value) ? json.value : [];
-  return rows.map((r) => {
-    const strip = (h) => String(h ?? "").replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
-    const text = [r.Summary, r.Overview, r.Epidemiology].map(strip).filter(Boolean).join(" ");
-    return {
-      guid: String(r.Id ?? r.DonId ?? r.UrlName ?? r.Title),
-      title: strip(r.Title ?? r.OverrideTitle),
-      link: r.UrlName ? `https://www.who.int/emergencies/disease-outbreak-news/item/${r.UrlName}` : String(r.ItemDefaultUrl ?? ""),
-      pubDate: String(r.PublicationDateAndTime ?? r.PublicationDate ?? ""),
-      description: text,
-      fields: Object.keys(r).slice(0, 25).join(","),
-    };
-  });
-}
-
 function summarise(c, r, items) {
   const avg = (xs) => Math.round(xs.reduce((s, x) => s + x, 0) / Math.max(1, xs.length));
   const newest = items.map((i) => isoDate(i.pubDate)).sort().pop() ?? "-";
@@ -126,8 +119,9 @@ async function probe(c) {
   if (c.kind === "who-don-api" || /json/.test(r.type)) {
     r.format = "json";
     try {
-      items = whoDonItems(JSON.parse(r.text));
-      if (items[0]) console.log(`FIELDS name="${c.name}" ${items[0].fields}`);
+      const json = JSON.parse(r.text);
+      if (json?.value?.[0]) console.log(`FIELDS name="${c.name}" ${Object.keys(json.value[0]).slice(0, 25).join(",")}`);
+      items = whoDonItems(json);
     } catch (e) {
       r.format = `json-unparsed(${clip(e.message, 40)})`;
     }
@@ -140,7 +134,50 @@ async function probe(c) {
   for (const it of items.slice(0, 2)) console.log(`  EXAMPLE name="${c.name}" title="${clip(it.title, 70)}" text="${clip(it.description, 160)}"`);
 }
 
+async function pipeline() {
+  const root = resolve(dirname(fileURLToPath(import.meta.url)), "..");
+  const read = (slug, f) => {
+    const p = dataFile(root, slug, f);
+    return existsSync(p) ? JSON.parse(readFileSync(p, "utf-8")) : null;
+  };
+  const fetchText = async (url, { userAgent }) => {
+    const res = await fetch(url, {
+      headers: { "User-Agent": userAgent, Accept: "application/rss+xml, application/atom+xml, application/xml, text/xml, application/json" },
+      signal: AbortSignal.timeout(20_000),
+      redirect: "follow",
+    });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    return res.text();
+  };
+  for (const o of feedOutbreaks) {
+    console.log(`\n══ ${o.slug} ══`);
+    const mem = { live: read(o.slug, "live"), cands: read(o.slug, "candidates"), ledger: read(o.slug, "signals") };
+    const before = new Set((mem.live?.recentItems ?? []).map((i) => i.id));
+    const store = {
+      readLive: () => structuredClone(mem.live),
+      readCandidates: () => structuredClone(mem.cands),
+      readLedger: () => structuredClone(mem.ledger),
+      writeLive: (v) => (mem.live = v),
+      writeCandidates: (v) => (mem.cands = v),
+      writeLedger: (v) => (mem.ledger = v),
+    };
+    try {
+      await runOutbreakFeeds({ outbreak: o, client: null, fetchText, store });
+    } catch (e) {
+      console.log(`PIPELINE_ERROR ${o.slug}: ${clip(e?.message, 160)}`);
+      continue;
+    }
+    const items = mem.live?.recentItems ?? [];
+    const bySource = items.reduce((m, i) => ((m[i.source] = (m[i.source] ?? 0) + 1), m), {});
+    console.log(`DISPLAYED ${o.slug}: ${items.length} items, new this run ${items.filter((i) => !before.has(i.id)).length}, by source ${JSON.stringify(bySource)}`);
+    for (const i of items.filter((x) => !before.has(x.id))) {
+      console.log(`  KEPT source="${i.source}" date=${i.date} text_chars=${i.summary.length} headline_only=${isHeadlineOnly(i.title, i.summary)} title="${clip(i.title, 70)}" url=${clip(i.url, 90)}`);
+    }
+  }
+}
+
 async function main() {
+  if (process.argv.includes("--pipeline")) return pipeline();
   const only = process.argv.find((a) => a.startsWith("--only="))?.slice(7);
   const list = only ? CANDIDATES.filter((c) => c.name.includes(only) || c.url.includes(only)) : CANDIDATES;
   await mapPool(list, 4, probe);

@@ -13,6 +13,26 @@ export const USER_AGENT =
 const gnews = (q) =>
   `https://news.google.com/rss/search?q=${encodeURIComponent(q)}&hl=en-US&gl=US&ceid=US:en`;
 
+// Article-text sources. Google News RSS gives only "<headline> <publisher>", so the model was
+// summarising headlines; these carry real text. Chosen 2026-11-08 with scripts/probe-feeds.mjs
+// (workflow run 42487722439) and recorded in docs/public-data-sources.md. In each `sources` list
+// they come BEFORE the Google News queries: duplicate headlines are dropped in feed order, so the
+// copy that carries text must be read first. A source may set `format` ("who-don-api" for JSON)
+// and `match` (lower-case terms that replace the outbreak's keyword filter for that source).
+const WHO_DON = {
+  name: "WHO Disease Outbreak News",
+  // JSON (OData), not RSS: parsed by whoDonItems in scripts/lib/feed-items.mjs.
+  url: "https://www.who.int/api/news/diseaseoutbreaknews?$orderby=PublicationDateAndTime%20desc&$top=30",
+  format: "who-don-api",
+  source: "WHO",
+};
+const CIDRAP_ALL = { name: "CIDRAP", url: "https://www.cidrap.umn.edu/news/all/rss", source: "CIDRAP" };
+const ECDC_THREATS = {
+  name: "ECDC Communicable Disease Threats",
+  url: "https://www.ecdc.europa.eu/en/taxonomy/term/1310/feed",
+  source: "ECDC",
+};
+
 /** Statuses the scheduled workflow keeps fetching. `over` and `watch` are left alone. */
 export const AUTOMATED_STATUSES = ["active", "waning"];
 
@@ -35,6 +55,10 @@ export const OUTBREAKS = [
           url: "https://www.who.int/rss-feeds/news-english.xml",
           source: "WHO",
         },
+        WHO_DON,
+        CIDRAP_ALL,
+        ECDC_THREATS,
+        { name: "ECDC news", url: "https://www.ecdc.europa.eu/en/taxonomy/term/1307/feed", source: "ECDC" },
         { name: "Google News — Ebola death toll", url: gnews("Ebola Congo death toll"), source: "News" },
         { name: "Google News — Bundibugyo outbreak", url: gnews("Ebola Bundibugyo outbreak"), source: "News" },
         {
@@ -77,6 +101,14 @@ export const OUTBREAKS = [
           // WHO general news RSS: not outbreak-specific, so keyword filtered.
           url: "https://www.who.int/rss-feeds/news-english.xml",
           source: "WHO",
+        },
+        WHO_DON,
+        {
+          name: "The Daily Star (Bangladesh) — health",
+          url: "https://www.thedailystar.net/health/rss.xml",
+          source: "News",
+          // A Dhaka paper's health section rarely says "Bangladesh": match on the disease alone.
+          match: ["measles"],
         },
         { name: "Google News — Bangladesh measles outbreak", url: gnews("Bangladesh measles outbreak"), source: "News" },
         { name: "Google News — Bangladesh measles deaths", url: gnews("Bangladesh measles deaths"), source: "News" },
@@ -129,6 +161,7 @@ export const OUTBREAKS = [
     },
     feed: {
       sources: [
+        { name: "CIDRAP — measles", url: "https://www.cidrap.umn.edu/news/78/rss", source: "CIDRAP" },
         { name: "Google News — US measles cases", url: gnews("US measles cases CDC"), source: "News" },
         { name: "Google News — Pennsylvania measles outbreak", url: gnews("Pennsylvania measles outbreak"), source: "News" },
         { name: "Google News — measles outbreak United States", url: gnews("measles outbreak United States 2026"), source: "News" },
@@ -186,6 +219,8 @@ export const OUTBREAKS = [
     },
     feed: {
       sources: [
+        ECDC_THREATS,
+        { name: "Greek Reporter", url: "https://greekreporter.com/feed/", source: "News" },
         { name: "Google News — West Nile virus Greece", url: gnews("West Nile virus Greece"), source: "News" },
         { name: "Google News — West Nile Greece deaths", url: gnews("West Nile Greece deaths EODY"), source: "News" },
         { name: "Google News — West Nile Attica", url: gnews("West Nile virus Attica"), source: "News" },
@@ -227,6 +262,7 @@ export const OUTBREAKS = [
     },
     feed: {
       sources: [
+        CIDRAP_ALL,
         { name: "Google News — Candida auris cases", url: gnews('"Candida auris" cases'), source: "News" },
         { name: "Google News — C. auris outbreak", url: gnews('"C. auris" outbreak'), source: "News" },
         { name: "Google News — Candida auris nursing home", url: gnews('"Candida auris" nursing home OR hospital'), source: "News" },
