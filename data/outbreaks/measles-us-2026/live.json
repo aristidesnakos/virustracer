@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-08T08:39:22.900Z",
+  "lastFetched": "2026-11-08T20:25:49.243Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -302,9 +302,56 @@
     "news-7c5ed6c97c626245",
     "news-61e409b3bade25a4",
     "news-8211d8c375206866",
-    "news-3e2f7257240bc060"
+    "news-3e2f7257240bc060",
+    "news-93a437cb2aeddf7d",
+    "news-ea767d59431a603f",
+    "cidrap-fe33d5a237c87a96",
+    "cidrap-6f330d32005761a8",
+    "cidrap-7dc7d5d856068b9b",
+    "cidrap-f4ce97bf4597b630",
+    "cidrap-ca3ddf09650911cd",
+    "cidrap-0a4a217f114728b8",
+    "cidrap-7bb6a27335e8f653",
+    "cidrap-cc22b673ee7093f5",
+    "cidrap-93c0b3e709aa395f",
+    "cidrap-65280b25fa6ba9c7",
+    "cidrap-d0cd725f472947a2",
+    "cidrap-25ed1974197d8b0a",
+    "news-450696afb070f9e8",
+    "news-8e772ee1829a9dca",
+    "news-432cd5033b4eb20f",
+    "news-4c9a9a6f3892d2f1",
+    "news-c8a8a04231065bdf",
+    "news-b72fb4abb21bd096"
   ],
   "recentItems": [
+    {
+      "id": "news-432cd5033b4eb20f",
+      "title": "Update on Measles Outbreak as Cases Reach 1,487 in 45 Counties in Pennsylvania - PennWatch",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcHBBYXpIVEU1bkF6eFAyb085Wk45UmJ1NndaOGpueWFLaTJ1M0FSOWhrWHBOVVRKaXdGZ01EaG5rSzdZOWR5ajNLUlo3emlUMFRGWUNrTFFQQUlYd0pjYjkxWHFYY3p1RXF3SGxEVTJDanhGRFE3MEFJUlpVbUdPVFdjWF9TMVJDMENtNVNqZFdMei1mWmtUZm42cmVMRmZfNVE?oc=5",
+      "date": "2026-11-08",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "The article reports that measles cases have reached 1,487 across 45 counties in Pennsylvania, though the specific date for these figures is not provided in the title or content snippet.",
+      "summaryFallback": false
+    },
+    {
+      "id": "news-450696afb070f9e8",
+      "title": "Babies and Children Make Up at Least Half of Eight State-Reported Measles Deaths as CDC Lists Four - inkl",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPc2N2c2JPOUxGTy1qWmo1MXc1R1ZMUVdFbVc1ZmFxRHdBc093VTVCMHZVRW9aMjZITXFzUDBWcVg1ZE9VeVA3Z1ctWVdPVUEtUnd2VGgxM2p0X1NGSFhrMjJnUDhwRm9MYV9ZOVRUOExpUzZsMjkzSWZnS3M3MFZ6Y0x5Mnk2R1Y5RU50aWFOY1NjM3h0S0JxSWVJeHhVSmRrd2tZenpDNU1wcGFNVzhvY21GVFM0M3pVUTRQRmQxSTNudw?oc=5",
+      "date": "2026-11-08",
+      "source": "Google News — US measles cases",
+      "summary": "At least four of eight state-reported measles deaths in the 2026 U.S. outbreak were children, according to the CDC, which lists four total deaths; officials have not confirmed the cause of the remaining four fatalities.",
+      "summaryFallback": false
+    },
+    {
+      "id": "news-93a437cb2aeddf7d",
+      "title": "U.S. measles cases rise to 5,182 as adults overtake children and teens as the largest patient group - Medical Daily",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeEQtTDc2TzFUSG5mOEZHRmNJOVduQ1REbFlzeWRkUzhOUG5lQm5WMWcxUGpyVTRnTzVPakJQMlRrS0E1LVlWV1h4bkcwdnFKV2FaWG5hS2c1TU95c1dJc2VKS0k1dHJMSl92aHg4VkNmbnF5UldkM3BmV28zWWpTU0tNd3o2VnI0?oc=5",
+      "date": "2026-11-08",
+      "source": "Google News — US measles cases",
+      "summary": "As of the latest report, the U.S. has confirmed 5,182 measles cases in 2026, with adults now surpassing children and teens as the largest patient group. The death toll is not specified.",
+      "summaryFallback": false
+    },
     {
       "id": "news-02604618d9bf9c6e",
       "title": "How many people have died of measles in the US this year? States report eight, the CDC counts fewer - Nacionale",
@@ -327,7 +374,8 @@
       "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNY2FvSUxfc19UWmlXajRvX1hLajJsNDBZSHA2aEZxT0R2Zm1HNWVCWWJtWmliMnpmVnQ4eXdkeUliWTlkYlNWUHRzTWRQSkZuUVhKR0NTZmJfU1k2M1Z6azF3U1daUUhRWTE5YTRBdksySUdNM2Fld3doLXBHWVZqandaY2dnNG9CMjhYZGc3LXF4a2FEdDBUS1hHYWhQMXgza1JTOXJXVmd4YkxCTmhCX084UGxqRVl5Q3dxNmFDSU5IOTJt0gHKAUFVX3lxTE9wNjd0ZnpPUU9vQ2xSbzNFcWEzMXdrZUpzcVd4bEtILTlheUl1UHA4NzctcGo2Y3RIUmJUOUFINEVxSlA3UkNHUnNwdzdCSHBwNzJCR3poaXhrVDcwSDEtZUlsM2pRc3lnNkJwX3RBODhJVnhQVlNhaXFONjEtaTJtYkdZSWVJZ1V6cEJyY3BySFFzWklhbzRnSEJXd3ZxeWhwNVhRczY5M01QaVZnTW0xdFBVSUU3WVNQa0lneXZ6OWVDN2FwRGNmZUE?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "US Measles Cases Reach 35-Year High As Vaccination Rates Continue to Fall تسنیم"
+      "summary": "As of the article's reporting, the U.S. has reached a 35-year high in measles cases in 2026, driven by falling vaccination rates, though no specific cumulative death toll or confirmed case count is provided.",
+      "summaryFallback": false
     },
     {
       "id": "news-43f97e76bb7fd86c",
@@ -335,7 +383,8 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdW1idWViN3d5ZEszaXVvMkVKNDVNelBRQ01RUmxUMDVMbHcxYjVMb0FyenpnUUd4dDU4dWZIbXdMVDdDNTZFamdCSTBia29JWGZSd0d3Qml1bl9sQTFIUlZBQTlRSnBDc1FTVHhNRzNOdEprZlM3U1oxSTRTaFZfSExTVmh3dTFOd0tmdmZ6NjhkSVFkXzJBTHM5dXg3dlZENXBUSA?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "CDC reports 5,182 confirmed measles cases in the United States in 2026 2 Minute Medicine"
+      "summary": "As of 2026, the CDC reported 5,182 confirmed measles cases in the United States.",
+      "summaryFallback": false
     },
     {
       "id": "news-54cffc904ad3fffe",
@@ -343,7 +392,8 @@
       "url": "https://news.google.com/rss/articles/CBMiTEFVX3lxTE1TdDc4NVhxZ1pLTGxFLS00eHo4bmNFZ3Q0WjZqYWFPSGNnUmRlVUQ0TGRqYzFEQ2xuc1BkTXBHSU42ZzlKTkdKU3JRMnQ?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "More than 5,000 measles cases confirmed in the U.S., CDC reports ABC News - Breaking News, Latest News and Videos"
+      "summary": "More than 5,000 measles cases have been confirmed in the U.S., according to a CDC report.",
+      "summaryFallback": false
     },
     {
       "id": "news-61e409b3bade25a4",
@@ -351,7 +401,8 @@
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPaEM0QnhjTk5NaGhMbDJ5UVpiY3BYLWtzZTJnNFJra3lwaVEyNk1rWXI3QmgxejE1MHNQWFZGWnA1RDBsb0F6aVNrMFpKNG1NR0RTdXhuQXVMekNQM0kzT0dYMk9jM2dBclNLaURSS3lPTVhSaW9hLWF4cGIyQlBsaVh6X2NlRHdJWm9iQXpTYzFKdGV4aEh4WlNBWFp0V3BDZ2tPbkNfb0JsUll2S2UyZ1JMX0tpR0tqRkZ3UjVNd205OGxOWXF0dUV2MVhrNURhSkhMYWVR?oc=5",
       "date": "2026-11-07",
       "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Measles outbreak continues to grow; deaths reported in Pennsylvania, Wisconsin, New York this week CBS News"
+      "summary": "As of this week, the 2026 U.S. measles outbreak has continued to grow, with deaths reported in Pennsylvania, Wisconsin, and New York; the article does not provide a cumulative death toll or confirmed case count.",
+      "summaryFallback": false
     },
     {
       "id": "news-79987e4ec4c2de69",
@@ -367,7 +418,17 @@
       "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQQnd6SzFrNnBsYTJWWE16M2x5cnJrT1pHbW9nVkdndHFSSUxxYzJWNjkwNHgwaHJCN08xWGxQRkFaZ21NOUxFX2tSc1pmbEdfX3BZNGRUUzNIQzVSbzNFRmJvalFqQVhxZ19OcHVhdjVjeldCdmNjTUVfblhlY2FLR0w5TG5YXzlVSmZsMk14T01tNUNIQmlBS0tnejZodGo0MHkyc2xDeWtRR0hidGV3dC16ZW5VMnJ1dTJXX1B5VXVGUFNRb3RrRFU3QXh1MllFbjBvVUc1YnQtOXRwS3I3Mk4tQ1VrQQ?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "US Measles Cases Cross 5,000 For First Time Since 1991; Country Risks Losing Elimination Status Health and Me"
+      "summary": "More than 5,000 measles cases have been confirmed in the U.S. in 2026, the highest count since 1991, and the country risks losing its measles elimination status, according to the article.",
+      "summaryFallback": false
+    },
+    {
+      "id": "news-8e772ee1829a9dca",
+      "title": "US measles cases climb above 5,000 for first time since 1991 - ET HealthWorld",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxQMExJZVdZQlRBTGZxSWVMVWF6cXdaQWt3V0Z4SnBYai1GN3dTYXRLaHo3VjVaSEg2ZkszUE1taDM2bUhUSEZSYkZ5LU9JaGFQbXZsSHhWanJiSVJBNG95OWRtX05hVTBkMWl0WkNjcHlxdFNmdklPN09MQ3pUV1NJaGpvNlpBSXlOcHEzYTl0eTdmcWljcHZXUE03S05qSnhqMjRpOUhrNHNxcUpoNzZfYThzQVVGU2xqNmVxdHBxV0hrbVFWU0HSAcsBQVVfeXFMTTlLZ1lTb1lmQW5tU0dkU3VRZWprN2xsRHJwUS15N2M5VGFET0kxMlMxZkpkTk5kbkpPS3lUaFZackNBTzBsaXdIaFRCNzdxX2s4dWR6V1FRdVZjemw1M2EwV0QxNTVtQXNXbDdvZjZQSUJVMlliWWxEZ2lzUDQzYTY5UDFMQ2lMUUVXUFRkYXQydXJGcDI0VHpkZ2J3UEs3cE8zTExRNUJxSmZpOVd5MmhwZTJ0Mm5QVlJDSkxOMVpxM1hBbDIzYnZaVUE?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — US measles cases",
+      "summary": "As of the latest reports, the 2026 United States measles outbreak has seen confirmed cases climb above 5,000 for the first time since 1991, with the CDC stating that the surge is primarily linked to declining vaccination rates.",
+      "summaryFallback": false
     },
     {
       "id": "news-993022af6556e161",
@@ -375,7 +436,8 @@
       "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRW5kWTRPemxYR3dDUXluWE1NMmZ4dUFubDFEcjNNcmVHMGo5aE53WDAtX3lQdzdZaUdWV3gydkN5QkhXeExaV0VFUFBha080SllON0wtaEJHaVhNdmM2UldGZ0o1WEJ6V3dqUHdGOHpJaEJRVVFqd3lwWG5VSkxDZ2JoUl90VUZVQmdtc29wRGQzWnRiMW1ucG13?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "U.S. Measles Cases Surpass 5,000 for First Time in 35 Years Dailyfly News"
+      "summary": "As of 2026, the United States has surpassed 5,000 confirmed measles cases for the first time in 35 years, marking the worst outbreak since 1991.",
+      "summaryFallback": false
     },
     {
       "id": "news-9c5d2544c5773646",
@@ -383,7 +445,8 @@
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE5mZUtGWkR6MzNERzFtZHdkOTJMTnFFRzZWZFNEQUpRUW0xOHZsNnVkUDQ2X3N1RWpCYWdia3NxZ1U5OE5Sa0pXN29rYnIwNUdsbE1FazdTUUp3Z01lamdSZzdmUGJJWFFLc05KSjFFTlAzNjhXQlhkWQ?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "U.S. Measles Cases Surpass 5,000 for the First Time in Decades, America's Worst Outbreak in 35 Years Latin Times"
+      "summary": "As of the article, measles cases in the U.S. have surpassed 5,000 for the first time in decades, marking the worst outbreak in 35 years. No cumulative death toll was reported.",
+      "summaryFallback": false
     },
     {
       "id": "news-a1a16e57931fc87d",
@@ -402,12 +465,22 @@
       "summary": "As of March 14, 2026, two U.S. deaths from measles have been confirmed in the current outbreak, which has surged to over 300 cases across 17 states, with former CDC Director Dr. Robert Redfield attributing the resurgence partly to COVID-era disruptions in routine childhood vaccinations."
     },
     {
+      "id": "news-c8a8a04231065bdf",
+      "title": "US measles cases Hit 35-year high as falling vaccination rates fuel outbreaks - The News International",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNdWdhNk9RUkU3a3hmVjBjbFRJOC1FTWJGWTZxcTlVSERpOHRxS0FOY2d0YXduTmI2NVBZUWZQN2piUXU4NEhIQk0xQ0dyR2tkT2V1UkIyZmpRUWlLdk5pQlphMEVFZG5qLXk4U3FMcGZ6eHlDaEtkNVJ4VzhUbXRlS1kzREtuNGxoaGhURGJnX0xacWdJck9UQWQydzNwRWJsbjVSU19JNnlHdEN0N3JaNU04Vmx0LTIybWg40gG3AUFVX3lxTE5EWDE2ZThFd0tMV2VjcTg5VHV3dldydzVPXzdDQ3FOYWlPbHVabUR6b3ZUMVpaQjVybWIzbFc0TGU5NDVDaGFRN3Njd2hsWHMwWk41VFlkUWU4aWVZR3FyTlkwY0pZMjB5VVZ3RGZHR0lxLUdyOXI3QTBNOVBqVGtKcFBIMUllU0JORGlsRDFfWFNydnVrUGhGVVlsUWtiVEVJRFNDcEV4YzFqVVNaWGdEQm80RjN1NA?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — measles outbreak United States",
+      "summary": "As of 2026, U.S. measles cases have reached a 35-year high, driven by declining vaccination rates. The article does not provide a specific cumulative death toll or confirmed case count.",
+      "summaryFallback": false
+    },
+    {
       "id": "news-cdc089b48f42d4b0",
       "title": "The CDC has recorded more than 5,000 measles cases this year - The Washington Post",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxOVFhxRWNVa2pJcVBtU1IyUWZEMnh5Z1lBc0dBT2kyZDY3bHB5Q3IxZV9OUE9LTW9FLWQtM0lYVDBObW54RVVCZ2Z4RFQzTEVxaWxwdE93eG52QXF1N016QlR4Uy1nWUhfUGNtYXQ3dGJEX0VTVnBJY1ZGTFRQdEhYcHcwM0lSY3Awb2h5cDJPU3BKSVNFRHp6bW9WU1hVb3FzN0wyQmdfZ3k?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "The CDC has recorded more than 5,000 measles cases this year The Washington Post"
+      "summary": "As of the article's publication, the CDC has recorded more than 5,000 measles cases in the United States in 2026, marking the highest number of cases in a single year since the disease was declared eliminated in 2000.",
+      "summaryFallback": false
     },
     {
       "id": "news-d9d4b9489338a045",
@@ -415,7 +488,8 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE8ycHhqTUk1QlZzczdYcWFLVGtnSjlnRkJ1SDRjMFZMWFZxX3NIMGxQZnZtRGtXTjhnSVRUWTZvXzU3cW5JUGI0UlNoQ09CNmpaYVVrOVBabVpOZDdWMFhj0gFcQVVfeXFMUFVwNVdoRUk0WkpGRlhDMGZONHN4WFViNHdqb1hxSjR2dUVYRVUxb3BzTW9UN3FtdEJRNHFVTUVocVRjUVdONlRJdmg3d25ZTEZqRUVTNzAtYjQwd3E?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "More than 5,000 measles cases confirmed in the U.S., CDC reports Modern Ghana"
+      "summary": "More than 5,000 measles cases have been confirmed in the U.S., according to the CDC.",
+      "summaryFallback": false
     },
     {
       "id": "news-e1ae66ee7a1f1a7e",
@@ -423,47 +497,8 @@
       "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxOeE8zNVpCWWF3VjBUOER2R2FuN0xuZlJwVlgzUlVTVWFFY2lVaTl1VUdlWE9JQUFoMXRyZ3BreVBXYzlOa1JLamh6SHdhTWdHRkdPZlZTWENhMDZEWFNoUE0zYkp0ZnpVMWk2VjlvVjNwekw1d05lSXFnMUhLOUVOcV9BTDJnODVldi0ySk5JMUFzcEEyMVlQS3gwZ1RHWXU0UlE0cTNNSjllbExzOFd4U0ZVVlgxQnN4TUVUT1Q5bkJQODJMTXV1cXNlT3ZRRnZ3aEh3SUlXZVI0ek5rT2040gHkAUFVX3lxTE5tdnBqcWdneEsyeXFVQjRUR0VGZ2xUWDZfaVhzNHlpaGJwazltZlJqcmlSQThFUzFNYmdzOFZsZFhzN25vZ1BCeks0LTg0WGpvcWZXbG5oR0dSd2tYM0d1Zk1UMFdqV1RFSXVWQS1nSXhiZ09HREplQzVTbF8xYzBhQm5XMDhoSVZCQWtsZmhXM2hDQXQ2WHFnaFFma2ZhZTBUMjE2a1Vhel9Qbnp3V3dBWXlwdnVHRzhUSThKdEJSbGhDal9ldGQ3cVZuLTA4cTBNalJxWkFkTWF3ZXAzZFBYUS1WMA?oc=5",
       "date": "2026-11-07",
       "source": "Google News — US measles cases",
-      "summary": "US Measles Outbreak: CDC Reports 5,182 Cases & 8 Deaths Across the US From Measles Cases Hit 35-Year High The Sunday Guardian"
-    },
-    {
-      "id": "news-f71f6eca11c9f90e",
-      "title": "DOH confirms 6th measles-associated death as cases reach 1,487 across 45 counties in Pennsylvania - WFMZ.com",
-      "url": "https://news.google.com/rss/articles/CBMiigJBVV95cUxONnNIOGpXUEFBUWdRbFR2dDFqQ0hhRUVIZDR0SlU3S0pMenF2WU5tUmxIbm9UejdIRUNfZEFWS3JkNml1UGxyeTJNaFZSb2RsOVlTSXpfYVdCbk1mbm0ycEtnS0MzS2wybi1hdmtXYU1DTG9va0M1akM3amljRHpVTTNwc3I4YjRwM2xJRE5YejJmXzZmOGZyU2hhY25UVlA4MVFvVmUyOVZicWlCWG1LLS1HSkZKYmFfcTd3U2FPTnZFeWtzNjN5RzlTNnptSGZvMDNiWlR2Y2pJQ21XU0ZDdGdkSGZNRmo4dGQxQjlwVDNvZFpTaEZvd0tDVGhPcktyZFlYUjVEZmdKdw?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "DOH confirms 6th measles-associated death as cases reach 1,487 across 45 counties in Pennsylvania WFMZ.com"
-    },
-    {
-      "id": "news-064c51b9386a9343",
-      "title": "US measles cases rise to 5,182, CDC says - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxOX1d5dDlsVFFxcjJTYXBOZllYRU5Nc21nQVpLOUZ3Q2hxRGZlbnVELVd1MDVhYTdvLW4tQmlaSzBnc2hzcWNnbFdZcUNtdDNqV3o1WDZxS1htczVOa2hRSEpkRGp4dDZ3TGQxN1RDaWJKSGN2Q3Y5S2dHckJFMVBUQ3FDVQ?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases rise to 5,182, CDC says Yahoo"
-    },
-    {
-      "id": "news-0d9f0f075b52b7f6",
-      "title": "US measles cases surpass 5,000 with infections confirmed in 45 states, CDC says - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5lc294U3dJY1l3RE44TnVfUkJxMG1OeW9uWFViR3kxUnRLTUZlcVRydlpsaDZuTjRrNWE3VC01TXAtLU1kUl9faFB2WUt5LU5EMDdWVmFuczFrVnBuTzhhWnNHQ1paakNsdm5oWC1jV3RCUkkwR0pXZkx3?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases surpass 5,000 with infections confirmed in 45 states, CDC says AOL.com"
-    },
-    {
-      "id": "news-0f878e4cfe35f67a",
-      "title": "InvestigateTV+: Measles outbreaks in the U.S. - WDBJ7",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE1TV2tBaDFtMkFQV2tJZk43UXFJM2FXRnNoaWZFUDQtTFRzMUlZUFprbnVPbC1oM09lNjlGRjFwYThsOGE3U1Njd1VmZmVIZW1qV2xXOHhHYVI4NFNQU0ZmZmlQVEFGbjdCam05RklQc1VtUUhKaE9n?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — measles outbreak United States",
-      "summary": "InvestigateTV+: Measles outbreaks in the U.S. WDBJ7"
-    },
-    {
-      "id": "news-2218fd150ba8b3b4",
-      "title": "Wisconsin infant dies in measles outbreak near Iowa border - The Gazette",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxOS0RoQTdQamlnd1JWZW0yaHFMbmZQeDl5c3NtZXFQZzhPX0tWMWlLZGpFYlRNbWRUbHlmbjBYX3dSVnRKUHkyeTBJOHRwSU92WkVYb19zczljdzlKOFJucXQ3ZFM4cTlFbjkzZHJjVnpZbzR5WWlvLTRMWlF2SWFScXI1UDBxNXU5Y3c3bWc0SVNJdGJDdGlHZXVyUTNTX3l3Q2lNV0l5NWxITUlpdFQzSmFvWjdhZnVXMGtzQ3ZRUURPcXFXYWlBdl93YWlkU3hFSjAyWnlvMVJqdFZiOFVLNDVweGh2UQ?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — measles outbreak United States",
-      "summary": "An infant has died in a measles outbreak near the Iowa border in Wisconsin. No cumulative"
+      "summary": "As of the article, the CDC reported 5,182 measles cases and 8 deaths across the US in 2026, marking a 35-year high for the disease.",
+      "summaryFallback": false
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-08T08:39:27.052Z",
+  "lastFetched": "2026-11-08T20:26:00.280Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -129,7 +129,8 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNc2ZHaTRpQW1VUHp4RjltVVdBSWtjX0pFUXYxYVV1dDEzeWhZMnFKTEg1aURGZjU4bU02NjJ6dFdERHNaYnN5aE1tNDZzRnJISzhZOXlGVDhUTXktdWNrdnhWNXFJYi1OXzNLNURQaHY5eFhrU3VIZTN6ZDZyYXZKUlV4YW13eHpSc2tVRi1mWQ?oc=5",
       "date": "2026-11-02",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Increase in West Nile Virus cases and deaths in Greece Atlas Global de Riesgo"
+      "summary": "As of late July 2026, Greece has reported 8 deaths and 46 confirmed cases of West Nile virus for the current season, with health authorities warning of a significant increase compared to previous years.",
+      "summaryFallback": false
     },
     {
       "id": "news-d99579a00da1b683",
@@ -137,7 +138,8 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZlktclducWdWTzZPZGtmejdQUUlVMzg1bFdvM0ZWVkJKOVFlOWlpWlZaQWhoNDJMQWF0dE5nQUw0SU1RT0ZrX09nUGRYRXZ6S0NvMEd4T1NkQWZmLV81Mmw0T3RfUXFVTzVpbXhFQ243aGRLTUtoX3VhQVV4b0hUeDA3ek1GTFFCZk1pZ3ZoMA?oc=5",
       "date": "2026-10-30",
       "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile virus death toll in Greece reaches 51 İlke Haber Ajansı"
+      "summary": "As of the current 2026 season, the West Nile virus death toll in Greece has reached 51.",
+      "summaryFallback": false
     },
     {
       "id": "news-1b0fbad1cd8ac031",
@@ -153,7 +155,8 @@
       "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPdlNSRV9RWTExNk9SSzNBd2w4MVMyU2JwWVNOQno4RThlOHdmMnNEbTN0bTFUR29vM1Q5WFMyYTJWZVBZLVVEdHVLOUQteVo3UTZfV0NseDF3U0tSNkd4ZGJSRVVjYmg2b093X0E0ZkxvS1FXZ0dCNjF0Z21uU0cwU2tka0ltbGpTMUw5MGFvWnJtQ2tIdUNEamwtVHQycXFMUEhXbVZQaUI5TG9ZNnBkcE9KcUk?oc=5",
       "date": "2026-10-24",
       "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile virus death toll in Greece rises to 51 as cases reach 453 Türkiye Today"
+      "summary": "As of the article's report, the West Nile virus death toll in Greece has risen to 51, with confirmed cases reaching 453 during the 2026 season.",
+      "summaryFallback": false
     },
     {
       "id": "news-fc8275d95f2706c0",
@@ -177,7 +180,8 @@
       "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1MNTQxdGtGcnpkeGQ0dEFYRnlvajdENkxKdmdsNVB0WkdYdFdxc1pwUzh2OUZtMUkycldTZzUxbWQyRWIzUGxMaHQteXBqRGZTdFljQXQtLVIyYnpHZ3dCWW9ZSk1LdUNIUDg1c0pVT3NKbS1ERnpyT01EeDY2VXM?oc=5",
       "date": "2026-10-12",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Greece: West Nile virus infections rise to 443 Outbreak News Today"
+      "summary": "As of late October 2026, Greece reported 443 confirmed West Nile virus infections, including 29 deaths and 28 patients with central nervous system involvement.",
+      "summaryFallback": false
     },
     {
       "id": "news-c4223b357637948f",
@@ -185,7 +189,8 @@
       "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE5FWmN3TG9yZEE0TFZFM0ZKcnZUS01VdVRVc1dzanNZTzE2UXNTaVgzUFhXWUtUUTFKdXkxNWwwcGIwdUxSSWlxcWJZeUxXdGRBakFTWTJFSHhrU2I0UUJiaFdlNEgzUEJjelBTWkQyVmJ5Q1hacE9oN1RUQjZiUdIBgwFBVV95cUxPZ0lwaUFBemxtdUpsUVRnbjRlcmF3SGdqTkNwaW9SMVB1RHYyYnRIWUFsQlpzTW4wc0IyTEZoQjBYMGtScFdYTmM5WlNuaGVUY2lzRzZMM3ZxMGY1Z3U4WnhyTzFXS3N2UnByS2ZXVWhaYVNKSmlrclhtTnFBaDlUYk4yWQ?oc=5",
       "date": "2026-10-02",
       "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile Virus Cases Reach 423 in Greece tovima.com"
+      "summary": "As of the article's publication, Greece has reported 423 confirmed West Nile virus cases in the 2026 season.",
+      "summaryFallback": false
     },
     {
       "id": "news-accd175b841b3a3b",
@@ -193,7 +198,8 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxOelJCNnlPVkN4dTl5V2J4OE5yNFZ1QXhPVm5KUkg0MW1qWmEwaE1oWm1OMDBKTzA2clhocVoxTGRHTWdOWVlxU3dKZVowZm8ydlVfaUFOZk90aXVqU3diVHhLNlg5V0FfRWIxOEE5Q3hJeWxUUHprME54V3ZsNnZadFo5MGtLZ2s4REk5eWdTWVpOeHl2cmp0WDVadE10YXZuNlladk5DN2RZdjl2Rnc?oc=5",
       "date": "2026-09-21",
       "source": "Google News — West Nile virus Greece",
-      "summary": "West Nile virus cases surge in Greece as health agency urges mosquito precautions The Press Project"
+      "summary": "As of July 31, 2026, Greek health authorities have reported 18 confirmed cases and five deaths from West Nile virus, prompting the National Public Health Organization (EODY) to urge the public to take mosquito protection measures.",
+      "summaryFallback": false
     },
     {
       "id": "news-adc8b8fcaa199cc9",
@@ -201,7 +207,8 @@
       "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOSnhmSEFvdHkzZEs5UnZzdnJ3ZjkwdXNsSEpaUUU1TW5ONnVlUXBxVTVfWktfWTNCVXFDYjU4b3hxZllyeFlQRmxKRHhFd3BUU0p5RzR1UkQwaEZRRkZSYlVxNHF6anhONDlkTkxtNGI4aUh6cG8yY0RnbmpQcHdhcXE1MkNmVWZVdHpkQk9yVTRSdkFTWWotV2FfX09QOGtxeTM0dl91bWJvZ0tKNl9vaGJoTFd5QQ?oc=5",
       "date": "2026-09-21",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Greece steps up mosquito control as West Nile virus cases rise sharply İlke Haber Ajansı"
+      "summary": "As of the article, no cumulative death toll or confirmed case count is provided. Greek authorities have stepped up mosquito control measures in response to a sharp rise in West Nile virus cases during the 2026 season.",
+      "summaryFallback": false
     },
     {
       "id": "news-05950b5e2da97700",
@@ -209,7 +216,8 @@
       "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNMXJMZUtfRk1sV2xjUEF1Q3FsOGpzV2JPem1UODN0ckNHdWtFcFRjUzQ4WGxvenBlS2dVWDh4WWpwMzF6eTYxQzVEc01ZRXZyT3hSMTF3Q1VqMFo1M0ZKZnV0S2VhNGcwelNUaFZSMEgtdTY3Qk9GbjNVTHhoNENlY2JvVHZMWm9HdWE4RWdta0d2dEJ0WkxIN0hBc2FmU2pNZ3RXejNtOTBpN3RMc1VPQWc5V1ZsdWNXdFVYV2ZMekxiMHhSa280?oc=5",
       "date": "2026-09-14",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Greece urged to improve early warning system for West Nile virus eKathimerini.com"
+      "summary": "As of mid-August 2026, Greece has recorded 10 deaths and 30 confirmed cases of West Nile virus, prompting health officials to call for improvements to the country's early warning and mosquito control systems.",
+      "summaryFallback": false
     },
     {
       "id": "news-ef7bbb87100e8f52",
@@ -217,7 +225,8 @@
       "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPcXJMVXlFdTk4UFo5SkhCNDItOWV5aFNFbE9YVEw5T3E4bGIyU2NNTDVGX1dnUG5HV2JCTkVRLWV5ZDlVRDJ2Z3NaaFBOeFBhaVlqZjB6TV9wWnBGT1B3alU2Q2duR09MZlp3T2piS2RIVTJPSV9YWERsRG1za2tBV3VoMW1TbVpaMnRUdjN2dlFDU0lRY0xmZlZsUGVSQQ?oc=5",
       "date": "2026-09-14",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Experts: Greece Needs Better Early Warning System for West Nile Virus BGNES"
+      "summary": "As of August 2026, Greece has reported 25 deaths and 118 confirmed cases of West Nile virus for the current season. Experts are calling for an improved early warning system to better predict and manage the outbreak.",
+      "summaryFallback": false
     },
     {
       "id": "news-48df05bd99dfdf67",
@@ -225,7 +234,8 @@
       "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5pNjJMa1dFSWJzRmlZRm1PZTduYktEMm80TnhUUlhheHJGT1JCZWVOcDJXNmZFd1VaTnNTUzFGSWRlYTNSTVZoSFBVOGd3SDNiQzJ3amd0WHg?oc=5",
       "date": "2026-09-11",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Greece reports record annual West Nile virus cases as death toll hits 30 TRT World"
+      "summary": "As of August 2024, Greece reported a record annual number of West Nile virus cases with the death toll reaching 30.",
+      "summaryFallback": false
     },
     {
       "id": "news-bb0e551130d93343",
@@ -233,7 +243,8 @@
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxObWFhVVFfVGRPZzhRaDJLQkoyYTFIOFdBcldjZjYxZjFpTU11V1g0QXVxRXRGQmFVOW0teVo3a1Z3NTJzeVpMLTJpNGx0YVdGcU1oME50R29QT29aR2FBd2cyTVBrOEF0ZlNpUG93MC1YVWFtYy1FS2J2ejRvQ2dDWl94TURvdWoxZG9sWGVpcmQySmkzZ0xUeEdxY0FIRkpRXzMwOTRwVDVvcUVNaGpr?oc=5",
       "date": "2026-09-11",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Greece reports record 324 West Nile virus cases, death toll rises to 30 Anadolu Ajansı"
+      "summary": "As of the latest reports, Greece has recorded a record 324 West Nile virus cases, with the death toll rising to 30 during the 2026 season.",
+      "summaryFallback": false
     },
     {
       "id": "news-ceeed73b44b09501",
@@ -241,7 +252,8 @@
       "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQZ1d0ZVZyMnZYNERvUWxwcERBZGdKTV9fUHpzMU11eGxiVEU4WnFGSkhfd041b0pybFpHV2JITEFGeFBqYU5BSmtiWTZDRkpMVVJjbVZEV1I5TzdCSnNzbVRCQ2hJM1BJT1g1a0NuQU11em5SVFdiTWFXOEt5dVE4eF9uT0lfWmtMLTdaQ3NnSHE4a1ZwLXU4?oc=5",
       "date": "2026-09-11",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Greece records a record 324 cases of West Nile virus UA.NEWS"
+      "summary": "As of an unspecified date, Greece reported a record 324 confirmed cases of West Nile virus during its 2026 season.",
+      "summaryFallback": false
     },
     {
       "id": "news-38d9856246c9de58",
@@ -265,7 +277,8 @@
       "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxNWFhqZkJBTGJlaHlfNFdpdjBUaldJVGNfZWY0R1o3b3lvaVhPTWJra29vdWdWVTd1MEhWX2FVV25fSFZDaGhYdkhxS3dTWThLYTVlT0cwcm52aHZvb1FsZW9sZDBBZVBMTUs4UWVPOVV3V1JBY1NBY1pZNU1ZUTVjV0lIWW9Hdw?oc=5",
       "date": "2026-09-10",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Attica sees surge in West Nile virus transmission eKathimerini.com"
+      "summary": "As of August 22, Greece has reported 76 confirmed human cases and 10 deaths from West Nile virus in 2026, with the majority of cases concentrated in the Attica region.",
+      "summaryFallback": false
     },
     {
       "id": "news-bb05835878cc16a3",
@@ -281,7 +294,8 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOMDdVVUtQWGp0bTItMDVWOFRQTVU4SmJGLVdTNjJxa25EUlhNRTREOWlQV0hxMkJweHJkUWt2YUxIbUhOcm9FSm1DOUo4eVBjUGdMMGhkdms5ZU53ZlI4X1hBSVBzOFdualVFSDZxWDQzbjRWQk1xQzNPRjZVX2ljTEZQbXlkaWl1MnJIdUtzUVlYTlJ1OVZNbDR2WQ?oc=5",
       "date": "2026-09-06",
       "source": "Google News — West Nile virus Greece",
-      "summary": "Greece Second in Europe for West Nile, Seven Dead in Skopje srpske.rs"
+      "summary": "Greece ranks second in Europe for West Nile virus cases in the 2026 season, according to the article, which also reports seven deaths in Skopje. No cumulative Greek death toll or confirmed case count was provided.",
+      "summaryFallback": false
     }
   ]
 }

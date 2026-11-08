@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-08T08:39:18.273Z",
+  "lastExtracted": "2026-11-08T20:25:32.128Z",
   "candidates": [
     {
       "id": "news-11a703f8544b1d23",
@@ -14,6 +14,34 @@
       "sourceName": "Google News — Ebola death toll",
       "date": "2026-11-06",
       "extractedAt": "2026-11-06T20:35:59.641Z"
+    },
+    {
+      "id": "news-80cd60f145e42af6",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 6,
+      "deathsMentioned": null,
+      "context": "The Kenyan Ministry of Health reported the recovery of the sixth Ebola patient and indicated when the country will be declared Ebola-free.",
+      "sourceTitle": "Ministry Reveals When Kenya Will Be Declared Ebola-Free as 6th Patient Recovers - Kenyans.co.ke",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMivgFBVV95cUxNbEJJTExscEtBRmpBa1FFelhESjE5TTItWW9hOWgyUUhqZDYxbkU0SUZJTDVQdk95dmthaHFXRWdhdlk4N09iaXlTa3JjRVNTQkxpbm9memJ5Uzg3YVVHM2V3STZGc2N6eW5IMFktcTN3U2xrbDY2bFBWNkZjNGZvak95cWdFT256QXh1ZGtkN1BkRWdsbThCWDBhb1RfazVlT1BmQVFYMnpWd0o0bm56RmtGMXA5Zk8yR3M1bGd3?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-06",
+      "extractedAt": "2026-11-08T20:25:32.127Z"
+    },
+    {
+      "id": "cidrap-b223e73b7f1d5584",
+      "country": "United Kingdom",
+      "iso": "GB",
+      "flag": "🇬🇧",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "The UK evacuates an infected health worker.",
+      "sourceTitle": "As Ebola cases near 10,700, WHO recommends adding 2 Bundibugyo vaccines to clinical trial",
+      "sourceUrl": "https://www.cidrap.umn.edu/ebola/ebola-cases-near-10700-who-recommends-adding-2-bundibugyo-vaccines-clinical-trial",
+      "sourceName": "CIDRAP",
+      "date": "2026-11-05",
+      "extractedAt": "2026-11-08T20:25:23.368Z"
     },
     {
       "id": "news-963d63f61b67027b",
@@ -212,6 +240,34 @@
       "extractedAt": "2026-10-27T08:31:45.987Z"
     },
     {
+      "id": "ecdc-8299411697ccc7a1",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "With cases of Ebola disease caused by Bundibugyo virus recently detected in Kenya and Nigeria, ECDC reiterates the low risk for Europe while highlighting the need for preparedness.",
+      "sourceTitle": "Importation of Ebola cases to Kenya and Nigeria: ECDC assesses the threat",
+      "sourceUrl": "https://www.ecdc.europa.eu/en/news-events/importation-ebola-cases-kenya-and-nigeria-ecdc-assesses-threat",
+      "sourceName": "ECDC news",
+      "date": "2026-10-23",
+      "extractedAt": "2026-11-08T20:25:25.567Z"
+    },
+    {
+      "id": "who-a8539ec0c459be30",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 9,
+      "deathsMentioned": 1,
+      "context": "Kenya reported nine cases including one death, all linked to a traveler from DR Congo via Uganda.",
+      "sourceTitle": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo, Kenya and Nigeria",
+      "sourceUrl": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
+      "sourceName": "WHO Disease Outbreak News",
+      "date": "2026-10-23",
+      "extractedAt": "2026-11-08T20:25:19.026Z"
+    },
+    {
       "id": "news-2d14ab2cd9f4e6a8",
       "country": "Kenya",
       "iso": "KE",
@@ -330,6 +386,31 @@
     "news-dca22f1b9fc46113",
     "news-f4a6a19611b140f8",
     "news-250eb8855f2aa687",
-    "news-5ae54f47ed0cba50"
+    "news-5ae54f47ed0cba50",
+    "who-a8539ec0c459be30",
+    "who-b9e6ae5e194f9bb2",
+    "who-a30a1e29f288a7cb",
+    "who-8de72dc465b9a876",
+    "who-9e2415d800c908bc",
+    "who-37f80d382bc0ef95",
+    "who-ecd34447b317e163",
+    "who-64c7c5ad21cacc31",
+    "who-acb55c745b3f72e9",
+    "who-f3d3ae8685f74eeb",
+    "who-3f518e098c322eaf",
+    "who-895d101b900ecd04",
+    "who-19e217a2b541f5da",
+    "who-b94742fcffcaf7a5",
+    "who-1b407e0666041adf",
+    "cidrap-b223e73b7f1d5584",
+    "ecdc-70331fe88fbc58a6",
+    "ecdc-dba2e64d45ac917e",
+    "ecdc-8299411697ccc7a1",
+    "news-4fa3d25194e3a80b",
+    "news-2522d38926894d07",
+    "news-e79c15bd61bc7c9a",
+    "news-1ff046996f132e74",
+    "news-45d93a3beed87e80",
+    "news-80cd60f145e42af6"
   ]
 }
