@@ -19,11 +19,11 @@ export function isoToFlag(iso) {
   );
 }
 
-/**
- * @returns {Promise<null | {country: string, iso: string, flag: string, casesMentioned: number|null, deathsMentioned: number|null, context: string}>}
- */
-export async function extractCandidate(client, feedConfig, title, description, retryOpts = {}) {
-  const prompt = `You extract structured signals from news articles about ${feedConfig.subject}.
+export const SUMMARY_PARAMS = { max_tokens: 150 };
+export const CANDIDATE_PARAMS = { max_tokens: 250, response_format: { type: "json_object" } };
+
+export function candidatePrompt(feedConfig, title, description) {
+  return `You extract structured signals from news articles about ${feedConfig.subject}.
 
 Read the title and content. ${feedConfig.extraction.scope}
 
@@ -37,6 +37,20 @@ Title: ${title}
 Content: ${description}
 
 Respond with JSON only.`;
+}
+
+export function summaryPrompt(feedConfig, title, description) {
+  return `Summarize this news item about ${feedConfig.subject} in 1–2 factual sentences. If the article states the latest cumulative death toll or confirmed case count, LEAD with it (include the as-of date if given). Otherwise include any key figures or official statements. No preamble.
+
+Title: ${title}
+Content: ${description}`;
+}
+
+/**
+ * @returns {Promise<null | {country: string, iso: string, flag: string, casesMentioned: number|null, deathsMentioned: number|null, context: string}>}
+ */
+export async function extractCandidate(client, feedConfig, title, description, retryOpts = {}) {
+  const prompt = candidatePrompt(feedConfig, title, description);
 
   const raw = await retry(async () => {
     const response = await client.chat.completions.create({
@@ -62,10 +76,7 @@ Respond with JSON only.`;
 
 /** @returns {Promise<string>} the summary; throws when the call fails (callers fall back to the description). */
 export async function extractSummary(client, feedConfig, title, description, retryOpts = {}) {
-  const prompt = `Summarize this news item about ${feedConfig.subject} in 1–2 factual sentences. If the article states the latest cumulative death toll or confirmed case count, LEAD with it (include the as-of date if given). Otherwise include any key figures or official statements. No preamble.
-
-Title: ${title}
-Content: ${description}`;
+  const prompt = summaryPrompt(feedConfig, title, description);
 
   const text = await retry(async () => {
     const response = await client.chat.completions.create({

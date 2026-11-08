@@ -1,0 +1,34 @@
+name: Diagnose feed model
+
+# Probes why the news-feed model calls come back empty (scripts/diagnose-model.mjs). Temporary
+# push trigger so the branch can be tested; the final version is workflow_dispatch only.
+on:
+  push:
+    branches: [fix/feed-model-empty-responses]
+    paths:
+      - scripts/diagnose-model.mjs
+      - .github/workflows/diagnose-model.yml
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: diagnose-model
+  cancel-in-progress: false
+
+jobs:
+  diagnose:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+      - run: npm ci --omit=dev
+      - name: Run the probe matrix
+        run: node scripts/diagnose-model.mjs
+        env:
+          OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
