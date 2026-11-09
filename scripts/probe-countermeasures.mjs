@@ -129,7 +129,7 @@ for (const d of DISEASES) {
 }
 
 // ---- openFDA (drugs only; most vaccines are biologics outside it) ----
-for (const [name, field] of [["INMAZEB", "brand_name"], ["EBANGA", "brand_name"], ["ERVEBO", "brand_name"], ["REZZAYO", "brand_name"], ["BREXAFEMME", "brand_name"], ["MMR", "brand_name"]]) {
+for (const name of ["INMAZEB", "EBANGA", "ERVEBO", "REZZAYO", "BREXAFEMME", "MMR"]) {
   add({
     group: "openfda", id: `drugsfda:${name}`, host: "api.fda.gov", gap: 700,
     url: `https://api.fda.gov/drug/drugsfda.json?search=${enc(`products.brand_name:"${name}"`)}&limit=1`,
