@@ -9,7 +9,7 @@
     "tier": "E",
     "source": {
       "kind": "web",
-      "issuer": "WHO R&D Blueprint",
+      "issuer": "WHO",
       "url": "https://www.who.int/publications/i/item/B09906"
     },
     "expect": {
@@ -23,8 +23,8 @@
       "id": "tumaini",
       "name": "Tumaini vaccine trial",
       "kind": "vaccine",
-      "developer": "CEPI, INRB, University of Antwerp, DRC Ministry of Health, WHO and partners",
-      "note": "A Phase 2/3 trial that tests several candidate vaccines in one study, by vaccinating contacts of cases in DR Congo.",
+      "developer": "Sponsor named in the registry: Jean-Pierre Van geertruyden",
+      "note": "A Phase 2/3 study of vaccines given to contacts of Bundibugyo virus disease cases in DR Congo, compared with an active comparator (registry record).",
       "events": [
         {
           "milestone": "registered",
@@ -68,7 +68,7 @@
       "kind": "vaccine",
       "developer": "Merck Sharp & Dohme",
       "licensedFor": "Zaire ebolavirus",
-      "note": "Licensed against a different Ebola species (Zaire). Whether it protects against Bundibugyo virus is not established; that is what the studies below measure.",
+      "note": "Licensed against a different Ebola species (Zaire). Whether it protects against Bundibugyo virus is not established; the DR Congo study below sets out to measure that, according to its registry title.",
       "events": [
         {
           "milestone": "authorised",
@@ -81,7 +81,10 @@
             "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ervebo"
           },
           "expect": {
-            "medicineStatus": "Authorised"
+            "medicineStatus": "Authorised",
+            "quotes": [
+              "Merck Sharp"
+            ]
           },
           "date": "2019-11-11"
         },
@@ -154,7 +157,7 @@
       "id": "chadox1-bdbv",
       "name": "ChAdOx1 BDBV",
       "kind": "vaccine",
-      "developer": "University of Oxford, with Serum Institute of India",
+      "developer": "University of Oxford",
       "note": "Candidate vaccine designed for Bundibugyo virus.",
       "events": [
         {
@@ -200,7 +203,7 @@
       "id": "partners",
       "name": "PARTNERS treatment trial",
       "kind": "treatment",
-      "developer": "WHO (sponsor), with research partners in DR Congo, Belgium and the UK",
+      "developer": "Sponsor: WHO",
       "note": "A randomised trial of two candidate treatments, the antibody MBP134 and the antiviral remdesivir, for people with Bundibugyo virus disease.",
       "events": [
         {
@@ -215,7 +218,8 @@
           "expect": {
             "quotes": [
               "MBP134",
-              "remdesivir"
+              "remdesivir",
+              "sponsored by the World Health Organization"
             ]
           },
           "date": "2026-07-02"

@@ -164,6 +164,13 @@ export interface CountermeasureFile {
 /** After this many days without a check, the box says it may be out of date. */
 export const STALE_AFTER_DAYS = 14;
 
+/** What a line's date means, by where it comes from. */
+export function dateLabel(e: Pick<CountermeasureEvent, "milestone" | "source">): string {
+  if (e.source.kind === "web") return "Published";
+  if (e.source.kind === "ema-medicine") return e.milestone === "withdrawn" ? "Withdrawn" : "Authorised";
+  return e.milestone === "registered" ? "Registered" : "Recorded";
+}
+
 /** Words the box never uses about a candidate in its own text (quotes from sources are exempt). */
 export const BANNED_WORDS = /\b(promising|breakthrough|effective|efficacious|safe|cure|cures|miracle|game[- ]changer)\b/i;
 

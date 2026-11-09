@@ -9,7 +9,7 @@
  *   - clinicaltrials.gov: reads the study from API v2 and compares `expect` (registryStatus,
  *     recordUpdated, phase, enrollment); prints the first-posted date and start date too.
  *   - ema-medicine: reads EMA's medicines JSON once and compares `expect.medicineStatus` for the
- *     product number.
+ *     product number, then fetches the EPAR page and checks `expect.quotes` on it.
  *   - isrctn: reads the record from ISRCTN's query API; compares `expect.recordUpdated` and quotes.
  *   - web: fetches the page and checks that every `expect.quotes` string appears in its text.
  * Each mismatch is a GitHub `::warning::`; the script always exits 0.
@@ -109,6 +109,7 @@ async function checkLine(label, line) {
       const page = await get(source.url);
       console.log(`    page ${source.url} status=${page.status}`);
       if (page.status !== 200) warn(`${label}: ${source.url} status ${page.status}`);
+      for (const q of expect.quotes ?? []) if (!norm(strip(page.text)).includes(norm(q))) warn(`${label}: quote not found on ${source.url}: "${q}"`);
     } else if (source.kind === "isrctn") {
       const r = await get(`https://www.isrctn.com/api/query/format/default?q=${source.id}&limit=1`);
       if (r.status !== 200) return warn(`${label}: ${source.id} status ${r.status}`);

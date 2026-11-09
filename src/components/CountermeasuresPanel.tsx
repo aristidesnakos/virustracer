@@ -5,6 +5,7 @@ import {
   KIND_HEADING,
   REGISTRY_STATUS_LABEL,
   TIER_LABEL,
+  dateLabel,
   isStale,
   type CountermeasureEvent,
   type CountermeasureFile,
@@ -64,7 +65,7 @@ function EventLine({ event }: { event: CountermeasureEvent }) {
           </p>
         )}
         <p className="text-[0.8125rem] text-ink-faint">
-          {day(event.date)} · <SourceLink source={event.source} />
+          {dateLabel(event)} {day(event.date)} · <SourceLink source={event.source} />
         </p>
       </div>
     </li>
