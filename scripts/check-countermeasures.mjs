@@ -116,7 +116,8 @@ async function checkLine(label, line) {
       const assigned = (/<isrctn dateAssigned="(\d{4}-\d{2}-\d{2})/.exec(r.text) ?? [])[1];
       const title = (/<scientificTitle>([^<]*)</.exec(r.text) ?? [])[1];
       const status = (/<(?:overallStatusOverride|recruitmentStatusOverride|overallEndDate)>([^<]*)</.exec(r.text) ?? [])[1];
-      console.log(`  ${source.id} assigned=${assigned} updated=${updated} status-ish=${status ?? "-"} title="${clip(title, 200)}"`);
+      const scientific = (/<acronym>([^<]*)</.exec(r.text) ?? [])[1];
+      console.log(`  ${source.id} acronym=${scientific ?? "-"} assigned=${assigned} updated=${updated} status-ish=${status ?? "-"} title="${clip(title, 200)}"`);
       if (!r.text.includes(source.id.replace("ISRCTN", ""))) return warn(`${label}: ${source.id} not found`);
       if (expect.recordUpdated && updated !== expect.recordUpdated) warn(`${label}: ${source.id} recordUpdated is ${updated}, curated file says ${expect.recordUpdated}`);
       for (const q of expect.quotes ?? []) if (!norm(strip(r.text)).includes(norm(q))) warn(`${label}: quote not found in ${source.id}: "${q}"`);
@@ -127,7 +128,11 @@ async function checkLine(label, line) {
       const r = await get(source.url);
       const text = strip(r.text);
       const title = clip((/<title[^>]*>([\s\S]*?)<\/title>/i.exec(r.text) ?? [])[1], 140);
-      const published = (/property="article:published_time"\s+content="([^"]+)"/.exec(r.text) ?? /<time[^>]*datetime="([^"]+)"/.exec(r.text) ?? [])[1];
+      const published = (/property="article:published_time"\s+content="([^"]+)"/.exec(r.text) ??
+        /"datePublished"\s*:\s*"([^"]+)"/.exec(r.text) ??
+        /"(?:publishedDate|published_at|publishDate|created)"\s*:\s*"([^"]+)"/.exec(r.text) ??
+        /<time[^>]*datetime="([^"]+)"/.exec(r.text) ??
+        [])[1];
       const firstDate = (/\b\d{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec) 20\d\d\b/.exec(text) ?? [])[0];
       console.log(`  ${source.url} status=${r.status} title="${title}" published=${published ?? "-"} first-date-in-text=${firstDate ?? "-"} curated-date=${line.date ?? "-"}`);
       if (r.status !== 200) return warn(`${label}: ${source.url} status ${r.status}`);

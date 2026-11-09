@@ -51,11 +51,11 @@
           "source": {
             "kind": "web",
             "issuer": "CEPI",
-            "url": "https://cepi.net/news"
+            "url": "https://cepi.net/first-participant-vaccinated-pivotal-phase-23-bundibugyo-vaccine-trial-drc"
           },
           "expect": {
             "quotes": [
-              "First participant vaccinated in pivotal Phase 2/3 Bundibugyo vaccine trial in DRC"
+              "first participant"
             ]
           },
           "date": "2026-10-26"
@@ -171,6 +171,24 @@
             "quotes": [
               "ChAdOx1 BDBV",
               "50 healthy adults"
+            ]
+          }
+        },
+        {
+          "milestone": "registered",
+          "tier": "B",
+          "date": "2026-07-13",
+          "text": "Phase 1 trial registered (UK).",
+          "source": {
+            "kind": "isrctn",
+            "id": "ISRCTN72157798",
+            "issuer": "ISRCTN registry",
+            "url": "https://www.isrctn.com/ISRCTN72157798"
+          },
+          "expect": {
+            "recordUpdated": "2026-01-01",
+            "quotes": [
+              "ChAdOx1"
             ]
           }
         },
