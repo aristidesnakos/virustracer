@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-09T08:56:19.790Z",
+  "lastFetched": "2026-11-09T20:41:02.881Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -957,9 +957,28 @@
     "news-3854b311d482b8de",
     "news-ded2f5d9c3745d4d",
     "news-2bb33271947c4463",
-    "news-23b063129ade94bd"
+    "news-23b063129ade94bd",
+    "news-4e25bd82049a0455",
+    "who-5b30ebef17be9538",
+    "news-35dbeaf51ccf93fe",
+    "news-daf6e5b737043083",
+    "news-d5381ce92d5c9a2b",
+    "news-4943feae8ae6f734",
+    "news-72a733f55f06fb8f",
+    "who-ea4bb4917d7e4ea1",
+    "who-bd1fd8c41a7bafb5"
   ],
   "recentItems": [
+    {
+      "id": "news-35dbeaf51ccf93fe",
+      "title": "Bundibugyo ebolavirus: A wake-up call for pandemic preparedness - IDSA",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPblNpV19pRlJ0ZlFBOThlVGtPeXNQN0xHVGRRcHV6WkEyWS1jd1AxeVFLcnRIV0dMNmlfSTlMRjRsbmVvVjdzR2FvTUE4T0V0RzNnbWdLR2VKRlluWWQyZFFhOFhhcDhWR01xZHVQOE5CbXZvMG1xZUQyUHB0MHJ4bERYR3V5dE1WdVBqSWhnN0VIclhUd3R3dEFvQ1JWMFFYekxtMmVVN2d5cEhyS0NEVlJfOEY?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Bundibugyo ebolavirus outbreak serves as a warning to improve pandemic preparedness, IDSA reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-3854b311d482b8de",
       "title": "The Ebola outbreak highlighted gaps in vaccine research. - Vietnam.vn",
@@ -967,6 +986,46 @@
       "date": "2026-11-09",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "The Ebola outbreak highlighted gaps in vaccine research. Vietnam.vn reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-4943feae8ae6f734",
+      "title": "MSF DRC EBOLA: MSF calls for broader access to ERVEBO® vaccine during Bundibugyo Ebola outbreak - prezly.msf.org.uk",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPd0pGMGpOa2x0SS05SExTckpRTnBad2IyaUg5blVjZ2JqRG80azlsNXR2UmxPQm00NUI5bGItRXRzeWpocGFVRGVzTHhOOFVaT0owQTlLS0ctTExra0J1T0VzNXhMSGVVMjRNbm04NWZFSFpMbThudUFoQWVwTW8yaWlfeFAyQVZ0QjZjWDloRE5Xc2dyZXBUNjh0QnRsVHN6OEc4RnJBT1ZQczNYc0dIclNPbkFjNFo5ZkZ0dQ?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "MSF calls for broader access to the ERVEBO vaccine during the Bundibugyo Ebola outbreak, prezly.msf.org.uk reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d5381ce92d5c9a2b",
+      "title": "Health officials working to contain growing Ebola outbreak in Africa - The Red & Black",
+      "url": "https://news.google.com/rss/articles/CBMi8gFBVV95cUxPbEdwVHFYNWNyc0ZyWlFXdl9peEJhNWVWMk1YNGJsem00WUZLQXNSNjdmclB6MEU1ZThQZWtYa2s3MVdmY0NUUzQyRGphcm9PRV9rNVlidTVWZnZpU095M2JsX3Vra3BDZUJLTlZPaHhQem0xY3d1MktSUzUtRlNxOGtuWlQ2VWxJY2dZb2RJS2d0Q09RSktPdFZEWVdiLXpnT0hUNjZ6X3NFRU1YaWlfSFhycENhYW4zWE5MbXoxOWZPdkxsMUN4aDVncUhxdk9wTmpYb0VEeUNmUXFrM0gxX0dGY3JPeEFmMTRrV2I0WVZlUQ?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Health officials are working to contain a growing Ebola outbreak in Africa. The Red & Black reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-daf6e5b737043083",
+      "title": "MSF calls for broader access to ERVEBO vaccine during Ebola outbreak - Doctors Without Borders",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMWJWRDFnTWt3MGllNG1vOWVoUGpxYS0xMnRpTU42VFQwNFk1T2p6WnE5Vkx2eVhIWHJoWGlDU2ZWbVlGd1dFWFpjcVdOZi1kQlhzMFNpMGUwREJVRHA0YmlTaTM4YU9xc25peVN1c3Zqek5KdV9OS2dDV2M4Q2k5V2tFRDJfNnNUNFV1Tnh3eUV0bmFhX09RUkRpOHRxVHZicU80Q1JJMHZJUQ?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "MSF calls for broader access to the ERVEBO vaccine during the Ebola outbreak. Doctors Without Borders reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-ea4bb4917d7e4ea1",
+      "title": "Ebola Update: DRC Outbreak Tops 10,000 Cases as Kenya, Nigeria Report Spread - Contagion Live",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSDBfR01sRzZUU215ZzJaeDkwaFBPWTNrS0V3RE02aW9WQWJyeFBTODFEdFE1aHVLT0pvdlk4MUlyUFVoUzVrTjdxWndYOUtVcm9YZ3Ezb0FNN012aUVNVmlCRTFNOG13NkdUZ2xZTEdBLV92cFBjZjRLeTJ1ZFlyeElPSGE5XzFHSnRyVFFFcVluVmRsUkJTb0V2NWpia3pTQ3ZybzV0VzJ6WFJo?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — WHO DON",
+      "summary": "The Ebola outbreak in the DRC has surpassed 10,000 cases, with new spread reported in Kenya and Nigeria. Contagion Live reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1107,56 +1166,6 @@
       "date": "2026-11-06",
       "source": "Google News — Ebola death toll",
       "summary": "Islamist militants forced Ebola patients to flee during a raid in Congo that resulted in deaths, Reuters reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-11a703f8544b1d23",
-      "title": "British health care worker with Ebola evacuated from DR Congo to UK: World Health Organization - Anadolu Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxPdHUwWkJfSXlqVUs0WDF2WkoxaFNqSmRUYXpfUkhpQ0hUSjRfcURiY0dYWjB5QXRycUpoRnBfUkhqMm9aVWlEV0U4S0lhSnE2NGRuUC1mY1BvWG5hTW9BanJiQTY2OUx0cjhwOFBKRi1oV2dxLVdyMzliWnctWTVqcjdwNnhnUFd6cGktd1BQMmwxTGFsNTFQYko4clpnZ3UwTm1IYkk0OUJKZUpuWmJxdFl4Ql9XMHRFN3RkdUt2VjAzRnJUV0NwSy1UcU9JZw?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "A British health care worker with Ebola was evacuated from DR Congo to the UK, the World Health Organization said. Anadolu Ajansı reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1ddbf6ef441c8767",
-      "title": "Race against time: Two new vaccines enter DRC Ebola fight - thenational.co.za",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPckpPSzhrXzdSTkZ1WVBrakpLOXlvWGJsZzlHMXFrQlNnNWp1LVp5d2d5c0lIVVpYTDdDWkl3MlVLYTlJT3k1NUoyV3dILUN5OXJoTEdhMnR0cUpBWHBNdFlzU3FCWlB5U19jN1h5QXFpUXZIT0ZFT1FDTllTcUFKVWZqYzY0cnZ2dXJrV0UxMURGazJFUF9oNkdUMmxBTl9lZEEwQ2R5RQ?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Two new vaccines have been introduced in the DRC to combat the Ebola outbreak, thenational.co.za reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-278268da3f0775cb",
-      "title": "Armed men kill at least 33 in village in Ebola-hit eastern DRC - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOTWdmZ3BvNlZzX01OMmhLZ05vYWZOVmpTZzJNT0psVXh1UmMxRHBmdlpMZmRGY3dyckFPMXMyVktrNFhsY3dOM2ZfaTVUQjFfTDhwOTl3OUNWbGlScFVRMWlDa3lNQjF6TVFGejIzUnBRelFhWHRlNjctLTlteGZVZmlXZUtwb05yajJxMTFfa3dLTmowVE5tTEd6allHV2F2azFUWERn?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "Armed men killed at least 33 people in a village in Ebola-hit eastern DRC, Al Jazeera reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-42918bff10e9d944",
-      "title": "Delayed international support has hampered efforts to contain and treat Ebola in the DRC - The Star, Kenya",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdWRGX3ZqdjNyWTFhSVRCUGc5QlNrQ1JSSldtSGVsaGc4WERIeUlEVGpnNHoyOFJKQlBrNHZRQnlNdWdhaUJySzFKOGYzZnVYTC1XQ1puUjg3eW9PbF8wY0xjZ0s0QjNFNHlLVk10MHNFZUdiQmFRenRNSnJvTFNYOHNMY3FwWFp5cFVvQWRxeHc2QXU0cXFpMjRvMzVjcktiZzYzVkIzV0oyaUk?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Delayed international support has hampered efforts to contain and treat Ebola in the DRC. The Star, Kenya reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-4b6c0be484fb2421",
-      "title": "WHO recommends two new Ebola vaccines for clinical trials as DRC battles Bundibugyo outbreak - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxOZEthQ0Y4aXR5LUpYMDdPZ2dsMzFUTnhmeVljZFRTTGVUZm91OHNmbkc1d2ZtYjFua3F0dTBSVlY1MjhBMmdtWFZOWHRLWDlicEF5VXVOVDZpS2Y4Zk1ZSV91UHdXQ2lrSzZQMTFHcHM2dHpKNXBEVm5ZY1U5RnRJVGo2ODJkWmFObXAzSlZHX2JhUE5MWUZjeXRLRURYLWxGa2JzV2ZEOGFadWN6ZW1KSEZrR2dxZGg3RGtMZVV6dlNybU1RZ0FyZ2liRkhIalFHcWxnRkU2enMzcjk0T3hBQUxITQ?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The WHO recommended two new Ebola vaccines for clinical trials as the DRC battles a Bundibugyo outbreak. Premium Times Nigeria reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

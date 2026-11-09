@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-09T08:56:25.787Z",
+  "lastFetched": "2026-11-09T20:41:05.254Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -439,9 +439,66 @@
     "news-83fa1f9d4395921b",
     "news-6fe9d454c57f24ec",
     "who-2de1a4122efa49d4",
-    "news-768b352d9020a1e9"
+    "news-768b352d9020a1e9",
+    "news-5e92792a48072e2b",
+    "news-8f103662b9b3c3ca",
+    "news-cf905dc61e1a890d",
+    "news-3e97884bbcf074e2",
+    "news-cd2785b8769af8e0",
+    "news-f6b75b2c4d56a97b",
+    "news-ff5b434f9879cadf"
   ],
   "recentItems": [
+    {
+      "id": "news-3e97884bbcf074e2",
+      "title": "'Hang me, this is my failure': Bangladesh health minister takes blame as measles outbreak claims 1,200... - Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQTWt4RTVOMUxWdFo3VV9rck1DbHI0eUl3VndLWElXWV9HTDRsUkdTMWdzT0RUNnB3ZnkteW5mTjRXSHNMbGQ3VG93eHBFMDVrUmdMQ3pTekxWeEROMU5vd2VSa3ZfbnJJZ0EwX1RiUXdtbG1QYlZqWmtEaGNzMTJpXzlsTHJFVnNORFp0Qm9IaktYb0k0ODI5UGowTGJPRXZzUU1HcGFEQXc4ZDd6cElna1pXTVpFS1FSdWZ5T1plTmZYSEY5aGIwNG4xV3Eyd042UUYyVXY4M1lsaFQweUZJNTdUSXRpdWMwYUpaNFRfclJaMEHSAfgBQVVfeXFMTWZjYlMzX3AyenlPTGNJcllNcnl6UHFNZkJWTGFlVk9JRExOenRYaFVvbm1NN3NMWWsxVEcxODlsbnBUYkRlSEROYm1WTzZ6dmM2OUw0VzVvdU1vd3Z0WjBzNG5mU1MtelpZLXBSYV92R2o2YTE0cnIyeG96QU9UVXdnMmVSd3ZvSkVzM29uRVE3SllJc1haeC1iZURYbElDQ1d1TV9VRHFSSDczaTQ2VVp4NkowalRtY2JreV9KenJBTzNiYmlpQWFhNXREaGJmMGlRQ2h0ekZyQk5acVc2bGo0VnRHMUFPZmRZSXpsMXJLbzFtQ2d4aEY?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh's health minister accepted blame for a measles outbreak that killed 1,200, saying, \"Hang me, this is my failure.\" Moneycontrol.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8f103662b9b3c3ca",
+      "title": "Hang me: Bangladesh minister takes blame, another targets Yunus as measles kills 1,200 kids - India Today",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxQZUt3aWkwelExQXAzM3NManEtZC0yMmNBVmF2Tld2ZnlCQnBTMXdPSHFWWEJZUWpseFhkVUhkYlBYaFBVOFZHNUJhMHpPS2FDaFpRRVlvQ2ZYdUlva0ZOVmNVRnBCSHYybU5Bb3Zjak40R2NWXzcybFl5d0tpUE5NVWVfaklOSWxmR3ZaNDhlZEZVbVhLM2g1VXJfc2VhNDNpelNTOUZERjZZaHVqNjdMcTkzSUJkWVZYOVpXREh4cDA1SHZ4TDJkUDlCeVUxSHExY0M5elowN3RVTHNIQW0zOVlTVk1Fb2lMenZtUG5temYtTWvSAfgBQVVfeXFMT2w2Mm93TlB5X2htTE9TYW4tUnUtbXBOVGlfQkZmOU5yWDVua2NLNHhFQnlxR05kM3VMeEZrN2pjZ0wtMHRVVkdXaVQwVE50M3B1MFpvY3ZxNjdUekZfTlMtR0U4djZvSHRZdXU2Z2Y3bUJXZG0zUEpyeGs5QzBkTnUyekkwa0NXaU1aT1Y3eTJGQkVXUlQ3em9OQzhuSkxjYjVpNEVjcm5RNnFWaGFVOFkwSHNLdUtUb0VuY2k4c2FaNVVDY200U1BVOThXTEM4am10Q05aX3VfTFdNOVBOWEEwdjJPSFkwRTVKS2tQOUhxT24tWjFwS0w?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh minister takes blame and another targets Yunus as measles kills 1,200 children. India Today reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-cd2785b8769af8e0",
+      "title": "Bangladesh Health Minister Hossain accepts responsibility for deadly measles outbreak - NewsBytes",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNQ0ptbWI4MTdsVmpJdkQ1aEZnN3VtLVpCQWlyc29FdUNnQnR1ZDV4X2FUVFJUQVIxMEItZmNKRmo0cWJaNTZmOHpyRnhzS093X3NVQ3BxZld3R3hFR19lS1ZFT1ZMWDNZMFRLLTdCV3lqTzBsQmlnRm5Ka1FZcjVhSVRTaUdvQ010Q2wtRmd2T0NNMEQ2c0xIRGxtdlVtTEtjVXlGZEc1c1ItY25Wd2dacFVTYWRMVXBnS21FOU5wTjIxd0JvdWdBUGN3?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh Health Minister Hossain accepted responsibility for a deadly measles outbreak. NewsBytes reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-cf905dc61e1a890d",
+      "title": "Measles outbreak: Death toll reaches 1,284 as two die in 24 hours - Dhaka Tribune",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPeEpIMmwyRDRyeGhkVnpYWkpCcVVleGwtUkpwSVl1WnBmeEJ4TmJjbGNiTXhhMG11ZTk2dkZ6dEQ4bUUxVnBqX3hVY3QwZEJfVnEzRndwZWs0Ykc1cWFsTWJYNlBKRUlQSERORU9yNEZYdFV6NW9uaUpxa1JuNWJQRDh1NHFCcmxlYjBrUHFHRkFTQjRiT3MtWUx0XzJsM0daWk9nTtIBqgFBVV95cUxOSGVZalZ5Qnlmdy1SVy0ycksxRkhhS0c4emdIYXh3WmFJdjJrcm5WZURtMW5JSnhidjgtanVadkZDdjh2UVFhR2VDZmc4MUtPNm83UDhXOG1FU3QwNTlCODJOTmFGaXk0TTZnY1dTX1hqRHdlMGhJUjR4QjNuYWxPY19pY1NCN1JVX3Vhc0tvTHdRbTdxYmpZUWtPWXRPLXZrMS1XVm9CRWE1UQ?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "A measles outbreak's death toll reached 1,284 after two people died in 24 hours, Dhaka Tribune reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-f6b75b2c4d56a97b",
+      "title": "I take responsibility for child deaths from measles: Health Minister - Prothom Alo English",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9HRHYzZ1prWGlPN1ZZcnZCSGNMVkRlbk1rdE5JTENyS05LMVZOYnBVcVltOXpHcVRUR29JYTk3TEhGRnBuWElxOE5yR3hnb3BFUEdISUtfQkRSNnPSAWhBVV95cUxNeHQ4UURUTlo0SXhFdWdfdHBfWkFkaHJmR0hHcmZhU0RXRUpJa3llMFBTanRuNVM1LTQ5ZzdxNVB0VklFV19yVEtVT2xhTUJEQ2ZESlRZS1BsNFlaUnhvSC0xb1Q1ZGZfWQ?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh’s health minister said he takes responsibility for child deaths from measles. Prothom Alo English reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-6fe9d454c57f24ec",
       "title": "Bangladesh measles outbreak claims two more lives, death toll crosses 1280 - Social News XYZ",
@@ -553,6 +610,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-ff5b434f9879cadf",
+      "title": "Bangladesh Measles Fatalities Hit 1,269 After Six New Deaths - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQNVNKZldwdWhzanpYblc2eTU3Rk9GaEpyZV9sbDljNnIxOVRiV0NrU3hJWWo0aTFXWnJDNXNzOV9aX0pKVzVfT0p3eENTemhRU1RoSWZ3cDJTYVVOOWJ6bWhIaC1VLVhTc0NsZmFRb1Q1ZnJjNXh6QVMzbVNWVklxU193cHJ0ZXpMZmpVTXdCd1U1TDFjakpGMHZZQmpEdw?oc=5",
+      "date": "2026-11-05",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh measles fatalities reached 1,269 following six new deaths reported, NDTV reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-768b352d9020a1e9",
       "title": "Measles vaccine delays: Inquiry commission formed to determine liability of interim govt",
       "url": "https://www.thedailystar.net/health/news/measles-vaccine-delays-inquiry-commission-formed-determine-liability-interim-govt-4315786",
@@ -578,66 +645,6 @@
       "date": "2026-11-04",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh was a public health success story but now faces the world’s largest measles outbreak. ThePrint reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-e0e73fb57e384b7d",
-      "title": "6 die of measles symptoms in a day in Bangladesh - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE5EOW1KTUZUQjFBbHI4czhpdDVoUjlvdnZaMXJmNjlZWTZRQ1o0Y0MyWmNHN3BDLUh6cDEtSEl1aTNENXhTY3h4VmlOOHdOenc?oc=5",
-      "date": "2026-11-03",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Six people died from measles symptoms in one day in Bangladesh, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-60fa3b85ebb06afb",
-      "title": "Bangladesh reports 3 deaths of measles symptoms in a day - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9hUzZwYkd2STVlTFZGM3hGRS1MWjVxYzBrMEE5a0YwclFSZm5sYWtxNkhrYXVhcDZCV09GMjBqZlZHemRmdlhHdkRzX05tOW8?oc=5",
-      "date": "2026-11-02",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh reported three deaths from measles symptoms in a single day, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2afee60502dab8b6",
-      "title": "Dengue And Measles Outbreak Bangladesh | Plan better to prevent recurring outbreaks - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTldnQVhZX1FlemVEOWNqbXVVRW1BRUpmUEFpQVgwVU5wc0xiN2NDSDRROEJ6WFJkcFZGMGI3bDhqNGFNTmdMSk9SZFRLVXlCd01wRGlfTkplcXZZTzBhWHRzTkt6YnJXeUZhbmRlTEZabURhdGdQdUNxZ2JDanlZTzBzcGZMUmVyVVQyMzdWbk0xbkZuUWZfTXpUcGRPMHBa?oc=5",
-      "date": "2026-11-01",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "A simultaneous dengue and measles outbreak in Bangladesh requires better planning to prevent recurring outbreaks. The Daily Star reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1f245a3e674657f6",
-      "title": "Bangladesh reports 2 more deaths from dengue, suspected measles - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9TQWoxa09jQXhGbVZEQm9Cb3lWN0ptdUoySmd4eWdDa2lRVk1LUjlaQjVtTnAzN2VTYkVNZ3ltamxHN09xREFXV3B5bldCX1U?oc=5",
-      "date": "2026-10-31",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh reported two more deaths from dengue and suspected measles, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-4a60510be432502e",
-      "title": "Measles-Like symptoms claim seven more lives in Bangladesh - Bangladesh Post",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQaG9EQjE1ZHhwNGN2amtuSVdUUE5fTjF2WXA4NHVoMjlfVW9VZ3lOa1NReGo1MGt0dDVrZTNzWUxoTWpOSUhyZENqQjdrLUk2d29LRWxnQVYwRkxQREFkZWc3Q1ZBd08zRmx0bWdKb0FVbjYwSkZwazRCZVZwN3QxSzkyR3FYWC02aFJHb1RvUkFqWl9hUzQ3TVpPbnoyNFk?oc=5",
-      "date": "2026-10-29",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Measles-like symptoms claimed seven more lives, Bangladesh Post reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d7c542b1a9148c30",
-      "title": "Seven more children die with measles symptoms in 24 hours in Bangladesh - New Age BD",
-      "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPMm45bnVJaURCMld1eXVkR2JVenNibDFDRjJ5Y043dGFad3lEejZnWXBtbUl0bjZvVFc4ajN3Rjd0aUNpUFRCZnhnM2VHZUthczI0UXhwM3N6VHNrc0NTdTFNRXBLZ1M5SjhvQ2NKNkxPd2VIN2lVd0pKa2JSM2hMbXFsQXgydkZKOHE3cUgxU2dmLVE1cXVic1lPc1ZoVFhHa1ZBZkpPT0ZtRllLZlp4Q3A2NHpIZGN5VHR3cVd6TUd3aGs?oc=5",
-      "date": "2026-10-29",
-      "source": "Google News — measles vaccination Bangladesh",
-      "summary": "Seven more children have died with measles symptoms in Bangladesh in 24 hours. New Age BD reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
