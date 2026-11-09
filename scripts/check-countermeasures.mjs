@@ -10,6 +10,7 @@
  *     recordUpdated, phase, enrollment); prints the first-posted date and start date too.
  *   - ema-medicine: reads EMA's medicines JSON once and compares `expect.medicineStatus` for the
  *     product number.
+ *   - isrctn: reads the record from ISRCTN's query API; compares `expect.recordUpdated` and quotes.
  *   - web: fetches the page and checks that every `expect.quotes` string appears in its text.
  * Each mismatch is a GitHub `::warning::`; the script always exits 0.
  *
@@ -108,12 +109,27 @@ async function checkLine(label, line) {
       const page = await get(source.url);
       console.log(`    page ${source.url} status=${page.status}`);
       if (page.status !== 200) warn(`${label}: ${source.url} status ${page.status}`);
+    } else if (source.kind === "isrctn") {
+      const r = await get(`https://www.isrctn.com/api/query/format/default?q=${source.id}&limit=1`);
+      if (r.status !== 200) return warn(`${label}: ${source.id} status ${r.status}`);
+      const updated = (/<trial[^>]*lastUpdated="(\d{4}-\d{2}-\d{2})/.exec(r.text) ?? [])[1];
+      const assigned = (/<isrctn dateAssigned="(\d{4}-\d{2}-\d{2})/.exec(r.text) ?? [])[1];
+      const title = (/<scientificTitle>([^<]*)</.exec(r.text) ?? [])[1];
+      const status = (/<(?:overallStatusOverride|recruitmentStatusOverride|overallEndDate)>([^<]*)</.exec(r.text) ?? [])[1];
+      console.log(`  ${source.id} assigned=${assigned} updated=${updated} status-ish=${status ?? "-"} title="${clip(title, 200)}"`);
+      if (!r.text.includes(source.id.replace("ISRCTN", ""))) return warn(`${label}: ${source.id} not found`);
+      if (expect.recordUpdated && updated !== expect.recordUpdated) warn(`${label}: ${source.id} recordUpdated is ${updated}, curated file says ${expect.recordUpdated}`);
+      for (const q of expect.quotes ?? []) if (!norm(strip(r.text)).includes(norm(q))) warn(`${label}: quote not found in ${source.id}: "${q}"`);
+      const page = await get(source.url);
+      console.log(`    page ${source.url} status=${page.status}`);
+      if (page.status !== 200) warn(`${label}: ${source.url} status ${page.status}`);
     } else if (source.kind === "web") {
       const r = await get(source.url);
       const text = strip(r.text);
       const title = clip((/<title[^>]*>([\s\S]*?)<\/title>/i.exec(r.text) ?? [])[1], 140);
       const published = (/property="article:published_time"\s+content="([^"]+)"/.exec(r.text) ?? /<time[^>]*datetime="([^"]+)"/.exec(r.text) ?? [])[1];
-      console.log(`  ${source.url} status=${r.status} title="${title}" published=${published ?? "-"}`);
+      const firstDate = (/\b\d{1,2} (?:January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec) 20\d\d\b/.exec(text) ?? [])[0];
+      console.log(`  ${source.url} status=${r.status} title="${title}" published=${published ?? "-"} first-date-in-text=${firstDate ?? "-"} curated-date=${line.date ?? "-"}`);
       if (r.status !== 200) return warn(`${label}: ${source.url} status ${r.status}`);
       for (const q of expect.quotes ?? []) {
         const i = norm(text).indexOf(norm(q));
@@ -158,6 +174,25 @@ async function discoverFor(file) {
     console.log(`  ISRCTN xml near first match: ${clip(r.text.slice(Math.max(0, i - 600), i + 400).replace(/\s+/g, " "), 1000)}`);
   } catch (e) {
     warn(`discover ISRCTN: ${clip(e.message)}`);
+  }
+  try {
+    const r = await get("https://www.isrctn.com/api/query/format/default?q=Bundibugyo&limit=10");
+    for (const m of r.text.matchAll(/<isrctn dateAssigned="([^"]{10})[^"]*">(\d+)<\/isrctn>[\s\S]*?<title>([^<]*)<\/title>/g)) {
+      console.log(`  ISRCTN${m[2]} assigned=${m[1]} "${clip(m[3], 140)}"`);
+    }
+  } catch (e) {
+    warn(`discover ISRCTN titles: ${clip(e.message)}`);
+  }
+  try {
+    const r = await get("https://cepi.net/news");
+    for (const m of r.text.matchAll(/Bundibugyo/g)) {
+      const before = r.text.slice(Math.max(0, m.index - 1500), m.index);
+      const hrefs = [...before.matchAll(/href="([^"#]+)"/g)].map((h) => h[1]);
+      const heading = clip(strip(r.text.slice(Math.max(0, m.index - 120), m.index + 120)), 200);
+      if (hrefs.length) console.log(`  CEPI near "${heading}": nearest preceding href=${new URL(hrefs[hrefs.length - 1], "https://cepi.net").href}`);
+    }
+  } catch (e) {
+    warn(`discover CEPI hrefs: ${clip(e.message)}`);
   }
   for (const [name, url] of [["CEPI news", "https://cepi.net/news"], ["WHO Blueprint", "https://www.who.int/teams/blueprint"]]) {
     try {
