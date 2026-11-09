@@ -13,6 +13,9 @@ import {
   MAX_ITEM_TEXT,
   whoDonItems,
   titleKeys,
+  summaryProblem,
+  cleanSummary,
+  repairInput,
 } from "../scripts/lib/feed-items.mjs";
 
 const rss = (items: Array<{ t: string; g: string; d?: string }>) =>
@@ -181,5 +184,37 @@ describe("classifyFeedItems with datedTitles (WHO DON updates share one title)",
   it("without the flag the same updates collapse into one (the old behaviour)", () => {
     const r = classifyFeedItems([don("a", 23), don("b", 8)], { feedSource: "WHO", processed: new Set(), seenTitles: new Set() });
     expect(r.fresh).toHaveLength(1);
+  });
+});
+
+describe("summaryProblem (real summaries stored on 2026-11-08)", () => {
+  const filler = [
+    "The article does not provide a cumulative death toll or confirmed case count for the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda.",
+    "As of the article, the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda has no officially stated cumulative death toll or confirmed case count, but the piece highlights the vaccines.",
+    "Three more children have died from measles-like symptoms in Bangladesh, according to a recent report. No cumulative death toll or confirmed case count was provided.",
+    "The article reports that measles cases have reached 1,487 across 45 counties in Pennsylvania, though the specific date for these figures is not provided in the title or content.",
+    "Based solely on the provided title and source (a review in Frontiers), the article does not contain specific case counts.",
+    "I can't summarize this item: the text you provided contains only the title and source.",
+  ];
+  const good = [
+    "DR Congo's Ebola death toll has risen to 5,198, with total cases reaching 10,668.",
+    "Six people died from measles symptoms in a single day in Bangladesh, according to bdnews24.com.",
+    "States report eight measles deaths in the US this year, though the CDC's official count is lower.",
+    "A three-member commission has been formed to determine liability for alleged procurement and distribution failures that delayed measles vaccines.",
+    "WHO said the source of the infection is under investigation.",
+  ];
+  it("flags filler and stubs, and passes real summaries", () => {
+    for (const f of filler) expect(summaryProblem(f), f).toBe("meta");
+    for (const g of good) expect(summaryProblem(g), g).toBeNull();
+    expect(summaryProblem("More than")).toBe("too_short");
+  });
+  it("cleanSummary drops a dateless 'As of the …' lead-in only", () => {
+    expect(cleanSummary("As of the latest report, the toll reached 1,272.")).toBe("The toll reached 1,272.");
+    expect(cleanSummary("As of 6 January 2026, 93 cases were confirmed.")).toBe("As of 6 January 2026, 93 cases were confirmed.");
+  });
+  it("repairInput never feeds a bad summary or a Google News description back to the model", () => {
+    expect(repairInput({ url: "https://news.google.com/a", summary: "Headline Publisher" })).toBe("");
+    expect(repairInput({ url: "https://who/x", summary: filler[0] })).toBe("");
+    expect(repairInput({ url: "https://who/x", summary: "Since 8 October, 412 new cases were reported." })).toBe("Since 8 October, 412 new cases were reported.");
   });
 });

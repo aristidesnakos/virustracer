@@ -335,17 +335,68 @@ const normText = (s) => String(s ?? "").toLowerCase().replace(/[^\p{L}\p{N}]+/gu
 /** A headline without its trailing " - Publisher" (Google News titles carry one). */
 const headlineCore = (title) => String(title ?? "").replace(/\s+[-–—|]\s+[^-–—|]{2,60}$/, "");
 
+// Version of the summary prompts. 2 (2026-11-09): headline-only items get their own prompt
+// (restate the headline, add nothing) and answers that describe the source are rejected. Items
+// summarised from a Google News headline with version 1 are re-requested once (they invented
+// "as of" dates and wrote filler such as "the article does not provide a death toll").
+export const SUMMARY_VERSION = 2;
+
+const isGoogleNewsUrl = (url) => /^https?:\/\/news\.google\.com\//.test(String(url ?? ""));
+
+// A summary that talks about the source instead of the news: "the article does not provide a
+// death toll", "the provided text", "no case count was given", "I can't summarise". Checked on
+// every model answer (summaryProblem) and on stored summaries (needsSummaryRepair). On
+// 2026-11-09 it flagged 32 of the 100 displayed summaries, all of them filler.
+const META_PATTERNS = [
+  /\b(the|this) (provided |given )?(article|text|report|headline|item|content|snippet|title|source)('s)?\b[^.]{0,80}?\b(does not|doesn't|did not|do not|lacks|contains only|only (states|mentions|provides|contains|gives|includes)|provides no|gives no|offers no|includes no|has no)\b/i,
+  /\bprovided (text|content|article|information|item|headline|snippet)\b/i,
+  /\b(I|we) (can't|cannot|can not|am unable|are unable|don't have|do not have)\b/i,
+  /\b(no|not) (officially |specifically |explicitly )?(stated|specified|provided|given|mentioned|reported|available|included)\b[^.]{0,40}\b(death toll|toll|case count|figures?|numbers?|date|details)\b/i,
+  /\b(death toll|toll|case count|figures?|numbers?|date|details)\b[^.]{0,40}\b(is|are|was|were) not (provided|stated|specified|given|mentioned|included|available)\b/i,
+  /\bno (cumulative |specific |further |additional |official )?(death toll|case count|figures|details|numbers)\b[^.]{0,30}\b(is|are|was|were) (given|provided|stated|reported|mentioned)\b/i,
+];
+
+/** Why a summary is unusable: "meta" (describes the source), "too_short", or null if fine. */
+export function summaryProblem(summary) {
+  const s = String(summary ?? "").trim();
+  if (s.length < 20) return "too_short";
+  return META_PATTERNS.some((r) => r.test(s)) ? "meta" : null;
+}
+
+/**
+ * Tidy a model summary: drop a vague lead-in that carries no date ("As of the article's
+ * reporting, ", "As of the latest report, "), surrounding quotes, and start with a capital.
+ */
+export function cleanSummary(text) {
+  let s = String(text ?? "").trim().replace(/^["“']+|["”']+$/g, "").trim();
+  s = s.replace(/^as of (the |this )?(article|report|reports|latest reports?|latest figures|piece|item|text|publication)('s)?( (date|publication|reporting|report|time of writing))?,\s*/i, "");
+  return s ? s[0].toUpperCase() + s.slice(1) : s;
+}
+
+/** The text to give the model when re-requesting a stored item's summary ("" = headline only). */
+export function repairInput(item) {
+  // A Google News item never had more than its headline; a bad model summary is not input.
+  if (isGoogleNewsUrl(item.url) || summaryProblem(item.summary)) return "";
+  return String(item.summary ?? "");
+}
+
 /**
  * True when a stored item still shows a raw-text fallback instead of a model summary.
  * New items carry `summaryFallback` (true/false). Items stored before that flag existed are
  * judged by one rule: the summary starts with the item's headline (minus " - Publisher"),
  * which is what a Google News description looks like ("<headline> <publisher>"); a model
  * summary does not repeat the headline verbatim. A WHO description fallback is not caught by
- * the rule and is left alone. Gives up after MAX_SUMMARY_REPAIR_ATTEMPTS failed re-requests.
+ * the rule and is left alone. Also true for a summary that is filler or a stub (summaryProblem)
+ * and for a Google News item summarised by a prompt older than SUMMARY_VERSION. Gives up after
+ * MAX_SUMMARY_REPAIR_ATTEMPTS failed re-requests.
  */
 export function needsSummaryRepair(item) {
   if ((item.summaryRepairAttempts ?? 0) >= MAX_SUMMARY_REPAIR_ATTEMPTS) return false;
   if (item.summaryFallback === true) return true;
+  // Filler or a stub is not a summary, whatever produced it.
+  if (summaryProblem(item.summary)) return true;
+  // Summarised from a bare Google News headline by an older prompt: re-request once.
+  if (isGoogleNewsUrl(item.url) && (item.summaryVersion ?? 1) < SUMMARY_VERSION) return true;
   if (item.summaryFallback === false) return false;
   const core = normText(headlineCore(item.title));
   return core.length >= 15 && normText(item.summary).startsWith(core);

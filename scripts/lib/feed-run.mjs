@@ -23,7 +23,9 @@ import {
   RECENT_ITEMS_KEEP,
   MAX_SUMMARY_REPAIRS_PER_RUN,
   needsSummaryRepair,
+  repairInput,
   isHeadlineOnly,
+  SUMMARY_VERSION,
 } from "./feed-items.mjs";
 import {
   extractCandidate as defaultExtractCandidate,
@@ -169,7 +171,8 @@ export async function runOutbreakFeeds(o) {
         repairAttempts: it.summaryRepairAttempts ?? 0,
         id: it.id,
         title: it.title,
-        description: it.summary ?? "",
+        // A repair re-reads the original text when we have it, else the headline alone.
+        description: repair ? repairInput(it) : (it.summary ?? ""),
         url: it.url,
         source: it.source,
         date: it.date,
@@ -270,7 +273,7 @@ export async function runOutbreakFeeds(o) {
       if (summaryOk) {
         stats.summariesRepaired++;
         patch = (it) => {
-          const next = { ...it, summary: sum.value, summaryFallback: false };
+          const next = { ...it, summary: sum.value, summaryFallback: false, summaryVersion: SUMMARY_VERSION };
           delete next.summaryRepairAttempts;
           return next;
         };
@@ -286,7 +289,7 @@ export async function runOutbreakFeeds(o) {
       // summaryFallback marks a raw-text summary, so a later run repairs it (needsSummaryRepair).
       item:
         needSummary && isNew
-          ? { id: task.id, title: task.title, url: task.url, date: task.date, source: task.source, summary, summaryFallback: !summaryOk }
+          ? { id: task.id, title: task.title, url: task.url, date: task.date, source: task.source, summary, summaryFallback: !summaryOk, ...(summaryOk ? { summaryVersion: SUMMARY_VERSION } : {}) }
           : null,
       patch,
       candidate: found

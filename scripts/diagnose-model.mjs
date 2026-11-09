@@ -32,7 +32,7 @@ import {
   describeResponse,
   failureCause,
 } from "./lib/feed-model.mjs";
-import { isHeadlineOnly } from "./lib/feed-items.mjs";
+import { isHeadlineOnly, summaryProblem } from "./lib/feed-items.mjs";
 import { mapPool } from "./lib/pool.mjs";
 
 const BASE = "https://openrouter.ai/api/v1";
@@ -290,7 +290,8 @@ async function runPath(cfgName, items, opts = {}) {
     return row;
   });
   const rows = results.map((r) => (r.status === "fulfilled" ? r.value : null)).filter(Boolean);
-  const filler = rows.filter((r) => r.summary && FILLER.test(r.summary)).length;
+  // extractSummary now rejects filler itself (summaryProblem), so FILLER only catches what slips through.
+  const filler = rows.filter((r) => r.summary && (FILLER.test(r.summary) || summaryProblem(r.summary))).length;
   const prov = records.reduce((m, r) => {
     const k = r.provider ?? `http${r.http ?? "?"}`;
     m[k] = (m[k] ?? 0) + 1;

@@ -63,7 +63,7 @@ function fakeModel(opts: { delay?: (n: number) => number; fail?: (kind: string, 
           log.active--;
           const err = opts.fail?.(kind, n);
           if (err) throw err;
-          const title = /Title: (.*)/.exec(prompt)?.[1] ?? "";
+          const title = /(?:Title|Headline): (.*)/.exec(prompt)?.[1] ?? "";
           log.titles.push(`${kind}:${title}`);
           if (kind === "summary") return { choices: [{ message: { content: `Summary of ${title}` } }] };
           const none = opts.noCountry?.(title) ?? false;
@@ -137,7 +137,7 @@ describe("runOutbreakFeeds", () => {
   });
 
   it("backfills stored items never checked (old store with no checkedIds), once", async () => {
-    const recentItems = Array.from({ length: 5 }, (_, i) => ({ id: `old-${i}`, title: `Old ${i}`, url: "u", date: "2026-11-01", source: "WHO", summary: "s" }));
+    const recentItems = Array.from({ length: 5 }, (_, i) => ({ id: `old-${i}`, title: `Old ${i}`, url: "u", date: "2026-11-01", source: "WHO", summary: "Officials reported new cases on Monday." }));
     const empty = fetchFor({ "https://feed/who": rss([]), "https://feed/news": rss([]) });
     const { s, store } = memStore({
       live: { lastFetched: "", processedIds: [], recentItems },
@@ -284,7 +284,8 @@ describe("summary repair", () => {
     expect(m.log.candidate).toBe(0);
     expect(out.stats.summariesRepaired).toBe(2);
     const byId = Object.fromEntries(s.live.recentItems.map((it: any) => [it.id, it]));
-    expect(byId["news-a"]).toMatchObject({ summary: "Summary of Outbreak headline number a - Publisher", summaryFallback: false });
+    // A legacy fallback is headline-only, so the headline prompt is used (publisher split off).
+    expect(byId["news-a"]).toMatchObject({ summary: "Summary of Outbreak headline number a", summaryFallback: false, summaryVersion: 2 });
     expect(byId["news-b"].summaryFallback).toBe(false);
     expect(byId["news-c"]).toEqual(stored()[2]);
     expect(byId["news-d"]).toEqual(stored()[3]);
@@ -351,5 +352,45 @@ describe("article-text sources", () => {
     expect(donItem.url).toBe("https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON1");
     // The model was given the report's text, not just the headline.
     expect(m.log.titles).toContain("summary:Ebola disease - Uganda");
+  });
+});
+
+describe("summary prompt version 2", () => {
+  const item = (id: string, url: string, summary: string, extra: any = {}) => ({
+    id,
+    title: `Ebola toll rises in North Kivu ${id} - Reuters`,
+    url,
+    date: "2026-11-05",
+    source: "News",
+    summary,
+    ...extra,
+  });
+  const empty = fetchFor({ "https://feed/who": rss([]), "https://feed/news": rss([]) });
+
+  it("re-requests filler and old Google News summaries once, from the headline alone, and leaves good ones", async () => {
+    const g = "https://news.google.com/rss/articles/x";
+    const items = [
+      item("filler", "https://who/x", "The article does not provide a cumulative death toll for the outbreak."),
+      item("oldgoogle", g, "As of March 2026, the outbreak has caused 15 deaths in North Kivu."),
+      item("newgoogle", g, "The Ebola toll rose in North Kivu, Reuters reported.", { summaryFallback: false, summaryVersion: 2 }),
+      item("good", "https://who/y", "WHO reported 412 new confirmed cases in the week to 20 October.", { summaryFallback: false }),
+    ];
+    const { s, store } = memStore({
+      live: { lastFetched: "", processedIds: [], recentItems: items },
+      cands: { lastExtracted: "", candidates: [], checkedIds: items.map((i) => i.id) },
+    });
+    const prompts: string[] = [];
+    const m = fakeModel();
+    const create = m.client.chat.completions.create;
+    m.client.chat.completions.create = async (req: any) => (prompts.push(req.messages[0].content), create(req));
+    await run({ client: m.client, fetchText: empty, store });
+    expect(m.log.summary).toBe(2);
+    // Both were re-asked from the headline only: the bad summary is never fed back as "content".
+    expect(prompts.every((p) => p.includes("The article itself is not available") && !p.includes("does not provide") && !p.includes("March 2026"))).toBe(true);
+    const byId = Object.fromEntries(s.live.recentItems.map((it: any) => [it.id, it]));
+    expect(byId.filler).toMatchObject({ summaryFallback: false, summaryVersion: 2 });
+    expect(byId.oldgoogle.summary).toBe("Summary of Ebola toll rises in North Kivu oldgoogle");
+    expect(byId.newgoogle).toEqual(items[2]);
+    expect(byId.good).toEqual(items[3]);
   });
 });

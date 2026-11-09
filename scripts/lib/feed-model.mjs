@@ -14,6 +14,7 @@
 // same items. max_tokens is generous (billed per token produced, not per token allowed) so a
 // provider that ignored the flag would still have room to answer.
 import { retry, isTransientError } from "./pool.mjs";
+import { isHeadlineOnly, summaryProblem, cleanSummary } from "./feed-items.mjs";
 
 export const MODEL = "deepseek/deepseek-v4-flash";
 
@@ -53,14 +54,21 @@ export function describeResponse(response) {
 /**
  * A call that came back but is unusable. `cause` is a short code counted in the run summary:
  * "length_reasoning" (budget used up by reasoning), "length" (answer cut off), "empty" (no text,
- * finished normally), "invalid_json" (candidate answer is not JSON).
+ * finished normally), "invalid_json" (candidate answer is not JSON), "meta" (a summary that
+ * describes the source, e.g. "the article does not provide a toll"), "too_short" (a stub).
  */
 export class ModelResponseError extends Error {
   constructor(cause, info) {
     const parts = [`finish_reason=${info.finishReason ?? "none"}`, `provider=${info.provider ?? "unknown"}`];
     parts.push(`reasoning_tokens=${info.reasoningTokens}${info.usedReasoning ? "" : " (no reasoning)"}`);
     if (info.completionTokens != null) parts.push(`completion_tokens=${info.completionTokens}`);
-    super(`${cause === "invalid_json" ? "invalid JSON from model" : "empty model response"}: ${cause} (${parts.join(", ")})`);
+    const label =
+      {
+        invalid_json: "invalid JSON from model",
+        meta: "model described the source instead of summarising it",
+        too_short: "model answer too short",
+      }[cause] ?? "empty model response";
+    super(`${label}: ${cause} (${parts.join(", ")})`);
     this.name = "ModelResponseError";
     this.cause_code = cause;
     this.info = info;
@@ -97,7 +105,10 @@ function withEmptyRetry(retryOpts) {
   };
 }
 
-/** Call the model and return the answer text, or throw ModelResponseError. `parse` may throw it too. */
+/**
+ * Call the model and return `parse(answer, info)`, or throw ModelResponseError. `parse` may throw
+ * a ModelResponseError of its own (kept as is); any other error from it becomes "invalid_json".
+ */
 async function callModel(client, params, prompt, retryOpts, parse = (t) => t) {
   return retry(async () => {
     const response = await client.chat.completions.create({
@@ -109,8 +120,9 @@ async function callModel(client, params, prompt, retryOpts, parse = (t) => t) {
     // A cut-off answer is unusable even when some text came back.
     if (!info.content || info.finishReason === "length") throw new ModelResponseError(classify(info), info);
     try {
-      return parse(info.content);
-    } catch {
+      return parse(info.content, info);
+    } catch (err) {
+      if (err instanceof ModelResponseError) throw err;
       throw new ModelResponseError("invalid_json", info);
     }
   }, withEmptyRetry(retryOpts));
@@ -133,11 +145,41 @@ Content: ${description}
 Respond with JSON only.`;
 }
 
+// Summary prompts, version SUMMARY_VERSION in feed-items.mjs. The version-1 prompt told the model
+// to "LEAD with [the toll] (include the as-of date if given)" and was used on bare Google News
+// headlines too: it invented dates ("As of March 2026" on a November headline) and wrote filler
+// ("the article does not provide a death toll") in 32 of 100 displayed summaries (2026-11-09).
+
+/** For an item with real text (a WHO report, a CIDRAP lead, an article body). */
 export function summaryPrompt(feedConfig, title, description) {
-  return `Summarize this news item about ${feedConfig.subject} in 1–2 factual sentences. If the article states the latest cumulative death toll or confirmed case count, LEAD with it (include the as-of date if given). Otherwise include any key figures or official statements. No preamble.
+  return `Summarize this news item about ${feedConfig.subject} in 1–2 factual sentences, using only facts stated below.
+- If it states a cumulative death toll or confirmed case count, lead with that figure. Give a date only if the text states one; never write "as of the article" or "as of the report".
+- Otherwise give the key figures or official statements it contains.
+- Never describe the text or what it lacks (no "the article does not provide…", "no toll was given"), and never refuse: summarize what is there.
+- No preamble.
 
 Title: ${title}
 Content: ${description}`;
+}
+
+/** Headline and publisher of a Google News style title ("Headline - Publisher"). */
+export function splitHeadline(title) {
+  const m = String(title ?? "").match(/^(.*\S)\s+[-–—|]\s+([^-–—|]{2,60})$/);
+  return m ? { headline: m[1], publisher: m[2].trim() } : { headline: String(title ?? "").trim(), publisher: "" };
+}
+
+/** For an item whose only text is its headline (Google News RSS): restate it, add nothing. */
+export function headlinePrompt(feedConfig, title) {
+  const { headline, publisher } = splitHeadline(title);
+  return `Below is a news headline about ${feedConfig.subject}. The article itself is not available.
+Rewrite the headline as one plain, factual English sentence of at most 35 words.
+- Use only what the headline says: add no figures, dates, places, names or context it does not contain.
+- Do not mention the headline, the article or anything that is missing, and do not refuse.
+${publisher ? `- End with "${publisher} reported." if the sentence does not already name a source.
+` : ""}- Reply with the sentence only: no preamble, no quotation marks.
+
+Headline: ${headline}${publisher ? `
+Publisher: ${publisher}` : ""}`;
 }
 
 /**
@@ -161,10 +203,19 @@ export async function extractCandidate(client, feedConfig, title, description, r
   };
 }
 
-/** @returns {Promise<string>} the summary; throws when the call fails (callers fall back to the description). */
+/**
+ * @returns {Promise<string>} the summary; throws when the call fails or the answer is unusable
+ * (filler or a stub, after one retry), and callers fall back to the description. An item whose
+ * only text is its headline (isHeadlineOnly) gets headlinePrompt, any other summaryPrompt.
+ */
 export async function extractSummary(client, feedConfig, title, description, retryOpts = {}) {
-  const prompt = summaryPrompt(feedConfig, title, description);
-
-  const text = await callModel(client, SUMMARY_PARAMS, prompt, retryOpts);
-  return text;
+  const prompt = isHeadlineOnly(title, description)
+    ? headlinePrompt(feedConfig, title)
+    : summaryPrompt(feedConfig, title, description);
+  return callModel(client, SUMMARY_PARAMS, prompt, retryOpts, (answer, info) => {
+    const text = cleanSummary(answer);
+    const problem = summaryProblem(text);
+    if (problem) throw new ModelResponseError(problem, info);
+    return text;
+  });
 }
