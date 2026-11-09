@@ -9,24 +9,26 @@
  * up to N per run with the Internet Archive (keyless availability API + Save Page Now).
  *
  * Usage: node scripts/archive-sources.mjs [--outbreak=<slug>] [--dry-run] [--max=15] [--max-attempts=5]
- * Env:   ARCHIVE_MAX_PER_RUN, ARCHIVE_MAX_ATTEMPTS, ARCHIVE_DELAY_MS, ARCHIVE_BUDGET_MS
+ * Env:   ARCHIVE_MAX_PER_RUN, ARCHIVE_MAX_ATTEMPTS, ARCHIVE_DELAY_MS, ARCHIVE_BUDGET_MS, ARCHIVE_MAX_SLOW_FAILURES
  *
  * Never fails the workflow: any error becomes a ::warning:: annotation and exit 0.
  */
 
-import { readFileSync, writeFileSync, existsSync } from "fs";
+import { readFileSync, existsSync } from "fs";
 import { resolve, dirname } from "path";
 import { fileURLToPath } from "url";
 import {
   DEFAULT_BUDGET_MS,
   DEFAULT_MAX_ATTEMPTS,
   DEFAULT_MAX_PER_RUN,
+  DEFAULT_MAX_SLOW_FAILURES,
   DEFAULT_SAVE_DELAY_MS,
   collectSources,
   normalizeLedger,
   runArchive,
   serializeLedger,
 } from "./lib/archive.mjs";
+import { removeStaleTemps, writeFileAtomic } from "./lib/atomic.mjs";
 import { USER_AGENT, dataFile, selectArchivableOutbreaks } from "./lib/outbreak-registry.mjs";
 import { SITE_PAGES, SITE_URL } from "./lib/site.mjs";
 
@@ -80,12 +82,14 @@ async function main() {
   const maxAttempts = numOption("max-attempts", DEFAULT_MAX_ATTEMPTS);
   const delayMs = Math.max(5_000, numOption("delay_ms", DEFAULT_SAVE_DELAY_MS));
   const budgetMs = numOption("budget_ms", DEFAULT_BUDGET_MS);
+  const maxSlowFailures = numOption("max-slow-failures", DEFAULT_MAX_SLOW_FAILURES);
 
   const items = collectSources({
     outbreaks: selectArchivableOutbreaks().map((o) => readOutbreakSources(o.slug)),
     siteUrl: process.env.NEXT_PUBLIC_SITE_URL?.trim() || SITE_URL,
     sitePages: SITE_PAGES,
   });
+  if (!dryRun) removeStaleTemps(dirname(ARCHIVE_JSON)); // left by a run the step timeout killed
   const ledger = normalizeLedger(readJson(ARCHIVE_JSON, null));
   console.log(
     `${items.length} source URLs, ${Object.keys(ledger.entries).length} already in the ledger` +
@@ -101,11 +105,14 @@ async function main() {
     maxAttempts,
     delayMs,
     budgetMs,
+    maxSlowFailures,
+    // After every URL, atomically: a step killed by its timeout loses at most the URL in flight.
+    onProgress: dryRun ? undefined : (l) => writeFileAtomic(ARCHIVE_JSON, serializeLedger(l)),
     dryRun,
     log: (m) => console.log(`  ${m}`),
   });
 
-  if (!dryRun) writeFileSync(ARCHIVE_JSON, serializeLedger(next));
+  if (!dryRun) writeFileAtomic(ARCHIVE_JSON, serializeLedger(next));
 
   const all = Object.values(next.entries);
   const count = (/** @type {string} */ s) => all.filter((e) => e.status === s).length;
@@ -113,12 +120,13 @@ async function main() {
     dryRun
       ? `Would process ${stats.wouldProcess.length} URL(s).`
       : `Processed ${stats.processed}: ${stats.archived} archived (${stats.existing} existing, ${stats.saved} newly saved), ` +
-          `${stats.pending} pending, ${stats.failed} failed${stats.rateLimited ? ", stopped on 429" : ""}.`,
+          `${stats.pending} pending, ${stats.failed} failed${stats.rateLimited ? ", stopped on 429" : ""}${stats.slowStop ? ", stopped after repeated timeouts" : ""}.`,
   );
   console.log(
     `Ledger: ${count("archived")} archived, ${count("pending")} pending, ${count("failed")} failed of ${all.length}.`,
   );
   if (stats.rateLimited) warn("Internet Archive returned 429; stopped early, will retry next run.");
+  if (stats.slowStop) warn("The Internet Archive timed out several times in a row; stopped early, will retry next run.");
 }
 
 main().catch((err) => {

@@ -14,6 +14,8 @@ export const DEFAULT_MAX_PER_RUN = 15;
 export const DEFAULT_MAX_ATTEMPTS = 5;
 export const DEFAULT_SAVE_DELAY_MS = 5_000;
 export const DEFAULT_BUDGET_MS = 10 * 60_000;
+/** Stop the run after this many slow failures (timeouts, network errors) in a row: the service looks unhealthy. */
+export const DEFAULT_MAX_SLOW_FAILURES = 3;
 /** Our own pages change daily, so they are re-captured this often (kind "site"). */
 export const SITE_REFRESH_DAYS = 7;
 /** Minimum gap between attempts on a site page, so a down domain is not hammered. */
@@ -464,6 +466,8 @@ export function siteDue(e, now) {
  * @param {number} [o.maxAttempts]
  * @param {number} [o.delayMs]  minimum gap between Save Page Now requests
  * @param {number} [o.budgetMs] stop starting new work after this long
+ * @param {number} [o.maxSlowFailures] stop after this many timeouts/network errors in a row (0 = never)
+ * @param {(ledger: ArchiveLedger) => void} [o.onProgress] called after every processed URL (the caller persists it)
  * @param {boolean} [o.dryRun]  no network; only metadata is recorded
  * @param {(ms:number)=>Promise<void>} [o.sleep]
  * @param {()=>number} [o.clock]
@@ -478,6 +482,8 @@ export async function runArchive({
   maxAttempts = DEFAULT_MAX_ATTEMPTS,
   delayMs = DEFAULT_SAVE_DELAY_MS,
   budgetMs = DEFAULT_BUDGET_MS,
+  maxSlowFailures = DEFAULT_MAX_SLOW_FAILURES,
+  onProgress = () => {},
   dryRun = false,
   sleep = (ms) => new Promise((r) => setTimeout(r, ms)),
   clock = Date.now,
@@ -492,6 +498,8 @@ export async function runArchive({
     failed: 0,
     pending: 0,
     rateLimited: false,
+    /** True when the run stopped after `maxSlowFailures` timeouts or network errors in a row. */
+    slowStop: false,
     /** @type {string[]} */
     wouldProcess: [],
   };
@@ -506,6 +514,9 @@ export async function runArchive({
   const started = clock();
   /** @type {number|null} */
   let lastSaveAt = null;
+  // Consecutive saves that ended in a timeout or network error (each can cost a minute). An HTTP
+  // error answers quickly and says something about that one URL, so it resets the count.
+  let slowFailures = 0;
   const entries = { ...withMeta.entries };
 
   for (const url of batch) {
@@ -537,6 +548,8 @@ export async function runArchive({
       }
       entries[url] = next;
       stats.processed++;
+      // Persist now, not at the end: a step killed by its timeout then loses at most this URL.
+      onProgress({ lastRun: now, entries });
     };
 
     try {
@@ -546,6 +559,7 @@ export async function runArchive({
         finish({ status: "archived", ...existing });
         stats.archived++;
         stats.existing++;
+        slowFailures = 0;
         log(`existing capture for ${url}`);
         continue;
       }
@@ -567,6 +581,7 @@ export async function runArchive({
     lastSaveAt = clock();
 
     if (saved.ok) {
+      slowFailures = 0;
       if (saved.archivedUrl) {
         finish({ status: "archived", archivedUrl: saved.archivedUrl, archivedAt: saved.archivedAt });
         stats.archived++;
@@ -585,6 +600,12 @@ export async function runArchive({
       finish({ status: "failed" });
       stats.failed++;
       log(`save failed for ${url}: ${saved.error}`);
+      slowFailures = /^HTTP \d+$/.test(saved.error) ? 0 : slowFailures + 1;
+      if (maxSlowFailures > 0 && slowFailures >= maxSlowFailures) {
+        stats.slowStop = true;
+        log(`${slowFailures} timeouts or network errors in a row; the Internet Archive looks unhealthy, stopping`);
+        break;
+      }
     }
   }
 

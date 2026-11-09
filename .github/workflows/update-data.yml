@@ -78,32 +78,53 @@ jobs:
           OPENROUTER_API_KEY: ${{ secrets.OPENROUTER_API_KEY }}
         run: node scripts/fetch-feeds.mjs
 
-      - name: Archive sources (Internet Archive)
-        # Best-effort and rate-limited; never fails the job (exits 0 on error). The 5-minute cap and
-        # continue-on-error mean a slow Internet Archive can never skip the commit step below.
-        timeout-minutes: 5
-        continue-on-error: true
-        env:
-          # The script's own budget (10 minutes by default) is longer than the step cap above. When
-          # the runner kills the step at 5 minutes, the ledger is never written (it is saved once, at
-          # the end) and the run shows a red timeout annotation. 3 minutes lets the script stop
-          # itself between URLs, with room for one slow save (up to about a minute), and write.
-          ARCHIVE_BUDGET_MS: "180000"
-        run: node scripts/archive-sources.mjs
-
+      # The data is committed (and so deployed) BEFORE the archive step: archiving is best-effort and
+      # slow (the Internet Archive answers in 10 to 60 seconds per link), and the site's new figures
+      # must not wait behind it.
       - name: Commit updated data
         env:
           REF: ${{ github.ref_name }}
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          for p in data/outbreaks data/nursing-homes data/archive.json data/raw; do
+          for p in data/outbreaks data/nursing-homes data/raw; do
             if [ -e "$p" ]; then git add "$p"; fi
           done
           if git diff --staged --quiet; then
             echo "No changes to commit."
           else
             git commit -m "data: update outbreak feed [skip ci]"
+            git pull --rebase --autostash origin "$REF"
+            git push
+          fi
+
+      - name: Archive sources (Internet Archive)
+        # Best-effort and rate-limited; never fails the job (exits 0 on error). The step cap and
+        # continue-on-error mean a slow Internet Archive can never skip the ledger commit below, and
+        # it runs after the data commit, so it can never delay the data either.
+        timeout-minutes: 5
+        continue-on-error: true
+        env:
+          # The script writes the ledger after every link, so a kill loses at most the link in
+          # flight. It also stops itself after 3 timeouts in a row. This budget makes it finish
+          # before the runner's kill (which would show a red timeout): budget plus one worst-case link
+          # must stay under the 5-minute cap above. Worst case for one link is about 90 s: 10 s
+          # resolving a Google News link, 15 s availability lookup, 60 s save, 5 s pacing between
+          # saves. 180 s + 90 s = 270 s, 30 s under the cap. The script's default is 10 minutes.
+          ARCHIVE_BUDGET_MS: "180000"
+        run: node scripts/archive-sources.mjs
+
+      - name: Commit archive ledger
+        env:
+          REF: ${{ github.ref_name }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if [ -e data/archive.json ]; then git add data/archive.json; fi
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            git commit -m "data: update source archive ledger [skip ci]"
             git pull --rebase --autostash origin "$REF"
             git push
           fi

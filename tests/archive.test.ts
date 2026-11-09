@@ -304,6 +304,112 @@ describe("runArchive", () => {
     expect(ledger.entries["https://example.org/a0"].status).toBe("failed");
   });
 
+  it("reports progress after every processed URL, so a killed run keeps what it finished", async () => {
+    const snapshots: string[] = [];
+    await runArchive({
+      ledger: emptyLedger(),
+      items: items(3),
+      fetchImpl: stubFetch(happyHandler).fn,
+      now: NOW,
+      delayMs: 0,
+      sleep: noSleep,
+      onProgress: (l) => snapshots.push(serializeLedger(l)),
+    });
+    expect(snapshots).toHaveLength(3);
+    const first = JSON.parse(snapshots[0]).entries;
+    expect(first["https://example.org/a0"].status).toBe("archived");
+    expect(first["https://example.org/a1"].status).toBe("pending");
+  });
+
+  it("an abort between URLs leaves the progress already reported intact", async () => {
+    const snapshots: string[] = [];
+    await expect(
+      runArchive({
+        ledger: emptyLedger(),
+        items: items(4),
+        fetchImpl: stubFetch(happyHandler).fn,
+        now: NOW,
+        delayMs: 0,
+        sleep: noSleep,
+        onProgress: (l) => {
+          snapshots.push(serializeLedger(l));
+          if (snapshots.length === 2) throw new Error("killed");
+        },
+      }),
+    ).rejects.toThrow("killed");
+    const saved = JSON.parse(snapshots[1]).entries;
+    expect(saved["https://example.org/a0"].status).toBe("archived");
+    expect(saved["https://example.org/a1"].status).toBe("archived");
+    expect(saved["https://example.org/a2"].status).toBe("pending");
+  });
+
+  describe("circuit breaker", () => {
+    const timeout = () => new DOMException("timed out", "TimeoutError");
+    /** Availability says "no capture"; `saveOutcome(n)` decides what saving URL a<n> does. */
+    const handler =
+      (saveOutcome: (n: number) => "ok" | "timeout" | number): Handler =>
+      (url) => {
+        if (url.startsWith("https://archive.org/wayback/available")) return json({ archived_snapshots: {} });
+        const n = Number(/a(\d+)$/.exec(url)?.[1]);
+        const outcome = saveOutcome(n);
+        if (outcome === "timeout") throw timeout();
+        if (typeof outcome === "number") return new Response("bad", { status: outcome });
+        return happyHandler(url);
+      };
+    const run = (n: number, h: Handler, extra: Record<string, unknown> = {}) =>
+      runArchive({
+        ledger: emptyLedger(),
+        items: items(n),
+        fetchImpl: stubFetch(h).fn,
+        now: NOW,
+        max: 20,
+        delayMs: 0,
+        sleep: noSleep,
+        ...extra,
+      });
+
+    it("stops after 3 timeouts in a row and leaves the rest untouched", async () => {
+      const { ledger, stats } = await run(6, handler(() => "timeout"));
+      expect(stats.slowStop).toBe(true);
+      expect(stats.failed).toBe(3);
+      expect(stats.processed).toBe(3);
+      expect(ledger.entries["https://example.org/a3"]).toMatchObject({ status: "pending", attempts: 0 });
+    });
+
+    it("does not count HTTP errors (the target answered quickly): all URLs are tried", async () => {
+      const { stats } = await run(6, handler(() => 520));
+      expect(stats.slowStop).toBe(false);
+      expect(stats.failed).toBe(6);
+    });
+
+    it("a success resets the count", async () => {
+      const slow = new Set([0, 1, 3, 4]);
+      const { stats } = await run(6, handler((n) => (slow.has(n) ? "timeout" : "ok")));
+      expect(stats.slowStop).toBe(false);
+      expect(stats.processed).toBe(6);
+    });
+
+    it("a fast HTTP error between timeouts also resets it", async () => {
+      const out = ["timeout", "timeout", 520, "timeout", "timeout", "ok"] as const;
+      const { stats } = await run(6, handler((n) => out[n]));
+      expect(stats.slowStop).toBe(false);
+      expect(stats.processed).toBe(6);
+    });
+
+    it("maxSlowFailures 0 turns it off", async () => {
+      const { stats } = await run(6, handler(() => "timeout"), { maxSlowFailures: 0 });
+      expect(stats.slowStop).toBe(false);
+      expect(stats.failed).toBe(6);
+    });
+
+    it("keeps the failure that tripped it in the ledger (and reported)", async () => {
+      const snapshots: string[] = [];
+      await run(6, handler(() => "timeout"), { onProgress: (l: Parameters<typeof serializeLedger>[0]) => snapshots.push(serializeLedger(l)) });
+      const last = JSON.parse(snapshots[snapshots.length - 1]).entries;
+      expect(last["https://example.org/a2"]).toMatchObject({ attempts: 1 });
+    });
+  });
+
   it("dry run makes no network calls", async () => {
     const { fn, calls } = stubFetch(happyHandler);
     const { stats } = await runArchive({
