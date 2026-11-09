@@ -10,7 +10,8 @@
  * a pause per host, with an honest User-Agent. Output is one compact `PROBE` line per request plus
  * a few indented sample lines, so it reads in a job log.
  *
- * Usage: node scripts/probe-countermeasures.mjs [--only=<substring of group or id>]
+ * Usage: node scripts/probe-countermeasures.mjs [--only=<substring of group or id>] [--round=1|2]
+ * Results of the two runs on 2026-11-09 are in docs/countermeasures-assessment.md ("Source inventory").
  */
 
 const UA =
@@ -153,7 +154,9 @@ for (const t of ["Bundibugyo", "Ebola", "measles", "hantavirus", "Candida auris"
     sum: (r) => {
       const total = /totalCount="(\d+)"/.exec(r.text)?.[1];
       const ids = [...r.text.matchAll(/<isrctn[^>]*>(ISRCTN\d+)<\/isrctn>/g)].map((m) => m[1]);
-      const titles = [...r.text.matchAll(/<trialDescription>\s*<title>([^<]*)<\/title>/g)].map((m) => clip(m[1], 75));
+      // Round 2 looked for <trialDescription><title> and found none; contact <title> elements hold "Dr"/"Prof",
+      // so keep only long titles. Untested against the live schema: check the XML before relying on it.
+      const titles = [...r.text.matchAll(/<title>([^<]{20,})<\/title>/g)].map((m) => clip(m[1], 75));
       const edited = [...r.text.matchAll(/<lastUpdated>([^<]*)<\/lastUpdated>/g)].map((m) => m[1].slice(0, 10));
       return [`totalCount=${total}`, ...titles.slice(0, 3).map((x, i) => `${ids[i] ?? "?"} edited=${edited[i] ?? "?"} "${x}"`)];
     },
@@ -282,7 +285,7 @@ for (const name of ["INMAZEB", "EBANGA"]) {
 add({
   group: "fda", id: "vaccine-list-rows", host: "www.fda.gov", round: 2, html: true,
   url: "https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states",
-  sum: (r) => [...context(r.text, /Ervebo/g, 1, 160), ...context(r.text, /H5N1/g, 2, 160), ...context(r.text, /Audenz/g, 1, 120)],
+  sum: (r) => [...context(r.text, /ervebo/gi, 1, 160), ...context(r.text, /H5N1/g, 2, 160), ...context(r.text, /Audenz/g, 1, 120)],
 });
 add({
   group: "who", id: "blueprint-bundibugyo-context", host: "www.who.int", round: 2, html: true,

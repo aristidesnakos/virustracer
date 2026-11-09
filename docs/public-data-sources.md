@@ -232,6 +232,32 @@ ECDC's feed index (`https://www.ecdc.europa.eu/en/rss-feeds`) lists 18 taxonomy 
 323, 2942, 2794, 197, 1310, 1505, 1295, 1244, 1253, 1502, 1301, 1307, 1319, 1382, 1250, 1376,
 1379); only 1307 and 1310 were probed.
 
+## Countermeasures and research sources
+
+**Last checked:** 2026-11-09, from GitHub Actions runners (`scripts/probe-countermeasures.mjs`,
+workflow "Probe countermeasure sources", runs 42619227360 and 42619911375). **Why:** Ari asked
+whether the site should also follow vaccines, treatments and diagnostics for the diseases it
+covers. Full assessment, per-disease snapshots and design sketch: `docs/countermeasures-assessment.md`
+(verdict: a smaller, hand-checked per-disease box, Bundibugyo Ebola first; nothing built).
+
+| Source | Host / id | Level | Cadence | Status | Built |
+|---|---|---|---|---|---|
+| ClinicalTrials.gov API v2 (status, phase, results flag, change filters) | `clinicaltrials.gov/api/v2` | trial | data timestamp 2026-11-06 | Verified 2026-11-09 (probe) | no |
+| EMA medicines JSON (authorisation status, latest procedure) | `ema.europa.eu` `medicines-output-medicines_json-report_en.json` | product, EU | twice a day (per EMA) | Verified 2026-11-09 (probe, 2,757 records) | no |
+| openFDA Drugs@FDA (applications and dated submissions; no vaccines) | `api.fda.gov/drug/drugsfda.json` | product, US | `last_updated` 2026-11-06 | Verified 2026-11-09 (probe) | no |
+| FDA licensed-vaccine list (HTML) | `www.fda.gov` | product, US | page changed 2026-11-08 | Verified 2026-11-09 (probe) | no |
+| WHO prequalified vaccines list (HTML) | `extranet.who.int/prequal` | product | irregular | Reached, but list not readable as fetched | no |
+| WHO R&D Blueprint, CEPI news (HTML statements) | `who.int/teams/blueprint`, `cepi.net/news` | statement | as events happen | Verified 2026-11-09 (probe) | no |
+| ISRCTN query API (XML), EU CTR search (HTML) | `isrctn.com/api`, `clinicaltrialsregister.eu` | trial | continuous / legacy | Verified 2026-11-09 (counts only) | no |
+| WHO ICTRP, CTIS, PACTR | `trialsearch.who.int`, `euclinicaltrials.eu`, `pactr.samrc.ac.za` | trial | weekly / continuous | Reported (portal pages reached; no open API; ICTRP forbids commercial use) | no |
+| Europe PMC, PubMed E-utilities, bioRxiv/medRxiv API | `ebi.ac.uk`, `eutils.ncbi.nlm.nih.gov`, `api.biorxiv.org` | publication | daily | Verified 2026-11-09 (probe); too noisy to automate | no |
+| NIH RePORTER API (grants, not milestones) | `api.reporter.nih.gov` | grant | weekly | Verified 2026-11-09 (probe) | no |
+
+Key finding: registries lag reality. CEPI's news page announced the first vaccination in the
+Phase 2/3 Bundibugyo vaccine trial in DRC while its ClinicalTrials.gov record (NCT07842107) still
+said "Not yet recruiting" (last updated 2026-10-05). Any use of these sources has to show which
+source says what, at which evidence tier.
+
 ## Other countries
 
 Not researched yet. These are **leads only, none verified**; check each before relying on it and
