@@ -1,0 +1,42 @@
+name: Backfill Ebola toll (temporary)
+
+# TEMPORARY, one run: repair the Ebola series frozen since 2026-11-02 (DRC's INSP published 5,376
+# deaths and withdrew it; every later reading was rejected as a decrease). Runs
+# scripts/backfill-toll.mjs for Ebola, which supersedes the withdrawn snapshot and imports the
+# daily readings since, and commits the result to THIS branch for review (never to main).
+# Removed in the next commit.
+on:
+  push:
+    branches: [fix/feed-model-empty-responses]
+    paths: [.github/workflows/backfill-ebola.yml]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-outbreak-data
+  cancel-in-progress: false
+
+jobs:
+  backfill:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: fix/feed-model-empty-responses
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Dry run (report only)
+        run: node scripts/backfill-toll.mjs --outbreak=ebola-bundibugyo-2026 --dry-run
+      - name: Backfill
+        run: node scripts/backfill-toll.mjs --outbreak=ebola-bundibugyo-2026
+      - name: Commit to the branch
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/outbreaks/ebola-bundibugyo-2026/toll.json data/raw/infobox
+          if git diff --staged --quiet; then echo "No changes."; exit 0; fi
+          git commit -m "data: backfill Ebola toll, supersede the withdrawn 2026-11-02 reading [skip ci]"
+          git push origin HEAD:fix/feed-model-empty-responses

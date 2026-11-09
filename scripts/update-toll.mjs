@@ -38,6 +38,11 @@ import {
   applySnapshot,
   withoutIgnored,
   WEEKLY_STALE_PREV_DAYS,
+  planCorrection,
+  supersedeSnapshots,
+  SUPERSEDE_PERSIST_HOURS,
+  SUPERSEDE_MIN_RUNS,
+  REJECTION_ALERT_HOURS,
 } from "./lib/toll.mjs";
 import { archiveInfobox, archiveReportText, sha256 } from "./lib/raw.mjs";
 import { inspectReportFeed, isEodyUrl, normalizeUrl, parseReportText, seasonIsOver } from "./lib/eody.mjs";
@@ -82,6 +87,8 @@ function readStore(tollJson) {
   try {
     const parsed = JSON.parse(readFileSync(tollJson, "utf-8"));
     return {
+      // Keep the other fields (superseded, pendingCorrection, rejected): a rewrite must not drop them.
+      ...parsed,
       lastChecked: typeof parsed.lastChecked === "string" ? parsed.lastChecked : "",
       snapshots: Array.isArray(parsed.snapshots) ? parsed.snapshots : [],
     };
@@ -195,13 +202,44 @@ async function updateFromWikipedia(outbreak) {
   };
 
   const verdict = validateSnapshot(snapshot, prev, today);
+  let base = store;
   if (!verdict.ok) {
-    console.log(`::warning::Toll update for ${slug} rejected by sanity check: ${verdict.reason}. Needs manual review; ${tollLabel} unchanged.`);
-    return;
+    // A withdrawn figure at the source freezes the series (every later reading is "lower");
+    // planCorrection recognises that narrow case and supersedes the outlier once it persists.
+    const plan = planCorrection(store, snapshot, nowISO);
+    if (plan.action === "apply") {
+      const reason =
+        `${verdict.reason}; the source has stayed below it since ${plan.pending.firstSeen} (${plan.pending.runs} runs) ` +
+        `and the new reading continues the series from ${plan.base.date}, so the figure was treated as withdrawn`;
+      console.log(`::warning::${slug}: superseded snapshot(s) ${plan.supersede.map((x) => x.date).join(", ")}: ${reason}. Kept under "superseded" in ${tollLabel}.`);
+      base = supersedeSnapshots(store, plan.supersede.map((x) => x.date), nowISO, reason);
+    } else {
+      const since = store.rejected?.reason === verdict.reason ? store.rejected.since : nowISO;
+      const hours = (Date.parse(nowISO) - Date.parse(since)) / 3_600_000;
+      const level = plan.action === "none" && hours >= REJECTION_ALERT_HOURS ? "error" : "warning";
+      const next =
+        plan.action === "pending"
+          ? { ...store, lastChecked: nowISO, pendingCorrection: plan.pending, rejected: { since, reason: verdict.reason } }
+          : { ...store, lastChecked: nowISO, rejected: { since, reason: verdict.reason } };
+      if (plan.action === "none") delete next.pendingCorrection;
+      writeFileSync(tollJson, JSON.stringify(next, null, 2) + "\n");
+      console.log(
+        `::${level}::Toll update for ${slug} rejected by sanity check: ${verdict.reason} (rejected since ${since}). ` +
+          (plan.action === "pending"
+            ? `It contradicts only ${plan.pending.supersedeDates.join(", ")}; if it persists ${SUPERSEDE_PERSIST_HOURS}h over ${SUPERSEDE_MIN_RUNS}+ runs those snapshots are superseded automatically (seen ${plan.pending.runs} run(s) so far).`
+            : `Needs manual review (scripts/toll-history.mjs shows the edits); no snapshot stored, lastChecked refreshed.`),
+      );
+      return;
+    }
   }
 
-  let next = applySnapshot(store, snapshot, nowISO);
-  const changed = JSON.stringify(next.snapshots) !== JSON.stringify(store.snapshots);
+  // An accepted reading ends any pending correction or open rejection.
+  base = { ...base };
+  delete base.pendingCorrection;
+  delete base.rejected;
+  const store0 = base;
+  let next = applySnapshot(store0, snapshot, nowISO);
+  const changed = JSON.stringify(next.snapshots) !== JSON.stringify(store0.snapshots);
 
   // Archive the exact infobox this reading was parsed from (append-only, keyed
   // by revid; data/raw/infobox/ is shared by every outbreak since revids are
@@ -211,7 +249,7 @@ async function updateFromWikipedia(outbreak) {
     const raw = archiveInfobox(ROOT, fetched.revid, fetched.wikitext);
     if (raw.ok) {
       console.log(`Raw infobox ${raw.written ? "archived" : "already archived"}: ${raw.rawPath}`);
-      next = applySnapshot(store, { ...snapshot, rawPath: raw.rawPath, rawSha256: raw.rawSha256 }, nowISO);
+      next = applySnapshot(store0, { ...snapshot, rawPath: raw.rawPath, rawSha256: raw.rawSha256 }, nowISO);
     } else {
       console.log(`::warning::Raw infobox for revid ${fetched.revid} not archived: ${raw.reason}. Snapshot stored without rawPath.`);
     }

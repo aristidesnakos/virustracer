@@ -1,5 +1,5 @@
 import { describe, it, expect } from "vitest";
-import { lastRevisionPerDay, keepLongestMonotoneChain } from "../scripts/lib/backfill.mjs";
+import { lastRevisionPerDay, keepLongestMonotoneChain, mergeBackfill } from "../scripts/lib/backfill.mjs";
 
 type Snap = { date: string; confirmed: number; deaths: number; recovered?: number | null };
 const snap = (date: string, confirmed: number, deaths: number, recovered: number | null = null): Snap => ({
@@ -69,5 +69,32 @@ describe("keepLongestMonotoneChain", () => {
 
   it("handles empty input", () => {
     expect(keepLongestMonotoneChain([])).toEqual({ kept: [], dropped: [] });
+  });
+});
+
+describe("mergeBackfill", () => {
+  const r = (date: string, confirmed: number, deaths: number, revid?: number) => ({ date, confirmed, deaths, recovered: null, ...(revid ? { revid } : {}) });
+  it("supersedes a stored snapshot the revision history contradicts and uses that day's reading instead (Ebola, Nov 2026)", () => {
+    const existing = [r("2026-10-27", 10092, 4891), r("2026-11-02", 10445, 5376, 1383354892)];
+    const imported = [
+      r("2026-10-31", 10382, 5030),
+      r("2026-11-01", 10445, 5376),
+      r("2026-11-02", 10498, 5107, 1383443430),
+      r("2026-11-03", 10563, 5130),
+      r("2026-11-05", 10699, 5202),
+      r("2026-11-06", 10772, 5234),
+    ];
+    const out = mergeBackfill(existing, imported);
+    expect(out.kept.map((s) => `${s.date}:${s.deaths}`)).toEqual([
+      "2026-10-27:4891", "2026-10-31:5030", "2026-11-02:5107", "2026-11-03:5130", "2026-11-05:5202", "2026-11-06:5234",
+    ]);
+    expect(out.supersededExisting).toEqual([existing[1]]);
+    expect(out.droppedImported.map((s) => s.date)).toEqual(["2026-11-01"]);
+  });
+  it("keeps stored snapshots that fit, preferring them over the imported reading of the same day", () => {
+    const existing = [r("2026-10-27", 10092, 4891, 1)];
+    const out = mergeBackfill(existing, [r("2026-10-27", 10091, 4891, 2), r("2026-10-28", 10172, 4932)]);
+    expect(out.kept).toEqual([existing[0], r("2026-10-28", 10172, 4932)]);
+    expect(out.supersededExisting).toEqual([]);
   });
 });

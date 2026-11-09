@@ -80,3 +80,34 @@ export function keepLongestMonotoneChain(snapshots) {
     dropped: snapshots.filter((_, i) => !keep.has(i)),
   };
 }
+
+/**
+ * Merge stored snapshots with imported daily readings. Pass 1: stored snapshots plus imported
+ * readings for dates with nothing stored go through the longest never-decreasing chain; a stored
+ * snapshot is never displaced by a same-day reading that merely ties with it. A stored snapshot
+ * the chain drops is returned in `supersededExisting`, so the caller keeps it (with a reason)
+ * rather than lose it: that is how a figure the source later withdrew leaves the series. Pass 2:
+ * the imported reading of each such date is offered in its place and kept if it fits.
+ * @template {{date: string, confirmed: number, deaths: number|null, recovered?: number|null}} S
+ * @param {S[]} existing
+ * @param {S[]} imported
+ * @returns {{kept: S[], supersededExisting: S[], droppedImported: S[]}}
+ */
+export function mergeBackfill(existing, imported) {
+  const byDate = (a, b) => a.date.localeCompare(b.date);
+  const storedDates = new Set(existing.map((s) => s.date));
+  const pass1 = keepLongestMonotoneChain([...existing, ...imported.filter((s) => !storedDates.has(s.date))].sort(byDate));
+  const keptSet = new Set(pass1.kept);
+  const supersededExisting = existing.filter((s) => !keptSet.has(s));
+  const freedDates = new Set(supersededExisting.map((s) => s.date));
+  const offered = imported.filter((s) => freedDates.has(s.date));
+  const pass2 = keepLongestMonotoneChain([...pass1.kept, ...offered].sort(byDate));
+  // Pass 2 must not trade away anything pass 1 kept: accept it only if it is a superset.
+  const kept = pass1.kept.every((s) => pass2.kept.includes(s)) ? pass2.kept : pass1.kept;
+  const keptAll = new Set(kept);
+  return {
+    kept,
+    supersededExisting,
+    droppedImported: imported.filter((s) => !keptAll.has(s) && !(storedDates.has(s.date) && !freedDates.has(s.date))),
+  };
+}

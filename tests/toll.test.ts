@@ -6,7 +6,7 @@ import {
   applySnapshot,
   withoutIgnored,
   MAX_SNAPSHOTS,
-  WEEKLY_STALE_PREV_DAYS,
+  WEEKLY_STALE_PREV_DAYS, planCorrection, supersedeSnapshots
 } from "../scripts/lib/toll.mjs";
 
 const INFOBOX = `{{Short description|Ebola epidemic}}
@@ -308,5 +308,40 @@ describe("withoutIgnored", () => {
   it("does not mutate its input", () => {
     withoutIgnored(parsed, ["recovered"]);
     expect(parsed.recovered).toBe(7);
+  });
+});
+
+describe("planCorrection / supersedeSnapshots (a figure the source withdrew)", () => {
+  // Real figures: DRC's INSP published 5,376 deaths and withdrew it within hours (2026-11-02).
+  const snap = (date: string, confirmed: number, deaths: number) => ({ date, confirmed, deaths, suspected: null, recovered: null, source: "w", sourceUrl: "u" });
+  const store = { lastChecked: "", snapshots: [snap("2026-10-27", 10092, 4891), snap("2026-11-02", 10445, 5376)] };
+  const reading = snap("2026-11-09", 10910, 5306);
+
+  it("waits for the contradiction to persist 24h over 2+ runs, then supersedes only the outlier", () => {
+    const first = planCorrection(store, reading, "2026-11-09T08:00:00Z");
+    expect(first).toMatchObject({ action: "pending", pending: { supersedeDates: ["2026-11-02"], runs: 1 } });
+    const second = planCorrection({ ...store, pendingCorrection: (first as any).pending }, reading, "2026-11-09T20:00:00Z");
+    expect(second).toMatchObject({ action: "pending", pending: { runs: 2, firstSeen: "2026-11-09T08:00:00Z" } });
+    const third = planCorrection({ ...store, pendingCorrection: (second as any).pending }, reading, "2026-11-10T08:00:00Z");
+    expect(third.action).toBe("apply");
+    const next = supersedeSnapshots({ ...store, pendingCorrection: (second as any).pending }, ["2026-11-02"], "2026-11-10T08:00:00Z", "withdrawn");
+    expect(next.snapshots.map((s: any) => s.date)).toEqual(["2026-10-27"]);
+    expect(next.superseded).toEqual([{ ...store.snapshots[1], supersededAt: "2026-11-10T08:00:00Z", supersededReason: "withdrawn" }]);
+    expect(next).not.toHaveProperty("pendingCorrection");
+    expect(validateSnapshot(reading, next.snapshots.at(-1), "2026-11-10").ok).toBe(true);
+  });
+
+  it("refuses when the reading also contradicts the earlier series (a real decrease or vandalism)", () => {
+    expect(planCorrection(store, snap("2026-11-09", 10910, 4800), "2026-11-09T08:00:00Z").action).toBe("none");
+    expect(planCorrection(store, snap("2026-11-09", 10000, 5306), "2026-11-09T08:00:00Z").action).toBe("none");
+  });
+
+  it("handles at most two trailing outliers, and restarts the clock when the contradicted set changes", () => {
+    const two = { lastChecked: "", snapshots: [snap("2026-10-27", 10092, 4891), snap("2026-11-01", 10400, 5376), snap("2026-11-02", 10445, 5380)] };
+    expect(planCorrection(two, reading, "2026-11-09T08:00:00Z")).toMatchObject({ action: "pending", pending: { supersedeDates: ["2026-11-01", "2026-11-02"] } });
+    const three = { lastChecked: "", snapshots: [snap("2026-10-27", 10092, 4891), ...two.snapshots.slice(1), snap("2026-11-03", 10450, 5390)] };
+    expect(planCorrection(three, reading, "2026-11-09T08:00:00Z").action).toBe("none");
+    const stale = { supersedeDates: ["2026-10-30"], firstSeen: "2026-11-01T00:00:00Z", lastSeen: "2026-11-08T00:00:00Z", runs: 9 };
+    expect(planCorrection({ ...store, pendingCorrection: stale }, reading, "2026-11-09T08:00:00Z")).toMatchObject({ action: "pending", pending: { runs: 1 } });
   });
 });

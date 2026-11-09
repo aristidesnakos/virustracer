@@ -327,3 +327,70 @@ export function applySnapshot(store, snap, nowISO, { appendUnchanged = false } =
     snapshots: snapshots.slice(-MAX_SNAPSHOTS),
   };
 }
+
+// ── Correcting a withdrawn reading ───────────────────────────────────────────
+// A cumulative count never falls, so a lower reading is rejected (validateSnapshot). But when the
+// SOURCE was wrong and withdrew a figure, every later reading is lower than the stored one and
+// the series freezes: Ebola, 2026-11-02 to 11-09, after DRC's INSP published 5,376 deaths and
+// went back to 5,107 within hours (Wikipedia revisions 1383184535, 1383354892, 1383443430).
+// planCorrection recognises that case narrowly and only after it persists:
+//  - the new reading is lower than at most SUPERSEDE_MAX_SNAPSHOTS trailing snapshots, and passes
+//    every check against the snapshot before them (so it continues the earlier series);
+//  - the same trailing snapshots stay contradicted for SUPERSEDE_PERSIST_HOURS over at least
+//    SUPERSEDE_MIN_RUNS runs (a vandal's edit is usually reverted well within that).
+// Then those snapshots move to `superseded` (kept with the reason, never deleted) and the reading
+// is stored. Anything else stays a manual review; a rejection older than REJECTION_ALERT_HOURS is
+// logged as an error rather than a warning.
+export const SUPERSEDE_MAX_SNAPSHOTS = 2;
+export const SUPERSEDE_PERSIST_HOURS = 24;
+export const SUPERSEDE_MIN_RUNS = 2;
+export const REJECTION_ALERT_HOURS = 48;
+
+/**
+ * What to do with a reading that validateSnapshot rejected against the latest snapshot.
+ * @param {{snapshots: Snapshot[], pendingCorrection?: any}} store
+ * @param {Snapshot} reading
+ * @param {string} nowISO
+ * @param {{stalePrevDays?: number, allowNullDeaths?: boolean}} [opts]
+ * @returns {{action: "none"} | {action: "pending" | "apply", pending: any, supersede: Snapshot[], base: Snapshot}}
+ */
+export function planCorrection(store, reading, nowISO, opts = {}) {
+  const snaps = [...(store?.snapshots ?? [])].sort((a, b) => a.date.localeCompare(b.date));
+  for (let k = 1; k <= SUPERSEDE_MAX_SNAPSHOTS && k < snaps.length; k++) {
+    const base = snaps[snaps.length - 1 - k];
+    const trailing = snaps.slice(-k);
+    if (!validateSnapshot(reading, base, nowISO, opts).ok) continue;
+    // Every trailing snapshot must contradict the reading, or it is not the cause.
+    if (!trailing.every((t) => !validateSnapshot(reading, t, nowISO, opts).ok)) continue;
+    const dates = trailing.map((t) => t.date);
+    const prev = store?.pendingCorrection;
+    const same = prev && JSON.stringify(prev.supersedeDates) === JSON.stringify(dates);
+    const pending = {
+      supersedeDates: dates,
+      firstSeen: same ? prev.firstSeen : nowISO,
+      lastSeen: nowISO,
+      runs: same ? (prev.runs ?? 1) + 1 : 1,
+      reading: { confirmed: reading.confirmed, deaths: reading.deaths, ...(reading.revid !== undefined ? { revid: reading.revid } : {}) },
+    };
+    const hours = (Date.parse(pending.lastSeen) - Date.parse(pending.firstSeen)) / 3_600_000;
+    const ready = hours >= SUPERSEDE_PERSIST_HOURS && pending.runs >= SUPERSEDE_MIN_RUNS;
+    return { action: ready ? "apply" : "pending", pending, supersede: trailing, base };
+  }
+  return { action: "none" };
+}
+
+/**
+ * Move the snapshots dated `dates` from `snapshots` to `superseded`, each with when and why.
+ * Never mutates the input; the raw files they point to stay where they are (write-once).
+ * @param {{snapshots: Snapshot[], superseded?: any[]}} store
+ * @param {string[]} dates
+ * @param {string} nowISO
+ * @param {string} reason
+ */
+export function supersedeSnapshots(store, dates, nowISO, reason) {
+  const drop = new Set(dates);
+  const moved = (store.snapshots ?? []).filter((s) => drop.has(s.date)).map((s) => ({ ...s, supersededAt: nowISO, supersededReason: reason }));
+  const next = { ...store, snapshots: (store.snapshots ?? []).filter((s) => !drop.has(s.date)), superseded: [...(store.superseded ?? []), ...moved] };
+  delete next.pendingCorrection;
+  return next;
+}
