@@ -21,7 +21,7 @@ import { resolve, dirname } from "node:path";
 import { fileURLToPath } from "node:url";
 import { parseInfobox, validateSnapshot, MAX_SNAPSHOTS, withoutIgnored } from "./lib/toll.mjs";
 import { archiveInfobox } from "./lib/raw.mjs";
-import { lastRevisionPerDay, keepLongestMonotoneChain } from "./lib/backfill.mjs";
+import { lastRevisionPerDay, mergeBackfill } from "./lib/backfill.mjs";
 import { USER_AGENT, dataFile, selectOutbreaksWith, tollAdapter } from "./lib/outbreak-registry.mjs";
 
 const DRY_RUN = process.argv.includes("--dry-run");
@@ -95,6 +95,8 @@ function readStore(tollJson) {
   if (!existsSync(tollJson)) return { lastChecked: "", snapshots: [] };
   const parsed = JSON.parse(readFileSync(tollJson, "utf-8"));
   return {
+    // Keep the other fields (superseded, pendingCorrection, rejected).
+    ...parsed,
     lastChecked: typeof parsed.lastChecked === "string" ? parsed.lastChecked : "",
     snapshots: Array.isArray(parsed.snapshots) ? parsed.snapshots : [],
   };
@@ -146,22 +148,27 @@ async function backfillOutbreak({ slug, toll }) {
 
   // Existing readings win for their date, then drop impossible ones from the union.
   const have = new Map(store.snapshots.map((s) => [s.date, s]));
-  const union = [...store.snapshots, ...imported.filter((s) => !have.has(s.date))].sort((a, b) =>
-    a.date.localeCompare(b.date),
-  );
-  // Early revisions counted suspected deaths in the deaths field (deaths > confirmed),
-  // a different definition from the one the tracker reports, so they are excluded.
-  const plausible = union.filter((s) => {
-    const verdict = validateSnapshot(s, null, s.date);
-    if (!verdict.ok) console.log(`  skipped ${s.date}: ${verdict.reason}`);
-    return verdict.ok;
-  });
-  const { kept, dropped } = keepLongestMonotoneChain(plausible);
-  for (const d of dropped) {
+  const plausible = (list) =>
+    list.filter((s) => {
+      const verdict = validateSnapshot(s, null, s.date);
+      if (!verdict.ok) console.log(`  skipped ${s.date}: ${verdict.reason}`);
+      return verdict.ok;
+    });
+  // Stored and imported readings go through the never-decreasing chain together: a stored
+  // snapshot that breaks the trend (a figure the source later withdrew) is superseded, kept with
+  // the reason, and that day's imported reading may take its place.
+  const { kept, supersededExisting, droppedImported } = mergeBackfill(plausible(store.snapshots), plausible(imported));
+  for (const d of droppedImported) {
     console.log(
       `  dropped ${d.date} (revision ${d.revid ?? "?"}): confirmed=${d.confirmed} deaths=${d.deaths} breaks the cumulative trend`,
     );
   }
+  for (const d of supersededExisting) {
+    console.log(
+      `  superseded stored ${d.date} (revision ${d.revid ?? "?"}): confirmed=${d.confirmed} deaths=${d.deaths} breaks the cumulative trend of the revision history`,
+    );
+  }
+  const dropped = droppedImported;
 
   const added = kept.filter((s) => !have.has(s.date)).length;
   console.log(
@@ -189,7 +196,17 @@ async function backfillOutbreak({ slug, toll }) {
   console.log(`Archived ${archived} raw infobox file(s) under data/raw/infobox/`);
 
   mkdirSync(dirname(tollJson), { recursive: true });
-  writeFileSync(tollJson, JSON.stringify({ ...store, snapshots: finalSnaps }, null, 2) + "\n");
+  const nowISO = new Date().toISOString();
+  const superseded = [
+    ...(store.superseded ?? []),
+    ...supersededExisting.map((x) => ({
+      ...x,
+      supersededAt: nowISO,
+      supersededReason: "scripts/backfill-toll.mjs: breaks the never-decreasing chain of the article's daily revisions (the source changed or withdrew the figure)",
+    })),
+  ];
+  const out = { ...store, snapshots: finalSnaps, ...(superseded.length ? { superseded } : {}) };
+  writeFileSync(tollJson, JSON.stringify(out, null, 2) + "\n");
   console.log(`Wrote ${tollLabel}`);
 }
 

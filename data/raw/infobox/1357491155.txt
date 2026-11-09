@@ -1,0 +1,33 @@
+{{Infobox outbreak
+| name            = {{PAGENAME}}
+| width           = 
+| image           = Map_of_the_Ituri_Province_Ebola_outbreak.svg
+| image_size      = 
+| image_upright   = 
+| alt             = 
+| caption         = A map of reported cases as of 25 May 2026
+| map1            = 
+| legend1         = 
+| disease         = [[Ebola]]
+| pathogen        = [[Bundibugyo virus]] (BDBV)
+| location        = [[Democratic Republic of the Congo]] and [[Uganda]]
+| WHO_status      = Public health emergency of international concern
+| first_outbreak  = 
+| first_reported  = 15 May 2026
+| index_case      = 
+| source          = 
+| confirmed_cases = 330 ({{as of|1 June 2026}})<ref name="WHO">{{Cite news |date=2 June 2026 |title=Alert and Response |url=https://www.who.int/emergencies/alert-and-response |work=[[World Health Organization]] |access-date=2 June 2026}}</ref>
+| active_cases    = 
+| suspected_cases = 117<ref name="WHO" />
+| severe_cases    = 
+| hospitalized_cases = 
+| critical_cases  = 
+| ventilator_cases = 
+| ecmo_cases      = 
+| recovery_cases  = 6 ({{as of|1 June 2026}})<ref name="WHO"/>
+| deaths          = 49 confirmed ({{as of|1 June 2026}})<ref name="WHO"/>
+| fatality_rate   = 
+| test_positivity_rate = 
+| territories     = 
+| website         = 
+}}

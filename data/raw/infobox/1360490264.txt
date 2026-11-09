@@ -1,0 +1,33 @@
+{{Infobox outbreak
+| name            = {{PAGENAME}}
+| width           = 
+| image           = Map of the Ituri Province Ebola outbreak.svg
+| image_size      = 
+| image_upright   = 
+| alt             = Map of the DRC showing 874 cases in Ituri Province, 79 in North Kivu, 3 in South Kivu and 20 in neighboring Uganda
+| caption         = Map of confirmed cases as of 17 June 2026
+| map1            = 
+| legend1         = 
+| disease         = [[Ebola]]
+| pathogen        = [[Bundibugyo virus]] (BDBV)
+| location        = [[Democratic Republic of the Congo]] and [[Uganda]]
+| WHO_status      = Public health emergency of international concern
+| first_outbreak  = 
+| first_reported  = 14 May 2026<ref>{{Cite web |date=16 May 2026 |title=Le Gouvernement renforce la coordination de la riposte sous l'appui technique de l'INSP |trans-title=Government strengthens response coordination under technical support from INSP |url=https://insp.cd/le-gouvernement-renforce-la-coordination-de-la-riposte-sous-lappui-technique-de-linsp/ |url-status=live |archive-url=https://web.archive.org/web/20260528092232/https://insp.cd/le-gouvernement-renforce-la-coordination-de-la-riposte-sous-lappui-technique-de-linsp/ |archive-date=28 May 2026 |access-date=7 June 2026 |website=Institut National de Sante Publique |language=fr }}</ref><ref name="INSP-SitRep001">{{Citation |title=SitRep MVE N° 001/2026 – Rapport de Situation de la Maladie à Virus Ebola/17ème épidémie |date=22 May 2026 |website=Institut National de Sante Publique |issue=1/2026 |trans-title=Ebola Virus Disease Situation Report/17th Outbreak |url=https://insp.cd/sitrep-mve-n-001-2026/ |access-date=7 June 2026 |publisher=Centre des Opérations d'Urgence de Santé Publique (COUSP) – RDC |language=fr |archive-date=7 June 2026 |archive-url=https://web.archive.org/web/20260607153244/https://insp.cd/sitrep-mve-n-001-2026/ |url-status=live }}</ref>
+| index_case      = 
+| source          = 
+| confirmed_cases = 976
+| active_cases    = 
+| suspected_cases = 162
+| severe_cases    = 
+| hospitalized_cases = 
+| critical_cases  = 
+| ventilator_cases = 
+| ecmo_cases      = 
+| recovery_cases  = 106
+| deaths          = 249
+| fatality_rate   = 26%
+| test_positivity_rate = 
+| territories     = 
+| website         = 
+}}
