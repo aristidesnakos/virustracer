@@ -20,6 +20,8 @@ const TODAY = new Date().toISOString().slice(0, 10);
 const clip = (s, n = 90) => String(s ?? "").replace(/\s+/g, " ").trim().slice(0, n);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const only = (process.argv.find((a) => a.startsWith("--only=")) ?? "").slice(7).toLowerCase();
+/** `--round=2` runs only the follow-up requests added after the first run (docs/countermeasures-assessment.md). */
+const round = Number((process.argv.find((a) => a.startsWith("--round=")) ?? "").slice(8)) || 0;
 
 /** Diseases the site covers, plus H5N1, with the search text used per source. */
 const DISEASES = [
@@ -90,9 +92,9 @@ add({
 // ---- Europe PMC (literature and preprints) ----
 const EPMC = "https://www.ebi.ac.uk/europepmc/webservices/rest/search";
 for (const d of DISEASES) {
-  const topic = `${d.epmc} AND (vaccine OR therapeutic OR treatment OR "clinical trial" OR antiviral OR diagnostic)`;
+  const topic = `TITLE_ABS:${d.epmc} AND (TITLE_ABS:vaccine OR TITLE_ABS:therapeutic OR TITLE_ABS:treatment OR TITLE_ABS:"clinical trial" OR TITLE_ABS:antiviral OR TITLE_ABS:diagnostic)`;
   add({
-    group: "europepmc", id: `${d.key}:lit`, host: "ebi.ac.uk",
+    group: "europepmc", id: `${d.key}:lit`, host: "ebi.ac.uk", round: 2,
     url: `${EPMC}?query=${enc(`${topic} AND FIRST_PDATE:[2026-01-01 TO 2026-12-31]`)}&format=json&pageSize=3&sort=${enc("P_PDATE_D desc")}&resultType=lite`,
     sum: (r) => {
       const j = JSON.parse(r.text);
@@ -103,7 +105,7 @@ for (const d of DISEASES) {
     },
   });
   add({
-    group: "europepmc", id: `${d.key}:preprints`, host: "ebi.ac.uk",
+    group: "europepmc", id: `${d.key}:preprints`, host: "ebi.ac.uk", round: 2,
     url: `${EPMC}?query=${enc(`${topic} AND SRC:PPR AND FIRST_PDATE:[2026-01-01 TO 2026-12-31]`)}&format=json&pageSize=2&sort=${enc("P_PDATE_D desc")}&resultType=lite`,
     sum: (r) => {
       const j = JSON.parse(r.text);
@@ -146,12 +148,14 @@ for (const [name, field] of [["INMAZEB", "brand_name"], ["EBANGA", "brand_name"]
 // ---- ISRCTN (documented query API, XML) ----
 for (const t of ["Bundibugyo", "Ebola", "measles", "hantavirus", "Candida auris", "H5N1"]) {
   add({
-    group: "isrctn", id: t, host: "isrctn.com",
+    group: "isrctn", id: t, host: "isrctn.com", round: 2,
     url: `https://www.isrctn.com/api/query/format/default?q=${enc(t)}&limit=2`,
     sum: (r) => {
       const total = /totalCount="(\d+)"/.exec(r.text)?.[1];
-      const titles = [...r.text.matchAll(/<title>([^<]*)<\/title>/g)].slice(0, 3).map((m) => `"${clip(m[1], 70)}"`);
-      return [`totalCount=${total} bytes=${r.text.length}`, ...titles];
+      const ids = [...r.text.matchAll(/<isrctn[^>]*>(ISRCTN\d+)<\/isrctn>/g)].map((m) => m[1]);
+      const titles = [...r.text.matchAll(/<trialDescription>\s*<title>([^<]*)<\/title>/g)].map((m) => clip(m[1], 75));
+      const edited = [...r.text.matchAll(/<lastUpdated>([^<]*)<\/lastUpdated>/g)].map((m) => m[1].slice(0, 10));
+      return [`totalCount=${total}`, ...titles.slice(0, 3).map((x, i) => `${ids[i] ?? "?"} edited=${edited[i] ?? "?"} "${x}"`)];
     },
   });
 }
@@ -183,20 +187,29 @@ add({
   },
 });
 
-// ---- EMA medicines data (JSON report) ----
+// ---- EMA medicines data (JSON files, updated twice a day per EMA's JSON-data page) ----
 add({
-  group: "ema", id: "medicines-json", host: "ema.europa.eu",
-  url: "https://www.ema.europa.eu/en/documents/report/medicines-output-medicines-json-report_en.json",
+  group: "ema", id: "json-docs-page", host: "ema.europa.eu", round: 2,
+  url: "https://www.ema.europa.eu/en/about-us/about-website/download-website-data-json-data-format",
+  html: true,
+  sum: (r) => {
+    const links = [...new Set([...r.text.matchAll(/href="([^"]*\.json[^"]*)"/g)].map((m) => m[1]))];
+    return [`bytes=${r.text.length} json links=${links.length}`, ...links.filter((l) => /medicine/i.test(l)).slice(0, 6)];
+  },
+});
+add({
+  group: "ema", id: "medicines-json", host: "ema.europa.eu", round: 2,
+  url: "https://www.ema.europa.eu/en/documents/report/medicines-output-medicines_json-report_en.json",
   sum: (r) => {
     const j = JSON.parse(r.text);
     const rows = Array.isArray(j) ? j : j.data ?? j.results ?? Object.values(j)[0];
     const first = rows?.[0] ?? {};
-    const out = [`records=${rows?.length} keys=${Object.keys(first).slice(0, 14).join(",")}`];
-    for (const name of ["Ervebo", "Zabdeno", "Mvabea", "Inmazeb", "Ebanga", "Rezzayo", "Brexafemme", "Seqirus", "Zoonotic", "Celldemic", "Incellipan", "Priorix", "ProQuad"]) {
+    const out = [`records=${rows?.length} keys=${Object.keys(first).slice(0, 16).join(",")}`];
+    for (const name of ["Ervebo", "Zabdeno", "Mvabea", "Inmazeb", "Ebanga", "Rezzayo", "Brexafemme", "Zoonotic Influenza", "Celldemic", "Incellipan", "Priorix", "ProQuad", "M-M-RvaxPro"]) {
       const hit = rows?.filter((x) => JSON.stringify(x).toLowerCase().includes(name.toLowerCase())) ?? [];
       if (hit.length) {
         const h = hit[0];
-        out.push(`${name}: ${hit.length} record(s); first: name=${clip(h.name_of_medicine ?? h.name ?? h.medicine_name, 40)} status=${clip(h.medicine_status ?? h.status, 25)} authorised=${clip(h.marketing_authorisation_date ?? h.authorisation_date, 12)} revised=${clip(h.last_updated_date ?? h.revision_date, 12)}`);
+        out.push(`${name}: ${hit.length} record(s); first: ${clip(JSON.stringify(h), 260)}`);
       } else out.push(`${name}: none`);
     }
     return out;
@@ -219,6 +232,81 @@ const pages = [
   ["pactr", "home", "https://pactr.samrc.ac.za/", ["Pan African", "Ebola"]],
 ];
 for (const [group, id, url, kws] of pages) add({ group, id, url, host: new URL(url).host, sum: htmlGrep(kws), html: true });
+
+
+// ---- Round 2 additions: detail needed for the memo ----
+const strip = (h) => h.replace(/<script[\s\S]*?<\/script>|<style[\s\S]*?<\/style>/g, " ").replace(/<[^>]+>/g, " ").replace(/&amp;/g, "&").replace(/&#?\w+;/g, " ").replace(/\s+/g, " ");
+const context = (text, re, n = 3, w = 110) => {
+  const t = strip(text);
+  const out = [];
+  for (const m of t.matchAll(re)) { out.push(`...${t.slice(Math.max(0, m.index - w), m.index + w)}...`); if (out.length >= n) break; }
+  return out.length ? out : ["(no match)"];
+};
+add({
+  group: "clinicaltrials.gov", id: "bundibugyo:all-records", host: "clinicaltrials.gov", round: 2,
+  url: `${CT}?query.term=Bundibugyo&pageSize=20&fields=NCTId,BriefTitle,OverallStatus,StartDate,LastUpdatePostDate,LeadSponsorName,LeadSponsorClass,Phase,EnrollmentCount`,
+  sum: (r) =>
+    (JSON.parse(r.text).studies ?? []).map((s) => {
+      const p = s.protocolSection;
+      return `${p.identificationModule.nctId} ${p.statusModule.overallStatus} start=${p.statusModule.startDateStruct?.date ?? "-"} upd=${p.statusModule.lastUpdatePostDateStruct?.date} phase=${(p.designModule?.phases ?? []).join("/") || "-"} n=${p.designModule?.enrollmentInfo?.count ?? "-"} ${p.sponsorCollaboratorsModule?.leadSponsor?.class}:"${clip(p.sponsorCollaboratorsModule?.leadSponsor?.name, 26)}" "${clip(p.identificationModule.briefTitle, 80)}"`;
+    }),
+});
+add({
+  group: "clinicaltrials.gov", id: "tumaini:NCT07842107", host: "clinicaltrials.gov", round: 2,
+  url: `${CT}/NCT07842107?fields=NCTId,OverallStatus,StartDate,PrimaryCompletionDate,LastUpdatePostDate,StatusVerifiedDate,Phase,EnrollmentCount,InterventionName,LeadSponsorName`,
+  sum: (r) => {
+    const p = JSON.parse(r.text).protocolSection;
+    return [`status=${p.statusModule.overallStatus} verified=${p.statusModule.statusVerifiedDate} start=${p.statusModule.startDateStruct?.date} (${p.statusModule.startDateStruct?.type}) lastUpdate=${p.statusModule.lastUpdatePostDateStruct?.date} n=${p.designModule?.enrollmentInfo?.count} interventions=${clip((p.armsInterventionsModule?.interventions ?? []).map((i) => i.name).join("; "), 100)}`];
+  },
+});
+add({
+  group: "clinicaltrials.gov", id: "terms-page", host: "clinicaltrials.gov", round: 2, html: true,
+  url: "https://clinicaltrials.gov/about-site/terms-conditions",
+  sum: (r) => context(r.text, /(public domain|attribut|copyright|rate limit|requests per)/gi, 5),
+});
+add({
+  group: "clinicaltrials.gov", id: "api-about", host: "clinicaltrials.gov", round: 2, html: true,
+  url: "https://clinicaltrials.gov/data-api/about-api",
+  sum: (r) => context(r.text, /(rate limit|per minute|requests)/gi, 4),
+});
+for (const name of ["INMAZEB", "EBANGA"]) {
+  add({
+    group: "openfda", id: `submissions:${name}`, host: "api.fda.gov", gap: 700, round: 2,
+    url: `https://api.fda.gov/drug/drugsfda.json?search=${enc(`products.brand_name:"${name}"`)}&limit=1`,
+    sum: (r) => {
+      const x = JSON.parse(r.text).results?.[0];
+      return [`products=${(x?.products ?? []).map((p) => `${p.brand_name} ${clip(p.active_ingredients?.[0]?.name, 30)} marketing=${p.marketing_status}`).join("; ")}`, ...(x?.submissions ?? []).map((s) => `${s.submission_type}${s.submission_number} ${s.submission_status} ${s.submission_status_date} class=${s.submission_class_code_description ?? "-"}`).sort()];
+    },
+  });
+}
+add({
+  group: "fda", id: "vaccine-list-rows", host: "www.fda.gov", round: 2, html: true,
+  url: "https://www.fda.gov/vaccines-blood-biologics/vaccines/vaccines-licensed-use-united-states",
+  sum: (r) => [...context(r.text, /Ervebo/g, 1, 160), ...context(r.text, /H5N1/g, 2, 160), ...context(r.text, /Audenz/g, 1, 120)],
+});
+add({
+  group: "who", id: "blueprint-bundibugyo-context", host: "www.who.int", round: 2, html: true,
+  url: "https://www.who.int/teams/blueprint",
+  sum: (r) => context(r.text, /Bundibugyo/g, 4, 130),
+});
+add({
+  group: "cepi", id: "news-bundibugyo-headlines", host: "cepi.net", round: 2, html: true,
+  url: "https://cepi.net/news",
+  sum: (r) => {
+    const heads = [...new Set([...r.text.matchAll(/<(?:h\d|a)[^>]*>\s*([^<]{15,160}?)\s*<\/(?:h\d|a)>/g)].map((m) => strip(m[1]).trim()).filter((x) => /bundibugyo/i.test(x)))];
+    return [`distinct headlines mentioning Bundibugyo=${heads.length}`, ...heads.slice(0, 8).map((h) => `"${clip(h, 130)}"`)];
+  },
+});
+add({
+  group: "eu-ctr", id: "search-ebola-count", host: "www.clinicaltrialsregister.eu", round: 2, html: true,
+  url: "https://www.clinicaltrialsregister.eu/ctr-search/search?query=ebola",
+  sum: (r) => context(r.text, /result\(s\) found/g, 1, 90),
+});
+add({
+  group: "eu-ctr", id: "search-bundibugyo-count", host: "www.clinicaltrialsregister.eu", round: 2, html: true,
+  url: "https://www.clinicaltrialsregister.eu/ctr-search/search?query=bundibugyo",
+  sum: (r) => context(r.text, /(result\(s\) found|No results)/gi, 1, 90),
+});
 
 // ---------------------------------------------------------------------------
 
@@ -253,6 +341,7 @@ let failures = 0;
 console.log(`# countermeasures probe ${new Date().toISOString()} ua="${UA}"`);
 for (const t of tasks) {
   if (only && !`${t.group} ${t.id}`.toLowerCase().includes(only)) continue;
+  if (round && (t.round ?? 1) !== round) continue;
   const wait = (lastHit.get(t.host) ?? 0) + (t.gap ?? 1800) - Date.now();
   if (wait > 0) await sleep(wait);
   let line;

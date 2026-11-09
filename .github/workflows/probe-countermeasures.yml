@@ -36,6 +36,6 @@ jobs:
         with:
           node-version: "22"
       - name: Probe sources
-        run: node scripts/probe-countermeasures.mjs ${ONLY:+--only="$ONLY"}
+        run: node scripts/probe-countermeasures.mjs --round=2 ${ONLY:+--only="$ONLY"}
         env:
           ONLY: ${{ inputs.only }}
