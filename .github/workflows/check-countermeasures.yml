@@ -1,0 +1,44 @@
+name: Check countermeasures box
+
+# Re-checks every line of the hand-curated vaccines-and-treatments files (src/data/countermeasures/)
+# against its source: ClinicalTrials.gov, EMA's medicines file and the cited web pages
+# (scripts/check-countermeasures.mjs). Read-only, no secrets; it never edits the files. A mismatch
+# is a warning for a person to review and fix by hand. Manual: Actions > Check countermeasures box.
+on:
+  workflow_dispatch:
+    inputs:
+      discover:
+        description: "Also list uncited registry records and recent CEPI/WHO headlines"
+        default: true
+        type: boolean
+  push:
+    branches: [research/countermeasures-tracker]
+    paths:
+      - scripts/check-countermeasures.mjs
+      - .github/workflows/check-countermeasures.yml
+      - src/data/countermeasures/*.json
+
+permissions:
+  contents: read
+
+concurrency:
+  group: check-countermeasures
+  cancel-in-progress: false
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Check curated lines against their sources
+        run: |
+          if [ "$DISCOVER" = "false" ]; then node scripts/check-countermeasures.mjs
+          else node scripts/check-countermeasures.mjs --discover; fi
+        env:
+          DISCOVER: ${{ inputs.discover }}

@@ -1,0 +1,117 @@
+{
+  "id": "ebolavirus-bundibugyo",
+  "name": "Bundibugyo virus",
+  "checked": "2026-11-09",
+  "statement": {
+    "text": "No vaccine or treatment is licensed for Bundibugyo virus.",
+    "quote": "Bundibugyo virus remains one of the least studied Orthoebolaviruses with no licensed vaccine or treatment.",
+    "date": "2026-09-21",
+    "tier": "E",
+    "source": { "kind": "web", "issuer": "WHO R&D Blueprint", "url": "https://www.who.int/teams/blueprint" },
+    "expect": { "quotes": ["no licensed vaccine or treatment"] }
+  },
+  "products": [
+    {
+      "id": "tumaini",
+      "name": "Tumaini vaccine trial",
+      "kind": "vaccine",
+      "developer": "CEPI, INRB, University of Antwerp, DRC Ministry of Health, WHO and partners",
+      "note": "A Phase 2/3 trial that tests several candidate vaccines in one study, by vaccinating contacts of cases in DR Congo.",
+      "events": [
+        {
+          "milestone": "registered",
+          "tier": "B",
+          "text": "Phase 2/3 trial registered for 3,620 participants in DR Congo.",
+          "source": { "kind": "clinicaltrials.gov", "id": "NCT07842107", "issuer": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT07842107" },
+          "expect": { "registryStatus": "NOT_YET_RECRUITING", "recordUpdated": "2026-10-05", "phase": "PHASE2/PHASE3", "enrollment": 3620 }
+        },
+        {
+          "milestone": "first_enrolled",
+          "tier": "E",
+          "text": "CEPI says the first participant was vaccinated.",
+          "source": { "kind": "web", "issuer": "CEPI", "url": "https://cepi.net/news" },
+          "expect": { "quotes": ["First participant vaccinated in pivotal Phase 2/3 Bundibugyo vaccine trial in DRC"] }
+        }
+      ]
+    },
+    {
+      "id": "ervebo",
+      "name": "Ervebo",
+      "kind": "vaccine",
+      "developer": "Merck Sharp & Dohme",
+      "licensedFor": "Zaire ebolavirus",
+      "note": "Licensed against a different Ebola species (Zaire). Whether it protects against Bundibugyo virus is not established; that is what the studies below measure.",
+      "events": [
+        {
+          "milestone": "authorised",
+          "tier": "A",
+          "text": "Authorised in the EU against Zaire ebolavirus.",
+          "source": { "kind": "ema-medicine", "id": "EMEA/H/C/004554", "issuer": "European Medicines Agency", "url": "https://www.ema.europa.eu/en/medicines/human/EPAR/ervebo" },
+          "expect": { "medicineStatus": "Authorised" }
+        },
+        {
+          "milestone": "registered",
+          "tier": "B",
+          "text": "Phase 4 study of Ervebo in about 20,000 frontline workers in DR Congo during this outbreak.",
+          "source": { "kind": "clinicaltrials.gov", "id": "NCT07903350", "issuer": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT07903350" },
+          "expect": { "registryStatus": "RECRUITING", "recordUpdated": "2026-10-29", "phase": "PHASE4", "enrollment": 20000 }
+        }
+      ]
+    },
+    {
+      "id": "mrna-1469",
+      "name": "mRNA-1469",
+      "kind": "vaccine",
+      "developer": "ModernaTX, Inc.",
+      "note": "Candidate vaccine designed for Bundibugyo virus.",
+      "events": [
+        {
+          "milestone": "registered",
+          "tier": "B",
+          "text": "Phase 1 study in Canada, 84 participants.",
+          "source": { "kind": "clinicaltrials.gov", "id": "NCT07737717", "issuer": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT07737717" },
+          "expect": { "registryStatus": "ACTIVE_NOT_RECRUITING", "recordUpdated": "2026-09-24", "phase": "PHASE1", "enrollment": 84 }
+        },
+        {
+          "milestone": "registered",
+          "tier": "B",
+          "text": "Phase 1 study in African participants in Uganda, 224 participants.",
+          "source": { "kind": "clinicaltrials.gov", "id": "NCT07919197", "issuer": "ClinicalTrials.gov", "url": "https://clinicaltrials.gov/study/NCT07919197" },
+          "expect": { "registryStatus": "NOT_YET_RECRUITING", "recordUpdated": "2026-11-05", "phase": "PHASE1", "enrollment": 224 }
+        }
+      ]
+    },
+    {
+      "id": "chadox1-bdbv",
+      "name": "ChAdOx1 BDBV",
+      "kind": "vaccine",
+      "developer": "University of Oxford, with Serum Institute of India",
+      "note": "Candidate vaccine designed for Bundibugyo virus.",
+      "events": [
+        {
+          "milestone": "first_enrolled",
+          "tier": "E",
+          "text": "CEPI says a Phase 1 trial has launched in Oxford.",
+          "source": { "kind": "web", "issuer": "CEPI", "url": "https://cepi.net/cepi-backed-bundibugyo-ebolavirus-vaccine-trial-launched-oxford" },
+          "expect": { "quotes": ["ChAdOx1"] }
+        }
+      ]
+    },
+    {
+      "id": "partners",
+      "name": "PARTNERS treatment trial",
+      "kind": "treatment",
+      "developer": "WHO (sponsor), with research partners in DR Congo, Belgium and the UK",
+      "note": "A randomised trial of candidate treatments for people with Bundibugyo virus disease.",
+      "events": [
+        {
+          "milestone": "first_enrolled",
+          "tier": "E",
+          "text": "WHO says patient enrolment has begun.",
+          "source": { "kind": "web", "issuer": "WHO", "url": "https://www.who.int/news/item/02-07-2026-patient-enrolment-begins-in-a-scientific-trial-to-identify-the-first-effective-treatments-for-bundibugyo-virus-disease" },
+          "expect": { "quotes": ["MBP134", "remdesivir"] }
+        }
+      ]
+    }
+  ]
+}
