@@ -12,7 +12,8 @@
  *     product number, then fetches the EPAR page and checks `expect.quotes` on it.
  *   - isrctn: reads the record from ISRCTN's query API; compares `expect.recordUpdated` and quotes.
  *   - web: fetches the page and checks that every `expect.quotes` string appears in its text.
- * Each mismatch is a GitHub `::warning::`; the script always exits 0.
+ * Each mismatch is a GitHub `::warning::`. It exits 0, or 1 with `--strict` when there was any
+ * warning (the weekly workflow run uses that, so a red run means a source changed).
  *
  * `--discover` also lists, for each curated file, ClinicalTrials.gov studies matching its name
  * that the file does not cite (new registrations to review), and the Bundibugyo headlines with
@@ -31,6 +32,7 @@ const UA = "virustracer-countermeasures-check/1.0 (https://outbreakfiles.com; ht
 const HOSTS = new Set(["clinicaltrials.gov", "www.ema.europa.eu", "cepi.net", "www.who.int", "www.isrctn.com"]);
 const MAX_BYTES = 12_000_000;
 const discover = process.argv.includes("--discover");
+const strict = process.argv.includes("--strict");
 const clip = (s, n = 110) => String(s ?? "").replace(/\s+/g, " ").trim().slice(0, n);
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const strip = (h) =>
@@ -233,3 +235,4 @@ for (const file of files) {
   if (discover) await discoverFor(file);
 }
 console.log(`# done, ${warnings} warning(s)`);
+if (strict && warnings > 0) process.exitCode = 1;

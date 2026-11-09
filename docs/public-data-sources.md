@@ -238,17 +238,20 @@ ECDC's feed index (`https://www.ecdc.europa.eu/en/rss-feeds`) lists 18 taxonomy 
 workflow "Probe countermeasure sources", runs 42619227360 and 42619911375). **Why:** Ari asked
 whether the site should also follow vaccines, treatments and diagnostics for the diseases it
 covers. Full assessment, per-disease snapshots and design sketch: `docs/countermeasures-assessment.md`
-(verdict: a smaller, hand-checked per-disease box, Bundibugyo Ebola first; nothing built).
+(verdict: a smaller, hand-checked per-disease box, Bundibugyo Ebola first). **Pilot built
+2026-11-09:** the "Vaccines & treatments" box on the Bundibugyo Ebola page, re-checked against
+ClinicalTrials.gov, ISRCTN, EMA, CEPI and WHO by `scripts/check-countermeasures.mjs`.
 
 | Source | Host / id | Level | Cadence | Status | Built |
 |---|---|---|---|---|---|
-| ClinicalTrials.gov API v2 (status, phase, results flag, change filters) | `clinicaltrials.gov/api/v2` | trial | data timestamp 2026-11-06 | Verified 2026-11-09 (probe) | no |
-| EMA medicines JSON (authorisation status, latest procedure) | `ema.europa.eu` `medicines-output-medicines_json-report_en.json` | product, EU | twice a day (per EMA) | Verified 2026-11-09 (probe, 2,757 records) | no |
+| ClinicalTrials.gov API v2 (status, phase, results flag, change filters) | `clinicaltrials.gov/api/v2` | trial | data timestamp 2026-11-06 | Verified 2026-11-09 (probe, checker) | Vaccines & treatments box (checked lines) |
+| EMA medicines JSON (authorisation status, latest procedure) | `ema.europa.eu` `medicines-output-medicines_json-report_en.json` | product, EU | twice a day (per EMA) | Verified 2026-11-09 (probe, 2,757 records; checker) | Vaccines & treatments box (checked lines) |
 | openFDA Drugs@FDA (applications and dated submissions; no vaccines) | `api.fda.gov/drug/drugsfda.json` | product, US | `last_updated` 2026-11-06 | Verified 2026-11-09 (probe) | no |
 | FDA licensed-vaccine list (HTML) | `www.fda.gov` | product, US | page changed 2026-11-08 | Verified 2026-11-09 (probe) | no |
 | WHO prequalified vaccines list (HTML) | `extranet.who.int/prequal` | product | irregular | Reached, but list not readable as fetched | no |
-| WHO R&D Blueprint, CEPI news (HTML statements) | `who.int/teams/blueprint`, `cepi.net/news` | statement | as events happen | Verified 2026-11-09 (probe) | no |
-| ISRCTN query API (XML), EU CTR search (HTML) | `isrctn.com/api`, `clinicaltrialsregister.eu` | trial | continuous / legacy | Verified 2026-11-09 (counts only) | no |
+| WHO R&D Blueprint, CEPI news (HTML statements) | `who.int/teams/blueprint`, `cepi.net/news` | statement | as events happen | Verified 2026-11-09 (probe, checker) | Vaccines & treatments box (statement lines, quote-checked) |
+| ISRCTN query API (XML) | `isrctn.com/api/query/format/default?q=<id>` | trial | continuous | Verified 2026-11-09 (checker reads `lastUpdated`, acronym, scientific title) | Vaccines & treatments box (checked lines) |
+| EU CTR search (HTML) | `clinicaltrialsregister.eu` | trial | legacy | Verified 2026-11-09 (counts only) | no |
 | WHO ICTRP, CTIS, PACTR | `trialsearch.who.int`, `euclinicaltrials.eu`, `pactr.samrc.ac.za` | trial | weekly / continuous | Reported (portal pages reached; no open API; ICTRP forbids commercial use) | no |
 | Europe PMC, PubMed E-utilities, bioRxiv/medRxiv API | `ebi.ac.uk`, `eutils.ncbi.nlm.nih.gov`, `api.biorxiv.org` | publication | daily | Verified 2026-11-09 (probe); too noisy to automate | no |
 | NIH RePORTER API (grants, not milestones) | `api.reporter.nih.gov` | grant | weekly | Verified 2026-11-09 (probe) | no |

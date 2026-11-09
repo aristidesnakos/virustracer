@@ -1,6 +1,6 @@
 # Countermeasures tracker: should Outbreak Files follow "the solution"?
 
-Research memo, written 2026-11-09. The question: next to the outbreak figures, should the site
+Research memo, written 2026-11-09; pilot section added the same day. The question: next to the outbreak figures, should the site
 follow vaccines, treatments and diagnostics for the diseases it covers, showing when one reaches a
 milestone? This file answers it with evidence: what the public sources give, what a panel would
 show today for each disease, a design sketch, the risks and a phased plan. Nothing here is built.
@@ -30,6 +30,48 @@ candidate is promising, effective or safe beyond what the cited source states.
    automate honestly, and a wrong milestone is a medical-information error, not a typo.
 3. **Start with Bundibugyo Ebola only**, hand-curated for about four weeks, and measure whether
    readers use it before building the watcher or adding diseases.
+
+## Pilot built (2026-11-09)
+
+Ari chose the pilot: a hand-curated Bundibugyo box first. Built on the branch
+`research/countermeasures-tracker`:
+
+- **Box** "Vaccines & treatments" on `/outbreaks/ebola-bundibugyo-2026` (section
+  `#vaccines-and-treatments`), from `src/data/countermeasures/ebolavirus-bundibugyo.json`:
+  one statement (WHO: "no licensed vaccine or treatment"), five products (Tumaini trial, Ervebo,
+  mRNA-1469, ChAdOx1 BDBV, PARTNERS treatment trial), ten sourced lines: 1 regulator record,
+  7 registry records (ClinicalTrials.gov and ISRCTN), 2 statements (CEPI, WHO).
+- **Rules** on `/methodology#countermeasures`, read from `src/lib/countermeasures.ts` (milestones,
+  tiers, what each tier may claim, banned words, stale after 14 days).
+- **Checker** `scripts/check-countermeasures.mjs` and workflow "Check countermeasures box": re-reads
+  every source and warns on any difference; weekly with `--strict` (a red run means a source
+  moved; scheduled runs start once the workflow is on `main`) and on demand. Runs 42623177006,
+  42623504899, 42623730598, 42623960270 and 42624255741 on 2026-11-09 built and confirmed the file;
+  the last reported 0 warnings.
+- **Not built:** watcher that proposes new lines, API endpoint, other diseases, disease hubs.
+
+What the checker established beyond the first probe (all on 2026-11-09):
+
+- The Oxford candidate is registered twice on ISRCTN: ISRCTN72157798 (BD-Ebov-01, Phase 1a, UK,
+  assigned 13 Jul 2026) and ISRCTN17249219 (BD-Ebov-02, Phase 1b, Uganda, assigned 18 Sep 2026).
+- CEPI's article "First participant vaccinated in pivotal Phase 2/3 Bundibugyo vaccine trial in
+  DRC" is listed on its news page under 26 Oct 2026; NCT07842107 still says "Not yet recruiting"
+  (record updated 5 Oct). The box shows both.
+- WHO's PARTNERS page (2 Jul 2026) names the antibody MBP134 and remdesivir and says the trial is
+  "sponsored by the World Health Organization". No registry record for it was found on
+  ClinicalTrials.gov or ISRCTN.
+- EMA's record for Ervebo: Authorised, marketing authorisation 11 Nov 2019, indication "caused by
+  Zaire Ebola virus".
+- Dropped for lack of a checkable date or source: CEPI's article on the Oxford trial launch (no date
+  on the page), obeldesivir post-exposure trial (Wikipedia only), Tumaini partner list and Serum
+  Institute of India role (search only).
+
+**How to keep it (about an hour a week):** run or read the weekly "Check countermeasures box"
+run; for each warning, open the source, fix the line by hand, set `checked` to the day you
+checked, and push. Read the `--discover` part for new registry records (`NOT CITED`) and new
+CEPI/WHO headlines; add a line only if it meets the tier rule. **How to measure the pilot:** the
+site has no page analytics, so use of the box cannot be counted yet; that is an open decision
+below.
 
 **Criteria used:** fit with the product ("Live outbreak figures, each tied to its source and kept
 on file"); value to the site's readers (people following an outbreak, journalists, API users);
@@ -324,6 +366,10 @@ the box, and do not build a site-wide "research tracker" page at all.
 7. Keep this data out of any paid product (because of ICTRP's commercial-use restriction and the
    advice risk)? (recommended: yes)
 8. Order against the roadmap: before or after Phase 5 (disease hubs) and H5N1?
+9. (Pilot) How to tell whether readers use the box: add privacy-friendly page analytics (a click
+   goal on its source links), ask in the alerts widget, or judge on feedback alone?
+10. (Pilot) Who reads the weekly checker run and updates the file, and how long the pilot runs
+    before deciding (suggested: four weeks)?
 
 ## Probe and reproduction
 

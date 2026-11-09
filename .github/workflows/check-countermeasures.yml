@@ -3,7 +3,8 @@ name: Check countermeasures box
 # Re-checks every line of the hand-curated vaccines-and-treatments files (src/data/countermeasures/)
 # against its source: ClinicalTrials.gov, EMA's medicines file and the cited web pages
 # (scripts/check-countermeasures.mjs). Read-only, no secrets; it never edits the files. A mismatch
-# is a warning for a person to review and fix by hand. Manual: Actions > Check countermeasures box.
+# is a warning for a person to review and fix by hand. Weekly (strict) and manual: Actions > Check
+# countermeasures box. Runs 42623177006 to 42624255741 (2026-11-09) verified the pilot file.
 on:
   workflow_dispatch:
     inputs:
@@ -11,12 +12,10 @@ on:
         description: "Also list uncited registry records and recent CEPI/WHO headlines"
         default: true
         type: boolean
-  push:
-    branches: [research/countermeasures-tracker]
-    paths:
-      - scripts/check-countermeasures.mjs
-      - .github/workflows/check-countermeasures.yml
-      - src/data/countermeasures/*.json
+  # Mondays 07:23 UTC. --strict turns any difference into a red run, so GitHub's failure email
+  # says a source moved; a person then updates the line and the file's `checked` date by hand.
+  schedule:
+    - cron: "23 7 * * 1"
 
 permissions:
   contents: read
@@ -38,7 +37,7 @@ jobs:
           node-version: "22"
       - name: Check curated lines against their sources
         run: |
-          if [ "$DISCOVER" = "false" ]; then node scripts/check-countermeasures.mjs
-          else node scripts/check-countermeasures.mjs --discover; fi
+          if [ "$DISCOVER" = "false" ]; then node scripts/check-countermeasures.mjs --strict
+          else node scripts/check-countermeasures.mjs --strict --discover; fi
         env:
           DISCOVER: ${{ inputs.discover }}
