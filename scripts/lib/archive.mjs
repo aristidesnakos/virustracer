@@ -266,6 +266,24 @@ function isPublicHttpsUrl(u) {
   }
 }
 
+/**
+ * A URL that is a data API query, not a page. The Internet Archive cannot capture these reliably: the
+ * weekly C. auris NNDSS queries on data.cdc.gov (Socrata `/resource/<id>.json`) mostly time out or fail
+ * to fetch, and one attempt can cost a minute, which used up the whole 5-minute archive step on
+ * 2026-11-08. The durable record of those readings is our own committed raw copy (data/raw/report/),
+ * so they are not collected. Ledger entries from earlier runs stay as they are (it is never pruned);
+ * only collected URLs are ever attempted.
+ * @param {string} url
+ */
+export function isApiQueryUrl(url) {
+  try {
+    const { hostname, pathname } = new URL(url);
+    return hostname === "data.cdc.gov" && /^\/(resource|api)\//.test(pathname);
+  } catch {
+    return false;
+  }
+}
+
 /** @param {unknown} v */
 const str = (v) => (typeof v === "string" ? v : "");
 /** Host name of a URL, or "" when it does not parse. */
@@ -289,7 +307,7 @@ export function collectSources({ outbreaks, siteUrl, sitePages } = {}) {
   const seen = new Set();
   /** @param {SourceItem} item */
   const add = (item) => {
-    if (!/^https?:\/\//.test(item.url) || seen.has(item.url)) return;
+    if (!/^https?:\/\//.test(item.url) || seen.has(item.url) || isApiQueryUrl(item.url)) return;
     seen.add(item.url);
     out.push(item);
   };

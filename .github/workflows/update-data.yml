@@ -83,6 +83,12 @@ jobs:
         # continue-on-error mean a slow Internet Archive can never skip the commit step below.
         timeout-minutes: 5
         continue-on-error: true
+        env:
+          # The script's own budget (10 minutes by default) is longer than the step cap above. When
+          # the runner kills the step at 5 minutes, the ledger is never written (it is saved once, at
+          # the end) and the run shows a red timeout annotation. 3 minutes lets the script stop
+          # itself between URLs, with room for one slow save (up to about a minute), and write.
+          ARCHIVE_BUDGET_MS: "180000"
         run: node scripts/archive-sources.mjs
 
       - name: Commit updated data

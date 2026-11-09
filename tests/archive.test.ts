@@ -5,6 +5,7 @@ import {
   collectSources,
   decodeGoogleNewsUrl,
   emptyLedger,
+  isApiQueryUrl,
   normalizeLedger,
   parseAvailability,
   recordMetadata,
@@ -427,6 +428,35 @@ describe("collectSources", () => {
       source: "Curated (src/data/outbreaks/ebola-x.ts)",
     });
     expect(out.every((i) => i.outbreak === "ebola-x")).toBe(true);
+  });
+
+  it("skips data API queries (Socrata JSON on data.cdc.gov) but keeps pages on the same host", () => {
+    const query =
+      "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%29&%24order=label";
+    const page = "https://data.cdc.gov/d/tscn-ryh9";
+    expect(isApiQueryUrl(query)).toBe(true);
+    expect(isApiQueryUrl("https://data.cdc.gov/api/views/tscn-ryh9.json")).toBe(true);
+    expect(isApiQueryUrl(page)).toBe(false);
+    expect(isApiQueryUrl("https://www.cdc.gov/measles/data-research/index.html")).toBe(false);
+    expect(isApiQueryUrl("https://en.wikipedia.org/w/index.php?oldid=1")).toBe(false);
+    expect(isApiQueryUrl("not a url")).toBe(false);
+
+    const out = collectSources({
+      outbreaks: [
+        {
+          slug: "candida-auris-x",
+          live: { recentItems: [{ url: page, title: "Dataset page", date: "2026-11-01", source: "CDC" }] },
+          toll: {
+            snapshots: [
+              { date: "2026-10-31", confirmed: 6572, deaths: null, sourceUrl: query, source: "CDC NNDSS weekly table" },
+              { date: "2026-10-24", confirmed: 6400, deaths: null, sourceUrl: "https://en.wikipedia.org/w/index.php?oldid=2" },
+            ],
+          },
+          source: `links: [{ label: "Query", href: "${query}" }]`,
+        },
+      ],
+    });
+    expect(out.map((i) => i.url)).toEqual([page, "https://en.wikipedia.org/w/index.php?oldid=2"]);
   });
 
   it("merges outbreaks by priority, newest news first, and tags each URL with the first outbreak citing it", () => {
