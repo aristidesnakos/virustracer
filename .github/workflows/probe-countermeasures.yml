@@ -1,0 +1,41 @@
+name: Probe countermeasure sources
+
+# Keyless, read-only check of public sources for a possible vaccines/treatments/diagnostics tracker
+# (scripts/probe-countermeasures.mjs, memo docs/countermeasures-assessment.md). No secrets, no
+# writes. Manual (Actions > Probe countermeasure sources > Run workflow): the build sandbox cannot
+# reach these hosts, the runners can. About 90 requests, sequential, paced per host.
+on:
+  workflow_dispatch:
+    inputs:
+      only:
+        description: "Probe only groups or ids containing this text (empty: all)"
+        default: ""
+        type: string
+  push:
+    branches: [research/countermeasures-tracker]
+    paths:
+      - scripts/probe-countermeasures.mjs
+      - .github/workflows/probe-countermeasures.yml
+
+permissions:
+  contents: read
+
+concurrency:
+  group: probe-countermeasures
+  cancel-in-progress: false
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - name: Probe sources
+        run: node scripts/probe-countermeasures.mjs ${ONLY:+--only="$ONLY"}
+        env:
+          ONLY: ${{ inputs.only }}
