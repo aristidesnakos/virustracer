@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-08T20:25:32.128Z",
+  "lastExtracted": "2026-11-09T08:56:20.796Z",
   "candidates": [
     {
       "id": "news-11a703f8544b1d23",
@@ -268,6 +268,20 @@
       "extractedAt": "2026-11-08T20:25:19.026Z"
     },
     {
+      "id": "news-2bb33271947c4463",
+      "country": "Nigeria",
+      "iso": "NG",
+      "flag": "🇳🇬",
+      "casesMentioned": 1,
+      "deathsMentioned": null,
+      "context": "Nigeria confirms imported case of Ebola Bundibugyo virus disease.",
+      "sourceTitle": "Nigeria confirms imported case of Ebola Bundibugyo virus disease - WHO | Regional Office for Africa",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ21qUUE3U3YxWFY4dno5NHhxbFk0ZW8xVGl5dE9yVjNha2g2WEtrdWJ0RnlnNWJnYThzcEJ3YVJkX1hoa0VPZjdzekhIRDVMUDBCVHRXb2VwSllPOVhDMmRGcnp2Y3B2NE1ObkpPWl9tUVJvSFBIbjRvM0lfWkVLUkpuZ1VhS2FKMEExN0ZERndQUm5ZeHRpZHJoZlh4Ui1GaWZ6aERvcUc?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-10-20",
+      "extractedAt": "2026-11-09T08:56:20.415Z"
+    },
+    {
       "id": "news-2d14ab2cd9f4e6a8",
       "country": "Kenya",
       "iso": "KE",
@@ -411,6 +425,10 @@
     "news-e79c15bd61bc7c9a",
     "news-1ff046996f132e74",
     "news-45d93a3beed87e80",
-    "news-80cd60f145e42af6"
+    "news-80cd60f145e42af6",
+    "news-3854b311d482b8de",
+    "news-ded2f5d9c3745d4d",
+    "news-2bb33271947c4463",
+    "news-23b063129ade94bd"
   ]
 }

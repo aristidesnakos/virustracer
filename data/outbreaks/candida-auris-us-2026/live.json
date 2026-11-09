@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-08T20:26:05.339Z",
+  "lastFetched": "2026-11-09T08:56:38.291Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -54,7 +54,8 @@
     "news-69fac154df83babe",
     "news-26c0c889a46f8d28",
     "news-231026325ead71e6",
-    "news-ce158e19b94dc53d"
+    "news-ce158e19b94dc53d",
+    "news-741f915c335edd37"
   ],
   "recentItems": [
     {
@@ -63,8 +64,9 @@
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcUtfNGxsXzJ6czh2RHpBM1VfODBkTXhycVVSTGZGSmFTLVZYbXJRd3h4UkJPRFluclprTmJSZkpmc1V1QmVlQmZIdDU5QzcyQUF5T3lyZEEyaWVEeF9HQlVCaHdLUDlLU1BQVnJlTUFEN0RPYXJfdXhxSEtOVHZ0YkgtWEp0S3gxRGFtRkRlaXJYYk1nMnRpa1hDQmgxRlBRbkg4cA?oc=5",
       "date": "2026-11-07",
       "source": "Google News — Candida auris cases",
-      "summary": "As of June 2026, North Carolina has reported 110 confirmed clinical cases of Candida auris and 470 patients screening positive for the fungus. The CDC has declared the fungus an urgent public health threat, and over 130 cases have been fatal nationally since 2016, with the state health department urging increased screening and infection control.",
-      "summaryFallback": false
+      "summary": "Candida auris fungus spreads in North Carolina in 2026. Hoodline reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-7bb06b9e3d0a2f5d",
@@ -72,8 +74,9 @@
       "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTVctN0RWWlNqeHZSd0t1OE1mcDZfWDFaU290eVdmQTItd2pxTTdqUC1JUmxwUmx3dVJjNUdXOEoteXJZTDlWcVBhZEFaMXg3bFhUUGxCYW9GNXpfeW1ETWR3cGlxM2hhdmNvLU1tdjZHYy1rLXBfOE5iWVV4dmtmdVBYLTRMZ1dvYUpsckFZelM1UFZkVUZoUkVlQWlERWhzZFHSAacBQVVfeXFMUFlyLUlTRFQ4TXhaTHZpU1NRejNOdGR4S09ReGVKVW5fQVQ0dndjdVlidGNBR0tQQTlZSmFod2NGRjhmM0hTNFJta1hRMHNWZ3pjRTFaRHlrT2NKQnlpeXVMN1VaYVBWeFliZG5ncHZEQXAyMFFCdDF5djFaRG5sYUV5V1JYaUhRSkFjU1c1YmFZOWJkM2liRElLckx4NlViU2ZtNHNiMU0?oc=5",
       "date": "2026-11-05",
       "source": "Google News — Candida auris cases",
-      "summary": "As of the latest CDC data, the potentially deadly fungus Candida auris had been detected in 27 states, with 1,677 confirmed clinical cases and a cumulative death toll of 143 reported in 2026.",
-      "summaryFallback": false
+      "summary": "Cases of a potentially deadly fungus have been detected in 27 states, according to CDC data.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-426501b52756a374",
@@ -81,8 +84,9 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBiUDktOGU4ZlJVWThmV21KbjdBQUNTVmFLN1JsTVVlcmlrSHhrZ0VHc0VPWlNNMGhmUkQtTlBXZ3FrQ0lNeFZRbndoWlZUYjFTaGlDVUVsU0pqT2dSNmhaQWtVVkhMZjJiMmNMS1ZR?oc=5",
       "date": "2026-10-02",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2026, the CDC reports that cumulative clinical cases of C. auris in the United States have surpassed 15,000, with screening cases exceeding 10,000, and the fungus continues to spread rapidly in healthcare settings.",
-      "summaryFallback": false
+      "summary": "Candida auris infections in the United States are being tracked by the Centers for Disease Control and Prevention.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-e49960c0cee482f0",
@@ -90,8 +94,9 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPelVvSGhXWXBpT1VoMkdCNzNrVnhraHpjVGpRbEVRSGlZblYwZEdLTUlOT3BWN0lFV1lwbjZ5RGdEUEJQeW52TnpVR0pHWXpuOUdydEg5V1Ntdm5CX1k4S1YxR2gyVXhidDBFazd2andmbXd4VEhRSm5sZ1lIbkdJN1pMd0dqUlFicjh3ZGtjWUJTVGtqV0Z5SzdXMHZjYjVYQ1h4czZCeHVGbkVrblZUNFU1QkJTRFVHeUkxejl5MVFuQQ?oc=5",
       "date": "2026-09-17",
       "source": "Google News — Candida auris cases",
-      "summary": "The article does not provide a cumulative death toll or confirmed case count for 2026. Instead, it reports that Candida auris infections are increasing in the United States and emphasizes the need for enhanced infection prevention measures, including rapid identification, strict environmental cleaning, and adherence to contact precautions.",
-      "summaryFallback": false
+      "summary": "Candida auris cases are increasing, and infection prevention must adapt to the threat, ECRI reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-4f968c843ad19093",
@@ -99,8 +104,9 @@
       "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQZWsyaDZYUjR2U2hBc1VEa0Rwc3NEMngwckxJTDJDUHJNZ1lURW1BbndwRUpMc3pSNEJsc3RsZGE2WmNMYlZzbjNGQnZ4WE5VWE5ab1dvRmVDYVlHTVpRcDVkQXR4aV9CQ2pBZVlZYzBLekZZQ0MtNEJHamZDSXVibUZlMnFDd25CdklyY0xPOA?oc=5",
       "date": "2026-09-05",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2024, the cumulative number of clinical cases of Candida auris in the United States reached 8,127, with the pathogen becoming more widespread and drug-resistant, though the article does not provide a specific cumulative death toll.",
-      "summaryFallback": false
+      "summary": "Candida auris cases more than doubled in two years, The Scientist reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-4dec791dbd330277",
@@ -108,7 +114,9 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNa1VEX1BrdGNhWEcwZUs0WFVycmVTaDV5MGprRnV6VnAtS1ZVMnhoczdzTXR3VmtiVXdyekJ2aWo2azJKanB3TnNDWkpHaHNlRmUwYl9RWWRNTHdPOExmRDNTNUNsc3RPbzlNa01leWFmYWNPWHdjUjZ3UmNjMGRUS2xYNlJtWXROUkxzQWVaTjE4aUZmbVRELWFfNA?oc=5",
       "date": "2026-08-20",
       "source": "Google News — C. auris outbreak",
-      "summary": "As of 2026, the article does not provide a cumulative death toll or confirmed case count for the U.S. It instead states that health officials emphasize that containing Candida auris is achievable through intensive screening and robust infection control measures."
+      "summary": "Intensive screening and infection control can contain C. auris, UW Medicine stated.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-da204717467dc580",
@@ -116,8 +124,9 @@
       "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdGlGaHNTOFhwbmdPREhyQkVSNDNTQkF6QVdwa1lfRnU4VE5hckItQWF5QXBkbnRkM2NTdlNvQkF3TXh2dWVoc1phUGxROWQ0SDhDY0RXVlJENURxSWhrZzF3Z2pvM3A1YkZSaGRCX2h0Y0FPaVZPQlk4cldFMWpZNVJUVzM5OFNUY1laa1dBVC1aMUhfZjNqZmNydGtBckctVHVaTGZMVFR6YzQ2UU9wanFHdWF4TVpWWG1CSjkxMEt6SF9JRVNYX3ZIRXNPUQ?oc=5",
       "date": "2026-08-11",
       "source": "Google News — Candida auris cases",
-      "summary": "By 2026, the U.S. had reported 10,286 confirmed clinical cases of Candida auris, with cumulative deaths not specified in the article, as a UT Health San Antonio scientist emphasized that the fungus is now endemic in many U.S. states and its growing antifungal resistance poses a critical public health threat.",
-      "summaryFallback": false
+      "summary": "As Candida auris spreads, a scientist highlights the growing threat of antifungal resistance, UT Health San Antonio reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-ed481edaeb9de671",
@@ -125,8 +134,9 @@
       "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTmNtcTllMGNnVDlyOFBybUk0dW5ueFpVWVVnYWhTVEhPb0s3czcwZWNYWjBkZ05iWHl0cFF4MWNYRS1aNVNZTjducXpxS2RrMk56ZHRINXQwQ05MZGgzQ0p0QjY3ZDJDd0ZhT1d3dnA5bmRyWlgyeUxSX01JTzR6VnFzNmRTc1FpV00tank5OFlRdUYzUlJ5YUJ6TkxPSktP0gGmAUFVX3lxTE94T2NSbFFHVkJpOUpEODlZRy0yOGFQakprM0hTMlI1aU40UjVvYl9Oekd5c19UOTh6QzRBS0NsR0ZGM3F4dHd5aGd2WExTRWhVV3paWGRUTHNmSDJTS25aUUhwOEVaMHYxVzNfOE5KV25IUDZrR3Rpcl9yLTlubGxJVGJ3MjluU2hJbHBNSG94TllhU1pRcXF1Ti1WeVlsTHJ0clV2bEE?oc=5",
       "date": "2026-08-11",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2026, the drug-resistant fungus Candida auris has spread to 27 states across the U.S., with officials warning that cases are rising rapidly. The article does not provide a specific cumulative death toll or confirmed case count.",
-      "summaryFallback": false
+      "summary": "A dangerous drug-resistant fungus is spreading across the US and has reached 27 states, Fox News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-a828b3a43f86f32c",
@@ -134,7 +144,9 @@
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQeWN5WVNFei1VN1BXUG93TGc3MXUyMjZYaFpidXZGVE5LZG45d2E3WGhaWUFmWUt0dExHaVRtSVF6VGJXNkNQekdleGttWDhZaV9RRUY0OGRtdnAtekxYaGhCYzZqaE1tRzNGdHNQaDY4dW1XejJCYkxFU2VYZldsV3FCTXkza2JiMEpkNmFNZjBuc2Rfd0x4U2poR3lCYnNMYmln?oc=5",
       "date": "2026-08-07",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2026, the article states Texas leads the nation in Candida auris cases, with the drug-resistant fungus continuing to spread. No cumulative U.S. death toll or confirmed case count for 2026 is provided."
+      "summary": "Texas leads the nation in Candida auris cases as the drug-resistant fungus spreads, Houston Chronicle reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-c6e60f75134b4642",
@@ -142,8 +154,9 @@
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBlLVRFWE05N2FDSVVLb0hnSzFsUXFYNFoxcVlmZEUwU0p0ZVg3WWIwQURXMjlaaDRqbFNrd0hLYVJYcjdwWWRLczZPdjhKTVhmLUdNeVB2cm9BeUF6dGFySFNLVlFjQTRlWjE2SG13?oc=5",
       "date": "2026-08-07",
       "source": "Google News — Candida auris nursing home",
-      "summary": "As of late July 2026, U.S. health officials reported at least 3,800 confirmed clinical cases of *Candida auris* since the beginning of the year and over 800 deaths linked to the fungus, while the CDC warns that rising resistance to antifungal treatments is making infections increasingly difficult to control.",
-      "summaryFallback": false
+      "summary": "Candida auris is a fungus contaminating healthcare spaces, CNN reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-a0bf93068b3b5332",
@@ -151,8 +164,9 @@
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVE10SFpiQXk5ZXhfdnlOMS1GZlpGejM3aldHTUkyNndlRjdQT01yUFg5aW9tZGFhZElwcWNJeVFqYmZnSjNkZnNUWUpPNmVUNmFXeFZJV0ROUTR1NUlpUUdoLW9NNjNiNDMtMmdGLWZrWGtZak9ucjJOTkQ4dDlNdmN0dDhxSGpySk1wTHRwQ29VWlk5OGlYbTNhVFdmWGZGWDFUUnZqZUljaDhEVzBJMnR6VWM4TDdzRzBWWU5HV2Vrdw?oc=5",
       "date": "2026-08-06",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2026, the article does not provide a cumulative death toll or confirmed case count for Candida auris infections in the United States. It instead reports that the deadly, drug-resistant fungus is spreading in healthcare facilities nationwide, with officials emphasizing the growing threat to vulnerable patients.",
-      "summaryFallback": false
+      "summary": "A report explains what Candida auris is and where the deadly fungus is spreading. U.S. News & World Report reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-bf90611a89ff05ad",
@@ -160,8 +174,9 @@
       "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOTmotZlVkMEF0MFJ5a1doOFpjQVJrdVJ4aEdFU3FhU291VEdua19uMnlFMDN3VndqdDZ0WHp3cVVUX0M5Ry02QzlKeVRrY3VFNS1qN2lYdDVBNkFqeUxGR2NoT2NaUlZuZkk5Wm5XOUpsTVh5SjVBVWdITml5c1NYQy1UUG9VNl9sMjJjdGctal8zdnZqZVE?oc=5",
       "date": "2026-08-06",
       "source": "Google News — Candida auris cases",
-      "summary": "As of a 2026 CDC report cited in the article, there were at least 6,000 confirmed clinical cases of *C. auris* nationwide, with the fungus now detected in half of U.S. states, though officials note the risk to healthy individuals remains low.",
-      "summaryFallback": false
+      "summary": "A fungal 'superbug' has spread across half the United States, raising public concern. Rochester, MN reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-ce158e19b94dc53d",
@@ -169,8 +184,9 @@
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNRXlLVm9pbC15eU5FWVFhb1JBd3Q5M0d1QmNwYkV6WGJKdGx5c3kzbGdiWE5UYTN5UzdubXJBS1ZjRVkzcVk4WHRBVDZzMDF6bThPSUNSQXgwWHRxUFkzZkVrc1g4NEl6YnZtZkhlaDVIaUVDcmxhTkpjODRxSkoxeUFFZHcxN3Y2b2hUV2NMWjFoZ0NORG9NQmtsRQ?oc=5",
       "date": "2026-08-06",
       "source": "Google News — C. auris outbreak",
-      "summary": "As of 2026, the \"superbug\" fungus Candida auris has spread to half of the United States, though specific cumulative death toll or confirmed case numbers are not provided in this article, which instead focuses on the growing geographic reach and public concern. Health officials urge caution, particularly for immunocompromised individuals, as the drug-resistant fungus continues to pose a serious threat in healthcare settings.",
-      "summaryFallback": false
+      "summary": "A drug-resistant fungus has spread to half the United States, raising public concern. AZ Family reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-26c0c889a46f8d28",
@@ -178,8 +194,9 @@
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNTjdpemkxcmZEZlAxOHpUcUNnWlprOURZelV6QTV2dmluR3FuRnZmNnktMkMyenFLdE1Xc0FHWW5PUlM5TlVvRnBXVzlWZ05IcFJVc0pPU1UxbVhob210LUVTM1BLeV9PRDBJWEp6Q3p5WkVLNjJEOVJIYklYelRrbHlMaUFHWWk2NW40UGc5ZF9URG9LZkp6ajdnWk5YeVNLUF9xd1MySmMwTkdLWUh2NnZn?oc=5",
       "date": "2026-08-05",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2026, CDC data shows that cases of the potentially deadly fungus Candida auris have been detected in 23 states. The article does not provide a cumulative death toll or confirmed case count.",
-      "summaryFallback": false
+      "summary": "CDC data shows cases of a potentially deadly fungus detected in 23 states, ABC7 Bay Area reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-9da1f343f3654eb5",
@@ -187,7 +204,9 @@
       "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOWkhqVWFZTjNpSXQxQTVCUUtUdm1jREtteFNhNW5rYmF3bmF2eUx4Z0tkRW9LX214YUlwbm4yRTMtQXhMaU41bXFoYVM3d0NkVjNHS1psSFlZZkdzbmRKTTN1NDE0bDkwMHItR3htZ3NwcG5wWWpFM29uLW02c0FsdEFGVFp0ZGJkVDBOR2diU1ppVG5zNXh5RA?oc=5",
       "date": "2026-08-05",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2026, the drug-resistant fungus Candida auris has spread to 23 states, though the article does not provide a cumulative death toll or confirmed case count."
+      "summary": "A drug-resistant fungus called Candida auris spread to 23 states.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-b20adc5f4de0a948",
@@ -195,8 +214,9 @@
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYWFlWTdCZW5PMUc0VUhXcy1ReWs2R0o1Ui1mbG1GaTJaNlltVGM5UklpZ0dscGhDaXRxdkprVWhHNXJob0ptZWF3aFBBaElFbFBQWWQ1YXNsYy1SenNQMGNsaWZkbnpwNXVPdDZCeDBqMmNSMUNub3oyLXRwQjRVeWtWMFVSX3cwYUNVdEV0aXlFZk1sR1gwUEQ4bW5KSEhaTUtaeHR5dHJTUFJva1Fj?oc=5",
       "date": "2026-08-05",
       "source": "Google News — Candida auris cases",
-      "summary": "As of the article's publication, the U.S. has reported 1,234 confirmed clinical cases of Candida auris in 2026 across 23 states, with a cumulative death toll of 187. The CDC warns that the fungus poses an urgent public health threat due to its resistance to multiple antifungal drugs.",
-      "summaryFallback": false
+      "summary": "Drug-resistant Candida auris has been detected in 23 states so far this year, KDNL reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-64f41f0a1f835d48",
@@ -204,8 +224,9 @@
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVUE3T05rdFd6cHJ1Y2ZZNWk5bkJaRlRzay1HY0ktb0ZRcnctTW0zUXZqbzBaQ3A2X1gxTTdVeUV2S2hOSTRQQzB0azcxUFFxbE81TWdVaG9KelpMc1VqSDIyc1ZXU3JRZ1pPT1NCbzlLX2I2dHBLTm1Pb1p2YUVTeW4xWHNkcmlLRHdtTEFBUUFxbk80cmhBOHdkdmNTOEJMZ2RJMGszWGlXaU9rQ1Npa21hQQ?oc=5",
       "date": "2026-06-29",
       "source": "Google News — C. auris outbreak",
-      "summary": "Based solely on the provided title and source (a review in *Frontiers*), the article does not contain specific case counts or a death toll for the United States in 2026, nor does it cite official statements about that year. Instead, it provides a general review of the global epidemiology, multidrug resistance, and infection control strategies for healthcare-associated outbreaks of *Candida auris*.",
-      "summaryFallback": false
+      "summary": "A review examines global epidemiology, multidrug resistance, and infection control of Candida auris in healthcare outbreaks. Frontiers reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-66fd9484336d43d8",
@@ -213,7 +234,9 @@
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE42SUlKU1ItZE5sbFNPanhDX2NLUTRDNkhPU1lPX2FlVEZJdVpCQXZFSElSMnZRWWI4bGxBSFV6RlRjTUN1QmxnWW5hOHFEcWFIZWQ1SW9paW1WLThGb2c?oc=5",
       "date": "2026-03-29",
       "source": "Google News — C. auris outbreak",
-      "summary": "A study published in the Journal of Clinical Microbiology describes using whole genome sequencing to detect healthcare-associated transmission and antifungal resistance in Candida auris, addressing ongoing clinical and public health concerns. No cumulative death toll or confirmed case count for 2026 was provided in the article summary."
+      "summary": "Whole genome sequencing detects healthcare-associated transmission and antifungal resistance in Candida auris, ASM Journals reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-26da7ff8f05628c2",
@@ -221,8 +244,9 @@
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZHEyQzJObThONUxuUDlmWFF6U0F5eURVRlpHV2dMd0ZsNFdMWE1MaHoyS1lvb2s3VWktN2tua0lOekVCNXJmOVZ3T0NCOFREUWVKXzZMN3gwQ3BlZHF1bExRX0x5VjI5M1ZldFM0aUtpbGNfLUt5cnA5ZFNsVm1BSnFMbzN3VlM5RUpDVEFDU29nWS0tSlc5R1Jub3FVMzkyWWdVRkRKenR2WFotc1E?oc=5",
       "date": "2026-02-10",
       "source": "Google News — Candida auris cases",
-      "summary": "As of 2026, a CDC study found that over half of Candida auris clinical cases from 2016-2024 were resistant to fluconazole, with highest resistance rates in the Middle Atlantic region.",
-      "summaryFallback": false
+      "summary": "A CDC study highlighted substantial antifungal resistance in Candida auris, CIDRAP reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-75f9d244518702c4",
@@ -230,8 +254,9 @@
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mZ2lheER2Mms0WlRCa2d0bkhwdWJyLW82UlBzdkFDdnBfX2l0bnl6U2YxV0c0dlVrVHJ0VC1SVDV4TEVfaWZPWk1XWGtQRW55Ums4TVhUaGJ5WElpZ0Q0?oc=5",
       "date": "2025-12-29",
       "source": "Google News — Candida auris nursing home",
-      "summary": "The provided text is a scientific analysis from China, not a news item about U.S. infections in 2026. It does not contain any cumulative death toll, case count, or official statements for the United States.",
-      "summaryFallback": false
+      "summary": "Analysis of Candida auris resistance and associated risk factors in hospitalized patients at a tertiary care hospital in China. Nature reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     }
   ]
 }

@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-11-08T20:25:32.128Z",
+  "lastUpdated": "2026-11-09T08:56:20.416Z",
   "signals": [
     {
       "iso": "KE",
@@ -47,18 +47,19 @@
       "iso": "NG",
       "country": "Nigeria",
       "flag": "🇳🇬",
-      "firstSeen": "2026-10-26",
+      "firstSeen": "2026-10-20",
       "lastSeen": "2026-11-02",
-      "firstSourceTitle": "Nigeria Confirms First Bundibugyo Ebola Case as Health Agencies Activate Emergency Response - https://streamlinefeed.co.ke/",
-      "firstSourceUrl": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxPeXh6T2Y4bXFfLVhLUFpUeHdtNmczY243dmxSU1lDOGpBY0c5TGNxTlNySDB2WkxDWnZjZTAyTElmODlVVEQ1U3h0QUFrdnhxbFRrUl9VSkZFSEpHZDY5OGNFTi0zd3E4c3pvSWRiOXFIa0pSclBERTFrZEpMOEgzZHY2RzRsT0hGcFhQdjFkWFU2V2NSR09DdkZQaDA5NGN3UVAwdTQtaU9xTE1DVUQxMWdwMDA5ZENtUENUaWYwU24xZzQ?oc=5",
+      "firstSourceTitle": "Nigeria confirms imported case of Ebola Bundibugyo virus disease - WHO | Regional Office for Africa",
+      "firstSourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ21qUUE3U3YxWFY4dno5NHhxbFk0ZW8xVGl5dE9yVjNha2g2WEtrdWJ0RnlnNWJnYThzcEJ3YVJkX1hoa0VPZjdzekhIRDVMUDBCVHRXb2VwSllPOVhDMmRGcnp2Y3B2NE1ObkpPWl9tUVJvSFBIbjRvM0lfWkVLUkpuZ1VhS2FKMEExN0ZERndQUm5ZeHRpZHJoZlh4Ui1GaWZ6aERvcUc?oc=5",
       "firstSourceName": "Google News — Bundibugyo outbreak",
-      "mentions": 3,
-      "maxCasesMentioned": null,
+      "mentions": 4,
+      "maxCasesMentioned": 1,
       "maxDeathsMentioned": null,
       "seenIds": [
         "news-5223244101f4db69",
         "news-f8c856bb3811e5d2",
-        "news-92da2b95c931ae9f"
+        "news-92da2b95c931ae9f",
+        "news-2bb33271947c4463"
       ]
     },
     {
