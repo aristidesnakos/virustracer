@@ -159,6 +159,11 @@ export interface OutbreakDefinition {
   disease: string;
   /** Strain or variant when it matters to readers, e.g. "Bundibugyo virus". */
   pathogen?: string;
+  /**
+   * Id of the hand-curated vaccines-and-treatments file for this pathogen
+   * (src/data/countermeasures/<id>.json). Keyed by pathogen, so outbreaks of the same pathogen share it.
+   */
+  countermeasures?: string;
   status: OutbreakStatus;
   source: OutbreakSource;
   /** Heading of the dashboard and share card. */

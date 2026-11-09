@@ -426,6 +426,7 @@ export const ebolaBundibugyo2026: OutbreakDefinition = {
   slug: "ebola-bundibugyo-2026",
   disease: "Ebola",
   pathogen: "Bundibugyo virus",
+  countermeasures: "ebolavirus-bundibugyo",
   status: "active",
   source: { kind: "wikipedia-infobox", ref: "2026_Ebola_epidemic" },
   title: "Ebola Outbreak 2026",

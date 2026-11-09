@@ -158,27 +158,10 @@
       "note": "Candidate vaccine designed for Bundibugyo virus.",
       "events": [
         {
-          "milestone": "first_enrolled",
-          "tier": "E",
-          "date": "2026-07-13",
-          "text": "CEPI says a Phase 1 trial in 50 healthy adults has launched in Oxford, UK.",
-          "source": {
-            "kind": "web",
-            "issuer": "CEPI",
-            "url": "https://cepi.net/cepi-backed-bundibugyo-ebolavirus-vaccine-trial-launched-oxford"
-          },
-          "expect": {
-            "quotes": [
-              "ChAdOx1 BDBV",
-              "50 healthy adults"
-            ]
-          }
-        },
-        {
           "milestone": "registered",
           "tier": "B",
           "date": "2026-07-13",
-          "text": "Phase 1 trial registered (UK).",
+          "text": "Phase 1a trial in healthy adults in the UK registered (BD-Ebov-01).",
           "source": {
             "kind": "isrctn",
             "id": "ISRCTN72157798",
@@ -186,9 +169,10 @@
             "url": "https://www.isrctn.com/ISRCTN72157798"
           },
           "expect": {
-            "recordUpdated": "2026-01-01",
+            "recordUpdated": "2026-09-18",
             "quotes": [
-              "ChAdOx1"
+              "ChAdOx1 Ebola BDBV",
+              "in the UK"
             ]
           }
         },

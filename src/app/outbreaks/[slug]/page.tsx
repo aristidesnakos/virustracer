@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import CasesChart from "@/components/CasesChart";
+import CountermeasuresPanel from "@/components/CountermeasuresPanel";
 import MonitoringTable from "@/components/MonitoringTable";
 import FeedUpdates from "@/components/FeedUpdates";
 import MapLoader from "@/components/MapLoader";
@@ -11,6 +12,7 @@ import TrendPanel from "@/components/TrendPanel";
 import StatStrip from "@/components/StatStrip";
 import { notFound } from "next/navigation";
 import { getOutbreak, isArchivedRecord, listOutbreaks } from "@/data/outbreaks";
+import { getCountermeasures } from "@/data/countermeasures";
 import { getLiveData } from "@/lib/live-data";
 import { getTollData } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
@@ -127,6 +129,8 @@ export default async function OutbreakPage({ params }: Props) {
   // Only show the trend panel when there are snapshots to measure; for a curated
   // record it would only say "not enough data".
   const showTrend = !archived || metrics.status === "ok";
+  // Hand-curated vaccines-and-treatments box, shared by every outbreak of the same pathogen.
+  const countermeasures = getCountermeasures(outbreak.countermeasures);
 
   const first = toll.snapshots[0]?.date ?? timeline[0]?.date;
   const last = latestDate(timeline);
@@ -362,6 +366,17 @@ export default async function OutbreakPage({ params }: Props) {
                   </p>
                   <p>Sources: {outbreak.summary.source}.</p>
                 </div>
+              </section>
+            )}
+
+            {countermeasures && (
+              <section
+                id="vaccines-and-treatments"
+                aria-labelledby="countermeasures-heading"
+                className="panel rise min-w-0 lg:col-span-12"
+                style={{ "--i": 5 } as React.CSSProperties}
+              >
+                <CountermeasuresPanel data={countermeasures} headingId="countermeasures-heading" />
               </section>
             )}
 

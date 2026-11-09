@@ -7,6 +7,7 @@ import { ASSUMPTIONS, WEEKLY_MIN_READINGS_IN_TWO_WEEKS } from "@/lib/metrics";
 import { SANITY_CHECKS, UPDATE_TIMES_UTC } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
 import { TREND_STATEMENT } from "@/lib/trend-summary";
+import { ALLOWED_MILESTONES, MILESTONE_LABEL, STALE_AFTER_DAYS, TIERS, TIER_LABEL } from "@/lib/countermeasures";
 
 const description =
   "How Outbreak Files sources and checks its figures, handles reporting lag, measures 7-day trends and ranks outbreaks on the home page, and what it does not do.";
@@ -49,6 +50,7 @@ const CONTENTS = [
   ["lag", "Reporting lag and trend"],
   ["ranking", "Ranking"],
   ["comparing", "Comparing outbreaks"],
+  ["countermeasures", "Vaccines & treatments"],
   ["not", "What we do not do"],
 ] as const;
 
@@ -254,6 +256,49 @@ export default function MethodologyPage() {
           Two totals side by side are rarely like for like. Each card shows its own source and as-of date; compare
           the direction of each trend rather than the size of the numbers.
         </p>
+      </section>
+
+      <section aria-labelledby="countermeasures" className="space-y-3">
+        <h2 id="countermeasures" className={PROSE_H2}>
+          Vaccines &amp; treatments
+        </h2>
+        <p className={PROSE_P}>
+          Some outbreak pages carry a short &ldquo;Vaccines &amp; treatments&rdquo; box (a pilot, for the Bundibugyo
+          Ebola outbreak only). It lists products being tested or used against that pathogen, each with the latest
+          milestone we could tie to a source. It is kept by hand: a person reads each source and writes the line; a
+          script then re-checks every line against its source (registry status, record dates, the quoted words) and
+          flags any difference for the person to fix. Nothing in the box is written automatically.
+        </p>
+        <p className={PROSE_P}>Every line carries the kind of evidence behind it, and each kind may say only certain things:</p>
+        <ProseTable
+          caption="Evidence behind each line of the vaccines and treatments box, and what it may say"
+          head={["Evidence", "May say"]}
+          rows={TIERS.map((t) => [TIER_LABEL[t], ALLOWED_MILESTONES[t].map((m) => MILESTONE_LABEL[m]).join(", ")])}
+        />
+        <ul className={`list-disc space-y-1.5 pl-5 ${PROSE_P}`}>
+          <li>
+            A registered, recruiting or completed trial does not mean a product works or is safe. We repeat what the
+            source says (&ldquo;registered&rdquo;, &ldquo;recruiting according to the registry&rdquo;, &ldquo;authorised
+            by EMA&rdquo;) and never call a candidate promising, effective or safe.
+          </li>
+          <li>
+            A statement by WHO, a funder, a ministry or a company is shown as theirs (&ldquo;CEPI says&rdquo;). It never
+            stands for an approval or a result.
+          </li>
+          <li>
+            Registries can lag behind events. When a statement and a registry disagree (a trial announced as started
+            while its registry record still says &ldquo;not yet recruiting&rdquo;), both are shown.
+          </li>
+          <li>
+            A product licensed against a different species or strain says so (Ervebo is licensed for Zaire
+            ebolavirus, not Bundibugyo virus).
+          </li>
+          <li>
+            The box shows the date its lines were last checked, and says it may be out of date after {STALE_AFTER_DAYS}{" "}
+            days without a check.
+          </li>
+          <li>It is not medical advice. Whether to be vaccinated or treated is for you and a health professional.</li>
+        </ul>
       </section>
 
       <NursingHomesMethodSection />
