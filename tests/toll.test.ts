@@ -317,15 +317,18 @@ describe("planCorrection / supersedeSnapshots (a figure the source withdrew)", (
   const store = { lastChecked: "", snapshots: [snap("2026-10-27", 10092, 4891), snap("2026-11-02", 10445, 5376)] };
   const reading = snap("2026-11-09", 10910, 5306);
 
+  type Plan = { action: string; pending?: { supersedeDates: string[]; firstSeen: string; lastSeen: string; runs: number } };
+  const pendingOf = (p: Plan) => p.pending;
+
   it("waits for the contradiction to persist 24h over 2+ runs, then supersedes only the outlier", () => {
     const first = planCorrection(store, reading, "2026-11-09T08:00:00Z");
     expect(first).toMatchObject({ action: "pending", pending: { supersedeDates: ["2026-11-02"], runs: 1 } });
-    const second = planCorrection({ ...store, pendingCorrection: (first as any).pending }, reading, "2026-11-09T20:00:00Z");
+    const second = planCorrection({ ...store, pendingCorrection: pendingOf(first as Plan) }, reading, "2026-11-09T20:00:00Z");
     expect(second).toMatchObject({ action: "pending", pending: { runs: 2, firstSeen: "2026-11-09T08:00:00Z" } });
-    const third = planCorrection({ ...store, pendingCorrection: (second as any).pending }, reading, "2026-11-10T08:00:00Z");
+    const third = planCorrection({ ...store, pendingCorrection: pendingOf(second as Plan) }, reading, "2026-11-10T08:00:00Z");
     expect(third.action).toBe("apply");
-    const next = supersedeSnapshots({ ...store, pendingCorrection: (second as any).pending }, ["2026-11-02"], "2026-11-10T08:00:00Z", "withdrawn");
-    expect(next.snapshots.map((s: any) => s.date)).toEqual(["2026-10-27"]);
+    const next = supersedeSnapshots({ ...store, pendingCorrection: pendingOf(second as Plan) }, ["2026-11-02"], "2026-11-10T08:00:00Z", "withdrawn");
+    expect(next.snapshots.map((s: { date: string }) => s.date)).toEqual(["2026-10-27"]);
     expect(next.superseded).toEqual([{ ...store.snapshots[1], supersededAt: "2026-11-10T08:00:00Z", supersededReason: "withdrawn" }]);
     expect(next).not.toHaveProperty("pendingCorrection");
     expect(validateSnapshot(reading, next.snapshots.at(-1), "2026-11-10").ok).toBe(true);

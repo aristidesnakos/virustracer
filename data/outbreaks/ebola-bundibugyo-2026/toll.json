@@ -1742,7 +1742,8 @@
       "rawPath": "data/raw/infobox/1383354892.txt",
       "rawSha256": "3c084cdcf14d3aa2c06e1bb272e981b18e9c6205619e6ccd10647e4cd6ea91b6",
       "supersededAt": "2026-11-09T12:44:25.806Z",
-      "supersededReason": "scripts/backfill-toll.mjs: breaks the never-decreasing chain of the article's daily revisions (the source changed or withdrew the figure)"
+      "supersededReason": "scripts/backfill-toll.mjs: breaks the never-decreasing chain of the article's daily revisions (the source changed or withdrew the figure)",
+      "supersededEvidence": "Wikipedia history (scripts/toll-history.mjs, 2026-11-09): deaths 5,030 -> 5,376 in revision 1383184535 (2026-11-01, no edit summary); corrected to 5,107 in 1383354865 and re-added 16 s later in 1383354892 (the revision stored here); set to 5,107 in 1383416364 (\"Updated to 10,498 confirmed cases and 5,107 confirmed deaths\"); 1383443430 notes that DRC INSP \"changed its own data back to the old count\". Every later revision is below 5,376 (5,130 on 2026-11-03 ... 5,306 on 2026-11-09)."
     }
   ]
 }
