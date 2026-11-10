@@ -1,8 +1,17 @@
 name: Probe keywords
-# Google autocomplete for the terms our pages could target (keyless, read-only, about 120 requests
-# in 90 seconds). Manual only: start it from the Actions tab and read the log. See docs/seo-keywords.md.
+# Google autocomplete for the terms our pages could target (keyless, read-only, a few hundred requests
+# spaced 0.7 s apart) and Wikipedia pageviews (official API, a proxy for attention, not search volume).
+# Manual only: start it from the Actions tab and read the log. See docs/seo-keywords.md.
+# Set the "round" input to 2 for the second harvest (other grammar, letter expansion).
 on:
+  push: # TEMPORARY: removed after the first run
+    branches: [seo/keyword-metadata]
+    paths: [scripts/probe-keywords.mjs, scripts/probe-pageviews.mjs, .github/workflows/probe-keywords.yml]
   workflow_dispatch:
+    inputs:
+      round:
+        description: "1 = first harvest, 2 = second harvest (nursing-home grammar, bird flu, letters)"
+        default: "2"
 permissions:
   contents: read
 concurrency:
@@ -10,10 +19,13 @@ concurrency:
 jobs:
   probe:
     runs-on: ubuntu-latest
-    timeout-minutes: 10
+    timeout-minutes: 15
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-node@v4
         with:
           node-version: "22"
+      - run: node scripts/probe-pageviews.mjs
       - run: node scripts/probe-keywords.mjs
+        env:
+          PROBE_ROUND: ${{ inputs.round || '2' }}

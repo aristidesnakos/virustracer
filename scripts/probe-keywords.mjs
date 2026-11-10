@@ -71,7 +71,32 @@ const FAMILIES = {
       "nursing home deficiencies by state", "nursing home infection control violations", "nursing home outbreak data",
       "nursing home covid cases by state", "nursing home inspection results lookup"],
   },
+  // Round 2 (2026-11-10): other grammar for the families that came back empty, plus bird flu variants.
+  "nursing home vocabulary (round 2)": {
+    round: 2,
+    seed: "",
+    full: ["long term care infection control", "long term care facility outbreak", "long term care covid cases", "long term care homes outbreaks",
+      "care home outbreak", "care home covid cases", "snf infection control", "snf covid cases", "skilled nursing facility outbreak",
+      "skilled nursing facility infection rates", "infection prevention nursing home", "infection prevention long term care",
+      "nursing home covid data", "nursing home covid cases by state 2026", "nursing home respiratory virus data", "nursing home flu outbreak",
+      "nursing home quality inspection by state", "nursing home violations by state", "nursing home citations lookup", "nursing home inspection reports"],
+  },
+  "bird flu variants (round 2)": {
+    round: 2,
+    seed: "",
+    full: ["bird flu outbreak map", "bird flu tracker", "bird flu cases 2026", "bird flu cases us", "bird flu human cases", "bird flu in dairy cattle map",
+      "avian influenza outbreak map", "avian influenza tracker", "avian influenza cases 2026", "avian flu update", "h5n1 tracker", "h5n1 cases 2026",
+      "h5n1 outbreak map", "h5n1 human cases us", "hpai tracker", "hpai detections map", "bird flu news", "bird flu us states"],
+  },
+  // Letter expansion (a to z) of the three head terms: more long-tail phrasing.
+  "letters: ebola tracker": { round: 2, seed: "ebola tracker", mods: [..."abcdefghijklmnopqrstuvwxyz"] },
+  "letters: measles tracker": { round: 2, seed: "measles tracker", mods: [..."abcdefghijklmnopqrstuvwxyz"] },
+  "letters: candida auris map": { round: 2, seed: "candida auris map", mods: [..."abcdefghijklmnopqrstuvwxyz"] },
 };
+
+// PROBE_ROUND=2 runs only the round-2 families (the round-1 results are in docs/seo-keywords.md).
+const ONLY_ROUND_2 = process.env.PROBE_ROUND === "2";
+if (ONLY_ROUND_2) for (const k of Object.keys(FAMILIES)) if (FAMILIES[k].round !== 2) delete FAMILIES[k];
 
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
 const UA = "Mozilla/5.0 (compatible; outbreakfiles-keyword-probe; +https://github.com/aristidesnakos/virustracer)";
