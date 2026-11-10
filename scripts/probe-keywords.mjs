@@ -4,7 +4,8 @@
  * Step 1 of the keyword-family-gate method. Keyless, read-only, ~100 short requests spaced out.
  * Autocomplete shows what people type and in what order Google offers it; it is NOT search volume.
  * Run it from a GitHub runner (the cloud sandbox cannot reach suggestqueries.google.com): the
- * "Probe keywords" workflow, workflow_dispatch only. Edit FAMILIES to probe other terms.
+ * "Probe keywords" workflow, workflow_dispatch only. Edit FAMILIES to probe other terms. It also
+ * flags the skill's G1/G3 heuristics per query (free-attached, clean paid intent).
  */
 const FAMILIES = {
   "ebola (death toll, cases, map)": {
@@ -47,6 +48,22 @@ const FAMILIES = {
     seed: "hantavirus",
     mods: ["cruise ship", "outbreak 2026", "mv hondius", "cases", "deaths", "cruise ship outbreak", "outbreak"],
   },
+  "PAID IDEA: egg and poultry buyers (H5N1 feed)": {
+    seed: "",
+    full: ["bird flu egg prices", "bird flu egg prices 2026", "egg prices forecast", "egg prices forecast 2026", "avian influenza egg prices",
+      "egg price tracker", "wholesale egg prices today", "egg futures", "usda egg markets overview", "h5n1 egg supply",
+      "bird flu egg shortage", "avian flu poultry outbreak tracker", "h5n1 poultry outbreak map", "hpai outbreak map",
+      "avian influenza detections commercial poultry", "h5n1 dairy cattle tracker", "egg market data subscription",
+      "poultry disease alert service", "egg price risk avian flu", "egg supply chain avian influenza"],
+  },
+  "PAID IDEA: nursing-home and post-acute infection data": {
+    seed: "",
+    full: ["nursing home infection control software", "nursing home antibiotic stewardship program", "antibiotic stewardship nursing home cost",
+      "nursing home infection prevention consultant", "nursing home quality data for aco", "snf infection control compliance software",
+      "nursing home f880 citation", "nursing home infection control training cost", "nursing home survey readiness infection control",
+      "skilled nursing facility antibiotic stewardship", "c auris screening nursing home cost", "nursing home infection surveillance software",
+      "nursing home infection rates data", "snf quality reporting infection data", "post acute care infection data aco"],
+  },
   "nursing home infection data": {
     seed: "",
     full: ["nursing home infection control citations", "nursing home f880", "nursing home covid cases", "nursing home flu cases",
@@ -71,10 +88,15 @@ async function suggest(q) {
   }
 }
 
+// Gate heuristics from the keyword-family-gate skill.
+const FREE = /\b(free|open source|no cost)\b|\$0/i; // G1: free-attached
+const PAID = /\b(fee|fees|cost|costs|price|prices|pricing|calculator|filing)\b/i; // G3: paid intent
+const gates = {};
 let n = 0;
 let errors = 0;
 for (const [name, fam] of Object.entries(FAMILIES)) {
   console.log(`\n## ${name}`);
+  gates[name] = { queries: 0, answered: 0, free: 0, paid: 0 };
   const queries = fam.full ?? fam.mods.map((m) => `${fam.seed} ${m}`.trim());
   for (const q of queries) {
     const r = await suggest(q);
@@ -87,9 +109,20 @@ for (const [name, fam] of Object.entries(FAMILIES)) {
         process.exit(0);
       }
     } else {
-      console.log(`Q: ${q} => ${r.list.length ? r.list.join(" | ") : "(nothing)"}`);
+      const g = gates[name];
+      g.queries++;
+      if (r.list.length) g.answered++;
+      const free = r.list.some((s) => FREE.test(s));
+      const paid = r.list.some((s) => PAID.test(s) && !FREE.test(s));
+      if (free) g.free++;
+      if (paid) g.paid++;
+      console.log(`Q: ${q}${free ? " [G1:free]" : ""}${paid ? " [G3:paid]" : ""} => ${r.list.length ? r.list.join(" | ") : "(nothing)"}`);
     }
     await sleep(700);
   }
+}
+console.log("\n## GATE SUMMARY (G1 = a completion contains free/open source/no cost; G3 = a clean completion contains fee/cost/price/pricing/calculator/filing)");
+for (const [name, g] of Object.entries(gates)) {
+  console.log(`G: ${name} | queries ${g.queries} | answered ${g.answered} | with free ${g.free} | with clean paid-intent ${g.paid} (${g.queries ? Math.round((100 * g.paid) / g.queries) : 0}%)`);
 }
 console.log(`\n${n} queries, ${errors} errors`);
