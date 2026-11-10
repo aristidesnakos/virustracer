@@ -23,6 +23,9 @@ function loadSnapshots(): OutbreakSnapshot[] {
     .sort(compareSnapshots);
 }
 
+// The visible intro line uses the words people search for (docs/seo-keywords.md); SITE_TAGLINE stays the brand line elsewhere.
+const HOME_INTRO =
+  "Current disease outbreaks in 2026, with death tolls, cases and maps, each figure tied to its source and kept on file.";
 const HOME_TITLE = `Current Disease Outbreaks 2026 Tracker | ${SITE_NAME}`;
 
 // The description names the top outbreaks with their current numbers, so it is
@@ -116,7 +119,7 @@ export default function HomePage() {
               <BrandMark size="0.9em" className="shrink-0" />
               {SITE_NAME}
             </h1>
-            <p className="mt-2 max-w-[46rem] text-base text-ink-muted">{SITE_TAGLINE}</p>
+            <p className="mt-2 max-w-[46rem] text-base text-ink-muted">{HOME_INTRO}</p>
           </header>
         </DevFeedback>
 
@@ -127,7 +130,7 @@ export default function HomePage() {
                 id="outbreaks-heading"
                 className="font-journal text-xl font-semibold leading-snug text-ink"
               >
-                Outbreaks we are tracking
+                Current disease outbreaks we track
               </h2>
               <p className="mt-1 max-w-[46rem] text-[0.9375rem] text-ink-muted">
                 Grouped by status, then ordered by new deaths in the last 7 days.{" "}

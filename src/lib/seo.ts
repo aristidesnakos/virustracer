@@ -85,6 +85,36 @@ export function describeFigures(
   return `${lead}: ${parts.join(" and ")} as of ${longDate(figures.date)}${notes.length ? ` (${notes.join("; ")})` : ""}. ${tail}`;
 }
 
+/**
+ * The visible answer sentence under an outbreak's headline figures, from its `answerTemplate`.
+ * Null when there is no template, or a placeholder it uses has no figure (never a guessed number).
+ */
+export function answerSentence(
+  figures: LatestFigures | null,
+  outbreak: { answerTemplate?: string; summary?: { deathsQualifier?: string; casesLabel?: string } },
+): string | null {
+  const template = outbreak.answerTemplate;
+  if (!template || !figures) return null;
+  const values: Record<string, string | null> = {
+    date: longDate(figures.date),
+    deaths:
+      figures.deaths === null
+        ? null
+        : `${fmt(figures.deaths)} ${figures.deaths === 1 ? "death" : "deaths"}${deathsSuffix(outbreak.summary)}`,
+    cases:
+      figures.confirmed === null
+        ? null
+        : `${fmt(figures.confirmed)} ${(outbreak.summary?.casesLabel ?? "confirmed cases").toLowerCase()}`,
+  };
+  let missing = false;
+  const text = template.replace(/\{(\w+)\}/g, (_, key: string) => {
+    const v = values[key];
+    if (v == null) missing = true;
+    return v ?? "";
+  });
+  return missing ? null : text;
+}
+
 type ChangeFrequency = "daily" | "monthly";
 
 /** How much an outbreak page matters to crawl: live ones first, dormant watch-list entries last. */

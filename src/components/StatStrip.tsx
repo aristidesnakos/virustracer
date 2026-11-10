@@ -99,11 +99,14 @@ export default function StatStrip({
   timeline,
   summary,
   deathsNote,
+  heading = "Headline figures",
 }: {
   timeline: CaseDataPoint[];
   summary: OutbreakSummary;
   /** Shown under the deaths figure, e.g. a second count the source does not display (`deathsGapNote`). */
   deathsNote?: string | null;
+  /** Screen-reader heading of the strip; an outbreak may word it the way people search. */
+  heading?: string;
 }) {
   const asOf = timeline.length > 0 ? (latestDate(timeline) ?? undefined) : undefined;
 
@@ -115,7 +118,7 @@ export default function StatStrip({
       className="grid grid-cols-2 gap-px overflow-hidden rounded-xl border border-rule bg-rule lg:grid-cols-[1.7fr_1.1fr_1fr_0.9fr_1.1fr_1.7fr]"
     >
       <h2 id="figures-heading" className="sr-only">
-        Headline figures
+        {heading}
       </h2>
 
       {tilesFor(timeline, summary).map((tile) => {

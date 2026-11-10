@@ -175,6 +175,12 @@ export const candidaAurisUs2026: OutbreakDefinition = {
     "candida auris tracker",
     "cdc candida auris data",
   ],
+  headings: {
+    figures: "Candida auris cases in the US",
+    map: "Candida auris US map",
+    table: "Candida auris cases by state (states with 100+ clinical cases)",
+  },
+  answerTemplate: "As of {date}, the CDC’s weekly NNDSS table counted {cases} of Candida auris in the United States in 2026; the table does not report deaths.",
   subtitle: "2026 United States · Candida auris · Unofficial surveillance dashboard",
   description:
     "Unofficial surveillance dashboard tracking Candida auris in the United States in 2026, read each week from the CDC’s notifiable-disease table. " +

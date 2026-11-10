@@ -181,9 +181,11 @@ describe("/outbreaks/measles-bangladesh-2026", () => {
     expect(screen.getByRole("heading", { level: 1, name: measles.title })).toBeInTheDocument();
     expect(container.querySelector(".live-dot")).not.toBeNull();
     expect(screen.queryByTestId("archived-record")).not.toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Where cases are reported" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Bangladesh measles outbreak map" })).toBeInTheDocument();
     expect(screen.getByText(measles.summary.spreadNote!)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Is it still growing?" })).toBeInTheDocument();
+    // The "Other outbreaks we track" line names the others by design; everything else must not.
+    container.querySelector('nav[aria-label="Other outbreaks we track"]')?.remove();
     expect(container.textContent).not.toMatch(/ebola|bundibugyo|\bDRC\b|congo/i);
   });
 

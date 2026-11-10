@@ -381,6 +381,12 @@ export const hantavirusMvHondius2026: OutbreakDefinition = {
     "hantavirus cruise ship timeline",
     "andes virus",
   ],
+  headings: {
+    figures: "Hantavirus cruise ship outbreak: cases and deaths",
+    map: "MV Hondius route and hantavirus cases",
+    table: "Hantavirus cases by country",
+  },
+  answerTemplate: "When WHO declared it over on {date}, the MV Hondius hantavirus outbreak had {cases} and {deaths}.",
   subtitle: "2026 · MV Hondius cruise ship · Andes virus · Declared over by WHO on 2 July 2026",
   description:
     "Archived record of the 2026 Andes hantavirus outbreak on the expedition cruise ship MV Hondius. WHO declared it over on 2 July 2026: 13 cases (12 confirmed, 1 probable) and 3 deaths, with limited person-to-person transmission. Hand-curated from WHO, ECDC, national health agencies and news reports.",

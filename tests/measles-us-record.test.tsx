@@ -193,6 +193,8 @@ describe("/outbreaks/measles-us-2026", () => {
     expect(container.querySelector(".live-dot")).not.toBeNull();
     expect(screen.queryByTestId("archived-record")).not.toBeInTheDocument();
     expect(screen.getByText(us.summary.spreadNote!)).toBeInTheDocument();
+    // The "Other outbreaks we track" line names the others by design; everything else must not.
+    container.querySelector('nav[aria-label="Other outbreaks we track"]')?.remove();
     expect(container.textContent).not.toMatch(/ebola|bundibugyo|\bDRC\b|congo|bangladesh/i);
   });
 

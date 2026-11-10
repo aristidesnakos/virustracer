@@ -176,6 +176,8 @@ describe("/outbreaks/candida-auris-us-2026", () => {
     expect(screen.getByRole("heading", { level: 1, name: auris.title })).toBeInTheDocument();
     expect(container.querySelector(".live-dot")).not.toBeNull();
     expect(screen.getByTestId("deaths-not-reported")).toBeInTheDocument();
+    // The "Other outbreaks we track" line names the others by design; everything else must not.
+    container.querySelector('nav[aria-label="Other outbreaks we track"]')?.remove();
     expect(container.textContent).not.toMatch(/ebola|bundibugyo|measles/i);
   });
 

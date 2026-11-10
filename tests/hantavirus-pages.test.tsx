@@ -35,8 +35,8 @@ describe("/outbreaks/hantavirus-mv-hondius-2026", () => {
     expect(screen.getByText("1 Apr – 2 Jul 2026")).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "About this record" })).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "News coverage at the time" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Route & reported cases" })).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "By country" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "MV Hondius route and hantavirus cases" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Hantavirus cases by country" })).toBeInTheDocument();
     // The frozen news record is read and listed.
     expect(screen.getByText(/130 articles/)).toBeInTheDocument();
     // Deaths include a probable case the rows don't count, so no per-country CFR.
@@ -65,7 +65,7 @@ describe("the Ebola page keeps its live presentation", () => {
     expect(container.querySelector(".live-dot")).not.toBeNull();
     expect(screen.getByText("Toll as of")).toBeInTheDocument();
     expect(screen.getByText("Is it still growing?")).toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Where cases are reported" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Ebola outbreak map" })).toBeInTheDocument();
     expect(screen.queryByTestId("archived-record")).not.toBeInTheDocument();
     expect(screen.queryByTestId("correction")).not.toBeInTheDocument();
     const meta = await generateMetadata(params(ebola.slug));

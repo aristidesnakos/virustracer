@@ -171,6 +171,17 @@ export interface OutbreakDefinition {
    */
   searchLabel?: string;
   keywords: readonly string[];
+  /**
+   * Visible headings that use the words people search for (docs/seo-keywords.md). Each falls back
+   * to the generic heading. Keep them true to what the panel shows (e.g. "states with 100+ cases").
+   */
+  headings?: { figures?: string; map?: string; table?: string };
+  /**
+   * One plain sentence under the headline figures answering the main query, filled from the latest
+   * figures: {date}, {deaths} ("53 deaths" plus any qualifier) and {cases} ("462 confirmed cases").
+   * Left out when a placeholder has no figure.
+   */
+  answerTemplate?: string;
   subtitle: string;
   description: string;
   links: readonly OutbreakLink[];

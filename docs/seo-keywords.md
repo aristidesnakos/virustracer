@@ -85,15 +85,29 @@ Titles must stay at 60 characters or fewer and never say "live" or "today" (our 
 
 `keywords` arrays were rewritten to the phrases above (low value). The nursing-home and Candida auris pages still say their sources report no deaths: the C. auris description now says so, and the nursing-home descriptions and copy were not changed.
 
-## On-page suggestions (not applied: no layout or copy changes in this pass)
+## On-page wording (applied 2026-11-10; no layout change)
 
-1. **Ebola:** an H2 "Ebola death toll and confirmed cases" above the stat strip; a line naming Kenya only if confirmed cases appear in the table (our feed has unverified signals, not cases).
-2. **US measles:** an H2 "US measles cases by state" above the region table **with** the words "states with 100 or more cases" in it, so the phrase is honest; then "by state" could go into the description. "measles tracker by county / zip code" has demand we cannot serve (CDC publishes by jurisdiction).
-3. **Candida auris:** an H2 "Candida auris cases by state (states with 100+ clinical cases)"; a short visible line answering "candida auris deaths": the CDC's NNDSS table does not report deaths.
-4. **West Nile, Greece:** name Attica (and Crete, Rhodes if they appear in the region table) in the visible copy near the table; "west nile virus greece map" and "crete" completions exist.
-5. **Hantavirus:** the visible H1 could read "Hantavirus cruise ship outbreak (MV Hondius), 2026"; "timeline" and "how many passengers" are searched.
-6. **Nursing homes:** the infection-control pages answer "nursing home inspection reports" and "how to find out if a nursing home has violations" for one tag only; say that in one plain line (F880 infection-control citations, not the full inspection report, with the Care Compare link for the rest). Do not claim outbreak data.
-7. A short visible Q&A helps readers; do not expect an FAQ rich result (Google limits those to authoritative government and health sites).
+Same panels, same order, same cards; only words changed, plus one sentence and one line of links per outbreak page.
+
+- **Home:** the line under "Outbreak Files" now reads "Current disease outbreaks in 2026, with death tolls, cases and maps, each figure tied to its source and kept on file." (`HOME_INTRO`; `SITE_TAGLINE` is unchanged everywhere else), and the section heading is "Current disease outbreaks we track" (was "Outbreaks we are tracking").
+- **Panel headings** (`headings` on each definition; each falls back to the generic heading):
+
+| Outbreak | Figures (screen-reader heading) | Map (Fig. 1) | Table 1 |
+|---|---|---|---|
+| Ebola | Ebola death toll and confirmed cases | Ebola outbreak map | Ebola cases by country and province |
+| US measles | US measles cases and deaths | US measles outbreak map | US measles cases by state (states with 100+ cases) |
+| West Nile, Greece | West Nile virus cases and deaths in Greece | West Nile virus map of Greece | West Nile virus cases in Greece |
+| Candida auris | Candida auris cases in the US | Candida auris US map | Candida auris cases by state (states with 100+ clinical cases) |
+| Bangladesh measles | Bangladesh measles cases and deaths | Bangladesh measles outbreak map | Bangladesh measles cases, national total |
+| Hantavirus | Hantavirus cruise ship outbreak: cases and deaths | MV Hondius route and hantavirus cases | Hantavirus cases by country |
+
+  This also corrected a wrong heading: the US measles and Candida auris tables were titled "By country & province" although their sub-rows are states.
+- **Answer sentence** under the headline figures (`answerTemplate`, filled by `answerSentence` in `src/lib/seo.ts` from the same latest figures as the description, so it cannot go stale; left out if a figure is missing). E.g. "As of 10 November 2026, the 2026 Ebola outbreak in DR Congo and Uganda had 5,327 deaths and 10,951 confirmed cases." The Candida auris one ends "the table does not report deaths"; the Bangladesh one says "deaths among confirmed cases".
+- **"Other outbreaks we track"**: one line of plain links above each outbreak page's footer, so every page links to every other.
+- **Structured data:** a `BreadcrumbList` (Outbreak Files › outbreak title) on each outbreak page; the WebPage already carries `dateModified`.
+- `tests/seo-pages.test.tsx` checks every outbreak's sentence renders from current data with no placeholder left, that "by state" headings carry the 100+ threshold, that no heading says "live" or "today", and the links and breadcrumb.
+
+Still suggestions, not applied: name Attica (and Crete, Rhodes) in the West Nile copy if the region data supports it; a one-line note on the infection-control pages that F880 citations are one tag of an inspection report, with the Care Compare link for the rest; "measles tracker by county / zip code" has demand we cannot serve (the CDC publishes by jurisdiction). Do not expect an FAQ rich result: Google limits those to authoritative government and health sites.
 
 ## Still not measured, and how to fill the gap
 

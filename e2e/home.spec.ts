@@ -6,7 +6,7 @@ test.describe("home", () => {
 
     await expect(page.getByRole("heading", { level: 1, name: "Outbreak Files" })).toBeVisible();
     await expect(
-      page.getByRole("heading", { name: "Outbreaks we are tracking" }),
+      page.getByRole("heading", { name: "Current disease outbreaks we track" }),
     ).toBeVisible();
 
     const card = page.getByRole("article").filter({ hasText: /ebola outbreak 2026/i });

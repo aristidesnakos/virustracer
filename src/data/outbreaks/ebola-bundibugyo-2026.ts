@@ -441,6 +441,12 @@ export const ebolaBundibugyo2026: OutbreakDefinition = {
     "ebola drc",
     "ebola uganda",
   ],
+  headings: {
+    figures: "Ebola death toll and confirmed cases",
+    map: "Ebola outbreak map",
+    table: "Ebola cases by country and province",
+  },
+  answerTemplate: "As of {date}, the 2026 Ebola outbreak in DR Congo and Uganda had {deaths} and {cases}.",
   subtitle: "2026 DR Congo & Uganda · Bundibugyo virus · Unofficial surveillance dashboard",
   description:
     "Unofficial surveillance dashboard tracking the 2026 Bundibugyo Ebola outbreak in the Democratic Republic of the Congo and Uganda, with a continuously updated death toll. Data compiled from WHO, DRC's INSP, and news reports.",

@@ -174,6 +174,12 @@ export const measlesUs2026: OutbreakDefinition = {
     "measles deaths 2026",
     "pennsylvania measles outbreak",
   ],
+  headings: {
+    figures: "US measles cases and deaths",
+    map: "US measles outbreak map",
+    table: "US measles cases by state (states with 100+ cases)",
+  },
+  answerTemplate: "As of {date}, the United States had {cases} of measles in 2026 and {deaths}.",
   subtitle: "2026 United States · Measles virus · Unofficial surveillance dashboard",
   description:
     "Unofficial surveillance dashboard tracking measles in the United States in 2026, with the case and death counts read each week from the CDC’s national measles page. " +
