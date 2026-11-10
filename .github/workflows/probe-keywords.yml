@@ -1,0 +1,19 @@
+name: Probe keywords
+# Google autocomplete for the terms our pages could target (keyless, read-only, about 120 requests
+# in 90 seconds). Manual only: start it from the Actions tab and read the log. See docs/seo-keywords.md.
+on:
+  workflow_dispatch:
+permissions:
+  contents: read
+concurrency:
+  group: probe-keywords
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+      - run: node scripts/probe-keywords.mjs

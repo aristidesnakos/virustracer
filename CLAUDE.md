@@ -17,6 +17,7 @@ node scripts/update-toll.mjs --outbreak=west-nile-greece-2026 --report=<pdf-url>
 node scripts/fetch-feeds.mjs   # manually run feed updater (OPENROUTER_API_KEY optional)
 node scripts/diagnose-model.mjs [--mode=verify|matrix]   # probe the feed model (needs the key: run it via the "Diagnose feed model" workflow, workflow_dispatch only)
 node scripts/probe-feeds.mjs [--only=<text>]   # keyless check of candidate news sources (status, article text, keyword matches); the sandbox cannot reach them, so run the "Probe feed sources" workflow
+node scripts/probe-keywords.mjs   # Google autocomplete for the terms our pages could target (about 120 requests; the sandbox cannot reach Google, so run the manual "Probe keywords" workflow; results and recommended titles in docs/seo-keywords.md)
 node scripts/backfill-toll.mjs [--dry-run]   # one-off: import daily toll history from the Wikipedia article's revisions; supersedes stored snapshots the history contradicts
 node scripts/toll-history.mjs --outbreak=<slug> --from=YYYY-MM-DD [--to=...]   # list a tracked article's revisions with editor, summary and parsed figures (traces a rejected decrease)
 node scripts/backfill-raw.mjs [--dry-run]    # one-off: archive the raw infobox of older snapshots; --outbreak=<slug> for one
@@ -96,4 +97,4 @@ Single-page outbreak dashboard (Next.js 16 App Router, React 19, Tailwind v4, Ty
 - `OPENROUTER_API_KEY` — optional; used only by `scripts/fetch-feeds.mjs` (summaries + country extraction). The app and `scripts/update-toll.mjs` run without it.
 - `INTEREST_WEBHOOK_URL`, `RESEND_API_KEY`, `ALERT_INTEREST_EMAIL_TO`, `ALERT_INTEREST_EMAIL_FROM` — optional; delivery of alerts-interest sign-ups (see above). At least one channel is required in production.
 
-**Research notes:** `docs/public-data-sources.md` records which public datasets were checked (US first; other countries as leads), what they contain, how fresh they were and whether we built on them. Read it before adding a data source; update it (and its "Last checked" dates) whenever a source is re-checked, ruled out or built on.
+**Research notes:** `docs/public-data-sources.md` records which public datasets were checked (US first; other countries as leads), what they contain, how fresh they were and whether we built on them. Read it before adding a data source; update it (and its "Last checked" dates) whenever a source is re-checked, ruled out or built on. `docs/seo-keywords.md` records the search-term research behind the page titles (what people type, what we could not measure) and the Keyword Planner term list; read it before changing a title or description.
