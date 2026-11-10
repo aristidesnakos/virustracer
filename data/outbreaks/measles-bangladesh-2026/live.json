@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-09T20:41:05.254Z",
+  "lastFetched": "2026-11-10T08:47:33.825Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -446,9 +446,20 @@
     "news-3e97884bbcf074e2",
     "news-cd2785b8769af8e0",
     "news-f6b75b2c4d56a97b",
-    "news-ff5b434f9879cadf"
+    "news-ff5b434f9879cadf",
+    "news-b48f7652d32431e8"
   ],
   "recentItems": [
+    {
+      "id": "news-b48f7652d32431e8",
+      "title": "Bangladesh Measles Outbreak: 1,284 Deaths Reported as Health Minister Says 'Hang Me' - theopenpress.in",
+      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00VXJnSmlmRkgybzRNTld3M1R1UlBtbm5JS0Z5aVZMbEVpWTA4OU1oZFV0S2d0T2pVT2xZQmRvTWI5RGtyWTAxYnVrcDdTd3VBM09Vek9wSXFKTmFHdmxIU2NrLUR2b19CMFUtcF9uWlR1a1laRkFveW5xSQ?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh's health minister said to hang him after a measles outbreak with 1,284 deaths, theopenpress.in reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-3e97884bbcf074e2",
       "title": "'Hang me, this is my failure': Bangladesh health minister takes blame as measles outbreak claims 1,200... - Moneycontrol.com",
@@ -635,16 +646,6 @@
       "date": "2026-11-04",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh records six more deaths with measles symptoms, raising the toll to 1,269, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-df1605fd65f4a728",
-      "title": "Bangladesh was a public health success story. Why it’s now in throes of world’s largest measles outbreak - ThePrint",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxOWXJkTHJZeVg1MTNaU2dPLVBKVFNUaWdQVHMxaE5PMVJQYWI5SnpGaVpWdkN0LVV5T1gwb05jb2RiaG9rVTR0bUpXc25tYnQ0OFZiMXlDZDhrdi1zUldpclpPQ0toeGFMa2VmUDZ4WlJXajNERmREZkNYY1QwYjU4Vk1zVkV3WWktbFBzMnY2ODR3TE5oSzJvODVzdU9sVzYyNGw0dmFOLUxZallhcm1tTDVNTDJzbDVwNXRHc2xOT0lhdTNHZ3dOVy1FWktnd3RZNW5n0gHYAUFVX3lxTE5aOEo5MUgwSlhja0U5LXU1eFJZS1hVUVY0UDQxa3VLbUN6NkJXZkQxUTQyRG5YZ2M5aEJqbWRhTFhaSWNscUFrQ0ZzQXNxWkJqOGdmcDBUSHpPQzFlNzU1YTl2M29aTXFhYTR4LWN4QUVkR0FPUU11WVZRN2dpdXRZTlVRdHd6YU9nc0JuNk5MTEIxRjlYVlN0Y19oTTlHdEdmQ1FiaTlHVW9QSDhFeHJsZmlnR2ZvdTJmUlI0Ri1rbE1XV1cwaHV5aWdnaV8ybU82eExoQlNQbw?oc=5",
-      "date": "2026-11-04",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh was a public health success story but now faces the world’s largest measles outbreak. ThePrint reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-09T20:41:02.881Z",
+  "lastFetched": "2026-11-10T08:47:31.789Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -966,9 +966,26 @@
     "news-4943feae8ae6f734",
     "news-72a733f55f06fb8f",
     "who-ea4bb4917d7e4ea1",
-    "who-bd1fd8c41a7bafb5"
+    "who-bd1fd8c41a7bafb5",
+    "news-ea4bb4917d7e4ea1",
+    "news-df9d6514121356c9",
+    "who-e0a7bdb58056b020",
+    "who-b34d22c65058a8c2",
+    "cidrap-18e4c226f1925f3b",
+    "news-b34d22c65058a8c2",
+    "news-1d352b6e46b67486"
   ],
   "recentItems": [
+    {
+      "id": "cidrap-18e4c226f1925f3b",
+      "title": "Wider use of Ervebo vaccine urged as DR Congo Ebola outbreak nears 11,000 cases",
+      "url": "https://www.cidrap.umn.edu/viral-hemorrhagic-fever/wider-use-ervebo-vaccine-urged-dr-congo-ebola-outbreak-nears-11000-cases",
+      "date": "2026-11-09",
+      "source": "CIDRAP",
+      "summary": "The humanitarian organization MSF reports anecdotal evidence that the Ervebo vaccine may offer cross-protection against the Bundibugyo virus, as the DR Congo Ebola outbreak nears 11,000 cases.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-35dbeaf51ccf93fe",
       "title": "Bundibugyo ebolavirus: A wake-up call for pandemic preparedness - IDSA",
@@ -996,6 +1013,16 @@
       "date": "2026-11-09",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "MSF calls for broader access to the ERVEBO vaccine during the Bundibugyo Ebola outbreak, prezly.msf.org.uk reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b34d22c65058a8c2",
+      "title": "Merck Ebola Vaccine Urged for Wider Use Against Bundibugyo Outbreak in Congo - Bloomberg.com",
+      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxNd3NUc2VUNkhWQy1YcG05QVZkb3dWNi1IWUt3cENFRHlVb0p0bUpTbzctR2V5YjhOZndDbHhUTWtBSVptUTV2VXIxNGNWYU5iWVhfOVVEOFREWWpjbW0xbGFHVU9iY2pVMmRrSU1PeVI5Ym5ZOXVJT2pMTjA1a2ZLUUpoa2U3bm4wRmxsYVdGYmpQVXYxaF9wU0hTbzg1bkg3RlNkcEhmbnhZUFY2X01ESE9ldnlNNFNHc2l6MWdwYWV5ZVVCVDlLMEozVQ?oc=5",
+      "date": "2026-11-09",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Merck's Ebola vaccine is urged for wider use to combat the Bundibugyo outbreak in Congo, Bloomberg.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1056,6 +1083,16 @@
       "date": "2026-11-08",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "The DRC is testing new Ebola vaccines during a deadly Bundibugyo outbreak. The Kenyan Diaspora Media reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-1d352b6e46b67486",
+      "title": "Congo-Kinshasa: Ebola - Why Is There Still No Vaccine? - allAfrica.com",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VTF9jRWc1dEtNY1hSSHlIcmNjMEh0RXhseUV0a2lRbkJlUkl5ZlpXbTlQSDd2ZThQcHhHTHlXTVVERGRXSjZpTkxjcy1sNThrQlJEUDBqUVY3VFE?oc=5",
+      "date": "2026-11-07",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The lack of a vaccine for Ebola in Congo-Kinshasa remains unexplained, allAfrica.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1136,36 +1173,6 @@
       "date": "2026-11-07",
       "source": "Google News — Ebola death toll",
       "summary": "The DR Congo Ebola outbreak death toll reached 5,198 as cases climbed to 10,668. UrduPoint reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-fb10a7861bad6658",
-      "title": "DR Congo Ebola cases rise to 10,668, death toll nears 5,200 - Qazinform",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPbzJkX3FBMlBNYmV5eEluMTNPdVN1Y240RGV4RDZKa3c0UGhQN29NNEZnT05PR2hPQmx6SGp3SnAtNUpkV0o5aFFXX1hqTENiSVJvMk5iWTdUeUpqMEhXdk02RkhtcGpnQXZVNEFVUWljdGNTVGQySVZ1ZFVfcElMNFd2ZDhFeE9zakVoZFF4eERfR1o40gGUAUFVX3lxTE5ISHpocUR2NDcyOGNuRmxXV3FHR3hkUWllZVlGeTlraDJfRmw5UDVRc2VpcDJBbG1rbWl3MGFwTGhSUkdfRFhtZE05NlRORVlxSVZHVmgwTE12eVhfSzVBVkNPY1ZyQ0JrelRwSHYxZWFoVmxCZUd2LXk0OE5rTUszM2lmWThUVlR0MFpFSHFfQ2ZXbmM?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases in DR Congo rose to 10,668, with the death toll approaching 5,200. Qazinform reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-07c846168a686105",
-      "title": "Ebola Cases Top 10,000 in Congo as Africa CDC Toll Shows More Than Half of Patients Have Died - Nature World News",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQTUhmNDRUdnBjb2NiNlh1a19xVTNRUXpwSnprNUtyY1ppR3ZQcE03LVkzZlEtOW9IWXBfNkV0ZkVhekZSdjZtTEZ3WUQ0Sm9kYks2N0NZcnpURm5jc1FJc2RyNW9HaF94dldESDE4ejBYS2c4Rml5aEY5Qmthc1I4Q0N0WncwNU93eklQUzJMbjZsd3FMLWpGZ3J1YkUzSkNscVNlWnJ3bzNzdnVfNk5qQWF5bGJiWlVZN3hOV1lZZFI4OGpBdl9nQ2hTWFBIUVNvT0UtRQ?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases exceeded 10,000 in Congo, with more than half of patients dead, according to Africa CDC toll data. Nature World News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-10ae2a4df7a0e68d",
-      "title": "Islamist militants force Ebola patients to flee in deadly Congo raid - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOUjdvMzhsUExDa2lhS3Z4VmpOVlhEWldzTUN2SFhBZFpfVXEtZ0RnNW9mRGFfTnVMTnhKUEdGMGpSR1MyS3lGTTBINE92Zkl0S1AtSHdFaUFIQVZNTXczZW05LWtaUm5CUkZCRTFLbTF2WGZhbDRNYy1uOERxekdIOC1RSDBodVBDdlRIdnlubHN3d0pzMC1WbmU4MHV1aXF3Nm8tX1NCMUUtaUluNnRQUQ?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Ebola death toll",
-      "summary": "Islamist militants forced Ebola patients to flee during a raid in Congo that resulted in deaths, Reuters reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
