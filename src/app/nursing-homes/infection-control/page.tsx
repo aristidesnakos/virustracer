@@ -18,7 +18,7 @@ import { getF880Index, getF880State, listF880States } from "@/lib/nursing-homes-
 import { CORRECTIONS_URL } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
 
-const TITLE = "Nursing home infection-control citations (F880)";
+const TITLE = "Nursing Home Infection Control Citations (F880)";
 const DESCRIPTION =
   "US nursing homes cited by inspectors for infection-control deficiencies (CMS tag F880), by state, with the scope and severity of each citation, from CMS's Health Deficiencies data.";
 

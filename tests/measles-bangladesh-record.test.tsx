@@ -39,7 +39,9 @@ describe("measles-bangladesh-2026 definition", () => {
     expect(measles.title).toBe("Bangladesh Measles Outbreak 2026");
     expect(measles.title).not.toMatch(/outbreak files/i);
     expect(measles.seoTitle.length).toBeLessThanOrEqual(60);
-    expect(measles.seoTitle.toLowerCase().startsWith("measles outbreak")).toBe(true);
+    // Same word order as the searches ("bangladesh measles outbreak"); no "death toll" (docs/seo-keywords.md).
+    expect(measles.seoTitle.toLowerCase().startsWith("bangladesh measles outbreak")).toBe(true);
+    expect(measles.seoTitle.toLowerCase()).not.toMatch(/death toll/);
   });
 
   it("reports no Rt, no delay adjustment, and says why in one sentence", () => {
@@ -179,9 +181,11 @@ describe("/outbreaks/measles-bangladesh-2026", () => {
     expect(screen.getByRole("heading", { level: 1, name: measles.title })).toBeInTheDocument();
     expect(container.querySelector(".live-dot")).not.toBeNull();
     expect(screen.queryByTestId("archived-record")).not.toBeInTheDocument();
-    expect(screen.getByRole("heading", { name: "Where cases are reported" })).toBeInTheDocument();
+    expect(screen.getByRole("heading", { name: "Bangladesh measles outbreak map" })).toBeInTheDocument();
     expect(screen.getByText(measles.summary.spreadNote!)).toBeInTheDocument();
     expect(screen.getByRole("heading", { name: "Is it still growing?" })).toBeInTheDocument();
+    // The "Other outbreaks we track" line names the others by design; everything else must not.
+    container.querySelector('nav[aria-label="Other outbreaks we track"]')?.remove();
     expect(container.textContent).not.toMatch(/ebola|bundibugyo|\bDRC\b|congo/i);
   });
 

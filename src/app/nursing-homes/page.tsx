@@ -22,7 +22,7 @@ import { getF880Index, getF880State, getRespiratoryCounts, getRespiratoryRates, 
 import { CORRECTIONS_URL } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
 
-const TITLE = "Nursing homes";
+const TITLE = "Nursing Home Infection Data by State";
 const DESCRIPTION =
   "Weekly COVID-19, influenza and RSV rates among US nursing-home residents from CDC NHSN, and nursing homes cited for infection-control deficiencies (CMS tag F880), by state and facility.";
 

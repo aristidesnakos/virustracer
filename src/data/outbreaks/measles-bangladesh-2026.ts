@@ -142,16 +142,22 @@ export const measlesBangladesh2026: OutbreakDefinition = {
   status: "active",
   source: { kind: "wikipedia-infobox", ref: "2026_Bangladesh_measles_outbreak" },
   title: "Bangladesh Measles Outbreak 2026",
-  seoTitle: "Measles Outbreak Bangladesh 2026: Cases, Deaths & Map",
+  seoTitle: "Bangladesh Measles Outbreak 2026: Cases, Deaths & Map",
+  searchLabel: "Bangladesh measles outbreak",
   keywords: [
     "bangladesh measles outbreak",
-    "measles outbreak 2026",
+    "bangladesh measles outbreak 2026",
     "bangladesh measles deaths",
-    "bangladesh measles cases",
-    "measles death toll bangladesh",
+    "bangladesh measles cases 2026",
+    "bangladesh measles death toll",
     "measles vaccination campaign bangladesh",
-    "measles outbreak tracker",
   ],
+  headings: {
+    figures: "Bangladesh measles cases and deaths",
+    map: "Bangladesh measles outbreak map",
+    table: "Bangladesh measles cases, national total",
+  },
+  answerTemplate: "As of {date}, Bangladesh’s 2026 measles outbreak had {cases} and {deaths}.",
   subtitle: "2026 Bangladesh · Measles virus · Unofficial surveillance dashboard",
   description:
     "Unofficial surveillance dashboard tracking the 2026 measles outbreak in Bangladesh, with the confirmed-case and death counts read from Wikipedia's article on it. " +

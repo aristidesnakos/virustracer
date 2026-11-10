@@ -109,15 +109,22 @@ export const westNileGreece2026: OutbreakDefinition = {
   },
   title: "Greece West Nile Virus Outbreak 2026",
   seoTitle: "West Nile Virus Greece 2026: Cases, Deaths & Map",
+  searchLabel: "West Nile virus in Greece",
   keywords: [
     "west nile virus greece",
     "west nile virus greece 2026",
-    "west nile greece cases",
+    "west nile virus greece map",
+    "west nile virus greece cases",
     "west nile virus deaths greece",
     "west nile virus attica",
     "ιός του δυτικού νείλου",
-    "west nile virus outbreak tracker",
   ],
+  headings: {
+    figures: "West Nile virus cases and deaths in Greece",
+    map: "West Nile virus map of Greece",
+    table: "West Nile virus cases in Greece",
+  },
+  answerTemplate: "As of {date}, Greece’s 2026 West Nile virus season had {cases} and {deaths}.",
   subtitle: "2026 Greece · West Nile virus · Unofficial surveillance dashboard",
   description:
     "Unofficial surveillance dashboard tracking the 2026 West Nile virus season in Greece, with the case and death counts read each week from the report of the National Public Health Organisation (EODY). " +
