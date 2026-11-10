@@ -165,6 +165,11 @@ export interface OutbreakDefinition {
   title: string;
   /** <title> for search results: the query words first, then the place. Keep it under ~60 characters. */
   seoTitle: string;
+  /**
+   * The phrase a searcher types (docs/seo-keywords.md), leading the generated meta description,
+   * e.g. "Ebola death toll". Defaults to `shortName`.
+   */
+  searchLabel?: string;
   keywords: readonly string[];
   subtitle: string;
   description: string;

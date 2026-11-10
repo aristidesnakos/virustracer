@@ -109,14 +109,15 @@ export const westNileGreece2026: OutbreakDefinition = {
   },
   title: "Greece West Nile Virus Outbreak 2026",
   seoTitle: "West Nile Virus Greece 2026: Cases, Deaths & Map",
+  searchLabel: "West Nile virus in Greece",
   keywords: [
     "west nile virus greece",
     "west nile virus greece 2026",
-    "west nile greece cases",
+    "west nile virus greece map",
+    "west nile virus greece cases",
     "west nile virus deaths greece",
     "west nile virus attica",
     "ιός του δυτικού νείλου",
-    "west nile virus outbreak tracker",
   ],
   subtitle: "2026 Greece · West Nile virus · Unofficial surveillance dashboard",
   description:

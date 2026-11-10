@@ -183,6 +183,8 @@ describe("/outbreaks/candida-auris-us-2026", () => {
     const meta = await generateMetadata(params(SLUG));
     expect(meta.title).toEqual({ absolute: auris.seoTitle });
     expect(meta.description as string).toMatch(/clinical cases/);
-    expect(meta.description as string).not.toMatch(/deaths/);
+    // No death count, and it says the source does not report one.
+    expect(meta.description as string).not.toMatch(/\d[\d,]* deaths/);
+    expect(meta.description as string).toMatch(/\(deaths not reported\)/);
   });
 });

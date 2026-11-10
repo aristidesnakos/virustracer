@@ -23,12 +23,15 @@ function loadSnapshots(): OutbreakSnapshot[] {
     .sort(compareSnapshots);
 }
 
+const HOME_TITLE = `Current Disease Outbreaks 2026 Tracker | ${SITE_NAME}`;
+
 // The description names the top outbreaks with their current numbers, so it is
 // built from the data rather than fixed.
 export function generateMetadata(): Metadata {
   const description = describeHome(loadSnapshots(), SITE_TAGLINE);
   return {
-    title: { absolute: `${SITE_NAME}: ${SITE_TAGLINE}` },
+    // The search phrase first (docs/seo-keywords.md), then the brand.
+    title: { absolute: HOME_TITLE },
     description,
     alternates: { canonical: "/" },
     // Page-level openGraph/twitter replace the layout's wholesale, so repeat the shared fields.
@@ -36,11 +39,11 @@ export function generateMetadata(): Metadata {
       type: "website",
       siteName: SITE_NAME,
       locale: "en_US",
-      title: SITE_NAME,
+      title: HOME_TITLE,
       description,
       url: "/",
     },
-    twitter: { card: "summary_large_image", title: SITE_NAME, description },
+    twitter: { card: "summary_large_image", title: HOME_TITLE, description },
   };
 }
 

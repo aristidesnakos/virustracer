@@ -38,7 +38,9 @@ describe("measles-us-2026 definition", () => {
     expect(us.title).toBe("US Measles Outbreaks 2026");
     expect(us.title).not.toMatch(/outbreak files/i);
     expect(us.seoTitle.length).toBeLessThanOrEqual(60);
-    expect(us.seoTitle.toLowerCase().startsWith("measles outbreak")).toBe(true);
+    // "measles tracker" is the head search phrase; no "by state" (the table lists only states with 100+ cases).
+    expect(us.seoTitle.toLowerCase().startsWith("us measles tracker")).toBe(true);
+    expect(us.seoTitle.toLowerCase()).not.toMatch(/by state/);
   });
 
   it("reports no Rt, no delay adjustment, a weekly cadence, and says why in one sentence", () => {

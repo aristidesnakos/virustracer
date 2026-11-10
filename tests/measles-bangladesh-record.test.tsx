@@ -39,7 +39,9 @@ describe("measles-bangladesh-2026 definition", () => {
     expect(measles.title).toBe("Bangladesh Measles Outbreak 2026");
     expect(measles.title).not.toMatch(/outbreak files/i);
     expect(measles.seoTitle.length).toBeLessThanOrEqual(60);
-    expect(measles.seoTitle.toLowerCase().startsWith("measles outbreak")).toBe(true);
+    // Same word order as the searches ("bangladesh measles outbreak"); no "death toll" (docs/seo-keywords.md).
+    expect(measles.seoTitle.toLowerCase().startsWith("bangladesh measles outbreak")).toBe(true);
+    expect(measles.seoTitle.toLowerCase()).not.toMatch(/death toll/);
   });
 
   it("reports no Rt, no delay adjustment, and says why in one sentence", () => {

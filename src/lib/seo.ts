@@ -56,7 +56,12 @@ export function deathsSuffix(summary?: { deathsQualifier?: string }): string {
 export function describeFigures(
   figures: LatestFigures | null,
   fallback: string,
-  label: { shortName: string; places: string; summary?: { deathsQualifier?: string; casesLabel?: string } },
+  label: {
+    shortName: string;
+    searchLabel?: string;
+    places: string;
+    summary?: { deathsQualifier?: string; casesLabel?: string; deathsNotReported?: string };
+  },
   /** A closed, hand-curated record: say so instead of promising daily updates. A weekly source says weekly. */
   options: { archived?: boolean; weekly?: boolean } = {},
 ): string {
@@ -71,10 +76,13 @@ export function describeFigures(
     : options.weekly
       ? "Updated weekly, with map, trend and free data API."
       : "Updated daily, with map, trend and free data API.";
-  return (
-    `${label.shortName}: ${parts.join(" and ")} as of ${longDate(figures.date)} ` +
-    `(${label.places}). ${tail}`
-  );
+  const lead = label.searchLabel ?? label.shortName;
+  // The place in brackets, unless the lead already names it; a source without deaths says so.
+  const notes = [
+    lead.toLowerCase().includes(label.places.toLowerCase()) ? null : label.places,
+    figures.deaths === null && label.summary?.deathsNotReported ? "deaths not reported" : null,
+  ].filter(Boolean);
+  return `${lead}: ${parts.join(" and ")} as of ${longDate(figures.date)}${notes.length ? ` (${notes.join("; ")})` : ""}. ${tail}`;
 }
 
 type ChangeFrequency = "daily" | "monthly";

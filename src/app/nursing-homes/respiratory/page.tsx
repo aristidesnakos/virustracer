@@ -24,7 +24,7 @@ import { getRespiratoryCounts, getRespiratoryRates } from "@/lib/nursing-homes-d
 import { CORRECTIONS_URL } from "@/lib/methodology";
 import { SITE_NAME } from "@/lib/site";
 
-const TITLE = "COVID-19, flu and RSV in US nursing homes";
+const TITLE = "Nursing Home COVID, Flu & RSV Data by State";
 const DESCRIPTION =
   "Weekly new COVID-19, influenza and RSV cases and hospitalisations per 100,000 US nursing-home residents, by state and nationally, from CDC's National Healthcare Safety Network.";
 
