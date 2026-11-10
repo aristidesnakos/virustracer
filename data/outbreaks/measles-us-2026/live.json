@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-10T08:47:35.202Z",
+  "lastFetched": "2026-11-10T20:34:04.491Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -343,9 +343,57 @@
     "news-2780e51d9cbf5c9e",
     "news-d2c6fa3fa43e5ecf",
     "news-01c5e41bad984ec2",
-    "news-687bc0a449fd7842"
+    "news-687bc0a449fd7842",
+    "news-02a5adf361323f67",
+    "news-830d5db4a4381b86",
+    "news-7b53c573f8b9edde",
+    "news-8e1081ae7a3cd817",
+    "news-ad412a350f6e0b19",
+    "news-20bebc526bfe047d",
+    "news-167aa9d4dc3894ff",
+    "news-c1fc1d400e334351",
+    "news-d307b18415c4b5da",
+    "news-d08fed62b0144aea",
+    "news-12a81f7eeed8c568",
+    "news-400c0f022c48c967",
+    "news-0cfd5a7b9fb91afa",
+    "news-001af4b2dedcd42b",
+    "news-75954bc9fc95b6ba",
+    "news-f4079ab2ee608d9d",
+    "news-4d74e52000fea315",
+    "news-6ab6f8e4665f6bdd"
   ],
   "recentItems": [
+    {
+      "id": "news-02a5adf361323f67",
+      "title": "Health officials confirm case of measles in Bucks County, Pennsylvania - 6abc Philadelphia",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNaC04X0MxSjM1bUlRNHVKNHYzb1h1VG41UG9RNGxScHJGMk8yamphc3RFam9pZ3RqeU5LLUR1d2QxNS15MExfOUt0Z1hPeTZrUGV4SVNZWXlDTlZlZzBFQ3lTQTR1eHVOMzE5NEtKSnVnUUlsb0YxanZuRVN4bDVqbDEwVnNneUxXdzZLMk9iWk1WbjVaNXUzV21vc9IBoAFBVV95cUxQT01YM0ZXbEpmMkE2SGJsbTVxSU5Ob1NoZjlXckNzNU9teTBZSzlDMzhnelZWUVdVUFB6YXhOd1RrbnJsdG9fcUtHQXlpZVlVSk1hSm9LWjB6WXF3aFZ4a0pCc3QtRGtOQjJ5NUJJVUdQbDhjeFM4SmFRVE1tQTFnX05PTC16c1hvbmxZbUR5eHZEVmtBcV93TFM4LXc3SDZ5?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — US measles cases",
+      "summary": "Health officials confirmed a case of measles in Bucks County, Pennsylvania, 6abc Philadelphia reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-167aa9d4dc3894ff",
+      "title": "8th measles-related death reported in Wisconsin: Health officials - ABC7 Bay Area",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNczlfNDZSOGxWZXhabjV2MEpKV3ZDT3JFTVNBQ2JaTnh0WTkxY3lyRUl6X2k3X1hrelFpRXJkN2lyVVdSVHhERmtKbGVDWXltZEUwQzE5aWNVdTRTYmN5eDNBY1FzOWRJaWR6N2lZQWgxOTJGVUotN2lyRG5qWlJqbmdrY0dhOWlRUWRscE9tZUIybEtVN0RxTWI2bXhZNjg?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — US measles cases",
+      "summary": "Health officials reported an eighth measles-related death in Wisconsin. ABC7 Bay Area reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-20bebc526bfe047d",
+      "title": "US measles cases surpass 5,000 in 2026, reaching highest annual total in decades - cbs8.com",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNQTNKX0xMb0Q0OXQ1ci1UMEJUNjFNZTJsYTZXeFZFZGxac0E3YmhtNF95bWliQ3p1bDlSWnZSWE8ycjFydzhVeEc2ZEw4M0tzZlM0cmRjOERHU3F4TzFCQlNRZ1phdmY5RHR3dG1iMlFaTlZkbDc4UFVfOVFRNWZYbF9pZ21UMkV6WWM0TG9XWGk0WlFpMjJ0cnFfTTJTYURFbmdHR1UwR1I4M0xVU1gxb0lXSnpqaUxfM2tHek4xblRJQ2s0TkZzWWhha1BMbEtickU2TDJEcXctcVJ1U1BjM24zZm9ONjR1SEIxX0x4SjFIcU41X3c?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — US measles cases",
+      "summary": "The number of measles cases in the U.S. surpassed 5,000 in 2026, reaching the highest annual total in decades. cbs8.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-4777fab10a582d59",
       "title": "Pennsylvania Surpasses 1,500 Measles Cases In 2026 - NewsRadio WHAM 1180",
@@ -357,12 +405,92 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-75954bc9fc95b6ba",
+      "title": "America’s Measles Problem Has Reached Endemic Level - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbVV0WUVWekthbnc5OWE0U3FxNzRDMzJIaTZyZGZuTTJfMW1BbVZCdHNXcExlQXhUWVVDSEU4MWxKRlliUWFNTUxXZ3RncXplUnVBM2JEbHlJRVBSRkpDdVZLUDNxcjhLd3VFTkthc0ZlQm1BNFhsRTVSTkoyYkdKaHNvZDlUb1haQ2k5Yw?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Measles has reached an endemic level in the United States. The New York Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-7b53c573f8b9edde",
+      "title": "Bucks County, Pennsylvania, Confirms Measles Case Amid Statewide Outbreak - JournalArta",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeUNCdGZuYkc2SXlDaWtjWF9NYUVUVUc5OEt2Nkx0N2FkNzc1QzFSVlAzcjRna1ZneDYxVVFxS01GQUxmbEVpTUlQNi0yS3dYR2dPbGxQRWZxNmI1OWxSa0VxU2FsUzFUeXVfRW5SMktnd0JWcGhTRHdoRHhPZWNncVM1RS1MME9uMFdXYlR6N2wxMzg?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — US measles cases",
+      "summary": "Bucks County, Pennsylvania, confirmed a measles case amid a statewide outbreak. JournalArta reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-830d5db4a4381b86",
+      "title": "Measles cases grow among pregnant women in Pennsylvania: What to know about risks - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPS0NEQlZVejBJWGN2UUwyc09hYmNqX3NEemhXamFaRDNCUWsxMElOS19nMEd4RWJ2ZnVpaG14SVBINHVoUUFFcVpXeEYxZkx2NkI3eWd6X18tRFNENng5ZXBld3I4SmZZbzVDS0RiTUJEMU1pdHhidmU2ek8zVF9sdEJ4STQ5YmIza0hidkJNVmFiWktoMWJCV3d5ZmxLeDg?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — US measles cases",
+      "summary": "Measles cases are rising among pregnant women in Pennsylvania, with information provided on associated risks. Breaking News, Latest News and Videos reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ad412a350f6e0b19",
+      "title": "US measles cases reach 5,182 as PAHO weighs elimination status - NationofChange",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU21zRU5ISXV3S3g2M1hXck1yQ3czRUlqUDVmVEdZeUpWSHlyTXJvQ2MxelJqMmhXRUN6Slp3Z1BMX29ZdGd2d1JxMzlIeHRwRGVfbWNpYmw5Q3pLN0lpZ1kzYW9ITXVCN0F5V19HelNvV3Q4TEQzZkh0eEIzbjFuS2NZcGtoeGdITHFPRkw4WEJ0V2pXb2U4eHV2NEtoUjcwVDZwZlRrdw?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — US measles cases",
+      "summary": "US measles cases reached 5,182 as the Pan American Health Organization considered elimination status. NationofChange reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c1fc1d400e334351",
+      "title": "US measles outbreak exceeds 5,000 cases as Pennsylvania infections rise - ITIJ",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORjhjNnl3aW93dEM2VzBBa3ZSeXYxM3ZNWVNuajE4ak1PTU44WUd4ZmRuS3NBTk1nQVJ1RWVRaU92V1BHSXh6c2JrV3dQZ0ZkX0tCYUl2QktsLUtFZjJYMnlQSkZlcnRGZ3RZWW1nazV3eWJ3VWJoRWtfb1JxSDVPUHc0am5QUUFaRDJEMmgtQWhRbmNiZXRQMGpzWjlmOFMtWEE?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "The US measles outbreak surpassed 5,000 cases as infections increased in Pennsylvania, ITIJ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d08fed62b0144aea",
+      "title": "Measles Case Confirmed in Bucks County Amid Outbreak in Pennsylvania - SSBCrack",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWU1TbWUtT3lISi14SmVZNEo0eXYwb3lXM3E5LWFxSTJ4NUJHLVhmR2F0emw1czNjM004Tm9XQ3hRemZQcFgxLTI5Qi1wQXl1dHF6bTV5Z0FNWHRRV3VlOHRiV1N3b24zeGYwN0JCVm5JQW9MQ1hMYUxUWGZta0JaeWd1Q2Q2TVJzeGZEdGttYmlMbmdIS3VTaXpZNA?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "A measles case was confirmed in Bucks County during a Pennsylvania outbreak. SSBCrack reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-d2c6fa3fa43e5ecf",
       "title": "U.S. Reports More Than 5,000 Measles Cases in 2026 as Health Officials Warn of Further Spread - NBC Palm Springs",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNUXlqNFdNTldZTGxGbUtHRFBsQWVxblQyUTd6ZmRhSHpoMlNodEk3UnduYjBqbXBEY1V6VTUtZFl0MmJ6NnhpQTZ0QnptOGtROWpzNXBiYzZPZ1lkNTFWUzBCQ2dBbjRyX1R2Z3ZvZHEyNVN5aWhFVEhDb1NIUUs4a04tUXhob1ZrV0JVaWZLMlVJQzFlYzNjVnYtcHBVUFowZFdtbzAzTVRsdzlKc0tXNGdCWXhJUVJEV3RHZmU3Vkd4MlNwOUJFNkdSS2twT2t1UnNTMkkzcmhSbEpIM3NEZlpZVWo?oc=5",
       "date": "2026-11-10",
       "source": "Google News — measles outbreak United States",
       "summary": "The United States reported over 5,000 measles cases in 2026, with health officials warning of further spread. NBC Palm Springs reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d307b18415c4b5da",
+      "title": "Pennsylvania Measles Cases Reach 1,505 as Clinics Continue - https://streamlinefeed.co.ke/",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPN09PSGU0eW9nTFBwZ0NNbGNVaG1LT3gyb0FLTUxYN1lUcVF2cC1FYTYxWWNoVVFTTEVrTXdfaEpQeE9odi1LdWRSYktfMGRQdlZ6REFvLVNLcmdRWWxCc2dmUy1ZcXdRa2VHbk5NdjBtdDhzbDVZd3h0WXRjRlJYY2tUQm9hWnBoZG1MTENTVDhpOFNMWEhOUUVKZmNwQTQ0UXlUOHpBUERPU2IydHVsekZXdU02Vi1peURMcFln?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania measles cases reached 1,505 as clinics continued. https://streamlinefeed.co.ke/ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-f4079ab2ee608d9d",
+      "title": "Wisconsin infant dies after contracting measles, the first time since 1990 - Knewz",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxQSjhQbVc0NjVTSU1pakV2b0NhYlhwWk12MFp0dWdfanN6QlZuTFVDT045UWlHdDJkNWs1SHVianJ0dDFIMXdOcjN1TVViakFSdnlueDFUOXNPcUx1Y0RWaDlxNEluZnlWX3hscWNRbURScmxkRnVURl9id2JNdkRkcjRwZXBQTTdnYnhHdUgtalQ2ZHNOOENZTUdKaHQ1NnotZWVCcDhVVTJmZm5rcWhEMWlKNFI0VU80MHJuYzhR?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A Wisconsin infant died after contracting measles, the first such death since 1990. Knewz reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -433,116 +561,6 @@
       "date": "2026-11-09",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "A Bucks County resident tested positive for measles after traveling to central Pennsylvania, CBS News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d9176b91066b3b99",
-      "title": "Pennsylvania Department of Health Provides Statewide Update on Measles Outbreak as Cases Reach 1,505 in 45 Counties - Beaver County Radio",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxObW5QR1lXR2EwSExUQ2EtanNNMUN2TkxlNWdQMlFZNDd2c1ZvZVdydF9fenVZWXNUVVlnd3VGT3BEVXB1MEVuV0d3eGdJSkNvQWR4ZmROQVBSWmRVVGZCOTFZLTloR3VqUkdIOUdaZlYteUp3Vm5vYmFySXpOR0h3QWFPb3pHVUNkOUVPTEU0Z1UtUnlUcTNiaUVxRTFyTzNpeDdXNU5YVHczSWdZdlRFY0RCbmJ1M3RlamZBTkx0TUFmQTRtQU83Z3dwc0prX3lmcWlyeTJxUE1mRFhFM3ZfQ1FFdGY?oc=5",
-      "date": "2026-11-09",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The Pennsylvania Department of Health provided a statewide update on the measles outbreak as cases reached 1,505 in 45 counties. Beaver County Radio reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-da75dfb6525e6b56",
-      "title": "Pennsylvania measles outbreak reaches 1,505 cases, six deaths across 45 counties - fox56.com",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQSmluTWIzOVlKMkJuV05FaTNjUEJweUdGcnpMdTJjUzN4eDdyZjd3WmVUU3NuSHRsYVVaMGRWSElMMXlKVzd4M2FrSGdUY0JWSnlEV19kQnBULWQydEVrc202N3FoZ21NdHhlSDdaMUhzd3pBRlZHRjZjZ3k4eTVEQWFPb1Nza2pSY25wZGlWa0RXQjRSY0NoZDJGV1NSOFcyS3pUU0ZseVNuZHc?oc=5",
-      "date": "2026-11-09",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The Pennsylvania measles outbreak has reached 1,505 cases and six deaths across 45 counties, fox56.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-f4fccb1656e949e3",
-      "title": "US measles cases reach 35-year high before elimination status review - London Daily News",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNdEhPOWZfMVY3R0VwRFVacnoxMFJIYWlvRzJFLTFtR25Hamstc2s3SGNUVFBmTnctbnhxUjJXcnhkQXlmczRqT1pFVUZCSTYtSVNUYm93M2dOMWpUT3Bqb2NFN1dhQ1diVHVwemVHYXFBRHYyaHk1Q0JKVzdlSkN6bXNkdG12V2UwbllPVVJvZG5MeGp4dHdLeDJkLUF1dzA?oc=5",
-      "date": "2026-11-09",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases reached their highest level in 35 years before an elimination status review, London Daily News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-f8fdc729d253a172",
-      "title": "Pennsylvania tops 1,500 measles cases as the U.S. could lose its measles elimination status this week - Inquirer.com",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPejJOVnZWWFdXWmFseGlMZ09mdGtEUkN1aERLV1JFZHJoYzA4M1M0dnFJbGtmeG1QbXVGZ1IzRHVEakVfV2txZFJWdkJKWkcxbXo1dnJrVDl2YXVLQW5LaXA1bWMwa0pabW11RU9XM2VmR01ET0F2eHEtS21QeTFuQUlLS3B0eWdGRlFJUFJzSm56cFN2eEJ3eHNQTHNxVFFUem5n?oc=5",
-      "date": "2026-11-09",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania has surpassed 1,500 measles cases as the U.S. may lose its measles elimination status this week. Inquirer.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-432cd5033b4eb20f",
-      "title": "Update on Measles Outbreak as Cases Reach 1,487 in 45 Counties in Pennsylvania - PennWatch",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNcHBBYXpIVEU1bkF6eFAyb085Wk45UmJ1NndaOGpueWFLaTJ1M0FSOWhrWHBOVVRKaXdGZ01EaG5rSzdZOWR5ajNLUlo3emlUMFRGWUNrTFFQQUlYd0pjYjkxWHFYY3p1RXF3SGxEVTJDanhGRFE3MEFJUlpVbUdPVFdjWF9TMVJDMENtNVNqZFdMei1mWmtUZm42cmVMRmZfNVE?oc=5",
-      "date": "2026-11-08",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania's measles outbreak has reached 1,487 cases across 45 counties, according to an update. PennWatch reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-450696afb070f9e8",
-      "title": "Babies and Children Make Up at Least Half of Eight State-Reported Measles Deaths as CDC Lists Four - inkl",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPc2N2c2JPOUxGTy1qWmo1MXc1R1ZMUVdFbVc1ZmFxRHdBc093VTVCMHZVRW9aMjZITXFzUDBWcVg1ZE9VeVA3Z1ctWVdPVUEtUnd2VGgxM2p0X1NGSFhrMjJnUDhwRm9MYV9ZOVRUOExpUzZsMjkzSWZnS3M3MFZ6Y0x5Mnk2R1Y5RU50aWFOY1NjM3h0S0JxSWVJeHhVSmRrd2tZenpDNU1wcGFNVzhvY21GVFM0M3pVUTRQRmQxSTNudw?oc=5",
-      "date": "2026-11-08",
-      "source": "Google News — US measles cases",
-      "summary": "At least half of the eight state-reported measles deaths in the U.S. are babies and children, the CDC lists, inkl reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-93a437cb2aeddf7d",
-      "title": "U.S. measles cases rise to 5,182 as adults overtake children and teens as the largest patient group - Medical Daily",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQeEQtTDc2TzFUSG5mOEZHRmNJOVduQ1REbFlzeWRkUzhOUG5lQm5WMWcxUGpyVTRnTzVPakJQMlRrS0E1LVlWV1h4bkcwdnFKV2FaWG5hS2c1TU95c1dJc2VKS0k1dHJMSl92aHg4VkNmbnF5UldkM3BmV28zWWpTU0tNd3o2VnI0?oc=5",
-      "date": "2026-11-08",
-      "source": "Google News — US measles cases",
-      "summary": "U.S. measles cases reached 5,182 as adults became the largest patient group, surpassing children and teens. Medical Daily reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-02604618d9bf9c6e",
-      "title": "How many people have died of measles in the US this year? States report eight, the CDC counts fewer - Nacionale",
-      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQRjBjd2VsMWtpbTdmSEJTU2NmcFl0cEJxZUJwaWF3OTk3ZFRKdVY4a0daLUlTVTdOUGgwR0NWdmpkQnF5ZUpfMGZSVFo3X0JrdU1vWTVOU2hGREZVVUFOVG5nRHJSVzRnbDV5NFVVMkpyRmdLVnJPcU53SllOc1Z6Nm5jSzNTNzZUdnBFQ21ZT0J0dkMwYmZ6VEZsM0xNT2swSHd6VFozU0k2Y2kwQXlzN2QzWjh5LVIwT1E?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — US measles cases",
-      "summary": "States report eight measles deaths in the US this year, but the CDC counts fewer. Nacionale reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0c91f76eff9b9761",
-      "title": "US Measles Cases Top 5,000 in 2026, Highest in 35 Years - ColombiaOne.com",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE43bHZUbnlLaDEtMEtsazhJS1ZFRGh5azhLYk1mck1YeGhEMmMtQkswSzNCSm1EbnJiYWowSi0wcUszLWZ4Y1VOQjFxZ2NxVy1SY3FPVS1OU2hBUE1DRkZXZmUtXzFfUnZY?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases surpassed 5,000 in 2026, reaching the highest level in 35 years. ColombiaOne.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-229802bd3331f3f7",
-      "title": "US Measles Cases Reach 35-Year High As Vaccination Rates Continue to Fall - تسنیم",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNY2FvSUxfc19UWmlXajRvX1hLajJsNDBZSHA2aEZxT0R2Zm1HNWVCWWJtWmliMnpmVnQ4eXdkeUliWTlkYlNWUHRzTWRQSkZuUVhKR0NTZmJfU1k2M1Z6azF3U1daUUhRWTE5YTRBdksySUdNM2Fld3doLXBHWVZqandaY2dnNG9CMjhYZGc3LXF4a2FEdDBUS1hHYWhQMXgza1JTOXJXVmd4YkxCTmhCX084UGxqRVl5Q3dxNmFDSU5IOTJt0gHKAUFVX3lxTE9wNjd0ZnpPUU9vQ2xSbzNFcWEzMXdrZUpzcVd4bEtILTlheUl1UHA4NzctcGo2Y3RIUmJUOUFINEVxSlA3UkNHUnNwdzdCSHBwNzJCR3poaXhrVDcwSDEtZUlsM2pRc3lnNkJwX3RBODhJVnhQVlNhaXFONjEtaTJtYkdZSWVJZ1V6cEJyY3BySFFzWklhbzRnSEJXd3ZxeWhwNVhRczY5M01QaVZnTW0xdFBVSUU3WVNQa0lneXZ6OWVDN2FwRGNmZUE?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases hit a 35-year high as vaccination rates keep declining, تسنیم reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-43f97e76bb7fd86c",
-      "title": "CDC reports 5,182 confirmed measles cases in the United States in 2026 - 2 Minute Medicine",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOdW1idWViN3d5ZEszaXVvMkVKNDVNelBRQ01RUmxUMDVMbHcxYjVMb0FyenpnUUd4dDU4dWZIbXdMVDdDNTZFamdCSTBia29JWGZSd0d3Qml1bl9sQTFIUlZBQTlRSnBDc1FTVHhNRzNOdEprZlM3U1oxSTRTaFZfSExTVmh3dTFOd0tmdmZ6NjhkSVFkXzJBTHM5dXg3dlZENXBUSA?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC reported 5,182 confirmed measles cases in the United States in 2026, 2 Minute Medicine reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-10T08:47:33.825Z",
+  "lastFetched": "2026-11-10T20:34:02.574Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -447,9 +447,22 @@
     "news-cd2785b8769af8e0",
     "news-f6b75b2c4d56a97b",
     "news-ff5b434f9879cadf",
-    "news-b48f7652d32431e8"
+    "news-b48f7652d32431e8",
+    "news-938f37fcb3662f32",
+    "news-c12a3d037adc88b4",
+    "news-94886d4d36a654ef"
   ],
   "recentItems": [
+    {
+      "id": "news-94886d4d36a654ef",
+      "title": "Measles-related deaths rise to 1,289 in Bangladesh - TheReport.live",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQTV2emZ2QzBrTHVvdGFScUdBZ0s3QkZ2Q084aE9USlpOT2xwdXc2REtIM0luWVVTaEN3LUxnR3V5NnI0NDZ6aWEzLVZOZ0VQazFieENhcVVDS3F2bW1jd01kcEdmX1ZWbVF0SWxhaGNsQkY4bWVDSDB5Q0YxNDRDWkhqc2t5TGM3d2lZS1hR?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Measles-related deaths in Bangladesh have reached 1,289. TheReport.live reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-b48f7652d32431e8",
       "title": "Bangladesh Measles Outbreak: 1,284 Deaths Reported as Health Minister Says 'Hang Me' - theopenpress.in",
@@ -457,6 +470,16 @@
       "date": "2026-11-10",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh's health minister said to hang him after a measles outbreak with 1,284 deaths, theopenpress.in reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c12a3d037adc88b4",
+      "title": "Measles Outbreak Bangladesh: 5 Deaths Reported in 24 Hours - https://www.businesstimes-bd.com/",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBydWt2YllIZjNJUWNZaUFfeU42bmtBMm9wdFZEa1k4Qy1tdDJlZ2dFcFNoTjNPcHZaekd6SFVMa1pBbHQ4SVBnb0FhZXNIZFdtd1Y4T0J5NmpNSDA?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "A measles outbreak in Bangladesh has resulted in five deaths reported within 24 hours.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -627,25 +650,6 @@
       "date": "2026-11-05",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh measles fatalities reached 1,269 following six new deaths reported, NDTV reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-768b352d9020a1e9",
-      "title": "Measles vaccine delays: Inquiry commission formed to determine liability of interim govt",
-      "url": "https://www.thedailystar.net/health/news/measles-vaccine-delays-inquiry-commission-formed-determine-liability-interim-govt-4315786",
-      "date": "2026-11-04",
-      "source": "The Daily Star (Bangladesh) — health",
-      "summary": "A three-member commission has been formed to determine liability for alleged procurement and distribution failures that delayed measles vaccines in Bangladesh. The commission has 60 working days to identify responsibility within the interim government.",
-      "summaryFallback": false
-    },
-    {
-      "id": "news-8ec975869770c7a7",
-      "title": "Bangladesh records six more deaths with measles symptoms as toll reaches 1,269 - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE56MjE1bTcyUVJCeEo3LXR2X0djWXpmT292d2J6WXdLbmZyZ0lEV0NHMjBtVWlEekdCMUZoX2J5YUw1ZDFOM1pJWlQ0Y3UwcTQ?oc=5",
-      "date": "2026-11-04",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh records six more deaths with measles symptoms, raising the toll to 1,269, bdnews24.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

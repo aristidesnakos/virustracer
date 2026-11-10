@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-10T08:47:31.789Z",
+  "lastFetched": "2026-11-10T20:34:00.919Z",
   "processedIds": [
     "news-667ec1d7935d8ab4",
     "news-565c7dae0578b78b",
@@ -973,9 +973,32 @@
     "who-b34d22c65058a8c2",
     "cidrap-18e4c226f1925f3b",
     "news-b34d22c65058a8c2",
-    "news-1d352b6e46b67486"
+    "news-1d352b6e46b67486",
+    "news-c13670668db1f9cc",
+    "news-f084217285bb673a",
+    "news-0efddb5561f20962"
   ],
   "recentItems": [
+    {
+      "id": "news-0efddb5561f20962",
+      "title": "Ghana mandates Ebola airport screening and 21-day tracking as Bundibugyo outbreak nears 10,000 cases - https://streamlinefeed.co.ke/",
+      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQRWVnRE9PLXlYRnFmcXhSODFaUmtSUllTMF9yX0V3cHhHMXdNT2NtOFhJZDZ4Z1JWOTZwWW1sWm9tVVlmM2NlTzh0VzBpdjVoYUFQOEk5amNhcW1qR0FXYzFQV29DSFpuNEJUdTZCTm50RkpIb3NUTUJNekMyb1ozdmhMX0h5ZnMwdk85cmx5dFVhNk83ZWEzNEZBNFI3UXF0QmxfRl9SV2ZtTVh5SGxOYkNZVU5fS0dGdERkelQtbWlGQVh2X3dZUkktdGFnQQ?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ghana mandated Ebola airport screening and 21-day tracking as the Bundibugyo outbreak nears 10,000 cases.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-f084217285bb673a",
+      "title": "Can two new vaccines help turn the tide against Bundibugyo Ebola? - Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQWJGRTJNcmZRU2hCNWpTbTBiaC12bU1hbnB4UnhWb3ctNXByOVpfemhXZHRwb0tUMVh2SVJLbFBKYTNHcm1IZ0hYN1RvcERZSGdmdlVwMDBHeENuZjhjbTNzaC15MGJIb2NFRk42MUluNlA0WmhFWDhjODRDTFhqXzZRcUh2VVN2SXpwbW9IaUs5ZGZrVm82bUl5Um96NmxJWHBJZ05URDNpVEE?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Two new vaccines may help control the Bundibugyo Ebola outbreak, Gavi, the Vaccine Alliance reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "cidrap-18e4c226f1925f3b",
       "title": "Wider use of Ervebo vaccine urged as DR Congo Ebola outbreak nears 11,000 cases",
@@ -1153,26 +1176,6 @@
       "date": "2026-11-07",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Ebola outbreak in DR Congo becomes largest in the country's history. Head Topics reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-addc29fe4a521e8e",
-      "title": "DR Congo Ebola Deaths Rise To 5,198, Cases To 10,668 - UrduPoint",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxNby1yb1hfTjRmRm8tcFpTdWZDQkE1akJDZi14SlRsVDB3a3EzTGdxOFVnQXBBNzZGakl2SktycjhCUndZTnFlR0NBOGtKeWc1WTJ0aXhCUnZHYTh3Vkk0WjdOX0ltTGhYa0t5ODlSQkRWVTVsS211Wi10UTdlYjRBTFBDaWFSWXlJYXBZaG5NeXNQVHc4eWNmdkdjeFMxZw?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola deaths in DR Congo have risen to 5,198 and cases to 10,668. UrduPoint reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-df094e6777951ba9",
-      "title": "DR Congo Ebola Outbreak Death Toll Reaches 5,198 As Cases Climb To 10,668 - UrduPoint",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNVHk4VnVLOGIxX3dicDc5RzM4R2tZb0xwd3hzSHpuejBNRGdzNmo0QW9ta1lvTzZOMTlhRUMyQTJPbUJjTkJzdjFlajZGcEV4TDBYcXY4dEtWNGF4Q0VvY1pETzNjRF9ubkpFb3F2Z3c4NG5Zd3U2UGRYQlo5R3VIYU9YV19KaTZWT1pITXJkd19hWWlEOFE?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Ebola death toll",
-      "summary": "The DR Congo Ebola outbreak death toll reached 5,198 as cases climbed to 10,668. UrduPoint reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
