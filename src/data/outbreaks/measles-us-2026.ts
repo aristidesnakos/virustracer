@@ -26,6 +26,11 @@ import type {
 // counted is publicly disputed. By decision, this page tracks the displayed figure and says
 // so wherever a hand-written field allows, so the headline never reads as a settled toll.
 // scripts/update-toll.mjs logs a warning each run in which the page and its data file differ.
+// Since 2026-11-10 every weekly snapshot also stores the data file's figure (deathsDataFile) and
+// the dashboard prints both under the deaths figure (deathsGapNote in src/lib/toll.ts), so the
+// current gap is always shown from data; the 3/5 below belong to the 29 Oct table row.
+// Why the page lags: its 2026 deaths cell is typed by hand ("4*" on 2026-11-06), while the
+// page's script fills only cells with ids from measles_hosp.json (2025's deaths cell has one).
 
 const AS_OF = "2026-10-29";
 const CDC_SOURCE = "CDC measles cases and outbreaks page, as of 29 Oct 2026";
@@ -142,7 +147,7 @@ const summary: OutbreakSummary = {
   deathsQualifier: "in the CDC’s count",
   spreadStatus: "Active · 43 new outbreaks reported in 2026",
   spreadNote:
-    "CDC, 29 Oct 2026: cases in 47 jurisdictions, most in Pennsylvania (1,411), South Carolina (670) and Utah (535) · 96% of cases are linked to an outbreak · deaths: the page shows 3, its data file 5",
+    "CDC, 29 Oct 2026: cases in 47 jurisdictions, most in Pennsylvania (1,411), South Carolina (670) and Utah (535) · 96% of cases are linked to an outbreak",
   lastReviewed: "2026-11-02",
   source: "CDC measles cases and outbreaks page",
 };
@@ -172,7 +177,7 @@ export const measlesUs2026: OutbreakDefinition = {
   description:
     "Unofficial surveillance dashboard tracking measles in the United States in 2026, with the case and death counts read each week from the CDC’s national measles page. " +
     "As of 29 October 2026 the CDC counted 4,852 confirmed cases in 47 jurisdictions, more than twice all of 2025, and 43 new outbreaks. Pennsylvania has the most cases (1,411), followed by South Carolina and Utah. " +
-    "Deaths: the CDC’s page shows 3, marked subject to change; its data file lists 5, and Pennsylvania reports at least five of its own. The headline death figure here is the one the CDC displays.",
+    "Deaths: the headline is the figure the CDC’s page displays, marked subject to change while CDC reviews are completed; the data file behind the page lists more, and Pennsylvania reports deaths of its own. Both CDC figures are shown with every weekly reading.",
   links: [
     { label: "CDC measles cases", href: "https://www.cdc.gov/measles/data-research/index.html" },
     { label: "CDC measles", href: "https://www.cdc.gov/measles/index.html" },

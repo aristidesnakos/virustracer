@@ -101,6 +101,9 @@ export function verifyCdcRaw(snapshot, rawText) {
   if (asOf !== snapshot.date) return { ok: false, reason: `date: raw parses to ${asOf}, snapshot has ${snapshot.date}` };
   if (confirmed !== snapshot.confirmed) return { ok: false, reason: `confirmed: raw parses to ${confirmed}, snapshot has ${snapshot.confirmed}` };
   if (deaths !== snapshot.deaths) return { ok: false, reason: `deaths: raw parses to ${deaths}, snapshot has ${snapshot.deaths}` };
+  if (snapshot.deathsDataFile !== undefined && parsed.reading.deathsDataFile !== snapshot.deathsDataFile) {
+    return { ok: false, reason: `deathsDataFile: raw parses to ${parsed.reading.deathsDataFile}, snapshot has ${snapshot.deathsDataFile}` };
+  }
   return { ok: true };
 }
 

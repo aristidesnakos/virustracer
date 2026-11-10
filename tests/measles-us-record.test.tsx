@@ -119,11 +119,14 @@ describe("measles-us-2026 definition", () => {
     for (const link of us.links) expect(link.href).toMatch(/^https:\/\//);
   });
 
-  it("states that the page shows 3 deaths and its data file 5 wherever the headline could mislead", () => {
-    const wanted = /shows 3 deaths[^.]*\.[^.]*data file[^.]*lists 5/;
-    expect(us.monitoringData[0].detail).toMatch(wanted);
-    expect(us.description).toMatch(/shows 3[^.]*data file lists 5/);
-    expect(us.summary.spreadNote).toMatch(/the page shows 3, its data file 5/);
+  it("states the deaths caveat wherever the headline could mislead, without hard-coding a stale gap", () => {
+    // The 29 Oct table row keeps its dated figures (page 3, data file 5).
+    expect(us.monitoringData[0].detail).toMatch(/shows 3 deaths[^.]*\.[^.]*data file[^.]*lists 5/);
+    // Fields shown beside the live figures describe the gap without numbers; the numbers come
+    // from toll.json (deathsDataFile) through deathsGapNote.
+    expect(us.description).toMatch(/headline is the figure the CDC’s page displays[^.]*data file behind the page lists more/);
+    expect(us.description).not.toMatch(/shows \d+[^.]*data file lists \d+/);
+    expect(us.summary.spreadNote).not.toMatch(/data file/);
     expect(us.summary.deathsQualifier).toMatch(/CDC/);
     expect(us.monitoringData[0]).toMatchObject({ confirmed: 4852, deaths: 3, asOf: "2026-10-29" });
   });
@@ -189,6 +192,19 @@ describe("/outbreaks/measles-us-2026", () => {
     expect(screen.queryByTestId("archived-record")).not.toBeInTheDocument();
     expect(screen.getByText(us.summary.spreadNote!)).toBeInTheDocument();
     expect(container.textContent).not.toMatch(/ebola|bundibugyo|\bDRC\b|congo|bangladesh/i);
+  });
+
+  it("shows both CDC death counts under the deaths figure, from the latest stored reading", async () => {
+    const latest = getTollData(SLUG).snapshots.at(-1)!;
+    render(await OutbreakPage(params(SLUG)));
+    const note = screen.queryByTestId("deaths-note");
+    if (latest.deathsDataFile == null || latest.deathsDataFile === latest.deaths) {
+      expect(note).not.toBeInTheDocument();
+    } else {
+      expect(note).toHaveTextContent(
+        `${latest.deathsDataFile.toLocaleString("en-US")} in the CDC’s data file; the page shows ${latest.deaths!.toLocaleString("en-US")}`,
+      );
+    }
   });
 
   it("builds metadata with the latest toll in the description", async () => {

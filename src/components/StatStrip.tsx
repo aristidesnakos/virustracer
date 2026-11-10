@@ -98,9 +98,12 @@ const CELL_CLASS = "flex flex-col justify-between gap-2 bg-panel px-5 py-4";
 export default function StatStrip({
   timeline,
   summary,
+  deathsNote,
 }: {
   timeline: CaseDataPoint[];
   summary: OutbreakSummary;
+  /** Shown under the deaths figure, e.g. a second count the source does not display (`deathsGapNote`). */
+  deathsNote?: string | null;
 }) {
   const asOf = timeline.length > 0 ? (latestDate(timeline) ?? undefined) : undefined;
 
@@ -139,6 +142,11 @@ export default function StatStrip({
             >
               {hasSeries ? fmt(trend.current) : "—"}
             </Metric>
+            {tile.field === "deaths" && deathsNote && (
+              <span data-testid="deaths-note" className={NOTE_CLASS}>
+                {deathsNote}
+              </span>
+            )}
             <SparkArea
               data={trend.series}
               color={tile.sparkColor}

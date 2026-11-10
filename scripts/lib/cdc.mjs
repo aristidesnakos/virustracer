@@ -276,7 +276,7 @@ export function parseCdcReading(doc, { nowISO } = {}) {
   const notes = [];
   if (deathsDataFile !== null && deathsDataFile !== deaths) {
     notes.push(
-      `The page displays ${deaths} deaths for ${year}, but measles_hosp.json (the data file behind it) lists ${deathsDataFile}. The page's figure is tracked.`,
+      `The page displays ${deaths} deaths for ${year}, but measles_hosp.json (the data file behind it) lists ${deathsDataFile}. The page's figure is the headline; both are stored (deathsDataFile) and the site shows the gap.`,
     );
   }
   const updated = isoFromLongDate(doc.page.updated ?? "");
@@ -303,6 +303,10 @@ export function snapshotFromReading(reading, toll) {
     confirmed: reading.confirmed,
     suspected: null,
     deaths: reading.deaths,
+    // The deaths in measles_hosp.json, which the page does not display (its 2026 cell is typed by
+    // hand, "subject to change ... as relevant reviews are completed"). Stored so the gap between
+    // the two is on the record every week and shown beside the headline; null if the file has none.
+    deathsDataFile: reading.deathsDataFile,
     recovered: null,
     source: toll.source,
     sourceUrl: toll.pageUrl,

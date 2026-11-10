@@ -12,7 +12,7 @@ import StatStrip from "@/components/StatStrip";
 import { notFound } from "next/navigation";
 import { getOutbreak, isArchivedRecord, listOutbreaks } from "@/data/outbreaks";
 import { getLiveData } from "@/lib/live-data";
-import { getTollData } from "@/lib/toll";
+import { getTollData, deathsGapNote } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { getCandidatesData } from "@/lib/candidates-data";
 import { computeMetrics } from "@/lib/metrics";
@@ -269,7 +269,7 @@ export default async function OutbreakPage({ params }: Props) {
         <main id="main" className="pt-6">
           {/* ── Headline figures ─────────────────────────────────── */}
           <div className="rise" style={{ "--i": 1 } as React.CSSProperties}>
-            <StatStrip timeline={timeline} summary={outbreak.summary} />
+            <StatStrip timeline={timeline} summary={outbreak.summary} deathsNote={deathsGapNote(toll.snapshots)} />
           </div>
 
           {/* ── Figures ──────────────────────────────────────────── */}

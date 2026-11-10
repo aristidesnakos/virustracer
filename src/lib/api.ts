@@ -182,11 +182,15 @@ export function toCsv(header: readonly string[], rows: readonly (readonly unknow
 export function tollToCsv(snapshots: readonly TollSnapshot[]): string {
   const base = ["date", "confirmed", "suspected", "deaths", "recovered", "revid", "revision_timestamp", "source_url"];
   const withScreening = snapshots.some((s) => s.screening !== undefined);
+  // US measles: the CDC data file's deaths beside the page's (see TollSnapshot.deathsDataFile).
+  const withDataFile = snapshots.some((s) => s.deathsDataFile !== undefined);
   return toCsv(
-    withScreening ? [...base, "screening", "mmwr_year", "mmwr_week"] : base,
+    [...base, ...(withScreening ? ["screening", "mmwr_year", "mmwr_week"] : []), ...(withDataFile ? ["deaths_data_file"] : [])],
     snapshots.map((s) => {
       const row: unknown[] = [s.date, s.confirmed, s.suspected, s.deaths, s.recovered, s.revid, s.revisionTimestamp, s.sourceUrl];
-      return withScreening ? [...row, s.screening, s.mmwrYear, s.mmwrWeek] : row;
+      if (withScreening) row.push(s.screening, s.mmwrYear, s.mmwrWeek);
+      if (withDataFile) row.push(s.deathsDataFile);
+      return row;
     }),
   );
 }
