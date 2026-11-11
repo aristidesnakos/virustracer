@@ -1,6 +1,34 @@
 {
-  "lastExtracted": "2026-11-10T20:34:01.678Z",
+  "lastExtracted": "2026-11-11T08:45:49.390Z",
   "candidates": [
+    {
+      "id": "news-a76e529a623da896",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "Data as of 7 November 2026, weekly external situation report includes Kenya.",
+      "sourceTitle": "BUNDIBUGYO VIRUS DISEASE OUTBREAK Democratic Republic of the Congo | Kenya | Nigeria - Weekly External Situation Report 25, Data as of 7 November 2026 - WHO | Regional Office for Africa",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxNd2xIOWJ5ZU5DRlVJT0loemFsX0tDYkpqUWVIeF84YlVvMjA1RE1kZTduQVFNOEU4THdDR0VWQUZUMG5vU0d3b0N0UnJERlJSM2VOSTFiZE1OVWdCLXJWZzhMcEpsR1ZMWkIwVnRMcEpDLUNPZ2NPcENVMl9uWVpCTVB6ZDNLb09PRWlaWWdubTNrd3RqTWhoVlNEcnROZUJ4ZEF3OXU2V2xIT1VrR3pLYk95bHZtYmV2V3F2Nmg0ZWUzbi1HNk91anJtczZpYTBsR0ZXclZOSEN1OXFpc1BIUVU5ZG5qSTA?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-07",
+      "extractedAt": "2026-11-11T08:45:46.671Z"
+    },
+    {
+      "id": "news-a9d9402117bb9e8d",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 9,
+      "deathsMentioned": null,
+      "context": "Kenya has recorded 18 consecutive days without a new Ebola case, with six of the nine confirmed patients having recovered.",
+      "sourceTitle": "𝐊𝐞𝐧𝐲𝐚 𝐫𝐞𝐜𝐨𝐫𝐝𝐬 𝟏𝟖 𝐝𝐚𝐲𝐬 𝐰𝐢𝐭𝐡𝐨𝐮𝐭 𝐄𝐛𝐨𝐥𝐚 𝐜𝐚𝐬𝐞 Kenya has recorded 18 consecutive days without a new Ebola case, with six of the nine confirmed patients having recovered, even as the country moves closer to containing the outbreak. The Ministr - Facebook",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AVBVV95cUxPTXhKSkZ5cGF6TVo3LU9Wd2pFXzd5aDVUaU1CQUJua29KRlN2bWFhdzhMUkN0T1J4QmY3cTdWTUlBeHJXU2UxWXRIdEwtd2drTmdkMFhsZXZsM2xVNkZ3UUREZkgyeWl2MUlFVWZiYjZVeWJYLUktWnU5bHMzZlUzVFY1a25tX3pIdm5ONHVia0hINkFKQVdsdkEwOWpDRzdFbGloUFRnX2NhSjU5aWRiaWFxQ093dzJ2LUZFRmJyQ3F6bXAtU044eS0tcldxX2E4aXBKbFhHQTAyZlhmWThRQjVLYmthVjMwMVdVaVpKSVZXRGpYQWo2eE55V3pPZzlkM1VvYkQycTFrYXBIVFVxYmpRdGNWc2RaSjZTbUQxRzlsdjY2emZyeF9GM2ZSY0VRYlh3YWNZamx6REhyTFpWcnpDOTN5M2JGQ096Y0FxTGNoNldtOE1CZHZsOXR4QnVVb3BGMEtyRzFqR3lwaWplN01TbjN0azdqVFAwQnB2YTQ4eEdRTWdlcXltSmluZkRUWFdZdTYtSnBvNU1tLWJiNUx3VzFtclB4dWlLRnotZHFmUU1Uc2J3enZZcWloTURXZ3ZKV2FnVDJ2LUVYUkZlc1R3R0tBakowa203RUJvQ3kwZFo2a19MNkZNWmNVaVFMcl9HX1FzQW1adEhENlR0ZzBaS3pFMGwxUDhFd055bEliYkYxMEFRdnU2WklweTJqZlJ4amU2aWp4Q1VVR2pVcTloQWVDajM1YXhKeG9SalFwQldmV0V6WGpJZy1tNUN6dkU3WTNMUkc2Z0lwanlVYnRqMER6ck9feGZ0WVp6bnJ3b3Z6SWg2WnRuSXBscUFtSVVJazkwbW9NTWRfZjN2MGlyZVRuUzZfZGhtSHhCMHBXWVo3RXo5alllUl8xanljQU9jV0xwYjgzeThUdEw3YldxZDdBVTgwaThyamZYeHg?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-07",
+      "extractedAt": "2026-11-11T08:45:47.048Z"
+    },
     {
       "id": "news-11a703f8544b1d23",
       "country": "United Kingdom",
@@ -442,6 +470,21 @@
     "news-b34d22c65058a8c2",
     "news-1d352b6e46b67486",
     "news-f084217285bb673a",
-    "news-0efddb5561f20962"
+    "news-0efddb5561f20962",
+    "news-a1668fe58be37a90",
+    "news-385dbd9cddba6908",
+    "news-2b82d9208b4d3c7b",
+    "news-463ef0714fbc2a1e",
+    "news-02329668b4566067",
+    "news-ec62df68f1f068e7",
+    "news-78ed1edc4ecaa448",
+    "news-bc9b5a8920db7ddf",
+    "news-ecba463c155da06a",
+    "news-d2392f59ffa93434",
+    "news-44913ccb122bf2a6",
+    "news-a76e529a623da896",
+    "news-a9d9402117bb9e8d",
+    "news-6959f8118e643930",
+    "who-e234de25dcb9196d"
   ]
 }

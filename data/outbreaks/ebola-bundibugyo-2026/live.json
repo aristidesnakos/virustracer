@@ -1,10 +1,6 @@
 {
-  "lastFetched": "2026-11-10T20:34:00.919Z",
+  "lastFetched": "2026-11-11T08:45:43.395Z",
   "processedIds": [
-    "news-667ec1d7935d8ab4",
-    "news-565c7dae0578b78b",
-    "news-3a90ae4474d940c8",
-    "news-0a91e0ef6842e5ce",
     "news-2f3797119621a28d",
     "news-80088297ce2cf4d8",
     "news-f1eff5cc8d99500e",
@@ -976,9 +972,147 @@
     "news-1d352b6e46b67486",
     "news-c13670668db1f9cc",
     "news-f084217285bb673a",
-    "news-0efddb5561f20962"
+    "news-0efddb5561f20962",
+    "news-8db82e154902ee80",
+    "news-0d97a989c1008232",
+    "news-19764764288e4ce1",
+    "news-4a200f09b48b71a1",
+    "news-2b82d9208b4d3c7b",
+    "news-463ef0714fbc2a1e",
+    "news-c67b41249289336a",
+    "news-ebf33da2dcfd953d",
+    "news-35654e378674dc45",
+    "news-acd9295a7122e57c",
+    "who-6b5034987d885dd6",
+    "who-a1668fe58be37a90",
+    "who-9657b4f7c35b7e27",
+    "who-7e4f5dd28878f52d",
+    "who-35dbeaf51ccf93fe",
+    "news-a1668fe58be37a90",
+    "news-385dbd9cddba6908",
+    "news-02329668b4566067",
+    "news-ec62df68f1f068e7",
+    "news-78ed1edc4ecaa448",
+    "news-bc9b5a8920db7ddf",
+    "news-ecba463c155da06a",
+    "news-d2392f59ffa93434",
+    "news-44913ccb122bf2a6",
+    "news-a76e529a623da896",
+    "news-a9d9402117bb9e8d",
+    "news-6959f8118e643930",
+    "who-e234de25dcb9196d"
   ],
   "recentItems": [
+    {
+      "id": "news-02329668b4566067",
+      "title": "Bundibugyo Ebola outbreak spreads to five countries as cases surpass 10,900 and vaccine trials begin - Medical Daily",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJaMlhfWWNmRnJsbG9qenZwZVpSMm1ZSk1iMzZzc29wVUpMTGxKMDR3MXUxTDVoS1JRQmlnbC1udC1BMTlTRDJUTnh3QTBQY3ROSHVTeVNtTUhrS2MydmViZUhrQmo4bzlyMnM1czRqWW1CRG9QcWVwQlFCSHM3dzJlQ3dOTm5TYjBQdzdIbkx2dw?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Bundibugyo Ebola outbreak has spread to five countries, cases surpass 10,900, and vaccine trials have begun, Medical Daily reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-2b82d9208b4d3c7b",
+      "title": "Congo's Ebola outbreak passes 11,000 cases with 5,387 dead - Daily Pioneer",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPVzJJd0dpbmhSTDBtS2JERkZrQVlJYmZBdWJzTGdTWGxVc1FBWkVLWDFiVmREMlhyNUF0ZTZVaUY3Zm56SVpCRk11YmFITUdRQ1lYMW1rU3pSMzlrOUQ3OUxtZ3Vzb0wxRVNWazk4ZUh2UGluMUtiRkk4R0VMM0tFLVI3V01WRkVXRVIyOVQ4SdIBnAFBVV95cUxQVjVKZkJxNDIxMlRWTDZIN1BYcDVPemQ1UmhTM0x6YkFFUWdUWmUzNFQzX2lpS3BXTGNXdlJwVmFPU3NZME9nbzdIdmxXTG01aWctcEh0RXhXOU9DWHNxc3lad3B4QzA2bjdrYU9DazBHN25QMldoSWtjTk5IVmJPa0xpMGZrd1pNa21jbG9YTnluR3BtN3lRNElmMXY?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Ebola death toll",
+      "summary": "Congo's Ebola outbreak has surpassed 11,000 cases, with 5,387 deaths, Daily Pioneer reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-385dbd9cddba6908",
+      "title": "Congo's Ebola cases surpass 11,000, government data show - Dubai Eye 103.8",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNVFYdWp4N29La0NmQk4yTENnZkRtZGdiQlp1ZElvNk9NMjlrUDBGU2RONDVxQjluTExGSy1jV0dPeHUxOXotZFlWWUJ2UHkzeFA5enk2eWxhMEk1Y3JlYWpRUUNUSVA5d0czcUVSRWJ2bmNBanY4eHQ4YkRXVDJQZjAwWGxRVGFYVEZ0MEpQVHBTMGNkLTJjcm42NXRZaENmb3lRQw?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Ebola death toll",
+      "summary": "Congo's Ebola cases have surpassed 11,000, according to government data, Dubai Eye 103.8 reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-463ef0714fbc2a1e",
+      "title": "Ebola cases in DR Congo pass 11,000 as deaths reach 5,387 – government data - 3News",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTFBjOWdKdldNa180b0Z1Z1dJQVBMVzVIRFF3VnlqX285TUxNR3BnUzhDUmRRS0tWY3VUNFNUcU5wODVFaWRaS0hXUXpjTmxuMm83cnpjMkRiMzZZcERjN19LVHY5QnNtM0cyRVE?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola cases in DR Congo have exceeded 11,000, with deaths reaching 5,387, according to government data, 3News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-78ed1edc4ecaa448",
+      "title": "Ebola Outbreak In Congo Tops 11,000 Cases, New Data Shows - HuffPost",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84N1loVDJ3ZTdOWTgxY25tb1Rhb2Q0d19yazVaR2hVd1R0OW40TDNoSVJxSnVMTnZxSmszX3hkZ3JwbEc1dDcyUWtuclppdUJTX2RNeGx1c1lBekxCSU5oS2dMeDI0dHlBR0N1T0gtQldzYVJXVTd5Q9IBfkFVX3lxTE9VajBMaldxRWRvdi1pQXlrMVlMSTdyVzFrdzFITVBPRk0ta3BVWFMyN2lpZlVrOUxXYWJIWEpVTVpYaWc4MllLTnFUV2hJZUxSdmV4blpyZmFHQ2ZoUV8xN0hVRVpLQWo5OXc2NnFJQ0xDSU1lc3h1dEFHWmw4Zw?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Ebola outbreak in Congo has exceeded 11,000 cases according to new data, HuffPost reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-a1668fe58be37a90",
+      "title": "Ebola cases in DR Congo pass 11,000, with 5,387 deaths - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOHFneWtwQkdxVkhPdnVreTRPcEIwRG5aVDVfMDZuenQtZlZOREQ5NVNLSS1iNVRRbnlwd3FveXdRdzV5cUc1YUs1eHdRVEFKZFp2dlExeW5zeXl3cDlQcExZTWJUeElDSnlOcExUVlo5SEZGZjhWamMzeTZNVGdCR3paOUVaN0xJaEJGVjNBTTVZRlhLS3g2SNIBngFBVV95cUxPZjlOOGhLR2FhdFdMYk9oNWJEN0V3Q2NaMGJKcXJ4SGZRTHA5bWg3UEl3R2pVbFZIc04tSjFxX3otdFFDX2pySzhvN0NCWTJQZWxtTXhwVDU5RnZkd2hVNVUxT2NycksyNXNOMEMzWW8wNExESGJ4TURySHN5cEswMVBlNzhjZGpTLXhKVWppUS05Q3VhT1NsYTlBZjZjdw?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola cases in DR Congo exceed 11,000, with 5,387 deaths reported. Al Jazeera reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-bc9b5a8920db7ddf",
+      "title": "Congo's Ebola infections surpass 11,000 as deadly outbreak continues to spread - United News of Bangladesh",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOUzVHbFdhbUdkeEFzN3VydWV6enVWTEpMN3BpaHBJcGxpalR1cW9XZ1FqVjlPT1MyZE8zYTRCRm9kNjh5Y0R6Sll6U0VWY2NMTDZYY2Q5WGRnX0dZYmpPc2dMcHNBMWVQX0RfZHNyVi1XRjlvWkE5c0h3bHptOVBpZHNGY1VTcEZxWE5lY1hmbmE2VjlGdnFmRUxWV3g0OENOMmQxWmlfMHJrWGJJbFdqM1puelRRRHVf?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Congo's Ebola infections have surpassed 11,000 as the deadly outbreak continues to spread, United News of Bangladesh reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d2392f59ffa93434",
+      "title": "Congo Ebola cases pass 11,000 as deaths reach 5,387 - https://streamlinefeed.co.ke/",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPbV9hY05sdjlaQS0yWE56N0NOYzZEMmdXdUFNTWVlRE5WVC1Uakc2a0N3NXFnQnhTNG5leXlvck4zZC05WEZWZ0l4TEJ5MWpCdjVJZUFwdy1PWDFpUVNOUXBSa19IX3oxaUNmZXB0aEV6MkdiWG5SbEVxdjdKT3I5Nkg3QjZYa2RfMWRj?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Congo Ebola cases exceed 11,000 and deaths reach 5,387. https://streamlinefeed.co.ke/ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ec62df68f1f068e7",
+      "title": "Congo's Ebola outbreak tops 11,000 cases as disease keeps spreading - WKMG",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNbzl5enMxelJtZGlJUVA5YU9HdEY2cUFINGYyczZuaVM0ZFV0ME1Pc1pxSXRqcEhRa2RNdmNsSzRqTWxLWlVtcjlNeFlTdk1MR0IzcTFPZFVUdENQQlZaQ2J2OVhsN1puRlFEU0Q3Qng2ODVteHhCejYtTUdQaHRDQzNsdFhfUl9MaHNRTnVITENCU1RJSGlfaHV0bGVtVXhCVWhMbjZ2Z3N6N0FhNEdzU3VPUHcxaURH?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Congo's Ebola outbreak has exceeded 11,000 cases as the disease continues to spread. WKMG reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ecba463c155da06a",
+      "title": "Three Ebola Clinics Torched, Hundreds of Patients Scattered: DRC Outbreak Hits 10,990 as the Response Collapses on Every Front - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxPQnpnQksyMmlHV3VyT0lIOEpHaVBTSXlPM0tqNUcxNHAxb2U1N2VZUHNGdk4wNk5oSTg1NXV6MVhOdncwQXJaNVJsLUZMaGc1LURzLVY4NFBLeFEzLTM4R1NCSHVuUnY5bmI5dUdCM1Bvb0NPRnFIdUZQaFdJaTVhVmhGSlZDeTY3VHlzNE9KR1Z1MWM1MnBYcURCMDA5Z0Y0UVlSQ253NnFKbk81VUdja29ja3pLdWdYbG8zTDAxVm16eHRvNzVWT0hPZUxYeHc2S2JaTHRORERTZWM?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Three Ebola clinics were burned and hundreds of patients dispersed as the DRC outbreak response collapsed, Tech Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-e234de25dcb9196d",
+      "title": "Ebola tops 11,000 cases in Congo’s deadliest outbreak - AP News",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQX2xZQ19zQXZleUxGQlZ5WWRFcFJUSGI2ZVJ0MnJPU2RfZ0l6REFwbWFWVm5RdFQxYnRKd2Zsb0FmNDlhYWdQSlV2ZFhiNmx6RzdsZUZLVWJ5cFdBb0xIVWEydTlRSmg1cUthejlNQ2JzQUYwQk9EcVFodXdtMURQOHZmVHM2RW8?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — WHO DON",
+      "summary": "Ebola cases surpassed 11,000 in Congo's deadliest outbreak, AP News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-0efddb5561f20962",
       "title": "Ghana mandates Ebola airport screening and 21-day tracking as Bundibugyo outbreak nears 10,000 cases - https://streamlinefeed.co.ke/",
@@ -986,6 +1120,16 @@
       "date": "2026-11-10",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Ghana mandated Ebola airport screening and 21-day tracking as the Bundibugyo outbreak nears 10,000 cases.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-44913ccb122bf2a6",
+      "title": "Democratic Republic of the Congo, Kenya, Nigeria, Uganda | Ebola Bundibugyo virus disease outbreak and EU response - DG ECHO Daily Map | 10/11/2026 - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxPWmVRLXVBV0dLZy13NlZJa2tiQ2h1Tms3Q1ZiSjE0ZTlXNFZ6dlNLNG55VEdmT2dCNTNQYTBHX1pYMTJSM2t3MzNhamM1aDBpUWVMeTN4dTBnRlJMLXhyRG5JMTBWNFVRNWNOWk5iRFY1Uk5Xcl9RdGl6aGpEa0NhcFZCRGh1M1ZkTGM2aXRxcGd3d0dSYUctZTVjYzhhNk56Ni1xWHZ3SEFYU1dFV3JKSEt5RENQZFd5aVJYSVdJcHRCc2ZvWG1uNUlTX3VEX3hsWW5IVTV1UHFyMU5lVUd4WElCNEZvSUhiT0VBdXRocDlkMWV1aWF0NWU4U3pDcWlwejJ5aGVacVZyZGF1Zmc?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Ebola Bundibugyo virus disease outbreak in DRC, Kenya, Nigeria, and Uganda is shown with the EU response on a DG ECHO Daily Map. ReliefWeb reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1056,126 +1200,6 @@
       "date": "2026-11-09",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Health officials are working to contain a growing Ebola outbreak in Africa. The Red & Black reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-daf6e5b737043083",
-      "title": "MSF calls for broader access to ERVEBO vaccine during Ebola outbreak - Doctors Without Borders",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOMWJWRDFnTWt3MGllNG1vOWVoUGpxYS0xMnRpTU42VFQwNFk1T2p6WnE5Vkx2eVhIWHJoWGlDU2ZWbVlGd1dFWFpjcVdOZi1kQlhzMFNpMGUwREJVRHA0YmlTaTM4YU9xc25peVN1c3Zqek5KdV9OS2dDV2M4Q2k5V2tFRDJfNnNUNFV1Tnh3eUV0bmFhX09RUkRpOHRxVHZicU80Q1JJMHZJUQ?oc=5",
-      "date": "2026-11-09",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "MSF calls for broader access to the ERVEBO vaccine during the Ebola outbreak. Doctors Without Borders reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-ea4bb4917d7e4ea1",
-      "title": "Ebola Update: DRC Outbreak Tops 10,000 Cases as Kenya, Nigeria Report Spread - Contagion Live",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxPSDBfR01sRzZUU215ZzJaeDkwaFBPWTNrS0V3RE02aW9WQWJyeFBTODFEdFE1aHVLT0pvdlk4MUlyUFVoUzVrTjdxWndYOUtVcm9YZ3Ezb0FNN012aUVNVmlCRTFNOG13NkdUZ2xZTEdBLV92cFBjZjRLeTJ1ZFlyeElPSGE5XzFHSnRyVFFFcVluVmRsUkJTb0V2NWpia3pTQ3ZybzV0VzJ6WFJo?oc=5",
-      "date": "2026-11-09",
-      "source": "Google News — WHO DON",
-      "summary": "The Ebola outbreak in the DRC has surpassed 10,000 cases, with new spread reported in Kenya and Nigeria. Contagion Live reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-250eb8855f2aa687",
-      "title": "Ebola: Why is there still no vaccine? - DW.com",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE51VExRNXZuTUNOVUNDMHl0dFNGSXdYZXhnRndfSXpieXBlRWRHZTR0YVB0V0szbzdmQ09sU0dkcnFqUWxDOHlEaUYxZExCR3I3X21zbHpGX3o4c2xCaDlDbF9WLUYwWHpEX2syWHVOWEZWQ0VJd1I40gF3QVVfeXFMUE40aDJ2cm91cUV1WVRpOXZaMEhud0duUUVRQlJqQVJmZGFJQzFkYTNtanQ4VXdmUkxMbWJIajd6RFpELU5uMldiZWlYTk43QS1pRmZvbV90VVNieWFPSDVTb2FDZWVwNFk0M2NwdTNkS2gzXzJ0bXM?oc=5",
-      "date": "2026-11-08",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "There is still no vaccine for the Ebola virus. DW.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2522d38926894d07",
-      "title": "GMA urges gov't to intensify Ebola preparedness after detection of Bundibugyo strain in Nigeria - MyJoyOnline",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQTGxka0RuZW1vQkFBbE5zS09UTXF1ak96VEZIZklsMFM3S3B6ai1lSkRfbXNxSmhSVVhZMlFQV3Jzbzc3c1VObS16Yk1ZU0tOSW5hY1I3Sm1Gblk3WXVHNTFiWno2TUY3WEVBWnJSWUo5djgzZWJvcWRjNW9yWVhWRXlYRmc1Y1VMblV6bjZ3M3d3WGZDUFhoUm5RQ3dNdEVrcmdva1FxVFlPYWQyQklLZk1JWk1oVk9MZU92NERYT0w?oc=5",
-      "date": "2026-11-08",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "GMA urged the government to intensify Ebola preparedness after the Bundibugyo strain was detected in Nigeria. MyJoyOnline reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-4fa3d25194e3a80b",
-      "title": "DRC tests new Ebola vaccines amid deadly Bundibugyo outbreak - The Kenyan Diaspora Media",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPdmdkSEZpa01ZTFdLbUNnY1ppb0lzSW4xbTdsSTZPVFRuWnRNaXFBelBnU1MxYW5XUGRFQVU2RDlVTS1SZmx4Y29aTU9STHAxNUhGNHc2NFVJUEpRbTRyb0NIeVFhS1N0SnRBRTVwbUs5NE95akl0R1FwbVVJLUZieXcxQmx3WklUVERHTHJsbGJDNzJSenNhNnZHMk5aZ0MyNVBRb3p3?oc=5",
-      "date": "2026-11-08",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The DRC is testing new Ebola vaccines during a deadly Bundibugyo outbreak. The Kenyan Diaspora Media reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1d352b6e46b67486",
-      "title": "Congo-Kinshasa: Ebola - Why Is There Still No Vaccine? - allAfrica.com",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE5VTF9jRWc1dEtNY1hSSHlIcmNjMEh0RXhseUV0a2lRbkJlUkl5ZlpXbTlQSDd2ZThQcHhHTHlXTVVERGRXSjZpTkxjcy1sNThrQlJEUDBqUVY3VFE?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The lack of a vaccine for Ebola in Congo-Kinshasa remains unexplained, allAfrica.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2ebf6b9ed9c9301f",
-      "title": "Ebola outbreak in DR Congo becomes largest in country’s history – WHO - Premium Times Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxNdkJaU2FqYnBvZkhsWHliSHRGd2drckFHc1l0NzBZbkhqWmdNVHZ3M2h5d0JtdzNWY2JsbGlqTUl0eS1yQ0hJekFlb2t3eGNLZ2lkdjgzczF5UFZud3FLeDFxZjlfNkRYUVA1cDVWLXRmbGVzRG1uYjZ5QURaWlY4UXBmNlNOdTF4OVJOYVlpY1hpYkdBVW9KdTM2UG5mUV90c25rQ0gzQmFPcG9EYVdjWHhyRG94X1VhZXRzTTNLZURiUQ?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Ebola outbreak in DR Congo has become the largest in the country's history, according to the WHO. Premium Times Nigeria reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3f5f107b9b0191f8",
-      "title": "Kenya wins praise over its Ebola response strategy - The Star, Kenya",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNNWlrWmhXU09VOEJBQk1pcTZsZjBMMEtTVXZ0b1lvUUJyaHdyaGtRSjQzVWpiT0JleDJwUHBTUHNpYjl1Z2JYTkFoNmNIbDVsV1RQZVVTMU1WY21kdGZ1MzVaMHQ1VUctQzZiN2ZPTTVRTTN2bkNWTHFwdTRERmlXU3lURjJXUzNlNmZnOTZUV1o5TUVSZVNmNA?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Kenya wins praise over its Ebola response strategy. The Star, Kenya reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-45d93a3beed87e80",
-      "title": "Ebola disease caused by Bundibugyo virus, Democratic Republic of the Congo, Kenya and Nigeria - World Health Organization (WHO)",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5lN1QxTk02RzdObUw5dHZoZ0plaVY0Yi1sRU93MGl1d1E5MWh5TENmVzlGbVVLRHR2MU5OVjktajRaelkxOXFKMEFpSGNvN3ZIcGlUSTI0eFdpc0dWdENIcjd5MlFJNGV6WWY3aDdVN1NYZlRIOEE4ODJn?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "A multi-country outbreak of Ebola disease caused by the Bundibugyo virus occurred. World Health Organization (WHO) reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5a809fe1dd4af128",
-      "title": "Center for Disease Control Announces State of Alert: No Ebola Cases in Libya, Warnings Issued for Travelers as Outbreak Spreads - libyaupdate.com",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNM2NWSHZxc2l1dTNFZkszR1dvRUVJUl9XUjlfQjZ5b0FIeFEtcEJlM1hoQ0h3ak5oNFhHTzQ3V1ZXWXlBeXVJeGU3OUJxcVBVTkZxTUlxSzlfdHJaMm1KTUUzVVZwOGhWdHY2X1Vab0xVcXdKbllSeWpWeFNfOFozOFpZV194WVlNZ2NrR014MXYtTk5tb25NYW9XSVpSalBMTEFEVUM0Q3BXQXJ5eDJncU5jOUFRS1dRZzRpMEtva1JGY3ljX2tKRXBvWTJLRm9QZ1duLTFpUDZrTER4R2FXc3hfZ0U?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The U.S. Center for Disease Control announced a state of alert, warning travelers as an Ebola outbreak spreads, with no cases in Libya. libyaupdate.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5ae54f47ed0cba50",
-      "title": "Militant Attack on Ebola Clinic in Congo Claims 44 Lives, Forces Evacuations - The Chenab Times",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPLV9xYW5xT2kyRGhNbHpjY0h6VVNjN1lTdkJmeDA1MnA0eGxXV3hia0gzSkFRRHUxcXZEZHEzcjJST3FNU2dXRWxZMHRfanB6OVIxNktLd0Joa3dSSGJpb2ZINzFudUZuWjJvckRnUUNINEQ3VnNzMjgyLXM1Y0hncE50Uks2SWwxOHZkWjM2dzY5SXJNQXBjekJjYm1TaUcyZERSemJSUUJMbXRoay1RQ3QtSU8?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Ebola death toll",
-      "summary": "A militant attack on an Ebola clinic in Congo killed 44 people and forced evacuations. The Chenab Times reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a8b7d02d21c6eb7a",
-      "title": "Ebola outbreak in DR Congo becomes largest in country's history - Head Topics",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPYWMxMnZmTm1WczBnRGNyZlJTbTQzeXlfUk5nQWVvdEoxYm9YaDlNNXBEbmF1MjFJR1lIUzAyb0QtWS1yNTBXcHA4blhpOFpZS3Nva1FhOE9HcThGVnUxMlVnYUtaY2E1Ui1GSDEzdVNjMzV0WU55UUhBNkhtN2taaUpVLWNlVzgyN2dSbjJfa3ZselJoWDMtWWdfaw?oc=5",
-      "date": "2026-11-07",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola outbreak in DR Congo becomes largest in the country's history. Head Topics reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
