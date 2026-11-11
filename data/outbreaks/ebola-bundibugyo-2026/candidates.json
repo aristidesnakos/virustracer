@@ -1,6 +1,20 @@
 {
-  "lastExtracted": "2026-11-11T08:45:49.390Z",
+  "lastExtracted": "2026-11-11T21:21:21.335Z",
   "candidates": [
+    {
+      "id": "cidrap-edfd83013e48bf96",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": 9,
+      "deathsMentioned": 2,
+      "context": "Kenya has logged 9 cases, including 2 deaths, since October.",
+      "sourceTitle": "Kenya begins Ebola-free countdown as DR Congo tops 11,000 cases",
+      "sourceUrl": "https://www.cidrap.umn.edu/ebola/kenya-begins-ebola-free-countdown-dr-congo-tops-11000-cases",
+      "sourceName": "CIDRAP",
+      "date": "2026-11-11",
+      "extractedAt": "2026-11-11T21:21:16.523Z"
+    },
     {
       "id": "news-a76e529a623da896",
       "country": "Kenya",
@@ -485,6 +499,31 @@
     "news-a76e529a623da896",
     "news-a9d9402117bb9e8d",
     "news-6959f8118e643930",
-    "who-e234de25dcb9196d"
+    "who-e234de25dcb9196d",
+    "cidrap-edfd83013e48bf96",
+    "news-8d4bbcf005aa8c09",
+    "news-30a37a27976cbd0e",
+    "news-b14a17b727c9a33b",
+    "news-995c0f67fe558312",
+    "news-45e943236d9615ef",
+    "news-8286928bbcb00194",
+    "news-9e7c49f07d07fba1",
+    "news-0730bccb316dcaf8",
+    "news-667ec1d7935d8ab4",
+    "news-0a91e0ef6842e5ce",
+    "news-3a90ae4474d940c8",
+    "news-641ba051af9f3aed",
+    "news-90549368855b2c30",
+    "news-b1f91091466c4d11",
+    "news-9a25cb64a6f0067b",
+    "news-b6e51ffb04b0a1e1",
+    "news-237dfd240c50e963",
+    "news-26c3c9c38c1b44ce",
+    "news-f2ba2ed0ea4ad6fb",
+    "news-0650ca16670e2425",
+    "news-a4afb95c89d48525",
+    "who-dacbb12057012287",
+    "who-586d484cc8b903b6",
+    "who-830c9d355f351648"
   ]
 }

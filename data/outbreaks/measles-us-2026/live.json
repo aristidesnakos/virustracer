@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-11T08:45:51.896Z",
+  "lastFetched": "2026-11-11T21:21:26.090Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -372,9 +372,71 @@
     "news-cf9eddeaa984bf76",
     "news-ea6db92be844431b",
     "news-784531e420ca1b40",
-    "news-8545d5be15592c2f"
+    "news-8545d5be15592c2f",
+    "news-b40f91f9eeb340f1",
+    "news-2448fe0ff1d4b9d9",
+    "news-86bd26a761803671",
+    "news-347338c935d60c6f",
+    "news-e667c27a7e982a6d",
+    "news-1c37cda9a22a800c",
+    "news-9a3391eb9501e377",
+    "news-21c51d2d8b1f0355",
+    "news-989f43eb8de73de8",
+    "news-09a7500d05299972",
+    "news-a201e112405c4c63",
+    "news-797ed255c35d40ee"
   ],
   "recentItems": [
+    {
+      "id": "news-09a7500d05299972",
+      "title": "US measles outbreaks in 2026 estimated to cost nearly $83 million — CNBC - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNcTJzRFB3anJOOXZuczRtdFUxTzhPRERla0wyVGxFbnpUQ3pxMHd4b0NVMjg0NXRva2VXdmNxbkhJNGtmY2dLd1U3OUhnaVgzamV2RjhaZkZIRF81Yzgxa3BiRXkyRkhYYkt6TjB6TXhTdkhYZXVyUnRLeWxuVTJMOS1zUlRiWGxGSm1KbmtxZlV3NjJfd1RnbA?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A 2026 measles outbreak in the U.S. cost nearly 83 million dollars, CNBC reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-1c37cda9a22a800c",
+      "title": "CDC Maintains Measles Response Amid US Outbreak - Voice of Healthcare",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQdVh1emhYNjVvMW1ieE85eUh6RENHam96STdSTFBnaDhOMzMwLUpZZUtfOFUxMVdhVUNwZG1YSE5HMkZ5MGU2eDBGb3MyU0w4dHdvNUNpSGtqbDNmWUttanZhRzNxN1d1bmlNU1ZqazJwYWJoY2pWOURwUF9Sa2JLSE5FN0VSbHk0UDJvLXo0N0czQ3pBRXg1MDZpLVlrVGkxNl9TZzZqRlFoenlEdjRQcEhJaVJHSmpwcTJwalZkSHUwNDh5?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — US measles cases",
+      "summary": "The CDC continues its response to the measles outbreak in the United States. Voice of Healthcare reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-21c51d2d8b1f0355",
+      "title": "Pennsylvania Measles Outbreak Crosses 1,500 Cases - RTTNews",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxQMkhuRFBBVnZESnV0bHhTR1NYXy0tRlhld3czV3BMTGxwVmtnVHBKczRSSVk5V0tKZ3lNWmU2a0R5Z0FlTEhKMjVqWXZSdTF6SGdlU25QR3F3dkpwYVFZdWdrdmwwaVVCV2J4ZXJaaUZSU1dVc1FmaTJPY3dDSTBxVS1qbkljclI4UGdpRVNR?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "A measles outbreak in Pennsylvania has exceeded 1,500 cases. RTTNews reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-2448fe0ff1d4b9d9",
+      "title": "CDC chief: No measles response change if elimination status lost - The Hill",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOWxQNjBLRkh0VHN4VWczVG1WTW14NUYzeXV0SW1pRnJrdnVkVHVuTWppeW9iVmhieVJQLWZvdlR0aTd1QTRac01GNVJkN0NaMXVXR1VIY3pYNHZXbTJ1d3YtZlZBUXF0cmJxRHJ0aVJ6TWlkbXV4dHRiVGF5UDZvM01ZY3VldlZsX2lNd2wzMNIBlAFBVV95cUxQdWxkTy13bEZxaGRxc0lmZW9CWU83bWpNeFBqVENIc2dVbnZKeEo1TTJJRzRSRXlyVzVwbk0tb3N4UzAyM1htdThtZ21RN21PVDVqQ1FhTlM2djdZTzZLRzdPUzBNNkZnelhQcGc0R0tLR2QzSWlMa2F2VHg4ai1EdjZFOTBJSi1IR1gteHFGa0lwZ1FI?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — US measles cases",
+      "summary": "CDC chief stated no change in measles response would occur if elimination status is lost. The Hill reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-347338c935d60c6f",
+      "title": "As measles cases continue to surge, RFK Jr. blocks CDC scientists from issuing emergency alert warning unvaccinated pregnant women of significantly increased risks - Genetic Literacy Project",
+      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQTzhlM3R5WllnSlJoRU1LcV9qRl85RlpsZUhpdmFfVzB1Vk9YTDFnZkFOcGVLVGgzZlBNWFR3UjRWRDFlbDltMDc5US1HdWthekxIbDNySUVhV24ta2EtSS1kUUlEWExaSktoaHRacFA0Y0VaeGk2RlJCcEZ3ZXdJdWpfVTc1NGxBcnZNXzZSVkpXQnJhTEl2VTdWQTRMT2xLbTNhYWhWQXlPSDNUSjNOUkcwX3F1TUZEdml5NmJDRGQwOUcxbXB3QjFSRU1XSi01b1BEakowQjBmT096TUdSN01tbW41WFVlcWRSWWpPUWNRZ2dLTEFYV0EzVDVZeTllNzB1REU2eUdrTHp5NUhwUGZmWjNxbzdSRThQMFc5cWZ0R2l3Z1NqRjl2cm92TFY4SFE?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — US measles cases",
+      "summary": "RFK Jr. blocked CDC scientists from issuing an emergency alert warning unvaccinated pregnant women of increased risks as measles surged. Genetic Literacy Project reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-61df32104f63c318",
       "title": "CDC Chief Says Measles Response Will Stay the Same if Status Falls - JournalArta",
@@ -386,12 +448,52 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-86bd26a761803671",
+      "title": "CDC director says federal measles response would remain unchanged if the U.S. loses elimination status - Medical Daily",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNU4yR0RYZEdVWDI3akxOVHRPRkhWeEwzNTBKcXNSckMyNjJyRGN2c0FWY2owenRBbjZQR0ZFOXRsU2pWMTQxb2JSbk11ODJyRGY4cDdoS0RIWGxTbTdjcG9sZllaQl9DclNsQ3ljdnJYQW1iM0RGQ28yNGpMVTI1dUdqaEwxdkhLZTVlUlFWWjM?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — US measles cases",
+      "summary": "The CDC director stated the federal measles response would stay the same if the U.S. loses elimination status. Medical Daily reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-989f43eb8de73de8",
+      "title": "U.S. on the verge of losing measles-free status after 26 years as cases surge - TheGrio",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1FWVFQSW1OeHZqVkNnaFNGRDNOam85YVp3ZjJrekNDZUZOcjc5d0NYcmk2UnY2Sjg0amg2R1B4RDJZNVBka0JudjVIbEtZNFlYRGZFMzdvV1BoN3d4aks5NzBJN1hhWm50TnhFRUI0ZXhfYXVWdFlJcnpqYmI1WFU?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States is on the verge of losing its measles-free status after 26 years due to a case surge. TheGrio reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-a201e112405c4c63",
+      "title": "U.S. Could Lose Measles-Free Status Soon as Cases Exceed 5,400 - JournalArta",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNeXlEZ21hb3dQNHNDRlQxOFBHdFM3WUhpZlFndWhHczEyLWtCLXZGajVfWFlaRGxZS29LS0xDLW1EZndVOGp6QnhEQ2sydmpENVJLQk5QTmFEb1ZORUF3VFZCX2drZHl6TWprTjA0ZHVnX29reWtEblQ1Sks5UjR1ZzJMMA?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States may lose its measles-free status as cases surpass 5,400. JournalArta reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-cf9eddeaa984bf76",
       "title": "Pennsylvania Passes 1,500 Measles Cases With 163 in… - inkl",
       "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxPcVZxa1RpTEtJR09aQnJ2TFN3VW9NdjFrOHJWUDZ1VjhZTms2Y0lveGJNYWRwQVowbU9hakZyMmhrRmJ3VVd2R3BERGo3ZWRxekFkaUp6eHBtUVZpZlRNelA0dF9xRW85ZEc0d3ExSnNuemkzWlYzb2lCZkdTRjY0ZkxwVXkzUHoxMkxnRTN5WTkzZFY5OWtZSjJiNWhVUzFPU1dXWnZnZWc0VmtWQ2ZkQlZsbmxJdHE0a0h3LXpObmw0U0k0LWptdUZVX0NhX3JaaVFn?oc=5",
       "date": "2026-11-11",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania passed 1,500 measles cases with 163 in one area, inkl reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-e667c27a7e982a6d",
+      "title": "FILE PHOTO: US CDC reports five-fold increase in weekly measles cases as Texas outbreak grows - The Lufkin Daily News",
+      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxONmdYUHcwZlh0V0x2R0gtTktWSXFwb0E5RmdyblphQWd4ZllNa3FZZXBiQnIxLVp3VzJpQjRSQmZvZ1ZkNmRuQ3hHRlBqWEZUUlZJVDdmZU5EUHJHWE9fVmpqWFJTd1ZGUFRVcXEza2REaU9IVlYtYllKUGFMb3B2OUZ4aXlPZmdHV1NfQ0tUaGdMNDBoZmNTckstRVRLOE5ULUlTUWVtUnU1SXk1TFFWOHd0blcwQXdWR2ItSnFUa3FhVkowenB4dk5RSXBpYWpwcXEzb1AwNkNjNE9ER1k0UzFXQlNvYWxGV3Q2WC1FZ3BnN1gza0NRb1hfbVZlVjdVQXl0VWVUMzNJTzVMQzlEY2tn?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — US measles cases",
+      "summary": "The U.S. CDC reported a five-fold increase in weekly measles cases as the Texas outbreak grows. The Lufkin Daily News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -456,6 +558,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-797ed255c35d40ee",
+      "title": "Upstate New York child dies in state’s first measles death in 30 years - Jefferson City News Tribune",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMzh0eVFmWVM2S0FTOW15VVhiVXlkUHJSRUtiTExFZFNwVnM5N1dGRzJubXZyWnkzbkJrVmVOTnNKZFFhODJsampEb09hNm9nVk81MHdZd2pnMnVQMFExTFluVUdYbl9VbTZraC1uMllFMlpjd2tWX0FiVG9yRnJGZE1BaHJJcFRaRTZqdEo0WWlBZHc?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A child in Upstate New York died in the state's first measles death in 30 years. Jefferson City News Tribune reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-7b53c573f8b9edde",
       "title": "Bucks County, Pennsylvania, Confirms Measles Case Amid Statewide Outbreak - JournalArta",
       "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeUNCdGZuYkc2SXlDaWtjWF9NYUVUVUc5OEt2Nkx0N2FkNzc1QzFSVlAzcjRna1ZneDYxVVFxS01GQUxmbEVpTUlQNi0yS3dYR2dPbGxQRWZxNmI1OWxSa0VxU2FsUzFUeXVfRW5SMktnd0JWcGhTRHdoRHhPZWNncVM1RS1MME9uMFdXYlR6N2wxMzg?oc=5",
@@ -472,106 +584,6 @@
       "date": "2026-11-10",
       "source": "Google News — US measles cases",
       "summary": "Measles cases are rising among pregnant women in Pennsylvania, with information provided on associated risks. Breaking News, Latest News and Videos reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8545d5be15592c2f",
-      "title": "CDC chief says agency will not change measles response if US loses elimination status - CNN",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE9RVk4tNmM1Q2tybk1wWEhORHJBeHl1VXozTWoweE04NFRWbTBtWWxPTHJsaUNMZXI3V2RvTTNwM0ZzZ2ZkUUY2Q2ZvVVRvRHJPVnh0TnNnU3FqV194N01QNWlLS2lTNjZLTURTUWtQb1REUVF0WXRweldR?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The CDC chief said the agency will not change its measles response if the US loses elimination status, CNN reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a16594656a90affe",
-      "title": "CDC Director Says Response to Measles Outbreaks Will Not Change Even If US Loses Measles Elimination Status - SSBCrack",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxNUWRtTElES0xQblNzeFo0N0p6UE1HVzdxMFdWdXFVeWhLa1VaUXZTNWZZT2JFS3NXNlo0UnlJTzZBVUJuSUVIU3BmUjdwRHAxZDdiU19XaXpoSU01SFJ1ZUlQV0l2Zmt1bkpfZnpwTHdrUlAyTjYwWkEtVW9TNHphSFFKRENuWl9QTlpzd21IVkJYdnJ0VldCUzlGcERZellfaHdjSWxmeFY5djZUVXBlNGxYRGhuZUVqYU5lLUhlRmVvSXBtOW1EN2ZPR2hsdUU?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC director stated the response to measles outbreaks will not change even if the U.S. loses elimination status. SSBCrack reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-ad412a350f6e0b19",
-      "title": "US measles cases reach 5,182 as PAHO weighs elimination status - NationofChange",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPU21zRU5ISXV3S3g2M1hXck1yQ3czRUlqUDVmVEdZeUpWSHlyTXJvQ2MxelJqMmhXRUN6Slp3Z1BMX29ZdGd2d1JxMzlIeHRwRGVfbWNpYmw5Q3pLN0lpZ1kzYW9ITXVCN0F5V19HelNvV3Q4TEQzZkh0eEIzbjFuS2NZcGtoeGdITHFPRkw4WEJ0V2pXb2U4eHV2NEtoUjcwVDZwZlRrdw?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases reached 5,182 as the Pan American Health Organization considered elimination status. NationofChange reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b04cf1264e82b690",
-      "title": "US CDC will not change measles response even if it loses measles-free status, director says - The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQbjhtVG83dVFRTV8yanN3ZmhROU1WN2F1eHFCRTcyM2Y0SmVxLXZ0SEVpSnlXMGFQNEJ5eEtBQkNuUnpEZVZhSDZ5dEUtMWZpMjUxQThWYUV4N3lVc0lHYmNrRy1UV0Fjc3hPQ3VvWW5WeUZSNVFPV256MDdodlFaME9PN2pud3A2SmFkS182UXZIdVhpZnVyUw?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — US measles cases",
-      "summary": "The US CDC director said the agency will not change its measles response even if it loses its measles-free status. The Jerusalem Post reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c1fc1d400e334351",
-      "title": "US measles outbreak exceeds 5,000 cases as Pennsylvania infections rise - ITIJ",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxORjhjNnl3aW93dEM2VzBBa3ZSeXYxM3ZNWVNuajE4ak1PTU44WUd4ZmRuS3NBTk1nQVJ1RWVRaU92V1BHSXh6c2JrV3dQZ0ZkX0tCYUl2QktsLUtFZjJYMnlQSkZlcnRGZ3RZWW1nazV3eWJ3VWJoRWtfb1JxSDVPUHc0am5QUUFaRDJEMmgtQWhRbmNiZXRQMGpzWjlmOFMtWEE?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The US measles outbreak surpassed 5,000 cases as infections increased in Pennsylvania, ITIJ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d08fed62b0144aea",
-      "title": "Measles Case Confirmed in Bucks County Amid Outbreak in Pennsylvania - SSBCrack",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNWU1TbWUtT3lISi14SmVZNEo0eXYwb3lXM3E5LWFxSTJ4NUJHLVhmR2F0emw1czNjM004Tm9XQ3hRemZQcFgxLTI5Qi1wQXl1dHF6bTV5Z0FNWHRRV3VlOHRiV1N3b24zeGYwN0JCVm5JQW9MQ1hMYUxUWGZta0JaeWd1Q2Q2TVJzeGZEdGttYmlMbmdIS3VTaXpZNA?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "A measles case was confirmed in Bucks County during a Pennsylvania outbreak. SSBCrack reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d1985eebb6b677af",
-      "title": "Could the U.S. lose its measles elimination status? - Deseret News",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPdlNvd2VCQ0RVT2FRU2FGNEJFZ29TRmJLN1J2WjV0MXJ0MERlMFY4SFBYSTZqZE1CdUttNEJxNXRWV1FMMDM0Qmp2WVRHVmM5OTQzRjE5RUY2TlRDZnZNMUNGN0pCLXNjUWpvRk5yQXdKZ2dRNXUxUk5ZTFlienc0THJudkYwbjdmdUxxLWxrVzZtTGI2YU9LSHNvbjVLc1YxSG10Tm9Rbkg0SjFwLWhyTzdOX2VwMUctcDdqYzZVbEFBZw?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The U.S. may lose its measles elimination status, Deseret News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d2c6fa3fa43e5ecf",
-      "title": "U.S. Reports More Than 5,000 Measles Cases in 2026 as Health Officials Warn of Further Spread - NBC Palm Springs",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxNUXlqNFdNTldZTGxGbUtHRFBsQWVxblQyUTd6ZmRhSHpoMlNodEk3UnduYjBqbXBEY1V6VTUtZFl0MmJ6NnhpQTZ0QnptOGtROWpzNXBiYzZPZ1lkNTFWUzBCQ2dBbjRyX1R2Z3ZvZHEyNVN5aWhFVEhDb1NIUUs4a04tUXhob1ZrV0JVaWZLMlVJQzFlYzNjVnYtcHBVUFowZFdtbzAzTVRsdzlKc0tXNGdCWXhJUVJEV3RHZmU3Vkd4MlNwOUJFNkdSS2twT2t1UnNTMkkzcmhSbEpIM3NEZlpZVWo?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The United States reported over 5,000 measles cases in 2026, with health officials warning of further spread. NBC Palm Springs reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d307b18415c4b5da",
-      "title": "Pennsylvania Measles Cases Reach 1,505 as Clinics Continue - https://streamlinefeed.co.ke/",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPN09PSGU0eW9nTFBwZ0NNbGNVaG1LT3gyb0FLTUxYN1lUcVF2cC1FYTYxWWNoVVFTTEVrTXdfaEpQeE9odi1LdWRSYktfMGRQdlZ6REFvLVNLcmdRWWxCc2dmUy1ZcXdRa2VHbk5NdjBtdDhzbDVZd3h0WXRjRlJYY2tUQm9hWnBoZG1MTENTVDhpOFNMWEhOUUVKZmNwQTQ0UXlUOHpBUERPU2IydHVsekZXdU02Vi1peURMcFln?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania measles cases reached 1,505 as clinics continued. https://streamlinefeed.co.ke/ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-ea6db92be844431b",
-      "title": "Doctors say Pennsylvania’s measles resurgence was preventable - WGAL",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNSFJwTlRib2g0N0h1VVdRRlFUQTVhVWFvNmZ6Wk1oejV4bEFrdTF4VmR6NVp2RlFmMm54bDZRS2o2SkVBTElMVzBkYmhMeWtSN3dZVk9XNVFsQTRfX1lfcUNLZWxfRjc4Njg5b19RdndrOUx2NXZBTmxUazExZUFHVTdzWGFKZjdpRnZPdzkwS1FncXdyQXVyRHdrdjhiTjQ?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Doctors said Pennsylvania's measles resurgence was preventable, WGAL reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

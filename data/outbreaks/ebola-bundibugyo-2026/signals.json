@@ -1,16 +1,16 @@
 {
-  "lastUpdated": "2026-11-11T08:45:47.050Z",
+  "lastUpdated": "2026-11-11T21:21:16.524Z",
   "signals": [
     {
       "iso": "KE",
       "country": "Kenya",
       "flag": "🇰🇪",
       "firstSeen": "2026-10-06",
-      "lastSeen": "2026-11-07",
+      "lastSeen": "2026-11-11",
       "firstSourceTitle": "Kenya confirms first Ebola case as man dies in Nairobi after DRC return - Al Jazeera",
       "firstSourceUrl": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWU4tT0ladzQycEs3clVzTmFvWG9NOGZ2cHNvU01WVzB5Y3o0aG9kMkxvZVVjdUlaLWRxbHVZLWNXRGk2ZXUyQS1sVndJQlQ4MkNUdnlLTmoySGJLbW5IeXZwSVNHZ1N4QmVLTGRLRGRqLXV0QWpESHlWOURnSFdWdzRwNUFHWTZ3czBjQk05NU9pMVlTQlhUMENCeFhjTGNwNjVHY29XaFdLTnpMNHFhUlJJWWZWV0HSAbwBQVVfeXFMT1pvZDRrM2RuOFRPV3kzOWc5YnpZN3JvRURsZ3kwemZkTDZYeXNUOHJLbWlhYU4yZVkyRTdXWnkyNHZrX1F6RjNLY21tMVhyU0YxaWR2Y3lxejVVUzNGdU51eEhmamktT3VJdXY0cnFUaTRtX0V2Vl9GcHhVc3NCUnB1WWdzSHpWYmxUd01lTHhtaVE4UzRmXzJ3d3NYejdXX1pWT2lhVnBYQ3pPRnNMa0lxaE1lejBLOTB2Wmg?oc=5",
       "firstSourceName": "Google News — Ebola death toll",
-      "mentions": 29,
+      "mentions": 30,
       "maxCasesMentioned": 9,
       "maxDeathsMentioned": 2,
       "seenIds": [
@@ -42,7 +42,8 @@
         "ecdc-8299411697ccc7a1",
         "who-a8539ec0c459be30",
         "news-a76e529a623da896",
-        "news-a9d9402117bb9e8d"
+        "news-a9d9402117bb9e8d",
+        "cidrap-edfd83013e48bf96"
       ]
     },
     {
