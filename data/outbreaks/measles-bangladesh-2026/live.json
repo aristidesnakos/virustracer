@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-12T08:49:14.325Z",
+  "lastFetched": "2026-11-12T20:38:53.164Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -457,9 +457,43 @@
     "news-f0980cbd7131ddb4",
     "news-93778bea05f5e095",
     "news-51168f893e18f110",
-    "news-3837c84150c1692a"
+    "news-3837c84150c1692a",
+    "news-3b980a89111d8ff3",
+    "news-2c4eac02c726ef79",
+    "news-e12c89071551866b",
+    "news-1de8370262b287cb"
   ],
   "recentItems": [
+    {
+      "id": "news-1de8370262b287cb",
+      "title": "Bangladesh reports four more suspected measles deaths as toll reaches 1,299 - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqc2VvY0FyLU4xVlVZUWp3TW55MDZkTVZRSGhWWDRRS2lMX1VkVUprNDJ4VWhMN1ViTm8waFNHUmhxb3hzMU0xRTVJRkVZWE0?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh reports four more suspected measles deaths, bringing the toll to 1,299, bdnews24.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-3b980a89111d8ff3",
+      "title": "Measles outbreak in Bangladesh claims four more lives, death toll nears 1300 - Social News XYZ",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcm9zSXV2RXE3V3RGOVMxZWRVRmRUZlVMWWFoNEJram9jY2s2UHIxZHdWOV81azJrOVZ6dGFySGhJUFh2YmZWdVBqVGpVM2dCcTFmWUhTX0hVZjNCZ3hMa2E2cFBrN3pSbmFWVUFLNGFLM1lUdWRvN2F0WGJ1c1NFZmZieUZ5RnpNOXNaZmZXSEhBRGZPeURZXy0zSWxucGVQYnZYeW5mQ3BlRUJLa1lkSkNieFPSAbQBQVVfeXFMUHJvc0l1dkVxN1d0RjlTMWVkVUZkVGZVTFlhaDRCa2pvY2NrNlByMWR3VjlfNWsyazlWenRhckhoSVBYdmJmVnVQalRqVTNnQnExZllIU19IVWYzQmd4TGthNnBQazd6Um5hVlVBSzRhSzNZVHVkbzdhdFhidXNTRWZmYnlGeUZ6TTlzWmZmV0hIQURmT3lEWV8tM0lsbnBlUGJ2WHluZkNwZUVCS2tZZEpDYnhT?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "A measles outbreak in Bangladesh has claimed four more lives, bringing the death toll to nearly 1300. Social News XYZ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-e12c89071551866b",
+      "title": "Bangladesh records 4 more child deaths with measles symptoms - TheReport.live",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVlk2dlA1anBtOE9CXzU4WnZEZHZ1ZGZSX2VYVUQzSWF5SFd5RkJWX21wRElvTHhHSVFzU3lXRDFJd0tPYzhGTG5fZHpsNW82RVJJdWcwQU53VGlCczRGVVR5THNzakZoblkzUkpINGpYUHhUS3A5N1VJS3I3VXFyNkdUVE5lZ29XSFBVYXZBa0RuSWdPZnZBY2VxUEQ?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh recorded four more child deaths with measles symptoms. TheReport.live reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-00a749f6a7a47c03",
       "title": "Measles outbreak: Death toll reaches 1,295 as six die in 24 hours - Dhaka Tribune",
@@ -627,36 +661,6 @@
       "date": "2026-11-06",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh records four more deaths with measles symptoms, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-31f0c1ad2c7012e0",
-      "title": "Measles outbreak: Death toll reaches 1,272 as three die in 24 hours - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQQWlmTlZiUllZSkoxazBCeUQ4ZVdndzJNRk1WVFJWZE14bFZlZVJfLTJLNnAwQ0tJVmhDOXlqWEJZenNOVzBYLVh0Q0VNbktUSGJPbGM5M2ZnNFd6SFdxU29PZWZlb29KSlFZUDRJb0JVM20wX2ctdDNaZDhMUjZNelBDX0wwSGZrMUNWU1NDSHlmN1dIVFNGVGloZXRVQzDSAaQBQVVfeXFMUDUwTzI5TjlBdEhWa2V4VjBueWhNV2hxUlBvcFY3Z2xyZ1RNRl9IeldmTERJaDFYVGtEWXQyb0dxRkJYY1J1WWVGd25SR0VuWEZ2MkNUSzh6RWRjRHQ5bXpIRjJieUpWeGliUGhIWkJuMlRCRnJkMjU1dVhQNFZqcDlkV1Q5d05QencyTFcyZHppRmk1WDhDbEgzdnJheWpBb3B1ZGY?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Measles outbreak death toll reached 1,272 as three more people died in 24 hours, Dhaka Tribune reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-6a7c3dcada19c874",
-      "title": "Bangladesh investigates measles vaccine delays - The Peninsula Qatar",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxOWENFRnUydTZfalNXd0NnZHc0NHBhZDNQdXJWZFZkeFpOa0tsaDJzcV9Pa0kwWDJRTzM0Mm9GMnlNeW9YNVlYUk1FQjl5SU9OOWZ1ME83ai1nSnFNLTFqbnN3WnppdzVWU2FpTkF2Z20yRlZLY2YyRHVCZi1xcGplcWcxTHB6bnBmVm9iVi1nNXV4ZEttMU5RQThPYw?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh is investigating delays in the measles vaccine. The Peninsula Qatar reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7a42d37da60a9cc1",
-      "title": "Bangladesh to probe failures in procurement and distribution of measles vaccine under Yunus govt - The Hans India",
-      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOUjZ3OS1oLVQ1RklPSmJtbDdWY3Awb0hMb185SldjNnc3aWc2T2VZVnhYN1BmZzdMXzdpdjNWY2NSeldDc2l6OWVaQlQ3RU9hOWpfZ0VHMDZoZl90aTVBUS1DOGlWR0ItT0NtVTlmOWlrdDF6eHQwRUNtcU1PSkZMTUdGRV82Nm9JQnFaSUV1OWo1ejRXZ3VucmxybG55RHlBSW9QY0RLSklfQkdmdnk4cnhnbUIzUF9Tc0cyNzdmVm5HeGljc1RYXzVxU2JaSjh2emlFVktQLTZPZjNIV1V5ZmxpaUs1VEE?oc=5",
-      "date": "2026-11-05",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh will investigate failures in measles vaccine procurement and distribution under the Yunus government, The Hans India reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
