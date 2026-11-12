@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-11T21:21:21.335Z",
+  "lastExtracted": "2026-11-12T08:49:12.281Z",
   "candidates": [
     {
       "id": "cidrap-edfd83013e48bf96",
@@ -14,6 +14,20 @@
       "sourceName": "CIDRAP",
       "date": "2026-11-11",
       "extractedAt": "2026-11-11T21:21:16.523Z"
+    },
+    {
+      "id": "who-7d07429f3056180c",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "Kenya discharges last Ebola patient, awaits disease-free status.",
+      "sourceTitle": "Kenya discharges last Ebola patient, awaits disease-free status - Al Jazeera",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNNFhxeDJRZ29xZWpJTURtVEJOWFVEYUVNRnEtNUxET1RBc29tRG1BRVN3MWRQSnBINEpsaGdRNVRraUhnWlB5YXI3S1hUSnpOUi02MUhOTFcwQVFqN05HVHpXdHNwLTQtb3dzQnBtNXlBcGpOOXZvMldvek9uRlhqQy1RMNIBiAFBVV95cUxNOGtrbEVCeVdSRlB0TmlZZ1hYWlZLcGFGUmRJc2djWXlrMFpCdnNGNGJCazdrQmRUU2NOaXNSNWI2emwtTEY2QXUwQ3RqZk1iTGhZVER3NnFycFFNd01weVRqN1dnM0JBTndVYk9vbUZoaEtGMTVtQzQyU1BOUDNtX3RPUDgxOHc5?oc=5",
+      "sourceName": "Google News — WHO DON",
+      "date": "2026-11-11",
+      "extractedAt": "2026-11-12T08:49:11.631Z"
     },
     {
       "id": "news-a76e529a623da896",
@@ -524,6 +538,23 @@
     "news-a4afb95c89d48525",
     "who-dacbb12057012287",
     "who-586d484cc8b903b6",
-    "who-830c9d355f351648"
+    "who-830c9d355f351648",
+    "news-bdf4ca9acd440165",
+    "news-89bad1dea917bbfd",
+    "news-85dd989a9e151373",
+    "news-a03832fb2e60cf09",
+    "news-0de2dd895ecb3c18",
+    "news-b17f288b3a1f20d3",
+    "news-6fea674c655a79bd",
+    "news-4df21f93011fe336",
+    "news-e56cc54e69a07b7a",
+    "news-302f88d15eb03e20",
+    "news-776485422326dcba",
+    "news-62e49e1964258bc6",
+    "who-851b9a421af4bffe",
+    "who-7d07429f3056180c",
+    "who-1a0fb5e0d6d45971",
+    "who-33740e4c0e8dc8f2",
+    "who-df9d6514121356c9"
   ]
 }

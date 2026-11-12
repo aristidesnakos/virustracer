@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-11T21:21:26.090Z",
+  "lastFetched": "2026-11-12T08:49:14.851Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -384,9 +384,40 @@
     "news-989f43eb8de73de8",
     "news-09a7500d05299972",
     "news-a201e112405c4c63",
-    "news-797ed255c35d40ee"
+    "news-797ed255c35d40ee",
+    "news-a99b6360fc327d49",
+    "news-d36e1ceff66aac96",
+    "news-8084cad9c2cdb916",
+    "news-b972fca0ad0ffd9e",
+    "news-7c020e135ada0b87",
+    "news-36b43a39be1040cf",
+    "news-ae99600cedf1ea13",
+    "news-45fcdbfff4a87522",
+    "news-1956b8df73c9b231",
+    "news-bb6230466d66b0eb",
+    "news-43420852d67165d9"
   ],
   "recentItems": [
+    {
+      "id": "news-36b43a39be1040cf",
+      "title": "Measles outbreak, including 1.5K cases in Pa., threatens U.S. elimination status - WFMZ.com",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUG9xWTMyZ19FMG0wWUZKSHVKMGxRTUNtMl9EY0ktUjNJa1o1ZFk0QnByYVcyb0trMWxlSnJDZVZNX3dnWTQ5M2hOOExNb2xUakptQlV3ZHR0LWJuSzBFNVRkYlA0V041XzlvLVpJclRuaU92SV9LWDdNTVJNb2N1Yll4VmZkOTc4bnctc3ZTNTVEN0xHbkhaNVQ1SUh6THRBeHhldVNxaVdad1BhazJvQzA1VGE1RE0zQmJzRVprNm1VQ0t5UzdaaVBMaGxDZERKSGtzdmNkbFVkUlRvMmJFaHUyaVA4bkRTaVE5aDNSa0lnWEZIeXc?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "A measles outbreak with 1,500 cases in Pennsylvania threatens the United States' elimination status. WFMZ.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-7c020e135ada0b87",
+      "title": "Inside the measles outbreak in Pennsylvania - NBC News",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPWnI1a2N5NlVYRGZlMV9yOG9sR3BfNkNtZm45cXFMRzVNNnk2QnpsUlB3M090R3gzYm4yRm5NQkRyV1BEUnY3WHFZNTlOSHFuTWR1ME5jbEVNeGZROHhYemo1X3dHZXZ3V3F0TEhtMThidC1rOWFJenBXNVFrODNwaGxSdWY0SU1aWGxXUHlrX1hxQnRwU3N4MA?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "A measles outbreak occurred in Pennsylvania, according to NBC News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-09a7500d05299972",
       "title": "US measles outbreaks in 2026 estimated to cost nearly $83 million — CNBC - UA.NEWS",
@@ -438,6 +469,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-45fcdbfff4a87522",
+      "title": "US Faces Loss of Measles-Free Status as Experts Meet for Review - U.S. News & World Report",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSEdHcjhfVC11bWJYNlFQVkJ1OEFnVVZWVURIRlpjZTE1VEIxeVdTM2ZqeE83WmFEVEZfWHlRYUdSbHZFREVCdVFYWHRYWjdCZmJwNk5YSi1zbXBwbnotZFZKbVg1TkRLSDQ1dzFFSGJiaGpiaXdMZzRubWJ6WVBEUjA2alpJQ2ZpMUJOOXNES3hfWEpJbE1HTlRnNzJzN1ZsU0haelJlNHZlSXVlQVVOMWF4eGtFU2NRVmN0cQ?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States risks losing its measles-free status as experts gather for a review, U.S. News & World Report reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-61df32104f63c318",
       "title": "CDC Chief Says Measles Response Will Stay the Same if Status Falls - JournalArta",
       "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQN0Y4d2NydlhmaEFiR0I1VFBUbGJLS0UtQ0ZpaEd5TjV5aXJObUZ3OUpwTmI3N1cxVnlyeE5NZmh2NkdWOVplbTFyYlFZLVlYOHVJOWlCNUhoMlZEVFF6Vm0tWXJPeFJTcGxiRGg1X1FFaTJrRk5JYmlUQXhYVEFTQ05ES296UUhZdTk5bA?oc=5",
@@ -474,6 +515,16 @@
       "date": "2026-11-11",
       "source": "Google News — measles outbreak United States",
       "summary": "The United States may lose its measles-free status as cases surpass 5,400. JournalArta reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ae99600cedf1ea13",
+      "title": "When Measles Came to an Amish Community, Many Suffered and One Died - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPV2ZrenUxeFRUV0ZERVM3OXN6cTlTQ0REQ3RJWFJCTk9Od3c1Y3N2dEctcWZ2U3BIblh2TC14R09jNVFsWjE4NmtBZnRjN0c1MGs3Y04zcDRWUXJkQmo2ZlNtSFpsZnNkYkFqb1JZTWFWRjBmOGliTjktWHllV1lWcXFvSHRFQVVXRTV1Zw?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — measles outbreak United States",
+      "summary": "An Amish community afflicted by measles experienced suffering and one death. The New York Times reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -518,6 +569,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-1956b8df73c9b231",
+      "title": "Wisconsin health officials advise early measles vaccination for some infants amid outbreak - WPR",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxPX2ItaHAzU2RLRDl2U3A0NDJLbVJubnBXR21vWkQ1NFNGYU5SNTdrQ2xMMWxGUXhhZ0V6bDhXb3U0TW9ZdmNQdTBZVjRvWWRteXhFdGJUS01zUmRva2Y3RWZvYmd2WFlLTW1DcmM2Mk5Kb3B6SXpibmdINHNYMDQ5RF9HM3kwYjdrbjZzQnJSWFZ4U2xWd0h5aUNR?oc=5",
+      "date": "2026-11-10",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Wisconsin health officials advise early measles vaccination for some infants amid outbreak, WPR reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-20bebc526bfe047d",
       "title": "US measles cases surpass 5,000 in 2026, reaching highest annual total in decades - cbs8.com",
       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxNQTNKX0xMb0Q0OXQ1ci1UMEJUNjFNZTJsYTZXeFZFZGxac0E3YmhtNF95bWliQ3p1bDlSWnZSWE8ycjFydzhVeEc2ZEw4M0tzZlM0cmRjOERHU3F4TzFCQlNRZ1phdmY5RHR3dG1iMlFaTlZkbDc4UFVfOVFRNWZYbF9pZ21UMkV6WWM0TG9XWGk0WlFpMjJ0cnFfTTJTYURFbmdHR1UwR1I4M0xVU1gxb0lXSnpqaUxfM2tHek4xblRJQ2s0TkZzWWhha1BMbEtickU2TDJEcXctcVJ1U1BjM24zZm9ONjR1SEIxX0x4SjFIcU41X3c?oc=5",
@@ -534,56 +595,6 @@
       "date": "2026-11-10",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania exceeded 1,500 measles cases in 2026, NewsRadio WHAM 1180 reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-75954bc9fc95b6ba",
-      "title": "America’s Measles Problem Has Reached Endemic Level - The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQbVV0WUVWekthbnc5OWE0U3FxNzRDMzJIaTZyZGZuTTJfMW1BbVZCdHNXcExlQXhUWVVDSEU4MWxKRlliUWFNTUxXZ3RncXplUnVBM2JEbHlJRVBSRkpDdVZLUDNxcjhLd3VFTkthc0ZlQm1BNFhsRTVSTkoyYkdKaHNvZDlUb1haQ2k5Yw?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Measles has reached an endemic level in the United States. The New York Times reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-784531e420ca1b40",
-      "title": "Anti-vaccine Sentiment Grows Among Amish Community in Pennsylvania as Measles Outbreaks Resurge - SSBCrack",
-      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxQdEIwR00ybnBGVUtqLVFNREhrRnU4eF8xQVZIMlYxUzFLT3FpcmtRVGRYa09pa2M3QlBieUZyZXZnZFZIQ1FqX2hBa3BPaEJRWDk5c3Ruejdxd1BtWEdDNmx4ZVctYnBMYmR6ZTAyR0xkUm1xUDcxVUZQWlVjaHpCOFJNdXc1cVh3WlZNSXJybU96TDRCMHNlNmFVa01ickpOVlBPOUhJY3J3enllWVYtQlB5a3NJcS1yRGhtMGFDYw?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Anti-vaccine sentiment grows among the Amish community in Pennsylvania as measles outbreaks resurge. SSBCrack reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-797ed255c35d40ee",
-      "title": "Upstate New York child dies in state’s first measles death in 30 years - Jefferson City News Tribune",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMzh0eVFmWVM2S0FTOW15VVhiVXlkUHJSRUtiTExFZFNwVnM5N1dGRzJubXZyWnkzbkJrVmVOTnNKZFFhODJsampEb09hNm9nVk81MHdZd2pnMnVQMFExTFluVUdYbl9VbTZraC1uMllFMlpjd2tWX0FiVG9yRnJGZE1BaHJJcFRaRTZqdEo0WWlBZHc?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — measles outbreak United States",
-      "summary": "A child in Upstate New York died in the state's first measles death in 30 years. Jefferson City News Tribune reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7b53c573f8b9edde",
-      "title": "Bucks County, Pennsylvania, Confirms Measles Case Amid Statewide Outbreak - JournalArta",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNeUNCdGZuYkc2SXlDaWtjWF9NYUVUVUc5OEt2Nkx0N2FkNzc1QzFSVlAzcjRna1ZneDYxVVFxS01GQUxmbEVpTUlQNi0yS3dYR2dPbGxQRWZxNmI1OWxSa0VxU2FsUzFUeXVfRW5SMktnd0JWcGhTRHdoRHhPZWNncVM1RS1MME9uMFdXYlR6N2wxMzg?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — US measles cases",
-      "summary": "Bucks County, Pennsylvania, confirmed a measles case amid a statewide outbreak. JournalArta reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-830d5db4a4381b86",
-      "title": "Measles cases grow among pregnant women in Pennsylvania: What to know about risks - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPS0NEQlZVejBJWGN2UUwyc09hYmNqX3NEemhXamFaRDNCUWsxMElOS19nMEd4RWJ2ZnVpaG14SVBINHVoUUFFcVpXeEYxZkx2NkI3eWd6X18tRFNENng5ZXBld3I4SmZZbzVDS0RiTUJEMU1pdHhidmU2ek8zVF9sdEJ4STQ5YmIza0hidkJNVmFiWktoMWJCV3d5ZmxLeDg?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — US measles cases",
-      "summary": "Measles cases are rising among pregnant women in Pennsylvania, with information provided on associated risks. Breaking News, Latest News and Videos reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

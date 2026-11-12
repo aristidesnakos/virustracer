@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-11T21:21:32.763Z",
+  "lastFetched": "2026-11-12T08:49:20.666Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -56,7 +56,11 @@
     "news-231026325ead71e6",
     "news-ce158e19b94dc53d",
     "news-741f915c335edd37",
-    "news-c4b53d8c25229ae5"
+    "news-c4b53d8c25229ae5",
+    "news-cc1e7489b033dfd8",
+    "news-cc19a41180bd4b39",
+    "news-234dc066bbb5d2e5",
+    "news-7b157bbc726e059e"
   ],
   "recentItems": [
     {
@@ -240,22 +244,22 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-7b157bbc726e059e",
+      "title": "Impact of Infection Control Interventions on Candida auris at a Tertiary Care Center in Bahrain: A Five-Year Experience - Cureus",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPdkx1NVNJaEE4OVE2bmxoeWIzcnQ2UV9xNWNOZGhwTWVRT1I5YzZGLWdCM3N5WUFwZVcwblBzVWtjSGRmTGhrZWtodTFGbTFvLWliZjhVWDFXWWt1aVJCWFBsZEpVR1RGYVlFSTltbzF5UUlGNDFJVFR5V1l2Sk9JMm5DQllSNm1zb3p4QThtZHJLZFdwMWZHVWM4bmluZWRiODFFNFQtUGJlN1FNWkI5c1Z5Z2E4eVB5S04zTUFYLVU5TThheTdudFhTamxlOTlVd2pXaHNWVjlNNTRXeEdsR0tFSEpHa1RleG5UeldB?oc=5",
+      "date": "2026-03-25",
+      "source": "Google News — Candida auris nursing home",
+      "summary": "Infection control interventions reduced Candida auris spread at a Bahrain tertiary care center over five years. Cureus reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-26da7ff8f05628c2",
       "title": "CDC study highlights substantial antifungal resistance in Candida auris - CIDRAP",
       "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZHEyQzJObThONUxuUDlmWFF6U0F5eURVRlpHV2dMd0ZsNFdMWE1MaHoyS1lvb2s3VWktN2tua0lOekVCNXJmOVZ3T0NCOFREUWVKXzZMN3gwQ3BlZHF1bExRX0x5VjI5M1ZldFM0aUtpbGNfLUt5cnA5ZFNsVm1BSnFMbzN3VlM5RUpDVEFDU29nWS0tSlc5R1Jub3FVMzkyWWdVRkRKenR2WFotc1E?oc=5",
       "date": "2026-02-10",
       "source": "Google News — Candida auris cases",
       "summary": "A CDC study highlighted substantial antifungal resistance in Candida auris, CIDRAP reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-75f9d244518702c4",
-      "title": "Analysis of Candida auris resistance and associated risk factors in hospitalized patients at a tertiary care hospital in China - Nature",
-      "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE9mZ2lheER2Mms0WlRCa2d0bkhwdWJyLW82UlBzdkFDdnBfX2l0bnl6U2YxV0c0dlVrVHJ0VC1SVDV4TEVfaWZPWk1XWGtQRW55Ums4TVhUaGJ5WElpZ0Q0?oc=5",
-      "date": "2025-12-29",
-      "source": "Google News — Candida auris nursing home",
-      "summary": "Analysis of Candida auris resistance and associated risk factors in hospitalized patients at a tertiary care hospital in China. Nature reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

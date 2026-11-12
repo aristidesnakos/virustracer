@@ -1,25 +1,6 @@
 {
-  "lastFetched": "2026-11-11T21:21:15.839Z",
+  "lastFetched": "2026-11-12T08:49:06.555Z",
   "processedIds": [
-    "news-e561840e020b6c8f",
-    "news-48652a53eeb6bf0e",
-    "news-cd2c04db142389f4",
-    "news-4ee7decdf9d5b23b",
-    "news-3ebbd4e72425b837",
-    "news-955859485d01ae97",
-    "news-d2afe6fdb0673439",
-    "news-24d8b4c7f7023bfd",
-    "news-194805424f085fae",
-    "news-a1f6de51009e8c41",
-    "news-95b3e5c71abfd634",
-    "news-34b68754ce10b4f5",
-    "news-0966cdf2ceb40480",
-    "news-a2db1d2771f25035",
-    "news-c04e1abf2e437227",
-    "news-dea5a999f81e291b",
-    "news-b65ff97f99f79d13",
-    "news-635c2624f07ad8b8",
-    "news-6d8bbb7305d41817",
     "news-e58af5fddda399a3",
     "news-d3a3f601d7bb0155",
     "news-1a0c85668e1067c3",
@@ -1000,9 +981,58 @@
     "news-a4afb95c89d48525",
     "who-dacbb12057012287",
     "who-586d484cc8b903b6",
-    "who-830c9d355f351648"
+    "who-830c9d355f351648",
+    "news-a03832fb2e60cf09",
+    "who-b17f288b3a1f20d3",
+    "who-e56cc54e69a07b7a",
+    "news-bdf4ca9acd440165",
+    "news-89bad1dea917bbfd",
+    "news-85dd989a9e151373",
+    "news-0de2dd895ecb3c18",
+    "news-b17f288b3a1f20d3",
+    "news-6fea674c655a79bd",
+    "news-4df21f93011fe336",
+    "news-e56cc54e69a07b7a",
+    "news-302f88d15eb03e20",
+    "news-776485422326dcba",
+    "news-62e49e1964258bc6",
+    "who-851b9a421af4bffe",
+    "who-7d07429f3056180c",
+    "who-1a0fb5e0d6d45971",
+    "who-33740e4c0e8dc8f2",
+    "who-df9d6514121356c9"
   ],
   "recentItems": [
+    {
+      "id": "news-6fea674c655a79bd",
+      "title": "Ebola outbreak exceeds 11,000 cases, causes 5,387 deaths; UAE eases travel restrictions on Ugandans - Firstpost",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxPaEZUVUVMZ25Na2djVnlhQW9rMkk3bTdBWGdfQlVqaDFpRzVVaEVPLW1yZ0NQV0ZqWWhiaGVFMjNWTTlnaXhzaVd5UXhzYUc1MV8yMThLQTRNR1I3RHh5LXlfU0JQS0lHZ0dWT2xmd3lhYkp3ck02Sl9kOFJDdTJYV09kX3R4TW9jc2VQSEptekd5dUE1WnNtSnZMREYwU081UVJTSVRmRTVLdU8yWHBLRTBjZ0xmelVTYmpwaTk4N05jc2Q4RkxaTEw4akQ0aDlVUXZGUS0yLWjSAd4BQVVfeXFMUGhqWFBOdkMzeDUtUUtaNUw1LVBSUzhSbklQVFQ3emRER3ViYm03X2QwTHhiT29HamZNenpWU3ZZVTI2U01lSGhIbE5NZFlSNTBOTmJDWVlySHA1S1RuVHFxWmd5Q2NtRHFob2RyM1l0UEIwUmUxRC1QYTNUaGRMWlp6Q29wSUxuelNwUVdMZ2VjOFhDeHh3WkFSeS1Ld0dQTnlGeC1zVWhUdVZLVHpDSXBRQWxkZFJVZDM1ZTdOdW5yXzFudFFjMTRfeUNCZzRsQVdmUkZ1bUlVcVBmVXV3?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Ebola outbreak in Uganda has surpassed 11,000 cases and caused 5,387 deaths, while the UAE eased travel restrictions on Ugandans. Firstpost reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b17f288b3a1f20d3",
+      "title": "Congo Ebola outbreak still out of control after six months, MSF says - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdGYtSlBocHpZUE9ldnZXb054T1V0c012WkVoTVNFeW81R3FBek1zVzY4NjV1dnYtM3k1d1BGcU1wcEJtbnJYcjQ1eWRpZU1UT0hfVUM0NzZOaFFmd19HZE5TUmVzWTh1M044V1NCYl9DdDBEOEpoclVtdHlOdlNaMmJPeVJhMW41Zi1OU1VYZzBiOVRxRTEtUFZleFdFdXNXQXZmdGpDT0JaaWx1Wk5OckRSU3lxXzBWdWFRdnVhRTg3X3ZkVjBucU1pOXlyOWdYVUE?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Congo Ebola outbreak remains out of control after six months, MSF says.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-bdf4ca9acd440165",
+      "title": "DR Congo’s Ebola Outbreak Surpasses 11,000 Cases and 5,387 Deaths - Udaipur Kiran",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeEdiRFA0NGotVzl3MHZ0Q1lXOTJpNlJGWFB0ZmlqSEM4V0VPaE5BLUVqb3lWSUVmemlFQWNhdTRJRi1WM09nOFFGWXNWdlQtcEYyQWQ3cjZCa3NnU2gtMnN2c2luY1Mxd0dMUXlFMFotdEpLaVNsNzVxaDJiSF9taW5PeFdYaTBFZ0dnVFdZSzdSZw?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Ebola death toll",
+      "summary": "DR Congo's Ebola outbreak has surpassed 11,000 cases and 5,387 deaths, Udaipur Kiran reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "cidrap-edfd83013e48bf96",
       "title": "Kenya begins Ebola-free countdown as DR Congo tops 11,000 cases",
@@ -1074,6 +1104,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-302f88d15eb03e20",
+      "title": "KENYA CROSSES FINGERS ON EBOLA: Last patient discharged, but regional concern continues - Travel Industry Today",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOeUdPUzJJWGhZX2NabHpwaGg4ai1OYTd5djI5aWdmajJWOU5kSmV5NVhTUzNfdThQOFgzcUpKMnpQdlFmLTU5Wmx1N1NvaGhOc251UFZTTmlOUWxONXU1aGcyd04ta3BaU2duTzk0bDNyTXJ4dVRLT2wtbGJoTmdnQW5aUTlJRUN6V2xWNV8yMzREaEpSNUcybjJhQjgyd054c1J3R19WOTBRTURSMThNU3h6bUthUzhfRnc?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya remains cautious after the last Ebola patient was discharged, as regional concern persists. Travel Industry Today reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-30a37a27976cbd0e",
       "title": "Ebola cases top 11,000 in DR Congo as death toll passes 5,000 - GBC Ghana Online",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5RdEszbm5ONlRxMHlzZEM0d09RaV9iX09lZkJyVWtNaWtVWkpMbHJ3TWxVLUR0QWRGN0dfMUZEbU5pVDFiSzNOZml5Z0MzRk9ldS1lVzluVmZGMlpZYjgwUlNoOEZwXzk2?oc=5",
@@ -1114,6 +1154,26 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-4df21f93011fe336",
+      "title": "Kenya discharges last Ebola patient, awaits outbreak-free declaration - Qazinform",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPTkoxQ0EyTWUzYkVqcUdXWVl1WlNITmJZWC0xWmowQTRrQ2FTWUM2M3UxR3A0ZHM2TERtNzFxM3NFTWxnOHFTRzFVb0dsQ3MxQ3Y5Qkh3SlIxN25NWVNCSmtFbFJkelNNanhjRmFzdm1XVDdPWll4Qk90dUl4MnNISXIydkR6cjhsVmhJYVh5VG1hLTR2a0RKOFZxWlhOLWJ5SFFMbtIBpAFBVV95cUxNVTItX3ZlcDdMQ0UwdHNoSlhtaHhNMHExNGp4UmpoNGI3T1NrT1BweFZZNzA3QW1TOUdIeHU2dk5HaDNsNUI4UFBBeFlFNWkwRGJPb1l6UjJpSlBCbFVCSkI1ejN4NUNYRF9aQUxYbHJFWnZBTTNycF84WUpxeTNUOFhGLVdPQmVFcGlibHB2N2tVa0VMVjlYMlR0RHhxdU8wOFNmeA?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya discharged its last Ebola patient and is awaiting an outbreak-free declaration. Qazinform reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-62e49e1964258bc6",
+      "title": "Congo Ebola Outbreak Surpasses 11,000 Cases And 5,300 Deaths - tippinsights",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPcmgtdG9oUDh1YVNGbl9EZXRELVJ6cEk2N2Q1LWd2dkoxdmVZM2NRTjAxdG1DYmJWYWJITEVDanVrU1lRYm03VTFxc2ZtTlU5RlQ3R2dpRzk5NFBpSnJpY0Z2ejY5R0stSFI4RE9FWGhfYnhpTmZjYnIyYi1oeU5aVjRiQXpmYlo3QVpxN3BvYw?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "An Ebola outbreak in Congo has surpassed 11,000 cases and 5,300 deaths, tippinsights reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-641ba051af9f3aed",
       "title": "War Is Blocking Ebola Response in Eastern DRC as Outbreak Surpasses 10,600 Cases - Latin Times",
       "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPclFnNnh4QW9LR1M2SU9Nd1hsWUpYNXBndEtyLWJZTDFTZUpGQ1pzT09OWmdrbVFXWE9OZkZUNFVwUktaa0pqQWhKSURFNXAzUGFMZGRKZ0tveHJLUmFWVExjTzFRVzNNLTVrU1E1elNUbmNfMWpIdmg2TUlWUTdvUkxGUzk?oc=5",
@@ -1124,82 +1184,22 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-776485422326dcba",
+      "title": "Kenya declares victory over Ebola outbreak with 100% patient recovery - The Kenyan Diaspora Media",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNM1JxeVluejJwSHM3SEp6bWs2QWJZWmlDNnZkNlNWNWdhQUVTY3FxVUIwMVNsVlY1dXdNSDBQd2YyOEVGa3FoTW91OHh2cUR5M3llcjNFX1ZBSkFTMElKVzU2M0dyOEtrM0paNVdDS0dCV2FFQ21iTzNtNFlpNFNQV3JGZkhUQjF3X00zM181WkQ1czFBdmpwelh2eU9ieUluanc3d0w0WTlFalVaZHBObg?oc=5",
+      "date": "2026-11-11",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Kenya declared victory over an Ebola outbreak after achieving 100% patient recovery. The Kenyan Diaspora Media reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-78ed1edc4ecaa448",
       "title": "Ebola Outbreak In Congo Tops 11,000 Cases, New Data Shows - HuffPost",
       "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE84N1loVDJ3ZTdOWTgxY25tb1Rhb2Q0d19yazVaR2hVd1R0OW40TDNoSVJxSnVMTnZxSmszX3hkZ3JwbEc1dDcyUWtuclppdUJTX2RNeGx1c1lBekxCSU5oS2dMeDI0dHlBR0N1T0gtQldzYVJXVTd5Q9IBfkFVX3lxTE9VajBMaldxRWRvdi1pQXlrMVlMSTdyVzFrdzFITVBPRk0ta3BVWFMyN2lpZlVrOUxXYWJIWEpVTVpYaWc4MllLTnFUV2hJZUxSdmV4blpyZmFHQ2ZoUV8xN0hVRVpLQWo5OXc2NnFJQ0xDSU1lc3h1dEFHWmw4Zw?oc=5",
       "date": "2026-11-11",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "The Ebola outbreak in Congo has exceeded 11,000 cases according to new data, HuffPost reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8286928bbcb00194",
-      "title": "DR Congo Ebola outbreak hits 11,042 cases, death toll rises to 5,387 - شبكة تواصل الإخبارية",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTE16T29FUi1GbEZuQWhLY252a3RUQkFtWG1vSmx2Y3ExS013M3RjYUV2X20tdHVOUHBNTnI3eUlkT0x0M0NNUF95TWM2WmNndEFhSnk4?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo Ebola outbreak has reached 11,042 cases, with the death toll rising to 5,387. شبكة تواصل الإخبارية reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8d4bbcf005aa8c09",
-      "title": "DR Congo Ebola Outbreak Surpasses 11,000 Cases, Death Toll Exceeds 5,300 - ColombiaOne.com",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxNb0tUcXg5NE55ZThaZldMcVJpYUFYbU5qVDVaTEUxYUlmR2l1NGZveDZmSkdCZ2tFaVJIV0VXNGtCNW9OU1d4a3lvTnVQaWxaOXZxV013OGRyYWVXTE1jX3hTVnVFNFJpU1VYUFpyME5JbFR6MUROYUt5cTVZaVdjOGNSQmthUjl2azhz?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Ebola death toll",
-      "summary": "The DR Congo Ebola outbreak has surpassed 11,000 cases with a death toll exceeding 5,300. ColombiaOne.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-90549368855b2c30",
-      "title": "Congo Ebola outbreak passes 11,000 cases, health ministry says - DNE Africa",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE52THJYOXN0TF9uT042VUR3MUxwTU5zdDV5R3NPMmk4VTVvbDRmNXZwcm9pYjhiU1dkeUMyd00tbzQ0MVVJdUNld3FhTVZWeWpRVUVBTndMZV9aajFoU1RTQzJ6eW1uYm1hcmI5T3RBVUlXUGl3SEE?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo's Ebola outbreak has surpassed 11,000 cases, according to the health ministry. DNE Africa reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-995c0f67fe558312",
-      "title": "The Ebola epidemic in the Congo has claimed more than 5,300 lives — the virus is spreading across Africa - UkrMedia News",
-      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTFAyREJzVnFrWTZuZWcwbDhTRmVDZE82NXBSYURDbFBjb202VmZHWGl6Y2I4bmJQZ1FMRmFmaEZoTktpWUplV3dDQXB5ZmF6NDhkTU1BXzJNRFNCOFF0MHFVLXNza2ZoMFBkWWFBbmRubnJrN2FDVU5lYk5n?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Ebola epidemic in the Congo has killed over 5,300 people, and the virus is spreading across Africa. UkrMedia News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-9a25cb64a6f0067b",
-      "title": "Ebola outbreak crosses 11,000 cases: Should India worry as the deadly virus spreads beyond Congo? What we - The Times of India",
-      "url": "https://news.google.com/rss/articles/CBMikgJBVV95cUxQTjdFMWVGaW5uUjN1Sll2TkJvdC1aZFJhOTNEUVpCeUx1UlR1OVh1Ml9BMThnVlBMLUhXWUFtS25rcHEzUGJ4QWljMDJvZmV0QU1uZ3VwUnF6UnBGd1YzcHhxdVpGNm4zQXhGbkJOWDlwNWlDTko3TnBSdHJrdmZNRWM3WHhHdHBVTzR4aUdFXzNJd2V1cXJTVm5KNDRjRTVlRUplVkY0TFJONVpVaF9oUllCNWVCWDJYUXpNbXFIMnkzaGk3d2FISVNrejBkS0pWMHFuMi1SaEpXaGJpWDVvUm9RU3A4eHF4am8zQjZGRl83X25iaDladzhSNXdUQjNwT0RKaVFmcy1VZVdvOGVzWVdR0gGXAkFVX3lxTE0yRUxVYkNheTVfdkJsUmVOMUlaQy03QkoxR0Y3SDF2UGh5NW9pdTVoSUpPcVQ5ZzJ6V250SWpnR0FYV2R0RnF3MUM1b2pnUkd0Z1hDU05Ddm54RGdxb2RmMFZxTDM0UWhUcU9ZbkRwWkJLR1doQjd5WVdwaXN0b3NwQk42S210WjBTNlI3ZTVPdEhScnBDOWdITTZuWDRrU3JxeTF5Zk02TGtDVk1KTGJEQ0MyYXJWclpPZllQemo2TDd5VnNkMHJZdl9jRkZRc1VUaFQ1SVZVeTVuZ1hyOFRsNFZCNDUtbjY4T2FXczljZGJGblpBX2p2TmZLMkZPVU5SZVFnT1lPSXN1aTlsMS0yb3hsZ202dw?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola outbreak crosses 11,000 cases; the virus spreads beyond Congo. The Times of India reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-9e7c49f07d07fba1",
-      "title": "DR Congo Ebola uutbreak death toll rises to 5,387, cases cross 11,000 - Daijiworld",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE13ZmMzZWlnWVNaNG9uaUJPS2w0RDBWSmUtYm1ONUJYTTB3alNocXdTSzBCZzliQlByY0VCYllyR3pFNkE2bVJtc2lvN055Q00wS0lfa1I4bkx4WW9sbzBXQkRVTFZnYm04S1E?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Ebola death toll",
-      "summary": "The death toll from the DR Congo Ebola outbreak has risen to 5,387, with cases exceeding 11,000. Daijiworld reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a1668fe58be37a90",
-      "title": "Ebola cases in DR Congo pass 11,000, with 5,387 deaths - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQOHFneWtwQkdxVkhPdnVreTRPcEIwRG5aVDVfMDZuenQtZlZOREQ5NVNLSS1iNVRRbnlwd3FveXdRdzV5cUc1YUs1eHdRVEFKZFp2dlExeW5zeXl3cDlQcExZTWJUeElDSnlOcExUVlo5SEZGZjhWamMzeTZNVGdCR3paOUVaN0xJaEJGVjNBTTVZRlhLS3g2SNIBngFBVV95cUxPZjlOOGhLR2FhdFdMYk9oNWJEN0V3Q2NaMGJKcXJ4SGZRTHA5bWg3UEl3R2pVbFZIc04tSjFxX3otdFFDX2pySzhvN0NCWTJQZWxtTXhwVDU5RnZkd2hVNVUxT2NycksyNXNOMEMzWW8wNExESGJ4TURySHN5cEswMVBlNzhjZGpTLXhKVWppUS05Q3VhT1NsYTlBZjZjdw?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases in DR Congo exceed 11,000, with 5,387 deaths reported. Al Jazeera reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
