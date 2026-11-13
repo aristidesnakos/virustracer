@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-12T20:39:00.130Z",
+  "lastRun": "2026-11-13T08:46:49.742Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -2565,9 +2565,9 @@
     "https://en.wikipedia.org/w/index.php?oldid=1378730331": {
       "archivedUrl": null,
       "archivedAt": null,
-      "status": "pending",
-      "attempts": 0,
-      "lastAttempt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-13T08:46:49.742Z",
       "title": "Wikipedia toll snapshot 2026-10-05: 8463 confirmed, 4082 deaths",
       "publishedAt": "2026-10-05T22:58:39Z",
       "source": "Wikipedia",
@@ -2631,8 +2631,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-12T20:39:00.130Z",
+      "attempts": 2,
+      "lastAttempt": "2026-11-13T08:46:49.742Z",
       "title": "Wikipedia toll snapshot 2026-10-09: 8750 confirmed, 4208 deaths",
       "publishedAt": "2026-10-09T18:13:19Z",
       "source": "Wikipedia",
@@ -2657,8 +2657,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-12T20:39:00.130Z",
+      "attempts": 2,
+      "lastAttempt": "2026-11-13T08:46:49.742Z",
       "title": "Wikipedia toll snapshot 2026-10-11: 8936 confirmed, 4318 deaths",
       "publishedAt": "2026-10-11T22:02:54Z",
       "source": "Wikipedia",
@@ -2706,11 +2706,11 @@
       "resolvedUrl": null
     },
     "https://en.wikipedia.org/w/index.php?oldid=1380426696": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 2,
-      "lastAttempt": "2026-11-12T20:39:00.130Z",
+      "archivedUrl": "https://web.archive.org/web/20261112204032/https://en.wikipedia.org/w/index.php?oldid=1380426696",
+      "archivedAt": "2026-11-12T20:40:32Z",
+      "status": "archived",
+      "attempts": 3,
+      "lastAttempt": "2026-11-13T08:46:49.742Z",
       "title": "Wikipedia toll snapshot 2026-10-15: 9167 confirmed, 4413 deaths",
       "publishedAt": "2026-10-15T17:25:58Z",
       "source": "Wikipedia",
@@ -3268,8 +3268,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-12T20:39:00.130Z",
+      "attempts": 2,
+      "lastAttempt": "2026-11-13T08:46:49.742Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-11-12: 462 confirmed, 55 deaths",
       "publishedAt": "2026-11-12",
       "source": "EODY weekly West Nile virus report",
@@ -5773,6 +5773,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hWXZDdGFsdzl5SUR1MU4zWFdleWU4cUFXRXgyUms1MnNnc0t2OXZMUEstdTVJQlkzLWEtSE9lWU9tTjJXRTZhUkx0MXkzdngtb0pOcTRQTlZrcU9UT21HcFdGX0xhM2tzRm5J?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola Funds Not Reaching Frontline Workers in DR Congo, Says MSF - allAfrica.com",
+      "publishedAt": "2026-11-13",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IdFFGY2NYWl9CbnlyeWxQbVB3eWp2a1hJTXJINlFFY2ExT2hlSFppaktFTFpXZXRKRF9pM0k4NkcycXhFczNqNlRoSkpVQmQyNEVFeW9OSmJTdnhTV3JTaXdFNnVET05P?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5940,6 +5953,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mcnl2dFJZUkI4dnBDdXVybWVrVUJwUkxYeFlPS2xuekRjNTc5QWJlbHNRdVJTenpTSnBLYmthYTJvUjZDVHpCWXdfWU1uVV9nVVVJeTlBak5jd0ZqV0ktSmhFRTBHUEh3NjFTYlVn?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola outbreak tops 11k cases - Herald.co.zw",
+      "publishedAt": "2026-11-12",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMibkFVX3lxTFBiUDktOGU4ZlJVWThmV21KbjdBQUNTVmFLN1JsTVVlcmlrSHhrZ0VHc0VPWlNNMGhmUkQtTlBXZ3FrQ0lNeFZRbndoWlZUYjFTaGlDVUVsU0pqT2dSNmhaQWtVVkhMZjJiMmNMS1ZR?oc=5": {
@@ -8137,6 +8163,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbHVoTEdlZ3NnQ0ZaN3RPNm8wM1RGcnptQmZ0SHV3eTQwRWMyb0tTd2E1SW1KSXNGdUxaVzAzRHdmb0UxQl8wMTNsODdyYWV5QmFSM2pYWWR2ZmM0c0Y1RktrWFFZa0Z1NXRDQ2hSdHR6TVdXM0Z5MzYtM0NuU0lLbjZSMkhHaHRNU3lOWkRZaw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Health officials continue to advocate for Measles vaccine as Pennsylvania reaches over 1.5K cases - AOL.com",
+      "publishedAt": "2026-11-12",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbzAwOWlHcWZzSXZMMDFHZERDSjdtQXUwZ0hzOXJkLVNINmFrRmFzbktRMkR3eEk5ZXpTdm1id3ZwWWNsclVyVkVIdVhsUmsxd3dDcmVBMkFwNldtSUFZZ25ySXYwNHFFZDhudGRSS0JPanoyOVJrMDR5VG9QNUg2dkpMV2llVzVodFZFU0hxcw?oc=5": {
@@ -10531,6 +10570,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaGI2Q3I3bnRLcUZ2amdrRlZSUjEtdEhaYi1BRVhZTEhqVHM4Nzc0cDRXMWQ3XzdaSmRidXpSaHIzcDh1WmRPeWJUQXg4Q0xIbWJGd2lLQW5JSFh6QXlIS1dyTkdDWGVzYnkxYWQtYVdRU0wxRGtxUHJqRnU4SUhFWUFnRVlqcEJXcG8xWHhHNXRZSFA2MHlCWURJT1l4aFJiM09YMA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC confirms 6 measles-related deaths in 2026 - Honolulu Star-Advertiser",
+      "publishedAt": "2026-11-13",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxQcTJ5Ukw2X0ZnT1VaWVdSaklNd2lEWGl2VmR6NncyeDBMYzhMamwwcHBsWURQYmxBT3hYdjN5Y1FjdUtrRjNxMHQ4R2hfd296amhSVTFta2FsUUJ2TjJLYkE3dW9aWTRVYnVNeHRHM01sY195NEY5MXZxUXZhUEU1UnVHM2NmWjN4eXpiYUMteTFaZGpjN3VtTjRTNjBQY19wN21MNNIBqgFBVV95cUxPRTUwYmhwOUcyV2R1b1RTV0Ytek95RkRyYnUwRjBRMDRkTUw2dXdyRnVNWHpJR0Nvd2hZVWl2V0pVRXJWQjNyY3FITXdBb0JMN0twbXRGYW43ZFR3SmZkb3JXQmw0VGNDVTB5eHFXeE1TMl9tVW85WUFiTk9MOGtVVEZCelphTUdhWDY0YVprem81ZG5BcG5DTVlsT1AxeFZYQ2h3RGxCeGU2dw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -11909,6 +11961,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRV9KYnhLSlkwaHZGX0RVMU1aSm9xVjlSSVpyZmhBakVzUnpWVDB1M3ozeUVRQ1RSWkt0bmVRWDMxdF9RZFk5M01JaEdCUnpSOHZlVTQtaF9wLUYyMXNITmtSaXE0aUZCSE5rbWhxNmhpUzZ5UzRBRmJ1M3dReHpDTUF5Z000R1VudGFhR3FyM0ZrVW1tYU1yMDNKX3JFVVBISmtuU2hUSUY3THRNUzFVN2lmcw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Preventable Systems Failures Driven by Supply Gaps Trigger Bangladesh Measles Resurgence - Bioengineer.org",
+      "publishedAt": "2026-11-12",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiswFBVV95cUxPTWRiUE9ib2RBTFJFTXhmcDkwOGFOSFd5RjJnMVpiUVpkZkRBdDFoYldyYmI4cXBobHBxMGVTRFh3M0g0eHY2V1lVMXY0SDB6b2l0OGFBdThyVjJpb1dfQUs0aE13UElHbDhCSWxockpySVJLWkkyckt6NUNwZTlhRFd6Q3JGeVF0eE1uelpsQ01jczF5T0RNbWo1N3gwLXVucjBTd2x5ZUNXQzJTc3NLN2FRQQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -11931,6 +11996,19 @@
       "title": "WHO reports nine linked Bundibugyo Ebola cases in Kenya; no wider spread seen - https://streamlinefeed.co.ke/",
       "publishedAt": "2026-10-26",
       "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMDEzUGg3QXZUR1k0dGhjaUotOWYzT3ltUVdnYTN1TW9sV1JobFhGZ2V5NUFwZnN6RHBVaTA4RUFBemMwb05MZktqYzU5SlpnY3VaVkFaclN2VmM3VTZnS2xzWnJJVTQyNGhISHdCUVlOTnVlWmNEV1ZHbnpjLUVhQ1dKeWQyN2xDZk9McEU0REc4NjM5MXpMZ0cxR1R2R0tFeUhBQ1ZzUjdWVXFhZjdWNk4xVQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Rebel attacks are fresh setback to Ebola fight in Congo as death toll rises - The Globe and Mail",
+      "publishedAt": "2026-11-13",
+      "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -12437,6 +12515,19 @@
       "lastAttempt": null,
       "title": "How many people have died of measles in the US this year? States report eight, the CDC counts fewer - Nacionale",
       "publishedAt": "2026-11-07",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcmJkeXhsRVVFRUhhQTJNczZqT25QUTJjTU1hdzBKS3dEWFNRTm5vVUlGWDVLbDRpaGE2SGtLbWlEWG5KaE1ldnpCaDBwZU1RMjB5a253SUVxalV2SXVET1ctM3VUcWpUMnFWMm1JRnlHVjEzSXo3SE9JWkp1U016cnVRVUR0RS1URTJrUU5wRjVkNWpsVVVWbl93ZmRPWHdDNzV0bXRPaFhhVXVUdVVMWEg1dWhTQTRjRFE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC reports six measles-related deaths in the US in 2026 — The Guardian - UA.NEWS",
+      "publishedAt": "2026-11-12",
       "source": "Google News — US measles cases",
       "kind": "news",
       "outbreak": "measles-us-2026",
@@ -13207,6 +13298,19 @@
       "source": "Google News — West Nile virus Greece",
       "kind": "news",
       "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcC03d0JyLVY3TVBNQnRFR3dyZXhWOHN6NEFwNW14WnNIMmQ2MlF5QjB3QWVxNWh4bFBGTnlHOEI4YlNadHJmUE9CMm9rSkRPUUpSYTJHdUlYWTNUeGdEeU5FeVUwamlEeGhwVXpGOTB4dHlYZzF2a1Jrelo0SjA0QUJRMVJ6SkRzYk1CSHJEOG9MQThEWk15Q1JqYU8zTmwwamFRZUlIVU83WW5YbTgyaFVIbVVObmotYjltQU5YVzZqTDZRVDJr?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Surveillance Analysis Documents Bangladesh Measles Resurgence and Severe Geographic Disparities in 2026 - Bioengineer.org",
+      "publishedAt": "2026-11-12",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMixwFBVV95cUxOZmprX3FTTWVEaVRnYVhTMXJvV3ZaUUtLWFQwX1RBYzVzRzdVeHZwNlFheDhHbENKRG1ZMDl0WFN4RHVlTGlSVFQ0QS1Ka0cxb1J6dlozOEFjOFBxRXA2NGhvNGgxR1pReUFDS3U1N0VuNWZoMTcwOEN2Y0pNcW5tWlE1U3RCV3ZmYU5keWF1RV9FZWRoUUdrSzBFWHlVVFU5YkRtUnpHbDJ4TFdwa3FYY2xfY1BmaWJCbF9ENjRLTVRHMHZOZjlz0gHbAUFVX3lxTE9IMmlOQkpBWlkxRjh2a1RPODJEMzRTY1N2b3JIWUZkckEzak80ZUkzLVFZZnRLMGFleUhGWE5OSl94dkkzUnZSZWM3MGp6OXpwdFc3YWhMQm12OTUwUEZrenREbFJpQVBRdVFFNTdSdE5ZWEpZQnp6QjVNS0dwS2x0dk5Pdk5DZ3h2UWQ2MnBpcWVCbDZteXAxV1NUN3VoTVMzbnlNWmlPLUxvTUpMRWM4dm5rYnZPRXVGR3p6elJmbklZMHI0Ylk3d0E0NTE3OUJyRi01OURMNEF0UQ?oc=5": {
