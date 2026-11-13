@@ -1,18 +1,6 @@
 {
-  "lastFetched": "2026-11-13T08:46:31.962Z",
+  "lastFetched": "2026-11-13T20:42:27.067Z",
   "processedIds": [
-    "news-124eaa3302f00260",
-    "news-83b38ef8c17967d1",
-    "news-f6e736c42758ef53",
-    "news-acc3f72450948b64",
-    "news-3cc4326a5c73d525",
-    "news-43c653418058a567",
-    "news-8dd921bfecc7879e",
-    "news-8dd90d9ecbc51d53",
-    "news-a36f0ed0fa767cb6",
-    "news-b322628412588a36",
-    "news-06aadb1caead2ffb",
-    "news-e3521c6ace6f2d1e",
     "news-17b2878b52544df4",
     "news-60ef2dd78af8aaee",
     "news-d2691265cba782da",
@@ -1000,9 +988,41 @@
     "news-3dd309d6ba73e53b",
     "news-50566ff2e2d4a7e3",
     "news-851b9a421af4bffe",
-    "news-e0a7bdb58056b020"
+    "news-e0a7bdb58056b020",
+    "news-9d56337c47d32e07",
+    "cidrap-613a365a8eff4c23",
+    "news-72e049afaca37f07",
+    "news-d2afe6fdb0673439",
+    "news-2bd667dc97365160",
+    "news-b8505800444117d4",
+    "news-8ac05f9db56b8e25",
+    "news-d9275c21458901e4",
+    "news-0b3af5d9b80f5ea7",
+    "who-ebe03437fb18e07b",
+    "who-9b9efd83ce301f8d",
+    "who-8872e9bab338c972"
   ],
   "recentItems": [
+    {
+      "id": "cidrap-613a365a8eff4c23",
+      "title": "Up to 500 Ebola cases still diagnosed a week amid escalating attacks, officials say",
+      "url": "https://www.cidrap.umn.edu/ebola/500-ebola-cases-still-diagnosed-week-amid-escalating-attacks-officials-say",
+      "date": "2026-11-13",
+      "source": "CIDRAP",
+      "summary": "Up to 500 Ebola cases are still being diagnosed a week amid escalating attacks, officials said. In positive developments, Nigeria cleared all remaining contacts, and the country’s index patient went home from the hospital.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-0b3af5d9b80f5ea7",
+      "title": "Ebola cases top 11,000 at six-month mark, challenges remain: Africa CDC - IANS LIVE",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUkNqWThROTVnQnhHVTNiRk9uTGVwRk1ScEVxY3M2aHVIdGtYbzhUMzQ1WkdzOHFRUGxvTTRXSFlfNVZ0UFpUZlpQelExbk94dFY3M3JZbWczaEhBcWFweUVSNF9nRFFHeFEtaXdQVUJ0N1JnY3JPNWpEaTBfRWFpb0xfZVhQbmpQRVpkY19Qdl8wYWFHVXJhb0JfQ3pLaTJNSFphQ0FDcw?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola cases exceeded 11,000 at the six-month mark, but challenges remain, Africa CDC stated. IANS LIVE reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-56d32a41aeb8df2a",
       "title": "Ebola Funds Not Reaching Frontline Workers in DR Congo, Says MSF - allAfrica.com",
@@ -1014,12 +1034,82 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-72e049afaca37f07",
+      "title": "Ebola cases cross 11,000, death toll rises to 5,437 in Africa - Daijiworld",
+      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CaGxBdUFfaFBpN0FJZWxuZTU1QTlzVFVTM2llZ1F6WXlpTWpmUlI3X0dhd095YnpuUzNLZHFBQlRxbU5FWHVnRkd1eEtRTm5icl9MLUY3ZjNQejZOaWppNmRfb1NveXFhQWc?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola cases exceeded 11,000 and deaths reached 5,437 in Africa. Daijiworld reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-7e85cf343b52be9a",
       "title": "Rebel attacks are fresh setback to Ebola fight in Congo as death toll rises - The Globe and Mail",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMDEzUGg3QXZUR1k0dGhjaUotOWYzT3ltUVdnYTN1TW9sV1JobFhGZ2V5NUFwZnN6RHBVaTA4RUFBemMwb05MZktqYzU5SlpnY3VaVkFaclN2VmM3VTZnS2xzWnJJVTQyNGhISHdCUVlOTnVlWmNEV1ZHbnpjLUVhQ1dKeWQyN2xDZk9McEU0REc4NjM5MXpMZ0cxR1R2R0tFeUhBQ1ZzUjdWVXFhZjdWNk4xVQ?oc=5",
       "date": "2026-11-13",
       "source": "Google News — Ebola death toll",
       "summary": "Rebel attacks are a fresh setback to the Ebola fight in Congo as the death toll rises. The Globe and Mail reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8ac05f9db56b8e25",
+      "title": "Bundibugyo Ebola in the DRC: What Puts Frontline Health Workers at Risk? - Infection Control Today",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcm5fX2FOSzdQVEhJaUZnYy1JTDVTMG5LbmRkN0lRcnctYllMM0hmWkkyQjNBMVk0ZEh0TjF3TDBLZDlFWW1wTVRVMjBYYURmeUQ1TFlpZldUbHlDZzdadWx2Mktka2I4QlZQNVlhSTlsYTRYeU9RY3JiTVVzUV95WjFWUWRUOU1kWHdEbWl4YjBkam1pLW1yd25XUk1xcWdQWFpoNFJNRQ?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Frontline health workers in the DRC face risks from the Bundibugyo Ebola outbreak, Infection Control Today reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b8505800444117d4",
+      "title": "Fighting Ebola in DR Congo requires more than medical treatment - Norwegian Refugee Council",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMzF6cTFJdnNVNHhxaEtScGpvUXlVTzhvUHZkWjlLNFpiNUJmc0E4MDRISGJUeU44dldueVVhTTBCaHhZRE9MSEhoN3BQdnZTQkZOUTN2VzNvMS1rRkRYV1FBX2RWczVRc2JmTm15eVJ6eEhycXRfQVA2dk00OWNoSV85ME16ZFBtXzNULVFiQVFzXzBBLVU3dFlKMA?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Fighting Ebola in DR Congo requires addressing broader humanitarian needs beyond medical treatment, Norwegian Refugee Council reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d9275c21458901e4",
+      "title": "Roundup: WHO warns Ebola outbreak in DR Congo remains concerning amid rising infections, violence - Xinhua",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1dGNsVGJrci1XSjRYZ2Y0cjFFV3QxNzEwTHkyeHFxZW83Wl9sOWllalZSZTM5cVJJX285dHgyVWE5U2pXa0l6bnowTmpVRXdQdkVVVVVpNGJ6MktqSzc5NUR4aklYaW1mNmphOS1QNXoxRXN3N1Q3RVdkZk8?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The WHO warns the Ebola outbreak in DR Congo remains concerning as infections and violence rise, Xinhua reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-8872e9bab338c972",
+      "title": "Ebola spreading in rural Congo, WHO warns - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRjlMWVpZLTYxaTR1Nlo5ZTQ3UDQ5VkJsU0JlZlM2SlRoMWNDMTRwR1dHNk1OdVBSLTNZTHVnMkI0WHNDNnZVRThzcWlZT3JCTG1sbHlaR1NjOTRVZmM1cFhSZXJBaEJIRGZ3Q2RFZ21OUEw5QnljRGJBZUg3eGx4dlJaWXR0TVJvMjRxT3FGOFZTTVRX?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — WHO DON",
+      "summary": "The WHO warns that Ebola is spreading in rural Congo. Yahoo reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-9b9efd83ce301f8d",
+      "title": "DR Congo Ebola outbreak: Unrest fuelled by armed groups holds back response - UN News",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBqQ01qb3lwNWhSR0VzZy1pZ2Rxa0VKNllXa0FOaGVJeWg5bnROUm9VaGZhODYwbnQ0Rl9VbXd3THBCMU5LR2tyQkVUWVl1cmFDZV8xckVvaw?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — WHO DON",
+      "summary": "An Ebola outbreak in DR Congo is hindered by unrest fueled by armed groups, UN News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-ebe03437fb18e07b",
+      "title": "Trump Gutted USAID. Congo Pays the Price in an Ebola Epidemic - Time Magazine",
+      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE91bjYxMGlRNjN0a1lfYkdyWndCSHBWc1BqOXRTeXNMZzhhZEVTWVpRLUxSNmNneEg3akJHeVo5OTl2WjBZVWNRSmt0OHI4eVFmeVFOYllxQWJmVW9PRFA5dUl4akJKdUhXenppZGlheXM2c0NBLU80eA?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — WHO DON",
+      "summary": "The Trump administration gutted USAID, contributing to the Congo Ebola epidemic, Time Magazine reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1110,96 +1200,6 @@
       "date": "2026-11-12",
       "source": "Google News — Ebola death toll",
       "summary": "The Congo Ebola outbreak has surpassed 11,000 cases and the death toll approaches 5,400. Daijiworld reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b17f288b3a1f20d3",
-      "title": "Congo Ebola outbreak still out of control after six months, MSF says - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMi0gFBVV95cUxNdGYtSlBocHpZUE9ldnZXb054T1V0c012WkVoTVNFeW81R3FBek1zVzY4NjV1dnYtM3k1d1BGcU1wcEJtbnJYcjQ1eWRpZU1UT0hfVUM0NzZOaFFmd19HZE5TUmVzWTh1M044V1NCYl9DdDBEOEpoclVtdHlOdlNaMmJPeVJhMW41Zi1OU1VYZzBiOVRxRTEtUFZleFdFdXNXQXZmdGpDT0JaaWx1Wk5OckRSU3lxXzBWdWFRdnVhRTg3X3ZkVjBucU1pOXlyOWdYVUE?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Congo Ebola outbreak remains out of control after six months, MSF says.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-bcce506c836f1667",
-      "title": "DRC's Ebola outbreak passes 11,000 cases as conflict and distrust hamper containment - Latin Times",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBrbnhiZWt4OHMtMXpOMEwtMmxjYTVDQXdOOC1kTDhpS0FzLVFRTjVtNWlTQ1NsNHFJaklzSTk2aUVhZDh0aGlhOHhSWU1YNGRqZXBKeGJ0NzRnNzUyb0lwZ1lMSGFVRUFveVBnR2k5ckJ1dS1wU0EyX3lIRnBITmc?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Ebola death toll",
-      "summary": "The DRC's Ebola outbreak passed 11,000 cases as conflict and distrust hampered containment, Latin Times reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-bdf4ca9acd440165",
-      "title": "DR Congo’s Ebola Outbreak Surpasses 11,000 Cases and 5,387 Deaths - Udaipur Kiran",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxOeEdiRFA0NGotVzl3MHZ0Q1lXOTJpNlJGWFB0ZmlqSEM4V0VPaE5BLUVqb3lWSUVmemlFQWNhdTRJRi1WM09nOFFGWXNWdlQtcEYyQWQ3cjZCa3NnU2gtMnN2c2luY1Mxd0dMUXlFMFotdEpLaVNsNzVxaDJiSF9taW5PeFdYaTBFZ0dnVFdZSzdSZw?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo's Ebola outbreak has surpassed 11,000 cases and 5,387 deaths, Udaipur Kiran reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d48c17f3cf182f0c",
-      "title": "Congo-Kinshasa: Congo Ebola Cases Surpass 11,000 As Death Toll Reaches 5,387 - allAfrica.com",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBTNG5LQzJjai1mak0xZG9qMGJuX0ZRQnBIRk9oVldTNUhXNFRBVExFYUxiWHJIVnZUQ05aMldraE1IYUVWalRiY2Q0ZWF6SHpBc19YMDZJYmJXTUk?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases in Congo exceeded 11,000 and the death toll reached 5,387, allAfrica.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d8af001afd902099",
-      "title": "Congo Ebola Outbreak 2026: Cases Cross 11,000, Death Toll Reaches 5,387 - Newstrack English",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNNFh0TkpzNHNTLUlTclZrS1k1V1g1VkgzOTE1N3pDN0UwS0k3QzJtWE5mOTl0MEpaSllUTF9EbmtYal8yWWhqTHptYmVmMFFMalowb1dSTTNCUTdETkNZSS13Y0k5VEFOOUlseXpVMHZrWXZ5NG10QnRsaTVjaFBMZF9CMW43WndwQzB2bUNweS1JQzdld3QydXRXWndBdklQU1dtT0dB0gGrAUFVX3lxTFA0TjFsSGZWQ255eWdpY2NEYW5TcWtkQUhLdjZibWRrZU1YbDhyVlVpMU9XUlFMV3dhXzRQb01KT2JrOV9wRThPbk1aZTg3d0hNVlEzWERqaWlsVkhUalFxRXZfVXYzTE12LW9hV29qR3pxV0tHbTB2VnNUOFlJZXdRcFU0S25TR2YzTjBITXN0bjVUQkhMVlF4V0pYOWoxVVdCVEFJT2duWnNzVQ?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Ebola death toll",
-      "summary": "The 2026 Congo Ebola outbreak has surpassed 11,000 cases and 5,387 deaths. Newstrack English reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-d5cf70a0b5dde570",
-      "title": "Ebola in DR Congo: Millions of dollars going missing as virus spreads, MSF warns - BBC",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9LZHZGWnNNZUdtLXNjT2FXZEFQcXNiWkxsdzN1bHhXLXNBcFg5MlI1dzBuaXhYanp1N3JtSkNKMUY0VS1QRjNTcm9ES3pqNGhjNDIxNG9DSUJLajA?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — WHO DON",
-      "summary": "Ebola is spreading in DR Congo while millions of dollars go missing, MSF warns.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "cidrap-edfd83013e48bf96",
-      "title": "Kenya begins Ebola-free countdown as DR Congo tops 11,000 cases",
-      "url": "https://www.cidrap.umn.edu/ebola/kenya-begins-ebola-free-countdown-dr-congo-tops-11000-cases",
-      "date": "2026-11-11",
-      "source": "CIDRAP",
-      "summary": "The DR Congo has topped 11,000 Ebola cases, while Kenya has logged 9 cases, including 2 deaths, since October.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-02329668b4566067",
-      "title": "Bundibugyo Ebola outbreak spreads to five countries as cases surpass 10,900 and vaccine trials begin - Medical Daily",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJaMlhfWWNmRnJsbG9qenZwZVpSMm1ZSk1iMzZzc29wVUpMTGxKMDR3MXUxTDVoS1JRQmlnbC1udC1BMTlTRDJUTnh3QTBQY3ROSHVTeVNtTUhrS2MydmViZUhrQmo4bzlyMnM1czRqWW1CRG9QcWVwQlFCSHM3dzJlQ3dOTm5TYjBQdzdIbkx2dw?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Bundibugyo Ebola outbreak has spread to five countries, cases surpass 10,900, and vaccine trials have begun, Medical Daily reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0650ca16670e2425",
-      "title": "Number of Ebola Cases in Congo Surpasses 11,000 - NTD News",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNTnRDcTJpeDlzRU1saWpqWG94VzdOV05QSEFuWVZ5V2FnUWtWOGVIeVNMbmVJS2x0cVNGSUdQeWt1X1hRQ1piVXlKWHlHMExKZ3hGd0ctdFRIaURkTUpNX09kTHJqV0hNUlhuUmNHS2t4WEZWTFRrTUV2akVkR1dXVlVRdWMwQUNuNjU0UA?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The number of Ebola cases in Congo has surpassed 11,000. NTD News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
