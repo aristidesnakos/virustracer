@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-12T20:38:54.783Z",
+  "lastFetched": "2026-11-13T08:46:38.111Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -411,9 +411,24 @@
     "news-d3285dfa337aa030",
     "news-0e3555f8d84de43f",
     "news-4c8f4b6f03339579",
-    "news-7f989c9d075088d9"
+    "news-7f989c9d075088d9",
+    "news-290015645609a327",
+    "news-0c584adc9ef64984",
+    "news-ca03daa6766a71d4",
+    "news-4e289890aff3b9a1",
+    "news-23f186f72f290f97"
   ],
   "recentItems": [
+    {
+      "id": "news-ca03daa6766a71d4",
+      "title": "CDC confirms 6 measles-related deaths in 2026 - Honolulu Star-Advertiser",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQaGI2Q3I3bnRLcUZ2amdrRlZSUjEtdEhaYi1BRVhZTEhqVHM4Nzc0cDRXMWQ3XzdaSmRidXpSaHIzcDh1WmRPeWJUQXg4Q0xIbWJGd2lLQW5JSFh6QXlIS1dyTkdDWGVzYnkxYWQtYVdRU0wxRGtxUHJqRnU4SUhFWUFnRVlqcEJXcG8xWHhHNXRZSFA2MHlCWURJT1l4aFJiM09YMA?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — US measles cases",
+      "summary": "The CDC confirmed six measles-related deaths in 2026.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "cidrap-d9e697fdd524d733",
       "title": "Measles elimination at risk—and what a Florida study truly shows about Pfizer’s COVID vaccine: The State of US Vaccine Policy",
@@ -455,6 +470,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-290015645609a327",
+      "title": "CDC reports six measles-related deaths in the US in 2026 — The Guardian - UA.NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxQcmJkeXhsRVVFRUhhQTJNczZqT25QUTJjTU1hdzBKS3dEWFNRTm5vVUlGWDVLbDRpaGE2SGtLbWlEWG5KaE1ldnpCaDBwZU1RMjB5a253SUVxalV2SXVET1ctM3VUcWpUMnFWMm1JRnlHVjEzSXo3SE9JWkp1U016cnVRVUR0RS1URTJrUU5wRjVkNWpsVVVWbl93ZmRPWHdDNzV0bXRPaFhhVXVUdVVMWEg1dWhTQTRjRFE?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — US measles cases",
+      "summary": "CDC reports six measles-related deaths in the US in 2026. UA.NEWS reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-36b43a39be1040cf",
       "title": "Measles outbreak, including 1.5K cases in Pa., threatens U.S. elimination status - WFMZ.com",
       "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxPUG9xWTMyZ19FMG0wWUZKSHVKMGxRTUNtMl9EY0ktUjNJa1o1ZFk0QnByYVcyb0trMWxlSnJDZVZNX3dnWTQ5M2hOOExNb2xUakptQlV3ZHR0LWJuSzBFNVRkYlA0V041XzlvLVpJclRuaU92SV9LWDdNTVJNb2N1Yll4VmZkOTc4bnctc3ZTNTVEN0xHbkhaNVQ1SUh6THRBeHhldVNxaVdad1BhazJvQzA1VGE1RE0zQmJzRVprNm1VQ0t5UzdaaVBMaGxDZERKSGtzdmNkbFVkUlRvMmJFaHUyaVA4bkRTaVE5aDNSa0lnWEZIeXc?oc=5",
@@ -481,6 +506,16 @@
       "date": "2026-11-12",
       "source": "Google News — US measles cases",
       "summary": "The US CDC confirmed six measles-related deaths occurred in 2026. AOL.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-4e289890aff3b9a1",
+      "title": "Health officials continue to advocate for Measles vaccine as Pennsylvania reaches over 1.5K cases - AOL.com",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbHVoTEdlZ3NnQ0ZaN3RPNm8wM1RGcnptQmZ0SHV3eTQwRWMyb0tTd2E1SW1KSXNGdUxaVzAzRHdmb0UxQl8wMTNsODdyYWV5QmFSM2pYWWR2ZmM0c0Y1RktrWFFZa0Z1NXRDQ2hSdHR6TVdXM0Z5MzYtM0NuU0lLbjZSMkhHaHRNU3lOWkRZaw?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Health officials continue to advocate for the measles vaccine as Pennsylvania surpasses 1,500 cases.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -581,36 +616,6 @@
       "date": "2026-11-11",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "A measles outbreak in Pennsylvania has exceeded 1,500 cases. RTTNews reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2448fe0ff1d4b9d9",
-      "title": "CDC chief: No measles response change if elimination status lost - The Hill",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxOOWxQNjBLRkh0VHN4VWczVG1WTW14NUYzeXV0SW1pRnJrdnVkVHVuTWppeW9iVmhieVJQLWZvdlR0aTd1QTRac01GNVJkN0NaMXVXR1VIY3pYNHZXbTJ1d3YtZlZBUXF0cmJxRHJ0aVJ6TWlkbXV4dHRiVGF5UDZvM01ZY3VldlZsX2lNd2wzMNIBlAFBVV95cUxQdWxkTy13bEZxaGRxc0lmZW9CWU83bWpNeFBqVENIc2dVbnZKeEo1TTJJRzRSRXlyVzVwbk0tb3N4UzAyM1htdThtZ21RN21PVDVqQ1FhTlM2djdZTzZLRzdPUzBNNkZnelhQcGc0R0tLR2QzSWlMa2F2VHg4ai1EdjZFOTBJSi1IR1gteHFGa0lwZ1FI?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — US measles cases",
-      "summary": "CDC chief stated no change in measles response would occur if elimination status is lost. The Hill reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-347338c935d60c6f",
-      "title": "As measles cases continue to surge, RFK Jr. blocks CDC scientists from issuing emergency alert warning unvaccinated pregnant women of significantly increased risks - Genetic Literacy Project",
-      "url": "https://news.google.com/rss/articles/CBMisgJBVV95cUxQTzhlM3R5WllnSlJoRU1LcV9qRl85RlpsZUhpdmFfVzB1Vk9YTDFnZkFOcGVLVGgzZlBNWFR3UjRWRDFlbDltMDc5US1HdWthekxIbDNySUVhV24ta2EtSS1kUUlEWExaSktoaHRacFA0Y0VaeGk2RlJCcEZ3ZXdJdWpfVTc1NGxBcnZNXzZSVkpXQnJhTEl2VTdWQTRMT2xLbTNhYWhWQXlPSDNUSjNOUkcwX3F1TUZEdml5NmJDRGQwOUcxbXB3QjFSRU1XSi01b1BEakowQjBmT096TUdSN01tbW41WFVlcWRSWWpPUWNRZ2dLTEFYV0EzVDVZeTllNzB1REU2eUdrTHp5NUhwUGZmWjNxbzdSRThQMFc5cWZ0R2l3Z1NqRjl2cm92TFY4SFE?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — US measles cases",
-      "summary": "RFK Jr. blocked CDC scientists from issuing an emergency alert warning unvaccinated pregnant women of increased risks as measles surged. Genetic Literacy Project reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-45fcdbfff4a87522",
-      "title": "US Faces Loss of Measles-Free Status as Experts Meet for Review - U.S. News & World Report",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxPSEdHcjhfVC11bWJYNlFQVkJ1OEFnVVZWVURIRlpjZTE1VEIxeVdTM2ZqeE83WmFEVEZfWHlRYUdSbHZFREVCdVFYWHRYWjdCZmJwNk5YSi1zbXBwbnotZFZKbVg1TkRLSDQ1dzFFSGJiaGpiaXdMZzRubWJ6WVBEUjA2alpJQ2ZpMUJOOXNES3hfWEpJbE1HTlRnNzJzN1ZsU0haelJlNHZlSXVlQVVOMWF4eGtFU2NRVmN0cQ?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The United States risks losing its measles-free status as experts gather for a review, U.S. News & World Report reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

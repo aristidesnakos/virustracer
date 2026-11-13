@@ -1,19 +1,6 @@
 {
-  "lastFetched": "2026-11-12T20:38:45.245Z",
+  "lastFetched": "2026-11-13T08:46:31.962Z",
   "processedIds": [
-    "news-6e4f2d23e8652a66",
-    "news-b61c2fa868188ae9",
-    "news-367cf0f67b088204",
-    "news-3c657a34250573c6",
-    "news-d38355fead7fc44e",
-    "news-9c2967529c0497f0",
-    "news-9d56337c47d32e07",
-    "news-3a93e72d6d295094",
-    "news-2bd667dc97365160",
-    "news-41f8fd65c6ebf57d",
-    "news-9b9e7aeec8f67d00",
-    "news-444c275f3ac305b9",
-    "news-50291313cdeb4345",
     "news-124eaa3302f00260",
     "news-83b38ef8c17967d1",
     "news-f6e736c42758ef53",
@@ -1000,9 +987,42 @@
     "news-1af8f546a2f3a2c0",
     "news-a41363ba774a761f",
     "news-a6608d105e4fae09",
-    "who-d5cf70a0b5dde570"
+    "who-d5cf70a0b5dde570",
+    "news-7e85cf343b52be9a",
+    "news-56d32a41aeb8df2a",
+    "news-8488850632850f37",
+    "news-4ee7decdf9d5b23b",
+    "news-d6186d5e2ef12c71",
+    "news-12197e02d59a46ac",
+    "news-d05dd3869f85fdc6",
+    "news-5a5580d5fafc7e29",
+    "news-8c7a133b2fbd8c03",
+    "news-3dd309d6ba73e53b",
+    "news-50566ff2e2d4a7e3",
+    "news-851b9a421af4bffe",
+    "news-e0a7bdb58056b020"
   ],
   "recentItems": [
+    {
+      "id": "news-56d32a41aeb8df2a",
+      "title": "Ebola Funds Not Reaching Frontline Workers in DR Congo, Says MSF - allAfrica.com",
+      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hWXZDdGFsdzl5SUR1MU4zWFdleWU4cUFXRXgyUms1MnNnc0t2OXZMUEstdTVJQlkzLWEtSE9lWU9tTjJXRTZhUkx0MXkzdngtb0pOcTRQTlZrcU9UT21HcFdGX0xhM2tzRm5J?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola funds are not reaching frontline workers in DR Congo, according to MSF, allAfrica.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-7e85cf343b52be9a",
+      "title": "Rebel attacks are fresh setback to Ebola fight in Congo as death toll rises - The Globe and Mail",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMDEzUGg3QXZUR1k0dGhjaUotOWYzT3ltUVdnYTN1TW9sV1JobFhGZ2V5NUFwZnN6RHBVaTA4RUFBemMwb05MZktqYzU5SlpnY3VaVkFaclN2VmM3VTZnS2xzWnJJVTQyNGhISHdCUVlOTnVlWmNEV1ZHbnpjLUVhQ1dKeWQyN2xDZk9McEU0REc4NjM5MXpMZ0cxR1R2R0tFeUhBQ1ZzUjdWVXFhZjdWNk4xVQ?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Ebola death toll",
+      "summary": "Rebel attacks are a fresh setback to the Ebola fight in Congo as the death toll rises. The Globe and Mail reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-1af8f546a2f3a2c0",
       "title": "MSF says Congo Ebola outbreak remains out of control - https://streamlinefeed.co.ke/",
@@ -1030,6 +1050,16 @@
       "date": "2026-11-12",
       "source": "Google News — Ebola death toll",
       "summary": "The WHO warned insecurity threatens the Ebola response in DR Congo as the death toll exceeded 5,300. EnviroNews Nigeria reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-50566ff2e2d4a7e3",
+      "title": "Ebola outbreak tops 11k cases - Herald.co.zw",
+      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mcnl2dFJZUkI4dnBDdXVybWVrVUJwUkxYeFlPS2xuekRjNTc5QWJlbHNRdVJTenpTSnBLYmthYTJvUjZDVHpCWXdfWU1uVV9nVVVJeTlBak5jd0ZqV0ktSmhFRTBHUEh3NjFTYlVn?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Ebola outbreak has exceeded 11,000 cases, according to Herald.co.zw reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1170,36 +1200,6 @@
       "date": "2026-11-11",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "The number of Ebola cases in Congo has surpassed 11,000. NTD News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0730bccb316dcaf8",
-      "title": "Ebola outbreak in DR Congo surpasses 11,000 cases, death toll reaches 5,387 - İlke Haber Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxNQjVqZUVpeXhEbEw2d29jZFpieGpXNEpEY195Q0dURDFDeVItTVo0RTVXV0xKRm9FdkJFSlV5Ukh2TjNJZmpxWkdRd0sweGl1aW9HRFF1OVdsNFBXQnV3Szg4TkM4bE1Dd3FTaEdON1k1ejRMQXUzN0pVV1pOTzA0cVdDbE5uaXRpbWozeFc0cFNuYi1wUU0wdDlid1ZJUnBpaFBqZUhHX0ZDQWZJN084em1DazJxeGZh?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola outbreak in DR Congo surpasses 11,000 cases and reaches 5,387 deaths. İlke Haber Ajansı reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-237dfd240c50e963",
-      "title": "Congo’s Ebola outbreak surpasses 11,000 cases, with more than 5,300 deaths - The Citizen",
-      "url": "https://news.google.com/rss/articles/CBMiywFBVV95cUxQR3NjTnh6cm9mdWNuR0ZlYnVxNXo0bE41UjQyZlhkM0NGbmVMcjE1TXNweTlleW9DV29ULW1fVllQeEZnMUVyVG1ZVm5PUnlfckFCLUNBUTFRckdzMWVpY1BVTVNrUU1FbzRkTEJMRkVONUw0cVdQY25RMnl6V0tyUE5TRUNXZzVlMm9qclp6NzdYa1RfdHgxUTVMbTE0eFhrdmtxZ0tjZV9hQm50XzI1Wnp2T1pJR3lrYzk4TnBfcmlKWHU1d1BtUV9Kbw?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Ebola outbreak in the Congo has exceeded 11,000 cases and 5,300 deaths. The Citizen reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-26c3c9c38c1b44ce",
-      "title": "Ebola outbreak tops 11,000 cases - Big News Network.com",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNSktfZ0NITnVUNmJLSFhlelR1b2tzRkR6MVBPd2xGNHY1RE1SekJYaXNJcHM4LXBsR1dIR2JmQ0JqLWtNWUdyUmdpUHl0dTVMeFhlUGw2ZGdkTXh6N1BXTE9ZWklialowOUlWNUNjT2ZZRTgwQXNnRE5PcWYwTXI2LWs0Zw?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola outbreak cases have exceeded 11,000. Big News Network.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

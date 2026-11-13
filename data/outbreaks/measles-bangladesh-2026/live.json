@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-12T20:38:53.164Z",
+  "lastFetched": "2026-11-13T08:46:37.014Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -461,7 +461,9 @@
     "news-3b980a89111d8ff3",
     "news-2c4eac02c726ef79",
     "news-e12c89071551866b",
-    "news-1de8370262b287cb"
+    "news-1de8370262b287cb",
+    "news-a2c214ff40d1491f",
+    "news-5a437985abda6915"
   ],
   "recentItems": [
     {
@@ -481,6 +483,26 @@
       "date": "2026-11-12",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "A measles outbreak in Bangladesh has claimed four more lives, bringing the death toll to nearly 1300. Social News XYZ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-5a437985abda6915",
+      "title": "Surveillance Analysis Documents Bangladesh Measles Resurgence and Severe Geographic Disparities in 2026 - Bioengineer.org",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcC03d0JyLVY3TVBNQnRFR3dyZXhWOHN6NEFwNW14WnNIMmQ2MlF5QjB3QWVxNWh4bFBGTnlHOEI4YlNadHJmUE9CMm9rSkRPUUpSYTJHdUlYWTNUeGdEeU5FeVUwamlEeGhwVXpGOTB4dHlYZzF2a1Jrelo0SjA0QUJRMVJ6SkRzYk1CSHJEOG9MQThEWk15Q1JqYU8zTmwwamFRZUlIVU83WW5YbTgyaFVIbVVObmotYjltQU5YVzZqTDZRVDJr?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "A surveillance analysis documented a measles resurgence and severe geographic disparities in Bangladesh in 2026. Bioengineer.org reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-a2c214ff40d1491f",
+      "title": "Preventable Systems Failures Driven by Supply Gaps Trigger Bangladesh Measles Resurgence - Bioengineer.org",
+      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRV9KYnhLSlkwaHZGX0RVMU1aSm9xVjlSSVpyZmhBakVzUnpWVDB1M3ozeUVRQ1RSWkt0bmVRWDMxdF9RZFk5M01JaEdCUnpSOHZlVTQtaF9wLUYyMXNITmtSaXE0aUZCSE5rbWhxNmhpUzZ5UzRBRmJ1M3dReHpDTUF5Z000R1VudGFhR3FyM0ZrVW1tYU1yMDNKX3JFVVBISmtuU2hUSUY3THRNUzFVN2lmcw?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Preventable system failures driven by supply gaps triggered a measles resurgence in Bangladesh. Bioengineer.org reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -641,26 +663,6 @@
       "date": "2026-11-07",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Four more people have died from measles in Bangladesh, United News of Bangladesh reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-83fa1f9d4395921b",
-      "title": "Bangladesh Launches Investigation Into Measles Vaccine Delays Amid Deadly Outbreak - NDTV",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQOG44ZDZ4OXJBdXFDR3VDRExFVTNROWV1NnQ3U3diMkRzNURnYThnRWkwOHRWemVWZW9BWktTTW5ROFlqQU9TdFctcjdMSktENElISG1Cak53R0pyM0FPS2o1STl3SFBXeEhRbmhodXZ1eTVsTzJ3VUZvZEh6bkRpSkhNVG1jQ3A5S3RKWHVQTXVSWEpjeGhhTzFWcmFDaXdyT3dmQnpFUTlWZGlmTmp3S0pKTjM1OUlUTnNN?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh launched an investigation into measles vaccine delays during a deadly outbreak, NDTV reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-dcaab65d8a939028",
-      "title": "Bangladesh records four more deaths with measles symptoms - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9NU1F5bXF0T19UYUJuc0F0NWx4ZzZzZTQxcXBpQnhEMFlZWFV1NGNuS2hScjZTSHdKY00yTEFXOFZVdGxCMi1pSzUwVWJweXc?oc=5",
-      "date": "2026-11-06",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh records four more deaths with measles symptoms, bdnews24.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
