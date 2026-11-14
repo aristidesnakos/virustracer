@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-14T08:39:38.223Z",
+  "lastRun": "2026-11-14T20:26:36.253Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -3268,8 +3268,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 4,
-      "lastAttempt": "2026-11-14T08:39:38.223Z",
+      "attempts": 5,
+      "lastAttempt": "2026-11-14T20:26:36.253Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-11-12: 462 confirmed, 55 deaths",
       "publishedAt": "2026-11-12",
       "source": "EODY weekly West Nile virus report",
@@ -5747,6 +5747,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FaFhMU3VpaHN5akVCZUZEMXcwT2NqR3hBbTU1dzJVeHc3WUdqdElwRENDa0NZSWU3WDMzMENlbDVnSjJ6UkRtdUFucGVQajV6NEdJeGVwVTVwakpyYk1ub2tR?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh Vaccinates 21.7 Million Children Against Measles but Lacks Accurate Eligibility Data - Ajker Patrika",
+      "publishedAt": "2026-11-13",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9qM2w5MzY2RzlEblZKRThsc0l3MmRic0dFVVNNRmpOdncwTnNFdTluMjNieTc2OXNuLVlZXzJRcE1nRU5oTHhlVmFJdFV5YTRoNUhrX080Y0U4YmVxSVVtNER3?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6016,6 +6029,19 @@
       "title": "Ebola death toll exceeds 4,700 - TodayPress.tv",
       "publishedAt": "2026-10-24",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oX1o3YjJPMkx4d3BPbFcwNURJa1lqeTFlb1JxSE9vUHN1TEYwa0Z6dHN4OElURWhOTEhfcXlwQ25QWV9ETkJxREo1S2VtTWJuM3NIWjhPMzAxb3pXdlhFQzNrQWFvUGZVc3NZSw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Nigeria records zero Ebola transmission as 62 contacts completes monitoring - Chronicle NG",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -6577,6 +6603,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiekFVX3lxTE1lLVBscUhhTi1PZldLT25LVkgzdDdwVUh4ZDVVd2JUQV9uY2puOE9NejY5eVhTOTNBcm5SaWNyRnNsN3NoTFlia1ZwYS1WaEtyTVdiaXFMUWx4TUhHSmowbzJXTmdZWkJqQjFDUUVYZ2Y4Q1lTTmF1eFRB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "The U.S. has lost measles elimination status. Here's what that means and who is most at risk. - CBS News",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiekFVX3lxTE5lN1QxTk02RzdObUw5dHZoZ0plaVY0Yi1sRU93MGl1d1E5MWh5TENmVzlGbVVLRHR2MU5OVjktajRaelkxOXFKMEFpSGNvN3ZIcGlUSTI0eFdpc0dWdENIcjd5MlFJNGV6WWY3aDdVN1NYZlRIOEE4ODJn?oc=5": {
@@ -7643,6 +7682,19 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOQVFQeEdZcUo3ckFuNE1sWjBWTDJ0Y3VNLTJBcW9ZZHVzTlBKMUdubURaOFB6clRSa1FTRnBaYm5yZnFtVXF3b0xRVHloN1JpM3FPaUpoNWZUaUlEdlVrdE1YVHRpOWdBVmNQajkycWN3UXV5Q1Y2V0I1RWNzZW1Lcm0zZWxXcFRK?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. loses measles elimination status, according to reports, as Pa. battles largest outbreak in 3 decades - WHYY",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOTzNJVGt1YTFrM2w0U2F5MWdkN0R6SnMtaWUtdU5IaXM2WGYteDV2eEdQUk5WcXcxMlV4RWwyRVZwVVVXOGFJclVzNl9TemRmZ1hSOFU0WEUxd3FNYlpLbFhQMWdpTTFELUNOazJFUEhDTEwtbS1TZktlUWs0eXhIRTBXVGhHcl9F?oc=5": {
@@ -10479,6 +10531,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcEZxS2JOZzN6RmVSWTJTS1ZCcDhBWTE1cmpHMUZuTDBtRDNhUVdBWnRmbEdpS2ZXUm5Ob29pdlVZNjQ5U2RMQ0RWZW1xQUU5X1dHZW14emVnWU9PUWRqUlprMDl3U1pJbjZlWGxSdDNUd1FpdjczYTV4YjNkcWVtcDhuOUZ1Snl6UXJCWW11bnloeG9PR1ZGeEs0WVZzUjBaaXc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-14T20:26:36.253Z",
+      "title": "Ebola outbreak’s toll on children: 1,737 deaths in DR Congo by 4 November - London Daily News",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxPdXlsdjJ5dE9fNGNlZUI4QUR0aFFmdUtvSHFpZlM1c0xuVkxaNmM5R1o2d2tDdWN6THR0UE9MRGF3UWliOTg2Y0liNlR0bWgyQ0w3OTNneHJsUXhNb2hnLUNSTTRCdGZPaTVYN2g2ZWxPRjZ1alJkOXJkZ2k0MWVTdHB2cFhtUURTTXBNdXpUdm84bnA4c0FhVUFraU1DUm5ucFHSAaIBQVVfeXFMT3V5bHYyeXRPXzRjZWVCOEFEdGhRZnVLb0hxaWZTNXNMblZMWjZjOUdaNndrQ3Vjekx0dFBPTERhd1FpYjk4NmNJYjZUdG1oMkNMNzkzZ3hybFF4TW9oZy1DUk00QnRmT2k1WDdoNmVsT0Y2dWpSZDlyZGdpNDFlU3RwdnBYbVFEU01wTXV6VHZvOG5wOHNBYVVBa2lNQ1JubnBR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -10553,6 +10618,19 @@
       "title": "The Ebola outbreak is breaking records — and just marked a grim milestone - NPR",
       "publishedAt": "2026-10-27",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdFkyTmJrR0ZJb3QxeUVaOEVreGN6cU84X3JpRGtrZmlGVXJvWGx6ZkhGNXNDSDZKaXBxQ0V3c3pfeEpFeHhueUVJLTJ4TjF0dDFGUkplNWpEQWowWjVRXzB5RV9xU19iR3hLV0JUNnNyN2pueXdzQU10NlVBWm1lWm5BTmdVMzBBU0l0Y1VpR0xwamNjVE5XS2FfUFcyUl91VjlV?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-14T20:26:36.253Z",
+      "title": "Nigeria Sustains Highest Ebola Alert After Clearing All 62 Contacts - https://streamlinefeed.co.ke/",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -10804,6 +10882,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWnBwTS03UnhXVlNrN0JjbHFiUkxoQzlPUGdLRERaVGhlTE5VUVlpYmxBTms0eDZCdzlSVWlnVm9RODZ4ZTdEdUR6N1VpMnAzVEZkRFZWOXhFMWt6V0xMbGcyclZEa3JNdW0tblc1TjlGazA1M2lGNW8tM2NWV1M4ckhfSkVHNGpmTjRuNjJ2ZUVNWjNGYVJCelNhalh0VzFIYlpPVw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "CDC reports 5,412 confirmed measles cases in the United States in 2026 - 2 Minute Medicine",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcUtfNGxsXzJ6czh2RHpBM1VfODBkTXhycVVSTGZGSmFTLVZYbXJRd3h4UkJPRFluclprTmJSZkpmc1V1QmVlQmZIdDU5QzcyQUF5T3lyZEEyaWVEeF9HQlVCaHdLUDlLU1BQVnJlTUFEN0RPYXJfdXhxSEtOVHZ0YkgtWEp0S3gxRGFtRkRlaXJYYk1nMnRpa1hDQmgxRlBRbkg4cA?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -10904,6 +10995,19 @@
       "title": "CDC confirms 6 measles-related deaths in 2026 - Honolulu Star-Advertiser",
       "publishedAt": "2026-11-13",
       "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQbEdQY0JvbFB1Zk0ySUY5bzFZUWFXN2h2OTNtRW1uRzVycWlwa1REMGdLYmRDRlhXWkloN2M5eURHMjRJeXgyQnlGeUQ5WHAtVWRMYkxnYWJPVkFnTmlvZm1fekVYVEJrX1lJVW03bndsV2tLUXVBbURiUTgyT25jRThyZHF3NjRqZ2txcmpwaWdKeXFBeXQzUVlyUGEyeTEtaU40OA?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. reportedly will lose measles elimination status, as Pa. confirms 7th death of current outbreak - Pittsburgh Post-Gazette",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Pennsylvania measles outbreak",
       "kind": "news",
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
@@ -11244,6 +11348,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipwFBVV95cUxObXZGQldTUGhGUWxQRlFhVDd4VEFEQjFNbGRqa29tN0thelRpb180VGZmZzF1R0FNVzBZeHl3bDlxdktna3lLQ1NTUTVDLUdycml2T3BsaktyOGNtX1M4bl9LY2o4T3FVNGVCcENRSE01eUZaZWd4VVVOSURjcXp2NnZLZ1R2WDltUlRYMXI0QVEyUVlfTDIyelp5aUtFYU45eVFMNEFqZw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. loses measles elimination status after nearly 30 years - Inquirer.com",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSUlFYmh0NFV4Y1hqbGY5d0FFZHBBVGpzTjlJckNWZ0VUUkJKSEM0ZjJXVjA1TFlhZUt5N3JpVi0zVlJYR0xZZkpnR1BQNWMyQVRQVUdCWUk4dVVtU1ZOUzRNY0xmcHZocE1GV3AzWVl2OGtnZUtvekpaelZjRVFXUkExdG9NX1VoWWw5WkJ6SDZ2ZFlxbXk1VnlnLTV0S0xzRnA3VTg4NA?oc=5": {
@@ -12013,6 +12130,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWJxbnoyQ3RiU1VielNneGJJMG1YTER2VWZKdGNDQ1IzXzNxa0s0SmRzUk1WRHczaUFVZXYxeTJhNkRfUEhHUlA4MVhHYldVZTVIWnE4ZEFvU0hHWWI2dnYzSTJKS2ZJaThJY1M3LV9EZlJJcWNVRDFvOG9mWjZhM0tTUzhVbzBNNXBPbHZDSU5jLUJnNFhmbnVPOXFMZzFLZkpWZHRpZnhHU2dVQ1NN?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. measles cases hit highest level since 1991 amid global surge in vaccine gaps - Dagens.com",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMirwFBVV95cUxQYWFlWTdCZW5PMUc0VUhXcy1ReWs2R0o1Ui1mbG1GaTJaNlltVGM5UklpZ0dscGhDaXRxdkprVWhHNXJob0ptZWF3aFBBaElFbFBQWWQ1YXNsYy1SenNQMGNsaWZkbnpwNXVPdDZCeDBqMmNSMUNub3oyLXRwQjRVeWtWMFVSX3cwYUNVdEV0aXlFZk1sR1gwUEQ4bW5KSEhaTUtaeHR5dHJTUFJva1Fj?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -12277,8 +12407,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-14T08:39:38.223Z",
+      "attempts": 2,
+      "lastAttempt": "2026-11-14T20:26:36.253Z",
       "title": "Congo Ebola outbreak exceeds 11,000 cases as containment efforts falter - Free Press Kashmir",
       "publishedAt": "2026-11-14",
       "source": "Google News — Bundibugyo outbreak",
@@ -13363,6 +13493,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaWZwUTN2aFFIclhLRFNOVHN4UlpVUGFuNDhmazB3ekZveTlPVnBMblJ3ZzlPTDFmbTk2LURWNHVkbE53NXVkUXJLZWNKWW5wQWhUQVo4QnB5SnFiNlhadFE4dGlzWUNlT2kwQTdzREc3UExnR0c4cExfTmtrcmlyWjEyZEJ0TjVadEpDWGZlZGFYLUMyTnNRLThyV0xQcW95bHdCZEhoNXlvRGxfSTZyUllWQlFGc3prZUNJX2Y4NlQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania, Wisconsin Each Report New Measles-Associated Deaths - Infectious Disease Special Edition",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiwAFBVV95cUxPVmwwSzlaa0FqRkU1Qll5STItdi1kRm85YTZWOWRVYkZXbWZkU005ekhtbC1CdVNkVzd4QkU1aEJYZ2RlcHZuU01xYklPZG9iNjVacGxhNHp5WFRFT1NJUlJsR0JHbnZKT01jR1FQVnl6Z3Q4MjdjVWxkbHExNjNWcmtkM2t5WElRcXNCSnpOLTRMdzllNGo4Nm1veFhfZWxZMml6OGFCallENTY2c0dkWmZJQzZ2c2V6RkZ3MkxrdVk?oc=5": {
