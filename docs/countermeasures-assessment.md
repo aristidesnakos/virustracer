@@ -69,9 +69,13 @@ What the checker established beyond the first probe (all on 2026-11-09):
 **How to keep it (about an hour a week):** run or read the weekly "Check countermeasures box"
 run; for each warning, open the source, fix the line by hand, set `checked` to the day you
 checked, and push. Read the `--discover` part for new registry records (`NOT CITED`) and new
-CEPI/WHO headlines; add a line only if it meets the tier rule. **How to measure the pilot:** the
-site has no page analytics, so use of the box cannot be counted yet; that is an open decision
-below.
+CEPI/WHO headlines; add a line only if it meets the tier rule. **How to measure the pilot (added 2026-11-14):** DataFast goals, as on Ari's other sites:
+`countermeasures_view` (the box came into view), `countermeasures_source_click` (with product,
+evidence tier and source kind) and `countermeasures_method_click`. They start recording once
+`NEXT_PUBLIC_DATAFAST_WEBSITE_ID` and `DATAFAST_API_KEY` are set in Vercel. Read in DataFast:
+Ebola page views → `countermeasures_view` → `countermeasures_source_click`. Suggested bar after
+four weeks, to be set by Ari before looking: the share of Ebola page visitors who reach the box,
+and of those, the share who open a source.
 
 **Criteria used:** fit with the product ("Live outbreak figures, each tied to its source and kept
 on file"); value to the site's readers (people following an outbreak, journalists, API users);
@@ -366,8 +370,8 @@ the box, and do not build a site-wide "research tracker" page at all.
 7. Keep this data out of any paid product (because of ICTRP's commercial-use restriction and the
    advice risk)? (recommended: yes)
 8. Order against the roadmap: before or after Phase 5 (disease hubs) and H5N1?
-9. (Pilot) How to tell whether readers use the box: add privacy-friendly page analytics (a click
-   goal on its source links), ask in the alerts widget, or judge on feedback alone?
+9. (Pilot) Answered 2026-11-14: measure with DataFast. Still open: the pass mark for the four-week
+   read (share of Ebola visitors who reach the box; share of those who open a source).
 10. (Pilot) Who reads the weekly checker run and updates the file, and how long the pilot runs
     before deciding (suggested: four weeks)?
 

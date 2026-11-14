@@ -396,7 +396,7 @@ export default async function OutbreakPage({ params }: Props) {
                 className="panel rise min-w-0 lg:col-span-12"
                 style={{ "--i": 5 } as React.CSSProperties}
               >
-                <CountermeasuresPanel data={countermeasures} headingId="countermeasures-heading" />
+                <CountermeasuresPanel data={countermeasures} headingId="countermeasures-heading" outbreakSlug={slug} />
               </section>
             )}
 

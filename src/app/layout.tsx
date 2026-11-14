@@ -1,8 +1,10 @@
 import type { Metadata, Viewport } from "next";
 import { Atkinson_Hyperlegible_Next, Literata } from "next/font/google";
+import Script from "next/script";
 import "./globals.css";
 import AlertsInterestWidget from "@/components/AlertsInterestWidget";
 import { SITE_NAME, SITE_TAGLINE, SITE_URL } from "@/lib/site";
+import { dataFastScript } from "@/lib/analytics-script";
 
 // Body: Atkinson Hyperlegible, drawn by the Braille Institute for maximum
 // character distinction. Headings and figures: Literata, a reading serif.
@@ -52,11 +54,21 @@ export const viewport: Viewport = {
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+  const datafast = dataFastScript();
   return (
     <html lang="en" className={`${body.variable} ${journal.variable} antialiased`}>
       <body>
         {children}
         <AlertsInterestWidget />
+        {/* DataFast page analytics and goals; only when its public website id is configured. */}
+        {datafast && (
+          <Script
+            src={datafast.src}
+            data-website-id={datafast.websiteId}
+            data-domain={datafast.domain}
+            strategy="afterInteractive"
+          />
+        )}
       </body>
     </html>
   );

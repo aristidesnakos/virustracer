@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CountermeasuresTracking from "@/components/CountermeasuresTracking";
 import PanelHeader from "@/components/PanelHeader";
 import {
   COUNTERMEASURE_KINDS,
@@ -34,10 +35,25 @@ function TierBadge({ tier }: { tier: CountermeasureEvent["tier"] }) {
   );
 }
 
-function SourceLink({ source, label }: { source: CountermeasureSource; label?: string }) {
+/** `product` and `tier` are read by CountermeasuresTracking for the click goal. */
+function SourceLink({
+  source,
+  label,
+  product,
+  tier,
+}: {
+  source: CountermeasureSource;
+  label?: string;
+  product: string;
+  tier: CountermeasureEvent["tier"];
+}) {
   return (
     <a
       href={source.url}
+      data-cm-goal="source"
+      data-cm-product={product}
+      data-cm-tier={tier}
+      data-cm-kind={source.kind}
       target="_blank"
       rel="noopener noreferrer"
       className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
@@ -48,7 +64,7 @@ function SourceLink({ source, label }: { source: CountermeasureSource; label?: s
   );
 }
 
-function EventLine({ event }: { event: CountermeasureEvent }) {
+function EventLine({ event, product }: { event: CountermeasureEvent; product: string }) {
   const { expect } = event;
   const registry = expect?.registryStatus ? REGISTRY_STATUS_LABEL[expect.registryStatus] : null;
   return (
@@ -65,7 +81,7 @@ function EventLine({ event }: { event: CountermeasureEvent }) {
           </p>
         )}
         <p className="text-[0.8125rem] text-ink-faint">
-          {dateLabel(event)} {day(event.date)} · <SourceLink source={event.source} />
+          {dateLabel(event)} {day(event.date)} · <SourceLink source={event.source} product={product} tier={event.tier} />
         </p>
       </div>
     </li>
@@ -79,10 +95,13 @@ function EventLine({ event }: { event: CountermeasureEvent }) {
 export default function CountermeasuresPanel({
   data,
   headingId,
+  outbreakSlug,
   now,
 }: {
   data: CountermeasureFile;
   headingId: string;
+  /** When set, the box records DataFast goals (view, source clicks) tagged with this outbreak. */
+  outbreakSlug?: string;
   /** For tests; defaults to the time of rendering. */
   now?: Date;
 }) {
@@ -94,6 +113,7 @@ export default function CountermeasuresPanel({
 
   return (
     <>
+      {outbreakSlug && <CountermeasuresTracking pathogen={data.id} outbreak={outbreakSlug} />}
       <PanelHeader
         kicker="Research"
         id={headingId}
@@ -110,7 +130,7 @@ export default function CountermeasuresPanel({
         <p className="font-journal text-lg font-semibold text-ink">{data.statement.text}</p>
         <p className="mt-1 text-[0.9375rem] text-ink-muted">
           &ldquo;{data.statement.quote}&rdquo; — {data.statement.source.issuer}, {day(data.statement.date)} ·{" "}
-          <SourceLink source={data.statement.source} label="source" />
+          <SourceLink source={data.statement.source} label="source" product="statement" tier={data.statement.tier} />
         </p>
       </div>
 
@@ -135,7 +155,7 @@ export default function CountermeasuresPanel({
                   <p className="mt-1 text-[0.9375rem] text-ink-muted">{p.note}</p>
                   <ul className="mt-2 space-y-2">
                     {p.events.map((e, i) => (
-                      <EventLine key={`${p.id}-${i}`} event={e} />
+                      <EventLine key={`${p.id}-${i}`} event={e} product={p.id} />
                     ))}
                   </ul>
                 </li>
@@ -151,6 +171,7 @@ export default function CountermeasuresPanel({
         WHO and your national health authority.{" "}
         <Link
           href="/methodology#countermeasures"
+          data-cm-goal="method"
           className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
         >
           How this box is kept
