@@ -14,12 +14,12 @@ import { notFound } from "next/navigation";
 import { getOutbreak, isArchivedRecord, listOutbreaks } from "@/data/outbreaks";
 import { getCountermeasures } from "@/data/countermeasures";
 import { getLiveData } from "@/lib/live-data";
-import { getTollData } from "@/lib/toll";
+import { getTollData, deathsGapNote } from "@/lib/toll";
 import { mergeTimeline, latestDate } from "@/lib/timeline";
 import { getCandidatesData } from "@/lib/candidates-data";
 import { computeMetrics } from "@/lib/metrics";
 import { outbreakApiPath, outbreakPath } from "@/lib/outbreak-paths";
-import { describeFigures, latestFigures } from "@/lib/seo";
+import { answerSentence, describeFigures, latestFigures } from "@/lib/seo";
 import { BrandMark } from "@/components/BrandMark";
 import { DATA_LICENSE, SITE_NAME, SITE_TAGLINE, absoluteUrl } from "@/lib/site";
 
@@ -132,6 +132,9 @@ export default async function OutbreakPage({ params }: Props) {
   // Hand-curated vaccines-and-treatments box, shared by every outbreak of the same pathogen.
   const countermeasures = getCountermeasures(outbreak.countermeasures);
 
+  const answer = answerSentence(latestFigures(timeline), outbreak);
+  const others = listOutbreaks().filter((o) => o.slug !== slug);
+
   const first = toll.snapshots[0]?.date ?? timeline[0]?.date;
   const last = latestDate(timeline);
   const pageUrl = absoluteUrl(outbreakPath(slug));
@@ -167,9 +170,18 @@ export default async function OutbreakPage({ params }: Props) {
         url: pageUrl,
         name: outbreak.seoTitle,
         isPartOf: { "@id": absoluteUrl("/#website") },
+        breadcrumb: { "@id": `${pageUrl}#breadcrumb` },
         about: { "@id": `${pageUrl}#dataset` },
         inLanguage: "en",
         ...(last ? { dateModified: last } : {}),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${pageUrl}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: SITE_NAME, item: absoluteUrl("/") },
+          { "@type": "ListItem", position: 2, name: outbreak.title, item: pageUrl },
+        ],
       },
       {
         "@type": "Dataset",
@@ -273,7 +285,17 @@ export default async function OutbreakPage({ params }: Props) {
         <main id="main" className="pt-6">
           {/* ── Headline figures ─────────────────────────────────── */}
           <div className="rise" style={{ "--i": 1 } as React.CSSProperties}>
-            <StatStrip timeline={timeline} summary={outbreak.summary} />
+            <StatStrip
+              timeline={timeline}
+              summary={outbreak.summary}
+              deathsNote={deathsGapNote(toll.snapshots)}
+              heading={outbreak.headings?.figures}
+            />
+            {answer && (
+              <p data-testid="answer-sentence" className="mt-3 max-w-[60rem] text-[0.9375rem] leading-relaxed text-ink-muted">
+                {answer}
+              </p>
+            )}
           </div>
 
           {/* ── Figures ──────────────────────────────────────────── */}
@@ -289,11 +311,12 @@ export default async function OutbreakPage({ params }: Props) {
                 kicker="Fig. 1"
                 id="map-heading"
                 title={
-                  outbreak.map?.route
+                  outbreak.headings?.map ??
+                  (outbreak.map?.route
                     ? "Route & reported cases"
                     : archived
                       ? "Where cases were reported"
-                      : "Where cases are reported"
+                      : "Where cases are reported")
                 }
               />
               <div className="h-[26rem] overflow-hidden rounded-lg border border-rule sm:h-[32rem]">
@@ -330,11 +353,8 @@ export default async function OutbreakPage({ params }: Props) {
                 candidates={candidatesData.candidates}
                 headingId="table-heading"
                 title={
-                  outbreak.monitoringData.some((r) => r.parentIso) ? (
-                    <>By country &amp; province</>
-                  ) : (
-                    "By country"
-                  )
+                  outbreak.headings?.table ??
+                  (outbreak.monitoringData.some((r) => r.parentIso) ? "By country & province" : "By country")
                 }
                 sources={outbreak.tableSources ?? outbreak.summary.source}
                 showCfr={outbreak.summary.fatalityBasis !== "all-cases" && !outbreak.summary.deathsNotReported}
@@ -399,8 +419,26 @@ export default async function OutbreakPage({ params }: Props) {
           </div>
         </main>
 
+        {/* ── Other outbreaks: one line of plain links, so every page reaches every other ── */}
+        {others.length > 0 && (
+          <nav aria-label="Other outbreaks we track" className="mt-10 text-[0.9375rem] text-ink-muted">
+            <span className="font-semibold text-ink">Other outbreaks we track:</span>{" "}
+            {others.map((o, i) => (
+              <span key={o.slug}>
+                {i > 0 && " · "}
+                <Link
+                  href={outbreakPath(o.slug)}
+                  className="font-medium text-accent underline decoration-accent/40 underline-offset-4 hover:decoration-accent"
+                >
+                  {o.title}
+                </Link>
+              </span>
+            ))}
+          </nav>
+        )}
+
         {/* ── Disclaimer ─────────────────────────────────────────── */}
-        <footer className="mt-10 flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 border-t border-rule-strong pt-5">
+        <footer className="mt-4 flex flex-wrap items-baseline justify-between gap-x-8 gap-y-2 border-t border-rule-strong pt-5">
           <p className="max-w-[46rem] text-[0.9375rem] text-ink-muted">
             Not an official public health resource. Data manually compiled from public sources —
             verify with official authorities.

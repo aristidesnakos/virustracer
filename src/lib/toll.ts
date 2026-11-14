@@ -17,6 +17,12 @@ export interface TollSnapshot {
    * (NNDSS Candida auris). Never part of `confirmed` or `suspected`.
    */
   screening?: number | null;
+  /**
+   * US measles (CDC): the deaths in the data file behind the page (`measles_hosp.json`), which the
+   * page does not display. `deaths` is the figure the page shows, "subject to change" while CDC
+   * reviews are completed. Absent for every other source.
+   */
+  deathsDataFile?: number | null;
   /** MMWR year and week of a reading from CDC's weekly NNDSS table. */
   mmwrYear?: number;
   mmwrWeek?: number;
@@ -41,6 +47,20 @@ export interface TollData {
 }
 
 const EMPTY: TollData = { lastChecked: "", snapshots: [] };
+
+/**
+ * A note for the deaths figure when the source carries a second, larger count it does not
+ * display: the CDC measles page shows the deaths that passed its review, its data file the deaths
+ * reported so far. Computed from the latest snapshot, so it cannot go stale like a hand-typed note.
+ * Null when the two agree or there is no second figure.
+ */
+export function deathsGapNote(snapshots: readonly TollSnapshot[]): string | null {
+  const latest = [...snapshots].sort((a, b) => a.date.localeCompare(b.date)).at(-1);
+  const file = latest?.deathsDataFile;
+  if (!latest || file == null || latest.deaths == null || file === latest.deaths) return null;
+  const n = (x: number) => x.toLocaleString("en-US");
+  return `${n(file)} in the CDC’s data file; the page shows ${n(latest.deaths)}, “subject to change” while CDC reviews are completed`;
+}
 
 export function getTollData(slug: string): TollData {
   const path = outbreakDataPath(slug, "toll");

@@ -256,10 +256,12 @@ describe("snapshotFromReading", () => {
       confirmed: 100,
       suspected: null,
       deaths: 2,
+      deathsDataFile: r.reading.deathsDataFile,
       recovered: null,
       source: "CDC",
       sourceUrl: "https://www.cdc.gov/measles/data-research/index.html",
     });
+    expect(typeof r.reading.deathsDataFile).toBe("number");
   });
 });
 
@@ -287,6 +289,14 @@ describe("verifyCdcRaw (the archived reading)", () => {
     const text = serializeReading(doc());
     expect(verifyCdcRaw({ ...snap, rawSha256: sha256(text) }, text)).toEqual({ ok: true });
     expect(verifyCdcRaw(snap, text)).toEqual({ ok: true }); // a snapshot without a checksum is still re-parsed
+  });
+
+  it("re-checks the data file's deaths when the snapshot stores them, and older snapshots without them", () => {
+    const text = serializeReading(doc());
+    const r = parseCdcReading(doc());
+    if (!r.ok) throw new Error(r.reason);
+    expect(verifyCdcRaw({ ...snap, deathsDataFile: r.reading.deathsDataFile }, text)).toEqual({ ok: true });
+    expect(verifyCdcRaw({ ...snap, deathsDataFile: 999 }, text)).toMatchObject({ ok: false, reason: /deathsDataFile: raw parses to/ });
   });
 
   it("rejects text that was edited, is not JSON, or no longer cross-checks", () => {

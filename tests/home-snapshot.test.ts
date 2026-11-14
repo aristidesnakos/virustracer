@@ -1,6 +1,7 @@
 import { describe, expect, it } from "vitest";
 import { getDefaultOutbreak, type OutbreakDefinition, type OutbreakStatus } from "@/data/outbreaks";
 import {
+  HOME_DESCRIPTION_LEAD,
   STATUS_ORDER,
   buildSnapshot,
   compareSnapshots,
@@ -123,7 +124,7 @@ describe("ranking", () => {
 describe("describeHome", () => {
   it("names the top outbreaks with their numbers", () => {
     const d = describeHome([snap("a", "active", toll(30, 10, 2))], "fallback");
-    expect(d).toBe(`Live outbreak figures with sources. ${base.shortName}: 160 deaths, 1,300 cases.`);
+    expect(d).toBe(`${HOME_DESCRIPTION_LEAD} ${base.shortName}: 160 deaths, 1,300 cases.`);
   });
 
   it("skips outbreaks that are over or have no figures, and falls back when none are left", () => {

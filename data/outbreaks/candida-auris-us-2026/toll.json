@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-09T08:56:16.656Z",
+  "lastChecked": "2026-11-14T08:39:18.528Z",
   "snapshots": [
     {
       "date": "2026-01-10",
@@ -574,6 +574,20 @@
       "sourceUrl": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2743%27&%24order=label%2C+sort_order",
       "rawPath": "data/raw/report/cdc-nndss-auris-2026-10-31-646c67648618.txt",
       "rawSha256": "646c6764861899c3d58a49b9673ac950361ca120e52a6f72674d747310801a15"
+    },
+    {
+      "date": "2026-11-07",
+      "confirmed": 6748,
+      "suspected": null,
+      "deaths": null,
+      "recovered": null,
+      "screening": 7397,
+      "mmwrYear": 2026,
+      "mmwrWeek": 44,
+      "source": "CDC NNDSS weekly table (Candida auris, clinical)",
+      "sourceUrl": "https://data.cdc.gov/resource/x9gk-5huc.json?%24where=label+in+%28%27Candida+auris%2C+clinical%27%2C+%27Candida+auris%2C+screening%27%29+AND+year+%3D+%272026%27+AND+week+%3D+%2744%27&%24order=label%2C+sort_order",
+      "rawPath": "data/raw/report/cdc-nndss-auris-2026-11-07-cea66a54ab0b.txt",
+      "rawSha256": "cea66a54ab0b37c65b5dfc44da5acb83c5a6dec0b28b78499f1b78a4bfdcf599"
     }
   ]
 }

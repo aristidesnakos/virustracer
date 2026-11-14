@@ -114,6 +114,9 @@ export function groupByStatus(snapshots: readonly OutbreakSnapshot[]): StatusGro
 
 const fmt = (n: number) => n.toLocaleString("en-US");
 
+/** First words of the home meta description: the home page's search phrase (docs/seo-keywords.md). */
+export const HOME_DESCRIPTION_LEAD = "Current disease outbreaks, every figure sourced and dated.";
+
 /**
  * Home meta description naming the top outbreaks with their numbers, capped near
  * the ~160 characters search engines show. Falls back when nothing has figures.
@@ -130,6 +133,6 @@ export function describeHome(ranked: readonly OutbreakSnapshot[], fallback: stri
       return nums.length ? `${outbreak.shortName}: ${nums.join(", ")}` : outbreak.shortName;
     });
   if (parts.length === 0) return fallback;
-  const lead = `Live outbreak figures with sources. ${parts.join("; ")}.`;
+  const lead = `${HOME_DESCRIPTION_LEAD} ${parts.join("; ")}.`;
   return lead.length <= 160 ? lead : `${lead.slice(0, 157).trimEnd()}…`;
 }

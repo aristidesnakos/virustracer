@@ -176,6 +176,8 @@ describe("/outbreaks/candida-auris-us-2026", () => {
     expect(screen.getByRole("heading", { level: 1, name: auris.title })).toBeInTheDocument();
     expect(container.querySelector(".live-dot")).not.toBeNull();
     expect(screen.getByTestId("deaths-not-reported")).toBeInTheDocument();
+    // The "Other outbreaks we track" line names the others by design; everything else must not.
+    container.querySelector('nav[aria-label="Other outbreaks we track"]')?.remove();
     expect(container.textContent).not.toMatch(/ebola|bundibugyo|measles/i);
   });
 
@@ -183,6 +185,8 @@ describe("/outbreaks/candida-auris-us-2026", () => {
     const meta = await generateMetadata(params(SLUG));
     expect(meta.title).toEqual({ absolute: auris.seoTitle });
     expect(meta.description as string).toMatch(/clinical cases/);
-    expect(meta.description as string).not.toMatch(/deaths/);
+    // No death count, and it says the source does not report one.
+    expect(meta.description as string).not.toMatch(/\d[\d,]* deaths/);
+    expect(meta.description as string).toMatch(/\(deaths not reported\)/);
   });
 });

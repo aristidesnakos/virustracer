@@ -47,7 +47,10 @@ describe("home page", () => {
   it("has its own canonical and a description built from the data", () => {
     const m = homeMetadata();
     expect(m.alternates?.canonical).toBe("/");
-    expect(m.description).toMatch(/^Live outbreak figures with sources\./);
+    expect(m.description).toMatch(/^Current disease outbreaks, every figure sourced and dated\./);
+    // The search phrase first, no "live" claim (figures are daily or weekly), short enough to show in full.
+    expect(m.title).toEqual({ absolute: "Current Disease Outbreaks 2026 Tracker | Outbreak Files" });
+    expect(JSON.stringify(m.title)).not.toMatch(/\b(live|today)\b/i);
     expect((m.description as string).length).toBeLessThanOrEqual(160);
     expect(m.openGraph).toMatchObject({ siteName: "Outbreak Files", type: "website", url: "/" });
   });

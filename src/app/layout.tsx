@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   title: { default: SITE_TITLE, template: `%s · ${SITE_NAME}` },
   description: SITE_TAGLINE,
   applicationName: SITE_NAME,
-  keywords: ["outbreak tracker", "outbreak data", "disease outbreaks", "epidemic data", "outbreak figures"],
+  keywords: ["current outbreaks", "disease outbreaks 2026", "outbreak tracker", "disease outbreak map", "outbreaks around the world"],
   robots: {
     index: true,
     follow: true,

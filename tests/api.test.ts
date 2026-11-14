@@ -1,6 +1,7 @@
 import { describe, it, expect } from "vitest";
 import { parseTollQuery, selectSnapshots, toCsv, toPublicSnapshot, tollToCsv } from "@/lib/api";
 import type { TollSnapshot } from "@/lib/toll";
+import { deathsGapNote } from "@/lib/toll";
 
 const snap = (date: string, confirmed: number): TollSnapshot => ({
   date,
@@ -85,6 +86,11 @@ describe("csv", () => {
     expect(csv.split("\r\n")[0]).toBe("date,confirmed,suspected,deaths,recovered,revid,revision_timestamp,source_url");
     expect(csv.split("\r\n")[1]).toBe("2026-09-01,10,,5,,,,https://example.org/2026-09-01");
   });
+  it("adds a deaths_data_file column only for a source that stores one (CDC measles)", () => {
+    const csv = tollToCsv([{ ...snap("2026-11-05", 5182), deaths: 4, deathsDataFile: 7 }]);
+    expect(csv.split("\r\n")[0]).toBe("date,confirmed,suspected,deaths,recovered,revid,revision_timestamp,source_url,deaths_data_file");
+    expect(csv.split("\r\n")[1]).toBe("2026-11-05,5182,,4,,,,https://example.org/2026-11-05,7");
+  });
 });
 
 describe("toPublicSnapshot", () => {
@@ -96,5 +102,19 @@ describe("toPublicSnapshot", () => {
   });
   it("leaves old snapshots unchanged", () => {
     expect(toPublicSnapshot(snap("2026-09-01", 10))).toEqual(snap("2026-09-01", 10));
+  });
+});
+
+describe("deathsGapNote", () => {
+  it("names both CDC figures when the data file lists more than the page shows, from the latest snapshot", () => {
+    const older = { ...snap("2026-10-29", 4852), deaths: 3, deathsDataFile: 5 };
+    const latest = { ...snap("2026-11-05", 5182), deaths: 4, deathsDataFile: 7 };
+    expect(deathsGapNote([latest, older])).toBe("7 in the CDC’s data file; the page shows 4, “subject to change” while CDC reviews are completed");
+  });
+  it("says nothing when they agree, when there is no second figure, or with no snapshots", () => {
+    expect(deathsGapNote([{ ...snap("2026-11-12", 5300), deaths: 7, deathsDataFile: 7 }])).toBeNull();
+    expect(deathsGapNote([snap("2026-11-12", 5300)])).toBeNull();
+    expect(deathsGapNote([{ ...snap("2026-11-12", 5300), deaths: 4, deathsDataFile: null }])).toBeNull();
+    expect(deathsGapNote([])).toBeNull();
   });
 });

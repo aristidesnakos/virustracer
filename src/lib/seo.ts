@@ -56,7 +56,12 @@ export function deathsSuffix(summary?: { deathsQualifier?: string }): string {
 export function describeFigures(
   figures: LatestFigures | null,
   fallback: string,
-  label: { shortName: string; places: string; summary?: { deathsQualifier?: string; casesLabel?: string } },
+  label: {
+    shortName: string;
+    searchLabel?: string;
+    places: string;
+    summary?: { deathsQualifier?: string; casesLabel?: string; deathsNotReported?: string };
+  },
   /** A closed, hand-curated record: say so instead of promising daily updates. A weekly source says weekly. */
   options: { archived?: boolean; weekly?: boolean } = {},
 ): string {
@@ -71,10 +76,43 @@ export function describeFigures(
     : options.weekly
       ? "Updated weekly, with map, trend and free data API."
       : "Updated daily, with map, trend and free data API.";
-  return (
-    `${label.shortName}: ${parts.join(" and ")} as of ${longDate(figures.date)} ` +
-    `(${label.places}). ${tail}`
-  );
+  const lead = label.searchLabel ?? label.shortName;
+  // The place in brackets, unless the lead already names it; a source without deaths says so.
+  const notes = [
+    lead.toLowerCase().includes(label.places.toLowerCase()) ? null : label.places,
+    figures.deaths === null && label.summary?.deathsNotReported ? "deaths not reported" : null,
+  ].filter(Boolean);
+  return `${lead}: ${parts.join(" and ")} as of ${longDate(figures.date)}${notes.length ? ` (${notes.join("; ")})` : ""}. ${tail}`;
+}
+
+/**
+ * The visible answer sentence under an outbreak's headline figures, from its `answerTemplate`.
+ * Null when there is no template, or a placeholder it uses has no figure (never a guessed number).
+ */
+export function answerSentence(
+  figures: LatestFigures | null,
+  outbreak: { answerTemplate?: string; summary?: { deathsQualifier?: string; casesLabel?: string } },
+): string | null {
+  const template = outbreak.answerTemplate;
+  if (!template || !figures) return null;
+  const values: Record<string, string | null> = {
+    date: longDate(figures.date),
+    deaths:
+      figures.deaths === null
+        ? null
+        : `${fmt(figures.deaths)} ${figures.deaths === 1 ? "death" : "deaths"}${deathsSuffix(outbreak.summary)}`,
+    cases:
+      figures.confirmed === null
+        ? null
+        : `${fmt(figures.confirmed)} ${(outbreak.summary?.casesLabel ?? "confirmed cases").toLowerCase()}`,
+  };
+  let missing = false;
+  const text = template.replace(/\{(\w+)\}/g, (_, key: string) => {
+    const v = values[key];
+    if (v == null) missing = true;
+    return v ?? "";
+  });
+  return missing ? null : text;
 }
 
 type ChangeFrequency = "daily" | "monthly";
