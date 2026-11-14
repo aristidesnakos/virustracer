@@ -1,13 +1,6 @@
 {
-  "lastFetched": "2026-11-14T08:39:21.990Z",
+  "lastFetched": "2026-11-14T20:26:28.248Z",
   "processedIds": [
-    "news-b201251f2bbb2d6f",
-    "news-e080b9d6f47745ad",
-    "news-21030d99b5df6c84",
-    "news-c83249c24e38e55a",
-    "news-debe2082cf3f15b4",
-    "news-8200e8fa74953047",
-    "news-080482cd63fdb1d7",
     "news-762be3e68033d00d",
     "news-fb1cd028970ec40c",
     "news-d1ecbb91a79c38f5",
@@ -1000,9 +993,26 @@
     "news-a2cf1f9986af5b22",
     "news-a6ca031d13b0de7a",
     "news-1ef7c703b6b5fc41",
-    "who-e4517d7b8b1a5519"
+    "who-e4517d7b8b1a5519",
+    "news-18a35b0263cfbc28",
+    "news-444c275f3ac305b9",
+    "news-c20e6f7cdc380ae0",
+    "news-eb8a16899dc54db6",
+    "news-bcb491f25c058445",
+    "who-2141769afe0570e3",
+    "who-ec3bca73146f4511"
   ],
   "recentItems": [
+    {
+      "id": "news-18a35b0263cfbc28",
+      "title": "Ebola outbreak’s toll on children: 1,737 deaths in DR Congo by 4 November - London Daily News",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcEZxS2JOZzN6RmVSWTJTS1ZCcDhBWTE1cmpHMUZuTDBtRDNhUVdBWnRmbEdpS2ZXUm5Ob29pdlVZNjQ5U2RMQ0RWZW1xQUU5X1dHZW14emVnWU9PUWRqUlprMDl3U1pJbjZlWGxSdDNUd1FpdjczYTV4YjNkcWVtcDhuOUZ1Snl6UXJCWW11bnloeG9PR1ZGeEs0WVZzUjBaaXc?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — Ebola death toll",
+      "summary": "The Ebola outbreak caused 1,737 child deaths in DR Congo by 4 November, London Daily News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-a2cf1f9986af5b22",
       "title": "Congo Ebola outbreak exceeds 11,000 cases as containment efforts falter - Free Press Kashmir",
@@ -1010,6 +1020,26 @@
       "date": "2026-11-14",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "The Congo Ebola outbreak has surpassed 11,000 cases as containment efforts fail. Free Press Kashmir reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c20e6f7cdc380ae0",
+      "title": "Nigeria Sustains Highest Ebola Alert After Clearing All 62 Contacts - https://streamlinefeed.co.ke/",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxOdFkyTmJrR0ZJb3QxeUVaOEVreGN6cU84X3JpRGtrZmlGVXJvWGx6ZkhGNXNDSDZKaXBxQ0V3c3pfeEpFeHhueUVJLTJ4TjF0dDFGUkplNWpEQWowWjVRXzB5RV9xU19iR3hLV0JUNnNyN2pueXdzQU10NlVBWm1lWm5BTmdVMzBBU0l0Y1VpR0xwamNjVE5XS2FfUFcyUl91VjlV?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Nigeria maintains the highest Ebola alert after clearing all 62 contacts, https://streamlinefeed.co.ke/ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-eb8a16899dc54db6",
+      "title": "Nigeria records zero Ebola transmission as 62 contacts completes monitoring - Chronicle NG",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1oX1o3YjJPMkx4d3BPbFcwNURJa1lqeTFlb1JxSE9vUHN1TEYwa0Z6dHN4OElURWhOTEhfcXlwQ25QWV9ETkJxREo1S2VtTWJuM3NIWjhPMzAxb3pXdlhFQzNrQWFvUGZVc3NZSw?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Nigeria recorded zero Ebola transmission as 62 contacts completed monitoring. Chronicle NG reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1170,36 +1200,6 @@
       "date": "2026-11-12",
       "source": "Google News — Ebola death toll",
       "summary": "The WHO warned insecurity threatens the Ebola response in DR Congo as the death toll exceeded 5,300. EnviroNews Nigeria reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-50566ff2e2d4a7e3",
-      "title": "Ebola outbreak tops 11k cases - Herald.co.zw",
-      "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTE9mcnl2dFJZUkI4dnBDdXVybWVrVUJwUkxYeFlPS2xuekRjNTc5QWJlbHNRdVJTenpTSnBLYmthYTJvUjZDVHpCWXdfWU1uVV9nVVVJeTlBak5jd0ZqV0ktSmhFRTBHUEh3NjFTYlVn?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Ebola outbreak has exceeded 11,000 cases, according to Herald.co.zw reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-618ea149843dbace",
-      "title": "Swiss woman with Ebola discharged, hospital says - TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxPa0lLbmFLX3dRMzV0bWp5MV9nRkk1eTFfVXp1RjRvcTliQ2Z5Q2I3Rktyd2cxeXNtXzZDR2MzeURORDd3cElQNTBUbHBWc19YVXRJZm9jSEYzNkJBM1FraVZFUTd1T2R1Snl3TVYzdlJ0aWF6N2V0bWtieVVBblpyV1hOOVBKT3E0dGlxMWdYX19XMGp6REd2VFRVRmg2Mkk?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "A Swiss woman with Ebola has been discharged from care, the hospital said. TimesLIVE reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-64dd09fff5e36faa",
-      "title": "Ebola cases in Congo reach 11,000, with more than 5,000 deaths - Kurdistan TV",
-      "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE4zVWYzclRVSmp5RktHb0J2M2laUFNLV2c4aUpFSy1HM0hncklobjBPejYzZzlDS3Jwd2YxTW5CeV9hbzJDTXVpSFJVZlRyYVlrWFdPcUprNWwwNEJY?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases in Congo reach 11,000, with more than 5,000 deaths, Kurdistan TV reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
