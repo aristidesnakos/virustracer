@@ -3,7 +3,7 @@
   "sourceUrl": "https://www.cdc.gov/nhsn/ltc/ltc-report-overview.html",
   "dataUrl": "https://www.cdc.gov/nhsn/modules/case-rates-covid-flu-rsv.json",
   "unit": "weekly cases or hospitalisations per 100,000 residents",
-  "lastChecked": "2026-11-13T20:42:15.642Z",
+  "lastChecked": "2026-11-14T08:39:19.392Z",
   "fetchedAt": "2026-11-12T20:38:40.182Z",
   "sourceLastModified": "Thu, 12 Nov 2026 17:49:29 GMT",
   "firstWeek": "2024-10-06",

@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-13T20:42:31.063Z",
+  "lastExtracted": "2026-11-14T08:39:26.011Z",
   "candidates": [
     {
       "id": "cidrap-edfd83013e48bf96",
@@ -378,20 +378,6 @@
       "sourceName": "Google News — Bundibugyo outbreak",
       "date": "2026-10-17",
       "extractedAt": "2026-10-18T20:11:06.051Z"
-    },
-    {
-      "id": "who-597dbebd762d3efe",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": 2,
-      "deathsMentioned": null,
-      "context": "Second Ebola patient identified in Kenya.",
-      "sourceTitle": "Second Ebola patient identified in Kenya - CIDRAP",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiekFVX3lxTFB4aE5jUDZwT196U2xfUVotZkxmVG81SU10WmpHYkRYblhCZUpZdndUZUZQLVNhZlhqcW9zdFo2UEdsTHhneHFjcnA0VVZ1NDdXUERPRHVJOUtTUTRSeVE5ZmhDTjRHYmV4ZVNCY2o1WElBRUlVQ1F5akZR?oc=5",
-      "sourceName": "Google News — WHO DON",
-      "date": "2026-10-15",
-      "extractedAt": "2026-10-18T20:11:31.855Z"
     }
   ],
   "checkedIds": [
@@ -599,6 +585,19 @@
     "news-0b3af5d9b80f5ea7",
     "who-ebe03437fb18e07b",
     "who-9b9efd83ce301f8d",
-    "who-8872e9bab338c972"
+    "who-8872e9bab338c972",
+    "news-33f72ea44d058907",
+    "news-124eaa3302f00260",
+    "news-83b38ef8c17967d1",
+    "news-f6e736c42758ef53",
+    "news-3cc4326a5c73d525",
+    "news-43c653418058a567",
+    "news-8dd921bfecc7879e",
+    "news-8dd90d9ecbc51d53",
+    "news-b322628412588a36",
+    "news-a2cf1f9986af5b22",
+    "news-a6ca031d13b0de7a",
+    "news-1ef7c703b6b5fc41",
+    "who-e4517d7b8b1a5519"
   ]
 }
