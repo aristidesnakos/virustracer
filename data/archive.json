@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-14T20:26:36.253Z",
+  "lastRun": "2026-11-15T08:41:05.460Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -4382,6 +4382,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMERCbnVkSDQwWGZsUHBjWVlJQlBNc3lrNnhVRWhyZ1ptQUhwazNLaFJwekdIMW80Y1Y4cmZpRS1fU2hOUndsMGFiVVpsVktpZFU5WG5EVmpMUW5KRjBPOWNHR0tONWt1QXduWnhkTXZJQTJia0FEY09UbkREb25LN1VhX3k0Z1RwVkdVOHNOQ1hvckJGeGp4akREM3N3S3JVdUtncnVIMElheUd6THFOWVB1cVZNbk5LOWhaRXdOTERSNmZsYWpkMmRHdWNlMXlsX09YTjAtWjlnZktRajAtZ2EwaXMtNnNEV2fSAe8BQVVfeXFMTWFPNGgwOFk5QlE0clpzQm5lRmlDNnNpOEdGZmFiMm4tT3Q2TWRLdjVVb29fSGZpMnlTdEd1MGthZllLUzNFYTVBODVKZFd2QTFodE9pN08ybF9BYUN3V2RsVVNJUklCSmJ3WGJlQnBIekhKVXZ6YnlNMGVocm9FTGFPWTQ0R1VYdUFNLTZyY3ctVWFZd0RSYUJDOGY1Y1k2b2VzN3ByTldfTDlpNDhQQWN3djhUcENzSWxNYzFBZEtwd0U1aXp6ZkVyNFYtaGdsSEx0UG5FZUJpbFV0UEpYMFFlXzF4WVVGVHg3eGVtY1k?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115084110/https://timesofindia.indiatimes.com/world/rest-of-world/congo-ebola-outbreak-claims-nearly-half-of-infected-as-cases-cross-11000/articleshow/135849071.cms",
+      "archivedAt": "2026-11-15T08:41:10Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
+      "title": "Congo Ebola outbreak claims nearly half of infected as cases cross 11,000 - The Times of India",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPcl9jTjRYNnJYX0FIdVljMks0ZjJvZGxjUFVaV2owdGUwWmFuZDJIRllMaEM3MEUyOW1ER2lpcUlScThiX2VYbU8wWUU5OXU0NzZOV1dDd0pNVHAtR2xyWDJfX2llS3dERm1NSkx0c3JOaG9ud05XbU9WOFk3c2JrLU5LM3FxNU8wbGtzSUtZdlFWVTdDUy05M2p4MzNfREdMdURlTnBxc0QtTUxFbmR6cUF5X1prSlZZeXFMOHZiZjVqS2FLZkxXWkZ3cmFvd1A4NjREVjRkb1J1X2RPaldsNjJQVHVvbDlCQWc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -5290,6 +5303,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mYnZBdGt6cU1VVTdsSTU1RDlnUklZMl9EUzkxSmh1S1VyOU14czktaTFNRGVHVVd4THIzdTN5SGdqOVA2REtQZHJPTFMtRUNNQTdORkhyUDNoYVE?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115001106/https://www.bbc.com/news/articles/cmvg2e2q28w1o",
+      "archivedAt": "2026-11-15T00:11:06Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
+      "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive - BBC",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — WHO DON",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1wRzhTYkNSUVFKZDBlYnJnSXlGVHliZklwTjZYdTY3TUJVZGc3cjVybVVoRl9MS1JxdDIzQ2tvVUVYSTlMX3k3SnRfVG5LbGZSbW9lLWhZdVY0N2M?oc=5": {
@@ -7424,6 +7450,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSk9tUVNET0gwLUFRTVFtWXM0YVl0RzBuc182ZkpQSllkR29KcTVLaURwNnJfX25LQmN2d3FoUnNiSEZ2UF9QaTc0Q21ROHYwNHQ0NENLcE9HMURKM2YtUkhURHhicFNyZnNpcW9VRlpHaDZxcHdueGNLOWZ1QmZCSmQ2dUQ?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115084301/https://www.maliweb.net/en/africa/congo-ebola-cases-surpass-11000-3121376.html",
+      "archivedAt": "2026-11-15T08:43:01Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
+      "title": "Congo Ebola Cases Surpass 11,000 as Death Toll Rises to 5,387 - Maliweb",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMihAFBVV95cUxPclFnNnh4QW9LR1M2SU9Nd1hsWUpYNXBndEtyLWJZTDFTZUpGQ1pzT09OWmdrbVFXWE9OZkZUNFVwUktaa0pqQWhKSURFNXAzUGFMZGRKZ0tveHJLUmFWVExjTzFRVzNNLTVrU1E1elNUbmNfMWpIdmg2TUlWUTdvUkxGUzk?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7643,6 +7682,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMihwJBVV95cUxNU2xYd3kybmwxTWo1YjJFbmYwdXIyQ1ROR0h1OXFpUXN1TG44RHFDWjAzWm9HMzlVbnRfWmljWTQwQnFtRDJPclhRd0JTWUgtcmxXeThzQUd3bUJFM1pCMDZ6My1URkQ5UjczVnZCSEFZcGZlRnp3ZWs5RDJ0SHlZc3hNOHl0Zm9iRzF5eUI4U3A1aGlHSHI3dVEzbjN5di1nMndldWpuOTQxcXhPeUYycGhiMlprMnpVRzhIV01sc3pTVEFxNGlPSGp5SlFmV1JQLTB2bVBkWGZXSzhkT1I3VUZvanFxckpkVGcyLXF3ZmVfNTZVbTMxV3VtcTZQMk1EcHloR2Vzaw?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115084140/https://www.bozemandailychronicle.com/wire/international/ebola-outbreak-remains-out-of-control-in-congo-6-months-into-response/article_cd5ff843-a386-56e9-b9be-cf1ecb5e9956.html",
+      "archivedAt": "2026-11-15T08:41:40Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
+      "title": "Ebola outbreak remains out of control in Congo 6 months into response - Bozeman Daily Chronicle",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMihwJBVV95cUxNdWdTYTBFdjVGZExBM2QycUY2OFVuVVYwNEZaZG1qM2Jrc0xvSXFkUU9ReGo1azNQX2hpQVZGVloyYV9SemJaeTNaV2VudzJtUGxveTN5TVFRX0VKbjdRNlRYT256eFpuVDRsWUI4RFlwSW1KNHN1QUtEVWdNSlNQOW5UbXdFODhBT3ZhcFJwMU80cWU3YnExTGs5MEhxcFlRb0tNcEdaTHBlc0lDbVFIZXVzcW5SUUkyMDdVdi1WQVFNc0RzTGVzd3hOME1OTDZpWmQzZldmaHZoNmhuajBVaWY2dEtET1JUUEhuekVzVDNHT1pyRnY5VXpOTEQ4SEstNk8zVlhvUdIBjAJBVV95cUxOYUdFSS1Ub1A4dlhlM2E4bnJ3anBkNktVLUppZGhJV2VtbHhxSWJPZzN4NjZUcnpZRGwxSW5YN3NnOWdTeXBxR3R5WUVxekRfaU9DNHhSS1o4ZWJQckVIZmZ1V01XbHNrSVJpVWI5SnZXM2pEMXpCY2RaaGJRb2xSTUQtSTB0LXdSY0s2SEpjbFdNM2F2Q29ISnF6OTVSbU1tQzRVUWo4emUzdFItNkd0ZlhCNVhRLW1KX1pwYlJCdlV0bU9RYnhYTElWYlJuRS1FYTBPTGZ0Vnl6X1hVNGo0Rl9iZXJlZXVNY0dPOGw4THctQ1RxcmpVbF9qb3E3UWk0dWpSVFIxVTVwdkJv?oc=5": {
@@ -9140,6 +9192,19 @@
       "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZXJyT3FNaEtPbFp5T3B1VG1sUjJWWk1VbnR1aTM1SWFJWEFuMEo3RE5qRHdZM0JCS3V2Smg2NmlZNWl6NVh3U3JNMTF2NlM5RWVwV3B6SE9MYUdGUEVPZW1zZG9aYVJaQThLMFBwR1o1VXh4X2lvckhvRFh2UGNjc1RDN09iYk9qZS1PWE5VSDFoWFRFUGc?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115084325/https://www.maliweb.net/en/africa/dr-congo-ituri-adf-attacks-kill-35-civilians-3121489.html",
+      "archivedAt": "2026-11-15T08:43:25Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
+      "title": "ADF Attacks Kill at Least 35 Civilians in DR Congo’s Ebola-Hit Ituri Province - Maliweb",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMilgFBVV95cUxOa2hIVUlaOVJNdHByVnFSLXRWSDE3N1gzQlR2bXpGdHBxbkVRS3RIMy1kS3RZWVk2dGR1amV4YTQ0Zi1jZHVsSThnSS15Nm50N2diX2FzeGpselQ5dUFYZHdxV3pEMVhPUG9vQVJ3RXR1Z0F1b2t0OFl6VDdVSFhjZDlheXN5WXBIZ1hVUnlWaHkwWGozdWc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -10532,11 +10597,11 @@
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxPcEZxS2JOZzN6RmVSWTJTS1ZCcDhBWTE1cmpHMUZuTDBtRDNhUVdBWnRmbEdpS2ZXUm5Ob29pdlVZNjQ5U2RMQ0RWZW1xQUU5X1dHZW14emVnWU9PUWRqUlprMDl3U1pJbjZlWGxSdDNUd1FpdjczYTV4YjNkcWVtcDhuOUZ1Snl6UXJCWW11bnloeG9PR1ZGeEs0WVZzUjBaaXc?oc=5": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-14T20:26:36.253Z",
+      "archivedUrl": "https://web.archive.org/web/20261115084237/https://www.londondaily.news/ebola-outbreaks-toll-on-children-1737-deaths-in-dr-congo-by-4-november/",
+      "archivedAt": "2026-11-15T08:42:37Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
       "title": "Ebola outbreak’s toll on children: 1,737 deaths in DR Congo by 4 November - London Daily News",
       "publishedAt": "2026-11-14",
       "source": "Google News — Ebola death toll",
@@ -10626,8 +10691,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-14T20:26:36.253Z",
+      "attempts": 2,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
       "title": "Nigeria Sustains Highest Ebola Alert After Clearing All 62 Contacts - https://streamlinefeed.co.ke/",
       "publishedAt": "2026-11-14",
       "source": "Google News — Bundibugyo outbreak",
@@ -12407,8 +12472,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 2,
-      "lastAttempt": "2026-11-14T20:26:36.253Z",
+      "attempts": 3,
+      "lastAttempt": "2026-11-15T08:41:05.460Z",
       "title": "Congo Ebola outbreak exceeds 11,000 cases as containment efforts falter - Free Press Kashmir",
       "publishedAt": "2026-11-14",
       "source": "Google News — Bundibugyo outbreak",
@@ -13218,6 +13283,19 @@
       "title": "Congo's Ebola infections surpass 10,000, government says - GMA Network",
       "publishedAt": "2026-10-28",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxObVZmalFHbWtDU01zUnJ3NWZWSGFIQWRqQkFYYzhYSzR4VUpVNHY4YXdNTGNiSFpCUW9Tem9rTVVrYml4QmFqUVpCakZPYmxXaGJsX20tV2h2SVZqaTA5ekpoV3JUU3ZiMnRBOTFzallaWUMyQ3FDVVd6Q2JLeV81cmphTmRtbTRjRUctajRvY3l0b29KX00yRUgzcFNYUjF5QXI2SDF3bS1HNHlwMklSYWUtRFRfZEtsZE1Oeg?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Mobile-Phone Records Help Reconstruct Early Ebola Spread in the DRC - Nature World News",
+      "publishedAt": "2026-11-13",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
