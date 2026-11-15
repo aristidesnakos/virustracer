@@ -1,15 +1,6 @@
 {
-  "lastFetched": "2026-11-14T20:26:28.248Z",
+  "lastFetched": "2026-11-15T08:40:57.024Z",
   "processedIds": [
-    "news-762be3e68033d00d",
-    "news-fb1cd028970ec40c",
-    "news-d1ecbb91a79c38f5",
-    "news-b49b3b24b9af2324",
-    "news-6bd950b008d187a8",
-    "news-18178c07e9bdddc3",
-    "news-c1b849fb387fd003",
-    "news-61f41c2fb74b5b99",
-    "news-0f08b838171d5efa",
     "news-b9e3b1a2782aff2b",
     "news-8ffcf4c624695b96",
     "news-915f68d9810116ca",
@@ -1000,9 +991,48 @@
     "news-eb8a16899dc54db6",
     "news-bcb491f25c058445",
     "who-2141769afe0570e3",
-    "who-ec3bca73146f4511"
+    "who-ec3bca73146f4511",
+    "news-4fa2441d678b29d2",
+    "who-853c2d567e828212",
+    "news-9357ed415104e8c4",
+    "news-326f289eec24fc5a",
+    "news-85e1d622e32e01dd",
+    "news-194805424f085fae",
+    "news-432e6782e48d6751",
+    "news-b201251f2bbb2d6f",
+    "who-85d82f1729af7ae3"
   ],
   "recentItems": [
+    {
+      "id": "news-326f289eec24fc5a",
+      "title": "Congo Ebola outbreak claims nearly half of infected as cases cross 11,000 - The Times of India",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxPMERCbnVkSDQwWGZsUHBjWVlJQlBNc3lrNnhVRWhyZ1ptQUhwazNLaFJwekdIMW80Y1Y4cmZpRS1fU2hOUndsMGFiVVpsVktpZFU5WG5EVmpMUW5KRjBPOWNHR0tONWt1QXduWnhkTXZJQTJia0FEY09UbkREb25LN1VhX3k0Z1RwVkdVOHNOQ1hvckJGeGp4akREM3N3S3JVdUtncnVIMElheUd6THFOWVB1cVZNbk5LOWhaRXdOTERSNmZsYWpkMmRHdWNlMXlsX09YTjAtWjlnZktRajAtZ2EwaXMtNnNEV2fSAe8BQVVfeXFMTWFPNGgwOFk5QlE0clpzQm5lRmlDNnNpOEdGZmFiMm4tT3Q2TWRLdjVVb29fSGZpMnlTdEd1MGthZllLUzNFYTVBODVKZFd2QTFodE9pN08ybF9BYUN3V2RsVVNJUklCSmJ3WGJlQnBIekhKVXZ6YnlNMGVocm9FTGFPWTQ0R1VYdUFNLTZyY3ctVWFZd0RSYUJDOGY1Y1k2b2VzN3ByTldfTDlpNDhQQWN3djhUcENzSWxNYzFBZEtwd0U1aXp6ZkVyNFYtaGdsSEx0UG5FZUJpbFV0UEpYMFFlXzF4WVVGVHg3eGVtY1k?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "Congo Ebola outbreak claims nearly half of infected as cases cross 11,000. The Times of India reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9357ed415104e8c4",
+      "title": "Ebola outbreak remains out of control in Congo 6 months into response - Bozeman Daily Chronicle",
+      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxNU2xYd3kybmwxTWo1YjJFbmYwdXIyQ1ROR0h1OXFpUXN1TG44RHFDWjAzWm9HMzlVbnRfWmljWTQwQnFtRDJPclhRd0JTWUgtcmxXeThzQUd3bUJFM1pCMDZ6My1URkQ5UjczVnZCSEFZcGZlRnp3ZWs5RDJ0SHlZc3hNOHl0Zm9iRzF5eUI4U3A1aGlHSHI3dVEzbjN5di1nMndldWpuOTQxcXhPeUYycGhiMlprMnpVRzhIV01sc3pTVEFxNGlPSGp5SlFmV1JQLTB2bVBkWGZXSzhkT1I3VUZvanFxckpkVGcyLXF3ZmVfNTZVbTMxV3VtcTZQMk1EcHloR2Vzaw?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola outbreak remains out of control in the Congo six months into the response, Bozeman Daily Chronicle reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-85d82f1729af7ae3",
+      "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive - BBC",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mYnZBdGt6cU1VVTdsSTU1RDlnUklZMl9EUzkxSmh1S1VyOU14czktaTFNRGVHVVd4THIzdTN5SGdqOVA2REtQZHJPTFMtRUNNQTdORkhyUDNoYVE?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — WHO DON",
+      "summary": "A survivor of the 2026 Bundibugyo Ebola outbreak said their mother warned them seeking treatment would be fatal. BBC reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-18a35b0263cfbc28",
       "title": "Ebola outbreak’s toll on children: 1,737 deaths in DR Congo by 4 November - London Daily News",
@@ -1010,6 +1040,26 @@
       "date": "2026-11-14",
       "source": "Google News — Ebola death toll",
       "summary": "The Ebola outbreak caused 1,737 child deaths in DR Congo by 4 November, London Daily News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-4fa2441d678b29d2",
+      "title": "Congo Ebola Cases Surpass 11,000 as Death Toll Rises to 5,387 - Maliweb",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPSk9tUVNET0gwLUFRTVFtWXM0YVl0RzBuc182ZkpQSllkR29KcTVLaURwNnJfX25LQmN2d3FoUnNiSEZ2UF9QaTc0Q21ROHYwNHQ0NENLcE9HMURKM2YtUkhURHhicFNyZnNpcW9VRlpHaDZxcHdueGNLOWZ1QmZCSmQ2dUQ?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — Ebola death toll",
+      "summary": "Congo Ebola cases surpassed 11,000 as the death toll rose to 5,387. Maliweb reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-85e1d622e32e01dd",
+      "title": "ADF Attacks Kill at Least 35 Civilians in DR Congo’s Ebola-Hit Ituri Province - Maliweb",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOZXJyT3FNaEtPbFp5T3B1VG1sUjJWWk1VbnR1aTM1SWFJWEFuMEo3RE5qRHdZM0JCS3V2Smg2NmlZNWl6NVh3U3JNMTF2NlM5RWVwV3B6SE9MYUdGUEVPZW1zZG9aYVJaQThLMFBwR1o1VXh4X2lvckhvRFh2UGNjc1RDN09iYk9qZS1PWE5VSDFoWFRFUGc?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — Ebola death toll",
+      "summary": "ADF attacks killed at least 35 civilians in DR Congo’s Ebola-hit Ituri Province. Maliweb reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1060,6 +1110,16 @@
       "date": "2026-11-13",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Ebola cases exceeded 11,000 at the six-month mark, but challenges remain, Africa CDC stated. IANS LIVE reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-432e6782e48d6751",
+      "title": "Mobile-Phone Records Help Reconstruct Early Ebola Spread in the DRC - Nature World News",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObVZmalFHbWtDU01zUnJ3NWZWSGFIQWRqQkFYYzhYSzR4VUpVNHY4YXdNTGNiSFpCUW9Tem9rTVVrYml4QmFqUVpCakZPYmxXaGJsX20tV2h2SVZqaTA5ekpoV3JUU3ZiMnRBOTFzallaWUMyQ3FDVVd6Q2JLeV81cmphTmRtbTRjRUctajRvY3l0b29KX00yRUgzcFNYUjF5QXI2SDF3bS1HNHlwMklSYWUtRFRfZEtsZE1Oeg?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Mobile-phone records helped reconstruct early Ebola spread in the DRC, Nature World News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1140,66 +1200,6 @@
       "date": "2026-11-13",
       "source": "Google News — WHO DON",
       "summary": "The WHO warns that Ebola is spreading in rural Congo. Yahoo reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-9b9efd83ce301f8d",
-      "title": "DR Congo Ebola outbreak: Unrest fuelled by armed groups holds back response - UN News",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBqQ01qb3lwNWhSR0VzZy1pZ2Rxa0VKNllXa0FOaGVJeWg5bnROUm9VaGZhODYwbnQ0Rl9VbXd3THBCMU5LR2tyQkVUWVl1cmFDZV8xckVvaw?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — WHO DON",
-      "summary": "An Ebola outbreak in DR Congo is hindered by unrest fueled by armed groups, UN News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-e4517d7b8b1a5519",
-      "title": "UN hails progress in Ebola response, cites insecurity as biggest challenge - CBC",
-      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE9GUWp5OWp5ZzEyOERaTnRzZ1kyQjRvOVkzR1FoNWxQUEwyY2NoM3JyOXB0LWJEQlBVVk92R2JST2VYaWQ0MjFzVm1tLUFvdHdJcXM2N3dac0JWd05namhJRmtuRFVzZFplTl9yNzF1RFp3RHZV?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — WHO DON",
-      "summary": "UN cites insecurity as the biggest challenge while hailing progress in the Ebola response, CBC reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-ebe03437fb18e07b",
-      "title": "Trump Gutted USAID. Congo Pays the Price in an Ebola Epidemic - Time Magazine",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTE91bjYxMGlRNjN0a1lfYkdyWndCSHBWc1BqOXRTeXNMZzhhZEVTWVpRLUxSNmNneEg3akJHeVo5OTl2WjBZVWNRSmt0OHI4eVFmeVFOYllxQWJmVW9PRFA5dUl4akJKdUhXenppZGlheXM2c0NBLU80eA?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — WHO DON",
-      "summary": "The Trump administration gutted USAID, contributing to the Congo Ebola epidemic, Time Magazine reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1af8f546a2f3a2c0",
-      "title": "MSF says Congo Ebola outbreak remains out of control - https://streamlinefeed.co.ke/",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPbzAwOWlHcWZzSXZMMDFHZERDSjdtQXUwZ0hzOXJkLVNINmFrRmFzbktRMkR3eEk5ZXpTdm1id3ZwWWNsclVyVkVIdVhsUmsxd3dDcmVBMkFwNldtSUFZZ25ySXYwNHFFZDhudGRSS0JPanoyOVJrMDR5VG9QNUg2dkpMV2llVzVodFZFU0hxcw?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "MSF says the Congo Ebola outbreak remains out of control, https://streamlinefeed.co.ke/ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-22a620d99e13f7f9",
-      "title": "Before the first case: World Health Organization (WHO) helps South Sudan prepare for Ebola Bundibugyo virus Disease - Social News XYZ",
-      "url": "https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTnJGY21aeXdieDk2NHpfbXM1NENteUpIYXBMUkFkcHFISEgwT3RSOUdSMVpjNFpBejhQR1FOdU5DeXhmZWlmTUN0d1A2ckR0bUxqWXFmLVJGWDRTQnotZ3N1WjM3cTMxV3JuV0tZaFhXQnozNGxsbnRxVWtnYktmQkh3OXFSRVluS0RIeUl1eGFqZ05rcWhDN3JhNGkzaWUteVFLd1lQaGgtUXAzRmZtTG53TS10WjJRdlcyVEFYd0xKVFRfQVZTazlJSnM4RzNkNU1yZzhmN0lTZ19lUThUU185Z0hnUdIB5gFBVV95cUxQTnJGY21aeXdieDk2NHpfbXM1NENteUpIYXBMUkFkcHFISEgwT3RSOUdSMVpjNFpBejhQR1FOdU5DeXhmZWlmTUN0d1A2ckR0bUxqWXFmLVJGWDRTQnotZ3N1WjM3cTMxV3JuV0tZaFhXQnozNGxsbnRxVWtnYktmQkh3OXFSRVluS0RIeUl1eGFqZ05rcWhDN3JhNGkzaWUteVFLd1lQaGgtUXAzRmZtTG53TS10WjJRdlcyVEFYd0xKVFRfQVZTazlJSnM4RzNkNU1yZzhmN0lTZ19lUThUU185Z0hnUQ?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The World Health Organization helped South Sudan prepare for Ebola Bundibugyo virus disease before the first case. Social News XYZ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3d7b48d6757190c2",
-      "title": "WHO warns insecurity threatens Ebola response in DR Congo as death toll exceeds 5,300 - EnviroNews Nigeria",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPZnZsUFdfSUQ5SHF0OXdDeTNUOHROX3Z5cmMyQVM5YW54V0xLX2thQWlKcTdqX2JQRV9FSDg4dEFhTElUMXkwMjU0OXdTNzJVSGlrbExLalM0QlR6Skp1YVUtY0VaRmUwYWZOWUtPZkdhTHB6ZWNLQ0o5X2ltdVRNQzdsLTNmT09BU2RELVlaNFAyX280R1diLUJpZWducU1pVlN5SDdoZlVMbzc3SHZYbWV6OXJHNm5YSWVR?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Ebola death toll",
-      "summary": "The WHO warned insecurity threatens the Ebola response in DR Congo as the death toll exceeded 5,300. EnviroNews Nigeria reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
