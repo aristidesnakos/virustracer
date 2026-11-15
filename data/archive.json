@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-15T08:41:05.460Z",
+  "lastRun": "2026-11-15T20:28:03.712Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -3732,6 +3732,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUTRNWmRiRXF0RkVDOC0tZjF2ek5CSlFvaktDd2NFNm9YYVRFazNQYW5za2U0UUw3bG5LQkFWTTdkWDBxSWwxOEVhM1R0Nnl0X283azZKa05qRGJpeDF3aWNjd05RSjJuMDJENG93dERJYW52LU9WbVU1TXIzdGN1VGRlblNJVnlWTGpHRlpuRmpVYjlsWndmOEIyLW5xaWJwallxdHBFbWpGQzk0bmU4UTB6aFZOVFlLSVB0WF9LUGxqWDFtdTA2WURRbEs4aHkxazhOYlN3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak - WHO | Regional Office for Africa",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — WHO DON",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOZmpkNGtLUVBzenZ2aEFOMklIUDBIVmZXV08xRWNnZ1hfNFlrdUFhS0R0RzdaVFhBeGxsMEthM191Mi1zTlVBWjFxY1d3OFRhWExWWFlXQjFHZEtzWHp2U2tkQW5EX3NmRFBsNjNjZ0pjd1ByQjYwM1l4czFRNUZXZFliOXJwcGN6X1JNWXZzb2ZrbTRfZ2VXYXhxdzhCZDRuZWVTNFJqaUt2MEY0U0V4YWdRcktZaENNdG1Ra2FvWTNjRlQzRkJhVmtJSkR6NWZVVS04ZVdB?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -3951,6 +3964,19 @@
       "source": "Google News — Pennsylvania measles outbreak",
       "kind": "news",
       "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQU25FZUdud21zOGRwcHdZRTZESUh4dUY0ajFFSTBhSXQwUWo5SXFVNGtXb0ZBcF9HUnZJeklFQXd0c0h4MUtWandzSVhzeldqZXFEdGZ3d0poQU5KV1dtTWZWUzdCQk1tQW56ZTAwT0cwZklldnZ6Q3dHVHFDQWJmNjhQaHFYOGZOa1lnU1Y2dGNwVGRZaFBrTTlESzk0a1B6Z0JQU0swOTZCanZBanVRS0hnTFhrQlRsSHRRbXhfTlFRaXB4aUhGS2VDV09VVDFvZThlOUFQLTJiaDJx?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T20:28:03.712Z",
+      "title": "Africa CDC says Ebola outbreak still out of control six months since it was declared - Reuters",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQakZQUGpDS1loOWRabEhRUjQyY21ER3NzMGlWcktzYkZlTGNCcE1WQUp1SndEQnM5ZHZUVHdLZW9PTnY1Sm14WnRkZHJfZTFuR0gxVnRBX3lqaUdzWVBXRVRzZXo5bGtmdjV1QU9yRUdoWjgxZFd6Z1lZSVVhdnU4TEFxV3gwLUJFY1l4NXV2amQzNDJkazgxVEU3Q0U3TzFPYXo4cFVyNTFILUlLdGJqUlNSYnhxQ0E5dVVJQWw5cm5ub1dZRFFxZ2lkakRlbU1wQzlDbWZkOHh5M29l?oc=5": {
@@ -4913,6 +4939,19 @@
       "source": "Google News — Bangladesh measles deaths",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxMEdWOUhhclBaZy05VUFFSEEwZ1d2bmZMOTBrc2RnZndPMWViNWFQeGxZVzRvdzVxbEwzX1EzTmhoOXIxNlRvaGhqZlp0Vmc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "WHO: Ebola outbreak in DR Congo largest, deadliest in country’s history - وكالة سبأ",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxYlA1eUVlaHR5QzRfUWtCeHlFVm9qZTNLV0JSSDQ3Q1dRLV9sU3c5OXV4bzlvUk03THh0VF9pYktJY0FCb2gxZWd5VnNxODA?oc=5": {
@@ -6228,6 +6267,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMicEFVX3lxTE5sdmpVc1V4cnBKbW4tQkVyclpNeHRjUi1SM05uSjFNdTU4RmZkbW9HUWVQUjZyTFkzRTh2dDB5UTU1NS1GVmFLWkVLMUhQSzZCRjlDRDY3QUNVT0NMMGRZQlhkTFg3Y3JSUk5IYnRHcWU?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "STATEMENT: Bennet Calls for CDC Director to Resign Amid Loss of Measles Elimination Status, Mounting Measles-Related Deaths - Forth.News",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMickFVX3lxTE1UYVMwQ1VPbDZjQ3Q1YTZuOHFFTEtQRUROczc1MVV1aTJZU0VLVXd4eVlWem1VYkhjSmlXRWhkckVoLU16UTVELUltdWl3SnRKVmJRekFPZWFDUHNRSDZWcU1XNmdLalYwUVkyUGdQZ1dLZw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -6330,6 +6382,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMid0FVX3lxTE5fcDhvV3d1TkdKQXMwOW53aGVkREVReC1zb1dEenpib2N1aDZKc0VrdHhOcVliVXE0clVjcmctWEtFeUlzZFVLV3lRVXhfQXExbFZ6TzhFTElXUVFWQjN5SU80UzhseWJMYmdHdGt6YzJGd1lJVnpB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles outbreak death toll rises to 1,314 - Daijiworld",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xNGZJeEQ3RUVHZkR4MnQxRllfTlZzR1o3aUtJYzRzUmVIRWZoUEt0Z3JSeW54M21qeDd2bVFQSXVZWG14YzQweElCMENKSWQtOS1PVzQyNV9FaDZfdTZ5LTBtQUgtTGJJc085VEt3WkhYNk5D?oc=5": {
@@ -6486,6 +6551,19 @@
       "source": "Google News — Hantavirus",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMidkFVX3lxTFBWSzVyZHgxOG16NGU3a2o1NUpOMVhsVnV0LXh3aWJFZ3ZQN0dwVW03aGRWMjFEYW05OHFMLXczRmlEc2MwMlRSUWJ2UENrYm81bTFqV1JPSS1uRWVURW5zc0dKYWNhWjJxTk91czNsOUFmRzZubnc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "After 26 years, the US has lost its measles elimination status - CNN",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMidkFVX3lxTFBxck03eE8xa1lURFVCN2k2Yi1XN2haQVMxeC1VQnBzNU9oZ0VudDJTZlg2NnBzeGY5anp0OXJ1NEhxakJRdVd5WFFLc0F2ejZTYzlzQkRWMXlyNWpSMFkxdmxmUXl3SDRaNDR1M3lhVHRFZE03Q2c?oc=5": {
@@ -7849,6 +7927,19 @@
       "title": "5 questions about Congo’s Ebola outbreak - Washington Times",
       "publishedAt": "2026-10-02",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTGdwN0VZTjJrdThPMTJMbE1UbHNoUlVGQXBCVkZSX01rRXc3WDlRUlZHSzlITUp0VEl4UEN6VVI2OGFQYjBNbHhSRF9QbjdXeVU5dnZOLXc0X3ZGNEhZdEtJQklJNThudlVCRE84dFFqdEpEbnZRS29uUnI3QWtmVjYtUGl1VHdGT0E?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115202808/https://www.contagionlive.com/view/ebola-outbreak-reaches-11-145-cases-5437-deaths",
+      "archivedAt": "2026-11-15T20:28:08Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T20:28:03.712Z",
+      "title": "Ebola Outbreak Reaches 11,145 Cases, 5437 Deaths - Contagion Live",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -9894,6 +9985,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMinAFBVV95cUxPalNJMjlqRE0zRzhPRTVxeV9LLVJxbTRqQll3TDBTc0p4alJUSE5wV0pjb0VKRVNZRE5XQ2J3a2E2NzBiVGE4V3NHN2lSTXlnZTVqRkRSUG9zVkRHc2cwd0JLSHpnVHBPQUU0MjAtTVhObVJOd201YmtDdzBfbmIxVkI2ZTk5UkttbGliRElGVjMxWnk2WUF5NUtNY1o?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. Loses Measles Elimination Status as Cases Surge Past 5,400 in 2026 - SSBCrack",
+      "publishedAt": "2026-11-14",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMinAFBVV95cUxPbDI1ZHZuZTZ2QnRBVkJaOW1tN2JPc3VwTzNhVzlHT0VtOHhySVN6UlFOY29PcW9vWHlydW5DWXVMLXdNNFgxMnZrSkRSU2lEY1RoZ3Z5TGwzMF8xdTJjaUpGTEJBNVlLUXlpbl9MQ1VjQ1NMYnFlQkNjYVRqZ3hkN1Q1R21jRFhyZi1ocnAwX2FhYjBBWDhSYmJSYnA?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -10123,6 +10227,19 @@
       "lastAttempt": null,
       "title": "Pennsylvania's measles outbreak reaches 1,426 cases as hospitalizations rise ahead of holiday gatherings - Medical Daily",
       "publishedAt": "2026-11-02",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUEI1ajVrNmowWlhLVGstamZQaXd6d3U0azNvM1V0c3BOdmdzWXk4cUp1M01QVHZvY0dmLWhQN0JMNEt6b2Z5Z2NZd0FGQzVjZGpWdlduU1l6MmJsZTBBZE1ISjZDWnVhRlRkQWFtUlY3WGo5TDhkYzJyS1o1Q0UyUFpJaGY1S1FSRUZ3SjQxMzA1cTFGaEcwRWFLMlI3MVU?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania Department of Health Confirms Seventh Measles-Associated Death - PennWatch",
+      "publishedAt": "2026-11-15",
       "source": "Google News — Pennsylvania measles outbreak",
       "kind": "news",
       "outbreak": "measles-us-2026",
@@ -10583,6 +10700,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWGN2LV9UaVN1VlphSzhQbmh3SHA2R1dJcWZjYi12Znh4a2p3UFlqZXo3RXNITWJBRkI0TWlxMWhtUllTem0tSkdpUVB6MFd2a0k3RkFlUFNuTjZGSkpJenJwbktWMDRaeG9hSmlmNnpqSUhWd2VFZk1SdDVuclJGY2t1NG5FSzlDYzJJWmtIQWtiU2ZuaC0xazNKd2ZzUFlDMkHSAacBQVVfeXFMTTNNb1ZOMFNDOVpXb3dDbnpZclhyaFdmdjBsYzJyWTJ3VlF3dkl1c19CWjY2My00RjhaLXJmTkNkWDJyRWJoa0pRTjc4MTVOOHBHVWVENUNfbFhWN3M1WjVSbURIUWF4eHpCUkVqTmw0MHdRRVlNY05GN1U5MEpxaHBrdFFnb0s3emFqd3hUblYzRFl1RVNDZ0lfcXJVY0dSZllySWtmbDA?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115202919/https://tribuneonlineng.com/ebola-outbreak-kills-over-5400-in-dr-congo-as-conflict-hampers-response/",
+      "archivedAt": "2026-11-15T20:29:19Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T20:28:03.712Z",
+      "title": "Ebola outbreak kills over 5,400 in DR Congo as conflict hampers response - Tribune Online",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiogFBVV95cUxPSzEtNHFFTHVBSnNhY3Q2V3UwYmYxSFAwTHNNT3VFU0JNRDUzUTZPMklVTnFhODdKQmhEYnFGdnMyT2xBVUNmV2dWOUlibV9WSWxvTG9vdHJxSmZ0ZXZrTkdkSXlZYzFDQlpWMk84Rmh5al9SWnd3MHhCdEcwbzlhWW5qQVVpVFNfOVBxWXh1UFVqTEJDMnNRUjU5c2Fvc2Z1cHc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -10958,6 +11088,19 @@
       "source": "Google News — US measles cases",
       "kind": "news",
       "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbk92TnBWdmVGWEt0LTZQVVdhMDJNNnhPREpqTUQxWklDS2ZIQm1TbGQwS185R3djQVhmYUVKZmFkTmVMMGVNdWtWWGRZYVNyamFHdzNRdjM4djVub0k2VS1iVDB0eE9CbHF4MWhpZUxGQTFya2VPSW9jLVkwWkxDTUtsbHYxemk5bV9VOVBCTWNlQmkxcGFPWXNIb3p1MlJ0UHVCOQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh logs 8 more deaths from measles-like symptoms - United News of Bangladesh",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bangladesh measles deaths",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxPcUtfNGxsXzJ6czh2RHpBM1VfODBkTXhycVVSTGZGSmFTLVZYbXJRd3h4UkJPRFluclprTmJSZkpmc1V1QmVlQmZIdDU5QzcyQUF5T3lyZEEyaWVEeF9HQlVCaHdLUDlLU1BQVnJlTUFEN0RPYXJfdXhxSEtOVHZ0YkgtWEp0S3gxRGFtRkRlaXJYYk1nMnRpa1hDQmgxRlBRbkg4cA?oc=5": {
@@ -11844,6 +11987,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOamF3d0R6SE1scVFrUjBjQ1hkdWhYYUhESEdQcG1GNkY4cUdYRXdpZzRnYWVpeVIzMFNuVVR2NnZfS1B4MnZvVnNjak9GRGZJYWliSXNZbkhBRklXaUVvSHdkMVh0VWh1bmxCQzhWSWtNR3d5emhpMkdfNHcwc2ZlRlRwM2dRNkZEVE5wa2lXd19IT1NSaGZ1d1c5dnJucVItb21iaDZJekY5ams?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115202856/https://insidepolitic.co.za/ebola-outbreak-in-congo-spirals-as-deaths-mount-and-containment-efforts-falter/",
+      "archivedAt": "2026-11-15T20:28:56Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T20:28:03.712Z",
+      "title": "Ebola outbreak in Congo spirals as deaths mount and containment efforts falter - Inside Politic",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPOTV3dnlyQklZSXdDb0YzSElvV2QzckF0d3E3emVvSy0xbzhlcEJHTUJTeWJwNWctQWRZajNYbFNzcVJJQlUyNi1zd0NaU3M3V2Q1M1FQQnQ3dEk1bmYzNnFMRVVCX0xudmFsMUx5dERoOUV6ZldVVS1pdEZLeERpNG96dkM1LXNJV2dPS0hvUlcyc0M3eWxNNGRETEk0a2pLSmpGUWIxNnR6ZEnSAbABQVVfeXFMTUEtT0FYZmdsU1VUNEN3VGNMY0RGMXA2YmQ3NTdYU1FTLWpfa0RhQ0JSc1k0RjVPbVM4VXctM0lLQTUtR1JJVU92ekh1T0R4OUt5THIzS3Rfc25ER1ZfWHhNa28wX3c4c1lYTGRvOWVHTE4zNGRrdkVRSjVIak9GdExlX2E5R2QtZXM3QXhPVWU2Wll1UFFyZUl0akpkamFvUzZJRWlNS19xWm5HWXNuQVI?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -11935,6 +12091,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxONWdWQ1pwSURBT2NIcjhsRkpvZmNMbHlHeDM1STlUamVyMURWWkRDMWJ0Q1AtMGY4cHcxaldOSkROYzYyMjFVUXNfTEhpMnE3WDhkLWk5MUd6MFBJMDRwbWx3NDhGM1I4Y3A2VmhENkREYW5IcVZ0d0puMWZpVEZCdnVldHBuV2s3ZXRNNmNpQTVCNjl5eUlQcVczOEl6RURrdFZkd0JyQ1Judmtw0gGyAUFVX3lxTE1pelhfM2hCR3BubDlDcDVRYWhINlRJczFRWTVLbkpFWW50UTVBZWlISG5IZEVjZ2xSOWV6ZDc2MHBoVDVxRWt1d3E3SlFzVnBudWpaWGpIZVkyalRtWmJxakZIZWpmNFRfaV9hbTBoLUxPRDlRQzFGSWJuMWFzMkpGMGoyMVZHLTlHOVlodE84T01PeElJdVNfX0NMVGR6OG9fNm93UVB4S3lHZkFpamRFZ0E?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115203007/https://www.aljazeera.com/news/2026/11/15/africa-cdc-says-ebola-outbreak-in-dr-congo-still-not-under-control",
+      "archivedAt": "2026-11-15T20:30:07Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T20:28:03.712Z",
+      "title": "Africa CDC says Ebola outbreak in DR Congo ‘still not under control’ - Al Jazeera",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMirAFBVV95cUxOZi01SVJBVTZ2THBITjhCWTFvcVBSRjJrSG5wTF96MkdpblU5WkZlNmc1bGlNM1UtRWJTMV9sSFJ6dzFXWGRiQlRmckp0MWxSQVFZT3dMQzNtRGM1RWE2ZEhiNVVDS1prMWhlRjRGYnJsVnV0NTB2Z3VMbzRYeWJtM28yN2htaFdOeV9zZWx3WVZfbFkwaGxiUV9WYmtNVmZFQVhfUV9CMXNzR1F0?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -11985,6 +12154,19 @@
       "source": "Google News — US measles cases",
       "kind": "news",
       "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbDdPX2oyWFA5NTk3R19VSGVndHdHNFFiZmtzQWRhQWhnOTlCMGNmV1QtdWlmTURIX0lpS090MTJZTU9CTDNGVEJieHdSeF9LWFFCNFFjOU9BRVlEZ1hsZzl1Nm8xSGZNbFFSUkpQQkpqQnVDSGlfeEFCNXJTVEdNMUtROEw2QUdobXMxYXhwaVZkcUlwbzljbndMRlM1X0xhQmlRanRwWmJObjJM0gGyAUFVX3lxTE45Mkk5dGFZTHNkRlk0MkxpSU5WdFdtZ256a09zOHg0MFczbmJEU2VhY3lYd05MTC1GbUpoNUU3RlB1NFdwc29tRnZTSUt2ZEVxT01zZGl6eElGeWI4aTh6UzZ2YjR5bFNEMkM4M0RIUGNMLXRWZ0F6bUpvWVZPaHJSaV9ac2lzUmJvbUpVUVlkc0VkcmowQVIxNzVQY202RE1PWGpwN3RmSG5ueWZXcnBsQUE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola outbreak remains out of control in Congo 6 months into response - ABC News - Breaking News, Latest News and Videos",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcUJBVVFHeGM1cWRTZXIxbkJHS1Mxdm5VYnkyV1kxR1MyMk5qNjl5TDZTd1NMYVZzQTcwaHliZGRjemF3VG96MEQxdTVVS25iWTcwcGJmd25uTXY2M3czUllVZGQ4VGRUSjcxbUZVR1JSV0xYMV84M2JNV1ZvTGxmYkpkS1pKQlJuY05BUXFKZFdJMGozM3NEWjJCVzlsOHo2S0lSR3N2YVZGM0g2?oc=5": {
@@ -12767,6 +12949,19 @@
       "outbreak": "west-nile-greece-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQMHFTcE9Mb3ZGZVppTlFBTTQwNnZSQUdMZnV0a3psUlJqRXY3MkRVTXoyb1JUSWZHSERxaUN0YldocExUTmhpM0xZbWVINDNhODRWUlNrN0lka2ltYmgxZWJTczJva1N1dzMxR1daeGRvSFNZNmdwcHR0SUF2SjhVdWlpRDdpZmpIOC04MnUxaDM2ZWNYVzZxV2JWWXpMTUhyU3RWcVdlbDNYbXFQaTJBdlNidTfSAbQBQVVfeXFMUDBxU3BPTG92RmVaaU5RQU00MDZ2UkFHTGZ1dGt6bFJSakV2NzJEVU16Mm9SVElmR0hEcWlDdGJXaHBMVE5oaTNMWW1lSDQzYTg0VlJTazdJZGtpbWJoMWViU3Myb2tTdXczMUdXWnhkb0hTWTZncHB0dElBdko4VXVpaUQ3aWZqSDgtODJ1MWgzNmVjWFc2cVdiVll6TE1IclN0VnFXZWwzWG1xUGkyQXZTYnU3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Bangladesh measles outbreak claims eight more lives, death toll crosses 1,310 - Social News XYZ",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3p1NkVGcHpESHRXVUdIM2FHT3dDZkdKN21CcVc4a0t4d1pfYmNVSWRaT01KaHRtQkh5LU41V2hFdUJOOU84VzFSdEw2SzVncFhtNjVXQnVIaGx2M1pnM01nYzJRZmE5S2F5Vnh3dmRpQk03Z0IxN1UzenNPeVlSUEpIZ0NUWGpza3F4enREbm03eDF3cDBOMWNPWWtHaWtIVmdxLVRxRlRjMm56VndkV1JQdUPSAboBQVVfeXFMTXJlUWJLb1p5dUNwWm5CNGlXeUp3dFJIbFcyajFGZDZ0Nk4xWElLU0hsLWZkbFBVcTFNTE0ya1pac3lhSld1eWwtLXRKRGFrQ1Vic0pBbmcwcHA1ZkhjbV91MVpmZEEyNmlPa0x2S3JHb1dHdVpvbFlEYVN0V3ZIczNTX3paMGxwS2xDRWFrR2EzVVpzUEY0eWYzVWRzZE0xVC1uNng5U1lNazF3dlVWcm00S2czbk9OQ2xR?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -13092,6 +13287,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQY0lYeUNCT2xIYjNxeGRGZ1Q2TGRVOWxJTGxNVHNHRXdJOHJza2VtTzRQenBzN1NIX0dOdFdVQU0tczZYM09oZ1ZaRVhvbFVLTF9ndEZHOHZDbE5CajFkQndGd2trUktPNldBcTM5LXIwTWZOMFR3RWNDaWRQTGJKaFNKVWNjX2NnMkRtczM2OThlQS1POFpHUDNjaHd5V0hhekNKQzVtWmNUbWdGb1FNeUQ4UDJRTW8x?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115202832/https://www.newsbytesapp.com/news/science/ebola-outbreak-in-congo-could-surpass-west-africa-epidemic-death-toll/story",
+      "archivedAt": "2026-11-15T20:28:32Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T20:28:03.712Z",
+      "title": "Why Ebola outbreak in Congo is still out of control - NewsBytes",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxNajgxMmhDVFhROUE5Y0F0cmI2MWFCUkRIOUVwUFJpOVFfYXg4UTU0QTNYNGhpeEtvUjZESFhaYlBUUVpzaWNVYXFNeThoNUI0WXhWLUREbFFqLWZWZUxiNUNsWXp4eEZwa3FxdHU1b1VrWi1yQnpJSWtfY1BSMF9aZEkxbU8tRWJBdWVydGdrNFpiNmN0MldHV0ZDSVJmR1Z5blBCWEx1N2VnUURCdFRfek80VVp6SDVRSkE?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -13389,6 +13597,19 @@
       "source": "Google News — WHO DON",
       "kind": "news",
       "outbreak": "hantavirus-mv-hondius-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX3hVdkNzc0JzRnhmQVQtNTdNeWt0MVNKdjhNeWktVDk0V0FJY1V3dVk4ejAyblczTHltQ1lCb3UyZzZnRWJ5RTk2SDM2aVhaMUhxQTZaczNmRXhOV2RnaldTbGxnR25nZUhzb0pKWnRRWTZiQzlxYi1wYnpoV1kyd2N0RG1QZS1mdmVBNFoycUI4TnJvMnZSTzhMSlc4bTY4eHpod3ViZ1ZoWXFUSFJpWUc0R1p0eGMwRWg4Tg?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261115202943/https://k24.digital/lifestyle/health-and-fitness/ebola-two-vaccines-to-join-drcs-tumaini-trial-as-kenya-eyes-ksh4b-study",
+      "archivedAt": "2026-11-15T20:29:43Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-15T20:28:03.712Z",
+      "title": "Ebola: 2 vaccines to join DRC’s Tumaini trial as Kenya eyes Ksh4B study - K24 Digital",
+      "publishedAt": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMivgFBVV95cUxNQkNiUlNXdnRrOERCOFFKUF9WYzd5d2F5UVdLeHpUWWhyMHVkZmJXb3dydnVYNW1Ja0NUWG5TclBNc09GLVVuLVFZcDFLbGF4S2xjN2ZGVHJjUF80NkxtV1VCSTctS1Bmal94OVh3ZktsZ1VkWkRDLTJiQkFneDVGRjh1UlJ5M01ubmRyUVI0M3IySlJ4VV9GUkdmYUFIZnpySTVubUhzMmZXVkltT2dQM3M0Y2VCb0FtejFrVzdB?oc=5": {
