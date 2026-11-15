@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-15T08:41:00.479Z",
+  "lastFetched": "2026-11-15T20:27:58.993Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -485,9 +485,24 @@
     "news-0c7d0d16024e6c79",
     "news-d6b1ce1169468ab6",
     "news-a9e433560551233a",
-    "news-3a779f2cfa50dd0e"
+    "news-3a779f2cfa50dd0e",
+    "news-3178fd1a57b1a596",
+    "news-1b12c68d735e6808",
+    "news-699404c522b5d164",
+    "news-dea88c11a38bc9fa",
+    "news-33b22b32cc1cac6b"
   ],
   "recentItems": [
+    {
+      "id": "news-699404c522b5d164",
+      "title": "Pennsylvania Department of Health Confirms Seventh Measles-Associated Death - PennWatch",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNUEI1ajVrNmowWlhLVGstamZQaXd6d3U0azNvM1V0c3BOdmdzWXk4cUp1M01QVHZvY0dmLWhQN0JMNEt6b2Z5Z2NZd0FGQzVjZGpWdlduU1l6MmJsZTBBZE1ISjZDWnVhRlRkQWFtUlY3WGo5TDhkYzJyS1o1Q0UyUFpJaGY1S1FSRUZ3SjQxMzA1cTFGaEcwRWFLMlI3MVU?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "The Pennsylvania Department of Health confirmed a seventh measles-associated death, PennWatch reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-02cc1d3f306ab018",
       "title": "The U.S. has lost measles elimination status. Here's what that means and who is most at risk. - CBS News",
@@ -529,12 +544,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-3178fd1a57b1a596",
+      "title": "STATEMENT: Bennet Calls for CDC Director to Resign Amid Loss of Measles Elimination Status, Mounting Measles-Related Deaths - Forth.News",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5sdmpVc1V4cnBKbW4tQkVyclpNeHRjUi1SM05uSjFNdTU4RmZkbW9HUWVQUjZyTFkzRTh2dDB5UTU1NS1GVmFLWkVLMUhQSzZCRjlDRDY3QUNVT0NMMGRZQlhkTFg3Y3JSUk5IYnRHcWU?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — US measles cases",
+      "summary": "Bennet called for the CDC director to resign after the loss of measles elimination status and mounting measles-related deaths. Forth.News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-31a35ce86f1464a6",
       "title": "CDC reports 5,412 confirmed measles cases in the United States in 2026 - 2 Minute Medicine",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPWnBwTS03UnhXVlNrN0JjbHFiUkxoQzlPUGdLRERaVGhlTE5VUVlpYmxBTms0eDZCdzlSVWlnVm9RODZ4ZTdEdUR6N1VpMnAzVEZkRFZWOXhFMWt6V0xMbGcyclZEa3JNdW0tblc1TjlGazA1M2lGNW8tM2NWV1M4ckhfSkVHNGpmTjRuNjJ2ZUVNWjNGYVJCelNhalh0VzFIYlpPVw?oc=5",
       "date": "2026-11-14",
       "source": "Google News — US measles cases",
       "summary": "The CDC reported 5,412 confirmed measles cases in the United States in 2026, 2 Minute Medicine reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-33b22b32cc1cac6b",
+      "title": "U.S. Loses Measles Elimination Status as Cases Surge Past 5,400 in 2026 - SSBCrack",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPalNJMjlqRE0zRzhPRTVxeV9LLVJxbTRqQll3TDBTc0p4alJUSE5wV0pjb0VKRVNZRE5XQ2J3a2E2NzBiVGE4V3NHN2lSTXlnZTVqRkRSUG9zVkRHc2cwd0JLSHpnVHBPQUU0MjAtTVhObVJOd201YmtDdzBfbmIxVkI2ZTk5UkttbGliRElGVjMxWnk2WUF5NUtNY1o?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The U.S. lost its measles elimination status as cases surged past 5,400 in 2026. SSBCrack reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -629,6 +664,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-dea88c11a38bc9fa",
+      "title": "After 26 years, the US has lost its measles elimination status - CNN",
+      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBWSzVyZHgxOG16NGU3a2o1NUpOMVhsVnV0LXh3aWJFZ3ZQN0dwVW03aGRWMjFEYW05OHFMLXczRmlEc2MwMlRSUWJ2UENrYm81bTFqV1JPSS1uRWVURW5zc0dKYWNhWjJxTk91czNsOUFmRzZubnc?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States has lost its measles elimination status after 26 years, erasing a landmark public health achievement as a historic resurgence has sickened thousands and two more deaths were reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-dec542e1fac33765",
       "title": "Regional health agency revokes US measles elimination status as cases surge: Report - A News",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeEJYNzJGQXprSThmOWJQMmduVC1aX25sQUl4LVh5dlAzdlBMZkg1dXcxRFlFY2NTQzNmLVJSSWtwNndicWdacWk0SEI2MUJGMWdWdEpVX3JUZ282b3JNSnoxakJGYWttdFJzUFB1M3ZZOWJycEJ4QzYzcnJzbWVNQW1SOGZkZW5fSUNVUmNtUm5SaVF1MjhTM0JmbnRqbGtTYmJ1WlRHUG5SNW0xTUU4NTNHbGVWbjRCbG9jTVZETDZzd9IBxwFBVV95cUxNUXhScTlZZlRYaXB3VGhzTXk3dkFyWFU4cVNxTVQ4WlpWTjlsOUZ4ckNuYWlhS256MjNpYzhKTHFGZHJRTlFOVTBJdmRpTUZ5RHBRSkFkV3hFdTZQX2hOeGVNVTlmWkVhaU9GTkFNR19MVHRQWXh4MzdfSWRtOFlRdm55RGUwYnR1czFWWFk5T2t2cTJ6UzhsUlNuZXV3VEVDSnU3T21tLW1sMGRGeTNEUDBUZWt2NUdIVm9rWVdHSGp0VlMwVjY0?oc=5",
@@ -645,46 +690,6 @@
       "date": "2026-11-14",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania and Wisconsin each report new measles-associated deaths. Infectious Disease Special Edition reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-ff5521b823f59a9a",
-      "title": "Two more measles deaths were reported Friday, in Wisconsin and Pennsylvania, bringing the U.S. toll this year to at least 10 as outbreaks continue to erupt in several states. - Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOUEY4SHdyazdjekdreUlWWG00b0xNUzRkNFNzNm5pYVRnUGdUQVVBWjJCSm43RmFpalFKWVRFbUxCQW83Zmp5TXhwMXp1MVc5c3hhNVpkRVRoY19nSWFBbE9ua1IxVkhYNFlBWmR3dzZtSC1rcFhRM2ZDcFRyanU0dVIzdmdWTzJZblhvQW43MzhzNFRhZE81blFhZ214cnZ2eXlBSC1EWlB1bVRZMTNsbm5KcWhGS0RPc3BaR19CMHl1VUZaY1FaaGszOHpKemxiT21NaENXd0owYVlD?oc=5",
-      "date": "2026-11-14",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Over 10 people have died from measles in the U.S. this year after two more deaths were reported in Wisconsin and Pennsylvania. Facebook reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "cidrap-91eda7d923487674",
-      "title": "2 more people die of measles complications as US cases top 5,400",
-      "url": "https://www.cidrap.umn.edu/measles/2-more-people-die-measles-complications-us-cases-top-5400",
-      "date": "2026-11-13",
-      "source": "CIDRAP — measles",
-      "summary": "The United States has recorded over 5,400 measles cases, with two additional deaths from measles complications occurring in Wisconsin and Pennsylvania, two current hot spots.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-01b48661f7e7ee16",
-      "title": "Measles Outbreak Alert: CDC Reports Rising Global Deaths - OC Academy",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPSWExVFBWWGhyTTlIcHB5eDhHcXk3YWdvanVwaU9aRTFPWFlvZlRhaUwzd2pCa0FKcmx1WjR5bmlWQkYtckxLOEFQaFNKb3FscnMzTVhRZEdYUU00eEhPYUlaV1hySTJ2ZHR3alUxMHNVLTdCckxZMmloWDVmU0xRY1dJLUJVUQ?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — US measles cases",
-      "summary": "CDC reports rising global deaths in a measles outbreak alert, OC Academy reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-049e8d8c6ec8277d",
-      "title": "US CDC Confirms Six Measles-Related Deaths in 2026 Amid Rising Outbreak - Voice of Healthcare",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQcUJBVVFHeGM1cWRTZXIxbkJHS1Mxdm5VYnkyV1kxR1MyMk5qNjl5TDZTd1NMYVZzQTcwaHliZGRjemF3VG96MEQxdTVVS25iWTcwcGJmd25uTXY2M3czUllVZGQ4VGRUSjcxbUZVR1JSV0xYMV84M2JNV1ZvTGxmYkpkS1pKQlJuY05BUXFKZFdJMGozM3NEWjJCVzlsOHo2S0lSR3N2YVZGM0g2?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — US measles cases",
-      "summary": "The US CDC confirmed six measles-related deaths in 2026 during a rising outbreak. Voice of Healthcare reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

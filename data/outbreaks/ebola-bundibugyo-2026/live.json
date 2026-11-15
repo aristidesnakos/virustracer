@@ -1,21 +1,6 @@
 {
-  "lastFetched": "2026-11-15T08:40:57.024Z",
+  "lastFetched": "2026-11-15T20:27:52.966Z",
   "processedIds": [
-    "news-b9e3b1a2782aff2b",
-    "news-8ffcf4c624695b96",
-    "news-915f68d9810116ca",
-    "news-cd600f5b77ebec2a",
-    "news-19ef3cfcc88c94b3",
-    "news-749863f9047352b2",
-    "news-c14abb082af4eb46",
-    "news-af2e7000d8d23292",
-    "news-1a1dc53c2b34cdd8",
-    "news-f7166242a1ef1fbf",
-    "news-2618f7873dc5247c",
-    "news-6cbbb1d1b8b6b6f5",
-    "news-0b639e488170420e",
-    "news-286772474db7efb8",
-    "news-9650cfaf5a6f8b8f",
     "news-1888bdd67f10266f",
     "news-6d1589f5453d80e6",
     "news-a7676360da5361eb",
@@ -1000,7 +985,22 @@
     "news-194805424f085fae",
     "news-432e6782e48d6751",
     "news-b201251f2bbb2d6f",
-    "who-85d82f1729af7ae3"
+    "who-85d82f1729af7ae3",
+    "who-b468bf43c89fe2c9",
+    "who-aa45fe564a8d3801",
+    "who-598970860b8a9e67",
+    "who-3c063c9ffa99d32f",
+    "news-aa45fe564a8d3801",
+    "news-d6f1b904a52275c3",
+    "news-6cf0085332793563",
+    "news-5eb4864ed08ef708",
+    "news-598970860b8a9e67",
+    "news-b468bf43c89fe2c9",
+    "news-f1040d62f4ee0b4c",
+    "news-74b958c0e7060e0c",
+    "news-787423477e0de988",
+    "news-b49b3b24b9af2324",
+    "who-915f74ecb1a47b9b"
   ],
   "recentItems": [
     {
@@ -1010,6 +1010,56 @@
       "date": "2026-11-15",
       "source": "Google News — Ebola death toll",
       "summary": "Congo Ebola outbreak claims nearly half of infected as cases cross 11,000. The Times of India reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-598970860b8a9e67",
+      "title": "Ebola Outbreak Reaches 11,145 Cases, 5437 Deaths - Contagion Live",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTGdwN0VZTjJrdThPMTJMbE1UbHNoUlVGQXBCVkZSX01rRXc3WDlRUlZHSzlITUp0VEl4UEN6VVI2OGFQYjBNbHhSRF9QbjdXeVU5dnZOLXc0X3ZGNEhZdEtJQklJNThudlVCRE84dFFqdEpEbnZRS29uUnI3QWtmVjYtUGl1VHdGT0E?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "An Ebola outbreak has reached 11,145 cases and 5,437 deaths, Contagion Live reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-5eb4864ed08ef708",
+      "title": "Why Ebola outbreak in Congo is still out of control - NewsBytes",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQY0lYeUNCT2xIYjNxeGRGZ1Q2TGRVOWxJTGxNVHNHRXdJOHJza2VtTzRQenBzN1NIX0dOdFdVQU0tczZYM09oZ1ZaRVhvbFVLTF9ndEZHOHZDbE5CajFkQndGd2trUktPNldBcTM5LXIwTWZOMFR3RWNDaWRQTGJKaFNKVWNjX2NnMkRtczM2OThlQS1POFpHUDNjaHd5V0hhekNKQzVtWmNUbWdGb1FNeUQ4UDJRTW8x?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "The reason for an Ebola outbreak in Congo remaining uncontrolled has not been determined. NewsBytes reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-6cf0085332793563",
+      "title": "Ebola outbreak in Congo spirals as deaths mount and containment efforts falter - Inside Politic",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxOamF3d0R6SE1scVFrUjBjQ1hkdWhYYUhESEdQcG1GNkY4cUdYRXdpZzRnYWVpeVIzMFNuVVR2NnZfS1B4MnZvVnNjak9GRGZJYWliSXNZbkhBRklXaUVvSHdkMVh0VWh1bmxCQzhWSWtNR3d5emhpMkdfNHcwc2ZlRlRwM2dRNkZEVE5wa2lXd19IT1NSaGZ1d1c5dnJucVItb21iaDZJekY5ams?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "An Ebola outbreak in Congo is worsening as deaths increase and containment efforts fail. Inside Politic reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-74b958c0e7060e0c",
+      "title": "Ebola outbreak kills over 5,400 in DR Congo as conflict hampers response - Tribune Online",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOWGN2LV9UaVN1VlphSzhQbmh3SHA2R1dJcWZjYi12Znh4a2p3UFlqZXo3RXNITWJBRkI0TWlxMWhtUllTem0tSkdpUVB6MFd2a0k3RkFlUFNuTjZGSkpJenJwbktWMDRaeG9hSmlmNnpqSUhWd2VFZk1SdDVuclJGY2t1NG5FSzlDYzJJWmtIQWtiU2ZuaC0xazNKd2ZzUFlDMkHSAacBQVVfeXFMTTNNb1ZOMFNDOVpXb3dDbnpZclhyaFdmdjBsYzJyWTJ3VlF3dkl1c19CWjY2My00RjhaLXJmTkNkWDJyRWJoa0pRTjc4MTVOOHBHVWVENUNfbFhWN3M1WjVSbURIUWF4eHpCUkVqTmw0MHdRRVlNY05GN1U5MEpxaHBrdFFnb0s3emFqd3hUblYzRFl1RVNDZ0lfcXJVY0dSZllySWtmbDA?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola outbreak kills over 5,400 in DR Congo, with conflict hampering the response, Tribune Online reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-787423477e0de988",
+      "title": "Ebola: 2 vaccines to join DRC’s Tumaini trial as Kenya eyes Ksh4B study - K24 Digital",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxQX3hVdkNzc0JzRnhmQVQtNTdNeWt0MVNKdjhNeWktVDk0V0FJY1V3dVk4ejAyblczTHltQ1lCb3UyZzZnRWJ5RTk2SDM2aVhaMUhxQTZaczNmRXhOV2RnaldTbGxnR25nZUhzb0pKWnRRWTZiQzlxYi1wYnpoV1kyd2N0RG1QZS1mdmVBNFoycUI4TnJvMnZSTzhMSlc4bTY4eHpod3ViZ1ZoWXFUSFJpWUc0R1p0eGMwRWg4Tg?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola: two new vaccines will join a trial in the DRC, while Kenya considers a major study. K24 Digital reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1024,12 +1074,62 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-aa45fe564a8d3801",
+      "title": "Africa CDC says Ebola outbreak in DR Congo ‘still not under control’ - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxONWdWQ1pwSURBT2NIcjhsRkpvZmNMbHlHeDM1STlUamVyMURWWkRDMWJ0Q1AtMGY4cHcxaldOSkROYzYyMjFVUXNfTEhpMnE3WDhkLWk5MUd6MFBJMDRwbWx3NDhGM1I4Y3A2VmhENkREYW5IcVZ0d0puMWZpVEZCdnVldHBuV2s3ZXRNNmNpQTVCNjl5eUlQcVczOEl6RURrdFZkd0JyQ1Judmtw0gGyAUFVX3lxTE1pelhfM2hCR3BubDlDcDVRYWhINlRJczFRWTVLbkpFWW50UTVBZWlISG5IZEVjZ2xSOWV6ZDc2MHBoVDVxRWt1d3E3SlFzVnBudWpaWGpIZVkyalRtWmJxakZIZWpmNFRfaV9hbTBoLUxPRDlRQzFGSWJuMWFzMkpGMGoyMVZHLTlHOVlodE84T01PeElJdVNfX0NMVGR6OG9fNm93UVB4S3lHZkFpamRFZ0E?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "Africa CDC says the Ebola outbreak in DR Congo is still not under control, Al Jazeera reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b468bf43c89fe2c9",
+      "title": "Africa CDC says Ebola outbreak still out of control six months since it was declared - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQU25FZUdud21zOGRwcHdZRTZESUh4dUY0ajFFSTBhSXQwUWo5SXFVNGtXb0ZBcF9HUnZJeklFQXd0c0h4MUtWandzSVhzeldqZXFEdGZ3d0poQU5KV1dtTWZWUzdCQk1tQW56ZTAwT0cwZklldnZ6Q3dHVHFDQWJmNjhQaHFYOGZOa1lnU1Y2dGNwVGRZaFBrTTlESzk0a1B6Z0JQU0swOTZCanZBanVRS0hnTFhrQlRsSHRRbXhfTlFRaXB4aUhGS2VDV09VVDFvZThlOUFQLTJiaDJx?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Africa CDC says the Ebola outbreak remains out of control six months after it was declared, Reuters reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d6f1b904a52275c3",
+      "title": "Ebola outbreak remains out of control in Congo 6 months into response - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbDdPX2oyWFA5NTk3R19VSGVndHdHNFFiZmtzQWRhQWhnOTlCMGNmV1QtdWlmTURIX0lpS090MTJZTU9CTDNGVEJieHdSeF9LWFFCNFFjOU9BRVlEZ1hsZzl1Nm8xSGZNbFFSUkpQQkpqQnVDSGlfeEFCNXJTVEdNMUtROEw2QUdobXMxYXhwaVZkcUlwbzljbndMRlM1X0xhQmlRanRwWmJObjJM0gGyAUFVX3lxTE45Mkk5dGFZTHNkRlk0MkxpSU5WdFdtZ256a09zOHg0MFczbmJEU2VhY3lYd05MTC1GbUpoNUU3RlB1NFdwc29tRnZTSUt2ZEVxT01zZGl6eElGeWI4aTh6UzZ2YjR5bFNEMkM4M0RIUGNMLXRWZ0F6bUpvWVZPaHJSaV9ac2lzUmJvbUpVUVlkc0VkcmowQVIxNzVQY202RE1PWGpwN3RmSG5ueWZXcnBsQUE?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Ebola death toll",
+      "summary": "An Ebola outbreak in Congo remains out of control six months into the response, ABC News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-f1040d62f4ee0b4c",
+      "title": "WHO: Ebola outbreak in DR Congo largest, deadliest in country’s history - وكالة سبأ",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFAxMEdWOUhhclBaZy05VUFFSEEwZ1d2bmZMOTBrc2RnZndPMWViNWFQeGxZVzRvdzVxbEwzX1EzTmhoOXIxNlRvaGhqZlp0Vmc?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The WHO reported that the Ebola outbreak in DR Congo is the largest and deadliest in the country's history. وكالة سبأ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "who-85d82f1729af7ae3",
       "title": "My mother told me I would die if I sought treatment for Ebola - I am proof you can survive - BBC",
       "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1mYnZBdGt6cU1VVTdsSTU1RDlnUklZMl9EUzkxSmh1S1VyOU14czktaTFNRGVHVVd4THIzdTN5SGdqOVA2REtQZHJPTFMtRUNNQTdORkhyUDNoYVE?oc=5",
       "date": "2026-11-15",
       "source": "Google News — WHO DON",
       "summary": "A survivor of the 2026 Bundibugyo Ebola outbreak said their mother warned them seeking treatment would be fatal. BBC reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-915f74ecb1a47b9b",
+      "title": "Six months on, accessing hard-to-reach communities key to halting Ebola outbreak - WHO | Regional Office for Africa",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOUTRNWmRiRXF0RkVDOC0tZjF2ek5CSlFvaktDd2NFNm9YYVRFazNQYW5za2U0UUw3bG5LQkFWTTdkWDBxSWwxOEVhM1R0Nnl0X283azZKa05qRGJpeDF3aWNjd05RSjJuMDJENG93dERJYW52LU9WbVU1TXIzdGN1VGRlblNJVnlWTGpHRlpuRmpVYjlsWndmOEIyLW5xaWJwallxdHBFbWpGQzk0bmU4UTB6aFZOVFlLSVB0WF9LUGxqWDFtdTA2WURRbEs4aHkxazhOYlN3?oc=5",
+      "date": "2026-11-15",
+      "source": "Google News — WHO DON",
+      "summary": "Six months into the outbreak, reaching remote communities is crucial to stopping Ebola, the WHO Regional Office for Africa reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1100,106 +1200,6 @@
       "date": "2026-11-13",
       "source": "CIDRAP",
       "summary": "Up to 500 Ebola cases are still being diagnosed a week amid escalating attacks, officials said. In positive developments, Nigeria cleared all remaining contacts, and the country’s index patient went home from the hospital.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0b3af5d9b80f5ea7",
-      "title": "Ebola cases top 11,000 at six-month mark, challenges remain: Africa CDC - IANS LIVE",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOUkNqWThROTVnQnhHVTNiRk9uTGVwRk1ScEVxY3M2aHVIdGtYbzhUMzQ1WkdzOHFRUGxvTTRXSFlfNVZ0UFpUZlpQelExbk94dFY3M3JZbWczaEhBcWFweUVSNF9nRFFHeFEtaXdQVUJ0N1JnY3JPNWpEaTBfRWFpb0xfZVhQbmpQRVpkY19Qdl8wYWFHVXJhb0JfQ3pLaTJNSFphQ0FDcw?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola cases exceeded 11,000 at the six-month mark, but challenges remain, Africa CDC stated. IANS LIVE reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-432e6782e48d6751",
-      "title": "Mobile-Phone Records Help Reconstruct Early Ebola Spread in the DRC - Nature World News",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxObVZmalFHbWtDU01zUnJ3NWZWSGFIQWRqQkFYYzhYSzR4VUpVNHY4YXdNTGNiSFpCUW9Tem9rTVVrYml4QmFqUVpCakZPYmxXaGJsX20tV2h2SVZqaTA5ekpoV3JUU3ZiMnRBOTFzallaWUMyQ3FDVVd6Q2JLeV81cmphTmRtbTRjRUctajRvY3l0b29KX00yRUgzcFNYUjF5QXI2SDF3bS1HNHlwMklSYWUtRFRfZEtsZE1Oeg?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Mobile-phone records helped reconstruct early Ebola spread in the DRC, Nature World News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-56d32a41aeb8df2a",
-      "title": "Ebola Funds Not Reaching Frontline Workers in DR Congo, Says MSF - allAfrica.com",
-      "url": "https://news.google.com/rss/articles/CBMia0FVX3lxTE1hWXZDdGFsdzl5SUR1MU4zWFdleWU4cUFXRXgyUms1MnNnc0t2OXZMUEstdTVJQlkzLWEtSE9lWU9tTjJXRTZhUkx0MXkzdngtb0pOcTRQTlZrcU9UT21HcFdGX0xhM2tzRm5J?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola funds are not reaching frontline workers in DR Congo, according to MSF, allAfrica.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-72e049afaca37f07",
-      "title": "Ebola cases cross 11,000, death toll rises to 5,437 in Africa - Daijiworld",
-      "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE9CaGxBdUFfaFBpN0FJZWxuZTU1QTlzVFVTM2llZ1F6WXlpTWpmUlI3X0dhd095YnpuUzNLZHFBQlRxbU5FWHVnRkd1eEtRTm5icl9MLUY3ZjNQejZOaWppNmRfb1NveXFhQWc?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases exceeded 11,000 and deaths reached 5,437 in Africa. Daijiworld reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7e85cf343b52be9a",
-      "title": "Rebel attacks are fresh setback to Ebola fight in Congo as death toll rises - The Globe and Mail",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMDEzUGg3QXZUR1k0dGhjaUotOWYzT3ltUVdnYTN1TW9sV1JobFhGZ2V5NUFwZnN6RHBVaTA4RUFBemMwb05MZktqYzU5SlpnY3VaVkFaclN2VmM3VTZnS2xzWnJJVTQyNGhISHdCUVlOTnVlWmNEV1ZHbnpjLUVhQ1dKeWQyN2xDZk9McEU0REc4NjM5MXpMZ0cxR1R2R0tFeUhBQ1ZzUjdWVXFhZjdWNk4xVQ?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Ebola death toll",
-      "summary": "Rebel attacks are a fresh setback to the Ebola fight in Congo as the death toll rises. The Globe and Mail reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8ac05f9db56b8e25",
-      "title": "Bundibugyo Ebola in the DRC: What Puts Frontline Health Workers at Risk? - Infection Control Today",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcm5fX2FOSzdQVEhJaUZnYy1JTDVTMG5LbmRkN0lRcnctYllMM0hmWkkyQjNBMVk0ZEh0TjF3TDBLZDlFWW1wTVRVMjBYYURmeUQ1TFlpZldUbHlDZzdadWx2Mktka2I4QlZQNVlhSTlsYTRYeU9RY3JiTVVzUV95WjFWUWRUOU1kWHdEbWl4YjBkam1pLW1yd25XUk1xcWdQWFpoNFJNRQ?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Frontline health workers in the DRC face risks from the Bundibugyo Ebola outbreak, Infection Control Today reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a6ca031d13b0de7a",
-      "title": "Nigeria Completes Ebola Contact Monitoring With No Secondary Transmission, WHO Says - Head Topics",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxORGY1U3p4RGZ3TGVFNkRPOVBodkQzd3lrRm01QmVaN0pxYlJzOHlCMlRxaTZZQXZHMFhDMVJtZGNHeHp3ZmpRemh4ZE1wLXhsclFTZDlfRVNEQ0hkbmlEdU5xczNPVXRHX3ZrTWIwSTZlb0JnZzdhMFR2RjhFejlSbEpWb3dRZmJOZ21fazFUaU9hbTBS?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Nigeria completed Ebola contact monitoring with no secondary transmission, WHO said. Head Topics reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b8505800444117d4",
-      "title": "Fighting Ebola in DR Congo requires more than medical treatment - Norwegian Refugee Council",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQMzF6cTFJdnNVNHhxaEtScGpvUXlVTzhvUHZkWjlLNFpiNUJmc0E4MDRISGJUeU44dldueVVhTTBCaHhZRE9MSEhoN3BQdnZTQkZOUTN2VzNvMS1rRkRYV1FBX2RWczVRc2JmTm15eVJ6eEhycXRfQVA2dk00OWNoSV85ME16ZFBtXzNULVFiQVFzXzBBLVU3dFlKMA?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Fighting Ebola in DR Congo requires addressing broader humanitarian needs beyond medical treatment, Norwegian Refugee Council reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d9275c21458901e4",
-      "title": "Roundup: WHO warns Ebola outbreak in DR Congo remains concerning amid rising infections, violence - Xinhua",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA1dGNsVGJrci1XSjRYZ2Y0cjFFV3QxNzEwTHkyeHFxZW83Wl9sOWllalZSZTM5cVJJX285dHgyVWE5U2pXa0l6bnowTmpVRXdQdkVVVVVpNGJ6MktqSzc5NUR4aklYaW1mNmphOS1QNXoxRXN3N1Q3RVdkZk8?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The WHO warns the Ebola outbreak in DR Congo remains concerning as infections and violence rise, Xinhua reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-8872e9bab338c972",
-      "title": "Ebola spreading in rural Congo, WHO warns - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPRjlMWVpZLTYxaTR1Nlo5ZTQ3UDQ5VkJsU0JlZlM2SlRoMWNDMTRwR1dHNk1OdVBSLTNZTHVnMkI0WHNDNnZVRThzcWlZT3JCTG1sbHlaR1NjOTRVZmM1cFhSZXJBaEJIRGZ3Q2RFZ21OUEw5QnljRGJBZUg3eGx4dlJaWXR0TVJvMjRxT3FGOFZTTVRX?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — WHO DON",
-      "summary": "The WHO warns that Ebola is spreading in rural Congo. Yahoo reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
