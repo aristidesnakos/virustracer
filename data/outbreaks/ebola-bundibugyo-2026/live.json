@@ -1,10 +1,6 @@
 {
-  "lastFetched": "2026-11-16T10:09:51.570Z",
+  "lastFetched": "2026-11-16T20:39:52.557Z",
   "processedIds": [
-    "news-c0bdc577fddc9142",
-    "news-cbf0501c2fbcc47d",
-    "news-3dc104b0fa61e8e8",
-    "news-df12b5e2665a402c",
     "news-44a8ce88fd54db09",
     "news-81d36a8f30298773",
     "news-6a02cd19f4e4ed8f",
@@ -1000,7 +996,11 @@
     "news-57e093a8f22edd1e",
     "news-02e7c8cfa4150cec",
     "news-c2b1de8e76017fdd",
-    "news-915f68d9810116ca"
+    "news-915f68d9810116ca",
+    "news-4fb98bd856bd7ff7",
+    "news-5c572a34c793d1c0",
+    "news-3a7e5ceac53589e1",
+    "news-39403a9cc02ff92f"
   ],
   "recentItems": [
     {
@@ -1034,12 +1034,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-3a7e5ceac53589e1",
+      "title": "Ebola Outbreak Spreads to 5 Countries, 5,500 Dead - Baller Alert",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNM2NzTnpWTVAtZkZaXzR0aXVxY1RsaUU1LXpZcS11MGJpSzlxdGU5X0Z4bW5iYW5TaVhmTVpDdndsdHh2NlFDZmJpREYwRHRfWTVMTmtGNzNmTTRkNFJXb0NIaVd4TWZBWm1ldEV4WnFpczliNk5jR3ZRRkRqZkR4ZUlfX3BmZTNkT3JqblVRNA?oc=5",
+      "date": "2026-11-16",
+      "source": "Google News — Ebola death toll",
+      "summary": "The Ebola outbreak has spread to five countries, resulting in 5,500 deaths, Baller Alert reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-57e093a8f22edd1e",
       "title": "Africa CDC warns of immense challenges over fragile Ebola gains - Mid-Day",
       "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNN3JYMXQ1MXZHZU9MX2lqeWhqS1VCcWZiTURjT0ZSTkZRT2Y5WjkwU1Q4emVVR2xfbkNGYTdPU3FVN0ljWHN4TlB3eFp3RHo2T19qTk5UdE9MWVA1aVBvbUU5RUFIYmhXUWNJck5OVnVudzJmN1A5MVE3NnhIVXNjTWtrQkh3RU00ajlDUEVOOXY0Y3ZXQmEweFVEUHBuV21oZ3RidjFDcU80VWJGN0hDa05sVXBGTk1DU05GUXNMV1VITzFqdW9ISl83ZUQ0WmxnRkF0bHpn?oc=5",
       "date": "2026-11-16",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Africa CDC warns that fragile gains against Ebola face immense challenges.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-5c572a34c793d1c0",
+      "title": "Congo Ebola Outbreak Still Uncontained After Six Months - Nature World News",
+      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMnVHeU9obkxZTVBsMXh0UGt1R1RIV19oeU9GdkZZc1dwN211bTZOQjFoTjJ6c18tX3BOdGVzRGs3cFhYQ2hVay1YZi13ald2UWhEb291aE5abkR0ZFJqaE4tRGh6Vm9ENXBrNlQ2cEROckJGVXFRaWZNY2x2Nnh4X2UwaTZiQ1IzSndmVlhtZDl2R29sbmxNX3NxS3g1S1hQWm9CdGx1RS1wcGFRampqTGFUYWNPbWV0R3YxS0hSR2g?oc=5",
+      "date": "2026-11-16",
+      "source": "Google News — Ebola death toll",
+      "summary": "The Congo Ebola outbreak remains uncontained after six months, Nature World News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1180,26 +1200,6 @@
       "date": "2026-11-15",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "The Africa CDC says the Ebola outbreak remains out of control six months after it was declared, Reuters reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c533ccadcb43caf2",
-      "title": "Ebola outbreak in Congo is still out of control six months on, Africa CDC says - The Insight International",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOdWxSNlpjOThwa0p6bXJkX0xXcHF4aFZULXB0eTlYVUN0XzE5MWwyTmJGNEZ2b1FoV0JSSTlpSG0wcjRfLWRzakIwWk1Kb25nTHpFU1BHQ3BlNWhGTkFMeU4tSmpfODNUMEJ5TVpHVV9zRG5PZ0ltNUtSV01LZWF5SV9mSTQ1Qmt0bjVyS1RTVnJUSnhWMEdjQU53bmZwSVdqdlE?oc=5",
-      "date": "2026-11-15",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola outbreak in Congo remains out of control six months on, according to Africa CDC. The Insight International reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d6f1b904a52275c3",
-      "title": "Ebola outbreak remains out of control in Congo 6 months into response - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbDdPX2oyWFA5NTk3R19VSGVndHdHNFFiZmtzQWRhQWhnOTlCMGNmV1QtdWlmTURIX0lpS090MTJZTU9CTDNGVEJieHdSeF9LWFFCNFFjOU9BRVlEZ1hsZzl1Nm8xSGZNbFFSUkpQQkpqQnVDSGlfeEFCNXJTVEdNMUtROEw2QUdobXMxYXhwaVZkcUlwbzljbndMRlM1X0xhQmlRanRwWmJObjJM0gGyAUFVX3lxTE45Mkk5dGFZTHNkRlk0MkxpSU5WdFdtZ256a09zOHg0MFczbmJEU2VhY3lYd05MTC1GbUpoNUU3RlB1NFdwc29tRnZTSUt2ZEVxT01zZGl6eElGeWI4aTh6UzZ2YjR5bFNEMkM4M0RIUGNMLXRWZ0F6bUpvWVZPaHJSaV9ac2lzUmJvbUpVUVlkc0VkcmowQVIxNzVQY202RE1PWGpwN3RmSG5ueWZXcnBsQUE?oc=5",
-      "date": "2026-11-15",
-      "source": "Google News — Ebola death toll",
-      "summary": "An Ebola outbreak in Congo remains out of control six months into the response, ABC News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

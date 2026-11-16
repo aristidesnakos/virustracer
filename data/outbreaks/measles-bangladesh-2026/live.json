@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-16T10:09:54.586Z",
+  "lastFetched": "2026-11-16T20:39:54.470Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -474,9 +474,31 @@
     "news-5d1d63ba619dc9fe",
     "news-78a5e4eb31437bcc",
     "news-8700124afa3af76b",
-    "news-8ec518ce31d18452"
+    "news-8ec518ce31d18452",
+    "news-af04e8b30ff753c8",
+    "news-b5390cf959242dfd"
   ],
   "recentItems": [
+    {
+      "id": "news-af04e8b30ff753c8",
+      "title": "Bangladesh dengue deaths surpass 500 amid measles outbreak - Latest news from Azerbaijan",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOLVVBT3dQWXpRV3lUbnhNekVFQnR1bUxUcTl5Q0hXQ1h6ZmZ1VHA3NF9EWHFUMm1QYU9oWFVPcUw0b2dva1MzeGpDRzNyTWZTbzVHTzZBOERxNVl4aXNjbGlVeWsyWDFWbDVkRjNqWThCVk84VENmbzhuenl1S3VvNmY4TVk4UQ?oc=5",
+      "date": "2026-11-16",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Bangladesh dengue deaths surpass 500 amid a measles outbreak. Latest news from Azerbaijan reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b5390cf959242dfd",
+      "title": "4 more suspected measles deaths in Bangladesh as toll reaches 1,348 - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9OakIyNHJBR3NTeWt2MjFWZmlsUGl4VUUxUnoxVFoydnV1RGlzdzRscWpsSWZ3SnRPMEV3VDNfTm41d2JGNG1VVmZRT0wtWlE?oc=5",
+      "date": "2026-11-16",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "The suspected measles death toll in Bangladesh reached 1,348, with four more cases reported. bdnews24.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-4c77f3ee7fff4670",
       "title": "Bangladesh measles outbreak claims eight more lives, death toll crosses 1,310 - Social News XYZ",
@@ -654,26 +676,6 @@
       "date": "2026-11-10",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Measles-related deaths in Bangladesh have reached 1,289. TheReport.live reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b48f7652d32431e8",
-      "title": "Bangladesh Measles Outbreak: 1,284 Deaths Reported as Health Minister Says 'Hang Me' - theopenpress.in",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE00VXJnSmlmRkgybzRNTld3M1R1UlBtbm5JS0Z5aVZMbEVpWTA4OU1oZFV0S2d0T2pVT2xZQmRvTWI5RGtyWTAxYnVrcDdTd3VBM09Vek9wSXFKTmFHdmxIU2NrLUR2b19CMFUtcF9uWlR1a1laRkFveW5xSQ?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh's health minister said to hang him after a measles outbreak with 1,284 deaths, theopenpress.in reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c12a3d037adc88b4",
-      "title": "Measles Outbreak Bangladesh: 5 Deaths Reported in 24 Hours - https://www.businesstimes-bd.com/",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBydWt2YllIZjNJUWNZaUFfeU42bmtBMm9wdFZEa1k4Qy1tdDJlZ2dFcFNoTjNPcHZaekd6SFVMa1pBbHQ4SVBnb0FhZXNIZFdtd1Y4T0J5NmpNSDA?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "A measles outbreak in Bangladesh has resulted in five deaths reported within 24 hours.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-16T10:09:45.760Z",
+  "lastChecked": "2026-11-16T20:39:37.412Z",
   "snapshots": [
     {
       "date": "2026-06-02",
@@ -1765,6 +1765,19 @@
       "revisionTimestamp": "2026-11-12T12:33:33Z",
       "rawPath": "data/raw/infobox/1385234265.txt",
       "rawSha256": "71febde451562305b68a14556bb622532639298113f0dfcf52d623d29c979a03"
+    },
+    {
+      "date": "2026-11-16",
+      "confirmed": 11407,
+      "suspected": 394,
+      "deaths": 5572,
+      "recovered": 3110,
+      "source": "Wikipedia infobox (cites INSP DRC / WHO)",
+      "sourceUrl": "https://en.wikipedia.org/w/index.php?oldid=1386038479",
+      "revid": 1386038479,
+      "revisionTimestamp": "2026-11-16T15:12:33Z",
+      "rawPath": "data/raw/infobox/1386038479.txt",
+      "rawSha256": "8fd16fda41cd21255190eb98533782c8489afb6804cac2839f08d4e3747375d7"
     }
   ],
   "superseded": [
