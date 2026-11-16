@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-15T20:27:58.993Z",
+  "lastFetched": "2026-11-16T10:09:55.088Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -490,9 +490,37 @@
     "news-1b12c68d735e6808",
     "news-699404c522b5d164",
     "news-dea88c11a38bc9fa",
-    "news-33b22b32cc1cac6b"
+    "news-33b22b32cc1cac6b",
+    "news-d930822db2b310ff",
+    "news-96e0306d47636d16",
+    "news-928517f9f0d94a2a",
+    "news-d79949b22b792462",
+    "news-94e3d497827ed274",
+    "news-dff1e3a5bdb3c8c7",
+    "news-9a26a1121e5b1128",
+    "news-52234495ef2ddc52"
   ],
   "recentItems": [
+    {
+      "id": "news-d79949b22b792462",
+      "title": "Pennsylvania’s measles outbreak has cost taxpayers an estimated $16 million so far - Inquirer.com",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQSExLS2xqX3lkU2pva1NKLTFMUDFQRGVYZUhINUhjUzZTV0lSOGFoZERhOUFDdU9tai1fVGZoOGwzMUxndEpUc3BYNEJJX3dqaWV1cWVheklmNkNLZjZaanlYOVdUVnFGdXpCM2hPemxSS3VuNHZ1UEdYczdrYVRqVkJGY3BJMzQ?oc=5",
+      "date": "2026-11-16",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania’s measles outbreak has cost taxpayers an estimated $16 million so far, Inquirer.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d930822db2b310ff",
+      "title": "Prediction markets let users bet on US measles and vaccines - streamlinefeed.co.ke",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxQM2p2QlpKeFJLVThXQ0d3WE1qZ0xsem9HdW1jU3NSUjZhcndUQ1BMS2lnYUcxQVdxNmNtMXNWeUhQdTFuamN5bGxVS0hTMG04dTFjU3VNWFZpZW9BbnM4bFAwRUdkc0FDLThzTEJ6NDd2WTNKVXVIcTAxMk52eExkcVQ0WGV6WEItdkVmTU9abEthQ1ZCZGdhMg?oc=5",
+      "date": "2026-11-16",
+      "source": "Google News — US measles cases",
+      "summary": "Prediction markets allow users to place bets on measles and vaccines in the United States, streamlinefeed.co.ke reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-699404c522b5d164",
       "title": "Pennsylvania Department of Health Confirms Seventh Measles-Associated Death - PennWatch",
@@ -594,6 +622,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-52234495ef2ddc52",
+      "title": "United States Loses Measles Elimination Status for First Time Since 2000 - Townhall",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxObGs0ZDFTNXlESEVTQWNyUmo0MXd6TVdYZmJfZ09Jd0pIVGctOHJmQS1LLVBFVFF2ZHFTaXR1emdfRkJQU1BOQ19lbjFwSFl0ZHZLQVVDUzZkcThTNGhKUkQ1RW1SOGhJWDk3N2pkSFA4Y0ZIcTBNdDZ2NlV3VzExclQ4d3VmOUg5R29femc0d3pvSWRMNTZ2dk9VSzZqMDV3UldvUTd5cDAxb2pNdVd2XzdvOVF0WTJ2NVE?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States lost its measles elimination status for the first time since 2000. Townhall reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-75cb0dcbb74612c1",
       "title": "U.S. measles cases hit highest level since 1991 amid global surge in vaccine gaps - Dagens.com",
       "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQQWJxbnoyQ3RiU1VielNneGJJMG1YTER2VWZKdGNDQ1IzXzNxa0s0SmRzUk1WRHczaUFVZXYxeTJhNkRfUEhHUlA4MVhHYldVZTVIWnE4ZEFvU0hHWWI2dnYzSTJKS2ZJaThJY1M3LV9EZlJJcWNVRDFvOG9mWjZhM0tTUzhVbzBNNXBPbHZDSU5jLUJnNFhmbnVPOXFMZzFLZkpWZHRpZnhHU2dVQ1NN?oc=5",
@@ -634,62 +672,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-96e0306d47636d16",
+      "title": "Senators Demand CDC Resignation as U.S. Loses Measles Elimination Status Amid 5,400 Cases and 10 Deaths - Forth.News",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTFB4cUplZEM4QWJCY2JiajBUT0lKQldqcjhGb0tLUnFsNVhvOE43Y0Y3RlhibXVmdXNwYTZMOEFpWkdQejh3V0VNNkNQSnR0Qlo5UTZ4ZVVnaldoTXV1dW43b0x3?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — US measles cases",
+      "summary": "U.S. senators demanded the CDC director's resignation after the country lost its measles elimination status. Forth.News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9a26a1121e5b1128",
+      "title": "NJ warns of potential measles exposures at Morris County Walgreens, LegionsCon - ABC7 New York",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxQYzY2NTEtelBjX3lXUG5hWENZOEhTR0hKUTQzVlNoUER0cF9vcXd0Y3dDRDNnNXVvSFdjWC1iWmdhRXFTdG9TMnQyb2h3bTdVVkJJc1FTNzdoVDEzR0ZPVHBxRmo5QlJKSDRMdVpyRXlsUm1CWGhFTmc5SWExY05IS29qdW5UZkt2OENZcVNUN3JmNVhWRURUVEtVc3JPY1R5NlcwcGktZUrSAa4BQVVfeXFMUEp1YXJ2ZXRZVFNkQlpKdmdsbXNpVlJJb2liQ2ZSNU1SRklCVU1zRmx0NEFIbG9Hc3pNWWVXTWNTQWFZcGtjY0N0V1JUMV9nNGNwME5OSjlxYzlxMjdjSzRvMTk2X2RSRDZ4VFpDMDJpLWVTSktCM1c5VnhrNkxVQjBGbjIwQmxMNjY3NWdtTXg2OGdjeHlTclFSbTFPb00tNkVUV3k2bS1PMlRONTJ3?oc=5",
+      "date": "2026-11-14",
+      "source": "Google News — measles outbreak United States",
+      "summary": "New Jersey officials warned about possible measles exposures at a Morris County Walgreens and LegionsCon. ABC7 New York reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-b3f4830a894767a2",
       "title": "US measles elimination status revoked as outbreak spreads through 45 states - The Jerusalem Post",
       "url": "https://news.google.com/rss/articles/CBMiX0FVX3lxTE1uRHphUjkxWFM4UktFUlc0Z2h6N3ZhWm5mdmozWlFTQlVoWGdYdkRaLVNnUThVa0NuRGJveC1heHhtZE5rWFREYmhBLTNlNzFvQlJKektfTWJXRngzc1Fj?oc=5",
       "date": "2026-11-14",
       "source": "Google News — measles outbreak United States",
       "summary": "The United States has lost its measles elimination status as the outbreak spreads across 45 states, The Jerusalem Post reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c3ef9380c5d8a8b8",
-      "title": "U.S. loses measles elimination status after nearly 30 years - Inquirer.com",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxObXZGQldTUGhGUWxQRlFhVDd4VEFEQjFNbGRqa29tN0thelRpb180VGZmZzF1R0FNVzBZeHl3bDlxdktna3lLQ1NTUTVDLUdycml2T3BsaktyOGNtX1M4bl9LY2o4T3FVNGVCcENRSE01eUZaZWd4VVVOSURjcXp2NnZLZ1R2WDltUlRYMXI0QVEyUVlfTDIyelp5aUtFYU45eVFMNEFqZw?oc=5",
-      "date": "2026-11-14",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The United States has lost its measles elimination status after nearly 30 years, Inquirer.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-cee527ca7a6ff53b",
-      "title": "Measles cases top 5,400 as deaths rise to 10: Latest CDC count - Rolling Out",
-      "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE9BY1RSWlJnTE9Cbkx4RE9BWF9ZVnptZy1ib1BJWHh5c2VkZFkwLWtHOFFuNV94Z1JQRE94NHl2UFIxbXRvaU9OX0hZVEtZR0ZqX0FMSm04bzRUanhVZU9WSGNLMjlDUm5mb3JhQ2RWT3ZNUEVna1RDVmdlVQ?oc=5",
-      "date": "2026-11-14",
-      "source": "Google News — US measles cases",
-      "summary": "Measles cases exceeded 5,400 and deaths reached 10, according to the latest CDC count. Rolling Out reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-dea88c11a38bc9fa",
-      "title": "After 26 years, the US has lost its measles elimination status - CNN",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBWSzVyZHgxOG16NGU3a2o1NUpOMVhsVnV0LXh3aWJFZ3ZQN0dwVW03aGRWMjFEYW05OHFMLXczRmlEc2MwMlRSUWJ2UENrYm81bTFqV1JPSS1uRWVURW5zc0dKYWNhWjJxTk91czNsOUFmRzZubnc?oc=5",
-      "date": "2026-11-14",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The United States has lost its measles elimination status after 26 years, erasing a landmark public health achievement as a historic resurgence has sickened thousands and two more deaths were reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-dec542e1fac33765",
-      "title": "Regional health agency revokes US measles elimination status as cases surge: Report - A News",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQeEJYNzJGQXprSThmOWJQMmduVC1aX25sQUl4LVh5dlAzdlBMZkg1dXcxRFlFY2NTQzNmLVJSSWtwNndicWdacWk0SEI2MUJGMWdWdEpVX3JUZ282b3JNSnoxakJGYWttdFJzUFB1M3ZZOWJycEJ4QzYzcnJzbWVNQW1SOGZkZW5fSUNVUmNtUm5SaVF1MjhTM0JmbnRqbGtTYmJ1WlRHUG5SNW0xTUU4NTNHbGVWbjRCbG9jTVZETDZzd9IBxwFBVV95cUxNUXhScTlZZlRYaXB3VGhzTXk3dkFyWFU4cVNxTVQ4WlpWTjlsOUZ4ckNuYWlhS256MjNpYzhKTHFGZHJRTlFOVTBJdmRpTUZ5RHBRSkFkV3hFdTZQX2hOeGVNVTlmWkVhaU9GTkFNR19MVHRQWXh4MzdfSWRtOFlRdm55RGUwYnR1czFWWFk5T2t2cTJ6UzhsUlNuZXV3VEVDSnU3T21tLW1sMGRGeTNEUDBUZWt2NUdIVm9rWVdHSGp0VlMwVjY0?oc=5",
-      "date": "2026-11-14",
-      "source": "Google News — measles outbreak United States",
-      "summary": "A regional health agency revoked the US measles elimination status due to surging cases, A News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-eefaaa1a1b7b9a44",
-      "title": "Pennsylvania, Wisconsin Each Report New Measles-Associated Deaths - Infectious Disease Special Edition",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNaWZwUTN2aFFIclhLRFNOVHN4UlpVUGFuNDhmazB3ekZveTlPVnBMblJ3ZzlPTDFmbTk2LURWNHVkbE53NXVkUXJLZWNKWW5wQWhUQVo4QnB5SnFiNlhadFE4dGlzWUNlT2kwQTdzREc3UExnR0c4cExfTmtrcmlyWjEyZEJ0TjVadEpDWGZlZGFYLUMyTnNRLThyV0xQcW95bHdCZEhoNXlvRGxfSTZyUllWQlFGc3prZUNJX2Y4NlQ?oc=5",
-      "date": "2026-11-14",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania and Wisconsin each report new measles-associated deaths. Infectious Disease Special Edition reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

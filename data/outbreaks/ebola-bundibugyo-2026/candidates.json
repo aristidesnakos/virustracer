@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-15T20:27:55.861Z",
+  "lastExtracted": "2026-11-16T10:09:53.991Z",
   "candidates": [
     {
       "id": "cidrap-edfd83013e48bf96",
@@ -364,20 +364,6 @@
       "sourceName": "Google News — Bundibugyo outbreak",
       "date": "2026-10-18",
       "extractedAt": "2026-10-18T20:11:03.413Z"
-    },
-    {
-      "id": "news-813b44bf84e1c7e7",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": 7,
-      "deathsMentioned": null,
-      "context": "Kenya confirms four new Ebola cases, bringing total number to seven.",
-      "sourceTitle": "Kenya confirms four new Ebola cases, bringing total number to seven - Reuters",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMi0AFBVV95cUxOUTZzMGJpaXBieHFQeHRDYkRPM1BGLUtyVWRUd1UxVDE1TF92ZDZHMXF6WjB0YmhLNlpuZkhhVTN4TGc5MVBCaS1SSmNzTnk1YXhhYTE4NWlmLXU0ejhDUTFtOG9ROTF5Qkl3LUw2bkRnT1p3VlJWbEdfRVZlSGF2dC1RRk9semdrMWtBTEZiUE1kSkFqV2M2R3ByWmZEVHRyOHZiU1FYTW1ZbEdBTWtJZzhhQ19RTmt6XzFaWDBLTE9tZHRrUW5Mb21WMDByaXJm?oc=5",
-      "sourceName": "Google News — Bundibugyo outbreak",
-      "date": "2026-10-17",
-      "extractedAt": "2026-10-18T20:11:06.051Z"
     }
   ],
   "checkedIds": [
@@ -624,6 +610,18 @@
     "news-74b958c0e7060e0c",
     "news-787423477e0de988",
     "news-b49b3b24b9af2324",
-    "who-915f74ecb1a47b9b"
+    "who-915f74ecb1a47b9b",
+    "news-c57a0da0626ca1db",
+    "news-d2e1bda9918e4b00",
+    "news-eed2c57edd2046e0",
+    "news-4467921e10548b30",
+    "news-67e8f213df540674",
+    "news-c533ccadcb43caf2",
+    "news-09c324505bc55317",
+    "news-0b438775e0931f3f",
+    "news-57e093a8f22edd1e",
+    "news-02e7c8cfa4150cec",
+    "news-c2b1de8e76017fdd",
+    "news-915f68d9810116ca"
   ]
 }
