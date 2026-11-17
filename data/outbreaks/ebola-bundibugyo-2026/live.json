@@ -1,24 +1,6 @@
 {
-  "lastFetched": "2026-11-17T08:48:18.871Z",
+  "lastFetched": "2026-11-17T20:42:40.432Z",
   "processedIds": [
-    "news-34afa324fbb446d0",
-    "news-64d945c2b6dde0e3",
-    "news-6ee5f411c877111b",
-    "news-2098bd4dbe8cdca1",
-    "news-58539989be7ff08d",
-    "news-62613d099cec7768",
-    "news-d556cd1d7606fc68",
-    "news-a2ecc47c097231ef",
-    "news-929e291911db1a05",
-    "news-dd869c9110b86991",
-    "news-8f57169b5aa70b55",
-    "who-58fc3111a0524413",
-    "who-c966f1e6aad25f21",
-    "who-93aa2497ba4bea39",
-    "who-a03832fb2e60cf09",
-    "who-b49b3b24b9af2324",
-    "who-c02b6a172518e0d0",
-    "who-301927913076cf4c",
     "who-d93a1b2c0ec62228",
     "who-af2e7000d8d23292",
     "who-1a1dc53c2b34cdd8",
@@ -1000,9 +982,47 @@
     "news-1888bdd67f10266f",
     "news-6d1589f5453d80e6",
     "news-c77d8062bec4e7cf",
-    "news-d72cf82032cc5d12"
+    "news-d72cf82032cc5d12",
+    "news-72251b796ff043ba",
+    "news-3e514c4b1c0a70a8",
+    "who-216b3b42be6efd5b",
+    "who-72251b796ff043ba",
+    "cidrap-2592372578d91633",
+    "news-7b4d70e117bf3eda",
+    "news-863352355c0003d5",
+    "news-fd908feb24b575c7",
+    "news-512296244d92dfd8",
+    "news-26eb7e2ef83936cb",
+    "news-0db2bdc07a8931a0",
+    "news-44a8ce88fd54db09",
+    "news-6a02cd19f4e4ed8f",
+    "news-b4a409a6158fe063",
+    "news-c1fe93a8373670f9",
+    "who-10976af7d67168b5",
+    "who-e9a30d430cd48377",
+    "who-3e77d731d434fb42"
   ],
   "recentItems": [
+    {
+      "id": "cidrap-2592372578d91633",
+      "title": "Human travel drove Ebola spread in DR Congo, outbreak reconstruction suggests",
+      "url": "https://www.cidrap.umn.edu/ebola/human-travel-drove-ebola-spread-dr-congo-outbreak-reconstruction-suggests",
+      "date": "2026-11-17",
+      "source": "CIDRAP",
+      "summary": "The deadliest known Bundibugyo Ebola outbreak in the Democratic Republic of Congo during 2026 spread primarily through human travel, according to a reconstruction; the virus was likely circulating weeks before the epidemic was declared in mid-May.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-0db2bdc07a8931a0",
+      "title": "Ebola kills 70% of infected under-five children, WHO raises alarm - Tribune Online",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQMXMwV1IwWEtlT0Via3pNeF9BT1J0WXNyZnZNdmw5eTZKb3hXLUd0QXY4OG5IVVVucFd1Q1Exc3MzTlpjY0psU3llekJHY2ZhZlN0bDdXX2VFaXdEOFZJLUpRYkEtVGZ0a255ZUZvWi1QSktITzJWYWIwRUppaTlkQVBFUHBsbmRUQV9nVTg0c2JVYzdtTUVN?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola killed 70% of infected under-five children, prompting WHO to raise an alarm, Tribune Online reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-24b27421d7b13dd3",
       "title": "6 months of the Ebola outbreak in the Congo: War, hunger, disease and profit - World Socialist Web Site",
@@ -1014,12 +1034,52 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-26eb7e2ef83936cb",
+      "title": "Congo Ebola Outbreak Tops 11,000 Cases, 5,500 Dead - JFeed",
+      "url": "https://news.google.com/rss/articles/CBMiUEFVX3lxTE45eEtoYWV1VkIwZkcxX0xzYXdoSGhCdlRacmhXeWRSTXd5Z2JQNEVzcGVqLTdOd2w3cF9ISVNKSXlhUWZVNEJLUVZ1Qk1zTkhf?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Congo Ebola outbreak has exceeded 11,000 cases and caused 5,500 deaths, JFeed reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-512296244d92dfd8",
+      "title": "Health: Nearly 3,000 Ebola recoveries recorded in six months - NewVision.co.ug",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNVmh2MHZkYlAzRGc4N1NpLUZ5THRXaUNFT0xnWGVodFhVTUd3SjVvczdpZEcwVlY1WTBHLUtKTWF4VUd2S2xiZmlpUEw0Ny1mWGRnZzhMTDVkTGxXMmVJWHdFMXpZZE05ZWQ0SnpQYk0yQkkybTl6QTdSTXd5T0VWRlc2SXBIa2RwSDFnMUU1UXdaUjFwQVZtTHBVZHVaM1Aza3hHTE5JdTE?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Nearly 3,000 Ebola recoveries were recorded in six months. NewVision.co.ug reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-6340134081cb9382",
       "title": "Uganda Outpaced Congo in Standing Ebola Preparedness Before the 2026 Outbreak - Bioengineer.org",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdXltUUpnZG1ZMFcwSUZNMnB5WE1UZ1VaRkpWRFYwTVo4ZU1tTjAxZEhXWmFzc3ZlLXQ1d2l4RWxwQngzYndIa3FHSnFRWUp2b0ZkRXU4eS1Hc2wxTmFMOG9RakNnemJKZEt6RDh0SFF3NWhMaUR0dXBJLVRGdF9xdVdnSzl2NUtwZTlzWnZaN2pkQUl5c184X3d3TXhVbEdwWGo4eg?oc=5",
       "date": "2026-11-17",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Uganda outpaced Congo in standing Ebola preparedness before the 2026 outbreak. Bioengineer.org reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-7b4d70e117bf3eda",
+      "title": "WHO Director-General's opening remarks at the third IHR Emergency Committee meeting on Bundibugyo virus disease epidemic in the Democratic Republic of the Congo – 17 November 2026 - World Health Organization (WHO)",
+      "url": "https://news.google.com/rss/articles/CBMixgJBVV95cUxPU3dxQ1RzXzNpbVlTcFpTNmVZdjBibl9qa2dhR1ZUUWJWejdvVV9TWXdoNWxQeTdkUWJEQkZiTTQ4YXBoMlc2TW0xWGJoelFhMU9JWi1KWTNGYXg2anhkV0RxV05kUnU3U2xQbzdLU0d5Ym1xclBGNEowMUlaem5iYnllMHE1eTRWb3J3YTVfWkJUeVk3QW9EeXAtMV9sQUQ2azVJMnVtQVU4SFM3Y3dDWFduT0ktU0tTa2FFZVlIcUFMZzdjeTdXdnhBWVlvX1lGc3lHaWt2a2JwUFBtME10TXJYY0xpVFhhU01mZ25oUGg1OHNiOGZRb3VDS0hHSUdScDRscWgwLXpEdHhfeER4SzJBX2hyOGVhVXVrczdFcUdJWVJ2RDJRbjJMWWZ6YVhhLVZ3ZDFRQlc5ZHotaDBjOUh2S0lFdw?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The WHO Director-General spoke at the third IHR Emergency Committee meeting on the Bundibugyo virus disease epidemic. World Health Organization (WHO) reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-863352355c0003d5",
+      "title": "Congo’s Ebola outbreak is spreading and killing at a record pace - Arab News",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNlFFS3B0bDhQaDJKaVg4cmFTVWlXd0F5VjVVeWQzQnFOMkdTTEJ5MkV5eU1XdFhqS1RCbVV3ZVpfUGI1THF4ZkpsZ1U5QmxSUm5ocnRIYVVoUkhZV0FPM1phQkpXeDVNTlRvOTdxYVNqNU1pTEN3TjVHNktiQk1TZXJFdVFmLU1zOWlDUXNBcTJXQzVNbGNhUVVXcXp0TlR3eGR0dQ?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Congo's Ebola outbreak is spreading and killing at a record pace, Arab News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1040,6 +1100,36 @@
       "date": "2026-11-17",
       "source": "Google News — Ebola death toll",
       "summary": "The Ebola outbreak in DR Congo has killed 5,568 people and infected over 11,000. Qazinform reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-fd908feb24b575c7",
+      "title": "WHO raises concern over rising Bundibugyo Ebola deaths in DR Congo - Galaxy Television",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM2hFYkRmNmxLd0ZKZXJGSF9xd2h2cGdxLS1CQXlnaWE2QzhOY19wVUFVSWowWDFCZHNlbm95S0tkd3FDOE92MTJjM3VKV21Fb3ZLYTg1V2l4QUVFRUtLcG9iR3k0RThqR3hMbThVS0VTNGwzeXNtR2Y4bzNIM2FZZzhkWnpPN2gzVVJfY2l0MEJ4ckcwUmpGWHI4OHl6dnBaemRTZGlmbG5RZF8zblBrTzIzc2w2UQ?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "WHO raises concern over rising Bundibugyo Ebola deaths in DR Congo, Galaxy Television reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-10976af7d67168b5",
+      "title": "Strain-specific Ebola jab trials to start in DR Congo next week: WHO - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOODdIMUk5NThIU1JnVjdkSzdRYXFSUFhLR2g3N3lzUFQtQzVVa1ZPZHMzZTdrM05aSFpOM1k2LWhsX0lDdVVxZC1rMDQzTVhERENxM1gwdTlyaWsxLVNITzZUZFhlRXZzejRpWVlxRDIxemxKbm8xSkNKdlJxbGY2Znk4czRNTVhjWTBHRDRrUEtsMENmX0E?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — WHO DON",
+      "summary": "Ebola vaccine trials specific to a strain will begin in DR Congo next week, the WHO said. Yahoo reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-e9a30d430cd48377",
+      "title": "Explainer-Congo's Ebola Outbreak Is Spreading and Killing at a Record Pace - U.S. News & World Report",
+      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOEo1RjNmUms0aEd5QkFKYkFmZXlsc2YwWWZNbHVDVHlTNjZSb1F4N2JtMEpCWVUxM3h2bWg5SU01VzZtYVhmakJKTi10WkhHd2pydTZDbWltWVpkY0JOeW9VYklsVVZpZTlkalpwX0FrUTlyT0lqLUFMaXcyTUFzeEtIMWMzbWlzN1NJdVc4MjlOTHBSMG5DUFozVmVIbDI4dzQzUTBybFNVdzVqQ3JfSzJ1VktDRGJmWEVPRlMyMnRmNTFkMHc?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — WHO DON",
+      "summary": "Congo's Ebola outbreak is spreading and killing at a record pace, U.S. News & World Report reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1110,96 +1200,6 @@
       "date": "2026-11-16",
       "source": "Google News — Ebola death toll",
       "summary": "The Congo Ebola outbreak remains uncontained after six months, Nature World News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-62751fc762d55bf1",
-      "title": "Africa CDC chief warns DRC's Ebola outbreak remains out of control after six months - Latin Times",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPREN5U0swcTVvb0dlVmJzZnlPaGk0UEp6WURvTjZ6T2JHZkJ2eXBVcXQtWGlhNDlGbk82X1NUVW1OMUdJMHBJMGlSR3NBSlloNHRWdmJvU0RNb0NzSm9xODJYLWJDV1cxd2h2Sm9HSVdsb2tTTHJ3WkVPaHRhM2hqS19EYTN4Vi1EWWtld2N2QXJZdw?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Africa CDC chief warns the Ebola outbreak in the DRC remains out of control after six months, Latin Times reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-80df1c468348ff08",
-      "title": "Congo's Ebola Outbreak Remains Out of Control After Six Months, With Women and Children Bearing a Heavy Toll - EEW Magazine",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxNbWthRWNNUG5uNHNFN1NFd3gwanRoLWFndGdOak5qdk9XTURtNkZYNFNJcGdUVVNveFh1cGNjX2x1TU1tMnVuLUNwUXdUS01iaUZNZEF0QVlmR0QwX2NISUhTVFE1N2MwTV9JWVNLOXhnWU9rTXhncGhIQW5rMmR2ZmppWVYyT0hPMFJLNjk4RDAwY25qNTRabFpjdm1pay00V1NQUXh3?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Congo's Ebola outbreak remains uncontrolled after six months, with women and children suffering severe impact. EEW Magazine reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-90c52484eb44f961",
-      "title": "Ebola claims 5,568 lives in Congo, with infections exceeding 11,000 - UrduPoint",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPRFZrQ3J0T2VobEM5M3VSQ1A0OGhYMkxTYmgzc18zejlVdk1GMndmemVlalBpaEpFcXg2ODJhcDN0NXBLUzN6WWN3LWgzbGo0bE9qc0J1ak4ydlAtdkUtTUJQOVU1bW0zT2lEcld2YVFVTDR1NHoxLXlKbl9LQktJN3dpNEVGeTVEVDBIalJXbUdGb0pGeko3WklVSEVWZw?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola has killed 5,568 people in Congo, with more than 11,000 infections reported. UrduPoint reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a486a61bb1b76976",
-      "title": "DRC Ebola Outbreak Spreads to Eight Provinces with 48.9% Fatality Rate - PravdaReport",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNTUVmTTRsQXg4THVrQ1k1UlRHeGF3SGxualNINkFtOU1sWl8yQWQ3cW1QdGZBWXU2dTNIY1RSRE5ieHBtU3JZZF9paHFORUc5QlphTGZ4QVBGZkR2TThtaS1TbmdueERnd3ZkTWo4YWIwUG5jRlJBYmpLMUFyTktYNE9QUUE1X0JiZG4tQ2I3OA?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "An Ebola outbreak in the Democratic Republic of the Congo has spread to eight provinces with a 48.9% fatality rate. PravdaReport reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-ae13361db26dafe3",
-      "title": "Ebola outbreak update as of November 14 - Outbreak News Today",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNRmtoMUlMMm44cUhvSTJ2Z1BtZjFuUS10LWt4YXJVbDdJNkxwSnZMbjI2eWd1XzQ0aG9saHV0ZUk1MUVFZWtrSFJTY0x0aUZpc1I2UThhTXl0SkZXNWJoallzMzZ5eGJXbS1jWjByT3dGZkF0XzVnTmJLcjV6VkJKelVFWXI3MW1k?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "An Ebola outbreak update was issued as of November 14, Outbreak News Today reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b8c506451e0d12eb",
-      "title": "Disease control chief urges release of Ebola funds as Congo outbreak remains uncontrolled - London Daily News",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNTBSbm03b3FzelYwaWpLS3VTamMwdVJhMkp6QXZ4OFByYTV1Y2ZYN0JFR2NvWlR4Wkh6VnVGLTV5VUg1UU0ySmNxOVdabnVPV1h0Ymt3dVhaNU42a09lTHlVQTJ4TFNiWUI2emhXQU4tQmJLaVVCUWlBZTBkTU1ROGZVT3NsdE0ySHM5QmVxNkpVZzVMOFZPWC1oRTViLXJ5NkhPOXpFYlRvZUswb0lad2lvWmo5U2l4UzVn?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Disease control chief urges release of Ebola funds as the Congo outbreak remains uncontrolled, London Daily News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c57a0da0626ca1db",
-      "title": "Fighting and unpaid wages stall Congo's Ebola response as death toll reaches 5,387 - The Cool Down",
-      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPNzNyWFpLQXZwWXVhVFU0WHJFR1VnSmszWDI5Wk8tR1VaVWVjem5uLXFubzBYLWtSYUg0RnNVMVRKQmdwdFlOQWQwcWYzaWdwZkQ1cV9zMWZydVlPLUJfNjJ5SE9QUzczRk1RMkRrRlRmZDZxc0FTaHFKdjhOZDNSZ1ZwZUhvWnYtcVE?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Ebola death toll",
-      "summary": "Fighting and unpaid wages stall the Ebola response in Congo as the death toll reaches 5,387. The Cool Down reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d2e1bda9918e4b00",
-      "title": "DR Congo Ebola outbreak spreads to remote areas as violence hampers response - Social News XYZ",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOZ3VJM1hVWGh2LVBOLVVQNkxld2x3VWRKcmJjTDlyd29pdy1KZzRuT1E5MWJUNTNMTGtGdzRiSDRCWG5GVGtHLTE3eXg1eXYxeEMwT2E3STJqeGNyWkcxSk5XUWJiOWZHazFaQUZtX2pzMWVtQk1ybWlObHBmYW5YalBVU18yVGMtelF4T2tlcnlLZjd3cHhTaERnQ2Z2dFR4UVJxR1p1N3NFZUVWWmZMVHNVa0hyUdIBtgFBVV95cUxOZ3VJM1hVWGh2LVBOLVVQNkxld2x3VWRKcmJjTDlyd29pdy1KZzRuT1E5MWJUNTNMTGtGdzRiSDRCWG5GVGtHLTE3eXg1eXYxeEMwT2E3STJqeGNyWkcxSk5XUWJiOWZHazFaQUZtX2pzMWVtQk1ybWlObHBmYW5YalBVU18yVGMtelF4T2tlcnlLZjd3cHhTaERnQ2Z2dFR4UVJxR1p1N3NFZUVWWmZMVHNVa0hyUQ?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo Ebola outbreak spreads to remote areas as violence hampers response. Social News XYZ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-eed2c57edd2046e0",
-      "title": "Ebola Outbreak Ravages Congo As Hunger, Insecurity And Fear Hamper Response - Outlook India",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxPZ2V3MFlPSi03Y2xLeC1CTEt2dlFxMzVMSVRuR00wZUFpcjg5Zk9TQjFRNDlXa1UyUVZITWVDNkVvWHV0LUNUTFJ5VDVhU2ZHVGpCQlVvYWQ1VmprZlhjV0ZaUXR3bnRScXk5LWFNa2RPb0VBcWt6ZmxHYWxuMnhXNUZBRjdjOUdjMWdxQS1IZUhLcW9QSTFNYU5KRU1LYmtqbWxqMTZJR0NyT1J1VlNN0gG8AUFVX3lxTE10dWRuMHl5SzhQXzM3bjFhZTM4ZVJQeGN6bHYxN0FMdzVlT0dpcU1jTFNzMFk3UjBXWXVHTEpqdXRPeHVtVktOX2ViRmpYWHd1LTBCeHVsLXZlYXZPM05RY3lHN2V2SnoxT1lHNWZZVWVtSmVXclpoclBfQmZ0WllvVlV5bUVqVTFGTmdKSDNZMjRNblRxay1GdUZpTWkxWGJjUFpRamhrdmZhUEtUSjk3VXhnV05wU0NySmlv?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Ebola death toll",
-      "summary": "An Ebola outbreak in Congo is worsening as hunger, insecurity, and fear hinder the response, Outlook India reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

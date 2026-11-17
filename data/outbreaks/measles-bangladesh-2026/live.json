@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-17T08:48:23.003Z",
+  "lastFetched": "2026-11-17T20:42:44.462Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -478,9 +478,20 @@
     "news-af04e8b30ff753c8",
     "news-b5390cf959242dfd",
     "news-81f825c78e204dda",
-    "news-53accda8a19aff9f"
+    "news-53accda8a19aff9f",
+    "news-a4a3caa6ae53ba86"
   ],
   "recentItems": [
+    {
+      "id": "news-a4a3caa6ae53ba86",
+      "title": "Measles-related deaths in Bangladesh reach 1,353 as five more die in a day - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE83cGJZUE5pRmtNNXNIeWxkdnVkWjVCbmZoT0ZXWjVDdzJuVFVjV0UxQUVJcTFOeFlIOXcxOUFnOGVpY0NHdEtPaG1sNzhXdHM?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Measles-related deaths in Bangladesh reached 1,353, with five more dying in a single day, bdnews24.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-af04e8b30ff753c8",
       "title": "Bangladesh dengue deaths surpass 500 amid measles outbreak - Latest news from Azerbaijan",
@@ -668,16 +679,6 @@
       "date": "2026-11-11",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Six more children died from measles in Bangladesh, Dainik Amader Barta reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-f0980cbd7131ddb4",
-      "title": "Bangladesh records six more deaths with measles symptoms as toll reaches 1,295 - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFB0dUl5NDFfN2ZrZnZ5dnJPZFN6MnM0TVVXYUZVVnZHOUtxWVdFRnV1YWlhcTNVd3RUa3hUanIzdGN2V2NtZE1hcDh2MTh6a3c?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh records six more deaths with measles symptoms, bringing the toll to 1,295, bdnews24.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
