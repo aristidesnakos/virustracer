@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-16T20:39:54.470Z",
+  "lastFetched": "2026-11-17T08:48:23.003Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -476,7 +476,9 @@
     "news-8700124afa3af76b",
     "news-8ec518ce31d18452",
     "news-af04e8b30ff753c8",
-    "news-b5390cf959242dfd"
+    "news-b5390cf959242dfd",
+    "news-81f825c78e204dda",
+    "news-53accda8a19aff9f"
   ],
   "recentItems": [
     {
@@ -536,6 +538,16 @@
       "date": "2026-11-13",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh reports 5 child deaths from measles in 24 hours as the outbreak total rises to 1,304.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-53accda8a19aff9f",
+      "title": "Listening First: How community insights strengthened the Bangladesh Red Crescent Society’s measles response in Khulna, Narayanganj and Cox’s Bazar - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNTXY1TV83Q2h2X2l3c09DeG9ibUltNXdwY3BCNFFHRlFKcms1WDdEeThMSU1FdmdUSVRpVFpEUnFVTTRSbzVjN2l2a0JLWWNUTUZ1V3RCbXNTeXphQjEydWd4X1pSRFgzQTNVdGQ4Um01X2l4R3R0U1NKT1FLclVBR1cxaldmZTM2a3FFeW03X29MeTdHWU9kOFR4QkNEblBnMjNYd28yazFFUDIxM3F3d0JQdUh0MkdOZ2R2VnBsY0JMdFI1VFFOYnE4TzZCb1BFRnlXVTlqeDBqMVRWekY3bXNWNE94Q0E3N2xRTmtpOVlTN0lWMjU3V3BYaXc0d0lmNjBfWVFn?oc=5",
+      "date": "2026-11-13",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Listening First: community insights strengthened the Bangladesh Red Crescent Society’s measles response in Khulna, Narayanganj and Cox’s Bazar. ReliefWeb reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -666,16 +678,6 @@
       "date": "2026-11-11",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh records six more deaths with measles symptoms, bringing the toll to 1,295, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-94886d4d36a654ef",
-      "title": "Measles-related deaths rise to 1,289 in Bangladesh - TheReport.live",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPQTV2emZ2QzBrTHVvdGFScUdBZ0s3QkZ2Q084aE9USlpOT2xwdXc2REtIM0luWVVTaEN3LUxnR3V5NnI0NDZ6aWEzLVZOZ0VQazFieENhcVVDS3F2bW1jd01kcEdmX1ZWbVF0SWxhaGNsQkY4bWVDSDB5Q0YxNDRDWkhqc2t5TGM3d2lZS1hR?oc=5",
-      "date": "2026-11-10",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Measles-related deaths in Bangladesh have reached 1,289. TheReport.live reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

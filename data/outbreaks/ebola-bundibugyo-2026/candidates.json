@@ -1,6 +1,20 @@
 {
-  "lastExtracted": "2026-11-16T20:39:53.699Z",
+  "lastExtracted": "2026-11-17T08:48:21.178Z",
   "candidates": [
+    {
+      "id": "news-6340134081cb9382",
+      "country": "Uganda",
+      "iso": "UG",
+      "flag": "🇺🇬",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "The article discusses Uganda's Ebola preparedness before the 2026 Bundibugyo outbreak, but no cases, deaths, or contacts are reported.",
+      "sourceTitle": "Uganda Outpaced Congo in Standing Ebola Preparedness Before the 2026 Outbreak - Bioengineer.org",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQdXltUUpnZG1ZMFcwSUZNMnB5WE1UZ1VaRkpWRFYwTVo4ZU1tTjAxZEhXWmFzc3ZlLXQ1d2l4RWxwQngzYndIa3FHSnFRWUp2b0ZkRXU4eS1Hc2wxTmFMOG9RakNnemJKZEt6RDh0SFF3NWhMaUR0dXBJLVRGdF9xdVdnSzl2NUtwZTlzWnZaN2pkQUl5c184X3d3TXhVbEdwWGo4eg?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-17",
+      "extractedAt": "2026-11-17T08:48:19.807Z"
+    },
     {
       "id": "cidrap-edfd83013e48bf96",
       "country": "Kenya",
@@ -350,20 +364,6 @@
       "sourceName": "Google News — Ebola death toll",
       "date": "2026-10-20",
       "extractedAt": "2026-10-25T20:11:57.519Z"
-    },
-    {
-      "id": "news-f5371d0960757947",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": 7,
-      "deathsMentioned": null,
-      "context": "Kenya’s Ebola cases rise to 7 after 4 more test positive.",
-      "sourceTitle": "Kenya’s Ebola cases rise to 7 after 4 more test positive - Türkiye Today",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOYzJtQXhnSjNzWm5ia0wwMVNXd1E0WUxiV1JWbUxCbVlJVVBIU3NqRjFXNS1NNUo5TFF3VDAxUkU3Y1RlS0g1ZV9kakpLWDAxV19MbzVNME1LaWJfak15S2VKNDNZYXIzNlhnZ0Q3QjRmZVBscGFZX29GNWx4Q0FfMm96R2hQeDlXMEdpNGdxcDRTN0RZRFNhNThFZkNCelE?oc=5",
-      "sourceName": "Google News — Bundibugyo outbreak",
-      "date": "2026-10-18",
-      "extractedAt": "2026-10-18T20:11:03.413Z"
     }
   ],
   "checkedIds": [
@@ -625,6 +625,24 @@
     "news-915f68d9810116ca",
     "news-5c572a34c793d1c0",
     "news-3a7e5ceac53589e1",
-    "news-39403a9cc02ff92f"
+    "news-39403a9cc02ff92f",
+    "cidrap-4d84022cf4e84c3c",
+    "news-e5348841b6be3063",
+    "news-90c52484eb44f961",
+    "news-a36f0ed0fa767cb6",
+    "news-24b27421d7b13dd3",
+    "news-6340134081cb9382",
+    "news-a248fc8dd386ee15",
+    "news-ae13361db26dafe3",
+    "news-62751fc762d55bf1",
+    "news-80df1c468348ff08",
+    "news-b8c506451e0d12eb",
+    "news-a486a61bb1b76976",
+    "news-cdf297a76c51db67",
+    "news-74c024b2a06a4835",
+    "news-1888bdd67f10266f",
+    "news-6d1589f5453d80e6",
+    "news-c77d8062bec4e7cf",
+    "news-d72cf82032cc5d12"
   ]
 }
