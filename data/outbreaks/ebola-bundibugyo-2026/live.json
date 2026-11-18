@@ -1,17 +1,6 @@
 {
-  "lastFetched": "2026-11-18T08:51:52.845Z",
+  "lastFetched": "2026-11-18T20:43:26.254Z",
   "processedIds": [
-    "who-b25c647327768046",
-    "who-a07bf51db6d283f0",
-    "who-d7b27eae3047ac83",
-    "who-a26cec7eefd25e55",
-    "who-0bc210a285f778db",
-    "who-f4a77dd017e6ec17",
-    "who-07accb593ea31494",
-    "who-ad8357f6ed92f2cd",
-    "who-9c8c64b541ad60d9",
-    "who-6bf7cb26801498ec",
-    "who-c50183da4a688b15",
     "who-789557be26a8c92d",
     "who-02dd97ba91f57a94",
     "who-326d4291e836d09e",
@@ -1000,9 +989,50 @@
     "who-a269587779e322a2",
     "who-364f58e9018be4e5",
     "who-a03832fb2e60cf09",
-    "who-301927913076cf4c"
+    "who-301927913076cf4c",
+    "news-71bd6e098910b5f2",
+    "who-3e514c4b1c0a70a8",
+    "cidrap-cde64c88228f7beb",
+    "news-71658fcab30de77f",
+    "news-3ccd3ed60f569af5",
+    "news-d2c8f20af242a068",
+    "news-257d9ed8c15487bb",
+    "who-1a1dc53c2b34cdd8",
+    "who-9d56337c47d32e07",
+    "who-44a8ce88fd54db09",
+    "who-6a02cd19f4e4ed8f"
   ],
   "recentItems": [
+    {
+      "id": "cidrap-cde64c88228f7beb",
+      "title": "WHO: Ebola case count has more than doubled in 3 months",
+      "url": "https://www.cidrap.umn.edu/ebola/who-ebola-case-count-has-more-doubled-3-months",
+      "date": "2026-11-18",
+      "source": "CIDRAP",
+      "summary": "The cumulative death toll in the Bundibugyo Ebola outbreak (DR Congo & Uganda) has more than doubled in three months, according to the World Health Organization.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-3ccd3ed60f569af5",
+      "title": "Could mobile phone data help predict where Ebola will spread next? - Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPOUV0aC1UYXRCeWdxYjRkOFpoMERFamVpckZMTU15Q05DZmRwcTV2cFVjUkwxckRESDhsMDU1cU9aWWFuVEdqUWpubGwweG9jUFZXczl1TU1YVjdRVmdvM0FDMHVZM1NjcGlPMHNHNXh2UlA1cEhoUWVpUW1qaW1RX1pmd3VXdHliN3dCbklGMVUya0VSMjFybDJ5RWpxXzZC?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Mobile phone data may help predict where Ebola will spread next, Gavi, the Vaccine Alliance reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-71658fcab30de77f",
+      "title": "Death Toll Surges as Congo's Ebola Outbreak Spreads - Newsmax",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQMi1lSW1KVGQ1eTA5WWZFZUdMZVBWdTIzTTlmM2pJVFpQUWJka1BzcHBvMkpBZjh0ai1sQS0ycEJqYUpRLVFyQWx5VWROb2NXR19ZaTJfU2ItTWljOVM4eDE5Xzdub3JDTWtfZGtJc2JRTllac3lCTU1TYzNuRGduSUJ4Zw?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — Ebola death toll",
+      "summary": "Death toll surges as Congo's Ebola outbreak spreads, Newsmax reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-8a56d866c43aea0f",
       "title": "Ebola Spread in DR Congo Linked to Human Travel Patterns - India News Network",
@@ -1010,6 +1040,16 @@
       "date": "2026-11-18",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Ebola spread in DR Congo is linked to human travel patterns. India News Network reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d2c8f20af242a068",
+      "title": "Congo Bundibugyo Ebola Outbreak Surpasses Seven Thousand Cases Across Seven Provinces - Bioengineer.org",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNLWtDWmxKYWUzSG9ucHZ0LUxWd0duQUx6aDl0NmNpTC1BbjJtSFA2NkNxY0pCbE5LQ1JGOE1FbC1wQm1sV2VrVWprd3RTSzl4RjRJU1g1OEV3dkJ4Szh1ZEU2aDl0ZjJNUTJ2UXpfQ3AtMURCWUJ2TTNfQlZ2ZFlmRHVwc0VxVHh0aVNZbzJDd0FwSnh2LTRxbW41VmxoR3RrZFY3VWdpZE8xYU01RWxR?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "A Bundibugyo Ebola outbreak in Congo has surpassed seven thousand cases across seven provinces. Bioengineer.org reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1050,6 +1090,16 @@
       "date": "2026-11-17",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Six months of the Ebola outbreak in the Congo involve war, hunger, disease, and profit, World Socialist Web Site reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-257d9ed8c15487bb",
+      "title": "Gilead expands access to investigational obeldesivir for Ebola Bundibugyo - Drug Store News",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxPSW11ck8yOF90YVlmNG9RTGhRdWJBUFRBeDFLWGpxUkNSRGpzSHlodGFuZDlUblJ0TzhYd0RkZW52SHFiYlVzSjBHMDNjN2xtTmFWTHVoUWF2ZmhheUxDTUNwaE1ja0h5NkJYaWR2OWJRLUQtOEp2WEtiOUFvODJONFpYS2w0MG54TE5QRjltcTd1VVRVd1JJ?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Gilead expanded access to its investigational obeldesivir for the Ebola Bundibugyo outbreak. Drug Store News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1150,56 +1200,6 @@
       "date": "2026-11-17",
       "source": "Google News — WHO DON",
       "summary": "Ebola vaccine trials specific to a strain will begin in DR Congo next week, the WHO said. Yahoo reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-a269587779e322a2",
-      "title": "World News in Brief: Ebola cases double in DR Congo, chemical exposure starts before birth, Türk concern over EU-Rwanda transfer plan - UN News",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5BTWZTYmx4RTFoNDhITjEyN3k1VUwyQ0xWN0c1eUh4Qk5TRlFodS1obi0zVk8xQ1YydmpTTVRxcE82Qm5lc0Q3VVVUcVZ0UG9UUlRTcElucw?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — WHO DON",
-      "summary": "Ebola cases have doubled in DR Congo, chemical exposure begins before birth, and Türk is concerned over an EU-Rwanda transfer plan.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-e9a30d430cd48377",
-      "title": "Explainer-Congo's Ebola Outbreak Is Spreading and Killing at a Record Pace - U.S. News & World Report",
-      "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOEo1RjNmUms0aEd5QkFKYkFmZXlsc2YwWWZNbHVDVHlTNjZSb1F4N2JtMEpCWVUxM3h2bWg5SU01VzZtYVhmakJKTi10WkhHd2pydTZDbWltWVpkY0JOeW9VYklsVVZpZTlkalpwX0FrUTlyT0lqLUFMaXcyTUFzeEtIMWMzbWlzN1NJdVc4MjlOTHBSMG5DUFozVmVIbDI4dzQzUTBybFNVdzVqQ3JfSzJ1VktDRGJmWEVPRlMyMnRmNTFkMHc?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — WHO DON",
-      "summary": "Congo's Ebola outbreak is spreading and killing at a record pace, U.S. News & World Report reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "cidrap-4d84022cf4e84c3c",
-      "title": "UNICEF: Children make up 35% of Ebola deaths in DR Congo outbreak",
-      "url": "https://www.cidrap.umn.edu/ebola/unicef-children-make-35-ebola-deaths-dr-congo-outbreak",
-      "date": "2026-11-16",
-      "source": "CIDRAP",
-      "summary": "11,407 Ebola cases have been reported in the current outbreak, with UNICEF stating that children make up 35% of Ebola deaths in the DR Congo outbreak.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-02e7c8cfa4150cec",
-      "title": "Africa CDC warns of immense challenges over fragile Ebola gains - Social News XYZ",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNekRFb2Y2bFhrNFBIYVV0QmloOEVja1lkUE1JQWZGb3dXODFXSUE4TW1YSXBFc2VxalczRlBfamR3RUlobURTZFdfaHZ5Wjl3UjFoT1RGRmtHMldNOFphVi1iTUxkZzY4ZF9wUGhiR2t5Sjlac195ZExvWFFaM0NLT1RZWG9iVE9SYnBob1haMVpUOS11enl3aE5SLTU5MlUtaHFLdNIBpAFBVV95cUxNekRFb2Y2bFhrNFBIYVV0QmloOEVja1lkUE1JQWZGb3dXODFXSUE4TW1YSXBFc2VxalczRlBfamR3RUlobURTZFdfaHZ5Wjl3UjFoT1RGRmtHMldNOFphVi1iTUxkZzY4ZF9wUGhiR2t5Sjlac195ZExvWFFaM0NLT1RZWG9iVE9SYnBob1haMVpUOS11enl3aE5SLTU5MlUtaHFLdA?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Africa CDC warns of immense challenges regarding fragile Ebola gains, Social News XYZ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-09c324505bc55317",
-      "title": "Reaching Remote Communities Key to Halting Ebola Outbreak - Mirage News",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNXpqRGpEOVZqMHdyQ3JBa1dwU0tBV1RCVHk3TEVVNzVVZUxwUG14MXZqbmtKTU1ocUNmTW02TXZrakIzenJFNGs4X3AxSDhuc00wS05UY2Q4X2JxQVpEdW9OckpTd01DYkVheG9NQ3QxNDhRV2dVNk9URmdjQnRoTFgyUVA?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Reaching remote communities is key to halting the Ebola outbreak, Mirage News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

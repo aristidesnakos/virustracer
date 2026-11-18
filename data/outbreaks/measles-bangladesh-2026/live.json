@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-18T08:51:59.391Z",
+  "lastFetched": "2026-11-18T20:43:34.371Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -480,7 +480,12 @@
     "news-81f825c78e204dda",
     "news-53accda8a19aff9f",
     "news-a4a3caa6ae53ba86",
-    "news-5be2885de14fb14c"
+    "news-5be2885de14fb14c",
+    "news-9ada43fc3762e699",
+    "news-8ba78d8c47a17383",
+    "news-84151d2d488940b9",
+    "news-c1cdfd877d4b545c",
+    "news-ba1ab670bef2deb8"
   ],
   "recentItems": [
     {
@@ -490,6 +495,16 @@
       "date": "2026-11-18",
       "source": "The Daily Star (Bangladesh) — health",
       "summary": "The health ministry’s six-month scorecard omits a measles outbreak that overwhelmed hospitals and caused financial and emotional distress.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8ba78d8c47a17383",
+      "title": "Bangladesh measles death toll rises to 1,314 | Tap to know more | Inshorts - Inshorts",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNTmlRbUJ5OFVIQms1T0VmamtNMFVrVXFpLThYRjRfYzlDQTRIVTgzczRZelhsZFA2THlmc3ZDZHBFVkZkTm1mVE9zYVFfQ3dQdjA4RjZVaWJ2TDdYNl8wM3NhRzRjekowMS02eWc2YkhzOURxeDdhanIyM19tMFpYbWxyWnJxLUZBZ0JMNkpZSlHSAZYBQVVfeXFMUDZTbkxmdFNtN0hRbW84N1JXVlpuVTIyMDVOTUhCS0tWWjlNeEpxbVlid1dRNlk5eWRwQ1pPMHVaYW1TemI5MlBac3ZVX0dseUJLck9HSDZ6bHJnRTk0YnhvWllDRWlyUGlCXzVhTkU4NEFfRDNDV1NzOS1oZ2UwSUNDcU1hYlRwMmc5UHd2TlZHRzBYZV9B?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Measles deaths in Bangladesh have reached 1,314, Inshorts reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -670,16 +685,6 @@
       "date": "2026-11-11",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "The death toll from the measles outbreak reached 1,295 after six people died in 24 hours, Dhaka Tribune reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-273b3097e7b92ec3",
-      "title": "Measles Outbreak in Bangladesh: 6 New Deaths, Over 1,300 Hospitalized - https://www.businesstimes-bd.com/",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9INmt4MHJtSU91Ri1LS0ZGSmVFTXhUejNKa2dEaVBrbkEwaDRNZXkwNExHUGxMbU1aYUZKUnRuTG9SVTNSRzdaUkcwZlpWYlFsMExha2s0YjBCNVU?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "A measles outbreak in Bangladesh has resulted in six new deaths and over 1,300 hospitalizations.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
