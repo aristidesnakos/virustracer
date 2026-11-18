@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-17T20:42:44.462Z",
+  "lastFetched": "2026-11-18T08:51:59.391Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -479,9 +479,20 @@
     "news-b5390cf959242dfd",
     "news-81f825c78e204dda",
     "news-53accda8a19aff9f",
-    "news-a4a3caa6ae53ba86"
+    "news-a4a3caa6ae53ba86",
+    "news-5be2885de14fb14c"
   ],
   "recentItems": [
+    {
+      "id": "news-5be2885de14fb14c",
+      "title": "Measles missing from the health ministry’s own six-month report card",
+      "url": "https://www.thedailystar.net/ds/interactive-stories/news/measles-missing-the-health-ministrys-own-six-month-report-card-4327101",
+      "date": "2026-11-18",
+      "source": "The Daily Star (Bangladesh) — health",
+      "summary": "The health ministry’s six-month scorecard omits a measles outbreak that overwhelmed hospitals and caused financial and emotional distress.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-a4a3caa6ae53ba86",
       "title": "Measles-related deaths in Bangladesh reach 1,353 as five more die in a day - bdnews24.com",
@@ -669,16 +680,6 @@
       "date": "2026-11-11",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "A measles outbreak in Bangladesh has resulted in six new deaths and over 1,300 hospitalizations.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-93778bea05f5e095",
-      "title": "Measles: Six more children die in Bangladesh - Dainik Amader Barta",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObVAxdkRYTnlMX2tScEJBODNXblQ0ajdTVkdwdEUybHFIVjRYQzJQM3pjLU50Q3drU1RrUWNlVk9Fd0tINGxzcW1lalRzNW00M1p2ZWJManRwYmh0Nm9xOVhLdEx0eEVtUVByd3p1eU1IRHN0T2swY0dDRGU2OHVuN0gteDNwUmVkU29fTHJEOA?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Six more children died from measles in Bangladesh, Dainik Amader Barta reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

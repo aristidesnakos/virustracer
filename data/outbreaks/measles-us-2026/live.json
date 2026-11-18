@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-17T20:42:45.486Z",
+  "lastFetched": "2026-11-18T08:52:04.875Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -560,9 +560,78 @@
     "news-18999f7510af9621",
     "news-a350489d7850054d",
     "news-33e58c0ea696392e",
-    "news-87a587250f6d139d"
+    "news-87a587250f6d139d",
+    "news-a4ce164e285dfefe",
+    "news-2ad21ba785f316c2",
+    "news-28834b0f803f8bc7",
+    "news-818ef2708449582b",
+    "news-6f4d3db2077525a8",
+    "news-257a396d9567012f",
+    "news-90d0dccbd654cf0c",
+    "news-d280aa336731d6d1",
+    "news-7909a061b7e152a3",
+    "news-aa30632c967bfc8d",
+    "news-28255d743c859164",
+    "news-14a134e32cd3740c",
+    "news-0fbbf5687b385b15",
+    "news-ca0cf6a5776b622a",
+    "news-df600171876282e5",
+    "news-6937076dfedffd18",
+    "news-46c97ad9dd060a77",
+    "news-f2a4ee532372a504",
+    "news-6b195ab4a40a0f17",
+    "news-85e379686d388232",
+    "news-4ee1edc50e316263",
+    "news-fe8da5cba22c93f4",
+    "news-ad7fd01f2fdcaab3",
+    "news-45200c2d92e2abe7",
+    "news-5787cee5f205b8a0",
+    "news-0efc45bc3aedef90",
+    "news-b7bb5b54bb8a4acc",
+    "news-4c399394f125b4c6",
+    "news-51b5271eb9be48aa"
   ],
   "recentItems": [
+    {
+      "id": "news-257a396d9567012f",
+      "title": "Congenital Measles Returns as CDC Scientists Count 13 U.S. Babies Born Infected and 112 Pregnancy Cases - Medical Daily",
+      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJNjdtOE5jVjBKbUxSR0dVUUFqaFVwcnRzb2hPcHpxMEZDOWQyZ05ldTNTa0xUeEQxemhJakFNTVRNNXhoMHo1V1U4NGx3ZGphWjltN05vejNKS2dyTF9HVG5ycUZNbW1PUGpNNXNPaFBNSjQ?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — US measles cases",
+      "summary": "Congenital measles has returned, with 13 U.S. babies born infected and 112 pregnancy cases, Medical Daily reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-85e379686d388232",
+      "title": "DW News. . The US, Mexico and Bolivia have lost their status of having eradicated the measles virus, following a declaration by the Pan American Health Organization. Of the more than 5,400 cases recorded in the United States this year, almost all were unvac - Facebook",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObWdDNlF6Z0tkREo4dmFIRU9tMWI5ajV4dC13VmJ1Z0tRVXZVLWdKdFBWTFYzLWhzRXloY0cwci1KSkUyUExMWUYxOG8zYWtONmJXdUw1STU4eUtFZXAzOE0xZkZra2k2MktrMmE2TE95Y2FPeFZSeG5Fc1dhZ19pOTBfYlZjMXVhTFhqMF9sT0xmbzlUeTI3RXNpTW4xamtpMVFTOTZvTVFydzJaSlRCT2FmLXlnbFk5QU44YU4zUW5lTkR3UktPVEdhdzZFeXZnVjFGeFpBRlVSZ0NLMnZBcUV3?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The US, Mexico, and Bolivia lost their measles eradication status after a Pan American Health Organization declaration. Facebook reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-90d0dccbd654cf0c",
+      "title": "Not Just US, Mexico & Bolivia Also Lose Measles-Free Status: RFK Jr & CDC Chief Respond - Health and Me",
+      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMENmMDlHbjRtcU1XVjY3a3dKcC1WbUtmZml0WDNSMEhSUERLd1BNZHc3bERVelVMRVBIMERwS1phS2c2NWpqMG9Iakg1ekxNV1Zob191MXhGTl9TVVFubmVZZUxpLVdjQjA0NEQzY2NXQ050dkNwQVVQZldyU2VNLXh2Sms5SE02RXdJTXpkMzQyZ1lXZnQyMVpGQU9tbkZhR2tEMTBWNVlRazZtdTRQOVI2ZkQ1QzFYNjUzV0RPUzBncy00QmRVTlUxSVh3X004MWpjbjl3?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — US measles cases",
+      "summary": "Mexico and Bolivia have also lost their measles-free status, not just the US, according to RFK Jr and the CDC chief. Health and Me reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d280aa336731d6d1",
+      "title": "U.S. Doctors Report Congenital Measles Cases for First Time in Decades as Outbreaks Grow - SSBCrack",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPaVRDdm84M1N2STdYTEZMMVNwU3hVcHhYUXZ4Ni1yQjI0ZU9ESmFINGdIVWhWUHdLN3lFNDRuUW1JX0htUjVxWWlzQ2VYZnRxU2RlYzBmeVhwazlXUmNvb2pZcWRqQ3dhREt0X0l0Y2kwa2VzSUhJWkl6Z3c5akgxNXQyU0s4VVNoUG8tbUZlMllrMGdKMjR5RVJRY3dMQ0FxUlZfbHhKWXFqNmFwdHRUQ01vcHU?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — US measles cases",
+      "summary": "U.S. doctors report congenital measles cases for the first time in decades as outbreaks grow. SSBCrack reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-02792d27eb20ed8f",
       "title": "Measles Is Officially Back in the United States. What Now? - The New York Times",
@@ -570,6 +639,36 @@
       "date": "2026-11-17",
       "source": "Google News — measles outbreak United States",
       "summary": "Measles has officially returned to the United States, according to an article about what comes next. The New York Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-0efc45bc3aedef90",
+      "title": "L.A. County health officials react after determination that U.S. no longer meets measles elimination criteria - KTLA",
+      "url": "https://news.google.com/rss/articles/CBMi2AFBVV95cUxOU2lSM01xMDQzUXp6X3RlUG80d1ZrNGlQNWh3V1FIM0lsR3NrWEVsb2Z5YTg4VWZ1b0E1M2Yyd3RUSXJzQVdSWXdEUXdmVU5xMFdUanVlcDlnTVRqaC1BaElNWHpDYzFUcDZTaXk3UktuZ1FCdDZvcFJ6Y1VPdjRWTkhUU05yVmFTR3k4UEJZQmo5RktrOHJsM1RkYUxwWnFYamwzV0xIdjFpNG93ajktT0VGdGdBSUV6OEpySHFnX08ycTF5ZnVEUDgtWlJhaHQzek55bllhMU3SAd4BQVVfeXFMUGVVM2p1ZktYZk5jbnhuU05aS3AyT3A0Z252Y1hTeGREUmsyTVItMTFoYjBpSVpZVnpRdFF3MHJuNVl5ZWxTMEtieDQyMnI3T2lYWGV2MzZvTzRrM3ZDdm1lbndzMEZyZVZQVmFiVVlyajVjY0tEWU1oVkh3RkxiRFpsV1l3akdqX09Jc3owN1BXR1NXR3pXZ1l2V2lER0lzWGdZMnRXWTVwYnlKbUU0YlRtS19KZ2I2OTZNZGpoQlZrc3pXQl9pbGFiSjd0ckNDcnZzU3djWm9FTGlvNlNn?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — measles outbreak United States",
+      "summary": "L.A. County health officials reacted after the U.S. no longer met measles elimination criteria. KTLA reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-0fbbf5687b385b15",
+      "title": "13 Babies Born With Measles As U.S. Loses Elimination Status - BIN: Black Information Network",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNb2w2YVVjcnZlTk5vSHV4ZDZKUzNzYUlKV1Q4cFNpdkJYX3NwOTlHLWlmUmk0NkdZSGU1cjBwU3F5RFhMRjFwamJOSlZZTUZWUUxqODNNT2JwR2RxbjhWN0h0WlhnRTRLTWpkQ1hiUjJaVk1yTFdsX3VZZi1VUy0yaHIyQ0VZczNzM0FhNjZDYl9qYVI3OG84U3FTQTBfNVZYU09xSQ?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — US measles cases",
+      "summary": "13 babies were born with measles as the U.S. lost its elimination status. BIN: Black Information Network reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-14a134e32cd3740c",
+      "title": "The U.S. Just Lost Its Measles Elimination Status—and ‘Immune Amnesia’ Is One Reason Why Doctors Are Concerned - Women's Health",
+      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxORk4tMW5LTF95RV8zdzJlTTNUdERMMy02QlhMWnpQV3oyU1EweGwtdUFCMS1JSVdzaXFnZDZ3VmlRN2NjbmRqbFpOWmlVYlpMd0dFWm9pNnZzNHZkVkpNVXQwUGh3RC1uS3ZRWHBGWXdNSnNaNHRBSlBmTlBDOWdrcnhKQQ?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — US measles cases",
+      "summary": "The U.S. lost its measles elimination status, and doctors are concerned about immune amnesia. Women's Health reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -624,12 +723,52 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-28255d743c859164",
+      "title": "U.S. Loses Measles Elimination Status as Cases Spread - Ark Valley Voice",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN2dCdy1pSHVvRTBfaTlHaklKMlpqUjk1STMzOGVHaDd0alFQYTFnaTczWHNFel9BTmNhYUdHNVBBZkttc1J5SXlWb05ndXd5Yk8zTEY5T3Rud1FsRmtuQUV4TmVLbk9yTUpsNFc0Y3VHelE0ZjB2XzhWMDBCcUVPOEd1VUVDQlE?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — US measles cases",
+      "summary": "The U.S. lost its measles elimination status as cases continued to spread, Ark Valley Voice reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-2833bc874c8e89a5",
       "title": "U.S. Loses Measles Elimination Status as Cases and Deaths Surge – Here’s Why It Matters - Mix 93.3",
       "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE1MQTlzLVNDR2ctaEYtZGFPZlNMQnE3Ti1XQVBzRVNQcUJNZWtOQnhObk9GYWxxVjF0VUdWYUdDMUdyU2hsTmtxM3RIRnhROUExajRXN09oUkpVWTBLQzdMNlJyTHlrLUdCZXpPd3p4NzJqajlXNmstaVFn?oc=5",
       "date": "2026-11-17",
       "source": "Google News — US measles cases",
       "summary": "The United States lost its measles elimination status due to a surge in cases and deaths. Mix 93.3 reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-28834b0f803f8bc7",
+      "title": "U.S. loses measles elimination status - American Hospital Association",
+      "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxNRjg0djRtZVp1WG1zRWNkakdubFh6SmxsSkM4WTk4dl9lZER3UUh6QmU3ajI2c1lqTTlyU0FCYnJ6dDNTMDZvcTRTWV85SzdYdXotS0FfMjdCcEthenZMeks2R0dsUE01bXJJZkNsSHY5LUo4R1k5SlhYR0I5WmY5LTl3RUowNVU?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "The United States lost its measles elimination status, the American Hospital Association reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-2ad21ba785f316c2",
+      "title": "The U.S. Has Lost Its Measles-Elimination Status. Here’s What That Means - Time Magazine",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPblpnTzBNV3h5QjJfUXl0MEplR3VSSVc5WEljWUZtQmJJVUZaZTdqTFRwNjk4ZVlBU1daWXJsTWZxSG5TeHdHYUJUQ3BORXFBMXh0LVNUV3NscFJJdm5mWGJSTUJLQnhmeHY0aTZYTlRCZmxJYnF2Sk1ibXRuazBFa1dmM2xBQTBZTVZnVUZXQQ?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — US measles cases",
+      "summary": "The U.S. has lost its measles-elimination status, according to Time Magazine reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-45200c2d92e2abe7",
+      "title": "U.S. loses measles elimination status after first eradicating the disease 26 years ago - Los Angeles Times",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxNdXo5emdFZU1uMmRjNWRXcjl5cVN0RzhJRlNMdmhQdVJOTHFiSkFoM29FWW02aVZZUGYzSkpFVEowTzQwcWlMSlZEM0NHVUlXbFJoQlAzemk2YVBrZVYyRFRYRXRvXzYwX1MzdlBYTHBMM1hNM2o5U091ZEJfaEtYQk8yOG8tdnBjWHRLS0dn?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States lost its measles elimination status, which it had held for 26 years. Los Angeles Times reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -644,122 +783,12 @@
       "summaryVersion": 2
     },
     {
-      "id": "news-53668a08b1f256a9",
-      "title": "U.S. loses measles-free status as outbreaks hit highest level in 30 years - Spectrum News",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPMlpmb043ZlJuQ2JQMmdfZTNudWdjSm80VmNFeFpLX2ROel9udmhUYVR5QURZMWVNbTMyQXVVcm5pV0NydlNZTm1jLTZZUkJpQXNGZTJxR1VzZnBVVFByMVVtUGNnNnl5QzB4TW1Mb0Z4Sk9KM0VaUzlhSHZWR19CVnRLZzM3MjFPVWFzOXFjQWFuSTl3X1o1bXNiMjFiT292ZzZN?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The U.S. lost its measles-free status as outbreaks reached the highest level in 30 years. Spectrum News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-583788d6f8b8d3fd",
-      "title": "U.S. loses measles elimination status as outbreaks spread in Americas - upi",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxNZ1FJMmxRdUh0dnVnZ2h0eTgxbEptUmhWb1RqVUU3bTZLQndOYVNwRVp0eWpvRXZqRFFnZEJnbjdwUnlQNDZjd2JSLUl2ZW5iblNQekpXTl9KWUI3ckhuVUxUNnhySTNDZmVJdmh4UHB3VnRkV0NvdFM2QnBXRHJzUkhNVHd2QnBnTUs1NUEwQ0JyWnJpVXU2cktSSkNkU1pk0gGmAUFVX3lxTFB4ZmNqcGZ5ZFZxRGVnQ0dLdjZ5M01RZjdqV3lIWHh4LVlxZlJXZVJPZUhTUFJaTk1EOUJDY0t4RXhlMV96RElKV3lZc3dFWl9XZTBlckJ5ak1od05kOHNWTnBiUnNOSEVrV3ptX0NCRHlfeF94N3lHWHQ4NXRmMmRZWDhFVzYzSk03UUV3UWZXRXltOXZHak5LWnBwM2VrbW4zRnhlUXc?oc=5",
+      "id": "news-4c399394f125b4c6",
+      "title": "Measles now endemic across the Americas in blow to public health - Crain's New York",
+      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPRWN3cGQyZDhRTkZ6em9jWU1sNUh3T1dqaTl3clJFSW14eWp2SFA3WjNhMGlicEE1dUI1aHE1UXJaSmJOZk5UbVZUSTU4NEFzMWJ4MHUtaUNZS2c0QmJYTWt5NXBhczB2LXNxaHN3NWpuX3h1a1Q3WmNWdmV5ckw1LXhvZERRc2dleU1KZnJLRVo3QQ?oc=5",
       "date": "2026-11-17",
       "source": "Google News — measles outbreak United States",
-      "summary": "The U.S. lost its measles elimination status as outbreaks spread in the Americas, UPI reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-60ca56347f2a773d",
-      "title": "West Coast Health Alliance urges vaccination after loss of measles elimination status, deadly U.S. outbreaks - KREM",
-      "url": "https://news.google.com/rss/articles/CBMihwJBVV95cUxPNE8yZUJqZi05aU9kelJiRE5PUzhrQzk4QmpIb2FhRkJjVHQ3WnV0NEtPQU5RMmVIUVNLcHNrYllFUnoyR1lTc2UwOTlJYkVBcVJZMVRzV2JPUW1pckZmblVfWngwSFhramtBSHBrVTdiLU5FQXNJZmVqWS1UM0VZVkZ6M1o1V0ZXaHNyRjZSQVRIWUtyZW9iSmZBdm4yVE5kcGhvZ3lXcHQ1bkQ2azNSZlc2ejlkQWE5UEJHM3BkbmF4S3ZVdElzVmh3dllkZmJqYnJuV3hxdTMxSjE0MUhjbklFdk1mcHJ3N2J1dlhjSjRJejl2VkYybDFDSHBsMnZBbVpEdUllSQ?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — US measles cases",
-      "summary": "The West Coast Health Alliance urged vaccination after measles elimination status was lost and deadly U.S. outbreaks occurred. KREM reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-666025446b3302d5",
-      "title": "Bennet calls for resignation of CDC director amid measles resurgence - Colorado Politics",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQeFA4MlMwczlxXzlaNk03dTF0TEVyYUJqeDBfT0x1LU1PU2FabDduSW1pRnlvYkdqN2tGTktwMV9xNE5WaklBZXFDeThfamZmS2Q0cEtLNHZfeDBYZVhVMHhyUS1IcEpHMXhtb2ZmYzZ5RVdIYng3SFJXRTFjN0RVd2tCY1pSa25ad2FpTlNsajhyNW1HYjdWSnY0VWpwWGJEZXU4dmFIRWJDTk83NDhueV9haw?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — US measles cases",
-      "summary": "Colorado Politics reported that Bennet called for the resignation of the CDC director amid a measles resurgence.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-6d4ab00227ad2c36",
-      "title": "CDC raises travel health alert for US on measles spread - Taipei Times",
-      "url": "https://news.google.com/rss/articles/CBMieEFVX3lxTFBkMXFFU1RxZnYzcGlLR0hhcjg1S1FXN0huYnBLZThwZ1RCUlFtbTEzdXczNUFZd1YzeU1NT2lQTUNTWXlOUk9MdUU2Y1M2XzlQZFRkNVp6WmVkSXFWVE0wQkVpSWwwTTE1cF9IRm93Y1dOckpJQ1pEUw?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC raised a travel health alert for the United States due to measles spread. Taipei Times reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-760c5ab5756fe85d",
-      "title": "U.S. Measles Cases Reach 5,412: CDC Advice for Travelers - FTN news",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQQ3c5RE5ueWh3UlpPNW1UQzRDcFpnWGw3UU11MmZsYVhpRWU4VkZOVFdTNFBZZDluVHFhLXFvQS1ZUERZVzVuS3FNUm85WG9HS1Fyc0dqQlR2WUdYaExrdzhBOFBsR2NXNnBrOGVSX0d4cDRBVlE4MUI4RHpWMDVXTmpFVlpzUkw4QXZleDl5dDA?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC advised travelers after U.S. measles cases reached 5,412. FTN news reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7b48576575d80e33",
-      "title": "Marquette experts comment on measles outbreak in Wisconsin, United States - Marquette Wire",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNeTRJdVVXSFBKLVlMV1ZUa3M2cG9wWFR3cFR5VW1PRXVLSzBqaXUxM1IxeGZJX0FpdHBZZlJMX2tra3pPREQwM1lrREZXazRFaTBQSU0xRnNHaEwyd1BQb2ZMU3VtM09JYk4zNDdZUWM4UGNTdHV6MGpNREdveFV2NExhZ2xTcHZxWi1VM0NTYkhxc3E3RkFqRVF2VG5hVjdCSVBFb2owT3FWamYtMXhOdTJB?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Marquette experts commented on the measles outbreak in Wisconsin. Marquette Wire reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a350489d7850054d",
-      "title": "The U.S. has officially lost its measles elimination status - CBC",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQbmpKNlNDWlRnb09YM0xJZFlpQWdZUU5JR09OUTgxZUJ2T1ZuVE83emRSb0JtMGRYLTVBd0V1eGdQUXFkQzdDTk5BdlZfaERMVkRkOWUtbE1lWDJGZHJYbjdLc2FmR0VHaTdaaHVvamVhcWhqU1VrZlYzb29SYkNEQk5PYw?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The United States has officially lost its measles elimination status, CBC reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a58d4701df542e7a",
-      "title": "Measles outbreak in US: Over 5000 cases, many deaths in states like Pennsylvania, New York; Check measles - The Economic Times",
-      "url": "https://news.google.com/rss/articles/CBMiygJBVV95cUxONDB6VFNPMUZBZ09EWG5nVUtJUGpQX3J1LXhWenZYRTRPcjZkcEVjTVI2R04zU0c4WVBtYWxhMEc4ZkRJWXR3NzVsakE0elZVZTI5bUV3YW9oRnVlM0xVdm95RHRCNWxrZGdsSW1sVVVkVHhxSzBmMzhQd0xGQ0RGc0xQZmNSWUJCdmRnaXVmTGhUNnh3dWRfTmhOdm1GVi1KVWVjTDkwUnV1eHVULURMMEc2alllUTZyVlFQYi1NNE1FaHVBNUpzeHZoLWRLVVBHTzRhWnJINVRpU05IRk1NVm5tUEdhUEJqbGdzNnE0VU1DbDYydGtlSmtHVzFjM0Z6anAxQTFCVDlsUGFYLTlEUktFWkJqMVd1alZ1clVDRjc3R2U4OTlyOFN6TnZ3S3o3V3N0WVpKaklNb3EtN0JvZzZOMzBTUG9RWVHSAc8CQVVfeXFMTUpEdUhLTldGYzJFRmFEeHdhNHZKUXpNRzA5Zl9GUWtuOEtSVU9UNk1yVExwYUVCMVZaTGNvQVhwZG5KWG5DMWs1SVVOV3hBUnhfOVltb2R6WUx1YktCWDdNTDUwUTJIdjZiUmp5ajRrb0VIWWFIOWFWX0hJV1pRM0EyaklEbFVrY3VQZU9ma2hSWEZMU21ZdXJnQV9KZlc3TENyZHRoWmhjbXNYVGJreVJodi0yNnJyUXlXbVl0SnFRWVZiUlhIeHo0eF9tbkxMNE5LWk9hbTVhWHprelVXdVdna1M5UDBXMFdzbXB5YkpNOExKanZCejhibmIydFVVYVdEODBmWnRsOTktOFlBSEJLdU9Qd1M5Qm9fcWFUWU9oQjNmUlFJWUpXTEVUNzdvcENEV0NhT1l5eExqRzBUd2tfbEVRVUVkN2lja2owRXM?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "A measles outbreak in the US has caused over 5000 cases and many deaths in states including Pennsylvania and New York. The Economic Times reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-aa2cf97382120eb9",
-      "title": "U.S. loses measles-elimination status, erasing decades of progress - NBC News",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPU3EtY1JzbmcwVS1OQWZ3dlAzWUNxSmNOOG9WNXRxMzY2R3l6WU1IcWFYQ0VPeXZqVnUzVnF6YUM0WWJYNkFOTU1iSWVZUGRMcnEtSUJETGxoOU9pZnBoMlBzMFBlVjdrRmFyZU8yRWJjU1oxdVFnXzNWQlkxMUsxeFlwSkVKRTR0Y2h5VTFB?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The U.S. lost its measles-elimination status, wiping out decades of progress, NBC News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c1c8b401bac6a139",
-      "title": "The U.S. has lost its measles elimination status in a historic setback. Apoorva Mandavilli, a science and global health reporter, outlines the ways that the health system will have to adapt to confront the disease. https://nytimes.visitlink.me/FCzk7U - Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPUlIycHFNdGpwZWg1Q1BhcEhmd2lzb3pLYnBPMlBITXNQd3hsMmRXVDQ1WkotX3JobVo1bWprVFpoYl8wMnY3dzNhLXJTWl9hdVJKQnA0aXRjelBKZGtVWU1XOHJoTGFJdUM1UEh2MDg0ZXV6eDdJUC1YU1k0N1J2MDEwbkpIdHlaZTR1OXRHRGtjMElIWlByS0tWbm1WMTRxUnp2bWMwMUE1bE1yeDU4OW1WNTlCeHdVdFFfX3ViSUF0U2FHNU1ERVJfYTB5V2ZDNjRkRQ?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — US measles cases",
-      "summary": "The U.S. lost its measles elimination status, and a reporter outlines how the health system must adapt. Facebook reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-dc3d99613b1077d0",
-      "title": "U.S. officially loses measles elimination status, panel rules - Post-Gazette",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNSHdDdTdsM0F0VTlWUzVzYUxmSkY2NzNVY3JUdXFSbGZ4amU2UUtORm41VlBpd2NZbGF6ajNqMGticGV1TG8wSHg3Qk1ZemtfTDd3a1F5bE96Sl9ZZnJkYm53ZGdsS1IxTkthdDNET2ExVUtrdWUzOUZDeDRrQjJrTkpwY1dQejgxNWMzNHpFMU5VV1NU?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The United States has officially lost its measles elimination status after a panel ruling.",
+      "summary": "Measles has become endemic throughout the Americas, damaging public health efforts, Crain's New York reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

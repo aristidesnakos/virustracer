@@ -1,29 +1,6 @@
 {
-  "lastFetched": "2026-11-17T20:42:40.432Z",
+  "lastFetched": "2026-11-18T08:51:52.845Z",
   "processedIds": [
-    "who-d93a1b2c0ec62228",
-    "who-af2e7000d8d23292",
-    "who-1a1dc53c2b34cdd8",
-    "who-9650cfaf5a6f8b8f",
-    "who-1888bdd67f10266f",
-    "who-0cc7b0ee300e002a",
-    "who-444ea52a7bb7da61",
-    "who-122c2f4acd3edfa7",
-    "who-6b8b2cef338123e8",
-    "who-5b7eb70c87ae2c87",
-    "who-9d56337c47d32e07",
-    "who-c77d8062bec4e7cf",
-    "who-a32b6183829fb19d",
-    "who-3dc104b0fa61e8e8",
-    "who-44a8ce88fd54db09",
-    "who-6a02cd19f4e4ed8f",
-    "who-66bfb80dd1e3d607",
-    "who-92db03451b65205e",
-    "who-7017d100aedfcaa4",
-    "who-3e514c4b1c0a70a8",
-    "who-3b6dfe413796a82a",
-    "who-7fdfb8e3d89ce2ac",
-    "who-09a198ba1d524a40",
     "who-b25c647327768046",
     "who-a07bf51db6d283f0",
     "who-d7b27eae3047ac83",
@@ -1000,9 +977,52 @@
     "news-c1fe93a8373670f9",
     "who-10976af7d67168b5",
     "who-e9a30d430cd48377",
-    "who-3e77d731d434fb42"
+    "who-3e77d731d434fb42",
+    "news-6d46b1aaa15b9c17",
+    "who-7b4d70e117bf3eda",
+    "who-24b27421d7b13dd3",
+    "who-b49b3b24b9af2324",
+    "news-9486633556112778",
+    "news-136cbe17cf004aac",
+    "news-9fbbd95ddb1ad1a2",
+    "news-a2ecc47c097231ef",
+    "news-8a56d866c43aea0f",
+    "news-836e9df20a2a8914",
+    "news-915f74ecb1a47b9b",
+    "news-34afa324fbb446d0",
+    "news-64d945c2b6dde0e3",
+    "news-6ee5f411c877111b",
+    "news-62613d099cec7768",
+    "news-929e291911db1a05",
+    "news-dd869c9110b86991",
+    "news-8f57169b5aa70b55",
+    "who-71bd6e098910b5f2",
+    "who-a269587779e322a2",
+    "who-364f58e9018be4e5",
+    "who-a03832fb2e60cf09",
+    "who-301927913076cf4c"
   ],
   "recentItems": [
+    {
+      "id": "news-8a56d866c43aea0f",
+      "title": "Ebola Spread in DR Congo Linked to Human Travel Patterns - India News Network",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxPSzJvTk9ZQmlGZEVqMEhpenRtU3RQN2VDRHp3YTh5NHRSbXNtTXZUcHl2M2xkeURrM0E0SUJrRnBLLUJabTdtb3FKVmQyVERoOWhrUEZrcWlHemdRdG0tSW5zVWU3WG9TcVBEQWhmVGI3eEswWkJWTU81T0NtS05qeG1pclA3VDVZd18tOVBYTG5MOWFaWjhyV1NDQQ?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola spread in DR Congo is linked to human travel patterns. India News Network reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-71bd6e098910b5f2",
+      "title": "WHO to add two Bundibugyo vaccine candidates to Tumaini Ebola trial as DR Congo cases pass 11,000 - CASRAI",
+      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPM2V1UVk1ZHVsTEdPcVBPTEVhdnUxY0ozcjlzZW15RWpjZVppNUp1RHBsUUw5azBFZHdNR29TOEZkRFNJRDdMSEowRDBpLWs3d01jbjlLODNyU21YSWRfUkV6MTRod3YzT2JTWjlpMGZONXFXUHF0Z3E5cEpyMlVISjlnSjJRWkgyRllrNW5n?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — WHO DON",
+      "summary": "WHO will add two Bundibugyo vaccine candidates to the Tumaini Ebola trial as DR Congo cases exceed 11,000, CASRAI reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "cidrap-2592372578d91633",
       "title": "Human travel drove Ebola spread in DR Congo, outbreak reconstruction suggests",
@@ -1074,6 +1094,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-836e9df20a2a8914",
+      "title": "WHO raises concern over rising Bundibugyo Ebola deaths, insecurity in DR Congo - Peoples Gazette Nigeria",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxQc3dFM09PMENqa1RMQUZMVEZwMDI5cmZxVFM0djNMOE9GeGNqQXg2NXJQUmRnS2tIOTVYZGY3U2ZPNC1LUDRwSWFNbWZOa05LRzc5czlKeklPdTJHSHplN2J1ckFvZ0FBTDBWX3FRX29jSFFXVDNMRGZfMVlTVmN1RXBzcjhGMVZNcDdPTDJDWXpTWjc3R2dodUZnaTd1SlZCZE1R?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The WHO raised concern over rising Bundibugyo Ebola deaths and insecurity in DR Congo. Peoples Gazette Nigeria reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-863352355c0003d5",
       "title": "Congo’s Ebola outbreak is spreading and killing at a record pace - Arab News",
       "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNNlFFS3B0bDhQaDJKaVg4cmFTVWlXd0F5VjVVeWQzQnFOMkdTTEJ5MkV5eU1XdFhqS1RCbVV3ZVpfUGI1THF4ZkpsZ1U5QmxSUm5ocnRIYVVoUkhZV0FPM1phQkpXeDVNTlRvOTdxYVNqNU1pTEN3TjVHNktiQk1TZXJFdVFmLU1zOWlDUXNBcTJXQzVNbGNhUVVXcXp0TlR3eGR0dQ?oc=5",
@@ -1124,6 +1154,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "who-a269587779e322a2",
+      "title": "World News in Brief: Ebola cases double in DR Congo, chemical exposure starts before birth, Türk concern over EU-Rwanda transfer plan - UN News",
+      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTE5BTWZTYmx4RTFoNDhITjEyN3k1VUwyQ0xWN0c1eUh4Qk5TRlFodS1obi0zVk8xQ1YydmpTTVRxcE82Qm5lc0Q3VVVUcVZ0UG9UUlRTcElucw?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — WHO DON",
+      "summary": "Ebola cases have doubled in DR Congo, chemical exposure begins before birth, and Türk is concerned over an EU-Rwanda transfer plan.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "who-e9a30d430cd48377",
       "title": "Explainer-Congo's Ebola Outbreak Is Spreading and Killing at a Record Pace - U.S. News & World Report",
       "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxOOEo1RjNmUms0aEd5QkFKYkFmZXlsc2YwWWZNbHVDVHlTNjZSb1F4N2JtMEpCWVUxM3h2bWg5SU01VzZtYVhmakJKTi10WkhHd2pydTZDbWltWVpkY0JOeW9VYklsVVZpZTlkalpwX0FrUTlyT0lqLUFMaXcyTUFzeEtIMWMzbWlzN1NJdVc4MjlOTHBSMG5DUFozVmVIbDI4dzQzUTBybFNVdzVqQ3JfSzJ1VktDRGJmWEVPRlMyMnRmNTFkMHc?oc=5",
@@ -1160,46 +1200,6 @@
       "date": "2026-11-16",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Reaching remote communities is key to halting the Ebola outbreak, Mirage News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0b438775e0931f3f",
-      "title": "Ebola outbreak in DRC remains out of control, says Africa CDC - TimesLIVE",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOSmNPbElTenlZdUlZcjJtMVQ4cGM2aUJacWhBRWVCc2JxZDZoMTZ0QUM1bDZBNDJVN3lTTW9JVUFmb1p1UFBOSlUyNm11dk9rUnZlMjl5NV9MNWNubEwxbUU0Q1lIam4zT0twTktGSzFVUTdDbE1td1NBN2MxMHR4bXZYZl91LW8zeFdiSVJmWXY4cVdLT3FXbDhSTTFMb2UzNHViQzN5Yl9uaWpHUDFSNXVB?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola outbreak in DRC remains out of control, according to Africa CDC. TimesLIVE reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3a7e5ceac53589e1",
-      "title": "Ebola Outbreak Spreads to 5 Countries, 5,500 Dead - Baller Alert",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxNM2NzTnpWTVAtZkZaXzR0aXVxY1RsaUU1LXpZcS11MGJpSzlxdGU5X0Z4bW5iYW5TaVhmTVpDdndsdHh2NlFDZmJpREYwRHRfWTVMTmtGNzNmTTRkNFJXb0NIaVd4TWZBWm1ldEV4WnFpczliNk5jR3ZRRkRqZkR4ZUlfX3BmZTNkT3JqblVRNA?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Ebola outbreak has spread to five countries, resulting in 5,500 deaths, Baller Alert reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-57e093a8f22edd1e",
-      "title": "Africa CDC warns of immense challenges over fragile Ebola gains - Mid-Day",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxNN3JYMXQ1MXZHZU9MX2lqeWhqS1VCcWZiTURjT0ZSTkZRT2Y5WjkwU1Q4emVVR2xfbkNGYTdPU3FVN0ljWHN4TlB3eFp3RHo2T19qTk5UdE9MWVA1aVBvbUU5RUFIYmhXUWNJck5OVnVudzJmN1A5MVE3NnhIVXNjTWtrQkh3RU00ajlDUEVOOXY0Y3ZXQmEweFVEUHBuV21oZ3RidjFDcU80VWJGN0hDa05sVXBGTk1DU05GUXNMV1VITzFqdW9ISl83ZUQ0WmxnRkF0bHpn?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Africa CDC warns that fragile gains against Ebola face immense challenges.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5c572a34c793d1c0",
-      "title": "Congo Ebola Outbreak Still Uncontained After Six Months - Nature World News",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNMnVHeU9obkxZTVBsMXh0UGt1R1RIV19oeU9GdkZZc1dwN211bTZOQjFoTjJ6c18tX3BOdGVzRGs3cFhYQ2hVay1YZi13ald2UWhEb291aE5abkR0ZFJqaE4tRGh6Vm9ENXBrNlQ2cEROckJGVXFRaWZNY2x2Nnh4X2UwaTZiQ1IzSndmVlhtZDl2R29sbmxNX3NxS3g1S1hQWm9CdGx1RS1wcGFRampqTGFUYWNPbWV0R3YxS0hSR2g?oc=5",
-      "date": "2026-11-16",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Congo Ebola outbreak remains uncontained after six months, Nature World News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
