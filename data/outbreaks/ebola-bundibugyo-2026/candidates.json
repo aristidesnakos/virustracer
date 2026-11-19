@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-18T20:43:32.257Z",
+  "lastExtracted": "2026-11-19T08:52:27.815Z",
   "candidates": [
     {
       "id": "news-6340134081cb9382",
@@ -14,6 +14,20 @@
       "sourceName": "Google News — Bundibugyo outbreak",
       "date": "2026-11-17",
       "extractedAt": "2026-11-17T08:48:19.807Z"
+    },
+    {
+      "id": "news-1e62cbf85c82e8b7",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "The weekly external situation report includes Kenya.",
+      "sourceTitle": "Ebola Bundibugyo virus disease outbreak: Democratic Republic of the Congo | Kenya | Nigeria Weekly External Situation Report 27, Data as of 15 November 2026 - ReliefWeb",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMinAJBVV95cUxOZC15UXFPeXNDRlNEbzlsRW9zbkR2RlJWM2J6cEI3d0YtdkhIN1BwNFRuVnBvQmlWS3Myc3p5MkhBUTFqbDNsRGhWVGswLUI0aXZoSzFSbUxWNHBWM1ZLcEl6V3ZFS094bjZvUVhUZENqSS1yRHc3VHJ2U1NHd3h4OEtyOWItdkNVWURQQV9lOGJGcUQ0UEMwX09QV0VqcWJrV0kzeENPM0trZ0EtdnhFcERrTDZELWtTdTllUkh6TGR3MWdlZ3k2V2hDVVNpUVk4S1U4SDNTcklCWHhDVFNTbmEtcUpjTk9wT3Z3NjBIbkNnVnlHT0pQOWZfV0k0YWZXU0VfM3l0aGR2SzNLbFUtdjh0MkJ0TW1KSVI2TA?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-15",
+      "extractedAt": "2026-11-19T08:52:25.815Z"
     },
     {
       "id": "cidrap-edfd83013e48bf96",
@@ -42,6 +56,20 @@
       "sourceName": "Google News — WHO DON",
       "date": "2026-11-11",
       "extractedAt": "2026-11-12T08:49:11.631Z"
+    },
+    {
+      "id": "news-36b298f290c964cd",
+      "country": "Kenya",
+      "iso": "KE",
+      "flag": "🇰🇪",
+      "casesMentioned": null,
+      "deathsMentioned": null,
+      "context": "Kenya is listed in the title and content of a weekly external situation report for the 2026 Bundibugyo Ebola outbreak as a country mentioned alongside DR Congo and Nigeria.",
+      "sourceTitle": "Ebola Bundibugyo virus disease outbreak: Democratic Republic of the Congo | Kenya | Nigeria Weekly External Situation Report 26, Data as of 7 November 2026 - ReliefWeb",
+      "sourceUrl": "https://news.google.com/rss/articles/CBMimwJBVV95cUxPWnVWXzRQcnVaVWlhb3dzT2FubnpodGpYQjRreEN6aU13dGRDN0hmX0VzczVqVTdmVy1FUGhrb1hoRFRWeEVuSkJBUzBfa3lMcjUwWkI2a19EMExVS2hQS1hjZmFKUnhid2oxY3NxN2xZNG1pWWVqYU02Ync4SDFIUU9vdFRGRURBUnVxZC1tSndJbFFjeGVmWkVCUmRJRDNVdGVXTEswTF9hLV8wZi1SSzBLMENZcFpXTElqNXZoaDMtM2pUdDR0TVZ4RFFPb2hYR0UzU05lblUzVW1vQ2s1amZ4cW02YjRUMEstRHdWQ0FuXzlUTkRzNkFzSUlEYXVrd24tMFVqRWZXV2EtWXVmaXlDQ3RmaFk4SGo4?oc=5",
+      "sourceName": "Google News — Bundibugyo outbreak",
+      "date": "2026-11-10",
+      "extractedAt": "2026-11-19T08:52:26.111Z"
     },
     {
       "id": "news-a76e529a623da896",
@@ -336,34 +364,6 @@
       "sourceName": "WHO Disease Outbreak News",
       "date": "2026-10-23",
       "extractedAt": "2026-11-08T20:25:19.026Z"
-    },
-    {
-      "id": "news-2bb33271947c4463",
-      "country": "Nigeria",
-      "iso": "NG",
-      "flag": "🇳🇬",
-      "casesMentioned": 1,
-      "deathsMentioned": null,
-      "context": "Nigeria confirms imported case of Ebola Bundibugyo virus disease.",
-      "sourceTitle": "Nigeria confirms imported case of Ebola Bundibugyo virus disease - WHO | Regional Office for Africa",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNQ21qUUE3U3YxWFY4dno5NHhxbFk0ZW8xVGl5dE9yVjNha2g2WEtrdWJ0RnlnNWJnYThzcEJ3YVJkX1hoa0VPZjdzekhIRDVMUDBCVHRXb2VwSllPOVhDMmRGcnp2Y3B2NE1ObkpPWl9tUVJvSFBIbjRvM0lfWkVLUkpuZ1VhS2FKMEExN0ZERndQUm5ZeHRpZHJoZlh4Ui1GaWZ6aERvcUc?oc=5",
-      "sourceName": "Google News — Bundibugyo outbreak",
-      "date": "2026-10-20",
-      "extractedAt": "2026-11-09T08:56:20.415Z"
-    },
-    {
-      "id": "news-2d14ab2cd9f4e6a8",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": 8,
-      "deathsMentioned": null,
-      "context": "Ebola cases in Kenya rise to eight.",
-      "sourceTitle": "Ebola death toll in DR Congo reaches 4,561 as cases in Kenya rise to eight - Qazinform",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQdWhIZmhIN0k1bUhMbW51YjZMZk5oQUItZFc1UDU0SkpJbUVCbFJsbDlDZ19iODdYTDktdW1GeHFrV0pCZzM1NENwUHFabkY2dVBYajJpMjlyMEhBNnUxT2FBRk85MWhMcmlLN1lfMnhwei1nelZpZmp3UzJwMjE3NDUzS1lJVDk1N2RRZFNOYzFfOFIyZHdmajliZHlxMmhEUVVWb1BSbHdTbWPSAasBQVVfeXFMTmFuVzRLVDZLZDltallKY05zUXBWUjlOLUdwY1pKUFNEMlMwNnpvUktkUGdLZ0ZuVWZlZzFrWXduWEFNc1VYZUpyaktLd0RocUY2akNCb0NjcUZsaFV6NHlkRHNwaWJmQW03bVZTUDM2UENpN2EwLVV1OWJnaEs0RVpQWVZzekxSb3l2Y0pfUnd4R0lFTDhJWGFYckVEU21hNHg4WFhoREFzSkY4?oc=5",
-      "sourceName": "Google News — Ebola death toll",
-      "date": "2026-10-20",
-      "extractedAt": "2026-10-25T20:11:57.519Z"
     }
   ],
   "checkedIds": [
@@ -685,6 +685,13 @@
     "who-1a1dc53c2b34cdd8",
     "who-9d56337c47d32e07",
     "who-44a8ce88fd54db09",
-    "who-6a02cd19f4e4ed8f"
+    "who-6a02cd19f4e4ed8f",
+    "news-992352db28d604f1",
+    "news-d90b12c4c2522fde",
+    "news-1e62cbf85c82e8b7",
+    "news-36b298f290c964cd",
+    "who-b25c647327768046",
+    "who-0bc210a285f778db",
+    "who-07accb593ea31494"
   ]
 }

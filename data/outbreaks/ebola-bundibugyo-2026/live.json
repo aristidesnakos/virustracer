@@ -1,15 +1,6 @@
 {
-  "lastFetched": "2026-11-18T20:43:26.254Z",
+  "lastFetched": "2026-11-19T08:52:25.207Z",
   "processedIds": [
-    "who-789557be26a8c92d",
-    "who-02dd97ba91f57a94",
-    "who-326d4291e836d09e",
-    "who-37d7526d03289799",
-    "who-c2fef26991186b53",
-    "who-34afa324fbb446d0",
-    "who-3a5bc3840e676d07",
-    "who-c4511cb2a931e6ad",
-    "who-f30948047427598b",
     "who-ac9aede2f13d8fd6",
     "who-929e291911db1a05",
     "who-de4f62fbd8148b75",
@@ -1000,7 +991,16 @@
     "who-1a1dc53c2b34cdd8",
     "who-9d56337c47d32e07",
     "who-44a8ce88fd54db09",
-    "who-6a02cd19f4e4ed8f"
+    "who-6a02cd19f4e4ed8f",
+    "news-216b3b42be6efd5b",
+    "who-aea989648a9ea1a9",
+    "news-992352db28d604f1",
+    "news-d90b12c4c2522fde",
+    "news-1e62cbf85c82e8b7",
+    "news-36b298f290c964cd",
+    "who-b25c647327768046",
+    "who-0bc210a285f778db",
+    "who-07accb593ea31494"
   ],
   "recentItems": [
     {
@@ -1164,6 +1164,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-992352db28d604f1",
+      "title": "DR Congo Ebola Outbreak Records Over 5,500 Deaths in Six Months - Voice of Healthcare",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNXzkyVjF1WXR3RlhiSFh5VWlOOVdoMlJBUm9oU3BXbU9vc1ZlbWVsckZ3aTZkbmdjOGpsOTNLcGJfRjAyTTRqZmNTX0wtZm43VUc4ZVJFTTdTTmN5cmFHSmx2emNqOVhpRlNBY2kxZWJpSVotMUdWVzJLWXdnMFhhQkVLMWd4LWtiNzFBT1g0RXpYV0JFcEFUdkJkUVpFVklTLXJCcFRGWkl2dF8yNXZuT1pBOEo?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "An Ebola outbreak resulted in over 5,500 deaths in six months. Voice of Healthcare reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-a248fc8dd386ee15",
       "title": "DR Congo Ebola Outbreak Uncontrolled Six Months On, Agencies Warn - https://streamlinefeed.co.ke/",
       "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQUmJiY0hYeGRUbHBRLXlMY3JTMHEwNHdSalRoeTVNT2Z1Qi1oX2VxejQyRVhxdlAyTlJtdDNNdEZaRHFscVctR0xMZURUN0pSU0tubEtHaXpJc3NDc2JSSUNPVWhSc3R4bnNCaTNRRk5Db1dfckp0aFBPNTVkMklGWlRfUks2OV9UTTF1SGlYNnFid3BWMkc5bzBYNDVESzA?oc=5",
@@ -1174,32 +1184,22 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-d90b12c4c2522fde",
+      "title": "Congo Ebola outbreak, six months on: Africa CDC admits it’s still not under control - Il Politico Web",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR1paZ244emJMN29LXzd3ZVNlSEFkZjdCdlBYbHE1RjBOYUtXNTJ4OFlCUzZBZVJ4OTZvQmVSTmFoS01ZMGdzVGFmWUVPbVFpU2s0bXNnV3hkX1pHNFVHcUVKVjBIekhJbks4QTVyWGVjV1ktUFNFeUY1YXozOUhkb2MtYzZmN2w0amc?oc=5",
+      "date": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Africa CDC acknowledges the Congo Ebola outbreak remains uncontrolled six months later. Il Politico Web reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-e5348841b6be3063",
       "title": "Ebola outbreak in DR Congo claims 5,568 lives as cases surpass 11,000 - Qazinform",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTDh0SmhGMEhmcEJsQlh2RjB3NU1tTVVkR0JCSmFyLXlZR2xCUmEzNElFNHdoVHhhUG1ObXhLVFpMaHl6NTFuS0o4RU1aeDZIdGdfeGpVbThHNHVZR3hzY0VyQzY1TWY0amVLcWtGZE1vdzIxZTd2SXJaQnRqZnExNldlMW5DbEdTZ0V1VzlsdjlyemxVMWhXaVpNOXVKZGxQdHV30gGjAUFVX3lxTE5vUm5CbTJMMU5WcklvM3MwVXpvS1NySl9UREpYaWYwN1ZrMlZTc1hDaWd6N2hnT0pDYURLdGRMTTc0Wlo2T1dqeXo5SVVicUdHOEdpRTNtOFlWSk5JTUFxVC1yb3ZLb0U4R3JJMlYtdFM4S1VVTWt5Z0JNd3h1TW5oWXFDMkVxSUx2dTliRjFrOC1Hb09FeDRsd1R1Q3p0eVQwS00?oc=5",
       "date": "2026-11-17",
       "source": "Google News — Ebola death toll",
       "summary": "The Ebola outbreak in DR Congo has killed 5,568 people and infected over 11,000. Qazinform reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-fd908feb24b575c7",
-      "title": "WHO raises concern over rising Bundibugyo Ebola deaths in DR Congo - Galaxy Television",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxNM2hFYkRmNmxLd0ZKZXJGSF9xd2h2cGdxLS1CQXlnaWE2QzhOY19wVUFVSWowWDFCZHNlbm95S0tkd3FDOE92MTJjM3VKV21Fb3ZLYTg1V2l4QUVFRUtLcG9iR3k0RThqR3hMbThVS0VTNGwzeXNtR2Y4bzNIM2FZZzhkWnpPN2gzVVJfY2l0MEJ4ckcwUmpGWHI4OHl6dnBaemRTZGlmbG5RZF8zblBrTzIzc2w2UQ?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "WHO raises concern over rising Bundibugyo Ebola deaths in DR Congo, Galaxy Television reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-10976af7d67168b5",
-      "title": "Strain-specific Ebola jab trials to start in DR Congo next week: WHO - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOODdIMUk5NThIU1JnVjdkSzdRYXFSUFhLR2g3N3lzUFQtQzVVa1ZPZHMzZTdrM05aSFpOM1k2LWhsX0lDdVVxZC1rMDQzTVhERENxM1gwdTlyaWsxLVNITzZUZFhlRXZzejRpWVlxRDIxemxKbm8xSkNKdlJxbGY2Znk4czRNTVhjWTBHRDRrUEtsMENmX0E?oc=5",
-      "date": "2026-11-17",
-      "source": "Google News — WHO DON",
-      "summary": "Ebola vaccine trials specific to a strain will begin in DR Congo next week, the WHO said. Yahoo reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

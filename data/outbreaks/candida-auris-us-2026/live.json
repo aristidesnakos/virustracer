@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-18T20:43:44.045Z",
+  "lastFetched": "2026-11-19T08:52:38.485Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -65,7 +65,9 @@
     "news-ed8be2452d110b20",
     "news-602148eadfd28c7c",
     "news-19aac3b2f121f261",
-    "news-a27d8eabd5df4388"
+    "news-a27d8eabd5df4388",
+    "news-1481ed61ca159a4c",
+    "news-178d43ee6ab63cd0"
   ],
   "recentItems": [
     {
@@ -229,6 +231,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-1481ed61ca159a4c",
+      "title": "A rare case of candida auris causing... : Indian Journal of Ophthalmology - Case Reports - Ovid",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOWhFS2U5NFFuUW00RUNUdV82SFdKanZnSkxlWFZhR2xiZjExS19pdTg4N0ZfckE4emZBaU5qS1ltLWF0R2UxZlJ3V0hTWmxWT1BnVk12d205T01LNlVZcjFBdFJPeXJNTVVzTXlCRHBQeWhCU1Ztc2xRRHBVNjd0aWt5TFM5RFJ0ZXVMbUxncF9oYnhEMGRFU0pGUVo3Yk5FU1ZuOTFvVUJJTkMtWHBSaTIyYUU?oc=5",
+      "date": "2026-07-13",
+      "source": "Google News — Candida auris cases",
+      "summary": "A rare case of candida auris causing an infection was reported in the Indian Journal of Ophthalmology - Case Reports. Ovid reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-64f41f0a1f835d48",
       "title": "Candida auris: a review of global epidemiology, multidrug resistance, and infection control in healthcare-associated outbreaks - Frontiers",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxNVUE3T05rdFd6cHJ1Y2ZZNWk5bkJaRlRzay1HY0ktb0ZRcnctTW0zUXZqbzBaQ3A2X1gxTTdVeUV2S2hOSTRQQzB0azcxUFFxbE81TWdVaG9KelpMc1VqSDIyc1ZXU3JRZ1pPT1NCbzlLX2I2dHBLTm1Pb1p2YUVTeW4xWHNkcmlLRHdtTEFBUUFxbk80cmhBOHdkdmNTOEJMZ2RJMGszWGlXaU9rQ1Npa21hQQ?oc=5",
@@ -255,16 +267,6 @@
       "date": "2026-03-25",
       "source": "Google News — Candida auris nursing home",
       "summary": "Infection control interventions reduced Candida auris spread at a Bahrain tertiary care center over five years. Cureus reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-26da7ff8f05628c2",
-      "title": "CDC study highlights substantial antifungal resistance in Candida auris - CIDRAP",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQZHEyQzJObThONUxuUDlmWFF6U0F5eURVRlpHV2dMd0ZsNFdMWE1MaHoyS1lvb2s3VWktN2tua0lOekVCNXJmOVZ3T0NCOFREUWVKXzZMN3gwQ3BlZHF1bExRX0x5VjI5M1ZldFM0aUtpbGNfLUt5cnA5ZFNsVm1BSnFMbzN3VlM5RUpDVEFDU29nWS0tSlc5R1Jub3FVMzkyWWdVRkRKenR2WFotc1E?oc=5",
-      "date": "2026-02-10",
-      "source": "Google News — Candida auris cases",
-      "summary": "A CDC study highlighted substantial antifungal resistance in Candida auris, CIDRAP reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

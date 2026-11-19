@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-18T20:43:34.371Z",
+  "lastFetched": "2026-11-19T08:52:31.201Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -485,7 +485,8 @@
     "news-8ba78d8c47a17383",
     "news-84151d2d488940b9",
     "news-c1cdfd877d4b545c",
-    "news-ba1ab670bef2deb8"
+    "news-ba1ab670bef2deb8",
+    "news-af01db8a5b3a9cce"
   ],
   "recentItems": [
     {
@@ -495,6 +496,16 @@
       "date": "2026-11-18",
       "source": "The Daily Star (Bangladesh) — health",
       "summary": "The health ministry’s six-month scorecard omits a measles outbreak that overwhelmed hospitals and caused financial and emotional distress.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-af01db8a5b3a9cce",
+      "title": "Measles outbreak: Death toll reaches 1,329 as six die in 24 hours - Dhaka Tribune",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNc3Q4enRtY01nZ1MtajFVaWxaMUJEdXFwQVVsUlczUXZBMnhyR0cxR2NMRW5YS2o4T3RraDk4SGNlQlI2M0g3aWdieHp4QnJIVm9zTy1JUmFwUFhYZ2VvUVhrLVZNRURNNFJyUFNFNVhXdFpxZUFrU05xMldBcjR1dXJfMGZzX3lyUWpUUXFTUVA2REdUa096T1h0djBaVHFuM2hVYtIBqgFBVV95cUxQV3JacTFjaENKWk5uS0t3clBjQVJ4dmIxd1BMejhQN3c4QmEyc2JtZ0xQSENZQjRvZlZQSHh4NFUyVXRwZHBZbkFTbnc1eHY2dW52Q2FBWGtxeGtmZ0VRdWhySDlRVmVEVmZHZnJGNGVXMV9XYUF3NEw3R25UQjdCcWFZdV96V09SUXZmQ3dKQ3drVS0zQkxuYkMzbmU1Z1FiWjRNZ0c1dXFlUQ?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "The death toll from the measles outbreak reached 1,329 after six people died in 24 hours, Dhaka Tribune reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -675,16 +686,6 @@
       "date": "2026-11-12",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh recorded four more child deaths with measles symptoms. TheReport.live reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-00a749f6a7a47c03",
-      "title": "Measles outbreak: Death toll reaches 1,295 as six die in 24 hours - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQNU9Ubkp1X1VJZ3I1RFptdndGb0NRbTFxVkV0VVgwTmd3YXhMMXB0aDlLMnlxV2RadWhJZmdnaGVsZVdSdVlaUFc4NjJCbEx6TmduOERwTTFtdkxuZ2Qwcy1GMFNVZ3JFeUdwNzdKUURNMmR4UzNicUtwbTVoQVpXcFk3TXJHbTFSeENGQTltWmIyd3lWeXcycTYzNl9nakhKbUhsONIBqgFBVV95cUxQNDZ6N0gxV3pRU3RkeEN0aUtWTXRCLWNJbm9LSmF5cVZPWDFGV0pQTEp4Tk5ZNkhROUVfdTZ5S0tOSjNtVWxndjBaUVk5LWxUTm5lVkczbS02eEwwMXhHekFvVU41SW8ycW1aaWNMQTRVMVBXYnVXaGVBSFM5S29Nb0FSTkkxdm5TU2FwUkpMVHc3b1hJV0pOektucWR0MHJwdHhoUXU5Nks4UQ?oc=5",
-      "date": "2026-11-11",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "The death toll from the measles outbreak reached 1,295 after six people died in 24 hours, Dhaka Tribune reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
