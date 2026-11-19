@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-19T08:52:31.201Z",
+  "lastFetched": "2026-11-19T20:44:10.060Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -486,9 +486,37 @@
     "news-84151d2d488940b9",
     "news-c1cdfd877d4b545c",
     "news-ba1ab670bef2deb8",
-    "news-af01db8a5b3a9cce"
+    "news-af01db8a5b3a9cce",
+    "news-0d63b4eb0d417c90",
+    "news-0fbd365db781e1cd",
+    "news-f075f2972c6403a0",
+    "news-0cbb0948bdc49a58",
+    "news-e54ae91777195c0f",
+    "news-2d9b74fb76ded23c",
+    "news-e5c447a68a95deb1",
+    "news-de96df026104ffcf"
   ],
   "recentItems": [
+    {
+      "id": "news-0d63b4eb0d417c90",
+      "title": "Measles Outbreak: Seven more children die in Bangladesh - Bangladesh Post",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQRkdxQ2s5ZF9KQW03ZGFQU0RBc2JBc0hTbno1RVFmX1lpUTNtWVdnOXdGUTFzYnZtX0t2TTBKQldKcjNsT2NGT2Eyb0plWEd4SGt6TjRVandKYnBHYUQwc2ZnckdyY0hiRDlXTVVTNWtXLXY5c3FrTG1lcG5JWDJzeTN1eHdtc2dZQlZ3aDE5Ui1iRzM0eUh6SGdR?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Seven more children died in the measles outbreak in Bangladesh, Bangladesh Post reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-e5c447a68a95deb1",
+      "title": "Bangladesh reports 7 suspected measles deaths as toll hits 1,336 - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1tMnpQYi14OGNTWlVtQjhNNFhHRkkwS2VjMW5qOGRIQ2owa0ZIS0tSOWhpYXVrdUdqREQ3SnlEOXVSSkQ2X1RKbG5kaHZRTVU?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh reported 7 suspected measles deaths, raising the toll to 1,336, bdnews24.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-5be2885de14fb14c",
       "title": "Measles missing from the health ministry’s own six-month report card",
@@ -640,6 +668,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-0fbd365db781e1cd",
+      "title": "Licensable picture: Students Protest Over Measles Outbreak In Dhaka - Reuters Connect",
+      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQVDFrSzU5clRtQXoyTWxPWnBpWWRYYWEzNnBsTmlDcS1lVUFHV2NGbjlCMTZvYi1KdEtQRkl0U2lkN2Y5MDJRQWVXNWlZbkJlQmhsZ3p5RFctRlBUSjNWU3JkSWI1elVNcnNqdjc0WFNDSUFwTS1tOUdkbmRZZmswSDRKc1R0d0p2cTNfSWRVQm1HVUM4Sm9iMEQ5YXdYcHB2UzNsMW5WcXlsRngtMmhMb29kSFQzVGF5c2FXQmJrTG1ZOUd1U3k4SjBVRUpCV3REbjdWVTNub0c3NTJlbEtxVVJqV0M4ckpuT3ZzRDgtZnVlWUhnNmVPX0dXRG1mX2R1dldJMnB3UnJHUjdRcF9fZnZMYzNZck1HUE5xblg1TjRJUUlra3JFOE8zZVp1MVE1RlhDZDB0OFFSMnRxdkFKTzI2V1d3X0U2VmtteURYZ20?oc=5",
+      "date": "2026-11-12",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Students protest over a measles outbreak in Dhaka. Reuters Connect reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-1de8370262b287cb",
       "title": "Bangladesh reports four more suspected measles deaths as toll reaches 1,299 - bdnews24.com",
       "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqc2VvY0FyLU4xVlVZUWp3TW55MDZkTVZRSGhWWDRRS2lMX1VkVUprNDJ4VWhMN1ViTm8waFNHUmhxb3hzMU0xRTVJRkVZWE0?oc=5",
@@ -656,36 +694,6 @@
       "date": "2026-11-12",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "A measles outbreak in Bangladesh has claimed four more lives, bringing the death toll to nearly 1300. Social News XYZ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5a437985abda6915",
-      "title": "Surveillance Analysis Documents Bangladesh Measles Resurgence and Severe Geographic Disparities in 2026 - Bioengineer.org",
-      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxNcC03d0JyLVY3TVBNQnRFR3dyZXhWOHN6NEFwNW14WnNIMmQ2MlF5QjB3QWVxNWh4bFBGTnlHOEI4YlNadHJmUE9CMm9rSkRPUUpSYTJHdUlYWTNUeGdEeU5FeVUwamlEeGhwVXpGOTB4dHlYZzF2a1Jrelo0SjA0QUJRMVJ6SkRzYk1CSHJEOG9MQThEWk15Q1JqYU8zTmwwamFRZUlIVU83WW5YbTgyaFVIbVVObmotYjltQU5YVzZqTDZRVDJr?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "A surveillance analysis documented a measles resurgence and severe geographic disparities in Bangladesh in 2026. Bioengineer.org reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a2c214ff40d1491f",
-      "title": "Preventable Systems Failures Driven by Supply Gaps Trigger Bangladesh Measles Resurgence - Bioengineer.org",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRV9KYnhLSlkwaHZGX0RVMU1aSm9xVjlSSVpyZmhBakVzUnpWVDB1M3ozeUVRQ1RSWkt0bmVRWDMxdF9RZFk5M01JaEdCUnpSOHZlVTQtaF9wLUYyMXNITmtSaXE0aUZCSE5rbWhxNmhpUzZ5UzRBRmJ1M3dReHpDTUF5Z000R1VudGFhR3FyM0ZrVW1tYU1yMDNKX3JFVVBISmtuU2hUSUY3THRNUzFVN2lmcw?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Preventable system failures driven by supply gaps triggered a measles resurgence in Bangladesh. Bioengineer.org reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-e12c89071551866b",
-      "title": "Bangladesh records 4 more child deaths with measles symptoms - TheReport.live",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNVlk2dlA1anBtOE9CXzU4WnZEZHZ1ZGZSX2VYVUQzSWF5SFd5RkJWX21wRElvTHhHSVFzU3lXRDFJd0tPYzhGTG5fZHpsNW82RVJJdWcwQU53VGlCczRGVVR5THNzakZoblkzUkpINGpYUHhUS3A5N1VJS3I3VXFyNkdUVE5lZ29XSFBVYXZBa0RuSWdPZnZBY2VxUEQ?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh recorded four more child deaths with measles symptoms. TheReport.live reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

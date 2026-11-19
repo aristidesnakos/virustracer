@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-19T08:52:32.528Z",
+  "lastFetched": "2026-11-19T20:44:14.327Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -632,7 +632,20 @@
     "news-dd6c8542681055dc",
     "news-f0ee666e8cad3660",
     "news-36864c52f36abbdf",
-    "news-5a630e463e29a89f"
+    "news-5a630e463e29a89f",
+    "news-7611c3282f226304",
+    "news-c95295d940376859",
+    "news-e122c5809418997c",
+    "news-b875160148476126",
+    "news-5733b5d0e04755d6",
+    "news-c2878854f2bc4de5",
+    "news-38a35976440a23f1",
+    "news-d4a08ca705aa8511",
+    "news-7fc68cf6ddb3a74f",
+    "news-cc26dba6e96c618d",
+    "news-7fb1854712b91bd6",
+    "news-7fd07bdd6afb3e22",
+    "news-04aeebec6338b04a"
   ],
   "recentItems": [
     {
@@ -642,6 +655,16 @@
       "date": "2026-11-19",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "The DOH confirmed the 8th measles-associated death as cases reached 1,589 across 46 counties in Pennsylvania. WFMZ.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-5733b5d0e04755d6",
+      "title": "Too little to wait: Pennsylvania parents are getting their kids’ measles vaccine ahead of schedule - 90.5 WESA",
+      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWEdUZnFMTUt5M3JtOEhQUW01UEg5ODFIVGppX2lUXzJ1c1J0MDIzdXFZcGo1TFYwSDZUcloxU2hBb09LcEFnZVhQMUJ4ckl6YmxNbXNSUzY1aW1rTHdlZW83RmlVaHlqM0VNZmdEOWNiSVFXNTRieS1JTzhwa0lHZTcyNkpoQWtqNHVUQjNaVE9teElULVE?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania parents are getting their children’s measles vaccine ahead of schedule. 90.5 WESA reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -656,6 +679,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-b875160148476126",
+      "title": "Measles detected in Connecticut wastewater as U.S. loses elimination status - Hartford Courant",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxNQ2QyUm1xUEZmbHh1eDIwa2VJLVZka1JmVGZaT01UalNzRFR5b0pwYmpJb25RZ2xNeDNsNmxWc1QzWTZlSXA1OEZaM2MyVUQ3czNGYXZSM3Eya1FZVjZVajNyQzg2TklpR0Y3N0FjWXlZcUp6TXNENi1QT2NnQTkzTGpGVmdNN181RlNoWTJ2VWtQenR4V2FCZjFiVWRtYzZtVzJxNVF1YkZ2bzVwWDFV?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — US measles cases",
+      "summary": "Measles was found in Connecticut wastewater as the United States lost its measles elimination status, Hartford Courant reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-c038b156cd30fc30",
       "title": "Pennsylvania reports its eighth measles-associated death as statewide cases reach 1,589 - Medical Daily",
       "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYnFuQ3pjQlljR3FZak45VzlfRlREMWVqOXQ5bmphbVN5YkhXd1U2NGE1VGlTU0VBTXNubW1TNkhrMGRia0hQcWs0VWgwenNYVFZ1NTBVd3lKN3dXT3FYeUtURUJyZjRESlFHcnByWkNaODZfQTlZc1BhX1lpaG5FaVptaHU1QnM?oc=5",
@@ -666,13 +699,34 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-c2878854f2bc4de5",
+      "title": "Pennsylvania Reports Eighth Measles Death of 2026 as US Loses Elimination Status - SSBCrack",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPTGRrOHFVVFJ4cklzcHR2dTJHd3NZRUdkQnpGdk9EbTJXdUp5Z2xOVFdRbVhHZ1J4THNBYU50cTZocFNjR1ZyTGFENmxJaEFDUlAxZllOMURCVkpxcWlSR0JuMmZrejJmN1RzeUlPNmQxTkh6d3prRXNucEZEaVhoOVBVTS1idC1Ud05ndVNlaVpDVzd1aHVJcWs0U0ItOXlJaGU0YTNJQmYzdlk?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania reported the eighth measles death of 2026 as the United States lost its measles elimination status, SSBCrack reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-e122c5809418997c",
+      "title": "CDC Tasked With Brining Down Measles Cases Amid Vaccine Skepticism - FEDweek",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxOLVJaV1RPVUZTY0ZLWnhjUmFrWm4wejBWOVZVekpsb3lQMmZRbFk3T2xhdXNwMGo3TXZuOGpaWkFCTUNwTFdQNDRfOWVRVU5WZEVyMS03Q3lFYWJOZzllVVEwWnZXM2tMLTlzNHp6SXlJUkpzVjJtMnI2WFc2M2dGMjBtLUFsdWQxeE1kZkh0b0xmY3FNYzdxNWtnazUtR1YwNXJ0MFBrTUIyNW0teXRvam9fcUpJQTVlNnNNWVJFalFPMVB4M2FCVHV3?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — US measles cases",
+      "summary": "The CDC was tasked with reducing measles cases amid vaccine skepticism, FEDweek reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "cidrap-26b832a43abaa3e4",
       "title": "Pennsylvania logs another measles death as survey finds few Americans fully understand the disease’s risks",
       "url": "https://www.cidrap.umn.edu/measles/pennsylvania-logs-another-measles-death-survey-finds-few-americans-fully-understand-disease",
       "date": "2026-11-18",
       "source": "CIDRAP — measles",
-      "summary": "Misinformation about the causes of autism have made more parents hesitant to vaccinate their children against measles and other serious infections.",
-      "summaryFallback": true
+      "summary": "Pennsylvania reported another measles death, and a survey found that few Americans fully understand the disease’s risks.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-0c83a5b996497ab5",
@@ -755,6 +809,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-38a35976440a23f1",
+      "title": "Pennsylvania confirms 8th measles-associated death - Audacy",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQekVGbHFfMl9ZZXc0ZHMzRHNicXh4TlFZd2lDR3BTamdwQmI5VGZZVk55R1BDVzRYSE9fbUl4MUprUVZrcDFNYkdKbTZKZWlacWxySjVsc2NtRnhiNnRaaE9fSDZ3ckE2ZGVMS2ZEMXdrbDRtV19uWkxMTlBlbm5GTDU1eU8?oc=5",
+      "date": "2026-11-18",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania confirmed its eighth measles-associated death. Audacy reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-3b76ff962a8b9d3a",
       "title": "In charts | Tracking the resurgence of measles in the United States - EL PAÍS English",
       "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPODVtSl9rR3BiaUJVUjBRRWVsWHpxUGFBNE85SjZRRENkTV9kUHE5bkd6M3QxOHZIQ2ZfRWNnWVJBX0tHNEZiQlFwUHhieXFsSEtHaFJxaUtNNzhEdGUxQlNmRUgxeGhmWWgtTWpjYS0tZ1QzQWctZXFRemRoekUyYnNtTGh5OXNFbXlDVzdWZ1loalZHRktlS09qWmNvVjkzZGtLRUFRaVpwdnlDVzhnWkFn?oc=5",
@@ -781,56 +845,6 @@
       "date": "2026-11-18",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania confirmed its eighth measles-associated death after the United States lost its elimination status, Inquisitr reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-4cc2c7f6540570a2",
-      "title": "Pennsylvania confirms eighth measles-related death amid US outbreak - AOL.com",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPeWZoUUNVMC1vaERPTEo5aUd1cnpIdERNQWJneUwtOENENXp3eGtLbHlyQjdyMzk5LVRyVkxMUi1LUGYzanFrbG10dHdYa1htcG5zbU9JVmFFblJRUGJvcl9jamdxdW56bmdHMzVPV0pGQUVQYTZld3lqTW0zYzFmYjlLTkRDWnRxVm1ienM5dXNQdw?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania confirmed an eighth measles-related death during a U.S. outbreak. AOL.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5ce52ae7e4929bcf",
-      "title": "Eighth measles death reported in Pennsylvania, heath officials say - Pittsburgh Post-Gazette",
-      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTTI3eEp1YVZsdUk4c1ZPUVJoM2hmTkZpWE54NHFiUmMxem1kM1BaempYZlowdHIxdk1FamFKZFRjTV9OOHl4bXdKOV9BeFVfTzRFT05CZ21sV1hqQlpiNFlOVTljZnZzeUJlNlRpZ21rZTVWS2IxNkhoZTFVS3BDc1h1X3o3WWExRGZaT1p6d1hZdVk?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "A measles death was reported in Pennsylvania, bringing the total to eight, according to health officials.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-71241dc5ff98243c",
-      "title": "NJDOH urges MMR vaccine after U.S. measles elimination status revoked - Courier-Post",
-      "url": "https://news.google.com/rss/articles/CBMigAJBVV95cUxNQUVMM0RzcWhXRXVfd3ZTLW1oV3RfMlI1WjF4MzVRaVN5LXZ3VDlnLV9ka1ZLcHJCVERSNHZxMWdtTGhiS0RtVmk3Ti03RG9PbzdlalVTbjFIQ3l0ekd6NXdRLWZRdUZhTjA0YkV2VHk2SXlpTHFKbW82X2szZWZrSHdoRWVUQ3IyUnFvSU0yZWdVUkUtZFM4UGZnUG5naXc4TlpGaUpweXhDS21PZkpEN1FiM05RcHhjWlhaUGtyOFNJOWk0NkJ4S1ZVRTBPX2gyb3U0Y1M3NFJYWjJmRlR2bjFmUVVreHptdC1EVTRNcko4ZlFVLXlBYjhNZ2hiZEpo?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — US measles cases",
-      "summary": "The New Jersey Department of Health urges MMR vaccination after the United States lost its measles elimination status.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-85e379686d388232",
-      "title": "DW News. . The US, Mexico and Bolivia have lost their status of having eradicated the measles virus, following a declaration by the Pan American Health Organization. Of the more than 5,400 cases recorded in the United States this year, almost all were unvac - Facebook",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxObWdDNlF6Z0tkREo4dmFIRU9tMWI5ajV4dC13VmJ1Z0tRVXZVLWdKdFBWTFYzLWhzRXloY0cwci1KSkUyUExMWUYxOG8zYWtONmJXdUw1STU4eUtFZXAzOE0xZkZra2k2MktrMmE2TE95Y2FPeFZSeG5Fc1dhZ19pOTBfYlZjMXVhTFhqMF9sT0xmbzlUeTI3RXNpTW4xamtpMVFTOTZvTVFydzJaSlRCT2FmLXlnbFk5QU44YU4zUW5lTkR3UktPVEdhdzZFeXZnVjFGeFpBRlVSZ0NLMnZBcUV3?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The US, Mexico, and Bolivia lost their measles eradication status after a Pan American Health Organization declaration. Facebook reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-90d0dccbd654cf0c",
-      "title": "Not Just US, Mexico & Bolivia Also Lose Measles-Free Status: RFK Jr & CDC Chief Respond - Health and Me",
-      "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxPMENmMDlHbjRtcU1XVjY3a3dKcC1WbUtmZml0WDNSMEhSUERLd1BNZHc3bERVelVMRVBIMERwS1phS2c2NWpqMG9Iakg1ekxNV1Zob191MXhGTl9TVVFubmVZZUxpLVdjQjA0NEQzY2NXQ050dkNwQVVQZldyU2VNLXh2Sms5SE02RXdJTXpkMzQyZ1lXZnQyMVpGQU9tbkZhR2tEMTBWNVlRazZtdTRQOVI2ZkQ1QzFYNjUzV0RPUzBncy00QmRVTlUxSVh3X004MWpjbjl3?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — US measles cases",
-      "summary": "Mexico and Bolivia have also lost their measles-free status, not just the US, according to RFK Jr and the CDC chief. Health and Me reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
