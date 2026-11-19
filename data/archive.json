@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-18T20:43:46.715Z",
+  "lastRun": "2026-11-19T08:52:41.639Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -3103,6 +3103,19 @@
       "lastAttempt": "2026-11-16T20:40:03.764Z",
       "title": "Wikipedia toll snapshot 2026-11-16: 11407 confirmed, 5572 deaths",
       "publishedAt": "2026-11-16T15:12:33Z",
+      "source": "Wikipedia",
+      "kind": "toll",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://en.wikipedia.org/w/index.php?oldid=1386561036": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
+      "title": "Wikipedia toll snapshot 2026-11-19: 11535 confirmed, 5634 deaths",
+      "publishedAt": "2026-11-19T04:35:57Z",
       "source": "Wikipedia",
       "kind": "toll",
       "outbreak": "ebola-bundibugyo-2026",
@@ -6722,6 +6735,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMid0FVX3lxTFBWbE1lcV81bExzOVNya1FIeXA4eDN6d2lXODlmWWlqcTdZbUtIRENuTU9kWGNGa1B4MWVRVFVvQXhjYk9IQ1dqUHJOOXdIUHN3LW9wNVBzWWFURmtpdUdGV3R4eXduTW52SktLY2JNOXU5b09xVVFB?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania confirms 8th measles-associated death after US loses elimination status - Inquisitr",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMidEFVX3lxTE0xNGZJeEQ3RUVHZkR4MnQxRllfTlZzR1o3aUtJYzRzUmVIRWZoUEt0Z3JSeW54M21qeDd2bVFQSXVZWG14YzQweElCMENKSWQtOS1PVzQyNV9FaDZfdTZ5LTBtQUgtTGJJc085VEt3WkhYNk5D?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -8243,6 +8269,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMihwFBVV95cUxOYnFuQ3pjQlljR3FZak45VzlfRlREMWVqOXQ5bmphbVN5YkhXd1U2NGE1VGlTU0VBTXNubW1TNkhrMGRia0hQcWs0VWgwenNYVFZ1NTBVd3lKN3dXT3FYeUtURUJyZjRESlFHcnByWkNaODZfQTlZc1BhX1lpaG5FaVptaHU1QnM?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania reports its eighth measles-associated death as statewide cases reach 1,589 - Medical Daily",
+      "publishedAt": "2026-11-19",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMihwFBVV95cUxQN2dCdy1pSHVvRTBfaTlHaklKMlpqUjk1STMzOGVHaDd0alFQYTFnaTczWHNFel9BTmNhYUdHNVBBZkttc1J5SXlWb05ndXd5Yk8zTEY5T3Rud1FsRmtuQUV4TmVLbk9yTUpsNFc0Y3VHelE0ZjB2XzhWMDBCcUVPOEd1VUVDQlE?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -8516,6 +8555,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiigFBVV95cUxOR1paZ244emJMN29LXzd3ZVNlSEFkZjdCdlBYbHE1RjBOYUtXNTJ4OFlCUzZBZVJ4OTZvQmVSTmFoS01ZMGdzVGFmWUVPbVFpU2s0bXNnV3hkX1pHNFVHcUVKVjBIekhJbks4QTVyWGVjV1ktUFNFeUY1YXozOUhkb2MtYzZmN2w0amc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Congo Ebola outbreak, six months on: Africa CDC admits it’s still not under control - Il Politico Web",
+      "publishedAt": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiigFBVV95cUxOTGdwN0VZTjJrdThPMTJMbE1UbHNoUlVGQXBCVkZSX01rRXc3WDlRUlZHSzlITUp0VEl4UEN6VVI2OGFQYjBNbHhSRF9QbjdXeVU5dnZOLXc0X3ZGNEhZdEtJQklJNThudlVCRE84dFFqdEpEbnZRS29uUnI3QWtmVjYtUGl1VHdGT0E?oc=5": {
       "archivedUrl": "https://web.archive.org/web/20261115202808/https://www.contagionlive.com/view/ebola-outbreak-reaches-11-145-cases-5437-deaths",
       "archivedAt": "2026-11-15T20:28:08Z",
@@ -8641,6 +8693,19 @@
       "lastAttempt": null,
       "title": "DOH confirms 6th measles-associated death as cases reach 1,487 across 45 counties in Pennsylvania - WFMZ.com",
       "publishedAt": "2026-11-07",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiigJBVV95cUxOWkVEMk1SUTlqZDUxQ2piSnhqNlgwQ0FSUFAwaGYyVFR3S1htdGlMMnVzOEtWbkU2SmV5UUlVcy1KZjluX2lFY3FxRGlIZHRQME9qNTVaYzdNM2RxcWNCTnJtT25iOEgtalV4blV5OWxoUWRxMzZIX0FMRE5Wb0pvYmg2cElfVFo4dHd1MmZOMnhJNVFCQWV1VG1kRENKbXR0Vm5QOEpQQ0JHREtsSjVxOE9HbmZZZUw1NUVFQ2RLbGtNNmwxV1NBSzlYSktvaElEQmgtVWdJMHN0WXVpVjZIQ2xfRTZlME5SWHUtT01aWWlURlFvM3hubWNOR2trR0NBcG5RckhnVGNqdw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
+      "title": "DOH confirms 8th measles-associated death as cases reach 1,589 across 46 counties in Pennsylvania - WFMZ.com",
+      "publishedAt": "2026-11-19",
       "source": "Google News — Pennsylvania measles outbreak",
       "kind": "news",
       "outbreak": "measles-us-2026",
@@ -9621,6 +9686,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTkEzV0NjVWV6ZU56ZkJEWGdHMEVWeVFHTmNMWFVFUHMzWHRLQTFfeXhtTGNRTU1NX1FBeFlBRmdIaVVkZXFWS2JfMFY5Mkd2U1FHb2pNel9vN25WXzNkaU8tVXpDeW14LUJ3ZXhKakt5SVY1X240X0VNZnhCVUZRTThxRG1jamJUajVfZlpXRm9FQdIBlwFBVV95cUxQN1dON0VzVXMtVTROcjN1azd2Q0VpMGFldWpZcjZlY0thTkczbjl4ckd1OHJiRXdYcjY5X1BfdXVtTWdJdE9GakxrQWRCVE8wU25oUlVxNzJWNVNjX09LOVYyR2VmSGh3UjloejBqVUdDNmNuRlQxUTlidUQ1WWkzM1lBazU1OFQ0SDlQZkJBZndpa2xCRnBn?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania reports eighth measles-related death - The Hill",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMikgFBVV95cUxQbkJaMlhfWWNmRnJsbG9qenZwZVpSMm1ZSk1iMzZzc29wVUpMTGxKMDR3MXUxTDVoS1JRQmlnbC1udC1BMTlTRDJUTnh3QTBQY3ROSHVTeVNtTUhrS2MydmViZUhrQmo4bzlyMnM1czRqWW1CRG9QcWVwQlFCSHM3dzJlQ3dOTm5TYjBQdzdIbkx2dw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -9736,6 +9814,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMikwFBVV95cUxPTTI3eEp1YVZsdUk4c1ZPUVJoM2hmTkZpWE54NHFiUmMxem1kM1BaempYZlowdHIxdk1FamFKZFRjTV9OOHl4bXdKOV9BeFVfTzRFT05CZ21sV1hqQlpiNFlOVTljZnZzeUJlNlRpZ21rZTVWS2IxNkhoZTFVS3BDc1h1X3o3WWExRGZaT1p6d1hZdVk?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Eighth measles death reported in Pennsylvania, heath officials say - Pittsburgh Post-Gazette",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMikwFBVV95cUxQMzh0eVFmWVM2S0FTOW15VVhiVXlkUHJSRUtiTExFZFNwVnM5N1dGRzJubXZyWnkzbkJrVmVOTnNKZFFhODJsampEb09hNm9nVk81MHdZd2pnMnVQMFExTFluVUdYbl9VbTZraC1uMllFMlpjd2tWX0FiVG9yRnJGZE1BaHJJcFRaRTZqdEo0WWlBZHc?oc=5": {
@@ -10048,6 +10139,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUHNZWVZ5Z3VpenJfci1oSHI3ekVycF9mZkdtVEs3c0xoSWtkbHVjWnVOSXdOdV9YVnlKRWh2R28zSzh6NXRSM3p4YThUdkhLLTQ3Q1ZPT2hkb3hOYURZQnBocTJsQWx1Tl9pbktkNC1EakQzNDZSS0xoRnBMZWh2Wk1NOS1ITjBRZ0pDR0tPOFNwS2o4?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "U.S. loses measles elimination status; What does this mean for the Dayton region? - Dayton Daily News",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMilAFBVV95cUxQWWh0ZWh1T2plcHZzalkxTVlEeU9DOWpMLTlaZWZPNTlqbEVYWDFjTXpzakdhY1JzQk51Rk1Mam1fUnZieTBUWjhaUzFCTXM2UlZDZ1VqR1hTaVZDaVhUOVRGOG5XYlpFQlRqS21JbkFpVWhDbUlHV0pueDdockFsemJFaWUtODd0cDdDdjFpV08xMlpo?oc=5": {
@@ -12078,6 +12182,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxNc3Q4enRtY01nZ1MtajFVaWxaMUJEdXFwQVVsUlczUXZBMnhyR0cxR2NMRW5YS2o4T3RraDk4SGNlQlI2M0g3aWdieHp4QnJIVm9zTy1JUmFwUFhYZ2VvUVhrLVZNRURNNFJyUFNFNVhXdFpxZUFrU05xMldBcjR1dXJfMGZzX3lyUWpUUXFTUVA2REdUa096T1h0djBaVHFuM2hVYtIBqgFBVV95cUxQV3JacTFjaENKWk5uS0t3clBjQVJ4dmIxd1BMejhQN3c4QmEyc2JtZ0xQSENZQjRvZlZQSHh4NFUyVXRwZHBZbkFTbnc1eHY2dW52Q2FBWGtxeGtmZ0VRdWhySDlRVmVEVmZHZnJGNGVXMV9XYUF3NEw3R25UQjdCcWFZdV96V09SUXZmQ3dKQ3drVS0zQkxuYkMzbmU1Z1FiWjRNZ0c1dXFlUQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles outbreak: Death toll reaches 1,329 as six die in 24 hours - Dhaka Tribune",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMipAFBVV95cUxNekRFb2Y2bFhrNFBIYVV0QmloOEVja1lkUE1JQWZGb3dXODFXSUE4TW1YSXBFc2VxalczRlBfamR3RUlobURTZFdfaHZ5Wjl3UjFoT1RGRmtHMldNOFphVi1iTUxkZzY4ZF9wUGhiR2t5Sjlac195ZExvWFFaM0NLT1RZWG9iVE9SYnBob1haMVpUOS11enl3aE5SLTU5MlUtaHFLdNIBpAFBVV95cUxNekRFb2Y2bFhrNFBIYVV0QmloOEVja1lkUE1JQWZGb3dXODFXSUE4TW1YSXBFc2VxalczRlBfamR3RUlobURTZFdfaHZ5Wjl3UjFoT1RGRmtHMldNOFphVi1iTUxkZzY4ZF9wUGhiR2t5Sjlac195ZExvWFFaM0NLT1RZWG9iVE9SYnBob1haMVpUOS11enl3aE5SLTU5MlUtaHFLdA?oc=5": {
       "archivedUrl": "https://web.archive.org/web/20261116101030/https://www.socialnews.xyz/2026/11/15/africa-cdc-warns-of-immense-challenges-over-fragile-ebola-gains/",
       "archivedAt": "2026-11-16T10:10:30Z",
@@ -14093,6 +14210,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHRETE5LYmVGdm5TZGdtUkl4OHR3U3E5cVZpM01hMmVaQUQ2Qk1UUUQzM3hDanlmcllsRW9VZzB5dkt4YjV6eEJTTFdsTThlb2xobnZOMVVrOTBhR0I4dEtZcUxfRVJHcl81dGtXUjBJV18zT29CeFM4cWI0ZnFFYjZZUE9EVmwwYUFDeTRfeWN2VFJZU21BS0VBUW9rRTMwVUFrVzE1VHFGaE9VbkNDWm4yWQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "As Pennsylvania’s measles-associated death toll rises, the CDC’s count lags. Why? - Pennsylvania Capital-Star",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRV9KYnhLSlkwaHZGX0RVMU1aSm9xVjlSSVpyZmhBakVzUnpWVDB1M3ozeUVRQ1RSWkt0bmVRWDMxdF9RZFk5M01JaEdCUnpSOHZlVTQtaF9wLUYyMXNITmtSaXE0aUZCSE5rbWhxNmhpUzZ5UzRBRmJ1M3dReHpDTUF5Z000R1VudGFhR3FyM0ZrVW1tYU1yMDNKX3JFVVBISmtuU2hUSUY3THRNUzFVN2lmcw?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -14206,6 +14336,19 @@
       "title": "\"No signs of slowing\": Ebola kills 5,026 in DRC as Saudi halts Kenya travel - Tuko News",
       "publishedAt": "2026-11-01",
       "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxNXzkyVjF1WXR3RlhiSFh5VWlOOVdoMlJBUm9oU3BXbU9vc1ZlbWVsckZ3aTZkbmdjOGpsOTNLcGJfRjAyTTRqZmNTX0wtZm43VUc4ZVJFTTdTTmN5cmFHSmx2emNqOVhpRlNBY2kxZWJpSVotMUdWVzJLWXdnMFhhQkVLMWd4LWtiNzFBT1g0RXpYV0JFcEFUdkJkUVpFVklTLXJCcFRGWkl2dF8yNXZuT1pBOEo?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "DR Congo Ebola Outbreak Records Over 5,500 Deaths in Six Months - Voice of Healthcare",
+      "publishedAt": "2026-11-17",
+      "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -14325,6 +14468,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMitAFBVV95cUxQOWhFS2U5NFFuUW00RUNUdV82SFdKanZnSkxlWFZhR2xiZjExS19pdTg4N0ZfckE4emZBaU5qS1ltLWF0R2UxZlJ3V0hTWmxWT1BnVk12d205T01LNlVZcjFBdFJPeXJNTVVzTXlCRHBQeWhCU1Ztc2xRRHBVNjd0aWt5TFM5RFJ0ZXVMbUxncF9oYnhEMGRFU0pGUVo3Yk5FU1ZuOTFvVUJJTkMtWHBSaTIyYUU?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "A rare case of candida auris causing... : Indian Journal of Ophthalmology - Case Reports - Ovid",
+      "publishedAt": "2026-07-13",
+      "source": "Google News — Candida auris cases",
+      "kind": "news",
+      "outbreak": "candida-auris-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMitAFBVV95cUxQY3p1NkVGcHpESHRXVUdIM2FHT3dDZkdKN21CcVc4a0t4d1pfYmNVSWRaT01KaHRtQkh5LU41V2hFdUJOOU84VzFSdEw2SzVncFhtNjVXQnVIaGx2M1pnM01nYzJRZmE5S2F5Vnh3dmRpQk03Z0IxN1UzenNPeVlSUEpIZ0NUWGpza3F4enREbm03eDF3cDBOMWNPWWtHaWtIVmdxLVRxRlRjMm56VndkV1JQdUPSAboBQVVfeXFMTXJlUWJLb1p5dUNwWm5CNGlXeUp3dFJIbFcyajFGZDZ0Nk4xWElLU0hsLWZkbFBVcTFNTE0ya1pac3lhSld1eWwtLXRKRGFrQ1Vic0pBbmcwcHA1ZkhjbV91MVpmZEEyNmlPa0x2S3JHb1dHdVpvbFlEYVN0V3ZIczNTX3paMGxwS2xDRWFrR2EzVVpzUEY0eWYzVWRzZE0xVC1uNng5U1lNazF3dlVWcm00S2czbk9OQ2xR?oc=5": {
@@ -14678,6 +14834,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNHBYRnQzSUcybkh6SlVFcnJDRFphZWxuOGE1ZEhvdV9wcnR1VFRTVzlacHlGeWNOZ25wZEV0RWdpemR6REF5Ry1LWWZHUUJldUNqRGJPcFhkOTl4V2g0S0hVdEhIVUFyOUsxMjZCQmN2cUZIRko2aF9xTTMtNnk3NUFNdk9ZYks5RlNDUXAyNm4tdXBpYjF3Y3hnelpETng5MGR6RnhOUVpqa0UwYVFybkZDQi1IZlk30gG-AUFVX3lxTE5sZzRkemljbGt4UHNyazRfUHVOTHgtUmgzaktvcFYtbERfTkx5YXU4SFI2YkhyZDZiY1BZTG8wR21XaXdsSDBVc3NrRDdDTktMZWJWdDhiaGRvcVN3R1A5UjFyZy1pMkpyLUhLamdmVGhDOWYxLXkyYlQwZlRWSjFXUm1IVVZPNk8xY3lLZ0E0c0VYSVJoUURfZ1B6Um5qdXY1aGZLTUJrTC1HODl2T2tQczhPbFltZ3ZOcXFGVVE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
+      "title": "Unvaccinated Pennsylvania resident dies amid historic US measles resurgence - Al Jazeera",
+      "publishedAt": "2026-11-19",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWUh3M0RMQ0xqZ3dmSVV6OFEteHZXSllqeHpUUzZGWmUwX0t1cEx6eWpvR2Z0VVFrbFpFVHhFM0FlR0c2RnBFM2xYR2IzWGJxaEI4cWJRUUtNMDBldUhyYm41ZW1hTWlia1B4M1dXRGFRdkRNY19GUWFEd01XNDV2blczamlOX1ppWlZZdXU3d3BHTGtLMFA1eE83T1RaMFhxc3FDV1RZRm04YWZZVVNGSjhSYkV5UmdW?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -14754,6 +14923,19 @@
       "source": "Google News — Bundibugyo outbreak",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiugFBVV95cUxPTFNkMnB0MXRnekZLOHZiOXZ6dmdLY1RSaGZuTEZFTHRsQ3hRVnQ2OXZGYWpucS1YSjVKV2tCZFRQbVdwYnhoNmstSFZKNTBhcDBMMWQxRFRjbjYwQ3pUTllyVFhScE1ZZnp1ZnhmT2o4U2xEYlJyQ0NFck0zTHNiY3lhUWU0WHJhaF9Sclk1UTBfeXpkU0NWLVVROWpMeERVMTY1cU1SMWVFOWJhRUt5QUtRcUFMc0lUWUE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania DOH confirms 8th measles-related death amid growing outbreak - PennLive.com",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiugFBVV95cUxQNE5fNmV4VjgtWFoteDRqQzFZU1cyU09pUHRILVdhdXFtNm9UT0JYa01lOWpNcXhzbEp5VXZheThpY2tRUkVCTVV1UnA4ZFR1cEZ0amJGWGs5SmFBbnFCQjV0VWtKTXZRN2FBY1R2T0hIblpRY0x5MEVOZ2pJT3BxTXZpS3ZVNWl1UmIybnNnYjk0SFIyb3hoV0VaN2hIdXc5MGRWb0kyRkVXUVpwczlJRzlKZ0wzS01YZnc?oc=5": {
@@ -16174,11 +16356,11 @@
       "resolvedUrl": null
     },
     "https://outbreakfiles.com": {
-      "archivedUrl": "https://web.archive.org/web/20261111084602/https://outbreakfiles.com/",
-      "archivedAt": "2026-11-11T08:46:02Z",
+      "archivedUrl": "https://web.archive.org/web/20261119085244/https://outbreakfiles.com/",
+      "archivedAt": "2026-11-19T08:52:44Z",
       "status": "archived",
-      "attempts": 1,
-      "lastAttempt": "2026-11-18T08:52:14.545Z",
+      "attempts": 0,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
       "title": "outbreakfiles.com/",
       "publishedAt": null,
       "source": "Own site",
@@ -16198,11 +16380,11 @@
       "resolvedUrl": null
     },
     "https://outbreakfiles.com/api/v1/toll": {
-      "archivedUrl": "https://web.archive.org/web/20261111084623/https://outbreakfiles.com/api/v1/toll",
-      "archivedAt": "2026-11-11T08:46:23Z",
+      "archivedUrl": "https://web.archive.org/web/20261118085533/https://outbreakfiles.com/api/v1/toll",
+      "archivedAt": "2026-11-18T08:55:33Z",
       "status": "archived",
-      "attempts": 1,
-      "lastAttempt": "2026-11-18T08:52:14.545Z",
+      "attempts": 0,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
       "title": "outbreakfiles.com/api/v1/toll",
       "publishedAt": null,
       "source": "Own site",
@@ -16225,8 +16407,8 @@
       "archivedUrl": "https://web.archive.org/web/20261110203519/https://outbreakfiles.com/methodology",
       "archivedAt": "2026-11-10T20:35:19Z",
       "status": "archived",
-      "attempts": 2,
-      "lastAttempt": "2026-11-18T08:52:14.545Z",
+      "attempts": 3,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
       "title": "outbreakfiles.com/methodology",
       "publishedAt": null,
       "source": "Own site",
@@ -16442,11 +16624,11 @@
       "resolvedUrl": null
     },
     "https://www.cidrap.umn.edu/ebola/who-ebola-case-count-has-more-doubled-3-months": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-18T20:43:46.715Z",
+      "archivedUrl": "https://web.archive.org/web/20261118204447/https://www.cidrap.umn.edu/ebola/who-ebola-case-count-has-more-doubled-3-months",
+      "archivedAt": "2026-11-18T20:44:47Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
       "title": "WHO: Ebola case count has more than doubled in 3 months",
       "publishedAt": "2026-11-18",
       "source": "CIDRAP",
@@ -16462,6 +16644,19 @@
       "lastAttempt": "2026-11-14T08:39:38.223Z",
       "title": "2 more people die of measles complications as US cases top 5,400",
       "publishedAt": "2026-11-13",
+      "source": "CIDRAP — measles",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://www.cidrap.umn.edu/measles/pennsylvania-logs-another-measles-death-survey-finds-few-americans-fully-understand-disease": {
+      "archivedUrl": "https://web.archive.org/web/20261118215151/https://www.cidrap.umn.edu/measles/pennsylvania-logs-another-measles-death-survey-finds-few-americans-fully-understand-disease",
+      "archivedAt": "2026-11-18T21:51:51Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
+      "title": "Pennsylvania logs another measles death as survey finds few Americans fully understand the disease’s risks",
+      "publishedAt": "2026-11-18",
       "source": "CIDRAP — measles",
       "kind": "news",
       "outbreak": "measles-us-2026",
@@ -16598,11 +16793,11 @@
       "resolvedUrl": null
     },
     "https://www.thedailystar.net/ds/interactive-stories/news/measles-missing-the-health-ministrys-own-six-month-report-card-4327101": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-18T20:43:46.715Z",
+      "archivedUrl": "https://web.archive.org/web/20261118204548/https://campaign.thedailystar.net/health-promises-and-measles/",
+      "archivedAt": "2026-11-18T20:45:48Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-11-19T08:52:41.639Z",
       "title": "Measles missing from the health ministry’s own six-month report card",
       "publishedAt": "2026-11-18",
       "source": "The Daily Star (Bangladesh) — health",
