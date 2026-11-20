@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-20T08:51:25.389Z",
+  "lastFetched": "2026-11-20T20:40:50.996Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -496,9 +496,34 @@
     "news-e5c447a68a95deb1",
     "news-de96df026104ffcf",
     "news-af8615797f378df2",
-    "news-35cbfd675edf1e19"
+    "news-35cbfd675edf1e19",
+    "news-ee916c537ed49b32",
+    "news-8aed7f9fd5188831",
+    "news-6c08b5cd98ea188d",
+    "news-3ecf4f70b02349e8",
+    "news-217b43aab1956a48"
   ],
   "recentItems": [
+    {
+      "id": "news-3ecf4f70b02349e8",
+      "title": "Bangladesh Logs 5 More Measles-Related Deaths, Total Toll Reaches 1,341 - https://www.businesstimes-bd.com/",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE11QmNPOE90aGpYRGwxSVYzS0pKOE84ZEQ0bEVZUjM5NEswVF9vTzd5RGRtWjdlcG5vRXc0aUlXb2tpYlBfWW50SHNHOEVLaGF3ZXoyVHJNcmRMemM?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh reports five more measles-related deaths, bringing the total to 1,341.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-6c08b5cd98ea188d",
+      "title": "Bangladesh logs 5 more deaths with measles symptoms - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE9wcjNsWWdtcmpLWi1JRmI2NUVJeHR6VEdXOThyOENOaTBkcEZsb2JJYzhfYlJhdFRpTkQwVk1mWEdWMXZ1eFBUcVh4OU03cEk?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh recorded five additional deaths with measles symptoms, bdnews24.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-af8615797f378df2",
       "title": "Bangladesh Measles Outbreak Toll Hits 1,336; Test Finds Over 27% of 309 Children Lack Antibodies - Tech Times",
@@ -676,26 +701,6 @@
       "date": "2026-11-13",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "A measles outbreak death toll reached 1,304 after five people died in 24 hours, Dhaka Tribune reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0fbd365db781e1cd",
-      "title": "Licensable picture: Students Protest Over Measles Outbreak In Dhaka - Reuters Connect",
-      "url": "https://news.google.com/rss/articles/CBMi0AJBVV95cUxQVDFrSzU5clRtQXoyTWxPWnBpWWRYYWEzNnBsTmlDcS1lVUFHV2NGbjlCMTZvYi1KdEtQRkl0U2lkN2Y5MDJRQWVXNWlZbkJlQmhsZ3p5RFctRlBUSjNWU3JkSWI1elVNcnNqdjc0WFNDSUFwTS1tOUdkbmRZZmswSDRKc1R0d0p2cTNfSWRVQm1HVUM4Sm9iMEQ5YXdYcHB2UzNsMW5WcXlsRngtMmhMb29kSFQzVGF5c2FXQmJrTG1ZOUd1U3k4SjBVRUpCV3REbjdWVTNub0c3NTJlbEtxVVJqV0M4ckpuT3ZzRDgtZnVlWUhnNmVPX0dXRG1mX2R1dldJMnB3UnJHUjdRcF9fZnZMYzNZck1HUE5xblg1TjRJUUlra3JFOE8zZVp1MVE1RlhDZDB0OFFSMnRxdkFKTzI2V1d3X0U2VmtteURYZ20?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Students protest over a measles outbreak in Dhaka. Reuters Connect reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1de8370262b287cb",
-      "title": "Bangladesh reports four more suspected measles deaths as toll reaches 1,299 - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBqc2VvY0FyLU4xVlVZUWp3TW55MDZkTVZRSGhWWDRRS2lMX1VkVUprNDJ4VWhMN1ViTm8waFNHUmhxb3hzMU0xRTVJRkVZWE0?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh reports four more suspected measles deaths, bringing the toll to 1,299, bdnews24.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

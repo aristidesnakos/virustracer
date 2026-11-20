@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-20T08:51:31.775Z",
+  "lastFetched": "2026-11-20T20:40:58.260Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -68,7 +68,9 @@
     "news-a27d8eabd5df4388",
     "news-1481ed61ca159a4c",
     "news-178d43ee6ab63cd0",
-    "news-1f05d961dd9f9935"
+    "news-1f05d961dd9f9935",
+    "news-91020a650005bf42",
+    "news-f7ba65530c535363"
   ],
   "recentItems": [
     {
@@ -182,6 +184,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-f7ba65530c535363",
+      "title": "Over 3,400 Cases Of Candida Auris Reported Across 27 US States, Here's What You Need To Know About The Life-Threatening Fungus - NDTV",
+      "url": "https://news.google.com/rss/articles/CBMi8wFBVV95cUxORXUxMndtZzNtUkhzR1dCelNGR3g1VnQzSVlDc3pkWDFnbm8yZklrYWE1OEE2QUZCQXY2QU9GNmM5SHJqWkxIUl9qYjdGUS0wU2V0cHdxWVVMdkZScHlRVHlqWnQ0RTJ0YTJiX0xDWUpSS3lndUlWd1lRNktoNWJqM294S0M3ZWp4WXAyNnpBMHJkRWRuTWpySGEwcExDOV9uNFh6NDJ0NkZEQ1NBQkZXNmZLaTZ1WkoyUzVyTGFXVndVUFFLVmFGUlpLQ2JhZFVwTmpLSGl0UWRJZWRwZlpldkQ4dHVSSWFoSG9FZUV6WlpHTXc?oc=5",
+      "date": "2026-08-07",
+      "source": "Google News — Candida auris cases",
+      "summary": "Over 3,400 cases of Candida auris were reported across 27 US states, with warnings about the life-threatening fungus. NDTV reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-a0bf93068b3b5332",
       "title": "What Is Candida Auris and Where Is the Deadly Fungus Spreading? | National News | U.S. News - U.S. News & World Report",
       "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPVE10SFpiQXk5ZXhfdnlOMS1GZlpGejM3aldHTUkyNndlRjdQT01yUFg5aW9tZGFhZElwcWNJeVFqYmZnSjNkZnNUWUpPNmVUNmFXeFZJV0ROUTR1NUlpUUdoLW9NNjNiNDMtMmdGLWZrWGtZak9ucjJOTkQ4dDlNdmN0dDhxSGpySk1wTHRwQ29VWlk5OGlYbTNhVFdmWGZGWDFUUnZqZUljaDhEVzBJMnR6VWM4TDdzRzBWWU5HV2Vrdw?oc=5",
@@ -258,16 +270,6 @@
       "date": "2026-06-29",
       "source": "Google News — C. auris outbreak",
       "summary": "A review examines global epidemiology, multidrug resistance, and infection control of Candida auris in healthcare outbreaks. Frontiers reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-66fd9484336d43d8",
-      "title": "Detecting healthcare-associated transmission and antifungal resistance in Candida auris via whole genome sequencing | Journal of Clinical Microbiology - ASM Journals",
-      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE42SUlKU1ItZE5sbFNPanhDX2NLUTRDNkhPU1lPX2FlVEZJdVpCQXZFSElSMnZRWWI4bGxBSFV6RlRjTUN1QmxnWW5hOHFEcWFIZWQ1SW9paW1WLThGb2c?oc=5",
-      "date": "2026-03-29",
-      "source": "Google News — C. auris outbreak",
-      "summary": "Whole genome sequencing detects healthcare-associated transmission and antifungal resistance in Candida auris, ASM Journals reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
