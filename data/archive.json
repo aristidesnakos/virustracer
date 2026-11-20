@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-19T20:44:22.157Z",
+  "lastRun": "2026-11-20T08:51:33.434Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -3359,8 +3359,8 @@
       "archivedUrl": null,
       "archivedAt": null,
       "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-19T20:44:22.157Z",
+      "attempts": 2,
+      "lastAttempt": "2026-11-20T08:51:33.434Z",
       "title": "EODY weekly West Nile virus report snapshot 2026-11-19: 463 confirmed, 56 deaths",
       "publishedAt": "2026-11-19",
       "source": "EODY weekly West Nile virus report",
@@ -4200,6 +4200,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZUZMYklwaVpuWHFwaHhFc0E4VlFBUnhUOElvcjAyS0V5bjNsVEo4WUo1NzYxX2tuakdUOWFSM1p3b01fc19mS0l6SFhsdHo5QTk2N0d3Y1FJUV9udVZSYVlSRkFhSHR6c3VBQ1pUWmtFZDQyeEZ5eHdydlNKenFyNEZjN2VPMkh6U3EtWlZUdUxFX2d6RlV0cWxwSzROdWJVZU9vSURQaXZnTVJHYkR0X0doZzhRZ1BVZzNtbDFHbTkyS1JldVpuYUZsaWVZVGh5bzF0bWZoQVQ1bnotQlE?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261120085254/https://www.techtimes.com/articles/331136/20261119/bangladesh-measles-outbreak-toll-hits-1336-test-finds-over-27-309-children-lack-antibodies.htm",
+      "archivedAt": "2026-11-20T08:52:54Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-20T08:51:33.434Z",
+      "title": "Bangladesh Measles Outbreak Toll Hits 1,336; Test Finds Over 27% of 309 Children Lack Antibodies - Tech Times",
+      "publishedAt": "2026-11-20",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMi3gFBVV95cUxORVpLaUEzSTEyUkdYMHJ2ZlQzQTdzeU9qR25rcGxXSE5xN25rd1d1UmxPOS05TXZwR0I1MVFEdHRMX1V0TWFBMXZLaUEzdU9NVmJlX1hCTE5mMnA3VkU5Y0hiSkhDb3ExcVBoNXczbm9OUUk0UjdZaWItRGFZWGZWajV1OFNVaXFCT3lwbV9BNGYySG1ySHVfR3Q1LUFJQktqYXNBUXRGckpSak1YSm5WTUdmbzVYY0padGVfX0VIT3VCMmxXdjlWY0xydFFxalV5U0VGTGlPYWhfdlBzOWc?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -4718,6 +4731,19 @@
       "source": "Google News — Candida auris nursing home",
       "kind": "news",
       "outbreak": "candida-auris-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPejFCX1FDTTdnbVkwbFVQcC14TFh1VDlxZFJhS1I1YTYzUXNJT3ZaVlJJbE5UOGVETC04YTdET1ZLRF82aWN5ZUdOR2VrQ0NwZlVhQTJHY1k0VlBpSXdiN19iTzA5b0xKM2ItU2ZCOVlfZ0o5d0xtSmx6VExIZTFqWTNEYmNPZ1RwYkVXVkY3b0dVRmJ1ajVaYjFveWJYWVliQXhVTXVPbjNLR0FTclVIeGwxY0JlNGRGWmd5d3NETndJb1VVWGY5dU1jNkkyTVRlYnJ4OHQzYmVVMHowQ3hNUEJhUThpWWlUdVRYdnp3?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania sees surge in measles cases, health officials urge vaccination - FOX43",
+      "publishedAt": "2026-11-19",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMi7gFBVV95cUxQSUFVM3VUMzhwdGhDeUxaSk5WMDNRYjdaeE0wcC1WaWYzaG5LTjJZMUxoS21QTXMyUUFwTUxJTXFnZVZCNEd3SmlVVjNZNmpTVGZEQ2dsTmh1Qi1XZ1BobjVqcDEwNHZLWXQxMzQxWm85NUp4R1JPU0tmdENQdGFLSXlPeWt6RjI5RFZXUmlJVnRleEk3Q0d0MEFrY0N2WkpwZjZmc09GZEdoNHM2dmlqaDhKdWJiaVJTT1NRQWZYZXhqZlFxSERsS0NhWVpVNFpsTHcyU2d2cjE0LUN3ZUNQVEZvV0s0elVxQlh4b1ZB?oc=5": {
@@ -7006,6 +7032,19 @@
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMie0FVX3lxTE1qalVjMkRJbGM1WUJ1S19nOVFxOGpOVnlnRnZRWEYtTW9Dbnl2QnBSM2NYTFc5cTFmM3pManFEYkt2QzlzSDQtYXNHZk1KZmRUc2Q2bjZ2Sk9MZTBRWWlJdFlzSFVnaGJZblBhWEY5NEN1c3J1OG5qVVdibw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ebola death toll rises in Congo - Operativ Media",
+      "publishedAt": "2026-11-18",
+      "source": "Google News — Ebola death toll",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMie0FVX3lxTE9BY1RSWlJnTE9Cbkx4RE9BWF9ZVnptZy1ib1BJWHh5c2VkZFkwLWtHOFFuNV94Z1JQRE94NHl2UFIxbXRvaU9OX0hZVEtZR0ZqX0FMSm04bzRUanhVZU9WSGNLMjlDUm5mb3JhQ2RWT3ZNUEVna1RDVmdlVQ?oc=5": {
@@ -13625,6 +13664,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRGRjTmQ3a05KQlBOcFFiX1lNeFZoTWVQX2M4Tk9JekROeElHVllETFNSc2J5RUEwa0d3QUlsWXA5M2s4YkZtVDRGQVNoWmFsNndSbmFjWjgyc2NhQ1NqTTRxa190TU5tWml3N05DVHJJMV9WbVJCX3Zvd3JLVkNTN3k3LTRQUXFpcVFDN3Jxa2VQV0J5cUtTbUdaRHVRSTFFZV9QeElfS2NiX05s?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Pennsylvania reports 8th measles-associated death so far in 2026 - CBS News",
+      "publishedAt": "2026-11-19",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbDdPX2oyWFA5NTk3R19VSGVndHdHNFFiZmtzQWRhQWhnOTlCMGNmV1QtdWlmTURIX0lpS090MTJZTU9CTDNGVEJieHdSeF9LWFFCNFFjOU9BRVlEZ1hsZzl1Nm8xSGZNbFFSUkpQQkpqQnVDSGlfeEFCNXJTVEdNMUtROEw2QUdobXMxYXhwaVZkcUlwbzljbndMRlM1X0xhQmlRanRwWmJObjJM0gGyAUFVX3lxTE45Mkk5dGFZTHNkRlk0MkxpSU5WdFdtZ256a09zOHg0MFczbmJEU2VhY3lYd05MTC1GbUpoNUU3RlB1NFdwc29tRnZTSUt2ZEVxT01zZGl6eElGeWI4aTh6UzZ2YjR5bFNEMkM4M0RIUGNMLXRWZ0F6bUpvWVZPaHJSaV9ac2lzUmJvbUpVUVlkc0VkcmowQVIxNzVQY202RE1PWGpwN3RmSG5ueWZXcnBsQUE?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -13701,6 +13753,19 @@
       "source": "Google News — measles vaccination Bangladesh",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTUVLTEV5LTg4QVFoc1ZzRVB2Wl84Z0ViS0QzbDlOTWxTOHBfRmdLazZDbHlGX3dWc1RmYWp0QnJVaTZVSVpzVlhSLS0yMktBNnY2cGNNYTBIQVc4NmdjMGhVaUlMcEY2WW1IYUV1Z3E5b25KNlp6RE9nOExJTXRLajlNaXg2YS1PcXlzNXVTYmRDbG05cnljdHp6X3pEVFk3LS1PaFNzdVRhSGFHaUE?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles is making a comeback in Ohio, and everyone is paying for it - Ohio Capital Journal",
+      "publishedAt": "2026-11-19",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMirgFBVV95cUxPbzRQWlFTdDBfcVZNWm5KMFJZS2FaRUhmS3ZwMUZXcThodkpGZkZlUTMzQnVWU2RWQnY5ME8wbXp1TGFFMWl3VGI3ZG96RU5VNFBPVFlDenkycFZYRHdUM3RmRDc0TS1mSGNmZVJ6ZDFKLTIxZXlLSENaRXQ3OUIzaHYyQUtwOW1tYTVfVUNmSS1qdHB5c2d4MHdSdFhuQVFvazJQcU5YaWVSUlZIMVE?oc=5": {
@@ -14821,6 +14886,19 @@
       "outbreak": "hantavirus-mv-hondius-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVJ2WDRLV2VDc2Y4S0JpQktIc051UzVWd3ZnZkQwQlJvUHZ4YWx1a05DR0R1Tmw5Q1ptU051VHJDNkduN09SUktRRWNWa3lTSHFnUmZ4TmVDdWR6dnUxZDZWV3NlRWVuaFA3MVVQSHdndGNnbWlCNE9KSWMxUlVRNUJlNDV0R2p5c1ljT3M0LUhPS0dYWkdoazlpZUE5X21ueVFPZEMtRERSeHRJelVJSEwxQXdXUQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Ohio reports 3rd measles outbreak of 2026; US cases hit 35-year high - Cincinnati Enquirer",
+      "publishedAt": "2026-11-19",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMitgJBVV95cUxQOU5BRnVldVRoT085bXo2MlhiU0JzcEx2djI3ak1DckdLNVAtdzZtdHRzaTNoV3ZIa1ZJV2ZFckVtRE5JcjlqUWlWY3FzM1AwRWF6aFhkSHV1enF6WHpjTUp1azVYNDNTT3RQcG4xMkhoVy01Nk93RWR0Mm9aZVlEdzVjbmd2UEc3aDdkcjRFV250UHc0djVZaFlUOHVHOGZNaF92UTVIWDQ1NWtpai11YnF6MGJTQUk4Y2hPUTlOaWhLRjU4Y3o0LVlmb19hR0Y5Y2NhampzbldhaG4xSC12VVpJbGt5cHF6QkxDRG1rUDRJd0F5ZGlRaE0xcFpMS0p4WWdjUTJPenBtOUJBaDFYVXQ0aUtjOW1KQmg2NUw0NjRSNHcxUTE3WTJWNEVXYUl3R2VuOVF3?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -15248,6 +15326,32 @@
       "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbUZ6Wm9yNlFSbUszZXhpci11Z1hNY0tPNWRFUUtpcGdfcDZsc01OOFV5aWw4R0Q3bTl2eXhrTDJBYmpaRWs1eHNSc1dPd05BNXc0VjNPc1lONUtPRmY2VFVNMXZ4RGNuWG92Z01VU1ZzTktGUFR6c25wdzM2bWxZVGNtNXlBNTl6MXRtMUhfdzRQWGZpTEs0YS1NRHJZLWhqVGtKcWQ1d0Vhb3RBOC1vbWwzMnpDNHpRZDdv?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-20T08:51:33.434Z",
+      "title": "Amid measles outbreak in Pennsylvania, doctors urge people to get vaccinated - CBS News",
+      "publishedAt": "2026-11-20",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQN05RdkxIb0ZSVU8yYWZnLXk3TUFrQ0pKbUxWanZfb0g2TnNGc1ZDU1JnMVdjUDlndkQ1MWpsQjFBZWZ1OUp6SlBjUDM0NFJ4NWJVX0lraU8yVnB3VHJ6dDZwVC1laEJvYVI4a3gwWE9kREZWdTM3OGprQ2VtMHAyY01SWWF0a3VpLXVQb1hGRFB5V0tBendfVFlpNFg2a3g5VHBtWW5XTmRXR0V6aVhZY1RwZ1NoNW90ZFlJ?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261120085429/https://www.pbs.org/newshour/health/do-you-need-a-measles-booster-shot-now-that-the-u-s-has-lost-its-elimination-status",
+      "archivedAt": "2026-11-20T08:54:29Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-20T08:51:33.434Z",
+      "title": "Do you need a measles booster shot now that the U.S. has lost its elimination status? - PBS",
+      "publishedAt": "2026-11-20",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNTBSbm03b3FzelYwaWpLS3VTamMwdVJhMkp6QXZ4OFByYTV1Y2ZYN0JFR2NvWlR4Wkh6VnVGLTV5VUg1UU0ySmNxOVdabnVPV1h0Ymt3dVhaNU42a09lTHlVQTJ4TFNiWUI2emhXQU4tQmJLaVVCUWlBZTBkTU1ROGZVT3NsdE0ySHM5QmVxNkpVZzVMOFZPWC1oRTViLXJ5NkhPOXpFYlRvZUswb0lad2lvWmo5U2l4UzVn?oc=5": {
@@ -16329,6 +16433,19 @@
       "outbreak": "measles-bangladesh-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMizAFBVV95cUxNX1JPekVVNTRJd3lvZGRnQUhXaVdSNVFWRWVTd0R1M0FITFNGbElWQVM0azN0Mk9KQ1p0V2lqUlJVTVlobVVCWkZoRzcyYVZtVURUOWpINE50TkJlSFBJRWYyZmUxcEhhMlhFMldodmZSMUpoRF9kNVVWcVRubXZtSTNicDJtd3duRm55T3J0UXY5Z3VuakpJb2xJOEdyY2U4QVF0OHJyd0VBSEdVem1sWlo2Nm9CU3d5QW1HcWtqdnpHTGpxdEZ5MS0xemU?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "United States Loses Measles Elimination Status - Pharmacy Practice News",
+      "publishedAt": "2026-11-19",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMizAFBVV95cUxNXzFIdUJqUFQyOWxKcE9YVWJlMzAtTzF4LVNiaVc0bHIxdWlDcXpvVi1ib3N3LVVWUzVCNmRsUkhrYnpEZnVBQWF6dldyRVNHa2RqZkVjVnZmaTlJcGVuSnhOUmhxUmNseUUzNWRQa2hDdXpOeDdPXzYtZkUwSWZkX2RfX1U2VmNHYWxFZWhSLUoxcGR0bEktVWNSUzdSZklYb1VSY2ZaM2Y2RFdTNC1qVkV6QjVLZ09qaGNqUkt2VjNBNXQxbEhheE5KOG7SAcwBQVVfeXFMTV8xSHVCalBUMjlsSnBPWFViZTMwLU8xeC1TYmlXNGxyMXVpQ3F6b1YtYm9zdy1VVlM1QjZkbFJIa2J6RGZ1QUFhenZXckVTR2tkamZFY1Z2Zmk5SXBlbkp4TlJocVJjbHlFMzVkUGtoQ3V6Tng3T182LWZFMElmZF9kX19VNlZjR2FsRWVoUi1KMXBkdGxJLVVjUlM3UmZJWG9VUmNmWjNmNkRXUzQtalZFekI1S2dPamhjalJLdlYzQTV0MWxIYXhOSjhu?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -16589,8 +16706,8 @@
       "archivedUrl": "https://web.archive.org/web/20261110203519/https://outbreakfiles.com/methodology",
       "archivedAt": "2026-11-10T20:35:19Z",
       "status": "archived",
-      "attempts": 3,
-      "lastAttempt": "2026-11-19T08:52:41.639Z",
+      "attempts": 4,
+      "lastAttempt": "2026-11-20T08:51:33.434Z",
       "title": "outbreakfiles.com/methodology",
       "publishedAt": null,
       "source": "Own site",
