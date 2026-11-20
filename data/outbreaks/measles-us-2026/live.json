@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-19T20:44:14.327Z",
+  "lastFetched": "2026-11-20T08:51:26.890Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -645,9 +645,41 @@
     "news-cc26dba6e96c618d",
     "news-7fb1854712b91bd6",
     "news-7fd07bdd6afb3e22",
-    "news-04aeebec6338b04a"
+    "news-04aeebec6338b04a",
+    "news-a34afb9d2592b18a",
+    "news-8c79a4091b1c7b80",
+    "news-7bab88c897b8bce5",
+    "news-91be9168723e2845",
+    "news-d38ecbfa5aaca279",
+    "news-1158eaa693a1f18c",
+    "news-52199f24e4e8ad4c",
+    "news-d6ef606de2ecf375",
+    "news-ec362ed16c072195",
+    "news-0f2e1b977d011594",
+    "news-378864f71d0a7e18",
+    "news-f98f08512aec5e23"
   ],
   "recentItems": [
+    {
+      "id": "news-a34afb9d2592b18a",
+      "title": "Amid measles outbreak in Pennsylvania, doctors urge people to get vaccinated - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbUZ6Wm9yNlFSbUszZXhpci11Z1hNY0tPNWRFUUtpcGdfcDZsc01OOFV5aWw4R0Q3bTl2eXhrTDJBYmpaRWs1eHNSc1dPd05BNXc0VjNPc1lONUtPRmY2VFVNMXZ4RGNuWG92Z01VU1ZzTktGUFR6c25wdzM2bWxZVGNtNXlBNTl6MXRtMUhfdzRQWGZpTEs0YS1NRHJZLWhqVGtKcWQ1d0Vhb3RBOC1vbWwzMnpDNHpRZDdv?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Amid a measles outbreak in Pennsylvania, doctors urge people to get vaccinated, CBS News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d6ef606de2ecf375",
+      "title": "Do you need a measles booster shot now that the U.S. has lost its elimination status? - PBS",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQN05RdkxIb0ZSVU8yYWZnLXk3TUFrQ0pKbUxWanZfb0g2TnNGc1ZDU1JnMVdjUDlndkQ1MWpsQjFBZWZ1OUp6SlBjUDM0NFJ4NWJVX0lraU8yVnB3VHJ6dDZwVC1laEJvYVI4a3gwWE9kREZWdTM3OGprQ2VtMHAyY01SWWF0a3VpLXVQb1hGRFB5V0tBendfVFlpNFg2a3g5VHBtWW5XTmRXR0V6aVhZY1RwZ1NoNW90ZFlJ?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The U.S. has lost its measles elimination status, prompting questions about the need for a booster shot. PBS reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-044fa17f11f88615",
       "title": "DOH confirms 8th measles-associated death as cases reach 1,589 across 46 counties in Pennsylvania - WFMZ.com",
@@ -655,6 +687,26 @@
       "date": "2026-11-19",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "The DOH confirmed the 8th measles-associated death as cases reached 1,589 across 46 counties in Pennsylvania. WFMZ.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-0f2e1b977d011594",
+      "title": "United States Loses Measles Elimination Status - Pharmacy Practice News",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNX1JPekVVNTRJd3lvZGRnQUhXaVdSNVFWRWVTd0R1M0FITFNGbElWQVM0azN0Mk9KQ1p0V2lqUlJVTVlobVVCWkZoRzcyYVZtVURUOWpINE50TkJlSFBJRWYyZmUxcEhhMlhFMldodmZSMUpoRF9kNVVWcVRubXZtSTNicDJtd3duRm55T3J0UXY5Z3VuakpJb2xJOEdyY2U4QVF0OHJyd0VBSEdVem1sWlo2Nm9CU3d5QW1HcWtqdnpHTGpxdEZ5MS0xemU?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States lost its measles elimination status, Pharmacy Practice News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-378864f71d0a7e18",
+      "title": "Ohio reports 3rd measles outbreak of 2026; US cases hit 35-year high - Cincinnati Enquirer",
+      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVJ2WDRLV2VDc2Y4S0JpQktIc051UzVWd3ZnZkQwQlJvUHZ4YWx1a05DR0R1Tmw5Q1ptU051VHJDNkduN09SUktRRWNWa3lTSHFnUmZ4TmVDdWR6dnUxZDZWV3NlRWVuaFA3MVVQSHdndGNnbWlCNE9KSWMxUlVRNUJlNDV0R2p5c1ljT3M0LUhPS0dYWkdoazlpZUE5X21ueVFPZEMtRERSeHRJelVJSEwxQXdXUQ?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Ohio reported its third measles outbreak of 2026 as U.S. cases reached a 35-year high, Cincinnati Enquirer reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -675,6 +727,26 @@
       "date": "2026-11-19",
       "source": "Google News — US measles cases",
       "summary": "An unvaccinated Pennsylvania resident died during a historic U.S. measles resurgence, Al Jazeera reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-7bab88c897b8bce5",
+      "title": "Pennsylvania reports 8th measles-associated death so far in 2026 - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRGRjTmQ3a05KQlBOcFFiX1lNeFZoTWVQX2M4Tk9JekROeElHVllETFNSc2J5RUEwa0d3QUlsWXA5M2s4YkZtVDRGQVNoWmFsNndSbmFjWjgyc2NhQ1NqTTRxa190TU5tWml3N05DVHJJMV9WbVJCX3Zvd3JLVkNTN3k3LTRQUXFpcVFDN3Jxa2VQV0J5cUtTbUdaRHVRSTFFZV9QeElfS2NiX05s?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania reported its 8th measles-associated death so far in 2026, CBS News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8c79a4091b1c7b80",
+      "title": "Pennsylvania sees surge in measles cases, health officials urge vaccination - FOX43",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPejFCX1FDTTdnbVkwbFVQcC14TFh1VDlxZFJhS1I1YTYzUXNJT3ZaVlJJbE5UOGVETC04YTdET1ZLRF82aWN5ZUdOR2VrQ0NwZlVhQTJHY1k0VlBpSXdiN19iTzA5b0xKM2ItU2ZCOVlfZ0o5d0xtSmx6VExIZTFqWTNEYmNPZ1RwYkVXVkY3b0dVRmJ1ajVaYjFveWJYWVliQXhVTXVPbjNLR0FTclVIeGwxY0JlNGRGWmd5d3NETndJb1VVWGY5dU1jNkkyTVRlYnJ4OHQzYmVVMHowQ3hNUEJhUThpWWlUdVRYdnp3?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "A surge in measles cases in Pennsylvania has prompted health officials to urge vaccination, FOX43 reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -715,6 +787,16 @@
       "date": "2026-11-19",
       "source": "Google News — US measles cases",
       "summary": "The CDC was tasked with reducing measles cases amid vaccine skepticism, FEDweek reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ec362ed16c072195",
+      "title": "Measles is making a comeback in Ohio, and everyone is paying for it - Ohio Capital Journal",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPTUVLTEV5LTg4QVFoc1ZzRVB2Wl84Z0ViS0QzbDlOTWxTOHBfRmdLazZDbHlGX3dWc1RmYWp0QnJVaTZVSVpzVlhSLS0yMktBNnY2cGNNYTBIQVc4NmdjMGhVaUlMcEY2WW1IYUV1Z3E5b25KNlp6RE9nOExJTXRLajlNaXg2YS1PcXlzNXVTYmRDbG05cnljdHp6X3pEVFk3LS1PaFNzdVRhSGFHaUE?oc=5",
+      "date": "2026-11-19",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Measles is returning to Ohio, and the costs are being borne by the entire population, Ohio Capital Journal reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -775,76 +857,6 @@
       "date": "2026-11-18",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania DOH confirmed an eighth measles-related death amid a growing outbreak, PennLive.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-257a396d9567012f",
-      "title": "Congenital Measles Returns as CDC Scientists Count 13 U.S. Babies Born Infected and 112 Pregnancy Cases - Medical Daily",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBJNjdtOE5jVjBKbUxSR0dVUUFqaFVwcnRzb2hPcHpxMEZDOWQyZ05ldTNTa0xUeEQxemhJakFNTVRNNXhoMHo1V1U4NGx3ZGphWjltN05vejNKS2dyTF9HVG5ycUZNbW1PUGpNNXNPaFBNSjQ?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — US measles cases",
-      "summary": "Congenital measles has returned, with 13 U.S. babies born infected and 112 pregnancy cases, Medical Daily reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2a002468b7a2a94b",
-      "title": "Pennsylvania reports eighth measles-related death - The Hill",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQTkEzV0NjVWV6ZU56ZkJEWGdHMEVWeVFHTmNMWFVFUHMzWHRLQTFfeXhtTGNRTU1NX1FBeFlBRmdIaVVkZXFWS2JfMFY5Mkd2U1FHb2pNel9vN25WXzNkaU8tVXpDeW14LUJ3ZXhKakt5SVY1X240X0VNZnhCVUZRTThxRG1jamJUajVfZlpXRm9FQdIBlwFBVV95cUxQN1dON0VzVXMtVTROcjN1azd2Q0VpMGFldWpZcjZlY0thTkczbjl4ckd1OHJiRXdYcjY5X1BfdXVtTWdJdE9GakxrQWRCVE8wU25oUlVxNzJWNVNjX09LOVYyR2VmSGh3UjloejBqVUdDNmNuRlQxUTlidUQ1WWkzM1lBazU1OFQ0SDlQZkJBZndpa2xCRnBn?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania reported an eighth measles-related death. The Hill reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-36864c52f36abbdf",
-      "title": "U.S. loses measles elimination status; What does this mean for the Dayton region? - Dayton Daily News",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQUHNZWVZ5Z3VpenJfci1oSHI3ekVycF9mZkdtVEs3c0xoSWtkbHVjWnVOSXdOdV9YVnlKRWh2R28zSzh6NXRSM3p4YThUdkhLLTQ3Q1ZPT2hkb3hOYURZQnBocTJsQWx1Tl9pbktkNC1EakQzNDZSS0xoRnBMZWh2Wk1NOS1ITjBRZ0pDR0tPOFNwS2o4?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The United States lost its measles elimination status, raising questions about local impacts for Dayton, Dayton Daily News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-38a35976440a23f1",
-      "title": "Pennsylvania confirms 8th measles-associated death - Audacy",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQekVGbHFfMl9ZZXc0ZHMzRHNicXh4TlFZd2lDR3BTamdwQmI5VGZZVk55R1BDVzRYSE9fbUl4MUprUVZrcDFNYkdKbTZKZWlacWxySjVsc2NtRnhiNnRaaE9fSDZ3ckE2ZGVMS2ZEMXdrbDRtV19uWkxMTlBlbm5GTDU1eU8?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania confirmed its eighth measles-associated death. Audacy reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3b76ff962a8b9d3a",
-      "title": "In charts | Tracking the resurgence of measles in the United States - EL PAÍS English",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPODVtSl9rR3BiaUJVUjBRRWVsWHpxUGFBNE85SjZRRENkTV9kUHE5bkd6M3QxOHZIQ2ZfRWNnWVJBX0tHNEZiQlFwUHhieXFsSEtHaFJxaUtNNzhEdGUxQlNmRUgxeGhmWWgtTWpjYS0tZ1QzQWctZXFRemRoekUyYnNtTGh5OXNFbXlDVzdWZ1loalZHRktlS09qWmNvVjkzZGtLRUFRaVpwdnlDVzhnWkFn?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — US measles cases",
-      "summary": "An article with charts tracks the resurgence of measles in the United States. EL PAÍS English reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-44ed3f53edbf4a98",
-      "title": "As Pennsylvania’s measles-associated death toll rises, the CDC’s count lags. Why? - Pennsylvania Capital-Star",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxOeHRETE5LYmVGdm5TZGdtUkl4OHR3U3E5cVZpM01hMmVaQUQ2Qk1UUUQzM3hDanlmcllsRW9VZzB5dkt4YjV6eEJTTFdsTThlb2xobnZOMVVrOTBhR0I4dEtZcUxfRVJHcl81dGtXUjBJV18zT29CeFM4cWI0ZnFFYjZZUE9EVmwwYUFDeTRfeWN2VFJZU21BS0VBUW9rRTMwVUFrVzE1VHFGaE9VbkNDWm4yWQ?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC's measles death count is lagging as Pennsylvania's measles-associated death toll rises.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-47bf991c1088e23c",
-      "title": "Pennsylvania confirms 8th measles-associated death after US loses elimination status - Inquisitr",
-      "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTFBWbE1lcV81bExzOVNya1FIeXA4eDN6d2lXODlmWWlqcTdZbUtIRENuTU9kWGNGa1B4MWVRVFVvQXhjYk9IQ1dqUHJOOXdIUHN3LW9wNVBzWWFURmtpdUdGV3R4eXduTW52SktLY2JNOXU5b09xVVFB?oc=5",
-      "date": "2026-11-18",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania confirmed its eighth measles-associated death after the United States lost its elimination status, Inquisitr reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

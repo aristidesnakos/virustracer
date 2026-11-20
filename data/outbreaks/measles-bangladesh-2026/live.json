@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-19T20:44:10.060Z",
+  "lastFetched": "2026-11-20T08:51:25.389Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -494,9 +494,21 @@
     "news-e54ae91777195c0f",
     "news-2d9b74fb76ded23c",
     "news-e5c447a68a95deb1",
-    "news-de96df026104ffcf"
+    "news-de96df026104ffcf",
+    "news-af8615797f378df2",
+    "news-35cbfd675edf1e19"
   ],
   "recentItems": [
+    {
+      "id": "news-af8615797f378df2",
+      "title": "Bangladesh Measles Outbreak Toll Hits 1,336; Test Finds Over 27% of 309 Children Lack Antibodies - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxNZUZMYklwaVpuWHFwaHhFc0E4VlFBUnhUOElvcjAyS0V5bjNsVEo4WUo1NzYxX2tuakdUOWFSM1p3b01fc19mS0l6SFhsdHo5QTk2N0d3Y1FJUV9udVZSYVlSRkFhSHR6c3VBQ1pUWmtFZDQyeEZ5eHdydlNKenFyNEZjN2VPMkh6U3EtWlZUdUxFX2d6RlV0cWxwSzROdWJVZU9vSURQaXZnTVJHYkR0X0doZzhRZ1BVZzNtbDFHbTkyS1JldVpuYUZsaWVZVGh5bzF0bWZoQVQ1bnotQlE?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "A measles outbreak in Bangladesh has killed 1,336 people, and tests found over 27% of 309 children lacked antibodies. Tech Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-0d63b4eb0d417c90",
       "title": "Measles Outbreak: Seven more children die in Bangladesh - Bangladesh Post",
@@ -684,16 +696,6 @@
       "date": "2026-11-12",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh reports four more suspected measles deaths, bringing the toll to 1,299, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3b980a89111d8ff3",
-      "title": "Measles outbreak in Bangladesh claims four more lives, death toll nears 1300 - Social News XYZ",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxQcm9zSXV2RXE3V3RGOVMxZWRVRmRUZlVMWWFoNEJram9jY2s2UHIxZHdWOV81azJrOVZ6dGFySGhJUFh2YmZWdVBqVGpVM2dCcTFmWUhTX0hVZjNCZ3hMa2E2cFBrN3pSbmFWVUFLNGFLM1lUdWRvN2F0WGJ1c1NFZmZieUZ5RnpNOXNaZmZXSEhBRGZPeURZXy0zSWxucGVQYnZYeW5mQ3BlRUJLa1lkSkNieFPSAbQBQVVfeXFMUHJvc0l1dkVxN1d0RjlTMWVkVUZkVGZVTFlhaDRCa2pvY2NrNlByMWR3VjlfNWsyazlWenRhckhoSVBYdmJmVnVQalRqVTNnQnExZllIU19IVWYzQmd4TGthNnBQazd6Um5hVlVBSzRhSzNZVHVkbzdhdFhidXNTRWZmYnlGeUZ6TTlzWmZmV0hIQURmT3lEWV8tM0lsbnBlUGJ2WHluZkNwZUVCS2tZZEpDYnhT?oc=5",
-      "date": "2026-11-12",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "A measles outbreak in Bangladesh has claimed four more lives, bringing the death toll to nearly 1300. Social News XYZ reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
