@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-20T20:40:53.430Z",
+  "lastFetched": "2026-11-21T08:40:29.836Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -671,9 +671,50 @@
     "news-6bb1a23330be8694",
     "news-253d59eb05dbe767",
     "news-1cb368d2d82ad49c",
-    "news-7353733421361e6a"
+    "news-7353733421361e6a",
+    "news-bc0390046086f692",
+    "news-87285d05732dbc11",
+    "cidrap-48379306b39568c6",
+    "news-975a60319dac4b7e",
+    "news-cef859436c1c1f8d",
+    "news-b497a15fdfac4ffe",
+    "news-45c4144276dc0692",
+    "news-1bfcba000aa533b4",
+    "news-f2f24ad2394651b7",
+    "news-25132d53b72d6c15",
+    "news-2565d43c3d740075"
   ],
   "recentItems": [
+    {
+      "id": "news-1bfcba000aa533b4",
+      "title": "Virginia reports first measles-related death of 2026 - The Hill",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxQSWVWekdCQ2dOMkJHV2pyQ1lnMlJZRFhpWWpYMU9oQ2lWX3hKWEhJSnd0OWNoLWJreW1aWF94U1BBVXp1UldtTm1MWWJRRFZRVDBrOWF3bHBxemxrOXZxQmhaU3B2UTdmQXZWNFBzTzBoMThWYmNmbHdrMkEtUFNha0NENXZxYl82d1ktX3oyVlptZWY2YTFCQkFn0gGfAUFVX3lxTE5ueU9JaEVtUlEyN2std3lYNUJ3UW9NaERvOXpPNzhWVFZlc3J0SjVUcFRDVzdGWndxTDNvcF94eU5sNkR6NW9hWjFOcEpXLXRIYWZMYWZJdVEzSDVQcE1HZ0hVTnlzM2s5SFZDaHZfUUZwdUx5Z240SlVYZDE5d2VfTVRoQTZKRTFtZi1XcHBOZ0l3M1U4ZEVJaC12aGt3VQ?oc=5",
+      "date": "2026-11-21",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Virginia reported its first measles-related death of 2026, The Hill reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "cidrap-48379306b39568c6",
+      "title": "Wisconsin sees triple-digit measles increase as US nears 6,000 cases",
+      "url": "https://www.cidrap.umn.edu/measles/wisconsin-sees-triple-digit-measles-increase-us-nears-6000-cases",
+      "date": "2026-11-20",
+      "source": "CIDRAP — measles",
+      "summary": "The US measles case count now stands at 5,838, and Wisconsin has seen a triple-digit increase, with Amish communities among the hardest hit.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-25132d53b72d6c15",
+      "title": "Virginia reports first measles-associated death of 2026 involving young child - The Jerusalem Post",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53WFNWckJ3OXVFbU9hQWRQRUxReTJYYVNvODVhQ1JkUU0wY0tiQnhFd0MyX3FoLXhCSG5XSkVuUnc0R1Y5ZG92dHFVY05vT0dBZ0VEeS1RYkdKeWc2Nk9tUlhJV0hVQXc?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Virginia reported its first measles-associated death of 2026 involving a young child. The Jerusalem Post reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-253d59eb05dbe767",
       "title": "The U.S. Loses Its Measles Elimination Status - The American Action Forum",
@@ -681,6 +722,16 @@
       "date": "2026-11-20",
       "source": "Google News — measles outbreak United States",
       "summary": "The U.S. lost its measles elimination status. The American Action Forum reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-2565d43c3d740075",
+      "title": "Young child in Virginia dies after testing positive for measles, state's first measles death of 2026 - WTVR.com",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV2NkOVhEbGh0R0xveFZUa2FTTUNEeHRFWjE0Z21BaUNFTjdKNWdkRnZDSmJGazZJbHBZMkoyM1lGVUgyaGVKOE9aZlp1MndhSE4tVV9WQnVYYmhDNm1KWE9KT0ZkNlYtOWxORHZYUU9GbzR4bnh0bS1VVld3MGVEV3V5S2lwb0tlV2pfQjZMNXNIalhVd0x4WHlGN3l3NmRhZ3Z3ODV4MXdjbTdLRDNOSVllcFlhQW9hakFpMzJn?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A young child in Virginia died after testing positive for measles in the state's first measles death of 2026. WTVR.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -725,12 +776,42 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-87285d05732dbc11",
+      "title": "Child with measles dies in Virginia, marking state's 1st measles-related death this year - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaUwtVjh5YTdXTjBVMm0xdHNrOXQ5Z1VrWnY0dnFpU2w3UnVYY19vNnJXckQ5WkJSejUtMjltYWJhT1N4MzV4aDFzaU9YZXhOdFZ4Rl9JZXh0TzdtVm9Va0FOUThfZWg2ekZ2bXZlSGNTZWtROU1kYXdVWmVKMENLY1g4ak9SRGJKNlVjVjdMdEExUFRiV05BSjBnTUt6dm96MlHSAacBQVVfeXFMTzBYYWh0aW9ENjltOWxQNURCbHVKRU5nQklCUGgwamVRTkVwNGhldUs0anozUV9fbjdtNGNJaWdoSjNaN0FJVFBvcGc3b04zWExWWEJoUU5GMGJwUy12TnZ2S3ZGaURQd2JmRHNxNWxZT1FDTnNJQVZuQ2xHWlFpRHhHakxqS3llelJhVWtZOWpIZ0Uyb1R5bUEwUHRUa2VlLUFjQUEwQTg?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — US measles cases",
+      "summary": "A child has died from measles in Virginia, the state's first such death this year. Breaking News, Latest News and Videos reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-975a60319dac4b7e",
+      "title": "United States’ Measles Elimination Status Revoked - Respiratory Therapy",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTVZTSUtfQlZWT0FhbVB4MkVOQVlKTHB0Y1I3QjZwUm1LRXd5WWM3ZmJfU0gzbG15R1g2MmFfa3NQWGdkcXRVZXFFMDc3SlRwTzdzSDVHd05pVzREYWlpYmpXZ2hXcnNJRWVidDlfRjE1YnA4UktNWkQxTUgxUEs5Z3o1dnlmdE9Qc044ekY5NHoya29oM2Y4NGtEM2FWYzNmT2VPejhTQk54d1Fmc1RiY0FJdmVvSmdlcU10WUc2WXJNdlVmX3pRbzlSTnpDSjNoczRz?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — US measles cases",
+      "summary": "The United States' measles elimination status has been revoked. Respiratory Therapy reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-a34afb9d2592b18a",
       "title": "Amid measles outbreak in Pennsylvania, doctors urge people to get vaccinated - CBS News",
       "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPbUZ6Wm9yNlFSbUszZXhpci11Z1hNY0tPNWRFUUtpcGdfcDZsc01OOFV5aWw4R0Q3bTl2eXhrTDJBYmpaRWs1eHNSc1dPd05BNXc0VjNPc1lONUtPRmY2VFVNMXZ4RGNuWG92Z01VU1ZzTktGUFR6c25wdzM2bWxZVGNtNXlBNTl6MXRtMUhfdzRQWGZpTEs0YS1NRHJZLWhqVGtKcWQ1d0Vhb3RBOC1vbWwzMnpDNHpRZDdv?oc=5",
       "date": "2026-11-20",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Amid a measles outbreak in Pennsylvania, doctors urge people to get vaccinated, CBS News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b497a15fdfac4ffe",
+      "title": "Pennsylvania reports 8th measles death as outbreak continues - American Hospital Association",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPT1NudWpibE9yTlVLNTBhbVZEanJsWi1uMWtVdEF4Ymw2VXAxTFpTei1FVmtFQ0o5eXA5QzItVXpXQWRCM3U0TU4wekZneDgwaDE4VUwyVHNnTGdDUk16Mm5VcG9LaC1zTEF6dVRHRzZWOENSYVhEc1RZZ2Y0SXlKYmxOc1RCcFgyOFZGYXhVSlNtalM2aHREWGFBdHVZZkZ3dlpqdA?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania reported its eighth measles death as the outbreak continued, American Hospital Association reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -765,6 +846,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-f2f24ad2394651b7",
+      "title": "Virginia child dies in state's first measles-associated death of 2026 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxOVkVFT2p0Zi1tU2ZUVldoVDBldEdHSzFyRlBZQ2JZQ09QSC10dnFFT19YY195bVJBeUg1UkxlVFhLc00xbGVyeGF5ajk2S3JQVDFCdDMwMkJKLU9QY2ZaTno1QW9BMk9WWDBaa3VQUG8xZ0xQQmtyMEJQYTFhQlhDQjlRMDhLRm43aWZFbVNicnFocEdnSUhWXzh6VWNSYVJEOWM5QnFJYmFoSlhURDJPc1Zwb1BpYmhBQlJVSTYtVjlTNk1ydWhkcXctWllCeXc?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A child in Virginia died in the state's first measles-associated death of 2026, Reuters reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-fb766172e2b2e857",
       "title": "Two-thirds of Pennsylvania's measles cases are among adults. Are your childhood shots still enough? - 90.5 WESA",
       "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPUXhXZnNXZmhpekFEVEtEbkRLb0FhWVhjc1RlazF4cjNLSGlSQzNJQjlCeHFERXhnX3psX1NSd01ZQmlmUmNQUWJrWE83U056ZUVzaUlPLUlxS25kQWdTUVFhSktlWWZpcFVXdGN0X3AwcFJHQUQ0U3VUOE4wUnVsNXRlZWpFOGZPRkNpUlhWVFBzTGVTWWVyZ0tJNndLU3UtVm1Z?oc=5",
@@ -791,86 +882,6 @@
       "date": "2026-11-19",
       "source": "Google News — measles outbreak United States",
       "summary": "The United States lost its measles elimination status, Pharmacy Practice News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1cb368d2d82ad49c",
-      "title": "Minnesota measles cases hit 36-year high as U.S. loses elimination status - MPR News",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxNQWJ5V0RORHNaVGtBQnVuOE03S0ZaNEVUUXFsU2F5T2RUcXNlSmpiMVc3ZGZtZzg3T0NjTVlDTzlGUGEyODRqYWV2ek5JRDlVOFdXdjI1VGdJR1g4bVdWQzFTcjY0LVhTb0RiZ0ZGVFVEdjVLSlU0R2tkTGxveFdQX3NlTlNmSGN2dkNIaGdPQUI0UWwtTS1ES3dxZTJ2UE1ZLXRMNGJCTXFMYTRWNndjMFVwZ20?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Measles cases in Minnesota reached a 36-year high as the U.S. lost its measles elimination status, MPR News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-378864f71d0a7e18",
-      "title": "Ohio reports 3rd measles outbreak of 2026; US cases hit 35-year high - Cincinnati Enquirer",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxQbVJ2WDRLV2VDc2Y4S0JpQktIc051UzVWd3ZnZkQwQlJvUHZ4YWx1a05DR0R1Tmw5Q1ptU051VHJDNkduN09SUktRRWNWa3lTSHFnUmZ4TmVDdWR6dnUxZDZWV3NlRWVuaFA3MVVQSHdndGNnbWlCNE9KSWMxUlVRNUJlNDV0R2p5c1ljT3M0LUhPS0dYWkdoazlpZUE5X21ueVFPZEMtRERSeHRJelVJSEwxQXdXUQ?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Ohio reported its third measles outbreak of 2026 as U.S. cases reached a 35-year high, Cincinnati Enquirer reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-4a9885aab6d06482",
-      "title": "The U.S. Measles Comeback in Five Charts - Think Global Health",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxPc18zT3U5UnJJUnMySzdCWkF4NHlZNXRrdDF5MEctZUlqUnJNeGpxUVlHU0drcnNqMk9fOS1rYVdyQ09FYWJHTWw1SjgxeXhZNU1WZlZyaTdFMTVCbjBXNC1NWWpkOWxfN2hoMVlNamxjT0d5MXBuNUprTHZyUEF0NHJUbmVvSUs1?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Five charts illustrate the return of measles cases in the United States. Think Global Health reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5733b5d0e04755d6",
-      "title": "Too little to wait: Pennsylvania parents are getting their kids’ measles vaccine ahead of schedule - 90.5 WESA",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxNWEdUZnFMTUt5M3JtOEhQUW01UEg5ODFIVGppX2lUXzJ1c1J0MDIzdXFZcGo1TFYwSDZUcloxU2hBb09LcEFnZVhQMUJ4ckl6YmxNbXNSUzY1aW1rTHdlZW83RmlVaHlqM0VNZmdEOWNiSVFXNTRieS1JTzhwa0lHZTcyNkpoQWtqNHVUQjNaVE9teElULVE?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania parents are getting their children’s measles vaccine ahead of schedule. 90.5 WESA reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7353733421361e6a",
-      "title": "An Epidemiologist Explains What It Will Take for the U.S. to Regain Its Measles Elimination Status - Nautilus | Science Connected",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxQdEN3ZTNGbXU4d2FRM1Z1bUY0YWNRQjBROW1qa2xXOW1IZ1ZtY0NvbGZYQzE4S0lRSURIdE9NaEV0b1ZhUDYtLW5LejdhcnNzT25tUE5oRTlNYV90MkVDM2l5UzdrLVdiclhNVkVDbi04QmxDNW9LN2lmVXZiQ1ZFb2JaNkZrSjZFUVhyaTNwMHBpLWxWcXJQbHVOX2dHVzQtR1puR0J6c0NfaUFDNjNKazk1U0xiMWt5WEJXN1dYYzE?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — measles outbreak United States",
-      "summary": "An epidemiologist explains what it will take for the U.S. to regain its measles elimination status. Science Connected reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-77f3af7e621a886d",
-      "title": "Unvaccinated Pennsylvania resident dies amid historic US measles resurgence - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQNHBYRnQzSUcybkh6SlVFcnJDRFphZWxuOGE1ZEhvdV9wcnR1VFRTVzlacHlGeWNOZ25wZEV0RWdpemR6REF5Ry1LWWZHUUJldUNqRGJPcFhkOTl4V2g0S0hVdEhIVUFyOUsxMjZCQmN2cUZIRko2aF9xTTMtNnk3NUFNdk9ZYks5RlNDUXAyNm4tdXBpYjF3Y3hnelpETng5MGR6RnhOUVpqa0UwYVFybkZDQi1IZlk30gG-AUFVX3lxTE5sZzRkemljbGt4UHNyazRfUHVOTHgtUmgzaktvcFYtbERfTkx5YXU4SFI2YkhyZDZiY1BZTG8wR21XaXdsSDBVc3NrRDdDTktMZWJWdDhiaGRvcVN3R1A5UjFyZy1pMkpyLUhLamdmVGhDOWYxLXkyYlQwZlRWSjFXUm1IVVZPNk8xY3lLZ0E0c0VYSVJoUURfZ1B6Um5qdXY1aGZLTUJrTC1HODl2T2tQczhPbFltZ3ZOcXFGVVE?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — US measles cases",
-      "summary": "An unvaccinated Pennsylvania resident died during a historic U.S. measles resurgence, Al Jazeera reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7bab88c897b8bce5",
-      "title": "Pennsylvania reports 8th measles-associated death so far in 2026 - CBS News",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQRGRjTmQ3a05KQlBOcFFiX1lNeFZoTWVQX2M4Tk9JekROeElHVllETFNSc2J5RUEwa0d3QUlsWXA5M2s4YkZtVDRGQVNoWmFsNndSbmFjWjgyc2NhQ1NqTTRxa190TU5tWml3N05DVHJJMV9WbVJCX3Zvd3JLVkNTN3k3LTRQUXFpcVFDN3Jxa2VQV0J5cUtTbUdaRHVRSTFFZV9QeElfS2NiX05s?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania reported its 8th measles-associated death so far in 2026, CBS News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8c79a4091b1c7b80",
-      "title": "Pennsylvania sees surge in measles cases, health officials urge vaccination - FOX43",
-      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPejFCX1FDTTdnbVkwbFVQcC14TFh1VDlxZFJhS1I1YTYzUXNJT3ZaVlJJbE5UOGVETC04YTdET1ZLRF82aWN5ZUdOR2VrQ0NwZlVhQTJHY1k0VlBpSXdiN19iTzA5b0xKM2ItU2ZCOVlfZ0o5d0xtSmx6VExIZTFqWTNEYmNPZ1RwYkVXVkY3b0dVRmJ1ajVaYjFveWJYWVliQXhVTXVPbjNLR0FTclVIeGwxY0JlNGRGWmd5d3NETndJb1VVWGY5dU1jNkkyTVRlYnJ4OHQzYmVVMHowQ3hNUEJhUThpWWlUdVRYdnp3?oc=5",
-      "date": "2026-11-19",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "A surge in measles cases in Pennsylvania has prompted health officials to urge vaccination, FOX43 reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
