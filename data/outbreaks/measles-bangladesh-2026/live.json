@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-21T08:40:29.010Z",
+  "lastFetched": "2026-11-21T20:30:13.640Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -503,9 +503,20 @@
     "news-3ecf4f70b02349e8",
     "news-217b43aab1956a48",
     "news-ae9c21ec8a17197b",
-    "news-bf4e98222054a23c"
+    "news-bf4e98222054a23c",
+    "news-5d869fd9b8511e09"
   ],
   "recentItems": [
+    {
+      "id": "news-5d869fd9b8511e09",
+      "title": "Two more die with measles symptoms in Bangladesh - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBXTWdtSmxJRmllV2dKMGZhYVBVNk5PalNfTmQ2TUpHZGZwRmJIMlFWNHEwRTZIeC16SDFrRUVGTUl6c2liVklnR0J1eVBuaG8?oc=5",
+      "date": "2026-11-21",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Two more people have died with measles symptoms in Bangladesh, bdnews24.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-3ecf4f70b02349e8",
       "title": "Bangladesh Logs 5 More Measles-Related Deaths, Total Toll Reaches 1,341 - https://www.businesstimes-bd.com/",
@@ -693,16 +704,6 @@
       "date": "2026-11-13",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "The measles death toll in Bangladesh exceeded 1,300 after five more people died with symptoms in one day, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-83b9530866cd7122",
-      "title": "Bangladesh Vaccinates 21.7 Million Children Against Measles but Lacks Accurate Eligibility Data - Ajker Patrika",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9FaFhMU3VpaHN5akVCZUZEMXcwT2NqR3hBbTU1dzJVeHc3WUdqdElwRENDa0NZSWU3WDMzMENlbDVnSjJ6UkRtdUFucGVQajV6NEdJeGVwVTVwakpyYk1ub2tR?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh vaccinated 21.7 million children against measles but lacks accurate eligibility data, Ajker Patrika reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
