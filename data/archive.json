@@ -1,5 +1,5 @@
 {
-  "lastRun": "2026-11-21T20:30:21.945Z",
+  "lastRun": "2026-11-22T08:41:16.196Z",
   "entries": {
     "https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf": {
       "archivedUrl": "https://web.archive.org/web/20261018201608/https://bangladesh.un.org/sites/default/files/2026-07/SitRep_ICCG_MeaslesOutbreak_25%20June26.pdf",
@@ -7086,6 +7086,19 @@
       "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMidEFVX3lxTFByN2pRd3lTMktDaHJLZlBRWkpUc3hjVHA1Yng1NWZSdHE1VnJWMElmM0V5UWJxNXFRM3FiX1RqZWV3SXpUYkVhRXNtU2liRXJYaHNTLUxpaEk4OWR1OGJxZzZQZHR4UE5sM1l6X0s0NHl3bTJu?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-22T08:41:16.196Z",
+      "title": "US Measles Cases Top 5,838, Highest Since 1991, with 646 Patients Hospitalized - Aktualita.co",
+      "publishedAt": "2026-11-22",
+      "source": "Google News — US measles cases",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMidkFVX3lxTE4xQ05TLS1WRldzOW5tTmk5WWlESUpEUVBwMnQxRGE3YkcwNVhNdjJrbEtSbjF5TDlCWVlDYWZWenJidEVQUnRYT1EzazBBTVlyV0wyODFoTVhfZWVvajhmTnF2dTdLNGV6aTR0Mm5MMGl1NXZLLWfSAXtBVV95cUxOT05DdjZac0FETWlCSUxMbC1qdUl3T1pXVVZzVHA2Y0VfZ3RYX1gwSGI5TW1RODN0dFlnbk50RVBNdW5nVUpwa0l3ZWxPczFYelFlcTNFMHRLZ0VoZ1FKX3Riem1uMHhaVkRlZFN6SkUwaGRyRGNWaml1eTQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -7526,6 +7539,32 @@
       "source": "Google News — West Nile virus Greece",
       "kind": "news",
       "outbreak": "west-nile-greece-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QSlZlNE8xelVSVFkzbjdaVzRVWlJFZUdKRkZ1aWgxeWVLUTNxT0dYRS1WTVQ3UjltZm0tdW5TckhOSzVISmtsOXZiQlRBU3JDWG9nam5rd2xpdldrSUVQLTZCYW5nZ1NoNVJhRzV3c0hHWVlMM093YW9RSmstUTg?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Young child dies of measles in Virginia - WTOP News",
+      "publishedAt": "2026-11-20",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMif0FVX3lxTE9nQWNiTWdGQnA4X0RjV1pBR0lOTExodm5DSmZKcXFYQ1V2RGx0YU0zSnFNWFNFN2twOGs5a3NSaldCUEExbHdEUVRzZnFnMDVRUVpOVXE0ekVuVWlYTENWWnFLMENGeVc3c1hMUmItRG8xeldrMWxfbk5OVVQzbGc?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Virginia child dies of measles as 2026 US outbreak grows - Rolling Out",
+      "publishedAt": "2026-11-21",
+      "source": "Google News — measles outbreak United States",
+      "kind": "news",
+      "outbreak": "measles-us-2026",
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJTGFIRzc4akdjV1ZiTi1ickJvMjNKX1pzc2VENndYd0MwSmFxaTlEYW9HOVBfcTFBYWdrZGlUYmEwaGowQ1Z5ZXNEcWxwOFBMSFAwallBLXJSRTRlUFdEWndLR0t4OGlza2RWVDgyc3lkTG5uNEZhRjJQYnZsZVU?oc=5": {
@@ -9296,6 +9335,19 @@
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
     },
+    "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcFh0WnFfaVBVTmJLR0tkS1QtOTJGRC1RbnpMUXV0bEFKbzRLNnFENzBlQXlnalpxWDFGOFdCVXB3bm9TdXRzY3pBMjBPSzdiVWdpV3Z6MVFpMERuYjNFNGlzOU9PZTlQOU4wZ3N2WFhkSUh1dVpEVWl4dmlubDJRUFJqSUY4cVBLUG5XcQ?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "failed",
+      "attempts": 1,
+      "lastAttempt": "2026-11-22T08:41:16.196Z",
+      "title": "Uganda Commissions Ebola Treatment Centre in DR Congo - Wisevoter",
+      "publishedAt": "2026-11-22",
+      "source": "Google News — Bundibugyo outbreak",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
     "https://news.google.com/rss/articles/CBMijAFBVV95cUxNdjU4bGRteko5MFNaQ3VRRXBuV2t5cUhRNFVrM2lIMmJweUdwSFk4cjZnRFVnUWRzR05ZcGlTYUdDMHVrNnZGMGw1SFdmWG9JOWZNVlJvVWJJNjJFSjJvajFhbnR6T2pldW9nNVNVWi1FZ2NEUUo3NVQwT2tjakdiUkpJZXhwVHRPZW83bQ?oc=5": {
       "archivedUrl": null,
       "archivedAt": null,
@@ -10462,6 +10514,19 @@
       "title": "Ebola spreading in rural Congo, WHO warns - Yahoo",
       "publishedAt": "2026-11-13",
       "source": "Google News — WHO DON",
+      "kind": "news",
+      "outbreak": "ebola-bundibugyo-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMilAFBVV95cUxPU2txRHdOYk0xWlY2VzkxV2RsOTRVakFQeW5aM1pDTm9zU1BYZlZvWGFhdkx3eEM4VHA0Z0p5Ui0zcVpWbndGeWE3UjM2Ti04U2VQSlJ1cnZEMXBrNlFfSnpNMFZ0TGIxNDdkSHpBR285bktILUxWaUVyWjR2eWNEMUx5Z2hZdzdrd3RFQndfenBfU3hI?oc=5": {
+      "archivedUrl": "https://web.archive.org/web/20261122084249/https://www.bastillepost.com/global/article/6386116-ebola-death-toll-tops-5600-in-dr-congo",
+      "archivedAt": "2026-11-22T08:42:49Z",
+      "status": "archived",
+      "attempts": 1,
+      "lastAttempt": "2026-11-22T08:41:16.196Z",
+      "title": "Ebola death toll tops 5,600 in DR Congo - 巴士的報",
+      "publishedAt": "2026-11-22",
+      "source": "Google News — Ebola death toll",
       "kind": "news",
       "outbreak": "ebola-bundibugyo-2026",
       "resolvedUrl": null
@@ -11728,11 +11793,11 @@
       "resolvedUrl": null
     },
     "https://news.google.com/rss/articles/CBMingFBVV95cUxQU1d0WDlfWkdxSDlZYjU0aUxFd0ozeUxSSXlGOVBtUlI3Uk4xbU5La21sTHZ0YzBVXzVkTlRleXJ6MTdSbVdpYXVaNXgtZkdFZEdESUZ6WDQyMDhXZWZQQVBrX0JYTFgxc2FETEpzYVYteWJxcW0zcU5rZ2ZYUFg5MTk0UFNCRk1GMUhtVFUyTHRzTnlLYnJwdHpQdU9MQQ?oc=5": {
-      "archivedUrl": null,
-      "archivedAt": null,
-      "status": "failed",
-      "attempts": 1,
-      "lastAttempt": "2026-11-21T20:30:21.945Z",
+      "archivedUrl": "https://web.archive.org/web/20261122084458/https://time.com/article/2026/11/21/ebola-s-death-toll-tops-5-700-can-the-outbreak-be-contained-/",
+      "archivedAt": "2026-11-22T08:44:58Z",
+      "status": "archived",
+      "attempts": 2,
+      "lastAttempt": "2026-11-22T08:41:16.196Z",
       "title": "Ebola’s Death Toll Tops 5,700. Can the Outbreak Be Contained? - Time Magazine",
       "publishedAt": "2026-11-21",
       "source": "Google News — Ebola death toll",
@@ -12983,6 +13048,19 @@
       "lastAttempt": null,
       "title": "Measles outbreak: Death toll reaches 1,295 as six die in 24 hours - Dhaka Tribune",
       "publishedAt": "2026-11-11",
+      "source": "Google News — Bangladesh measles outbreak",
+      "kind": "news",
+      "outbreak": "measles-bangladesh-2026",
+      "resolvedUrl": null
+    },
+    "https://news.google.com/rss/articles/CBMipAFBVV95cUxQTjlYWEdQZVotbHNEUzFrUUdkY1lqalVTMXhEOUhFZ3lCaU95U25EZmVYRjJiQ2d6NHJCMGN4b3pWb05hZG1rTmtrZEJoUUtVejY0OXI5VW1Sa2E0UWttejdKXy1tclJYRGpWOGNBczVZZWN3dUI3NUN6aXlqSy1nNUgzbTVCSktJZjNsTkQ1c2tORldZZUZSVjlVTWttc0ktTjJDMdIBqgFBVV95cUxQZ0FIQVVUSTN3eUpscHZ6Z2pFSWNKRGNhSERNcW15dkZyelhralQtSk1FaGk0THhLSFc1RnVLQWJnMi1WeEtnRVVRTDlGMG9vY3ZwYkh5aXoySFBRWkpyX09YdjF0S1JHbHJzbmdPcmdsMVlTVG9uTndoWFdIOWpDUmZmbFRFM2dqSlNVOVFoSXhNS21DbUNCbkJubG1HS1IxZEZRakw4bWF0dw?oc=5": {
+      "archivedUrl": null,
+      "archivedAt": null,
+      "status": "pending",
+      "attempts": 0,
+      "lastAttempt": null,
+      "title": "Measles outbreak: Death toll reaches 1,343 as two die in 24 hours - Dhaka Tribune",
+      "publishedAt": "2026-11-21",
       "source": "Google News — Bangladesh measles outbreak",
       "kind": "news",
       "outbreak": "measles-bangladesh-2026",
