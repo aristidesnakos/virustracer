@@ -37,8 +37,12 @@ import { mapPool } from "./lib/pool.mjs";
 
 const BASE = "https://openrouter.ai/api/v1";
 const KEY = process.env.OPENROUTER_API_KEY;
-const MAX_CALLS = 450;
+// Hard cap on live model calls; the workflow raises it for a wide model comparison (cents either way).
+const MAX_CALLS = Math.min(1000, Math.max(1, Number(process.env.DIAGNOSE_MAX_CALLS) || 450));
 const MODE = (process.argv.find((a) => a.startsWith("--mode=")) ?? "--mode=verify").slice(7);
+// Alternative models to compare in verify mode: `--alts=a/b,c/d` (or DIAGNOSE_ALTS) names them; empty = ALT_FAMILIES.
+const ALTS_ARG = (process.argv.find((a) => a.startsWith("--alts=")) ?? `--alts=${process.env.DIAGNOSE_ALTS ?? ""}`).slice(7);
+const ALT_ITEMS = 40;
 const N_ITEMS = MODE === "matrix" ? 30 : 50;
 let callsMade = 0;
 
@@ -303,18 +307,74 @@ async function runPath(cfgName, items, opts = {}) {
     `PATH ${cfgName}: items=${rows.length} summaries_failed=${rows.filter((r) => !r.summaryOk).length} candidates_failed=${rows.filter((r) => !r.candOk).length} ` +
       `http_calls=${records.length} (incl. retries) bad_responses=${records.filter((r) => !r.ok).length} with_reasoning=${reasoning} ` +
       `summary_filler=${filler}/${rows.filter((r) => r.summary).length} avg_ms=${Math.round(records.reduce((s, r) => s + r.ms, 0) / Math.max(1, records.length))} ` +
-      `cost=$${cost.toFixed(5)} providers=${JSON.stringify(prov)}`,
+      `cost=$${cost.toFixed(5)} cost_per_1k_calls=$${((cost / Math.max(1, records.length)) * 1000).toFixed(4)} providers=${JSON.stringify(prov)}`,
   );
   return rows;
 }
 
+// Labs outside China. The comparison is about the model's lab, not only its host: `logEndpoints`
+// prints every provider OpenRouter lists for a candidate so the hosting can be judged separately.
+const NON_CHINESE_VENDORS = [
+  "google", "openai", "anthropic", "mistralai", "meta-llama", "x-ai", "nvidia", "ibm-granite",
+  "microsoft", "amazon", "cohere", "ai21", "allenai", "arcee-ai", "liquid", "perplexity",
+];
+// The newest id matching each family is compared (cheap, non-reasoning-first picks of each lab).
+const ALT_FAMILIES = [
+  /^google\/gemini-[0-9.]+-flash-lite[a-z0-9.-]*$/,
+  /^google\/gemini-[0-9.]+-flash(?!-lite|-image)[a-z0-9.-]*$/,
+  /^openai\/gpt-[0-9.]+-nano[a-z0-9.-]*$/,
+  /^openai\/gpt-oss-120b$/,
+  /^mistralai\/mistral-small[a-z0-9.-]*$/,
+  /^anthropic\/claude-haiku[a-z0-9.-]*$/,
+];
+const perM = (v) => Number(v) * 1e6;
+const isTextModel = (m) => /->text$/.test(m.architecture?.modality ?? "") && !m.id.includes(":") && !/image|audio|embed|tts|transcri|realtime|search|deep-research/.test(m.id);
+
+/** Keyless overview of cheap text models from non-Chinese labs, so models the families below miss still show. */
+function catalog(all) {
+  log("\n══ CATALOG: text models from non-Chinese labs at <= $1.00/M output tokens, cheapest output first ══");
+  const rows = all
+    .filter((m) => NON_CHINESE_VENDORS.includes(m.id.split("/")[0]) && isTextModel(m) && Number(m.pricing?.prompt) >= 0 && perM(m.pricing?.completion) <= 1)
+    .sort((a, b) => perM(a.pricing.completion) - perM(b.pricing.completion) || perM(a.pricing.prompt) - perM(b.pricing.prompt))
+    .slice(0, 70);
+  for (const m of rows) {
+    const p = new Set(m.supported_parameters ?? []);
+    log(
+      `CATALOG ${m.id} in=$${perM(m.pricing.prompt).toFixed(3)}/M out=$${perM(m.pricing.completion).toFixed(3)}/M context=${m.context_length} ` +
+        `reasoning=${p.has("reasoning") ? "yes" : "no"} response_format=${p.has("response_format") ? "yes" : "no"} ` +
+        `created=${m.created ? new Date(m.created * 1000).toISOString().slice(0, 10) : "?"} expires=${m.expiration_date ?? "none"}`,
+    );
+  }
+  log(`CATALOG rows=${rows.length}`);
+}
+
+/** Print the providers OpenRouter lists for a model (keyless): name, quantization, price, health. */
+async function logEndpoints(id) {
+  const ep = await publicJson(`/models/${id}/endpoints`);
+  if (!ep.json) return log(`ENDPOINTS_FAILED ${id} status=${ep.status} ${ep.error}`);
+  const list = ep.json.data?.endpoints ?? [];
+  log(`HOSTS ${id}: ${list.map((e) => `${e.provider_name}(${e.quantization ?? "?"}, in=$${perM(e.pricing?.prompt).toFixed(3)}/M out=$${perM(e.pricing?.completion).toFixed(3)}/M, ${e.status === 0 ? "ok" : `status=${e.status}`})`).join("; ") || "none listed"}`);
+}
+
 function pickAlternatives(all) {
-  const newest = (re) => all.filter((m) => re.test(m.id)).sort((a, b) => (b.created ?? 0) - (a.created ?? 0))[0] ?? null;
-  return [
-    newest(/^deepseek\/deepseek-v4(?!-flash)[a-z0-9.-]*$/),
-    newest(/^anthropic\/claude-haiku/),
-    newest(/^google\/gemini-[0-9.]+-flash(?!-lite|-image)[a-z0-9.-]*$/),
-  ].filter(Boolean);
+  const byCreated = (a, b) => (b.created ?? 0) - (a.created ?? 0);
+  const ids = ALTS_ARG.split(",").map((s) => s.trim()).filter(Boolean);
+  if (ids.length) {
+    return ids.map((id) => {
+      const m = all.find((x) => x.id === id);
+      if (!m) log(`ALT_MISSING ${id} is not in /models`);
+      return m;
+    }).filter(Boolean);
+  }
+  return ALT_FAMILIES.map((re) => {
+    const m = all.filter((x) => re.test(x.id) && isTextModel(x)).sort(byCreated)[0] ?? null;
+    if (!m) {
+      const vendor = re.source.match(/^\^([a-z0-9-]+)/i)?.[1];
+      const near = all.filter((x) => x.id.startsWith(`${vendor}/`) && isTextModel(x)).sort(byCreated).slice(0, 12).map((x) => x.id);
+      log(`ALT_FAMILY_MISSING ${re} matched nothing; newest ${vendor} ids: ${near.join(", ")}`);
+    }
+    return m;
+  }).filter(Boolean);
 }
 
 async function checkLinks(items) {
@@ -360,9 +420,13 @@ async function verify(entry, all, items) {
   const describe = (m) =>
     `${m.id} (prompt $${(Number(m.pricing?.prompt) * 1e6).toFixed(3)}/M, completion $${(Number(m.pricing?.completion) * 1e6).toFixed(3)}/M, ` +
     `params ${(m.supported_parameters ?? []).filter((p) => /reason|response_format/.test(p)).join("+")})`;
-  log(`\n══ ALTERNATIVE MODELS on the first 40 items: ${alts.map(describe).join(" | ") || "none found"} ══`);
-  const sub = items.slice(0, 40);
-  const cmp = { [MODEL]: base.slice(0, 40) };
+  // An even spread over the item list (items are grouped by outbreak, so the first N would skip the last outbreaks).
+  const picks = Array.from({ length: Math.min(ALT_ITEMS, items.length) }, (_, k) => Math.floor((k * items.length) / Math.min(ALT_ITEMS, items.length)));
+  log(`\n══ ALTERNATIVE MODELS on ${picks.length} items spread over every outbreak: ${alts.map(describe).join(" | ") || "none found"} ══`);
+  for (const m of [{ id: MODEL }, ...alts]) await logEndpoints(m.id);
+  const sub = picks.map((i) => items[i]);
+  // Baseline rows are indexed by position in `items`, alternative rows by position in `sub`; line them up.
+  const cmp = { [MODEL]: picks.map((i) => base.find((r) => r.i === i)) };
   for (const m of alts) {
     cmp[m.id] = await runPath(`alt_${m.id}`, sub, { model: m.id, supported: new Set(m.supported_parameters ?? []) });
   }
@@ -390,6 +454,7 @@ async function verify(entry, all, items) {
 
 async function main() {
   const { entry, endpoints, all } = await metadata();
+  catalog(all);
   if (!KEY) {
     log("OPENROUTER_API_KEY not set: metadata only.");
     return;

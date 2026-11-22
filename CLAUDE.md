@@ -15,7 +15,7 @@ npm run test:e2e  # Playwright e2e (uses the running dev server on PLAYWRIGHT_PO
 node scripts/update-toll.mjs   # manually refresh every automated outbreak's toll.json (keyless); --outbreak=<slug> for one, --adapter=wikipedia|eody-report|cdc-measles|cdc-nndss for one kind
 node scripts/update-toll.mjs --outbreak=west-nile-greece-2026 --report=<pdf-url> [--report=...]   # read specific EODY reports (backfill/repair; needs pdftotext)
 node scripts/fetch-feeds.mjs   # manually run feed updater (OPENROUTER_API_KEY optional)
-node scripts/diagnose-model.mjs [--mode=verify|matrix]   # probe the feed model (needs the key: run it via the "Diagnose feed model" workflow, workflow_dispatch only)
+node scripts/diagnose-model.mjs [--mode=verify|matrix] [--alts=<id>,<id>]   # probe the feed model (needs the key: run it via the "Diagnose feed model" workflow, workflow_dispatch only; its `alts`/`max_calls` inputs set the models compared with `MODEL` and the call cap). `verify` also prints a keyless CATALOG of cheap text models from non-Chinese labs and each candidate's hosting providers (HOSTS lines)
 node scripts/probe-feeds.mjs [--only=<text>]   # keyless check of candidate news sources (status, article text, keyword matches); the sandbox cannot reach them, so run the "Probe feed sources" workflow
 node scripts/probe-keywords.mjs   # Google autocomplete for the terms our pages could target (PROBE_ROUND=2 for the second harvest; the sandbox cannot reach Google, so run the manual "Probe keywords" workflow; results and the applied titles in docs/seo-keywords.md)
 node scripts/probe-pageviews.mjs  # Wikipedia pageviews (90 days) for our topics' articles, an attention proxy, not search volume (same workflow; the sandbox cannot reach wikimedia.org)
