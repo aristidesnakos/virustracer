@@ -1,13 +1,6 @@
 {
-  "lastFetched": "2026-11-22T08:41:08.571Z",
+  "lastFetched": "2026-11-22T20:34:58.131Z",
   "processedIds": [
-    "news-d39d52d738f11547",
-    "news-5aa606f49215b252",
-    "news-48799dc3c4279bd2",
-    "news-925a9bc279c87fe5",
-    "news-62d651df0226351a",
-    "news-77516a8e5de97ea5",
-    "news-af0cd305522bf651",
     "who-391b9237ebea1488",
     "news-c3d9b934d3216853",
     "news-fba5399416f01a08",
@@ -1000,9 +993,26 @@
     "news-d6cf493280f8e2d2",
     "news-8a4978eb73c0a1e8",
     "news-c7d8c86b2e0b8430",
-    "news-5db034ee6b4e903c"
+    "news-5db034ee6b4e903c",
+    "who-3fc42d303bfbb539",
+    "who-a31148a18ea32b6f",
+    "news-26156b0b32d0c7ce",
+    "news-3fc42d303bfbb539",
+    "news-a31148a18ea32b6f",
+    "news-73b283085e449b56",
+    "who-42c260d74ed2b89a"
   ],
   "recentItems": [
+    {
+      "id": "news-3fc42d303bfbb539",
+      "title": "Ebola Outbreak Climbs to 11,645 Cases as Deaths Near 5700 - Contagion Live",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPam1aZkJ1TXBTMjlKRFgtT09XYzNVbEE0R3hFdGlpWlJvczhpUmNGTWkwMzI1WmNXWGNWTGNIemNZRVY5Wm9ibHpjSEdpZERoUWIxVGlQZTVJX3l3aDI3d0p3amtWRFdVVFVzQ3ZUb0xKUDQwVDE2Vnp1eTVoX2l6TFJIdWtDVXlwcEJaZ1Bwbw?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "An Ebola outbreak has reached 11,645 cases, with deaths approaching 5,700. Contagion Live reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-5db034ee6b4e903c",
       "title": "Uganda Commissions Ebola Treatment Centre in DR Congo - Wisevoter",
@@ -1020,6 +1030,16 @@
       "date": "2026-11-22",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola death toll tops 5,600 in DR Congo, 巴士的報 reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-42c260d74ed2b89a",
+      "title": "WHO chief says fighting near Congo Ebola outbreak area disrupts response efforts - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMi5wFBVV95cUxOVnZjcE50YXJiLWxXZE5OQldXSndtUVlUbnNJckNPY1lQM1ZpdlExMlNJX08zNFJQbnFYd3FKT3ZZbzBqY2s4a3c0RVg0M2dELVZrLUx5R0tobENIQWk2QUdNZG9YRl95STZFUlVOVTlVcThuRG90VndEZEZhaE5jbTRVYkN1SUxoYmlteUhlempZSVNGRjJNWjhZdXlSNzMtM1Q3VExpZmFqZHJKbVdjT3lpekdsb0dXQXg0NHdsUkZwdlNzQW9CaGVhblM2b0VHSWRZTGlFVUJBSnd3LXA2SXJoUlVmV1E?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — WHO DON",
+      "summary": "Fighting near the Congo Ebola outbreak area has disrupted response efforts, the WHO chief said.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1060,6 +1080,16 @@
       "date": "2026-11-21",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Scientists are learning more about the rare Ebola virus in the DRC outbreak, TimesLIVE reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-a31148a18ea32b6f",
+      "title": "What is Ebola disease? - NaTHNaC - Travel Health Pro",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wbEw0RzREU01EbENiOGtkZ2VQNTJtTGNHZmVleUs4OGIwQk96a3MycGZGd2dDSU5qa1RRang4RDYzQW5ucHVYSDBlTnMxalB2RVIwNlk1VGw5TWRVa3c?oc=5",
+      "date": "2026-11-21",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola disease is explained by the National Travel Health Network and Centre. Travel Health Pro reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1170,36 +1200,6 @@
       "date": "2026-11-20",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Scientists are learning more about the rare Ebola virus in a Congo outbreak, Gulf Daily News (Bahrain) reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-dce71b600fc16536",
-      "title": "Why Current Ebola Outbreak Is Hard to Contain - Mirage News",
-      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNOFdGSmRWOXpmNU5vYnotNzFmS0ZYUWd1RnQ2cF9MMXlqOGt1bm1DU283a1l5VDlxWGZ4b2ZObWZpcHdManQ2QU95cWg1VlV2cHdKU0M1OTF1SksyVVZTcGhqOTdhc3l4SmN0TjA4cVAtb3NReDcyNmhVUkJiLWFaeGhBa2VrdC1Y?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The current Ebola outbreak is difficult to contain, according to Mirage News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-e05bbc96daa3ae25",
-      "title": "Congo’s Bundibugyo Ebola Outbreak Tops 10,000 Cases, Travel Rules Tighten - https://www.thetraveler.org/",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNbmJKRnFDM2RERENBYk9jUFd6eTJiMldJTm9DUnFoV1dleG1zRGY5MGU3OVlwU0paR2xmb1d6aEZvQTl5SVVtZGowR3Y3RjdMVGNBUWdVVEFoTE1JNzVYNF90Y2dDRFpzTG82cEZLd1ZwOHF4VU1rRjU5N2FVejFQVU5tdXlhTEpudXFXZy0xZWpjSUlzVHNjdGs4NVJOMjZjR0E?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Bundibugyo Ebola outbreak in Congo surpasses 10,000 cases, prompting tighter travel rules. https://www.thetraveler.org/ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-fda54bd39b7ebbd6",
-      "title": "Scientists are learning more about the rare Ebola virus in Congo outbreak - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPSlFDZ0t2LWZfOElkUERrS0d5RVdaVERpejI2Q2lYdTNIY0RLSHVqQTM2UFJGVVlYNm9veHRzVHYxRmRyVjVCWlJhRnlXQTRpOF9MYVZ2d180X0tZM09sZnVUbzFJalZBbmVmRjJaUkJrbHpJUjI3Y0cwUl9zTlNuSnhsdHByUXNkOVRxV2RwaEkwYzVBeHJRMXdGY3VIdkJGdXZHOEVONmdWVmFOX2hQSkdFT2J1SjZaUXpsTnZ2UmlOUzdEOEhjOWFLX2U3UjBCb2ZjeA?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Scientists are learning more about the rare Ebola virus in the Congo outbreak, Reuters reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

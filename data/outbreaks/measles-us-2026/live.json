@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-22T08:41:11.260Z",
+  "lastFetched": "2026-11-22T20:35:03.385Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -704,7 +704,11 @@
     "news-1f7059a186ac9ed9",
     "news-ed249c8efd180d5d",
     "news-8771aa98b4767db7",
-    "news-1980fc292840a8d3"
+    "news-1980fc292840a8d3",
+    "news-fc5a443ea2ff2e1f",
+    "news-351848f90cd5c03e",
+    "news-caeecb758689987c",
+    "news-5f561a5a77f84778"
   ],
   "recentItems": [
     {
@@ -714,6 +718,36 @@
       "date": "2026-11-22",
       "source": "Google News — US measles cases",
       "summary": "US measles cases surpassed 5,838, the highest since 1991, with 646 patients hospitalized. Aktualita.co reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-5f561a5a77f84778",
+      "title": "Child who tested positive for measles has died, Virginia health officials report - 9NEWS",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxPZEFXUmh6U2J2VXZhM2tlal9RYW50R3lFVC1ESVBNQmE0RUR4QnpsbW9RVG00T1FOQkN3MU1reDhUN0pMOU4zYUo3enZubWNvOUg5WEFweHRvZ0FUSmdfLXdDYm1vYy03VFJqaXdGS2M5SkpveGNkRFEzVWM0Y096YnU4SWpGS3JJZVBrM0hFNEo2X1oxbTdIMS1nMGk2VXRXdmtEMVZtMGlrSV9yUFoyUDg4TjRRb2FK?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A child who tested positive for measles has died, Virginia health officials reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-caeecb758689987c",
+      "title": "Virginia reports young child has died of measles, first since 1978 - The Washington Post",
+      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQaXJqdU1xX3B6V0RuY1JkaVB0dXQyUEpubzc4Zm1uSHZRaFU2MzJHdFVMYUxvd21iR3JWTzRDVDlWdWZaSzc3bDF1SElLTzVIcEltRDc1Z1cxZzVGY1JDV0NLZGlWczk3WWNxRGVvMGhLYTBfYnRBRWVKelVsU2gzVjRHV19nOVNVTDBVQUNCUlZqQmFXaXczZ3J1V0RvbHJMXzNMUU16V2tYSFhrclo1N3p3?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A young child in Virginia died of measles, the first such death in the state since 1978, The Washington Post reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-fc5a443ea2ff2e1f",
+      "title": "Measles cases in Michigan are still on the rise, the CDC reports - CBS News",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNN2NpWjc5WGM4ZTZjTFpQVFZGTVJEa09YR1BLRlllYXRiVEdwSkI3NThWbEM4WWpkMkpJbWV5b2xFeGdCVnJJNGhST1plOU43R2ppWTFGU2JaYnJUaTZvZWw1bktDQm1TS1REQTRVU1UtSWFjUEFKT21UUDNTZ1dZZ21wSmkyekc2UndEYw?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — US measles cases",
+      "summary": "The CDC reports measles cases in Michigan are still increasing. CBS News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -874,36 +908,6 @@
       "date": "2026-11-20",
       "source": "Google News — measles outbreak United States",
       "summary": "A young child in Virginia died after testing positive for measles in the state's first measles death of 2026. WTVR.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-259b26a13db11661",
-      "title": "Pennsylvania tops 1,600 measles cases, with nearly 100 in the last week - Inquirer.com",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxNdDJ0Y29kQ2t5Vmd4dHR6bXhCeWhxdzJ3enNreWFHR1BMVVNOeE9VaS1jaU5wVjV1WTZ3VXZGYmFKQ1M5b1J3SlRHU1hOdHhvWkpuaUwzejdEb2E4TzRYblpGcnRGaHc3aUIzZE8tb0xNVk56V3RGVWNxY1VJaC1FY1A1MUdMZEhEbVVkY1dYZ1Z6dw?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania recorded over 1,600 measles cases, including nearly 100 in the past week, Inquirer.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-471259bf7f4765c2",
-      "title": "Pennsylvania's measles outbreak may have cost taxpayers about $16 million—and the state still has no official total - Medical Daily",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPSk5BaVZ6TU5zdldMZXYtVkZwT0xUZWhZdTI3YjBsbm5OWWFaSktsNUVYZ3JGX0hxX3BKc1hHMktBX0ZMb0FlZHdILVJjZDBnTHYzOU1PcVFMT0pSQmJYalVvYlIwSGxfeGFfb1EtbXhDdHhtYWVKWHdwdGVZZGZBRGgxX3JweUEtOFZMQWNfcmJnVHhFNHBJeg?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania's measles outbreak may have cost taxpayers about $16 million, and the state still has no official total, Medical Daily reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-66d2da370e359b53",
-      "title": "Pennsylvania's measles outbreak costs taxpayers $17M — and one economist warns the next step could be higher taxes - Yahoo Finance",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNNWVJdEJCb3cwVF92VUVrTWkyeGJYdjJYRWFJZkNobHVWU1dNZENLRnJMcUZKaXl6TWVxV3JhS3JicmxBbDhpUF9hbGZBUG41YXdkdzU3MGpIdXAtbmFOOEE5YmVxMGRKNzNNczI0Y0lQa2Z6ZXhQMU50U2hZWGV5djJZa1ZpYS1VcHhsNVEya2lyQThJYjVkSnlrODl2SjRyTkV5Q3dqTHVIRXc?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania's measles outbreak cost taxpayers $17 million, and an economist warned it could lead to higher taxes. Yahoo Finance reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

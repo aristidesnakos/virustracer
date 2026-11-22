@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-22T08:41:10.195Z",
+  "lastFetched": "2026-11-22T20:35:00.615Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -508,9 +508,56 @@
     "news-554aab3141f3ac1a",
     "news-37114e7febc4450d",
     "news-03b290bc004693a8",
-    "news-8c21339a42ab0fd6"
+    "news-8c21339a42ab0fd6",
+    "news-7821bba23012c82e",
+    "news-23a753816b1400c7",
+    "news-6c0099e6a16a680b",
+    "news-ce7a7e3ab0c9e89c",
+    "news-cef7a2dd15da04cd",
+    "news-9dbed6f5f72eb454",
+    "news-f26990e69ba57847"
   ],
   "recentItems": [
+    {
+      "id": "news-23a753816b1400c7",
+      "title": "Measles outbreak: Death toll reaches 1,352 as nine die in 24 hours - Dhaka Tribune",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxOdGl0Y0p1ZHIyQ01mRUJkcDVVU0xESXFyRzhROWRqclhpd1plR2hJY0pQVmV6Z1R6Zlczd19Qd0lnaHJ6NUp1d2JpajRMUGNRVDdzdVo2d2Z1NnlDRnIwMGtQLXFKZVpwTVR1V0haZU91S0t2X2ZnY2Jpby1BbmVVaUxXcDhvSThlb01qQmFKN0V3QWYwT3VYblFoSUI0dzh5RmpHUkt30gGrAUFVX3lxTE1Ta2ZSc21TUkM5SlRyZ2tQVmdWYkxINWF4LUk0QnNoY29MRlA5NVFmSjVGVzgxNUpJem9vS1Axa1A3Rml3amJsVi1tOHp6SEFIdHJVVE9va1dqRENWVzVwa3FDXzVkclJqai1GSnNDUEYxSU5pVzAyak5UVjJkYUhiMzRJbjU2ek9qNlVESzRZZDRKZmU4U3Q1bkVWcThNOG4tYjRJU0NZclh4VQ?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "The death toll from the measles outbreak reached 1,352 after nine people died in 24 hours, Dhaka Tribune reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9dbed6f5f72eb454",
+      "title": "9 more die with measles symptoms in Bangladesh - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTE1FZE0xUW1RUkR3bG9WamVSOVNlVnNiQTBkMTkxTFRmVTBUUDUyRV9GLVlJMTJ4Y21qaVhNN3hBZnFMWEV2bG01LWRyNmUxZG8?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Nine more people died with measles symptoms in Bangladesh, bdnews24.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-cef7a2dd15da04cd",
+      "title": "Bangladesh Records 9 More Suspected Measles Deaths, Total Toll Hits 1,352 - https://www.businesstimes-bd.com/",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE55Ni1SdTJQWmFORnNzX3VKdUNoUURINGZBUHBnYzE3WWljdjFiRE1HdVFER0M3endKODNYZjd6REkyS2FEN0ZWY1RvbzFYZEQ1S1F3LUZJTXFuVnM?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh records nine more suspected measles deaths, bringing the total toll to 1,352.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-f26990e69ba57847",
+      "title": "Measles outbreak in Bangladesh claims nine more lives, death toll crosses 1,350 - Social News XYZ",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxPc2ZHUHRMQnZpaEpaR0lsU3pqRHZqcFpKSWd0WXZSWFJHWWs3RURzUnprZUY3VXhTcEdMbzBnZUxUQmtPeTNxeGR3eTFoOWljcW9YeHRKSlVKRXFHWXFpRU54Y2xGdUNfWElOR2lxQVdEdW5yLWx4RXZIMUFCMGpsS1VZandpaDdPU1VERGZEa29Ra3hEdU9uRTJkRGI2bUtmNGZhb1ZBa1cyYUhqQ1RaUWNjSVE5OW_SAbcBQVVfeXFMT3NmR1B0TEJ2aWhKWkdJbFN6akR2anBaSklndFl2UlhSR1lrN0VEc1J6a2VGN1V4U3BHTG8wZ2VMVEJrT3kzcXhkd3kxaDlpY3FvWHh0SkpVSkVxR1lxaUVOeGNsRnVDX1hJTkdpcUFXRHVuci1seEV2SDFBQjBqbEtVWWp3aWg3T1NVRERmRGtvUWt4RHVPbkUyZERiNm1LZjRmYW9WQWtXMmFIakNUWlFjY0lROTlv?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "A measles outbreak in Bangladesh claimed nine more lives, pushing the death toll past 1,350. Social News XYZ reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-554aab3141f3ac1a",
       "title": "Measles outbreak: Death toll reaches 1,343 as two die in 24 hours - Dhaka Tribune",
@@ -668,46 +715,6 @@
       "date": "2026-11-15",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "The death toll from the measles outbreak in Bangladesh has risen to 1,314, Daijiworld reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-78a5e4eb31437bcc",
-      "title": "Bangladesh logs 8 more deaths from measles-like symptoms - United News of Bangladesh",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPbk92TnBWdmVGWEt0LTZQVVdhMDJNNnhPREpqTUQxWklDS2ZIQm1TbGQwS185R3djQVhmYUVKZmFkTmVMMGVNdWtWWGRZYVNyamFHdzNRdjM4djVub0k2VS1iVDB0eE9CbHF4MWhpZUxGQTFya2VPSW9jLVkwWkxDTUtsbHYxemk5bV9VOVBCTWNlQmkxcGFPWXNIb3p1MlJ0UHVCOQ?oc=5",
-      "date": "2026-11-15",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh logged eight more deaths from measles-like symptoms, United News of Bangladesh reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-390a53649d7e80a4",
-      "title": "Bangladesh Measles Update: 5 Child Deaths in 24 Hours, Total Toll Reaches 1,304 - https://www.businesstimes-bd.com/",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE1fb3ZVa3NlcjJuRmNkMVNUWjRKYkFRTEJ1QkxKYjFOdEtNV1luSTc4WmUtWE9xR2VWczNSRmdxTk5NYWhZZ0lVb2VHazhqYldFWHJlWFFUU0tVcW8?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh reports 5 child deaths from measles in 24 hours as the outbreak total rises to 1,304.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-53accda8a19aff9f",
-      "title": "Listening First: How community insights strengthened the Bangladesh Red Crescent Society’s measles response in Khulna, Narayanganj and Cox’s Bazar - ReliefWeb",
-      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNTXY1TV83Q2h2X2l3c09DeG9ibUltNXdwY3BCNFFHRlFKcms1WDdEeThMSU1FdmdUSVRpVFpEUnFVTTRSbzVjN2l2a0JLWWNUTUZ1V3RCbXNTeXphQjEydWd4X1pSRFgzQTNVdGQ4Um01X2l4R3R0U1NKT1FLclVBR1cxaldmZTM2a3FFeW03X29MeTdHWU9kOFR4QkNEblBnMjNYd28yazFFUDIxM3F3d0JQdUh0MkdOZ2R2VnBsY0JMdFI1VFFOYnE4TzZCb1BFRnlXVTlqeDBqMVRWekY3bXNWNE94Q0E3N2xRTmtpOVlTN0lWMjU3V3BYaXc0d0lmNjBfWVFn?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Listening First: community insights strengthened the Bangladesh Red Crescent Society’s measles response in Khulna, Narayanganj and Cox’s Bazar. ReliefWeb reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5a2764a49f04602f",
-      "title": "Measles-like symptoms claim five more lives in Bangladesh - United News of Bangladesh",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPWGhtSFRxc2RZSHlFZWpaR1BqcUQ2bmFfeXRMcWJKenpULWFBNGNEa2FOdjk3U1BOMGhBRnZIeV9HdzJWUjliWmNwQzNxVm94OWUzdUJ3cUZ6UnU2U0hsVzVwa2RiaGItbGQ4UVpvUzIxbVdmOUFQbTM2OXVoelhMdGI3dUZmNHhnMTNLN3BBVHNmWmR0Vk1KcHJrdE1iOEtUaWtLWDZR?oc=5",
-      "date": "2026-11-13",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Five more people died in Bangladesh from measles-like symptoms, United News of Bangladesh reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
