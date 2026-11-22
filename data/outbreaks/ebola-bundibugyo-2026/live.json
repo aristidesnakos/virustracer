@@ -1,8 +1,6 @@
 {
-  "lastFetched": "2026-11-21T20:30:05.472Z",
+  "lastFetched": "2026-11-22T08:41:08.571Z",
   "processedIds": [
-    "news-3baf18f9444ddae5",
-    "news-76c31c9c3282b89b",
     "news-d39d52d738f11547",
     "news-5aa606f49215b252",
     "news-48799dc3c4279bd2",
@@ -1000,9 +998,31 @@
     "news-3ebbd4e72425b837",
     "news-24d8b4c7f7023bfd",
     "news-d6cf493280f8e2d2",
-    "news-8a4978eb73c0a1e8"
+    "news-8a4978eb73c0a1e8",
+    "news-c7d8c86b2e0b8430",
+    "news-5db034ee6b4e903c"
   ],
   "recentItems": [
+    {
+      "id": "news-5db034ee6b4e903c",
+      "title": "Uganda Commissions Ebola Treatment Centre in DR Congo - Wisevoter",
+      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxNcFh0WnFfaVBVTmJLR0tkS1QtOTJGRC1RbnpMUXV0bEFKbzRLNnFENzBlQXlnalpxWDFGOFdCVXB3bm9TdXRzY3pBMjBPSzdiVWdpV3Z6MVFpMERuYjNFNGlzOU9PZTlQOU4wZ3N2WFhkSUh1dVpEVWl4dmlubDJRUFJqSUY4cVBLUG5XcQ?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Uganda has commissioned an Ebola treatment centre in DR Congo. Wisevoter reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c7d8c86b2e0b8430",
+      "title": "Ebola death toll tops 5,600 in DR Congo - 巴士的報",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPU2txRHdOYk0xWlY2VzkxV2RsOTRVakFQeW5aM1pDTm9zU1BYZlZvWGFhdkx3eEM4VHA0Z0p5Ui0zcVpWbndGeWE3UjM2Ti04U2VQSlJ1cnZEMXBrNlFfSnpNMFZ0TGIxNDdkSHpBR285bktILUxWaUVyWjR2eWNEMUx5Z2hZdzdrd3RFQndfenBfU3hI?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola death toll tops 5,600 in DR Congo, 巴士的報 reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-29e481ca6a46ac82",
       "title": "Ebola’s Death Toll Tops 5,700. Can the Outbreak Be Contained? - Time Magazine",
@@ -1180,26 +1200,6 @@
       "date": "2026-11-20",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Scientists are learning more about the rare Ebola virus in the Congo outbreak, Reuters reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-2d80ce7bcdbdf273",
-      "title": "Ebola killed 46 members of one man’s family. Now he is fighting to save the rest - The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxQTmdNb0l2Sk1fM2JyTWdpUkRsVGlHQldFZXdGRzFLYTkwcHVwbGJIckZ6LXI2RnJQTmlvNmlLa0FvU1pQa1NrT0p6RjdHYUhQNUNIcnBQNXE2VmN0ZFpiVUNqWGxJSmtBS0pqUjBSNF9lcmFobnF5a2M3eExXSmFGNTRQY2VNUnZnUmVEMUwwQWl1dXBLZG9kcUlzUGEyQVFKMjEwTUhVc2o2OWttWHZyVWpTNldBR213VlJBcE9hamxrUVp2TmZYLWM4ZDlIbnppaGtVT0pNNkZKRHc?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — WHO DON",
-      "summary": "An Ebola outbreak killed 46 of one man's relatives, and he is now working to protect his surviving family. The Guardian reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-52065b7fd2f1f1da",
-      "title": "Rare Ebola strain is hitting children hardest in devastating Congo outbreak - The Independent",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOQnR1bG12Nl9KaE1jNnJNa0tFZjRfMlM1ZVg0eVdwWVllT3B1TFY4azVuNXdCM0NkWk1UclpoVTdlSUZwXy11SFZadE13VHVfSGRpdTd0bkNET184Wkx3S21UT3VCblZHLXhpaWVWc2tJb3NQUU5lcGhLaEZVVFlKNXlkbjlvWUFNVkNCY08yNnZrUDUyczBkaDMwaWFCdVBsbmc?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — WHO DON",
-      "summary": "A rare Ebola strain is hitting children hardest in a devastating outbreak in Congo, The Independent reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

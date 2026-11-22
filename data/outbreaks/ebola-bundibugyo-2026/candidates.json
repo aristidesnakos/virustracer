@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-21T20:30:10.450Z",
+  "lastExtracted": "2026-11-22T08:41:09.329Z",
   "candidates": [
     {
       "id": "news-6340134081cb9382",
@@ -336,34 +336,6 @@
       "sourceName": "Google News — Bundibugyo outbreak",
       "date": "2026-10-24",
       "extractedAt": "2026-10-27T08:31:45.987Z"
-    },
-    {
-      "id": "ecdc-8299411697ccc7a1",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "context": "With cases of Ebola disease caused by Bundibugyo virus recently detected in Kenya and Nigeria, ECDC reiterates the low risk for Europe while highlighting the need for preparedness.",
-      "sourceTitle": "Importation of Ebola cases to Kenya and Nigeria: ECDC assesses the threat",
-      "sourceUrl": "https://www.ecdc.europa.eu/en/news-events/importation-ebola-cases-kenya-and-nigeria-ecdc-assesses-threat",
-      "sourceName": "ECDC news",
-      "date": "2026-10-23",
-      "extractedAt": "2026-11-08T20:25:25.567Z"
-    },
-    {
-      "id": "who-a8539ec0c459be30",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": 9,
-      "deathsMentioned": 1,
-      "context": "Kenya reported nine cases including one death, all linked to a traveler from DR Congo via Uganda.",
-      "sourceTitle": "Ebola disease caused by Bundibugyo virus - Democratic Republic of the Congo, Kenya and Nigeria",
-      "sourceUrl": "https://www.who.int/emergencies/disease-outbreak-news/item/2026-DON622",
-      "sourceName": "WHO Disease Outbreak News",
-      "date": "2026-10-23",
-      "extractedAt": "2026-11-08T20:25:19.026Z"
     }
   ],
   "checkedIds": [
@@ -761,6 +733,8 @@
     "news-3ebbd4e72425b837",
     "news-24d8b4c7f7023bfd",
     "news-d6cf493280f8e2d2",
-    "news-8a4978eb73c0a1e8"
+    "news-8a4978eb73c0a1e8",
+    "news-c7d8c86b2e0b8430",
+    "news-5db034ee6b4e903c"
   ]
 }

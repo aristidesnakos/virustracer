@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-21T20:30:14.773Z",
+  "lastFetched": "2026-11-22T08:41:11.260Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -698,9 +698,25 @@
     "news-be8a0224d795b4ea",
     "news-5b3327041c548411",
     "news-1afe4603807cc1c5",
-    "news-34a2250b8bb94de0"
+    "news-34a2250b8bb94de0",
+    "news-4765d1d661eb5d49",
+    "news-634417c8eac866b2",
+    "news-1f7059a186ac9ed9",
+    "news-ed249c8efd180d5d",
+    "news-8771aa98b4767db7",
+    "news-1980fc292840a8d3"
   ],
   "recentItems": [
+    {
+      "id": "news-4765d1d661eb5d49",
+      "title": "US Measles Cases Top 5,838, Highest Since 1991, with 646 Patients Hospitalized - Aktualita.co",
+      "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTFByN2pRd3lTMktDaHJLZlBRWkpUc3hjVHA1Yng1NWZSdHE1VnJWMElmM0V5UWJxNXFRM3FiX1RqZWV3SXpUYkVhRXNtU2liRXJYaHNTLUxpaEk4OWR1OGJxZzZQZHR4UE5sM1l6X0s0NHl3bTJu?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — US measles cases",
+      "summary": "US measles cases surpassed 5,838, the highest since 1991, with 646 patients hospitalized. Aktualita.co reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-1bfcba000aa533b4",
       "title": "Virginia reports first measles-related death of 2026 - The Hill",
@@ -738,6 +754,16 @@
       "date": "2026-11-21",
       "source": "Google News — measles outbreak United States",
       "summary": "A Virginia child died as the measles outbreak in the U.S. worsens. The Hindu reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8771aa98b4767db7",
+      "title": "Virginia child dies of measles as 2026 US outbreak grows - Rolling Out",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9nQWNiTWdGQnA4X0RjV1pBR0lOTExodm5DSmZKcXFYQ1V2RGx0YU0zSnFNWFNFN2twOGs5a3NSaldCUEExbHdEUVRzZnFnMDVRUVpOVXE0ekVuVWlYTENWWnFLMENGeVc3c1hMUmItRG8xeldrMWxfbk5OVVQzbGc?oc=5",
+      "date": "2026-11-21",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A child in Virginia died of measles as a U.S. outbreak expands. Rolling Out reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -812,6 +838,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-1980fc292840a8d3",
+      "title": "Young child dies of measles in Virginia - WTOP News",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QSlZlNE8xelVSVFkzbjdaVzRVWlJFZUdKRkZ1aWgxeWVLUTNxT0dYRS1WTVQ3UjltZm0tdW5TckhOSzVISmtsOXZiQlRBU3JDWG9nam5rd2xpdldrSUVQLTZCYW5nZ1NoNVJhRzV3c0hHWVlMM093YW9RSmstUTg?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A young child died of measles in Virginia, WTOP News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-25132d53b72d6c15",
       "title": "Virginia reports first measles-associated death of 2026 involving young child - The Jerusalem Post",
       "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53WFNWckJ3OXVFbU9hQWRQRUxReTJYYVNvODVhQ1JkUU0wY0tiQnhFd0MyX3FoLXhCSG5XSkVuUnc0R1Y5ZG92dHFVY05vT0dBZ0VEeS1RYkdKeWc2Nk9tUlhJV0hVQXc?oc=5",
@@ -868,36 +904,6 @@
       "date": "2026-11-20",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania's measles outbreak cost taxpayers $17 million, and an economist warned it could lead to higher taxes. Yahoo Finance reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-6bb1a23330be8694",
-      "title": "Georgia sees record spike in confirmed measles cases as U.S. grapples with outbreaks - CBS News",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOQ1dmVTRTeUZvU2cxMFhYU1VVNnFRWHpvM2tZc1d5MlJNMlFsMHJ2TFp4YV9HSFRrT2l6NlRNNC1qSGxWZ1FFQ21VMXk0V3hISDFmMzliQnJ5dkJmd2w2RU5qNERSRm5JZkhDS0x1MTh0WC1iQTZ2cXZEYURtaEtmeDhSVnZwNVo5Q0pIS05tak5UVWlRX1BrR3lYZWFuaV9MdFRyZ2ZiMEdjc0szSTFaMXo3N3JDT0M5ZlhjclVn?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Georgia experienced a record increase in confirmed measles cases while the U.S. dealt with outbreaks, CBS News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-87285d05732dbc11",
-      "title": "Child with measles dies in Virginia, marking state's 1st measles-related death this year - ABC News - Breaking News, Latest News and Videos",
-      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxQaUwtVjh5YTdXTjBVMm0xdHNrOXQ5Z1VrWnY0dnFpU2w3UnVYY19vNnJXckQ5WkJSejUtMjltYWJhT1N4MzV4aDFzaU9YZXhOdFZ4Rl9JZXh0TzdtVm9Va0FOUThfZWg2ekZ2bXZlSGNTZWtROU1kYXdVWmVKMENLY1g4ak9SRGJKNlVjVjdMdEExUFRiV05BSjBnTUt6dm96MlHSAacBQVVfeXFMTzBYYWh0aW9ENjltOWxQNURCbHVKRU5nQklCUGgwamVRTkVwNGhldUs0anozUV9fbjdtNGNJaWdoSjNaN0FJVFBvcGc3b04zWExWWEJoUU5GMGJwUy12TnZ2S3ZGaURQd2JmRHNxNWxZT1FDTnNJQVZuQ2xHWlFpRHhHakxqS3llelJhVWtZOWpIZ0Uyb1R5bUEwUHRUa2VlLUFjQUEwQTg?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — US measles cases",
-      "summary": "A child has died from measles in Virginia, the state's first such death this year. Breaking News, Latest News and Videos reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-975a60319dac4b7e",
-      "title": "United States’ Measles Elimination Status Revoked - Respiratory Therapy",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxNTVZTSUtfQlZWT0FhbVB4MkVOQVlKTHB0Y1I3QjZwUm1LRXd5WWM3ZmJfU0gzbG15R1g2MmFfa3NQWGdkcXRVZXFFMDc3SlRwTzdzSDVHd05pVzREYWlpYmpXZ2hXcnNJRWVidDlfRjE1YnA4UktNWkQxTUgxUEs5Z3o1dnlmdE9Qc044ekY5NHoya29oM2Y4NGtEM2FWYzNmT2VPejhTQk54d1Fmc1RiY0FJdmVvSmdlcU10WUc2WXJNdlVmX3pRbzlSTnpDSjNoczRz?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — US measles cases",
-      "summary": "The United States' measles elimination status has been revoked. Respiratory Therapy reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
