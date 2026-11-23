@@ -1,18 +1,6 @@
 {
-  "lastFetched": "2026-11-22T20:34:58.131Z",
+  "lastFetched": "2026-11-23T09:08:44.466Z",
   "processedIds": [
-    "who-391b9237ebea1488",
-    "news-c3d9b934d3216853",
-    "news-fba5399416f01a08",
-    "news-a295b06162936ac5",
-    "news-d25741ea9d2e8ee0",
-    "news-ed242ac1c70ed11d",
-    "news-84cd03a7f519d08a",
-    "news-6c46587fd2947857",
-    "news-4cde3817d53e7e7d",
-    "news-a18dbf73bab7fe44",
-    "news-18be9a206cf2a4b1",
-    "news-2c2a0d32189d494c",
     "news-3a9b92708a6028ca",
     "news-875d1dec0cecd933",
     "news-d73439c1570bf608",
@@ -1000,9 +988,51 @@
     "news-3fc42d303bfbb539",
     "news-a31148a18ea32b6f",
     "news-73b283085e449b56",
-    "who-42c260d74ed2b89a"
+    "who-42c260d74ed2b89a",
+    "news-dae1b4e262790b0c",
+    "news-990c48772fee806d",
+    "who-998129a44fc7c7e4",
+    "who-0d2aa5e7a3bad705",
+    "news-a6631b1d93fb9de7",
+    "news-77516a8e5de97ea5",
+    "news-af0cd305522bf651",
+    "news-195f71259c61040c",
+    "news-998129a44fc7c7e4",
+    "news-19d5d5b43679ecb9",
+    "news-9a3fcd15acb05c32",
+    "who-0cf6a23205a0b689"
   ],
   "recentItems": [
+    {
+      "id": "news-a6631b1d93fb9de7",
+      "title": "Fields of graves: Hidden deaths reveal scale of Ebola disaster - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNlE5NnFHMFEzZi1GQmhXQXlJWjJDTEl0aVNEb1VNdHZQRzJSWXpUUndSRkV0WXpjR1M0eHQtRFFrX0ozOTJDTTNBNDBsLWlzNXdOVDl5M1FwNC1vSllHaExHeVVjZGxCWmNMTndLX3pqT1NScWVXSHdRaHdlRFBVblFMRWY0c1lpcGJEakpaZUkxT3FDZUNHMDluVVFjZkZUMTZ0SHNSbGd0UQ?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Ebola death toll",
+      "summary": "Graves in fields reveal hidden deaths that expose the scale of the Ebola disaster. Reuters reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-0cf6a23205a0b689",
+      "title": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWnRzTUswaFhqTWIzUVhBY0ZZLV9nTWx6Y3hER3ZRYmJnWjJXZjJId0NuVnltWEEyMjlQbTVVU3FIcE1aYWdpR3U1azJHNjkyR1MxYVVzaXFXTEtUTzVBTmtkTWI0SmpmTXU5U2JEWDdBZElDSEpZd3RYamFjbHA3c0RVbmxyZWJ1ZzVBTmlQYUJiaVZZSF9wdDFteXQ5cjItdi1VWlN2WEUwalVXd0lXVm5HZGhRSDjSAbwBQVVfeXFMUHg0S1g4VGt0WGlPU0E3dDRjQ3JENTJvVHFSUXd1TUhIenFEZ0hzZWJFa3RSNm00Q0NJUEdfd2ktOFBXS1lvNUVWR0I1Q2ZIalZiTkR2RnRkOXppZFNXSmg2RGNObkdyRUNyeExNTmVvSU9fX1VtZnVkMDNqaGZXUWtwRXc3eldJZUhjcWNRRkpLQ01rd0ViYl83Rlp3YmJsS09QQmt5NndRTGRUVUdTUlBWLXFhb01vc0lwNkk?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — WHO DON",
+      "summary": "The WHO chief called for peace amid heavy fighting in an Ebola-hit DR Congo region, Al Jazeera reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-195f71259c61040c",
+      "title": "WHO to Begin Ebola Vaccine Trials in DR Congo Outbreak Zone Next Week - DNE Africa",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTl9VclAzX1g5VW1xRlNFdjlJZU5RZWJCbEJydFpSY21WNFM0aEhPRXNvY0ZvaENLRS1PY1czUU04dFl4eE9QTWFWVFZYdUl2c0dIVDdBVDZLUFZTUFREUTJjVFdabElBeTBmcjlzYzF2dmdUUmNBMDhUd2p3OVZ4c1RnOHpEWDM0UTBQT0hLVzVpNzZXcldIS1dEYm1HVE12b3NKb2Y2RQ?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The WHO will start Ebola vaccine trials in the DR Congo outbreak zone next week. DNE Africa reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-3fc42d303bfbb539",
       "title": "Ebola Outbreak Climbs to 11,645 Cases as Deaths Near 5700 - Contagion Live",
@@ -1084,6 +1114,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-998129a44fc7c7e4",
+      "title": "Disease Outbreak News: Ebola disease caused by Bundibugyo virus- Democratic Republic of the Congo, Kenya and Nigeria (20 November 2026) - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMihgJBVV95cUxNSzA1LVhFb1lHbnBEclRWVG0zclV0MHhqTGU3SzlfcDhhUGYwT2taTjNWLVhRcV9FTVdpTmJNZEFYTXNVSEE0SFQtWndjVnZlS1RveDNaejhPLU5vS1lpa010d2tyQ2lWZlNTNW9lTEVTSGFUeVVlaTE4VTdBM25fdnFUNGxWX0Zyak5vaHkxaHlyNzA4LXhISDR3TUFJYzJqVE1adXk3ZW4xTkNhTmUydjFoYm5HVS1OVkU1U0gtVnZ0Q29kQTZyaEVJUHBXVUFmc1FNT3FXWGFWNmtnaXhuRVhqdGgzR3dENEQ0Qm5CdXV6LVVDcC11bEs4YlpvbnJ5cXJYMFlR?oc=5",
+      "date": "2026-11-21",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "An Ebola disease outbreak caused by the Bundibugyo virus was reported for the Democratic Republic of the Congo, Kenya, and Nigeria. ReliefWeb reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-a31148a18ea32b6f",
       "title": "What is Ebola disease? - NaTHNaC - Travel Health Pro",
       "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5wbEw0RzREU01EbENiOGtkZ2VQNTJtTGNHZmVleUs4OGIwQk96a3MycGZGd2dDSU5qa1RRang4RDYzQW5ucHVYSDBlTnMxalB2RVIwNlk1VGw5TWRVa3c?oc=5",
@@ -1144,62 +1184,22 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-19d5d5b43679ecb9",
+      "title": "Multi-country Bundibugyo Ebola Virus Disease Outbreak Situation Report No. 27 (9 - 15 November 2026) - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaGpEVnJOajZ0bDR2dTNzdkpsSzJFTTRBTTh1RE1vaVRoVW9PTW1QaEN6NE45LTVQZUl1OXhBcXl4ZFVNT1EzRkl6OTFtQ09pdTFKeFRDYVptTXp0aVlJYmJkMXV1SjZ2SDlwVWF1dWlNXy1abEpZS2hpWHFIRTU0bVZNTG1Vb2taX2ZWRHA4Q1FrTnkya0hIdUtEZ3JlWWszdHdCU2Y2Sk42X1M2anZKckFzcENqYlhOMWdhdmEyYWtremg4VkZlLXNsLU5vQzY0b3dHcllyck9xTVEzUnV2WkdMcHk?oc=5",
+      "date": "2026-11-20",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "A situation report on a multi-country Bundibugyo Ebola outbreak covers the period from November 9 to 15, 2026. ReliefWeb reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-3e50f1d0cc53b0b9",
       "title": "Analysis-Scientists are learning more about the rare Ebola virus in Congo outbreak - WTVB",
       "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3Y1Um11bzN6ZWxYeG1xY3pOcHd3OTdNZFNVZzZLdURrLWpBVnBxUm1CZGFKQnlhb05NRHJMRVM0Mkk0LTZhYlhtOE9YLXF6ZTd0RjFBZGp2VXZEaUJOLU1EekpRS3QzTVFLX2JEMXNOX2Q1M2RYOThERHUwRzhMV1E2Z3luMjVJcjZhYkxRRkxsUzZuRHppWnZYQW5fNVAyNzJXWTdicGhRY1NYNkZoVFRhaw?oc=5",
       "date": "2026-11-20",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Scientists are learning more about the rare Ebola virus in the Congo outbreak, WTVB reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8a4978eb73c0a1e8",
-      "title": "Why the current Ebola outbreak is proving so difficult to contain - Imperial College London",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxNNkZ5SG1pUjc2SkhwVWVBb0dKU0k2dWFBVTc0UEtjWk1pQzRHb0NMdXM2alMzVmRma0FEVXhjejRiUU1uTkc4YjA0QlhzWVFLSE4tVjQ1YlN6UHhQLXlhQ0JoS3FuTE55TmlBV3NxTjF0ZXBpdWN6WmNLT3J1WDM3SU82cERFdmllVWg4ZUJHY3AxSE1oa0h2UVptYlppZy1ZR0txakhveU96cGFyMl9YZTF3?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The current Ebola outbreak is proving difficult to contain, Imperial College London reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-933f1492b87522c2",
-      "title": "Scientists Track Rare Ebola Symptoms in Congo Outbreak - JournalArta",
-      "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxQRVJOY1FYNGtsdnNvX2lqc3laMnlYVUtoZXZQLTM2S19hWFRfeWhOdE9JNG4zT1pfVUlKdnU3SkFCRDVTdnRzTm9nVTkzR0dGWTBjaTlQVEFxT2ZLZUJKLU82MWNjaHFyc2VaTVpyNnVWclJXRU54eDUtbC1YWURvYmpJMmR4aUlwWkVnYg?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Scientists tracked rare Ebola symptoms during the Congo outbreak. JournalArta reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-9970858960281d4b",
-      "title": "Human movement emerges as key predictor of Bundibugyo Ebola spread - Digital Journal",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOWm9iM0x4OUxGRV9TeTAyTEtrNjlDWmRNYV8xM21WbEVCaWVKNWhoODVKTUl5cHpDaW9OQVNiMUctM0JoSllHSnZISVozRk1IZnIyZm42cnV1dXBFVF84eXBsZXVTSFRPOTFBdkhfMzJrSHdCenRGOGJNc3RGSk1mT0lPUVZfclE5QWF1SERIcHRubTVwZ2ppV0pUVGdaTEpxeDEwdnd3Y2lmQQ?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Human movement is a key predictor of how Bundibugyo Ebola spreads, Digital Journal reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-997707861fa826f5",
-      "title": "South Sudan strengthens readiness for Bundibugyo virus disease - WHO | Regional Office for Africa",
-      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxOOFJxVm41SFltclhSMUR5Zll3Y083WGxCWVNhRlE5WXB0WHFVb3kwNDZoVTgtMVRZNjhzcjNrNEE5djFCWENPaU14WXVmMUR4Sk5Yc0RReGR0Mjh0SDlrZEZGbVZkemZoOG9DeG93VVFJT1dDRkhPUndmcHBYdlJCTWFQdjRKVW1NSTMzQnJ0NmJvRjh0Mk04ajF0clFrVnZGZmJWcm1uLWNoRk4xTFRV?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "South Sudan strengthens readiness for Bundibugyo virus disease, the WHO Regional Office for Africa reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-afc13fdd68344774",
-      "title": "Health: Scientists are learning more about the rare Ebola virus in Congo outbreak - Gulf Daily News (Bahrain)",
-      "url": "https://news.google.com/rss/articles/CBMitgFBVV95cUxOT0VxRk1uTFZnREJXWEEwLWJmVmhjZlZhWUJvUE1EeE5rajd2ZTUzX0thWExwMUJ2cWV5VkJzajlQbjZVRlB5bklDSTBDS3NRMENpZjVPU3hSN2FsRGRlNGhwV1dubVhRMFc1b21tVm9BZmZhTVQwclZyeFdiNXF6eGxvNFpoOVJlOERmSDJnX0E0RHNxQlRFMVY5MmtQaXFWbU1wSkRCUUtxSE5DRGlRMXQteTMxZw?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Scientists are learning more about the rare Ebola virus in a Congo outbreak, Gulf Daily News (Bahrain) reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-22T20:35:03.385Z",
+  "lastFetched": "2026-11-23T09:09:04.358Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -708,7 +708,9 @@
     "news-fc5a443ea2ff2e1f",
     "news-351848f90cd5c03e",
     "news-caeecb758689987c",
-    "news-5f561a5a77f84778"
+    "news-5f561a5a77f84778",
+    "news-893271dabf8b51cf",
+    "news-c764cdde0278be21"
   ],
   "recentItems": [
     {
@@ -728,6 +730,16 @@
       "date": "2026-11-22",
       "source": "Google News — measles outbreak United States",
       "summary": "A child who tested positive for measles has died, Virginia health officials reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-893271dabf8b51cf",
+      "title": "Tragedy in Virginia: Young child dies in state’s first 2026 measles death - Jang",
+      "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNlBuQXd6MmRieXdmeml3cGdWaVdwN0R3RExwbmVobmdZd3JvV1N6b2t4M2VtUWFMNUpKVE1WclZVWUlzbWtObnJsS0IxMTdNQ3ZvbGdKS2o3aVB1ZzJfdEtMZFBSZVppdncxVDFNXzJkcjR1c2dIYUV6aDIwQmdMLTAwcDBYYm1hdVVkdER6S2cxcXVESV9PSEFISmFNNmoyZUJwQ185ZVg?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A young child died in Virginia in the state's first 2026 measles death. Jang reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -898,16 +910,6 @@
       "date": "2026-11-20",
       "source": "Google News — measles outbreak United States",
       "summary": "The U.S. lost its measles elimination status. The American Action Forum reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2565d43c3d740075",
-      "title": "Young child in Virginia dies after testing positive for measles, state's first measles death of 2026 - WTVR.com",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPV2NkOVhEbGh0R0xveFZUa2FTTUNEeHRFWjE0Z21BaUNFTjdKNWdkRnZDSmJGazZJbHBZMkoyM1lGVUgyaGVKOE9aZlp1MndhSE4tVV9WQnVYYmhDNm1KWE9KT0ZkNlYtOWxORHZYUU9GbzR4bnh0bS1VVld3MGVEV3V5S2lwb0tlV2pfQjZMNXNIalhVd0x4WHlGN3l3NmRhZ3Z3ODV4MXdjbTdLRDNOSVllcFlhQW9hakFpMzJn?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — measles outbreak United States",
-      "summary": "A young child in Virginia died after testing positive for measles in the state's first measles death of 2026. WTVR.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
