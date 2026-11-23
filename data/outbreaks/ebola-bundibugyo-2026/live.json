@@ -1,12 +1,6 @@
 {
-  "lastFetched": "2026-11-23T09:08:44.466Z",
+  "lastFetched": "2026-11-23T20:41:33.554Z",
   "processedIds": [
-    "news-3a9b92708a6028ca",
-    "news-875d1dec0cecd933",
-    "news-d73439c1570bf608",
-    "news-48a231bc183a4754",
-    "news-92a851697e47ed15",
-    "news-a58a9af412faa8f5",
     "news-1e20d22937b2ce82",
     "news-2a8f2a13440e3418",
     "news-14350319750c8ba3",
@@ -1000,9 +994,35 @@
     "news-998129a44fc7c7e4",
     "news-19d5d5b43679ecb9",
     "news-9a3fcd15acb05c32",
-    "who-0cf6a23205a0b689"
+    "who-0cf6a23205a0b689",
+    "news-44068eba87b2611c",
+    "news-3ae422587ca2d6af",
+    "news-6192b6274f87be4a",
+    "who-4cef9d1e718fc638",
+    "who-14fe104374ddb1bf",
+    "who-1081b2827a74b175"
   ],
   "recentItems": [
+    {
+      "id": "news-3ae422587ca2d6af",
+      "title": "Watch: Why Hundreds Of Ebola Deaths In Congo May Have Gone Unrecorded - tippinsights",
+      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNX04ydDVWcXRNVDFXT1VzTDZMdm56VmwzZGJvc3ByWW93TUt0UFhaTXJHOEdpTnZDUXZEdWtFZWxIWHhLZWh5U0UxUFdpeEZoNjdTNW02R1ZTQkJSbkY1VFZPMkRsd2lCRzZZZ2lXN21hR09yUkxaOUQ2aG5SWGh3QlBiVjdwRUlWeWc3aHJBcFFYV0I1b0JLVnpR?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Ebola death toll",
+      "summary": "Healthcare system failures may explain why hundreds of Ebola deaths went unrecorded in Congo, tippinsights reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-44068eba87b2611c",
+      "title": "The missing deaths of Congo’s Ebola outbreak - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9HMnAzMW85TERRNmc4RHlMUy1kYzB4VmlLWVJZRG5ZSm1ZNWhUNmpSZmMzc25vcXRrUjJHdGYzTGpsMDBvb1RZcFNlMHNJd2kwS2JwUWVMekZtTVR3WVNtYnBhQ2pROWM?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Ebola death toll",
+      "summary": "A review of official data found unreported deaths during the Ebola outbreak in Congo, Reuters reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-a6631b1d93fb9de7",
       "title": "Fields of graves: Hidden deaths reveal scale of Ebola disaster - Reuters",
@@ -1020,6 +1040,36 @@
       "date": "2026-11-23",
       "source": "Google News — WHO DON",
       "summary": "The WHO chief called for peace amid heavy fighting in an Ebola-hit DR Congo region, Al Jazeera reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-1081b2827a74b175",
+      "title": "Ebola Outbreak With 50% Death Rate Is Getting Worse: Three Key Reasons Why - Newsweek",
+      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSDVrbU1iUVNSNmZSNEdVM0RLc0RUOGt5U1d4dG5vMXhuWDF6Y3VVM0lfR3BBNDB0bzZwZC1rVktPYmJiX0ctZjdMWmFCcENYRDc4UUIxd2QyZDZxRWg5VVJSeDhpajhoZjFNRHcxU0lick9EQndFWGlwRHV1Q19ac1FvV2xHQnU2aEJmMF9rdWZUYVFDSjZtdFpvRTJKWlNoZFlfQ3RQNVl5dw?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — WHO DON",
+      "summary": "An Ebola outbreak with a 50% death rate is worsening, according to three key reasons, Newsweek reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-14fe104374ddb1bf",
+      "title": "Why the Ebola Outbreak Keeps Growing, According to Virus Expert Pardis Sabeti - Time Magazine",
+      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPejdIaUpEbUdBOFFNdnJONkJWR2ZrLWlJRTBRZkZGbDhJUkdYdnRhZm5iaWdZd29fZ1JDaTduU3lUZ2VXM1pNRTIzdmZseVphYWdtdll1cHhZWWVxNVlEV1V2R3dQSmJpYUNZaElmU1Y3Z2lVZUtSd0hIdE5HWENaZ3dDNmdRNzRUeXBWYjdXYzRTakd4V1cwZQ?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — WHO DON",
+      "summary": "According to virus expert Pardis Sabeti, the Ebola outbreak keeps growing, Time Magazine reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-4cef9d1e718fc638",
+      "title": "The current Ebola outbreak is growing faster than any outbreak of the disease ever. How can it be stopped? - Scientific American",
+      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORzd1WnNWbkRqWnJZLWNybnhTOW1zLXdQZTF2ckN1c3lueXdQck1FWUVKa25FaUlEZkJpcFp3V3d0by03RGFaVlpWQVJUcGRYTmRmMVpkTXhMUEpiSU4zMW0zc1pIWWR3MWtkLTlwYVMtRnhnNWtnNS1VQTVhczhfbDRMQjZnbExJRDR3?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — WHO DON",
+      "summary": "The current Ebola outbreak is growing faster than any previous outbreak, and scientists are seeking ways to stop it. Scientific American reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1150,56 +1200,6 @@
       "date": "2026-11-21",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Scientists are intensifying research on the Bundibugyo Ebola strain during the Congo outbreak, سانا reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-d7d1f8d558fc2095",
-      "title": "Beating Ebola takes more than medicine – I saw what worked in west Africa a decade ago | Kayode Akintola - The Guardian",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxPcHFib0tBUHVVOTQ0c1YtLS1kTTJqZGcxZFAyS1hjWnlCLVZlLUdUSVFLcmd6bHBQMWRKbDM5Nm9zaG5VRHNTeElUaUlyZ0JWN2JTRklub1VuQ1NkSk1HeWZDTDR1RC1WU09Ob3BadUZaU0FidjVkMkJnWDNiWmtxLTFUZXBucVF2MDlDZTlUT1NmZkJK?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — WHO DON",
-      "summary": "The 2026 Bundibugyo Ebola outbreak requires more than medicine, based on what worked in west Africa a decade ago. The Guardian reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "cidrap-72d76a398d5edc76",
-      "title": "Uganda, South Sudan intensify efforts to keep Ebola out amid burgeoning DR Congo outbreak",
-      "url": "https://www.cidrap.umn.edu/ebola/uganda-south-sudan-intensify-efforts-keep-ebola-out-amid-burgeoning-dr-congo-outbreak",
-      "date": "2026-11-20",
-      "source": "CIDRAP",
-      "summary": "Clinical trials of three Bundibugyo Ebola vaccines could lead to a breakthrough early in 2027, according to the head of a global vaccine organization.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0b5cf9f94c96f8d9",
-      "title": "South Sudan strengthens readiness for Bundibugyo virus disease - Africa.com",
-      "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxPWERkTlRVRzdKYXdjeklic1MtNGhQcHhTQWs1SVV6amoyMDBlamJ0a0tCdjAwanhRdnlMSHpncHVfbEZrWWZUWU1tekxxdGJQUDZJbW8wZ2kteHcza29KR1NlTjRIcmh1dV9pSC1tY2dNVWR0UGdHcVJ3LXUxVGdqalNBb195V3huTTU5d293?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "South Sudan is strengthening readiness for Bundibugyo virus disease. Africa.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-19d5d5b43679ecb9",
-      "title": "Multi-country Bundibugyo Ebola Virus Disease Outbreak Situation Report No. 27 (9 - 15 November 2026) - ReliefWeb",
-      "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQaGpEVnJOajZ0bDR2dTNzdkpsSzJFTTRBTTh1RE1vaVRoVW9PTW1QaEN6NE45LTVQZUl1OXhBcXl4ZFVNT1EzRkl6OTFtQ09pdTFKeFRDYVptTXp0aVlJYmJkMXV1SjZ2SDlwVWF1dWlNXy1abEpZS2hpWHFIRTU0bVZNTG1Vb2taX2ZWRHA4Q1FrTnkya0hIdUtEZ3JlWWszdHdCU2Y2Sk42X1M2anZKckFzcENqYlhOMWdhdmEyYWtremg4VkZlLXNsLU5vQzY0b3dHcllyck9xTVEzUnV2WkdMcHk?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "A situation report on a multi-country Bundibugyo Ebola outbreak covers the period from November 9 to 15, 2026. ReliefWeb reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3e50f1d0cc53b0b9",
-      "title": "Analysis-Scientists are learning more about the rare Ebola virus in Congo outbreak - WTVB",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxON3Y1Um11bzN6ZWxYeG1xY3pOcHd3OTdNZFNVZzZLdURrLWpBVnBxUm1CZGFKQnlhb05NRHJMRVM0Mkk0LTZhYlhtOE9YLXF6ZTd0RjFBZGp2VXZEaUJOLU1EekpRS3QzTVFLX2JEMXNOX2Q1M2RYOThERHUwRzhMV1E2Z3luMjVJcjZhYkxRRkxsUzZuRHppWnZYQW5fNVAyNzJXWTdicGhRY1NYNkZoVFRhaw?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Scientists are learning more about the rare Ebola virus in the Congo outbreak, WTVB reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

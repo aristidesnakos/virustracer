@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-23T09:09:06.584Z",
+  "lastFetched": "2026-11-23T20:41:46.850Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -128,9 +128,20 @@
     "news-a309014155daea58",
     "news-13c2104ce72826d9",
     "news-ad3c934ffeaa7ba8",
-    "news-f58e11619fe77341"
+    "news-f58e11619fe77341",
+    "news-b74079918671b7df"
   ],
   "recentItems": [
+    {
+      "id": "news-b74079918671b7df",
+      "title": "Candida auris Cases Confirmed at Wong Tai Sin Hospital, Enhanced Infection Control Measures Implemented. - 巴士的報",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNelA5Y0x4Y3ZIMXZES1FhTXE3X19NZnVnaWU5a2Y0RWEwMmlwREdSUEg5WkN1QUV3TjBIdUM0SlhuZngxSnVMMGIyd3prWGZ0cEFQaTE5MS1zNk9YS2FJUmxtd3hGZVhMX1htdmdISUdKaTBOMURaYVBxZEp6TEJlY19OM3dzb3E0SS0tSk9LMmNpMGE2R0NaTXBkc05vRW5JZGI5VjlTM3g5R21RR2FobVhDcEFjMXk5U2FYU3VjVHZ0dzdidldRZHBtdFNIdGtnMUpIc0Y5bTZ3QWNxSEFBdUlHek9EM0MxeGc?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Candida auris cases",
+      "summary": "Candida auris cases were confirmed at Wong Tai Sin Hospital, leading to enhanced infection control measures, 巴士的報 reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-231026325ead71e6",
       "title": "Candida Auris Fungus Spreads in North Carolina in 2026 - Hoodline",
@@ -318,16 +329,6 @@
       "date": "2026-08-08",
       "source": "Google News — Candida auris cases",
       "summary": "The CDC warns of a surging drug-resistant fungus in U.S. hospitals, Live 5 News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a309014155daea58",
-      "title": "Drug-resistant fungus spreads to 23 states including Wisconsin - Wausau Pilot & Review",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNc2pBa3FrOXRVSXpBa2JtM0pYODFQSEVReHhKMTZMSlVrblNMQ2lHUXhaZ3VKRV9kemJ0OTZhNVJkVEtSaU9BdjBLc2p6WGxVd2FmTk5uNnRWOTU0RGk4MHhxbmJtQWVZX2ZQWDBjT0ZWWl8zQWtnaHBUWDhWclBSNUw0WFFaVmJtNlpOSFBDVFlhZ196NnZEWUNCazFFdGhOVTItMGtsUHhXSEU?oc=5",
-      "date": "2026-08-08",
-      "source": "Google News — Candida auris cases",
-      "summary": "A drug-resistant fungus has spread to at least 23 states, including Wisconsin, Wausau Pilot & Review reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

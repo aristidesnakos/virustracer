@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-23T09:09:04.358Z",
+  "lastFetched": "2026-11-23T20:41:38.290Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -710,9 +710,136 @@
     "news-caeecb758689987c",
     "news-5f561a5a77f84778",
     "news-893271dabf8b51cf",
-    "news-c764cdde0278be21"
+    "news-c764cdde0278be21",
+    "news-8aa3c5f37e585cc7",
+    "news-40357ec94a4c6ad2",
+    "news-ae9571ff1cad7ff9",
+    "news-656a52d4317bf420",
+    "news-c08baca4aa164efc",
+    "news-ec7596efdefcee5e",
+    "news-766f005ba5b908fe",
+    "news-15fe0916a7c17432",
+    "news-590609c542592141",
+    "news-b506679c7f4bdbf8",
+    "news-7c345e5fbaf9006d",
+    "news-4a9a8551b775f770",
+    "news-38c2f6071140b445",
+    "news-8e0c800d68dce59d",
+    "news-dada2399e8ffabdd",
+    "news-5b3f3e44ff594af3",
+    "news-6dd3dcc4f3ae9084"
   ],
   "recentItems": [
+    {
+      "id": "news-15fe0916a7c17432",
+      "title": "Pennsylvania Reports Ninth Measles Death as Outbreak Reaches 1,638 Cases - Forth.News",
+      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9zRFhseHJmVW5mc1pGd0xBZzh6Z2xlX2hfYVlrZlhET01fM2FyZDlqQW8xXzRqa0pIdFgtamlOdzV0LV9PbDFuNmJKZmFyaS1SNFlXZ0k2aGF4aDRJdzBzSTR3?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania reported a ninth measles death as the outbreak reached 1,638 cases. Forth.News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-38c2f6071140b445",
+      "title": "Measles-Related Deaths in Pennsylvania Rise to Nine - U.S. News & World Report",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQjlPYWt6STZGaHdZU2JzUDUtOWdJRjY4S1dBN3k1V1FONzF1MGw4ZlBfcTJhNzVNc2FmUXh5bm1MeWxoLWlnTHROYkxoaFRpb2R3cjB6RDFGeWN5OGc0eHdkMGo4ZHY4TEpoUVpSY3pxd1dvMWhHWS13SEpFSmpwQmc3akJjWThGS054SDY0WFVDV3YyS0c4R0E0eFh1RGVJeW1CR0VybDZSOVhP?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Measles-related deaths in Pennsylvania rose to nine, U.S. News & World Report reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-40357ec94a4c6ad2",
+      "title": "US measles outbreak prompts bipartisan call for more wastewater testing - Louisiana Illuminator",
+      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbHo0N2hfMlh2U0x5Zk5IRGZVX0E0Y3FEcE0zVktIX0VyZXBaNG5lR2h1MUZ3MkR2aGs5c0YxYi1USEQtREVZOVNNdU04cS03bVg0VnYwYzMyS2RxeUx6dldJdDFoRkdSdTZzVVMtN2tLWF9mRFBHUXFDdHd0cXRmaGZyaExBTDZFSDNweXhGcFhrY3dVakdUc2tKS0N2VDI3UUpia09BS2RNMHFrN1E?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — US measles cases",
+      "summary": "The US measles outbreak led to a bipartisan call for increased wastewater testing, Louisiana Illuminator reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-4a9a8551b775f770",
+      "title": "Measles Is a Growing Risk for Adults in the United States - The New York Times",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZGtaQzBHT0syWURzekZ3WkxPWEVlcXFlZXRGVXZHNGh1akRVTlA4c2dxNHlJbzNNWnBIekU5Wi1VRkhOUEhNU0lPNmRsVnE2TXJIVURzYkFWektCTk1fVXMwQmFBMmdpUXdUcndKemV5R2g4eXBRVmRzSnN6S0c3QjRVN28?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Measles is a growing risk for adults in the United States, The New York Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-5b3f3e44ff594af3",
+      "title": "Virginia Reports First Measles-Related Death of 2026 as US Cases Surge - SSBCrack",
+      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQQnVMTTlfVEF0dktjVXJRYmx6amtfSDNlbnBFVEh0SUlnQ2FocDZZX2lwcmtwb3NRYnVwNGNNTmlGU1Vla0k5X3B3ckI3TFhZOVBITktCb3ZicUx4NnJBYXA4MmpKcHJVS21kTjExS1BHNlc1aGFRM0ZHbndxYVdzYnBlOGFFVHRBYUZXNTJHbW4zWXlLZU9aN0o0eU5uZw?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Virginia reported its first measles-related death of 2026 as U.S. cases surged, SSBCrack reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-766f005ba5b908fe",
+      "title": "Pennsylvania Department of Health confirms ninth measles-associated death - The River Reporter",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOQmp4R0w3Q2tqd0pNVUVSWVU0M0RKNXNNbkpXM1lxTEtsb0pRNTlhYTZoVmI4VXFDd0t2SjduVXFMc3NVWV94T1h1ZWhKajNwZ3N1VlRlUXl3S2VpTVlFZXJNVExuU29fYzNRaWJ0UUZjZFdkdDQtQ0tZU0dSMjY2d1FvdVFOV2lGOWtOQy0wOC1BazY2N2RtQUhwN2Jtb1Fzc3dvT2xZY2p0dHpSQWRKVEJNLVU?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "The Pennsylvania Department of Health confirmed a ninth measles-associated death. The River Reporter reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8aa3c5f37e585cc7",
+      "title": "Pennsylvania reports another measles death as cases climb across 46 counties - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPRDdXNl84T3BpWkh6ZGk1WFgwQTJaYml4d3RXNDNheHRNNG91S3hTNlcxWENfLVlZNlhSM05hVUxHZUxEZGR5VnV3d2hBNm1VR2JxNEtxQWVrUmplUjJQY0taTGdwZ053QVV6TUR5MWhpcHBXcFAxOEZHUDAtdTJVS0lJaFZoSnhjUFY0emlXS0kzVjVDUnNyRk5lSlo?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania reported another measles death as cases climbed across 46 counties, Yahoo reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8e0c800d68dce59d",
+      "title": "Virginia Child Dies of Measles, State's First in 2026 - Nature World News",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxObThqdllCY0l1a2JneFFsWEVjM0x6ZlQ1WXRvd2w0ZGdfRDhkR1pZczk1OFRnRm9JRGNfZHRZbDd2YnNMZS1EYm1fSmFDS3NwOFhnbjRjMHAxcmh6OWpuX0o2aU02VzA5c3FkcE8xOWxOblkwX0xPSElEbjhQQTIycmJZS3V2bm9ob3I5QkhuVy1hUTc0SDRzMGdGcVctOGFha0g1d1hpV0lQZ0FVTi1RX3FoWlVzNzFm?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A child died of measles in Virginia, marking the state's first such death in 2026. Nature World News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c08baca4aa164efc",
+      "title": "Pennsylvania death toll reaches 9 as measles outbreak continues to grip the state - Pittsburgh Post-Gazette",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNWjlybXJuLXNFWkFyWElsTS1fNXRXbkZTOGVib3RuVk9nTThZdEFIdkpSWXpHMkNGM1RJMktvUEJOeFBGdDhiQ29NVzFBdFNLRWNUVkVaNGk4WWtNOWZ6QkhPdDZubF9rb0dQTFZNek9UaVotbFg1MDR5UE5qLXBFcE95RnBKZEIxWVpuNUY4ZkpITUJlSzctREdOLVhLOGhmb3pUdGQxM18xc1RRRjdhYWZ0Q0wwR2NzZnIxWFdYbjFYT2VpOHp0T29aQjB3OVBhd3NBT3FBMFZZbnFGZW1YNXB3?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "A measles outbreak in Pennsylvania has caused nine deaths, and the situation continues.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-dada2399e8ffabdd",
+      "title": "The U.S. loses measles elimination status. - Tangle News",
+      "url": "https://news.google.com/rss/articles/CBMicEFVX3lxTE5ONkVLUlI2QjVVUU9NSEpEbnJtME5VNWp6N3djeHV6c2xSV0RSWm0ycmRUbVpBSS1Ta2RoaXRCakZpbTUxX01wRG8zdHhpNXViZkVZMF9XRE5tdnlhT29QUlNEOWdVNFB3c2hhdXVLNlA?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The United States lost its measles elimination status, according to a report on outbreaks in 2026. Tangle News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ec7596efdefcee5e",
+      "title": "Measles outbreak claims 9th life in Pennsylvania as cases rise: DOH - PennLive.com",
+      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNVWFHZW9aaEFydUNNRFNVQUhpY2Z2TmVxdXlZWUZCVTJfeEQzeWJpUVJIVGJ6VzJKdUdUYmtTWUQwNWpoOVN6UldTdkFtWW9fWVBhY20yZ0lLN1BueEZ3ZUl6N3l1M05KdlQtc0ZoVHdPOFVtek1hMEd1czVRemZKeXZKN1dWQ0pSemNpYjRXNndpaTZrd0ZicEdyb2dqNExGdllnUlZqMkl5OGxlelhQMg?oc=5",
+      "date": "2026-11-23",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "At least nine people have died in a Pennsylvania measles outbreak, according to the Department of Health. PennLive.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-4765d1d661eb5d49",
       "title": "US Measles Cases Top 5,838, Highest Since 1991, with 646 Patients Hospitalized - Aktualita.co",
@@ -734,12 +861,42 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-656a52d4317bf420",
+      "title": "A New Report Detailed The Risk Of Measles During Pregnancy. Scientists Say It Was Quietly Buried By The CDC. - HuffPost",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZHdMaUNfbGpEaDUxZG5UN1c5S3gtam5xbFJOeFhSQTZoY1pYdHdMSldlUlJTM002cHRickd4WG8xcXJvNVp2VkdlRHpsUG1wN3Fxd1pYRlZEcUVqUDg1cm9DMXFSUzJoTHRiaFcwREpzR2l5bW1Cb0Rudks3a0hIaTFMSXY1YlVMY3ZiSVZKRVhZNW1ZMnNCSEh4TDFIdFlsY1c00gGoAUFVX3lxTE44TVBHMTN5c0hBbTU0SUw3endMTm1CUkRVdEFzNl9JR29ZdVlEVXZSRkJrQnVyZnFCQ1B2bFdGVHFQQXRnZG1GU3hpTDdFUjVTV1I0Y2FvSEhVc0IwUWNSU2JWT3JCS2dfYTZtVEVnWmhCXzNCcGhYbVp2SnVSUTFDWVp2ZVhTMGU2cnNTZ2puT19ic1Nuc2NyQU9iYm9zU09XRmZyMUlaaQ?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — US measles cases",
+      "summary": "A new report detailing measles risks during pregnancy was allegedly buried by the CDC, scientists say, HuffPost reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-6dd3dcc4f3ae9084",
+      "title": "Virginia reports first measles-linked death of 2026 in child younger than 5 - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxQWVVlY2JXaFRVTkdvVXZaR0hDRWlFbHdSdU40NjA5Q25SS25TY29BYkl5aTNPN1hFTFVHVGtmTllHcG9EQUQyV2hFVUxILW9EZUE4V2FYTF90WTRWVDRGZUdoLXZLeW50NGJpYUszeWpWcTQ3bmExNk1zSmdvUGR2SVpsOGlQcTJPT3l6RGo2STlSMGoyUktTR3VRZGxWajVEc1o5eDZlRUo3Z2VzNVpKSjNnSFhjQ0NQ0gG-AUFVX3lxTFBsQjg2RnZfX1ZodV8xaVc2QlRxVjBpM2xnQnkwb3RJNWNJNXQySlNlWGhSR0VaLTI1SFFEQ0tRWWRwSGlxemRVMGRiRWtJakFkT0R1RUw5U2Q3UUFpS1ltVDdQdlV0STk3b3A0VU5pa3ZqSzQtNzVwaVd2RFVmV2lVZVNLUEpUN0NhcjlmQm83b1RRUldKUExZaGx2c244bU1Fc3VnOG9MSy1JOUk2N3NzTWFlRHhJOHVWSVFHLVE?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Virginia reported the first measles-linked death of 2026 in a child younger than five, Al Jazeera reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-893271dabf8b51cf",
       "title": "Tragedy in Virginia: Young child dies in state’s first 2026 measles death - Jang",
       "url": "https://news.google.com/rss/articles/CBMiqAFBVV95cUxNNlBuQXd6MmRieXdmeml3cGdWaVdwN0R3RExwbmVobmdZd3JvV1N6b2t4M2VtUWFMNUpKVE1WclZVWUlzbWtObnJsS0IxMTdNQ3ZvbGdKS2o3aVB1ZzJfdEtMZFBSZVppdncxVDFNXzJkcjR1c2dIYUV6aDIwQmdMLTAwcDBYYm1hdVVkdER6S2cxcXVESV9PSEFISmFNNmoyZUJwQ185ZVg?oc=5",
       "date": "2026-11-22",
       "source": "Google News — measles outbreak United States",
       "summary": "A young child died in Virginia in the state's first 2026 measles death. Jang reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ae9571ff1cad7ff9",
+      "title": "US Measles Cases Surge Past 5,800 in Record Outbreak - Howl.Link",
+      "url": "https://news.google.com/rss/articles/CBMiO0FVX3lxTFBKd2ZnZEMtaFBrWFhxM2hxZDdrMWFtUFhQOHJUMjd2VXNpbHZ6Z0tZQ0ZtNmV2QXlVaWRR?oc=5",
+      "date": "2026-11-22",
+      "source": "Google News — US measles cases",
+      "summary": "Measles cases in the United States surged past 5,800 in a record outbreak. Howl.Link reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -770,146 +927,6 @@
       "date": "2026-11-21",
       "source": "Google News — measles outbreak United States",
       "summary": "Virginia reported its first measles-related death of 2026, The Hill reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2b145668060653f5",
-      "title": "US Measles Cases Hit Highest Since 1991 - Wisevoter",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxQQWhUbkhTREpsak9PckRHYTM5SHdRTlFfbjlTT3NUWXFQdURtaXRTSjRoQ0pSSVJRR0hURDJjVkpfN3lHWllmMkxLVm5nQTBEZDU1UGpNU1poQ2pWXzhSektvbkdIODNEajMxSnJrNWFYUkFjM1JPVzlnM3psNlBJdEdGTQ?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — US measles cases",
-      "summary": "US measles cases reached their highest level since 1991, Wisevoter reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-58c40563f4c9ab93",
-      "title": "Measles has made a comeback in U.S., but what about Rhode Island? - The Providence Journal",
-      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPczNic0t1b2h6Q19HMWM2ckNkeEgtTnZwMjRaM2FvNXpIenl1TU1yeU85SmhfOW1RbjVhZmhxQmZTQXpRNGlBOGhsY25iaThjODBVbTRlZERMLUxCNzBKZFFldk1ocHpPZThxQ3NCYXV4TlNHa0paQVVfOWduU1plWngxQ0tuNEc4My1LNjVOaFYwRkx6Zi1JYnpQYW9QNS1rbXVnZnE2bTl0MV9TT21nSzBhUHU4UTB3NlowUTVR?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — US measles cases",
-      "summary": "Measles has returned to the U.S., and its status in Rhode Island is uncertain, The Providence Journal reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-5b3327041c548411",
-      "title": "Virginia child dies as measles outbreak in U.S. worsens - The Hindu",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOUnd4MVNGLWlTOEF3d2hGRF91Vm13d0tVYzJmYVpZY29KTVhMaTV4YWFnQXRodjRsMmFzWG1NRkwxdE04emJwSGM3VWwtS1pkQTd0RXlVeVUxdDAzYVpHa0ltVVlIRnNEdkQ0dDctYjVmeFBXQm42dWs2T3JtbjFTWGtXUm50WlpVZDJ2aDF1OW1mZGtUSlpZRHRfZWtKb19lN1pFWFVBbjhIaUxTaGlXb2NuYVXSAbsBQVVfeXFMTjlZc29ubnV4WmhlY3UyaWNLd2xKamotVEVxQVB1LVhXdzIzZTRCZ3c1SVdERXZrdW5rUmtONDc5bEFfa0dUYklzWEl2cXNOc3dHZ3g3aTc3eDhGcFdyOXc5QlgwVFBDdDJfc0FKOFh2RXpOU2s2eURSMThSdXgtNUh6LS1McmhVczVCeDRnTE5BdVRpZlgxcmFWM0Z4XzhnQkRmZ0Z0cUpyUjE1R1RNVEdPWnhrNGM5Nloxaw?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — measles outbreak United States",
-      "summary": "A Virginia child died as the measles outbreak in the U.S. worsens. The Hindu reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8771aa98b4767db7",
-      "title": "Virginia child dies of measles as 2026 US outbreak grows - Rolling Out",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE9nQWNiTWdGQnA4X0RjV1pBR0lOTExodm5DSmZKcXFYQ1V2RGx0YU0zSnFNWFNFN2twOGs5a3NSaldCUEExbHdEUVRzZnFnMDVRUVpOVXE0ekVuVWlYTENWWnFLMENGeVc3c1hMUmItRG8xeldrMWxfbk5OVVQzbGc?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — measles outbreak United States",
-      "summary": "A child in Virginia died of measles as a U.S. outbreak expands. Rolling Out reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-96c3c15046097915",
-      "title": "CDC Declines Measles-in-Pregnancy Alert - Wisevoter",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNOGJMQi1kbV9uZ3h2QUV2ZEtFaWRNX016SUNFb0VlekZ0dTUxRUlMYTlVQkNab3FBc0M1eEx5eERFQTBNeFdtWlpfT0tFSjAyZHZoWF9XTEx4TUpRUnRsb195X3Z5TkZLRmdaYVl0aUU0OGJVQVdLd1VYNktsMElyaUhDMUM?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC declined to issue a measles-in-pregnancy alert. Wisevoter reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a60b9c2991f11178",
-      "title": "US measles hits 35-year high after losing elimination status - https://streamlinefeed.co.ke/",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxOdjBlal9MVDRoMHc4WjZ2TmRvUHU1M1lHaFNTdXcxUFVIb2N1WEpjNnRuZWF0ZW8zZkpBM2J3c1RiS3pJZmhqQTlNMnVWYTRuVHdIck5RMy00a0hMSjh2b2pESWpaV0xHNWxVNVRSTFJwWDQ3cGMzdTNYMlMyU2JYdTc2VGVEVzVNX0JJejhEYzZUV3l6N0xIWmZn?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — US measles cases",
-      "summary": "Measles cases in the United States reached a 35-year high following the loss of its elimination status. https://streamlinefeed.co.ke/ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-be8a0224d795b4ea",
-      "title": "US Measles Outbreak Claims Another Child Victim As Virginia Reports First Death - تسنیم",
-      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxNaERqTnA3SXFqU0w1TzhId2lGU2l2ckZKZEhvXzkwZ2o3WXVDZXdfYzk0Rl9IdFpGRVNfSmNlMW43MnBYYW5OOGhsb3VlSm0zU0pPUkZsOHdLZkNvN2hiR2tFN0JYN2xRMHZRbEhTaEpGalM0aWhEVG5CaksxN0o1cUdjbEFVZTRsWlVITUJPdl92T3FuajRpZ3lRU2RfVENEZTYyOEJWYXFfZlRnUkozc2RLd2RRUDNkdW9ZSE50LUIwOEJDTXVjajdkMG_SAdIBQVVfeXFMUFhISl9CdnNyVUxwX3M3bHdJbDUwVWtqSDVpM2Y5dzFmbHBuVThRU0JhYXVUU0tqTGNmYU1ySFhpaklTUlE0YUpFUnVHNFQ1Ums1c296VGJBRUlwcEg2N2M0d3lTUjlmdk9yUlJ0LWZHejVkbUloZTl6dmFMOW9ybWVCM0pJZDEzRFAtNmtvbF9OZ25VVjBaeGtURWNjQnVjMDFsR19Ib0pZWGFoemVoRlpvcHo4aVpKNnM4SkZlb0czUmpTeWpfenBYamc4MG1MbnhR?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — measles outbreak United States",
-      "summary": "US measles outbreak claims another child victim as Virginia reports its first death. تسنیم reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c5118537a09db851",
-      "title": "Map: Measles cases in each U.S. state - Axios",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBJTGFIRzc4akdjV1ZiTi1ickJvMjNKX1pzc2VENndYd0MwSmFxaTlEYW9HOVBfcTFBYWdrZGlUYmEwaGowQ1Z5ZXNEcWxwOFBMSFAwallBLXJSRTRlUFdEWndLR0t4OGlza2RWVDgyc3lkTG5uNEZhRjJQYnZsZVU?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — US measles cases",
-      "summary": "A map shows measles cases in each U.S. state, Axios reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d1ba02bece522241",
-      "title": "RFK Jr. vows to curb a measles crisis he initially underestimated - The Washington Post",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxQckhpUXNVWXJrVGVkeGZJYVh4aXN2VlV4UHR2SXJMS0V6WFlYVnBjRjNkRldNVDVzTVZiSkFoN3Jqdy01aEMyYWkxRFJSR2FQelg0UnFvcms2NzlIRnJvLWlsQnl1aVFkVXl2MGhRY09OYnNoZ0ZCUDN6cVplS0NhN3g4dHRUZ2JqRFU4QXRoMThiMU9xZC1NRWtOMExHWlJyUDlXUVVXZ0xRWkhsSmc?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The U.S. has nearly 6,000 measles cases, and Wisconsin has seen a triple-digit increase in cases.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-e30a228ef1d8086e",
-      "title": "Health alert | Measles cases in the U.S. top 5,800 in 2026, the highest total since 1991, as states report 10 deaths - El Cronista",
-      "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQOTEtUVBld2RYeF80ZkxCbmt6N0k2LUUtTTlCZFFReGIyX19fOW1hdjNfWk5WckZjdXJCdlU1bGdWVGY2QXkwTXNGRDZmUGJQenVSVkVvSHAwMUlYQ3A3QVUxYUE2eWx0czZBa3pSN0Zuc2xKaGxiTzlnOGc1S0xpd3BOclFEa3BUNC15SUo2akdxRk5ORjUtUmdGUmVTTHlxM3ZtTjh6ZFZwa2dEaVZWR0JNczhldjZjX29VYTRrOElfSTd3bnhFcDlDdnpGbklrZ3lrVFM5aWJPVENT?oc=5",
-      "date": "2026-11-21",
-      "source": "Google News — US measles cases",
-      "summary": "Health authorities issued a health alert as U.S. measles cases surpassed 5,800 in 2026, the highest since 1991, with 10 deaths reported. El Cronista reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "cidrap-48379306b39568c6",
-      "title": "Wisconsin sees triple-digit measles increase as US nears 6,000 cases",
-      "url": "https://www.cidrap.umn.edu/measles/wisconsin-sees-triple-digit-measles-increase-us-nears-6000-cases",
-      "date": "2026-11-20",
-      "source": "CIDRAP — measles",
-      "summary": "The US measles case count now stands at 5,838, and Wisconsin has seen a triple-digit increase, with Amish communities among the hardest hit.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1980fc292840a8d3",
-      "title": "Young child dies of measles in Virginia - WTOP News",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1QSlZlNE8xelVSVFkzbjdaVzRVWlJFZUdKRkZ1aWgxeWVLUTNxT0dYRS1WTVQ3UjltZm0tdW5TckhOSzVISmtsOXZiQlRBU3JDWG9nam5rd2xpdldrSUVQLTZCYW5nZ1NoNVJhRzV3c0hHWVlMM093YW9RSmstUTg?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — measles outbreak United States",
-      "summary": "A young child died of measles in Virginia, WTOP News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-25132d53b72d6c15",
-      "title": "Virginia reports first measles-associated death of 2026 involving young child - The Jerusalem Post",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE53WFNWckJ3OXVFbU9hQWRQRUxReTJYYVNvODVhQ1JkUU0wY0tiQnhFd0MyX3FoLXhCSG5XSkVuUnc0R1Y5ZG92dHFVY05vT0dBZ0VEeS1RYkdKeWc2Nk9tUlhJV0hVQXc?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Virginia reported its first measles-associated death of 2026 involving a young child. The Jerusalem Post reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-253d59eb05dbe767",
-      "title": "The U.S. Loses Its Measles Elimination Status - The American Action Forum",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQdXBHX3Zmc01MRFVZeDN4MmNoVnl6WGt5bmszR1lCdkl0LTQxTkJjS2ZYclpGdUJPbVBGWUI0ZEJqZm1TSE10enJwWXdLbnZ6QUtZN3plcFcwSWJlMUMxTUFqYnBDb0RxV0RnLW9rWTBnZXU5clBRTzc0VHd4bEVZZEY5aExYWS1DNkM0aHd4TmxmYUJNZzB3Mzk4VGc?oc=5",
-      "date": "2026-11-20",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The U.S. lost its measles elimination status. The American Action Forum reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
