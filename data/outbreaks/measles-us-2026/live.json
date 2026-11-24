@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-24T08:54:16.346Z",
+  "lastFetched": "2026-11-24T20:43:03.326Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -763,7 +763,22 @@
     "news-f29c55aeb38f3324",
     "news-3b7e4e2bd844ad71",
     "news-e95db211568bedc9",
-    "news-a65408267b9d2a6f"
+    "news-a65408267b9d2a6f",
+    "news-fba6a95ba39cda19",
+    "news-9677b7d9cddb13ca",
+    "news-e02f911fecfd971e",
+    "news-82642506b08ae82b",
+    "news-2d24f50bde396884",
+    "news-0de976553d417a87",
+    "news-c98762044ba6a8eb",
+    "news-f29991cc0c96613b",
+    "news-4f85249ad497c2c4",
+    "news-e4ad9fa6041ed958",
+    "news-4f94de02ec0f987d",
+    "news-1cdfa6573178ff0d",
+    "news-c910167b683e8149",
+    "news-530ef536590957f9",
+    "news-f06ab8134777a745"
   ],
   "recentItems": [
     {
@@ -773,6 +788,36 @@
       "date": "2026-11-24",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania confirmed a ninth measles-related death, The Hill reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-0de976553d417a87",
+      "title": "Unvaccinated Pennsylvania resident dies of measles in state's ninth fatal case this year - Fox News",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxNa2dMMHhMWmQydzRpQnJrMWFXMGJQVDEtcVdnMTAydHZvUHZ1bTJIaVNoOVprSUpObjJGLXlJcnBLSkJWNUZrTmxRaVR1YzhId2JhS3ZtM3RPSjRQZi16cEZIdFZteEZtOGpfSXhWTzMtMmxpNHF5NmJ3WFVTTmlTd0FDMzJ6b0F6OWF2blVrbGF2VDVEeF9oTVJiRjlXMENsZUN1ZjBwN3FXZG_SAbABQVVfeXFMTWhCdTE5YzBJdDgzRTFCRUxNQTljY2QyeDdHeFdrTlRDLWRkc2xNemswTHJTYVNWVmNrUFVoT0JZV3pQSVdDV3JWWEhIMVkwVU9JcG9IMzE2UXNhZU9fMlZpM2UyaFZaLUdRQmNrRlhMeHpOWm02QnVWWUJEdTFpckQtQVBxYU52WVFqZFhHYWhRUTQwSklXc0pWWURodkVzbkhMdDNWZFNmOWVsWWFDRUc?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "An unvaccinated Pennsylvania resident died of measles in the state's ninth fatal case this year, Fox News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-1cdfa6573178ff0d",
+      "title": "U.S. loses measles elimination status as Minnesota cases reach 36-year high - - Metro State University",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdVB3N3B2TDNlX1E3ZE9uT1Bxc2Q3dXNoNklXN0pYX1c0am9HNnRjOWtfQ0ZzR19odFA2UUxNTFdEdkRnNm5xckZPTnE5TnZIWl8wQkhsN2dsSEpCMjJJRHhrSDVxWHpZSzgwQjVXczNObmJrUHhPYnl6LXBHVkM1eWltRFdrRmZ3YnJSU1h0VUNkd0dmVU5aYXl2aEt3bFowaHZkSUFwSTFMQmlHYzA5QzdQVlo?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — measles outbreak United States",
+      "summary": "The U.S. lost its measles elimination status as Minnesota cases reached a 36-year high, Metro State University reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-2d24f50bde396884",
+      "title": "Death toll from Pennsylvania measles outbreak climbs to nine - WHAS11",
+      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYmZPYS13eW9qRVU2TVdWN255OWQybmZibGtVWWZpLUppbzFlbGJlX3J6Ul9pX1NhSk1UY3NlZGt0Tl9CVWNsRjRJcmFTZTdBWWdiTHI2OUk5Y24wcFl0SjhYdXNmd1lTRXZYQjhhemlQbm9CVjA4d1dVQU9VeVZfVDNROGloMFdGLVVFTjFMQXcwb3JpWnJuamVReWpMU3l1Zm5rWWdTZnVmY1FxcVd6SWl5ZklPQWVpZ2o3WkpfZHJsRE0wbXFYN19QQTFYdWlSMnQya3JJNWdZSDZOdzE0bU5B?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "The death toll from the Pennsylvania measles outbreak has climbed to nine, WHAS11 reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -817,6 +862,26 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-4f85249ad497c2c4",
+      "title": "Pennsylvania confirms a ninth measles death as its outbreak reaches 1,638 cases - MLQ.ai",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOZVdMLUxKQWpYZDdWcEM2T1pDQmxnNjdzaUZ2Zk5VYVNvSHNiQlNTb1Z2TktnQ1ZUQzdRWUhaY1RCN1JNdXdnTEI5TXlYdlkyYTJjT19WWEoyTXc3UTdRN1U3YTBzdFMxdi05NjVEX2d1TXFHclVqTndKbFBjY3FZd3JSbVpBM0NsOVZLMkl2Q0dDUkU2THpYQVJaNnFCdk9S?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania confirmed a ninth measles death as its outbreak reached 1,638 cases, MLQ.ai reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-4f94de02ec0f987d",
+      "title": "Measles in Wisconsin: 3rd death reported in ongoing outbreak - FOX6 News Milwaukee",
+      "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPSVlIM1VaMzNVVUF4TzFuZFpDNnpxRUx5ZG1nOU96OV9WMnBlRGo2b3VIZjU3eERQRU00TFdoTnN1REdVZ2F2dzQyNHdpSXJ5V0M3U0kwSzlmaXlhMGtDc3huRVpXaWx6Z3hVQVliUjkzM2dMUzFWMG1YMlVGcFRTdHhrclFicFVzVUE?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A third death has been reported in Wisconsin's ongoing measles outbreak. FOX6 News Milwaukee reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-62815bce0aec3827",
       "title": "Measles-related deaths in Pennsylvania rise to nine - Honolulu Star-Advertiser",
       "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxQbldHellQYjdCZk9ka0E3Z2FKbTFYdDJIRkVFTGF2OG45NWJfcDdFN2RxSGZ3ZV85dUtjWHNGRkpITFEwbmdIN3ZOSUNCc3NkYWdLNjI3TFljMWp2ZFJ0SWpvRjRPUUFpLWlZVTZvMnBuNzdJWnkzMjBRb2gyQVNtc0FMOG5WVUQwaE5mcjFmSnFHMUpiVmlIWUwwTXIxaW9WU2JIdDAxR19qZUln?oc=5",
@@ -847,12 +912,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-82642506b08ae82b",
+      "title": "Pennsylvania Measles Outbreak Exposes County Data-Sharing Gaps - MyChesCo",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbUE4RjZsOGE5ZkxvYkhJODdUWldBcExkcU9FeWVjZlBmdkVCa3VhQ3pIR3ZyVHUway02S3oyV05kVWVxcFoyTTRraVdrNWc2RW85WXEySDhtNXBWNGh3dTEzLUFDSkVuTXEwbi1tUmdnZ0t0eFRtTVZtTkN5VkVBTDV4U0xxVFZBNUtuU1lYTkpVT1Vmdk90MzlnYXM3UUVodmpkbW5SRzFHM1FjbkkxZ2UtOWc2R0Z5QnIweVFwdFpmM2lBRWhWamZB?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "A measles outbreak in Pennsylvania revealed gaps in county-level data sharing. MyChesCo reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-896e57f8fe7da989",
       "title": "9th measles death recorded in Pennsylvania as outbreak surpasses 1,600 cases in the state - CBS News",
       "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBueVBOMEptSEZKSHRySGJVdXNYQ0V5RVYtN3lGNmptME9EbXlwTUdocmYzMHFlNFhRVW1kUXU4Y0kxeEM4N19DdWx3cGhRZjd2R2E5Qjl6cXI1alBkVzI2aF83UnB4dlVFUmhsOVdmRV96dEk?oc=5",
       "date": "2026-11-24",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania recorded a ninth measles death and over 1,600 cases in its outbreak, CBS News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9677b7d9cddb13ca",
+      "title": "CDC looks to bolster employee morale after U.S. loses measles elimination status - Government Executive",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRm1QTUUxWHpIYmwwTlEtYnBfeDZOdkZzY0FiMGp2bHRNVTlPNC1DZjc1ZDh5cGllX0pUY25wSFlfU1MwTUhpTlNvOHl6SkZUemEtZV91U1hZTHdLQlFLSHFjWF9TMTJiTU82dE1PdkwyNDVKWHd4Nm1pbG9wcGxlRU80QkRRak9PUGxhQWQwSG9wbkl2WFNFeWplaGYyYVUydzFzOVNQQkFMSE8xdFh4LWd3YmRtYUdhQm9DM0RCdXZlUXZC?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — US measles cases",
+      "summary": "The CDC aims to boost employee morale following the United States losing its measles elimination status. Government Executive reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -867,102 +952,32 @@
       "summaryVersion": 2
     },
     {
-      "id": "news-ecc771e0a48798e4",
-      "title": "Pennsylvania health department confirms 9th measles-linked death - Inquisitr",
-      "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE95MnNWMllvcGp1cjJMSHNWYkg4TDFiT0hRVDBoclhXYURRSHRDOTMwV2tGN0hzOVpQemxiTk4wTFVZTExmTFFsWm5KOU9yYldsQmpMbmJtcDV3eGtnTUlEcjg4eTY1Zy1DclpzODd6NkRHczB0b0E?oc=5",
+      "id": "news-c910167b683e8149",
+      "title": "US measles outbreak: Implications for Australia's measles elimination… - InSight+",
+      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxOY0VGRk9lbzczRzl4Z0JnUjJxTW5YX2dyNHQyMWJyWlVZQ2NuMld5U0l3LVVRblFzcTY3NGUxUFVXeVpjeVRJSDdjTkhrUnJ3SjZOblFTakZQLU0zZmZaZjdHV1lTYk9PdWxCV2lHZ2FuUkdpXzJfaDJoUFVRMXNnLUctMGhtcEVMSW52U3JXY2FhTG9QNnNZVnA1cHE5d0U?oc=5",
       "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The Pennsylvania health department confirmed a ninth death linked to measles. Inquisitr reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-f7890ef868611505",
-      "title": "9th measles death recorded in Pennsylvania amid ongoing outbreak - شبكة تواصل الإخبارية",
-      "url": "https://news.google.com/rss/articles/CBMiU0FVX3lxTFB6blFCYm5FbkJtLUpVRTdCMk1SaWtzVk1FT01UMDVIOWxSbWRuanVfeXB3dmZMVERXMmdqemh2QWp6MXh5SEtPX2FiQlR6YTJrY3hZ?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "A ninth death from measles was recorded in Pennsylvania amid an ongoing outbreak. شبكة تواصل الإخبارية reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-fcc2934778f659ee",
-      "title": "Pennsylvania Confirms Ninth Measles Death as Cases Hit 1,638 - streamlinefeed.co.ke",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxNTUIxV1VFMHhISE13NU14aF93cFJTbXZBSGZzOGwwc1NkZllQY2ZwQ0FUMTk4TUNoR09ZZ3pOX0hLNkx4V0VKNUpEVmFWQXZERnUyelRlVUd2U3U3Q3dCWmxvSFZCZk9ORE5CYzFFYUt0YW13eDdKTUpuT2tYcEM5Q2VUbTh2WTNibGlXMFR6TWJub0xVU3FTcQ?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania confirmed a ninth measles death as cases reached 1,638. streamlinefeed.co.ke reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "cidrap-6e7b708d51b1f87f",
-      "title": "Virginia, Pennsylvania report new measles deaths, bringing US total to 13",
-      "url": "https://www.cidrap.umn.edu/measles/virginia-pennsylvania-report-new-measles-deaths-bringing-us-total-13",
-      "date": "2026-11-23",
-      "source": "CIDRAP — measles",
-      "summary": "The 2026 U.S. measles outbreaks have caused 13 deaths, with 9 in Pennsylvania and 1 in Virginia, which is the state’s first measles-related death in almost 50 years.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-15fe0916a7c17432",
-      "title": "Pennsylvania Reports Ninth Measles Death as Outbreak Reaches 1,638 Cases - Forth.News",
-      "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9zRFhseHJmVW5mc1pGd0xBZzh6Z2xlX2hfYVlrZlhET01fM2FyZDlqQW8xXzRqa0pIdFgtamlOdzV0LV9PbDFuNmJKZmFyaS1SNFlXZ0k2aGF4aDRJdzBzSTR3?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania reported a ninth measles death as the outbreak reached 1,638 cases. Forth.News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-17347bab31f6bf6f",
-      "title": "Ninth death confirmed in Pennsylvania measles outbreak as case count climbs to 1,638 - Inquirer.com",
-      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNVGdOMTc1anQzcUx3cElzSjJ5WWo2RTZvNWJSTXlqbkNTVldIR25zamg4MTFfaFNUY0xZMTVwSXprUC1GN052MWlxazBadlJZd1BVNHZvS3VWdDVXWVl1dU9ibElQQncwTVF2MEJFcGZldVAwUldfQkpQVEZJMGJ0bWFfQ3RkWGEzaHRGdDJZdzZ3UGkwM0RHY3dHaw?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Ninth death confirmed amid Pennsylvania measles outbreak, with 1,638 cases reported. Inquirer.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-38c2f6071140b445",
-      "title": "Measles-Related Deaths in Pennsylvania Rise to Nine - U.S. News & World Report",
-      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxOQjlPYWt6STZGaHdZU2JzUDUtOWdJRjY4S1dBN3k1V1FONzF1MGw4ZlBfcTJhNzVNc2FmUXh5bm1MeWxoLWlnTHROYkxoaFRpb2R3cjB6RDFGeWN5OGc0eHdkMGo4ZHY4TEpoUVpSY3pxd1dvMWhHWS13SEpFSmpwQmc3akJjWThGS054SDY0WFVDV3YyS0c4R0E0eFh1RGVJeW1CR0VybDZSOVhP?oc=5",
-      "date": "2026-11-23",
       "source": "Google News — measles outbreak United States",
-      "summary": "Measles-related deaths in Pennsylvania rose to nine, U.S. News & World Report reported.",
+      "summary": "A measles outbreak in the United States has implications for Australia's measles elimination status, InSight+ reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
     {
-      "id": "news-3b7e4e2bd844ad71",
-      "title": "What does the U.S. losing measles elimination status mean for California? - CalMatters",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQNWVjeHFSaHlEN3czQmUxeDFUV0NoRHZPR1hVZVBXblBiMjQ1SVhhQVVIMDBPb3lpMXI4a05RRlZETHVhMDFoeTBBUmpfZHk3bmdHY2RRRXNvMEhZc3d0UXlwY0xqdHlELTJKcUUtRkVscXdpRFFhSEYtRWRvanlsc25GQWlINEZ5cnB1Zk9PU0I?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The U.S. losing measles elimination status raises questions about its meaning for California, CalMatters reported.",
+      "id": "news-c98762044ba6a8eb",
+      "title": "Pennsylvania Measles Deaths Reach 9 as Cases Top 1,600 - SNJ Today",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE1GTFVETHNqQjl1YnRRbDg1d3lCQXRiWXM1b1puY0Q0bFQ4aWRoeFJVQjBXcG1Wb1luVUMyUkdZRW9RM1FnWWJLREpTc3kwbVQxNU05aVBIZFk2UnhJdm5CWkhvQXc?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Measles deaths in Pennsylvania reached nine, and cases exceeded 1,600. SNJ Today reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
     {
-      "id": "news-40357ec94a4c6ad2",
-      "title": "US measles outbreak prompts bipartisan call for more wastewater testing - Louisiana Illuminator",
-      "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNbHo0N2hfMlh2U0x5Zk5IRGZVX0E0Y3FEcE0zVktIX0VyZXBaNG5lR2h1MUZ3MkR2aGs5c0YxYi1USEQtREVZOVNNdU04cS03bVg0VnYwYzMyS2RxeUx6dldJdDFoRkdSdTZzVVMtN2tLWF9mRFBHUXFDdHd0cXRmaGZyaExBTDZFSDNweXhGcFhrY3dVakdUc2tKS0N2VDI3UUpia09BS2RNMHFrN1E?oc=5",
-      "date": "2026-11-23",
+      "id": "news-e02f911fecfd971e",
+      "title": "US loses measles elimination status as CDC endorses MMR vaccines - Fox News",
+      "url": "https://news.google.com/rss/articles/CBMiVkFVX3lxTE1RbUtjY1dRYl95c0xubTVHcThTSUZib3hIcm9zTnhYa3pGb2hVMWFDampFejl2TFRhYmhkdVE1bXRqMnp5dE9CQ1JNWXhQQUxMcng5YWJR?oc=5",
+      "date": "2026-11-24",
       "source": "Google News — US measles cases",
-      "summary": "The US measles outbreak led to a bipartisan call for increased wastewater testing, Louisiana Illuminator reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-4a9a8551b775f770",
-      "title": "Measles Is a Growing Risk for Adults in the United States - The New York Times",
-      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxQZGtaQzBHT0syWURzekZ3WkxPWEVlcXFlZXRGVXZHNGh1akRVTlA4c2dxNHlJbzNNWnBIekU5Wi1VRkhOUEhNU0lPNmRsVnE2TXJIVURzYkFWektCTk1fVXMwQmFBMmdpUXdUcndKemV5R2g4eXBRVmRzSnN6S0c3QjRVN28?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Measles is a growing risk for adults in the United States, The New York Times reported.",
+      "summary": "The US lost its measles elimination status while the CDC endorsed MMR vaccines, Fox News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
