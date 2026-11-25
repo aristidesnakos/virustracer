@@ -1,24 +1,6 @@
 {
-  "lastFetched": "2026-11-24T20:42:55.171Z",
+  "lastFetched": "2026-11-25T08:54:57.788Z",
   "processedIds": [
-    "news-e1f884735c2a907c",
-    "news-1ecd8e84482837a5",
-    "news-292d24d37ac956f5",
-    "news-d93a1b2c0ec62228",
-    "news-d5c447275c357cec",
-    "news-bc73e0df94cb68b9",
-    "news-eabc630564a72da5",
-    "news-9878498a7f9f04b8",
-    "news-2194a306326310ac",
-    "news-b25c647327768046",
-    "news-d987caddd91d45cc",
-    "news-2141769afe0570e3",
-    "news-301927913076cf4c",
-    "who-f25c08839890d184",
-    "news-38593695ab6ec81f",
-    "news-04e5f649d863d576",
-    "news-dc391023df7c9b97",
-    "news-da9bfefffe70c8b1",
     "news-b6e88b1452409181",
     "news-8be213553de28609",
     "news-5958eae29b45e238",
@@ -1000,17 +982,56 @@
     "news-c6c0a6b30d9d780e",
     "news-a41f3d5b0eb4f496",
     "news-1877b16f21cfd11b",
-    "who-3a69578b37cb13f7"
+    "who-3a69578b37cb13f7",
+    "news-d4e09e9d163fcf30",
+    "news-40afa434867fb1d0",
+    "news-f70acbd3b2b237e9",
+    "news-2d80ce7bcdbdf273",
+    "news-b5afcb857cec1cfb",
+    "news-bfc4739b9b27a83f",
+    "news-f1a63ae5c46d11bb",
+    "news-d840f876ec5de929",
+    "news-e01bb52f7a2e0bc1",
+    "news-8a1962280147ac0a",
+    "news-ba47d491bf78e1a5",
+    "news-6333b24ffa616da9",
+    "news-0edd5e0e09da0eba",
+    "news-89ea8fac92e7a939",
+    "news-7081bf32ecd20eba",
+    "news-59120cc34e5a5f5b",
+    "news-62caa80ded04a93a",
+    "news-78a0c7aedef3a74a"
   ],
   "recentItems": [
+    {
+      "id": "news-b5afcb857cec1cfb",
+      "title": "Ebola Death Toll in Democratic Republic of Congo Underreported - India News Network",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxPZUhNOG45ektVQXFkZFdseUtZLW8xTHFHY1NfSUlESFhjMUx1VmdDNHFxU3ZOOXdUM0dVWDhWVENrb2duNDF5dFBjYzAtZWVWOHdab1BoUl9nTXFkMGp6cS1ld3k4cVZOR2ZNSWs4Uy1VTG96NW83QVpqVGp4SXAyaHpSUG51SF9TMGh4TERJSm54M1lsb3p5WkFVT0hqV1V3RGVN?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Ebola death toll",
+      "summary": "The Ebola death toll in the Democratic Republic of Congo was underreported, India News Network reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d840f876ec5de929",
+      "title": "Bundibugyo Virus Disease Commonly Presents Without Haemorrhage in Outbreak Settings Review Finds - Bioengineer.org",
+      "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNFVyZkw1dTZqam1RWk9OdllQZUEzajByTm1zTXRZWjk4Zm05SHhZOExtQ0tpR2R6TjhtTHkyMUpKQWNaZkJlVUNtdWJpMlZmaVI1dGhUUkp1VW45VXRvcjBEcWVXNFRqRzhvdy05bmJNdUNSbFhxdFNIeXZCcFlFZGN2X3BEUnF1eGRrS201TU9pOVlyRzdlam1pOW1QbkRzOUFRNG1FTjFZRE9DS0VIcF9US0ZPWGZOQjhYUzFn?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "According to a review, Bundibugyo virus disease commonly presents without haemorrhage in outbreak settings, Bioengineer.org reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "cidrap-c6f5bebd48a1a3f4",
       "title": "Quick takes: Advance access to Ebola vaccine, chlorhexidine cloth shortage, more screwworm in Texas",
       "url": "https://www.cidrap.umn.edu/ebola/quick-takes-advance-access-ebola-vaccine-chlorhexidine-cloth-shortage-more-screwworm-texas",
       "date": "2026-11-24",
       "source": "CIDRAP",
-      "summary": "New World Screwworm detections have spiked in November.",
-      "summaryFallback": true
+      "summary": "Nine new cases and three deaths have been reported in the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda, according to a Ministry of Health statement.",
+      "summaryFallback": false,
+      "summaryVersion": 2
     },
     {
       "id": "news-14ffac9503db11c9",
@@ -1019,6 +1040,16 @@
       "date": "2026-11-24",
       "source": "Google News — Ebola death toll",
       "summary": "The WHO chief warned of an unprecedented, incurable Ebola outbreak that could spread worldwide as the death toll reached 5,500. The Sun reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-8a1962280147ac0a",
+      "title": "Global vaccine group aims to buy 1.5M doses of new Ebola Bundibugyo shot for Congo - Report.az",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQV3k2bzJrN0JNOHVVaXUtbXJrTzdYbDhXS1lIOGR4cG1yVVlsV2RESlBpOXBNYXNLWHAxUnlrc3lrMWZZNzlVbXRxeHNwMGQ1NDZRdzl3M0pQSVY4VHc5ek1iR1M5TU9YVTMtZnlMemc0YklzWUpiVGcxYS1xbUJ0Z3FWWVZZUHlPRDl5UkEzNE9KaUhiWWROQzUycVhlS3NieldrcDMxc2ZDTVdsZkFFQlkybzZLMW5JdUdZ?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "A global vaccine group aims to buy 1.5 million doses of a new Ebola Bundibugyo shot for Congo.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1043,6 +1074,26 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-ba47d491bf78e1a5",
+      "title": "Ebola death rate nears 50% as fighting disrupts response - Wonderwall",
+      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxQOUpkWDhkUXRrc2FuTENPdkg2TjRNTG9VaEFlZVlFbEdvR3lEU2hDbE1EOVBfTkVWS2U5bmg1QXRkZW5vdXl2UDVONlZjZUk3N1JCVDZhdVdDLVJLZGYzV3k3eVkxOC1HcVhhMEdJMllYUE9PbEQtTXhPc2NQQlZGRTBfa0ltMlZVSEtsNXpiRHVwRnV2Mmo5RmVvWXlpT0VfbG02VUZ1aHI0WWZ5d2RxOHZuYi13V04xTFZ3bjJHckE1dw?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Ebola death rate nears 50 percent as fighting disrupts the response, Wonderwall reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-bfc4739b9b27a83f",
+      "title": "DR Congo Ebola deaths near 5,800 as infections rise - Big News Network.com",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxQRlAtM2hnaVd2dndZdThkeXhrV0ZGR2lHMnF3RzRZajloRjZpY2RLRUdwelRmcTFnS0FSQk9GUy1jaDdMeFBfNWF1eFhVcUZ6WmxYT3otenBpQU04b19RbGxlUXZvSjFKRVVMdy1ub2JXbUU4RDBDWVRWRUlEM3luUjdpcXVmbnJFMFUzdV9ja19EckJjRFUwUk9FTms?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Ebola death toll",
+      "summary": "The death toll from Ebola in DR Congo nears 5,800 as infection numbers rise, Big News Network.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-c6c0a6b30d9d780e",
       "title": "CDC Extends Ebola Entry Suspension Rule - CASRAI",
       "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxOWmJjM29fejZaeUw0VG5BWlA1NGNGV1RLeTRPWVlkYUhITWtiY0NqeUVMVVVMc2d5MVNyVlVaYU1KMnlta1VKa09XUmJjWlhUTjM2Yk0wNGgwaFcwWDl1Z0M2XzhXeF9RR3pXTVpuSHZqRVlkQ0lwVDBfS2h0Zzh0OWtPcF95SHNw?oc=5",
@@ -1063,12 +1114,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-e01bb52f7a2e0bc1",
+      "title": "Bundibugyo Outbreak Shows Limits of Single-Pathogen Preparedness in DR Congo - Bioengineer.org",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNTlJkVndnTTU5WnluQ1lKVFBuak1KZFhEZ3l0UTlPTnQtTWxNWERaSG1CbmZzNzE3TWpxV0xRWklhOTFUQU1sNy1Pc2FxeXNVZ0cxMGhoRnoxME80NnZPUlhyMFlDcExaSkh6MnZpUlhqbDR5ZkF3WTc2MG9NTFh2d0hrbFEtQlhua09QSUdoRWZBcE1xaGY4bk5YdWxrR1A4a1hn?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "An outbreak in DR Congo reveals the limitations of preparing for only one pathogen at a time. Bioengineer.org reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-e99b7fcf1d87b4bc",
       "title": "Ebola death toll in Congo far higher than official figures suggest | Daily Sabah - Daily Sabah",
       "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNSWh4Zy1RT1dFa1l2QTNDeGc3bW9jUUUzWF83ZDlMb0Y3bkt4b18tTDRqSS1Lb1hJOThHOVJBX3lFZTlqRGRzWTdQbnBnRmdQVEdQR2toTUV2aXU0RVBxLUpCNC14M08xd1EwU2tCUFQxTWRIMVRqTVp0MEdSV0txQTMxeG14T1hadlhqaEJ1ZkkwaGNxeFBtY3pqRE5vYVR6Yk1XWGluRGtFZ9IBrwFBVV95cUxOeTNXcFI4TTlsQVZ2RkRWSEMwNXQ2c21hYlllLUJGdHFNUkotYXJEQnFoRlRSR0FZazNuZnh1RmVhUzNMYlp2eVJXcXpXSWlDTkgyT2tBQjYtQW5kVnJ0UGxSMEhIQlNqT3NGTE1rWDVWSFB2MnhESlJsS3JITTl1Y2x3WFJURGM4dngyZEQ2eURiWVhKMm5NRHloZ1cwY0xsNlNTYjR4NHRJbFA4UWNB?oc=5",
       "date": "2026-11-24",
       "source": "Google News — Ebola death toll",
       "summary": "The Ebola death toll in Congo is far higher than official figures suggest, Daily Sabah reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-f1a63ae5c46d11bb",
+      "title": "WHO Chief warns 'unprecedented' Ebola outbreak could spread worldwide as US tightens travel restrictions - UNILAD",
+      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOTmN1cWdMbnQ5Nm5saXlHdVRabE1ncE5zVmFHakhlWEhEUmhSSmRvWVNDY0ZvUE1XN0ljVjFFN1o3V2VFNmJGR3E1TFJSVkx1Wi1JY2xnVXJXUTFCSHczdGdpRVJTd2d6bXVOTHR2SkYxck1EV3kwdkJqakVLWmRsZUVXTEdHN3REWTZ6b3BRUEprYzNCXzllb1JyMmVUb04yMjlNMXZCTXZDb0NDQ3lPTEtRbXJtMVR2enFEQw?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Ebola death toll",
+      "summary": "The WHO chief warned an unprecedented Ebola outbreak could spread worldwide as the US tightened travel restrictions. UNILAD reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1129,76 +1200,6 @@
       "date": "2026-11-23",
       "source": "Google News — Ebola death toll",
       "summary": "Graves in fields reveal hidden deaths that expose the scale of the Ebola disaster. Reuters reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-0cf6a23205a0b689",
-      "title": "WHO chief calls for peace amid heavy fighting in Ebola-hit DR Congo region - Al Jazeera",
-      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxOWnRzTUswaFhqTWIzUVhBY0ZZLV9nTWx6Y3hER3ZRYmJnWjJXZjJId0NuVnltWEEyMjlQbTVVU3FIcE1aYWdpR3U1azJHNjkyR1MxYVVzaXFXTEtUTzVBTmtkTWI0SmpmTXU5U2JEWDdBZElDSEpZd3RYamFjbHA3c0RVbmxyZWJ1ZzVBTmlQYUJiaVZZSF9wdDFteXQ5cjItdi1VWlN2WEUwalVXd0lXVm5HZGhRSDjSAbwBQVVfeXFMUHg0S1g4VGt0WGlPU0E3dDRjQ3JENTJvVHFSUXd1TUhIenFEZ0hzZWJFa3RSNm00Q0NJUEdfd2ktOFBXS1lvNUVWR0I1Q2ZIalZiTkR2RnRkOXppZFNXSmg2RGNObkdyRUNyeExNTmVvSU9fX1VtZnVkMDNqaGZXUWtwRXc3eldJZUhjcWNRRkpLQ01rd0ViYl83Rlp3YmJsS09QQmt5NndRTGRUVUdTUlBWLXFhb01vc0lwNkk?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — WHO DON",
-      "summary": "The WHO chief called for peace amid heavy fighting in an Ebola-hit DR Congo region, Al Jazeera reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-1081b2827a74b175",
-      "title": "Ebola Outbreak With 50% Death Rate Is Getting Worse: Three Key Reasons Why - Newsweek",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOSDVrbU1iUVNSNmZSNEdVM0RLc0RUOGt5U1d4dG5vMXhuWDF6Y3VVM0lfR3BBNDB0bzZwZC1rVktPYmJiX0ctZjdMWmFCcENYRDc4UUIxd2QyZDZxRWg5VVJSeDhpajhoZjFNRHcxU0lick9EQndFWGlwRHV1Q19ac1FvV2xHQnU2aEJmMF9rdWZUYVFDSjZtdFpvRTJKWlNoZFlfQ3RQNVl5dw?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — WHO DON",
-      "summary": "An Ebola outbreak with a 50% death rate is worsening, according to three key reasons, Newsweek reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-14fe104374ddb1bf",
-      "title": "Why the Ebola Outbreak Keeps Growing, According to Virus Expert Pardis Sabeti - Time Magazine",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPejdIaUpEbUdBOFFNdnJONkJWR2ZrLWlJRTBRZkZGbDhJUkdYdnRhZm5iaWdZd29fZ1JDaTduU3lUZ2VXM1pNRTIzdmZseVphYWdtdll1cHhZWWVxNVlEV1V2R3dQSmJpYUNZaElmU1Y3Z2lVZUtSd0hIdE5HWENaZ3dDNmdRNzRUeXBWYjdXYzRTakd4V1cwZQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — WHO DON",
-      "summary": "According to virus expert Pardis Sabeti, the Ebola outbreak keeps growing, Time Magazine reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-4cef9d1e718fc638",
-      "title": "The current Ebola outbreak is growing faster than any outbreak of the disease ever. How can it be stopped? - Scientific American",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxORzd1WnNWbkRqWnJZLWNybnhTOW1zLXdQZTF2ckN1c3lueXdQck1FWUVKa25FaUlEZkJpcFp3V3d0by03RGFaVlpWQVJUcGRYTmRmMVpkTXhMUEpiSU4zMW0zc1pIWWR3MWtkLTlwYVMtRnhnNWtnNS1VQTVhczhfbDRMQjZnbExJRDR3?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — WHO DON",
-      "summary": "The current Ebola outbreak is growing faster than any previous outbreak, and scientists are seeking ways to stop it. Scientific American reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "who-e48c1220233b16ed",
-      "title": "Heavy fighting in Ituri traps DR Congo Ebola responders: WHO - UN News",
-      "url": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFA5MW0wUk4wZnhJbjdGUDI5b1A4VVIta3NpemZ3S0ZwY3pnYXVQcGtpd1AtQVhyM3pzaVZVRGgyeGUtaUlFYkVLa18wZW1zbUhJNkpoWFllWQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — WHO DON",
-      "summary": "Heavy fighting in Ituri trapped DR Congo Ebola responders, the World Health Organization said. UN News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-195f71259c61040c",
-      "title": "WHO to Begin Ebola Vaccine Trials in DR Congo Outbreak Zone Next Week - DNE Africa",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOTl9VclAzX1g5VW1xRlNFdjlJZU5RZWJCbEJydFpSY21WNFM0aEhPRXNvY0ZvaENLRS1PY1czUU04dFl4eE9QTWFWVFZYdUl2c0dIVDdBVDZLUFZTUFREUTJjVFdabElBeTBmcjlzYzF2dmdUUmNBMDhUd2p3OVZ4c1RnOHpEWDM0UTBQT0hLVzVpNzZXcldIS1dEYm1HVE12b3NKb2Y2RQ?oc=5",
-      "date": "2026-11-22",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The WHO will start Ebola vaccine trials in the DR Congo outbreak zone next week. DNE Africa reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3fc42d303bfbb539",
-      "title": "Ebola Outbreak Climbs to 11,645 Cases as Deaths Near 5700 - Contagion Live",
-      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPam1aZkJ1TXBTMjlKRFgtT09XYzNVbEE0R3hFdGlpWlJvczhpUmNGTWkwMzI1WmNXWGNWTGNIemNZRVY5Wm9ibHpjSEdpZERoUWIxVGlQZTVJX3l3aDI3d0p3amtWRFdVVFVzQ3ZUb0xKUDQwVDE2Vnp1eTVoX2l6TFJIdWtDVXlwcEJaZ1Bwbw?oc=5",
-      "date": "2026-11-22",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "An Ebola outbreak has reached 11,645 cases, with deaths approaching 5,700. Contagion Live reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
