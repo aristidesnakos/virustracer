@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-25T08:55:03.534Z",
+  "lastFetched": "2026-11-25T20:44:33.239Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -545,7 +545,12 @@
     "news-776011c4d814c539",
     "news-aa4f30e6f5a1fb5f",
     "news-803c130c74568a5b",
-    "news-353ba3e396c9b95d"
+    "news-353ba3e396c9b95d",
+    "news-66968b1dd24f8031",
+    "news-77654d0535ba5bde",
+    "news-80119cc3d78bef7e",
+    "news-75953c853bc8bc7d",
+    "news-c74954a77470a7ed"
   ],
   "recentItems": [
     {
@@ -555,6 +560,16 @@
       "date": "2026-11-25",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh measles outbreak worsens and the death toll reaches 1,361, placing India on alert. Oneindia reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-75953c853bc8bc7d",
+      "title": "2 more children die from suspected measles in Bangladesh - TheReport.live",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNTmIwSklpUmoySi1jLVBNR05nVlF4aWZTQ1djTm92d29sMXNxMGlBWkVSS1RscThQTjlXRlRsSjdUSUR4bmNhWTVFQ2NjbUNFdExCVjVyMENpX1RuU1lITlN6WU4zVFljZmJUQkNsU21NQVE3ejc2R2V3QllXWTNic3NFMXl3UG1BR2F0N0RxbTZvcjlwblAw?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Two more children have died from suspected measles in Bangladesh, TheReport.live reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -569,12 +584,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-77654d0535ba5bde",
+      "title": "Measles outbreak: Death toll reaches 1,363 as two die in 24 hours - Dhaka Tribune",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxPdWFHYU1fZ0N3QmJQdW84SXUtd0hnWEkxSE5NNU5QV21SaHpZZElUVFBYMFkwRDhUMk1sUmlRMERXOW84eVdiZ1ZZU0RjV0t0eHlReW14UUxuQm9yQlNEZHNfUF91MkpFRmVSUTR1ZjBlb1Zyd3BaaHdCaGtYcUN2OUtIWUY0LTk2TllJV2R1YlMwd3QzMGs1Z0dEWWMzOUxi0gGgAUFVX3lxTE91YUdhTV9nQ3dCYlB1bzhJdS13SGdYSTFITk01TlBXbVJoellkSVRUUFgwWTBEOFQyTWxSaVEwRFc5bzh5V2JnVllTRGNXS3R4eVF5bXhRTG5Cb3JCU0Rkc19QX3UySkVGZVJRNHVmMGVvVnJ3cFpod0Joa1hxQ3Y5S0hZRjQtOTZOWUlXZHViUzB3dDMwazVnR0RZYzM5TGI?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "At least two people died from measles in 24 hours, raising the outbreak's death toll to 1,363, Dhaka Tribune reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-803c130c74568a5b",
       "title": "Bangladesh measles outbreak claims 1,361 lives, raises concerns for India - Daijiworld",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5mdld4OURFNEZ3NXVOdUNZRnhCYm5KTktORGRaODBIWGo0N1lpQ1FERno4a092WDEtaHdZRmlsVWxXSEZtVllMX3FJYWloUS1LUjZKYVJxMW5nNmJTWHpDTmlIZG0?oc=5",
       "date": "2026-11-25",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "A measles outbreak in Bangladesh has killed 1,361 people and raised concerns for India, Daijiworld reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c74954a77470a7ed",
+      "title": "Bangladesh logs two more deaths with measles symptoms - bdnews24.com",
+      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFBXaEVuYWpaSmlzN3hhNVFnRTVzV3hFUTI4TWNZdGk5SWNsb1J4a0daRzNTZFpuc1dvNzNzTDdzTTFSMHpDcnhMaEotRGFEV0U?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Bangladesh logs two more deaths with measles symptoms, bdnews24.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -715,36 +750,6 @@
       "date": "2026-11-23",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "A measles outbreak in Bangladesh has claimed over 1,300 lives amid vaccine shortages, NDTV reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-bbe1b947d85c940b",
-      "title": "No measles deaths reported for first time in 253 days - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNanllMTVBSlI5Xy1fRjdESFJHalluSkc0MFc1VFo1c3JGLUg4WkxSTWo0QUE1dTQxTDZIRVVpZVR3Y1dhV3FNZ1lMR3JwMVoweDBkcGxEWTJmajNVcThZd195WTNCcmxTNWFobUNKSzdDTXZsZmI4dE5hYmZLRTZNeUNiZ1JmY1Z3N2NfRTNDR3p1VlFGWnlHSlY3LTVuM1BEMUdKa9IBqgFBVV95cUxNZlNYaXRscTRoZmRfaFZPLVpUVGEtbW9yZF95Vl9ZTHpCNGF1TmNxWE1fLVNMdVRaTHRyUmU1X0ZFSHpPRGpoTzViZHVtb0JoWGtNOVFwb2J4VmtHbFBJX1dMcGFvOUVRS2hjeHkxa2tXSUN3VW5HTDRTc2FyOUkyTU82dmM3cXBSM0lUbkk2Ml8yQUlSNGp2YnEybkNsOS16NW9RNnJDTnRhQQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "For the first time in 253 days, no measles deaths were reported. Dhaka Tribune reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-bf66613d5837e36c",
-      "title": "Bangladesh records first measles death-free day in 253 days - bdnews24.com",
-      "url": "https://news.google.com/rss/articles/CBMiT0FVX3lxTFByZ2UwMEFBSTBYWVRoMmRqT3BHR21HcUNIdWtxUTdXR0pUZTBRTWxtNjd5VnJ5cC1wR3F3UEdzR043U0dwUjM1V01LTERzQzQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh recorded its first measles death-free day in 253 days, bdnews24.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-ecde58d827012041",
-      "title": "Bangladesh reports zero measles deaths in 24 hours - The Daily Star",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxORWRIM3JNX2VIaElPblk3cm1BTGtnelZjQXhTV05RWTgtUjFyREx3UlRXZjZpcHVSNXNRZlh5QjNRbE5tM0cwMFYzeVhIQ2RxNUV3a29OQjJjU2FlSXYwNzR6d3M4ZW01cDRYd2p6VE1IRHIydXR1MVBZM1hhUmVKY0htaWcyQmczYWdsbWIyRV9RSHUwS0UwQVdnLU5xWWFWbEs0dnUxOERNaC1wMEpzV19fNA?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh reported zero measles deaths in a 24-hour period, The Daily Star reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

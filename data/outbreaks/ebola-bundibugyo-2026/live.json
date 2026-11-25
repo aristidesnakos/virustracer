@@ -1,16 +1,6 @@
 {
-  "lastFetched": "2026-11-25T08:54:57.788Z",
+  "lastFetched": "2026-11-25T20:44:28.902Z",
   "processedIds": [
-    "news-b6e88b1452409181",
-    "news-8be213553de28609",
-    "news-5958eae29b45e238",
-    "news-9369023553a1e0c0",
-    "news-2a519dd7646e0da5",
-    "news-d0dc2bb507ff1133",
-    "who-50827e1e7f8fc2ca",
-    "news-843173febdadb475",
-    "news-fa9346285b8ddd67",
-    "news-c7dada7fb03e51c1",
     "news-5460d1e6173e6162",
     "news-bee44659aae23f31",
     "news-8de85e67b8df486b",
@@ -1000,9 +990,39 @@
     "news-7081bf32ecd20eba",
     "news-59120cc34e5a5f5b",
     "news-62caa80ded04a93a",
-    "news-78a0c7aedef3a74a"
+    "news-78a0c7aedef3a74a",
+    "who-f92bb21c48fee8e1",
+    "news-c824eb7c298f0df5",
+    "news-e81e7bc7656a383e",
+    "news-a943924f0e0a1067",
+    "news-a2348a51a558f8df",
+    "news-d0d531da19b7d4d9",
+    "news-75577063c11ed633",
+    "news-d93a1b2c0ec62228",
+    "news-2141769afe0570e3",
+    "who-2c67d72cc8077cbe"
   ],
   "recentItems": [
+    {
+      "id": "news-a2348a51a558f8df",
+      "title": "Bundibugyo Ebola virus | Continental preparedness and response plan: November 2026 - May 2027 - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMi2wFBVV95cUxNVWxoT1dfdHdpcVpvejVnLVJRdUZHaDJtTVc4ai1xVDkwMlhCbjFnTHRKTzc0Vm5KeTRWQWZIZ1FYQ0VLUDBBY3lRSjd2TldjU3E0c1ZONENQclFtbXVWel9fT3JxSjVTZDRIcmNtV1o2TmI1Uk9IMjlkQ194REh3bi1iS0ZKU3VaRU4yd0x2YjJuOHBjTjFNcWVFWTZQNXRLY2tqUzYzckdjdjJCcHcxSFVHOE55TjRsY1ZNTDJ4OVVUVzg4Tk5UcUxpbXpKTnEzdVNHSXA2WFBZN00?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "A continental preparedness and response plan for the Bundibugyo Ebola virus covers November 2026 through May 2027. ReliefWeb reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-a943924f0e0a1067",
+      "title": "Democratic Republic of the Congo, Kenya, Nigeria, Uganda | Ebola Bundibugyo virus disease outbreak and EU response - DG ECHO Daily Map | 25/11/2026 - ReliefWeb",
+      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNck5QbFRtYVFDNjlBbWJuUmVWXzFxNWxqdDl6YWI0Mk1ta0lwaHpZMmkwVG1pcU5wbnpUSC04NWRyU3B1Skk4QkU3N3d3bHhRcmVPYnJ3N3NVQklRaHNtRnloSHF3b2tzQzFEbEFELUJCZ2JENFVISmhocGg1R0UxV2hwWFNpOFlOaUZHVDBLRVI1S0ppMHU1RF9ZSzJWWjh2OWZxUXFTcTdQWWNRQ3ByZ2VXUHo5UGcxT0FiVUtCeDEwLXZpSURrc0hyRVlJX3NFNlZmenNnRDFVYVROOC1zSjNhWEJxcFhvNjdGTHgtOU83M1hfdzBkRDNuSHN2RWUzT1cxbndRSDVYTHFsd0E?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Ebola Bundibugyo virus disease outbreak in Congo, Kenya, Nigeria, and Uganda prompted an EU response, ReliefWeb reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-b5afcb857cec1cfb",
       "title": "Ebola Death Toll in Democratic Republic of Congo Underreported - India News Network",
@@ -1014,12 +1034,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-c824eb7c298f0df5",
+      "title": "Fighting in eastern Congo forces Ebola workers to evacuate, threatening outbreak response - ABC News - Breaking News, Latest News and Videos",
+      "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOU1dLZFhDbFhEaVhGWnVSNk00ZFMyd05tM0RpQktVZTNveUE0LUdkSk16UVRtMTBPSGtzcFB3VTV3ajQ5cG01bVR6ckZ4UHAwdmFzdWZwWlV3Wm1XMWhfb0pwcENPRk9faVFtbkJMQ05tSXp3ZjVWUzUwRlJuZ25yOFduR29kRmZ4NUc5azcyV0tYRWZCNWE3a1htRjV0cUt1bndGVERjTjU0cW42NnJpZl83ZTRnRjFHQkHSAb8BQVVfeXFMTlpuZVJZaTRRWFFmQVlIc3JPT3Z4bE1yUmE4WlZmeURRY2x4cEd6ekc3MU5xbnU1VWE0Uzd0UElibnJNdy1rY0VGUVVRelFuZHN5bDladWJRR2RxVHlNZW1YQ2QzQ3p4VXFrRXNSa3UxSC0taDFoOHpvVXJmN0NmWW9EU1NhY1h4NXliS2NEaDZLM21PT29vNFFNaENEQm5DZUhybk44dDRhNnlqbWRfMG5uTk41UUxES3VCMHFpN0E?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Ebola death toll",
+      "summary": "Fighting in eastern Congo forces Ebola workers to evacuate, threatening outbreak response. Breaking News, Latest News and Videos reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-d840f876ec5de929",
       "title": "Bundibugyo Virus Disease Commonly Presents Without Haemorrhage in Outbreak Settings Review Finds - Bioengineer.org",
       "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPNFVyZkw1dTZqam1RWk9OdllQZUEzajByTm1zTXRZWjk4Zm05SHhZOExtQ0tpR2R6TjhtTHkyMUpKQWNaZkJlVUNtdWJpMlZmaVI1dGhUUkp1VW45VXRvcjBEcWVXNFRqRzhvdy05bmJNdUNSbFhxdFNIeXZCcFlFZGN2X3BEUnF1eGRrS201TU9pOVlyRzdlam1pOW1QbkRzOUFRNG1FTjFZRE9DS0VIcF9US0ZPWGZOQjhYUzFn?oc=5",
       "date": "2026-11-25",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "According to a review, Bundibugyo virus disease commonly presents without haemorrhage in outbreak settings, Bioengineer.org reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-2c67d72cc8077cbe",
+      "title": "Fighting in eastern Congo forces Ebola workers to evacuate, threatening outbreak response - The Seattle Times",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxNelp6SFRHTWVramdlRGxHQms4aDk2QTN0ZG9zWUlvMTZrZlY4UW45QXhsamgzQ3ExNnJ2bW1XS2RPZV93bFctUHhxaEtBaTFJZGpjdHVqV1hSSXI2R3FCY3FNTGlMUUkyemxQTlA3MkhJZzBGTTY0Q240T05QZGpkSUJyaGFGSjRGZ1dVanRILUVYUHBGai1LSnVPLW1zN0MwTnpldWVyMGxiUF9Hd1FkQjlsR3BUcjJudkhfTTBObHZiNHdvSjRVaERWNVlpRlhiQkxxZg?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — WHO DON",
+      "summary": "Fighting in eastern Congo forced Ebola workers to evacuate, threatening the outbreak response. The Seattle Times reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1104,6 +1144,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-d0d531da19b7d4d9",
+      "title": "Gavi signs agreement with Serum Institute of India to secure rapid access to Bundibugyo vaccines - Gavi, the Vaccine Alliance",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQNjJsZklQTkgwa3E3eEtYclZXTGtDTGFOVGk2eGl3bjdwQkJrUnRDc2hBejlscXJUUnBXNFFBdDlJa0lxdC1nT2ZLT1V1REZkUGdmYlRQb2pXTENXVmZyckI4ZHVlV0hFSjN2ZzJjeGsza2NrdW1YLVM4NHhaVFBHbGhsd21pNjVjQnBBNHNPSW1YQ0d2SkQzZVZtLXREN1puRlUxd2ZOUktsYkdPX3lLZ21SbmNjcTd0TU9r?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Gavi signed an agreement with the Serum Institute of India to secure rapid access to Bundibugyo vaccines, Gavi, the Vaccine Alliance reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-dd9498d71f6b99d4",
       "title": "Global vaccine group aims to buy 1.5 million doses of new Ebola Bundibugyo shot for Congo - Reuters",
       "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxQTi1aWEc4NWZDc1BNNzZNM3ZQbXh1ZlJYVXRsUEpRby1YWDJNZFBib0RMRjM4WWVnT3RFNUxqX2NZWDBjcHYzdHFaQ3ZOajd0MFlPMkdPQWtWbjRjQ0lMVzlUNmxvMk94dTQzbzhqN0FvTkJpcXZiOXZ1UlFCdUhKU2x3RTFtRnlpSlZaTi12Um5oS0t4V2V4eEFUNWFubmVHTWQ5RXpITDgtRUI2U0JfNWlNck8yOXZSVjNNam5PUHMwRC1ZVER0aFM2Zm95WllUdElxaVIwcnA3Q2RMbEtBRDhQYzU?oc=5",
@@ -1150,56 +1200,6 @@
       "date": "2026-11-23",
       "source": "CIDRAP",
       "summary": "The case-fatality rate for the 2026 Bundibugyo Ebola outbreak in DR Congo and Uganda remains around 50%.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3ae422587ca2d6af",
-      "title": "Watch: Why Hundreds Of Ebola Deaths In Congo May Have Gone Unrecorded - tippinsights",
-      "url": "https://news.google.com/rss/articles/CBMimgFBVV95cUxNX04ydDVWcXRNVDFXT1VzTDZMdm56VmwzZGJvc3ByWW93TUt0UFhaTXJHOEdpTnZDUXZEdWtFZWxIWHhLZWh5U0UxUFdpeEZoNjdTNW02R1ZTQkJSbkY1VFZPMkRsd2lCRzZZZ2lXN21hR09yUkxaOUQ2aG5SWGh3QlBiVjdwRUlWeWc3aHJBcFFYV0I1b0JLVnpR?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Ebola death toll",
-      "summary": "Healthcare system failures may explain why hundreds of Ebola deaths went unrecorded in Congo, tippinsights reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-44068eba87b2611c",
-      "title": "The missing deaths of Congo’s Ebola outbreak - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiZ0FVX3lxTE9HMnAzMW85TERRNmc4RHlMUy1kYzB4VmlLWVJZRG5ZSm1ZNWhUNmpSZmMzc25vcXRrUjJHdGYzTGpsMDBvb1RZcFNlMHNJd2kwS2JwUWVMekZtTVR3WVNtYnBhQ2pROWM?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Ebola death toll",
-      "summary": "A review of official data found unreported deaths during the Ebola outbreak in Congo, Reuters reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-450ee5edf52f8906",
-      "title": "Ebola outbreak remains out of control in Congo - The North State Journal",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE0weE5vQ1duRWhhcThCc050QlA4YkZuMUlqdjctaFpvaG1IMXF3cm1YaFhZWnpqX0FPQmhsdENLMGM4eWx5U0IzWGFMcmZyUWZqM3RUeWdNZVJPaUUwMEZyNmx5RElPWW5WNHBsNE9oanRkNjBRX3lJVGptQlhmZ2M?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Ebola outbreak remains out of control in Congo, The North State Journal reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-570d6e6876943342",
-      "title": "Ebola cases pass 11,700, but the CDC says the risk to Americans remains low - Medical Daily",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxQMUlDYnRySlVqOWg3eWtFOG9UMnB0RG40UHNIcVg3OC1hYW9aT0VuRTV5WnItZEY3d1VxMWhibmNleUpHZ0c0d09iRUdOX2hjajJYWE54aFVWWkJYYVpVbWhJdHhheWlnbGgyTFFxMUFNR3RwZW1RRlQ4ZEtCeFJITkQ2Vy1sU2pTcHF1T3RJSFhCUQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Ebola outbreak case count exceeded 11,700, but the CDC stated the risk to Americans remains low. Medical Daily reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-a6631b1d93fb9de7",
-      "title": "Fields of graves: Hidden deaths reveal scale of Ebola disaster - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNNlE5NnFHMFEzZi1GQmhXQXlJWjJDTEl0aVNEb1VNdHZQRzJSWXpUUndSRkV0WXpjR1M0eHQtRFFrX0ozOTJDTTNBNDBsLWlzNXdOVDl5M1FwNC1vSllHaExHeVVjZGxCWmNMTndLX3pqT1NScWVXSHdRaHdlRFBVblFMRWY0c1lpcGJEakpaZUkxT3FDZUNHMDluVVFjZkZUMTZ0SHNSbGd0UQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Ebola death toll",
-      "summary": "Graves in fields reveal hidden deaths that expose the scale of the Ebola disaster. Reuters reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

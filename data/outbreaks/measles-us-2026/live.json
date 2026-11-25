@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-25T08:55:05.155Z",
+  "lastFetched": "2026-11-25T20:44:34.938Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -786,9 +786,38 @@
     "news-79c4b6402c228580",
     "news-b8153363d8c89a22",
     "news-534474c9692cbb65",
-    "news-812306e3470e53f0"
+    "news-812306e3470e53f0",
+    "news-8227ae26e1525bb1",
+    "news-dc36829f03e6eab2",
+    "news-4315eed645b4f53d",
+    "news-80c805b94e6142d0",
+    "news-b41d83c9bd56c58c",
+    "news-7404c21b9d331141",
+    "news-70e518a71874c148",
+    "news-e20f3d4c1d483840",
+    "news-b72e92d23454c2cf"
   ],
   "recentItems": [
+    {
+      "id": "news-70e518a71874c148",
+      "title": "Wisconsin, Pennsylvania Report Additional Measles Deaths as Outbreaks Spread - INDIA New England News",
+      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPSm9IUl9HRmFUbjhBMEh4R0hZUDJHd1BYdDk1Q1lDSVN4bm5BSXRrTWEtVGdzREF5T2dYN0xIWTM1OHJBTS1qYlREb0o2ZllWejFUMmR3VjAwbVZQamtYUHNQdWgzQ2pRdWhEVlhMNXFodmVkNERRRFBST2lMaE52a0xPVHhXbmxMZy1NVnpEamRrXzJhdXhVWDhxczlZYlgzcF9mZl95MA?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Wisconsin and Pennsylvania reported additional measles deaths as outbreaks continued to spread. INDIA New England News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-7404c21b9d331141",
+      "title": "Central Pa. doctors urge sick Pennsylvanians to skip Thanksgiving gatherings amid measles outbreak - PennLive.com",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQWTFpaFVURGF5dHo0V3lmd1BsZThmRDJLM0xSZnRWdnY1WDl4am5EMFNkMFEyX2E5aGpZb2U3NkpDWmtBemtUZkswbVpjSXJmS04zVldQSTRFeThqcUMyMnBhaF94VDBzQk45Y1dsdWFweWc3a2x3WlFZU0ZsR1Q3TklaWTdGSk9KNG9nd3BZUUdGT1R6UUFQSE00ZHcyRmxvOHl2RDRTaFlwTXFpU0V4NFhmTXQtLTZOTEcwSjVCZVFNT2haSEMybWN4b2tEUUVablZxcTM0OXFrUQ?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Doctors in central Pennsylvania are urging sick residents to skip Thanksgiving gatherings due to a measles outbreak, PennLive.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-812306e3470e53f0",
       "title": "Wisconsin reports 3rd measles-related death amid worsening outbreak - upi",
@@ -800,12 +829,52 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-8227ae26e1525bb1",
+      "title": "US CDC reports nine measles-related deaths in 2026 - Reuters",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPakJaWWtRa3lfWHZ5ZDlLNlV2cWtCNWVXa3NUQzFCOTI1UnRwWUlpd0J2TkJONkN1eUdzdmR3aE55emlOX2hrYjluVmF2bkFZWTlMZFFZc2pXdmVvbTNELU9fMGQtcDdHLVN0dnZjc1dwUExxbF85T3oyZjlvS29NQ1JjSUtVZFA3Wkxxd1Z3TDRoZ29CdTY1UDNqSzczcGxGbENsQUh3Y1poTG9BeW5XRmpjT0padVpCQUdN?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — US measles cases",
+      "summary": "The U.S. CDC reported nine measles-related deaths in 2026, Reuters reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b41d83c9bd56c58c",
+      "title": "Pennsylvania’s health secretary pulls back the curtain on the state’s measles outbreak response - Pittsburgh Post-Gazette",
+      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcTMzRm5vMGp1YloxUlBIS1ZpRm52QUZzRDFJanFBQ2I5T2g5TjVzZjFjak8wcUo4TFh5YXhJZzQ0dzZEcENlczJXVHdnWklqbEp6VG92NHA1R1E4SU95NWNQc0tHNnRmQlVjUTdKQ2loTXJ6eVdyblhJX3R6MjhYREhXTmZMNjhQb25mY0ZaWl9KMW1HMUtTcGxELVI?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania’s health secretary revealed details about the state’s response to the measles outbreak.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-b72e92d23454c2cf",
+      "title": "Measles Outbreaks Highlight the Importance of MMR Vaccination Amid Rising Cases Across the United States - 2 Minute Medicine",
+      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSnVZTDJ6TUk3OEpPZENxdGtFMHIxekx4Mmh0aUIwYzNwMk1SVXRlamVtYmtqMDdrdlRZc2tvMmNYWDMtVDhDWlF3U2M1ekhib250TG5Xc1NnQ1E2V25hVi1qZGk2OE5la2NwU3k2Z2h2NlRFWkFmVFdWRGJpWFhqVXVmMXBXNW8wTHh6ZDdUdEg5Q2RSSzVqRmxzaDZ5QzJxQTRHSTNmMTRLODRVU19iX2NEMTkzSUF6bm5MNzBTM29jQ3ZYMDlCV0kzSmNlbjYwRkhR?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — measles outbreak United States",
+      "summary": "Measles outbreaks across the United States highlight the importance of MMR vaccination amid rising cases. 2 Minute Medicine reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-c32f5526665722e9",
       "title": "CDC director aims to restore trust in agency amid calls to resign, U.S. measles outbreak: Only on AP - AP News",
       "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONEdJdUZKdVc2UHk2WWw0UW5iSTRlampaLWhYM0phRlQ2M3ZEV0xSSXVGZW10YVNBcHFjREVWZzFWaEpWYUIzbWZxRkljNEdPVWxGV3dRaEp6WF9fY1pjVlZjT05GMHR1MkRFNWEtOV9pWXFpNFgzZVV2aGVnX2U3amtVVjVBZGU0YXloa01KSTBzYlFiWTF1NzR0aGhkWTJyUGFzUk1LVEZNaTZMcUg2V3dBUHU4VWZVQlNEbmQtMkF5VlBibmRCZ1pKWnJrenItcmViZlVuN0JuNFBSUzhWTGhSYjg5clJ1cEVN?oc=5",
       "date": "2026-11-25",
       "source": "Google News — US measles cases",
       "summary": "The CDC director aims to restore trust in the agency amid calls to resign during a U.S. measles outbreak, AP News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-dc36829f03e6eab2",
+      "title": "Measles Is No Longer Just A Childhood Threat: Wisconsin Reports Third Death As US Cases Near 6,000 - Health and Me",
+      "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNenFwYk1mSUQtZjFkbzhjQjNRSTFDYnlxakdLUDg3Q19DYXB4OF9aSDBfNTVMU094RmpQVDFBWWNqbjNXRkwtNFg5OWtySnBFaUFNam5xakZUZ3hqZlMzYnZtcU90UEtyRUxxVlNyMzdqN3Y5V21jSVYydHFaaGRIdXdlMldSM1ZMWlFkejJISkVZaU5GYXk2eGhaMlJ4NmlxdkxhQzdTcjhTUGh4am85c2xveGlVOFBJeXhrbDJUbVZFTGx2dC1NLXZoU0tqQ2JEME5vZnFOMThQcl9XdnhtX1U1S2RXczdQelE?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — US measles cases",
+      "summary": "Measles is no longer just a childhood threat; Wisconsin reports a third death as US cases near 6,000. Health and Me reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -926,66 +995,6 @@
       "date": "2026-11-24",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Measles-related deaths in Pennsylvania have risen to nine.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-639738a5b37e05ae",
-      "title": "A look at the measles outbreak in Pennsylvania as it reports 9th related death this year - CBS News",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOaWFabnFhbjVrTEZhWXg2S3hFcEpEVEZQdHdQQkY0djdZSVJMemZXem9BVmdPV0xVU1pQNEJub21RdlY3bHg5NFFJMS1QUENhYnItcWtOVHFLMC1YYU1OVXJjWXBROGdhaU5FdTBGRG9ueUljVFMyRUR5TGlPbFJ3cXNRWUlRRGRZVnUwWV80T3NNRGdNWGRZcFJNdWE3M2cwa0MySA?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "A look at the measles outbreak in Pennsylvania as it reports the ninth related death this year, CBS News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-6b36dec267da6885",
-      "title": "Pennsylvania reports ninth measles-related death, fourth this month - upi",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNQ1kwZXgzMzNlRy1KNjR2VDJMbG9sWEFJTkhsamY4YUYxdFkzVFhBMDdpRkJLZmluLWxLVVNLY0dGeVJnTVZjWkhxX3p6bzVfd3NzcnM0UmtwS2JQYmFydFEyOHlWSldpZnZqUkNRWHVNaGo1cXZFd2wwNG94eFpPSjQwYzIzejJpc3JXNE85aWtyNmRM0gGaAUFVX3lxTE5WU19aRFdHbkdsdjkwODloTDVYaWtSM0lRVlJjMUw2WDZxM2RjS2c0RlY4RHd5OHJXbkRPY0dhMGpIX2xsbXA5X2p3eE9jc1VXZ25SaERzdEhxUHlnTHg2aW1QNUpKaVB0OFh3Y0ZSSEptczhrbU1sRnMwR282c0ZibFVBdmFTV3MxYTc5ZzJXZEhyanpacHdtWGc?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania reported a ninth measles-related death, the fourth this month, upi reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-82642506b08ae82b",
-      "title": "Pennsylvania Measles Outbreak Exposes County Data-Sharing Gaps - MyChesCo",
-      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxNbUE4RjZsOGE5ZkxvYkhJODdUWldBcExkcU9FeWVjZlBmdkVCa3VhQ3pIR3ZyVHUway02S3oyV05kVWVxcFoyTTRraVdrNWc2RW85WXEySDhtNXBWNGh3dTEzLUFDSkVuTXEwbi1tUmdnZ0t0eFRtTVZtTkN5VkVBTDV4U0xxVFZBNUtuU1lYTkpVT1Vmdk90MzlnYXM3UUVodmpkbW5SRzFHM1FjbkkxZ2UtOWc2R0Z5QnIweVFwdFpmM2lBRWhWamZB?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "A measles outbreak in Pennsylvania revealed gaps in county-level data sharing. MyChesCo reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-896e57f8fe7da989",
-      "title": "9th measles death recorded in Pennsylvania as outbreak surpasses 1,600 cases in the state - CBS News",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBueVBOMEptSEZKSHRySGJVdXNYQ0V5RVYtN3lGNmptME9EbXlwTUdocmYzMHFlNFhRVW1kUXU4Y0kxeEM4N19DdWx3cGhRZjd2R2E5Qjl6cXI1alBkVzI2aF83UnB4dlVFUmhsOVdmRV96dEk?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania recorded a ninth measles death and over 1,600 cases in its outbreak, CBS News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-9677b7d9cddb13ca",
-      "title": "CDC looks to bolster employee morale after U.S. loses measles elimination status - Government Executive",
-      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxNRm1QTUUxWHpIYmwwTlEtYnBfeDZOdkZzY0FiMGp2bHRNVTlPNC1DZjc1ZDh5cGllX0pUY25wSFlfU1MwTUhpTlNvOHl6SkZUemEtZV91U1hZTHdLQlFLSHFjWF9TMTJiTU82dE1PdkwyNDVKWHd4Nm1pbG9wcGxlRU80QkRRak9PUGxhQWQwSG9wbkl2WFNFeWplaGYyYVUydzFzOVNQQkFMSE8xdFh4LWd3YmRtYUdhQm9DM0RCdXZlUXZC?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC aims to boost employee morale following the United States losing its measles elimination status. Government Executive reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b7ac7d320b170453",
-      "title": "Pennsylvania Reports 9th Measles Death: US Outbreak Surges As Total Cases Near 6,000 - Health and Me",
-      "url": "https://news.google.com/rss/articles/CBMi1wFBVV95cUxQLThJXzJXLUlWQ0plQUFrZXp2QlNhQ04tWER1Wkt4Wi1KRVZTay1TYVkzSS1FaUkyUGJ5N0xJNHRHXzJ6THNaQWt6MFd0SzFobnRwM1RLWFRkTkkyRHRONWhoZzVzYm1oVWZYNzVFUTN1Y3VjRk9hNzhHaWJfNmdEU0V3VzZ0NGNzUGxKWC05VEtHc0R3RXVDTnEyOVRfYmxpTUVGNGdERmRlcXNzWjdKMWZfLWRUQ3hHUFZybldOMWEtU3YyTXFwRER0OG1nYlduOGlCT1BNWQ?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania reported its ninth measles death as the U.S. outbreak surges with total cases nearing 6,000. Health and Me reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

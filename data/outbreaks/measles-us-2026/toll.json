@@ -1,5 +1,5 @@
 {
-  "lastChecked": "2026-11-25T08:54:54.085Z",
+  "lastChecked": "2026-11-25T20:44:22.778Z",
   "snapshots": [
     {
       "date": "2026-10-29",
@@ -48,6 +48,18 @@
       "sourceUrl": "https://www.cdc.gov/measles/data-research/index.html",
       "rawPath": "data/raw/report/cdc-measles-us-2026-11-19-eb5a41bd58a4.txt",
       "rawSha256": "eb5a41bd58a4553b03b5bb1019560b9231ea2010d8b5edca38c3137e58eb064d"
+    },
+    {
+      "date": "2026-11-24",
+      "confirmed": 6039,
+      "suspected": null,
+      "deaths": 9,
+      "deathsDataFile": 13,
+      "recovered": null,
+      "source": "CDC measles cases and outbreaks page",
+      "sourceUrl": "https://www.cdc.gov/measles/data-research/index.html",
+      "rawPath": "data/raw/report/cdc-measles-us-2026-11-24-836535692b75.txt",
+      "rawSha256": "836535692b75e9b5a90001c9d5435693c9c416094a8bc73a8bfc1107812fc593"
     }
   ]
 }
