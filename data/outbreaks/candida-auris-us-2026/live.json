@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-25T20:44:38.980Z",
+  "lastFetched": "2026-11-26T08:53:39.163Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -180,7 +180,45 @@
     "news-e628688d2d892cb3",
     "news-66b716b30c101836",
     "news-0e70624de358ffed",
-    "news-9d0d1aa72a1ba86b"
+    "news-9d0d1aa72a1ba86b",
+    "news-fb1970387b09f361",
+    "news-f3bd40990de09a97",
+    "news-576a148fce84b6d6",
+    "news-01c1bd30cecf7834",
+    "news-2784c38fd5045e2a",
+    "news-2121e57b210fe9d8",
+    "news-7d20623b7d13675a",
+    "news-83c5051f9f746834",
+    "news-cf0df58d40682403",
+    "news-9fe10ce23b82913d",
+    "news-199e53f487250d2d",
+    "news-1fa746839166365f",
+    "news-d7371459ae97d45c",
+    "news-c400c17c2da625f5",
+    "news-51ac390cc33335e2",
+    "news-18765e61b1fdde58",
+    "news-099d506e55471a86",
+    "news-29d8cb0971ffb5df",
+    "news-2c30b5bb3a93483e",
+    "news-72da7a966d0d6c30",
+    "news-fd1e2fed0f4430bf",
+    "news-e3a98560f7481954",
+    "news-eb695a04f3e9d4ac",
+    "news-35f0a25f15d66c05",
+    "news-ab464d64cb2707e6",
+    "news-2d48a71afb11925f",
+    "news-4a8587e3ddf5888f",
+    "news-fad61fbd89fba065",
+    "news-76038a9c87e5a49b",
+    "news-781d5766c910dd32",
+    "news-2519b84d84dc1eaf",
+    "news-54253aff5f94d645",
+    "news-4b823ea282fd24f9",
+    "news-75900444bb65ef23",
+    "news-f0851e083387d39c",
+    "news-9b93bcda9d9065d7",
+    "news-0a3631f0a287c671",
+    "news-f74d2cebd1c3ed2e"
   ],
   "recentItems": [
     {
@@ -224,6 +262,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-35f0a25f15d66c05",
+      "title": "Candida auris: Harbinger of Fungal Pathogens - Scientific Frontline",
+      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTE9WRUFZMmpGLTdsWkJpUWRnTU9rQWZncjVuREZWMjJMT0E4YjNXWjU0SWRLUFdWNmtybmhxYnJpdXE0QTkyb21JUTh0V0V1emsxR1JQcFJZYjVtQjg?oc=5",
+      "date": "2026-10-22",
+      "source": "Google News — Candida auris nursing home",
+      "summary": "Candida auris serves as a warning sign for emerging fungal pathogens, Scientific Frontline reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-426501b52756a374",
       "title": "Tracking C. auris | Candida auris (C. auris) - Centers for Disease Control and Prevention | CDC (.gov)",
       "url": "https://news.google.com/rss/articles/CBMibkFVX3lxTFBiUDktOGU4ZlJVWThmV21KbjdBQUNTVmFLN1JsTVVlcmlrSHhrZ0VHc0VPWlNNMGhmUkQtTlBXZ3FrQ0lNeFZRbndoWlZUYjFTaGlDVUVsU0pqT2dSNmhaQWtVVkhMZjJiMmNMS1ZR?oc=5",
@@ -240,6 +288,16 @@
       "date": "2026-09-17",
       "source": "Google News — Candida auris cases",
       "summary": "Candida auris cases are increasing, and infection prevention must adapt to the threat, ECRI reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ab464d64cb2707e6",
+      "title": "Drug-Resistant Candida auris Reached Hospital Workers' Gloves or Gowns in 29 Percent of Patient Care Contacts - Medical Daily",
+      "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxQV2o2WmY1cTNKbG9HQkh2ZmkzUWprTzFNYy1USUdZZE4yYUhfd0JyMVNWeFY1MkdlQVFaN3Rib1A5dEpPTWdncHRUVkYwb0l5RTlCU2ZoS1pHVWJ6bEFVZ3IyZWpLeDlCTHBhUmVNT3pSOFVvQlgzYUVlcUdxejZwUEpzS05ZeHV3X25MWDAtdTVPWm15NTRCSm5KWmV6dVdUZnp6d190WTl4TTlyeW1rTF95UWNyNi1JOFFaNDYzRzlTbGJH?oc=5",
+      "date": "2026-09-11",
+      "source": "Google News — Candida auris nursing home",
+      "summary": "Drug-resistant Candida auris reached hospital workers' gloves or gowns in 29 percent of patient care contacts, Medical Daily reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -274,6 +332,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-2d48a71afb11925f",
+      "title": "A chloramine-based antiseptic polymer improves Candida auris skin decolonization compared to chlorhexidine in a murine model - ASM Journals",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE1aMlpneV9LYmd5dzFia2x6MDV2ZjcyczBKc3NqMEJRT2YyajFUcGFDYzN5cVdCR0YyZUhncTRjeTlrV3g0ZkZqN2hia24yLUw1YUFjME1Xb25CWE9lZkE?oc=5",
+      "date": "2026-08-21",
+      "source": "Google News — Candida auris nursing home",
+      "summary": "A chloramine-based antiseptic polymer outperformed chlorhexidine in decolonizing Candida auris from skin in a murine model. ASM Journals reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-96968723940d28bf",
       "title": "A drug-resistant fungus is spreading in Kentucky. Here’s what we know - Lexington Herald Leader",
       "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5wT2JDYUEwdHUwWGdnRERnMXlJVUMzSVB5UnBlc21pQlUtbTlPRGdBQVRXUEhvRnc1eHdXYnJ0TjFzWlFEdXJZMGJLcFIyaW1XcFJOcTZHakR4ckIyeTFjZ3hLQ0c0a0xs0gFoQVVfeXFMTmpQNXl3T3V1c19nNTBUeFNVdkZTMkxYNG1hdVdHV0NaTkxLLVZlMHMzcGt6ckRCMkpZdkd1aG9WaGlQRnJQdEI3MWpSU2dXTUJmOWF0cXhpSlkzLWxxMWd4VFpjV1FKRWU?oc=5",
@@ -294,12 +362,32 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-4a8587e3ddf5888f",
+      "title": "How one San Antonio hospital is dealing with a hard-to-kill fungus - San Antonio Report",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxOTzJ1SWNyaTJPZ1ZUMjgybG43aFpfa09WOVJhOXJuSXFDc3g4Ui1GZDNSWUtReVBiblFWQmR3a3FOM3BKWXk4UnRrR1FheE1qZDdFOTVwbk1WMlFwbEM0ZjQ4VFZoMmpPWmw4bHN3eGhWZVNKQ3J1XzRWc2F2X1Raak5BejMwV3lrN2xsYXRjMW91RFBwa0o2TTdxYjVRYWpya3Jweg?oc=5",
+      "date": "2026-08-14",
+      "source": "Google News — Candida auris nursing home",
+      "summary": "A San Antonio hospital is dealing with a hard-to-kill fungus. San Antonio Report reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-1181c7dff2ba1e16",
       "title": "Drug-resistant fungus cases rise in Georgia, CDC says - FOX 5 Atlanta",
       "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxPaC14NEdNaHVLaDdPWHpHanVDdGlweV9KY0tRZjAtbE1TVk1BVUNFSm95Tk5ndU5ZMDFjcjdaYUN4RHRILTlFUXZqVVRMUW1rZDZsODJMOFo1RnMxQnAzTVB1VHpWcElXRHdkZ0h5VG15OVdYdGh1U2VPY3BsNGRJMzczQmk0REUybFE?oc=5",
       "date": "2026-08-13",
       "source": "Google News — Candida auris cases",
       "summary": "The CDC says drug-resistant fungus cases are rising in Georgia. FOX 5 Atlanta reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-fad61fbd89fba065",
+      "title": "The Deadly Fungal Infection Candida Auris Is On The Rise – Are You At Risk? - Blavity News",
+      "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTFBienZSNGk1dGpGa1JRUTRLQVlnbks1NUdNZ3hlNXNLMmV6dnZQb29uNy1INGU5bkIwbUdtQkJSbTlmcHItc0FOSGlBb01tUlc1NFJadVg3ZXRYUUZTVUE?oc=5",
+      "date": "2026-08-13",
+      "source": "Google News — Candida auris nursing home",
+      "summary": "Candida auris, a deadly fungal infection, is increasing, raising questions about who is at risk. Blavity News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -330,56 +418,6 @@
       "date": "2026-08-11",
       "source": "Google News — Candida auris cases",
       "summary": "As Candida auris spreads, a scientist highlights the growing threat of antifungal resistance, UT Health San Antonio reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-ed481edaeb9de671",
-      "title": "Dangerous drug-resistant fungus spreads across US, reaching 27 states - Fox News",
-      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOTmNtcTllMGNnVDlyOFBybUk0dW5ueFpVWVVnYWhTVEhPb0s3czcwZWNYWjBkZ05iWHl0cFF4MWNYRS1aNVNZTjducXpxS2RrMk56ZHRINXQwQ05MZGgzQ0p0QjY3ZDJDd0ZhT1d3dnA5bmRyWlgyeUxSX01JTzR6VnFzNmRTc1FpV00tank5OFlRdUYzUlJ5YUJ6TkxPSktP0gGmAUFVX3lxTE94T2NSbFFHVkJpOUpEODlZRy0yOGFQakprM0hTMlI1aU40UjVvYl9Oekd5c19UOTh6QzRBS0NsR0ZGM3F4dHd5aGd2WExTRWhVV3paWGRUTHNmSDJTS25aUUhwOEVaMHYxVzNfOE5KV25IUDZrR3Rpcl9yLTlubGxJVGJ3MjluU2hJbHBNSG94TllhU1pRcXF1Ti1WeVlsTHJ0clV2bEE?oc=5",
-      "date": "2026-08-11",
-      "source": "Google News — Candida auris cases",
-      "summary": "A dangerous drug-resistant fungus is spreading across the US and has reached 27 states, Fox News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-12112101de02b961",
-      "title": "Candida auris cases are rising in Tennessee. What to know about the 'superbug' fungus - Knoxville News Sentinel",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxOVnd0SFA2eVYyNTBjWVJuMUE3T3lycWZTdEtUVXhBLUhSM3FjUFFfM3RxVEpCUjd0ak01QlpWbUFsY3g4UUhGVEpkMnhnc1FUaHhlTlZLaV90RkhqMlMtclZzRU0yb19DbDZRbDNYUUVOUTBUeEhSTGNYbDFaS2N0VjdhYmFva3IxS2VyR2c4M0Q2Zml2end0MnpxUWU?oc=5",
-      "date": "2026-08-10",
-      "source": "Google News — Candida auris cases",
-      "summary": "Candida auris cases are rising in Tennessee, raising concerns about the superbug fungus. Knoxville News Sentinel reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b9baadd9134aa797",
-      "title": "Candida Auris Cases: Drug-Resistant Fungus in 23 States - Yahoo",
-      "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxOSTZHWkczUTFZNEs3UlItbi1FRGQ2Z3lPN1dvQmpNakFPS0JNYnp5M1pUSUg5ZzRDT1BjVDVZVzhiQVZQbUY3dGZvRVI5azc1Y2xaV0Vtc0JVRDRjMzJmdUVYQzJaNkJncy0yNEgtMTc3RXlVQnV4M0ktS3g3Y2FhVVBGUExxWFpPQmpGWVdPOVNqRUUyYnVHcQ?oc=5",
-      "date": "2026-08-10",
-      "source": "Google News — Candida auris cases",
-      "summary": "Drug-resistant Candida auris infections have been reported in 23 states, Yahoo reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-f59a28dad88f2222",
-      "title": "Drug-resistant fungus Candida auris spreading across US, but doctor says healthy people face low risk - FOX13 Memphis",
-      "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxQVU1qS1F2U0xYbjZ5b2dDZzlsNDlsdk5RY3J4anpJUkVTbHAwRVNLc1VrNXJ3ams4UlFHZ2czMHd2cURUa2xRamlSOHhBa3g1VE16Qmd0cTgyNmdoX0tVMGczNkRhZVUzMk9XV3VDWWYzTWtQVWpRSVFyenpPZy0ybllRWnpUcGlaUGs3LU9JQjJNcFBZRGZWWC16X3pJQmk1TGx4QjJlc2FDTDJXS1F2U2lYTmlRczEtT1hfRGRiN2tJdDN0aHJIdWRsSHZWU1MwcmtBZi1weGNFOVFVMWJxNFJRQ3NSRkE4VjVmQmcxWHZvdGxrdndsanB2b0Y0TXFxakFhSGkySm5CdlYwNFE?oc=5",
-      "date": "2026-08-10",
-      "source": "Google News — Candida auris cases",
-      "summary": "Drug-resistant fungus Candida auris is spreading across the US, but a doctor says healthy people face low risk, FOX13 Memphis reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8b4090b0c07b5a0b",
-      "title": "CDC warns of surging drug-resistant fungus in U.S. hospitals - Live 5 News",
-      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQRVNYU1N4N0ZzbE5CMFJDOW1abERhZlhFd3d1YXpvUXVLdnExMmR6c2VYZ1JTd2swRVpMbDlPTU9LTE9ud3JvS3lIN3dzTk93cjNBakFCc3NQYWpWTWJhYVRsa2xCUk5PSlJSd05aVXhnalNsVTNkeVBHczVwZFZfcjVUMU9VLW1aU1QyYjZFNXFtSTBz0gGoAUFVX3lxTE5iaUgyQUxjeWZ3M3lHS3Bfb012MFhGSmFMNVR3RnlZTU1aNExtekU2a05wQURoOU1WeDZuYUtvSzY2Qi00Z0FiUDY0MUhiT1Ntd0Y1cmJDX1pDdXdMcW9oVlZ4UmdjVjFCcC1HLXpUVEVqSlRrNndjbWtYOVU1SGY0OU4yQ2dyMHVkakkyZ1BNUUdjRnNCXzVhWXg2ZXJBY2xJcS0xbHpOdg?oc=5",
-      "date": "2026-08-08",
-      "source": "Google News — Candida auris cases",
-      "summary": "The CDC warns of a surging drug-resistant fungus in U.S. hospitals, Live 5 News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

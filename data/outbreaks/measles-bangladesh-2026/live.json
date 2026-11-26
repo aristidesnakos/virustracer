@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-25T20:44:33.239Z",
+  "lastFetched": "2026-11-26T08:53:33.978Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -550,7 +550,10 @@
     "news-77654d0535ba5bde",
     "news-80119cc3d78bef7e",
     "news-75953c853bc8bc7d",
-    "news-c74954a77470a7ed"
+    "news-c74954a77470a7ed",
+    "news-860fdfeeb426a897",
+    "news-eb5a18f8f126b8d1",
+    "news-71c546fd67173547"
   ],
   "recentItems": [
     {
@@ -624,6 +627,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-eb5a18f8f126b8d1",
+      "title": "Two more die with measles symptoms in Bangladesh - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNb1MxaEs3VTBaZV8xOHl5dERTMFBlWmpXVy00WXNIa3hqeXVDWVFmMS12WGhJR1NmcXJuNEs2bk5ELTVxUDJ5OExMWXM2NkVqR2UxQTJKV196X0FqQ1dscTRrQTk3TmVlTU5udWZkUHZwc1pfV255YTlqdkRFQTgySmhmZGd0amgyZjBOQ1Jid0s3T1kxVTk0?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Two more people have died with measles symptoms in Bangladesh, The Financial Express reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-0a126859264f9f18",
       "title": "Measles and suspected measles deaths rise to 1,361 as nine more di - Views Bangladesh",
       "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxQRkVoVnVucHgySWNtS1lIQzhiSUpKOGxpU2x0VlF3YUQ3TGZpQ2lVMEUxVkNobmxxX0ZVTkY3anFOeXl4TS1FeW5jQ055T0s1VnRZV2tENXlVMUdSRzJFOXpUeU5yNjdpeUJsRUQ5TnREbzA0N3J4cUh6VUdYQno3TzRzWWh4ck55LTl1Z29SMExZMWExRlRCajd2dw?oc=5",
@@ -650,6 +663,16 @@
       "date": "2026-11-24",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh logged nine more suspected measles deaths, Daily Observer reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-71c546fd67173547",
+      "title": "Nine more children die with measles symptoms - Dhaka Tribune",
+      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQQzNJUGdGa1hWZjJqX00tRkFRQlNSQXpsNVI1SjIyY2JNUUZQQ2JlS093TnN6YjZEN3dhUkhSQ2gzeWdqUzluRHJXclFUdm9VOGVXSUN0S1VFWEtUQ0VxUk5oN0JCTlQ4LVhieUxncl8wU1RiVEVjc1hmYVdyRmxzM0RmVVVCQmdQZjd5ODIxbWd4TXp5bk84VFI5aTNKMFJvX0o5bNIBpAFBVV95cUxQQzNJUGdGa1hWZjJqX00tRkFRQlNSQXpsNVI1SjIyY2JNUUZQQ2JlS093TnN6YjZEN3dhUkhSQ2gzeWdqUzluRHJXclFUdm9VOGVXSUN0S1VFWEtUQ0VxUk5oN0JCTlQ4LVhieUxncl8wU1RiVEVjc1hmYVdyRmxzM0RmVVVCQmdQZjd5ODIxbWd4TXp5bk84VFI5aTNKMFJvX0o5bA?oc=5",
+      "date": "2026-11-24",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "Nine more children have died with measles symptoms, Dhaka Tribune reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -730,26 +753,6 @@
       "date": "2026-11-23",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "Bangladesh recorded no measles deaths for the first time since March 15, Dhaka Tribune reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-79e6b7c96eb2b0f7",
-      "title": "Bangladesh Records First Measles Death-Free Day in 253 Days - https://www.businesstimes-bd.com/",
-      "url": "https://news.google.com/rss/articles/CBMiW0FVX3lxTFBmT0NuZTNJWWNzNFE5OUwtVG1OX3ZLODZFYTRyQl82NVctOXkyQjktLTUyMld6cVlmXzl5WDMxZmZka0Z4QmJKc1JiWHMzYkU2SDl2Vm1jcU1uYjQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles outbreak",
-      "summary": "Bangladesh recorded its first day without a measles death in 253 days during the 2026 outbreak.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b4c84e0f2a9a23c6",
-      "title": "Measles Outbreak Claims Over 1,300 Lives In Bangladesh Amid Vaccine Shortages - NDTV",
-      "url": "https://news.google.com/rss/articles/CBMivAFBVV95cUxOWUpjSEI1THVHaTdMT1ZQc0Q1RlV3OGRyb0Jrc0dQNDc1Y3FkVUhYSTROeS11SkhxLXBMNlVkQ0NSSzl4d3F4akRCUGNMWXR5SVRLN1dCRVJfZ1JpbXNTS0U1RjQ0dE11cDJSekdDM2pUdUx0TjZyaWVTRzdDNTdCMEx3WjV2emV4OUthenpvbW9YZ2U3eTJ5NHpjdTI1N19nbmxUR1FWOThrN2ZjT0JVMVdsMHhMWjYzeGZ2Sw?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "A measles outbreak in Bangladesh has claimed over 1,300 lives amid vaccine shortages, NDTV reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

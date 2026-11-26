@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-25T20:44:31.635Z",
+  "lastExtracted": "2026-11-26T08:53:31.575Z",
   "candidates": [
     {
       "id": "news-998129a44fc7c7e4",
@@ -266,20 +266,6 @@
       "sourceName": "Google News — Ebola death toll",
       "date": "2026-10-28",
       "extractedAt": "2026-11-02T08:52:30.901Z"
-    },
-    {
-      "id": "news-b10a717fa35cd3b3",
-      "country": "Kenya",
-      "iso": "KE",
-      "flag": "🇰🇪",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "context": "20 contacts released from quarantine in Kenya.",
-      "sourceTitle": "Ebola: 20 contacts released from quarantine in Kenya, amid vaccine ‘hope’ in DR Congo - UN News",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiV0FVX3lxTFBwODZQUkJKblN2QXN5cmNCSWxnX0JNTHhjVWhiY3k2cDFMWXc2QTQzU2lybm9EVjhrbTZxYzdLYkxhS2xqOWZVYlZta3FKcWNYYTlGLVpvNA?oc=5",
-      "sourceName": "Google News — Bundibugyo outbreak",
-      "date": "2026-10-27",
-      "extractedAt": "2026-10-27T20:26:46.613Z"
     }
   ],
   "checkedIds": [
@@ -766,6 +752,21 @@
     "news-75577063c11ed633",
     "news-d93a1b2c0ec62228",
     "news-2141769afe0570e3",
-    "who-2c67d72cc8077cbe"
+    "who-2c67d72cc8077cbe",
+    "news-e68a6ef05fa966fc",
+    "news-1b6d1c1dbf71c56f",
+    "news-2ada8c88221a8bd1",
+    "news-095752dad700d401",
+    "news-39a489c6fc9d774f",
+    "news-d10af5bd969372cd",
+    "news-e620cb8640e14642",
+    "news-03af622968a65c27",
+    "news-290b6ea3580a921d",
+    "news-8099e811e4f9df8b",
+    "news-bbae31c64ba4651f",
+    "news-bc73e0df94cb68b9",
+    "news-2194a306326310ac",
+    "news-b25c647327768046",
+    "who-4cee539ec611139e"
   ]
 }
