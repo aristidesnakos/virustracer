@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-26T08:53:35.231Z",
+  "lastFetched": "2026-11-26T20:43:40.760Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -805,7 +805,12 @@
     "news-315f1cf694359ba9",
     "news-6f872051af229893",
     "news-894b440a658b3f60",
-    "news-84330480eaefa9d4"
+    "news-84330480eaefa9d4",
+    "news-1b96547151ee0e23",
+    "news-e1a4a0612bd36fc4",
+    "news-cef970a1630edc01",
+    "news-ac455668e5fd0b8c",
+    "news-ce6ab553a20d6684"
   ],
   "recentItems": [
     {
@@ -815,6 +820,36 @@
       "date": "2026-11-26",
       "source": "Google News — measles outbreak United States",
       "summary": "The United States measles surge offers critical clinical lessons for doctors. OC Academy reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-ac455668e5fd0b8c",
+      "title": "US measles outbreak causes major concern for expecting mothers and infants - The News International",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxNRWt4czZVNjhobkYyRTE2Ui1zYUlqNkZ3c2hDRXIxajlkenVJLXc2VjZXcVlvbHB4aG1EOW5MQVpPczhfSk9KbEJKV2NxYlJsSFJQUVFOX25sOE5meTBYb0VJNEVtaVZJSEdnNlpxbFhoYUF6WHpqekZNbk5pVzRGSnhqNmZtUWdQTDl3X0NlV3FlcDNxSzJ1enM1Wk84ODM5T0dIZFRLdTA5WTgyYlFfc1lQeGhkNzTSAbMBQVVfeXFMT3k0SWdVYl9ZSy1XUVlRbHo1T19vYkR4UGFRV2syQ3haaVdqZDMtSDVjbUplQ2pYcGE0aFNtU0xDT05wcm94Ri1tTGxqeHFkaV9VTUhjWnh6T1FKbmtKaWc2SUJTR0tLQkhWYW0wdWx1amRqS2RaTDB5dTRpU1BlQS1CSEUxN2FqVGdwTk5JRWpYM2NLdUU2Mzc0RWdhNlhLMWYwXzJBY3ZIUnphUFYwTDNDcHc?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A US measles outbreak is causing major concern for expecting mothers and infants, The News International reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-cef970a1630edc01",
+      "title": "Measles cases reach 1,679 across 46 counties in Pennsylvania, DOH says - WFMZ.com",
+      "url": "https://news.google.com/rss/articles/CBMi9gFBVV95cUxQSk5HSVJMLWJaTlIyRWM2NVVybElxZEdSQmRUVTFOX0dJeWF4T01jYXI0emR0dHBkSjVOMko3eXRpTWZiVWRqV1pLQi0yZUxvSllrd2FuV1doRlA4bnRQRTRybkZUcHhINEYxR1BhbjVzb3RoOWpiZ0dhSDZhUmtrbDlMb3lJNW1Na2h0aEJuZUNTVHRMY2FfaFA1a2x6dnpHZ0lBWlRkTy1qaDk3TEdBWDlzRGdqLWdjQ3VRNk4yM1g2YWFVQ2x4WGpuR2U0RnNNSlhhWjNVMG5SUGo2SElSLXlLVEZJWXVFb2ZxY2Nmd2JvZW5ZVkE?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania's Department of Health reported 1,679 measles cases across 46 counties. WFMZ.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-1b96547151ee0e23",
+      "title": "Pennsylvania Asks CDC for Help With Measles Outbreak - Cleaning & Maintenance Management",
+      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQUDhTdU52dXY3RmNsaV91elNCWHZVOW5iWkYxMTB3UUs0eU5DNFJYbTNqT1BpR3JEYU94T0pLSWpodTg1WFZkR3RhQk4zUVRJSWhSNHNJTkVfUUxXclp2VHRhaGt4Wjlad0s1dlktaFVQYWlzb2gxWk1tSTlCY3FYNGN2ODFGZw?oc=5",
+      "date": "2026-11-25",
+      "source": "Google News — US measles cases",
+      "summary": "Pennsylvania asked the CDC for help with a measles outbreak. Cleaning & Maintenance Management reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -975,36 +1010,6 @@
       "date": "2026-11-24",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "An unvaccinated Pennsylvania resident died of measles in the state's ninth fatal case this year, Fox News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-0f71f7b927fc44f7",
-      "title": "Wisconsin reports 3rd measles death, as illnesses spread to the general public - NBC News",
-      "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxQckZNQ1V3YTBhZVlUT3VyR2ZNZDduUjJDazUxd0lnUzJEVGJhWGZfdXVUdGM2MFlqbG1JdmFjejQ1SDlWV1B1ZTdRMENpNVJkOFZhaUR1NW9Fc1lYeTk0WXRibmcwclkxWVhaNE5TY0lGUjVnZWo4WTU3NklrZm5ycGwwTFpEMWFUajZJaG1WQ05QYzBYWk5fdjgxSFJtenJlYkJEdw?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — US measles cases",
-      "summary": "Wisconsin reports a third measles death as the outbreak spreads to the general public, NBC News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1cdfa6573178ff0d",
-      "title": "U.S. loses measles elimination status as Minnesota cases reach 36-year high - - Metro State University",
-      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxOdVB3N3B2TDNlX1E3ZE9uT1Bxc2Q3dXNoNklXN0pYX1c0am9HNnRjOWtfQ0ZzR19odFA2UUxNTFdEdkRnNm5xckZPTnE5TnZIWl8wQkhsN2dsSEpCMjJJRHhrSDVxWHpZSzgwQjVXczNObmJrUHhPYnl6LXBHVkM1eWltRFdrRmZ3YnJSU1h0VUNkd0dmVU5aYXl2aEt3bFowaHZkSUFwSTFMQmlHYzA5QzdQVlo?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The U.S. lost its measles elimination status as Minnesota cases reached a 36-year high, Metro State University reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2d24f50bde396884",
-      "title": "Death toll from Pennsylvania measles outbreak climbs to nine - WHAS11",
-      "url": "https://news.google.com/rss/articles/CBMi4gFBVV95cUxNYmZPYS13eW9qRVU2TVdWN255OWQybmZibGtVWWZpLUppbzFlbGJlX3J6Ul9pX1NhSk1UY3NlZGt0Tl9CVWNsRjRJcmFTZTdBWWdiTHI2OUk5Y24wcFl0SjhYdXNmd1lTRXZYQjhhemlQbm9CVjA4d1dVQU9VeVZfVDNROGloMFdGLVVFTjFMQXcwb3JpWnJuamVReWpMU3l1Zm5rWWdTZnVmY1FxcVd6SWl5ZklPQWVpZ2o3WkpfZHJsRE0wbXFYN19QQTFYdWlSMnQya3JJNWdZSDZOdzE0bU5B?oc=5",
-      "date": "2026-11-24",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "The death toll from the Pennsylvania measles outbreak has climbed to nine, WHAS11 reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

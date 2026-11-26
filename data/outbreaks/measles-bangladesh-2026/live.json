@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-26T08:53:33.978Z",
+  "lastFetched": "2026-11-26T20:43:36.264Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -553,9 +553,34 @@
     "news-c74954a77470a7ed",
     "news-860fdfeeb426a897",
     "news-eb5a18f8f126b8d1",
-    "news-71c546fd67173547"
+    "news-71c546fd67173547",
+    "news-554fc2df8c3030d0",
+    "news-3e3f2729ea724265",
+    "news-ed3a1691256c9518",
+    "news-a0d845160635b811",
+    "news-1524b9db09a77a0d"
   ],
   "recentItems": [
+    {
+      "id": "news-3e3f2729ea724265",
+      "title": "Measles: Combined deaths reach 1,371 this year - United News of Bangladesh",
+      "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxNekhOVzZScG10VU9DMEpMTDNiTng5aUlmNm1nQ1V6eWFXbW1ENFBMWjFBbWlfOUZXbzBCVDRfMUxYX0k1ZFJ2a3hERjlxV0Y0T1RDdWRGWjNEOEY5eGJoTE9LSFZxeWFmSUI3RWk4Z1Q5R1ktUnF1eVZUdk93X1M0cVhJeS1qV09IdV8zenFWQ1JXdnY5?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Bangladesh measles deaths",
+      "summary": "The combined death toll from measles this year has reached 1,371, United News of Bangladesh reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-554fc2df8c3030d0",
+      "title": "Measles outbreak: Death toll reaches 1,371 as 8 die in 24 hours - Dhaka Tribune",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNZ3pIOVVaLXFCdGVfLS13VzdUZW5QRDlUMEdpQUpTaEozV1dDSmdQd2UxTWVoOXQ2TG5QcVFqUVpKaWRuOFh5cXN1bkc3Y3I1S1BDN20xeFp0c0RETVI5MHg5QWpOQkxZdlp4a2hOSFVtak5XZGF5RXdnSVR0Q0FLWll6WlZienRDSkFPQlJpQlVNWmdwNWRubW11MFR4QUJ6NHfSAacBQVVfeXFMTU85R1dyZmR0YnNBNzRWdDVBNnQ5NlNHNFhGWlkzREpiSk53UXpETXVTNmZDdnVESFYyNHZLS1hleC1lNHl4S1Bsb3hPUGxYcVIwc05jYW1ZQ18ydEg0emRLVjJxUHVRY25zU3FkVC0yLVMtbTFROXE4anh1Z1psQTl3NmlnajZTMEJXbEN1M2ZBazlmQ0hGQnVTLS1FUTQ4NGJyZXhkWFE?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "A measles outbreak death toll reached 1,371 as eight people died in 24 hours, Dhaka Tribune reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-2e6c44174802d0d2",
       "title": "Bangladesh Measles Outbreak Worsens, Death Toll Reaches 1,361; Why India Is On Alert - Oneindia",
@@ -733,26 +758,6 @@
       "date": "2026-11-23",
       "source": "Google News — Bangladesh measles deaths",
       "summary": "No measles-related deaths have been reported in Bangladesh in the last eight months. The Financial Express reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-6fed6b31a79e52c0",
-      "title": "Bangladesh sees no measles-related death after eight months - Daily Sun",
-      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa1lOalJsZzR5R2liVXc1T0ZfbVJHVVl5NXdMSy1hUm9OOHBhSEVuZHZLRDNEMm95QlluYkJNRlFuMFZpbmo4b2d5MXk4QUU5SWg0WG5RVU9RTUtBcGVqWk1USUtVVTVCdDZwVDVvaTBqT3NCLUFtZ2h1aG9EV3Yyb1lvbTBmS0lFVGpuM2hxdThrUXRMRUM1QzdSRmtESzNBWm5B?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh reported no measles-related deaths for eight months, Daily Sun reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-75b8c8e00152c3cb",
-      "title": "Bangladesh records no measles deaths for the first time since March 15 - Dhaka Tribune",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPZnFjNEM5cUlHU1BHRTNNZDJkd3l3WWI5dzN5Ti1ja21rNnhpOFpJN3Jyd3hHN19DTk13VElOMVZxNndUSjVzeF9PSmZkc00tTk5IWE9uaWpCRXNzR21GYXFkNExjOUE4MUNJWTZzbENYNjJhVjlvMVVCcTQ5NElnTGlpc0pWVGRiLVh4TV9oNzRtbjN0WHhOYUFuRkVWNTVwYmYycmJvZ9IBrAFBVV95cUxOTFFlblFzS3pEcG1xUzN1WUl2QmJia1dmTTlfdm1FUWNMeVIzSjJXREthQjRvVlAxLVA3VTJiT0NhdWdtMGpyT0xIbmVhVnUxS2Z4Rk1xWnd1OHNRbHBzNUxGQ09EME9YbFYzNFlodzdtM21sV3k0NXRTdlJYdWR5N2RZSy1WYmVEdGdad0NicHdlemZYMk1nR1BhbkFiVExDSmZiWHRQYkR0Q3pW?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "Bangladesh recorded no measles deaths for the first time since March 15, Dhaka Tribune reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

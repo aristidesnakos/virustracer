@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-26T08:53:39.163Z",
+  "lastFetched": "2026-11-26T20:43:43.567Z",
   "processedIds": [
     "news-e9f6d581787d998a",
     "news-add3e99b7fed3d3a",
@@ -218,9 +218,22 @@
     "news-f0851e083387d39c",
     "news-9b93bcda9d9065d7",
     "news-0a3631f0a287c671",
-    "news-f74d2cebd1c3ed2e"
+    "news-f74d2cebd1c3ed2e",
+    "news-7a252ef572485b21",
+    "news-08643011ee222e5c",
+    "news-e157526da28d8fdb"
   ],
   "recentItems": [
+    {
+      "id": "news-7a252ef572485b21",
+      "title": "Four more Candida auris carriers identified at Wong Tai Sin Hospital; patients in stable condition and isolated. - 巴士的報",
+      "url": "https://news.google.com/rss/articles/CBMi9AFBVV95cUxOM3ZtOXQ2TVpiNDdoX1U4d0pWWHhrczRHaFdmSEdCR0wyZGdXZjdJTkhfbGpMWnM1VWV4YmxvbVE1OUxIWjFiekxad1RlcHYwc3BDU0t2dDQyWWgteEljNXhGeVFjdXBvZVVxNlpxVGRTeVl1clZCcXNYbjRYcUk0U3N3ZVRVWmJYZnNXalRKa1loUkJHaXlSWVJMblhIUC04aVlBd2dnMUlGOVIwODBQWmM4RURuUll0Sm1pUVdwVzhrQTlLLVFIRWlpbkZ5UzRrWWdSLTBDdElhOWhOaEZMQXVxRGFRYkgxbFlLRGQyZG1WLUZp?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Candida auris cases",
+      "summary": "Four more Candida auris carriers were identified at Wong Tai Sin Hospital; patients are stable and isolated, 巴士的報 reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-b74079918671b7df",
       "title": "Candida auris Cases Confirmed at Wong Tai Sin Hospital, Enhanced Infection Control Measures Implemented. - 巴士的報",
@@ -408,16 +421,6 @@
       "date": "2026-08-11",
       "source": "Google News — Candida auris cases",
       "summary": "A map shows where the Candida auris fungus outbreak is most severe, Newsweek reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-da204717467dc580",
-      "title": "As Candida auris spreads, UT Health San Antonio scientist highlights growing threat of antifungal resistance - UT Health San Antonio",
-      "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxOdGlGaHNTOFhwbmdPREhyQkVSNDNTQkF6QVdwa1lfRnU4VE5hckItQWF5QXBkbnRkM2NTdlNvQkF3TXh2dWVoc1phUGxROWQ0SDhDY0RXVlJENURxSWhrZzF3Z2pvM3A1YkZSaGRCX2h0Y0FPaVZPQlk4cldFMWpZNVJUVzM5OFNUY1laa1dBVC1aMUhfZjNqZmNydGtBckctVHVaTGZMVFR6YzQ2UU9wanFHdWF4TVpWWG1CSjkxMEt6SF9JRVNYX3ZIRXNPUQ?oc=5",
-      "date": "2026-08-11",
-      "source": "Google News — Candida auris cases",
-      "summary": "As Candida auris spreads, a scientist highlights the growing threat of antifungal resistance, UT Health San Antonio reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
