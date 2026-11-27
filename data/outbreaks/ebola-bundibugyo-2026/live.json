@@ -1,24 +1,6 @@
 {
-  "lastFetched": "2026-11-27T08:53:44.937Z",
+  "lastFetched": "2026-11-27T20:44:20.384Z",
   "processedIds": [
-    "news-69389521b0c1c64d",
-    "who-ce6406f5096d538a",
-    "who-27ad87a3dbaa8702",
-    "who-9bad79abd6c57a00",
-    "who-597dbebd762d3efe",
-    "who-8718d5fd738f3362",
-    "who-9b4efbdb2f9f8528",
-    "who-8239458214d90f4d",
-    "who-0951b8cd2f4431d3",
-    "who-59e4f95e16ab31f2",
-    "who-bee44659aae23f31",
-    "news-1ae4f86d3cdc84a1",
-    "news-0137b2360d01fb07",
-    "news-ba539e3dc4af6b2c",
-    "who-292ddfa2f09d433d",
-    "who-70fe5ae6a5932ed0",
-    "news-8199e767a87a0c6b",
-    "news-5bb7750dbdac053d",
     "news-98686ae3d0b02d14",
     "news-50ff13e37a74a63b",
     "who-299b2f72046c62a4",
@@ -1000,7 +982,25 @@
     "who-47be3d88267255a4",
     "who-dd1be725f9347a41",
     "who-de4f62fbd8148b75",
-    "who-60bb866156e23c43"
+    "who-60bb866156e23c43",
+    "news-9896c01f1a324d30",
+    "who-8ba6327efd5d4037",
+    "news-d658396fb4ae456a",
+    "news-cc14c2f78a2b1479",
+    "news-e6684bb2a8549373",
+    "news-a49495da6cd37f3b",
+    "news-b1fd53229d4d7b75",
+    "news-bee44659aae23f31",
+    "news-8de85e67b8df486b",
+    "news-1a9510bccdc0bcc3",
+    "news-361e9b18eb46c543",
+    "news-9e85aa6f96bc5218",
+    "news-8eb56e2a49ebf036",
+    "news-292d24d37ac956f5",
+    "who-1544a4e66646c8d2",
+    "who-e08130a06c9fe32a",
+    "who-078ca9050d32690e",
+    "who-5109c6a48503712d"
   ],
   "recentItems": [
     {
@@ -1044,12 +1044,102 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-8eb56e2a49ebf036",
+      "title": "Nigeria’s Ebola Scare Exposes Gaps In Preparedness - Eurasia Review",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxNREMtSWtNXzZpQ1BfNE92V0hQaEpWME1Xa2l4RjJTUzVmSHdaaXU1M3k3cW8yNi1GUEk4aXFQd1VEU1FMcXJ5enBEUWJnR3JwZ2FuU3JyeVZ4VzN2VzN4QzhtakJDaDJ3UzM4UFpLYTRza0NkT01veUJPRFZIV0NtVkdKWFNnTXRmQVRNYWhzT3FVYzg?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Nigeria’s Ebola scare exposed gaps in preparedness, Eurasia Review reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9896c01f1a324d30",
+      "title": "Congo's Ebola Outbreak Surpasses 12,000 Cases — 49% Fatality Rate Makes It the Second Deadliest Ever - Latin Times",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQUGFOMEhMeWFRektZU1V6UUN0V052VVJIdXpGTGdTVUpNVE1nVm1qNVNhSXZreFpYeDBPTGs1S2haNXNkRWdBOV9kYnBvekREU2tHMFVTT0UwTmFacUZta2VwekFPRXBNQkpzSU9BWjg5NVdxQlMzRUphYzJSNy1HY0NBbzNOdHF0?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Ebola death toll",
+      "summary": "The Ebola outbreak in Congo has surpassed 12,000 cases, and a 49 percent fatality rate makes it the second deadliest ever, Latin Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9e85aa6f96bc5218",
+      "title": "Uganda launches Africa’s first trial of an mRNA Bundibugyo Ebola vaccine - CTV News",
+      "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQVzdxcnhfeHBHRHQ3UC0tUWo3cTFXRExiNXExa3d4ODI4cHk1N0xYV29tbWhWM3V6cEpBUE5xOGl6bXczVENUYUMzRE5VUUxsSzBMRHJkdlFZd0hrWVZUbW9zQ2RiRnkwenQ5OG0zb012QTFOWEJyaXE5cGs4c3pSdWo4RHVhOGRGOVp6aG1ySUMyM29QTVJnVmFTY3czbV9LdlNMSjhqaDItYlN3endJ?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Uganda has launched Africa’s first trial of an mRNA vaccine targeting Bundibugyo Ebola, CTV News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-cc14c2f78a2b1479",
+      "title": "Congo Ebola Outbreak: Deaths Near 6,000 as Fighting Spreads - EEW Magazine",
+      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxQd1gyVGRJT2Ixbmg1RTJDNHlZbmtUZjdDMWluRmk3SGpXazF4cDRuV0xjamdZSDhYckZSR0d0V2Q0UC1Qb1Naa0x2S0ZQbmtDOXVQVW1DMEpmV0RnOHhtRkRtU3YzZldQaVhLY3lFa0RWSkthU19PQTdETHpycnlJNmR3d2FyQktMeVNNdGZjVzZidDh0YUJvMkd4b0loa19vVnB6SWZ3?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Ebola death toll",
+      "summary": "The Congo Ebola outbreak death toll nears 6,000 as fighting spreads. EEW Magazine reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-d658396fb4ae456a",
+      "title": "DR Congo's Ebola death toll may be far higher than reported - DW.com",
+      "url": "https://news.google.com/rss/articles/CBMimwFBVV95cUxNZzJrRlVDV3ZQck1sTU1KenV1QWY1SERSdFpmQ2NLeW9xZElmZUtBOTJVeTUtbmlSWFg0TGs3azFXUm9oOG9yeXRUb1F0Y1pvc3d6N201NzVCTFBQaUo0Z2hzQTZnNmxOUmQzUDJub2RvS21aZGZlbDVQY3NBU0tQZUpEUkRSSEVhUHBJQm9yNUFybFRheVlZQ19ybw?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Ebola death toll",
+      "summary": "The death toll from Ebola in DR Congo may be significantly higher than official figures show, DW.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-e6684bb2a8549373",
+      "title": "Vaccine alliance buys 1.5m doses of experimental Ebola jab - Sharjah24",
+      "url": "https://news.google.com/rss/articles/CBMiowFBVV95cUxNa2R0S2diREtncDVSNGVZNy1Gd3p2SExWcXRsamExblZOTVpWWEtFWG5KRm56dkRPVXFkMXlrOUFndlRyUkRacWYzc3JiUUJ2bElrYnloMHNkTVV1cDZRV0pEdVNHbjViTVhIZDBuYmRoWmZBTmVyMHFnNFBUclQ0djZfeWdSd3ZYSzNNNEVJX3pCYzdSV0Q5cEltSFVOZDdXc2lR?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Ebola death toll",
+      "summary": "The vaccine alliance purchased 1.5 million doses of an experimental Ebola vaccine. Sharjah24 reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-f9ecd266934d0fe9",
       "title": "Opinion: Understanding Pregnancy’s Role in Ebola - Undark Magazine",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45d0ZoZ1Z3UTd3aEc2MEcxeEFsY1dZVFlIZERsTThXMndzc3ZPQkp1NkFZQ1QtZHRrVG5weEFwcGJldXNmejZaMzllOVJTY0VjQWg2LU42Nl9fVUJXTjR3cnhQY0Y?oc=5",
       "date": "2026-11-27",
       "source": "Google News — Bundibugyo outbreak",
       "summary": "Pregnancy's role in Ebola transmission and outcomes is poorly understood, Undark Magazine reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-078ca9050d32690e",
+      "title": "mRNA Ebola vaccine trial launched in Uganda - Yahoo",
+      "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxOTEZNYXF1eERDM2IzVkl6OVc4TXlRWWlTY3ZFSU41ZVU0dGJzZDUxYjAtRjF5ZkNWQXRrTUdTNGtnaFBtNUZWYlNkS25JRkJoOXgwU04ydVZ3anJQV1M3ZlF2LU02Q2U5ekNSZHBYakp0UWN1RGFUcENGQVJhWDBldHBpOVQwMFRlMk5DTmM5N3BwdUZsNV9N?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — WHO DON",
+      "summary": "An mRNA Ebola vaccine trial was launched in Uganda, Yahoo reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-1544a4e66646c8d2",
+      "title": "WHO issues updated Ebola response recommendations, calling for improved security and accelerated research - World Health Organization (WHO)",
+      "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxPX1owWnUwSHdKU01pLWVJaTg3c2RxNEF3MDZrbXVPaUpUbzNYa0pmWUJMLXIxcVFUcl92bHlUVTFZcV9mcC1iZ25hWEpMbGpWQVdqMUhsd3YzcGZoQm14dmtVRGp0cnBucFJ3dElXUEtDZklWN2RzQU5SdFVQQWFINmZXdUg1aktIWC1GZ05WTHg5MTBSVVRVMmVCLVgzZUtkUDZkMlFzUFBVOUxQNHg5d2w1dU5NXzNLV0VWSzJDUTJ1Q3BRaVFEVmdKbVdQaVBhVjRxWnhaSTNLYURBRXFR?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — WHO DON",
+      "summary": "The World Health Organization (WHO) issued updated Ebola response recommendations, calling for improved security and accelerated research.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-e08130a06c9fe32a",
+      "title": "mRNA Ebola vaccine trial starts in Uganda: Institute - Medical Xpress",
+      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxOQ2d1MzlQbjVlM2FpSThXRXMxWTlQQUc0STZOdndac09YcmFCU1Q5S2dHOTExLUdqcEtTMHR6U29pVHgwS1lMOGdQZHVKc3dEYXQyV0stUlNCVEgzeEszeHAxcGdWeXhTUkUyX2NubTNHeDl5Smg4NVVLSl9LVkxCNg?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — WHO DON",
+      "summary": "An mRNA Ebola vaccine trial has started in Uganda, according to the institute. Medical Xpress reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -1110,96 +1200,6 @@
       "date": "2026-11-26",
       "source": "Google News — Ebola death toll",
       "summary": "Ebola cases surpass 12,000 in DR Congo, Daily Times reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-315fbda680bcb014",
-      "title": "Ebola Death Toll Hits 5,904 In DR Congo As Fighting Disrupts Response - LEADERSHIP Newspapers",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxQTk5RblV5SEdsaXRsMHBHTDlPeG9fRkRpdTdPNHd5R2NVQkh6Nl9xMlBmQUI2SVlZWFdrd3hnWUtkS3FqeG8waHBrVmx1eGM3SXdMYmZZb3V6c3dFSndTa2ZvOVRzdFhIREhwOTNzS0s2YU1wWUFxX2ZaOFJsUXpnOGNJRzhGUnB6bFp4SWc0MkthNjJWY3c?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Ebola death toll in DR Congo reached 5,904 as fighting disrupted the response. LEADERSHIP Newspapers reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-3b888b77d8160803",
-      "title": "Europe’s Rwanda return hub plans | Is Congo’s Ebola death toll higher? - DW.com",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE1ldk5LWGI5TVhhd2hXOWViNUNmYXJYNFI4bzN0eUx3RmZEa21xVFdJem9jQXhVWGp3UGdLU3laQUxHTktURnFmeDJneEZVTTA3ZkJBaExsNWlURUUzUEQ5cV9JLTFOV0hKRTZUVmpGbkpld1ItbVR2bUhqbXBVeXc?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Europe's Rwanda return hub plans question if Congo's Ebola death toll is higher, DW.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-4eb467d393eb5816",
-      "title": "Armed Conflict Hinders Efforts to Contain Deadly Ebola Outbreak in the Congo - Truthout",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNzN5NWh1M285QTZJaG4yZWQyTlF0QVZMVXRRQnctUGpOQnJ0X3k0NHctcWxpaTYtSnBKVUJqN1hINnJHTXQ0eVloOXk0SGpvRGpVYmM2R0twVGc2am1iMFdseGE0ODliOF9fR0xhcHhBVTBLRGZjSTRMMjBZWWRGc015RFlNVVVnaDg0dFJ0ZnBqb3lnNlRYRGhCaDVDV0x3aFlMRk1TS3lfRzA?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Armed conflict is hindering efforts to contain a deadly Ebola outbreak in the Congo. Truthout reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-515e9eaa18943ba7",
-      "title": "Ebola cases cross 12,000 in DR Congo - Anadolu Ajansı",
-      "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcnRKYXVlWW51ZEJBYktod1JtMVB0Umd1ZWc5NHd1Tjc1a2hOZktHZGpQREo5alYzRVJjaXhWNnpuRlF5Qkh0UUk0My03cm1UelBRWlVQNmNCTlF5MlZPdFZWdkdlU3R5Sm5PUWRpb3hweHdFMkFkQjZkaC01TGpFbE9R?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases in DR Congo have exceeded 12,000, Anadolu Ajansı reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-61c1c8c9de3a35ca",
-      "title": "WHO Pulls Its Ebola Team Out of Mongbwalu as Fighting Spreads Through Congo's Ituri Province - Nature World News",
-      "url": "https://news.google.com/rss/articles/CBMi3gFBVV95cUxQc2dPRmhhandQTm4yZjJ5eGw5YXdWemRrSTNIQldpOHJxOTE0TlBhdHc1T01GR1hQTUI0VzItQnd1emw3c0h2X0VmY29Sam1HemU1V2ZIVkM1VVoxQ2szeU1teGh2MHRRb19zRlFlMGRKVTVWRFhKRXNpbGR2bENnaFluamVDVVhGM0pfMG1MazJfS1BFRHMyaWdxX1hzSXlwbmRZaGZxZzVCc3Bna0JfNDV0NXg5QTBkUDk5c19BZTNIVVR5ekpGSjdaVG9NX29sbWJHVE1pVWszQ1NlSmc?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "WHO pulled its Ebola team out of Mongbwalu as fighting spreads through Congo's Ituri Province. Nature World News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-73c625ce272a0be9",
-      "title": "DR Congo Ebola outbreak tops 12,000 cases amid fighting - سانا",
-      "url": "https://news.google.com/rss/articles/CBMiSkFVX3lxTE9ZR0Vwd3hvRE9aZGhYOUk0SUY1MC1UR1pKMnI2cjdtbVptMUN4TXNKOHhhT19vYUZFRmgyZUh3aWphRGEtazRfbTZn?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Ebola outbreak in DR Congo has surpassed 12,000 cases amid ongoing fighting. سانا reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-79b94b860f89f9fd",
-      "title": "Ebola cases reach 12,000 in Congo as second-largest outbreak on record grows - CBC",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cdk1qbkU5dEpLRVNybXVHcU1LNGdGQngxRGwwUzk1WG9KWVUzRWROM04yUXhaZjViazBISWptSkg2SFNubG56TEFQYUZBY3A0NjFxWFowNUNDemMyNktFQmRWU0RRTmdyTkxfLUY1ZV83b2FTQ0NKdlVKQmM?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases reached 12,000 in Congo as the second-largest outbreak on record grew, CBC reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7bd97591bab4294f",
-      "title": "Ebola outbreak in Congo reaches 12,000 cases as violence forces some responders to evacuate - Castanet",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOE00UXFCQXo5YURDMmcxVVZ2c2NrTFB4UGZDSXZlaGFjOXVWRENGejBGTmxpTG9sR1BLUnhJNnBPSENtUW9pLW80cmFId3J5UVZ1c3lBUGFYU24yRXlleG5BNUNOUy16dDVrWF9KbmZjN2JwekhXZHlKc2dGLWJSVlFOQmJsUmdFci1EOFlUMVNja3BLS252V2FmbnlqdWZGTDZUcHUzRnllOVFrSTYybjRGM3MxN2lLejlxeWRaU2lkWVpDUlZRTHJubzZoNUU?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "An Ebola outbreak in Congo reached 12,000 cases as violence forced some responders to evacuate. Castanet reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-7fe4b7ccde3dcca3",
-      "title": "The Ebola outbreak in Congo has spread to 8 provinces! The death toll has approached 6,000 - Haberler.com",
-      "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxQN3VmdmVqUnJ4VHhPTERlMV9kTENsM25qX0NTRWEzUFVacFBQWmZxcWRRUFMtRU0xUTRwOEtTVE9ETElHX2RIbDNKMVQwaENST0owT012a3VZUGtjTFNIMEFFX1BtMTFwZ2hwRWRDQmEyRzgteHh0cjBBWUNSUDRCVw?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Ebola outbreak in Congo has spread to 8 provinces, and the death toll has approached 6,000. Haberler.com reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-27T08:53:53.911Z",
+  "lastFetched": "2026-11-27T20:44:27.073Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -819,9 +819,39 @@
     "news-a4ed3bf041b2e429",
     "news-5b2a9a8f48f8b353",
     "news-16698d783578a56f",
-    "news-240a3f42e54b08df"
+    "news-240a3f42e54b08df",
+    "news-46f01aaf91750cf4",
+    "news-b56086c1300fbabe",
+    "news-b87539898e8b78df",
+    "news-36e1ed21c5b7262b",
+    "news-00f99feaec433d8e",
+    "news-220bc31400415700",
+    "news-9565b110bcfdd4d2",
+    "news-daaf46ecd4ad3876",
+    "news-895e41229881623f",
+    "news-5df2ec99f73cacaa"
   ],
   "recentItems": [
+    {
+      "id": "news-46f01aaf91750cf4",
+      "title": "Unvaccinated and Dying: How Pennsylvania Became the Worst Measles Outbreak in Decades - Latin Times",
+      "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxQbnYyRHgzQVZKREpzVGl3ZDYxWkFmalpwNmRJN0kwdVN6YjZpdnNTM3JXeDkzemh0VWZFTmo0SkRha3FpeUY3VnhWc1I3eFpMQmUwT0FBTmtrd09zM3pRcmpBZXg4cnRMWTRZODhoQkpMbTdxem9seVZkdDFVNGhFTmZubmw1c3hrRkxRYnd0UQ?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Unvaccinated individuals are dying as Pennsylvania becomes the worst measles outbreak in decades, Latin Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9565b110bcfdd4d2",
+      "title": "Measles outbreak accelerates in Ohio; 1 week total nearly matches all of last year - WKRC",
+      "url": "https://news.google.com/rss/articles/CBMi4gJBVV95cUxPM0tEN2gyQ1c5dkJoTDEzeWdEcEV0dHFwRGZVenZoMS1sZ0tZWDZpUjl4NVBkRjZXMlh3MHo3d0dLVU1NbmdJQzVYZ0Y0N3ltWFJ3cTdBb0h6Nm1ENVg1NFNpdWlFZGtadEpieWtaeWtPVVZFU24zdVdRNk9jTzJlSjNHaU1LMmluTFlhMFVnUmwxRm4xck9rZ2h4V2JFWUFwUG9Ca2NtUWw1SVRfMXg1M2w4ZjVSVENOdkgyUVRQRkxleXBTcGNIQThONGZFcGY0akl2QUFEQ1o5c0g2Z29FSlhPNjV2TFVrOHNZYlRFMXZvb2JETUFQUjJtSmtnQUpLQXB4UnBUY01scnZUR24wRXpnYUtKeFIwNGE3V1c5aElvTDFzcTJMa0ZCeTVIa2lVTDdIUjZIVVBrUW1Ca1oxeGdzSHNFSVhDMEttZzJCZmJRZ3JqQ3VPZWNBM1diUm9PT1E?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — measles outbreak United States",
+      "summary": "A measles outbreak is accelerating in Ohio, with cases in one week nearly matching all of last year's total. WKRC reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-b3b6d41e8519c854",
       "title": "Pennsylvania Races to Stem Measles Outbreak as Amish Wedding Season Draws Crowds - WSJ",
@@ -839,6 +869,16 @@
       "date": "2026-11-27",
       "source": "Google News — US measles cases",
       "summary": "Pennsylvania's measles death toll reached 9 out of 1,679 cases, exceeding the CDC's expected range of 1 to 3 per 1,000, Tech Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-daaf46ecd4ad3876",
+      "title": "New Ohio measles cases this week nearly match total from 2025 - The Columbus Dispatch",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPVW1NaHozLThscFFFeUxUaXNpZnFQXzVObGY3bC1ZNFZ3ZDEyaW5ZRDR5VFRQX3JjQ3VTM0hXRmxwTFd2cWJPcTJjd0w5a00xbWZwaGRzT2N2c2M2STRULVRUNTg5c3NPbzZxaUZKWHlsYnc0RzhZWUp6a2swbEFhT1BaLWsxemFiS1E4a05fcC1lbjVvQXgtOHk3LVJRT3k0aTlWZEU2bGtOWkU?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — measles outbreak United States",
+      "summary": "New Ohio measles cases this week are nearly as many as all of last year's total. The Columbus Dispatch reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -989,36 +1029,6 @@
       "date": "2026-11-25",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Pennsylvania measles cases reached 1,679 across 46 counties, with 41 new infections added. FOX 29 Philadelphia reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b41d83c9bd56c58c",
-      "title": "Pennsylvania’s health secretary pulls back the curtain on the state’s measles outbreak response - Pittsburgh Post-Gazette",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxPcTMzRm5vMGp1YloxUlBIS1ZpRm52QUZzRDFJanFBQ2I5T2g5TjVzZjFjak8wcUo4TFh5YXhJZzQ0dzZEcENlczJXVHdnWklqbEp6VG92NHA1R1E4SU95NWNQc0tHNnRmQlVjUTdKQ2loTXJ6eVdyblhJX3R6MjhYREhXTmZMNjhQb25mY0ZaWl9KMW1HMUtTcGxELVI?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania’s health secretary revealed details about the state’s response to the measles outbreak.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b72e92d23454c2cf",
-      "title": "Measles Outbreaks Highlight the Importance of MMR Vaccination Amid Rising Cases Across the United States - 2 Minute Medicine",
-      "url": "https://news.google.com/rss/articles/CBMi0wFBVV95cUxQSnVZTDJ6TUk3OEpPZENxdGtFMHIxekx4Mmh0aUIwYzNwMk1SVXRlamVtYmtqMDdrdlRZc2tvMmNYWDMtVDhDWlF3U2M1ekhib250TG5Xc1NnQ1E2V25hVi1qZGk2OE5la2NwU3k2Z2h2NlRFWkFmVFdWRGJpWFhqVXVmMXBXNW8wTHh6ZDdUdEg5Q2RSSzVqRmxzaDZ5QzJxQTRHSTNmMTRLODRVU19iX2NEMTkzSUF6bm5MNzBTM29jQ3ZYMDlCV0kzSmNlbjYwRkhR?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Measles outbreaks across the United States highlight the importance of MMR vaccination amid rising cases. 2 Minute Medicine reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-c32f5526665722e9",
-      "title": "CDC director aims to restore trust in agency amid calls to resign, U.S. measles outbreak: Only on AP - AP News",
-      "url": "https://news.google.com/rss/articles/CBMi6wFBVV95cUxONEdJdUZKdVc2UHk2WWw0UW5iSTRlampaLWhYM0phRlQ2M3ZEV0xSSXVGZW10YVNBcHFjREVWZzFWaEpWYUIzbWZxRkljNEdPVWxGV3dRaEp6WF9fY1pjVlZjT05GMHR1MkRFNWEtOV9pWXFpNFgzZVV2aGVnX2U3amtVVjVBZGU0YXloa01KSTBzYlFiWTF1NzR0aGhkWTJyUGFzUk1LVEZNaTZMcUg2V3dBUHU4VWZVQlNEbmQtMkF5VlBibmRCZ1pKWnJrenItcmViZlVuN0JuNFBSUzhWTGhSYjg5clJ1cEVN?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — US measles cases",
-      "summary": "The CDC director aims to restore trust in the agency amid calls to resign during a U.S. measles outbreak, AP News reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
