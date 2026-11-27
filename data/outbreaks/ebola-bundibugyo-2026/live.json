@@ -1,27 +1,6 @@
 {
-  "lastFetched": "2026-11-26T20:43:30.039Z",
+  "lastFetched": "2026-11-27T08:53:44.937Z",
   "processedIds": [
-    "news-e215f93525ed5436",
-    "news-f7881d41e1f570d1",
-    "news-11e57280acab5c19",
-    "news-be80153b00ef8bc4",
-    "news-9bad79abd6c57a00",
-    "news-149b55cb15bf7abf",
-    "news-5749f261be96989f",
-    "news-8d3bd5d7703b30b0",
-    "news-1e6dc5efdb84c185",
-    "news-33f719afef6d7eac",
-    "news-2616dbf1cbe4502b",
-    "news-59fc9d6be9c3c715",
-    "news-4b77713456d196c2",
-    "news-2552ba60eb411be4",
-    "news-9767fc7fc510d822",
-    "news-58e7456bd1dfcc13",
-    "who-522fb6c96956f907",
-    "news-f057cc4bc4c59633",
-    "news-b4b5a350d7219eb3",
-    "news-361e9b18eb46c543",
-    "news-ce6406f5096d538a",
     "news-69389521b0c1c64d",
     "who-ce6406f5096d538a",
     "who-27ad87a3dbaa8702",
@@ -1000,9 +979,80 @@
     "news-94c14d5c364da877",
     "news-61c1c8c9de3a35ca",
     "news-3c9f2fb152fd4f7b",
-    "who-79b94b860f89f9fd"
+    "who-79b94b860f89f9fd",
+    "news-b37f48dd93a9baa0",
+    "news-3f71cabc9eeafa07",
+    "news-79b94b860f89f9fd",
+    "who-bba9fc72a0a60753",
+    "who-fbeaf2945206adc1",
+    "who-9dbf487687c9d07e",
+    "who-b2de7ceb8e598806",
+    "who-f9ecfa92f908f216",
+    "who-e168b4b77af217c4",
+    "news-3ecdfb9717f55447",
+    "news-791c2ff1614060ab",
+    "news-4eb467d393eb5816",
+    "news-ab4541273c0a9daa",
+    "news-f9ecd266934d0fe9",
+    "news-53b014663c822e01",
+    "news-67a2130305a090af",
+    "who-0461b395256a678f",
+    "who-47be3d88267255a4",
+    "who-dd1be725f9347a41",
+    "who-de4f62fbd8148b75",
+    "who-60bb866156e23c43"
   ],
   "recentItems": [
+    {
+      "id": "news-3ecdfb9717f55447",
+      "title": "Ebola death toll nears 6,000 in DR Congo - Qazinform",
+      "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTFBvUXJXZVlHNXJfaFRFT0F2M0tCV2J4Qm5KRWh2czhaRVhnRzhONWxMNkVDQ3l1VlFLbUhuQS1BX2Y4ZFVQTU9mNTRGVmRHdndlTlI3dC0xYWUxRmRVOHFXUThIMmFuUERTOFhuUi1YMDFkcDYxTzdnUDhDeTlQZ9IBfkFVX3lxTFBvWjF2VjVUNE1pLU9PZjJNSG02OF9LbE8tRFNqbzA4YUlBZFdlQWNBN1haRGVmUkxxVXdZUnVKbW05ckFobVAtdXNWTmhuWlFGSVpCcUZhTE1ETExZUnFJSkJfRzRHVDNtOFhwRWFteDUwM3R6R3NQVHV3S2J5QQ?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola death toll in DR Congo nears 6,000. Qazinform reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-53b014663c822e01",
+      "title": "Congo's Ebola cases exceed 12,000 as responders struggle to contain outbreak - ETHealthworld.com",
+      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxQTGZzeTdoeGxnTG55UVlNdkxOQnZEbE5Sbl9fOXRfM3VBMU5nV0dvYS1DX2tBMkRjTFBWSkU3SlV1YVdQMzQtejNjTjVRVXNLMmFsV2Y3cE5CVXM1RWtSOUNVbFY1RWFLZmZ4M3ZwOUJZckQ4V2g2MlR4MmM0MnRSUkl4M2pvZXZ2dXhMdkRXY0h1RlQydDFnakM5NS1qckExN2NPbmVZbkRfVkxBN3lxWWR0OTBkTEQ1Rl9kS3g4S18xcnF0NV9CMHVKa1BsRWZTaUZIMmd5enpUUdIB3wFBVV95cUxPN0RzQWhBdHpmWWtscDNkY2ZfeWpSR0pXd0k4VnZBTlh6cGgzSHE5TFdVVzFtaVFtS2VXUlhYcWRxZnFEZWpiYVcwNTVtVG4zRGJmRVhqb1BxbC1ybVRWeUZkaGVHM0hfX01teU1xQWdwYlVXSW94dWRveGdIeWdJRTUyQWdaei0zdFppNGxsVnJfd0dQVVhXeFVRZUZ2RTltTFVhZXNqSVI0TTUyM215ZUh6LTR1clI2SkV0dU9ybWEzaDE5d3o1M1BHZ0RDcWJYWVVMSlMyVmhXa0NSTWtZ?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "The Ebola outbreak in Congo has exceeded 12,000 cases, with responders struggling to contain it, ETHealthworld.com reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-67a2130305a090af",
+      "title": "Congo Ebola Outbreak: Rebels Fight 15 Miles From Bunia, Home to Vaccine and Drug Trials - Tech Times",
+      "url": "https://news.google.com/rss/articles/CBMixwFBVV95cUxQNWhacFlXemlFbFZJLWVRdEFFMU5kVG5OSWItTnRQa3VTOUxHMDlCeGE5UEFpVWI2YUdxWWJQczRYRElQVHFNOG9mV2gxdUJXdklWcHlFaTBWcjJUVzk2Z0JIcGhBbmRLSXd2SnZIZFdMTDVvNlV4aWlJRktEckJkOTk2SGZ0aml3NzVMOUxOOVhGcUVFa0tSb1hpb01FSlR6RGRJNG9QelZUWGpMbEpXNk84NUFIQ1B2dXFVYTVfbnY1bDgyQW4w?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Armed rebels are fighting 15 miles from Bunia, where Ebola vaccine and drug trials are based, during an outbreak. Tech Times reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-791c2ff1614060ab",
+      "title": "Ebola deaths in DR Congo exceed 5,900 - برق الإمارات",
+      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTFBZQmEyVk5XeTVpSXoxaGhtRC1UeENtOWZ3eHE3cDc4SzRtWFRmSG1Cc2VrWHZOSXhQRU1BbnlVTzNqZGhoNFc2WF9GT2ExeUgxWU9mSGViaXJ3V3NFeU1YTkhFTnl2MHZid3NEd2MtVWlzUE9OaG82bjV0MGk5WkE?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola deaths in DR Congo have surpassed 5,900, برق الإمارات reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-f9ecd266934d0fe9",
+      "title": "Opinion: Understanding Pregnancy’s Role in Ebola - Undark Magazine",
+      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45d0ZoZ1Z3UTd3aEc2MEcxeEFsY1dZVFlIZERsTThXMndzc3ZPQkp1NkFZQ1QtZHRrVG5weEFwcGJldXNmejZaMzllOVJTY0VjQWg2LU42Nl9fVUJXTjR3cnhQY0Y?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Pregnancy's role in Ebola transmission and outcomes is poorly understood, Undark Magazine reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-03af622968a65c27",
       "title": "No Ebola in SA yet, but 36 hospitals on standby - News24",
@@ -1084,6 +1134,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-4eb467d393eb5816",
+      "title": "Armed Conflict Hinders Efforts to Contain Deadly Ebola Outbreak in the Congo - Truthout",
+      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPNzN5NWh1M285QTZJaG4yZWQyTlF0QVZMVXRRQnctUGpOQnJ0X3k0NHctcWxpaTYtSnBKVUJqN1hINnJHTXQ0eVloOXk0SGpvRGpVYmM2R0twVGc2am1iMFdseGE0ODliOF9fR0xhcHhBVTBLRGZjSTRMMjBZWWRGc015RFlNVVVnaDg0dFJ0ZnBqb3lnNlRYRGhCaDVDV0x3aFlMRk1TS3lfRzA?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Ebola death toll",
+      "summary": "Armed conflict is hindering efforts to contain a deadly Ebola outbreak in the Congo. Truthout reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-515e9eaa18943ba7",
       "title": "Ebola cases cross 12,000 in DR Congo - Anadolu Ajansı",
       "url": "https://news.google.com/rss/articles/CBMiggFBVV95cUxNcnRKYXVlWW51ZEJBYktod1JtMVB0Umd1ZWc5NHd1Tjc1a2hOZktHZGpQREo5alYzRVJjaXhWNnpuRlF5Qkh0UUk0My03cm1UelBRWlVQNmNCTlF5MlZPdFZWdkdlU3R5Sm5PUWRpb3hweHdFMkFkQjZkaC01TGpFbE9R?oc=5",
@@ -1114,6 +1174,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-79b94b860f89f9fd",
+      "title": "Ebola cases reach 12,000 in Congo as second-largest outbreak on record grows - CBC",
+      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5Cdk1qbkU5dEpLRVNybXVHcU1LNGdGQngxRGwwUzk1WG9KWVUzRWROM04yUXhaZjViazBISWptSkg2SFNubG56TEFQYUZBY3A0NjFxWFowNUNDemMyNktFQmRWU0RRTmdyTkxfLUY1ZV83b2FTQ0NKdlVKQmM?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Ebola death toll",
+      "summary": "Ebola cases reached 12,000 in Congo as the second-largest outbreak on record grew, CBC reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-7bd97591bab4294f",
       "title": "Ebola outbreak in Congo reaches 12,000 cases as violence forces some responders to evacuate - Castanet",
       "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOE00UXFCQXo5YURDMmcxVVZ2c2NrTFB4UGZDSXZlaGFjOXVWRENGejBGTmxpTG9sR1BLUnhJNnBPSENtUW9pLW80cmFId3J5UVZ1c3lBUGFYU24yRXlleG5BNUNOUy16dDVrWF9KbmZjN2JwekhXZHlKc2dGLWJSVlFOQmJsUmdFci1EOFlUMVNja3BLS252V2FmbnlqdWZGTDZUcHUzRnllOVFrSTYybjRGM3MxN2lLejlxeWRaU2lkWVpDUlZRTHJubzZoNUU?oc=5",
@@ -1130,76 +1200,6 @@
       "date": "2026-11-26",
       "source": "Google News — Ebola death toll",
       "summary": "The Ebola outbreak in Congo has spread to 8 provinces, and the death toll has approached 6,000. Haberler.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-94c14d5c364da877",
-      "title": "Bundibugyo Virus Disease Remains a Global Health Emergency - EMJ",
-      "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxPbjM5YnM5OUVJeFN3MHNWRTNzTVVXajA0MzVsTmNrNG9ROFJjUVNIUEV3RUxaM0xHWjBXQmNqV1FSWUFvMVNBNW4xbGVtTkZtdmtFTUZNTnFraENMTjBQWWtCN2lSdkktMUlxLUM5eDU0YkdENld5NmVtRXJYR3lsSi1BbWNyRTFTZU1NM1l1VVN4aGs3UWJhQzBOenpweUVONTRpVmZwaDVnVy1NYWdDdWRtaVJEb0VaWUpSSWlRWkFTZw?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "The Bundibugyo virus disease continues to be classified as a global health emergency. EMJ reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-956fd0a759f5bf01",
-      "title": "New funding for response to Bundibugyo Ebola outbreak - Science|Business",
-      "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxOT3UzOVBTX1ZvTXhpLW9QS3Bya0wtMDZuX25sWUNKX21RVl9JbmpGeEh3SkcwN1ZhZUQwSUE5ZzA5X1oxMzduRW1jdURneGZBWGJRenJKczNLZ0k0VVRSU0tweTFjbHBnQVhaeExvLUpqZl9zYTFvLXRnclFoUjk1UzFwclBXQQ?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "New funding has been allocated to support the response to the Bundibugyo Ebola outbreak.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-aec08d5bc41dd6c2",
-      "title": "Congo Ebola outbreak crosses 12,000 cases amid rebel clashes - Daijiworld",
-      "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE5QTlByN1J2U2t0X2FtcVMzQl9LWTNwZTFsNTkwQ1p0SXJUbURiZmZTdV9hbFk2TGRuaVlrVzRmaVIybVhFTUZScWFtTTU3TXZiN3k3Zld3UWJIWkpQSFZwV1V2QUM?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Ebola outbreak in Congo has surpassed 12,000 cases amid rebel clashes. Daijiworld reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-b1b173f0bed6acf1",
-      "title": "Congo Ebola Outbreak Surpasses 12000 Cases Amid Fighting - SuaraGarut.ID",
-      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE5Da2Nrd0V0TUpGM1JJQXl0T1hGUFFoWmZVbkN2YzBaUV8xS09GbWx4T09oc0JPckN6VzMtcG1BcE5ESzlPbHhwbEhRdmdzenZzVGs3ZHFoMjRwZGIxRE90SVFQejdSRjJE?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "The Congo Ebola outbreak has surpassed 12,000 cases amid ongoing fighting. SuaraGarut.ID reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d10af5bd969372cd",
-      "title": "Ebola Bundibugyo: what nurses need to know - Nursing in Practice",
-      "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxPRnRlRlZETGFQVUxoWnhyUXdvT2xjTmhYUndhc29Pc3oxcno5U2pxWWxOZFBpT0VpRkFEc2h1eGxjdFBuQ0Qyd0ZmSXNxODI3NkxHZlhsNUxycFJ2Ri1sa3RwcHZCR3c1ajhOcXN5Q3JEX2hocE12algtMUlCRXp0U2VKbDVNLUcxRVZ4ZlN3dDFYcUNQNExlbldlenBTcjBPZGZzZEJnZkpkbWtHSU1FWQ?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Nurses need to know about the Ebola Bundibugyo outbreak. Nursing in Practice reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-d83f6bba97ba9d4c",
-      "title": "Gavi Deals Secures Access to Ebola Bundibugyo Candidate Vaccine – Should Trial be Successful - Health Policy Watch",
-      "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxOTFRjUzZuT25BeV9tSnkyWkFuWFhTN2ZyMk9HWGh6UVVCemtqYURWQUtlaUtuRlBNUG1OVHh0M2ZKX2tUMFk5amxfWU13aGNVTlRnWFhuWEozRUp6d0hDWTcyY09hYThyeDNRVm50TlNHcmd6MlVjcFM0czJNcFp6VW9DYU43R0VTUmkzMUItaV9xbzFwTmtGcVE1MkRlREpkYjlYOW9MV0F5eVlSY3l2Y2lHZmNUSXczUlFJeVhYd2I?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Gavi deals secure access to an Ebola Bundibugyo candidate vaccine, contingent on successful trials. Health Policy Watch reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-e620cb8640e14642",
-      "title": "Ebola Virus Antibodies Cross-Neutralize 2026 Bundibugyo Virus Glycoprotein in Laboratory Tests - Bioengineer.org",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNSFRjNkhlaFc4VS1GOVdmWC1KemY0RzZQemNUYTB5bV9XZW96NFlJSXdoeVoyZFZVb1p2NHVubUpJRDdSbUJkMjBFdUVkN1Nuc2labk9FcVJSbXpvODZVSmU3eWtIcl96NkNJSHVEMTVZVGxZZGZya3V6cVZMV3dMZGlndkpoNEhwbTBxZXdXazlCb09SMVV0UjkybjhWYy1zZGZLR3A1a2l1eEg5aGp1WDI4ZE5mTzlfV1gw?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "Ebola virus antibodies cross-neutralized the 2026 Bundibugyo virus glycoprotein in laboratory tests, Bioengineer.org reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

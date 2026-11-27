@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-26T20:43:36.264Z",
+  "lastFetched": "2026-11-27T08:53:52.688Z",
   "processedIds": [
     "news-69f14a619ccfbd47",
     "news-6ddff53007b5ec5f",
@@ -558,7 +558,8 @@
     "news-3e3f2729ea724265",
     "news-ed3a1691256c9518",
     "news-a0d845160635b811",
-    "news-1524b9db09a77a0d"
+    "news-1524b9db09a77a0d",
+    "news-9f5fdba62ed31ee8"
   ],
   "recentItems": [
     {
@@ -578,6 +579,16 @@
       "date": "2026-11-26",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "A measles outbreak death toll reached 1,371 as eight people died in 24 hours, Dhaka Tribune reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-9f5fdba62ed31ee8",
+      "title": "Eight more die amid measles outbreak in Bangladesh - Banglanews24",
+      "url": "https://news.google.com/rss/articles/CBMiaEFVX3lxTE1LNXQ4dGdCUVJnWTVveVlIVWJidEhIUm9JMDY1aVYwcENkcDNGejNFRkJBVnAzLTR6akdVbTJHbDB0c0tOV0N4bU14X3ZpRC1EWk9nZUwxRG9udExqWFhwbDNHYmFyNlB5?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Bangladesh measles outbreak",
+      "summary": "Eight more people have died amid a measles outbreak in Bangladesh, Banglanews24 reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -748,16 +759,6 @@
       "date": "2026-11-23",
       "source": "Google News — Bangladesh measles outbreak",
       "summary": "Bangladesh measles deaths reached 1,352 as the daily death toll rose, Nature World News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-61d67f574f4060da",
-      "title": "Bangladesh sees no measles-related deaths after eight months - The Financial Express",
-      "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxPYUlwd1QzeWtnc3l0SnJYQU10Wk1zVlhLZUl0cng1ZWZCVGEtSHhRVXlEQ1Vqa2Q3ZlBjWi1UbmcxMmRGbWtVaWRRNl9ZMEhjNnBVMmlvR0FUVjdkZUcyUGhQdDRCcXh2Z3NqRDMwTl9TNDR1X0JhbFRmVm05aGFQOFVWVVdmNnpUcDVHcmRCVFV1NENPRTdZcXNkcjA5SzdjSDkwQVJhTQ?oc=5",
-      "date": "2026-11-23",
-      "source": "Google News — Bangladesh measles deaths",
-      "summary": "No measles-related deaths have been reported in Bangladesh in the last eight months. The Financial Express reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

@@ -1,5 +1,5 @@
 {
-  "lastExtracted": "2026-11-26T20:43:34.265Z",
+  "lastExtracted": "2026-11-27T08:53:50.683Z",
   "candidates": [
     {
       "id": "news-998129a44fc7c7e4",
@@ -252,20 +252,6 @@
       "sourceName": "Google News — Bundibugyo outbreak",
       "date": "2026-11-02",
       "extractedAt": "2026-11-03T08:49:33.336Z"
-    },
-    {
-      "id": "news-34621cdfa299451c",
-      "country": "Uganda",
-      "iso": "UG",
-      "flag": "🇺🇬",
-      "casesMentioned": null,
-      "deathsMentioned": null,
-      "context": "The outbreak also affects neighboring Uganda, though the article does not provide a specific cumulative death toll for this strain.",
-      "sourceTitle": "Congo's Ebola infections surpass 10,000, government says - GMA Network",
-      "sourceUrl": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQQkx0WnZMWjhBaXNJenRkWktsTGVzLWhwcEtRT2lkWVBYNWxHRTVYUk5YNDlnZlA4bnV5c25OalY3bGZlTk9XX3VvYjh3Wk1RdXRqRUZIWUR3UzQ2c1piekdJUjl2Y21FZTI5VG54Y2ZTUGdZSUxaZ091OFVlaE55YVhyZW5EMjRnRWpiWGZSUmZ6Qk1LaUJrOFdrdXliVVlFdVhwMDh6U3hOVWYxUWk3OXNnTU5sQWZfemdz0gHAAUFVX3lxTE8yMVVpZV9FdDZRUktncXJ6Nk85cUFmeEQ4TFJZcVdIMGxEWDZwVTFrdnY5NGdlWFNiVG1VXzlIcjVPX2JGX2pOOGFWMm9SNHZWNS02TW1kV1Q0TnhyUWlpOHJRSFVOemlTUDd6elZCZnBTLWlDa2ZLRXRiRzhYUDlqTTlUdW5OeFZLS3lROGRVNUtSVTlJNldnLWlSWjVmckFFTEN6YWhlMllrVkV6S1Z6Sk00azUxR0k2VEI4TnFlRg?oc=5",
-      "sourceName": "Google News — Ebola death toll",
-      "date": "2026-10-28",
-      "extractedAt": "2026-11-02T08:52:30.901Z"
     }
   ],
   "checkedIds": [
@@ -785,6 +771,24 @@
     "news-94c14d5c364da877",
     "news-61c1c8c9de3a35ca",
     "news-3c9f2fb152fd4f7b",
-    "who-79b94b860f89f9fd"
+    "who-79b94b860f89f9fd",
+    "who-fbeaf2945206adc1",
+    "who-9dbf487687c9d07e",
+    "who-b2de7ceb8e598806",
+    "who-f9ecfa92f908f216",
+    "who-e168b4b77af217c4",
+    "news-3ecdfb9717f55447",
+    "news-791c2ff1614060ab",
+    "news-4eb467d393eb5816",
+    "news-79b94b860f89f9fd",
+    "news-ab4541273c0a9daa",
+    "news-f9ecd266934d0fe9",
+    "news-53b014663c822e01",
+    "news-67a2130305a090af",
+    "who-0461b395256a678f",
+    "who-47be3d88267255a4",
+    "who-dd1be725f9347a41",
+    "who-de4f62fbd8148b75",
+    "who-60bb866156e23c43"
   ]
 }
