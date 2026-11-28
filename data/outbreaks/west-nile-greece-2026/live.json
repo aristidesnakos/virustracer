@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-27T20:44:29.734Z",
+  "lastFetched": "2026-11-28T08:43:06.241Z",
   "processedIds": [
     "news-c4223b357637948f",
     "news-accd175b841b3a3b",
@@ -125,9 +125,20 @@
     "news-e62c1ecf86c59a32",
     "news-af6617324d05dc72",
     "news-aa58b8d3a4d492d8",
-    "news-aecb4719cc44a666"
+    "news-aecb4719cc44a666",
+    "news-04ef9fbae5c80e98"
   ],
   "recentItems": [
+    {
+      "id": "news-04ef9fbae5c80e98",
+      "title": "Greek sports journalist Antonis Panoutsos dies at 78 after West Nile virus treatment in Athens - Cyprus Inform",
+      "url": "https://news.google.com/rss/articles/CBMiygFBVV95cUxObEhFbmFobXdFS3MzNWtRSFBDSHpBb3NwekdvVmtzSmZfZmVzTjRfdmhfRWI3NF9NX1RIUWVXcVJadWk2bWQtZzlXU0EwNG5tUFptOGlLeXI0YXVUT29oZllKWnVkRHY0S0RYTS1KbXNmdVFsWHlVUDgxMllSU3ZheHlJU2NPVDdBbGMwUi01b19POHNUNGhtci00UWJBSjhWb3pXRFhFdFhxbzY3M0d5aDM3T2F6V0QyYkZlckdtU3VIU2xTdlNSYnV3?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — West Nile virus Greece",
+      "summary": "Greek sports journalist Antonis Panoutsos died at 78 after West Nile virus treatment in Athens. Cyprus Inform reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-07d319bdf05b848c",
       "title": "Increase in West Nile Virus cases and deaths in Greece - Atlas Global de Riesgo",
@@ -315,16 +326,6 @@
       "date": "2026-09-10",
       "source": "Google News — West Nile virus Greece",
       "summary": "Attica experienced a surge in West Nile virus transmission, eKathimerini.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-bb05835878cc16a3",
-      "title": "Sharp rise in West Nile virus cases in Greece - BGNES",
-      "url": "https://news.google.com/rss/articles/CBMif0FVX3lxTE13c0lwU0pWMjY4eU5VczhkRlFSdVpmR1ZhQWlsUkJKYktXZkN5al9GZktaTHdWMlpfU2hWZ3J2QXVTNDhidjNSX2FudDRvWWJlcXUtQjVER2hCcDAwdmRTNlBQTnBYdUVGUGFtLWxXanltcVNpeUY5a2RiLXdwMmM?oc=5",
-      "date": "2026-09-10",
-      "source": "Google News — West Nile Attica",
-      "summary": "A sharp rise in West Nile virus cases occurred in Greece, BGNES reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

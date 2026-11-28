@@ -1,5 +1,5 @@
 {
-  "lastFetched": "2026-11-27T20:44:27.073Z",
+  "lastFetched": "2026-11-28T08:43:03.107Z",
   "processedIds": [
     "news-f0329f3660c7ceac",
     "news-35d1ef0b2ff89563",
@@ -829,9 +829,36 @@
     "news-9565b110bcfdd4d2",
     "news-daaf46ecd4ad3876",
     "news-895e41229881623f",
-    "news-5df2ec99f73cacaa"
+    "news-5df2ec99f73cacaa",
+    "news-189accc4c2b3f33d",
+    "news-2648cc94dfeb934a",
+    "news-5bca26622c4d14bd",
+    "news-e5afeef264bde9d6",
+    "news-97a593f3a9d38a60",
+    "news-14987a2eaefb10ce",
+    "news-7167bef9cd2b4495"
   ],
   "recentItems": [
+    {
+      "id": "news-189accc4c2b3f33d",
+      "title": "US measles cases top 6,000 this year, CDC data show - MLQ.ai",
+      "url": "https://news.google.com/rss/articles/CBMiekFVX3lxTE5ZLXFRTHBmbUdETjQ4QjRvVmEzbzZvNGFMRGZ0bXVUMjZFWEJ5WVlQMlNjYkVfelZjMm5fSnBGUXZwWDJneGN6ODlsaU5rN3Y5YlBWcGhqNlFHN3FqY0RlUEp2clJZaEY1WWx0VHk0cXM0XzI0bVB6bnpn?oc=5",
+      "date": "2026-11-28",
+      "source": "Google News — US measles cases",
+      "summary": "US measles cases have exceeded 6,000 this year, according to CDC data, MLQ.ai reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-2648cc94dfeb934a",
+      "title": "Measles Has Killed 9 People in the US This Year, Triple Last Year’s Total, CDC Says - Men's Journal",
+      "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPYllWMlg0VHQ2bXJjdDBuZmpZNGthNS1KN2lxV1ZXS2pFei0tenNFUjZtaE9MTjViSjZ1WFpnWjdtQnl6d3I3by1ZNHpEaFVRdWRPYTNPQS1PMzVTUFVaeGRGYi1Sam1BVnIzSXN5QUd1OWVHaDdQUkprNGk2aU9raklMc2Q?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — US measles cases",
+      "summary": "The CDC says measles has killed nine people in the US this year, triple last year’s total, Men's Journal reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-46f01aaf91750cf4",
       "title": "Unvaccinated and Dying: How Pennsylvania Became the Worst Measles Outbreak in Decades - Latin Times",
@@ -849,6 +876,16 @@
       "date": "2026-11-27",
       "source": "Google News — measles outbreak United States",
       "summary": "A measles outbreak is accelerating in Ohio, with cases in one week nearly matching all of last year's total. WKRC reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-97a593f3a9d38a60",
+      "title": "Pennsylvania Races to Stem Measles Outbreak - Political Wire",
+      "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxNVUtyZlliLV9XV2gwZ3k4ZzZOQ3lTUG04a245N2lTZFdQZS1Tc2R1b3pwejZuSDVMY3N0Y2FTcnlGclpmbTk2SHYyUjJDcndydFNjYlhybWFoS0h5Znh3OHllc1c3RzM4aUMxSHJkRVh4clBHY2lyV0VuRlJnSl9KMXRzTW9WQXBk?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania is racing to stem a measles outbreak, Political Wire reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -883,6 +920,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-14987a2eaefb10ce",
+      "title": "Pennsylvania Reports Ninth Measles Death as America Confronts Resurgent Infectious Disease Threat - TrialSite News",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQX2VxZ1hrRl83MUNCanMyN2NlLXp3LVJ5bTkxSDAtTVNKb2llS1Q2QjdrWEFKTHlwaUFzOEcyam5pVm5RNS1GLVBkdHFieU1xWTB2cjZmMVVuVTd4RXFyb2dlWHdVa3dyTFlKWWhSbXUtM3lWU3B3VUxBZ3BiREV6MXZSam84WEhEWkYwVmk2ZFg3anpscjF2SW1ibXNNS3R2QVhVMUUwYWtBaHBHenNTSjgwR2gwUm1tbWZCT19ZZXM3clpLYTZBZmgwVGlubEU1MFljTQ?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — Pennsylvania measles outbreak",
+      "summary": "Pennsylvania reported a ninth measles death as the U.S. faced a resurgent infectious disease threat. TrialSite News reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-315f1cf694359ba9",
       "title": "US Measles Surge: Critical Clinical Lessons for Doctors - OC Academy",
       "url": "https://news.google.com/rss/articles/CBMie0FVX3lxTE54bGRjWmdUX3ltc3c2RUU1eUxGbXRDQUJKWnk4LUluaG9KYXN3bG9YM01aYkgzTEpNVkhLakRNUTJ1VHhVQ1NqZFhsQ1F5UE1id3YxR25nZjhqODh0RlQ5MEs4VzdhU1pFY0pCbGh5VE5GcXRYcE5oaV9lbw?oc=5",
@@ -899,6 +946,16 @@
       "date": "2026-11-26",
       "source": "Google News — measles outbreak United States",
       "summary": "Washington state doctors are concerned about the United States potentially losing its measles-free status. The Lewiston Tribune reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-5bca26622c4d14bd",
+      "title": "US measles cases reach 35-year high before Thanksgiving travel - https://streamlinefeed.co.ke/",
+      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOQWMtSk9KVHc4bDdSS0NQcUpsblc2dks0d3M1ZkhBMm1MVzU5dVdyM2hIZ1FmdXpFbWhidjhLOWNpaUVDTEIwY1NyVExaNE1tQVpiWloyWTJRUHBLVS1zZThodlRGWkd3YkFaOGc4Ni1xT0Jwa01YY1NUYWoybVh2SjhZTzdvRzdsa3BRak5mMTY?oc=5",
+      "date": "2026-11-26",
+      "source": "Google News — US measles cases",
+      "summary": "US measles cases reached a 35-year high before Thanksgiving travel, https://streamlinefeed.co.ke/ reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     },
@@ -979,56 +1036,6 @@
       "date": "2026-11-25",
       "source": "Google News — Pennsylvania measles outbreak",
       "summary": "Doctors in central Pennsylvania are urging sick residents to skip Thanksgiving gatherings due to a measles outbreak, PennLive.com reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-812306e3470e53f0",
-      "title": "Wisconsin reports 3rd measles-related death amid worsening outbreak - upi",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxQbm9Zc09jT052V2xjdlJROWdhY25zaXdlX212RlI1SEFIUXVvWl9XZWFzdnN2WGlaVHFPb3g5YTJjMURNUl9XZGxUTlhSbEpPVGQ2X1lNdHo0aVlfN2VvbjdXSVROYl9pQnhOdFYwUjBPMEc5NGZZSUdfZm5vQ2hZbHlKczkxdjh2QUpWUHZ3SVDSAZYBQVVfeXFMTVRsLVBMZ3JvUmlNYnBOengtbXJ5YmN2cFlfMl9RQ2RyQk5qREFfYjI0OFM1Tm1BTnItTHNqT3hrRlQ3Wmg4ZW5xSi00cHJkNkVvYW5pM0tmN0RkRzZoOVRySVhESFNzYzVmTFJHbmFsemxNbmVJN3p1N1lBOC1DUkJ6MGFWOXV3UzRlV184aTVKbzlENDdR?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — measles outbreak United States",
-      "summary": "Wisconsin reports third measles-related death amid worsening outbreak, upi reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-8227ae26e1525bb1",
-      "title": "US CDC reports nine measles-related deaths in 2026 - Reuters",
-      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxPakJaWWtRa3lfWHZ5ZDlLNlV2cWtCNWVXa3NUQzFCOTI1UnRwWUlpd0J2TkJONkN1eUdzdmR3aE55emlOX2hrYjluVmF2bkFZWTlMZFFZc2pXdmVvbTNELU9fMGQtcDdHLVN0dnZjc1dwUExxbF85T3oyZjlvS29NQ1JjSUtVZFA3Wkxxd1Z3TDRoZ29CdTY1UDNqSzczcGxGbENsQUh3Y1poTG9BeW5XRmpjT0padVpCQUdN?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — US measles cases",
-      "summary": "The U.S. CDC reported nine measles-related deaths in 2026, Reuters reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-84330480eaefa9d4",
-      "title": "US Measles Death Toll Reaches 14 as Cases Near 6000 - SuaraGarut.ID",
-      "url": "https://news.google.com/rss/articles/CBMiY0FVX3lxTE5VSExVV0dnVEdrSTRiQjBVV3o0a0llNndVY2E4Z0t0VHRlcmhPMWswWXVQVGdVRmUxZnQ3MExKOUhZdWdja3ZjSHdfQVpLNUZZZDZwbGdnUndRM0lFVVVMNXgzaw?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The US measles death toll reached 14 with cases nearing 6000. SuaraGarut.ID reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-894b440a658b3f60",
-      "title": "US CDC Reports Nine Measles Deaths as 2026 Cases Top 6,000 - JournalArta",
-      "url": "https://news.google.com/rss/articles/CBMinAFBVV95cUxNMEpqTnhxOGo1WEJWbHJJS2twbC1TTEdhUGkzeU9rSVhpQ29BdWg1S3Ftb3JZdlBRU240MDlwMmNhdXBLVkF1ZEctOXpHZ0ttZlB0MzFhSmJtY01OUVhfYVRuQ25udzA1UGtYQ3F1SzlxOTdjdWhKRWU3bzgxLXc0bmwzZGFFTVVlQ1VwWmZFWDVuai1uclEzTjEwSk4?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — measles outbreak United States",
-      "summary": "The CDC reported that 2026 measles cases in the US exceeded 6,000, with nine deaths. JournalArta reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-9065bd4f102195dc",
-      "title": "Pennsylvania measles cases reach 1,679 across 46 counties as state adds 41 new infections - FOX 29 Philadelphia",
-      "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQRFlNVjB4OVV2NHB0TGctNjRnekR1Q3hEbUhEa1NodUc1VGtvMzFYcjJNX2t1RmY5bzRZbVRiNEJEOThxQ0pDX1pxWUVITXlsT0dVSVp1QmI3ZnFiZ3pRY0pSTmtVdTJkN0VIR1RoZG4tdzJHMzBFN05ZRTRoT08tdXlhNXpfcV9wVHNYSG5mT1lUc2dnc0xnN2MxT0MzdGJ6YUt5SEstNlFLeG5kUjMwNG9n?oc=5",
-      "date": "2026-11-25",
-      "source": "Google News — Pennsylvania measles outbreak",
-      "summary": "Pennsylvania measles cases reached 1,679 across 46 counties, with 41 new infections added. FOX 29 Philadelphia reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }

@@ -1,19 +1,6 @@
 {
-  "lastFetched": "2026-11-27T20:44:20.384Z",
+  "lastFetched": "2026-11-28T08:42:56.408Z",
   "processedIds": [
-    "news-98686ae3d0b02d14",
-    "news-50ff13e37a74a63b",
-    "who-299b2f72046c62a4",
-    "news-f5371d0960757947",
-    "news-813b44bf84e1c7e7",
-    "news-6930cc62185ff764",
-    "news-d51329b290ab3c83",
-    "news-548d30876995251c",
-    "who-6959f8118e643930",
-    "news-8fa6ef3a8ca3a92e",
-    "news-118be821606e73ab",
-    "news-026e33da121df31d",
-    "news-a271deacbbffdd14",
     "news-b2351410400ced08",
     "news-e815115f9bda4099",
     "news-93f2cab5478341f0",
@@ -1000,9 +987,72 @@
     "who-1544a4e66646c8d2",
     "who-e08130a06c9fe32a",
     "who-078ca9050d32690e",
-    "who-5109c6a48503712d"
+    "who-5109c6a48503712d",
+    "news-c5b7c4effc8800ac",
+    "news-5abcde3d7fddbda7",
+    "news-0083f7e454dd8bf2",
+    "who-047e239c98940ea4",
+    "news-ed6a03932e5b2398",
+    "news-2a72390a01da900e",
+    "news-729945d7657ff7d3",
+    "news-5eb09d879f2ad0f5",
+    "news-c3a4c04992877720",
+    "news-eed1a6ef28a724fd",
+    "news-8f6d45d5b2cce45d",
+    "news-8b3996b090b4bd81",
+    "who-986a7123ccbb1bdb"
   ],
   "recentItems": [
+    {
+      "id": "news-5eb09d879f2ad0f5",
+      "title": "Uganda launches first-ever clinical trial of mRNA vaccine against Bundibugyo Ebola Virus - Today.Az",
+      "url": "https://news.google.com/rss/articles/CBMiWEFVX3lxTE5oTnBwa2gzdkxMNEJzSXUtT3gxdldVWHBKanY0bVNzbDFTRk5DSGtMUU5ad3YySnZpaHpfT2U0Yjc2NEhGeW5IeWVDZEd6SWF1RkF1OVVkdlc?oc=5",
+      "date": "2026-11-28",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Uganda launches first-ever clinical trial of an mRNA vaccine targeting the Bundibugyo Ebola virus. Today.Az reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-729945d7657ff7d3",
+      "title": "Uganda launches Africa's 1st trial of mRNA vaccine against Bundibugyo Ebola - AZƏRTAC – Azərbaycan Dövlət İnformasiya Agentliyi",
+      "url": "https://news.google.com/rss/articles/CBMitAFBVV95cUxPR3FmNkRZUVVyMzVZclJYUHdFRVdmcEV1dmpyZk1HTDZGM2NjOEVHcDFzaVBfVGZyaEtfSDFwdGF4N1Nfal94M2lvc2RsdEVJMklRSDhHZlIxcHBwSURncVp6M1RITENWMW1uVTVIYXM2eVg2dWVOUU5NX205allWeTNqMTJTa3FZTzVLdUJMWmFuN1ZGbFRYVTNKMXpiMXZhR2xNUmxwRXIzUDdhdWhucjFsZkM?oc=5",
+      "date": "2026-11-28",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Uganda has launched Africa’s first trial of an mRNA vaccine against the Bundibugyo Ebola strain.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c3a4c04992877720",
+      "title": "Uganda begins Africa’s first trial of mRNA vaccine against Bundibugyo Ebola - The Financial Express",
+      "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQWjJwV210TzhGY1JacTl6cENTalluZXdVSUR5NEc4cEFhMWdGX1ZZeW1Cc0x3d0UxQ2FVR3NvcG5PZzgtX2d2YlNRaWRoTVMtbmJ4UFJzRUVONEs4TW42dkYtaVAxUjR5NDVYQVhZR0Rfek5SeGN1bEM4WjZHMkJGNG15Nlo5WG1uNi1kWjNOdXRnN1hGejJqbGVaZGJQZmdFNzlnNGtGOUh6QVFsd0prVEdlaUFkRzg?oc=5",
+      "date": "2026-11-28",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "Uganda has started Africa’s first clinical trial of an mRNA vaccine targeting the Bundibugyo Ebola strain. The Financial Express reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "news-c5b7c4effc8800ac",
+      "title": "Congo Ebola Outbreak Tops 12000 Cases Amid Eastern Violence - cwibc.co.id",
+      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE45eXBKZC0yekRETVl0Zk5nbmx1djI3ODZLVndySU1nM3I0ak9KNGZZVF94ZUkxU3JVT2FWMmtfRkltQWRNQ0JFMGh3dFlpa1MxRjNVN2xwM1pJa3dpOUtacVVlM0tWWksyNEQ3aQ?oc=5",
+      "date": "2026-11-28",
+      "source": "Google News — Ebola death toll",
+      "summary": "More than 12,000 Ebola cases have been reported in Congo amid ongoing violence in the east, cwibc.co.id reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
+      "id": "who-986a7123ccbb1bdb",
+      "title": "Uganda starts mRNA Ebola vaccine trial in first for Africa - Al Jazeera",
+      "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPN0wwRDlWSGVDUVNERWhibXE0dTg0M2tCelI1UUNsSk9KRklWbTMzNDF6cUM2OVFtbVZJbGFfOEVoaVIwYUFnenpOdHc1T1Zhdkk0UHh5NGxSbnZVZW5RMVBkWTU0TXRiVDRnUnJGOFFRdlRxem1sQ0liMEpjbnREdkFkS1VjNFRQU1FBTEdDSHlMMTlFS1NrY0pDTGVHMlhhSWfSAacBQVVfeXFMUC1Mc0k3Rks5ck02WU9heFZDSmVzZ1c5X2tOOTJQUjZ1eTViVVdzbDA2VDgxM253akV5dmVaRUMySG14djhDOXFPRGhNSl9COXAzNUE5U3hFMFhGVThweU9wbUpraWc4RjBpcXhHNWpfQzBzRU9SSXgteUpOZlp2VWJwdWlXT0dpaW55WVZNSVFJbTMyWE5rOHBqb3RvOGNyREFSSnN2WG8?oc=5",
+      "date": "2026-11-28",
+      "source": "Google News — WHO DON",
+      "summary": "Uganda began an mRNA Ebola vaccine trial, a first for Africa, Al Jazeera reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
     {
       "id": "news-3ecdfb9717f55447",
       "title": "Ebola death toll nears 6,000 in DR Congo - Qazinform",
@@ -1104,6 +1154,16 @@
       "summaryVersion": 2
     },
     {
+      "id": "news-eed1a6ef28a724fd",
+      "title": "South Africa prepares 36 hospitals for possible Ebola cases - Cape Town ETC",
+      "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNd0Nfc2VMLXR0LUFuWURQSHFfZTZMQWxNc1lmQkp1dzBmRlRrbTdxdXRuX2UtU1RmbEQyYXJJeDU0U3BpNGs0bkFfcmFFUlJuWk94Vk9sVjJNOTkyRDZZWGttdTJZeHl6SmFWVlNWZEhzVUpJMU1VcXdockNSclR2d2h0dTFXdWNPMFg3dFh5VUVnYXBHN2NaYlR3NS1GWmtZS2k1T1kxSFIzVXdo?oc=5",
+      "date": "2026-11-27",
+      "source": "Google News — Bundibugyo outbreak",
+      "summary": "South Africa prepared 36 hospitals for possible Ebola cases. Cape Town ETC reported.",
+      "summaryFallback": false,
+      "summaryVersion": 2
+    },
+    {
       "id": "news-f9ecd266934d0fe9",
       "title": "Opinion: Understanding Pregnancy’s Role in Ebola - Undark Magazine",
       "url": "https://news.google.com/rss/articles/CBMiZEFVX3lxTE45d0ZoZ1Z3UTd3aEc2MEcxeEFsY1dZVFlIZERsTThXMndzc3ZPQkp1NkFZQ1QtZHRrVG5weEFwcGJldXNmejZaMzllOVJTY0VjQWg2LU42Nl9fVUJXTjR3cnhQY0Y?oc=5",
@@ -1140,66 +1200,6 @@
       "date": "2026-11-27",
       "source": "Google News — WHO DON",
       "summary": "An mRNA Ebola vaccine trial has started in Uganda, according to the institute. Medical Xpress reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-03af622968a65c27",
-      "title": "No Ebola in SA yet, but 36 hospitals on standby - News24",
-      "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxPLUhLb1YtdG1kOWYweXY4TzZxTnA1WmNIVUJXUFZxeUlfN2JCM2Y3STFrd1pwclNtendtajZsX2xUTFJPRkQ2dlJMVmJlTEpkaVROTUE4SjZHZW0yVGhyeXAyMHVaTm1wSy1EOHRnblVzV2tBdkl2UWtOcmV4dUhNNXRMUkx5LXNSb2J0NFdVNGczMThVRnprbmlGa0M0d0swLTc2WXBwNjN0OUE?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Bundibugyo outbreak",
-      "summary": "No Ebola has been reported in South Africa yet, but 36 hospitals are on standby as a precaution. News24 reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-18c430ddab41c5c5",
-      "title": "Congo's Ebola outbreak passes 12,000 confirmed cases and 5,904 deaths - MLQ.ai",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOVkRoaEQ2aVdDSHJwNF8yM3kzeVlOZUQ2R1Z0eE9zMnBXU2NUckw3R3JSNWUzN0pZaVYwYnFBcXBUTkN5cUthR2lIcGNKNHc3OFExd2dEZ010dFhJQ3NMQmNJRGxhN0JUbHZ3NXZpYW5rWG1rXzNfc1ZwMURpZWJuODhVT2dpeWVSSWM3SVhPajQ?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo's Ebola outbreak has surpassed 12,000 confirmed cases and 5,904 deaths, MLQ.ai reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1b6d1c1dbf71c56f",
-      "title": "Ebola Cases In DR Congo Pass 12,000 As Outbreak Continues To Spread - Arise News",
-      "url": "https://news.google.com/rss/articles/CBMikgFBVV95cUxPY1ZhUEktUlNhdzNyUnA3cmRod2RFQ0FUOWRFZTN4ZEtLazhnOXdIdDExZkZCMXpvWHlMMk1BeHJSRGh1NE1ZRUJBeUYxYnRPZlo5TUJvamNWZWVVc3ZpdTd1SlBMVjNvY3hqZ1U2dmdYenFTSzQzd0lBRHFFV0lhSV9OUHNFOTBUZTNhM0laTEwydw?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases in DR Congo have surpassed 12,000 as the outbreak continues to spread. Arise News reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-1b7912e2d70ce635",
-      "title": "Congo Ebola outbreak reaches 12,000 cases as some responders evacuate - NPR",
-      "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTE5uQzZ2Z05RVGJOSUNFUUc5MkFqWG01c2FkQjA0TllLdGY2cGc2MFplakYwWFVlcGFiWVlIdy1FWnAzVkJIejNtMk9FU0Z2QWhfUXFVSW9Qd2UwV1JiaGlKRjVVYi1qZ0NYOE1yT1BTRlNRdGc?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Congo's Ebola outbreak reached 12,000 cases, prompting some responders to evacuate, NPR reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2ada8c88221a8bd1",
-      "title": "DR Congo reports more than 12,000 confirmed Ebola cases - Sharjah24",
-      "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQc3RmV3dyM3pYZGstU3RfQ2xoWTNhdnFaRzJteU9KX3dtNDVEdER4dURFNzJYcHlrTGdKaEhnUjJ6U1dpTDQ5bWdGOHRub0sxWnFhNG1HTHFLcXpqTWFmSWRzdE42TjhqVDdveWhRV1FXMElfblpaTU1nUVBQNHlEdENmOVRiS3pNUnpac3N0b3NMMGJ0MThkcE5zTlNlQzA?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "DR Congo reports more than 12,000 confirmed Ebola cases, Sharjah24 reported.",
-      "summaryFallback": false,
-      "summaryVersion": 2
-    },
-    {
-      "id": "news-2bdcf6f7ba962c17",
-      "title": "Ebola cases surpass 12,000 in DR Congo - Daily Times",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE5DeTlobHhiTzRFYU9mbFM0OFMtdFNIVk13MWJXaTBDM1ZiTEtvZHdRV1Z1ZzRwcXpoNDJmcFdMMEhXZmVFOFdvbFJxUHl1blBGRm5XeHdBRDRBRXZDTEUtRF9iN3QzUHdhQVFuSXM3TV85UnZ0UHA5d1dIWVQ?oc=5",
-      "date": "2026-11-26",
-      "source": "Google News — Ebola death toll",
-      "summary": "Ebola cases surpass 12,000 in DR Congo, Daily Times reported.",
       "summaryFallback": false,
       "summaryVersion": 2
     }
